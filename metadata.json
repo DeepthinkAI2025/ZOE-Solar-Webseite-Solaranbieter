@@ -1,0 +1,7 @@
+{
+  "name": "Copy of ZOE Solar - Photovoltaik für Unternehmen",
+  "description": "Eine professionelle Webseite für ZOE Solar, einen Photovoltaik-Installationsbetrieb, der sich auf Unternehmen mit großen Freiflächen spezialisiert hat. Die Seite nutzt überzeugende Verkaufstaktiken und stellt den Kundennutzen in den Vordergrund.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
