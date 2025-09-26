@@ -1,0 +1,18 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" rx="48" fill="url(#grad)" />
+  <rect x="120" y="120" width="400" height="480" rx="32" fill="rgba(15,23,42,0.85)" />
+  <rect x="560" y="160" width="520" height="88" rx="22" fill="rgba(255,255,255,0.1)" />
+  <rect x="560" y="280" width="520" height="88" rx="22" fill="rgba(255,255,255,0.1)" />
+  <rect x="560" y="400" width="520" height="88" rx="22" fill="rgba(255,255,255,0.1)" />
+  <rect x="160" y="180" width="320" height="64" rx="16" fill="#facc15" opacity="0.75" />
+  <rect x="160" y="276" width="320" height="64" rx="16" fill="#22d3ee" opacity="0.75" />
+  <rect x="160" y="372" width="320" height="64" rx="16" fill="#a855f7" opacity="0.75" />
+  <text x="600" y="170" fill="#f8fafc" font-family="'Poppins', sans-serif" font-size="32" font-weight="600">AI Chat Funnel Preview</text>
+  <text x="600" y="220" fill="#e0f2fe" font-family="'Poppins', sans-serif" font-size="20">Stelle hier einen echten Screenshot des KI-Beraters ein.</text>
+</svg>

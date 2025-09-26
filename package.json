@@ -6,16 +6,40 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "node server/index.js",
+    "seo-monitor": "node scripts/seo-monitoring.cjs",
+    "seo-alerts": "node scripts/seo-alerts.cjs",
+    "gmb-integration": "node scripts/gmb-integration.cjs",
+    "keyword-research": "node scripts/keyword-research.cjs",
+    "enhanced-seo-monitor": "node scripts/enhanced-seo-monitoring.cjs",
+    "content-optimization": "node scripts/content-optimization.cjs",
+    "seo-workflow": "node scripts/seo-workflow.cjs",
+  "seo-geo-audit": "tsx scripts/seo-geo-aeo-audit.ts"
   },
   "dependencies": {
+    "@fontsource/poppins": "^5.0.8",
+    "@google/genai": "^1.19.0",
+  "axios": "^1.7.9",
+  "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "googleapis": "^137.0.0",
+  "node-cron": "^3.0.3",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "@google/genai": "^1.19.0"
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^7.9.2"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.13",
+  "ts-node": "^10.9.2",
+  "tsx": "^4.19.2",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
   }

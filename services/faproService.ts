@@ -1,11 +1,31 @@
 import { ContactFormData } from '../types';
 
-// This is a placeholder for the actual Fapro API endpoint.
-const FAPRO_API_ENDPOINT = 'https://api.fapro.de/v1/leads';
+const RAW_FAPRO_BASE_URL = import.meta.env.VITE_FAPRO_BASE_URL?.trim();
+const RAW_FAPRO_API_KEY = import.meta.env.VITE_FAPRO_API_KEY?.trim();
+
+const stripTrailingSlash = (value: string) => value.replace(/\/+$/, '');
+
+export const getFaproBaseUrl = (): string => {
+  const configured = RAW_FAPRO_BASE_URL && RAW_FAPRO_BASE_URL.length > 0
+    ? stripTrailingSlash(RAW_FAPRO_BASE_URL)
+    : null;
+
+  if (configured) {
+    return configured;
+  }
+
+  const origin = typeof window !== 'undefined' && window.location?.origin
+    ? window.location.origin
+    : '';
+
+  return `${stripTrailingSlash(origin || '')}/api/fapro`;
+};
+
+export const getFaproApiEndpoint = () => `${getFaproBaseUrl()}/v1/leads`;
 
 // The API key should be stored in environment variables, not here.
 // The user will provide this later.
-const FAPRO_API_KEY = process.env.FAPRO_API_KEY || 'YOUR_FAPRO_API_KEY_PLACEHOLDER';
+const FAPRO_API_KEY = RAW_FAPRO_API_KEY || 'YOUR_FAPRO_API_KEY_PLACEHOLDER';
 
 export const sendInquiryToFapro = async (data: Omit<ContactFormData, 'dataPrivacy'>): Promise<{ success: boolean; message: string }> => {
   console.log('Sending data to Fapro API:', data);
@@ -46,7 +66,7 @@ export const sendInquiryToFapro = async (data: Omit<ContactFormData, 'dataPrivac
       });
     }
 
-    const response = await fetch(FAPRO_API_ENDPOINT, {
+  const response = await fetch(getFaproApiEndpoint(), {
       method: 'POST',
       headers: {
         // 'Content-Type' is set automatically by the browser when using FormData

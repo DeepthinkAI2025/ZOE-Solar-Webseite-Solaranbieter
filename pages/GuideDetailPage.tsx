@@ -3,11 +3,7 @@ import { guides, Guide } from '../data/guidesData';
 import { ContentBlock } from '../data/articles';
 import { glossarData } from '../data/glossarData';
 import GlossarLink from '../components/GlossarLink';
-
-
-// Declare external libraries for TypeScript
-declare var jsPDF: any;
-declare var html2canvas: any;
+import { ensurePdfLibraries } from '../utils/pdfExport';
 
 interface GuideDetailPageProps {
     guide: Guide;
@@ -186,21 +182,27 @@ const GuideDetailPage: React.FC<GuideDetailPageProps> = ({ guide, onBack }) => {
         return () => observer.disconnect();
     }, [headings]);
     
-    const handleDownload = () => {
+    const handleDownload = async () => {
         setIsDownloading(true);
-        const contentElement = document.getElementById('guide-content-to-print');
-        if (contentElement) {
-            html2canvas(contentElement, { scale: 2, useCORS: true }).then(canvas => {
-                const imgData = canvas.toDataURL('image/png');
-                const pdf = new jsPDF.jsPDF('p', 'mm', 'a4');
-                const pdfWidth = pdf.internal.pageSize.getWidth();
-                const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
-                pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
-                pdf.save(`${guide.slug}.pdf`);
-                setIsDownloading(false);
-            });
-        } else {
-             setIsDownloading(false);
+        try {
+            const contentElement = document.getElementById('guide-content-to-print');
+            if (!contentElement) {
+                return;
+            }
+
+            const { html2canvas, jsPDF } = await ensurePdfLibraries();
+            const canvas = await html2canvas(contentElement, { scale: 2, useCORS: true });
+            const imgData = canvas.toDataURL('image/png');
+            const pdf = new jsPDF('p', 'mm', 'a4');
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+            pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+            pdf.save(`${guide.slug}.pdf`);
+        } catch (error) {
+            console.error('PDF konnte nicht erstellt werden', error);
+            alert('Download fehlgeschlagen. Bitte versuchen Sie es erneut.');
+        } finally {
+            setIsDownloading(false);
         }
     };
     

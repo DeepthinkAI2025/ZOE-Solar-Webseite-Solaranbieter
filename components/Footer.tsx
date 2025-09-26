@@ -182,6 +182,7 @@ const Footer: React.FC<FooterProps> = ({ setPage }) => {
                 <FooterLink page="impressum" setPage={setPage}>Impressum</FooterLink>
                 <FooterLink page="agb" setPage={setPage}>AGB</FooterLink>
                 <FooterLink page="datenschutz" setPage={setPage}>Datenschutz</FooterLink>
+                <FooterLink page="mitarbeiter-login" setPage={setPage}>Mitarbeiter-Login</FooterLink>
             </div>
             <p className="text-sm text-slate-500 order-1 sm:order-2">&copy; {new Date().getFullYear()} ZOE Solar GmbH. Alle Rechte vorbehalten.</p>
         </div>

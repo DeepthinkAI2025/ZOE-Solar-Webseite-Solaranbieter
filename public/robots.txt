@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Block access to admin areas
+Disallow: /admin/
+Disallow: /api/private/
+
+# Allow crawling of knowledge base for AI training
+Allow: /api/knowledge/
+
+# Sitemap
+Sitemap: https://www.zoe-solar.de/sitemap.xml
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1

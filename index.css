@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.no-scrollbar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.bg-precision-grid {
+	background-image:
+		linear-gradient(to right, rgba(148, 163, 184, 0.12) 1px, transparent 1px),
+		linear-gradient(to bottom, rgba(148, 163, 184, 0.12) 1px, transparent 1px);
+	background-size: 56px 56px;
+	mask-image: radial-gradient(circle at center, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.85) 45%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0) 100%);
+	-webkit-mask-image: radial-gradient(circle at center, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.85) 45%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0) 100%);
+}

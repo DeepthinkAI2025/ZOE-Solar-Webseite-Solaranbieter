@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Page } from '../types';
 import GlossarLink from '../components/GlossarLink';
 import { glossarData } from '../data/glossarData';
@@ -207,7 +208,7 @@ const FAQPage: React.FC = () => {
     {
         category: 'Wirtschaftlichkeit',
         question: 'Was ist der Unterschied zwischen Direktvermarktung und EEG-Vergütung?',
-        answer: <>Die <GlossarLink term="Einspeisevergütung" /> ist ein staatlich festgelegter, fester Preis, den Sie für jede eingespeiste Kilowattstunde über 20 Jahre erhalten. Bei der <GlossarLink term="Direktvermarktung" /> wird Ihr Strom direkt an der Strombörse verkauft. Der Preis ist variabel, liegt aber oft über der <GlossarLink term="EEG (Erneuerbare-Energien-Gesetz)">EEG-Vergütung</GlossarLink>. Ab einer bestimmten Anlagengröße (aktuell >100 <GlossarLink term="Kilowatt-Peak (kWp)">kWp</GlossarLink>) ist die Direktvermarktung verpflichtend. Wir beraten Sie, welches Modell für Sie am profitabelsten ist.</>,
+  answer: <>Die <GlossarLink term="Einspeisevergütung" /> ist ein staatlich festgelegter, fester Preis, den Sie für jede eingespeiste Kilowattstunde über 20 Jahre erhalten. Bei der <GlossarLink term="Direktvermarktung" /> wird Ihr Strom direkt an der Strombörse verkauft. Der Preis ist variabel, liegt aber oft über der <GlossarLink term="EEG (Erneuerbare-Energien-Gesetz)">EEG-Vergütung</GlossarLink>. Ab einer bestimmten Anlagengröße (aktuell {'>'}100 <GlossarLink term="Kilowatt-Peak (kWp)">kWp</GlossarLink>) ist die Direktvermarktung verpflichtend. Wir beraten Sie, welches Modell für Sie am profitabelsten ist.</>,
     },
     {
       category: 'Wirtschaftlichkeit',
@@ -498,11 +499,18 @@ const FAQPage: React.FC = () => {
                         <h4 className="font-bold text-white text-xl">Wir sind für Sie da</h4>
                         <p className="text-slate-400 text-sm mb-6">Starten Sie den Dialog – unkompliziert und schnell.</p>
                         
-                        <div className="space-y-4">
-                            <button onClick={openChat} className="w-full bg-green-500 text-white font-bold py-3 px-6 rounded-lg text-base hover:bg-green-600 transition-all duration-300 shadow-lg cta-button-glow transform hover:-translate-y-1 flex items-center justify-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
-                                Mit KI-Berater sprechen
-                            </button>
+            <div className="space-y-4">
+              <Link
+                to="/kontakt"
+                onClick={(event) => {
+                  event.preventDefault();
+                  openChat();
+                }}
+                className="w-full bg-green-500 text-white font-bold py-3 px-6 rounded-lg text-base hover:bg-green-600 transition-all duration-300 shadow-lg cta-button-glow transform hover:-translate-y-1 flex items-center justify-center gap-2"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                Mit KI-Berater sprechen
+              </Link>
                             <a href="tel:+493012345678" className="w-full block bg-white/10 text-white font-bold py-3 px-6 rounded-lg text-base hover:bg-white/20 transition-all duration-300 border border-slate-600 flex items-center justify-center gap-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                                 Direkt anrufen

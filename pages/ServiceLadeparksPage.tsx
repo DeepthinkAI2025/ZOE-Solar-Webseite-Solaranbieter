@@ -34,10 +34,10 @@ const LadeparksHero: React.FC = () => {
             <div className="container mx-auto px-6 py-20 lg:py-16">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div className="text-center lg:text-left relative z-10">
-                        <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tighter">
+                        <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tighter pillar-intro">
                             Ladeparks & E-Mobilität
                         </h1>
-                        <p className="mt-6 text-lg text-slate-600 max-w-xl mx-auto lg:mx-0">
+                        <p className="mt-6 text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 pillar-keyfacts">
                            Positionieren Sie sich als Vorreiter und schaffen Sie eine moderne Ladeinfrastruktur für Fuhrpark, Mitarbeiter und Kunden.
                         </p>
                     </div>
@@ -119,7 +119,7 @@ const ServiceLadeparksPage: React.FC<ServiceLadeparksPageProps> = ({ setPage, cu
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-24 w-24 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" /></svg>
                                </div>
                                <div className="md:col-span-2">
-                                    <h2 className="text-3xl font-bold text-slate-800">Die perfekte Synergie: PV-Anlage + Ladepark</h2>
+                                    <h2 className="text-3xl font-bold text-slate-800 pillar-benefits">Die perfekte Synergie: PV-Anlage + Ladepark</h2>
                                     <p className="text-slate-600 mt-2">
                                         Laden Sie Ihre E-Fahrzeuge direkt mit Ihrem eigenen, sauberen Solarstrom. Das senkt nicht nur Ihre Betriebskosten dramatisch, sondern maximiert auch den Eigenverbrauch Ihrer PV-Anlage und beschleunigt deren Amortisation. Eine Win-Win-Situation für Ökologie und Ökonomie.
                                     </p>

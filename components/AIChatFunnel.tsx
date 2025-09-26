@@ -94,6 +94,8 @@ const buttonPrompts = [
     "Welche Förderungen gibt es 2025?",
 ];
 
+const GEMINI_API_KEY = (import.meta.env.VITE_GEMINI_API_KEY ?? import.meta.env.VITE_API_KEY ?? '') as string;
+
 const translations: Record<Language, Record<string, any>> = {
     'de-DE': {
         assistantName: 'ZOE Solar Assistent',
@@ -114,6 +116,7 @@ const translations: Record<Language, Record<string, any>> = {
         inputDisabledPlaceholder: 'Bitte nutzen Sie das Formular/Buttons oben.',
         rateLimitError: "Unsere KI-Systeme sind im Moment stark ausgelastet. Bitte versuchen Sie es in ein paar Augenblicken erneut.",
         genericError: "Entschuldigung, es ist ein technischer Fehler aufgetreten. Bitte versuchen Sie es später erneut.",
+    aiUnavailable: 'Der KI-Assistent steht derzeit nicht zur Verfügung. Bitte nutzen Sie unser Kontaktformular oder rufen Sie uns direkt an.',
         callCustomerService: 'Kundenservice anrufen',
         speakWithAI: 'Mit KI-Berater sprechen',
         roofAnalysisPrompt: 'Dach-Potenzial analysieren',
@@ -146,6 +149,7 @@ const translations: Record<Language, Record<string, any>> = {
         inputDisabledPlaceholder: 'Please use the form/buttons above.',
         rateLimitError: "Our AI systems are currently under heavy load. Please try again in a few moments.",
         genericError: "Sorry, a technical error occurred. Please try again later.",
+    aiUnavailable: 'The AI assistant is currently unavailable. Please contact us via the form or by phone.',
         callCustomerService: 'Call Customer Service',
         speakWithAI: 'Speak with AI Assistant',
         roofAnalysisPrompt: 'Analyze roof potential',
@@ -312,6 +316,7 @@ const AIChatFunnel: React.FC<AIChatFunnelProps> = ({ onOpen, currentPage, initia
     const [currentConfigStep, setCurrentConfigStep] = useState(0);
     const [initialAIContext, setInitialAIContext] = useState<string | null>(initialContext || null);
     const [roofAnalysisData, setRoofAnalysisData] = useState<RoofAnalysisData | null>(null);
+    const [aiInitError, setAiInitError] = useState<string | null>(GEMINI_API_KEY ? null : 'missing-key');
     
     // New states for enhanced features
     const [currentLang, setCurrentLang] = useState<Language>('de-DE');
@@ -413,7 +418,21 @@ const AIChatFunnel: React.FC<AIChatFunnelProps> = ({ onOpen, currentPage, initia
 
     // Initialize AI and Speech Recognition
     useEffect(() => {
-        ai.current = new GoogleGenAI({ apiKey: process.env.API_KEY as string });
+        if (typeof window === 'undefined') {
+            return;
+        }
+
+        if (GEMINI_API_KEY) {
+            try {
+                ai.current = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
+                setAiInitError(null);
+            } catch (error) {
+                console.error('Fehler bei der Initialisierung von GoogleGenAI:', error);
+                setAiInitError('init-failed');
+            }
+        } else {
+            ai.current = null;
+        }
 
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
         if (SpeechRecognition) {
@@ -425,8 +444,7 @@ const AIChatFunnel: React.FC<AIChatFunnelProps> = ({ onOpen, currentPage, initia
 
             recognition.onstart = () => setIsListening(true);
             recognition.onend = () => {
-                // Check the ref to avoid premature state change if it's meant to restart
-                if(isListening) {
+                if (isListening) {
                     setIsListening(false);
                 }
             };
@@ -446,13 +464,13 @@ const AIChatFunnel: React.FC<AIChatFunnelProps> = ({ onOpen, currentPage, initia
             recognitionRef.current = recognition;
         }
 
-        // Ensure voices are loaded for speech synthesis
         const onVoicesChanged = () => {};
         window.speechSynthesis?.addEventListener('voiceschanged', onVoicesChanged);
 
         return () => {
             window.speechSynthesis?.removeEventListener('voiceschanged', onVoicesChanged);
             cancelSpeech();
+            ai.current = null;
         };
     }, []);
 
@@ -495,6 +513,8 @@ const AIChatFunnel: React.FC<AIChatFunnelProps> = ({ onOpen, currentPage, initia
     }, [isOpen, currentPage, messages.length]);
 
     const t = translations[currentLang];
+    const isAiAvailable = Boolean(GEMINI_API_KEY) && !aiInitError;
+    const aiFallbackMessage = aiInitError === 'missing-key' ? t.aiUnavailable : t.genericError;
 
     useEffect(() => {
         if (isLoading) {
@@ -639,6 +659,19 @@ const AIChatFunnel: React.FC<AIChatFunnelProps> = ({ onOpen, currentPage, initia
         setCurrentForm(null);
         setInitialAIContext(null);
         sessionStorage.removeItem('aiChatState');
+
+        if (!isAiAvailable) {
+            setMessages([]);
+            setStep('final');
+            setStepHistory(['start']);
+            setFormData({});
+
+            setTimeout(() => {
+                setIsLoading(false);
+                addMessage('ai', t.aiUnavailable);
+            }, 200);
+            return;
+        }
         
         let introMessage = t.initialGreeting;
         let initialOptions: string[] | undefined = t.initialOptions;
@@ -802,7 +835,12 @@ const AIChatFunnel: React.FC<AIChatFunnelProps> = ({ onOpen, currentPage, initia
     };
 
     const analyzeRoofFromAddress = async (address: string) => {
-        if (!ai.current) return;
+        if (!ai.current) {
+            addMessage('ai', aiFallbackMessage);
+            setIsLoading(false);
+            goToStep('inquiry_type');
+            return;
+        }
         setStep('analyzing_roof');
         setThinkingMessage(t.analyzingRoof);
         setIsLoading(true);
@@ -932,7 +970,11 @@ const AIChatFunnel: React.FC<AIChatFunnelProps> = ({ onOpen, currentPage, initia
     };
     
     const getComparisonAnalysis = async (products: Product[]) => {
-        if (!ai.current) return;
+        if (!ai.current) {
+            addMessage('ai', aiFallbackMessage);
+            setIsLoading(false);
+            return;
+        }
         setIsLoading(true);
         setStep('general_chat'); 
 
@@ -977,7 +1019,7 @@ Ihre Aufgabe ist es, eine umfassende Vergleichsanalyse und eine klare Empfehlung
     const generateUseCaseQuestions = async (useCase: UseCase) => {
         if (!ai.current) {
             setIsLoading(false);
-            addMessage('ai', 'Entschuldigung, der KI-Assistent ist im Moment nicht verfügbar. Lassen Sie uns den Standardweg gehen.');
+            addMessage('ai', aiFallbackMessage);
             goToStep('inquiry_type');
             return;
         }
@@ -1194,7 +1236,7 @@ Ihre Aufgabe ist es, eine umfassende Vergleichsanalyse und eine klare Empfehlung
 
     const processGeneralQuestion = async (question: string, context?: string) => {
         if (!ai.current) {
-            addMessage('ai', t.genericError);
+            addMessage('ai', aiFallbackMessage);
             setIsLoading(false);
             return;
         }

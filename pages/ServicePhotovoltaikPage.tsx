@@ -34,10 +34,10 @@ const PhotovoltaikHero: React.FC = () => {
             <div className="container mx-auto px-6 py-20 lg:py-16">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div className="text-center lg:text-left relative z-10">
-                        <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tighter">
+                        <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tighter pillar-intro">
                             Photovoltaik für Gewerbe
                         </h1>
-                        <p className="mt-6 text-lg text-slate-600 max-w-xl mx-auto lg:mx-0">
+                        <p className="mt-6 text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 pillar-keyfacts">
                            Verwandeln Sie ungenutzte Flächen in hochrentable Solarkraftwerke und sichern Sie sich langfristig stabile Erträge.
                         </p>
                     </div>
@@ -94,7 +94,7 @@ const ServicePhotovoltaikPage: React.FC<ServicePhotovoltaikPageProps> = ({ setPa
 
                         {/* Benefits Section */}
                         <section className="bg-slate-800 text-white p-12 rounded-lg shadow-lg">
-                             <h2 className="text-3xl font-bold mb-8 text-center">Ihre Vorteile auf einen Blick</h2>
+                             <h2 className="text-3xl font-bold mb-8 text-center pillar-benefits">Ihre Vorteile auf einen Blick</h2>
                              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                                 {benefits.map(benefit => (
                                     <div key={benefit.title} className="text-center">

@@ -1,7 +1,5 @@
 import React, { useState, useMemo } from 'react';
-
-// FIX: Declare html2canvas as it's loaded from a script tag and is not imported.
-declare const html2canvas: any;
+import { ensurePdfLibraries } from '../utils/pdfExport';
 
 // Reusable components for UI consistency
 const Tooltip: React.FC<{ text: string }> = ({ text }) => (
@@ -73,24 +71,27 @@ const ESGCertificateModal: React.FC<{
     const watermarkUrl = `url("data:image/svg+xml;base64,${btoa(svgIcon)}")`;
 
 
-    const handleDownload = () => {
+    const handleDownload = async () => {
         const element = certificateRef.current;
-        if (!element || typeof html2canvas === 'undefined') return;
+        if (!element) return;
+
         setIsDownloading(true);
-        html2canvas(element, { 
-            scale: 3, 
-            backgroundColor: '#ffffff', // Ensure a white background for the PNG
-            useCORS: true 
-        }).then(canvas => {
+        try {
+            const { html2canvas } = await ensurePdfLibraries();
+            const canvas = await html2canvas(element, {
+                scale: 3,
+                backgroundColor: '#ffffff',
+                useCORS: true,
+            });
             const link = document.createElement('a');
             link.download = `ZOE_Solar_ESG-Potenzial_${companyName.replace(/\s+/g, '_') || 'Analyse'}.png`;
             link.href = canvas.toDataURL('image/png');
             link.click();
+        } catch (error) {
+            console.error('oops, something went wrong!', error);
+        } finally {
             setIsDownloading(false);
-        }).catch(err => {
-            console.error('oops, something went wrong!', err);
-            setIsDownloading(false);
-        });
+        }
     };
 
     return (

@@ -1,0 +1,33 @@
+{
+  "gemini": {
+    "apiKey": "",
+    "model": "gemini-1.5-pro",
+    "lastUpdated": null
+  },
+  "googleMaps": {
+    "staticKey": "",
+    "geocodingKey": "",
+    "placesKey": "",
+    "solarApiKey": "",
+    "lastUpdated": null
+  },
+  "googleServiceAccount": {
+    "clientEmail": "",
+    "privateKey": "",
+    "propertyUrl": "",
+    "analyticsPropertyId": "",
+    "lastUpdated": null
+  },
+  "ahrefs": {
+    "apiToken": "",
+    "target": "",
+    "lastUpdated": null
+  },
+  "businessProfile": {
+    "apiKey": "",
+    "accountName": "",
+    "locationId": "",
+    "lastUpdated": null
+  },
+  "other": {}
+}
