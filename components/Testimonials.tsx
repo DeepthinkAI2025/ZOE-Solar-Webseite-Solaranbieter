@@ -94,7 +94,7 @@ const Testimonials: React.FC = () => {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16 max-w-4xl mx-auto">
                     <p className="font-bold text-green-400 uppercase tracking-wider">Social Proof</p>
-                    <h2 className="text-4xl lg:text-5xl font-bold text-white mt-2">Was Familienbetriebe wie Ihrer sagen.</h2>
+                    <h2 className="text-4xl lg:text-5xl font-bold text-white mt-2 testimonial-highlight">Was Familienbetriebe wie Ihrer sagen.</h2>
                     <p className="text-lg text-slate-300 mt-4">
                         Ihre Zufriedenheit ist unser Antrieb und die beste Referenz. Lesen Sie authentische Bewertungen von Familienbetrieben und Unternehmen, die wir auf ihrem Weg in eine sichere Energiezukunft begleitet haben.
                     </p>

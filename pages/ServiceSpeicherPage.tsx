@@ -34,10 +34,10 @@ const SpeicherHero: React.FC = () => {
             <div className="container mx-auto px-6 py-20 lg:py-16">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div className="text-center lg:text-left relative z-10">
-                        <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tighter">
+                        <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tighter pillar-intro">
                             Industrielle Speicher
                         </h1>
-                        <p className="mt-6 text-lg text-slate-600 max-w-xl mx-auto lg:mx-0">
+                        <p className="mt-6 text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 pillar-keyfacts">
                            Maximieren Sie Ihre Unabhängigkeit, kappen Sie teure Lastspitzen und sichern Sie Ihre Produktion mit intelligenten Speichersystemen ab.
                         </p>
                     </div>
@@ -95,7 +95,7 @@ const ServiceSpeicherPage: React.FC<ServiceSpeicherPageProps> = ({ setPage, curr
                         {/* Applications Section */}
                         <section>
                              <div className="text-center mb-12">
-                                <h2 className="text-3xl font-bold text-slate-900">Vielseitige Anwendungsmöglichkeiten</h2>
+                                <h2 className="text-3xl font-bold text-slate-900 pillar-benefits">Vielseitige Anwendungsmöglichkeiten</h2>
                                 <p className="text-lg text-slate-600 mt-2">Ein Speicher, viele Vorteile.</p>
                             </div>
                             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">

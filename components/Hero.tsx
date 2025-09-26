@@ -1,9 +1,28 @@
 import React, { useRef, useEffect, useState, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import { manufacturers } from '../data/products';
 import { Page } from '../types';
+import { pageToPath } from '../data/pageRoutes';
+import { loadExternalScript } from '../utils/loadExternalScript';
 
-// Declare VANTA for TypeScript, as it's loaded from a script tag.
-declare const VANTA: any;
+const THREE_SRC = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js';
+const VANTA_GLOBE_SRC = 'https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js';
+
+const loadVantaGlobe = async () => {
+    if (typeof window === 'undefined') {
+        return null;
+    }
+
+    await loadExternalScript(THREE_SRC);
+    await loadExternalScript(VANTA_GLOBE_SRC);
+
+    const VANTA = (window as any).VANTA;
+    if (!VANTA?.GLOBE) {
+        throw new Error('VANTA Globe konnte nicht geladen werden.');
+    }
+
+    return VANTA;
+};
 
 const ManufacturerLogo: React.FC<{ name: string; src: string; slug: string; onSelect: (slug: string) => void; className?: string }> = ({ name, src, slug, onSelect, className = '' }) => {
   return (
@@ -148,9 +167,16 @@ const HeroCalculator: React.FC = () => {
                 </div>
             </div>
 
-            <button onClick={openChat} className="w-full mt-8 bg-green-500 text-white font-bold py-4 px-8 rounded-lg text-lg hover:bg-green-600 transition-all duration-300 shadow-lg cta-button-glow transform hover:-translate-y-1">
+            <Link
+                to={pageToPath.kontakt}
+                onClick={(event) => {
+                    event.preventDefault();
+                    openChat();
+                }}
+                className="w-full mt-8 bg-green-500 text-center text-white font-bold py-4 px-8 rounded-lg text-lg hover:bg-green-600 transition-all duration-300 shadow-lg cta-button-glow transform hover:-translate-y-1"
+            >
                 Jetzt Potenzial analysieren
-            </button>
+            </Link>
              <p className="text-xs text-slate-400 italic text-center mt-3">
                 Dies ist eine Schätzung. Eine genaue Analyse berücksichtigt Ihren individuellen Lastgang und Standort.
             </p>
@@ -159,13 +185,13 @@ const HeroCalculator: React.FC = () => {
 };
 
 interface HeroProps {
-  onSelectHersteller: (slug: string) => void;
-  setPage: (page: Page) => void;
+    onSelectHersteller: (slug: string) => void;
+    setPage: (page: Page) => void;
+    theme?: 'day' | 'night';
 }
 
 const Hero: React.FC<HeroProps> = ({ onSelectHersteller, setPage }) => {
-    const vantaRef = useRef(null);
-    const [vantaEffect, setVantaEffect] = useState<any>(null);
+    const vantaRef = useRef<HTMLDivElement | null>(null);
     
     // State for headline animation
     const [headlineIndex, setHeadlineIndex] = useState(0);
@@ -194,25 +220,60 @@ const Hero: React.FC<HeroProps> = ({ onSelectHersteller, setPage }) => {
     const logosSecondRow = allLogos.slice(Math.ceil(allLogos.length / 2));
 
     useEffect(() => {
-        if (!vantaEffect && vantaRef.current) {
-            setVantaEffect(VANTA.GLOBE({
-                el: vantaRef.current,
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: 200.00,
-                minWidth: 200.00,
-                scale: 1.00,
-                scaleMobile: 1.00,
-                color: 0x22c55e, // Equivalent to Tailwind's green-500
-                backgroundColor: 0x0f172a, // Equivalent to Tailwind's slate-900
-                size: 1.20
-            }));
+        if (!vantaRef.current) {
+            return;
         }
+
+        let effect: any = null;
+        let cancelled = false;
+        const element = vantaRef.current;
+
+        const initVanta = async () => {
+            try {
+                const VANTA = await loadVantaGlobe();
+                if (!VANTA || cancelled || effect || !element) {
+                    return;
+                }
+                effect = VANTA.GLOBE({
+                    el: element,
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.0,
+                    minWidth: 200.0,
+                    scale: 1.0,
+                    scaleMobile: 1.0,
+                    color: 0x22c55e,
+                    backgroundColor: 0x0f172a,
+                    size: 1.2,
+                });
+            } catch (error) {
+                console.error('VANTA Globe konnte nicht initialisiert werden', error);
+            }
+        };
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                const isVisible = entries.some((entry) => entry.isIntersecting);
+                if (isVisible) {
+                    initVanta();
+                    observer.disconnect();
+                }
+            },
+            { rootMargin: '200px 0px', threshold: 0.1 }
+        );
+
+        observer.observe(element);
+
         return () => {
-            if (vantaEffect) vantaEffect.destroy();
-        }
-    }, [vantaEffect]);
+            cancelled = true;
+            observer.disconnect();
+            if (effect) {
+                effect.destroy();
+                effect = null;
+            }
+        };
+    }, []);
 
   return (
     <section ref={vantaRef} className="relative bg-slate-900 min-h-screen flex flex-col text-white overflow-hidden">
@@ -222,9 +283,12 @@ const Hero: React.FC<HeroProps> = ({ onSelectHersteller, setPage }) => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div className="text-center lg:text-left">
                     <div className="mb-6 opacity-0" style={{ animation: 'slide-up-fade-in 0.8s ease-out 0.1s forwards' }}>
-                        <a 
-                            onClick={(e) => { e.preventDefault(); setPage('agri-pv'); }}
-                            href="#"
+                        <Link
+                            to={pageToPath['agri-pv']}
+                            onClick={(event) => {
+                                event.preventDefault();
+                                setPage('agri-pv');
+                            }}
                             className="inline-block bg-white/10 border border-white/30 rounded-full px-4 py-2 text-sm text-white transition-all duration-300 hover:bg-white/20 transform hover:-translate-y-0.5 group"
                         >
                             <div className="flex items-center gap-2">
@@ -235,10 +299,10 @@ const Hero: React.FC<HeroProps> = ({ onSelectHersteller, setPage }) => {
                                 <span className="font-semibold text-green-300">Neu: Agri-PV Förderung 2025</span>
                                 <span className="text-slate-300">| Bis zu 1 Mio. € Zuschuss</span>
                             </div>
-                        </a>
+                        </Link>
                     </div>
                     
-                    <h1 className="text-4xl md:text-6xl font-bold leading-tight animate-hero-heading mb-4 [text-shadow:_0_2px_4px_rgb(0_0_0_/_40%)]">
+                    <h1 className="text-4xl md:text-6xl font-bold leading-tight animate-hero-heading mb-4 [text-shadow:_0_2px_4px_rgb(0_0_0_/_40%)] speakable-hero-headline hero-headline">
                         Sichern Sie die Zukunft
                         <br />
                         <span className="text-green-400 animated-headline-container">
@@ -260,7 +324,7 @@ const Hero: React.FC<HeroProps> = ({ onSelectHersteller, setPage }) => {
                         </span>
                     </h1>
 
-                    <p className="text-xl text-slate-200 mt-4 max-w-xl animate-hero-p mx-auto lg:mx-0">
+                    <p className="text-xl text-slate-200 mt-4 max-w-xl animate-hero-p mx-auto lg:mx-0 speakable-hero-pitch hero-pitch">
                         Wir helfen Familienbetrieben, ihre ungenutzten Flächen in eine sichere Zukunft zu verwandeln. Schaffen Sie eine nachhaltige Einnahmequelle, die Generationen überdauert und Ihren Hof für die Zukunft rüstet.
                     </p>
                     

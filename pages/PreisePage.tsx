@@ -85,13 +85,13 @@ const PreiseHero: React.FC<{ onCtaClick: (anchor?: string) => void }> = ({ onCta
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Left Column: Text Content */}
                     <div className="text-center lg:text-left">
-                        <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tighter animate-slide-in-up" style={{ animationDelay: '0.2s' }}>
+                        <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tighter animate-slide-in-up pillar-intro" style={{ animationDelay: '0.2s' }}>
                             Transparenz, die sich auszahlt.
                         </h1>
-                        <h2 className="text-5xl md:text-6xl font-extrabold text-green-600 tracking-tighter mt-2 animate-slide-in-up" style={{ animationDelay: '0.4s' }}>
+                        <h2 className="text-5xl md:text-6xl font-extrabold text-green-600 tracking-tighter mt-2 animate-slide-in-up pillar-benefits" style={{ animationDelay: '0.4s' }}>
                             Festpreise, die überzeugen.
                         </h2>
-                        <p className="mt-6 text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 animate-slide-in-up" style={{ animationDelay: '0.6s' }}>
+                        <p className="mt-6 text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 animate-slide-in-up pillar-keyfacts" style={{ animationDelay: '0.6s' }}>
                            Entdecken Sie unsere schlüsselfertigen Solarpakete. Beste Technologie, erstklassiger Service – garantiert ohne versteckte Kosten.
                         </p>
                         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 animate-slide-in-up" style={{ animationDelay: '0.8s' }}>

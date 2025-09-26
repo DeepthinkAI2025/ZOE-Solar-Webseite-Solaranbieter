@@ -3,11 +3,6 @@ import { articles, Article, ContentBlock } from '../data/articles';
 import { glossarData } from '../data/glossarData';
 import GlossarLink from '../components/GlossarLink';
 
-
-// Declare external libraries for TypeScript
-declare var jsPDF: any;
-declare var html2canvas: any;
-
 interface ArticleDetailPageProps {
     article: Article;
     onBack: () => void;

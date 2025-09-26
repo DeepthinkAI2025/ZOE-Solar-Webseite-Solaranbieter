@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Page } from '../types';
 import AnimatedSection from '../components/AnimatedSection';
 import ServiceWizard from '../components/ServiceWizard';
+import { pageToPath } from '../data/pageRoutes';
 
 interface PhotovoltaikPageProps {
   setPage: (page: Page, options?: { anchor?: string }) => void;
@@ -29,16 +31,23 @@ const PhotovoltaikHero: React.FC<{ setPage: (page: Page) => void, onCtaClick: ()
                     {/* Left Column: Text Content */}
                     <div className="text-center lg:text-left">
                          <p className="font-bold text-green-600 uppercase tracking-wider page-hero-animate-item page-hero-breadcrumb">Photovoltaik</p>
-                         <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tighter mt-4 page-hero-animate-item page-hero-title">
+                         <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tighter mt-4 page-hero-animate-item page-hero-title pillar-intro">
                              Ganzheitliche Solarlösungen.
                          </h1>
-                         <p className="mt-6 text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 page-hero-animate-item page-hero-subtitle">
+                         <p className="mt-6 text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 page-hero-animate-item page-hero-subtitle pillar-keyfacts">
                             Wir sind Ihr strategischer Partner für die solare Energiewende und begleiten Sie von der ersten Analyse bis zur langfristigen Betriebsführung Ihrer Anlage.
                          </p>
                          <div className="mt-8 page-hero-animate-item page-hero-cta">
-                             <button onClick={onCtaClick} className="bg-green-600 text-white font-bold py-4 px-10 rounded-lg text-lg hover:bg-green-700 transition-all duration-300 shadow-xl cta-button-glow transform hover:-translate-y-1">
+                             <Link
+                                 to={pageToPath.kontakt}
+                                 onClick={(event) => {
+                                     event.preventDefault();
+                                     onCtaClick();
+                                 }}
+                                 className="inline-flex justify-center bg-green-600 text-white font-bold py-4 px-10 rounded-lg text-lg hover:bg-green-700 transition-all duration-300 shadow-xl cta-button-glow transform hover:-translate-y-1"
+                             >
                                  Jetzt Beratung starten
-                             </button>
+                             </Link>
                          </div>
                     </div>
                     {/* Right Column: Service Grid */}
@@ -46,7 +55,15 @@ const PhotovoltaikHero: React.FC<{ setPage: (page: Page) => void, onCtaClick: ()
                         <h3 className="text-xl font-bold text-slate-800 mb-6 page-hero-animate-item" style={{ animationDelay: '0.4s' }}>Wählen Sie Ihren Leistungsbereich</h3>
                          <div className="service-grid">
                             {serviceCards.map((card, index) => (
-                                <div key={card.id} className={`service-card card-${index + 1}`} onClick={() => setPage(card.page)}>
+                                <Link
+                                    key={card.id}
+                                    to={pageToPath[card.page]}
+                                    onClick={(event) => {
+                                        event.preventDefault();
+                                        setPage(card.page);
+                                    }}
+                                    className={`service-card card-${index + 1}`}
+                                >
                                     <div className="service-card-arrow">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                                     </div>
@@ -54,7 +71,7 @@ const PhotovoltaikHero: React.FC<{ setPage: (page: Page) => void, onCtaClick: ()
                                         <ServiceIcon name={card.icon} />
                                     </div>
                                     <h4>{card.title}</h4>
-                                </div>
+                                </Link>
                             ))}
                          </div>
                     </div>
@@ -79,7 +96,7 @@ const PhotovoltaikPage: React.FC<PhotovoltaikPageProps> = ({ setPage }) => {
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="text-center mb-16 max-w-4xl mx-auto">
                             <p className="font-bold text-green-600 uppercase tracking-wider">Lösungsfinder</p>
-                            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mt-2">Finden Sie den richtigen Service.</h2>
+                            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mt-2 pillar-benefits">Finden Sie den richtigen Service.</h2>
                             <p className="text-lg text-slate-600 mt-4">
                                 Unsicher, welche Dienstleistung Sie benötigen? Beschreiben Sie Ihr Anliegen in einfachen Worten oder wählen Sie direkt einen Bereich, um Ihre Anfrage zu präzisieren.
                             </p>
