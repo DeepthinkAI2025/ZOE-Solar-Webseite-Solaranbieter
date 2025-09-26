@@ -15,7 +15,7 @@
     "enhanced-seo-monitor": "node scripts/enhanced-seo-monitoring.cjs",
     "content-optimization": "node scripts/content-optimization.cjs",
     "seo-workflow": "node scripts/seo-workflow.cjs",
-  "seo-geo-audit": "tsx scripts/seo-geo-aeo-audit.ts"
+    "seo-geo-audit": "tsx scripts/seo-geo-aeo-audit.ts"
   },
   "dependencies": {
     "@fontsource/poppins": "^5.0.8",
