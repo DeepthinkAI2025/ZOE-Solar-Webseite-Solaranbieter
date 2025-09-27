@@ -24,7 +24,7 @@ jobs:
           mkdir -p logs
 
       - name: Build product-sync container
-        run: docker build -t product-sync-runner -f Dockerfile .
+        run: docker build -t product-sync-runner -f Dockerfile.firecrawl .
 
       - name: Run Firecrawl product sync
         env:
