@@ -2,6 +2,8 @@ import fetch from 'node-fetch';
 import { buildProduct, normalizeUrl, sanitizeText } from './providers/providerUtils.js';
 
 const DEFAULT_ENDPOINT = process.env.FIRECRAWL_MCP_ENDPOINT || process.env.FIRECRAWL_ENDPOINT || 'http://localhost:3000/v1/scrape';
+
+console.log('Firecrawl Endpoint:', DEFAULT_ENDPOINT);
 const DEFAULT_TIMEOUT = Number(process.env.FIRECRAWL_TIMEOUT_MS || 45000);
 
 function arrayify(value) {
