@@ -2290,6 +2290,561 @@ export const fundingPrograms: FundingProgram[] = [
       keywords: ["Frankfurt Klimabonus", "BIPV Förderung", "Innovative Photovoltaik"],
     },
     lastUpdated: "November 2025",
+  },
+  {
+    slug: "bafa-energie-klimaschutz-wirtschaft-ekw",
+    title: "BAFA: Energie- und Klimaschutz in der Wirtschaft (EKW)",
+    shortTitle: "BAFA EKW",
+    provider: "Bundesamt für Wirtschaft und Ausfuhrkontrolle (BAFA)",
+    level: "bund",
+    isActive: true,
+    summary: "Spezialprogramm für energieeffiziente und klimaschonende Produktionsprozesse mit Fokus auf industrielle Anwendungen erneuerbarer Energien.",
+    tagline: "Förderung klimaschonender Produktionsprozesse",
+    logo: "https://www.bafa.de/SharedDocs/Bilder/DE/Energie/bafa_logo.svg",
+    fundingTypes: ["Zuschuss"],
+    maxFunding: "Bis zu 200 Mio. € pro Einzelvorhaben",
+    fundingRate: "Bis zu 65% bei KMU, 55% bei mittelständischen Unternehmen",
+    targetGroups: ["Industrie", "Produzierendes Gewerbe", "Energieintensive Branchen"],
+    eligibleProjects: [
+      "Solarthermie für Industrieprozesse",
+      "Photovoltaik-Direktintegration in Produktionsanlagen",
+      "Hybride Solar-Fossil-Systeme als Übergangstechnologie",
+      "Prozesswärme aus concentrating solar power (CSP)",
+      "Solar-Cooling für industrielle Kälteerzeugung",
+      "Innovative Power-to-Heat Systeme mit PV-Kopplung"
+    ],
+    eligibleCosts: [
+      "Anlagen zur solaren Prozesswärmeerzeugung",
+      "Mess-, Steuer- und Regelungstechnik für Solarintegration",
+      "Wärmespeicher für industrielle Anwendungen",
+      "Umrüstungskosten bestehender Produktionsanlagen",
+      "Engineering und Inbetriebnahme"
+    ],
+    nonEligibleCosts: [
+      "Reine Gebäudeheizung ohne Prozessbezug",
+      "Konventionelle PV ohne Prozessintegration",
+      "Maßnahmen nach gesetzlicher Verpflichtung"
+    ],
+    requirements: [
+      "Mindestinvestition 10.000 € für Einzelmaßnahmen",
+      "Prozesstemperaturen bis 500°C (Solarthermie)",
+      "Nachweis der Energieeinsparung von mindestens 30%",
+      "Fachplanung durch qualifizierten Energieberater",
+      "Monitoring der Energieflüsse über 3 Jahre"
+    ],
+    applicationSteps: [
+      "Energieaudit nach DIN EN 16247 oder gleichwertig",
+      "Fachplanung mit detaillierter Prozessanalyse",
+      "BAFA-Antrag vor Vorhabenbeginn",
+      "Bewilligung und detaillierte Ausführungsplanung",
+      "Umsetzung mit begleitendem Monitoring",
+      "Verwendungsnachweis mit Energiefluss-Dokumentation"
+    ],
+    documentsRequired: [
+      "Detaillierte Prozessanalyse mit Temperaturniveaus",
+      "Wirtschaftlichkeitsberechnung über Anlagenlebensdauer",
+      "Angebote spezialisierter Anlagenbauer",
+      "Nachweis der Planungsqualifikation",
+      "Monitoring-Konzept für Energieeffizienz-Nachweis"
+    ],
+    processingTime: "12-16 Wochen aufgrund komplexer Technikprüfung",
+    deadlines: "Laufende Antragstellung, Budget wird jährlich evaluiert",
+    combinationTips: [
+      "Mit BAFA BEW für Nebenaggregate kombinierbar",
+      "KfW-Kredite für Restfinanzierung möglich",
+      "Landesprogramme für zusätzliche Innovationsboni",
+      "EU Innovation Fund für besonders innovative Systeme"
+    ],
+    supportServices: [
+      "Specialized Process Heat Engineering",
+      "Solar-Thermal System Design für Industrie",
+      "Economic Optimization und Lifecycle Assessment",
+      "Monitoring Implementation und Data Analytics"
+    ],
+    highlights: [
+      {
+        title: "Hohe Prozesstemperaturen",
+        description: "Förderung auch für konzentrierende Solarsysteme bis 500°C."
+      },
+      {
+        title: "Industrie 4.0 Integration",
+        description: "Bonus für digitale Prozessintegration und IoT-Monitoring."
+      },
+      {
+        title: "Sektorspezifisch",
+        description: "Spezielle Förderkriterien für verschiedene Industriebranchen."
+      }
+    ],
+    faqs: [
+      {
+        question: "Sind auch niedrige Prozesstemperaturen unter 100°C förderfähig?",
+        answer: "Ja, besonders interessant für Lebensmittel-, Textil- und Chemieindustrie."
+      },
+      {
+        question: "Können bestehende Anlagen nachgerüstet werden?",
+        answer: "Ja, Retrofit-Lösungen sind besonders förderungswürdig, da sie bestehende Infrastruktur nutzen."
+      },
+      {
+        question: "Wie wird die Prozessintegration nachgewiesen?",
+        answer: "Durch kontinuierliches Monitoring der Energieflüsse und Prozessparameter über 3 Jahre."
+      }
+    ],
+    contact: {
+      phone: "+49 6196 908-1001",
+      email: "ekw@bafa.bund.de",
+      url: "https://www.bafa.de/ekw",
+    },
+    seo: {
+      title: "BAFA EKW - Förderung Solarthermie & PV Industrie | Bis 65% Zuschuss",
+      description: "BAFA Förderung für solare Prozesswärme und klimaschonende Industrieanlagen. Zuschüsse bis 200 Mio. €.",
+      keywords: ["BAFA EKW", "Solarthermie Industrie", "Prozesswärme Solar", "Industrielle PV"],
+    },
+    lastUpdated: "November 2025",
+  },
+  {
+    slug: "rheinland-pfalz-solar-offensive",
+    title: "Rheinland-Pfalz: Solar-Offensive für Kommunen und Gewerbe",
+    shortTitle: "RLP Solar-Offensive",
+    provider: "Investitions- und Strukturbank Rheinland-Pfalz (ISB)",
+    level: "land",
+    region: "Rheinland-Pfalz",
+    isActive: true,
+    summary: "Neues Landesprogramm zur beschleunigten Solarisierung von Gewerbe- und Industrieflächen mit besonderen Anreizen für innovative Konzepte.",
+    tagline: "Solaroffensive für das Wirtschaftsland RLP",
+    logo: "https://isb.rlp.de/fileadmin/templates/img/logos/isb-logo.svg",
+    fundingTypes: ["Zuschuss", "Darlehen"],
+    maxFunding: "Bis zu 5 Mio. € pro Projekt",
+    fundingRate: "Bis zu 45% der förderfähigen Kosten",
+    targetGroups: ["KMU", "Kommunen", "Gewerbegebiete", "Industrieunternehmen", "Logistikzentren"],
+    eligibleProjects: [
+      "Gewerbepark-Solaranlagen mit Sharing-Konzepten",
+      "Logistikzentrum-PV mit E-Lkw-Ladeinfrastruktur",
+      "Industrielle Großdachanlagen ab 500 kWp",
+      "Kommunale Solarprojekte auf öffentlichen Gebäuden",
+      "Agri-PV auf landwirtschaftlichen Flächen",
+      "Floating-PV auf Baggerseen und Industriegewässern"
+    ],
+    eligibleCosts: [
+      "PV-Module und Wechselrichter-Technologie",
+      "Unterkonstruktionen und spezielle Montagesysteme",
+      "Elektrische Installation und Netzanschluss",
+      "Energiemanagementsysteme und Smart-Grid-Integration",
+      "Planungskosten bis 12% der Investitionssumme"
+    ],
+    nonEligibleCosts: [
+      "Reine Wohngebäude-PV ohne gewerblichen Bezug",
+      "Anlagen außerhalb von Rheinland-Pfalz",
+      "Projekte ohne Innovations- oder Vorbildcharakter"
+    ],
+    requirements: [
+      "Standort in Rheinland-Pfalz",
+      "Mindestanlagengröße 30 kWp",
+      "Mindestens 60% Eigenverbrauch oder lokale Direktvermarktung",
+      "Innovative Technologie oder Geschäftsmodell",
+      "Schaffung oder Sicherung von Arbeitsplätzen in RLP"
+    ],
+    applicationSteps: [
+      "Vorabstimmung mit ISB über Projekteignung",
+      "Detaillierte Projektplanung mit Wirtschaftlichkeitsanalyse",
+      "Einreichung des Förderantrags mit vollständigen Unterlagen",
+      "Prüfung durch ISB und externe Technikgutachter",
+      "Bewilligung und Projektdurchführung",
+      "Monitoring und Nachweisführung über 5 Jahre"
+    ],
+    documentsRequired: [
+      "Machbarkeitsstudie mit Ertragsprognose",
+      "Detaillierte Kostenaufstellung aller Gewerke",
+      "Nachweis der Flächenverfügbarkeit",
+      "Innovations- und Geschäftsmodellbeschreibung",
+      "Arbeitsplatzeffekte und regionale Wertschöpfung"
+    ],
+    processingTime: "10-14 Wochen",
+    deadlines: "Anträge bis 31. März und 30. September",
+    combinationTips: [
+      "Mit KfW-Programmen für Großanlagen kombinierbar",
+      "EU-Fördermittel für grenzüberschreitende Projekte",
+      "Kommunale Zuschüsse für öffentliche Liegenschaften",
+      "Contracting-Modelle zur Eigenkapitalschonung"
+    ],
+    supportServices: [
+      "Innovations- und Technologieberatung",
+      "Geschäftsmodellentwicklung für Sharing-Konzepte",
+      "Rechtliche Strukturierung komplexer Projekte",
+      "Monitoring und Performance-Optimierung"
+    ],
+    highlights: [
+      {
+        title: "Innovations-Bonus",
+        description: "Zusätzliche 10% Förderung für besonders innovative Projekte."
+      },
+      {
+        title: "Wirtschaftsförderung",
+        description: "Integration in die RLP-Wirtschaftsförderung mit zusätzlichen Vorteilen."
+      },
+      {
+        title: "Regionale Wertschöpfung",
+        description: "Bevorzugung von Projekten mit regionalen Partnern und Arbeitsplätzen."
+      }
+    ],
+    faqs: [
+      {
+        question: "Welche Anlagengrößen sind besonders förderungswürdig?",
+        answer: "Besonders attraktiv sind Anlagen zwischen 100 kWp und 2 MWp mit innovativen Konzepten."
+      },
+      {
+        question: "Sind auch Contracting-Modelle förderfähig?",
+        answer: "Ja, Contracting ist ausdrücklich erwünscht, um Eigenkapital für andere Investitionen zu schonen."
+      },
+      {
+        question: "Wie wird der Innovationscharakter bewertet?",
+        answer: "Durch unabhängige Technologie-Experten anhand definierter Bewertungskriterien."
+      }
+    ],
+    contact: {
+      phone: "+49 6131 6172-0",
+      email: "solar-offensive@isb.rlp.de",
+      url: "https://isb.rlp.de/solar-offensive",
+    },
+    seo: {
+      title: "Rheinland-Pfalz Solar-Offensive - Förderung für Gewerbe & Kommunen",
+      description: "ISB RLP Solar-Offensive: Bis zu 45% Zuschuss für innovative Solarenergie-Projekte.",
+      keywords: ["RLP Solar-Offensive", "ISB Förderung", "Gewerbe-PV Rheinland-Pfalz"],
+    },
+    lastUpdated: "November 2025",
+  },
+  {
+    slug: "niedersachsen-klimaschutz-energie-programm",
+    title: "Niedersachsen: Klimaschutz- und Energieprogramm",
+    shortTitle: "Niedersachsen KEP",
+    provider: "NBank - Investitions- und Förderbank Niedersachsen",
+    level: "land",
+    region: "Niedersachsen",
+    isActive: true,
+    summary: "Umfassendes Landesprogramm für Klimaschutz und erneuerbare Energien mit Schwerpunkt auf Windkraft-Solar-Hybridanlagen und Agri-PV.",
+    tagline: "Energie-Land Niedersachsen - Förderung für alle EE",
+    logo: "https://www.nbank.de/fileadmin/templates/img/logo.svg",
+    fundingTypes: ["Zuschuss", "Bürgschaft"],
+    maxFunding: "Bis zu 2 Mio. € Zuschuss pro Projekt",
+    fundingRate: "Bis zu 50% bei innovativen Technologien",
+    targetGroups: ["Landwirtschaft", "Kommunen", "Mittelstand", "Energiegenossenschaften"],
+    eligibleProjects: [
+      "Agri-PV Demonstrationsprojekte",
+      "Wind-Solar-Hybridanlagen",
+      "Floating-PV auf Baggerseen",
+      "Sektorenkopplung mit Power-to-Gas",
+      "Maritime Solarenergie (Häfen, Offshore-Support)",
+      "Moor-PV auf wiedervernässten Flächen"
+    ],
+    eligibleCosts: [
+      "Innovative PV-Systeme und Spezialmontagen",
+      "Hybridisierungs-Komponenten (Wind+Solar)",
+      "Wasserschutz und Umweltmonitoring",
+      "Forschungskosten für Pilotprojekte",
+      "Öffentlichkeitsarbeit und Akzeptanzförderung"
+    ],
+    nonEligibleCosts: [
+      "Standard-PV ohne Innovationscharakter",
+      "Projekte ohne Niedersachsen-Bezug",
+      "Reine Gewinnmaximierung ohne Klimaschutzeffekt"
+    ],
+    requirements: [
+      "Innovationscharakter oder Pilot-/Demonstrationscharakter",
+      "Messbare CO₂-Einsparung von mindestens 40%",
+      "Akzeptanz in der lokalen Bevölkerung",
+      "Umweltverträglichkeit und Nachhaltigkeitsnachweis",
+      "Wissenschaftliche Begleitung bei Pilotprojekten"
+    ],
+    applicationSteps: [
+      "Innovationsberatung durch NBank-Experten",
+      "Machbarkeitsstudie mit Umweltbewertung",
+      "Antragstellung mit wissenschaftlicher Begleitung",
+      "Peer-Review durch Technologie-Experten",
+      "Bewilligung und begleitete Projektdurchführung",
+      "Evaluierung und Wissenstransfer"
+    ],
+    documentsRequired: [
+      "Innovations- und Technologiebeschreibung",
+      "Umweltverträglichkeits-Voruntersuchung",
+      "Wirtschaftlichkeitsrechnung mit Sensitivitätsanalyse",
+      "Wissenschaftliches Begleitkonzept",
+      "Kommunikations- und Akzeptanzstrategie"
+    ],
+    processingTime: "12-16 Wochen bei komplexen Innovationsprojekten",
+    deadlines: "Projektskizzen bis 15. Februar und 15. August",
+    combinationTips: [
+      "EU LIFE Programme für große Demonstrationsprojekte",
+      "BMBF-Förderung für Forschungsaspekte",
+      "Bundesprogramme für Standardkomponenten",
+      "Landwirtschaftliche Förderung für Agri-PV-Aspekte"
+    ],
+    supportServices: [
+      "Technologie-Scouting und Innovation Assessment",
+      "Stakeholder-Management und Bürgerbeteiligung",
+      "Wissenschaftliche Projektbegleitung",
+      "Wissenstransfer und Best-Practice-Dokumentation"
+    ],
+    highlights: [
+      {
+        title: "Agri-PV Pionier",
+        description: "Niedersachsen positioniert sich als Vorreiter für landwirtschaftliche PV."
+      },
+      {
+        title: "Maritime Kompetenz",
+        description: "Förderung maritimer Solaranwendungen durch Küstenlage."
+      },
+      {
+        title: "Wissenschaftstransfer",
+        description: "Enge Kooperation mit Hochschulen und Forschungseinrichtungen."
+      }
+    ],
+    faqs: [
+      {
+        question: "Was macht ein Projekt besonders innovativ?",
+        answer: "Neue Technologien, Geschäftsmodelle oder Anwendungsfelder, die Pilotcharakter haben."
+      },
+      {
+        question: "Sind auch kleine Demonstrationsprojekte förderfähig?",
+        answer: "Ja, auch kleinere Projekte mit hohem Lerneffekt und Übertragungspotenzial."
+      },
+      {
+        question: "Wie wird die wissenschaftliche Begleitung organisiert?",
+        answer: "Durch Kooperationen mit niedersächsischen Hochschulen und Forschungseinrichtungen."
+      }
+    ],
+    contact: {
+      phone: "+49 511 30031-0",
+      email: "klimaschutz@nbank.de",
+      url: "https://www.nbank.de/klimaschutz-energie",
+    },
+    seo: {
+      title: "Niedersachsen Klimaschutz-Energieprogramm - Innovation Förderung",
+      description: "NBank KEP: Förderung innovativer Solar- und Energieprojekte in Niedersachsen bis 50%.",
+      keywords: ["Niedersachsen KEP", "NBank Förderung", "Agri-PV", "Innovation Solar"],
+    },
+    lastUpdated: "November 2025",
+  },
+  {
+    slug: "stuttgart-solardachoffensive",
+    title: "Stuttgart: Solardach-Offensive mit Gründach-Kombination",
+    shortTitle: "Stuttgart Solardach",
+    provider: "Landeshauptstadt Stuttgart",
+    level: "kommunal",
+    region: "Stuttgart",
+    isActive: true,
+    summary: "Innovatives Städteprogramm zur kombinierten Förderung von Solarenergie und Gründächern für verbesserte Stadtklima und Energieeffizienz.",
+    tagline: "Grüne Dächer, saubere Energie - Stuttgart führt",
+    logo: "https://www.stuttgart.de/media/wappen/stuttgart-logo.svg",
+    fundingTypes: ["Zuschuss"],
+    maxFunding: "Bis zu 75.000 € pro Objekt",
+    fundingRate: "Bis zu 80% bei Gründach-Solar-Kombinationen",
+    targetGroups: ["Hauseigentümer", "Wohnungsunternehmen", "Gewerbe", "Bildungseinrichtungen"],
+    eligibleProjects: [
+      "PV-Gründach-Kombinationen (bifaciale Module)",
+      "Solarthermie mit extensiver Dachbegrünung",
+      "Urban Farming mit Agri-PV-Elementen",
+      "Regenwasser-PV-Speicher-Systeme",
+      "Fassaden-PV mit vertikalen Gärten",
+      "Bildungseinrichtungen mit Demonstrationscharakter"
+    ],
+    eligibleCosts: [
+      "Aufbau-Systeme für Gründach-PV-Kombination",
+      "Spezielle bifaciale Module für Gründächer",
+      "Substrat und Pflanzung für Gründach",
+      "Bewässerungssysteme mit PV-Pumpen",
+      "Monitoring für Gebäude- und Umweltdaten"
+    ],
+    nonEligibleCosts: [
+      "Reine Aufdach-PV ohne Begrünung",
+      "Projekte außerhalb Stuttgarts",
+      "Konventionelle Dachsanierung ohne EE-Bezug"
+    ],
+    requirements: [
+      "Mindestens 30% Dachbegrünung",
+      "Nachweis der Statik für Mehrbelastung",
+      "5-jährige Pflegeverpflichtung für Gründach",
+      "Öffentliche Vorbildfunktion oder Bildungscharakter",
+      "Integration in städtische Klimaschutzstrategie"
+    ],
+    applicationSteps: [
+      "Erstberatung durch städtisches Umweltamt",
+      "Statikprüfung und Dacheignungsbewertung",
+      "Kombinierte Planung Solar + Gründach",
+      "Antragstellung mit integrierten Konzepten",
+      "Bewilligung und koordinierte Umsetzung",
+      "5-jähriges Monitoring Klima + Energie"
+    ],
+    documentsRequired: [
+      "Integriertes Dach-Nutzungskonzept",
+      "Statiknachweis für Zusatzlasten",
+      "Pflegeplan für Dachbegrünung",
+      "Umwelt- und Klimawirkungsanalyse",
+      "Kooperationsvereinbarung bei Bildungsprojekten"
+    ],
+    processingTime: "8-12 Wochen",
+    deadlines: "Anträge bis 15. April und 15. Oktober",
+    combinationTips: [
+      "Mit Baden-Württemberg L-Bank Programmen kombinierbar",
+      "KfW Energieeffizient Sanieren für Gebäudehülle",
+      "EU LIFE für innovative Umwelt-Demonstrationsprojekte",
+      "Forschungsförderung für Pilot- und Demonstrationsvorhaben"
+    ],
+    supportServices: [
+      "Integrierte Planung Solar + Gründach",
+      "Statikberatung für Kombinationslösungen",
+      "Pflanzplanung und Biodiversitätsoptimierung",
+      "Langzeit-Monitoring und Performance-Analyse"
+    ],
+    highlights: [
+      {
+        title: "Doppelnutzen",
+        description: "Energiegewinnung und Klimaverbesserung in einem System."
+      },
+      {
+        title: "Urbane Innovation",
+        description: "Pilotprojekte für nachhaltige Stadtentwicklung."
+      },
+      {
+        title: "Bildungsaspekt",
+        description: "Schulen und Unis als lebende Demonstrationsobjekte."
+      }
+    ],
+    faqs: [
+      {
+        question: "Funktionieren PV-Module auf Gründächern effizient?",
+        answer: "Ja, durch Kühlungseffekt der Pflanzen sogar 3-7% höhere Erträge möglich."
+      },
+      {
+        question: "Welche Pflanzen eignen sich am besten?",
+        answer: "Extensive Begrünung mit Sedum, Gräsern und standortangepassten Wildstauden."
+      },
+      {
+        question: "Wie hoch sind die zusätzlichen Pflegekosten?",
+        answer: "Ca. 2-4 €/m²/Jahr für extensive Begrünung, wird teilweise bezuschusst."
+      }
+    ],
+    contact: {
+      phone: "+49 711 216-0",
+      email: "solardach@stuttgart.de",
+      url: "https://www.stuttgart.de/solardach-offensive",
+    },
+    seo: {
+      title: "Stuttgart Solardach-Offensive - Gründach PV Kombination Förderung",
+      description: "Stuttgart fördert innovative Kombinationen aus Solarenergie und Gründächern bis 80%.",
+      keywords: ["Stuttgart Solardach", "Gründach PV", "Urban Solar", "Dachbegrünung Solar"],
+    },
+    lastUpdated: "November 2025",
+  },
+  {
+    slug: "bremen-maritime-solarenergie",
+    title: "Bremen: Maritime Solarenergie und Hafenwirtschaft",
+    shortTitle: "Bremen Maritime Solar",
+    provider: "Bremer Aufbau-Bank (BAB) / Senator für Wirtschaft",
+    level: "kommunal",
+    region: "Bremen",
+    isActive: true,
+    summary: "Spezialprogramm für maritime Solaranwendungen, Hafenlogistik und schwimmende PV-Anlagen mit Fokus auf die maritime Wirtschaft.",
+    tagline: "Solare Hafenstadt - Maritime Energiewende",
+    logo: "https://www.bremen.de/media/wappen/bremen-logo.svg",
+    fundingTypes: ["Zuschuss", "Darlehen"],
+    maxFunding: "Bis zu 10 Mio. € für Großprojekte",
+    fundingRate: "Bis zu 60% für innovative maritime Anwendungen",
+    targetGroups: ["Hafenunternehmen", "Logistikzentren", "Maritime Industrie", "Offshore-Dienstleister"],
+    eligibleProjects: [
+      "Floating-PV auf Hafenbecken und Industriegewässern",
+      "Container-Terminal PV mit automatischen Ladesystemen",
+      "Offshore-Service-Vessel Solar-Hybridantriebe",
+      "Hafenkran-Elektrifizierung mit PV-Speicher-Systemen",
+      "Maritime Wasserstofferzeugung mit Solarstrom",
+      "Schwimmende Solar-Plattformen für Nordsee-Anwendungen"
+    ],
+    eligibleCosts: [
+      "Schwimmende PV-Systeme und Verankerung",
+      "Salzwasser-resistente Komponenten",
+      "Automatisierte Reinigungssysteme",
+      "Maritime Sicherheitstechnik und Monitoring",
+      "Wasserstoff-Elektrolyse-Anlagen",
+      "Forschung & Entwicklung für Prototypen"
+    ],
+    nonEligibleCosts: [
+      "Land-basierte Standard-PV ohne maritimen Bezug",
+      "Projekte außerhalb des Bremer Hafengebiets",
+      "Konventionelle Schiffstechnik ohne EE-Integration"
+    ],
+    requirements: [
+      "Standort im Bremer Hafengebiet oder angrenzend",
+      "Maritime Anwendung oder Hafenlogistik-Bezug",
+      "Innovations- oder Demonstrationscharakter",
+      "Arbeitsplätze oder Wertschöpfung in Bremen",
+      "Umweltverträglichkeit in sensiblen Gewässern"
+    ],
+    applicationSteps: [
+      "Machbarkeitsstudie mit maritimen Experten",
+      "Umweltverträglichkeitsprüfung für Gewässer",
+      "Genehmigungsverfahren Wasserstraßen- und Schifffahrtsamt",
+      "Antragstellung mit Demonstrationskonzept",
+      "Bewilligung und Pilot-Implementierung",
+      "Monitoring und Maritime Transferstrategie"
+    ],
+    documentsRequired: [
+      "Maritime Technikbeschreibung",
+      "Umwelt-Impact-Assessment",
+      "Genehmigungen der Wasserstraßenverwaltung",
+      "Sicherheitskonzept für Gewässerschutz",
+      "Wirtschaftlichkeitsanalyse maritime Anwendungen"
+    ],
+    processingTime: "16-20 Wochen (komplexe Genehmigungsverfahren)",
+    deadlines: "Projektskizzen bis 31. Januar und 31. Juli",
+    combinationTips: [
+      "EU Maritime Spatial Planning Förderung",
+      "BMWK Maritime Technologien Programme",
+      "Horizon Europe Ocean Partnerships",
+      "Niedersachsen/Bremen Kooperationsprogramme"
+    ],
+    supportServices: [
+      "Maritime Engineering und Prototypentwicklung",
+      "Genehmigungsmanagement für Gewässernutzung",
+      "Korrosionsschutz und Wartungskonzepte",
+      "Transfer zu anderen Hafenstandorten"
+    ],
+    highlights: [
+      {
+        title: "Einzigartige Nische",
+        description: "Deutschlandweit führend bei schwimmender PV und Hafenenergie."
+      },
+      {
+        title: "Offshore-Kompetenz",
+        description: "Nutzung der Bremer Offshore-Wind-Expertise für Solar."
+      },
+      {
+        title: "Exportpotenzial",
+        description: "Entwicklung von Technologien für internationale Häfen."
+      }
+    ],
+    faqs: [
+      {
+        question: "Welche besonderen Herausforderungen haben schwimmende PV-Anlagen?",
+        answer: "Salzwasser-Korrosion, Wellenbewegung, Wartungszugang und Umweltschutz."
+      },
+      {
+        question: "Können auch kleine Hafenbetriebe teilnehmen?",
+        answer: "Ja, besonders bei innovativen Lösungen oder Kooperationsprojekten."
+      },
+      {
+        question: "Wie wird die Umweltverträglichkeit sichergestellt?",
+        answer: "Durch umfassende Impact-Assessments und kontinuierliches Monitoring."
+      }
+    ],
+    contact: {
+      phone: "+49 421 9600-0",
+      email: "maritime-solar@bremen.de",
+      url: "https://www.bremen.de/maritime-solarenergie",
+    },
+    seo: {
+      title: "Bremen Maritime Solarenergie - Floating PV & Hafenlogistik Förderung",
+      description: "Bremer Förderung für schwimmende PV, Hafenenergie und maritime Solaranwendungen bis 60%.",
+      keywords: ["Bremen Maritime Solar", "Floating PV", "Hafenenergie", "Maritime Photovoltaik"],
+    },
+    lastUpdated: "November 2025",
   }
 ];
 
