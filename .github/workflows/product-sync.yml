@@ -17,32 +17,12 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Build Firecrawl MCP Image
-        run: |
-          docker build -t firecrawl-mcp:latest -f Dockerfile.firecrawl .
-
-      - name: Start Firecrawl MCP Container
-        run: |
-          docker run -d --name firecrawl-mcp \
-            -p 3000:3000 \
-            -e FIRECRAWL_MCP_API_KEY=${{ secrets.FIRECRAWL_MCP_API_KEY }} \
-            firecrawl-mcp:latest
-
       - name: Install dependencies
         run: npm ci --legacy-peer-deps
 
-      - name: Wait for Firecrawl health
-        run: |
-          for i in {1..30}; do
-            if curl -sSf http://localhost:3000/health >/dev/null 2>&1; then
-              echo "firecrawl ready" && break
-            fi
-            sleep 2
-          done
-
       - name: Run product sync
         env:
-          FIRECRAWL_MCP_ENDPOINT: http://localhost:3000/v1/scrape
+          FIRECRAWL_MCP_ENDPOINT: https://api.firecrawl.dev/v1/scrape
           FIRECRAWL_MCP_API_KEY: ${{ secrets.FIRECRAWL_MCP_API_KEY }}
         run: npm run product-sync
 
