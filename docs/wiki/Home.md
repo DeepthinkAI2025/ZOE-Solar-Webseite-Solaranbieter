@@ -27,9 +27,21 @@ Willkommen im zentralen Wissenshub für das ZOE Solar Ökosystem. Diese Seiten b
    ```bash
    git clone https://github.com/DeepthinkAI2025/ZOE-Solar-Webseite-Solaranbieter.wiki.git
    ```
-2. Kopiere die Inhalte aus `docs/wiki` in das Wiki-Repo (z. B. via `rsync`).
-3. Commit & Push: `git add . && git commit -m "Sync wiki" && git push`.
-4. Pflege erfolgt weiterhin im Code-Repo; synce das Wiki nach größeren Änderungen.
+2. Prüfe den Sync zunächst ohne Änderungen:
+   ```bash
+   npm run wiki-sync -- --dry-run
+   ```
+3. Führe den Sync aus (optional mit `--wiki-dir <pfad>` oder `--no-clean`):
+   ```bash
+   npm run wiki-sync
+   ```
+4. Commit & Push im Wiki-Repo:
+   ```bash
+   git add .
+   git commit -m "Sync wiki"
+   git push
+   ```
+5. Pflege erfolgt weiterhin im Code-Repo; synce das Wiki nach größeren Änderungen.
 
 ---
 _Stand: 26.09.2025 – bitte bei inhaltlichen Updates die Versionsnotiz ergänzen._

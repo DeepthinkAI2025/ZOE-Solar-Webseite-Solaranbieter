@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero';
 import { pageHeroData } from '../data/pageContent';
 import { localContentByCity } from '../data/localContent';
 
 interface StandortPageProps {
-  locationKey: keyof typeof localContentByCity;
+  locationKey?: keyof typeof localContentByCity;
   city: string;
   state: string;
   regionCode: string;
@@ -25,11 +25,8 @@ const StandortPage: React.FC<StandortPageProps> = ({
   longitude,
   radiusKm
 }) => {
-  const { city: urlCity } = useParams<{ city: string }>();
-
-  // Fallback für direkte Props-Nutzung
-  const displayCity = urlCity || city;
-  const localContent = localContentByCity[locationKey];
+  const displayCity = city;
+  const localContent = locationKey ? localContentByCity[locationKey] : undefined;
 
   const heroData = {
     title: `Solaranlagen in ${displayCity}`,

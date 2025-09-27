@@ -44,7 +44,25 @@ export default defineConfig(({ mode }) => {
                 return 'components';
               }
               if (id.includes('/pages/')) {
-                return 'pages';
+                if (id.includes('HomePage') || id.includes('PhotovoltaikPage') || id.includes('EMobilitaetPage') || id.includes('ElektroPage') || id.includes('PreisePage') || id.includes('UeberUnsPage') || id.includes('KontaktPage') || id.includes('KarrierePage') || id.includes('TeamPage') || id.includes('WarumZoeSolarPage') || id.includes('PartnerWerdenPage') || id.includes('EmpfehlungspraemiePage') || id.includes('NachhaltigkeitPage') || id.includes('PressePage') || id.includes('ImpressumPage') || id.includes('DatenschutzPage') || id.includes('AGBPage') || id.includes('LoginPage') || id.includes('MitarbeiterLoginPage') || id.includes('DashboardPage')) {
+                  return 'core-pages';
+                }
+                if (id.includes('Service') || id.includes('Wartung') || id.includes('Garantie')) {
+                  return 'service-pages';
+                }
+                if (id.includes('Standort') || id.includes('Eigenheim') || id.includes('AgriPV') || id.includes('Fallstudien') || id.includes('CaseStudy')) {
+                  return 'location-pages';
+                }
+                if (id.includes('Foerdermittel') || id.includes('Funding') || id.includes('Finanzierung')) {
+                  return 'funding-pages';
+                }
+                if (id.includes('Produkte') || id.includes('Hersteller') || id.includes('Anwendungs')) {
+                  return 'product-pages';
+                }
+                if (id.includes('Aktuelles') || id.includes('Article') || id.includes('Wissens') || id.includes('Glossar') || id.includes('Guide') || id.includes('FAQPage') || id.includes('DIY')) {
+                  return 'content-pages';
+                }
+                return 'other-pages';
               }
               if (id.includes('/data/')) {
                 return 'data';

@@ -1,10 +1,12 @@
-import React, { useState, useMemo, useEffect } from 'react';
-import { manufacturers, ProductCategory, allCategories, Product } from '../data/products';
+import React, { useState, useMemo } from 'react';
+import { productCatalog } from '../data/products.generated';
+import { ProductCategory, Product } from '../data/productTypes';
 import ProductDetailModal from '../components/ProductDetailModal';
 import AIRecommender from '../components/AIRecommender';
 import SubHeader from '../components/SubHeader';
 import AnimatedSection from '../components/AnimatedSection';
 import ServiceWizard from '../components/ServiceWizard';
+import ProductsPreview from '../components/ProductsPreview';
 
 interface ProduktePageProps {
     onSelectHersteller: (slug: string) => void;
@@ -154,6 +156,8 @@ const ProdukteHero = () => (
     </section>
 );
 
+const { manufacturers, allCategories } = productCatalog;
+
 const ProduktePage: React.FC<ProduktePageProps> = ({ onSelectHersteller, comparisonList, onToggleCompare, bannerHeight, headerHeight }) => {
     const [selectedCategory, setSelectedCategory] = useState<ProductCategory>('Module');
     const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
@@ -215,6 +219,16 @@ const ProduktePage: React.FC<ProduktePageProps> = ({ onSelectHersteller, compari
             <div style={{ paddingTop: `${bannerHeight + headerHeight}px` }}>
                 <ProdukteHero />
             </div>
+            <ProductsPreview
+                setPage={(page) => {
+                    if (page === 'produkte') {
+                        document.getElementById('product-catalog')?.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                        document.dispatchEvent(new CustomEvent('set-page', { detail: page }));
+                    }
+                }}
+                onSelectHersteller={onSelectHersteller}
+            />
              <SubHeader
                 navItems={navItems}
                 activeItemId={selectedCategory}

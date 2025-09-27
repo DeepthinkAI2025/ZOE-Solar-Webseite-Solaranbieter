@@ -1,14 +1,14 @@
 {
   "gemini": {
-    "apiKey": "",
+    "apiKey": "AIzaSyAriVPDzrPVFvlEa4wtVrmXwR7lMjDjLC4",
     "model": "gemini-1.5-pro",
     "lastUpdated": null
   },
   "googleMaps": {
-    "staticKey": "",
-    "geocodingKey": "",
-    "placesKey": "",
-    "solarApiKey": "",
+    "staticKey": "AIzaSyAriVPDzrPVFvlEa4wtVrmXwR7lMjDjLC4",
+    "geocodingKey": "AIzaSyAriVPDzrPVFvlEa4wtVrmXwR7lMjDjLC4",
+    "placesKey": "AIzaSyAriVPDzrPVFvlEa4wtVrmXwR7lMjDjLC4",
+    "solarApiKey": "AIzaSyAriVPDzrPVFvlEa4wtVrmXwR7lMjDjLC4",
     "lastUpdated": null
   },
   "googleServiceAccount": {
