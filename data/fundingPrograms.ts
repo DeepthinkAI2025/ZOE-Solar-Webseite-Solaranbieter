@@ -1090,6 +1090,1207 @@ export const fundingPrograms: FundingProgram[] = [
     },
     lastUpdated: "September 2025",
   },
+  {
+    slug: "baden-wuerttemberg-photovoltaiknetzwerke",
+    title: "Baden-Württemberg: Photovoltaik-Netzwerke",
+    shortTitle: "BW PV-Netzwerke",
+    provider: "L-Bank Baden-Württemberg",
+    level: "land",
+    region: "Baden-Württemberg",
+    isActive: true,
+    summary: "Fördert den Ausbau von Photovoltaik-Netzwerken und Quartierslösungen in Baden-Württemberg mit zinsgünstigen Darlehen und Zuschüssen.",
+    tagline: "Förderung für vernetzte PV-Lösungen in BW",
+    logo: "https://www.l-bank.de/media/l-bank-logo.svg",
+    fundingTypes: ["Darlehen", "Zuschuss"],
+    maxFunding: "Bis zu 5 Mio. € pro Vorhaben",
+    fundingRate: "Bis zu 40% Zuschuss + zinsgünstiges Darlehen",
+    targetGroups: ["Kommunen", "Stadtwerke", "Energiegenossenschaften", "Wohnungsunternehmen"],
+    eligibleProjects: [
+      "Quartiers-PV mit mindestens 5 Gebäuden",
+      "Genossenschaftliche Solarprojekte",
+      "Mieterstrom-Netzwerke",
+      "Agri-PV Gemeinschaftsanlagen"
+    ],
+    eligibleCosts: [
+      "PV-Anlagen und Speichersysteme",
+      "Smart-Grid Infrastruktur",
+      "Messsysteme und Datenmanagement",
+      "Netzanschlüsse und Kabelinfrastruktur"
+    ],
+    nonEligibleCosts: [
+      "Einzelanlagen ohne Netzwerkcharakter",
+      "Reine Eigenverbrauchsanlagen",
+      "Projekte außerhalb Baden-Württembergs"
+    ],
+    requirements: [
+      "Mindestens 5 vernetzte Gebäude/Anlagen",
+      "Nachweis der CO₂-Einsparung von mind. 40%",
+      "Bürgerbeteiligung oder genossenschaftliche Struktur",
+      "Technisches Gesamtkonzept inkl. Energiemanagement"
+    ],
+    applicationSteps: [
+      "Machbarkeitsstudie und Konzepterstellung",
+      "Antragstellung bei L-Bank mit Projektpartnern",
+      "Bewilligung und Detailplanung",
+      "Umsetzung mit regelmäßigem Monitoring",
+      "Nachweisführung und Evaluierung"
+    ],
+    documentsRequired: [
+      "Netzwerk-Konzept mit Teilnehmerliste",
+      "Energiebilanzen aller beteiligten Gebäude",
+      "Gesellschaftsverträge bei Genossenschaften",
+      "Zustimmungserklärungen aller Netzwerkteilnehmer"
+    ],
+    processingTime: "8-12 Wochen",
+    deadlines: "Anträge bis 31. Oktober 2025",
+    combinationTips: [
+      "Mit KfW 270 kombinierbar für Einzelkomponenten",
+      "BAFA-Förderung für Energieeffizienzmaßnahmen ergänzend",
+      "Kommunale Zuschüsse oft zusätzlich möglich"
+    ],
+    supportServices: [
+      "Netzwerk-Beratung und Teilnehmergewinnung",
+      "Rechtliche Strukturierung von Genossenschaften",
+      "Technische Planung vernetzter Systeme",
+      "Monitoring und Betriebsführung"
+    ],
+    highlights: [
+      {
+        title: "Vernetzter Ansatz",
+        description: "Besonders hohe Förderung für gemeinschaftliche Projekte."
+      },
+      {
+        title: "Smart-Grid Integration",
+        description: "Förderung moderner Energiemanagement-Systeme."
+      }
+    ],
+    faqs: [
+      {
+        question: "Welche Mindestgröße muss das Netzwerk haben?",
+        answer: "Mindestens 5 Gebäude oder Anlagen müssen vernetzt werden."
+      },
+      {
+        question: "Sind auch gewerbliche Netzwerke förderfähig?",
+        answer: "Ja, besonders Gewerbegebiete und Industrieparks sind gut geeignet."
+      }
+    ],
+    contact: {
+      phone: "+49 721 150-0",
+      url: "https://www.l-bank.de/pv-netzwerke",
+    },
+    seo: {
+      title: "Baden-Württemberg PV-Netzwerke Förderung | L-Bank",
+      description: "Förderung für vernetzte Photovoltaik-Lösungen in Baden-Württemberg durch die L-Bank.",
+      keywords: ["BW PV Netzwerk", "L-Bank Solar", "Quartierslösungen Förderung"],
+    },
+    lastUpdated: "November 2025",
+  },
+  {
+    slug: "schleswig-holstein-klimaschutz-investitionen",
+    title: "Schleswig-Holstein: Klimaschutz-Investitionsprogramm",
+    shortTitle: "SH Klimaschutz",
+    provider: "IB.SH - Investitionsbank Schleswig-Holstein",
+    level: "land",
+    region: "Schleswig-Holstein",
+    isActive: true,
+    summary: "Umfassendes Förderprogramm für Klimaschutzinvestitionen mit Schwerpunkt auf erneuerbaren Energien und Energieeffizienz.",
+    tagline: "Klimaschutz-Förderung für Unternehmen in SH",
+    logo: "https://www.ib-sh.de/fileadmin/user_upload/logos/IBSH_Logo.svg",
+    fundingTypes: ["Zuschuss", "Darlehen"],
+    maxFunding: "Bis zu 2 Mio. € Zuschuss",
+    fundingRate: "Bis zu 50% der förderfähigen Kosten",
+    targetGroups: ["KMU", "Handwerk", "Landwirtschaft", "Kommunen"],
+    eligibleProjects: [
+      "PV-Anlagen mit Eigenstromnutzung",
+      "Windkraft-Kleinanlagen",
+      "Biomasse- und Biogasanlagen",
+      "Geothermie und Wärmepumpen",
+      "Energiespeicher aller Art"
+    ],
+    eligibleCosts: [
+      "Anschaffung und Installation erneuerbarer Energieanlagen",
+      "Energieeffiziente Produktionsanlagen",
+      "Mess-, Steuer- und Regelungstechnik",
+      "Beratungskosten für Energiekonzepte"
+    ],
+    nonEligibleCosts: [
+      "Anlagen zur reinen Netzeinspeisung ohne Eigennutzung",
+      "Fossile Brennstoffanlagen",
+      "Bereits begonnene Maßnahmen"
+    ],
+    requirements: [
+      "Unternehmenssitz in Schleswig-Holstein",
+      "Nachweis der CO₂-Einsparung von mindestens 25%",
+      "Mindestinvestition von 25.000 €",
+      "Eigenanteil von mindestens 50%"
+    ],
+    applicationSteps: [
+      "Energieberatung und Konzepterstellung",
+      "Antragstellung mit vollständigen Unterlagen",
+      "Prüfung und Bewilligung durch IB.SH",
+      "Umsetzung des Vorhabens",
+      "Verwendungsnachweis und Auszahlung"
+    ],
+    documentsRequired: [
+      "Energiekonzept mit CO₂-Bilanzierung",
+      "Kostenvoranschläge aller Gewerke",
+      "Nachweis der Finanzierungsfähigkeit",
+      "Genehmigungen und Gutachten"
+    ],
+    processingTime: "6-8 Wochen",
+    deadlines: "Laufende Antragstellung bis Mittelerschöpfung",
+    combinationTips: [
+      "Mit KfW-Programmen kombinierbar",
+      "BAFA-Zuschüsse ergänzend nutzbar",
+      "EU-Fördermittel für größere Projekte"
+    ],
+    supportServices: [
+      "Energieberatung und Wirtschaftlichkeitsanalyse",
+      "Unterstützung bei Genehmigungsverfahren",
+      "Projektmanagement und Monitoring",
+      "Nachhaltigkeitsberichterstattung"
+    ],
+    highlights: [
+      {
+        title: "Hohe Förderquote",
+        description: "Bis zu 50% Zuschuss für innovative Klimaschutzprojekte."
+      },
+      {
+        title: "Umfassender Ansatz",
+        description: "Förderung aller erneuerbaren Energietechnologien."
+      }
+    ],
+    faqs: [
+      {
+        question: "Welche Mindestinvestition ist erforderlich?",
+        answer: "Die Mindestinvestition beträgt 25.000 € für förderfähige Maßnahmen."
+      },
+      {
+        question: "Sind auch Contracting-Modelle förderfähig?",
+        answer: "Ja, bei entsprechender vertraglicher Gestaltung sind auch Contracting-Lösungen möglich."
+      }
+    ],
+    contact: {
+      phone: "+49 431 9905-0",
+      url: "https://www.ib-sh.de/klimaschutz-investitionen",
+    },
+    seo: {
+      title: "Schleswig-Holstein Klimaschutz-Investitionsprogramm | IB.SH",
+      description: "Förderung für Klimaschutzinvestitionen und erneuerbare Energien in Schleswig-Holstein.",
+      keywords: ["SH Klimaschutz", "IB.SH Förderung", "Erneuerbare Energien SH"],
+    },
+    lastUpdated: "November 2025",
+  },
+  {
+    slug: "hessen-energieeffizienz-unternehmen",
+    title: "Hessen: Förderung energieeffizienter Unternehmen",
+    shortTitle: "Hessen Energieeffizienz",
+    provider: "WIBank - Wirtschafts- und Infrastrukturbank Hessen",
+    level: "land",
+    region: "Hessen",
+    isActive: true,
+    summary: "Unterstützt hessische Unternehmen bei Investitionen in erneuerbare Energien und Energieeffizienzmaßnahmen mit zinsgünstigen Darlehen.",
+    tagline: "Energieeffizienz-Förderung für hessische Unternehmen",
+    logo: "https://www.wibank.de/dam/jcr:c2c4c4c4-8f8f-4f8f-8f8f-4f8f8f8f8f8f/wibank-logo.svg",
+    fundingTypes: ["Darlehen", "Bürgschaft"],
+    maxFunding: "Bis zu 10 Mio. € Darlehen",
+    fundingRate: "Zinsverbilligung bis zu 2 Prozentpunkte",
+    targetGroups: ["KMU", "Freiberufler", "Handwerk", "Start-ups"],
+    eligibleProjects: [
+      "Photovoltaikanlagen für Eigenverbrauch",
+      "BHKW und Kraft-Wärme-Kopplung",
+      "Energiespeichersysteme",
+      "Energieeffiziente Produktionsanlagen",
+      "LED-Beleuchtung und Steuerungstechnik"
+    ],
+    eligibleCosts: [
+      "Anschaffung und Errichtung von Anlagen",
+      "Planungs- und Installationskosten",
+      "Mess- und Regelungstechnik",
+      "Nebenkosten bis 15% der Hauptinvestition"
+    ],
+    nonEligibleCosts: [
+      "Grundstückserwerb und Erschließung",
+      "Gebrauchte Anlagen ohne Effizienzgewinn",
+      "Reine Instandhaltungsmaßnahmen"
+    ],
+    requirements: [
+      "Betriebsstätte in Hessen seit mindestens 2 Jahren",
+      "Nachweis der Energieeinsparung oder CO₂-Reduktion",
+      "Geordnete Vermögensverhältnisse",
+      "Vorlage einer Energieberatung"
+    ],
+    applicationSteps: [
+      "Energieberatung durch zertifizierten Berater",
+      "Antragstellung über Hausbank",
+      "Prüfung durch WIBank",
+      "Kreditzusage und Auszahlungsplan",
+      "Projektrealisierung und Monitoring"
+    ],
+    documentsRequired: [
+      "Energieaudit nach DIN EN 16247",
+      "Betriebswirtschaftliche Auswertung",
+      "Angebote und Kostenaufstellungen",
+      "Nachweis der Eigenkapitalquote"
+    ],
+    processingTime: "4-6 Wochen",
+    deadlines: "Ganzjährige Antragstellung möglich",
+    combinationTips: [
+      "Mit KfW-Energieeffizienzprogrammen kombinierbar",
+      "BAFA-Zuschüsse reduzieren Kreditbedarf",
+      "Bürgschaften erleichtern Finanzierung"
+    ],
+    supportServices: [
+      "Energieberatung und Wirtschaftlichkeitsrechnung",
+      "Finanzierungsberatung und Bankengespräche",
+      "Fördermittel-Scouting für Kombinationen",
+      "Controlling und Erfolgsmessung"
+    ],
+    highlights: [
+      {
+        title: "Flexible Finanzierung",
+        description: "Individuelle Darlehensgestaltung nach Projektanforderungen."
+      },
+      {
+        title: "Bürgschaftsmöglichkeit",
+        description: "Bürgschaften für bessere Kreditkonditionen verfügbar."
+      }
+    ],
+    faqs: [
+      {
+        question: "Welche Energieeinsparung muss nachgewiesen werden?",
+        answer: "Mindestens 20% Energieeinsparung oder entsprechende CO₂-Reduktion."
+      },
+      {
+        question: "Sind auch größere Investitionen über 10 Mio. € möglich?",
+        answer: "Ja, in Einzelfällen auch höhere Darlehen nach individueller Prüfung."
+      }
+    ],
+    contact: {
+      phone: "+49 611 774-0",
+      url: "https://www.wibank.de/energieeffizienz",
+    },
+    seo: {
+      title: "Hessen Energieeffizienz-Förderung für Unternehmen | WIBank",
+      description: "Zinsgünstige Darlehen für Energieeffizienz und erneuerbare Energien in Hessen.",
+      keywords: ["Hessen Energieeffizienz", "WIBank Darlehen", "Solar Förderung Hessen"],
+    },
+    lastUpdated: "November 2025",
+  },
+  {
+    slug: "sachsen-richtlinie-energie-klima",
+    title: "Sachsen: Richtlinie Energie/Klima (RL EK)",
+    shortTitle: "Sachsen RL EK",
+    provider: "Sächsische Aufbaubank (SAB)",
+    level: "land",
+    region: "Sachsen",
+    isActive: true,
+    summary: "Förderung von Maßnahmen zur Energieeinsparung, Energieeffizienz und zum Einsatz erneuerbarer Energien in Sachsen.",
+    tagline: "Umfassende Energie- und Klimaschutzförderung",
+    logo: "https://www.sab.sachsen.de/content/dam/de/sab/logos/sab-logo.svg",
+    fundingTypes: ["Zuschuss"],
+    maxFunding: "Bis zu 500.000 € Zuschuss",
+    fundingRate: "30-50% je nach Maßnahme",
+    targetGroups: ["Unternehmen", "Kommunen", "Vereine", "Kirchgemeinden"],
+    eligibleProjects: [
+      "Photovoltaikanlagen bis 100 kWp",
+      "Solarthermie-Anlagen",
+      "Biomasseanlagen",
+      "Wärmepumpen und Geothermie",
+      "Energiespeicher",
+      "Energieeffiziente Beleuchtung"
+    ],
+    eligibleCosts: [
+      "Material- und Installationskosten",
+      "Planungskosten",
+      "Mess- und Regelungstechnik",
+      "Begleitende Energieberatung"
+    ],
+    nonEligibleCosts: [
+      "Eigenleistungen",
+      "Finanzierungskosten",
+      "Umsatzsteuer bei Vorsteuerabzug",
+      "Maßnahmen nach Rechtspflicht"
+    ],
+    requirements: [
+      "Standort der Anlage in Sachsen",
+      "Antragstellung vor Maßnahmenbeginn",
+      "Nachweis der technischen Eignung",
+      "Mindestinvestition von 1.000 €"
+    ],
+    applicationSteps: [
+      "Beratung durch Energieberater",
+      "Online-Antragstellung bei SAB",
+      "Prüfung und Bewilligung",
+      "Umsetzung der Maßnahme",
+      "Verwendungsnachweis und Auszahlung"
+    ],
+    documentsRequired: [
+      "Angebote der Fachfirmen",
+      "Energieberatungsbericht",
+      "Nachweis der Antragsberechtigung",
+      "Finanzierungsnachweis"
+    ],
+    processingTime: "8-10 Wochen",
+    deadlines: "Anträge bis 30. November 2025",
+    combinationTips: [
+      "Mit KfW-Programmen kombinierbar",
+      "BAFA-Förderung bei Wärmepumpen ergänzend",
+      "Kommunale Zusatzförderungen möglich"
+    ],
+    supportServices: [
+      "Energieberatung und Potenzialanalyse",
+      "Technische Machbarkeitsstudien",
+      "Wirtschaftlichkeitsberechnungen",
+      "Unterstützung bei Genehmigungsverfahren"
+    ],
+    highlights: [
+      {
+        title: "Breites Spektrum",
+        description: "Förderung vielfältiger erneuerbarer Energietechnologien."
+      },
+      {
+        title: "Auch für kleine Anlagen",
+        description: "Bereits ab 1.000 € Investitionssumme förderfähig."
+      }
+    ],
+    faqs: [
+      {
+        question: "Gibt es eine Mindestgröße für PV-Anlagen?",
+        answer: "Nein, auch kleine Anlagen sind förderfähig, wenn sie wirtschaftlich sind."
+      },
+      {
+        question: "Können auch Mieter eine Förderung erhalten?",
+        answer: "Ja, bei Zustimmung des Eigentümers sind auch Mieter antragsberechtigt."
+      }
+    ],
+    contact: {
+      phone: "+49 351 4910-0",
+      url: "https://www.sab.sachsen.de/rl-energie-klima",
+    },
+    seo: {
+      title: "Sachsen Richtlinie Energie/Klima Förderung | SAB",
+      description: "Zuschüsse für erneuerbare Energien und Energieeffizienz in Sachsen.",
+      keywords: ["Sachsen RL EK", "SAB Förderung", "Erneuerbare Energien Sachsen"],
+    },
+    lastUpdated: "November 2025",
+  },
+  {
+    slug: "thueringen-green-invest",
+    title: "Thüringen: Green Invest - Nachhaltige Technologien",
+    shortTitle: "Thüringen Green Invest",
+    provider: "Thüringer Aufbaubank (TAB)",
+    level: "land",
+    region: "Thüringen",
+    isActive: true,
+    summary: "Förderung von Investitionen in nachhaltige Technologien und erneuerbare Energien für Unternehmen in Thüringen.",
+    tagline: "Investitionen in grüne Technologien",
+    logo: "https://www.aufbaubank.de/content/dam/de/aufbaubank/logos/tab-logo.svg",
+    fundingTypes: ["Zuschuss", "Darlehen"],
+    maxFunding: "Bis zu 1 Mio. € Zuschuss",
+    fundingRate: "Bis zu 35% der förderfähigen Kosten",
+    targetGroups: ["KMU", "Mittelständische Unternehmen", "Start-ups"],
+    eligibleProjects: [
+      "Innovative Photovoltaik-Systeme",
+      "Energiespeicher mit Smart-Grid Anbindung",
+      "Wasserstoff-Technologien",
+      "Effiziente Kraft-Wärme-Kopplung",
+      "Biomasse-Nutzung",
+      "Geothermie-Projekte"
+    ],
+    eligibleCosts: [
+      "Forschung und Entwicklung",
+      "Prototypenerstellung",
+      "Investitionen in Anlagen und Ausrüstung",
+      "Patentierung und Zertifizierung"
+    ],
+    nonEligibleCosts: [
+      "Reine Handelsaktivitäten",
+      "Grundstückserwerb",
+      "Refinanzierung bestehender Verbindlichkeiten"
+    ],
+    requirements: [
+      "Unternehmenssitz in Thüringen",
+      "Innovationsgehalt der Technologie",
+      "Nachweis der Marktfähigkeit",
+      "Arbeitsplätze in Thüringen"
+    ],
+    applicationSteps: [
+      "Innovationsberatung und Technologiebewertung",
+      "Antragstellung mit Business Plan",
+      "Technische und wirtschaftliche Prüfung",
+      "Bewilligung und Vertragsabschluss",
+      "Projektdurchführung mit Monitoring"
+    ],
+    documentsRequired: [
+      "Detaillierter Businessplan",
+      "Technische Dokumentation",
+      "Finanzierungsplan",
+      "Nachweis der Innovationsfähigkeit"
+    ],
+    processingTime: "10-12 Wochen",
+    deadlines: "Anträge bis 15. Dezember 2025",
+    combinationTips: [
+      "Mit EU-Innovationsprogrammen kombinierbar",
+      "BMBF-Förderung für F&E-Anteile",
+      "KfW-Digitalisierungsprogramme ergänzend"
+    ],
+    supportServices: [
+      "Innovationsberatung und Technologietransfer",
+      "Patent- und Schutzrechtsberatung",
+      "Marktanalysen und Geschäftsmodellentwicklung",
+      "Vernetzung mit Forschungseinrichtungen"
+    ],
+    highlights: [
+      {
+        title: "Innovationsfokus",
+        description: "Besondere Förderung für innovative grüne Technologien."
+      },
+      {
+        title: "Technologietransfer",
+        description: "Unterstützung beim Transfer von Forschung in die Praxis."
+      }
+    ],
+    faqs: [
+      {
+        question: "Was gilt als innovative Technologie?",
+        answer: "Technologien, die über den Stand der Technik hinausgehen und Marktpotenzial haben."
+      },
+      {
+        question: "Sind auch Kooperationsprojekte förderfähig?",
+        answer: "Ja, Kooperationen mit Hochschulen oder anderen Unternehmen sind erwünscht."
+      }
+    ],
+    contact: {
+      phone: "+49 361 7316-0",
+      url: "https://www.aufbaubank.de/green-invest",
+    },
+    seo: {
+      title: "Thüringen Green Invest Förderung | TAB",
+      description: "Förderung nachhaltiger Technologien und erneuerbarer Energien in Thüringen.",
+      keywords: ["Thüringen Green Invest", "TAB Förderung", "Nachhaltige Technologien"],
+    },
+    lastUpdated: "November 2025",
+  },
+  {
+    slug: "bafa-bundesfoerderung-energieeffizienz-wirtschaft",
+    title: "BAFA: Bundesförderung für Energieeffizienz in der Wirtschaft (BEW)",
+    shortTitle: "BAFA BEW",
+    provider: "Bundesamt für Wirtschaft und Ausfuhrkontrolle (BAFA)",
+    level: "bund",
+    isActive: true,
+    summary: "Umfassendes Bundesprogramm zur Förderung von Energieeffizienzmaßnahmen und erneuerbaren Energien in Unternehmen mit Zuschüssen bis zu 55%.",
+    tagline: "Bundesweite Energieeffizienz-Förderung für Unternehmen",
+    logo: "https://www.bafa.de/SharedDocs/Bilder/DE/Energie/bafa_logo.svg",
+    fundingTypes: ["Zuschuss"],
+    maxFunding: "Bis zu 15 Mio. € Zuschuss pro Vorhaben",
+    fundingRate: "30-55% je nach Maßnahme und Unternehmensgröße",
+    targetGroups: ["Unternehmen aller Größen", "Contractoren", "Kommunale Unternehmen"],
+    eligibleProjects: [
+      "Hocheffiziente Wärmepumpen",
+      "Solarthermie-Anlagen",
+      "Biomasseheizsysteme",
+      "Effiziente Wärmenetze",
+      "KWK-Anlagen bis 20 MW",
+      "Energiemanagement-Systeme",
+      "Mess-, Steuer- und Regelungstechnik",
+      "Energieeffiziente und klimaschonende Produktionsprozesse"
+    ],
+    eligibleCosts: [
+      "Anschaffungs- und Installationskosten",
+      "Baukosten für energieeffiziente Gebäudehüllen",
+      "Planungskosten bis 50% der Investitionskosten",
+      "Nebenkosten wie Montage und Inbetriebnahme"
+    ],
+    nonEligibleCosts: [
+      "Kosten für konventionelle Heizsysteme",
+      "Eigenleistungen",
+      "Finanzierungs-, Betriebs- und Wartungskosten",
+      "Kosten für den Anschluss an das öffentliche Gasnetz"
+    ],
+    requirements: [
+      "Mindestinvestition von 2.000 € (Einzelmaßnahmen) bzw. 20.000 € (Systemförderung)",
+      "Erfüllung technischer Mindestanforderungen",
+      "Nachweis der Energieeinsparung oder CO₂-Reduktion",
+      "Antragstellung vor Vorhabenbeginn"
+    ],
+    applicationSteps: [
+      "Energieaudit oder Energieberatung",
+      "Online-Antragstellung über BAFA-Portal",
+      "Technische Prüfung und Bewilligung",
+      "Durchführung der Maßnahmen",
+      "Verwendungsnachweis mit Rechnungen und Nachweisen"
+    ],
+    documentsRequired: [
+      "Energieaudit nach DIN EN 16247 oder vergleichbar",
+      "Kostenvoranschläge aller Komponenten",
+      "Technische Datenblätter der Anlagen",
+      "Nachweis der Fachunternehmereigenschaft"
+    ],
+    processingTime: "8-12 Wochen nach Antragseingang",
+    deadlines: "Laufende Antragstellung - Budget wird jährlich neu festgelegt",
+    combinationTips: [
+      "Mit KfW-Krediten für Restfinanzierung kombinierbar",
+      "Ergänzung durch Landesprogramme möglich",
+      "EU-Beihilferecht bei großen Unternehmen beachten"
+    ],
+    supportServices: [
+      "Energieberatung nach BAFA-Richtlinie",
+      "Technische Machbarkeitsstudien",
+      "Wirtschaftlichkeitsberechnungen",
+      "Monitoring und Erfolgskontrolle"
+    ],
+    highlights: [
+      {
+        title: "Hohe Förderquoten",
+        description: "Bis zu 55% Zuschuss für besonders effiziente Technologien."
+      },
+      {
+        title: "Flexibles Programm",
+        description: "Einzelmaßnahmen oder Systemlösungen förderfähig."
+      },
+      {
+        title: "Contracting-fähig",
+        description: "Auch für Contracting-Projekte geeignet."
+      }
+    ],
+    faqs: [
+      {
+        question: "Können auch PV-Anlagen gefördert werden?",
+        answer: "Nein, reine PV-Anlagen sind nicht förderfähig. Wohl aber PVT-Kollektoren oder PV in Kombination mit Wärmepumpen."
+      },
+      {
+        question: "Wie hoch ist die maximale Förderung?",
+        answer: "Maximal 15 Mio. € pro Vorhaben, bei KMU bis zu 55% der förderfähigen Kosten."
+      },
+      {
+        question: "Sind auch Contractoren antragsberechtigt?",
+        answer: "Ja, Contractoren können Anträge stellen, wenn sie die technischen Anforderungen erfüllen."
+      }
+    ],
+    contact: {
+      phone: "+49 6196 908-0",
+      email: "bew@bafa.bund.de",
+      url: "https://www.bafa.de/bew",
+    },
+    seo: {
+      title: "BAFA Bundesförderung Energieeffizienz Wirtschaft (BEW) | Zuschüsse bis 55%",
+      description: "Umfassende Förderung für Energieeffizienz und erneuerbare Energien in Unternehmen durch das BAFA.",
+      keywords: ["BAFA BEW", "Energieeffizienz Förderung", "Bundesförderung Unternehmen", "Wärmepumpe Zuschuss"],
+    },
+    lastUpdated: "November 2025",
+  },
+  {
+    slug: "bmwk-energie-klimafonds-transformation",
+    title: "BMWK: Energie- und Klimafonds - Industrielle Transformation",
+    shortTitle: "EKF Transformation",
+    provider: "Bundesministerium für Wirtschaft und Klimaschutz (BMWK)",
+    level: "bund",
+    isActive: true,
+    summary: "Großvolumige Förderung für die klimaneutrale Transformation der Industrie mit Fokus auf erneuerbare Energien und Dekarbonisierung.",
+    tagline: "Transformation der Industrie zur Klimaneutralität",
+    logo: "https://www.bmwk.de/Redaktion/DE/Logos/bmwk-logo.svg",
+    fundingTypes: ["Zuschuss", "Darlehen"],
+    maxFunding: "Bis zu 200 Mio. € pro Projekt",
+    fundingRate: "Bis zu 50% der beihilfefähigen Kosten",
+    targetGroups: ["Industrieunternehmen", "Energieintensive Branchen", "Unternehmensverbünde"],
+    eligibleProjects: [
+      "Großsolaranlagen für Industrieprozesse",
+      "Power-to-X Anlagen (Wasserstoff, E-Fuels)",
+      "Elektrische Prozesswärme",
+      "Industrielle Wärmepumpen",
+      "Carbon Capture and Utilization (CCU)",
+      "Energieeffiziente Produktionsverfahren",
+      "Erneuerbare Energien für Industriestandorte"
+    ],
+    eligibleCosts: [
+      "Investitionen in klimaneutrale Technologien",
+      "Forschung und Entwicklung für Pilot- und Demonstrationsanlagen",
+      "Infrastruktur für erneuerbare Energien",
+      "Begleitende Studien und Zertifizierungen"
+    ],
+    nonEligibleCosts: [
+      "Reine Energieeffizienzmaßnahmen ohne Transformationscharakter",
+      "Konventionelle fossile Technologien",
+      "Maßnahmen nach gesetzlicher Verpflichtung"
+    ],
+    requirements: [
+      "Signifikante CO₂-Einsparung (mindestens 40%)",
+      "Industriestandort in Deutschland",
+      "Nachweis der technischen und wirtschaftlichen Realisierbarkeit",
+      "Beitrag zur Systemintegration erneuerbarer Energien"
+    ],
+    applicationSteps: [
+      "Strategieberatung und Transformationskonzept",
+      "Projektskizze und Vorprüfung",
+      "Vollständiger Förderantrag mit Detailplanung",
+      "Bewilligung und Vertragsverhandlung",
+      "Projektdurchführung mit regelmäßigem Monitoring"
+    ],
+    documentsRequired: [
+      "Umfassendes Transformationskonzept",
+      "CO₂-Bilanzierung und Einsparnachweis",
+      "Technische Machbarkeitsstudie",
+      "Finanzierungsplan und Wirtschaftlichkeitsrechnung",
+      "Nachweis der Systemrelevanz"
+    ],
+    processingTime: "6-12 Monate je nach Projektgröße",
+    deadlines: "Stichtage: 31. März und 30. September",
+    combinationTips: [
+      "Mit EU Important Projects of Common European Interest (IPCEI) kombinierbar",
+      "Ergänzung durch Landesprogramme für regionale Aspekte",
+      "KfW-Kredite für Kofinanzierung"
+    ],
+    supportServices: [
+      "Strategische Transformationsberatung",
+      "Technologie-Roadmaps und Szenarioentwicklung",
+      "Stakeholder-Management und Behördenkommunikation",
+      "Projektmanagement für Großvorhaben",
+      "Monitoring und Impact-Messung"
+    ],
+    highlights: [
+      {
+        title: "Großvolumig",
+        description: "Förderung von Projekten bis 200 Mio. € möglich."
+      },
+      {
+        title: "Systemrelevant",
+        description: "Fokus auf volkswirtschaftlich wichtige Transformationsprojekte."
+      },
+      {
+        title: "Sektorübergreifend",
+        description: "Förderung aller energieintensiven Industriebranchen."
+      }
+    ],
+    faqs: [
+      {
+        question: "Welche Industriebranchen sind besonders relevant?",
+        answer: "Stahl, Chemie, Zement, Aluminium, Glas und andere energieintensive Sektoren."
+      },
+      {
+        question: "Sind auch kleinere Projekte unter 10 Mio. € förderfähig?",
+        answer: "Ja, wenn sie einen wichtigen Beitrag zur Sektortransformation leisten."
+      },
+      {
+        question: "Wie wird die CO₂-Einsparung bewertet?",
+        answer: "Lifecycle-Assessment über die gesamte Wertschöpfungskette erforderlich."
+      }
+    ],
+    contact: {
+      phone: "+49 30 18615-0",
+      email: "transformation@bmwk.bund.de",
+      url: "https://www.bmwk.de/industrie-transformation",
+    },
+    seo: {
+      title: "BMWK Energie- und Klimafonds Industrielle Transformation",
+      description: "Großvolumige Förderung für die klimaneutrale Transformation der deutschen Industrie.",
+      keywords: ["BMWK Transformation", "Industrie Dekarbonisierung", "EKF Förderung", "Klimaneutrale Industrie"],
+    },
+    lastUpdated: "November 2025",
+  },
+  {
+    slug: "horizon-europe-green-deal",
+    title: "Horizon Europe: European Green Deal Call",
+    shortTitle: "Horizon Green Deal",
+    provider: "European Commission - Horizon Europe",
+    level: "eu",
+    region: "EU + Associated Countries",
+    isActive: true,
+    summary: "EU-weites Forschungs- und Innovationsprogramm mit Fokus auf den Green Deal, inklusive großvolumiger Solar- und Energiespeicherprojekte.",
+    tagline: "EU-Forschungsförderung für den Green Deal",
+    logo: "https://ec.europa.eu/info/sites/default/files/research_and_innovation/logos/horizon-europe_0.svg",
+    fundingTypes: ["Zuschuss"],
+    maxFunding: "Bis zu 50 Mio. € pro Konsortium",
+    fundingRate: "100% für Forschung, 70% für Innovation",
+    targetGroups: ["Forschungseinrichtungen", "Unternehmen", "Städte", "Regionen"],
+    eligibleProjects: [
+      "Next-Generation Photovoltaik (Perowskit, Tandem)",
+      "Sektorintegration und Smart Grids",
+      "Circular Economy in der PV-Industrie",
+      "Agri-Photovoltaik und Floating Solar",
+      "Digitale Zwillinge für Energiesysteme",
+      "Wasserstoff aus erneuerbaren Energien"
+    ],
+    eligibleCosts: [
+      "Personalkosten für Forschung und Innovation",
+      "Equipment und Infrastruktur",
+      "Verbrauchsmaterialien",
+      "Dissemination und Exploitation"
+    ],
+    nonEligibleCosts: [
+      "Reine kommerzielle Aktivitäten",
+      "Infrastruktur ohne Forschungscharakter",
+      "Aktivitäten außerhalb der EU und assoziierten Ländern"
+    ],
+    requirements: [
+      "Mindestens 3 Partner aus 3 verschiedenen EU-Ländern",
+      "Klarer wissenschaftlicher Exzellenzanspruch",
+      "Beitrag zu den EU Green Deal Zielen",
+      "Technology Readiness Level (TRL) 3-8"
+    ],
+    applicationSteps: [
+      "Konsortiumsbildung und Partner-Matching",
+      "Einreichung der Proposal über Funding & Tenders Portal",
+      "Evaluation durch unabhängige Experten",
+      "Grant Agreement Verhandlung",
+      "Projektstart und kontinuierliches Reporting"
+    ],
+    documentsRequired: [
+      "Technical Annex mit Arbeitspaketen",
+      "Management und Governance Plan",
+      "Dissemination und Communication Strategy",
+      "Financial Capacity Assessment"
+    ],
+    processingTime: "6-8 Monate von Einreichung bis Grant Agreement",
+    deadlines: "Calls zweimal jährlich - nächste Deadline: 7. Februar 2025",
+    combinationTips: [
+      "Mit nationalen F&E-Programmen kombinierbar",
+      "EIC Accelerator für Kommerzialisierung",
+      "Digital Europe Programme für digitale Aspekte"
+    ],
+    supportServices: [
+      "Partner-Suche und Konsortiumsbildung",
+      "Proposal Writing und Technical Reviews",
+      "EU-Projektmanagement und Reporting",
+      "IP-Strategie und Exploitation Planning"
+    ],
+    highlights: [
+      {
+        title: "Vollfinanzierung",
+        description: "100% Förderung für Grundlagenforschung möglich."
+      },
+      {
+        title: "Europäische Vernetzung",
+        description: "Zugang zu führenden EU-Forschungsinstitutionen."
+      },
+      {
+        title: "Marktführung",
+        description: "Entwicklung von Technologien für globale Märkte."
+      }
+    ],
+    faqs: [
+      {
+        question: "Können auch KMU als Koordinator fungieren?",
+        answer: "Ja, KMU können Projekte koordinieren und erhalten dabei besondere Unterstützung."
+      },
+      {
+        question: "Ist eine Beteiligung aus der Schweiz möglich?",
+        answer: "Ja, die Schweiz ist assoziiertes Land und vollberechtigt."
+      },
+      {
+        question: "Welche TRL-Stufen werden gefördert?",
+        answer: "Hauptsächlich TRL 3-8, je nach Call auch niedrigere oder höhere Levels."
+      }
+    ],
+    contact: {
+      email: "horizon-green-deal@ec.europa.eu",
+      url: "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/programmes/horizon",
+    },
+    seo: {
+      title: "Horizon Europe Green Deal Call - EU Forschungsförderung",
+      description: "Großvolumige EU-Förderung für Green Deal Forschung und Innovation in erneuerbaren Energien.",
+      keywords: ["Horizon Europe", "Green Deal", "EU Forschung Solar", "Innovation Förderung"],
+    },
+    lastUpdated: "November 2025",
+  },
+  {
+    slug: "interreg-central-europe-energy",
+    title: "Interreg Central Europe: Low Carbon Economy",
+    shortTitle: "Interreg CE Energy",
+    provider: "Interreg Central Europe Programme",
+    level: "eu",
+    region: "Mitteleuropa",
+    isActive: true,
+    summary: "Transnationale Zusammenarbeit für nachhaltige Energielösungen und CO₂-arme Wirtschaft in Mitteleuropa.",
+    tagline: "Grenzüberschreitende Energieprojekte in Mitteleuropa",
+    logo: "https://www.interreg-central.eu/media/img/logo.svg",
+    fundingTypes: ["Zuschuss"],
+    maxFunding: "Bis zu 2,3 Mio. € pro Projekt",
+    fundingRate: "75-85% je nach Partnertyp",
+    targetGroups: ["Regionen", "Städte", "Forschungseinrichtungen", "KMU"],
+    eligibleProjects: [
+      "Regionale Energiepläne mit erneuerbaren Energien",
+      "Smart Energy Communities",
+      "Innovative PV-Integration in Städten",
+      "Energiespeicher für ländliche Gebiete",
+      "Capacity Building für Energiewende"
+    ],
+    eligibleCosts: [
+      "Personalkosten",
+      "Beratungsdienstleistungen",
+      "Pilotinvestitionen bis 20% des Budgets",
+      "Dissemination und Kommunikation"
+    ],
+    nonEligibleCosts: [
+      "Große Infrastrukturinvestitionen",
+      "Kommerzielle Aktivitäten",
+      "Kosten außerhalb des Programmgebiets"
+    ],
+    requirements: [
+      "Mindestens 3 Partner aus 3 verschiedenen Ländern",
+      "Transnationaler Mehrwert",
+      "Beitrag zu EU-Kohäsions- und Klimazielen",
+      "Nachhaltigkeit über Projektlaufzeit hinaus"
+    ],
+    applicationSteps: [
+      "Partnersuche über Programmplattform",
+      "Einreichung des Application Forms",
+      "Quality Assessment durch Programmstellen",
+      "Subsidy Contract Verhandlung",
+      "Projektimplementierung mit Monitoring"
+    ],
+    documentsRequired: [
+      "Project Application Form",
+      "Partnership Agreement",
+      "Work Plan mit Deliverables",
+      "Budget Breakdown alle Partner"
+    ],
+    processingTime: "4-6 Monate",
+    deadlines: "Nächster Call: 15. Januar 2025",
+    combinationTips: [
+      "Mit ERDF-Programmen der Bundesländer kombinierbar",
+      "LIFE Programme für Umweltaspekte",
+      "EIT Climate-KIC für Innovation"
+    ],
+    supportServices: [
+      "Partnervermittlung und Projektentwicklung",
+      "Antragstellungsworkshops",
+      "Projektmanagement-Training",
+      "Peer-Learning zwischen Projekten"
+    ],
+    highlights: [
+      {
+        title: "Transnational",
+        description: "Lernen von Nachbarländern und gemeinsame Lösungsentwicklung."
+      },
+      {
+        title: "Praxisorientiert",
+        description: "Kombination aus Strategieentwicklung und Pilotmaßnahmen."
+      }
+    ],
+    faqs: [
+      {
+        question: "Welche Länder können teilnehmen?",
+        answer: "Deutschland, Österreich, Polen, Tschechien, Slowakei, Ungarn, Slowenien, Italien, Kroatien."
+      },
+      {
+        question: "Können auch private Unternehmen Partner sein?",
+        answer: "Ja, KMU sind als assoziierte Partner willkommen."
+      }
+    ],
+    contact: {
+      phone: "+49 3521 7231-0",
+      email: "info@interreg-central.eu",
+      url: "https://www.interreg-central.eu/",
+    },
+    seo: {
+      title: "Interreg Central Europe Low Carbon Economy Förderung",
+      description: "Transnationale EU-Förderung für nachhaltige Energieprojekte in Mitteleuropa.",
+      keywords: ["Interreg Central Europe", "EU regional cooperation", "Low Carbon Economy"],
+    },
+    lastUpdated: "November 2025",
+  },
+  {
+    slug: "koeln-klimaschutzsonderprogramm",
+    title: "Köln: Klimaschutz-Sonderprogramm für erneuerbare Energien",
+    shortTitle: "Köln Klimaschutz",
+    provider: "Stadt Köln",
+    level: "kommunal",
+    region: "Köln",
+    isActive: true,
+    summary: "Umfassendes städtisches Förderprogramm für Klimaschutzmaßnahmen und erneuerbare Energien im Kölner Stadtgebiet.",
+    tagline: "Klimaschutz-Förderung für das Kölner Stadtgebiet",
+    logo: "https://www.stadt-koeln.de/images/logo_stadt_koeln.svg",
+    fundingTypes: ["Zuschuss"],
+    maxFunding: "Bis zu 50.000 € pro Vorhaben",
+    fundingRate: "Bis zu 40% der förderfähigen Kosten",
+    targetGroups: ["Privatpersonen", "Unternehmen", "Hausverwaltungen", "Vereine"],
+    eligibleProjects: [
+      "Balkon-PV-Anlagen",
+      "Aufdach-PV bis 30 kWp",
+      "Stromspeicher für Eigenheime",
+      "E-Ladesäulen mit Solarstrom",
+      "Solarthermie-Anlagen",
+      "Energieberatung"
+    ],
+    eligibleCosts: [
+      "Anschaffung und Installation",
+      "Elektrische Anschlussarbeiten",
+      "Zähler und Messeinrichtungen",
+      "Beratungskosten"
+    ],
+    nonEligibleCosts: [
+      "Projekte außerhalb Kölns",
+      "Bereits begonnene Maßnahmen",
+      "Eigenleistungen"
+    ],
+    requirements: [
+      "Wohnsitz oder Unternehmenssitz in Köln",
+      "Antragstellung vor Maßnahmenbeginn",
+      "Fachgerechte Installation",
+      "Mindestnutzungsdauer von 10 Jahren"
+    ],
+    applicationSteps: [
+      "Online-Antrag auf städtischer Website",
+      "Prüfung und Bewilligung",
+      "Durchführung der Maßnahme",
+      "Nachweis durch Rechnungen und Fotos",
+      "Auszahlung des Zuschusses"
+    ],
+    documentsRequired: [
+      "Kostenvoranschläge",
+      "Lageplan/Foto der geplanten Installation",
+      "Einverständnis Vermieter bei Mietobjekten",
+      "Nachweis Eigenverbrauchsanteil"
+    ],
+    processingTime: "4-6 Wochen",
+    deadlines: "Anträge bis 30. November 2025 (budgetabhängig)",
+    combinationTips: [
+      "Mit NRW progres.nrw kombinierbar",
+      "KfW-Kredite für größere Anlagen ergänzend",
+      "Stadtwerke Köln Ökostrom-Tarife"
+    ],
+    supportServices: [
+      "Kostenlose Erstberatung durch Verbraucherzentrale",
+      "Liste qualifizierter Installationsbetriebe",
+      "Online-Rechner für Förderungshöhe",
+      "Nachbarschaftsnetzwerke und Erfahrungsaustausch"
+    ],
+    highlights: [
+      {
+        title: "Niedrigschwellig",
+        description: "Auch kleine Balkon-PV-Anlagen werden gefördert."
+      },
+      {
+        title: "Schnelle Bearbeitung",
+        description: "Kurze Bearbeitungszeiten durch digitale Prozesse."
+      }
+    ],
+    faqs: [
+      {
+        question: "Werden auch Balkon-Solaranlagen gefördert?",
+        answer: "Ja, Balkon-PV wird mit bis zu 200 € pro Anlage gefördert."
+      },
+      {
+        question: "Kann ich mehrere Förderungen kombinieren?",
+        answer: "Ja, mit anderen Programmen bis zur Grenze der Vollfinanzierung."
+      }
+    ],
+    contact: {
+      phone: "+49 221 221-0",
+      email: "klimaschutz@stadt-koeln.de",
+      url: "https://www.stadt-koeln.de/klimaschutz-foerderung",
+    },
+    seo: {
+      title: "Köln Klimaschutz-Sonderprogramm - Solar Förderung",
+      description: "Städtische Förderung für erneuerbare Energien und Klimaschutz in Köln.",
+      keywords: ["Köln Solar Förderung", "Klimaschutz Köln", "Balkon PV Zuschuss"],
+    },
+    lastUpdated: "November 2025",
+  },
+  {
+    slug: "duesseldorf-climate-city-contract",
+    title: "Düsseldorf: Climate City Contract - Erneuerbare Energien",
+    shortTitle: "Düsseldorf CCC",
+    provider: "Landeshauptstadt Düsseldorf",
+    level: "kommunal",
+    region: "Düsseldorf",
+    isActive: true,
+    summary: "Innovative Stadtförderung im Rahmen des EU Climate City Contracts mit Fokus auf Bürgerbeteiligung und dezentrale Energieversorgung.",
+    tagline: "Innovative Klimaschutz-Förderung für Düsseldorf",
+    logo: "https://www.duesseldorf.de/fileadmin/Amt12/logos/logo_duesseldorf.svg",
+    fundingTypes: ["Zuschuss", "Bürgschaftsprogramm"],
+    maxFunding: "Bis zu 100.000 € für Gemeinschaftsprojekte",
+    fundingRate: "Bis zu 60% bei Bürgerbeteiligung",
+    targetGroups: ["Bürgergemeinschaften", "Stadtquartiere", "Gewerbegebiete", "Bildungseinrichtungen"],
+    eligibleProjects: [
+      "Bürger-Solarparks auf städtischen Dächern",
+      "Quartierspeicher mit Sharing-Konzepten",
+      "Schulprojekte für erneuerbare Energien",
+      "Gewerbegebiets-Microgrids",
+      "Urban Farming mit Agri-PV"
+    ],
+    eligibleCosts: [
+      "Gemeinschaftsanlagen und Infrastruktur",
+      "Partizipations- und Planungskosten",
+      "Digitale Plattformen für Energy Sharing",
+      "Bildungs- und Öffentlichkeitsarbeit"
+    ],
+    nonEligibleCosts: [
+      "Individuelle Hausanlagen ohne Gemeinschaftscharakter",
+      "Kommerzielle Projekte ohne Bürgerbeteiligung",
+      "Projekte außerhalb Düsseldorfs"
+    ],
+    requirements: [
+      "Mindestens 10 beteiligte Haushalte/Unternehmen",
+      "Nachweis der Bürgerbeteiligung",
+      "CO₂-Neutralitätsbeitrag für Düsseldorf 2035",
+      "Innovative Technologie oder Geschäftsmodell"
+    ],
+    applicationSteps: [
+      "Community Building und Interessensbekundung",
+      "Machbarkeitsstudie mit städtischer Unterstützung",
+      "Antragstellung im Projektformat",
+      "Bewilligung und Implementierungsphase",
+      "Monitoring und Community-Berichterstattung"
+    ],
+    documentsRequired: [
+      "Gemeinschaftsvereinbarung/Genossenschaftssatzung",
+      "Partizipationskonzept",
+      "Technisches Gesamtkonzept",
+      "Finanzierungs- und Betriebsmodell"
+    ],
+    processingTime: "8-12 Wochen",
+    deadlines: "Quartalsweise Antragsrunden",
+    combinationTips: [
+      "Mit EU Mission Climate-Neutral Cities Förderung kombinierbar",
+      "NRW.Bank Bürgschaftsprogramme ergänzend",
+      "Stadtwerke Düsseldorf als Projektpartner"
+    ],
+    supportServices: [
+      "Community Organizing und Partizipationsberatung",
+      "Rechtliche Beratung für Bürgerprojekte",
+      "Technische Machbarkeitsstudien",
+      "Vernetzung mit anderen Bürgerprojekten"
+    ],
+    highlights: [
+      {
+        title: "Bürgerzentriert",
+        description: "Besonders hohe Förderung für Bürgerbeteiligungsprojekte."
+      },
+      {
+        title: "Innovation",
+        description: "Pilotprojekte für neue Geschäfts- und Teilhabemodelle."
+      },
+      {
+        title: "EU-vernetzt",
+        description: "Teil des europäischen Climate City Netzwerks."
+      }
+    ],
+    faqs: [
+      {
+        question: "Was bedeutet 'Climate City Contract'?",
+        answer: "Ein Vertrag mit der EU für klimaneutrale Stadtentwicklung bis 2030."
+      },
+      {
+        question: "Können auch Mieter Projekte initiieren?",
+        answer: "Ja, mit Zustimmung der Eigentümer sind Mieter-Community-Projekte förderfähig."
+      }
+    ],
+    contact: {
+      phone: "+49 211 89-0",
+      email: "climate-city@duesseldorf.de",
+      url: "https://www.duesseldorf.de/climate-city-contract",
+    },
+    seo: {
+      title: "Düsseldorf Climate City Contract - Bürger-Solar Förderung",
+      description: "Innovative städtische Förderung für Bürgerprojekte im Bereich erneuerbare Energien.",
+      keywords: ["Düsseldorf Climate City", "Bürger Solar", "Community Energy"],
+    },
+    lastUpdated: "November 2025",
+  },
+  {
+    slug: "frankfurt-klimabonus-solar",
+    title: "Frankfurt am Main: Klimabonus für Solarenergie",
+    shortTitle: "Frankfurt Klimabonus",
+    provider: "Stadt Frankfurt am Main",
+    level: "kommunal",
+    region: "Frankfurt am Main",
+    isActive: true,
+    summary: "Städtisches Bonusprogramm für Photovoltaik und Solarthermie mit zusätzlichen Anreizen für innovative Technologien und Gebäudeintegration.",
+    tagline: "Klimabonus für innovative Solarlösungen",
+    logo: "https://frankfurt.de/-/media/frankfurtde/global/logos/logo-frankfurt-main.svg",
+    fundingTypes: ["Bonus-Zuschuss"],
+    maxFunding: "Bis zu 25.000 € pro Objekt",
+    fundingRate: "200-1.000 €/kWp je nach Kategorie",
+    targetGroups: ["Hauseigentümer", "Gewerbetreibende", "Wohnungsunternehmen"],
+    eligibleProjects: [
+      "Innovative PV-Fassadenintegration",
+      "Denkmalschutz-PV mit besonderen Modulen",
+      "Floating-PV auf städtischen Gewässern",
+      "Agri-PV auf städtischen Flächen",
+      "PV-Überdachungen (Parkplätze, etc.)",
+      "Gebäudeintegrierte Photovoltaik (BIPV)"
+    ],
+    eligibleCosts: [
+      "Mehrkosten für Design-Integration",
+      "Speziallösungen für Denkmalschutz",
+      "Innovative Montagesysteme",
+      "Aufständerungen und Unterkonstruktionen"
+    ],
+    nonEligibleCosts: [
+      "Standard-Aufdachanlagen ohne Innovation",
+      "Reine Kosteneinsparungsmaßnahmen",
+      "Projekte außerhalb Frankfurts"
+    ],
+    requirements: [
+      "Innovative oder gestalterisch hochwertige Lösung",
+      "Sichtbare Vorbildfunktion im Stadtbild",
+      "Fachplanung durch qualifizierten Architekten/Planer",
+      "10-jährige Betriebsgarantie"
+    ],
+    applicationSteps: [
+      "Designberatung durch Stadtplanungsamt",
+      "Antragstellung mit Visualisierungen",
+      "Design-Review durch Expertenbeirat",
+      "Bewilligung und Realisierung",
+      "Dokumentation für städtische Referenzdatenbank"
+    ],
+    documentsRequired: [
+      "Architektonische Visualisierungen",
+      "Technisches Konzept mit Innovationsnachweis",
+      "Gestaltungsplan mit Stadtbildintegration",
+      "Kostenkalkulation mit Innovationsmehrkosten"
+    ],
+    processingTime: "6-8 Wochen inkl. Design-Review",
+    deadlines: "Laufende Antragstellung, Budget 2025: 2 Mio. €",
+    combinationTips: [
+      "Mit Hessen-Förderprogrammen stackbar",
+      "KfW-Erneuerbare Energien Standard",
+      "Mainova-Contracting für Betriebsführung"
+    ],
+    supportServices: [
+      "Architekturberatung für BIPV-Lösungen",
+      "Denkmalschutz-Beratung",
+      "Vernetzung mit Spezialisten und Herstellern",
+      "Referenzdatenbank erfolgreicher Projekte"
+    ],
+    highlights: [
+      {
+        title: "Design-orientiert",
+        description: "Besondere Förderung für architektonisch anspruchsvolle Lösungen."
+      },
+      {
+        title: "Innovationsbonus",
+        description: "Höhere Förderung für technische Innovationen."
+      },
+      {
+        title: "Vorbildcharakter",
+        description: "Stadt als Referenz für andere Kommunen."
+      }
+    ],
+    faqs: [
+      {
+        question: "Was gilt als 'innovative' PV-Lösung?",
+        answer: "Fassadenintegration, besondere Ästhetik, Multifunktionalität oder neue Technologien."
+      },
+      {
+        question: "Sind auch kleinere Anlagen unter 10 kWp förderfähig?",
+        answer: "Ja, bei entsprechendem Innovationscharakter auch kleine Anlagen."
+      }
+    ],
+    contact: {
+      phone: "+49 69 212-0",
+      email: "klimabonus@stadt-frankfurt.de",
+      url: "https://frankfurt.de/klimabonus-solar",
+    },
+    seo: {
+      title: "Frankfurt Klimabonus für innovative Solarenergie",
+      description: "Städtische Förderung für architektonisch anspruchsvolle und innovative PV-Lösungen.",
+      keywords: ["Frankfurt Klimabonus", "BIPV Förderung", "Innovative Photovoltaik"],
+    },
+    lastUpdated: "November 2025",
+  }
 ];
 
 export const getFundingProgramBySlug = (slug: string): FundingProgram | undefined =>

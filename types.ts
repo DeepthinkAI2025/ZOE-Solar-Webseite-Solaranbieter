@@ -133,3 +133,61 @@ export type Page =
     | 'fallstudie-detail'
     | 'agri-pv-erfahrungen'
     | 'mitarbeiter-login';
+
+// Funding Program Types
+export type FundingProgramLevel = 'bund' | 'land' | 'kommunal' | 'eu';
+
+export interface FundingProgram {
+  slug: string;
+  title: string;
+  shortTitle: string;
+  provider: string;
+  level: FundingProgramLevel;
+  region?: string;
+  isActive: boolean;
+  summary: string;
+  tagline: string;
+  heroImage?: string;
+  logo: string;
+  fundingTypes: string[];
+  maxFunding?: string;
+  minFunding?: string;
+  fundingRate?: string;
+  targetGroups: string[];
+  eligibleProjects: string[];
+  eligibleCosts: string[];
+  nonEligibleCosts: string[];
+  requirements: string[];
+  applicationSteps: string[];
+  documentsRequired: string[];
+  processingTime: string;
+  deadlines: string;
+  combinationTips: string[];
+  repaymentBenefits?: string[];
+  supportServices: string[];
+  highlights: {
+    title: string;
+    description: string;
+  }[];
+  faqs: {
+    question: string;
+    answer: string;
+  }[];
+  contact: {
+    phone?: string;
+    email?: string;
+    url: string;
+    note?: string;
+  };
+  resources?: {
+    label: string;
+    url: string;
+  }[];
+  seo: {
+    title: string;
+    description: string;
+    keywords: string[];
+    canonical?: string;
+  };
+  lastUpdated: string;
+}
