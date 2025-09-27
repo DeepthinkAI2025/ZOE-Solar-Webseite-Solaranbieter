@@ -11,11 +11,16 @@ RUN apt-get update \
 		wget \
 	&& rm -rf /var/lib/apt/lists/*
 
+# Firecrawl MCP + Playwright installieren
+RUN npm install -g playwright@1.48.0 \
+	&& npx playwright install-deps chromium \
+	&& npx playwright install chromium
+
 # Projektcode kopieren
 COPY . .
 
 # Projektabhängigkeiten installieren
-RUN npm ci
+RUN npm ci --legacy-peer-deps
 
 # Standardport (falls nötig)
 EXPOSE 3000
