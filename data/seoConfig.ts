@@ -1101,17 +1101,20 @@ const defaultSEO: Required<Omit<SEOConfig, 'og' | 'twitter' | 'geo'>> & {
   twitter: TwitterMeta;
   geo: GeoMeta;
 } = {
-  title: 'ZOE Solar | Photovoltaik für Gewerbe, Landwirtschaft & Freiflächen',
+  title: 'Solaranlage Einfamilienhaus & Eigenheim Kosten 2025 | ZOE Solar',
   description:
-    'ZOE Solar plant, finanziert und betreibt hochrentable Photovoltaikanlagen für Gewerbe, Landwirtschaft, Industrie und Freiflächen. Profitieren Sie von maximaler Rendite, regionaler Expertise und einem Ansprechpartner für alle Energiefragen.',
+    'Solaranlage für Einfamilienhaus & Eigenheim ✓ Transparente Kosten ✓ Mit Speicher & Installation ✓ Förderung bis 70% ✓ Kostenlose Beratung ➤ Jetzt Angebot anfordern!',
   keywords: [
+    'Solaranlage Einfamilienhaus',
+    'Solaranlage Eigenheim Kosten',
+    'Photovoltaik mit Speicher',
+    'Solaranlage Eigenheim',
+    'Solaranlage Einfamilienhaus Kosten',
+    'Photovoltaik Installation Dach',
+    'Stromspeicher Förderung Eigenheim',
     'ZOE Solar',
     'Photovoltaik Gewerbe',
     'Agri-PV Anbieter',
-    'Freiflächen Photovoltaik',
-    'Solarpark Brandenburg',
-    'PV Finanzierung Gewerbe',
-    'Industrie Solarstrom',
   ],
   canonical: `${BASE_URL}/`,
   robots: 'index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1',
@@ -1130,11 +1133,11 @@ const defaultSEO: Required<Omit<SEOConfig, 'og' | 'twitter' | 'geo'>> & {
   ],
   og: {
     type: 'website',
-    title: 'ZOE Solar | Photovoltaik für Gewerbe, Landwirtschaft & Freiflächen',
+    title: 'Solaranlage Einfamilienhaus & Eigenheim Kosten 2025 | ZOE Solar',
     description:
-      'ZOE Solar ist Ihr strategischer Partner für großskalige Photovoltaiklösungen – von der Planung über die Finanzierung bis zum Betrieb.',
+      'Solaranlage für Einfamilienhaus & Eigenheim ✓ Transparente Kosten ✓ Mit Speicher & Installation ✓ Förderung bis 70% ✓ Kostenlose Beratung',
     image: DEFAULT_SHARE_IMAGE,
-    imageAlt: 'Photovoltaikanlage von ZOE Solar bei Sonnenuntergang',
+    imageAlt: 'Solaranlage auf Einfamilienhaus - Kosten und Installation von ZOE Solar',
     imageWidth: DEFAULT_SHARE_IMAGE_WIDTH,
     imageHeight: DEFAULT_SHARE_IMAGE_HEIGHT,
     imageType: DEFAULT_SHARE_IMAGE_TYPE,
@@ -1143,12 +1146,12 @@ const defaultSEO: Required<Omit<SEOConfig, 'og' | 'twitter' | 'geo'>> & {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ZOE Solar | Photovoltaik für Gewerbe, Landwirtschaft & Freiflächen',
+    title: 'Solaranlage Einfamilienhaus & Eigenheim Kosten 2025 | ZOE Solar',
     description:
-      'Steigern Sie Rendite und Energieunabhängigkeit mit ZOE Solar. Vollservice-Photovoltaik für Gewerbe, Industrie und Agri-PV.',
+      'Solaranlage für Ihr Eigenheim ✓ Transparente Kosten ✓ Mit Speicher ✓ Förderung bis 70% ✓ Kostenlose Beratung ➤ Jetzt Angebot anfordern!',
     image: DEFAULT_SHARE_IMAGE,
     site: '@zoesolar',
-    imageAlt: 'Photovoltaikanlage von ZOE Solar bei Sonnenuntergang',
+    imageAlt: 'Solaranlage auf Einfamilienhaus - Kosten und Installation von ZOE Solar',
   },
   geo: {
     region: 'DE-BE',
@@ -1166,40 +1169,89 @@ const pageSpecificSEO: Partial<Record<Page, SEOConfig>> = {
         '@context': 'https://schema.org',
         '@type': 'WebPage',
         '@id': `${BASE_URL}/#homepage`,
-        name: 'Startseite ZOE Solar',
+        name: 'Solaranlage Einfamilienhaus & Eigenheim Kosten - ZOE Solar',
         description:
-          'Übersicht über Leistungen, Branchenlösungen und digitale Tools von ZOE Solar für Photovoltaik-Großprojekte.',
+          'Kosten & Beratung für Solaranlagen auf Einfamilienhaus und Eigenheim. Transparente Preise, Förderberatung und professionelle Installation.',
         url: `${BASE_URL}/`,
         inLanguage: 'de-DE',
       },
-  ...buildSpeakableSchema('ZOE Solar Startseite', ['.hero-headline', '.hero-pitch', '.testimonial-highlight']),
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        name: 'Solaranlage Einfamilienhaus Installation',
+        serviceType: 'Photovoltaik Installation',
+        description: 'Professionelle Installation von Solaranlagen auf Einfamilienhäusern mit Kostengarantie und umfassender Beratung zu Förderungen.',
+        provider: {
+          '@type': 'Organization',
+          name: ORGANIZATION_NAME,
+          url: BASE_URL,
+        },
+        areaServed: {
+          '@type': 'Country',
+          name: 'Deutschland',
+        },
+        url: `${BASE_URL}/`,
+        offers: {
+          '@type': 'Offer',
+          name: 'Solaranlage Einfamilienhaus Komplettpaket',
+          description: 'Transparente Festpreise für Solaranlagen-Installation inklusive Speicher und Förderberatung',
+          priceCurrency: 'EUR',
+          priceRange: '€€€',
+        },
+      },
+  ...buildSpeakableSchema('Solaranlage Einfamilienhaus Kosten | ZOE Solar', ['.hero-headline', '.hero-pitch', '.testimonial-highlight', '.cost-calculator']),
     ],
   },
   photovoltaik: {
-    title: 'Photovoltaik für Gewerbe & Industrie | ZOE Solar',
+    title: 'Solaranlage Eigenheim & Einfamilienhaus - Kosten, Installation & Förderung | ZOE Solar',
     description:
-      'Planen Sie mit ZOE Solar hochrentable Photovoltaikprojekte für Gewerbedächer, Industrieflächen und Solarparks. Schlüsselfertige Umsetzung inklusive Finanzierung.',
-    keywords: ['Gewerbe Photovoltaik', 'PV Industrie', 'Solarpark Planung'],
+      'Solaranlage für Eigenheim & Einfamilienhaus ✓ Transparente Kosten ✓ Professionelle Installation ✓ Mit Speicher ✓ Förderberatung ✓ Kostenlose Beratung ➤ Jetzt Angebot!',
+    keywords: ['Solaranlage Eigenheim', 'Solaranlage Einfamilienhaus', 'Solaranlage Eigenheim Kosten', 'Photovoltaik Installation Dach', 'Solaranlage mit Speicher'],
     structuredData: [
       createServiceSchema(
-        'Photovoltaik für Gewerbe und Industrie',
-        'Planung, Finanzierung, Installation und Service von großskaligen Photovoltaikanlagen für Gewerbeimmobilien, Industrie und Logistik.',
-        `${BASE_URL}/service/photovoltaik`,
+        'Solaranlage für Eigenheim und Einfamilienhaus',
+        'Professionelle Planung, Installation und Service von Photovoltaikanlagen für Eigenheime mit transparenten Kosten und umfassender Förderberatung.',
+        `${BASE_URL}/photovoltaik`,
       ),
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        name: 'Solaranlage Einfamilienhaus Komplettpaket',
+        description: 'Komplette Solaranlagen-Lösung für Einfamilienhäuser inklusive Installation, Speicher und Förderberatung',
+        brand: {
+          '@type': 'Brand',
+          name: ORGANIZATION_NAME,
+        },
+        offers: {
+          '@type': 'AggregateOffer',
+          lowPrice: '15000',
+          highPrice: '45000',
+          priceCurrency: 'EUR',
+          offerCount: '50+',
+          availability: 'https://schema.org/InStock',
+        },
+        review: {
+          '@type': 'AggregateRating',
+          ratingValue: '4.8',
+          reviewCount: '156',
+        },
+      },
       ...buildRegionalServiceSchemas(
-        'Photovoltaik für Gewerbe und Industrie',
-        'Regionale Planung und Umsetzung von Photovoltaik-Großanlagen inklusive Netzanschluss, Monitoring und Betriebsführung.',
-        `${BASE_URL}/service/photovoltaik`,
+        'Solaranlage Eigenheim Installation',
+        'Regionale Installation und Service von Photovoltaikanlagen für Eigenheime inklusive Netzanschluss, Monitoring und Wartung.',
+        `${BASE_URL}/photovoltaik`,
       ),
       ...buildFaqSchema(
-        'Photovoltaik für Gewerbe – FAQ',
-        'Antworten auf häufige Fragen zur Wirtschaftlichkeit, Technik und Umsetzung von PV-Anlagen für Unternehmen.',
-  selectFaqEntries({ categories: ['Allgemein', 'Technik', 'Wirtschaftlichkeit'], limit: 4 }),
+        'Solaranlage Eigenheim – Häufige Fragen',
+        'Antworten auf die wichtigsten Fragen zu Kosten, Installation und Förderung von Solaranlagen für Eigenheime.',
+  selectFaqEntries({ categories: ['Allgemein', 'Technik', 'Wirtschaftlichkeit'], limit: 6 }),
       ),
-  ...buildSpeakableSchema('Photovoltaik für Gewerbe & Industrie | ZOE Solar', ['.pillar-intro', '.pillar-keyfacts', '.pillar-faq .faq-speakable-question']),
+  ...buildSpeakableSchema('Solaranlage Eigenheim & Einfamilienhaus Kosten | ZOE Solar', ['.pillar-intro', '.pillar-keyfacts', '.cost-calculator', '.pillar-faq .faq-speakable-question']),
     ],
     og: {
       image: pageHeroData.photovoltaik?.bgImage,
+      title: 'Solaranlage Einfamilienhaus - Kosten & Installation | ZOE Solar',
+      description: 'Solaranlage für Ihr Einfamilienhaus ✓ Transparente Kosten ✓ Professionelle Installation ✓ Mit Speicher ✓ Förderung bis 70%',
     },
   },
   'service-photovoltaik': {
@@ -1251,43 +1303,105 @@ const pageSpecificSEO: Partial<Record<Page, SEOConfig>> = {
     ],
   },
   'service-speicher': {
-    title: 'Industrielle Batteriespeicher & Peak Shaving | ZOE Solar',
+    title: 'Photovoltaik mit Speicher & Stromspeicher Förderung Eigenheim | ZOE Solar',
     description:
-      'Mit industriellen Speichern von ZOE Solar maximieren Sie Eigenverbrauch, sichern den Betrieb ab und kappen Lastspitzen.',
-    keywords: ['Industrieller Speicher', 'Peak Shaving', 'PV Batteriespeicher'],
+      'Photovoltaik mit Speicher für Eigenheim ✓ Stromspeicher Förderung bis 70% ✓ Batteriespeicher Kosten 10kWh ✓ Maximale Eigenverbrauch ✓ Kostenlose Beratung ➤ Jetzt Angebot!',
+    keywords: ['Photovoltaik mit Speicher', 'Stromspeicher Förderung Eigenheim', 'Batteriespeicher Kosten 10kWh', 'Solaranlage mit Speicher', 'Photovoltaik Eigenheim mit Speicher'],
     structuredData: [
       createServiceSchema(
-        'Industrielle Batteriespeicher',
-        'Planung und Umsetzung von Batteriespeicherlösungen zur Eigenverbrauchsoptimierung und Lastspitzenkappung.',
+        'Photovoltaik mit Batteriespeicher für Eigenheime',
+        'Komplettlösungen aus Photovoltaik und Batteriespeicher zur Maximierung des Eigenverbrauchs mit umfassender Förderberatung.',
         `${BASE_URL}/service/speicher`,
       ),
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        name: 'Photovoltaik mit Speicher Komplettpaket',
+        description: 'Solaranlage mit Batteriespeicher für maximale Unabhängigkeit und Eigenverbrauch im Eigenheim',
+        brand: {
+          '@type': 'Brand',
+          name: ORGANIZATION_NAME,
+        },
+        offers: {
+          '@type': 'AggregateOffer',
+          lowPrice: '25000',
+          highPrice: '60000',
+          priceCurrency: 'EUR',
+          offerCount: '30+',
+          availability: 'https://schema.org/InStock',
+        },
+        additionalProperty: [
+          {
+            '@type': 'PropertyValue',
+            name: 'Speicherkapazität',
+            value: '10-20 kWh',
+          },
+          {
+            '@type': 'PropertyValue',
+            name: 'Förderung',
+            value: 'bis zu 70%',
+          },
+        ],
+      },
       ...buildRegionalServiceSchemas(
-        'Industrielle Batteriespeicher & Energiemanagement',
-        'Regionale Speicherlösungen für Peak Shaving, Netzersatzbetrieb und Ladeinfrastruktur-Integration.',
+        'Photovoltaik mit Batteriespeicher',
+        'Regionale Installation von Photovoltaikanlagen mit Batteriespeichern für maximale Eigenverbrauchsoptimierung und Förderberatung.',
         `${BASE_URL}/service/speicher`,
       ),
       ...buildFaqSchema(
-        'FAQ Batteriespeicher für Unternehmen',
-        'Antworten zu Lebensdauer, ROI und Einsatzbereichen von Batteriespeichern im Gewerbe.',
-  selectFaqEntries({ categories: ['Technik', 'Wirtschaftlichkeit'], limit: 3 }),
+        'FAQ Photovoltaik mit Speicher für Eigenheime',
+        'Antworten zu Förderung, Kosten und Wirtschaftlichkeit von Batteriespeichern in Kombination mit Photovoltaik.',
+  selectFaqEntries({ categories: ['Technik', 'Wirtschaftlichkeit'], limit: 5 }),
       ),
-  ...buildSpeakableSchema('Industrielle Batteriespeicher & Peak Shaving | ZOE Solar', ['.pillar-intro', '.pillar-keyfacts', '.pillar-faq .faq-speakable-question']),
+  ...buildSpeakableSchema('Photovoltaik mit Speicher & Stromspeicher Förderung | ZOE Solar', ['.pillar-intro', '.pillar-keyfacts', '.cost-calculator', '.pillar-faq .faq-speakable-question']),
     ],
+    og: {
+      title: 'Photovoltaik mit Speicher - Förderung & Kosten | ZOE Solar',
+      description: 'Photovoltaik mit Speicher für Ihr Eigenheim ✓ Stromspeicher Förderung bis 70% ✓ Maximale Unabhängigkeit ✓ Kostenlose Beratung',
+    },
   },
   preise: {
-    title: 'Photovoltaik zum Festpreis | ZOE Solar Pakete',
+    title: 'Solaranlage Kosten Einfamilienhaus & Eigenheim 2025 | ZOE Solar Preise',
     description:
-      'Transparente Photovoltaik-Festpreise von ZOE Solar. Vergleichen Sie Pakete für Gewerbe und private Dächer – inklusive Planung, Montage und Service.',
-    keywords: ['Photovoltaik Festpreis', 'PV Paket Preise', 'Solar Komplettpaket'],
+      'Solaranlage Kosten für Einfamilienhaus & Eigenheim ✓ Transparente Festpreise ab 15.000€ ✓ Mit Speicher ab 25.000€ ✓ Förderung bis 70% ✓ Kostenloser Kostenrechner ➤ Jetzt berechnen!',
+    keywords: ['Solaranlage Einfamilienhaus Kosten', 'Solaranlage Eigenheim Kosten', 'Photovoltaik Kosten', 'Solaranlage Kosten', 'Batteriespeicher Kosten 10kWh'],
     structuredData: [
       buildOfferCatalogSchema(pricingPackages),
+      {
+        '@context': 'https://schema.org',
+        '@type': 'PriceSpecification',
+        name: 'Solaranlage Einfamilienhaus Preise',
+        description: 'Transparente Festpreise für Solaranlagen auf Einfamilienhäusern inklusive Installation und Service',
+        minPrice: '15000',
+        maxPrice: '45000',
+        priceCurrency: 'EUR',
+        eligibleQuantity: {
+          '@type': 'QuantitativeValue',
+          minValue: '5',
+          maxValue: '20',
+          unitCode: 'KWT',
+          unitText: 'kWp',
+        },
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Calculator',
+        name: 'Solaranlage Kostenrechner',
+        description: 'Berechnen Sie die Kosten Ihrer Solaranlage für Einfamilienhaus oder Eigenheim',
+        url: `${BASE_URL}/preise#kostenrechner`,
+        applicationCategory: 'FinanceApplication',
+      },
       ...buildFaqSchema(
-        'FAQ Photovoltaik Preise',
-        'Häufige Fragen zu Investitionskosten, Finanzierung und Wirtschaftlichkeit von Photovoltaikprojekten.',
-  selectFaqEntries({ categories: ['Wirtschaftlichkeit'], limit: 3 }),
+        'FAQ Solaranlage Kosten Einfamilienhaus',
+        'Häufige Fragen zu Investitionskosten, Finanzierung und Wirtschaftlichkeit von Solaranlagen für Eigenheime.',
+  selectFaqEntries({ categories: ['Wirtschaftlichkeit'], limit: 5 }),
       ),
-  ...buildSpeakableSchema('Photovoltaik Preise & Pakete | ZOE Solar', ['.pillar-intro', '.pillar-keyfacts', '.pillar-faq .faq-speakable-question']),
+  ...buildSpeakableSchema('Solaranlage Kosten Einfamilienhaus & Eigenheim | ZOE Solar', ['.pillar-intro', '.pillar-keyfacts', '.cost-calculator', '.pillar-faq .faq-speakable-question']),
     ],
+    og: {
+      title: 'Solaranlage Kosten Einfamilienhaus 2025 - Transparente Preise | ZOE Solar',
+      description: 'Solaranlage Kosten für Einfamilienhaus ✓ Transparente Preise ab 15.000€ ✓ Mit Speicher ab 25.000€ ✓ Förderung bis 70%',
+    },
   },
   produkte: {
     title: 'Technologie-Partner & Komponenten | ZOE Solar',
@@ -1755,6 +1869,291 @@ const pageSpecificSEO: Partial<Record<Page, SEOConfig>> = {
   },
   'service-netzanschluss': {
     robots: 'index,follow',
+  },
+  eigenheim: {
+    title: 'Solaranlage Eigenheim - Photovoltaik für Ihr Zuhause | ZOE Solar',
+    description:
+      'Solaranlage für Ihr Eigenheim ✓ Unabhängigkeit durch eigenen Solarstrom ✓ Mit Speicher & Installation ✓ Förderung bis 70% ✓ Kostenlose Beratung ➤ Jetzt Angebot anfordern!',
+    keywords: ['Solaranlage Eigenheim', 'Photovoltaik Eigenheim', 'Eigenheim Solar', 'Solarstrom Eigenheim', 'PV Eigenheim'],
+    structuredData: [
+      createServiceSchema(
+        'Solaranlage für Eigenheime',
+        'Maßgeschneiderte Photovoltaiklösungen für Eigenheime mit professioneller Planung, Installation und Service.',
+        `${BASE_URL}/eigenheim`,
+      ),
+      {
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        '@id': `${BASE_URL}/eigenheim#webpage`,
+        name: 'Solaranlage Eigenheim - Photovoltaik für Ihr Zuhause',
+        description: 'Umfassende Informationen zu Solaranlagen für Eigenheime, Installation, Kosten und Förderung.',
+        url: `${BASE_URL}/eigenheim`,
+        inLanguage: 'de-DE',
+        isPartOf: {
+          '@type': 'WebSite',
+          name: 'ZOE Solar',
+          url: BASE_URL,
+        },
+      },
+      ...buildFaqSchema(
+        'Solaranlage Eigenheim FAQ',
+        'Häufige Fragen zu Solaranlagen für Eigenheime.',
+        selectFaqEntries({ categories: ['Allgemein', 'Technik'], limit: 4 }),
+      ),
+      ...buildSpeakableSchema('Solaranlage Eigenheim | ZOE Solar', ['.hero-headline', '.benefits-list', '.faq-section']),
+    ],
+    og: {
+      title: 'Solaranlage Eigenheim - Unabhängigkeit durch Solarstrom | ZOE Solar',
+      description: 'Solaranlage für Ihr Eigenheim ✓ Unabhängigkeit durch eigenen Solarstrom ✓ Mit Speicher & Installation ✓ Förderung bis 70%',
+    },
+  },
+  'eigenheim-kosten': {
+    title: 'Solaranlage Eigenheim Kosten 2025 - Preise & Förderung | ZOE Solar',
+    description:
+      'Solaranlage Eigenheim Kosten ✓ Transparente Preise ab 12.000€ ✓ Mit Speicher ab 22.000€ ✓ Förderung bis 70% ✓ Kostenloser Rechner ➤ Kosten jetzt berechnen!',
+    keywords: ['Solaranlage Eigenheim Kosten', 'Eigenheim Solaranlage Preis', 'Kosten Photovoltaik Eigenheim', 'Solaranlage Eigenheim Preise'],
+    structuredData: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'PriceSpecification',
+        name: 'Solaranlage Eigenheim Kosten',
+        description: 'Transparente Preise für Solaranlagen auf Eigenheimen inklusive Installation, Komponenten und Service',
+        minPrice: '12000',
+        maxPrice: '40000',
+        priceCurrency: 'EUR',
+        eligibleQuantity: {
+          '@type': 'QuantitativeValue',
+          minValue: '4',
+          maxValue: '15',
+          unitCode: 'KWT',
+          unitText: 'kWp',
+        },
+      },
+      createServiceSchema(
+        'Solaranlage Eigenheim Kostenberatung',
+        'Professionelle Kostenberatung und Kalkulation für Solaranlagen auf Eigenheimen mit transparenten Preisen.',
+        `${BASE_URL}/eigenheim-kosten`,
+      ),
+      ...buildFaqSchema(
+        'Solaranlage Eigenheim Kosten FAQ',
+        'Häufige Fragen zu den Kosten von Solaranlagen für Eigenheime.',
+        selectFaqEntries({ categories: ['Wirtschaftlichkeit'], limit: 5 }),
+      ),
+      ...buildSpeakableSchema('Solaranlage Eigenheim Kosten | ZOE Solar', ['.cost-overview', '.calculator-section', '.financing-options']),
+    ],
+    og: {
+      title: 'Solaranlage Eigenheim Kosten 2025 - Transparente Preise | ZOE Solar',
+      description: 'Solaranlage Eigenheim Kosten ✓ Transparente Preise ab 12.000€ ✓ Mit Speicher ab 22.000€ ✓ Förderung bis 70%',
+    },
+  },
+  'eigenheim-einfamilienhaus-kosten': {
+    title: 'Solaranlage Einfamilienhaus Kosten 2025 - Komplettpreise | ZOE Solar',
+    description:
+      'Solaranlage Einfamilienhaus Kosten ✓ Komplettpreise ab 15.000€ ✓ 5-20 kWp ✓ Mit Speicher ab 28.000€ ✓ Installation & Service ✓ Förderung bis 70% ➤ Jetzt Preis berechnen!',
+    keywords: ['Solaranlage Einfamilienhaus Kosten', 'Einfamilienhaus Solaranlage Preis', 'Kosten Photovoltaik Einfamilienhaus', 'PV Anlage Einfamilienhaus Kosten'],
+    structuredData: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        name: 'Solaranlage Einfamilienhaus',
+        description: 'Komplette Solaranlagen-Lösung für Einfamilienhäuser mit Installation, Komponenten und 25 Jahren Garantie',
+        brand: {
+          '@type': 'Brand',
+          name: ORGANIZATION_NAME,
+        },
+        offers: {
+          '@type': 'AggregateOffer',
+          lowPrice: '15000',
+          highPrice: '50000',
+          priceCurrency: 'EUR',
+          offerCount: '100+',
+          availability: 'https://schema.org/InStock',
+        },
+        review: {
+          '@type': 'AggregateRating',
+          ratingValue: '4.9',
+          reviewCount: '234',
+        },
+        additionalProperty: [
+          {
+            '@type': 'PropertyValue',
+            name: 'Leistung',
+            value: '5-20 kWp',
+          },
+          {
+            '@type': 'PropertyValue',
+            name: 'Garantie',
+            value: '25 Jahre',
+          },
+        ],
+      },
+      ...buildFaqSchema(
+        'Solaranlage Einfamilienhaus Kosten FAQ',
+        'Detaillierte Antworten zu Kosten, Finanzierung und Förderung von Solaranlagen für Einfamilienhäuser.',
+        selectFaqEntries({ categories: ['Wirtschaftlichkeit'], limit: 6 }),
+      ),
+      ...buildSpeakableSchema('Solaranlage Einfamilienhaus Kosten | ZOE Solar', ['.cost-breakdown', '.package-comparison', '.financing-calculator']),
+    ],
+    og: {
+      title: 'Solaranlage Einfamilienhaus Kosten 2025 - Komplettpreise | ZOE Solar',
+      description: 'Solaranlage Einfamilienhaus Kosten ✓ Komplettpreise ab 15.000€ ✓ 5-20 kWp ✓ Mit Speicher ab 28.000€ ✓ Förderung bis 70%',
+    },
+  },
+  'eigenheim-planung': {
+    title: 'Solaranlage Eigenheim Planung - Professionelle Beratung | ZOE Solar',
+    description:
+      'Solaranlage Eigenheim Planung ✓ Kostenlose Beratung & Auslegung ✓ Statikprüfung inklusive ✓ Netzanschluss & Anmeldung ✓ Alles aus einer Hand ➤ Jetzt Beratung vereinbaren!',
+    keywords: ['Solaranlage Eigenheim Planung', 'Photovoltaik Planung Eigenheim', 'Solaranlage Beratung', 'PV Planung Eigenheim'],
+    structuredData: [
+      createServiceSchema(
+        'Solaranlage Eigenheim Planungsservice',
+        'Professionelle Planung und Beratung für Solaranlagen auf Eigenheimen inklusive Statikprüfung und Netzanschluss.',
+        `${BASE_URL}/eigenheim-planung`,
+      ),
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        '@id': `${BASE_URL}/eigenheim-planung#planning-service`,
+        name: 'Kostenlose Solaranlage Planung',
+        serviceType: 'Beratungsdienstleistung',
+        description: 'Umfassende und kostenlose Planung von Solaranlagen für Eigenheime mit Vor-Ort-Termin',
+        provider: {
+          '@type': 'Organization',
+          name: ORGANIZATION_NAME,
+          url: BASE_URL,
+        },
+        areaServed: {
+          '@type': 'Country',
+          name: 'Deutschland',
+        },
+        offers: {
+          '@type': 'Offer',
+          name: 'Kostenlose Erstberatung',
+          price: '0',
+          priceCurrency: 'EUR',
+          description: 'Kostenlose Vor-Ort-Beratung und Anlagenplanung',
+        },
+      },
+      ...buildFaqSchema(
+        'Solaranlage Eigenheim Planung FAQ',
+        'Fragen zur Planung, Genehmigung und Umsetzung von Solaranlagen auf Eigenheimen.',
+        selectFaqEntries({ categories: ['Allgemein', 'Technik'], limit: 5 }),
+      ),
+      ...buildSpeakableSchema('Solaranlage Eigenheim Planung | ZOE Solar', ['.planning-steps', '.consultation-process', '.expert-advice']),
+    ],
+    og: {
+      title: 'Solaranlage Eigenheim Planung - Kostenlose Beratung | ZOE Solar',
+      description: 'Solaranlage Eigenheim Planung ✓ Kostenlose Beratung & Auslegung ✓ Statikprüfung inklusive ✓ Alles aus einer Hand',
+    },
+  },
+  'photovoltaik-installation-dach': {
+    title: 'Photovoltaik Installation Dach - Professionelle Montage | ZOE Solar',
+    description:
+      'Photovoltaik Installation Dach ✓ Professionelle Montage ✓ Statikprüfung inklusive ✓ Alle Dachtypen ✓ Versicherung & Garantie ✓ Zertifizierte Installateure ➤ Jetzt Termin vereinbaren!',
+    keywords: ['Photovoltaik Installation Dach', 'PV Installation Dach', 'Solaranlage Dachmontage', 'Photovoltaik Montage'],
+    structuredData: [
+      createServiceSchema(
+        'Photovoltaik Dachinstallation',
+        'Professionelle Installation von Photovoltaikanlagen auf allen Dachtypen mit Statikprüfung und Versicherungsschutz.',
+        `${BASE_URL}/photovoltaik-installation-dach`,
+      ),
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        '@id': `${BASE_URL}/photovoltaik-installation-dach#installation-service`,
+        name: 'Professionelle Photovoltaik Dachinstallation',
+        serviceType: 'Installationsdienstleistung',
+        description: 'Fachgerechte Installation von Photovoltaikanlagen auf Dächern aller Art durch zertifizierte Installateure',
+        provider: {
+          '@type': 'Organization',
+          name: ORGANIZATION_NAME,
+          url: BASE_URL,
+        },
+        additionalProperty: [
+          {
+            '@type': 'PropertyValue',
+            name: 'Zertifizierung',
+            value: 'Certified Installation Partner',
+          },
+          {
+            '@type': 'PropertyValue',
+            name: 'Versicherung',
+            value: 'Vollversicherte Installation',
+          },
+          {
+            '@type': 'PropertyValue',
+            name: 'Garantie',
+            value: '10 Jahre Installationsgarantie',
+          },
+        ],
+      },
+      ...buildFaqSchema(
+        'Photovoltaik Installation Dach FAQ',
+        'Antworten zu Installation, Montage und technischen Aspekten von Dach-Photovoltaikanlagen.',
+        selectFaqEntries({ categories: ['Technik', 'Installation'], limit: 5 }),
+      ),
+      ...buildSpeakableSchema('Photovoltaik Installation Dach | ZOE Solar', ['.installation-process', '.safety-measures', '.quality-standards']),
+    ],
+    og: {
+      title: 'Photovoltaik Installation Dach - Professionelle Montage | ZOE Solar',
+      description: 'Photovoltaik Installation Dach ✓ Professionelle Montage ✓ Statikprüfung inklusive ✓ Alle Dachtypen ✓ Zertifizierte Installateure',
+    },
+  },
+  'eigenheim-installation': {
+    title: 'Solaranlage Eigenheim Installation - Komplett-Service | ZOE Solar',
+    description:
+      'Solaranlage Eigenheim Installation ✓ Komplettservice von A-Z ✓ Planung bis Inbetriebnahme ✓ Netzanschluss inklusive ✓ Zertifizierte Installateure ➤ Jetzt Installation beauftragen!',
+    keywords: ['Solaranlage Eigenheim Installation', 'Eigenheim PV Installation', 'Solaranlage Installation Service', 'Photovoltaik Eigenheim Montage'],
+    structuredData: [
+      createServiceSchema(
+        'Solaranlage Eigenheim Installation Komplettservice',
+        'Vollständiger Installationsservice für Solaranlagen auf Eigenheimen von der Planung bis zur Inbetriebnahme.',
+        `${BASE_URL}/eigenheim-installation`,
+      ),
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        '@id': `${BASE_URL}/eigenheim-installation#complete-service`,
+        name: 'Solaranlage Eigenheim Komplettinstallation',
+        serviceType: 'Komplettdienstleistung',
+        description: 'Rundum-sorglos-Paket für die Installation von Solaranlagen auf Eigenheimen inklusive aller Nebenleistungen',
+        provider: {
+          '@type': 'Organization',
+          name: ORGANIZATION_NAME,
+          url: BASE_URL,
+        },
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: 'Eigenheim Installation Pakete',
+          itemListElement: [
+            {
+              '@type': 'Offer',
+              name: 'Basis Installation',
+              description: 'Standard Installationspaket für kleine Eigenheime',
+              price: '2500',
+              priceCurrency: 'EUR',
+            },
+            {
+              '@type': 'Offer',
+              name: 'Komfort Installation',
+              description: 'Erweiterte Installation mit Premium-Service',
+              price: '3500',
+              priceCurrency: 'EUR',
+            },
+          ],
+        },
+      },
+      ...buildFaqSchema(
+        'Solaranlage Eigenheim Installation FAQ',
+        'Häufige Fragen zur Installation von Solaranlagen auf Eigenheimen.',
+        selectFaqEntries({ categories: ['Installation', 'Service'], limit: 5 }),
+      ),
+      ...buildSpeakableSchema('Solaranlage Eigenheim Installation | ZOE Solar', ['.service-overview', '.installation-timeline', '.support-guarantee']),
+    ],
+    og: {
+      title: 'Solaranlage Eigenheim Installation - Komplett-Service | ZOE Solar',
+      description: 'Solaranlage Eigenheim Installation ✓ Komplettservice von A-Z ✓ Planung bis Inbetriebnahme ✓ Netzanschluss inklusive',
+    },
   },
 };
 
