@@ -38,7 +38,7 @@ jobs:
             -v "${{ github.workspace }}/server/storage:/app/server/storage" \
             -v "${{ github.workspace }}/public/assets/logos:/app/public/assets/logos" \
             -v "${{ github.workspace }}/logs:/app/logs" \
-            product-sync-runner 2>&1 | tee logs/product-sync.log
+            product-sync-runner npm run product-sync 2>&1 | tee logs/product-sync.log
 
       - name: Commit updated catalog
         id: commit
