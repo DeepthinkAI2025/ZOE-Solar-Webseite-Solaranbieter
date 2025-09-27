@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Manufacturer, Product, manufacturers } from '../data/products';
+import { productCatalog } from '../data/products.generated';
+import { Manufacturer, Product } from '../data/productTypes';
 import ProductDetailModal from '../components/ProductDetailModal';
 import SubHeader from '../components/SubHeader';
 
@@ -94,6 +95,8 @@ const ProductCard: React.FC<{
         </div>
     );
 };
+
+const { manufacturers } = productCatalog;
 
 const HerstellerDetailPage: React.FC<HerstellerDetailPageProps> = ({ manufacturer, comparisonList, onToggleCompare, onSelectHersteller, bannerHeight, headerHeight }) => {
     const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);

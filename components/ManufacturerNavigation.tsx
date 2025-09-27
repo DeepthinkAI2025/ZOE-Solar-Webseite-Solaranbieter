@@ -1,10 +1,13 @@
 import React from 'react';
-import { manufacturers, Manufacturer } from '../data/products';
+import { productCatalog } from '../data/products.generated';
+import { Manufacturer } from '../data/productTypes';
 
 interface ManufacturerNavigationProps {
     currentManufacturer: Manufacturer;
     onSelectHersteller: (slug: string) => void;
 }
+
+const { manufacturers } = productCatalog;
 
 const ManufacturerNavigation: React.FC<ManufacturerNavigationProps> = ({ currentManufacturer, onSelectHersteller }) => {
     // FIX: Corrected filter logic to check if category array includes the current category.

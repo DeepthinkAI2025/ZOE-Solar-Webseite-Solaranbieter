@@ -1,5 +1,7 @@
-import React, { useState, useMemo } from 'react';
-import { manufacturers, Product, ProductCategory } from '../data/products';
+import React, { useState, useMemo, useEffect } from 'react';
+import { productCatalog } from '../data/products.generated';
+import { Product, ProductCategory } from '../data/productTypes';
+import { fetchLiveProducts } from '../services/productService';
 import { Page } from '../types';
 
 interface ProductsPreviewProps {
@@ -20,7 +22,23 @@ const CategoryIcon: React.FC<{ name: string; }> = ({ name }) => {
     return icons[name] || null;
 }
 
+const { manufacturers: staticManufacturers } = productCatalog;
+
+// When available, liveData.manufacturers will replace static manufacturers
 const ProductsPreview: React.FC<ProductsPreviewProps> = ({ setPage, onSelectHersteller }) => {
+    const [liveManufacturers, setLiveManufacturers] = useState<any[] | null>(null);
+    useEffect(() => {
+        let mounted = true;
+        fetchLiveProducts().then(data => {
+            if (!mounted) return;
+            if (data && Array.isArray(data.manufacturers)) {
+                setLiveManufacturers(data.manufacturers);
+            }
+        });
+        return () => { mounted = false; };
+    }, []);
+
+    const manufacturers = liveManufacturers ?? staticManufacturers;
     const [activeCategory, setActiveCategory] = useState<ProductCategory>(featuredCategories[0]);
 
     const { featuredProduct, categoryManufacturers } = useMemo(() => {

@@ -1,0 +1,51 @@
+export const manufacturerSeed = [
+  { slug: 'meyer-burger', name: 'Meyer Burger', website: 'https://www.meyerburger.com' },
+  { slug: 'q-cells', name: 'Q CELLS', website: 'https://www.q-cells.com' },
+  { slug: 'jinko-solar', name: 'Jinko Solar', website: 'https://www.jinkosolar.com' },
+  { slug: 'ja-solar', name: 'JA Solar', website: 'https://www.jasolar.com' },
+  { slug: 'trina-solar', name: 'Trina Solar', website: 'https://www.trinasolar.com' },
+  { slug: 'longi-solar', name: 'LONGi Solar', website: 'https://www.longi-solar.com' },
+  { slug: 'sma', name: 'SMA', website: 'https://www.sma.de' },
+  { slug: 'fronius', name: 'Fronius', website: 'https://www.fronius.com' },
+  { slug: 'solaredge', name: 'SolarEdge', website: 'https://www.solaredge.com' },
+  { slug: 'huawei', name: 'Huawei', website: 'https://solar.huawei.com' },
+  { slug: 'goodwe', name: 'GoodWe', website: 'https://www.goodwe.com' },
+  { slug: 'enphase', name: 'Enphase', website: 'https://enphase.com' },
+  { slug: 'byd', name: 'BYD', website: 'https://www.byd.com' },
+  { slug: 'lg-energy-solution', name: 'LG Energy Solution', website: 'https://www.lgessbattery.com' },
+  { slug: 'sonnen', name: 'sonnen', website: 'https://sonnen.de' },
+  { slug: 'fox-ess', name: 'FoxESS', website: 'https://www.fox-ess.com' },
+  { slug: 'victron-energy', name: 'Victron Energy', website: 'https://www.victronenergy.com' },
+  { slug: 'wallbox-chargers', name: 'Wallbox', website: 'https://wallbox.com' },
+  { slug: 'keba', name: 'KEBA', website: 'https://www.keba.com' },
+  { slug: 'mennekes', name: 'Mennekes', website: 'https://www.mennekes.de' },
+  { slug: 'alpitronic', name: 'Alpitronic', website: 'https://www.alpitronic.com' },
+  { slug: 'k2-systems', name: 'K2 Systems', website: 'https://www.k2-systems.com' },
+  { slug: 'schneider-electric', name: 'Schneider Electric', website: 'https://www.se.com' },
+  { slug: 'sungrow', name: 'Sungrow', website: 'https://www.sungrowpower.com' },
+  { slug: 'canadian-solar', name: 'Canadian Solar', website: 'https://www.canadiansolar.com' },
+  { slug: 'rec-group', name: 'REC Group', website: 'https://www.recgroup.com' },
+  { slug: 'panasonic', name: 'Panasonic', website: 'https://www.panasonic.com' },
+  { slug: 'seraphim', name: 'Seraphim', website: 'https://seraphim-energy.com' },
+  { slug: 'risen-energy', name: 'Risen Energy', website: 'https://www.risenenergy.com' },
+  { slug: 'talesun', name: 'Talesun', website: 'http://www.talesun.com' },
+  { slug: 'astronergy', name: 'Astronergy', website: 'https://www.astronergy.com' },
+  { slug: 'sunpower', name: 'SunPower', website: 'https://us.sunpower.com' },
+  { slug: 'suntech', name: 'Suntech', website: 'https://www.suntech-power.com' },
+  { slug: 'solarwatt', name: 'Solarwatt', website: 'https://www.solarwatt.com' },
+  { slug: 'growatt', name: 'Growatt', website: 'https://www.growatt.com' },
+  { slug: 'outback-power', name: 'OutBack Power', website: 'https://www.outbackpower.com' },
+  { slug: 'fimer', name: 'FIMER', website: 'https://www.fimer.com' },
+  { slug: 'ginlong-solis', name: 'Ginlong (Solis)', website: 'https://www.ginlong.com' },
+  { slug: 'delta-electronics', name: 'Delta Electronics', website: 'https://www.deltaww.com' },
+  { slug: 'kostal', name: 'Kostal', website: 'https://www.kostal-solar-electric.com' },
+  { slug: 'studer', name: 'Studer', website: 'https://www.studer-innotec.com' },
+  { slug: 'abb', name: 'ABB', website: 'https://new.abb.com' },
+  { slug: 'fujitsu', name: 'Fujitsu', website: 'https://www.fujitsu.com' }
+];
+
+export function resolveManufacturerSeed() {
+  return manufacturerSeed.map((entry) => ({ ...entry }));
+}
+
+export default manufacturerSeed;
