@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-09-26T05:02:17.948Z",
+  "generatedAt": "2025-09-27T20:52:21.933Z",
   "totals": {
     "regions": 22,
     "analysedLocations": 22,
@@ -16,46 +16,46 @@
         "score": 83
       },
       {
-        "region": "Stuttgart",
+        "region": "München",
         "score": 83
       },
       {
-        "region": "München",
-        "score": 17
+        "region": "Frankfurt am Main",
+        "score": 83
       },
       {
-        "region": "Zürich",
-        "score": 17
+        "region": "Stuttgart",
+        "score": 83
       }
     ],
     "lowestLocations": [
       {
         "region": "Köln",
-        "score": 0
-      },
-      {
-        "region": "Frankfurt am Main",
-        "score": 0
+        "score": 67
       },
       {
         "region": "Düsseldorf",
-        "score": 0
+        "score": 67
       },
       {
         "region": "Leipzig",
-        "score": 0
+        "score": 67
       },
       {
         "region": "Hannover",
-        "score": 0
+        "score": 67
+      },
+      {
+        "region": "Nürnberg",
+        "score": 67
       }
     ],
-    "averageLocationScore": 13.64,
+    "averageLocationScore": 72.14,
     "latestSeoSnapshot": {
-      "timestamp": "2025-09-25T23:50:22.941Z",
-      "avgPosition": 20.28,
-      "top10Percentage": 18.9,
-      "estimatedTraffic": 12630
+      "timestamp": "2025-09-27T20:47:34.009Z",
+      "avgPosition": 20.39,
+      "top10Percentage": 24.41,
+      "estimatedTraffic": 13855
     }
   },
   "answerEngine": {
@@ -336,30 +336,26 @@
       "region": "München",
       "slug": "munchen",
       "route": "/standort/munchen",
-      "canonical": "/standort/munchen",
+      "canonical": "https://www.zoe-solar.de/standort/munchen",
       "geo": {
         "region": "DE-BY",
         "latitude": 48.135125,
         "longitude": 11.581981,
         "radiusKm": 160
       },
-      "score": 17,
+      "score": 83,
       "checks": {
-        "hasRoute": false,
+        "hasRoute": true,
         "hasLocalContent": false,
-        "hasLocalBusinessSchema": false,
-        "hasFaqSchema": false,
-        "hasSpeakableSchema": false,
+        "hasLocalBusinessSchema": true,
+        "hasFaqSchema": true,
+        "hasSpeakableSchema": true,
         "faqCoverage": 1,
         "questionKeywordCount": 0,
         "uncoveredQuestions": 0
       },
       "uncoveredQuestionExamples": [],
       "recommendedActions": [
-        {
-          "priority": "hoch",
-          "action": "Standortseite für München unter /standort/munchen anlegen und im Router registrieren."
-        },
         {
           "priority": "hoch",
           "action": "Lokale Content-Bausteine in data/localContent.ts für München erweitern."
@@ -374,20 +370,20 @@
       "region": "Köln",
       "slug": "koln",
       "route": "/standort/koln",
-      "canonical": "/standort/koln",
+      "canonical": "https://www.zoe-solar.de/standort/koln",
       "geo": {
         "region": "DE-NW",
         "latitude": 50.937531,
         "longitude": 6.960279,
         "radiusKm": 140
       },
-      "score": 0,
+      "score": 67,
       "checks": {
-        "hasRoute": false,
+        "hasRoute": true,
         "hasLocalContent": false,
-        "hasLocalBusinessSchema": false,
-        "hasFaqSchema": false,
-        "hasSpeakableSchema": false,
+        "hasLocalBusinessSchema": true,
+        "hasFaqSchema": true,
+        "hasSpeakableSchema": true,
         "faqCoverage": 0,
         "questionKeywordCount": 1,
         "uncoveredQuestions": 1
@@ -396,10 +392,6 @@
         "Solaranlage Kosten Köln"
       ],
       "recommendedActions": [
-        {
-          "priority": "hoch",
-          "action": "Standortseite für Köln unter /standort/koln anlegen und im Router registrieren."
-        },
         {
           "priority": "hoch",
           "action": "Lokale Content-Bausteine in data/localContent.ts für Köln erweitern."
@@ -416,43 +408,28 @@
     },
     {
       "region": "Frankfurt am Main",
-      "slug": "frankfurt-am-main",
-      "route": "/standort/frankfurt-am-main",
-      "canonical": "/standort/frankfurt-am-main",
+      "slug": "frankfurt",
+      "route": "/standort/frankfurt",
+      "canonical": "https://www.zoe-solar.de/standort/frankfurt",
       "geo": {
         "region": "DE-HE",
         "latitude": 50.110924,
         "longitude": 8.682127,
         "radiusKm": 130
       },
-      "score": 0,
+      "score": 83,
       "checks": {
-        "hasRoute": false,
-        "hasLocalContent": false,
-        "hasLocalBusinessSchema": false,
-        "hasFaqSchema": false,
-        "hasSpeakableSchema": false,
+        "hasRoute": true,
+        "hasLocalContent": true,
+        "hasLocalBusinessSchema": true,
+        "hasFaqSchema": true,
+        "hasSpeakableSchema": true,
         "faqCoverage": 0,
-        "questionKeywordCount": 1,
-        "uncoveredQuestions": 1
+        "questionKeywordCount": 0,
+        "uncoveredQuestions": 0
       },
-      "uncoveredQuestionExamples": [
-        "Solaranlage Kosten Frankfurt"
-      ],
-      "recommendedActions": [
-        {
-          "priority": "hoch",
-          "action": "Standortseite für Frankfurt am Main unter /standort/frankfurt-am-main anlegen und im Router registrieren."
-        },
-        {
-          "priority": "hoch",
-          "action": "Lokale Content-Bausteine in data/localContent.ts für Frankfurt am Main erweitern."
-        },
-        {
-          "priority": "hoch",
-          "action": "Antworten für 1 unbeantwortete Frage-Keywords erstellen (\"Solaranlage Kosten Frankfurt\")."
-        }
-      ]
+      "uncoveredQuestionExamples": [],
+      "recommendedActions": []
     },
     {
       "region": "Stuttgart",
@@ -494,30 +471,26 @@
       "region": "Düsseldorf",
       "slug": "dusseldorf",
       "route": "/standort/dusseldorf",
-      "canonical": "/standort/dusseldorf",
+      "canonical": "https://www.zoe-solar.de/standort/dusseldorf",
       "geo": {
         "region": "DE-NW",
         "latitude": 51.227741,
         "longitude": 6.773456,
         "radiusKm": 120
       },
-      "score": 0,
+      "score": 67,
       "checks": {
-        "hasRoute": false,
+        "hasRoute": true,
         "hasLocalContent": false,
-        "hasLocalBusinessSchema": false,
-        "hasFaqSchema": false,
-        "hasSpeakableSchema": false,
+        "hasLocalBusinessSchema": true,
+        "hasFaqSchema": true,
+        "hasSpeakableSchema": true,
         "faqCoverage": 0,
         "questionKeywordCount": 0,
         "uncoveredQuestions": 0
       },
       "uncoveredQuestionExamples": [],
       "recommendedActions": [
-        {
-          "priority": "hoch",
-          "action": "Standortseite für Düsseldorf unter /standort/dusseldorf anlegen und im Router registrieren."
-        },
         {
           "priority": "hoch",
           "action": "Lokale Content-Bausteine in data/localContent.ts für Düsseldorf erweitern."
@@ -528,30 +501,26 @@
       "region": "Leipzig",
       "slug": "leipzig",
       "route": "/standort/leipzig",
-      "canonical": "/standort/leipzig",
+      "canonical": "https://www.zoe-solar.de/standort/leipzig",
       "geo": {
         "region": "DE-SN",
         "latitude": 51.339695,
         "longitude": 12.373075,
         "radiusKm": 110
       },
-      "score": 0,
+      "score": 67,
       "checks": {
-        "hasRoute": false,
+        "hasRoute": true,
         "hasLocalContent": false,
-        "hasLocalBusinessSchema": false,
-        "hasFaqSchema": false,
-        "hasSpeakableSchema": false,
+        "hasLocalBusinessSchema": true,
+        "hasFaqSchema": true,
+        "hasSpeakableSchema": true,
         "faqCoverage": 0,
         "questionKeywordCount": 0,
         "uncoveredQuestions": 0
       },
       "uncoveredQuestionExamples": [],
       "recommendedActions": [
-        {
-          "priority": "hoch",
-          "action": "Standortseite für Leipzig unter /standort/leipzig anlegen und im Router registrieren."
-        },
         {
           "priority": "hoch",
           "action": "Lokale Content-Bausteine in data/localContent.ts für Leipzig erweitern."
@@ -566,30 +535,26 @@
       "region": "Hannover",
       "slug": "hannover",
       "route": "/standort/hannover",
-      "canonical": "/standort/hannover",
+      "canonical": "https://www.zoe-solar.de/standort/hannover",
       "geo": {
         "region": "DE-NI",
         "latitude": 52.375892,
         "longitude": 9.73201,
         "radiusKm": 110
       },
-      "score": 0,
+      "score": 67,
       "checks": {
-        "hasRoute": false,
+        "hasRoute": true,
         "hasLocalContent": false,
-        "hasLocalBusinessSchema": false,
-        "hasFaqSchema": false,
-        "hasSpeakableSchema": false,
+        "hasLocalBusinessSchema": true,
+        "hasFaqSchema": true,
+        "hasSpeakableSchema": true,
         "faqCoverage": 0,
         "questionKeywordCount": 0,
         "uncoveredQuestions": 0
       },
       "uncoveredQuestionExamples": [],
       "recommendedActions": [
-        {
-          "priority": "hoch",
-          "action": "Standortseite für Hannover unter /standort/hannover anlegen und im Router registrieren."
-        },
         {
           "priority": "hoch",
           "action": "Lokale Content-Bausteine in data/localContent.ts für Hannover erweitern."
@@ -604,30 +569,26 @@
       "region": "Nürnberg",
       "slug": "nurnberg",
       "route": "/standort/nurnberg",
-      "canonical": "/standort/nurnberg",
+      "canonical": "https://www.zoe-solar.de/standort/nurnberg",
       "geo": {
         "region": "DE-BY",
         "latitude": 49.452103,
         "longitude": 11.076665,
         "radiusKm": 100
       },
-      "score": 0,
+      "score": 67,
       "checks": {
-        "hasRoute": false,
+        "hasRoute": true,
         "hasLocalContent": false,
-        "hasLocalBusinessSchema": false,
-        "hasFaqSchema": false,
-        "hasSpeakableSchema": false,
+        "hasLocalBusinessSchema": true,
+        "hasFaqSchema": true,
+        "hasSpeakableSchema": true,
         "faqCoverage": 0,
         "questionKeywordCount": 0,
         "uncoveredQuestions": 0
       },
       "uncoveredQuestionExamples": [],
       "recommendedActions": [
-        {
-          "priority": "hoch",
-          "action": "Standortseite für Nürnberg unter /standort/nurnberg anlegen und im Router registrieren."
-        },
         {
           "priority": "hoch",
           "action": "Lokale Content-Bausteine in data/localContent.ts für Nürnberg erweitern."
@@ -642,30 +603,26 @@
       "region": "Dresden",
       "slug": "dresden",
       "route": "/standort/dresden",
-      "canonical": "/standort/dresden",
+      "canonical": "https://www.zoe-solar.de/standort/dresden",
       "geo": {
         "region": "DE-SN",
         "latitude": 51.050409,
         "longitude": 13.737262,
         "radiusKm": 110
       },
-      "score": 0,
+      "score": 67,
       "checks": {
-        "hasRoute": false,
+        "hasRoute": true,
         "hasLocalContent": false,
-        "hasLocalBusinessSchema": false,
-        "hasFaqSchema": false,
-        "hasSpeakableSchema": false,
+        "hasLocalBusinessSchema": true,
+        "hasFaqSchema": true,
+        "hasSpeakableSchema": true,
         "faqCoverage": 0,
         "questionKeywordCount": 0,
         "uncoveredQuestions": 0
       },
       "uncoveredQuestionExamples": [],
       "recommendedActions": [
-        {
-          "priority": "hoch",
-          "action": "Standortseite für Dresden unter /standort/dresden anlegen und im Router registrieren."
-        },
         {
           "priority": "hoch",
           "action": "Lokale Content-Bausteine in data/localContent.ts für Dresden erweitern."
@@ -680,30 +637,26 @@
       "region": "Bremen",
       "slug": "bremen",
       "route": "/standort/bremen",
-      "canonical": "/standort/bremen",
+      "canonical": "https://www.zoe-solar.de/standort/bremen",
       "geo": {
         "region": "DE-HB",
         "latitude": 53.079296,
         "longitude": 8.801694,
         "radiusKm": 100
       },
-      "score": 0,
+      "score": 67,
       "checks": {
-        "hasRoute": false,
+        "hasRoute": true,
         "hasLocalContent": false,
-        "hasLocalBusinessSchema": false,
-        "hasFaqSchema": false,
-        "hasSpeakableSchema": false,
+        "hasLocalBusinessSchema": true,
+        "hasFaqSchema": true,
+        "hasSpeakableSchema": true,
         "faqCoverage": 0,
         "questionKeywordCount": 0,
         "uncoveredQuestions": 0
       },
       "uncoveredQuestionExamples": [],
       "recommendedActions": [
-        {
-          "priority": "hoch",
-          "action": "Standortseite für Bremen unter /standort/bremen anlegen und im Router registrieren."
-        },
         {
           "priority": "hoch",
           "action": "Lokale Content-Bausteine in data/localContent.ts für Bremen erweitern."
@@ -714,30 +667,26 @@
       "region": "Wien",
       "slug": "wien",
       "route": "/standort/wien",
-      "canonical": "/standort/wien",
+      "canonical": "https://www.zoe-solar.de/standort/wien",
       "geo": {
         "region": "AT-9",
         "latitude": 48.208174,
         "longitude": 16.373819,
         "radiusKm": 120
       },
-      "score": 0,
+      "score": 67,
       "checks": {
-        "hasRoute": false,
+        "hasRoute": true,
         "hasLocalContent": false,
-        "hasLocalBusinessSchema": false,
-        "hasFaqSchema": false,
-        "hasSpeakableSchema": false,
+        "hasLocalBusinessSchema": true,
+        "hasFaqSchema": true,
+        "hasSpeakableSchema": true,
         "faqCoverage": 0,
         "questionKeywordCount": 0,
         "uncoveredQuestions": 0
       },
       "uncoveredQuestionExamples": [],
       "recommendedActions": [
-        {
-          "priority": "hoch",
-          "action": "Standortseite für Wien unter /standort/wien anlegen und im Router registrieren."
-        },
         {
           "priority": "hoch",
           "action": "Lokale Content-Bausteine in data/localContent.ts für Wien erweitern."
@@ -748,30 +697,26 @@
       "region": "Graz",
       "slug": "graz",
       "route": "/standort/graz",
-      "canonical": "/standort/graz",
+      "canonical": "https://www.zoe-solar.de/standort/graz",
       "geo": {
         "region": "AT-6",
         "latitude": 47.070714,
         "longitude": 15.439504,
         "radiusKm": 100
       },
-      "score": 0,
+      "score": 67,
       "checks": {
-        "hasRoute": false,
+        "hasRoute": true,
         "hasLocalContent": false,
-        "hasLocalBusinessSchema": false,
-        "hasFaqSchema": false,
-        "hasSpeakableSchema": false,
+        "hasLocalBusinessSchema": true,
+        "hasFaqSchema": true,
+        "hasSpeakableSchema": true,
         "faqCoverage": 0,
         "questionKeywordCount": 0,
         "uncoveredQuestions": 0
       },
       "uncoveredQuestionExamples": [],
       "recommendedActions": [
-        {
-          "priority": "hoch",
-          "action": "Standortseite für Graz unter /standort/graz anlegen und im Router registrieren."
-        },
         {
           "priority": "hoch",
           "action": "Lokale Content-Bausteine in data/localContent.ts für Graz erweitern."
@@ -782,30 +727,26 @@
       "region": "Linz",
       "slug": "linz",
       "route": "/standort/linz",
-      "canonical": "/standort/linz",
+      "canonical": "https://www.zoe-solar.de/standort/linz",
       "geo": {
         "region": "AT-4",
         "latitude": 48.30694,
         "longitude": 14.28583,
         "radiusKm": 90
       },
-      "score": 0,
+      "score": 67,
       "checks": {
-        "hasRoute": false,
+        "hasRoute": true,
         "hasLocalContent": false,
-        "hasLocalBusinessSchema": false,
-        "hasFaqSchema": false,
-        "hasSpeakableSchema": false,
+        "hasLocalBusinessSchema": true,
+        "hasFaqSchema": true,
+        "hasSpeakableSchema": true,
         "faqCoverage": 0,
         "questionKeywordCount": 0,
         "uncoveredQuestions": 0
       },
       "uncoveredQuestionExamples": [],
       "recommendedActions": [
-        {
-          "priority": "hoch",
-          "action": "Standortseite für Linz unter /standort/linz anlegen und im Router registrieren."
-        },
         {
           "priority": "hoch",
           "action": "Lokale Content-Bausteine in data/localContent.ts für Linz erweitern."
@@ -816,30 +757,26 @@
       "region": "Salzburg",
       "slug": "salzburg",
       "route": "/standort/salzburg",
-      "canonical": "/standort/salzburg",
+      "canonical": "https://www.zoe-solar.de/standort/salzburg",
       "geo": {
         "region": "AT-5",
         "latitude": 47.80949,
         "longitude": 13.05501,
         "radiusKm": 90
       },
-      "score": 0,
+      "score": 67,
       "checks": {
-        "hasRoute": false,
+        "hasRoute": true,
         "hasLocalContent": false,
-        "hasLocalBusinessSchema": false,
-        "hasFaqSchema": false,
-        "hasSpeakableSchema": false,
+        "hasLocalBusinessSchema": true,
+        "hasFaqSchema": true,
+        "hasSpeakableSchema": true,
         "faqCoverage": 0,
         "questionKeywordCount": 0,
         "uncoveredQuestions": 0
       },
       "uncoveredQuestionExamples": [],
       "recommendedActions": [
-        {
-          "priority": "hoch",
-          "action": "Standortseite für Salzburg unter /standort/salzburg anlegen und im Router registrieren."
-        },
         {
           "priority": "hoch",
           "action": "Lokale Content-Bausteine in data/localContent.ts für Salzburg erweitern."
@@ -850,30 +787,26 @@
       "region": "Innsbruck",
       "slug": "innsbruck",
       "route": "/standort/innsbruck",
-      "canonical": "/standort/innsbruck",
+      "canonical": "https://www.zoe-solar.de/standort/innsbruck",
       "geo": {
         "region": "AT-7",
         "latitude": 47.269212,
         "longitude": 11.404102,
         "radiusKm": 80
       },
-      "score": 0,
+      "score": 67,
       "checks": {
-        "hasRoute": false,
+        "hasRoute": true,
         "hasLocalContent": false,
-        "hasLocalBusinessSchema": false,
-        "hasFaqSchema": false,
-        "hasSpeakableSchema": false,
+        "hasLocalBusinessSchema": true,
+        "hasFaqSchema": true,
+        "hasSpeakableSchema": true,
         "faqCoverage": 0,
         "questionKeywordCount": 0,
         "uncoveredQuestions": 0
       },
       "uncoveredQuestionExamples": [],
       "recommendedActions": [
-        {
-          "priority": "hoch",
-          "action": "Standortseite für Innsbruck unter /standort/innsbruck anlegen und im Router registrieren."
-        },
         {
           "priority": "hoch",
           "action": "Lokale Content-Bausteine in data/localContent.ts für Innsbruck erweitern."
@@ -884,30 +817,26 @@
       "region": "Zürich",
       "slug": "zurich",
       "route": "/standort/zurich",
-      "canonical": "/standort/zurich",
+      "canonical": "https://www.zoe-solar.de/standort/zurich",
       "geo": {
         "region": "CH-ZH",
         "latitude": 47.376887,
         "longitude": 8.541694,
         "radiusKm": 90
       },
-      "score": 17,
+      "score": 83,
       "checks": {
-        "hasRoute": false,
+        "hasRoute": true,
         "hasLocalContent": false,
-        "hasLocalBusinessSchema": false,
-        "hasFaqSchema": false,
-        "hasSpeakableSchema": false,
+        "hasLocalBusinessSchema": true,
+        "hasFaqSchema": true,
+        "hasSpeakableSchema": true,
         "faqCoverage": 1,
         "questionKeywordCount": 0,
         "uncoveredQuestions": 0
       },
       "uncoveredQuestionExamples": [],
       "recommendedActions": [
-        {
-          "priority": "hoch",
-          "action": "Standortseite für Zürich unter /standort/zurich anlegen und im Router registrieren."
-        },
         {
           "priority": "hoch",
           "action": "Lokale Content-Bausteine in data/localContent.ts für Zürich erweitern."
@@ -918,30 +847,26 @@
       "region": "Basel",
       "slug": "basel",
       "route": "/standort/basel",
-      "canonical": "/standort/basel",
+      "canonical": "https://www.zoe-solar.de/standort/basel",
       "geo": {
         "region": "CH-BS",
         "latitude": 47.559599,
         "longitude": 7.588576,
         "radiusKm": 80
       },
-      "score": 0,
+      "score": 67,
       "checks": {
-        "hasRoute": false,
+        "hasRoute": true,
         "hasLocalContent": false,
-        "hasLocalBusinessSchema": false,
-        "hasFaqSchema": false,
-        "hasSpeakableSchema": false,
+        "hasLocalBusinessSchema": true,
+        "hasFaqSchema": true,
+        "hasSpeakableSchema": true,
         "faqCoverage": 0,
         "questionKeywordCount": 0,
         "uncoveredQuestions": 0
       },
       "uncoveredQuestionExamples": [],
       "recommendedActions": [
-        {
-          "priority": "hoch",
-          "action": "Standortseite für Basel unter /standort/basel anlegen und im Router registrieren."
-        },
         {
           "priority": "hoch",
           "action": "Lokale Content-Bausteine in data/localContent.ts für Basel erweitern."
@@ -952,30 +877,26 @@
       "region": "Bern",
       "slug": "bern",
       "route": "/standort/bern",
-      "canonical": "/standort/bern",
+      "canonical": "https://www.zoe-solar.de/standort/bern",
       "geo": {
         "region": "CH-BE",
         "latitude": 46.947974,
         "longitude": 7.447447,
         "radiusKm": 80
       },
-      "score": 0,
+      "score": 67,
       "checks": {
-        "hasRoute": false,
+        "hasRoute": true,
         "hasLocalContent": false,
-        "hasLocalBusinessSchema": false,
-        "hasFaqSchema": false,
-        "hasSpeakableSchema": false,
+        "hasLocalBusinessSchema": true,
+        "hasFaqSchema": true,
+        "hasSpeakableSchema": true,
         "faqCoverage": 0,
         "questionKeywordCount": 0,
         "uncoveredQuestions": 0
       },
       "uncoveredQuestionExamples": [],
       "recommendedActions": [
-        {
-          "priority": "hoch",
-          "action": "Standortseite für Bern unter /standort/bern anlegen und im Router registrieren."
-        },
         {
           "priority": "hoch",
           "action": "Lokale Content-Bausteine in data/localContent.ts für Bern erweitern."
@@ -986,30 +907,26 @@
       "region": "Genf",
       "slug": "genf",
       "route": "/standort/genf",
-      "canonical": "/standort/genf",
+      "canonical": "https://www.zoe-solar.de/standort/genf",
       "geo": {
         "region": "CH-GE",
         "latitude": 46.204391,
         "longitude": 6.143158,
         "radiusKm": 70
       },
-      "score": 0,
+      "score": 67,
       "checks": {
-        "hasRoute": false,
+        "hasRoute": true,
         "hasLocalContent": false,
-        "hasLocalBusinessSchema": false,
-        "hasFaqSchema": false,
-        "hasSpeakableSchema": false,
+        "hasLocalBusinessSchema": true,
+        "hasFaqSchema": true,
+        "hasSpeakableSchema": true,
         "faqCoverage": 0,
         "questionKeywordCount": 0,
         "uncoveredQuestions": 0
       },
       "uncoveredQuestionExamples": [],
       "recommendedActions": [
-        {
-          "priority": "hoch",
-          "action": "Standortseite für Genf unter /standort/genf anlegen und im Router registrieren."
-        },
         {
           "priority": "hoch",
           "action": "Lokale Content-Bausteine in data/localContent.ts für Genf erweitern."
@@ -1020,30 +937,26 @@
       "region": "Lausanne",
       "slug": "lausanne",
       "route": "/standort/lausanne",
-      "canonical": "/standort/lausanne",
+      "canonical": "https://www.zoe-solar.de/standort/lausanne",
       "geo": {
         "region": "CH-VD",
         "latitude": 46.519653,
         "longitude": 6.632273,
         "radiusKm": 70
       },
-      "score": 0,
+      "score": 67,
       "checks": {
-        "hasRoute": false,
+        "hasRoute": true,
         "hasLocalContent": false,
-        "hasLocalBusinessSchema": false,
-        "hasFaqSchema": false,
-        "hasSpeakableSchema": false,
+        "hasLocalBusinessSchema": true,
+        "hasFaqSchema": true,
+        "hasSpeakableSchema": true,
         "faqCoverage": 0,
         "questionKeywordCount": 0,
         "uncoveredQuestions": 0
       },
       "uncoveredQuestionExamples": [],
       "recommendedActions": [
-        {
-          "priority": "hoch",
-          "action": "Standortseite für Lausanne unter /standort/lausanne anlegen und im Router registrieren."
-        },
         {
           "priority": "hoch",
           "action": "Lokale Content-Bausteine in data/localContent.ts für Lausanne erweitern."

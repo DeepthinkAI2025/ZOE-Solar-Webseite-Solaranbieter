@@ -1,23 +1,61 @@
 {
-  "timestamp": "2025-09-25T22:54:44.916Z",
+  "timestamp": "2025-09-27T20:48:24.937Z",
   "stats": {
-    "totalIdeas": 6,
-    "blogCount": 0,
+    "totalIdeas": 7,
+    "blogCount": 1,
     "landingCount": 5,
     "faqCount": 1,
-    "totalEstimatedTraffic": 4550,
-    "avgOpportunityScore": 1642,
+    "totalEstimatedTraffic": 4865,
+    "avgOpportunityScore": 1563,
     "contentTypes": {
+      "blog": 1,
       "landingpage": 5,
       "faq": 1
     }
   },
   "contentCalendar": [
     {
+      "type": "blog",
+      "title": "Stromspeicher Förderung Eigenheim: Der ultimative Leitfaden für Landwirte",
+      "keyword": "Stromspeicher Förderung Eigenheim",
+      "targetPosition": 15,
+      "estimatedTraffic": 315,
+      "opportunityScore": 1094,
+      "category": "residential_financing",
+      "contentOutline": [
+        "Einführung in Stromspeicher Förderung Eigenheim",
+        "Grundlagen und Funktionsweise",
+        "Vorteile und Nutzen",
+        "Praktische Umsetzung",
+        "Kosten und Wirtschaftlichkeit",
+        "Fazit und Handlungsempfehlungen"
+      ],
+      "seoTips": [
+        "Optimiere Title-Tag für \"Stromspeicher Förderung Eigenheim\"",
+        "Integriere \"Stromspeicher Förderung Eigenheim\" natürlich in den ersten 100 Wörtern",
+        "Erstelle eine H1-Überschrift mit \"Stromspeicher Förderung Eigenheim\"",
+        "Füge interne Links zu verwandten Themen hinzu",
+        "Optimiere Meta-Description für höhere CTR",
+        "Baue mehr Backlinks auf",
+        "Verbessere technische SEO"
+      ],
+      "priority": "high",
+      "estimatedWordCount": 2525,
+      "internalLinks": [
+        "/agri-pv",
+        "/foerderungen",
+        "/referenzen",
+        "/kontakt"
+      ],
+      "publishDate": "2025-09-27",
+      "status": "draft",
+      "weekOfYear": 39
+    },
+    {
       "type": "landingpage",
       "title": "Solaranlage Eigenheim Kosten - Professionelle Agri-PV Lösungen",
       "keyword": "Solaranlage Eigenheim Kosten",
-      "targetPosition": 47,
+      "targetPosition": 5,
       "estimatedTraffic": 1680,
       "opportunityScore": 3182,
       "category": "residential",
@@ -46,14 +84,10 @@
         "Integriere \"Solaranlage Eigenheim Kosten\" natürlich in den ersten 100 Wörtern",
         "Erstelle eine H1-Überschrift mit \"Solaranlage Eigenheim Kosten\"",
         "Füge interne Links zu verwandten Themen hinzu",
-        "Optimiere Meta-Description für höhere CTR",
-        "Verbessere On-Page-SEO für bessere Rankings",
-        "Erhöhe Content-Qualität und -Tiefe",
-        "Baue mehr Backlinks auf",
-        "Verbessere technische SEO"
+        "Optimiere Meta-Description für höhere CTR"
       ],
       "priority": "high",
-      "estimatedWordCount": 842,
+      "estimatedWordCount": 850,
       "internalLinks": [
         "/agri-pv",
         "/foerderungen",
@@ -61,15 +95,15 @@
         "/kontakt",
         "/preise"
       ],
-      "publishDate": "2025-09-25",
+      "publishDate": "2025-10-04",
       "status": "draft",
-      "weekOfYear": 39
+      "weekOfYear": 40
     },
     {
       "type": "landingpage",
       "title": "Solaranlage Einfamilienhaus Kosten - Professionelle Agri-PV Lösungen",
       "keyword": "Solaranlage Einfamilienhaus Kosten",
-      "targetPosition": 47,
+      "targetPosition": 1,
       "estimatedTraffic": 1160,
       "opportunityScore": 2358,
       "category": "residential",
@@ -98,14 +132,10 @@
         "Integriere \"Solaranlage Einfamilienhaus Kosten\" natürlich in den ersten 100 Wörtern",
         "Erstelle eine H1-Überschrift mit \"Solaranlage Einfamilienhaus Kosten\"",
         "Füge interne Links zu verwandten Themen hinzu",
-        "Optimiere Meta-Description für höhere CTR",
-        "Verbessere On-Page-SEO für bessere Rankings",
-        "Erhöhe Content-Qualität und -Tiefe",
-        "Baue mehr Backlinks auf",
-        "Verbessere technische SEO"
+        "Optimiere Meta-Description für höhere CTR"
       ],
       "priority": "high",
-      "estimatedWordCount": 1142,
+      "estimatedWordCount": 983,
       "internalLinks": [
         "/agri-pv",
         "/foerderungen",
@@ -113,15 +143,15 @@
         "/kontakt",
         "/preise"
       ],
-      "publishDate": "2025-10-02",
+      "publishDate": "2025-10-11",
       "status": "draft",
-      "weekOfYear": 40
+      "weekOfYear": 41
     },
     {
       "type": "landingpage",
       "title": "Solaranlage Eigenheim Planung - Professionelle Agri-PV Lösungen",
       "keyword": "Solaranlage Eigenheim Planung",
-      "targetPosition": 47,
+      "targetPosition": 5,
       "estimatedTraffic": 600,
       "opportunityScore": 1456,
       "category": "residential",
@@ -150,14 +180,10 @@
         "Integriere \"Solaranlage Eigenheim Planung\" natürlich in den ersten 100 Wörtern",
         "Erstelle eine H1-Überschrift mit \"Solaranlage Eigenheim Planung\"",
         "Füge interne Links zu verwandten Themen hinzu",
-        "Optimiere Meta-Description für höhere CTR",
-        "Verbessere On-Page-SEO für bessere Rankings",
-        "Erhöhe Content-Qualität und -Tiefe",
-        "Baue mehr Backlinks auf",
-        "Verbessere technische SEO"
+        "Optimiere Meta-Description für höhere CTR"
       ],
       "priority": "high",
-      "estimatedWordCount": 1026,
+      "estimatedWordCount": 820,
       "internalLinks": [
         "/agri-pv",
         "/foerderungen",
@@ -165,15 +191,15 @@
         "/kontakt",
         "/beratung"
       ],
-      "publishDate": "2025-10-09",
+      "publishDate": "2025-10-18",
       "status": "draft",
-      "weekOfYear": 41
+      "weekOfYear": 42
     },
     {
       "type": "landingpage",
       "title": "Photovoltaik Installation Dach - Professionelle Agri-PV Lösungen",
       "keyword": "Photovoltaik Installation Dach",
-      "targetPosition": 47,
+      "targetPosition": 10,
       "estimatedTraffic": 560,
       "opportunityScore": 1321,
       "category": "residential_installation",
@@ -203,28 +229,26 @@
         "Erstelle eine H1-Überschrift mit \"Photovoltaik Installation Dach\"",
         "Füge interne Links zu verwandten Themen hinzu",
         "Optimiere Meta-Description für höhere CTR",
-        "Verbessere On-Page-SEO für bessere Rankings",
-        "Erhöhe Content-Qualität und -Tiefe",
         "Baue mehr Backlinks auf",
         "Verbessere technische SEO"
       ],
       "priority": "high",
-      "estimatedWordCount": 1151,
+      "estimatedWordCount": 1111,
       "internalLinks": [
         "/agri-pv",
         "/foerderungen",
         "/referenzen",
         "/kontakt"
       ],
-      "publishDate": "2025-10-16",
+      "publishDate": "2025-10-25",
       "status": "draft",
-      "weekOfYear": 42
+      "weekOfYear": 43
     },
     {
       "type": "landingpage",
       "title": "Solaranlage Eigenheim Installation - Professionelle Agri-PV Lösungen",
       "keyword": "Solaranlage Eigenheim Installation",
-      "targetPosition": 47,
+      "targetPosition": 9,
       "estimatedTraffic": 480,
       "opportunityScore": 1224,
       "category": "residential",
@@ -254,22 +278,20 @@
         "Erstelle eine H1-Überschrift mit \"Solaranlage Eigenheim Installation\"",
         "Füge interne Links zu verwandten Themen hinzu",
         "Optimiere Meta-Description für höhere CTR",
-        "Verbessere On-Page-SEO für bessere Rankings",
-        "Erhöhe Content-Qualität und -Tiefe",
         "Baue mehr Backlinks auf",
         "Verbessere technische SEO"
       ],
       "priority": "high",
-      "estimatedWordCount": 1126,
+      "estimatedWordCount": 822,
       "internalLinks": [
         "/agri-pv",
         "/foerderungen",
         "/referenzen",
         "/kontakt"
       ],
-      "publishDate": "2025-10-23",
+      "publishDate": "2025-11-01",
       "status": "draft",
-      "weekOfYear": 43
+      "weekOfYear": 44
     },
     {
       "type": "faq",
@@ -285,26 +307,63 @@
         "Wie lange dauert die Planung und Installation?"
       ],
       "priority": "high",
-      "estimatedWordCount": 649,
+      "estimatedWordCount": 605,
       "internalLinks": [
         "/agri-pv",
         "/foerderungen",
         "/referenzen",
         "/kontakt"
       ],
-      "publishDate": "2025-10-30",
+      "publishDate": "2025-11-08",
       "status": "draft",
-      "weekOfYear": 44
+      "weekOfYear": 45
     }
   ],
   "ideas": {
-    "blog": [],
+    "blog": [
+      {
+        "type": "blog",
+        "title": "Stromspeicher Förderung Eigenheim: Der ultimative Leitfaden für Landwirte",
+        "keyword": "Stromspeicher Förderung Eigenheim",
+        "targetPosition": 15,
+        "estimatedTraffic": 315,
+        "opportunityScore": 1094,
+        "category": "residential_financing",
+        "contentOutline": [
+          "Einführung in Stromspeicher Förderung Eigenheim",
+          "Grundlagen und Funktionsweise",
+          "Vorteile und Nutzen",
+          "Praktische Umsetzung",
+          "Kosten und Wirtschaftlichkeit",
+          "Fazit und Handlungsempfehlungen"
+        ],
+        "seoTips": [
+          "Optimiere Title-Tag für \"Stromspeicher Förderung Eigenheim\"",
+          "Integriere \"Stromspeicher Förderung Eigenheim\" natürlich in den ersten 100 Wörtern",
+          "Erstelle eine H1-Überschrift mit \"Stromspeicher Förderung Eigenheim\"",
+          "Füge interne Links zu verwandten Themen hinzu",
+          "Optimiere Meta-Description für höhere CTR",
+          "Baue mehr Backlinks auf",
+          "Verbessere technische SEO"
+        ],
+        "priority": "high",
+        "estimatedWordCount": 2525,
+        "internalLinks": [
+          "/agri-pv",
+          "/foerderungen",
+          "/referenzen",
+          "/kontakt"
+        ],
+        "publishDate": null,
+        "status": "draft"
+      }
+    ],
     "landing": [
       {
         "type": "landingpage",
         "title": "Solaranlage Eigenheim Kosten - Professionelle Agri-PV Lösungen",
         "keyword": "Solaranlage Eigenheim Kosten",
-        "targetPosition": 47,
+        "targetPosition": 5,
         "estimatedTraffic": 1680,
         "opportunityScore": 3182,
         "category": "residential",
@@ -333,14 +392,10 @@
           "Integriere \"Solaranlage Eigenheim Kosten\" natürlich in den ersten 100 Wörtern",
           "Erstelle eine H1-Überschrift mit \"Solaranlage Eigenheim Kosten\"",
           "Füge interne Links zu verwandten Themen hinzu",
-          "Optimiere Meta-Description für höhere CTR",
-          "Verbessere On-Page-SEO für bessere Rankings",
-          "Erhöhe Content-Qualität und -Tiefe",
-          "Baue mehr Backlinks auf",
-          "Verbessere technische SEO"
+          "Optimiere Meta-Description für höhere CTR"
         ],
         "priority": "high",
-        "estimatedWordCount": 842,
+        "estimatedWordCount": 850,
         "internalLinks": [
           "/agri-pv",
           "/foerderungen",
@@ -355,7 +410,7 @@
         "type": "landingpage",
         "title": "Solaranlage Einfamilienhaus Kosten - Professionelle Agri-PV Lösungen",
         "keyword": "Solaranlage Einfamilienhaus Kosten",
-        "targetPosition": 47,
+        "targetPosition": 1,
         "estimatedTraffic": 1160,
         "opportunityScore": 2358,
         "category": "residential",
@@ -384,14 +439,10 @@
           "Integriere \"Solaranlage Einfamilienhaus Kosten\" natürlich in den ersten 100 Wörtern",
           "Erstelle eine H1-Überschrift mit \"Solaranlage Einfamilienhaus Kosten\"",
           "Füge interne Links zu verwandten Themen hinzu",
-          "Optimiere Meta-Description für höhere CTR",
-          "Verbessere On-Page-SEO für bessere Rankings",
-          "Erhöhe Content-Qualität und -Tiefe",
-          "Baue mehr Backlinks auf",
-          "Verbessere technische SEO"
+          "Optimiere Meta-Description für höhere CTR"
         ],
         "priority": "high",
-        "estimatedWordCount": 1142,
+        "estimatedWordCount": 983,
         "internalLinks": [
           "/agri-pv",
           "/foerderungen",
@@ -406,7 +457,7 @@
         "type": "landingpage",
         "title": "Solaranlage Eigenheim Planung - Professionelle Agri-PV Lösungen",
         "keyword": "Solaranlage Eigenheim Planung",
-        "targetPosition": 47,
+        "targetPosition": 5,
         "estimatedTraffic": 600,
         "opportunityScore": 1456,
         "category": "residential",
@@ -435,14 +486,10 @@
           "Integriere \"Solaranlage Eigenheim Planung\" natürlich in den ersten 100 Wörtern",
           "Erstelle eine H1-Überschrift mit \"Solaranlage Eigenheim Planung\"",
           "Füge interne Links zu verwandten Themen hinzu",
-          "Optimiere Meta-Description für höhere CTR",
-          "Verbessere On-Page-SEO für bessere Rankings",
-          "Erhöhe Content-Qualität und -Tiefe",
-          "Baue mehr Backlinks auf",
-          "Verbessere technische SEO"
+          "Optimiere Meta-Description für höhere CTR"
         ],
         "priority": "high",
-        "estimatedWordCount": 1026,
+        "estimatedWordCount": 820,
         "internalLinks": [
           "/agri-pv",
           "/foerderungen",
@@ -457,7 +504,7 @@
         "type": "landingpage",
         "title": "Photovoltaik Installation Dach - Professionelle Agri-PV Lösungen",
         "keyword": "Photovoltaik Installation Dach",
-        "targetPosition": 47,
+        "targetPosition": 10,
         "estimatedTraffic": 560,
         "opportunityScore": 1321,
         "category": "residential_installation",
@@ -487,13 +534,11 @@
           "Erstelle eine H1-Überschrift mit \"Photovoltaik Installation Dach\"",
           "Füge interne Links zu verwandten Themen hinzu",
           "Optimiere Meta-Description für höhere CTR",
-          "Verbessere On-Page-SEO für bessere Rankings",
-          "Erhöhe Content-Qualität und -Tiefe",
           "Baue mehr Backlinks auf",
           "Verbessere technische SEO"
         ],
         "priority": "high",
-        "estimatedWordCount": 1151,
+        "estimatedWordCount": 1111,
         "internalLinks": [
           "/agri-pv",
           "/foerderungen",
@@ -507,7 +552,7 @@
         "type": "landingpage",
         "title": "Solaranlage Eigenheim Installation - Professionelle Agri-PV Lösungen",
         "keyword": "Solaranlage Eigenheim Installation",
-        "targetPosition": 47,
+        "targetPosition": 9,
         "estimatedTraffic": 480,
         "opportunityScore": 1224,
         "category": "residential",
@@ -537,13 +582,11 @@
           "Erstelle eine H1-Überschrift mit \"Solaranlage Eigenheim Installation\"",
           "Füge interne Links zu verwandten Themen hinzu",
           "Optimiere Meta-Description für höhere CTR",
-          "Verbessere On-Page-SEO für bessere Rankings",
-          "Erhöhe Content-Qualität und -Tiefe",
           "Baue mehr Backlinks auf",
           "Verbessere technische SEO"
         ],
         "priority": "high",
-        "estimatedWordCount": 1126,
+        "estimatedWordCount": 822,
         "internalLinks": [
           "/agri-pv",
           "/foerderungen",
@@ -569,7 +612,7 @@
           "Wie lange dauert die Planung und Installation?"
         ],
         "priority": "high",
-        "estimatedWordCount": 649,
+        "estimatedWordCount": 605,
         "internalLinks": [
           "/agri-pv",
           "/foerderungen",
