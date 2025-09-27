@@ -13,6 +13,13 @@ async function main() {
   console.log('  Hersteller:', result.manufacturers?.length ?? 0);
   console.log('  Produkte:', totalProducts);
   console.log('  Letztes Update:', result.generatedAt);
+  if (Array.isArray(result.providers) && result.providers.length > 0) {
+    console.log('  Genutzte Provider:', result.providers.join(', '));
+  }
+  if (result?.syncMeta?.manufacturerLimit) {
+    const reason = result.syncMeta.manufacturerLimitReason ? ` (${result.syncMeta.manufacturerLimitReason})` : '';
+    console.log(`  Hersteller-Limit: ${result.syncMeta.manufacturerLimit}${reason}`);
+  }
 
   if (result?.syncMeta?.firecrawlUnavailable) {
     console.error('\n⚠️  Firecrawl ist nicht erreichbar. Bitte Endpoint prüfen (`FIRECRAWL_MCP_ENDPOINT`) und Server starten.');
@@ -20,6 +27,10 @@ async function main() {
       console.error('  Fehler:', result.syncMeta.firecrawlError);
     }
     process.exitCode = 2;
+  }
+
+  if (result?.syncMeta?.geminiEnabled && !result?.providers?.includes('gemini')) {
+    console.warn('ℹ️  Gemini-Fallback ist aktiviert, aber hat keine Daten geliefert. Details siehe Logs.');
   }
 }
 

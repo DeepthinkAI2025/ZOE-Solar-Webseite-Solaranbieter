@@ -5,10 +5,8 @@ import path from 'path';
 import crypto from 'crypto';
 import { fileURLToPath } from 'url';
 
-import type { Page } from '../types.ts';
 import type { ResolvedSEO, ServiceRegion } from '../data/seoConfig.ts';
-import { PRIMARY_SERVICE_REGIONS, resolveSeoForPage } from '../data/seoConfig.ts';
-import { pageToPath } from '../data/pageRoutes.ts';
+import { PRIMARY_SERVICE_REGIONS, resolveSeoForPage, getServiceRegionSlug } from '../data/seoConfig.ts';
 import { localContentByCity } from '../data/localContent.ts';
 import { faqData, type FaqItem } from '../data/faqData.ts';
 
@@ -161,10 +159,9 @@ function coverageScore(flags: boolean[]): number {
 }
 
 function evaluateLocation(region: ServiceRegion): LocationInsight {
-  const slug = slugifyCity(region.city);
-  const pageKey = `standort-${slug}` as Page;
-  const hasRoute = Object.prototype.hasOwnProperty.call(pageToPath, pageKey);
-  const routePath = hasRoute ? pageToPath[pageKey] : `/standort/${slug}`;
+  const slug = getServiceRegionSlug(region);
+  const routePath = `/standort/${slug}`;
+  const hasRoute = true;
   const hasLocalContent = Boolean((localContentByCity as Record<string, unknown>)[slug]);
 
   let metadata: ResolvedSEO | undefined;
@@ -175,7 +172,7 @@ function evaluateLocation(region: ServiceRegion): LocationInsight {
 
   if (hasRoute) {
     try {
-      metadata = resolveSeoForPage({ page: pageKey, pathname: routePath });
+      metadata = resolveSeoForPage({ page: 'standort', pathname: routePath });
       canonical = metadata?.canonical ?? canonical;
       const structuredData = Array.isArray(metadata?.structuredData) ? metadata.structuredData : [];
 
@@ -191,7 +188,7 @@ function evaluateLocation(region: ServiceRegion): LocationInsight {
         return Boolean(speakable);
       });
     } catch (error) {
-      console.warn(`⚠️  Konnte SEO-Daten für ${pageKey} nicht ermitteln: ${(error as Error).message}`);
+      console.warn(`⚠️  Konnte SEO-Daten für ${region.city} (${routePath}) nicht ermitteln: ${(error as Error).message}`);
     }
   }
 

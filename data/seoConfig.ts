@@ -1,4 +1,4 @@
-import { FundingProgram, Page } from '../types';
+import { Page } from '../types';
 import { HeroData, pageHeroData } from './pageContent';
 import { Guide } from './guidesData';
 import { Manufacturer } from './products';
@@ -7,7 +7,6 @@ import { faqData, FaqItem, FaqCategory } from './faqData';
 import { PricingPackage, pricingPackages } from './pricingPackages';
 import { Article } from './articles';
 import { localContentByCity } from './localContent';
-import { fundingPrograms, fundingProgramLevels, getFundingProgramBySlug } from './fundingPrograms';
 
 export interface OpenGraphMeta {
   title?: string;
@@ -529,11 +528,6 @@ interface FaqSelectionOptions {
   region?: string;
 }
 
-interface FaqSchemaOptions {
-  includeQa?: boolean;
-  about?: object;
-}
-
 const selectFaqEntries = ({ categories, limit = 4, region }: FaqSelectionOptions): FaqItem[] => {
   const regionSlug = region ? slugify(region) : undefined;
   return faqData
@@ -552,51 +546,26 @@ const selectFaqEntries = ({ categories, limit = 4, region }: FaqSelectionOptions
 
 const normaliseAnswerText = (value: string): string => value.replace(/\*\*/g, '');
 
-const buildFaqSchema = (
-  name: string,
-  description: string,
-  items: FaqItem[],
-  options: FaqSchemaOptions = {},
-): object[] => {
+const buildFaqSchema = (name: string, description: string, items: FaqItem[]): object[] => {
   if (!items.length) {
     return [];
   }
-  const faqPage = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    name,
-    description,
-    mainEntity: items.map((item) => ({
-      '@type': 'Question',
-      name: item.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: normaliseAnswerText(item.answer),
-      },
-    })),
-  };
-
-  if (options.includeQa === false) {
-    return [faqPage];
-  }
-
-  const qaPage = {
-    '@context': 'https://schema.org',
-    '@type': 'QAPage',
-    name,
-    inLanguage: 'de-DE',
-    mainEntity: items.map((item) => ({
-      '@type': 'Question',
-      name: item.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: normaliseAnswerText(item.answer),
-      },
-    })),
-    ...(options.about ? { about: options.about } : {}),
-  };
-
-  return [faqPage, qaPage];
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      name,
+      description,
+      mainEntity: items.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: normaliseAnswerText(item.answer),
+        },
+      })),
+    },
+  ];
 };
 
 const buildSpeakableSchema = (name: string, selectors: string[]): object[] => {
@@ -615,252 +584,6 @@ const buildSpeakableSchema = (name: string, selectors: string[]): object[] => {
     },
   ];
 };
-
-const FUNDING_PAGE_DEFAULT_SLUG: Partial<Record<Page, string>> = {
-  'foerdermittel-kfw': 'kfw',
-  'foerdermittel-ibb': 'ibb-wirtschaft-nah',
-  'foerdermittel-bafa': 'bafa-eew-zuschuss',
-};
-
-const getFundingProgramCanonical = (program: FundingProgram): string => {
-  const canonical = program.seo?.canonical ?? `/foerdermittel/${program.slug}`;
-  return toAbsoluteUrl(canonical);
-};
-
-const buildFundingProgramFaqSchema = (program: FundingProgram): object[] => {
-  if (!program.faqs.length) {
-    return [];
-  }
-
-  return [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      name: `FAQ ${program.title}`,
-      description: `Häufige Fragen zu ${program.title} und den Förderbedingungen.`,
-      mainEntity: program.faqs.map((entry) => ({
-        '@type': 'Question',
-        name: entry.question,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: entry.answer,
-        },
-      })),
-    },
-  ];
-};
-
-const buildFundingProgramHowToSchema = (program: FundingProgram, canonical: string): object | null => {
-  if (!program.applicationSteps.length) {
-    return null;
-  }
-
-  const supplies = program.documentsRequired.map((doc) => ({
-    '@type': 'HowToSupply',
-    name: doc,
-  }));
-
-  const tools = program.supportServices.map((service) => ({
-    '@type': 'HowToTool',
-    name: service,
-  }));
-
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'HowTo',
-    name: `Förderantrag für ${program.title} stellen`,
-    description: `Anleitung für Unternehmen, um ${program.title} erfolgreich zu beantragen.`,
-    totalTime: program.processingTime,
-    image: program.heroImage ? [program.heroImage] : undefined,
-    url: canonical,
-    supply: supplies.length ? supplies : undefined,
-    tool: tools.length ? tools : undefined,
-    step: program.applicationSteps.map((step, index) => ({
-      '@type': 'HowToStep',
-      position: index + 1,
-      name: step.length > 80 ? `Schritt ${index + 1}` : step,
-      text: step,
-    })),
-  };
-};
-
-const buildFundingProgramStructuredData = (program: FundingProgram, canonical: string): object[] => {
-  const provider: Record<string, unknown> = {
-    '@type': 'Organization',
-    name: program.provider,
-    url: program.contact.url ?? BASE_URL,
-  };
-
-  if (program.logo) {
-    provider.logo = program.logo;
-  }
-
-  const contactPoint = {
-    '@type': 'ContactPoint',
-    telephone: program.contact.phone,
-    email: program.contact.email,
-    url: program.contact.url,
-    hoursAvailable: program.contact.hotlineHours,
-    contactType: 'customer service',
-    availableLanguage: ['de'],
-    description: program.contact.note,
-  };
-
-  if (program.contact.phone || program.contact.email || program.contact.url) {
-    provider.contactPoint = [
-      Object.fromEntries(
-        Object.entries(contactPoint).filter(([, value]) => Boolean(value) && (!Array.isArray(value) || value.length > 0)),
-      ),
-    ];
-  }
-
-  const schemaType = program.fundingTypes.some((type) => /kredit|darlehen/i.test(type)) ? 'FinancialProduct' : 'GovernmentService';
-
-  const baseSchema: Record<string, unknown> = {
-    '@context': 'https://schema.org',
-    '@type': schemaType,
-    name: program.title,
-    description: program.summary,
-    url: canonical,
-    provider,
-    serviceType: program.fundingTypes.join(', '),
-    audience: program.targetGroups.map((item) => ({
-      '@type': 'Audience',
-      audienceType: item,
-    })),
-    areaServed: program.region
-      ? {
-          '@type': 'AdministrativeArea',
-          name: program.region,
-        }
-      : undefined,
-    termsOfService: program.notes,
-    isAccessibleForFree: true,
-    funding: program.fundingRate,
-  };
-
-  const howTo = buildFundingProgramHowToSchema(program, canonical);
-
-  const highlightList = program.highlights.length
-    ? {
-        '@context': 'https://schema.org',
-        '@type': 'ItemList',
-        name: `Highlights ${program.title}`,
-        itemListOrder: 'http://schema.org/ItemListOrderAscending',
-        itemListElement: program.highlights.map((highlight, index) => ({
-          '@type': 'ListItem',
-          position: index + 1,
-          name: highlight.title,
-          description: highlight.description,
-        })),
-      }
-    : null;
-
-  return [
-    Object.fromEntries(
-      Object.entries(baseSchema).filter(([, value]) =>
-        value !== undefined && value !== null && (!Array.isArray(value) || value.length > 0),
-      ),
-    ),
-    howTo,
-    highlightList,
-    ...buildFundingProgramFaqSchema(program),
-    ...buildSpeakableSchema(program.title, ['main h1', '.info-card', '.faq-section']),
-  ].filter(Boolean) as object[];
-};
-
-const buildFundingProgramSeo = (program: FundingProgram): SEOConfig => {
-  const canonical = getFundingProgramCanonical(program);
-    const keywordSeed = program.seo?.keywords ?? [];
-    const title = program.seo?.title ?? `${program.title} | Förderprogramm 2025`;
-  const keywordSet = new Set<string>([
-    program.title,
-    program.provider,
-    ...program.targetGroups,
-    ...program.fundingTypes,
-    program.level,
-    ...(program.region ? [program.region] : []),
-    ...keywordSeed,
-  ]);
-
-  return {
-    title,
-    description:
-      program.seo?.description ??
-      `${program.title}: Förderhöhe ${program.maxFunding ?? 'individuell'}, Förderquote ${program.fundingRate ?? 'nach Prüfung'} – begleitet von ZOE Solar.`,
-    keywords: Array.from(keywordSet),
-    canonical,
-    og: {
-      title,
-      description: program.seo?.description ?? program.summary,
-      image: program.heroImage ?? program.logo ?? DEFAULT_SHARE_IMAGE,
-      imageAlt: program.title,
-    },
-    twitter: {
-      title,
-      description: program.seo?.description ?? program.summary,
-      image: program.heroImage ?? program.logo ?? DEFAULT_SHARE_IMAGE,
-    },
-    geo: program.region
-      ? {
-          placename: program.region,
-        }
-      : undefined,
-    structuredData: buildFundingProgramStructuredData(program, canonical),
-    additionalMeta: [
-      { name: 'funding:level', content: program.level },
-      { name: 'funding:provider', content: program.provider },
-      { name: 'funding:last_updated', content: program.lastUpdated },
-    ],
-  };
-};
-
-const activeFundingPrograms = fundingPrograms.filter((program) => program.isActive);
-
-const fundingProgramCountByLevel = fundingProgramLevels.map(({ level, label }) => ({
-  level,
-  label,
-  count: activeFundingPrograms.filter((program) => program.level === level).length,
-}));
-
-const topFundingPrograms = activeFundingPrograms.slice(0, 6);
-
-const fundingOverviewStructuredData: object[] = [
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Dataset',
-    name: 'Förderdatenbank Solar & Speicher 2025',
-    description:
-      'Kuratiertes Verzeichnis aktueller Förderprogramme für Photovoltaik, Speicher und Ladeinfrastruktur in Deutschland und der EU.',
-    creator: {
-      '@type': 'Organization',
-      name: ORGANIZATION_NAME,
-      url: BASE_URL,
-    },
-    url: `${BASE_URL}/foerdermittel`,
-    dateModified: new Date().toISOString(),
-    variableMeasured: fundingProgramLevels.map((entry) => `${entry.label}: ${fundingProgramCountByLevel.find((item) => item.level === entry.level)?.count ?? 0} Programme`),
-    distribution: activeFundingPrograms.map((program) => ({
-      '@type': 'DataDownload',
-      encodingFormat: 'text/html',
-      contentUrl: `${BASE_URL}/foerdermittel/${program.slug}`,
-      name: program.title,
-    })),
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    name: 'Top Förderprogramme 2025',
-    itemListOrder: 'http://schema.org/ItemListOrderAscending',
-    itemListElement: topFundingPrograms.map((program, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      name: program.title,
-      description: program.summary,
-      url: `${BASE_URL}/foerdermittel/${program.slug}`,
-    })),
-  },
-];
 
 const buildLocationContentSchemas = (region: ServiceRegion, slug: string, canonical: string): object[] => {
   const localContent = (localContentByCity as Record<string, typeof localContentByCity[keyof typeof localContentByCity]>)[slug];
@@ -945,7 +668,6 @@ const buildLocationStructuredData = (region: ServiceRegion, slug: string): objec
     `Solaranlagen ${region.city} FAQ`,
     `Häufige Fragen zu Photovoltaik in ${region.city} und ${region.state}.`,
     faqItems,
-    { includeQa: false },
   );
 
   const qaSchema = faqItems.length
@@ -983,6 +705,41 @@ const buildLocationStructuredData = (region: ServiceRegion, slug: string): objec
     '.page-hero-subtitle',
     '.faq-section .faq-item h3',
   ]);
+
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    '@id': `${canonical}#how-to`,
+    name: `In ${region.city} mit ZOE Solar starten`,
+    description: `So läuft der Projektstart für Ihre Photovoltaikanlage in ${region.city}: von der Potenzialanalyse bis zur schlüsselfertigen Übergabe.`,
+    inLanguage: 'de-DE',
+    supply: 'Projektinformationen zu Standort, Dach- oder Freifläche, Energiebedarf',
+    tool: 'Digitale Potenzialanalyse & Projektplaner von ZOE Solar',
+    totalTime: 'P30D',
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Kostenlose Erstberatung & Standortanalyse',
+        text: `Wir analysieren Dach- und Flächenpotenziale in ${region.city}, prüfen Denkmalschutz, Netzanschluss und Förderungen.`,
+        url: `${canonical}#erstberatung`,
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Technische Planung & Wirtschaftlichkeit',
+        text: `Detaillierte Auslegung der Photovoltaik- und Speichertechnik inklusive Ertragsprognose, CAPEX/OPEX-Modell und Förderstrategie für ${region.city}.`,
+        url: `${canonical}#planung`,
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Installation, Netzanschluss & Betrieb',
+        text: `Schlüsselfertige Umsetzung mit eigenen Montageteams, Netzanschlusskoordination und 24/7-Monitoring für Anlagen in ${region.city}.`,
+        url: `${canonical}#installation`,
+      },
+    ],
+  };
 
   const breadcrumb = {
     '@context': 'https://schema.org',
@@ -1124,6 +881,7 @@ const buildLocationStructuredData = (region: ServiceRegion, slug: string): objec
     geoCircle,
     localBusiness,
     serviceSchema,
+    howToSchema,
     ...faqSchemas,
     ...qaSchema,
     ...speakable,
@@ -1609,32 +1367,6 @@ const pageSpecificSEO: Partial<Record<Page, SEOConfig>> = {
       ),
       ...buildSpeakableSchema('Photovoltaik Finanzierung & Förderung | ZOE Solar', ['main h1', 'main section:first-of-type p']),
     ],
-  },
-  'foerdermittel-uebersicht': {
-    title: 'Förderprogramme für Photovoltaik & Speicher 2025 | ZOE Solar',
-    description: `Aktuelle Übersicht über ${activeFundingPrograms.length} Förderprogramme für Solar, Speicher und Ladeinfrastruktur – inklusive Bundes-, Landes-, EU- und Kommunalprogramme.`,
-    keywords: [
-      'Photovoltaik Fördermittel',
-      'Solar Zuschüsse 2025',
-      'Förderprogramme Ladeinfrastruktur',
-      'Kommunale PV Förderung',
-      'EU Förderung erneuerbare Energien',
-    ],
-    structuredData: [
-      ...fundingOverviewStructuredData,
-      ...buildSpeakableSchema('Förderprogramme für Photovoltaik & Speicher 2025 | ZOE Solar', [
-        'section h1',
-        '.grid article h3',
-      ]),
-    ],
-    additionalMeta: fundingProgramCountByLevel.map((entry) => ({
-      name: `funding:level:${entry.level}`,
-      content: `${entry.count}`,
-    })),
-    og: {
-      image:
-        'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1600&q=80',
-    },
   },
   'foerdermittel-check': {
     title: 'Fördermittel-Check für Photovoltaik | ZOE Solar',
@@ -2229,24 +1961,6 @@ const buildDynamicSeo = ({ page, pathname, article, guide, manufacturer, useCase
           image: useCase.heroImageUrl ?? useCase.imageUrl,
         },
       };
-    }
-    case 'foerdermittel-kfw':
-    case 'foerdermittel-ibb':
-    case 'foerdermittel-bafa':
-    case 'foerdermittel-programm': {
-      const normalised = normalisePath(pathname);
-      const segments = normalised.split('/').filter(Boolean);
-      const slugFromPath = segments[segments.length - 1];
-      const fallbackSlug = FUNDING_PAGE_DEFAULT_SLUG[page];
-      const resolvedSlug = page === 'foerdermittel-programm' ? slugFromPath : fallbackSlug ?? slugFromPath;
-      if (!resolvedSlug) {
-        return undefined;
-      }
-      const program = getFundingProgramBySlug(resolvedSlug);
-      if (!program) {
-        return undefined;
-      }
-      return buildFundingProgramSeo(program);
     }
     case 'standort': {
       const normalised = normalisePath(pathname);

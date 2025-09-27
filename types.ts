@@ -65,74 +65,6 @@ export interface ContactInfo {
 }
 
 
-export type FundingProgramLevel = 'bund' | 'land' | 'eu' | 'kommunal';
-
-export interface FundingProgramBenefit {
-    title: string;
-    description: string;
-    icon?: string;
-}
-
-export interface FundingProgramFAQ {
-    question: string;
-    answer: string;
-}
-
-export interface FundingProgramContact {
-    phone?: string;
-    email?: string;
-    url?: string;
-    hotlineHours?: string;
-    note?: string;
-}
-
-export interface FundingProgramSEOConfig {
-    title: string;
-    description: string;
-    keywords: string[];
-    canonical?: string;
-}
-
-export interface FundingProgram {
-    slug: string;
-    title: string;
-    shortTitle?: string;
-    provider: string;
-    level: FundingProgramLevel;
-    region?: string;
-    isActive: boolean;
-    summary: string;
-    tagline: string;
-    heroImage?: string;
-    logo: string;
-    fundingTypes: string[];
-    maxFunding?: string;
-    minFunding?: string;
-    fundingRate?: string;
-    targetGroups: string[];
-    eligibleProjects: string[];
-    eligibleCosts?: string[];
-    nonEligibleCosts?: string[];
-    requirements: string[];
-    applicationSteps: string[];
-    documentsRequired: string[];
-    processingTime?: string;
-    deadlines?: string;
-    combinationTips: string[];
-    repaymentBenefits?: string[];
-    supportServices: string[];
-    successMetric?: string;
-    highlights: FundingProgramBenefit[];
-    faqs: FundingProgramFAQ[];
-    contact: FundingProgramContact;
-    externalLinks?: { label: string; url: string }[];
-    seo: FundingProgramSEOConfig;
-    lastUpdated: string;
-    legalBasis?: string;
-    notes?: string;
-}
-
-
 // FIX: Moved Page type here to resolve circular dependency issues.
 export type Page =
     | 'home'
@@ -175,8 +107,6 @@ export type Page =
     | 'agri-pv'
     | 'team'
     | 'warum-zoe-solar'
-    | 'foerdermittel-uebersicht'
-    | 'foerdermittel-programm'
     | 'foerdermittel-kfw'
     | 'foerdermittel-ibb'
     | 'foerdermittel-bafa'
