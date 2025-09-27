@@ -51,7 +51,12 @@ export const productCatalog: ProductCatalog = {
             Leistungsgarantie: '30 Jahre (93.5%)',
             'Temperaturkoeffizient Pmax': '-0.26 %/°C'
           },
-          keyFeatures: ['Elegantes Vollschwarz-Design', 'Höchste Effizienz bei Schwachlicht', 'Nachhaltig & Blei-frei produziert']
+          keyFeatures: ['Elegantes Vollschwarz-Design', 'Höchste Effizienz bei Schwachlicht', 'Nachhaltig & Blei-frei produziert'],
+          aiBadge: {
+            type: 'premium',
+            label: 'Premium',
+            color: 'blue'
+          }
         },
         {
           name: 'Meyer Burger White',
@@ -70,7 +75,12 @@ export const productCatalog: ProductCatalog = {
             Leistungsgarantie: '30 Jahre (93.5%)',
             'Temperaturkoeffizient Pmax': '-0.26 %/°C'
           },
-          keyFeatures: ['Maximale Leistung pro m²', 'HJT-Technologie für Langlebigkeit', 'Made in Germany']
+          keyFeatures: ['Maximale Leistung pro m²', 'HJT-Technologie für Langlebigkeit', 'Made in Germany'],
+          aiBadge: {
+            type: 'preis-leistungssieger',
+            label: 'Preis-/Leistungssieger',
+            color: 'green'
+          }
         },
         {
           name: 'Meyer Burger Glass',
@@ -194,7 +204,12 @@ export const productCatalog: ProductCatalog = {
             Leistungsgarantie: '30 Jahre (87.4%)',
             Bifazialität: 'Ja (optional)'
           },
-          keyFeatures: ['Sehr geringe Degradation', 'TOPCon-Technologie', 'Ideal für Großprojekte']
+          keyFeatures: ['Sehr geringe Degradation', 'TOPCon-Technologie', 'Ideal für Großprojekte'],
+          aiBadge: {
+            type: 'preiswerteste',
+            label: 'Preiswerteste',
+            color: 'yellow'
+          }
         }
       ]
     },

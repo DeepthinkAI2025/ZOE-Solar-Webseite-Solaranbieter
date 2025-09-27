@@ -18,6 +18,11 @@ export interface Product {
   configurable?: boolean;
   specs?: Record<string, string | number>;
   keyFeatures?: string[];
+  aiBadge?: {
+    type: 'preiswerteste' | 'premium' | 'preis-leistungssieger';
+    label: string;
+    color: 'green' | 'blue' | 'yellow';
+  };
 }
 
 export interface Manufacturer {

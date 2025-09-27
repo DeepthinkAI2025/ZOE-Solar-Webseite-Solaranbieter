@@ -18,7 +18,8 @@
     "seo-geo-audit": "tsx scripts/seo-geo-aeo-audit.ts",
     "wiki-sync": "tsx scripts/wiki-sync.ts",
     "product-sync": "node scripts/fetch-manufacturers.js",
-    "product-sync:ts": "tsx scripts/fetch-manufacturers.ts"
+    "product-sync:ts": "tsx scripts/fetch-manufacturers.ts",
+    "assign-badges": "node scripts/assign-product-badges.js"
   },
   "dependencies": {
     "@fontsource/poppins": "^5.0.8",

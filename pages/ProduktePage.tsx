@@ -41,6 +41,16 @@ const ProductCard: React.FC<{
                     decoding="async"
                     className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
                 />
+                {/* AI Badge */}
+                {product.aiBadge && (
+                    <div className={`absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-bold text-white shadow-lg z-10 ${
+                        product.aiBadge.color === 'green' ? 'bg-green-500' :
+                        product.aiBadge.color === 'blue' ? 'bg-blue-500' :
+                        product.aiBadge.color === 'yellow' ? 'bg-yellow-500' : 'bg-gray-500'
+                    }`}>
+                        {product.aiBadge.label}
+                    </div>
+                )}
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <div className="bg-white/80 backdrop-blur-sm text-slate-800 font-bold py-2 px-4 rounded-full text-sm">
                         Details ansehen
