@@ -1,10 +1,50 @@
-import fetch from 'node-fetch';
 import { buildProduct, normalizeUrl, sanitizeText } from './providers/providerUtils.js';
 
 const DEFAULT_ENDPOINT = process.env.FIRECRAWL_MCP_ENDPOINT || process.env.FIRECRAWL_ENDPOINT || 'http://localhost:3000/v1/scrape';
 
 console.log('Firecrawl Endpoint:', DEFAULT_ENDPOINT);
 const DEFAULT_TIMEOUT = Number(process.env.FIRECRAWL_TIMEOUT_MS || 45000);
+const DEFAULT_MAX_ATTEMPTS = Math.max(1, Number(process.env.FIRECRAWL_MAX_ATTEMPTS || 3));
+const DEFAULT_RETRY_DELAY_MS = Math.max(500, Number(process.env.FIRECRAWL_RETRY_DELAY_MS || 1500));
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function buildFirecrawlError(message, { status, body, endpoint }) {
+  const error = new Error(message);
+  error.name = 'FirecrawlRequestError';
+  if (status) error.status = status;
+  if (body) error.body = body;
+  if (endpoint) error.endpoint = endpoint;
+  return error;
+}
+
+function isConnectivityError(err) {
+  if (!err) return false;
+  const codes = new Set(['ECONNREFUSED', 'ECONNRESET', 'EAI_AGAIN', 'ETIMEDOUT', 'ENOTFOUND']);
+  if (err.code && codes.has(err.code)) return true;
+  if (err.errno && codes.has(err.errno)) return true;
+  if (err.cause) {
+    if (isConnectivityError(err.cause)) return true;
+    if (err.cause.code && codes.has(err.cause.code)) return true;
+  }
+  const message = (err.message || '').toUpperCase();
+  return ['FETCH FAILED', 'CLIENT NETWORK SOCKET DISCONNECTED', 'NETWORKERROR', 'TIMEOUT', 'TIMED OUT'].some((token) =>
+    message.includes(token)
+  );
+}
+
+function shouldRetryFirecrawl(err) {
+  if (!err) return false;
+  if (err.status) {
+    if (err.status === 429) return true;
+    if (err.status >= 500) return true;
+    return false;
+  }
+  if (isConnectivityError(err)) return true;
+  return false;
+}
 
 function arrayify(value) {
   if (!value) return [];
@@ -25,7 +65,14 @@ function uniqueStrings(values = []) {
   return result;
 }
 
-export async function callFirecrawl({ url, prompt, formats = ['extract'], timeout = DEFAULT_TIMEOUT }) {
+export async function callFirecrawl({
+  url,
+  prompt,
+  formats = ['extract'],
+  timeout = DEFAULT_TIMEOUT,
+  maxAttempts = DEFAULT_MAX_ATTEMPTS,
+  retryDelayMs = DEFAULT_RETRY_DELAY_MS
+} = {}) {
   if (!DEFAULT_ENDPOINT) {
     throw new Error('FIRECRAWL_MCP_ENDPOINT (or FIRECRAWL_ENDPOINT) ist nicht gesetzt.');
   }
@@ -77,28 +124,65 @@ export async function callFirecrawl({ url, prompt, formats = ['extract'], timeou
       : undefined
   };
 
-  const res = await fetch(DEFAULT_ENDPOINT, {
-    method: 'POST',
-    headers,
-    body: JSON.stringify(body),
-    timeout
-  });
+  let attempt = 0;
+  let lastError = null;
 
-  if (!res.ok) {
-    const text = await res.text().catch(() => null);
-    throw new Error(`Firecrawl-Request fehlgeschlagen (${res.status}): ${text ? text.slice(0, 400) : 'kein Body'}`);
+  while (attempt < maxAttempts) {
+    attempt += 1;
+    try {
+      const res = await fetch(DEFAULT_ENDPOINT, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify(body),
+        signal: typeof AbortSignal !== 'undefined' && AbortSignal.timeout
+          ? AbortSignal.timeout(timeout)
+          : undefined
+      });
+
+      if (!res.ok) {
+        const text = await res.text().catch(() => null);
+        throw buildFirecrawlError(
+          `Firecrawl-Request fehlgeschlagen (${res.status})`,
+          {
+            status: res.status,
+            body: text ? text.slice(0, 400) : 'kein Body',
+            endpoint: DEFAULT_ENDPOINT
+          }
+        );
+      }
+
+      const raw = await res.text();
+      let data = null;
+      try {
+        data = raw ? JSON.parse(raw) : null;
+      } catch (jsonErr) {
+        throw buildFirecrawlError(`Firecrawl lieferte keine JSON-Antwort`, {
+          status: res.status,
+          body: raw.slice(0, 400),
+          endpoint: DEFAULT_ENDPOINT
+        });
+      }
+
+      return {
+        endpoint: DEFAULT_ENDPOINT,
+        payload: body,
+        response: data
+      };
+    } catch (err) {
+      lastError = err;
+      if (attempt >= maxAttempts || !shouldRetryFirecrawl(err)) {
+        throw err;
+      }
+      const backoff = typeof retryDelayMs === 'function' ? retryDelayMs(attempt, err) : retryDelayMs * attempt;
+      console.warn(
+        `[firecrawlClient] Versuch ${attempt} fehlgeschlagen (${err.message || err}). Neuer Versuch in ${backoff}ms...`
+      );
+      // eslint-disable-next-line no-await-in-loop
+      await sleep(backoff);
+    }
   }
 
-  const data = await res.json().catch(async () => {
-    const text = await res.text().catch(() => '');
-    throw new Error(`Firecrawl lieferte keine JSON-Antwort: ${text.slice(0, 400)}`);
-  });
-
-  return {
-    endpoint: DEFAULT_ENDPOINT,
-    payload: body,
-    response: data
-  };
+  throw lastError;
 }
 
 function tryParseJson(value) {

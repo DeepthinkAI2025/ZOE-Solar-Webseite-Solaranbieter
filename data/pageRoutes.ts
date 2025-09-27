@@ -37,15 +37,13 @@ export const pageToPath: Record<Page, string> = {
   'wartung-service': '/wartung-service',
   garantieabwicklung: '/garantieabwicklung',
   'foerdermittel-check': '/foerdermittel/check',
-  'foerdermittel-uebersicht': '/foerdermittel',
-  'foerdermittel-programm': '/foerdermittel/:slug',
   'diy-hub': '/diy-hub',
   'agri-pv': '/agri-pv',
   team: '/team',
   'warum-zoe-solar': '/warum-zoe-solar',
   'foerdermittel-kfw': '/foerdermittel/kfw',
-  'foerdermittel-ibb': '/foerdermittel/ibb-wirtschaft-nah',
-  'foerdermittel-bafa': '/foerdermittel/bafa-eew-zuschuss',
+  'foerdermittel-ibb': '/foerdermittel/ibb',
+  'foerdermittel-bafa': '/foerdermittel/bafa',
   elektro: '/elektro',
   'service-anmeldung-pv': '/service/anmeldung-pv',
   'service-anmeldung-ladestationen': '/service/anmeldung-ladestationen',
@@ -119,16 +117,9 @@ export const derivePageFromPath = (pathname: string): Page => {
   if (pathname.startsWith('/wartung-service')) return 'wartung-service';
   if (pathname.startsWith('/garantieabwicklung')) return 'garantieabwicklung';
   if (pathname.startsWith('/foerdermittel/check')) return 'foerdermittel-check';
-  if (pathname === '/foerdermittel') return 'foerdermittel-uebersicht';
-  if (pathname.startsWith('/foerdermittel/')) {
-    const slug = pathname.split('/').filter(Boolean)[1];
-    if (slug === 'kfw') return 'foerdermittel-kfw';
-    if (slug === 'ibb-wirtschaft-nah') return 'foerdermittel-ibb';
-    if (slug === 'bafa' || slug === 'bafa-eew-zuschuss' || slug === 'bafa-transformationskonzept') {
-      return 'foerdermittel-bafa';
-    }
-    return 'foerdermittel-programm';
-  }
+  if (pathname.startsWith('/foerdermittel/kfw')) return 'foerdermittel-kfw';
+  if (pathname.startsWith('/foerdermittel/ibb')) return 'foerdermittel-ibb';
+  if (pathname.startsWith('/foerdermittel/bafa')) return 'foerdermittel-bafa';
   if (pathname.startsWith('/diy-hub')) return 'diy-hub';
   if (pathname.startsWith('/standort/')) return 'standort';
   if (pathname.startsWith('/agri-pv/brandenburg')) return 'agri-pv-brandenburg';

@@ -132,6 +132,7 @@ Erweitert wird der Stack durch `react-router-dom`, `react-helmet-async`, `@googl
 - Die GitHub Actions Workflow-Datei `.github/workflows/product-sync.yml` ist so konfiguriert, dass sie täglich per `schedule`-Trigger ausgeführt wird (Default: `15 3 * * *` UTC → 03:15 UTC). 
 - Wichtiger Punkt: Der Workflow läuft in GitHub-Runnern (Cloud) — dein Rechner oder Vercel müssen nicht laufen. Du hast die Secrets bereits in GitHub gesetzt, also wird der Job automatisch zur geplanten Zeit starten.
 - Falls du nach dem Sync ein Cache-Invalidation/Revalidation auf Vercel möchtest, kann der Workflow optional nach dem Sync einen Deploy-/Webhook-Call an Vercel ausführen.
+- **Failover mit Gemini:** Wenn Firecrawl keine Daten liefert (z. B. wegen 401/403 oder Timeouts) und `SERVER_GEMINI_API_KEY` gesetzt ist, springt automatisch ein Gemini-Fallback ein, um strukturierte Produktdaten aus dem Seiten-HTML zu extrahieren.
 
 Siehe `docs/SETUP-GITHUB-SECRETS.md` für genaue Schritte zum Setzen der Secrets und zur manuellen Ausführung/Verifikation.
 
@@ -145,8 +146,8 @@ Leg die Variablen in `.env` oder `.env.local` (Vite) sowie serverseitig ab. Alle
 
 | Variable | Scope | Zweck |
 | --- | --- | --- |
-| `VITE_GEMINI_API_KEY` / `SERVER_GEMINI_API_KEY` | Frontend · Server | KI-Chat & Recommendation Engine (Google Vertex AI). |
-| `VITE_GEMINI_MODEL` / `SERVER_GEMINI_MODEL` | Frontend · Server | Optionales Override des Modells (z. B. `gemini-1.5-pro`). |
+| `VITE_GEMINI_API_KEY` / `SERVER_GEMINI_API_KEY` | Frontend · Server | KI-Chat & Recommendation Engine sowie KI-Fallback im Produkt-Sync (Google Vertex AI). |
+| `VITE_GEMINI_MODEL` / `SERVER_GEMINI_MODEL` | Frontend · Server | Optionales Modell-Override für Chat & Produkt-Sync-Fallback (z. B. `gemini-1.5-pro`). |
 | `VITE_GOOGLE_MAPS_STATIC_API_KEY`, `VITE_GOOGLE_GEOCODING_API_KEY`, `VITE_GOOGLE_PLACES_API_KEY`, `VITE_SOLAR_API_KEY` | Frontend | Karten, Geokodierung, Solar Roof Insights. |
 | `SERVER_GOOGLE_SERVICE_ACCOUNT_JSON` | Server | Zugriff auf Search Console & GA4 (alternativ: `SERVER_GOOGLE_SERVICE_ACCOUNT_*`). |
 | `SERVER_AHREFS_API_TOKEN`, `SERVER_AHREFS_TARGET` | Server | Backlink-Statistiken fürs Dashboard. |
@@ -156,6 +157,8 @@ Leg die Variablen in `.env` oder `.env.local` (Vite) sowie serverseitig ab. Alle
 | `FIRECRAWL_TIMEOUT_MS` | Server | Timeout für Firecrawl-Requests (Default: `45000`). |
 | `DISABLE_PRODUCT_SYNC_CRON` | Server | Auf `true` setzen, um den täglichen Firecrawl-Sync zu deaktivieren. |
 | `PRODUCTS_SYNC_CRON_SCHEDULE` | Server | Cron-Expression für den Sync (Default: `15 3 * * *` → alle 24h). |
+| `PRODUCT_SYNC_MAX_MANUFACTURERS` | Server | Optionales Hard-Limit (z. B. `50`) für den Sync – überschreibt alle anderen Limits. |
+| `PRODUCT_SYNC_DEV_LIMIT` | Server | Limit für Entwicklungs-Setups (Default: `2`, greift nur wenn `NODE_ENV` ≠ `production`). |
 | `PRODUCT_SYNC_CONCURRENCY` | Server | Maximale gleichzeitige Firecrawl-Requests (Default: `3`). |
 | `PRODUCTS_SYNC_KEY` | Server | Optionaler API-Key, um `/api/admin/products/sync` abzusichern. |
 | `VITE_FAPRO_BASE_URL`, `VITE_FAPRO_API_KEY` | Frontend | Lead-Routing zum Fapro CRM. |

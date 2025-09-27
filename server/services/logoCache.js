@@ -59,7 +59,13 @@ export async function cacheLogoForManufacturer(slug, logoUrl) {
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
       const res = await fetch(url, { headers: { 'User-Agent': 'ZOE-LogoCache/1.0' } });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      if (!res.ok) {
+        if ([401, 403, 404].includes(res.status)) {
+          console.warn(`[logoCache] ${slug}: ${res.status} für ${url} – keine weiteren Versuche.`);
+          return null;
+        }
+        throw Object.assign(new Error(`HTTP ${res.status}`), { status: res.status });
+      }
       const ct = res.headers.get('content-type') || '';
       let ext = guessExtFromContentType(ct);
       if (!ext) {

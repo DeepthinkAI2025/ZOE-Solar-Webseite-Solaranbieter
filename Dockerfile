@@ -1,22 +1,31 @@
-FROM node:20-alpine
+FROM node:20-bookworm-slim
 
-# Setze Arbeitsverzeichnis
+ENV NODE_ENV=production \
+		NPM_CONFIG_UPDATE_NOTIFIER=false \
+		NPM_CONFIG_FUND=false \
+		NPM_CONFIG_LEGACY_PEER_DEPS=true
+
+# Systemabhängigkeiten für HTTPS/Fetch & Zertifikate
+RUN apt-get update \
+	&& apt-get install -y --no-install-recommends \
+		ca-certificates \
+		curl \
+	&& rm -rf /var/lib/apt/lists/*
+
 WORKDIR /app
 
-# Kopiere package.json und package-lock.json
+# Nur package-Dateien kopieren und produktive Dependencies installieren
 COPY package*.json ./
+RUN npm ci --omit=dev
 
-# Installiere Abhängigkeiten
-RUN npm ci
-
-# Installiere Firecrawl MCP (falls verfügbar)
-RUN npm install -g firecrawl-mcp || echo "Firecrawl MCP not available as npm package"
-
-# Kopiere den Rest des Projekts
+# Projektdateien kopieren
 COPY . .
 
-# Exponiere Port für Firecrawl MCP
-EXPOSE 3000
+# Sicherstellen, dass notwendige Verzeichnisse vorhanden sind
+RUN mkdir -p server/storage logs public/assets/logos
 
-# Starte Firecrawl MCP im Hintergrund und führe product-sync aus
-CMD ["sh", "-c", "firecrawl-mcp start & sleep 10 && npm run product-sync"]
+# Dev-Abhängigkeiten bereinigen (falls über transitive Pfade installiert)
+RUN npm prune --omit=dev || true
+
+# Standardkommando: Produktdaten-Sync über Firecrawl MCP anstoßen
+CMD ["npm", "run", "product-sync"]

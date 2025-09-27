@@ -14,60 +14,61 @@ import ComparisonModal from './components/ComparisonModal';
 import SEOManager from './components/SEOManager';
 
 // Import page components
-const HomePage = lazy(() => import('./pages/HomePage'));
-const PhotovoltaikPage = lazy(() => import('./pages/PhotovoltaikPage'));
-const EMobilitaetPage = lazy(() => import('./pages/EMobilitaetPage'));
-const ElektroPage = lazy(() => import('./pages/ElektroPage'));
-const PreisePage = lazy(() => import('./pages/PreisePage'));
-const ProjektePage = lazy(() => import('./pages/ProjektePage'));
-const UeberUnsPage = lazy(() => import('./pages/UeberUnsPage'));
-const KontaktPage = lazy(() => import('./pages/KontaktPage'));
-const KarrierePage = lazy(() => import('./pages/KarrierePage'));
-const ServicePhotovoltaikPage = lazy(() => import('./pages/ServicePhotovoltaikPage'));
-const ServiceLadeparksPage = lazy(() => import('./pages/ServiceLadeparksPage'));
-const ServiceSpeicherPage = lazy(() => import('./pages/ServiceSpeicherPage'));
-const ServiceAnmeldungPVPage = lazy(() => import('./pages/ServiceAnmeldungPVPage'));
-const ServiceAnmeldungLadestationenPage = lazy(() => import('./pages/ServiceAnmeldungLadestationenPage'));
-const ServiceNetzanschlussPage = lazy(() => import('./pages/ServiceNetzanschlussPage'));
-const ServiceVerteilerbauPage = lazy(() => import('./pages/ServiceVerteilerbauPage'));
-const ServiceZaehlerbauPage = lazy(() => import('./pages/ServiceZaehlerbauPage'));
-const StandortDynamicPage = lazy(() => import('./pages/StandortDynamicPage'));
-const EigenheimPage = lazy(() => import('./pages/EigenheimPage'));
-const EigenheimKostenPage = lazy(() => import('./pages/EigenheimKostenPage'));
-const EigenheimEinfamilienhausKostenPage = lazy(() => import('./pages/EigenheimEinfamilienhausKostenPage'));
-const EigenheimPlanungPage = lazy(() => import('./pages/EigenheimPlanungPage'));
-const PhotovoltaikInstallationDachPage = lazy(() => import('./pages/PhotovoltaikInstallationDachPage'));
-const EigenheimInstallationPage = lazy(() => import('./pages/EigenheimInstallationPage'));
-const CaseStudyPage = lazy(() => import('./pages/CaseStudyPage'));
-const FallstudienPage = lazy(() => import('./pages/FallstudienPage'));
-const AgriPVErfahrungenPage = lazy(() => import('./pages/AgriPVErfahrungenPage'));
-const AgriPVBrandenburgPage = lazy(() => import('./pages/AgriPVBrandenburgPage'));
-const AgriPVSachsenAnhaltPage = lazy(() => import('./pages/AgriPVSachsenAnhaltPage'));
-const AgriPVNiedersachsenPage = lazy(() => import('./pages/AgriPVNiedersachsenPage'));
-const AgriPVBayernPage = lazy(() => import('./pages/AgriPVBayernPage'));
-const AgriPVNordrheinWestfalenPage = lazy(() => import('./pages/AgriPVNordrheinWestfalenPage'));
-const SEOMonitoringPage = lazy(() => import('./pages/SEOMonitoringPage'));
-const LoginPage = lazy(() => import('./pages/LoginPage'));
-const EmpfehlungspraemiePage = lazy(() => import('./pages/EmpfehlungspraemiePage'));
-const InnovationsPage = lazy(() => import('./pages/InnovationsPage'));
-const FinanzierungPage = lazy(() => import('./pages/FinanzierungPage'));
-const SonderaktionenPage = lazy(() => import('./pages/SonderaktionenPage'));
-const FAQPage = lazy(() => import('./pages/FAQPage'));
-const PartnerWerdenPage = lazy(() => import('./pages/PartnerWerdenPage'));
-const ImpressumPage = lazy(() => import('./pages/ImpressumPage'));
-const DatenschutzPage = lazy(() => import('./pages/DatenschutzPage'));
-const AGBPage = lazy(() => import('./pages/AGBPage'));
-const NachhaltigkeitPage = lazy(() => import('./pages/NachhaltigkeitPage'));
-const PressePage = lazy(() => import('./pages/PressePage'));
-const WartungServicePage = lazy(() => import('./pages/WartungServicePage'));
-const GarantieabwicklungPage = lazy(() => import('./pages/GarantieabwicklungPage'));
-const FoerdermittelCheckPage = lazy(() => import('./pages/FoerdermittelCheckPage'));
-const AgriPVPage = lazy(() => import('./pages/AgriPVPage'));
-const TeamPage = lazy(() => import('./pages/TeamPage'));
-const WarumZoeSolarPage = lazy(() => import('./pages/WarumZoeSolarPage'));
-const FoerdermittelOverviewPage = lazy(() => import('./pages/FoerdermittelOverviewPage'));
-const FundingProgramDetailPage = lazy(() => import('./pages/FundingProgramDetailPage'));
-const MitarbeiterLoginPage = lazy(() => import('./pages/MitarbeiterLoginPage'));
+import HomePage from './pages/HomePage';
+import PhotovoltaikPage from './pages/PhotovoltaikPage';
+import EMobilitaetPage from './pages/EMobilitaetPage';
+import ElektroPage from './pages/ElektroPage';
+import PreisePage from './pages/PreisePage';
+import ProjektePage from './pages/ProjektePage';
+import UeberUnsPage from './pages/UeberUnsPage';
+import KontaktPage from './pages/KontaktPage';
+import KarrierePage from './pages/KarrierePage';
+import ServicePhotovoltaikPage from './pages/ServicePhotovoltaikPage';
+import ServiceLadeparksPage from './pages/ServiceLadeparksPage';
+import ServiceSpeicherPage from './pages/ServiceSpeicherPage';
+import ServiceAnmeldungPVPage from './pages/ServiceAnmeldungPVPage';
+import ServiceAnmeldungLadestationenPage from './pages/ServiceAnmeldungLadestationenPage';
+import ServiceNetzanschlussPage from './pages/ServiceNetzanschlussPage';
+import ServiceVerteilerbauPage from './pages/ServiceVerteilerbauPage';
+import ServiceZaehlerbauPage from './pages/ServiceZaehlerbauPage';
+import StandortDynamicPage from './pages/StandortDynamicPage';
+import EigenheimPage from './pages/EigenheimPage';
+import EigenheimKostenPage from './pages/EigenheimKostenPage';
+import EigenheimEinfamilienhausKostenPage from './pages/EigenheimEinfamilienhausKostenPage';
+import EigenheimPlanungPage from './pages/EigenheimPlanungPage';
+import PhotovoltaikInstallationDachPage from './pages/PhotovoltaikInstallationDachPage';
+import EigenheimInstallationPage from './pages/EigenheimInstallationPage';
+import CaseStudyPage from './pages/CaseStudyPage';
+import FallstudienPage from './pages/FallstudienPage';
+import AgriPVErfahrungenPage from './pages/AgriPVErfahrungenPage';
+import AgriPVBrandenburgPage from './pages/AgriPVBrandenburgPage';
+import AgriPVSachsenAnhaltPage from './pages/AgriPVSachsenAnhaltPage';
+import AgriPVNiedersachsenPage from './pages/AgriPVNiedersachsenPage';
+import AgriPVBayernPage from './pages/AgriPVBayernPage';
+import AgriPVNordrheinWestfalenPage from './pages/AgriPVNordrheinWestfalenPage';
+import SEOMonitoringPage from './pages/SEOMonitoringPage';
+import LoginPage from './pages/LoginPage';
+import EmpfehlungspraemiePage from './pages/EmpfehlungspraemiePage';
+import InnovationsPage from './pages/InnovationsPage';
+import FinanzierungPage from './pages/FinanzierungPage';
+import SonderaktionenPage from './pages/SonderaktionenPage';
+import FAQPage from './pages/FAQPage';
+import PartnerWerdenPage from './pages/PartnerWerdenPage';
+import ImpressumPage from './pages/ImpressumPage';
+import DatenschutzPage from './pages/DatenschutzPage';
+import AGBPage from './pages/AGBPage';
+import NachhaltigkeitPage from './pages/NachhaltigkeitPage';
+import PressePage from './pages/PressePage';
+import WartungServicePage from './pages/WartungServicePage';
+import GarantieabwicklungPage from './pages/GarantieabwicklungPage';
+import FoerdermittelCheckPage from './pages/FoerdermittelCheckPage';
+import AgriPVPage from './pages/AgriPVPage';
+import TeamPage from './pages/TeamPage';
+import WarumZoeSolarPage from './pages/WarumZoeSolarPage';
+import FoerdermittelKFWPage from './pages/FoerdermittelKFWPage';
+import FoerdermittelIBBPage from './pages/FoerdermittelIBBPage';
+import FoerdermittelBAFAPage from './pages/FoerdermittelBAFAPage';
+import MitarbeiterLoginPage from './pages/MitarbeiterLoginPage';
 
 const AktuellesPage = lazy(() => import('./pages/AktuellesPage'));
 const ArticleDetailPage = lazy(() => import('./pages/ArticleDetailPage'));
@@ -83,7 +84,7 @@ const AnwendungsfallDetailPageLazy = lazy(() => import('./pages/AnwendungsfallDe
 
 import { articles } from './data/articles';
 import { productCatalog } from './data/products.generated';
-import { Product } from './data/productTypes';
+import type { Product, Manufacturer } from './data/productTypes';
 import { pageHeroData } from './data/pageContent';
 import { useCasesData } from './data/useCases';
 import { mockCustomer, mockDemoCustomer, CustomerData, CustomerProject } from './data/customerData';
@@ -93,6 +94,8 @@ import { Page } from './types';
 import { derivePageFromPath, pageToPath } from './data/pageRoutes';
 import { resolveSeoForPage } from './data/seoConfig';
 
+const manufacturers: Manufacturer[] = productCatalog.manufacturers;
+
 const scrollToAnchor = (anchor: string) => {
   window.requestAnimationFrame(() => {
     document.getElementById(anchor)?.scrollIntoView({ behavior: 'smooth' });
@@ -100,7 +103,6 @@ const scrollToAnchor = (anchor: string) => {
 };
 
 const App: React.FC = () => {
-  const { manufacturers } = productCatalog;
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -535,7 +537,6 @@ const App: React.FC = () => {
     'wartung-service',
     'garantieabwicklung',
     'foerdermittel-check',
-  'foerdermittel-uebersicht',
     'article-detail',
     'guide-detail',
     'hersteller-detail',
@@ -565,7 +566,6 @@ const App: React.FC = () => {
     'foerdermittel-kfw',
     'foerdermittel-ibb',
     'foerdermittel-bafa',
-    'foerdermittel-programm',
     'service-anmeldung-pv',
     'service-anmeldung-ladestationen',
     'service-netzanschluss',
@@ -598,141 +598,146 @@ const App: React.FC = () => {
       >
         {showPageHero && heroData && <PageHero {...heroData} onCtaClick={handleHeroCta} />}
 
-        <Suspense fallback={<div>Loading...</div>}>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <HomePage
-                  setPage={handleSetPage}
-                  onSelectAnwendungsfall={handleSelectAnwendungsfall}
-                  onSelectHersteller={handleSelectHersteller}
-                />
-              }
-            />
-            <Route path="/photovoltaik" element={<PhotovoltaikPage setPage={handleSetPage} />} />
-            <Route path="/e-mobilitaet" element={<EMobilitaetPage setPage={handleSetPage} />} />
-            <Route path="/elektro" element={<ElektroPage setPage={handleSetPage} />} />
-            <Route path="/preise" element={<PreisePage isLoggedIn={isLoggedIn} />} />
-            <Route path="/finanzierung" element={<FinanzierungPage setPage={handleSetPage} />} />
-            <Route path="/foerdermittel" element={<FoerdermittelOverviewPage />} />
-            <Route
-              path="/foerdermittel/:slug"
-              element={<FundingProgramDetailPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
-            />
-            <Route path="/sonderaktionen" element={<SonderaktionenPage />} />
-            <Route path="/innovationen" element={<InnovationsPage setPage={handleSetPage} />} />
-            <Route path="/projekte" element={<ProjektePage setPage={handleSetPage} />} />
-            <Route
-              path="/produkte"
-              element={
-                <ProduktePageLazy
-                  onSelectHersteller={handleSelectHersteller}
-                  comparisonList={comparisonList}
-                  onToggleCompare={handleToggleCompare}
-                  {...pageProps}
-                />
-              }
-            />
-            <Route path="/produkte/:slug" element={<HerstellerDetailRoute />} />
-            <Route path="/ueber-uns" element={<UeberUnsPage setPage={handleSetPage} />} />
-            <Route path="/team" element={<TeamPage setPage={handleSetPage} />} />
-            <Route path="/warum-zoe-solar" element={<WarumZoeSolarPage />} />
-            <Route path="/karriere" element={<KarrierePage setPage={handleSetPage} />} />
-            <Route path="/partner-werden" element={<PartnerWerdenPage />} />
-            <Route path="/empfehlungspraemie" element={<EmpfehlungspraemiePage />} />
-            <Route path="/kontakt" element={<KontaktPage setPage={handleSetPage} />} />
-            <Route path="/standort" element={<Navigate to="/standort/berlin" replace />} />
-            <Route path="/standort/:city" element={<StandortDynamicPage />} />
-            <Route path="/fallstudien" element={<FallstudienPage />} />
-            <Route path="/fallstudie/:slug" element={<CaseStudyPage />} />
-            <Route path="/agri-pv-erfahrungen" element={<AgriPVErfahrungenPage />} />
-            <Route
-              path="/service/photovoltaik"
-              element={<ServicePhotovoltaikPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
-            />
-            <Route
-              path="/service/anmeldung-pv"
-              element={<ServiceAnmeldungPVPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
-            />
-            <Route path="/agri-pv" element={<AgriPVPage />} />
-            <Route path="/agri-pv/brandenburg" element={<AgriPVBrandenburgPage />} />
-            <Route path="/agri-pv/sachsen-anhalt" element={<AgriPVSachsenAnhaltPage />} />
-            <Route path="/agri-pv/niedersachsen" element={<AgriPVNiedersachsenPage />} />
-            <Route path="/agri-pv/bayern" element={<AgriPVBayernPage />} />
-            <Route path="/agri-pv/nordrhein-westfalen" element={<AgriPVNordrheinWestfalenPage />} />
-            <Route path="/eigenheim" element={<EigenheimPage />} />
-            <Route path="/eigenheim-kosten" element={<EigenheimKostenPage />} />
-            <Route path="/eigenheim-einfamilienhaus-kosten" element={<EigenheimEinfamilienhausKostenPage />} />
-            <Route path="/eigenheim-planung" element={<EigenheimPlanungPage />} />
-            <Route path="/photovoltaik-installation-dach" element={<PhotovoltaikInstallationDachPage />} />
-            <Route path="/eigenheim-installation" element={<EigenheimInstallationPage />} />
-            <Route path="/seo-monitoring" element={<SEOMonitoringPage />} />
-            <Route
-              path="/service/ladeparks"
-              element={<ServiceLadeparksPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
-            />
-            <Route
-              path="/service/anmeldung-ladestationen"
-              element={<ServiceAnmeldungLadestationenPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
-            />
-            <Route
-              path="/service/speicher"
-              element={<ServiceSpeicherPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
-            />
-            <Route
-              path="/service/netzanschluss"
-              element={<ServiceNetzanschlussPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
-            />
-            <Route
-              path="/service/verteilerbau"
-              element={<ServiceVerteilerbauPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
-            />
-            <Route
-              path="/service/zaehlerbau"
-              element={<ServiceZaehlerbauPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
-            />
-                          <Route path="/diy-hub" element={<DIYHubPage />} />
-                          <Route path="/wissen/diy" element={<DIYHubPage />} />
-            <Route
-              path="/anwendungsfaelle"
-              element={<AnwendungsfaellePageLazy onSelectAnwendungsfall={handleSelectAnwendungsfall} {...pageProps} />}
-            />
-            <Route path="/anwendungsfaelle/:slug" element={<AnwendungsfallDetailRoute />} />
-            <Route path="/aktuelles" element={<AktuellesPage onSelectArticle={handleSelectArticle} />} />
-            <Route path="/aktuelles/:slug" element={<ArticleDetailRoute />} />
-            <Route
-              path="/wissen"
-              element={
-                <WissensHubPage
-                  setPage={handleSetPage}
-                  onSelectArticle={handleSelectArticle}
-                  onSelectGuide={handleSelectGuide}
-                />
-              }
-            />
-            <Route path="/wissen/glossar" element={<GlossarPage />} />
-            <Route path="/wissen/faq" element={<FAQPage />} />
-            <Route path="/wissen/guide/:slug" element={<GuideDetailRoute />} />
-            <Route path="/nachhaltigkeit" element={<NachhaltigkeitPage />} />
-            <Route path="/presse" element={<PressePage />} />
-            <Route path="/wartung-service" element={<WartungServicePage />} />
-            <Route path="/garantieabwicklung" element={<GarantieabwicklungPage />} />
-            <Route path="/foerdermittel/check" element={<FoerdermittelCheckPage />} />
-            <Route path="/impressum" element={<ImpressumPage />} />
-            <Route path="/datenschutz" element={<DatenschutzPage />} />
-            <Route path="/agb" element={<AGBPage />} />
-            <Route path="/mitarbeiter-login" element={<MitarbeiterLoginPage />} />
-            <Route
-              path="/login"
-              element={
-                isLoggedIn ? <Navigate to="/dashboard" replace /> : <LoginPage onLogin={handleLogin} setPage={handleSetPage} />
-              }
-            />
-            <Route path="/dashboard" element={<DashboardRoute />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
-        </Suspense>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <HomePage
+                setPage={handleSetPage}
+                onSelectAnwendungsfall={handleSelectAnwendungsfall}
+                onSelectHersteller={handleSelectHersteller}
+              />
+            }
+          />
+          <Route path="/photovoltaik" element={<PhotovoltaikPage setPage={handleSetPage} />} />
+          <Route path="/e-mobilitaet" element={<EMobilitaetPage setPage={handleSetPage} />} />
+          <Route path="/elektro" element={<ElektroPage setPage={handleSetPage} />} />
+          <Route path="/preise" element={<PreisePage isLoggedIn={isLoggedIn} />} />
+          <Route path="/finanzierung" element={<FinanzierungPage setPage={handleSetPage} />} />
+          <Route
+            path="/foerdermittel/kfw"
+            element={<FoerdermittelKFWPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
+          />
+          <Route
+            path="/foerdermittel/ibb"
+            element={<FoerdermittelIBBPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
+          />
+          <Route
+            path="/foerdermittel/bafa"
+            element={<FoerdermittelBAFAPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
+          />
+          <Route path="/sonderaktionen" element={<SonderaktionenPage />} />
+          <Route path="/innovationen" element={<InnovationsPage setPage={handleSetPage} />} />
+          <Route path="/projekte" element={<ProjektePage setPage={handleSetPage} />} />
+          <Route
+            path="/produkte"
+            element={
+              <ProduktePageLazy
+                onSelectHersteller={handleSelectHersteller}
+                comparisonList={comparisonList}
+                onToggleCompare={handleToggleCompare}
+                {...pageProps}
+              />
+            }
+          />
+          <Route path="/produkte/:slug" element={<HerstellerDetailRoute />} />
+          <Route path="/ueber-uns" element={<UeberUnsPage setPage={handleSetPage} />} />
+          <Route path="/team" element={<TeamPage setPage={handleSetPage} />} />
+          <Route path="/warum-zoe-solar" element={<WarumZoeSolarPage />} />
+          <Route path="/karriere" element={<KarrierePage setPage={handleSetPage} />} />
+          <Route path="/partner-werden" element={<PartnerWerdenPage />} />
+          <Route path="/empfehlungspraemie" element={<EmpfehlungspraemiePage />} />
+          <Route path="/kontakt" element={<KontaktPage setPage={handleSetPage} />} />
+          <Route path="/standort" element={<Navigate to="/standort/berlin" replace />} />
+          <Route path="/standort/:city" element={<StandortDynamicPage />} />
+          <Route path="/fallstudien" element={<FallstudienPage />} />
+          <Route path="/fallstudie/:slug" element={<CaseStudyPage />} />
+          <Route path="/agri-pv-erfahrungen" element={<AgriPVErfahrungenPage />} />
+          <Route
+            path="/service/photovoltaik"
+            element={<ServicePhotovoltaikPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
+          />
+          <Route
+            path="/service/anmeldung-pv"
+            element={<ServiceAnmeldungPVPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
+          />
+          <Route path="/agri-pv" element={<AgriPVPage />} />
+          <Route path="/agri-pv/brandenburg" element={<AgriPVBrandenburgPage />} />
+          <Route path="/agri-pv/sachsen-anhalt" element={<AgriPVSachsenAnhaltPage />} />
+          <Route path="/agri-pv/niedersachsen" element={<AgriPVNiedersachsenPage />} />
+          <Route path="/agri-pv/bayern" element={<AgriPVBayernPage />} />
+          <Route path="/agri-pv/nordrhein-westfalen" element={<AgriPVNordrheinWestfalenPage />} />
+          <Route path="/eigenheim" element={<EigenheimPage />} />
+          <Route path="/eigenheim-kosten" element={<EigenheimKostenPage />} />
+          <Route path="/eigenheim-einfamilienhaus-kosten" element={<EigenheimEinfamilienhausKostenPage />} />
+          <Route path="/eigenheim-planung" element={<EigenheimPlanungPage />} />
+          <Route path="/photovoltaik-installation-dach" element={<PhotovoltaikInstallationDachPage />} />
+          <Route path="/eigenheim-installation" element={<EigenheimInstallationPage />} />
+          <Route path="/seo-monitoring" element={<SEOMonitoringPage />} />
+          <Route
+            path="/service/ladeparks"
+            element={<ServiceLadeparksPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
+          />
+          <Route
+            path="/service/anmeldung-ladestationen"
+            element={<ServiceAnmeldungLadestationenPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
+          />
+          <Route
+            path="/service/speicher"
+            element={<ServiceSpeicherPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
+          />
+          <Route
+            path="/service/netzanschluss"
+            element={<ServiceNetzanschlussPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
+          />
+          <Route
+            path="/service/verteilerbau"
+            element={<ServiceVerteilerbauPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
+          />
+          <Route
+            path="/service/zaehlerbau"
+            element={<ServiceZaehlerbauPage setPage={handleSetPage} currentPage={currentPage} {...pageProps} />}
+          />
+                        <Route path="/diy-hub" element={<DIYHubPage />} />
+                        <Route path="/wissen/diy" element={<DIYHubPage />} />
+          <Route
+            path="/anwendungsfaelle"
+            element={<AnwendungsfaellePageLazy onSelectAnwendungsfall={handleSelectAnwendungsfall} {...pageProps} />}
+          />
+          <Route path="/anwendungsfaelle/:slug" element={<AnwendungsfallDetailRoute />} />
+          <Route path="/aktuelles" element={<AktuellesPage onSelectArticle={handleSelectArticle} />} />
+          <Route path="/aktuelles/:slug" element={<ArticleDetailRoute />} />
+          <Route
+            path="/wissen"
+            element={
+              <WissensHubPage
+                setPage={handleSetPage}
+                onSelectArticle={handleSelectArticle}
+                onSelectGuide={handleSelectGuide}
+              />
+            }
+          />
+          <Route path="/wissen/glossar" element={<GlossarPage />} />
+          <Route path="/wissen/faq" element={<FAQPage />} />
+          <Route path="/wissen/guide/:slug" element={<GuideDetailRoute />} />
+          <Route path="/nachhaltigkeit" element={<NachhaltigkeitPage />} />
+          <Route path="/presse" element={<PressePage />} />
+          <Route path="/wartung-service" element={<WartungServicePage />} />
+          <Route path="/garantieabwicklung" element={<GarantieabwicklungPage />} />
+          <Route path="/foerdermittel/check" element={<FoerdermittelCheckPage />} />
+          <Route path="/impressum" element={<ImpressumPage />} />
+          <Route path="/datenschutz" element={<DatenschutzPage />} />
+          <Route path="/agb" element={<AGBPage />} />
+          <Route path="/mitarbeiter-login" element={<MitarbeiterLoginPage />} />
+          <Route
+            path="/login"
+            element={
+              isLoggedIn ? <Navigate to="/dashboard" replace /> : <LoginPage onLogin={handleLogin} setPage={handleSetPage} />
+            }
+          />
+          <Route path="/dashboard" element={<DashboardRoute />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
       </main>
       <Footer setPage={handleSetPage} />
       <AIChatFunnel onOpen={() => setHasChatBeenOpened(true)} currentPage={currentPage} />
