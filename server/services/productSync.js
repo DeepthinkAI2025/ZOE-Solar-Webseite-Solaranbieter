@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { cacheLogoForManufacturer, probeAndCacheLogo } from './logoCache.js';
 import { fetchManufacturerData } from './firecrawlClient.js';
+import { hasManualScraper, runManualScraper } from './manualScrapers/index.js';
 import { geminiProvider, isGeminiConfigured } from './providers/geminiProvider.js';
 import { analyseAssetCandidates } from './assetGuardian.js';
 import {
@@ -290,8 +291,9 @@ export async function runProductSync({ manufacturers = [] } = {}) {
       }
     };
 
-    let firecrawlSucceeded = false;
-    let fallbackNeeded = !firecrawlEnabled;
+  let firecrawlSucceeded = false;
+  let fallbackNeeded = !firecrawlEnabled;
+  let manualScraperSucceeded = false;
 
     if (firecrawlEnabled && base.website) {
       if (firecrawlGlobalError) {
@@ -364,6 +366,59 @@ export async function runProductSync({ manufacturers = [] } = {}) {
           }
           console.warn('[productSync] Firecrawl enrichment failed for', base.slug, err?.message ?? err);
         }
+      }
+    }
+
+    if (fallbackNeeded && hasManualScraper(base.slug)) {
+      const manualStarted = Date.now();
+      try {
+        const manual = await runManualScraper({ slug: base.slug, name: base.name, website: base.website });
+        base.syncMeta = {
+          ...base.syncMeta,
+          manualScraperDurationMs: Date.now() - manualStarted,
+          manualScraperUsed: true
+        };
+
+        if (manual?.error) {
+          base.syncMeta.manualScraperError = manual.error;
+        }
+
+        if (Array.isArray(manual?.products) && manual.products.length > 0) {
+          base.products = manual.products;
+          manualScraperSucceeded = true;
+        }
+
+        if (Array.isArray(manual?.datasheetCandidates) && manual.datasheetCandidates.length > 0) {
+          addUrlCandidates(datasheetCandidateSet, manual.datasheetCandidates);
+          base.datasheetCandidates = Array.from(datasheetCandidateSet);
+          manualScraperSucceeded = true;
+        }
+
+        if (Array.isArray(manual?.logoCandidates) && manual.logoCandidates.length > 0) {
+          addUrlCandidates(logoCandidateSet, manual.logoCandidates);
+        }
+
+        if (Array.isArray(manual?.providersUsed) && manual.providersUsed.length > 0) {
+          base.providersUsed = dedupeProviders(base.providersUsed, manual.providersUsed);
+        } else if (manualScraperSucceeded) {
+          base.providersUsed = dedupeProviders(base.providersUsed, ['manual-scraper']);
+        }
+
+        if (manual?.sourceUrl) {
+          base.syncMeta = {
+            ...base.syncMeta,
+            manualScraperSource: manual.sourceUrl
+          };
+        }
+
+        if (manualScraperSucceeded) {
+          fallbackNeeded = false;
+        }
+      } catch (manualErr) {
+        base.syncMeta = {
+          ...base.syncMeta,
+          manualScraperError: manualErr?.message ?? String(manualErr)
+        };
       }
     }
 

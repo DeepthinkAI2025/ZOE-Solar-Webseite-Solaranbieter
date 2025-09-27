@@ -140,6 +140,13 @@ Siehe `docs/SETUP-GITHUB-SECRETS.md` für genaue Schritte zum Setzen der Secrets
 > [!TIP]
 > Für Deployments empfiehlt sich ein zweistufiger Ansatz: (1) Static Hosting der Vite-Builds (z. B. Vercel, Netlify) und (2) separater Node-Service für Monitoring & Automations.
 
+### Manueller Scraper-Fallback für Herstellerdaten
+
+- Wenn Firecrawl nicht erreichbar ist oder du Tests ohne MCP fahren möchtest, setzt du beim lokalen Sync `DISABLE_FIRECRAWL=true`. Dadurch greift der neue `manual-scraper`-Fallback.
+- Aktuell ist Meyer Burger vollständig per Custom-Scraper abgedeckt (`server/services/manualScrapers/meyerBurger.js`). Der Scraper extrahiert Produktnamen, Beschreibungen, Spezifikationen, Bilder sowie Datasheet-Links direkt von der öffentlichen Website und schreibt sie nach `server/storage/products.live.json`.
+- Weitere Hersteller lassen sich über zusätzliche Module im Ordner `server/services/manualScrapers/` ergänzen. Jeder Export sollte `{ products, datasheetCandidates, providersUsed }` liefern, damit `server/services/productSync.js` die Daten automatisch übernimmt.
+- Der Sync-Output vermerkt im `providers`-Array sowie pro Hersteller (`providersUsed`), ob Daten via `manual-scraper` kamen. So bleibt transparent nachvollziehbar, welche Pipeline Ergebnisse geliefert hat.
+
 ## Environment & Secrets
 
 Leg die Variablen in `.env` oder `.env.local` (Vite) sowie serverseitig ab. Alle Variablen sind optional, viele Komponenten laufen mit Mock-Daten – für produktive Szenarien jedoch Pflicht.
