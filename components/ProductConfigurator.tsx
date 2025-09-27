@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Product } from '../data/products';
+import { Product } from '../data/productTypes';
 
 interface ProductConfiguratorProps {
     product: Product;

@@ -1,0 +1,724 @@
+{
+  "generatedAt": "2025-09-27T00:31:44.609Z",
+  "source": "fetch-manufacturers-cjs",
+  "manufacturers": [
+    {
+      "slug": "meyer-burger",
+      "name": "Meyer Burger",
+      "website": "https://www.meyerburger.com",
+      "logoUrl": "/assets/logos/meyer-burger.svg",
+      "products": [
+        {
+          "name": "Meyer Burger (Americas) Ltd. | Premium solar panels (Beispielmodul)",
+          "imageUrl": null,
+          "description": "Automatisch erfasstes Beispielprodukt.",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "q-cells",
+      "name": "Q CELLS",
+      "website": "https://www.q-cells.com",
+      "logoUrl": null,
+      "products": [
+        {
+          "name": "Q CELLS Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "jinko-solar",
+      "name": "Jinko Solar",
+      "website": "https://www.jinkosolar.com",
+      "logoUrl": "/assets/logos/jinko-solar.png",
+      "products": [
+        {
+          "name": "Jinko Tiger (Beispiel)",
+          "imageUrl": null,
+          "description": "Automatisch erfasstes Jinko-Beispielprodukt.",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "ja-solar",
+      "name": "JA Solar",
+      "website": "https://www.jasolar.com",
+      "logoUrl": "/assets/logos/ja-solar.png",
+      "products": [
+        {
+          "name": "JA Solar Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "trina-solar",
+      "name": "Trina Solar",
+      "website": "https://www.trinasolar.com",
+      "logoUrl": "https://www-cdn.trinasolar.com/wwwstorage/public/images/en-glb/footer/footer_logo_logo1.png",
+      "products": [
+        {
+          "name": "Trina Vertex (Beispiel)",
+          "imageUrl": null,
+          "description": "Automatisch erfasstes Trina-Beispielprodukt.",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "longi-solar",
+      "name": "LONGi Solar",
+      "website": "https://www.longi-solar.com",
+      "logoUrl": null,
+      "products": []
+    },
+    {
+      "slug": "sma",
+      "name": "SMA",
+      "website": "https://www.sma.de",
+      "logoUrl": "/assets/logos/sma.jpg",
+      "products": [
+        {
+          "name": "Sunny Boy 5.0 (Beispiel)",
+          "imageUrl": "https://www.sma.de/content/dam/sma/website/global/homepage/sma_solar_technology_16-9.jpg/_jcr_content/renditions/original.image_file.1200.630.0,36,1920,1044.file/sma_solar_technology_16-9.jpg",
+          "description": "Automatisch erfasstes SMA-Beispielprodukt.",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "fronius",
+      "name": "Fronius",
+      "website": "https://www.fronius.com",
+      "logoUrl": "/assets/logos/fronius.com",
+      "products": [
+        {
+          "name": "Fronius Symo (Beispiel)",
+          "imageUrl": "https://www.fronius.com",
+          "description": "Automatisch erfasstes Fronius-Beispielprodukt.",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "solaredge",
+      "name": "SolarEdge",
+      "website": "https://www.solaredge.com",
+      "logoUrl": "/assets/logos/solaredge.svg",
+      "products": [
+        {
+          "name": "SolarEdge Home Hub (Beispiel)",
+          "imageUrl": null,
+          "description": "Automatisch erfasstes Beispielprodukt.",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "huawei",
+      "name": "Huawei",
+      "website": "https://solar.huawei.com",
+      "logoUrl": "/assets/logos/huawei.png",
+      "products": [
+        {
+          "name": "Huawei Beispielprodukt",
+          "imageUrl": "//solar.huawei.com/admin/asset/v1/pro/view/83edde1a92a94a33ab98eb70fe8eb7aa.png",
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "goodwe",
+      "name": "GoodWe",
+      "website": "https://www.goodwe.com",
+      "logoUrl": "/assets/logos/goodwe.svg",
+      "products": [
+        {
+          "name": "GoodWe Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "enphase",
+      "name": "Enphase",
+      "website": "https://enphase.com",
+      "logoUrl": "/assets/logos/enphase.svg",
+      "products": [
+        {
+          "name": "Enphase IQ (Beispiel)",
+          "imageUrl": null,
+          "description": "Automatisch erfasstes Enphase-Beispielprodukt.",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "byd",
+      "name": "BYD",
+      "website": "https://www.byd.com",
+      "logoUrl": "/assets/logos/byd.jpg",
+      "products": [
+        {
+          "name": "BYD Battery (Beispiel)",
+          "imageUrl": "https://www.byd.com/etc.clientlibs/byd-site/clientlibs/clientlib-public/resources/image/byd-share.jpg",
+          "description": "Automatisch erfasstes BYD-Beispielprodukt.",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "lg-energy-solution",
+      "name": "LG Energy Solution",
+      "website": "https://www.lgessbattery.com",
+      "logoUrl": "/assets/logos/lg-energy-solution.png",
+      "products": [
+        {
+          "name": "LG ESS (Beispiel)",
+          "imageUrl": "https://www.lgessbattery.com/ess/resource/common/images/lgess_og.png",
+          "description": "Automatisch erfasstes LG-Beispielprodukt.",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "sonnen",
+      "name": "sonnen",
+      "website": "https://sonnen.de",
+      "logoUrl": null,
+      "products": [
+        {
+          "name": "sonnen Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "fox-ess",
+      "name": "FoxESS",
+      "website": "https://www.fox-ess.com",
+      "logoUrl": "https://www.fox-ess.com/wp-content/uploads/2020/06/logo.png",
+      "products": [
+        {
+          "name": "FoxESS Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "victron-energy",
+      "name": "Victron Energy",
+      "website": "https://www.victronenergy.com",
+      "logoUrl": "/assets/logos/victron-energy.png",
+      "products": [
+        {
+          "name": "Victron Energy Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "wallbox-chargers",
+      "name": "Wallbox",
+      "website": "https://wallbox.com",
+      "logoUrl": null,
+      "products": [
+        {
+          "name": "Wallbox Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "keba",
+      "name": "KEBA",
+      "website": "https://www.keba.com",
+      "logoUrl": "/assets/logos/keba.jpg",
+      "products": [
+        {
+          "name": "KEBA Beispielprodukt",
+          "imageUrl": "https://a.storyblok.com/f/keba/downloads/industrial-automation/29_KEBA-Gebaeude_ZOOM.jpg/m/1200x0",
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "mennekes",
+      "name": "Mennekes",
+      "website": "https://www.mennekes.de",
+      "logoUrl": "/assets/logos/mennekes.svg",
+      "products": [
+        {
+          "name": "Mennekes Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "alpitronic",
+      "name": "Alpitronic",
+      "website": "https://www.alpitronic.com",
+      "logoUrl": "/assets/logos/alpitronic.png",
+      "products": [
+        {
+          "name": "Alpitronic Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "k2-systems",
+      "name": "K2 Systems",
+      "website": "https://www.k2-systems.com",
+      "logoUrl": "/assets/logos/k2-systems.jpg",
+      "products": [
+        {
+          "name": "K2 Systems Beispielprodukt",
+          "imageUrl": "https://k2-systems.com/wp-content/uploads/2022/04/Start-Header-scaled.jpg",
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "schneider-electric",
+      "name": "Schneider Electric",
+      "website": "https://www.se.com",
+      "logoUrl": "/assets/logos/schneider-electric.png",
+      "products": [
+        {
+          "name": "Schneider Electric Beispielprodukt",
+          "imageUrl": "https://www.se.com/ww/en/assets/custom_logo/Schneider-Electric-Social.png",
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "sungrow",
+      "name": "Sungrow",
+      "website": "https://www.sungrowpower.com",
+      "logoUrl": "/assets/logos/sungrow.png",
+      "products": [
+        {
+          "name": "Sungrow Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "canadian-solar",
+      "name": "Canadian Solar",
+      "website": "https://www.canadiansolar.com",
+      "logoUrl": "/assets/logos/canadian-solar.png",
+      "products": [
+        {
+          "name": "Canadian Solar Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "rec-group",
+      "name": "REC Group",
+      "website": "https://www.recgroup.com",
+      "logoUrl": "/assets/logos/rec-group.svg",
+      "products": [
+        {
+          "name": "REC Group Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "panasonic",
+      "name": "Panasonic",
+      "website": "https://www.panasonic.com",
+      "logoUrl": "/assets/logos/panasonic.png",
+      "products": []
+    },
+    {
+      "slug": "seraphim",
+      "name": "Seraphim",
+      "website": "https://seraphim-energy.com",
+      "logoUrl": "/uploads/upload/images/20240912/193fe702daebc6a9150499b58b35273e.png",
+      "products": [
+        {
+          "name": "Seraphim Beispielprodukt",
+          "imageUrl": "/uploads/upload/images/20240912/193fe702daebc6a9150499b58b35273e.png",
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "risen-energy",
+      "name": "Risen Energy",
+      "website": "https://www.risenenergy.com",
+      "logoUrl": null,
+      "products": []
+    },
+    {
+      "slug": "talesun",
+      "name": "Talesun",
+      "website": "http://www.talesun.com",
+      "logoUrl": "/assets/logos/talesun.svg",
+      "products": [
+        {
+          "name": "Talesun Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "astronergy",
+      "name": "Astronergy",
+      "website": "https://www.astronergy.com",
+      "logoUrl": null,
+      "products": [
+        {
+          "name": "Astronergy Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "sunpower",
+      "name": "SunPower",
+      "website": "https://us.sunpower.com",
+      "logoUrl": "/assets/logos/sunpower.svg",
+      "products": [
+        {
+          "name": "SunPower Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "suntech",
+      "name": "Suntech",
+      "website": "https://www.suntech-power.com",
+      "logoUrl": "/assets/logos/suntech.jpg",
+      "products": [
+        {
+          "name": "Suntech Beispielprodukt",
+          "imageUrl": "https://www.suntech-power.com/wp-content/uploads/2021/01/logo-suntech.jpg",
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "solarwatt",
+      "name": "Solarwatt",
+      "website": "https://www.solarwatt.com",
+      "logoUrl": "/assets/logos/solarwatt.jpg",
+      "products": [
+        {
+          "name": "Solarwatt Beispielprodukt",
+          "imageUrl": "https://assets.solarwatt.de/Resources/Persistent/c834ca56e802f66851c90bccbdc310710babdd72/Solarwatt%20Dresden%20Headquarter-942x628.jpg",
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "growatt",
+      "name": "Growatt",
+      "website": "https://www.growatt.com",
+      "logoUrl": "/assets/logos/growatt.png",
+      "products": [
+        {
+          "name": "Growatt Beispielprodukt",
+          "imageUrl": "https://www.growatt.com/upload/image/20221209/2de92e8b46b7c43f44563116eeefa047.png?raw=%E9%80%86%E5%8F%98%E5%99%A8.png",
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "outback-power",
+      "name": "OutBack Power",
+      "website": "https://www.outbackpower.com",
+      "logoUrl": "/assets/logos/outback-power.png",
+      "products": [
+        {
+          "name": "OutBack Power Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "fimer",
+      "name": "FIMER",
+      "website": "https://www.fimer.com",
+      "logoUrl": "/assets/logos/fimer.svg",
+      "products": [
+        {
+          "name": "FIMER Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "ginlong-solis",
+      "name": "Ginlong (Solis)",
+      "website": "https://www.ginlong.com",
+      "logoUrl": null,
+      "products": [
+        {
+          "name": "Ginlong (Solis) Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "delta-electronics",
+      "name": "Delta Electronics",
+      "website": "https://www.deltaww.com",
+      "logoUrl": "/assets/logos/delta-electronics.svg",
+      "products": [
+        {
+          "name": "Delta Electronics Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "kostal",
+      "name": "Kostal",
+      "website": "https://www.kostal-solar-electric.com",
+      "logoUrl": "/assets/logos/kostal.svg",
+      "products": [
+        {
+          "name": "Kostal Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "studer",
+      "name": "Studer",
+      "website": "https://www.studer-innotec.com",
+      "logoUrl": "/assets/logos/studer.svg",
+      "products": [
+        {
+          "name": "Studer Beispielprodukt",
+          "imageUrl": "https://studer-innotec.com/wp-content/uploads/2022/04/portal-violet.svg",
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "abb",
+      "name": "ABB",
+      "website": "https://new.abb.com",
+      "logoUrl": "/assets/logos/abb.jpg",
+      "products": [
+        {
+          "name": "ABB Beispielprodukt",
+          "imageUrl": "https://media-d.global.abb/is/image/abbc/ABB_Brand Campaign 2025_BA_EL_1920x1080px",
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "fujitsu",
+      "name": "Fujitsu",
+      "website": "https://www.fujitsu.com",
+      "logoUrl": "/assets/logos/fujitsu.png",
+      "products": [
+        {
+          "name": "Fujitsu Beispielprodukt",
+          "imageUrl": "https://global.fujitsu/-/media/Project/Fujitsu/shared/assets/img/ogp-image-v40.png?rev=150db6e93482478bbafa7d4a3f56c49a",
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    },
+    {
+      "slug": "trk",
+      "name": "TRK (placeholder)",
+      "website": "https://www.example.com",
+      "logoUrl": null,
+      "products": [
+        {
+          "name": "TRK (placeholder) Beispielprodukt",
+          "imageUrl": null,
+          "description": "Automatisch generiertes Beispielprodukt (placeholder).",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {},
+          "keyFeatures": []
+        }
+      ]
+    }
+  ]
+}

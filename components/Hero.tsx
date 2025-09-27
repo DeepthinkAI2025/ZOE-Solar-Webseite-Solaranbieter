@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { manufacturers } from '../data/products';
+import { productCatalog } from '../data/products.generated';
 import { Page } from '../types';
 import { pageToPath } from '../data/pageRoutes';
 import { loadExternalScript } from '../utils/loadExternalScript';
@@ -189,6 +189,8 @@ interface HeroProps {
     setPage: (page: Page) => void;
     theme?: 'day' | 'night';
 }
+
+const { manufacturers } = productCatalog;
 
 const Hero: React.FC<HeroProps> = ({ onSelectHersteller, setPage }) => {
     const vantaRef = useRef<HTMLDivElement | null>(null);

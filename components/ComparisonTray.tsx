@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Product } from '../data/products';
+import { Product } from '../data/productTypes';
 
 interface ComparisonTrayProps {
     items: Product[];

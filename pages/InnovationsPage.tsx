@@ -1,6 +1,7 @@
 import React from 'react';
 import { Page } from '../types';
 import { innovations, TechSpec } from '../data/innovations';
+import InnovationsSlider from '../components/InnovationsSlider';
 
 interface InnovationsPageProps {
   setPage: (page: Page) => void;
@@ -69,6 +70,7 @@ const InnovationsPage: React.FC<InnovationsPageProps> = ({ setPage }) => {
     return (
         <div className="bg-white">
             <InnovationsHero onCtaClick={handleHeroCta} />
+            <InnovationsSlider />
             <div id="innovations-list" className="container mx-auto px-6 py-20 space-y-24 scroll-mt-24">
                 {innovations.map((item, index) => (
                     <section key={item.id} className="grid lg:grid-cols-2 gap-12 items-center">

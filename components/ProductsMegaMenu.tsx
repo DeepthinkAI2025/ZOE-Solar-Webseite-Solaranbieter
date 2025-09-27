@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Page } from '../types';
-import { allCategories, manufacturers, ProductCategory } from '../data/products';
+import { productCatalog } from '../data/products.generated';
+import { ProductCategory } from '../data/productTypes';
 
 interface ProductsMegaMenuProps {
   setPage: (page: Page) => void;
@@ -24,9 +25,11 @@ const CategoryIcon: React.FC<{ name: string; isActive: boolean }> = ({ name, isA
     return icons[name] || null;
 };
 
+const { allCategories, manufacturers } = productCatalog;
+
 const ProductsMegaMenu: React.FC<ProductsMegaMenuProps> = ({ setPage, onSelectHersteller }) => {
-  const [activeCategory, setActiveCategory] = useState<ProductCategory>(allCategories[0]);
-  const manufacturersForCategory = manufacturers.filter(m => m.category.includes(activeCategory));
+    const [activeCategory, setActiveCategory] = useState<ProductCategory>(allCategories[0]);
+    const manufacturersForCategory = manufacturers.filter(m => m.category.includes(activeCategory));
 
   return (
     <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[896px]">
