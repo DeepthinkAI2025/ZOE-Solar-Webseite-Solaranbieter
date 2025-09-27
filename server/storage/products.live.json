@@ -1,16 +1,17 @@
 {
-  "generatedAt": "2025-09-27T17:05:05.604Z",
+  "generatedAt": "2025-09-27T22:17:49.473Z",
   "source": "firecrawl-mcp",
   "providers": [
-    "firecrawl-mcp"
+    "firecrawl-mcp",
+    "manual-scraper"
   ],
   "syncMeta": {
-    "startedAt": "2025-09-27T17:04:49.656Z",
-    "durationMs": 15948,
+    "startedAt": "2025-09-27T22:17:42.884Z",
+    "durationMs": 6589,
     "firecrawlEnabled": true,
     "geminiEnabled": false,
-    "firecrawlError": null,
-    "firecrawlUnavailable": false,
+    "firecrawlError": "fetch failed",
+    "firecrawlUnavailable": true,
     "manufacturerCount": 2,
     "concurrency": 3,
     "firecrawlUsedCount": 2,
@@ -26,35 +27,119 @@
       "logoUrl": "/assets/logos/meyer-burger.svg",
       "products": [
         {
-          "name": "Meyer Burger (Americas) Ltd. | Premium solar panels (Beispielmodul)",
-          "imageUrl": null,
-          "description": "Automatisch erfasstes Beispielprodukt.",
+          "name": "Black – the epitome of elegance",
+          "description": "Always the right choice, especially for visually demanding private rooftop installations.",
+          "imageUrl": "https://www.meyerburger.com/fileadmin/user_upload/Solarmodule/Meyer_Burger_black_3-4.png",
           "basePrice": null,
           "configurable": false,
-          "specs": {},
-          "keyFeatures": []
+          "specs": {
+            "productGuarantee": "25-year product and performance guarantee",
+            "ratedPower": "375 to 395 Wp",
+            "powerDensity": "up to 214 Wp per m²",
+            "efficiency": "20.4 - 21.5 percent",
+            "cellConfiguration": "Module with 120 half-cell, monocrystalline n-Si, HJT - heterojunction cells",
+            "dimensions": "1,767 x 1,041 x 35",
+            "weight": "19.7 kg"
+          },
+          "keyFeatures": [
+            "25-year product and performance guarantee",
+            "Rated power 375 to 395 Wp,",
+            "corresponds to up to 214 Wp per m²",
+            "Efficiency: 20.4 - 21.5 percent",
+            "Black backsheet foil",
+            "Module with 120 half-cell, monocrystalline n-Si, HJT - heterojunction cells",
+            "Compact size (mm): 1,767 x 1,041 x 35",
+            "low weight: 19.7 kg"
+          ]
+        },
+        {
+          "name": "White – the top performer",
+          "description": "The white backsheet reflects light onto the solar cells for higher efficiency.",
+          "imageUrl": "https://www.meyerburger.com/fileadmin/_processed_/c/b/csm_Meyer_Burger_white_3-4_0a5a1964e3.png",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {
+            "productGuarantee": "25-year product and performance guarantee",
+            "ratedPower": "380 to 400 Wp",
+            "powerDensity": "up to 217 Wp per m²",
+            "efficiency": "20.7 - 21.7 percent",
+            "cellConfiguration": "Module with 120 half-cell, monocrystalline n-Si, HJT - heterojunction cells",
+            "dimensions": "1,767 x 1,041 x 35",
+            "weight": "19.7 kg"
+          },
+          "keyFeatures": [
+            "25-year product and performance guarantee",
+            "Rated power 380 to 400 Wp,",
+            "corresponds to up to 217 Wp per m²",
+            "Efficiency: 20.7 - 21.7 percent",
+            "White backsheet foil",
+            "Module with 120 half-cell, monocrystalline n-Si, HJT - heterojunction cells",
+            "Compact size (mm): 1,767 x 1,041 x 35",
+            "low weight: 19.7 kg"
+          ]
+        },
+        {
+          "name": "Glass – simply special",
+          "description": "The glass-glass module is bifacial and can absorb light from both sides.",
+          "imageUrl": "https://www.meyerburger.com/fileadmin/_processed_/c/e/csm_Meyer_Burger_glass_3-4_03dd010d60.png",
+          "basePrice": null,
+          "configurable": false,
+          "specs": {
+            "productGuarantee": "30-year product and performance guarantee",
+            "ratedPower": "370 to 390 Wp",
+            "powerDensity": "up to 217 Wp per m²",
+            "efficiency": "20.6 - 21.8 percent",
+            "cellConfiguration": "Module with 120 half-cell, monocrystalline n-Si, HJT - heterojunction cells",
+            "dimensions": "1,722 x 1,041 x 35",
+            "weight": "24.4 kg"
+          },
+          "keyFeatures": [
+            "30-year product and performance guarantee",
+            "Rated power 370 to 390 Wp,",
+            "corresponds to up to 217 Wp per m²",
+            "Efficiency: 20.6 - 21.8 percent",
+            "Bifacial due to transparent glass rear side",
+            "Module with 120 half-cell, monocrystalline n-Si, HJT - heterojunction cells",
+            "Smallest size (mm): 1,722 x 1,041 x 35",
+            "Weight: 24.4 kg"
+          ]
         }
       ],
-      "datasheetCandidates": [],
+      "datasheetCandidates": [
+        "https://www.meyerburger.com/en/downloads",
+        "https://www.meyerburger.com/en/downloads"
+      ],
       "providersUsed": [
-        "firecrawl-mcp"
+        "firecrawl-mcp",
+        "manual-scraper"
       ],
       "syncMeta": {
-        "lastFirecrawlRun": "2025-09-27T17:04:49.657Z",
+        "lastFirecrawlRun": "2025-09-27T22:17:42.895Z",
         "firecrawlEnabled": true,
-        "firecrawlError": "Firecrawl-Request fehlgeschlagen (401)",
+        "firecrawlError": "fetch failed",
         "manufacturerLimit": 2,
         "manufacturerLimitReason": "dev-default",
         "whitelist": {
           "logoCount": 0,
-          "datasheetCount": 0
+          "datasheetCount": 1
         },
         "firecrawlDurationMs": 11407,
         "assetGuardian": {
-          "skipped": true
-        }
+          "logoCandidates": 0,
+          "datasheetCandidates": 2,
+          "accessibleLogos": 0,
+          "accessibleDatasheets": 2,
+          "geminiUsed": false,
+          "geminiError": null,
+          "probeFailures": [],
+          "approvedLogoCount": 0,
+          "approvedDatasheetCount": 2
+        },
+        "manualScraperDurationMs": 1670,
+        "manualScraperUsed": true,
+        "manualScraperSource": "https://www.meyerburger.com/en/solar-modules"
       },
-      "lastSyncedAt": "2025-09-27T17:04:49.657Z"
+      "lastSyncedAt": "2025-09-27T22:17:42.895Z"
     },
     {
       "slug": "q-cells",
@@ -77,9 +162,9 @@
         "firecrawl-mcp"
       ],
       "syncMeta": {
-        "lastFirecrawlRun": "2025-09-27T17:04:49.687Z",
+        "lastFirecrawlRun": "2025-09-27T22:17:42.922Z",
         "firecrawlEnabled": true,
-        "firecrawlError": "Firecrawl-Request fehlgeschlagen (401)",
+        "firecrawlError": "fetch failed",
         "manufacturerLimit": 2,
         "manufacturerLimitReason": "dev-default",
         "whitelist": {
@@ -91,13 +176,13 @@
           "skipped": true
         }
       },
-      "lastSyncedAt": "2025-09-27T17:04:49.687Z"
+      "lastSyncedAt": "2025-09-27T22:17:42.922Z"
     }
   ],
   "changeSummary": {
-    "generatedAt": "2025-09-27T17:05:05.604Z",
+    "generatedAt": "2025-09-27T22:17:49.473Z",
     "totalManufacturers": 2,
-    "totalProducts": 2,
+    "totalProducts": 4,
     "manufacturersWithChanges": 0,
     "manufacturerChanges": []
   }

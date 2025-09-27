@@ -1,0 +1,202 @@
+{
+  "expansion_plan": {
+    "goal": "Mindestens 9 Hersteller pro Kategorie mit jeweils mindestens 3 Produkten",
+    "categories": {
+      "Module": {
+        "existing_manufacturers": ["meyer-burger", "q-cells", "jinko-solar", "ja-solar", "trina-solar", "longi-solar"],
+        "new_manufacturers": ["canadian-solar", "rec", "panasonic"],
+        "manufacturers_to_expand": {
+          "q-cells": {
+            "current_products": 2,
+            "new_products": [
+              {
+                "name": "Q.PEAK DUO BLK ML-G10+",
+                "specs": { "Leistung": "405 Wp", "Wirkungsgrad": "20.6 %", "Zell-Technologie": "Q.ANTUM DUO Z" },
+                "price": 185,
+                "description": "Vollschwarzes Premium-Solarmodul mit optimierter Ästhetik für anspruchsvolle Wohngebäude."
+              }
+            ]
+          },
+          "jinko-solar": {
+            "current_products": 1,
+            "new_products": [
+              {
+                "name": "Tiger Pro 72HC 540W",
+                "specs": { "Leistung": "540 Wp", "Wirkungsgrad": "20.9 %", "Zell-Technologie": "Mono PERC" },
+                "price": 155,
+                "description": "Hochleistungs-Modul für gewerbliche Anwendungen mit bewährter PERC-Technologie."
+              },
+              {
+                "name": "Tiger Neo N-type 72HL4",
+                "specs": { "Leistung": "580 Wp", "Wirkungsgrad": "22.5 %", "Zell-Technologie": "N-Type TOPCon" },
+                "price": 175,
+                "description": "N-Type Hocheffizienzmodul mit TOPCon-Technologie für maximale Erträge."
+              }
+            ]
+          },
+          "ja-solar": {
+            "current_products": 0,
+            "new_products": [
+              {
+                "name": "JAM72S30 535W",
+                "specs": { "Leistung": "535 Wp", "Wirkungsgrad": "20.7 %", "Zell-Technologie": "Mono PERC" },
+                "price": 150,
+                "description": "Zuverlässiges PERC-Modul für Großanlagen mit exzellentem Preis-Leistungs-Verhältnis."
+              },
+              {
+                "name": "JAM54S40 440W",
+                "specs": { "Leistung": "440 Wp", "Wirkungsgrad": "22.3 %", "Zell-Technologie": "Mono PERC+" },
+                "price": 195,
+                "description": "Kompaktes Hocheffizienz-Modul für private und gewerbliche Aufdachanlagen."
+              },
+              {
+                "name": "JAM72D40 550W Bifacial",
+                "specs": { "Leistung": "550 Wp", "Wirkungsgrad": "21.2 %", "Zell-Technologie": "Bifacial PERC", "Bifazialität": "85%" },
+                "price": 170,
+                "description": "Bifaziales Glas-Glas-Modul für erhöhte Erträge durch Rückseiteneinstrahlung."
+              }
+            ]
+          },
+          "trina-solar": {
+            "current_products": 0,
+            "new_products": [
+              {
+                "name": "Vertex S+ TSM-NEG9R.28 425W",
+                "specs": { "Leistung": "425 Wp", "Wirkungsgrad": "22.0 %", "Zell-Technologie": "N-Type i-TOPCon" },
+                "price": 180,
+                "description": "Vertex-Plattform mit i-TOPCon Technologie für höchste Effizienz und Zuverlässigkeit."
+              },
+              {
+                "name": "Vertex S TSM-DE09.08 405W",
+                "specs": { "Leistung": "405 Wp", "Wirkungsgrad": "20.8 %", "Zell-Technologie": "Mono PERC+" },
+                "price": 160,
+                "description": "Bewährtes PERC+ Modul der Vertex-Serie für vielseitige Anwendungen."
+              },
+              {
+                "name": "Vertex S+ DEG21C.20 550W Bifacial",
+                "specs": { "Leistung": "550 Wp", "Wirkungsgrad": "21.5 %", "Zell-Technologie": "N-Type Bifacial", "Bifazialität": "80%" },
+                "price": 185,
+                "description": "Hochleistungs-Bifacial-Modul für Freiflächen und Carports mit Doppelglas-Aufbau."
+              }
+            ]
+          },
+          "longi-solar": {
+            "current_products": 0,
+            "new_products": [
+              {
+                "name": "Hi-MO 6 Explorer LR5-72HTH 545W",
+                "specs": { "Leistung": "545 Wp", "Wirkungsgrad": "21.2 %", "Zell-Technologie": "TOPCon Hybrid" },
+                "price": 165,
+                "description": "Hi-MO 6 Serie mit hybridem TOPCon-Design für optimale Performance bei allen Lichtverhältnissen."
+              },
+              {
+                "name": "Hi-MO 5m LR4-60HPH 405W",
+                "specs": { "Leistung": "405 Wp", "Wirkungsgrad": "20.6 %", "Zell-Technologie": "Mono PERC" },
+                "price": 145,
+                "description": "Bewährte Hi-MO 5m Serie mit PERC-Technologie für Wohn- und Gewerbeanwendungen."
+              },
+              {
+                "name": "Hi-MO X6 Explorer LR1-84HTH 605W",
+                "specs": { "Leistung": "605 Wp", "Wirkungsgrad": "22.8 %", "Zell-Technologie": "N-Type TOPCon" },
+                "price": 195,
+                "description": "Spitzenmodul der Hi-MO X6 Serie mit höchster Effizienz für anspruchsvollste Projekte."
+              }
+            ]
+          }
+        },
+        "new_manufacturer_data": {
+          "canadian-solar": {
+            "name": "Canadian Solar",
+            "logoUrl": "/assets/logos/canadian-solar.png",
+            "description": "Canadian Solar ist einer der weltweit größten Hersteller von Solarmodulen und Anbieter von Solarlösungen. Das Unternehmen beliefert über 160 Länder mit hochwertigen und kosteneffizienten Solarmodulen.",
+            "whyWeTrust": [
+              "Über 25 Jahre Erfahrung und weltweite Präsenz in mehr als 160 Ländern.",
+              "Ausgezeichnete Bankability und finanzielle Stabilität.",
+              "Breites Produktportfolio für alle Anwendungsbereiche."
+            ],
+            "products": [
+              {
+                "name": "HiKu7 Mono PERC CS7L-545MS",
+                "specs": { "Leistung": "545 Wp", "Wirkungsgrad": "21.2 %", "Zell-Technologie": "Mono PERC" },
+                "price": 155,
+                "description": "HiKu7 Serie mit bewährter PERC-Technologie für höchste Zuverlässigkeit und Performance."
+              },
+              {
+                "name": "BiHiKu7 CS7N-665MS Bifacial",
+                "specs": { "Leistung": "665 Wp", "Wirkungsgrad": "21.6 %", "Zell-Technologie": "N-Type Bifacial", "Bifazialität": "85%" },
+                "price": 185,
+                "description": "Bifaziales N-Type Modul für maximale Erträge durch Doppelseitige Energiegewinnung."
+              },
+              {
+                "name": "HiKu6 Mono PERC CS6W-410MS",
+                "specs": { "Leistung": "410 Wp", "Wirkungsgrad": "20.9 %", "Zell-Technologie": "Mono PERC" },
+                "price": 140,
+                "description": "Kompakte HiKu6 Serie ideal für Aufdachanlagen mit begrenztem Platz."
+              }
+            ]
+          },
+          "rec": {
+            "name": "REC Solar",
+            "logoUrl": "/assets/logos/rec-solar.png", 
+            "description": "REC ist ein europäischer Pionier der Solarenergie seit 1996. Das norwegische Unternehmen entwickelt und produziert Solarzellen und -module und ist bekannt für seine Innovationen und hohe Qualität.",
+            "whyWeTrust": [
+              "Europäische Qualität und Innovation seit über 25 Jahren.",
+              "Branchenführende Heterojunction-Technologie (Alpha Pure Serie).",
+              "Hervorragende Leistung bei Schwachlicht und hohen Temperaturen."
+            ],
+            "products": [
+              {
+                "name": "REC Alpha Pure-R 430W",
+                "specs": { "Leistung": "430 Wp", "Wirkungsgrad": "22.3 %", "Zell-Technologie": "Heterojunction" },
+                "price": 260,
+                "description": "Premium Alpha Pure Serie mit Heterojunction-Technologie für höchste Effizienz und Langlebigkeit."
+              },
+              {
+                "name": "REC Alpha Pure Black 405W",
+                "specs": { "Leistung": "405 Wp", "Wirkungsgrad": "21.7 %", "Zell-Technologie": "Heterojunction" },
+                "price": 275,
+                "description": "Elegantes Vollschwarz-Design der Alpha Pure Serie für anspruchsvolle Architektur."
+              },
+              {
+                "name": "REC TwinPeak 5 Mono 380W",
+                "specs": { "Leistung": "380 Wp", "Wirkungsgrad": "19.9 %", "Zell-Technologie": "Mono PERC" },
+                "price": 190,
+                "description": "TwinPeak 5 Serie mit Split-Cell-Technologie für reduzierte Hotspot-Bildung."
+              }
+            ]
+          },
+          "panasonic": {
+            "name": "Panasonic",
+            "logoUrl": "/assets/logos/panasonic.png",
+            "description": "Panasonic ist ein Technologiekonzern mit jahrzehntelanger Erfahrung in der Elektronik. Die HIT-Solarmodule von Panasonic gehören zu den effizientesten und langlebigsten auf dem Markt.",
+            "whyWeTrust": [
+              "Höchste Moduleffizienz und bewährte Heterojunction-Technologie (HIT).",
+              "Außergewöhnliche Leistung bei hohen Temperaturen und Schwachlicht.",
+              "25 Jahre Produktgarantie und hervorragende Langzeiterfahrung."
+            ],
+            "products": [
+              {
+                "name": "EVERVOLT HIT VBHN330SA17",
+                "specs": { "Leistung": "330 Wp", "Wirkungsgrad": "19.7 %", "Zell-Technologie": "HIT (Heterojunction)" },
+                "price": 295,
+                "description": "EVERVOLT HIT-Modul mit patentierter Heterojunction-Technologie für Premium-Anwendungen."
+              },
+              {
+                "name": "EVERVOLT HIT+ VBHN340SA17",
+                "specs": { "Leistung": "340 Wp", "Wirkungsgrad": "20.3 %", "Zell-Technologie": "HIT+ (Enhanced)" },
+                "price": 310,
+                "description": "Weiterentwickelte HIT+ Technologie für noch höhere Effizienz und bessere Schwachlichtperformance."
+              },
+              {
+                "name": "EVERVOLT HIT Black VBHN325SA16",
+                "specs": { "Leistung": "325 Wp", "Wirkungsgrad": "19.4 %", "Zell-Technologie": "HIT Schwarz" },
+                "price": 320,
+                "description": "Elegante schwarze HIT-Module für höchste ästhetische Ansprüche bei Premium-Installationen."
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

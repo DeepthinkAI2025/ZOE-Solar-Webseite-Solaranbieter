@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "updatedAt": "2025-09-27T20:19:49.418Z",
+  "manufacturers": {
+    "meyer-burger": {
+      "logos": [],
+      "datasheets": [
+        "https://www.meyerburger.com/en/downloads"
+      ],
+      "lastUpdatedAt": "2025-09-27T20:19:49.418Z"
+    }
+  }
+}

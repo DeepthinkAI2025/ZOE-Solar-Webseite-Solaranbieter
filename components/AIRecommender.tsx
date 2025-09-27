@@ -9,6 +9,8 @@ interface Question {
     options: string[];
 }
 
+const GEMINI_API_KEY = (import.meta.env.VITE_GEMINI_API_KEY ?? import.meta.env.VITE_API_KEY ?? '') as string;
+
 const AIRecommender: React.FC = () => {
     const [state, setState] = useState<RecommenderState>('idle');
     const [conversationHistory, setConversationHistory] = useState<string[]>([]);
@@ -18,7 +20,13 @@ const AIRecommender: React.FC = () => {
     const ai = useRef<GoogleGenAI | null>(null);
 
     useEffect(() => {
-        ai.current = new GoogleGenAI({ apiKey: process.env.API_KEY as string });
+        const apiKey = GEMINI_API_KEY?.trim();
+        if (!apiKey) {
+            console.warn('[AIRecommender] Kein Gemini API-Key konfiguriert. KI-Empfehlungen werden deaktiviert.');
+            return;
+        }
+
+        ai.current = new GoogleGenAI({ apiKey });
     }, []);
 
     const startRecommendation = async () => {
@@ -31,7 +39,7 @@ const AIRecommender: React.FC = () => {
 
     const getNextQuestion = async (userAnswer?: string) => {
         if (!ai.current) {
-            setError('KI-Modul nicht initialisiert.');
+            setError('Der KI-Empfehlungsservice ist derzeit nicht verfügbar. Bitte nutzen Sie unser Kontaktformular oder wenden Sie sich direkt an unser Vertriebsteam.');
             setState('error');
             return;
         }
