@@ -33,6 +33,117 @@ export const productCatalog: ProductCatalog = {
         'Führende HJT-Zelltechnologie für maximale Energieerträge auch bei Schwachlicht.',
         'Branchenführende Produkt- und Leistungsgarantien geben Investitionssicherheit.'
       ],
+      headquarters: {
+        country: 'Deutschland',
+        city: 'Thun, Schweiz / Bitterfeld-Wolfen, Deutschland'
+      },
+      officialWebsite: 'https://www.meyerburger.com',
+      stats: {
+        foundedYear: 1953,
+        employeesGlobal: 2500,
+        marketPresence: ['Deutschland', 'Schweiz', 'USA', 'Europa', 'Asien'],
+        annualProduction: '1.4 GW Modulfertigung (2024)',
+        totalInstalled: 'Über 4 GW weltweit installiert'
+      },
+      companyHistory: [
+        {
+          year: '1953',
+          milestone: 'Unternehmensgründung',
+          description: 'Gründung als Maschinenbauunternehmen für Diamantwerkzeuge in der Schweiz'
+        },
+        {
+          year: '2000',
+          milestone: 'Einstieg in die Solarindustrie',
+          description: 'Erste Entwicklungen von Produktionsanlagen für die Photovoltaikindustrie'
+        },
+        {
+          year: '2020',
+          milestone: 'Produktionsstart Deutschland',
+          description: 'Eröffnung der hochmodernen Solarzellen- und Modulfabrik in Bitterfeld-Wolfen'
+        },
+        {
+          year: '2024',
+          milestone: 'Vollauslastung der Produktion',
+          description: 'Erreichen der Vollkapazität von 1.4 GW jährlicher Modulproduktion'
+        }
+      ],
+      certifications: [
+        {
+          name: 'IEC 61215 & IEC 61730',
+          issuedBy: 'International Electrotechnical Commission',
+          description: 'Internationale Sicherheits- und Qualitätsstandards für Solarmodule'
+        },
+        {
+          name: 'TÜV Rheinland Zertifizierung',
+          issuedBy: 'TÜV Rheinland',
+          description: 'Unabhängige Prüfung und Zertifizierung der Produktqualität'
+        },
+        {
+          name: 'UL Listed',
+          issuedBy: 'Underwriters Laboratories',
+          description: 'Sicherheitszertifizierung für den nordamerikanischen Markt'
+        }
+      ],
+      achievements: [
+        {
+          title: 'Photovoltaik Austria Award 2023',
+          year: '2023',
+          description: 'Auszeichnung für innovativste Solarzellentechnologie',
+          category: 'award'
+        },
+        {
+          title: 'Intersolar Award Finalist',
+          year: '2022',
+          description: 'Nominierung für die Heterojunction-Technologie',
+          category: 'innovation'
+        },
+        {
+          title: 'Made in Germany Zertifikat',
+          year: '2020',
+          description: 'Offizielle Anerkennung der deutschen Produktionsqualität',
+          category: 'certification'
+        }
+      ],
+      sustainability: {
+        co2Neutral: true,
+        renewableEnergy: 95,
+        recyclingProgram: true,
+        certifications: ['ISO 14001', 'OHSAS 18001', 'Cradle to Cradle'],
+        description: 'Vollständig CO2-neutrale Produktion durch erneuerbare Energien und systematisches Recycling-Programm'
+      },
+      technicalInnovations: [
+        'Heterojunction-Zelltechnologie (HJT) für maximale Effizienz',
+        'SmartWire Connection Technology (SWCT) für erhöhte Zuverlässigkeit',
+        'Bifaziale Modultechnologie mit bis zu 30% Mehrertrag',
+        'Ultra-niedrige Degradation von nur 0.25% pro Jahr',
+        'Temperaturkoeffizient von nur -0.26%/°C'
+      ],
+      qualityAssurance: {
+        iso: ['ISO 9001', 'ISO 14001', 'ISO 45001'],
+        testing: ['Thermal Cycling 600 Zyklen', 'Humidity Freeze 20 Zyklen', 'UV-Test 30 kWh/m²'],
+        warranty: {
+          product: '30 Jahre Produktgarantie',
+          performance: '30 Jahre Leistungsgarantie (93.5% nach 30 Jahren)',
+          description: 'Branchenführende Garantieleistungen mit linearer Leistungsgarantie'
+        }
+      },
+      regionalPartnerships: [
+        {
+          region: 'Deutschland',
+          partners: ['Deutsche Energieberatung GmbH', 'Solarwatt AG', 'IBC Solar AG'],
+          serviceCenter: true
+        },
+        {
+          region: 'Österreich',
+          partners: ['Austria Solar Innovation GmbH', 'Fronius International GmbH'],
+          serviceCenter: true
+        },
+        {
+          region: 'Schweiz',
+          partners: ['Schweizer Solargenossenschaft', 'Energy Solutions AG'],
+          serviceCenter: true
+        }
+      ],
       products: [
         {
           name: 'Meyer Burger Black',
@@ -123,6 +234,117 @@ export const productCatalog: ProductCatalog = {
         'Exzellentes Preis-Leistungs-Verhältnis.',
         'Hohe Zuverlässigkeit und bewährte Leistung unter realen Bedingungen.',
         'Innovative Q.ANTUM DUO Z-Technologie reduziert Leistungsverluste.'
+      ],
+      headquarters: {
+        country: 'Deutschland',
+        city: 'Thalheim, Deutschland'
+      },
+      officialWebsite: 'https://www.q-cells.com',
+      stats: {
+        foundedYear: 1999,
+        employeesGlobal: 23000,
+        marketPresence: ['Deutschland', 'Südkorea', 'China', 'Malaysia', 'USA', 'Japan'],
+        annualProduction: '12 GW Modulfertigung (2024)',
+        totalInstalled: 'Über 50 GW weltweit installiert'
+      },
+      companyHistory: [
+        {
+          year: '1999',
+          milestone: 'Unternehmensgründung',
+          description: 'Gründung in Thalheim, Deutschland als deutsches Solar-Startup'
+        },
+        {
+          year: '2008',
+          milestone: 'Weltmarktführer',
+          description: 'Aufstieg zum weltgrößten Solarzellenhersteller'
+        },
+        {
+          year: '2012',
+          milestone: 'Übernahme durch Hanwha',
+          description: 'Integration in die Hanwha Group zur globalen Expansion'
+        },
+        {
+          year: '2019',
+          milestone: 'Q.ANTUM Technologie-Launch',
+          description: 'Einführung der revolutionären Q.ANTUM DUO Z Zelltechnologie'
+        }
+      ],
+      certifications: [
+        {
+          name: 'IEC 61215 & IEC 61730',
+          issuedBy: 'International Electrotechnical Commission',
+          description: 'Internationale Standards für Solarmodulqualität und -sicherheit'
+        },
+        {
+          name: 'TÜV Rheinland "All Quality Matters"',
+          issuedBy: 'TÜV Rheinland',
+          description: 'Umfassende Qualitätszertifizierung für gesamte Produktionskette'
+        },
+        {
+          name: 'UL Listed & CEC Approved',
+          issuedBy: 'Underwriters Laboratories / California Energy Commission',
+          description: 'Zertifizierung für nordamerikanischen Markt'
+        }
+      ],
+      achievements: [
+        {
+          title: 'PVEL Top Performer 2024',
+          year: '2024',
+          description: 'Auszeichnung als Spitzenreiter in Langzeittests',
+          category: 'award'
+        },
+        {
+          title: 'Intersolar Award Winner',
+          year: '2020',
+          description: 'Gewinner für Q.ANTUM NEO Technologie',
+          category: 'innovation'
+        },
+        {
+          title: 'DNV GL Bankability Rating AAA',
+          year: '2023',
+          description: 'Höchste Bankability-Bewertung für Finanzierungssicherheit',
+          category: 'certification'
+        }
+      ],
+      sustainability: {
+        co2Neutral: true,
+        renewableEnergy: 80,
+        recyclingProgram: true,
+        certifications: ['ISO 14001', 'OHSAS 18001', 'RBA Code of Conduct'],
+        description: 'Commitment zu 100% erneuerbaren Energien in der Produktion bis 2030'
+      },
+      technicalInnovations: [
+        'Q.ANTUM DUO Z Technologie für reduzierte Verluste',
+        'Anti-LID und Anti-LeTID Behandlung für Langzeitstabilität',
+        'N-Type Q.ANTUM NEO für Premium-Performance',
+        'Hot-Spot Protect Technologie gegen thermische Überlastung',
+        'Traceable Quality System für vollständige Nachverfolgbarkeit'
+      ],
+      qualityAssurance: {
+        iso: ['ISO 9001', 'ISO 14001', 'ISO 45001'],
+        testing: ['Double UV Test', 'Extended Thermal Cycling', 'Potential Induced Degradation Test'],
+        warranty: {
+          product: '25 Jahre Produktgarantie',
+          performance: '25 Jahre Leistungsgarantie (86-90.5% je nach Modell)',
+          description: 'Umfassende Garantie mit weltweitem Service-Netzwerk'
+        }
+      },
+      regionalPartnerships: [
+        {
+          region: 'Deutschland',
+          partners: ['IBC Solar', 'Solarwatt', 'Krannich Solar'],
+          serviceCenter: true
+        },
+        {
+          region: 'Europa',
+          partners: ['BayWa r.e.', 'Memodo', 'Solar-Log'],
+          serviceCenter: true
+        },
+        {
+          region: 'Nordamerika',
+          partners: ['CED Greentech', 'Solar Power International'],
+          serviceCenter: true
+        }
       ],
       products: [
         {
@@ -251,6 +473,117 @@ export const productCatalog: ProductCatalog = {
         'Höchste Qualität und Zuverlässigkeit "Made in Germany".',
         'Umfassendes Portfolio für alle Anlagengrößen, von Eigenheim bis Kraftwerk.',
         'Exzellenter Service und Support.'
+      ],
+      headquarters: {
+        country: 'Deutschland',
+        city: 'Niestetal bei Kassel, Deutschland'
+      },
+      officialWebsite: 'https://www.sma.de',
+      stats: {
+        foundedYear: 1981,
+        employeesGlobal: 3400,
+        marketPresence: ['Deutschland', 'USA', 'Kanada', 'Australien', 'Italien', 'Thailand', 'Südafrika', 'Indien'],
+        annualProduction: '20 GW Wechselrichterleistung jährlich',
+        totalInstalled: 'Über 120 GW weltweit installiert'
+      },
+      companyHistory: [
+        {
+          year: '1981',
+          milestone: 'Unternehmensgründung',
+          description: 'Gründung von SMA als Elektronik-Unternehmen für Wechselrichtertechnik'
+        },
+        {
+          year: '1995',
+          milestone: 'Erster PV-Wechselrichter',
+          description: 'Entwicklung des ersten serienreifen Photovoltaik-Wechselrichters'
+        },
+        {
+          year: '2008',
+          milestone: 'Börsengang',
+          description: 'Erfolgreicher Börsengang und internationale Expansion'
+        },
+        {
+          year: '2020',
+          milestone: 'Sunny Tripower X Launch',
+          description: 'Einführung der neuen Generation intelligenter Wechselrichter'
+        }
+      ],
+      certifications: [
+        {
+          name: 'ISO 9001:2015',
+          issuedBy: 'International Organization for Standardization',
+          description: 'Qualitätsmanagementsystem-Zertifizierung'
+        },
+        {
+          name: 'VDE 0126-1-1',
+          issuedBy: 'Verband der Elektrotechnik',
+          description: 'Deutsche Sicherheitsnorm für Photovoltaik-Wechselrichter'
+        },
+        {
+          name: 'UL 1741 Listed',
+          issuedBy: 'Underwriters Laboratories',
+          description: 'Nordamerikanische Sicherheitszertifizierung'
+        }
+      ],
+      achievements: [
+        {
+          title: 'Intersolar Award 2023',
+          year: '2023',
+          description: 'Auszeichnung für innovative Wechselrichtertechnologie',
+          category: 'award'
+        },
+        {
+          title: 'Top Brand PV 2024',
+          year: '2024',
+          description: 'Auszeichnung als führende Wechselrichtermarke',
+          category: 'award'
+        },
+        {
+          title: 'German Brand Award 2022',
+          year: '2022',
+          description: 'Anerkennung für Markenführung und Innovation',
+          category: 'award'
+        }
+      ],
+      sustainability: {
+        co2Neutral: true,
+        renewableEnergy: 100,
+        recyclingProgram: true,
+        certifications: ['ISO 14001', 'EMAS', 'Carbon Trust Standard'],
+        description: 'Vollständig klimaneutrale Produktion und systematisches Recycling-Programm'
+      },
+      technicalInnovations: [
+        'SMA Smart Connected für intelligente Überwachung',
+        'OptiTrac Global Peak für Maximum Power Point Tracking',
+        'Secure Power Supply (SPS) für Notstromversorgung',
+        'SMA ShadeFix für automatische Verschattungsoptimierung',
+        'Integrated Plant Control für Großanlagen-Management'
+      ],
+      qualityAssurance: {
+        iso: ['ISO 9001', 'ISO 14001', 'ISO 45001'],
+        testing: ['IEC 61215', 'IEC 61730', 'UL 1741', 'VDE 0126-1-1'],
+        warranty: {
+          product: '5 Jahre Herstellergarantie (erweiterbar auf 25 Jahre)',
+          performance: 'SMA Service Plus Garantieerweiterungen verfügbar',
+          description: 'Umfassende Garantieleistungen mit weltweitem Service-Netzwerk'
+        }
+      },
+      regionalPartnerships: [
+        {
+          region: 'Deutschland',
+          partners: ['IBC Solar', 'Solarwatt', 'BayWa r.e.'],
+          serviceCenter: true
+        },
+        {
+          region: 'Europa',
+          partners: ['Krannich Solar', 'Memodo', 'Solar-Log'],
+          serviceCenter: true
+        },
+        {
+          region: 'Nordamerika',
+          partners: ['CED Greentech', 'Solar Power World'],
+          serviceCenter: true
+        }
       ],
       products: [
         {
