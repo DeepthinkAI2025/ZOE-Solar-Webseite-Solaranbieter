@@ -8,16 +8,6 @@ on:
 jobs:
   product-sync:
     runs-on: ubuntu-latest
-    services:
-      firecrawl:
-        image: firecrawl-mcp:latest
-        ports:
-          - 3000:3000
-        options: >-
-          --health-cmd "curl -sSf http://localhost:3000/health || exit 1"
-          --health-interval 10s --health-timeout 5s --health-retries 6
-        env:
-          FIRECRAWL_MCP_API_KEY: ${{ secrets.FIRECRAWL_MCP_API_KEY }}
 
     steps:
       - uses: actions/checkout@v4
@@ -30,6 +20,13 @@ jobs:
       - name: Build Firecrawl MCP Image
         run: |
           docker build -t firecrawl-mcp:latest -f Dockerfile.firecrawl .
+
+      - name: Start Firecrawl MCP Container
+        run: |
+          docker run -d --name firecrawl-mcp \
+            -p 3000:3000 \
+            -e FIRECRAWL_MCP_API_KEY=${{ secrets.FIRECRAWL_MCP_API_KEY }} \
+            firecrawl-mcp:latest
 
       - name: Install dependencies
         run: npm ci
