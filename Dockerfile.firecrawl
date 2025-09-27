@@ -1,0 +1,10 @@
+FROM node:20-alpine
+
+# Installiere Firecrawl MCP
+RUN npm install -g firecrawl-mcp
+
+# Exponiere Port
+EXPOSE 3000
+
+# Starte Firecrawl MCP
+CMD ["firecrawl-mcp", "start"]
