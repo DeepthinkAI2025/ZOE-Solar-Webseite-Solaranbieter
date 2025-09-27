@@ -309,4 +309,74 @@ Gib nur URLs zurück, die absolut vertrauenswürdig sind. Lasse Felder weg oder 
   };
 }
 
-export default { geminiProvider, isGeminiConfigured, evaluateAssetCandidates };
+/**
+ * Analyze products within a category and assign AI-powered badges
+ * @param {Array} products - Array of products from the same category
+ * @returns {Promise<Object>} Object with badge assignments for each product
+ */
+export async function generateProductBadges(products) {
+  if (!isGeminiConfigured()) {
+    throw new Error('Gemini ist nicht konfiguriert.');
+  }
+  
+  if (!products || products.length === 0) {
+    return {};
+  }
+
+  // Only compare products from the same category
+  const category = products[0].category;
+  const sameCategoryProducts = products.filter(p => p.category === category);
+  
+  if (sameCategoryProducts.length < 2) {
+    return {}; // Need at least 2 products to make meaningful comparisons
+  }
+
+  const productData = sameCategoryProducts.map(product => ({
+    name: product.name,
+    manufacturerSlug: product.manufacturerSlug,
+    basePrice: product.basePrice,
+    specs: product.specs || {},
+    keyFeatures: product.keyFeatures || [],
+    description: product.description
+  }));
+
+  const prompt = `Du bist ein Solar-Experte und sollst Produkte der Kategorie "${category}" objektiv vergleichen und Badges zuweisen.
+
+Analysiere folgende Produkte und weise genau einem Produkt pro Badge-Typ zu (falls angemessen):
+
+Produktdaten:
+${JSON.stringify(productData, null, 2)}
+
+Badge-Typen:
+- "preiswerteste": Das günstigste Produkt mit angemessener Qualität
+- "premium": Das hochwertigste Produkt (beste Specs, Technologie, Garantie)  
+- "preis-leistungssieger": Das beste Verhältnis von Preis zu Leistung
+
+Bewertungskriterien:
+- Preis (basePrice)
+- Technische Spezifikationen (specs)
+- Schlüsselfeatures (keyFeatures)
+- Herstellerqualität
+
+Antworte ausschließlich als JSON im Format:
+{
+  "badges": {
+    "Produktname": {
+      "type": "preiswerteste|premium|preis-leistungssieger",
+      "label": "Preiswerteste|Premium|Preis-/Leistungssieger",
+      "color": "yellow|blue|green",
+      "reasoning": "Kurze Begründung"
+    }
+  }
+}
+
+Vergib maximal ein Badge pro Produkt und nur wenn es wirklich heraussticht. Nicht jedes Produkt muss ein Badge bekommen.`;
+
+  const response = await generateContent(prompt);
+  const text = extractTextFromResponse(response);
+  const parsed = tryParseResponse(text) || {};
+
+  return parsed.badges || {};
+}
+
+export default { geminiProvider, isGeminiConfigured, evaluateAssetCandidates, generateProductBadges };
