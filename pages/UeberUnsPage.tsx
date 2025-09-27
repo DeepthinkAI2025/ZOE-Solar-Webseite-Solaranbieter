@@ -1,6 +1,7 @@
 import React from 'react';
 import { Page } from '../types';
 import AnimatedSection from '../components/AnimatedSection';
+import VideoSection from '../components/VideoSection';
 
 const teamMembers = [
     { name: 'Max Mustermann', role: 'Gründer & Geschäftsführer', imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop' },
@@ -77,6 +78,10 @@ const UeberUnsPage: React.FC<UeberUnsPageProps> = ({ setPage }) => {
             {/* Mission Section */}
             <AnimatedSection>
                 <section className="py-20 bg-white">
+            <AnimatedSection>
+                <VideoSection />
+            </AnimatedSection>
+
                     <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
                         <div>
                             <p className="font-bold text-green-600 uppercase tracking-wider">Unsere Mission</p>

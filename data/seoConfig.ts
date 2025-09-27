@@ -1,4 +1,4 @@
-import { Page } from '../types';
+import { FundingProgram, Page } from '../types';
 import { HeroData, pageHeroData } from './pageContent';
 import { Guide } from './guidesData';
 import { Manufacturer } from './products';
@@ -6,6 +6,8 @@ import { UseCase } from './useCases';
 import { faqData, FaqItem, FaqCategory } from './faqData';
 import { PricingPackage, pricingPackages } from './pricingPackages';
 import { Article } from './articles';
+import { localContentByCity } from './localContent';
+import { fundingPrograms, fundingProgramLevels, getFundingProgramBySlug } from './fundingPrograms';
 
 export interface OpenGraphMeta {
   title?: string;
@@ -102,6 +104,7 @@ export interface ServiceRegion {
   latitude: number;
   longitude: number;
   radiusKm: number;
+  slug?: string;
 }
 
 export const PRIMARY_SERVICE_REGIONS: ServiceRegion[] = [
@@ -149,6 +152,7 @@ export const PRIMARY_SERVICE_REGIONS: ServiceRegion[] = [
     latitude: 50.110924,
     longitude: 8.682127,
     radiusKm: 130,
+    slug: 'frankfurt',
   },
   {
     city: 'Stuttgart',
@@ -321,6 +325,46 @@ const monthMap: Record<string, number> = {
   dezember: 12,
 };
 
+const slugify = (value: string): string =>
+  value
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/ä/g, 'ae')
+    .replace(/ö/g, 'oe')
+    .replace(/ü/g, 'ue')
+    .replace(/ß/g, 'ss')
+    .replace(/\s+/g, '-')
+    .replace(/[^a-z0-9\-]/g, '')
+    .replace(/-{2,}/g, '-')
+    .replace(/^-|-$/g, '');
+
+const getRegionCountryCode = (regionCode: string): string => {
+  const [country = 'DE'] = regionCode.split('-');
+  return country.toUpperCase();
+};
+
+const SERVICE_REGION_SLUG_MAP = new Map<string, ServiceRegion>();
+
+PRIMARY_SERVICE_REGIONS.forEach((region) => {
+  const explicitSlug = region.slug;
+  const inferredSlug = slugify(region.city);
+  if (explicitSlug) {
+    SERVICE_REGION_SLUG_MAP.set(explicitSlug, region);
+  }
+  SERVICE_REGION_SLUG_MAP.set(inferredSlug, region);
+});
+
+export const getServiceRegionBySlug = (value: string): ServiceRegion | undefined => {
+  if (!value) return undefined;
+  const normalized = slugify(value);
+  return SERVICE_REGION_SLUG_MAP.get(normalized);
+};
+
+export const getServiceRegionSlug = (region: ServiceRegion): string => region.slug ?? slugify(region.city);
+
+const locationSeoCache = new Map<string, SEOConfig>();
+
 const toAbsoluteUrl = (path: string): string => {
   if (!path) {
     return BASE_URL;
@@ -378,56 +422,60 @@ const dedupeStructuredData = (data: object[]): object[] => {
 };
 
 const buildLocalBusinessBranches = (): object[] =>
-  PRIMARY_SERVICE_REGIONS.map((region) => ({
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    '@id': `${BASE_URL}#local-business-${region.regionCode.toLowerCase()}`,
-    name: `${ORGANIZATION_NAME} ${region.city}`,
-    image: DEFAULT_SHARE_IMAGE,
-    url: BASE_URL,
-    parentOrganization: {
-      '@id': `${BASE_URL}#organization`,
-      '@type': 'Organization',
-      name: ORGANIZATION_NAME,
-    },
-    telephone: '+49-30-123-456-78',
-    priceRange: '€€€',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Musterstraße 123',
-      addressLocality: region.city,
-      addressRegion: region.state,
-      postalCode: region.postalCode,
-      addressCountry: 'DE',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: region.latitude,
-      longitude: region.longitude,
-    },
-    areaServed: {
-      '@type': 'GeoCircle',
-      geoMidpoint: {
+  PRIMARY_SERVICE_REGIONS.map((region) => {
+    const slug = getServiceRegionSlug(region);
+    const countryCode = getRegionCountryCode(region.regionCode);
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'LocalBusiness',
+      '@id': `${BASE_URL}/standort/${slug}#local-business-${region.regionCode.toLowerCase()}`,
+      name: `${ORGANIZATION_NAME} ${region.city}`,
+      image: DEFAULT_SHARE_IMAGE,
+      url: `${BASE_URL}/standort/${slug}`,
+      parentOrganization: {
+        '@id': `${BASE_URL}#organization`,
+        '@type': 'Organization',
+        name: ORGANIZATION_NAME,
+      },
+      telephone: '+49-30-123-456-78',
+      priceRange: '€€€',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Musterstraße 123',
+        addressLocality: region.city,
+        addressRegion: region.state,
+        postalCode: region.postalCode,
+        addressCountry: countryCode,
+      },
+      geo: {
         '@type': 'GeoCoordinates',
         latitude: region.latitude,
         longitude: region.longitude,
       },
-      geoRadius: region.radiusKm * 1000,
-    },
-    availableService: [
-      {
-        '@type': 'Service',
-        name: 'Photovoltaik Komplettlösungen',
-        serviceType: 'Photovoltaikplanung',
-        areaServed: region.city,
-        provider: {
-          '@type': 'Organization',
-          name: ORGANIZATION_NAME,
-          url: BASE_URL,
+      areaServed: {
+        '@type': 'GeoCircle',
+        geoMidpoint: {
+          '@type': 'GeoCoordinates',
+          latitude: region.latitude,
+          longitude: region.longitude,
         },
+        geoRadius: region.radiusKm * 1000,
       },
-    ],
-  }));
+      availableService: [
+        {
+          '@type': 'Service',
+          name: 'Photovoltaik Komplettlösungen',
+          serviceType: 'Photovoltaikplanung',
+          areaServed: region.city,
+          provider: {
+            '@type': 'Organization',
+            name: ORGANIZATION_NAME,
+            url: BASE_URL,
+          },
+        },
+      ],
+    };
+  });
 
 const buildRegionalServiceSchemas = (serviceName: string, description: string, serviceUrl: string): object[] =>
   PRIMARY_SERVICE_REGIONS.map((region) => ({
@@ -481,37 +529,74 @@ interface FaqSelectionOptions {
   region?: string;
 }
 
-const selectFaqEntries = ({ categories, limit = 4, region }: FaqSelectionOptions): FaqItem[] =>
-  faqData
+interface FaqSchemaOptions {
+  includeQa?: boolean;
+  about?: object;
+}
+
+const selectFaqEntries = ({ categories, limit = 4, region }: FaqSelectionOptions): FaqItem[] => {
+  const regionSlug = region ? slugify(region) : undefined;
+  return faqData
     .filter((item) => {
       const matchesCategory = categories.includes(item.category);
-      const matchesRegion = !region || !item.regions || item.regions.includes(region);
-      return matchesCategory && matchesRegion;
+      if (!matchesCategory) {
+        return false;
+      }
+      if (!regionSlug || !item.regions || item.regions.length === 0) {
+        return true;
+      }
+      return item.regions.some((entry) => slugify(entry) === regionSlug);
     })
     .slice(0, limit);
+};
 
 const normaliseAnswerText = (value: string): string => value.replace(/\*\*/g, '');
 
-const buildFaqSchema = (name: string, description: string, items: FaqItem[]): object[] => {
+const buildFaqSchema = (
+  name: string,
+  description: string,
+  items: FaqItem[],
+  options: FaqSchemaOptions = {},
+): object[] => {
   if (!items.length) {
     return [];
   }
-  return [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      name,
-      description,
-      mainEntity: items.map((item) => ({
-        '@type': 'Question',
-        name: item.question,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: normaliseAnswerText(item.answer),
-        },
-      })),
-    },
-  ];
+  const faqPage = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    name,
+    description,
+    mainEntity: items.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: normaliseAnswerText(item.answer),
+      },
+    })),
+  };
+
+  if (options.includeQa === false) {
+    return [faqPage];
+  }
+
+  const qaPage = {
+    '@context': 'https://schema.org',
+    '@type': 'QAPage',
+    name,
+    inLanguage: 'de-DE',
+    mainEntity: items.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: normaliseAnswerText(item.answer),
+      },
+    })),
+    ...(options.about ? { about: options.about } : {}),
+  };
+
+  return [faqPage, qaPage];
 };
 
 const buildSpeakableSchema = (name: string, selectors: string[]): object[] => {
@@ -529,6 +614,592 @@ const buildSpeakableSchema = (name: string, selectors: string[]): object[] => {
       },
     },
   ];
+};
+
+const FUNDING_PAGE_DEFAULT_SLUG: Partial<Record<Page, string>> = {
+  'foerdermittel-kfw': 'kfw',
+  'foerdermittel-ibb': 'ibb-wirtschaft-nah',
+  'foerdermittel-bafa': 'bafa-eew-zuschuss',
+};
+
+const getFundingProgramCanonical = (program: FundingProgram): string => {
+  const canonical = program.seo?.canonical ?? `/foerdermittel/${program.slug}`;
+  return toAbsoluteUrl(canonical);
+};
+
+const buildFundingProgramFaqSchema = (program: FundingProgram): object[] => {
+  if (!program.faqs.length) {
+    return [];
+  }
+
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      name: `FAQ ${program.title}`,
+      description: `Häufige Fragen zu ${program.title} und den Förderbedingungen.`,
+      mainEntity: program.faqs.map((entry) => ({
+        '@type': 'Question',
+        name: entry.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: entry.answer,
+        },
+      })),
+    },
+  ];
+};
+
+const buildFundingProgramHowToSchema = (program: FundingProgram, canonical: string): object | null => {
+  if (!program.applicationSteps.length) {
+    return null;
+  }
+
+  const supplies = program.documentsRequired.map((doc) => ({
+    '@type': 'HowToSupply',
+    name: doc,
+  }));
+
+  const tools = program.supportServices.map((service) => ({
+    '@type': 'HowToTool',
+    name: service,
+  }));
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: `Förderantrag für ${program.title} stellen`,
+    description: `Anleitung für Unternehmen, um ${program.title} erfolgreich zu beantragen.`,
+    totalTime: program.processingTime,
+    image: program.heroImage ? [program.heroImage] : undefined,
+    url: canonical,
+    supply: supplies.length ? supplies : undefined,
+    tool: tools.length ? tools : undefined,
+    step: program.applicationSteps.map((step, index) => ({
+      '@type': 'HowToStep',
+      position: index + 1,
+      name: step.length > 80 ? `Schritt ${index + 1}` : step,
+      text: step,
+    })),
+  };
+};
+
+const buildFundingProgramStructuredData = (program: FundingProgram, canonical: string): object[] => {
+  const provider: Record<string, unknown> = {
+    '@type': 'Organization',
+    name: program.provider,
+    url: program.contact.url ?? BASE_URL,
+  };
+
+  if (program.logo) {
+    provider.logo = program.logo;
+  }
+
+  const contactPoint = {
+    '@type': 'ContactPoint',
+    telephone: program.contact.phone,
+    email: program.contact.email,
+    url: program.contact.url,
+    hoursAvailable: program.contact.hotlineHours,
+    contactType: 'customer service',
+    availableLanguage: ['de'],
+    description: program.contact.note,
+  };
+
+  if (program.contact.phone || program.contact.email || program.contact.url) {
+    provider.contactPoint = [
+      Object.fromEntries(
+        Object.entries(contactPoint).filter(([, value]) => Boolean(value) && (!Array.isArray(value) || value.length > 0)),
+      ),
+    ];
+  }
+
+  const schemaType = program.fundingTypes.some((type) => /kredit|darlehen/i.test(type)) ? 'FinancialProduct' : 'GovernmentService';
+
+  const baseSchema: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': schemaType,
+    name: program.title,
+    description: program.summary,
+    url: canonical,
+    provider,
+    serviceType: program.fundingTypes.join(', '),
+    audience: program.targetGroups.map((item) => ({
+      '@type': 'Audience',
+      audienceType: item,
+    })),
+    areaServed: program.region
+      ? {
+          '@type': 'AdministrativeArea',
+          name: program.region,
+        }
+      : undefined,
+    termsOfService: program.notes,
+    isAccessibleForFree: true,
+    funding: program.fundingRate,
+  };
+
+  const howTo = buildFundingProgramHowToSchema(program, canonical);
+
+  const highlightList = program.highlights.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: `Highlights ${program.title}`,
+        itemListOrder: 'http://schema.org/ItemListOrderAscending',
+        itemListElement: program.highlights.map((highlight, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: highlight.title,
+          description: highlight.description,
+        })),
+      }
+    : null;
+
+  return [
+    Object.fromEntries(
+      Object.entries(baseSchema).filter(([, value]) =>
+        value !== undefined && value !== null && (!Array.isArray(value) || value.length > 0),
+      ),
+    ),
+    howTo,
+    highlightList,
+    ...buildFundingProgramFaqSchema(program),
+    ...buildSpeakableSchema(program.title, ['main h1', '.info-card', '.faq-section']),
+  ].filter(Boolean) as object[];
+};
+
+const buildFundingProgramSeo = (program: FundingProgram): SEOConfig => {
+  const canonical = getFundingProgramCanonical(program);
+    const keywordSeed = program.seo?.keywords ?? [];
+    const title = program.seo?.title ?? `${program.title} | Förderprogramm 2025`;
+  const keywordSet = new Set<string>([
+    program.title,
+    program.provider,
+    ...program.targetGroups,
+    ...program.fundingTypes,
+    program.level,
+    ...(program.region ? [program.region] : []),
+    ...keywordSeed,
+  ]);
+
+  return {
+    title,
+    description:
+      program.seo?.description ??
+      `${program.title}: Förderhöhe ${program.maxFunding ?? 'individuell'}, Förderquote ${program.fundingRate ?? 'nach Prüfung'} – begleitet von ZOE Solar.`,
+    keywords: Array.from(keywordSet),
+    canonical,
+    og: {
+      title,
+      description: program.seo?.description ?? program.summary,
+      image: program.heroImage ?? program.logo ?? DEFAULT_SHARE_IMAGE,
+      imageAlt: program.title,
+    },
+    twitter: {
+      title,
+      description: program.seo?.description ?? program.summary,
+      image: program.heroImage ?? program.logo ?? DEFAULT_SHARE_IMAGE,
+    },
+    geo: program.region
+      ? {
+          placename: program.region,
+        }
+      : undefined,
+    structuredData: buildFundingProgramStructuredData(program, canonical),
+    additionalMeta: [
+      { name: 'funding:level', content: program.level },
+      { name: 'funding:provider', content: program.provider },
+      { name: 'funding:last_updated', content: program.lastUpdated },
+    ],
+  };
+};
+
+const activeFundingPrograms = fundingPrograms.filter((program) => program.isActive);
+
+const fundingProgramCountByLevel = fundingProgramLevels.map(({ level, label }) => ({
+  level,
+  label,
+  count: activeFundingPrograms.filter((program) => program.level === level).length,
+}));
+
+const topFundingPrograms = activeFundingPrograms.slice(0, 6);
+
+const fundingOverviewStructuredData: object[] = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: 'Förderdatenbank Solar & Speicher 2025',
+    description:
+      'Kuratiertes Verzeichnis aktueller Förderprogramme für Photovoltaik, Speicher und Ladeinfrastruktur in Deutschland und der EU.',
+    creator: {
+      '@type': 'Organization',
+      name: ORGANIZATION_NAME,
+      url: BASE_URL,
+    },
+    url: `${BASE_URL}/foerdermittel`,
+    dateModified: new Date().toISOString(),
+    variableMeasured: fundingProgramLevels.map((entry) => `${entry.label}: ${fundingProgramCountByLevel.find((item) => item.level === entry.level)?.count ?? 0} Programme`),
+    distribution: activeFundingPrograms.map((program) => ({
+      '@type': 'DataDownload',
+      encodingFormat: 'text/html',
+      contentUrl: `${BASE_URL}/foerdermittel/${program.slug}`,
+      name: program.title,
+    })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Top Förderprogramme 2025',
+    itemListOrder: 'http://schema.org/ItemListOrderAscending',
+    itemListElement: topFundingPrograms.map((program, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: program.title,
+      description: program.summary,
+      url: `${BASE_URL}/foerdermittel/${program.slug}`,
+    })),
+  },
+];
+
+const buildLocationContentSchemas = (region: ServiceRegion, slug: string, canonical: string): object[] => {
+  const localContent = (localContentByCity as Record<string, typeof localContentByCity[keyof typeof localContentByCity]>)[slug];
+  if (!localContent) {
+    return [];
+  }
+
+  const blogPosts = localContent.blogPosts ?? [];
+  const caseStudies = localContent.caseStudies ?? [];
+  const serviceLinks = localContent.serviceLinks ?? [];
+
+  const blogList = blogPosts.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        '@id': `${canonical}#local-articles`,
+        name: `Solar-Insights für ${region.city}`,
+        itemListElement: blogPosts.slice(0, 5).map((post, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          item: {
+            '@type': 'Article',
+            name: post.title,
+            description: post.description,
+            url: toAbsoluteUrl(post.url),
+          },
+        })),
+      }
+    : undefined;
+
+  const caseStudyList = caseStudies.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        '@id': `${canonical}#local-case-studies`,
+        name: `Referenzen & Projekte in ${region.city}`,
+        itemListElement: caseStudies.slice(0, 4).map((study, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          item: {
+            '@type': 'CaseStudy',
+            name: study.title,
+            description: study.description,
+            url: study.url ? toAbsoluteUrl(study.url) : canonical,
+            additionalProperty: (study.highlights ?? []).map((highlight) => ({
+              '@type': 'PropertyValue',
+              name: highlight.label,
+              value: highlight.value,
+            })),
+          },
+        })),
+      }
+    : undefined;
+
+  const serviceCatalog = serviceLinks.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'OfferCatalog',
+        '@id': `${canonical}#local-services`,
+        name: `Dienstleistungen in ${region.city}`,
+        itemListElement: serviceLinks.slice(0, 6).map((service, index) => ({
+          '@type': 'Offer',
+          position: index + 1,
+          name: service.title,
+          description: service.description,
+          url: toAbsoluteUrl(service.url),
+          price: '0',
+          priceCurrency: 'EUR',
+        })),
+      }
+    : undefined;
+
+  return [blogList, caseStudyList, serviceCatalog].filter(Boolean) as object[];
+};
+
+const buildLocationStructuredData = (region: ServiceRegion, slug: string): object[] => {
+  const canonical = `${BASE_URL}/standort/${slug}`;
+  const countryCode = getRegionCountryCode(region.regionCode);
+  const faqItems = selectFaqEntries({ categories: ['Allgemein', 'Förderung', 'Technik', 'Region'], region: slug, limit: 4 });
+
+  const faqSchemas = buildFaqSchema(
+    `Solaranlagen ${region.city} FAQ`,
+    `Häufige Fragen zu Photovoltaik in ${region.city} und ${region.state}.`,
+    faqItems,
+    { includeQa: false },
+  );
+
+  const qaSchema = faqItems.length
+    ? [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'QAPage',
+          name: `Antworten zu Photovoltaik in ${region.city}`,
+          inLanguage: 'de-DE',
+          url: canonical,
+          mainEntity: faqItems.map((item) => ({
+            '@type': 'Question',
+            name: item.question,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: normaliseAnswerText(item.answer),
+            },
+          })),
+          about: {
+            '@type': 'City',
+            name: region.city,
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: region.city,
+              addressRegion: region.state,
+              addressCountry: countryCode,
+            },
+          },
+        },
+      ]
+    : [];
+
+  const speakable = buildSpeakableSchema(`Solaranlagen ${region.city} | ZOE Solar`, [
+    '.page-hero-title',
+    '.page-hero-subtitle',
+    '.faq-section .faq-item h3',
+  ]);
+
+  const breadcrumb = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    '@id': `${canonical}#breadcrumb`,
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Startseite', item: BASE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Standorte', item: `${BASE_URL}/standort` },
+      { '@type': 'ListItem', position: 3, name: region.city, item: canonical },
+    ],
+  };
+
+  const geoCircle = {
+    '@context': 'https://schema.org',
+    '@type': 'GeoCircle',
+    '@id': `${canonical}#service-area`,
+    geoMidpoint: {
+      '@type': 'GeoCoordinates',
+      latitude: region.latitude,
+      longitude: region.longitude,
+    },
+    geoRadius: region.radiusKm * 1000,
+    name: `Einsatzgebiet ${region.city}`,
+  };
+
+  const localBusiness = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': `${canonical}#local-business`,
+    name: `${ORGANIZATION_NAME} ${region.city}`,
+    image: DEFAULT_SHARE_IMAGE,
+    url: canonical,
+    parentOrganization: {
+      '@id': `${BASE_URL}#organization`,
+      '@type': 'Organization',
+      name: ORGANIZATION_NAME,
+    },
+    telephone: '+49-30-123-456-78',
+    priceRange: '€€€',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Musterstraße 123',
+      addressLocality: region.city,
+      addressRegion: region.state,
+      postalCode: region.postalCode,
+      addressCountry: countryCode,
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: region.latitude,
+      longitude: region.longitude,
+    },
+    hasMap: `https://www.google.com/maps/search/?api=1&query=${region.latitude},${region.longitude}`,
+    areaServed: {
+      '@type': 'City',
+      name: region.city,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: region.city,
+        addressRegion: region.state,
+        addressCountry: countryCode,
+      },
+    },
+    serviceArea: geoCircle,
+    availableService: [
+      {
+        '@type': 'Service',
+        name: `Photovoltaik & Speicher in ${region.city}`,
+        serviceType: 'Photovoltaikplanung',
+        provider: {
+          '@id': `${BASE_URL}#organization`,
+          '@type': 'Organization',
+          name: ORGANIZATION_NAME,
+        },
+        areaServed: region.city,
+      },
+    ],
+  };
+
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${canonical}#service`,
+    name: `Solaranlagen & Speicher ${region.city}`,
+    serviceType: 'Photovoltaik Komplettlösung',
+    description: `Planung, Installation und Betrieb von Photovoltaiksystemen in ${region.city} und ${region.state}.`,
+    provider: {
+      '@id': `${BASE_URL}#organization`,
+      '@type': 'Organization',
+      name: ORGANIZATION_NAME,
+      url: BASE_URL,
+    },
+    areaServed: geoCircle,
+    availableChannel: {
+      '@type': 'ServiceChannel',
+      serviceUrl: canonical,
+      servicePhone: {
+        '@type': 'ContactPoint',
+        telephone: '+49-30-123-456-78',
+        contactType: 'customer support',
+        areaServed: region.regionCode,
+        availableLanguage: ['de', 'en'],
+      },
+    },
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'EUR',
+      availability: 'https://schema.org/InStock',
+      url: canonical,
+    },
+  };
+
+  const webpageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${canonical}#webpage`,
+    name: `Solaranlagen ${region.city} | ZOE Solar`,
+    description: `Regionaler Photovoltaik-Komplettservice für ${region.city} und ${region.state}. Planung, Installation, Betrieb und Finanzierung aus einer Hand.`,
+    url: canonical,
+    inLanguage: 'de-DE',
+    isPartOf: `${BASE_URL}#website`,
+    about: {
+      '@type': 'City',
+      name: region.city,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: region.city,
+        addressRegion: region.state,
+        addressCountry: countryCode,
+      },
+    },
+    breadcrumb: { '@id': `${canonical}#breadcrumb` },
+  };
+
+  return dedupeStructuredData([
+    webpageSchema,
+    breadcrumb,
+    geoCircle,
+    localBusiness,
+    serviceSchema,
+    ...faqSchemas,
+    ...qaSchema,
+    ...speakable,
+    ...buildLocationContentSchemas(region, slug, canonical),
+  ]);
+};
+
+const buildLocationSeoConfig = (region: ServiceRegion, slug: string): SEOConfig => {
+  const canonical = `${BASE_URL}/standort/${slug}`;
+  const title = `Solaranlagen ${region.city} | ZOE Solar – Photovoltaik in ${region.state}`;
+  const description = `ZOE Solar plant und installiert Photovoltaik- und Speichersysteme in ${region.city} und ${region.state}. Komplettservice inklusive Planung, Finanzierung, Installation und Wartung – spezialisiert auf Gewerbe, Landwirtschaft und Premium-Privatkunden.`;
+  const keywords = dedupe(
+    [
+      `Solaranlagen ${region.city}`,
+      `Photovoltaik ${region.city}`,
+      `PV ${region.city}`,
+      `Solar ${region.state}`,
+      `Solaranbieter ${region.city}`,
+      `Photovoltaik Installation ${region.city}`,
+    ],
+    (keyword) => keyword.toLowerCase(),
+  );
+
+  const countryCode = getRegionCountryCode(region.regionCode);
+  const alternates: AlternateHref[] = dedupe(
+    [
+      { hrefLang: 'de', href: canonical },
+      { hrefLang: 'de-DE', href: canonical },
+      countryCode === 'AT' ? { hrefLang: 'de-AT', href: canonical } : undefined,
+      countryCode === 'CH' ? { hrefLang: 'de-CH', href: canonical } : undefined,
+      { hrefLang: 'x-default', href: canonical },
+    ].filter(Boolean) as AlternateHref[],
+    (item) => `${item.hrefLang.toLowerCase()}|${item.href}`,
+  );
+
+  const structuredData = buildLocationStructuredData(region, slug);
+
+  const additionalMeta: AdditionalMetaTag[] = dedupe(
+    [
+      { property: 'place:location:latitude', content: region.latitude.toString() },
+      { property: 'place:location:longitude', content: region.longitude.toString() },
+      { name: 'city', content: region.city },
+      { name: 'region', content: region.state },
+    ],
+    (item) => `${item.name ?? item.property}`.toLowerCase(),
+  );
+
+  return {
+    title,
+    description,
+    keywords,
+    canonical,
+    alternates,
+    geo: {
+      region: region.regionCode,
+      placename: region.city,
+      latitude: region.latitude,
+      longitude: region.longitude,
+    },
+    structuredData,
+    additionalMeta,
+    og: {
+      title,
+      description,
+      type: 'website',
+      image: DEFAULT_SHARE_IMAGE,
+      imageAlt: `Solaranlage in ${region.city}`,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      image: DEFAULT_SHARE_IMAGE,
+      site: '@zoesolar',
+    },
+  };
 };
 
 const defaultStructuredData: object[] = [
@@ -939,6 +1610,32 @@ const pageSpecificSEO: Partial<Record<Page, SEOConfig>> = {
       ...buildSpeakableSchema('Photovoltaik Finanzierung & Förderung | ZOE Solar', ['main h1', 'main section:first-of-type p']),
     ],
   },
+  'foerdermittel-uebersicht': {
+    title: 'Förderprogramme für Photovoltaik & Speicher 2025 | ZOE Solar',
+    description: `Aktuelle Übersicht über ${activeFundingPrograms.length} Förderprogramme für Solar, Speicher und Ladeinfrastruktur – inklusive Bundes-, Landes-, EU- und Kommunalprogramme.`,
+    keywords: [
+      'Photovoltaik Fördermittel',
+      'Solar Zuschüsse 2025',
+      'Förderprogramme Ladeinfrastruktur',
+      'Kommunale PV Förderung',
+      'EU Förderung erneuerbare Energien',
+    ],
+    structuredData: [
+      ...fundingOverviewStructuredData,
+      ...buildSpeakableSchema('Förderprogramme für Photovoltaik & Speicher 2025 | ZOE Solar', [
+        'section h1',
+        '.grid article h3',
+      ]),
+    ],
+    additionalMeta: fundingProgramCountByLevel.map((entry) => ({
+      name: `funding:level:${entry.level}`,
+      content: `${entry.count}`,
+    })),
+    og: {
+      image:
+        'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1600&q=80',
+    },
+  },
   'foerdermittel-check': {
     title: 'Fördermittel-Check für Photovoltaik | ZOE Solar',
     description:
@@ -1327,150 +2024,6 @@ const pageSpecificSEO: Partial<Record<Page, SEOConfig>> = {
   'service-netzanschluss': {
     robots: 'index,follow',
   },
-  'standort-berlin': {
-    title: 'Solaranlagen Berlin | ZOE Solar - Photovoltaik für Berlin & Brandenburg',
-    description: 'Professionelle Solaranlagen in Berlin und Brandenburg. Von der Beratung bis zur Installation - Ihr regionaler Partner für Photovoltaik in Berlin.',
-    keywords: ['Solaranlagen Berlin', 'Photovoltaik Berlin', 'PV Berlin', 'Solar Brandenburg'],
-    geo: {
-      region: 'DE-BE',
-      placename: 'Berlin',
-      latitude: 52.520008,
-      longitude: 13.404954,
-    },
-    structuredData: [
-      ...buildLocalBusinessBranches().filter(branch => branch['@id'].includes('DE-BE')),
-      ...buildFaqSchema(
-        'Solaranlagen Berlin FAQ',
-        'Häufige Fragen zu Photovoltaik in Berlin und Brandenburg.',
-        selectFaqEntries({ categories: ['Allgemein', 'Förderung'], region: 'DE-BE', limit: 3 })
-      ),
-      ...buildSpeakableSchema('Solaranlagen Berlin | ZOE Solar', ['.hero-headline', '.pillar-intro']),
-    ],
-  },
-  'standort-muenchen': {
-    title: 'Solaranlagen München | ZOE Solar - Photovoltaik für München & Bayern',
-    description: 'Professionelle Solaranlagen in München und Bayern. Von der Beratung bis zur Installation - Ihr regionaler Partner für Photovoltaik in München.',
-    keywords: ['Solaranlagen München', 'Photovoltaik München', 'PV Bayern', 'Solar Bayern'],
-    geo: {
-      region: 'DE-BY',
-      placename: 'München',
-      latitude: 48.135125,
-      longitude: 11.581981,
-    },
-    structuredData: [
-      ...buildLocalBusinessBranches().filter(branch => branch['@id'].includes('DE-BY')),
-      ...buildFaqSchema(
-        'Solaranlagen München FAQ',
-        'Häufige Fragen zu Photovoltaik in München und Bayern.',
-        selectFaqEntries({ categories: ['Allgemein', 'Förderung'], region: 'DE-BY', limit: 3 })
-      ),
-      ...buildSpeakableSchema('Solaranlagen München | ZOE Solar', ['.hero-headline', '.pillar-intro']),
-    ],
-  },
-  'standort-zuerich': {
-    title: 'Solaranlagen Zürich | ZOE Solar - Photovoltaik für Zürich & Schweiz',
-    description: 'Professionelle Solaranlagen in Zürich und der Schweiz. Von der Beratung bis zur Installation - Ihr regionaler Partner für Photovoltaik in Zürich.',
-    keywords: ['Solaranlagen Zürich', 'Photovoltaik Zürich', 'PV Schweiz', 'Solar Schweiz'],
-    geo: {
-      region: 'CH-ZH',
-      placename: 'Zürich',
-      latitude: 47.376887,
-      longitude: 8.541694,
-    },
-    structuredData: [
-      ...buildLocalBusinessBranches().filter(branch => branch['@id'].includes('CH-ZH')),
-      ...buildFaqSchema(
-        'Solaranlagen Zürich FAQ',
-        'Häufige Fragen zu Photovoltaik in Zürich und der Schweiz.',
-        selectFaqEntries({ categories: ['Allgemein', 'Förderung'], region: 'CH-ZH', limit: 3 })
-      ),
-      ...buildSpeakableSchema('Solaranlagen Zürich | ZOE Solar', ['.hero-headline', '.pillar-intro']),
-    ],
-  },
-  'standort-hamburg': {
-    title: 'Solaranlagen Hamburg | ZOE Solar - Photovoltaik für Hamburg & Norddeutschland',
-    description:
-      'Photovoltaik-Lösungen für Hamburg und das Umland. Wir planen und installieren Ihre Solaranlage inklusive Speicher und Wallbox.',
-    keywords: ['Solaranlagen Hamburg', 'Photovoltaik Hamburg', 'PV Hamburg', 'Solar Norddeutschland'],
-    geo: {
-      region: 'DE-HH',
-      placename: 'Hamburg',
-      latitude: 53.551086,
-      longitude: 9.993682,
-    },
-    structuredData: [
-      ...buildLocalBusinessBranches().filter(branch => branch['@id'].includes('DE-HH')),
-      ...buildFaqSchema(
-        'Solaranlagen Hamburg FAQ',
-        'Häufige Fragen zu Photovoltaik in Hamburg und Norddeutschland.',
-        selectFaqEntries({ categories: ['Allgemein', 'Förderung'], region: 'DE-HH', limit: 3 })
-      ),
-      ...buildSpeakableSchema('Solaranlagen Hamburg | ZOE Solar', ['.hero-headline', '.pillar-intro']),
-    ],
-  },
-  'standort-koeln': {
-    title: 'Solaranlagen Köln | ZOE Solar - Photovoltaik für Köln & Nordrhein-Westfalen',
-    description:
-      'Regionale Photovoltaik-Experten für Köln und NRW. Maßgeschneiderte Solaranlagen inkl. Speicher, Förderung und Installation.',
-    keywords: ['Solaranlagen Köln', 'Photovoltaik Köln', 'PV NRW', 'Solar Köln'],
-    geo: {
-      region: 'DE-NW',
-      placename: 'Köln',
-      latitude: 50.937531,
-      longitude: 6.960279,
-    },
-    structuredData: [
-      ...buildLocalBusinessBranches().filter(branch => branch['@id'].includes('DE-NW')),
-      ...buildFaqSchema(
-        'Solaranlagen Köln FAQ',
-        'Häufige Fragen zu Photovoltaik in Köln und Nordrhein-Westfalen.',
-        selectFaqEntries({ categories: ['Allgemein', 'Förderung'], region: 'DE-NW', limit: 3 })
-      ),
-      ...buildSpeakableSchema('Solaranlagen Köln | ZOE Solar', ['.hero-headline', '.pillar-intro']),
-    ],
-  },
-  'standort-frankfurt': {
-    title: 'Solaranlagen Frankfurt | ZOE Solar - Photovoltaik für Frankfurt & Hessen',
-    description:
-      'Solaranlagen, Speicher und Wallbox-Lösungen für Frankfurt am Main und Hessen. Beratung, Planung und Installation aus einer Hand.',
-    keywords: ['Solaranlagen Frankfurt', 'Photovoltaik Frankfurt', 'PV Hessen', 'Solar Frankfurt'],
-    geo: {
-      region: 'DE-HE',
-      placename: 'Frankfurt am Main',
-      latitude: 50.110924,
-      longitude: 8.682127,
-    },
-    structuredData: [
-      ...buildLocalBusinessBranches().filter(branch => branch['@id'].includes('DE-HE')),
-      ...buildFaqSchema(
-        'Solaranlagen Frankfurt FAQ',
-        'Häufige Fragen zu Photovoltaik in Frankfurt und Hessen.',
-        selectFaqEntries({ categories: ['Allgemein', 'Förderung'], region: 'DE-HE', limit: 3 })
-      ),
-      ...buildSpeakableSchema('Solaranlagen Frankfurt | ZOE Solar', ['.hero-headline', '.pillar-intro']),
-    ],
-  },
-  'standort-stuttgart': {
-    title: 'Solaranlagen Stuttgart | ZOE Solar - Photovoltaik für Stuttgart & Baden-Württemberg',
-    description:
-      'Individuelle Photovoltaik-Lösungen für Stuttgart und Baden-Württemberg. Premium-Module, Speicher und Komplettservice.',
-    keywords: ['Solaranlagen Stuttgart', 'Photovoltaik Stuttgart', 'PV Baden-Württemberg', 'Solar Stuttgart'],
-    geo: {
-      region: 'DE-BW',
-      placename: 'Stuttgart',
-      latitude: 48.775845,
-      longitude: 9.182932,
-    },
-    structuredData: [
-      ...buildLocalBusinessBranches().filter(branch => branch['@id'].includes('DE-BW')),
-      ...buildFaqSchema(
-        'Solaranlagen Stuttgart FAQ',
-        'Häufige Fragen zu Photovoltaik in Stuttgart und Baden-Württemberg.',
-        selectFaqEntries({ categories: ['Allgemein', 'Förderung'], region: 'DE-BW', limit: 3 })
-      ),
-      ...buildSpeakableSchema('Solaranlagen Stuttgart | ZOE Solar', ['.hero-headline', '.pillar-intro']),
-    ],
-  },
 };
 
 const mergeSeoConfigs = (base: SEOConfig, ...overrides: (SEOConfig | undefined)[]): SEOConfig => {
@@ -1516,7 +2069,7 @@ const mergeSeoConfigs = (base: SEOConfig, ...overrides: (SEOConfig | undefined)[
   });
 };
 
-const buildDynamicSeo = ({ page, article, guide, manufacturer, useCase }: DynamicSeoInput): SEOConfig | undefined => {
+const buildDynamicSeo = ({ page, pathname, article, guide, manufacturer, useCase }: DynamicSeoInput): SEOConfig | undefined => {
   switch (page) {
     case 'article-detail': {
       if (!article) return undefined;
@@ -1676,6 +2229,38 @@ const buildDynamicSeo = ({ page, article, guide, manufacturer, useCase }: Dynami
           image: useCase.heroImageUrl ?? useCase.imageUrl,
         },
       };
+    }
+    case 'foerdermittel-kfw':
+    case 'foerdermittel-ibb':
+    case 'foerdermittel-bafa':
+    case 'foerdermittel-programm': {
+      const normalised = normalisePath(pathname);
+      const segments = normalised.split('/').filter(Boolean);
+      const slugFromPath = segments[segments.length - 1];
+      const fallbackSlug = FUNDING_PAGE_DEFAULT_SLUG[page];
+      const resolvedSlug = page === 'foerdermittel-programm' ? slugFromPath : fallbackSlug ?? slugFromPath;
+      if (!resolvedSlug) {
+        return undefined;
+      }
+      const program = getFundingProgramBySlug(resolvedSlug);
+      if (!program) {
+        return undefined;
+      }
+      return buildFundingProgramSeo(program);
+    }
+    case 'standort': {
+      const normalised = normalisePath(pathname);
+      const segments = normalised.split('/').filter(Boolean);
+      const slugFromPath = segments[segments.length - 1];
+      const region = slugFromPath ? getServiceRegionBySlug(slugFromPath) : undefined;
+      if (!region) {
+        return undefined;
+      }
+      const regionSlug = getServiceRegionSlug(region);
+      if (!locationSeoCache.has(regionSlug)) {
+        locationSeoCache.set(regionSlug, buildLocationSeoConfig(region, regionSlug));
+      }
+      return locationSeoCache.get(regionSlug);
     }
     default:
       return undefined;

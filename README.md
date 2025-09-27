@@ -113,14 +113,28 @@ Erweitert wird der Stack durch `react-router-dom`, `react-helmet-async`, `@googl
    npm run server
    ```
    Der Express-Server lauscht auf Port `5001` (konfigurierbar via `PORT`).
-4. **Production-Build erzeugen**
+  4. **Optional: Firecrawl-Productsync manuell auslösen** – aktualisiert `server/storage/products.live.json`
+    ```bash
+    npm run product-sync
+    ```
+    Nutzt Firecrawl MCP (lokal oder Remote), um alle Hersteller-Stammdaten und Produktfeeds zu aktualisieren.
+  5. **Production-Build erzeugen**
    ```bash
    npm run build
    ```
-5. **Static Preview testen**
+  6. **Static Preview testen**
    ```bash
    npm run preview
    ```
+
+## Scheduled Product-Sync (automatisch, unabhängig von Vercel)
+
+- Die GitHub Actions Workflow-Datei `.github/workflows/product-sync.yml` ist so konfiguriert, dass sie täglich per `schedule`-Trigger ausgeführt wird (Default: `15 3 * * *` UTC → 03:15 UTC). 
+- Wichtiger Punkt: Der Workflow läuft in GitHub-Runnern (Cloud) — dein Rechner oder Vercel müssen nicht laufen. Du hast die Secrets bereits in GitHub gesetzt, also wird der Job automatisch zur geplanten Zeit starten.
+- Falls du nach dem Sync ein Cache-Invalidation/Revalidation auf Vercel möchtest, kann der Workflow optional nach dem Sync einen Deploy-/Webhook-Call an Vercel ausführen.
+
+Siehe `docs/SETUP-GITHUB-SECRETS.md` für genaue Schritte zum Setzen der Secrets und zur manuellen Ausführung/Verifikation.
+
 
 > [!TIP]
 > Für Deployments empfiehlt sich ein zweistufiger Ansatz: (1) Static Hosting der Vite-Builds (z. B. Vercel, Netlify) und (2) separater Node-Service für Monitoring & Automations.
@@ -137,6 +151,13 @@ Leg die Variablen in `.env` oder `.env.local` (Vite) sowie serverseitig ab. Alle
 | `SERVER_GOOGLE_SERVICE_ACCOUNT_JSON` | Server | Zugriff auf Search Console & GA4 (alternativ: `SERVER_GOOGLE_SERVICE_ACCOUNT_*`). |
 | `SERVER_AHREFS_API_TOKEN`, `SERVER_AHREFS_TARGET` | Server | Backlink-Statistiken fürs Dashboard. |
 | `SERVER_GMB_API_KEY`, `SERVER_GMB_ACCOUNT_NAME`, `SERVER_GMB_LOCATION_ID` | Server | Google Business Profile Monitoring. |
+| `FIRECRAWL_MCP_ENDPOINT` / `FIRECRAWL_ENDPOINT` | Server | Basis-URL der Firecrawl MCP-Instanz (Default: `http://localhost:3000/v1/scrape`). |
+| `FIRECRAWL_MCP_API_KEY` / `FIRECRAWL_API_KEY` | Server | Optionaler API-Key für Firecrawl MCP (bei Self-Hosting oft nicht nötig). |
+| `FIRECRAWL_TIMEOUT_MS` | Server | Timeout für Firecrawl-Requests (Default: `45000`). |
+| `DISABLE_PRODUCT_SYNC_CRON` | Server | Auf `true` setzen, um den täglichen Firecrawl-Sync zu deaktivieren. |
+| `PRODUCTS_SYNC_CRON_SCHEDULE` | Server | Cron-Expression für den Sync (Default: `15 3 * * *` → alle 24h). |
+| `PRODUCT_SYNC_CONCURRENCY` | Server | Maximale gleichzeitige Firecrawl-Requests (Default: `3`). |
+| `PRODUCTS_SYNC_KEY` | Server | Optionaler API-Key, um `/api/admin/products/sync` abzusichern. |
 | `VITE_FAPRO_BASE_URL`, `VITE_FAPRO_API_KEY` | Frontend | Lead-Routing zum Fapro CRM. |
 
 Weitere Details findest du in `docs/` (SEO-Playbooks, Content-Briefings, Workflows).
@@ -197,6 +218,7 @@ flowchart LR
 ## AI & Automations
 
 - **Chat & Recommender:** `components/AIChatFunnel.tsx`, `components/AIRecommender.tsx` orchestrieren dialogbasierte Beratung.
+- **Firecrawl MCP Product Discovery:** `server/services/productSync.js` + `npm run product-sync` crawlen Herstellerseiten (kostenlos via MCP) und aktualisieren den Produktkatalog täglich automatisch.
 - **Monitoring & Alerts:** Skripte unter `scripts/seo-monitoring.cjs`, `scripts/seo-alerts.cjs`, `scripts/enhanced-seo-monitoring.cjs`.
 - **API-Key-Orchestration:** `server/lib/apiKeyStore.js` + REST-Endpoints (`/api/admin/api-keys`).
 - **Dashboards & KPI-Visualisierung:** `components/Dashboard/` + Daten aus `data/adminDashboard.ts`.
@@ -240,6 +262,8 @@ flowchart LR
 | `/api/customer/projects/{projectId}/offers/{offerId}/accept` | POST | Angebot annehmen. |
 | `/api/customer/invoices/{invoiceId}/pay` | POST | Zahlungsvorgang starten (z. B. Stripe). |
 | `/api/products` | GET | Produktkatalog, filterbar via `?category=`. |
+| `/api/products/live` | GET | Live-Daten aus dem Firecrawl-Sync (`server/storage/products.live.json`). |
+| `/api/admin/products/sync` | POST | Firecrawl-MCP-Sync sofort auslösen (optional: Herstellerliste im Body). |
 
 Siehe `server/` für Express-Routen und Mock-Daten. Session-Handling, Validierungen und externe Services müssen vor Produktivstart ergänzt werden.
 
@@ -288,7 +312,7 @@ Siehe `server/` für Express-Routen und Mock-Daten. Session-Handling, Validierun
 
 ## Ressourcen & Dokumentation
 
-- `docs/wiki/` – Projekt-Wiki (Home, Architektur, SEO-Automation, Operations, Content Playbook).
+- `docs/wiki/` – Projekt-Wiki (Home, Architektur, SEO-Automation, Operations, Content Playbook). Sync per `npm run wiki-sync` (optional `--dry-run`).
 - `docs/seo-geo-aeo-strategy.md` – Strategische Roadmap für Local SEO & AI Overviews.
 - `docs/content/` – Redaktionspläne, Tonalität, Storyline.
 - `docs/automation/` – Setups für Monitoring, Alerts & CRM-Sync.

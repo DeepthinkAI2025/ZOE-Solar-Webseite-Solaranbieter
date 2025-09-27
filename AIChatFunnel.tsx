@@ -4,7 +4,7 @@ import { sendInquiryToFapro } from '../services/faproService';
 import { ContactFormData, Page } from '../types';
 import { websiteKnowledge } from '../data/websiteKnowledge';
 import { innovations } from '../data/innovations';
-import { Product } from '../data/products';
+import { Product } from './data/productTypes';
 import { UseCase } from '../data/useCases';
 import { services, Service, ConfigurableField } from '../data/services';
 import YouTubeEmbed from './YouTubeEmbed';

@@ -65,5 +65,141 @@ export interface ContactInfo {
 }
 
 
+export type FundingProgramLevel = 'bund' | 'land' | 'eu' | 'kommunal';
+
+export interface FundingProgramBenefit {
+    title: string;
+    description: string;
+    icon?: string;
+}
+
+export interface FundingProgramFAQ {
+    question: string;
+    answer: string;
+}
+
+export interface FundingProgramContact {
+    phone?: string;
+    email?: string;
+    url?: string;
+    hotlineHours?: string;
+    note?: string;
+}
+
+export interface FundingProgramSEOConfig {
+    title: string;
+    description: string;
+    keywords: string[];
+    canonical?: string;
+}
+
+export interface FundingProgram {
+    slug: string;
+    title: string;
+    shortTitle?: string;
+    provider: string;
+    level: FundingProgramLevel;
+    region?: string;
+    isActive: boolean;
+    summary: string;
+    tagline: string;
+    heroImage?: string;
+    logo: string;
+    fundingTypes: string[];
+    maxFunding?: string;
+    minFunding?: string;
+    fundingRate?: string;
+    targetGroups: string[];
+    eligibleProjects: string[];
+    eligibleCosts?: string[];
+    nonEligibleCosts?: string[];
+    requirements: string[];
+    applicationSteps: string[];
+    documentsRequired: string[];
+    processingTime?: string;
+    deadlines?: string;
+    combinationTips: string[];
+    repaymentBenefits?: string[];
+    supportServices: string[];
+    successMetric?: string;
+    highlights: FundingProgramBenefit[];
+    faqs: FundingProgramFAQ[];
+    contact: FundingProgramContact;
+    externalLinks?: { label: string; url: string }[];
+    seo: FundingProgramSEOConfig;
+    lastUpdated: string;
+    legalBasis?: string;
+    notes?: string;
+}
+
+
 // FIX: Moved Page type here to resolve circular dependency issues.
-export type Page = 'home' | 'photovoltaik' | 'e-mobilitaet' | 'preise' | 'projekte' | 'produkte' | 'hersteller-detail' | 'ueber-uns' | 'karriere' | 'kontakt' | 'service-photovoltaik' | 'service-ladeparks' | 'service-speicher' | 'nachhaltigkeit' | 'aktuelles' | 'article-detail' | 'anwendungsfaelle' | 'anwendungsfall-detail' | 'login' | 'dashboard' | 'empfehlungspraemie' | 'wissens-hub' | 'glossar' | 'guide-detail' | 'innovations' | 'finanzierung' | 'sonderaktionen' | 'faq-page' | 'partner-werden' | 'impressum' | 'datenschutz' | 'agb' | 'presse' | 'wartung-service' | 'garantieabwicklung' | 'foerdermittel-check' | 'diy-hub' | 'agri-pv' | 'team' | 'warum-zoe-solar' | 'foerdermittel-kfw' | 'foerdermittel-ibb' | 'foerdermittel-bafa' | 'elektro' | 'service-anmeldung-pv' | 'service-anmeldung-ladestationen' | 'service-netzanschluss' | 'service-verteilerbau' | 'service-zaehlerbau' | 'standort-berlin' | 'standort-muenchen' | 'standort-zuerich' | 'standort-hamburg' | 'standort-koeln' | 'standort-frankfurt' |   'standort-stuttgart' | 'agri-pv-brandenburg' | 'agri-pv-sachsen-anhalt' | 'agri-pv-niedersachsen' | 'agri-pv-bayern' | 'agri-pv-nordrhein-westfalen' | 'eigenheim' | 'eigenheim-kosten' | 'eigenheim-einfamilienhaus-kosten' | 'eigenheim-planung' | 'photovoltaik-installation-dach' | 'eigenheim-installation' | 'seo-monitoring' | 'fallstudien' | 'fallstudie-detail' | 'agri-pv-erfahrungen' | 'mitarbeiter-login';
+export type Page =
+    | 'home'
+    | 'photovoltaik'
+    | 'e-mobilitaet'
+    | 'preise'
+    | 'projekte'
+    | 'produkte'
+    | 'hersteller-detail'
+    | 'ueber-uns'
+    | 'karriere'
+    | 'kontakt'
+    | 'service-photovoltaik'
+    | 'service-ladeparks'
+    | 'service-speicher'
+    | 'nachhaltigkeit'
+    | 'aktuelles'
+    | 'article-detail'
+    | 'anwendungsfaelle'
+    | 'anwendungsfall-detail'
+    | 'login'
+    | 'dashboard'
+    | 'empfehlungspraemie'
+    | 'wissens-hub'
+    | 'glossar'
+    | 'guide-detail'
+    | 'innovations'
+    | 'finanzierung'
+    | 'sonderaktionen'
+    | 'faq-page'
+    | 'partner-werden'
+    | 'impressum'
+    | 'datenschutz'
+    | 'agb'
+    | 'presse'
+    | 'wartung-service'
+    | 'garantieabwicklung'
+    | 'foerdermittel-check'
+    | 'diy-hub'
+    | 'agri-pv'
+    | 'team'
+    | 'warum-zoe-solar'
+    | 'foerdermittel-uebersicht'
+    | 'foerdermittel-programm'
+    | 'foerdermittel-kfw'
+    | 'foerdermittel-ibb'
+    | 'foerdermittel-bafa'
+    | 'elektro'
+    | 'service-anmeldung-pv'
+    | 'service-anmeldung-ladestationen'
+    | 'service-netzanschluss'
+    | 'service-verteilerbau'
+    | 'service-zaehlerbau'
+    | 'standort'
+    | 'agri-pv-brandenburg'
+    | 'agri-pv-sachsen-anhalt'
+    | 'agri-pv-niedersachsen'
+    | 'agri-pv-bayern'
+    | 'agri-pv-nordrhein-westfalen'
+    | 'eigenheim'
+    | 'eigenheim-kosten'
+    | 'eigenheim-einfamilienhaus-kosten'
+    | 'eigenheim-planung'
+    | 'photovoltaik-installation-dach'
+    | 'eigenheim-installation'
+    | 'seo-monitoring'
+    | 'fallstudien'
+    | 'fallstudie-detail'
+    | 'agri-pv-erfahrungen'
+    | 'mitarbeiter-login';
