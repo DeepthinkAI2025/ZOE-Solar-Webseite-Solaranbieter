@@ -1,19 +1,19 @@
 {
-  "timestamp": "2025-09-28T14:08:47.562Z",
+  "timestamp": "2025-09-28T14:40:03.176Z",
   "contentMetrics": {
-    "totalPages": 586,
-    "pagesWithContent": 241,
-    "averageWordCount": 794,
+    "totalPages": 650,
+    "pagesWithContent": 457,
+    "averageWordCount": 581,
     "contentQuality": {
-      "excellent": 37,
-      "good": 66,
-      "needsImprovement": 11
+      "excellent": 22,
+      "good": 31,
+      "needsImprovement": 22
     }
   },
   "seoIssues": [
     {
       "type": "missing_meta_description",
-      "count": 33,
+      "count": 54,
       "severity": "high"
     },
     {
