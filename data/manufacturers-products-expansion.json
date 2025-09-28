@@ -1,0 +1,3540 @@
+{
+  "expansion_plan": {
+    "goal": "Mindestens 9 Hersteller pro Kategorie mit jeweils mindestens 3 Produkten",
+    "categories": {
+      "Module": {
+        "existing_manufacturers": ["meyer-burger", "q-cells", "jinko-solar", "ja-solar", "trina-solar", "longi-solar"],
+        "new_manufacturers": ["canadian-solar", "rec", "panasonic"],
+        "manufacturers_to_expand": {
+          "q-cells": {
+            "current_products": 2,
+            "new_products": [
+              {
+                "name": "Q.PEAK DUO BLK ML-G10+",
+                "specs": { "Leistung": "405 Wp", "Wirkungsgrad": "20.6 %", "Zell-Technologie": "Q.ANTUM DUO Z" },
+                "price": 185,
+                "description": "Vollschwarzes Premium-Solarmodul mit optimierter Ästhetik für anspruchsvolle Wohngebäude."
+              },
+              {
+                "name": "Q.ANTUM NEO SOLAR MODULE",
+                "specs": { "Leistung": "440-455 Wp", "Wirkungsgrad": "22.8 %", "Zell-Technologie": "Q.ANTUM NEO" },
+                "price": 200,
+                "description": "Hocheffizientes Modul mit Q.ANTUM NEO Technologie für maximale Energieausbeute."
+              },
+              {
+                "name": "Q.TRON BLACK",
+                "specs": { "Leistung": "445 Wp", "Wirkungsgrad": "22.3 %", "Zell-Technologie": "Q.ANTUM NEO" },
+                "price": 190,
+                "description": "Vollschwarzes Modul mit ausgezeichneter Performance und Allwetter-Technologie."
+              },
+              {
+                "name": "Q.TRON CLASSIC",
+                "specs": { "Leistung": "495-515 Wp", "Wirkungsgrad": "23.2 %", "Zell-Technologie": "Q.ANTUM NEO" },
+                "price": 210,
+                "description": "Klassisches Design mit höchster Effizienz für professionelle Installationen."
+              }
+            ]
+          },
+          "jinko-solar": {
+            "current_products": 1,
+            "new_products": [
+              {
+                "name": "Tiger Pro 72HC 540W",
+                "specs": { "Leistung": "540 Wp", "Wirkungsgrad": "20.9 %", "Zell-Technologie": "Mono PERC" },
+                "price": 155,
+                "description": "Hochleistungs-Modul für gewerbliche Anwendungen mit bewährter PERC-Technologie."
+              },
+              {
+                "name": "Tiger Neo N-type 72HL4",
+                "specs": { "Leistung": "580 Wp", "Wirkungsgrad": "22.5 %", "Zell-Technologie": "N-Type TOPCon" },
+                "price": 175,
+                "description": "N-Type Hocheffizienzmodul mit TOPCon-Technologie für maximale Erträge."
+              },
+              {
+                "name": "Tiger Neo N-type 78HL4-BDVP",
+                "specs": { "Leistung": "620 Wp", "Wirkungsgrad": "23.1 %", "Zell-Technologie": "N-Type TOPCon Bifacial" },
+                "price": 190,
+                "description": "Bifaziales N-Type Modul mit hoher Bifazialität für Freiflächenanlagen."
+              },
+              {
+                "name": "Swan SW 410W",
+                "specs": { "Leistung": "410 Wp", "Wirkungsgrad": "20.5 %", "Zell-Technologie": "Mono PERC" },
+                "price": 140,
+                "description": "Kompaktes Modul der Swan-Serie für Wohnanlagen mit optimiertem Design."
+              },
+              {
+                "name": "Cheetah HC 72M 535W",
+                "specs": { "Leistung": "535 Wp", "Wirkungsgrad": "21.0 %", "Zell-Technologie": "Mono PERC Half-Cell" },
+                "price": 160,
+                "description": "Half-Cell Technologie für reduzierte Hotspots und höhere Effizienz."
+              }
+            ]
+          },
+          "ja-solar": {
+            "current_products": 0,
+            "new_products": [
+              {
+                "name": "JAM72S30 535W",
+                "specs": { "Leistung": "535 Wp", "Wirkungsgrad": "20.7 %", "Zell-Technologie": "Mono PERC" },
+                "price": 150,
+                "description": "Zuverlässiges PERC-Modul für Großanlagen mit exzellentem Preis-Leistungs-Verhältnis."
+              },
+              {
+                "name": "JAM54S40 440W",
+                "specs": { "Leistung": "440 Wp", "Wirkungsgrad": "22.3 %", "Zell-Technologie": "Mono PERC+" },
+                "price": 195,
+                "description": "Kompaktes Hocheffizienz-Modul für private und gewerbliche Aufdachanlagen."
+              },
+              {
+                "name": "JAM72D40 550W Bifacial",
+                "specs": { "Leistung": "550 Wp", "Wirkungsgrad": "21.2 %", "Zell-Technologie": "Bifacial PERC", "Bifazialität": "85%" },
+                "price": 170,
+                "description": "Bifaziales Glas-Glas-Modul für erhöhte Erträge durch Rückseiteneinstrahlung."
+              },
+              {
+                "name": "JAM78S30 580W",
+                "specs": { "Leistung": "580 Wp", "Wirkungsgrad": "21.5 %", "Zell-Technologie": "Mono PERC" },
+                "price": 175,
+                "description": "Hochleistungs-Modul mit 78 Zellen für maximale Energieausbeute pro Modul."
+              },
+              {
+                "name": "JAM60S20 480W",
+                "specs": { "Leistung": "480 Wp", "Wirkungsgrad": "20.9 %", "Zell-Technologie": "Mono PERC" },
+                "price": 155,
+                "description": "Ausgewogenes Modul der JAM-Serie für verschiedene Anwendungsbereiche."
+              }
+            ]
+          },
+          "trina-solar": {
+            "current_products": 0,
+            "new_products": [
+              {
+                "name": "Vertex S+ TSM-NEG9R.28 425W",
+                "specs": { "Leistung": "425 Wp", "Wirkungsgrad": "22.0 %", "Zell-Technologie": "N-Type i-TOPCon" },
+                "price": 180,
+                "description": "Vertex-Plattform mit i-TOPCon Technologie für höchste Effizienz und Zuverlässigkeit."
+              },
+              {
+                "name": "Vertex S TSM-DE09.08 405W",
+                "specs": { "Leistung": "405 Wp", "Wirkungsgrad": "20.8 %", "Zell-Technologie": "Mono PERC+" },
+                "price": 160,
+                "description": "Bewährtes PERC+ Modul der Vertex-Serie für vielseitige Anwendungen."
+              },
+              {
+                "name": "Vertex S+ DEG21C.20 550W Bifacial",
+                "specs": { "Leistung": "550 Wp", "Wirkungsgrad": "21.5 %", "Zell-Technologie": "N-Type Bifacial", "Bifazialität": "80%" },
+                "price": 185,
+                "description": "Hochleistungs-Bifacial-Modul für Freiflächen und Carports mit Doppelglas-Aufbau."
+              },
+              {
+                "name": "Tallmax M TSM-DEG19R.08 500W",
+                "specs": { "Leistung": "500 Wp", "Wirkungsgrad": "20.8 %", "Zell-Technologie": "Mono PERC" },
+                "price": 170,
+                "description": "Tallmax Serie mit höherer Leistung pro Modul für reduzierte BOS-Kosten."
+              },
+              {
+                "name": "Honey M TSM-DE14A 410W",
+                "specs": { "Leistung": "410 Wp", "Wirkungsgrad": "20.2 %", "Zell-Technologie": "Mono PERC" },
+                "price": 150,
+                "description": "Honey Serie mit optimiertem Design für bessere Ästhetik und Performance."
+              }
+            ]
+          },
+          "longi-solar": {
+            "current_products": 0,
+            "new_products": [
+              {
+                "name": "Hi-MO 6 Explorer LR5-72HTH 545W",
+                "specs": { "Leistung": "545 Wp", "Wirkungsgrad": "21.2 %", "Zell-Technologie": "TOPCon Hybrid" },
+                "price": 165,
+                "description": "Hi-MO 6 Serie mit hybridem TOPCon-Design für optimale Performance bei allen Lichtverhältnissen."
+              },
+              {
+                "name": "Hi-MO 5m LR4-60HPH 405W",
+                "specs": { "Leistung": "405 Wp", "Wirkungsgrad": "20.6 %", "Zell-Technologie": "Mono PERC" },
+                "price": 145,
+                "description": "Bewährte Hi-MO 5m Serie mit PERC-Technologie für Wohn- und Gewerbeanwendungen."
+              },
+              {
+                "name": "Hi-MO X6 Explorer LR1-84HTH 605W",
+                "specs": { "Leistung": "605 Wp", "Wirkungsgrad": "22.8 %", "Zell-Technologie": "N-Type TOPCon" },
+                "price": 195,
+                "description": "Spitzenmodul der Hi-MO X6 Serie mit höchster Effizienz für anspruchsvollste Projekte."
+              },
+              {
+                "name": "Hi-MO 7 LR5-72HBD 570W Bifacial",
+                "specs": { "Leistung": "570 Wp", "Wirkungsgrad": "21.8 %", "Zell-Technologie": "N-Type Bifacial", "Bifazialität": "85%" },
+                "price": 180,
+                "description": "Bifaziales Modul der Hi-MO 7 Serie für erhöhte Erträge durch Rückseiteneinstrahlung."
+              },
+              {
+                "name": "Hi-MO 4m LR4-60HIBD 375W",
+                "specs": { "Leistung": "375 Wp", "Wirkungsgrad": "19.8 %", "Zell-Technologie": "Mono PERC" },
+                "price": 135,
+                "description": "Kosteneffizientes Modul der Hi-MO 4m Serie für Standard-Anwendungen."
+              }
+            ]
+          }
+        },
+        "new_manufacturer_data": {
+          "canadian-solar": {
+            "name": "Canadian Solar",
+            "logoUrl": "/assets/logos/canadian-solar.png",
+            "description": "Canadian Solar ist einer der weltweit größten Hersteller von Solarmodulen und Anbieter von Solarlösungen. Das Unternehmen beliefert über 160 Länder mit hochwertigen und kosteneffizienten Solarmodulen.",
+            "whyWeTrust": [
+              "Über 25 Jahre Erfahrung und weltweite Präsenz in mehr als 160 Ländern.",
+              "Ausgezeichnete Bankability und finanzielle Stabilität.",
+              "Breites Produktportfolio für alle Anwendungsbereiche."
+            ],
+            "products": [
+              {
+                "name": "HiKu7 Mono PERC CS7L-545MS",
+                "specs": { "Leistung": "545 Wp", "Wirkungsgrad": "21.2 %", "Zell-Technologie": "Mono PERC" },
+                "price": 155,
+                "description": "HiKu7 Serie mit bewährter PERC-Technologie für höchste Zuverlässigkeit und Performance."
+              },
+              {
+                "name": "BiHiKu7 CS7N-665MS Bifacial",
+                "specs": { "Leistung": "665 Wp", "Wirkungsgrad": "21.6 %", "Zell-Technologie": "N-Type Bifacial", "Bifazialität": "85%" },
+                "price": 185,
+                "description": "Bifaziales N-Type Modul für maximale Erträge durch Doppelseitige Energiegewinnung."
+              },
+              {
+                "name": "HiKu6 Mono PERC CS6W-410MS",
+                "specs": { "Leistung": "410 Wp", "Wirkungsgrad": "20.9 %", "Zell-Technologie": "Mono PERC" },
+                "price": 140,
+                "description": "Kompakte HiKu6 Serie ideal für Aufdachanlagen mit begrenztem Platz."
+              }
+            ]
+          },
+          "rec": {
+            "name": "REC Solar",
+            "logoUrl": "/assets/logos/rec-solar.png", 
+            "description": "REC ist ein europäischer Pionier der Solarenergie seit 1996. Das norwegische Unternehmen entwickelt und produziert Solarzellen und -module und ist bekannt für seine Innovationen und hohe Qualität.",
+            "whyWeTrust": [
+              "Europäische Qualität und Innovation seit über 25 Jahren.",
+              "Branchenführende Heterojunction-Technologie (Alpha Pure Serie).",
+              "Hervorragende Leistung bei Schwachlicht und hohen Temperaturen."
+            ],
+            "products": [
+              {
+                "name": "REC Alpha Pure-R 430W",
+                "specs": { "Leistung": "430 Wp", "Wirkungsgrad": "22.3 %", "Zell-Technologie": "Heterojunction" },
+                "price": 260,
+                "description": "Premium Alpha Pure Serie mit Heterojunction-Technologie für höchste Effizienz und Langlebigkeit."
+              },
+              {
+                "name": "REC Alpha Pure Black 405W",
+                "specs": { "Leistung": "405 Wp", "Wirkungsgrad": "21.7 %", "Zell-Technologie": "Heterojunction" },
+                "price": 275,
+                "description": "Elegantes Vollschwarz-Design der Alpha Pure Serie für anspruchsvolle Architektur."
+              },
+              {
+                "name": "REC TwinPeak 5 Mono 380W",
+                "specs": { "Leistung": "380 Wp", "Wirkungsgrad": "19.9 %", "Zell-Technologie": "Mono PERC" },
+                "price": 190,
+                "description": "TwinPeak 5 Serie mit Split-Cell-Technologie für reduzierte Hotspot-Bildung."
+              }
+            ]
+          },
+          "panasonic": {
+            "name": "Panasonic",
+            "logoUrl": "/assets/logos/panasonic.png",
+            "description": "Panasonic ist ein Technologiekonzern mit jahrzehntelanger Erfahrung in der Elektronik. Die HIT-Solarmodule von Panasonic gehören zu den effizientesten und langlebigsten auf dem Markt.",
+            "whyWeTrust": [
+              "Höchste Moduleffizienz und bewährte Heterojunction-Technologie (HIT).",
+              "Außergewöhnliche Leistung bei hohen Temperaturen und Schwachlicht.",
+              "25 Jahre Produktgarantie und hervorragende Langzeiterfahrung."
+            ],
+            "products": [
+              {
+                "name": "EVERVOLT HIT VBHN330SA17",
+                "specs": { "Leistung": "330 Wp", "Wirkungsgrad": "19.7 %", "Zell-Technologie": "HIT (Heterojunction)" },
+                "price": 295,
+                "description": "EVERVOLT HIT-Modul mit patentierter Heterojunction-Technologie für Premium-Anwendungen."
+              },
+              {
+                "name": "EVERVOLT HIT+ VBHN340SA17",
+                "specs": { "Leistung": "340 Wp", "Wirkungsgrad": "20.3 %", "Zell-Technologie": "HIT+ (Enhanced)" },
+                "price": 310,
+                "description": "Weiterentwickelte HIT+ Technologie für noch höhere Effizienz und bessere Schwachlichtperformance."
+              },
+              {
+                "name": "EVERVOLT HIT Black VBHN325SA16",
+                "specs": { "Leistung": "325 Wp", "Wirkungsgrad": "19.4 %", "Zell-Technologie": "HIT Schwarz" },
+                "price": 320,
+                "description": "Elegante schwarze HIT-Module für höchste ästhetische Ansprüche bei Premium-Installationen."
+              },
+              {
+                "name": "HIT N340 Black",
+                "specs": { "Leistung": "340 Wp", "Wirkungsgrad": "20.1 %", "Zell-Technologie": "HIT N-Type" },
+                "price": 305,
+                "description": "N-Type HIT-Modul mit verbesserter Effizienz und Zuverlässigkeit."
+              },
+              {
+                "name": "HIT H350",
+                "specs": { "Leistung": "350 Wp", "Wirkungsgrad": "20.5 %", "Zell-Technologie": "HIT High Efficiency" },
+                "price": 330,
+                "description": "Spitzenmodul der HIT-Serie für maximale Leistung in anspruchsvollen Umgebungen."
+              }
+            ]
+          },
+          "lg-solar": {
+            "name": "LG Solar",
+            "logoUrl": "/assets/logos/lg-solar.png",
+            "description": "LG Electronics ist ein globaler Technologiekonzern mit einer starken Präsenz im Solarmarkt. LG Solarmodule zeichnen sich durch hohe Qualität und innovative Technologien aus.",
+            "whyWeTrust": [
+              "Weltweit führender Technologiekonzern mit jahrzehntelanger Erfahrung.",
+              "Höchste Qualitätsstandards und umfassende Garantien.",
+              "Innovative Zell-Technologien wie Cello und NeON."
+            ],
+            "products": [
+              {
+                "name": "NeON R LG400N2R-A5",
+                "specs": { "Leistung": "400 Wp", "Wirkungsgrad": "21.7 %", "Zell-Technologie": "Cello N-Type" },
+                "price": 280,
+                "description": "NeON R Serie mit Cello-Technologie für höchste Effizienz und Zuverlässigkeit."
+              },
+              {
+                "name": "NeON 2 Black LG380Q1K-A6",
+                "specs": { "Leistung": "380 Wp", "Wirkungsgrad": "20.8 %", "Zell-Technologie": "Cello P-Type" },
+                "price": 270,
+                "description": "Vollschwarzes Modul der NeON 2 Serie für ästhetisch anspruchsvolle Installationen."
+              },
+              {
+                "name": "NeON 3 LG415N2T-A6",
+                "specs": { "Leistung": "415 Wp", "Wirkungsgrad": "22.0 %", "Zell-Technologie": "Cello N-Type" },
+                "price": 290,
+                "description": "NeON 3 mit verbesserter Cello-Technologie für maximale Energieausbeute."
+              },
+              {
+                "name": "NeON H LG420N2W-A6 Bifacial",
+                "specs": { "Leistung": "420 Wp", "Wirkungsgrad": "21.8 %", "Zell-Technologie": "Cello Bifacial", "Bifazialität": "85%" },
+                "price": 300,
+                "description": "Bifaziales Modul der NeON H Serie für erhöhte Erträge durch Doppelglas-Design."
+              },
+              {
+                "name": "NeON 2 LG355Q1C-A6",
+                "specs": { "Leistung": "355 Wp", "Wirkungsgrad": "19.8 %", "Zell-Technologie": "Cello P-Type" },
+                "price": 250,
+                "description": "Kosteneffizientes Modul der NeON 2 Serie für Standard-Anwendungen."
+              }
+            ]
+          },
+          "sunpower": {
+            "name": "SunPower",
+            "logoUrl": "/assets/logos/sunpower.png",
+            "description": "SunPower ist ein amerikanischer Hersteller von Hochleistungs-Solarmodulen mit Maxeon-Zelltechnologie. Bekannt für höchste Effizienz und Langlebigkeit.",
+            "whyWeTrust": [
+              "Branchenführende Effizienz mit Maxeon-Zelltechnologie.",
+              "25 Jahre Produktgarantie und 40 Jahre Leistungsgarantie.",
+              "Innovative Back-Contact Technologie für bessere Ästhetik und Performance."
+            ],
+            "products": [
+              {
+                "name": "Maxeon 6 AC 415W",
+                "specs": { "Leistung": "415 Wp", "Wirkungsgrad": "22.8 %", "Zell-Technologie": "Maxeon Gen 6" },
+                "price": 450,
+                "description": "Maxeon 6 mit integriertem Microinverter für optimierte Systemleistung."
+              },
+              {
+                "name": "Maxeon 7 440W",
+                "specs": { "Leistung": "440 Wp", "Wirkungsgrad": "23.2 %", "Zell-Technologie": "Maxeon Gen 7" },
+                "price": 480,
+                "description": "Neueste Maxeon 7 Technologie mit höchster Effizienz und Zuverlässigkeit."
+              },
+              {
+                "name": "Performance 5 400W",
+                "specs": { "Leistung": "400 Wp", "Wirkungsgrad": "21.5 %", "Zell-Technologie": "Maxeon P-Type" },
+                "price": 380,
+                "description": "Performance 5 Serie mit bewährter Maxeon-Technologie für Premium-Anwendungen."
+              },
+              {
+                "name": "Maxeon 3 Black 400W",
+                "specs": { "Leistung": "400 Wp", "Wirkungsgrad": "21.2 %", "Zell-Technologie": "Maxeon Gen 3" },
+                "price": 420,
+                "description": "Vollschwarzes Maxeon 3 Modul für höchste ästhetische Ansprüche."
+              },
+              {
+                "name": "Equinox 400W",
+                "specs": { "Leistung": "400 Wp", "Wirkungsgrad": "20.8 %", "Zell-Technologie": "Maxeon P-Type" },
+                "price": 360,
+                "description": "Equinox Serie mit optimiertem Design für verschiedene Anwendungsbereiche."
+              }
+            ]
+          }
+        }
+      },
+      "Wechselrichter": {
+        "goal": "Mindestens 9 Hersteller mit verschiedenen Wechselrichter-Typen (String, Hybrid, Micro)",
+        "existing_manufacturers": ["sma", "fronius", "huawei"],
+        "new_manufacturers": ["solaredge", "growatt", "sungrow", "kaco", "abb", "schneider-electric"],
+        "manufacturers_to_expand": {
+          "sma": {
+            "current_products": 1,
+            "new_products": [
+              {
+                "name": "SMA Sunny Tripower X 10-50",
+                "specs": { "Leistung": "10000-50000 W", "Wirkungsgrad": "98.0 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 2500,
+                "description": "Hochleistungs-String-Wechselrichter mit integriertem Energiemanagement für gewerbliche Anlagen."
+              },
+              {
+                "name": "SMA Sunny Boy 5.0-6.0",
+                "specs": { "Leistung": "5000-6000 W", "Wirkungsgrad": "97.5 %", "Phasen": "1", "Typ": "String-Wechselrichter" },
+                "price": 1200,
+                "description": "Zuverlässiger String-Wechselrichter für Wohnanlagen mit optimierter MPP-Tracking."
+              },
+              {
+                "name": "SMA Sunny Island 8.0H-11.0H",
+                "specs": { "Leistung": "8000-11000 W", "Wirkungsgrad": "95.5 %", "Phasen": "1", "Typ": "Hybrid-Wechselrichter" },
+                "price": 3500,
+                "description": "Hybrid-Wechselrichter mit integrierter Batterieladefunktion für Insel- und Backup-Systeme."
+              },
+              {
+                "name": "SMA Sunny Highpower PEAK3",
+                "specs": { "Leistung": "100000-150000 W", "Wirkungsgrad": "98.5 %", "Phasen": "3", "Typ": "Zentral-Wechselrichter" },
+                "price": 15000,
+                "description": "Hochleistungs-Zentralwechselrichter für große Solarparks mit maximaler Effizienz."
+              },
+              {
+                "name": "SMA Sunny Tripower Smart Energy",
+                "specs": { "Leistung": "8000-10000 W", "Wirkungsgrad": "98.2 %", "Phasen": "3", "Typ": "Hybrid-Wechselrichter" },
+                "price": 2800,
+                "description": "Intelligenter Hybrid-Wechselrichter mit Energiemanagement für Smart-Home-Anwendungen."
+              }
+            ]
+          },
+          "fronius": {
+            "current_products": 0,
+            "new_products": [
+              {
+                "name": "Fronius Primo 3.0-8.2",
+                "specs": { "Leistung": "3000-8200 W", "Wirkungsgrad": "97.9 %", "Phasen": "1", "Typ": "String-Wechselrichter" },
+                "price": 1100,
+                "description": "Kompakter String-Wechselrichter mit integriertem WLAN für einfache Überwachung."
+              },
+              {
+                "name": "Fronius Symo 3.0-20.0",
+                "specs": { "Leistung": "3000-20000 W", "Wirkungsgrad": "98.0 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 1400,
+                "description": "Dreiphasiger String-Wechselrichter mit Active Cooling für optimale Leistung."
+              },
+              {
+                "name": "Fronius Eco 25.0-27.0",
+                "specs": { "Leistung": "25000-27000 W", "Wirkungsgrad": "98.2 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 2200,
+                "description": "Hochleistungs-Wechselrichter für gewerbliche Anlagen mit SnapINverter Technologie."
+              },
+              {
+                "name": "Fronius Tauro 50.0-100.0",
+                "specs": { "Leistung": "50000-100000 W", "Wirkungsgrad": "98.3 %", "Phasen": "3", "Typ": "Zentral-Wechselrichter" },
+                "price": 8000,
+                "description": "Leistungsstarker Zentralwechselrichter mit integriertem Transformator für große Anlagen."
+              },
+              {
+                "name": "Fronius Ohmpilot",
+                "specs": { "Leistung": "3000 W", "Wirkungsgrad": "95.0 %", "Phasen": "1", "Typ": "Verbrauchsoptimierer" },
+                "price": 1800,
+                "description": "Intelligenter Verbrauchsoptimierer zur Nutzung von Überschussstrom für Warmwasser."
+              }
+            ]
+          },
+          "huawei": {
+            "current_products": 0,
+            "new_products": [
+              {
+                "name": "Huawei SUN2000-3KTL-10KTL",
+                "specs": { "Leistung": "3000-10000 W", "Wirkungsgrad": "98.2 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 1300,
+                "description": "Intelligenter String-Wechselrichter mit AI-Optimierung und Smart I-V Kurve Diagnose."
+              },
+              {
+                "name": "Huawei SUN2000-2KTL-12KTL",
+                "specs": { "Leistung": "2000-12000 W", "Wirkungsgrad": "97.8 %", "Phasen": "1", "Typ": "String-Wechselrichter" },
+                "price": 1150,
+                "description": "Einphasiger String-Wechselrichter mit hoher Überlastfähigkeit für Wohnanlagen."
+              },
+              {
+                "name": "Huawei SUN2000-100KTL-185KTL",
+                "specs": { "Leistung": "100000-185000 W", "Wirkungsgrad": "98.6 %", "Phasen": "3", "Typ": "Zentral-Wechselrichter" },
+                "price": 12000,
+                "description": "Hochleistungs-Zentralwechselrichter mit 16 MPP-Trackern für komplexe Anlagen."
+              },
+              {
+                "name": "Huawei SUN2000-50KTL-80KTL",
+                "specs": { "Leistung": "50000-80000 W", "Wirkungsgrad": "98.4 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 4500,
+                "description": "Mittelgroßer String-Wechselrichter mit 12 MPP-Trackern für gewerbliche Anlagen."
+              },
+              {
+                "name": "Huawei SUN2000-29.9KTL-40KTL",
+                "specs": { "Leistung": "29900-40000 W", "Wirkungsgrad": "98.3 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 2800,
+                "description": "Kompakter dreiphasiger Wechselrichter mit 4 MPP-Trackern für flexible Installation."
+              }
+            ]
+          }
+        },
+        "new_manufacturer_data": {
+          "solaredge": {
+            "name": "SolarEdge",
+            "logoUrl": "/assets/logos/solaredge.png",
+            "description": "SolarEdge ist ein israelischer Hersteller von Wechselrichtern und Energiemanagementsystemen. Bekannt für Power Optimizer Technologie und Monitoring-Lösungen.",
+            "whyWeTrust": [
+              "Innovative Power Optimizer Technologie für maximale Modulleistung.",
+              "Umfassende Monitoring-Lösungen mit detaillierten Analysen.",
+              "Hohe Zuverlässigkeit und 12 Jahre Produktgarantie."
+            ],
+            "products": [
+              {
+                "name": "SolarEdge SE3000H HD-Wave",
+                "specs": { "Leistung": "3000 W", "Wirkungsgrad": "99.2 %", "Phasen": "1", "Typ": "String-Wechselrichter" },
+                "price": 1400,
+                "description": "HD-Wave Technologie mit Power Optimizer für maximale Effizienz und Sicherheit."
+              },
+              {
+                "name": "SolarEdge SE5000H-10K",
+                "specs": { "Leistung": "5000-10000 W", "Wirkungsgrad": "98.8 %", "Phasen": "1", "Typ": "String-Wechselrichter" },
+                "price": 1600,
+                "description": "Einphasiger Wechselrichter mit integriertem Monitoring für Wohnanlagen."
+              },
+              {
+                "name": "SolarEdge SE12.5K-25K",
+                "specs": { "Leistung": "12500-25000 W", "Wirkungsgrad": "98.5 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 2200,
+                "description": "Dreiphasiger Wechselrichter mit 3 MPP-Trackern für gewerbliche Anlagen."
+              },
+              {
+                "name": "SolarEdge SE33.3K-50K",
+                "specs": { "Leistung": "33300-50000 W", "Wirkungsgrad": "98.7 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 3500,
+                "description": "Hochleistungs-Wechselrichter mit 6 MPP-Trackern für große Anlagen."
+              },
+              {
+                "name": "SolarEdge SE100K",
+                "specs": { "Leistung": "100000 W", "Wirkungsgrad": "98.9 %", "Phasen": "3", "Typ": "Zentral-Wechselrichter" },
+                "price": 8500,
+                "description": "Zentralwechselrichter mit 12 MPP-Trackern für Solarparks."
+              }
+            ]
+          },
+          "growatt": {
+            "name": "Growatt",
+            "logoUrl": "/assets/logos/growatt.png",
+            "description": "Growatt ist ein chinesischer Hersteller von Wechselrichtern und Energiespeichersystemen. Bekannt für kosteneffiziente und zuverlässige Lösungen.",
+            "whyWeTrust": [
+              "Hervorragendes Preis-Leistungs-Verhältnis.",
+              "Breites Produktportfolio von Residential bis Utility-Scale.",
+              "Schnelle technische Unterstützung und Firmware-Updates."
+            ],
+            "products": [
+              {
+                "name": "Growatt MIN 2500-6000TL-X",
+                "specs": { "Leistung": "2500-6000 W", "Wirkungsgrad": "97.8 %", "Phasen": "1", "Typ": "String-Wechselrichter" },
+                "price": 950,
+                "description": "Kompakter einphasiger Wechselrichter mit hoher Überlastfähigkeit."
+              },
+              {
+                "name": "Growatt MOD 3-10KTL3-X",
+                "specs": { "Leistung": "3000-10000 W", "Wirkungsgrad": "98.0 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 1250,
+                "description": "Dreiphasiger Wechselrichter mit 2 MPP-Trackern für flexible Installation."
+              },
+              {
+                "name": "Growatt MAX 50-80KTL3-X LV",
+                "specs": { "Leistung": "50000-80000 W", "Wirkungsgrad": "98.4 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 4200,
+                "description": "Mittelgroßer dreiphasiger Wechselrichter mit 6 MPP-Trackern."
+              },
+              {
+                "name": "Growatt MOD 17-25KTL3-X",
+                "specs": { "Leistung": "17000-25000 W", "Wirkungsgrad": "98.2 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 1950,
+                "description": "Hochleistungs-Wechselrichter mit 3 MPP-Trackern für gewerbliche Anlagen."
+              },
+              {
+                "name": "Growatt MOD 30-40KTL3-X",
+                "specs": { "Leistung": "30000-40000 W", "Wirkungsgrad": "98.3 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 2800,
+                "description": "Leistungsstarker Wechselrichter mit 4 MPP-Trackern für große Anlagen."
+              }
+            ]
+          },
+          "sungrow": {
+            "name": "Sungrow",
+            "logoUrl": "/assets/logos/sungrow.png",
+            "description": "Sungrow ist ein chinesischer Hersteller von Wechselrichtern und Energiespeichersystemen. Einer der weltweit größten Hersteller mit Fokus auf Qualität und Innovation.",
+            "whyWeTrust": [
+              "Weltweit führender Wechselrichter-Hersteller mit über 100 GW installierter Leistung.",
+              "Höchste Qualitätsstandards und umfassende Garantien.",
+              "Innovative Technologien wie String-Inverter mit 1500V Technologie."
+            ],
+            "products": [
+              {
+                "name": "Sungrow SG3.0-10RT",
+                "specs": { "Leistung": "3000-10000 W", "Wirkungsgrad": "98.0 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 1350,
+                "description": "Dreiphasiger String-Wechselrichter mit IP65 Schutz für Außeninstallation."
+              },
+              {
+                "name": "Sungrow SG5.0-20RT",
+                "specs": { "Leistung": "5000-20000 W", "Wirkungsgrad": "98.2 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 1650,
+                "description": "Hochleistungs-Wechselrichter mit 4 MPP-Trackern für komplexe Anlagen."
+              },
+              {
+                "name": "Sungrow SG30-50KTL-M",
+                "specs": { "Leistung": "30000-50000 W", "Wirkungsgrad": "98.5 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 3200,
+                "description": "Mittelgroßer Wechselrichter mit 6 MPP-Trackern und Smart IV Curve Diagnose."
+              },
+              {
+                "name": "Sungrow SG60-100KTL",
+                "specs": { "Leistung": "60000-100000 W", "Wirkungsgrad": "98.7 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 5500,
+                "description": "Hochleistungs-Wechselrichter mit 8 MPP-Trackern für große gewerbliche Anlagen."
+              },
+              {
+                "name": "Sungrow SG250HX",
+                "specs": { "Leistung": "250000 W", "Wirkungsgrad": "98.9 %", "Phasen": "3", "Typ": "Zentral-Wechselrichter" },
+                "price": 18000,
+                "description": "Megawatt-Zentralwechselrichter für Utility-Scale Solarparks."
+              }
+            ]
+          },
+          "kaco": {
+            "name": "KACO new energy",
+            "logoUrl": "/assets/logos/kaco.png",
+            "description": "KACO new energy ist ein deutscher Hersteller von Wechselrichtern mit Fokus auf Qualität und Zuverlässigkeit. Spezialisiert auf mittlere bis große Anlagen.",
+            "whyWeTrust": [
+              "Deutsche Ingenieurskunst und Qualität seit über 100 Jahren.",
+              "Spezialisierung auf mittlere und große Anlagen.",
+              "Hervorragende Langzeiterfahrung und Zuverlässigkeit."
+            ],
+            "products": [
+              {
+                "name": "KACO blueplanet 5.0 TL3",
+                "specs": { "Leistung": "5000 W", "Wirkungsgrad": "97.5 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 1450,
+                "description": "Zuverlässiger dreiphasiger String-Wechselrichter für Wohn- und Gewerbeanlagen."
+              },
+              {
+                "name": "KACO blueplanet 10.0 TL3",
+                "specs": { "Leistung": "10000 W", "Wirkungsgrad": "97.8 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 1750,
+                "description": "Hochleistungs-Wechselrichter mit 2 MPP-Trackern für flexible String-Konfigurationen."
+              },
+              {
+                "name": "KACO blueplanet 50.0 TL3",
+                "specs": { "Leistung": "50000 W", "Wirkungsgrad": "98.0 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 4200,
+                "description": "Mittelgroßer Wechselrichter mit 4 MPP-Trackern für gewerbliche Anlagen."
+              },
+              {
+                "name": "KACO blueplanet 87.0 TL3",
+                "specs": { "Leistung": "87000 W", "Wirkungsgrad": "98.2 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 6500,
+                "description": "Hochleistungs-Wechselrichter mit 6 MPP-Trackern für große Anlagen."
+              },
+              {
+                "name": "KACO Powador 100.0 TL3",
+                "specs": { "Leistung": "100000 W", "Wirkungsgrad": "98.3 %", "Phasen": "3", "Typ": "Zentral-Wechselrichter" },
+                "price": 7500,
+                "description": "Zentralwechselrichter mit integriertem Transformator für Solarparks."
+              }
+            ]
+          },
+          "abb": {
+            "name": "ABB",
+            "logoUrl": "/assets/logos/abb.png",
+            "description": "ABB ist ein schweizerisch-schwedischer Konzern mit umfassender Erfahrung in der Energiebranche. ABB Wechselrichter zeichnen sich durch hohe Qualität und Zuverlässigkeit aus.",
+            "whyWeTrust": [
+              "Über 130 Jahre Erfahrung in der Elektrotechnik.",
+              "Globale Präsenz und umfassender Service.",
+              "Höchste Sicherheits- und Qualitätsstandards."
+            ],
+            "products": [
+              {
+                "name": "ABB UNO-DM-3.3-TL-PLUS",
+                "specs": { "Leistung": "3300 W", "Wirkungsgrad": "97.5 %", "Phasen": "1", "Typ": "String-Wechselrichter" },
+                "price": 1250,
+                "description": "Einphasiger String-Wechselrichter mit Dual MPP-Tracking für optimale Performance."
+              },
+              {
+                "name": "ABB TRIO-5.8-TL-OUTD",
+                "specs": { "Leistung": "5800 W", "Wirkungsgrad": "97.8 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 1550,
+                "description": "Dreiphasiger Wechselrichter mit 2 MPP-Trackern für Außeninstallation."
+              },
+              {
+                "name": "ABB TRIO-20.0-TL-OUTD",
+                "specs": { "Leistung": "20000 W", "Wirkungsgrad": "98.0 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 2100,
+                "description": "Hochleistungs-Wechselrichter mit 4 MPP-Trackern für gewerbliche Anlagen."
+              },
+              {
+                "name": "ABB TRIO-50.0-TL-OUTD",
+                "specs": { "Leistung": "50000 W", "Wirkungsgrad": "98.2 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 3800,
+                "description": "Leistungsstarker Wechselrichter mit 6 MPP-Trackern für große Anlagen."
+              },
+              {
+                "name": "ABB PVS-100-TL",
+                "specs": { "Leistung": "100000 W", "Wirkungsgrad": "98.4 %", "Phasen": "3", "Typ": "Zentral-Wechselrichter" },
+                "price": 8500,
+                "description": "Zentralwechselrichter mit 12 MPP-Trackern für Utility-Scale Anlagen."
+              }
+            ]
+          },
+          "schneider-electric": {
+            "name": "Schneider Electric",
+            "logoUrl": "/assets/logos/schneider-electric.png",
+            "description": "Schneider Electric ist ein französischer Konzern mit umfassender Erfahrung in der Energieverteilung und -steuerung. Bekannt für intelligente Energielösungen.",
+            "whyWeTrust": [
+              "Über 180 Jahre Erfahrung in der Elektrotechnik.",
+              "Umfassende Energie-Management-Lösungen.",
+              "Hohe Zuverlässigkeit und globale Service-Netzwerk."
+            ],
+            "products": [
+              {
+                "name": "Schneider Conext Core XC",
+                "specs": { "Leistung": "6800-125000 W", "Wirkungsgrad": "97.5 %", "Phasen": "3", "Typ": "String-Wechselrichter" },
+                "price": 4500,
+                "description": "Modularer String-Wechselrichter mit skalierbarem Design für verschiedene Anlagengrößen."
+              },
+              {
+                "name": "Schneider Conext CL-60E",
+                "specs": { "Leistung": "60000 W", "Wirkungsgrad": "97.8 %", "Phasen": "3", "Typ": "Zentral-Wechselrichter" },
+                "price": 5200,
+                "description": "Zentralwechselrichter mit integriertem Transformator für mittlere Anlagen."
+              },
+              {
+                "name": "Schneider Conext CL-125E",
+                "specs": { "Leistung": "125000 W", "Wirkungsgrad": "98.0 %", "Phasen": "3", "Typ": "Zentral-Wechselrichter" },
+                "price": 7800,
+                "description": "Hochleistungs-Zentralwechselrichter für große gewerbliche Anlagen."
+              },
+              {
+                "name": "Schneider Conext SW",
+                "specs": { "Leistung": "3800-6000 W", "Wirkungsgrad": "97.0 %", "Phasen": "1", "Typ": "Hybrid-Wechselrichter" },
+                "price": 2200,
+                "description": "Hybrid-Wechselrichter mit Batterieunterstützung für Backup-Systeme."
+              },
+              {
+                "name": "Schneider Conext XW Pro",
+                "specs": { "Leistung": "6800 W", "Wirkungsgrad": "96.5 %", "Phasen": "1", "Typ": "Hybrid-Wechselrichter" },
+                "price": 2800,
+                "description": "Professioneller Hybrid-Wechselrichter für Insel- und Grid-Tie Anwendungen."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Speichersysteme": {
+      "description": "Energiespeichersysteme für Solaranlagen zur Speicherung von überschüssiger Solarenergie",
+      "existing_manufacturers": {},
+      "new_manufacturers": {
+        "lg-chem": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "LG Chem RESU 6.4",
+              "specs": { "Kapazität": "6.4 kWh", "Leistung": "3.3 kW", "Spannung": "400 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 4500,
+              "description": "Modulares Lithium-Ionen-Batteriesystem für Wohnanlagen mit hoher Energiedichte."
+            },
+            {
+              "name": "LG Chem RESU 9.8",
+              "specs": { "Kapazität": "9.8 kWh", "Leistung": "5.0 kW", "Spannung": "400 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 6800,
+              "description": "Erweiterbares Batteriesystem mit intelligenter Energiemanagement-Software."
+            },
+            {
+              "name": "LG Chem RESU 13.1",
+              "specs": { "Kapazität": "13.1 kWh", "Leistung": "6.6 kW", "Spannung": "400 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 8900,
+              "description": "Hochkapazitives System für größere Wohnanlagen mit Backup-Funktion."
+            },
+            {
+              "name": "LG Chem RESU 16.4",
+              "specs": { "Kapazität": "16.4 kWh", "Leistung": "8.2 kW", "Spannung": "400 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 11200,
+              "description": "Professionelles Batteriesystem für gewerbliche Anwendungen."
+            },
+            {
+              "name": "LG Chem RESU 19.7",
+              "specs": { "Kapazität": "19.7 kWh", "Leistung": "9.9 kW", "Spannung": "400 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 13500,
+              "description": "Maximal erweiterbares System für größere Energieautarkie."
+            }
+          ]
+        },
+        "tesla": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Tesla Powerwall 2",
+              "specs": { "Kapazität": "13.5 kWh", "Leistung": "5.0 kW", "Spannung": "400 V", "Zyklen": "10000", "Garantie": "10 Jahre" },
+              "price": 8900,
+              "description": "Intelligente Hausbatterie mit integriertem Energiemanagement und Backup-Funktion."
+            },
+            {
+              "name": "Tesla Powerwall 3",
+              "specs": { "Kapazität": "13.5 kWh", "Leistung": "11.5 kW", "Spannung": "400 V", "Zyklen": "10000", "Garantie": "10 Jahre" },
+              "price": 9500,
+              "description": "Neue Generation mit höherer Leistung und schnellerem Laden."
+            },
+            {
+              "name": "Tesla Powerwall+",
+              "specs": { "Kapazität": "13.5 kWh", "Leistung": "7.6 kW", "Spannung": "400 V", "Zyklen": "10000", "Garantie": "10 Jahre" },
+              "price": 9200,
+              "description": "Erweiterte Version mit zusätzlichen Sicherheitsfeatures und Monitoring."
+            },
+            {
+              "name": "Tesla Megapack 2",
+              "specs": { "Kapazität": "3130 kWh", "Leistung": "1500 kW", "Spannung": "1000 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 450000,
+              "description": "Großspeichersystem für gewerbliche und Utility-Scale Anwendungen."
+            },
+            {
+              "name": "Tesla Megapack 2XL",
+              "specs": { "Kapazität": "6260 kWh", "Leistung": "3000 kW", "Spannung": "1000 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 850000,
+              "description": "Doppelte Kapazität für große Energiespeicherprojekte."
+            }
+          ]
+        },
+        "byd": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "BYD Battery-Box Premium HVS",
+              "specs": { "Kapazität": "5.1 kWh", "Leistung": "2.5 kW", "Spannung": "200-400 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 3800,
+              "description": "Modulares Lithium-Eisenphosphat-System mit hoher Sicherheit."
+            },
+            {
+              "name": "BYD Battery-Box Premium HVM",
+              "specs": { "Kapazität": "8.3 kWh", "Leistung": "4.2 kW", "Spannung": "200-400 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 6200,
+              "description": "Mittelgroßes System mit erweiterten Monitoring-Funktionen."
+            },
+            {
+              "name": "BYD Battery-Box Premium HV",
+              "specs": { "Kapazität": "11.0 kWh", "Leistung": "5.5 kW", "Spannung": "200-400 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 7800,
+              "description": "Hochkapazitives System für größere Wohnanlagen."
+            },
+            {
+              "name": "BYD Cube-S1",
+              "specs": { "Kapazität": "5.0 kWh", "Leistung": "2.5 kW", "Spannung": "48 V", "Zyklen": "5000", "Garantie": "10 Jahre" },
+              "price": 3500,
+              "description": "Kompaktes System für kleine Installationen und Off-Grid-Anwendungen."
+            },
+            {
+              "name": "BYD Cube-S2",
+              "specs": { "Kapazität": "10.0 kWh", "Leistung": "5.0 kW", "Spannung": "48 V", "Zyklen": "5000", "Garantie": "10 Jahre" },
+              "price": 6500,
+              "description": "Erweiterte Version mit höherer Kapazität für mittlere Anlagen."
+            }
+          ]
+        },
+        "sonnen": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Sonnen ecoLinx",
+              "specs": { "Kapazität": "4.0 kWh", "Leistung": "2.0 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 4200,
+              "description": "Intelligentes Batteriesystem mit Cloud-Management für optimale Energieeffizienz."
+            },
+            {
+              "name": "Sonnen sonnenBatterie 8",
+              "specs": { "Kapazität": "8.0 kWh", "Leistung": "4.0 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 7200,
+              "description": "Modulares System mit intelligenter Lastverteilung."
+            },
+            {
+              "name": "Sonnen sonnenBatterie 10",
+              "specs": { "Kapazität": "10.0 kWh", "Leistung": "5.0 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 8500,
+              "description": "Hochkapazitives System für größere Energieautarkie."
+            },
+            {
+              "name": "Sonnen sonnenBatterie 12",
+              "specs": { "Kapazität": "12.0 kWh", "Leistung": "6.0 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 9500,
+              "description": "Professionelles System mit erweiterten Backup-Funktionen."
+            },
+            {
+              "name": "Sonnen sonnenBatterie 15",
+              "specs": { "Kapazität": "15.0 kWh", "Leistung": "7.5 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 11500,
+              "description": "Maximal erweiterbares System für kommerzielle Anwendungen."
+            }
+          ]
+        },
+        "e3dc": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "E3/DC S10 E",
+              "specs": { "Kapazität": "10.0 kWh", "Leistung": "3.6 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 6800,
+              "description": "All-in-One Energiespeichersystem mit integriertem Wechselrichter."
+            },
+            {
+              "name": "E3/DC S10 X",
+              "specs": { "Kapazität": "10.0 kWh", "Leistung": "6.0 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 7500,
+              "description": "Erweiterte Version mit höherer Leistung für größere Anlagen."
+            },
+            {
+              "name": "E3/DC S10 Pro",
+              "specs": { "Kapazität": "10.0 kWh", "Leistung": "9.0 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 8200,
+              "description": "Professionelle Version mit erweiterten Monitoring-Funktionen."
+            },
+            {
+              "name": "E3/DC S20",
+              "specs": { "Kapazität": "20.0 kWh", "Leistung": "9.0 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 12500,
+              "description": "Doppelte Kapazität für größere Energieautarkie."
+            },
+            {
+              "name": "E3/DC S30",
+              "specs": { "Kapazität": "30.0 kWh", "Leistung": "12.0 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 17500,
+              "description": "Hochkapazitives System für gewerbliche Anwendungen."
+            }
+          ]
+        },
+        "varta": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Varta pulse neo 6",
+              "specs": { "Kapazität": "6.0 kWh", "Leistung": "3.0 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 4800,
+              "description": "Modulares Lithium-Ionen-System mit intelligenter Energiemanagement."
+            },
+            {
+              "name": "Varta pulse neo 12",
+              "specs": { "Kapazität": "12.0 kWh", "Leistung": "6.0 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 8200,
+              "description": "Erweiterbares System mit höherer Kapazität für mittlere Anlagen."
+            },
+            {
+              "name": "Varta pulse neo 18",
+              "specs": { "Kapazität": "18.0 kWh", "Leistung": "9.0 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 11500,
+              "description": "Hochkapazitives System für größere Wohnanlagen."
+            },
+            {
+              "name": "Varta element",
+              "specs": { "Kapazität": "2.4 kWh", "Leistung": "1.2 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 2200,
+              "description": "Kompaktes Modul für kleinere Installationen."
+            },
+            {
+              "name": "Varta pulse",
+              "specs": { "Kapazität": "13.0 kWh", "Leistung": "6.5 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 8900,
+              "description": "Professionelles System mit erweiterten Sicherheitsfeatures."
+            }
+          ]
+        },
+        "huawei": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Huawei Luna2000-5-S0",
+              "specs": { "Kapazität": "5.0 kWh", "Leistung": "2.5 kW", "Spannung": "150-850 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 3800,
+              "description": "Modulares System mit AI-gestütztem Energiemanagement."
+            },
+            {
+              "name": "Huawei Luna2000-10-S0",
+              "specs": { "Kapazität": "10.0 kWh", "Leistung": "5.0 kW", "Spannung": "150-850 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 6500,
+              "description": "Erweiterbares System mit höherer Kapazität."
+            },
+            {
+              "name": "Huawei Luna2000-15-S0",
+              "specs": { "Kapazität": "15.0 kWh", "Leistung": "7.5 kW", "Spannung": "150-850 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 9200,
+              "description": "Hochkapazitives System für größere Anlagen."
+            },
+            {
+              "name": "Huawei Luna2000-20-S0",
+              "specs": { "Kapazität": "20.0 kWh", "Leistung": "10.0 kW", "Spannung": "150-850 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 11800,
+              "description": "Professionelles System mit erweiterten Backup-Funktionen."
+            },
+            {
+              "name": "Huawei Luna2000-30-S0",
+              "specs": { "Kapazität": "30.0 kWh", "Leistung": "15.0 kW", "Spannung": "150-850 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 16500,
+              "description": "Maximal erweiterbares System für kommerzielle Anwendungen."
+            }
+          ]
+        },
+        "sma": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "SMA Sunny Boy Storage 3.7",
+              "specs": { "Kapazität": "2.0-10.0 kWh", "Leistung": "3.7 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 4200,
+              "description": "Intelligentes Batteriesystem mit Sunny Portal Monitoring."
+            },
+            {
+              "name": "SMA Sunny Boy Storage 5.0",
+              "specs": { "Kapazität": "2.0-15.0 kWh", "Leistung": "5.0 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 5800,
+              "description": "Erweiterte Version mit höherer Leistung."
+            },
+            {
+              "name": "SMA Sunny Boy Storage 6.0",
+              "specs": { "Kapazität": "2.0-18.0 kWh", "Leistung": "6.0 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 7200,
+              "description": "Hochleistungssystem mit erweiterten Monitoring-Funktionen."
+            },
+            {
+              "name": "SMA Sunny Central Storage 2200",
+              "specs": { "Kapazität": "2200 kWh", "Leistung": "1100 kW", "Spannung": "1500 V", "Zyklen": "5000", "Garantie": "10 Jahre" },
+              "price": 280000,
+              "description": "Großspeichersystem für Utility-Scale Anwendungen."
+            },
+            {
+              "name": "SMA Sunny Central Storage 2750",
+              "specs": { "Kapazität": "2750 kWh", "Leistung": "1375 kW", "Spannung": "1500 V", "Zyklen": "5000", "Garantie": "10 Jahre" },
+              "price": 350000,
+              "description": "Erweiterte Version für größere Energiespeicherprojekte."
+            }
+          ]
+        },
+        "fronius": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Fronius BYD Battery-Box 10.2",
+              "specs": { "Kapazität": "10.2 kWh", "Leistung": "5.1 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 7200,
+              "description": "Kooperationssystem mit BYD für optimale Integration."
+            },
+            {
+              "name": "Fronius LG Chem RESU 10",
+              "specs": { "Kapazität": "9.8 kWh", "Leistung": "5.0 kW", "Spannung": "400 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 6800,
+              "description": "LG Chem Batterie mit Fronius Energiemanagement."
+            },
+            {
+              "name": "Fronius Ohmpilot Storage",
+              "specs": { "Kapazität": "2.0-14.0 kWh", "Leistung": "3.0 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 3800,
+              "description": "Intelligenter Verbrauchsoptimierer mit Speicherfunktion."
+            },
+            {
+              "name": "Fronius Symo Hybrid Storage",
+              "specs": { "Kapazität": "4.0-12.0 kWh", "Leistung": "3.0-5.0 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 5200,
+              "description": "Hybrid-System mit integriertem Wechselrichter."
+            },
+            {
+              "name": "Fronius Primo Hybrid Storage",
+              "specs": { "Kapazität": "3.0-9.0 kWh", "Leistung": "3.0-6.0 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 4800,
+              "description": "Kompaktes Hybrid-System für Wohnanlagen."
+            }
+          ]
+        }
+      },
+      "new_manufacturer_data": {
+        "lg-chem": {
+          "name": "LG Chem",
+          "logoUrl": "/assets/logos/lg-chem.png",
+          "description": "LG Chem ist ein südkoreanischer Chemiekonzern und weltweit führender Hersteller von Lithium-Ionen-Batterien für Energiespeichersysteme.",
+          "whyWeTrust": [
+            "Über 20 Jahre Erfahrung in der Batterieproduktion.",
+            "Höchste Sicherheitsstandards und Qualität.",
+            "Umfassende Garantie und globaler Service."
+          ],
+          "products": [
+            {
+              "name": "LG Chem RESU 6.4",
+              "specs": { "Kapazität": "6.4 kWh", "Leistung": "3.3 kW", "Spannung": "400 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 4500,
+              "description": "Modulares Lithium-Ionen-Batteriesystem für Wohnanlagen mit hoher Energiedichte."
+            },
+            {
+              "name": "LG Chem RESU 9.8",
+              "specs": { "Kapazität": "9.8 kWh", "Leistung": "5.0 kW", "Spannung": "400 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 6800,
+              "description": "Erweiterbares Batteriesystem mit intelligenter Energiemanagement-Software."
+            },
+            {
+              "name": "LG Chem RESU 13.1",
+              "specs": { "Kapazität": "13.1 kWh", "Leistung": "6.6 kW", "Spannung": "400 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 8900,
+              "description": "Hochkapazitives System für größere Wohnanlagen mit Backup-Funktion."
+            },
+            {
+              "name": "LG Chem RESU 16.4",
+              "specs": { "Kapazität": "16.4 kWh", "Leistung": "8.2 kW", "Spannung": "400 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 11200,
+              "description": "Professionelles Batteriesystem für gewerbliche Anwendungen."
+            },
+            {
+              "name": "LG Chem RESU 19.7",
+              "specs": { "Kapazität": "19.7 kWh", "Leistung": "9.9 kW", "Spannung": "400 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 13500,
+              "description": "Maximal erweiterbares System für größere Energieautarkie."
+            }
+          ]
+        },
+        "tesla": {
+          "name": "Tesla Energy",
+          "logoUrl": "/assets/logos/tesla.png",
+          "description": "Tesla Energy ist die Energiesparte von Tesla, Inc. und bietet innovative Energiespeichersysteme für Wohn- und Gewerbeanwendungen.",
+          "whyWeTrust": [
+            "Innovative Technologie und skalierbare Lösungen.",
+            "Integriertes Ökosystem mit Solar und Elektroautos.",
+            "Umfassende Garantie und fortschrittliches Energiemanagement."
+          ],
+          "products": [
+            {
+              "name": "Tesla Powerwall 2",
+              "specs": { "Kapazität": "13.5 kWh", "Leistung": "5.0 kW", "Spannung": "400 V", "Zyklen": "10000", "Garantie": "10 Jahre" },
+              "price": 8900,
+              "description": "Intelligente Hausbatterie mit integriertem Energiemanagement und Backup-Funktion."
+            },
+            {
+              "name": "Tesla Powerwall 3",
+              "specs": { "Kapazität": "13.5 kWh", "Leistung": "11.5 kW", "Spannung": "400 V", "Zyklen": "10000", "Garantie": "10 Jahre" },
+              "price": 9500,
+              "description": "Neue Generation mit höherer Leistung und schnellerem Laden."
+            },
+            {
+              "name": "Tesla Powerwall+",
+              "specs": { "Kapazität": "13.5 kWh", "Leistung": "7.6 kW", "Spannung": "400 V", "Zyklen": "10000", "Garantie": "10 Jahre" },
+              "price": 9200,
+              "description": "Erweiterte Version mit zusätzlichen Sicherheitsfeatures und Monitoring."
+            },
+            {
+              "name": "Tesla Megapack 2",
+              "specs": { "Kapazität": "3130 kWh", "Leistung": "1500 kW", "Spannung": "1000 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 450000,
+              "description": "Großspeichersystem für gewerbliche und Utility-Scale Anwendungen."
+            },
+            {
+              "name": "Tesla Megapack 2XL",
+              "specs": { "Kapazität": "6260 kWh", "Leistung": "3000 kW", "Spannung": "1000 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 850000,
+              "description": "Doppelte Kapazität für große Energiespeicherprojekte."
+            }
+          ]
+        },
+        "byd": {
+          "name": "BYD Energy",
+          "logoUrl": "/assets/logos/byd.png",
+          "description": "BYD Energy ist die Energiesparte des chinesischen Automobil- und Batterieherstellers BYD. Spezialisiert auf Lithium-Eisenphosphat-Batterien.",
+          "whyWeTrust": [
+            "Über 25 Jahre Erfahrung in der Batterieproduktion.",
+            "Höchste Sicherheitsstandards mit LFP-Chemie.",
+            "Umfassende Produktpalette von Residential bis Utility-Scale."
+          ],
+          "products": [
+            {
+              "name": "BYD Battery-Box Premium HVS",
+              "specs": { "Kapazität": "5.1 kWh", "Leistung": "2.5 kW", "Spannung": "200-400 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 3800,
+              "description": "Modulares Lithium-Eisenphosphat-System mit hoher Sicherheit."
+            },
+            {
+              "name": "BYD Battery-Box Premium HVM",
+              "specs": { "Kapazität": "8.3 kWh", "Leistung": "4.2 kW", "Spannung": "200-400 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 6200,
+              "description": "Mittelgroßes System mit erweiterten Monitoring-Funktionen."
+            },
+            {
+              "name": "BYD Battery-Box Premium HV",
+              "specs": { "Kapazität": "11.0 kWh", "Leistung": "5.5 kW", "Spannung": "200-400 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 7800,
+              "description": "Hochkapazitives System für größere Wohnanlagen."
+            },
+            {
+              "name": "BYD Cube-S1",
+              "specs": { "Kapazität": "5.0 kWh", "Leistung": "2.5 kW", "Spannung": "48 V", "Zyklen": "5000", "Garantie": "10 Jahre" },
+              "price": 3500,
+              "description": "Kompaktes System für kleine Installationen und Off-Grid-Anwendungen."
+            },
+            {
+              "name": "BYD Cube-S2",
+              "specs": { "Kapazität": "10.0 kWh", "Leistung": "5.0 kW", "Spannung": "48 V", "Zyklen": "5000", "Garantie": "10 Jahre" },
+              "price": 6500,
+              "description": "Erweiterte Version mit höherer Kapazität für mittlere Anlagen."
+            }
+          ]
+        },
+        "sonnen": {
+          "name": "Sonnen",
+          "logoUrl": "/assets/logos/sonnen.png",
+          "description": "Sonnen ist ein deutscher Hersteller von intelligenten Energiespeichersystemen mit Fokus auf Cloud-basiertes Energiemanagement.",
+          "whyWeTrust": [
+            "Intelligente Software und Cloud-Management.",
+            "Hohe Zuverlässigkeit und lange Lebensdauer.",
+            "Innovative Energiegemeinschaft-Konzepte."
+          ],
+          "products": [
+            {
+              "name": "Sonnen ecoLinx",
+              "specs": { "Kapazität": "4.0 kWh", "Leistung": "2.0 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 4200,
+              "description": "Intelligentes Batteriesystem mit Cloud-Management für optimale Energieeffizienz."
+            },
+            {
+              "name": "Sonnen sonnenBatterie 8",
+              "specs": { "Kapazität": "8.0 kWh", "Leistung": "4.0 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 7200,
+              "description": "Modulares System mit intelligenter Lastverteilung."
+            },
+            {
+              "name": "Sonnen sonnenBatterie 10",
+              "specs": { "Kapazität": "10.0 kWh", "Leistung": "5.0 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 8500,
+              "description": "Hochkapazitives System für größere Energieautarkie."
+            },
+            {
+              "name": "Sonnen sonnenBatterie 12",
+              "specs": { "Kapazität": "12.0 kWh", "Leistung": "6.0 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 9500,
+              "description": "Professionelles System mit erweiterten Backup-Funktionen."
+            },
+            {
+              "name": "Sonnen sonnenBatterie 15",
+              "specs": { "Kapazität": "15.0 kWh", "Leistung": "7.5 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 11500,
+              "description": "Maximal erweiterbares System für kommerzielle Anwendungen."
+            }
+          ]
+        },
+        "e3dc": {
+          "name": "E3/DC",
+          "logoUrl": "/assets/logos/e3dc.png",
+          "description": "E3/DC ist ein deutscher Hersteller von All-in-One Energiespeichersystemen mit integrierten Wechselrichtern.",
+          "whyWeTrust": [
+            "All-in-One Lösungen mit integrierten Komponenten.",
+            "Hohe Systemeffizienz und Zuverlässigkeit.",
+            "Deutsche Ingenieurskunst und Qualität."
+          ],
+          "products": [
+            {
+              "name": "E3/DC S10 E",
+              "specs": { "Kapazität": "10.0 kWh", "Leistung": "3.6 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 6800,
+              "description": "All-in-One Energiespeichersystem mit integriertem Wechselrichter."
+            },
+            {
+              "name": "E3/DC S10 X",
+              "specs": { "Kapazität": "10.0 kWh", "Leistung": "6.0 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 7500,
+              "description": "Erweiterte Version mit höherer Leistung für größere Anlagen."
+            },
+            {
+              "name": "E3/DC S10 Pro",
+              "specs": { "Kapazität": "10.0 kWh", "Leistung": "9.0 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 8200,
+              "description": "Professionelle Version mit erweiterten Monitoring-Funktionen."
+            },
+            {
+              "name": "E3/DC S20",
+              "specs": { "Kapazität": "20.0 kWh", "Leistung": "9.0 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 12500,
+              "description": "Doppelte Kapazität für größere Energieautarkie."
+            },
+            {
+              "name": "E3/DC S30",
+              "specs": { "Kapazität": "30.0 kWh", "Leistung": "12.0 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 17500,
+              "description": "Hochkapazitives System für gewerbliche Anwendungen."
+            }
+          ]
+        },
+        "varta": {
+          "name": "Varta Storage",
+          "logoUrl": "/assets/logos/varta.png",
+          "description": "Varta Storage ist die Energiesparte des deutschen Batterieherstellers Varta und spezialisiert auf Lithium-Ionen-Batterien für Solaranlagen.",
+          "whyWeTrust": [
+            "Über 130 Jahre Erfahrung in der Batterieproduktion.",
+            "Innovative Technologien und hohe Qualität.",
+            "Umfassender Service und Support in Europa."
+          ],
+          "products": [
+            {
+              "name": "Varta pulse neo 6",
+              "specs": { "Kapazität": "6.0 kWh", "Leistung": "3.0 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 4800,
+              "description": "Modulares Lithium-Ionen-System mit intelligenter Energiemanagement."
+            },
+            {
+              "name": "Varta pulse neo 12",
+              "specs": { "Kapazität": "12.0 kWh", "Leistung": "6.0 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 8200,
+              "description": "Erweiterbares System mit höherer Kapazität für mittlere Anlagen."
+            },
+            {
+              "name": "Varta pulse neo 18",
+              "specs": { "Kapazität": "18.0 kWh", "Leistung": "9.0 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 11500,
+              "description": "Hochkapazitives System für größere Wohnanlagen."
+            },
+            {
+              "name": "Varta element",
+              "specs": { "Kapazität": "2.4 kWh", "Leistung": "1.2 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 2200,
+              "description": "Kompaktes Modul für kleinere Installationen."
+            },
+            {
+              "name": "Varta pulse",
+              "specs": { "Kapazität": "13.0 kWh", "Leistung": "6.5 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 8900,
+              "description": "Professionelles System mit erweiterten Sicherheitsfeatures."
+            }
+          ]
+        },
+        "huawei": {
+          "name": "Huawei Digital Power",
+          "logoUrl": "/assets/logos/huawei.png",
+          "description": "Huawei Digital Power ist die Energiesparte von Huawei und bietet fortschrittliche Energiespeichersysteme mit AI-gestütztem Management.",
+          "whyWeTrust": [
+            "AI-gestützte Energiemanagement-Systeme.",
+            "Hohe Systemeffizienz und Zuverlässigkeit.",
+            "Umfassende Produktpalette und globaler Support."
+          ],
+          "products": [
+            {
+              "name": "Huawei Luna2000-5-S0",
+              "specs": { "Kapazität": "5.0 kWh", "Leistung": "2.5 kW", "Spannung": "150-850 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 3800,
+              "description": "Modulares System mit AI-gestütztem Energiemanagement."
+            },
+            {
+              "name": "Huawei Luna2000-10-S0",
+              "specs": { "Kapazität": "10.0 kWh", "Leistung": "5.0 kW", "Spannung": "150-850 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 6500,
+              "description": "Erweiterbares System mit höherer Kapazität."
+            },
+            {
+              "name": "Huawei Luna2000-15-S0",
+              "specs": { "Kapazität": "15.0 kWh", "Leistung": "7.5 kW", "Spannung": "150-850 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 9200,
+              "description": "Hochkapazitives System für größere Anlagen."
+            },
+            {
+              "name": "Huawei Luna2000-20-S0",
+              "specs": { "Kapazität": "20.0 kWh", "Leistung": "10.0 kW", "Spannung": "150-850 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 11800,
+              "description": "Professionelles System mit erweiterten Backup-Funktionen."
+            },
+            {
+              "name": "Huawei Luna2000-30-S0",
+              "specs": { "Kapazität": "30.0 kWh", "Leistung": "15.0 kW", "Spannung": "150-850 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 16500,
+              "description": "Maximal erweiterbares System für kommerzielle Anwendungen."
+            }
+          ]
+        },
+        "sma": {
+          "name": "SMA Solar Technology",
+          "logoUrl": "/assets/logos/sma.png",
+          "description": "SMA Solar Technology ist ein deutscher Hersteller von Wechselrichtern und Energiespeichersystemen mit umfassenden Monitoring-Lösungen.",
+          "whyWeTrust": [
+            "Über 40 Jahre Erfahrung in der Solartechnik.",
+            "Umfassende Monitoring-Lösungen mit Sunny Portal.",
+            "Hohe Qualität und Zuverlässigkeit."
+          ],
+          "products": [
+            {
+              "name": "SMA Sunny Boy Storage 3.7",
+              "specs": { "Kapazität": "2.0-10.0 kWh", "Leistung": "3.7 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 4200,
+              "description": "Intelligentes Batteriesystem mit Sunny Portal Monitoring."
+            },
+            {
+              "name": "SMA Sunny Boy Storage 5.0",
+              "specs": { "Kapazität": "2.0-15.0 kWh", "Leistung": "5.0 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 5800,
+              "description": "Erweiterte Version mit höherer Leistung."
+            },
+            {
+              "name": "SMA Sunny Boy Storage 6.0",
+              "specs": { "Kapazität": "2.0-18.0 kWh", "Leistung": "6.0 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 7200,
+              "description": "Hochleistungssystem mit erweiterten Monitoring-Funktionen."
+            },
+            {
+              "name": "SMA Sunny Central Storage 2200",
+              "specs": { "Kapazität": "2200 kWh", "Leistung": "1100 kW", "Spannung": "1500 V", "Zyklen": "5000", "Garantie": "10 Jahre" },
+              "price": 280000,
+              "description": "Großspeichersystem für Utility-Scale Anwendungen."
+            },
+            {
+              "name": "SMA Sunny Central Storage 2750",
+              "specs": { "Kapazität": "2750 kWh", "Leistung": "1100 kW", "Spannung": "1500 V", "Zyklen": "5000", "Garantie": "10 Jahre" },
+              "price": 350000,
+              "description": "Erweiterte Version für größere Energiespeicherprojekte."
+            }
+          ]
+        },
+        "fronius": {
+          "name": "Fronius International",
+          "logoUrl": "/assets/logos/fronius.png",
+          "description": "Fronius International ist ein österreichischer Hersteller von Schweißtechnik und Solartechnik mit innovativen Energiespeichersystemen.",
+          "whyWeTrust": [
+            "Innovative Technologien und hohe Qualität.",
+            "Umfassendes Energiemanagement-System.",
+            "Exzellenter Service und Support weltweit."
+          ],
+          "products": [
+            {
+              "name": "Fronius BYD Battery-Box 10.2",
+              "specs": { "Kapazität": "10.2 kWh", "Leistung": "5.1 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 7200,
+              "description": "Kooperationssystem mit BYD für optimale Integration."
+            },
+            {
+              "name": "Fronius LG Chem RESU 10",
+              "specs": { "Kapazität": "9.8 kWh", "Leistung": "5.0 kW", "Spannung": "400 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 6800,
+              "description": "LG Chem Batterie mit Fronius Energiemanagement."
+            },
+            {
+              "name": "Fronius Ohmpilot Storage",
+              "specs": { "Kapazität": "2.0-14.0 kWh", "Leistung": "3.0 kW", "Spannung": "48 V", "Zyklen": "8000", "Garantie": "10 Jahre" },
+              "price": 3800,
+              "description": "Intelligenter Verbrauchsoptimierer mit Speicherfunktion."
+            },
+            {
+              "name": "Fronius Symo Hybrid Storage",
+              "specs": { "Kapazität": "4.0-12.0 kWh", "Leistung": "3.0-5.0 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 5200,
+              "description": "Hybrid-System mit integriertem Wechselrichter."
+            },
+            {
+              "name": "Fronius Primo Hybrid Storage",
+              "specs": { "Kapazität": "3.0-9.0 kWh", "Leistung": "3.0-6.0 kW", "Spannung": "48 V", "Zyklen": "6000", "Garantie": "10 Jahre" },
+              "price": 4800,
+              "description": "Kompaktes Hybrid-System für Wohnanlagen."
+            }
+          ]
+        }
+      }
+    },
+    "Montagesysteme": {
+      "description": "Montagesysteme und Befestigungselemente für die sichere Installation von Solarmodulen auf Dächern und Freiflächen",
+      "existing_manufacturers": {},
+      "new_manufacturers": {
+        "schletter": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Schletter FixGrid Pro",
+              "specs": { "Material": "Aluminium", "Belastung": "5400 Pa", "Neigungswinkel": "10-45°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 85,
+              "description": "Professionelles Montagesystem für Flachdächer mit höchster Stabilität und Flexibilität."
+            },
+            {
+              "name": "Schletter FixGrid Plus",
+              "specs": { "Material": "Aluminium", "Belastung": "3600 Pa", "Neigungswinkel": "10-35°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 75,
+              "description": "Kosteneffizientes Flachdachsystem mit optimierter Materialausnutzung."
+            },
+            {
+              "name": "Schletter FixGrid Universal",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-30°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 65,
+              "description": "Universelles Montagesystem für verschiedene Flachdach-Anwendungen."
+            },
+            {
+              "name": "Schletter S-Dome",
+              "specs": { "Material": "Aluminium", "Belastung": "1600 Pa", "Neigungswinkel": "10-25°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 55,
+              "description": "Einfaches und schnelles Montagesystem für kleinere Anlagen."
+            },
+            {
+              "name": "Schletter FixGrid XXL",
+              "specs": { "Material": "Aluminium", "Belastung": "7200 Pa", "Neigungswinkel": "10-50°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 120,
+              "description": "Hochbelastbares System für extreme Wind- und Schneelasten."
+            }
+          ]
+        },
+        "esdec": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Esdec FlatFix Fusion",
+              "specs": { "Material": "Aluminium", "Belastung": "3600 Pa", "Neigungswinkel": "10-35°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 78,
+              "description": "Innovatives Flachdachsystem mit patentiertem Click-System für schnelle Montage."
+            },
+            {
+              "name": "Esdec FlatFix Wave",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-30°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 68,
+              "description": "Wellenförmiges Montagesystem für optimale Wasserableitung."
+            },
+            {
+              "name": "Esdec FlatFix Eco",
+              "specs": { "Material": "Aluminium", "Belastung": "1600 Pa", "Neigungswinkel": "10-25°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 58,
+              "description": "Kostengünstiges System für Standardanwendungen."
+            },
+            {
+              "name": "Esdec TiltFix Pro",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 72,
+              "description": "Universelles System für geneigte Dächer mit variabler Neigung."
+            },
+            {
+              "name": "Esdec FlatFix Extreme",
+              "specs": { "Material": "Aluminium", "Belastung": "5400 Pa", "Neigungswinkel": "10-40°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 95,
+              "description": "Extrem belastbares System für Küsten- und Bergregionen."
+            }
+          ]
+        },
+        "mounting-systems": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Mounting Systems MS-FLAT",
+              "specs": { "Material": "Aluminium", "Belastung": "3600 Pa", "Neigungswinkel": "10-35°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 70,
+              "description": "Modulares Flachdachsystem mit hoher Anpassungsfähigkeit."
+            },
+            {
+              "name": "Mounting Systems MS-TILT",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 65,
+              "description": "Flexibles System für geneigte Dächer aller Art."
+            },
+            {
+              "name": "Mounting Systems MS-GROUND",
+              "specs": { "Material": "Stahl/Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-60°", "Dachart": "Freifläche", "Garantie": "10 Jahre" },
+              "price": 85,
+              "description": "Bodenmontagesystem für Freiflächenanlagen mit stabiler Konstruktion."
+            },
+            {
+              "name": "Mounting Systems MS-COMPACT",
+              "specs": { "Material": "Aluminium", "Belastung": "1600 Pa", "Neigungswinkel": "10-30°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 55,
+              "description": "Kompaktes System für kleinere Dachflächen."
+            },
+            {
+              "name": "Mounting Systems MS-HEAVY",
+              "specs": { "Material": "Stahl", "Belastung": "7200 Pa", "Neigungswinkel": "10-45°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 110,
+              "description": "Schwerlastsystem für extreme Wetterbedingungen."
+            }
+          ]
+        },
+        "k2-systems": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "K2 Base Rail",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 60,
+              "description": "Klassisches Schienensystem für geneigte Dächer mit hoher Zuverlässigkeit."
+            },
+            {
+              "name": "K2 Dome",
+              "specs": { "Material": "Aluminium", "Belastung": "1600 Pa", "Neigungswinkel": "10-25°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 52,
+              "description": "Einfaches Flachdachsystem mit minimalem Montageaufwand."
+            },
+            {
+              "name": "K2 Wave",
+              "specs": { "Material": "Aluminium", "Belastung": "3600 Pa", "Neigungswinkel": "10-35°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 75,
+              "description": "Wellenförmiges System für optimale Statik und Wasserableitung."
+            },
+            {
+              "name": "K2 CrossRail",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 68,
+              "description": "Kreuzschiene für flexible Modulanordnung."
+            },
+            {
+              "name": "K2 Ground Mount",
+              "specs": { "Material": "Stahl/Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-60°", "Dachart": "Freifläche", "Garantie": "10 Jahre" },
+              "price": 82,
+              "description": "Bodenmontagesystem für großflächige Solarparks."
+            }
+          ]
+        },
+        "renusol": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Renusol ConSole",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 62,
+              "description": "Klassisches Konsolsystem für geneigte Dächer mit bewährter Technik."
+            },
+            {
+              "name": "Renusol ConSole+",
+              "specs": { "Material": "Aluminium", "Belastung": "3600 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 75,
+              "description": "Erweiterte Version mit höherer Belastbarkeit."
+            },
+            {
+              "name": "Renusol FlatCon",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-30°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 68,
+              "description": "Flachdachsystem mit optimierter Materialeffizienz."
+            },
+            {
+              "name": "Renusol FlatCon Plus",
+              "specs": { "Material": "Aluminium", "Belastung": "3600 Pa", "Neigungswinkel": "10-35°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 82,
+              "description": "Hochbelastbares Flachdachsystem für anspruchsvolle Standorte."
+            },
+            {
+              "name": "Renusol GroundFix",
+              "specs": { "Material": "Stahl/Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-60°", "Dachart": "Freifläche", "Garantie": "10 Jahre" },
+              "price": 78,
+              "description": "Bodenmontagesystem für Freiflächenanlagen aller Größen."
+            }
+          ]
+        },
+        "wuerth": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Würth Solar Rail",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 58,
+              "description": "Zuverlässiges Schienensystem mit Würth-Qualitätsstandards."
+            },
+            {
+              "name": "Würth Solar Flat",
+              "specs": { "Material": "Aluminium", "Belastung": "1600 Pa", "Neigungswinkel": "10-25°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 52,
+              "description": "Einfaches Flachdachsystem für Standardanwendungen."
+            },
+            {
+              "name": "Würth Solar Pro",
+              "specs": { "Material": "Aluminium", "Belastung": "3600 Pa", "Neigungswinkel": "10-40°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 72,
+              "description": "Professionelles System mit erweiterter Belastbarkeit."
+            },
+            {
+              "name": "Würth Solar Ground",
+              "specs": { "Material": "Stahl/Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-60°", "Dachart": "Freifläche", "Garantie": "10 Jahre" },
+              "price": 75,
+              "description": "Bodenmontagesystem mit stabiler Stahlkonstruktion."
+            },
+            {
+              "name": "Würth Solar Universal",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-45°", "Dachart": "Universal", "Garantie": "10 Jahre" },
+              "price": 65,
+              "description": "Universelles System für Dach und Bodenmontage."
+            }
+          ]
+        },
+        "alumero": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Alumero FlatFix",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-30°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 64,
+              "description": "Bewährtes Flachdachsystem mit deutscher Ingenieurskunst."
+            },
+            {
+              "name": "Alumero FlatFix Plus",
+              "specs": { "Material": "Aluminium", "Belastung": "3600 Pa", "Neigungswinkel": "10-35°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 78,
+              "description": "Erweiterte Version mit höherer Windlastkapazität."
+            },
+            {
+              "name": "Alumero TiltFix",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 68,
+              "description": "Flexibles System für geneigte Dächer aller Neigungen."
+            },
+            {
+              "name": "Alumero GroundFix",
+              "specs": { "Material": "Stahl/Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-60°", "Dachart": "Freifläche", "Garantie": "10 Jahre" },
+              "price": 80,
+              "description": "Robustes Bodenmontagesystem für Solarparks."
+            },
+            {
+              "name": "Alumero Compact",
+              "specs": { "Material": "Aluminium", "Belastung": "1600 Pa", "Neigungswinkel": "10-25°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 55,
+              "description": "Kompaktes System für kleinere Dachflächen und Aufdachanlagen."
+            }
+          ]
+        },
+        "krinner": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Krinner K-Light",
+              "specs": { "Material": "Stahl/Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-60°", "Dachart": "Freifläche", "Garantie": "10 Jahre" },
+              "price": 85,
+              "description": "Leichtes Bodenmontagesystem mit minimalem Materialeinsatz."
+            },
+            {
+              "name": "Krinner K-Force",
+              "specs": { "Material": "Stahl", "Belastung": "3600 Pa", "Neigungswinkel": "10-60°", "Dachart": "Freifläche", "Garantie": "10 Jahre" },
+              "price": 95,
+              "description": "Kraftvolles System für anspruchsvolle Standorte."
+            },
+            {
+              "name": "Krinner K-Fix",
+              "specs": { "Material": "Stahl/Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-45°", "Dachart": "Freifläche", "Garantie": "10 Jahre" },
+              "price": 78,
+              "description": "Schnellmontagesystem mit patentierten Verbindungselementen."
+            },
+            {
+              "name": "Krinner K-Flat",
+              "specs": { "Material": "Aluminium", "Belastung": "1600 Pa", "Neigungswinkel": "10-25°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 62,
+              "description": "Flachdachsystem mit optimierter Statik."
+            },
+            {
+              "name": "Krinner K-Tilt",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 70,
+              "description": "Universelles System für geneigte Dächer."
+            }
+          ]
+        },
+        "ibc-solar": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "IBC AeroFix",
+              "specs": { "Material": "Aluminium", "Belastung": "3600 Pa", "Neigungswinkel": "10-35°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 82,
+              "description": "Aerodynamisches Flachdachsystem mit minimalem Windwiderstand."
+            },
+            {
+              "name": "IBC RailFix",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 68,
+              "description": "Schienensystem mit hoher Flexibilität in der Modulanordnung."
+            },
+            {
+              "name": "IBC GroundFix",
+              "specs": { "Material": "Stahl/Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-60°", "Dachart": "Freifläche", "Garantie": "10 Jahre" },
+              "price": 88,
+              "description": "Bodenmontagesystem mit optimierter Materialausnutzung."
+            },
+            {
+              "name": "IBC FlatFix",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-30°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 72,
+              "description": "Klassisches Flachdachsystem mit bewährter Technik."
+            },
+            {
+              "name": "IBC Universal",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-45°", "Dachart": "Universal", "Garantie": "10 Jahre" },
+              "price": 75,
+              "description": "Universelles System für alle Montagearten und Dachformen."
+            }
+          ]
+        }
+      },
+      "new_manufacturer_data": {
+        "schletter": {
+          "name": "Schletter Group",
+          "logoUrl": "/assets/logos/schletter.png",
+          "description": "Schletter ist ein weltweit führender Hersteller von Montagesystemen für Solaranlagen mit über 40 Jahren Erfahrung.",
+          "whyWeTrust": [
+            "Über 40 Jahre Erfahrung in der Solarbranche.",
+            "Innovative Systemlösungen für alle Anwendungsbereiche.",
+            "Höchste Qualitätsstandards und umfassende Garantien."
+          ],
+          "products": [
+            {
+              "name": "Schletter FixGrid Pro",
+              "specs": { "Material": "Aluminium", "Belastung": "5400 Pa", "Neigungswinkel": "10-45°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 85,
+              "description": "Professionelles Montagesystem für Flachdächer mit höchster Stabilität und Flexibilität."
+            },
+            {
+              "name": "Schletter FixGrid Plus",
+              "specs": { "Material": "Aluminium", "Belastung": "3600 Pa", "Neigungswinkel": "10-35°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 75,
+              "description": "Kosteneffizientes Flachdachsystem mit optimierter Materialausnutzung."
+            },
+            {
+              "name": "Schletter FixGrid Universal",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-30°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 65,
+              "description": "Universelles Montagesystem für verschiedene Flachdach-Anwendungen."
+            },
+            {
+              "name": "Schletter S-Dome",
+              "specs": { "Material": "Aluminium", "Belastung": "1600 Pa", "Neigungswinkel": "10-25°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 55,
+              "description": "Einfaches und schnelles Montagesystem für kleinere Anlagen."
+            },
+            {
+              "name": "Schletter FixGrid XXL",
+              "specs": { "Material": "Aluminium", "Belastung": "7200 Pa", "Neigungswinkel": "10-50°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 120,
+              "description": "Hochbelastbares System für extreme Wind- und Schneelasten."
+            }
+          ]
+        },
+        "esdec": {
+          "name": "Esdec",
+          "logoUrl": "/assets/logos/esdec.png",
+          "description": "Esdec ist ein innovativer Hersteller von Montagesystemen mit Fokus auf einfache Installation und höchste Qualität.",
+          "whyWeTrust": [
+            "Innovative Click-Systeme für schnelle Montage.",
+            "Umfassende Produktpalette für alle Dacharten.",
+            "Hohe Qualität und Langlebigkeit."
+          ],
+          "products": [
+            {
+              "name": "Esdec FlatFix Fusion",
+              "specs": { "Material": "Aluminium", "Belastung": "3600 Pa", "Neigungswinkel": "10-35°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 78,
+              "description": "Innovatives Flachdachsystem mit patentiertem Click-System für schnelle Montage."
+            },
+            {
+              "name": "Esdec FlatFix Wave",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-30°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 68,
+              "description": "Wellenförmiges Montagesystem für optimale Wasserableitung."
+            },
+            {
+              "name": "Esdec FlatFix Eco",
+              "specs": { "Material": "Aluminium", "Belastung": "1600 Pa", "Neigungswinkel": "10-25°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 58,
+              "description": "Kostengünstiges System für Standardanwendungen."
+            },
+            {
+              "name": "Esdec TiltFix Pro",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 72,
+              "description": "Universelles System für geneigte Dächer mit variabler Neigung."
+            },
+            {
+              "name": "Esdec FlatFix Extreme",
+              "specs": { "Material": "Aluminium", "Belastung": "5400 Pa", "Neigungswinkel": "10-40°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 95,
+              "description": "Extrem belastbares System für Küsten- und Bergregionen."
+            }
+          ]
+        },
+        "mounting-systems": {
+          "name": "Mounting Systems",
+          "logoUrl": "/assets/logos/mounting-systems.png",
+          "description": "Mounting Systems ist ein internationaler Hersteller von Montagesystemen mit Fokus auf modulare und skalierbare Lösungen.",
+          "whyWeTrust": [
+            "Modulare Systeme für flexible Anwendungen.",
+            "Internationale Präsenz und Erfahrung.",
+            "Innovative Lösungen für Dach und Bodenmontage."
+          ],
+          "products": [
+            {
+              "name": "Mounting Systems MS-FLAT",
+              "specs": { "Material": "Aluminium", "Belastung": "3600 Pa", "Neigungswinkel": "10-35°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 70,
+              "description": "Modulares Flachdachsystem mit hoher Anpassungsfähigkeit."
+            },
+            {
+              "name": "Mounting Systems MS-TILT",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 65,
+              "description": "Flexibles System für geneigte Dächer aller Art."
+            },
+            {
+              "name": "Mounting Systems MS-GROUND",
+              "specs": { "Material": "Stahl/Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-60°", "Dachart": "Freifläche", "Garantie": "10 Jahre" },
+              "price": 85,
+              "description": "Bodenmontagesystem für Freiflächenanlagen mit stabiler Konstruktion."
+            },
+            {
+              "name": "Mounting Systems MS-COMPACT",
+              "specs": { "Material": "Aluminium", "Belastung": "1600 Pa", "Neigungswinkel": "10-30°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 55,
+              "description": "Kompaktes System für kleinere Dachflächen."
+            },
+            {
+              "name": "Mounting Systems MS-HEAVY",
+              "specs": { "Material": "Stahl", "Belastung": "7200 Pa", "Neigungswinkel": "10-45°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 110,
+              "description": "Schwerlastsystem für extreme Wetterbedingungen."
+            }
+          ]
+        },
+        "k2-systems": {
+          "name": "K2 Systems",
+          "logoUrl": "/assets/logos/k2-systems.png",
+          "description": "K2 Systems ist ein deutscher Hersteller von Montagesystemen mit über 20 Jahren Erfahrung in der Solarbranche.",
+          "whyWeTrust": [
+            "Über 20 Jahre Erfahrung in der Solartechnik.",
+            "Innovative Systemlösungen für alle Anwendungen.",
+            "Hohe Qualität und Zuverlässigkeit."
+          ],
+          "products": [
+            {
+              "name": "K2 Base Rail",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 60,
+              "description": "Klassisches Schienensystem für geneigte Dächer mit hoher Zuverlässigkeit."
+            },
+            {
+              "name": "K2 Dome",
+              "specs": { "Material": "Aluminium", "Belastung": "1600 Pa", "Neigungswinkel": "10-25°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 52,
+              "description": "Einfaches Flachdachsystem mit minimalem Montageaufwand."
+            },
+            {
+              "name": "K2 Wave",
+              "specs": { "Material": "Aluminium", "Belastung": "3600 Pa", "Neigungswinkel": "10-35°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 75,
+              "description": "Wellenförmiges System für optimale Statik und Wasserableitung."
+            },
+            {
+              "name": "K2 CrossRail",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 68,
+              "description": "Kreuzschiene für flexible Modulanordnung."
+            },
+            {
+              "name": "K2 Ground Mount",
+              "specs": { "Material": "Stahl/Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-60°", "Dachart": "Freifläche", "Garantie": "10 Jahre" },
+              "price": 82,
+              "description": "Bodenmontagesystem für großflächige Solarparks."
+            }
+          ]
+        },
+        "renusol": {
+          "name": "Renusol",
+          "logoUrl": "/assets/logos/renusol.png",
+          "description": "Renusol ist ein etablierter Hersteller von Montagesystemen mit Fokus auf bewährte Technik und Zuverlässigkeit.",
+          "whyWeTrust": [
+            "Langjährige Erfahrung und bewährte Technik.",
+            "Umfassende Produktpalette für alle Anwendungen.",
+            "Hohe Qualitätsstandards und Service."
+          ],
+          "products": [
+            {
+              "name": "Renusol ConSole",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 62,
+              "description": "Klassisches Konsolsystem für geneigte Dächer mit bewährter Technik."
+            },
+            {
+              "name": "Renusol ConSole+",
+              "specs": { "Material": "Aluminium", "Belastung": "3600 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 75,
+              "description": "Erweiterte Version mit höherer Belastbarkeit."
+            },
+            {
+              "name": "Renusol FlatCon",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-30°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 68,
+              "description": "Flachdachsystem mit optimierter Materialeffizienz."
+            },
+            {
+              "name": "Renusol FlatCon Plus",
+              "specs": { "Material": "Aluminium", "Belastung": "3600 Pa", "Neigungswinkel": "10-35°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 82,
+              "description": "Hochbelastbares Flachdachsystem für anspruchsvolle Standorte."
+            },
+            {
+              "name": "Renusol GroundFix",
+              "specs": { "Material": "Stahl/Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-60°", "Dachart": "Freifläche", "Garantie": "10 Jahre" },
+              "price": 78,
+              "description": "Bodenmontagesystem für Freiflächenanlagen aller Größen."
+            }
+          ]
+        },
+        "wuerth": {
+          "name": "Würth Solar",
+          "logoUrl": "/assets/logos/wuerth.png",
+          "description": "Würth Solar ist Teil des Würth-Konzerns und bietet Montagesysteme mit der bekannten Würth-Qualität.",
+          "whyWeTrust": [
+            "Würth-Qualitätsstandards und Zuverlässigkeit.",
+            "Umfassendes Sortiment an Befestigungselementen.",
+            "Exzellenter Service und technische Unterstützung."
+          ],
+          "products": [
+            {
+              "name": "Würth Solar Rail",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 58,
+              "description": "Zuverlässiges Schienensystem mit Würth-Qualitätsstandards."
+            },
+            {
+              "name": "Würth Solar Flat",
+              "specs": { "Material": "Aluminium", "Belastung": "1600 Pa", "Neigungswinkel": "10-25°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 52,
+              "description": "Einfaches Flachdachsystem für Standardanwendungen."
+            },
+            {
+              "name": "Würth Solar Pro",
+              "specs": { "Material": "Aluminium", "Belastung": "3600 Pa", "Neigungswinkel": "10-40°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 72,
+              "description": "Professionelles System mit erweiterter Belastbarkeit."
+            },
+            {
+              "name": "Würth Solar Ground",
+              "specs": { "Material": "Stahl/Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-60°", "Dachart": "Freifläche", "Garantie": "10 Jahre" },
+              "price": 75,
+              "description": "Bodenmontagesystem mit stabiler Stahlkonstruktion."
+            },
+            {
+              "name": "Würth Solar Universal",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-45°", "Dachart": "Universal", "Garantie": "10 Jahre" },
+              "price": 65,
+              "description": "Universelles System für Dach und Bodenmontage."
+            }
+          ]
+        },
+        "alumero": {
+          "name": "Alumero",
+          "logoUrl": "/assets/logos/alumero.png",
+          "description": "Alumero ist ein deutscher Hersteller von Montagesystemen mit Fokus auf Qualität und Ingenieurskunst.",
+          "whyWeTrust": [
+            "Deutsche Ingenieurskunst und Qualität.",
+            "Umfassende Erfahrung in der Solarbranche.",
+            "Innovative Lösungen für alle Montagearten."
+          ],
+          "products": [
+            {
+              "name": "Alumero FlatFix",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-30°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 64,
+              "description": "Bewährtes Flachdachsystem mit deutscher Ingenieurskunst."
+            },
+            {
+              "name": "Alumero FlatFix Plus",
+              "specs": { "Material": "Aluminium", "Belastung": "3600 Pa", "Neigungswinkel": "10-35°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 78,
+              "description": "Erweiterte Version mit höherer Windlastkapazität."
+            },
+            {
+              "name": "Alumero TiltFix",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 68,
+              "description": "Flexibles System für geneigte Dächer aller Neigungen."
+            },
+            {
+              "name": "Alumero GroundFix",
+              "specs": { "Material": "Stahl/Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-60°", "Dachart": "Freifläche", "Garantie": "10 Jahre" },
+              "price": 80,
+              "description": "Robustes Bodenmontagesystem für Solarparks."
+            },
+            {
+              "name": "Alumero Compact",
+              "specs": { "Material": "Aluminium", "Belastung": "1600 Pa", "Neigungswinkel": "10-25°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 55,
+              "description": "Kompaktes System für kleinere Dachflächen und Aufdachanlagen."
+            }
+          ]
+        },
+        "krinner": {
+          "name": "Krinner",
+          "logoUrl": "/assets/logos/krinner.png",
+          "description": "Krinner ist ein innovativer Hersteller von Montagesystemen mit Fokus auf Bodenmontage und schnelle Installation.",
+          "whyWeTrust": [
+            "Innovative Verbindungstechnik für schnelle Montage.",
+            "Spezialisierung auf Bodenmontagesysteme.",
+            "Hohe Materialeffizienz und Stabilität."
+          ],
+          "products": [
+            {
+              "name": "Krinner K-Light",
+              "specs": { "Material": "Stahl/Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-60°", "Dachart": "Freifläche", "Garantie": "10 Jahre" },
+              "price": 85,
+              "description": "Leichtes Bodenmontagesystem mit minimalem Materialeinsatz."
+            },
+            {
+              "name": "Krinner K-Force",
+              "specs": { "Material": "Stahl", "Belastung": "3600 Pa", "Neigungswinkel": "10-60°", "Dachart": "Freifläche", "Garantie": "10 Jahre" },
+              "price": 95,
+              "description": "Kraftvolles System für anspruchsvolle Standorte."
+            },
+            {
+              "name": "Krinner K-Fix",
+              "specs": { "Material": "Stahl/Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-45°", "Dachart": "Freifläche", "Garantie": "10 Jahre" },
+              "price": 78,
+              "description": "Schnellmontagesystem mit patentierten Verbindungselementen."
+            },
+            {
+              "name": "Krinner K-Flat",
+              "specs": { "Material": "Aluminium", "Belastung": "1600 Pa", "Neigungswinkel": "10-25°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 62,
+              "description": "Flachdachsystem mit optimierter Statik."
+            },
+            {
+              "name": "Krinner K-Tilt",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 70,
+              "description": "Universelles System für geneigte Dächer."
+            }
+          ]
+        },
+        "ibc-solar": {
+          "name": "IBC Solar",
+          "logoUrl": "/assets/logos/ibc-solar.png",
+          "description": "IBC Solar ist ein internationaler Hersteller von Montagesystemen mit Fokus auf Innovation und Qualität.",
+          "whyWeTrust": [
+            "Internationale Erfahrung und Präsenz.",
+            "Innovative aerodynamische Systeme.",
+            "Hohe Qualitätsstandards und Garantien."
+          ],
+          "products": [
+            {
+              "name": "IBC AeroFix",
+              "specs": { "Material": "Aluminium", "Belastung": "3600 Pa", "Neigungswinkel": "10-35°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 82,
+              "description": "Aerodynamisches Flachdachsystem mit minimalem Windwiderstand."
+            },
+            {
+              "name": "IBC RailFix",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "15-45°", "Dachart": "Pultdach", "Garantie": "10 Jahre" },
+              "price": 68,
+              "description": "Schienensystem mit hoher Flexibilität in der Modulanordnung."
+            },
+            {
+              "name": "IBC GroundFix",
+              "specs": { "Material": "Stahl/Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-60°", "Dachart": "Freifläche", "Garantie": "10 Jahre" },
+              "price": 88,
+              "description": "Bodenmontagesystem mit optimierter Materialausnutzung."
+            },
+            {
+              "name": "IBC FlatFix",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-30°", "Dachart": "Flachdach", "Garantie": "10 Jahre" },
+              "price": 72,
+              "description": "Klassisches Flachdachsystem mit bewährter Technik."
+            },
+            {
+              "name": "IBC Universal",
+              "specs": { "Material": "Aluminium", "Belastung": "2400 Pa", "Neigungswinkel": "10-45°", "Dachart": "Universal", "Garantie": "10 Jahre" },
+              "price": 75,
+              "description": "Universelles System für alle Montagearten und Dachformen."
+            }
+          ]
+        }
+      }
+    },
+    "Solaroptimierer": {
+      "description": "Power Optimizer für die modulweise Leistungsoptimierung von Solarmodulen zur Maximierung der Energieausbeute",
+      "existing_manufacturers": {},
+      "new_manufacturers": {
+        "solaredge": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "SolarEdge P320",
+              "specs": { "Leistung": "320 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 45,
+              "description": "Hochleistungs-Power-Optimizer mit integriertem Monitoring für maximale Modulleistung."
+            },
+            {
+              "name": "SolarEdge P370",
+              "specs": { "Leistung": "370 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 52,
+              "description": "Erweiterte Version für höhere Modulleistungen bis 370W."
+            },
+            {
+              "name": "SolarEdge P404",
+              "specs": { "Leistung": "404 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 58,
+              "description": "Power Optimizer für moderne Hochleistungsmodule."
+            },
+            {
+              "name": "SolarEdge P485",
+              "specs": { "Leistung": "485 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 65,
+              "description": "Professioneller Optimizer für große Solarmodule."
+            },
+            {
+              "name": "SolarEdge P505",
+              "specs": { "Leistung": "505 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 72,
+              "description": "Höchstleistungs-Optimizer für Utility-Scale Anwendungen."
+            }
+          ]
+        },
+        "tigo": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Tigo TS4-A-O",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 48,
+              "description": "Intelligenter Power Optimizer mit Rapid Shutdown und Monitoring."
+            },
+            {
+              "name": "Tigo TS4-A-S",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 55,
+              "description": "Safety-Version mit integriertem Rapid Shutdown für Brandschutz."
+            },
+            {
+              "name": "Tigo TS4-A-F",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 62,
+              "description": "Flex-Version mit erweiterten Monitoring-Funktionen."
+            },
+            {
+              "name": "Tigo TS4-A-M",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 68,
+              "description": "Multi-Contact-Version für verschiedene Modulhersteller."
+            },
+            {
+              "name": "Tigo TS4-A-P",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 75,
+              "description": "Premium-Version mit erweiterten Sicherheitsfeatures."
+            }
+          ]
+        },
+        "huawei": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Huawei SUN2000-450W-P",
+              "specs": { "Leistung": "450 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 55,
+              "description": "AI-gestützter Power Optimizer mit intelligenter Leistungsoptimierung."
+            },
+            {
+              "name": "Huawei SUN2000-500W-P",
+              "specs": { "Leistung": "500 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 62,
+              "description": "Hochleistungs-Optimizer für moderne Solarmodule."
+            },
+            {
+              "name": "Huawei SUN2000-600W-P",
+              "specs": { "Leistung": "600 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 68,
+              "description": "Professioneller Optimizer für große Anlagen."
+            },
+            {
+              "name": "Huawei SUN2000-700W-P",
+              "specs": { "Leistung": "700 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 75,
+              "description": "Höchstleistungs-Optimizer mit erweiterten Features."
+            },
+            {
+              "name": "Huawei SUN2000-800W-P",
+              "specs": { "Leistung": "800 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 82,
+              "description": "Premium-Optimizer für Utility-Scale Projekte."
+            }
+          ]
+        },
+        "apsystems": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "APSystems YC500A",
+              "specs": { "Leistung": "500 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 58,
+              "description": "Kosteneffizienter Power Optimizer mit integriertem Monitoring."
+            },
+            {
+              "name": "APSystems YC600A",
+              "specs": { "Leistung": "600 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 65,
+              "description": "Hochleistungs-Optimizer für moderne Module."
+            },
+            {
+              "name": "APSystems YC700A",
+              "specs": { "Leistung": "700 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 72,
+              "description": "Professionelle Version mit erweiterten Features."
+            },
+            {
+              "name": "APSystems YC800A",
+              "specs": { "Leistung": "800 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 78,
+              "description": "Höchstleistungs-Optimizer für große Anlagen."
+            },
+            {
+              "name": "APSystems YC1000A",
+              "specs": { "Leistung": "1000 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 85,
+              "description": "Premium-Optimizer für Utility-Scale Anwendungen."
+            }
+          ]
+        },
+        "ginlong": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Ginlong Solis-1P(2.5-6)K-4G",
+              "specs": { "Leistung": "2500-6000 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 52,
+              "description": "Intelligenter Optimizer mit integriertem Wechselrichter."
+            },
+            {
+              "name": "Ginlong Solis-3P(5-10)K-4G",
+              "specs": { "Leistung": "5000-10000 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 68,
+              "description": "Dreiphasiger Optimizer für gewerbliche Anlagen."
+            },
+            {
+              "name": "Ginlong Solis-3P(12-20)K-4G",
+              "specs": { "Leistung": "12000-20000 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 85,
+              "description": "Hochleistungs-Optimizer für große Solarparks."
+            },
+            {
+              "name": "Ginlong Solis-3P(25-30)K-4G",
+              "specs": { "Leistung": "25000-30000 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 95,
+              "description": "Professioneller Optimizer für Utility-Scale Projekte."
+            },
+            {
+              "name": "Ginlong Solis-3P(40-50)K-4G",
+              "specs": { "Leistung": "40000-50000 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 110,
+              "description": "Megawatt-Optimizer für große Solaranlagen."
+            }
+          ]
+        },
+        "darfon": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Darfon M1P350A",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 48,
+              "description": "Zuverlässiger Power Optimizer mit hoher Effizienz."
+            },
+            {
+              "name": "Darfon M1P400A",
+              "specs": { "Leistung": "400 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 55,
+              "description": "Erweiterte Version für höhere Modulleistungen."
+            },
+            {
+              "name": "Darfon M1P500A",
+              "specs": { "Leistung": "500 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 62,
+              "description": "Hochleistungs-Optimizer für moderne Module."
+            },
+            {
+              "name": "Darfon M1P600A",
+              "specs": { "Leistung": "600 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 68,
+              "description": "Professioneller Optimizer mit erweiterten Features."
+            },
+            {
+              "name": "Darfon M1P700A",
+              "specs": { "Leistung": "700 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 75,
+              "description": "Premium-Optimizer für anspruchsvolle Anwendungen."
+            }
+          ]
+        },
+        "chilicon-power": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Chilicon CP-250-60-500",
+              "specs": { "Leistung": "500 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 55,
+              "description": "Kosteneffizienter Power Optimizer mit guter Leistung."
+            },
+            {
+              "name": "Chilicon CP-250-60-600",
+              "specs": { "Leistung": "600 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 62,
+              "description": "Hochleistungs-Optimizer für moderne Solarmodule."
+            },
+            {
+              "name": "Chilicon CP-250-60-700",
+              "specs": { "Leistung": "700 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 68,
+              "description": "Professionelle Version mit erweiterten Monitoring-Funktionen."
+            },
+            {
+              "name": "Chilicon CP-250-60-800",
+              "specs": { "Leistung": "800 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 75,
+              "description": "Höchstleistungs-Optimizer für große Anlagen."
+            },
+            {
+              "name": "Chilicon CP-250-60-1000",
+              "specs": { "Leistung": "1000 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 82,
+              "description": "Premium-Optimizer für Utility-Scale Anwendungen."
+            }
+          ]
+        },
+        "altenergy-power": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Altenergy Power TS4-O",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 52,
+              "description": "Zuverlässiger Power Optimizer mit integriertem Monitoring."
+            },
+            {
+              "name": "Altenergy Power TS4-S",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 58,
+              "description": "Safety-Version mit Rapid Shutdown Funktionalität."
+            },
+            {
+              "name": "Altenergy Power TS4-F",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 65,
+              "description": "Flex-Version mit erweiterten Kommunikationsfeatures."
+            },
+            {
+              "name": "Altenergy Power TS4-M",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 72,
+              "description": "Multi-Contact-Version für verschiedene Modulhersteller."
+            },
+            {
+              "name": "Altenergy Power TS4-P",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 78,
+              "description": "Premium-Version mit vollständigen Monitoring-Funktionen."
+            }
+          ]
+        },
+        "sunpro-solar": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Sunpro Solar P360",
+              "specs": { "Leistung": "360 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 48,
+              "description": "Einfacher Power Optimizer mit guter Leistung."
+            },
+            {
+              "name": "Sunpro Solar P400",
+              "specs": { "Leistung": "400 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 55,
+              "description": "Erweiterte Version für höhere Modulleistungen."
+            },
+            {
+              "name": "Sunpro Solar P500",
+              "specs": { "Leistung": "500 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 62,
+              "description": "Hochleistungs-Optimizer für moderne Solarmodule."
+            },
+            {
+              "name": "Sunpro Solar P600",
+              "specs": { "Leistung": "600 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 68,
+              "description": "Professioneller Optimizer mit Monitoring."
+            },
+            {
+              "name": "Sunpro Solar P700",
+              "specs": { "Leistung": "700 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 75,
+              "description": "Premium-Optimizer für anspruchsvolle Anwendungen."
+            }
+          ]
+        }
+      },
+      "new_manufacturer_data": {
+        "solaredge": {
+          "name": "SolarEdge Technologies",
+          "logoUrl": "/assets/logos/solaredge.png",
+          "description": "SolarEdge ist ein weltweit führender Hersteller von Power Optimizern und intelligenter Solartechnik.",
+          "whyWeTrust": [
+            "Über 10 Jahre Erfahrung mit Power Optimizer Technologie.",
+            "Höchste Effizienz und umfassendes Monitoring.",
+            "25 Jahre Garantie auf Optimizer."
+          ],
+          "products": [
+            {
+              "name": "SolarEdge P320",
+              "specs": { "Leistung": "320 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 45,
+              "description": "Hochleistungs-Power-Optimizer mit integriertem Monitoring für maximale Modulleistung."
+            },
+            {
+              "name": "SolarEdge P370",
+              "specs": { "Leistung": "370 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 52,
+              "description": "Erweiterte Version für höhere Modulleistungen bis 370W."
+            },
+            {
+              "name": "SolarEdge P404",
+              "specs": { "Leistung": "404 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 58,
+              "description": "Power Optimizer für moderne Hochleistungsmodule."
+            },
+            {
+              "name": "SolarEdge P485",
+              "specs": { "Leistung": "485 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 65,
+              "description": "Professioneller Optimizer für große Solarmodule."
+            },
+            {
+              "name": "SolarEdge P505",
+              "specs": { "Leistung": "505 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 72,
+              "description": "Höchstleistungs-Optimizer für Utility-Scale Anwendungen."
+            }
+          ]
+        },
+        "tigo": {
+          "name": "Tigo Energy",
+          "logoUrl": "/assets/logos/tigo.png",
+          "description": "Tigo Energy ist ein innovativer Hersteller von Power Optimizern mit Fokus auf Sicherheit und Monitoring.",
+          "whyWeTrust": [
+            "Innovative Rapid Shutdown Technologie.",
+            "Umfassende Monitoring-Lösungen.",
+            "Hohe Zuverlässigkeit und Sicherheit."
+          ],
+          "products": [
+            {
+              "name": "Tigo TS4-A-O",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 48,
+              "description": "Intelligenter Power Optimizer mit Rapid Shutdown und Monitoring."
+            },
+            {
+              "name": "Tigo TS4-A-S",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 55,
+              "description": "Safety-Version mit integriertem Rapid Shutdown für Brandschutz."
+            },
+            {
+              "name": "Tigo TS4-A-F",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 62,
+              "description": "Flex-Version mit erweiterten Monitoring-Funktionen."
+            },
+            {
+              "name": "Tigo TS4-A-M",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 68,
+              "description": "Multi-Contact-Version für verschiedene Modulhersteller."
+            },
+            {
+              "name": "Tigo TS4-A-P",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 75,
+              "description": "Premium-Version mit erweiterten Sicherheitsfeatures."
+            }
+          ]
+        },
+        "huawei": {
+          "name": "Huawei Digital Power",
+          "logoUrl": "/assets/logos/huawei.png",
+          "description": "Huawei Digital Power bietet fortschrittliche Power Optimizer mit AI-gestützter Optimierung.",
+          "whyWeTrust": [
+            "AI-gestützte Leistungsoptimierung.",
+            "Hohe Systemeffizienz und Zuverlässigkeit.",
+            "Umfassende Garantie und Support."
+          ],
+          "products": [
+            {
+              "name": "Huawei SUN2000-450W-P",
+              "specs": { "Leistung": "450 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 55,
+              "description": "AI-gestützter Power Optimizer mit intelligenter Leistungsoptimierung."
+            },
+            {
+              "name": "Huawei SUN2000-500W-P",
+              "specs": { "Leistung": "500 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 62,
+              "description": "Hochleistungs-Optimizer für moderne Solarmodule."
+            },
+            {
+              "name": "Huawei SUN2000-600W-P",
+              "specs": { "Leistung": "600 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 68,
+              "description": "Professioneller Optimizer für große Anlagen."
+            },
+            {
+              "name": "Huawei SUN2000-700W-P",
+              "specs": { "Leistung": "700 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 75,
+              "description": "Höchstleistungs-Optimizer mit erweiterten Features."
+            },
+            {
+              "name": "Huawei SUN2000-800W-P",
+              "specs": { "Leistung": "800 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 82,
+              "description": "Premium-Optimizer für Utility-Scale Projekte."
+            }
+          ]
+        },
+        "apsystems": {
+          "name": "APSystems",
+          "logoUrl": "/assets/logos/apsystems.png",
+          "description": "APSystems ist ein etablierter Hersteller von Power Optimizern mit Fokus auf Kosteneffizienz.",
+          "whyWeTrust": [
+            "Hervorragendes Preis-Leistungs-Verhältnis.",
+            "Zuverlässige Technologie und Monitoring.",
+            "Umfassender Service und Support."
+          ],
+          "products": [
+            {
+              "name": "APSystems YC500A",
+              "specs": { "Leistung": "500 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 58,
+              "description": "Kosteneffizienter Power Optimizer mit integriertem Monitoring."
+            },
+            {
+              "name": "APSystems YC600A",
+              "specs": { "Leistung": "600 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 65,
+              "description": "Hochleistungs-Optimizer für moderne Module."
+            },
+            {
+              "name": "APSystems YC700A",
+              "specs": { "Leistung": "700 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 72,
+              "description": "Professionelle Version mit erweiterten Features."
+            },
+            {
+              "name": "APSystems YC800A",
+              "specs": { "Leistung": "800 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 78,
+              "description": "Höchstleistungs-Optimizer für große Anlagen."
+            },
+            {
+              "name": "APSystems YC1000A",
+              "specs": { "Leistung": "1000 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 85,
+              "description": "Premium-Optimizer für Utility-Scale Anwendungen."
+            }
+          ]
+        },
+        "ginlong": {
+          "name": "Ginlong Technologies",
+          "logoUrl": "/assets/logos/ginlong.png",
+          "description": "Ginlong Technologies ist ein chinesischer Hersteller von Wechselrichtern und Power Optimizern.",
+          "whyWeTrust": [
+            "Umfassende Produktpalette von Residential bis Utility-Scale.",
+            "Hohe Qualität und Zuverlässigkeit.",
+            "Innovative Technologien und guter Service."
+          ],
+          "products": [
+            {
+              "name": "Ginlong Solis-1P(2.5-6)K-4G",
+              "specs": { "Leistung": "2500-6000 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 52,
+              "description": "Intelligenter Optimizer mit integriertem Wechselrichter."
+            },
+            {
+              "name": "Ginlong Solis-3P(5-10)K-4G",
+              "specs": { "Leistung": "5000-10000 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 68,
+              "description": "Dreiphasiger Optimizer für gewerbliche Anlagen."
+            },
+            {
+              "name": "Ginlong Solis-3P(12-20)K-4G",
+              "specs": { "Leistung": "12000-20000 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 85,
+              "description": "Hochleistungs-Optimizer für große Solarparks."
+            },
+            {
+              "name": "Ginlong Solis-3P(25-30)K-4G",
+              "specs": { "Leistung": "25000-30000 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 95,
+              "description": "Professioneller Optimizer für Utility-Scale Projekte."
+            },
+            {
+              "name": "Ginlong Solis-3P(40-50)K-4G",
+              "specs": { "Leistung": "40000-50000 W", "Eingangsspannung": "8-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 110,
+              "description": "Megawatt-Optimizer für große Solaranlagen."
+            }
+          ]
+        },
+        "darfon": {
+          "name": "Darfon Electronics",
+          "logoUrl": "/assets/logos/darfon.png",
+          "description": "Darfon Electronics ist ein taiwanischer Hersteller von Power Optimizern mit hoher Qualität.",
+          "whyWeTrust": [
+            "Hohe Qualitätsstandards und Zuverlässigkeit.",
+            "Umfassende Erfahrung in der Elektronikproduktion.",
+            "Gute technische Unterstützung."
+          ],
+          "products": [
+            {
+              "name": "Darfon M1P350A",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 48,
+              "description": "Zuverlässiger Power Optimizer mit hoher Effizienz."
+            },
+            {
+              "name": "Darfon M1P400A",
+              "specs": { "Leistung": "400 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 55,
+              "description": "Erweiterte Version für höhere Modulleistungen."
+            },
+            {
+              "name": "Darfon M1P500A",
+              "specs": { "Leistung": "500 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 62,
+              "description": "Hochleistungs-Optimizer für moderne Module."
+            },
+            {
+              "name": "Darfon M1P600A",
+              "specs": { "Leistung": "600 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 68,
+              "description": "Professioneller Optimizer mit erweiterten Features."
+            },
+            {
+              "name": "Darfon M1P700A",
+              "specs": { "Leistung": "700 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 75,
+              "description": "Premium-Optimizer für anspruchsvolle Anwendungen."
+            }
+          ]
+        },
+        "chilicon-power": {
+          "name": "Chilicon Power",
+          "logoUrl": "/assets/logos/chilicon.png",
+          "description": "Chilicon Power ist ein chinesischer Hersteller von Power Optimizern mit Fokus auf Kosteneffizienz.",
+          "whyWeTrust": [
+            "Hervorragendes Preis-Leistungs-Verhältnis.",
+            "Zuverlässige Technologie und Qualität.",
+            "Gute Verfügbarkeit und Service."
+          ],
+          "products": [
+            {
+              "name": "Chilicon CP-250-60-500",
+              "specs": { "Leistung": "500 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 55,
+              "description": "Kosteneffizienter Power Optimizer mit guter Leistung."
+            },
+            {
+              "name": "Chilicon CP-250-60-600",
+              "specs": { "Leistung": "600 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 62,
+              "description": "Hochleistungs-Optimizer für moderne Solarmodule."
+            },
+            {
+              "name": "Chilicon CP-250-60-700",
+              "specs": { "Leistung": "700 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 68,
+              "description": "Professionelle Version mit erweiterten Monitoring-Funktionen."
+            },
+            {
+              "name": "Chilicon CP-250-60-800",
+              "specs": { "Leistung": "800 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 75,
+              "description": "Höchstleistungs-Optimizer für große Anlagen."
+            },
+            {
+              "name": "Chilicon CP-250-60-1000",
+              "specs": { "Leistung": "1000 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 82,
+              "description": "Premium-Optimizer für Utility-Scale Anwendungen."
+            }
+          ]
+        },
+        "altenergy-power": {
+          "name": "Altenergy Power System",
+          "logoUrl": "/assets/logos/altenergy.png",
+          "description": "Altenergy Power System ist ein Hersteller von Power Optimizern mit Fokus auf Sicherheit und Monitoring.",
+          "whyWeTrust": [
+            "Innovative Sicherheitsfeatures.",
+            "Umfassende Monitoring-Lösungen.",
+            "Hohe Zuverlässigkeit und Qualität."
+          ],
+          "products": [
+            {
+              "name": "Altenergy Power TS4-O",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 52,
+              "description": "Zuverlässiger Power Optimizer mit integriertem Monitoring."
+            },
+            {
+              "name": "Altenergy Power TS4-S",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 58,
+              "description": "Safety-Version mit Rapid Shutdown Funktionalität."
+            },
+            {
+              "name": "Altenergy Power TS4-F",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 65,
+              "description": "Flex-Version mit erweiterten Kommunikationsfeatures."
+            },
+            {
+              "name": "Altenergy Power TS4-M",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 72,
+              "description": "Multi-Contact-Version für verschiedene Modulhersteller."
+            },
+            {
+              "name": "Altenergy Power TS4-P",
+              "specs": { "Leistung": "350 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 78,
+              "description": "Premium-Version mit vollständigen Monitoring-Funktionen."
+            }
+          ]
+        },
+        "sunpro-solar": {
+          "name": "Sunpro Solar",
+          "logoUrl": "/assets/logos/sunpro.png",
+          "description": "Sunpro Solar ist ein Hersteller von Power Optimizern mit Fokus auf Einfachheit und Zuverlässigkeit.",
+          "whyWeTrust": [
+            "Einfache Installation und Bedienung.",
+            "Zuverlässige Technologie.",
+            "Gutes Preis-Leistungs-Verhältnis."
+          ],
+          "products": [
+            {
+              "name": "Sunpro Solar P360",
+              "specs": { "Leistung": "360 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 48,
+              "description": "Einfacher Power Optimizer mit guter Leistung."
+            },
+            {
+              "name": "Sunpro Solar P400",
+              "specs": { "Leistung": "400 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 55,
+              "description": "Erweiterte Version für höhere Modulleistungen."
+            },
+            {
+              "name": "Sunpro Solar P500",
+              "specs": { "Leistung": "500 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 62,
+              "description": "Hochleistungs-Optimizer für moderne Solarmodule."
+            },
+            {
+              "name": "Sunpro Solar P600",
+              "specs": { "Leistung": "600 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 68,
+              "description": "Professioneller Optimizer mit Monitoring."
+            },
+            {
+              "name": "Sunpro Solar P700",
+              "specs": { "Leistung": "700 W", "Eingangsspannung": "10-60 V", "Ausgangsspannung": "400 V", "Wirkungsgrad": "99.5 %", "Garantie": "25 Jahre" },
+              "price": 75,
+              "description": "Premium-Optimizer für anspruchsvolle Anwendungen."
+            }
+          ]
+        }
+      }
+    },
+    "Notstromsysteme": {
+      "description": "Notstromsysteme und Backup-Boxen für unterbrechungsfreie Stromversorgung bei Netzausfällen",
+      "existing_manufacturers": {},
+      "new_manufacturers": {
+        "victron-energy": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Victron MultiPlus 12/3000/120",
+              "specs": { "Leistung": "3000 W", "Kapazität": "2400 Wh", "Spannung": "12 V", "Umschaltzeit": "<20 ms", "Garantie": "5 Jahre" },
+              "price": 1850,
+              "description": "Professionelles Hybrid-System mit integriertem Wechselrichter und Laderegler."
+            },
+            {
+              "name": "Victron MultiPlus 24/3000/70",
+              "specs": { "Leistung": "3000 W", "Kapazität": "4800 Wh", "Spannung": "24 V", "Umschaltzeit": "<20 ms", "Garantie": "5 Jahre" },
+              "price": 1950,
+              "description": "24V-Version für höhere Leistung und Effizienz."
+            },
+            {
+              "name": "Victron MultiPlus 48/5000/70",
+              "specs": { "Leistung": "5000 W", "Kapazität": "9600 Wh", "Spannung": "48 V", "Umschaltzeit": "<20 ms", "Garantie": "5 Jahre" },
+              "price": 2850,
+              "description": "Hochleistungs-Hybrid für gewerbliche Anwendungen."
+            },
+            {
+              "name": "Victron Quattro 12/5000/200",
+              "specs": { "Leistung": "5000 W", "Kapazität": "4000 Wh", "Spannung": "12 V", "Umschaltzeit": "<10 ms", "Garantie": "5 Jahre" },
+              "price": 3250,
+              "description": "Vierquadrant-Wechselrichter mit zwei AC-Eingängen."
+            },
+            {
+              "name": "Victron Quattro 48/10000/140",
+              "specs": { "Leistung": "10000 W", "Kapazität": "13440 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "5 Jahre" },
+              "price": 4850,
+              "description": "Professionelles System für große Backup-Anlagen."
+            }
+          ]
+        },
+        "sma": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "SMA Sunny Backup 2200",
+              "specs": { "Leistung": "2200 W", "Kapazität": "2000 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "10 Jahre" },
+              "price": 2200,
+              "description": "Intelligentes Backup-System mit Sunny Portal Integration."
+            },
+            {
+              "name": "SMA Sunny Backup 5000",
+              "specs": { "Leistung": "5000 W", "Kapazität": "5000 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "10 Jahre" },
+              "price": 3800,
+              "description": "Hochleistungs-Backup für mittlere bis große Anlagen."
+            },
+            {
+              "name": "SMA Sunny Backup 8000",
+              "specs": { "Leistung": "8000 W", "Kapazität": "8000 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "10 Jahre" },
+              "price": 5200,
+              "description": "Professionelles Backup-System für gewerbliche Anwendungen."
+            },
+            {
+              "name": "SMA Sunny Central Backup 50",
+              "specs": { "Leistung": "50000 W", "Kapazität": "100000 Wh", "Spannung": "400 V", "Umschaltzeit": "<100 ms", "Garantie": "10 Jahre" },
+              "price": 45000,
+              "description": "Großspeicher-Backup für kritische Infrastruktur."
+            },
+            {
+              "name": "SMA Sunny Central Backup 100",
+              "specs": { "Leistung": "100000 W", "Kapazität": "200000 Wh", "Spannung": "400 V", "Umschaltzeit": "<100 ms", "Garantie": "10 Jahre" },
+              "price": 85000,
+              "description": "Hochleistungs-Backup für große Industrieanlagen."
+            }
+          ]
+        },
+        "fronius": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Fronius Ohmpilot Storage 3.0",
+              "specs": { "Leistung": "3000 W", "Kapazität": "3000 Wh", "Spannung": "48 V", "Umschaltzeit": "<50 ms", "Garantie": "10 Jahre" },
+              "price": 2800,
+              "description": "Intelligenter Verbrauchsoptimierer mit Backup-Funktion."
+            },
+            {
+              "name": "Fronius Ohmpilot Storage 5.0",
+              "specs": { "Leistung": "5000 W", "Kapazität": "5000 Wh", "Spannung": "48 V", "Umschaltzeit": "<50 ms", "Garantie": "10 Jahre" },
+              "price": 4200,
+              "description": "Erweiterte Version mit höherer Kapazität."
+            },
+            {
+              "name": "Fronius Symo Hybrid Backup",
+              "specs": { "Leistung": "3000-5000 W", "Kapazität": "3000-10000 Wh", "Spannung": "48 V", "Umschaltzeit": "<50 ms", "Garantie": "10 Jahre" },
+              "price": 3500,
+              "description": "Hybrid-System mit integriertem Backup-Modus."
+            },
+            {
+              "name": "Fronius Primo Hybrid Backup",
+              "specs": { "Leistung": "3000-6000 W", "Kapazität": "3000-12000 Wh", "Spannung": "48 V", "Umschaltzeit": "<50 ms", "Garantie": "10 Jahre" },
+              "price": 3800,
+              "description": "Kompaktes Hybrid-System für Wohnanlagen."
+            },
+            {
+              "name": "Fronius Eco Hybrid Backup",
+              "specs": { "Leistung": "3000-8000 W", "Kapazität": "3000-16000 Wh", "Spannung": "48 V", "Umschaltzeit": "<50 ms", "Garantie": "10 Jahre" },
+              "price": 4500,
+              "description": "Effizientes Hybrid-System mit erweiterten Backup-Funktionen."
+            }
+          ]
+        },
+        "studer": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Studer Xtender XTM 1500-12",
+              "specs": { "Leistung": "1500 W", "Kapazität": "1200 Wh", "Spannung": "12 V", "Umschaltzeit": "<15 ms", "Garantie": "5 Jahre" },
+              "price": 1650,
+              "description": "Schweizer Qualität mit integriertem Transfer-System."
+            },
+            {
+              "name": "Studer Xtender XTM 2600-24",
+              "specs": { "Leistung": "2600 W", "Kapazität": "3120 Wh", "Spannung": "24 V", "Umschaltzeit": "<15 ms", "Garantie": "5 Jahre" },
+              "price": 2250,
+              "description": "24V-Version für höhere Effizienz."
+            },
+            {
+              "name": "Studer Xtender XTM 3500-48",
+              "specs": { "Leistung": "3500 W", "Kapazität": "6720 Wh", "Spannung": "48 V", "Umschaltzeit": "<15 ms", "Garantie": "5 Jahre" },
+              "price": 2850,
+              "description": "48V-System für professionelle Anwendungen."
+            },
+            {
+              "name": "Studer Xtender XTS 1400-12",
+              "specs": { "Leistung": "1400 W", "Kapazität": "1120 Wh", "Spannung": "12 V", "Umschaltzeit": "<15 ms", "Garantie": "5 Jahre" },
+              "price": 1550,
+              "description": "Kompakte Version für kleinere Installationen."
+            },
+            {
+              "name": "Studer Xtender XTS 2800-24",
+              "specs": { "Leistung": "2800 W", "Kapazität": "3360 Wh", "Spannung": "24 V", "Umschaltzeit": "<15 ms", "Garantie": "5 Jahre" },
+              "price": 2350,
+              "description": "Erweiterte 24V-Version mit höherer Kapazität."
+            }
+          ]
+        },
+        "outback-power": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "OutBack VFXR3048A",
+              "specs": { "Leistung": "3000 W", "Kapazität": "4800 Wh", "Spannung": "48 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 2750,
+              "description": "Robustes Backup-System für Off-Grid und Backup-Anwendungen."
+            },
+            {
+              "name": "OutBack GFX1312E",
+              "specs": { "Leistung": "1300 W", "Kapazität": "1560 Wh", "Spannung": "12 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 1450,
+              "description": "12V-Version für kleinere Systeme."
+            },
+            {
+              "name": "OutBack GFX1424E",
+              "specs": { "Leistung": "1400 W", "Kapazität": "3360 Wh", "Spannung": "24 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 1650,
+              "description": "24V-System mit guter Leistung."
+            },
+            {
+              "name": "OutBack Radian GS4048A",
+              "specs": { "Leistung": "4000 W", "Kapazität": "7680 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "5 Jahre" },
+              "price": 3850,
+              "description": "Hochleistungs-Hybrid mit integriertem Backup."
+            },
+            {
+              "name": "OutBack Radian GS8048A",
+              "specs": { "Leistung": "8000 W", "Kapazität": "15360 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "5 Jahre" },
+              "price": 5200,
+              "description": "Professionelles System für große Backup-Anlagen."
+            }
+          ]
+        },
+        "schneider-electric": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Schneider Conext XW+ 5548",
+              "specs": { "Leistung": "5500 W", "Kapazität": "10560 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "5 Jahre" },
+              "price": 4250,
+              "description": "Professionelles Hybrid-System mit XW Power Distribution Panel."
+            },
+            {
+              "name": "Schneider Conext SW 4024",
+              "specs": { "Leistung": "4000 W", "Kapazität": "9600 Wh", "Spannung": "24 V", "Umschaltzeit": "<10 ms", "Garantie": "5 Jahre" },
+              "price": 3650,
+              "description": "24V-Hybrid mit integriertem Backup-Modus."
+            },
+            {
+              "name": "Schneider Conext SW 4048",
+              "specs": { "Leistung": "4000 W", "Kapazität": "19200 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "5 Jahre" },
+              "price": 3950,
+              "description": "48V-Version mit höherer Kapazität."
+            },
+            {
+              "name": "Schneider Conext XW+ 6848",
+              "specs": { "Leistung": "6800 W", "Kapazität": "13056 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "5 Jahre" },
+              "price": 4850,
+              "description": "Hochleistungs-Hybrid für größere Anlagen."
+            },
+            {
+              "name": "Schneider Conext XW+ 8548",
+              "specs": { "Leistung": "8500 W", "Kapazität": "16320 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "5 Jahre" },
+              "price": 5500,
+              "description": "Premium-Hybrid mit erweiterten Backup-Funktionen."
+            }
+          ]
+        },
+        "selectronic": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Selectronic SP PRO 5kW",
+              "specs": { "Leistung": "5000 W", "Kapazität": "10000 Wh", "Spannung": "48 V", "Umschaltzeit": "<5 ms", "Garantie": "10 Jahre" },
+              "price": 4200,
+              "description": "Australisches Qualitätsprodukt mit schneller Umschaltzeit."
+            },
+            {
+              "name": "Selectronic SP PRO 8kW",
+              "specs": { "Leistung": "8000 W", "Kapazität": "16000 Wh", "Spannung": "48 V", "Umschaltzeit": "<5 ms", "Garantie": "10 Jahre" },
+              "price": 5800,
+              "description": "Hochleistungs-Version für größere Anlagen."
+            },
+            {
+              "name": "Selectronic SP PRO 10kW",
+              "specs": { "Leistung": "10000 W", "Kapazität": "20000 Wh", "Spannung": "48 V", "Umschaltzeit": "<5 ms", "Garantie": "10 Jahre" },
+              "price": 7200,
+              "description": "Professionelles System für gewerbliche Backup-Anwendungen."
+            },
+            {
+              "name": "Selectronic SP PRO 15kW",
+              "specs": { "Leistung": "15000 W", "Kapazität": "30000 Wh", "Spannung": "48 V", "Umschaltzeit": "<5 ms", "Garantie": "10 Jahre" },
+              "price": 9500,
+              "description": "Höchstleistungs-Backup für kritische Infrastruktur."
+            },
+            {
+              "name": "Selectronic SP PRO 20kW",
+              "specs": { "Leistung": "20000 W", "Kapazität": "40000 Wh", "Spannung": "48 V", "Umschaltzeit": "<5 ms", "Garantie": "10 Jahre" },
+              "price": 12500,
+              "description": "Megawatt-Backup-System für große Anlagen."
+            }
+          ]
+        },
+        "xantrex": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Xantrex XW6048-120/240-60",
+              "specs": { "Leistung": "6000 W", "Kapazität": "11520 Wh", "Spannung": "48 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 4850,
+              "description": "Robustes Backup-System mit XW Power Distribution Panel."
+            },
+            {
+              "name": "Xantrex XW4548-120/240-60",
+              "specs": { "Leistung": "4500 W", "Kapazität": "8640 Wh", "Spannung": "48 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 3950,
+              "description": "Mittelgroße Version für verschiedene Anwendungen."
+            },
+            {
+              "name": "Xantrex XW4048-120/240-60",
+              "specs": { "Leistung": "4000 W", "Kapazität": "7680 Wh", "Spannung": "48 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 3650,
+              "description": "Standard-Version mit guter Leistung."
+            },
+            {
+              "name": "Xantrex SW5548-230/50",
+              "specs": { "Leistung": "5500 W", "Kapazität": "10560 Wh", "Spannung": "48 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 4250,
+              "description": "230V-Version für europäische Märkte."
+            },
+            {
+              "name": "Xantrex SW4024-120/240-60",
+              "specs": { "Leistung": "4000 W", "Kapazität": "9600 Wh", "Spannung": "24 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 3550,
+              "description": "24V-Version für kleinere Systeme."
+            }
+          ]
+        },
+        "magnum-energy": {
+          "current_products": 0,
+          "new_products": [
+            {
+              "name": "Magnum MS4024PAE",
+              "specs": { "Leistung": "4000 W", "Kapazität": "9600 Wh", "Spannung": "24 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 3650,
+              "description": "Zuverlässiges Backup-System mit Magnum-Qualität."
+            },
+            {
+              "name": "Magnum MS4448PAE",
+              "specs": { "Leistung": "4400 W", "Kapazität": "21120 Wh", "Spannung": "48 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 4250,
+              "description": "48V-Version mit höherer Kapazität."
+            },
+            {
+              "name": "Magnum MMS1012",
+              "specs": { "Leistung": "1000 W", "Kapazität": "1440 Wh", "Spannung": "12 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 1250,
+              "description": "Kompakte 12V-Version für kleinere Anlagen."
+            },
+            {
+              "name": "Magnum RD2212",
+              "specs": { "Leistung": "2200 W", "Kapazität": "2640 Wh", "Spannung": "12 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 1850,
+              "description": "Mittelgroße 12V-Version."
+            },
+            {
+              "name": "Magnum RD3924",
+              "specs": { "Leistung": "3900 W", "Kapazität": "9360 Wh", "Spannung": "24 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 3150,
+              "description": "Hochleistungs-24V-System."
+            }
+          ]
+        }
+      },
+      "new_manufacturer_data": {
+        "victron-energy": {
+          "name": "Victron Energy",
+          "logoUrl": "/assets/logos/victron.png",
+          "description": "Victron Energy ist ein niederländischer Hersteller von Energie-Management-Systemen mit Fokus auf Qualität und Zuverlässigkeit.",
+          "whyWeTrust": [
+            "Über 40 Jahre Erfahrung in der Energieelektronik.",
+            "Umfassendes Ökosystem von Produkten.",
+            "Hervorragender Service und Community-Support."
+          ],
+          "products": [
+            {
+              "name": "Victron MultiPlus 12/3000/120",
+              "specs": { "Leistung": "3000 W", "Kapazität": "2400 Wh", "Spannung": "12 V", "Umschaltzeit": "<20 ms", "Garantie": "5 Jahre" },
+              "price": 1850,
+              "description": "Professionelles Hybrid-System mit integriertem Wechselrichter und Laderegler."
+            },
+            {
+              "name": "Victron MultiPlus 24/3000/70",
+              "specs": { "Leistung": "3000 W", "Kapazität": "4800 Wh", "Spannung": "24 V", "Umschaltzeit": "<20 ms", "Garantie": "5 Jahre" },
+              "price": 1950,
+              "description": "24V-Version für höhere Leistung und Effizienz."
+            },
+            {
+              "name": "Victron MultiPlus 48/5000/70",
+              "specs": { "Leistung": "5000 W", "Kapazität": "9600 Wh", "Spannung": "48 V", "Umschaltzeit": "<20 ms", "Garantie": "5 Jahre" },
+              "price": 2850,
+              "description": "Hochleistungs-Hybrid für gewerbliche Anwendungen."
+            },
+            {
+              "name": "Victron Quattro 12/5000/200",
+              "specs": { "Leistung": "5000 W", "Kapazität": "4000 Wh", "Spannung": "12 V", "Umschaltzeit": "<10 ms", "Garantie": "5 Jahre" },
+              "price": 3250,
+              "description": "Vierquadrant-Wechselrichter mit zwei AC-Eingängen."
+            },
+            {
+              "name": "Victron Quattro 48/10000/140",
+              "specs": { "Leistung": "10000 W", "Kapazität": "13440 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "5 Jahre" },
+              "price": 4850,
+              "description": "Professionelles System für große Backup-Anlagen."
+            }
+          ]
+        },
+        "sma": {
+          "name": "SMA Solar Technology",
+          "logoUrl": "/assets/logos/sma.png",
+          "description": "SMA ist ein deutscher Hersteller von Wechselrichtern und Energiespeichersystemen mit umfassenden Backup-Lösungen.",
+          "whyWeTrust": [
+            "Über 40 Jahre Erfahrung in der Solartechnik.",
+            "Umfassende Monitoring-Lösungen mit Sunny Portal.",
+            "Hohe Qualität und Zuverlässigkeit."
+          ],
+          "products": [
+            {
+              "name": "SMA Sunny Backup 2200",
+              "specs": { "Leistung": "2200 W", "Kapazität": "2000 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "10 Jahre" },
+              "price": 2200,
+              "description": "Intelligentes Backup-System mit Sunny Portal Integration."
+            },
+            {
+              "name": "SMA Sunny Backup 5000",
+              "specs": { "Leistung": "5000 W", "Kapazität": "5000 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "10 Jahre" },
+              "price": 3800,
+              "description": "Hochleistungs-Backup für mittlere bis große Anlagen."
+            },
+            {
+              "name": "SMA Sunny Backup 8000",
+              "specs": { "Leistung": "8000 W", "Kapazität": "8000 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "10 Jahre" },
+              "price": 5200,
+              "description": "Professionelles Backup-System für gewerbliche Anwendungen."
+            },
+            {
+              "name": "SMA Sunny Central Backup 50",
+              "specs": { "Leistung": "50000 W", "Kapazität": "100000 Wh", "Spannung": "400 V", "Umschaltzeit": "<100 ms", "Garantie": "10 Jahre" },
+              "price": 45000,
+              "description": "Großspeicher-Backup für kritische Infrastruktur."
+            },
+            {
+              "name": "SMA Sunny Central Backup 100",
+              "specs": { "Leistung": "100000 W", "Kapazität": "200000 Wh", "Spannung": "400 V", "Umschaltzeit": "<100 ms", "Garantie": "10 Jahre" },
+              "price": 85000,
+              "description": "Hochleistungs-Backup für große Industrieanlagen."
+            }
+          ]
+        },
+        "fronius": {
+          "name": "Fronius International",
+          "logoUrl": "/assets/logos/fronius.png",
+          "description": "Fronius ist ein österreichischer Hersteller von Schweißtechnik und Solartechnik mit innovativen Backup-Systemen.",
+          "whyWeTrust": [
+            "Innovative Technologien und hohe Qualität.",
+            "Umfassendes Energiemanagement-System.",
+            "Exzellenter Service und Support weltweit."
+          ],
+          "products": [
+            {
+              "name": "Fronius Ohmpilot Storage 3.0",
+              "specs": { "Leistung": "3000 W", "Kapazität": "3000 Wh", "Spannung": "48 V", "Umschaltzeit": "<50 ms", "Garantie": "10 Jahre" },
+              "price": 2800,
+              "description": "Intelligenter Verbrauchsoptimierer mit Backup-Funktion."
+            },
+            {
+              "name": "Fronius Ohmpilot Storage 5.0",
+              "specs": { "Leistung": "5000 W", "Kapazität": "5000 Wh", "Spannung": "48 V", "Umschaltzeit": "<50 ms", "Garantie": "10 Jahre" },
+              "price": 4200,
+              "description": "Erweiterte Version mit höherer Kapazität."
+            },
+            {
+              "name": "Fronius Symo Hybrid Backup",
+              "specs": { "Leistung": "3000-5000 W", "Kapazität": "3000-10000 Wh", "Spannung": "48 V", "Umschaltzeit": "<50 ms", "Garantie": "10 Jahre" },
+              "price": 3500,
+              "description": "Hybrid-System mit integriertem Backup-Modus."
+            },
+            {
+              "name": "Fronius Primo Hybrid Backup",
+              "specs": { "Leistung": "3000-6000 W", "Kapazität": "3000-12000 Wh", "Spannung": "48 V", "Umschaltzeit": "<50 ms", "Garantie": "10 Jahre" },
+              "price": 3800,
+              "description": "Kompaktes Hybrid-System für Wohnanlagen."
+            },
+            {
+              "name": "Fronius Eco Hybrid Backup",
+              "specs": { "Leistung": "3000-8000 W", "Kapazität": "3000-16000 Wh", "Spannung": "48 V", "Umschaltzeit": "<50 ms", "Garantie": "10 Jahre" },
+              "price": 4500,
+              "description": "Effizientes Hybrid-System mit erweiterten Backup-Funktionen."
+            }
+          ]
+        },
+        "studer": {
+          "name": "Studer Innotec",
+          "logoUrl": "/assets/logos/studer.png",
+          "description": "Studer Innotec ist ein Schweizer Hersteller von Energie-Management-Systemen mit höchsten Qualitätsstandards.",
+          "whyWeTrust": [
+            "Schweizer Präzision und Qualität seit 1987.",
+            "Innovative Transfer-Systeme für unterbrechungsfreie Stromversorgung.",
+            "Umfassender technischer Support."
+          ],
+          "products": [
+            {
+              "name": "Studer Xtender XTM 1500-12",
+              "specs": { "Leistung": "1500 W", "Kapazität": "1200 Wh", "Spannung": "12 V", "Umschaltzeit": "<15 ms", "Garantie": "5 Jahre" },
+              "price": 1650,
+              "description": "Schweizer Qualität mit integriertem Transfer-System."
+            },
+            {
+              "name": "Studer Xtender XTM 2600-24",
+              "specs": { "Leistung": "2600 W", "Kapazität": "3120 Wh", "Spannung": "24 V", "Umschaltzeit": "<15 ms", "Garantie": "5 Jahre" },
+              "price": 2250,
+              "description": "24V-Version für höhere Effizienz."
+            },
+            {
+              "name": "Studer Xtender XTM 3500-48",
+              "specs": { "Leistung": "3500 W", "Kapazität": "6720 Wh", "Spannung": "48 V", "Umschaltzeit": "<15 ms", "Garantie": "5 Jahre" },
+              "price": 2850,
+              "description": "48V-System für professionelle Anwendungen."
+            },
+            {
+              "name": "Studer Xtender XTS 1400-12",
+              "specs": { "Leistung": "1400 W", "Kapazität": "1120 Wh", "Spannung": "12 V", "Umschaltzeit": "<15 ms", "Garantie": "5 Jahre" },
+              "price": 1550,
+              "description": "Kompakte Version für kleinere Installationen."
+            },
+            {
+              "name": "Studer Xtender XTS 2800-24",
+              "specs": { "Leistung": "2800 W", "Kapazität": "3360 Wh", "Spannung": "24 V", "Umschaltzeit": "<15 ms", "Garantie": "5 Jahre" },
+              "price": 2350,
+              "description": "Erweiterte 24V-Version mit höherer Kapazität."
+            }
+          ]
+        },
+        "outback-power": {
+          "name": "OutBack Power",
+          "logoUrl": "/assets/logos/outback.png",
+          "description": "OutBack Power ist ein US-amerikanischer Hersteller von Backup-Systemen für Off-Grid und Backup-Anwendungen.",
+          "whyWeTrust": [
+            "Über 40 Jahre Erfahrung in der Backup-Technologie.",
+            "Robuste Systeme für extreme Bedingungen.",
+            "Umfassende Produktpalette für verschiedene Anwendungen."
+          ],
+          "products": [
+            {
+              "name": "OutBack VFXR3048A",
+              "specs": { "Leistung": "3000 W", "Kapazität": "4800 Wh", "Spannung": "48 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 2750,
+              "description": "Robustes Backup-System für Off-Grid und Backup-Anwendungen."
+            },
+            {
+              "name": "OutBack GFX1312E",
+              "specs": { "Leistung": "1300 W", "Kapazität": "1560 Wh", "Spannung": "12 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 1450,
+              "description": "12V-Version für kleinere Systeme."
+            },
+            {
+              "name": "OutBack GFX1424E",
+              "specs": { "Leistung": "1400 W", "Kapazität": "3360 Wh", "Spannung": "24 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 1650,
+              "description": "24V-System mit guter Leistung."
+            },
+            {
+              "name": "OutBack Radian GS4048A",
+              "specs": { "Leistung": "4000 W", "Kapazität": "7680 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "5 Jahre" },
+              "price": 3850,
+              "description": "Hochleistungs-Hybrid mit integriertem Backup."
+            },
+            {
+              "name": "OutBack Radian GS8048A",
+              "specs": { "Leistung": "8000 W", "Kapazität": "15360 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "5 Jahre" },
+              "price": 5200,
+              "description": "Professionelles System für große Backup-Anlagen."
+            }
+          ]
+        },
+        "schneider-electric": {
+          "name": "Schneider Electric",
+          "logoUrl": "/assets/logos/schneider-electric.png",
+          "description": "Schneider Electric ist ein globaler Konzern mit umfassenden Energie-Management-Lösungen.",
+          "whyWeTrust": [
+            "Über 180 Jahre Erfahrung in der Elektrotechnik.",
+            "Globale Präsenz und umfassender Service.",
+            "Höchste Sicherheits- und Qualitätsstandards."
+          ],
+          "products": [
+            {
+              "name": "Schneider Conext XW+ 5548",
+              "specs": { "Leistung": "5500 W", "Kapazität": "10560 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "5 Jahre" },
+              "price": 4250,
+              "description": "Professionelles Hybrid-System mit XW Power Distribution Panel."
+            },
+            {
+              "name": "Schneider Conext SW 4024",
+              "specs": { "Leistung": "4000 W", "Kapazität": "9600 Wh", "Spannung": "24 V", "Umschaltzeit": "<10 ms", "Garantie": "5 Jahre" },
+              "price": 3650,
+              "description": "24V-Hybrid mit integriertem Backup-Modus."
+            },
+            {
+              "name": "Schneider Conext SW 4048",
+              "specs": { "Leistung": "4000 W", "Kapazität": "19200 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "5 Jahre" },
+              "price": 3950,
+              "description": "48V-Version mit höherer Kapazität."
+            },
+            {
+              "name": "Schneider Conext XW+ 6848",
+              "specs": { "Leistung": "6800 W", "Kapazität": "13056 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "5 Jahre" },
+              "price": 4850,
+              "description": "Hochleistungs-Hybrid für größere Anlagen."
+            },
+            {
+              "name": "Schneider Conext XW+ 8548",
+              "specs": { "Leistung": "8500 W", "Kapazität": "16320 Wh", "Spannung": "48 V", "Umschaltzeit": "<10 ms", "Garantie": "5 Jahre" },
+              "price": 5500,
+              "description": "Premium-Hybrid mit erweiterten Backup-Funktionen."
+            }
+          ]
+        },
+        "selectronic": {
+          "name": "Selectronic Australia",
+          "logoUrl": "/assets/logos/selectronic.png",
+          "description": "Selectronic ist ein australischer Hersteller von Backup-Systemen mit extrem schneller Umschaltzeit.",
+          "whyWeTrust": [
+            "Australische Qualität und Robustheit.",
+            "Extrem schnelle Umschaltzeiten (<5ms).",
+            "Umfassende Erfahrung in der Backup-Technologie."
+          ],
+          "products": [
+            {
+              "name": "Selectronic SP PRO 5kW",
+              "specs": { "Leistung": "5000 W", "Kapazität": "10000 Wh", "Spannung": "48 V", "Umschaltzeit": "<5 ms", "Garantie": "10 Jahre" },
+              "price": 4200,
+              "description": "Australisches Qualitätsprodukt mit schneller Umschaltzeit."
+            },
+            {
+              "name": "Selectronic SP PRO 8kW",
+              "specs": { "Leistung": "8000 W", "Kapazität": "16000 Wh", "Spannung": "48 V", "Umschaltzeit": "<5 ms", "Garantie": "10 Jahre" },
+              "price": 5800,
+              "description": "Hochleistungs-Version für größere Anlagen."
+            },
+            {
+              "name": "Selectronic SP PRO 10kW",
+              "specs": { "Leistung": "10000 W", "Kapazität": "20000 Wh", "Spannung": "48 V", "Umschaltzeit": "<5 ms", "Garantie": "10 Jahre" },
+              "price": 7200,
+              "description": "Professionelles System für gewerbliche Backup-Anwendungen."
+            },
+            {
+              "name": "Selectronic SP PRO 15kW",
+              "specs": { "Leistung": "15000 W", "Kapazität": "30000 Wh", "Spannung": "48 V", "Umschaltzeit": "<5 ms", "Garantie": "10 Jahre" },
+              "price": 9500,
+              "description": "Höchstleistungs-Backup für kritische Infrastruktur."
+            },
+            {
+              "name": "Selectronic SP PRO 20kW",
+              "specs": { "Leistung": "20000 W", "Kapazität": "40000 Wh", "Spannung": "48 V", "Umschaltzeit": "<5 ms", "Garantie": "10 Jahre" },
+              "price": 12500,
+              "description": "Megawatt-Backup-System für große Anlagen."
+            }
+          ]
+        },
+        "xantrex": {
+          "name": "Xantrex",
+          "logoUrl": "/assets/logos/xantrex.png",
+          "description": "Xantrex ist ein kanadischer Hersteller von Backup-Systemen mit langjähriger Erfahrung.",
+          "whyWeTrust": [
+            "Über 40 Jahre Erfahrung in der Energieelektronik.",
+            "Robuste und zuverlässige Systeme.",
+            "Gute Integration mit verschiedenen Batterietypen."
+          ],
+          "products": [
+            {
+              "name": "Xantrex XW6048-120/240-60",
+              "specs": { "Leistung": "6000 W", "Kapazität": "11520 Wh", "Spannung": "48 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 4850,
+              "description": "Robustes Backup-System mit XW Power Distribution Panel."
+            },
+            {
+              "name": "Xantrex XW4548-120/240-60",
+              "specs": { "Leistung": "4500 W", "Kapazität": "8640 Wh", "Spannung": "48 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 3950,
+              "description": "Mittelgroße Version für verschiedene Anwendungen."
+            },
+            {
+              "name": "Xantrex XW4048-120/240-60",
+              "specs": { "Leistung": "4000 W", "Kapazität": "7680 Wh", "Spannung": "48 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 3650,
+              "description": "Standard-Version mit guter Leistung."
+            },
+            {
+              "name": "Xantrex SW5548-230/50",
+              "specs": { "Leistung": "5500 W", "Kapazität": "10560 Wh", "Spannung": "48 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 4250,
+              "description": "230V-Version für europäische Märkte."
+            },
+            {
+              "name": "Xantrex SW4024-120/240-60",
+              "specs": { "Leistung": "4000 W", "Kapazität": "9600 Wh", "Spannung": "24 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 3550,
+              "description": "24V-Version für kleinere Systeme."
+            }
+          ]
+        },
+        "magnum-energy": {
+          "name": "Magnum Energy",
+          "logoUrl": "/assets/logos/magnum.png",
+          "description": "Magnum Energy ist ein US-amerikanischer Hersteller von Backup-Systemen mit Fokus auf Qualität und Zuverlässigkeit.",
+          "whyWeTrust": [
+            "Über 40 Jahre Erfahrung in der Backup-Technologie.",
+            "Robuste und zuverlässige Systeme.",
+            "Gute Kompatibilität mit verschiedenen Batterien."
+          ],
+          "products": [
+            {
+              "name": "Magnum MS4024PAE",
+              "specs": { "Leistung": "4000 W", "Kapazität": "9600 Wh", "Spannung": "24 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 3650,
+              "description": "Zuverlässiges Backup-System mit Magnum-Qualität."
+            },
+            {
+              "name": "Magnum MS4448PAE",
+              "specs": { "Leistung": "4400 W", "Kapazität": "21120 Wh", "Spannung": "48 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 4250,
+              "description": "48V-Version mit höherer Kapazität."
+            },
+            {
+              "name": "Magnum MMS1012",
+              "specs": { "Leistung": "1000 W", "Kapazität": "1440 Wh", "Spannung": "12 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 1250,
+              "description": "Kompakte 12V-Version für kleinere Anlagen."
+            },
+            {
+              "name": "Magnum RD2212",
+              "specs": { "Leistung": "2200 W", "Kapazität": "2640 Wh", "Spannung": "12 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 1850,
+              "description": "Mittelgroße 12V-Version."
+            },
+            {
+              "name": "Magnum RD3924",
+              "specs": { "Leistung": "3900 W", "Kapazität": "9360 Wh", "Spannung": "24 V", "Umschaltzeit": "<16 ms", "Garantie": "5 Jahre" },
+              "price": 3150,
+              "description": "Hochleistungs-24V-System."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

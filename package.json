@@ -1,0 +1,52 @@
+{
+  "name": "copy-of-zoe-solar---photovoltaik-für-unternehmen",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "node server/index.js",
+    "seo-monitor": "node scripts/seo-monitoring.cjs",
+    "seo-alerts": "node scripts/seo-alerts.cjs",
+    "gmb-integration": "node scripts/gmb-integration.cjs",
+    "keyword-research": "node scripts/keyword-research.cjs",
+    "enhanced-seo-monitor": "node scripts/enhanced-seo-monitoring.cjs",
+    "content-optimization": "node scripts/content-optimization.cjs",
+    "seo-workflow": "node scripts/seo-workflow.cjs",
+    "seo-geo-audit": "tsx scripts/seo-geo-aeo-audit.ts",
+    "wiki-sync": "tsx scripts/wiki-sync.ts",
+    "product-sync": "node scripts/fetch-manufacturers.js",
+    "product-sync:ts": "tsx scripts/fetch-manufacturers.ts",
+    "auto-product-sync": "tsx scripts/auto-product-sync.js"
+  },
+  "dependencies": {
+    "@fontsource/poppins": "^5.0.8",
+    "@google/genai": "^1.19.0",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "googleapis": "^137.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "node-cron": "^3.0.3",
+    "puppeteer": "^24.22.3",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.2"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.35",
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "autoprefixer": "^10.4.21",
+    "cheerio": "^1.1.2",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.13",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}
