@@ -20,7 +20,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Run SEO Monitoring Suite
         run: node scripts/seo-monitoring-suite.cjs
@@ -46,7 +46,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Run Content Analysis Suite
         run: node scripts/content-analysis-suite.cjs
