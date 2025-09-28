@@ -31,6 +31,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add data/seo-monitoring-suite.json
           git commit -m "Update SEO monitoring results [automated]" || echo "No changes to commit"
+          git pull --rebase origin main
           git push
 
   weekly-analysis:
@@ -60,6 +61,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add data/content-analysis-suite.json data/ai-content-workflows.json
           git commit -m "Update weekly SEO analysis results [automated]" || echo "No changes to commit"
+          git pull --rebase origin main
           git push
 
   notify-on-failure:
