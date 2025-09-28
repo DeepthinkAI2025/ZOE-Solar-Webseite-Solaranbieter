@@ -36,6 +36,7 @@ jobs:
 
   weekly-analysis:
     if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 2 * * 1'
+    needs: daily-monitoring
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
