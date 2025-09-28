@@ -1,0 +1,72 @@
+name: SEO Automation
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # Täglich um 02:00 UTC
+    - cron: '0 2 * * 1'  # Wöchentlich montags um 02:00 UTC
+  workflow_dispatch:  # Manuell ausführbar
+
+jobs:
+  daily-monitoring:
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 2 * * *'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run SEO Monitoring Suite
+        run: node scripts/seo-monitoring-suite.cjs
+
+      - name: Commit and push results
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/seo-monitoring-suite.json
+          git commit -m "Update SEO monitoring results [automated]" || echo "No changes to commit"
+          git push
+
+  weekly-analysis:
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 2 * * 1'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Content Analysis Suite
+        run: node scripts/content-analysis-suite.cjs
+
+      - name: Run AI Content Workflows
+        run: node scripts/ai-content-workflows.cjs
+
+      - name: Commit and push results
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/content-analysis-suite.json data/ai-content-workflows.json
+          git commit -m "Update weekly SEO analysis results [automated]" || echo "No changes to commit"
+          git push
+
+  notify-on-failure:
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send notification
+        run: |
+          echo "SEO Automation failed. Check logs for details."
+          # Hier könnte eine Slack/Discord/Webhook-Notification hinzugefügt werden
