@@ -1,0 +1,100 @@
+{
+  "timestamp": "2025-09-28T13:40:35.097Z",
+  "report": {
+    "summary": {
+      "totalIssues": 4,
+      "highImpact": 0,
+      "mediumImpact": 3,
+      "lowImpact": 1,
+      "totalRecommendations": 2
+    },
+    "issues": [
+      {
+        "type": "warning",
+        "category": "indexing",
+        "title": "Sitemap unvollständig",
+        "description": "Nur 5 URLs gefunden",
+        "impact": "medium",
+        "fix": "Überprüfe ob alle wichtigen Seiten in der Sitemap sind"
+      },
+      {
+        "type": "warning",
+        "category": "on-page",
+        "title": "Title Tag zu kurz",
+        "description": "Title \"Agri-Photovoltaik - ZOE Solar\" ist nur 29 Zeichen",
+        "impact": "medium",
+        "fix": "Erweitere Title Tag auf 50-60 Zeichen"
+      },
+      {
+        "type": "warning",
+        "category": "performance",
+        "title": "Ladezeit optimierbar",
+        "description": "Seite / lädt in 2500ms",
+        "impact": "medium",
+        "fix": "Weitere Performance-Optimierungen möglich"
+      },
+      {
+        "type": "warning",
+        "category": "on-page",
+        "title": "Meta Description zu kurz",
+        "description": "Description ist nur 74 Zeichen",
+        "impact": "low",
+        "fix": "Erweitere auf 150-160 Zeichen"
+      }
+    ],
+    "recommendations": [
+      {
+        "category": "indexing",
+        "title": "lastmod hinzufügen",
+        "description": "Füge lastmod-Daten für bessere Indexierung hinzu",
+        "priority": "medium"
+      },
+      {
+        "category": "linking",
+        "title": "Mehr interne Links",
+        "description": "Seite /agri-pv hat nur 2 interne Links",
+        "priority": "low"
+      }
+    ],
+    "issuesByCategory": {
+      "indexing": [
+        {
+          "type": "warning",
+          "category": "indexing",
+          "title": "Sitemap unvollständig",
+          "description": "Nur 5 URLs gefunden",
+          "impact": "medium",
+          "fix": "Überprüfe ob alle wichtigen Seiten in der Sitemap sind"
+        }
+      ],
+      "on-page": [
+        {
+          "type": "warning",
+          "category": "on-page",
+          "title": "Title Tag zu kurz",
+          "description": "Title \"Agri-Photovoltaik - ZOE Solar\" ist nur 29 Zeichen",
+          "impact": "medium",
+          "fix": "Erweitere Title Tag auf 50-60 Zeichen"
+        },
+        {
+          "type": "warning",
+          "category": "on-page",
+          "title": "Meta Description zu kurz",
+          "description": "Description ist nur 74 Zeichen",
+          "impact": "low",
+          "fix": "Erweitere auf 150-160 Zeichen"
+        }
+      ],
+      "performance": [
+        {
+          "type": "warning",
+          "category": "performance",
+          "title": "Ladezeit optimierbar",
+          "description": "Seite / lädt in 2500ms",
+          "impact": "medium",
+          "fix": "Weitere Performance-Optimierungen möglich"
+        }
+      ]
+    }
+  }
+}

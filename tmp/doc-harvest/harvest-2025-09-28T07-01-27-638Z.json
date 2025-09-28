@@ -1,0 +1,299 @@
+[
+  {
+    "manufacturer": "huawei",
+    "product": "Huawei Luna2000-100KWH",
+    "candidates": [
+      {
+        "url": "https://solar.huawei.com/admin/asset/v1/pro/view/ad91d6d343ee4f13860b641e8239e53c.pdf",
+        "title": "[PDF] 200/161/129KWH-2H1 LUNA2000 - 97KWH-1H1 - Huawei",
+        "snippet": "Ethernet Communication Smart Grid Algorithm Efficiency Curve Circuit Diagram Load 95.5 96 96.5 97 97.5 98 98.5 99 0.00% 20.00% 40.00% 60.00% 80.00% 100.00% 570 650 750 S O L A R . H U A W E I . C O M LUNA2000-100KTL-M1 Technical Specifications Efficiency Max. Efficiency 98.4% DC Side Rated DC Voltage 645 V Max. DC Voltage 1,100 V Operating DC Voltage Range 570 V ~ 1100 V Max. DC Current 215.8 A Max. Number of Inputs 1 AC Side Rated AC Active Power 100k W @40°C Rated AC Voltage 380 Vac / 400 Vac [...] Max. DC Voltage 1,100 V Rated Voltage 665 V Rated Current 152.6 A General Dimensions (W x H x D) 600 x 820 x 270 mm Weight ≤ 90 kg Cooling Method Smart Air Cooling Protection Degree IP66 S O L A R . H U A W E I . C O M LUNA2000-100KTL-M1 Smart PCS Efficiency Surge Arresters for DC & AC Modular Design IP66 ProtectionETH LUNA2000-100KTL-M1 AC EMI Filter Relay L1 L2 L3 SPD SPD Residual Current Detection L1 L2 C ~ = BUS+ BUS-Soft Start Circuit DC EMI Filter + -Inverter Bridge Line Filter Relay [...] Ethernet，CAN General Dimensions (W x H x D) 875 x 820 x 365 mm Weight < 95 kg Operating Temperature Range -25°C ~ 60°C ( Derating above 40°C ) Cooling Method Smart Air Cooling Max. Operating Altitude without Derating 4,000 m Relative Humidity 0 ~ 100% DC Connector OT/DT Terminal AC Connector OT/DT Terminal Protection Degree IP66 Topology Transformerless S O L A R . H U A W E I . C O M Typical System Configurations Energy Volume kWh (Up to 3,870 kWh) Recommended Combination of Models 967.5 12",
+        "score": 0.8033131,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://solar.huawei.com/download?p=%2F-%2Fmedia%2FSolarV4%2Fsolar-version2%2Feurope%2Fro%2Fprofessionals%2Fall-products%2Fproduct%2FLUNA2000-5-10-15-S0%2Fsupport%2FLUNA2000-5-10-15-S0-datasheet.pdf",
+        "title": "[PDF] LUNA2000-5/10/15-S0 - Huawei",
+        "snippet": "H) 670 mm x 150 mm x 240 mm (26.4 in. x 5.9 in. x 9.4 in.) Power module weight 12 kg (26.5 lb) Battery module dimensions (W x D x H) 670 mm x 150 mm x 360 mm (26.4 in. x 5.9 in. x 14.0 in.) Battery module weight 50 kg (110.2 lb)4 Installation Floor stand (standard), Wall mount (optional) Operating temperature –20°C to +55°C (–4°F to +131°F) 5 Max. operating altitude 4,000 m (13,123 ft.) (Derating above 2,000 m) Environment Outdoor / Indoor 6 Relative humidity 5%-95% RH Cooling Natural [...] 7 Noise level (typical): < 29 dB(A) @1 m, 30°C, power on and run stably for 2 hours 8 Please contact local engineer for the compatibility.\n9 Storage system is ordered and delivered in the form of power module and battery module separately with corresponding quantity.\nDisclaimer: the preceding values are measured by an internal laboratory of Huawei in a specific environment. The actual values may vary with products, software versions, usage conditions, and environmental factors. [...] (DoD), 0.2C rate charge & discharge at 25°C, at the beginning of life. If no PV modules are installed or the system has not detected sunlight for at least 24 hours, the minimum end of discharge SOC is 15%.",
+        "score": 0.740494,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://solar.huawei.com/download?p=%2F-%2Fmedia%2FSolarV4%2Fsolar-version2%2Fcommon%2Fprofessionals%2Fall-products%2Fci%2Fsmart-string-ess%2Fluna2000-200kwhg-2h1%2Fdatasheet%2Fluna2000-200kwhg-2h1-dtatsheet-20230310.pdf",
+        "title": "[PDF] LUNA2000-200KWH-2H1 - Smart String ESS - Huawei",
+        "snippet": "S O L A R . H U A W E I . C O M Energy Storage System Parameters Battery Configuration 12S1P Maximum battery capacity of the energy storage system 193.5 kWh Rated Power 100 kW Dimensions (W x H x D), including DC/DC and PCS 2570mm×2135mm×1200mm Dimensions (W x H x D) 1810mm×2135mm×1200mm Weight (including the battery module) ≤2950kg Weight (without the battery module) ≤1070kg Operating temperature range -30 °C ~ 55 °C Storage temperature range -40 °C ~ 60 °C Operating humidity range 0 ~ 100% [...] (non-condensing) Maximum operating altitude 4,000 m Installation Environment Requirement Outdoor installation Battery temperature control mode Industrial-grade air conditioner Fire suppression of energy storage system YES Auxiliary Power Supply 220Vac，<=4.2kW Communication port Ethernet / SFP Communication protocol Modbus TCP Protection degree IP55 EMC Protection Rating ClassA DC Lightning Protection Type II Standards Environment RoHS6 Certification Standards GBT 36276-2018；IEC62619; [...] V Rated Current 76.3 A General Dimensions (W x H x D) 600 x 820 x 270 mm Weight ≤ 90 kg Cooling Method Smart Air Cooling Protection Degree IP66 Battery Pack & Smart Rack Controller Smart String ESS",
+        "score": 0.7373288,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www-file.huawei.com/-/media/corp2020/pdf/giv/2024/digital_power_whitepaper_2030_en.pdf",
+        "title": "[PDF] Digital Power - Huawei",
+        "snippet": "support. [...] components is managed in real-time by liquid pipes. The system intelligently adjusts the flow rate based on cooling needs, ensuring precise temperature control. The fully liquid cooling architecture offers numerous advantages, including high quality, long service life, wide application scenarios, and easy and cost-effective O&M. The annual failure rate of charging modules can be reduced to less than 5‰ and they can work for one decade or longer in most scenarios. [...] capabilities.",
+        "score": 0.6643884,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://solar.huawei.com/admin/asset/v1/pro/view/e98b010bcf894f64bba76a6b8ea44c10.pdf",
+        "title": "[PDF] Smart PCS - Huawei",
+        "snippet": "Terminal AC Connector OT/DT Terminal Protection Degree IP66 Topology Transformerless LUNA2000-100KTL-M1 Technical Specifications [...] S O L A R . H U A W E I . C O M LUNA2000-100KTL-M1 Smart PCS Efficiency Surge Arresters for DC & AC Modular Design IP66 Protection LUNA2000-100KTL-M1 AC EMI Filter Relay L1 L2 L3 SPD SPD Residual Current Detection L1 L2 C ~ = BUS+ BUS-Soft Start Circuit DC EMI Filter + -Inverter Bridge Line Filter Relay Ethernet Communication Smart Grid Algorithm Efficiency Curve Circuit Diagram Load 95.5 96 96.5 97 97.5 98 98.5 99 0.00% 20.00% 40.00% 60.00% 80.00% 100.00% 570 650 750 S O L A R . H U A W E I . C [...] O M Efficiency Max. Efficiency 98.4% DC Side Rated DC Voltage 645 V Max. DC Voltage 1,100 V Operating DC Voltage Range 570 V ~ 1100 V Max. DC Current 215.8 A Max. Number of Inputs 1 AC Side Rated AC Active Power 100,000 W @40°C Rated AC Voltage 380 Vac / 400 Vac / 440 Vac Rated AC Grid Frequency 50 Hz / 60 Hz Max. AC Current 173.2 A Adjustable Power Factor Range -1 ... +1 Max. Total Harmonic Distortion ＜3% Protection Anti-islanding Protection Yes AC Overcurrent Protection Yes DC",
+        "score": 0.5826579,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://solar.huawei.com/en-GB/download?p=/-/media/Solar/attachment/pdf/eu/datasheet/LUNA2000-5-15-S0.pdf",
+        "title": "[PDF] Smart String Energy Storage System - Huawei",
+        "snippet": "2. The weight of the batterymoduleis subject to the actual product,witha toleranceof±3% 3. Refer to batterywarrantyletter for conditionalapplication.\n4. Improper storagesysteminstallationmaycompromiseproduct warrantyandoperationsafety.Pleasefollowtheuser manual duringtheinstallation, use,and maintenanceofthe storagesystem.\n5. Pleasecontactlocal engineer for thecompatibilitybetweentheSUN2000-3/4/5/6/8/10KTL-M0withthe LUNA2000. [...] Lithium-iron phosphate(LiFePO4) Scalability Max. 2 systems in paralleloperation Compatibleinverters SUN2000-2/3/3.68/4/4.6/5/6KTL-L1, SUN2000-3/4/5/6/8/10KTL-M0 5, SUN2000-3/4/5/6/8/10KTL-M1 Standard Compliance (more availableupon request) Certificates CE, RCM, CEC, VDE2510-50, IEC62619,IEC 60730, UN38.3 LUNA2000-5/10/15-S0 Technical Specification 1. Test conditions: 100%depthofdischarge(DoD), 0.2C ratecharge& dischargeat 25℃, at the beginningof life. If no PV modules are installed or the [...] 12 kg (26.5lb) Battery module dimension(WDH) 670  150  360 mm (26.4  5.9  14.0 inch) Battery moduleweight 50 kg (110.2 lb) 2 Installation Floor stand (standard),Wall mount (optional) Operatingtemperature -20℃～+ 55℃ (-4℉～131℉) 3 Max. operatingaltitude 4,000 m (13,123ft.) (Derating above 2,000 m) Environment Outdoor 4(Please refer to the user manual for installationcondition) Relative humidity 5%～95% Cooling Naturalconvection Protectionrating IP 66 Noise emission <29 dB Cell technology",
+        "score": 0.6399392,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://solar.huawei.com/-/media/Solar/attachment/pdf/au/service/Supporting/SUN2000/SUN2000-100-125KTL-Series-UserManual.pdf",
+        "title": "[PDF] SUN2000-(100KTL, 110KTL, 125KTL) Series - User Manual - Huawei",
+        "snippet": "● After installing the equipment, remove idle packing materials such as cartons, foam, plastics, and cable ties from the equipment area.\n● In the case of a fire, immediately leave the building or the equipment area, and turn on the fire alarm bell or make an emergency call. Do not enter the building on fire in any case.\n● Do not scrawl, damage, or block any warning label on the equipment.\n● Tighten the screws to the specified torque using tools when installing the equipment. [...] 1 General Requirements D ANGER Do not work with power on during installation.\n● Do not install, use, or operate outdoor equipment and cables (including but not limited to moving equipment, operating equipment and cables, inserting connectors to or removing connectors from signal ports connected to outdoor facilities, working at heights, and performing outdoor installation) in harsh weather conditions such as lightning, rain, snow, and level 6 or stronger wind. [...] (Optional) Screw hole for DC switch 1 (3) DC switch 1 (DC SWITCH 1) (4) Reset button 1 (RESET 1) (5) DC input terminal group 2 (PV9– PV14, controlled by DC SWITCH 2) (6) (Optional) Screw hole for DC switch 2 (7) DC switch 2 (DC SWITCH 2) (8) Reset button 2 (RESET 2) (9) DC input terminal group 3 (PV15– PV20, controlled by DC SWITCH 3) (10) (Optional) Screw hole for DC switch 3 (11) DC switch 3 (DC SWITCH 3) (12) Reset button 3 (RESET 3) (13) Ventilation valve (14) USB port (USB) (15)",
+        "score": 0.5874941,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://solar.huawei.com/admin/asset/v1/pro/view/1d15e9e120be44748cef729b4dc8a351.pdf",
+        "title": "[PDF] LUNA2000-2.0MWH Series Smart String ESS - Huawei",
+        "snippet": "S O L A R . H U A W E I . C O M More Energy Optimal Investment Simple O&M Safe & Reliable Battery Container Model LUNA2000-2.0MWH-1H0 LUNA2000-2.0MWH-1H1 LUNA2000-2.0MWH-2H1 DC Rated Voltage 1,200 V 1,250 V 1,250 V DC Max. Voltage 1,500 V 1,500 V 1,500 V Nominal Energy Capacity 2,064 kWh 2,032 kWh 2,032 kWh Charge & Discharge Rate ≤ 1 C ≤ 1 C ≤ 0.5 C Rated Power 2,064 kW 2,032 kW 1,016 kW Container Configuration (W x H x D) 6,058 x 2,896 x 2,438 mm 6,058 x 2,896 x 2,438 mm 6,058 x 2,896 x 2,438",
+        "score": 0.49758363,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://solar.huawei.com/~/media/Solar/attachment/pdf/apac/service/download/HUAWEI_Warranty_and_Service_Conditions_for_Smart_PV_Products2.pdf",
+        "title": "[PDF] HUAWEI Smart PV Products Warranty and Service Conditions",
+        "snippet": "Period Life Cycle Power During Warranty Period (Only for 5kWh battery pack) Warranty Extension LUNA2000 5 years 13.17Mwh@60% EOL Not Applicable Notices: 1. Battery warranty is defined as when the battery pack reaches the warranty period or the life cycle discharge is completed, the remaining capacity EOL meets the specification requirements, and the first comes into effect; the power module DCDC only involves the warranty period and has nothing to do with the battery performance. The battery [...] to Friday (Respond within 30Min, excl. lunch hour) Hardware Support （Exclude LUNA2000） Hardware Replacement Ship out in 2 Business Days（if available ） For details, see the Hardware Support clauses as below. Hardware Support （LUNA2000） Hardware Replacement Ship out in 30 Calendar Days（if available ） For details, see the Hardware Support clauses as below.  Huawei will use commercially reasonable efforts to ship out a replacement part within two (2) business days after an RMA (Return Material [...] SmartLogger  SmartLogger3000A  SmartLogger3000B  SmartModule1000A (Optional Add-On)  SmartLogger2000 Huawei Smart PV Products Warranty and Service Conditions 2021-9-13 Huawei Proprietary and Confidential  LUNA2000  LUNA2000-(5-30)-S0  Smart Dongle  Smart DongleA-05(WLAN-FE)  Smart DongleA-03-EU(4G)  SmartACU  SmartACU2000B  SmartACU2000D  ACBox  ACBox-2/1-D-S  ACBox-2/1-D-C  Smart PV Optimizer  SUN2000-450W-P  Smart Power Sensor  DDSU666-H  DTSU666-H 100A/50mA  DTSU666-H",
+        "score": 0.7413937,
+        "bucket": "other"
+      },
+      {
+        "url": "https://solar.huawei.com/download?p=%2F-%2Fmedia%2FSolarV4%2Fsolar-version2%2Fcommon%2Fservice-support%2Fwarranty%2Fpdf%2Fc-i-ess-warranty-policy-oversea-v2-0.pdf",
+        "title": "[PDF] C&I ESS Warranty Policy V2.0 - Huawei",
+        "snippet": "responsibility for damages or otherwise shall not exceed the purchase price paid by the original Buyer for the Products. 4.2.3. Huawei commercial and industrial energy storage systems have a two-year basic warranty by default. A advanced warranty can be provided only when they are connected to Huawei PV cloud or purchasing for five-year(ten-year in Europe) Preventive Maintenance.If the customer fails to connect to Huawei management system for more than six months, Huawei has the right to cancel [...] information of Huawei products by visiting the Huawei technical support website ( Multi-Channel Support Customers can follow official accounts of Huawei Digital Power across various media platforms to access more technical support information. 3.3 Software Support Service During the warranty period, Huawei ensures that the product works properly. Nevertheless, Huawei does not guarantee that the software will be error-free or run uninterruptedly, nor does it guarantee that all program errors [...] LUNA2000-129KWH-2H1 ⚫ LUNA2000-97KWH-1H1 C&I ESS Warranty Policy (Oversea) Huawei Confidentiality. No disclosure without permission. Page 5 of 13 Hybrid Cooling series： ⚫ LUNA2000-215-2S10 ⚫ LUNA2000-215-2S12 2MWh series： ⚫ LUNA2000-2.0MWH-2H1(0.5C) ⚫ LUNA2000-2.0MWH-1H1(1C) ⚫ LUNA2000-1.0MWH-1H1(1C) C&I ESS Warranty Policy (Oversea) Huawei Confidentiality. No disclosure without permission. Page 6 of 13 2 Warranty Scope 2.1 Product Warranty Period The ESS product warranty is classified into",
+        "score": 0.6562404,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "huawei",
+    "product": "Huawei Smart String Energy Storage",
+    "candidates": [
+      {
+        "url": "https://solar.huawei.com/download?p=%2F-%2Fmedia%2FSolarV4%2Fsolar-version2%2Fmiddle-east-africa%2Fma%2Fprofessionals%2Fall-products%2Fresidential%2Fisitepower-m%2Fdatasheet%2FiSitePower-M-Datasheet-20230822.pdf",
+        "title": "[PDF] Smart String Energy Storage System - Huawei",
+        "snippet": "Maximum output current 30 A Output power 6 kVA/5 kW Power factor 0.8 Overload capacity 102% ≤ Load ≤ 125% 30 s 125% < Load ≤ 150% 10 s ＞150%/short circuit 0.3 s AC parallel box Dimensions (W  H  D) 350 mm x 450 mm x 150 mm Weight Approx. 12 kg Input voltage 200/208/220/230/240 V AC. The default value is 220 V AC.\nInput current Max. 90 A Output voltage 200/208/220/230/240 V AC. The default value is 220 V AC. [...] protection Differential mode (between live and neutral): 3 KA; 8/20 μs Common mode (between live or neutral and PE, between live/neutral pair and PE): 5 KA; 8/20 μs Compliance information Certifications IEC62920: 2017, CISPR11: 2015+A1: 2016/EN55011: 2016+A1: 2017, EN62040-2, ETSI EN 301 489-1, ETSI EN 301 489-17, IEC61000-3, IEC 62619, IEC 62109-1, IEC 62109-2, RoHS, EN 50385, RCM, UKCA, ICE 60730, UN38.3 Copyright © Huawei Technologies Co., Ltd. 2022. All rights reserved. [...] 5 kWh Number of power modules 1 Number of batterymodules 1 2 3 4 5 6 Battery usable energy 1 5 kWh 10 kWh 15 kWh 20 kWh 25 kWh 30 kWh Max. output power 2.5kW 5 kW 5 kW 5 kW 5 kW 5 kW General Specification Power module dimension (WHD) 700  246  152 mm Power module weight 17 kg Battery module dimension (WHD) 700  390  158 mm Battery module weight 50 kg Base dimension (WHD) 700  65  147 mm (floor installation) 643  110  176 mm (wall-mounted installation) Base weight 1.5 kg (floor installation) 5.5",
+        "score": 0.8170061,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://solar.huawei.com/admin/asset/v1/pro/view/135e950d5f0c40ffa317c4cd20554e08.pdf",
+        "title": "[PDF] LUNA2000-215-2S10 - Smart String ESS - Huawei",
+        "snippet": "Energy Storage System Parameters Model type LUNA2000-215-2S10 Rated capacity 215.0kWh Maximum cycle rate 0.5 CP Maximum cycle efficiency 91.3% Depth of charge and discharge 0~100% Dimensions (W x D x H) 1150mm×1800mm×2100mm Weight ≤ 2.8 T Operating temperature range -30 °C ~ 55 °C (＞50°C Derating) Storage temperature range -35 °C ~ 60 °C Operating humidity range 0 ~ 100% (non-condensing) Maximum operating altitude 4,000 m System temperature control mode Hybrid cooling Balance mode Active [...] S O L A R . H U A W E I . C O M LUNA2000-215-2S10 Smart String ESS More Energy Simple O&M Safe & Reliable Note： (1)  Rated operating condition: In the on-grid scenario, the ambient temperature is 25°C, the charge/discharge rate is 0.5 CP, and the AC output voltage is 400 Vac.\n(2) This product datasheet is used only for the bidding of early projects . [...] resistance detection, AC overcurrent protection, and AC cable connection protection Environment RoHS6 Certification standards UL9540A; UN38.3; IEC 62477-1; IEC 62040-1; IEC 61000-6-1/2/3/4; IEC61727 Battery Parameters (DC) Cell material LFP Rated battery capacity 280Ah System battery configuration 240S1P Number of battery packs 4 Operating voltage range 648~864 V Rated DC current 140 A PCS Parameters (AC) PCS model type PCS2000-108K-MB1 Rated output power 108 kW Rated AC current 164.1 A AC",
+        "score": 0.8014549,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://solar.huawei.com/download?p=%2F-%2Fmedia%2FSolarV4%2Fsolar-version2%2Fcommon%2Fprofessionals%2Fall-products%2Fci%2Fsmart-string-ess%2Fluna2000-200kwhg-2h1%2Fdatasheet%2Fluna2000-200kwhg-2h1-dtatsheet-20230310.pdf",
+        "title": "[PDF] LUNA2000-200KWH-2H1 - Smart String ESS - Huawei",
+        "snippet": "S O L A R . H U A W E I . C O M Energy Storage System Parameters Battery Configuration 12S1P Maximum battery capacity of the energy storage system 193.5 kWh Rated Power 100 kW Dimensions (W x H x D), including DC/DC and PCS 2570mm×2135mm×1200mm Dimensions (W x H x D) 1810mm×2135mm×1200mm Weight (including the battery module) ≤2950kg Weight (without the battery module) ≤1070kg Operating temperature range -30 °C ~ 55 °C Storage temperature range -40 °C ~ 60 °C Operating humidity range 0 ~ 100% [...] (non-condensing) Maximum operating altitude 4,000 m Installation Environment Requirement Outdoor installation Battery temperature control mode Industrial-grade air conditioner Fire suppression of energy storage system YES Auxiliary Power Supply 220Vac，<=4.2kW Communication port Ethernet / SFP Communication protocol Modbus TCP Protection degree IP55 EMC Protection Rating ClassA DC Lightning Protection Type II Standards Environment RoHS6 Certification Standards GBT 36276-2018；IEC62619; [...] UL9540A;UN38.3 LUNA2000-200KWH-2H1 Smart String ESS More Energy Simple O&M Safe & Reliable S O L A R . H U A W E I . C O M Battery Pack General Cell Material LFP Nominal Capacity 16.13kWh Supported Charge & Discharge Rate ≤0.5 C Weight ≤ 140 kg Dimensions (W x H x D) 442 x 308 x 660 mm Smart Rack Controller Efficiency Max. Efficiency ≥ 98.5.0% Battery Side Rated Voltage 691.2@280Ah Operating Voltage Range 40 V ~ 1,050 V Min. Start Voltage 350 V Bus Side Max. DC Voltage 1,100 V Rated Voltage 665",
+        "score": 0.7872945,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://solar.huawei.com/en-GB/download?p=/-/media/Solar/attachment/pdf/eu/datasheet/LUNA2000-5-15-S0.pdf",
+        "title": "[PDF] Smart String Energy Storage System - Huawei",
+        "snippet": "voltagerange (three phase system) 600 – 980V Communication Display SOC status indicator, LED indicator Communication RS485 / CAN (only for parallel operation) General Specification Dimension (WDH) 670  150  600 mm (26.4  5.9  23.6 inch) 670  150  960 mm (26.4  5.9  37.8 inch) 670  150  1320 mm (26.4  5.9  60.0 inch) Weight (Floor stand toolkitincluded) 63.8 kg (140.7lb) 113.8 kg (250.9lb) 163.8 kg (361.1lb) Power module dimension (WDH) 670  150  240 mm (26.4  5.9  9.4 inch) Power module weight [...] TechnicalSpecification LUNA2000-5-S0 LUNA2000-10-S0 LUNA2000-15-S0 Performance Power module LUNA2000-5KW-C0 Number of power modules 1 Battery module LUNA2000-5-E0 Battery moduleenergy 5 kWh Number of batteryModules 1 2 3 Battery usable energy 1 5 kWh 10 kWh 15 kWh Max. output power 2.5 kW 5 kW 5 kW Peak outputpower 3.5 kW, 10s 7 kW, 10s 7 kW, 10s Nominal voltage (single phasesystem) 450 V Operating voltage range (single phasesystem) 350 – 560V Nominal voltage (three phasesystem) 600 V Operating [...] Lithium-iron phosphate(LiFePO4) Scalability Max. 2 systems in paralleloperation Compatibleinverters SUN2000-2/3/3.68/4/4.6/5/6KTL-L1, SUN2000-3/4/5/6/8/10KTL-M0 5, SUN2000-3/4/5/6/8/10KTL-M1 Standard Compliance (more availableupon request) Certificates CE, RCM, CEC, VDE2510-50, IEC62619,IEC 60730, UN38.3 LUNA2000-5/10/15-S0 Technical Specification 1. Test conditions: 100%depthofdischarge(DoD), 0.2C ratecharge& dischargeat 25℃, at the beginningof life. If no PV modules are installed or the",
+        "score": 0.7763013,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://solar.huawei.com/admin/asset/v1/pro/view/1d15e9e120be44748cef729b4dc8a351.pdf",
+        "title": "[PDF] LUNA2000-2.0MWH Series Smart String ESS - Huawei",
+        "snippet": "S O L A R . H U A W E I . C O M More Energy Optimal Investment Simple O&M Safe & Reliable Battery Container Model LUNA2000-2.0MWH-1H0 LUNA2000-2.0MWH-1H1 LUNA2000-2.0MWH-2H1 DC Rated Voltage 1,200 V 1,250 V 1,250 V DC Max. Voltage 1,500 V 1,500 V 1,500 V Nominal Energy Capacity 2,064 kWh 2,032 kWh 2,032 kWh Charge & Discharge Rate ≤ 1 C ≤ 1 C ≤ 0.5 C Rated Power 2,064 kW 2,032 kW 1,016 kW Container Configuration (W x H x D) 6,058 x 2,896 x 2,438 mm 6,058 x 2,896 x 2,438 mm 6,058 x 2,896 x 2,438 [...] FM-200 / Novec 1230™ Communication Interface Ethernet / SFP Ethernet / SFP Ethernet / SFP Communication Protocol Modbus TCP / IEC 104 Modbus TCP / IEC 104 Modbus TCP / IEC 104 Protection Degree IP55 IP55 IP55 Anti-corrosion Degree C5-Medium C5-Medium C5-Medium Black Start -Optional Optional Standards Compliance RoHS, IEC62477-1, IEC62040-1, IEC61000-6-2, EN55011, UL9540A, IEC62619, UN3536, etc. [...] mm Container Weight ≤ 30 t ≤ 30 t ≤ 30 t Operation Temperature Range -30°C ~ 55°C -30°C ~ 55°C -30°C ~ 55°C Storage Temperature Range -40°C ~ 60°C -40°C ~ 60°C -40°C ~ 60°C Relative Humidity 0 ~ 100% (Non-condensing) 0 ~ 100% (Non-condensing) 0 ~ 100% (Non-condensing) Max. Operating Altitude 4,000 m 4,000 m 4,000 m Cooling Method Smart Air Cooling Smart Air Cooling Smart Air Cooling Configuration of HVAC 8 HVACs 1 8 or 6 HVACs 1 6 or 4 HVACs 1 Fire Suppression Agent FM-200 FM-200 / Novec 1230™",
+        "score": 0.7552947,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www-file.huawei.com/-/media/corp2020/pdf/giv/2024/digital_power_whitepaper_2030_en.pdf",
+        "title": "[PDF] Digital Power - Huawei",
+        "snippet": "support. [...] will soon be embedded with more advanced plug-ins, and be supported by an energy cloud operating system (OS) that integrates information flows and energy flows. The connection between electricity production and consumption will enable two-way, Internet-based interactions among various industry players, encompassing everything from energy sources and power grids to load management, energy storage, and consumption. [...] components is managed in real-time by liquid pipes. The system intelligently adjusts the flow rate based on cooling needs, ensuring precise temperature control. The fully liquid cooling architecture offers numerous advantages, including high quality, long service life, wide application scenarios, and easy and cost-effective O&M. The annual failure rate of charging modules can be reduced to less than 5‰ and they can work for one decade or longer in most scenarios.",
+        "score": 0.6739866,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://digitalpower.huawei.com/upload-pro/index/64fd034f35534588bf76e6a66815032c/Active-Safety-and-Grid-Forming-Accelerating-PV-ESS-as-the-Main-Energy-Source.pdf",
+        "title": "[PDF] Active Safety and Grid Forming,Accelerating PV+ESS as the Main ...",
+        "snippet": "Huawei Digital Power converges bit, watt, heat and battery technologies, focuses on core technologies and products, continuously innovates in fields such as",
+        "score": 0.6304352,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://digitalpower.huawei.com/upload-pro/index/a5364cf5a58e4b188b476b6ef8527fa4/Digital-Power-Issue-04.pdf",
+        "title": "[PDF] Digital Power, Issue 04",
+        "snippet": "P102 Virtual Power Plants: Driving Green Innovation in Telecom Transformation P106 Huawei's iTRACK, Making Your Ride Smoother P98 P94 Fast and Safe: Why Huawei FusionCharge Solution Is Popular Among Consumers P90 Grid-Forming ESS Technology: Key to New Power Systems P70 Krannich Solar: A Perfect Match of Global Market Coverage and Huawei's Technical Innovation P81 Digital China: Exploring New Business Models and Innovation Through Deep Partnership with Huawei P73 HDT Energy: Collaborating with Huawei to Illuminate Latin America's Future P86 CNBM Technology: Building Capabilities and Exploring New Business with Huawei P77 KVC Unites with Huawei to Forge a Green Future in Malaysia 03 Digital Power 04 Digital Power Carbon Dynamics million barrels per day by 2050 under the Net Zero scenario.",
+        "score": 0.46147847,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://solar.huawei.com/admin/asset/v1/pro/view/324114d5a1154060a1b398099f34d08b.pdf",
+        "title": "[PDF] LUNA2000-(215-2S10, 215-2S12) Smart String ESS - User Manual",
+        "snippet": "(2024-07-31) Copyright © Huawei Digital Power Technologies Co., Ltd. [...] LUNA2000-(215-2S10, 215-2S12) Smart String ESS User Manual 1 Safety Information Issue 01 (2024-07-31) Copyright © Huawei Digital Power Technologies Co., Ltd.\n14 ● When installing the ESS, comply with the fire separation distance or fire wall requirements specified in local standards, including but not limited to GB 51048-2014 Design Code for Electrochemical Energy Storage Station and NFPA 855 Standard for the Installation of Stationary Energy Storage Systems. [...] 215-2S12) Smart String ESS User Manual Contents Issue 01 (2024-07-31) Copyright © Huawei Digital Power Technologies Co., Ltd.",
+        "score": 0.8259413,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://solar.huawei.com/download?p=%2F-%2Fmedia%2FSolarV4%2Fsolar-version2%2Fasia-pacific%2Fau%2Fprofessionals%2Fall-products%2Fproducts%2FLUNA2000-5-10-15-S0%2Fsupport%2Fpdf%2FLUNA2000-5_10_15-S0.pdf",
+        "title": "[PDF] SMART STRING ENERGY STORAGE SYSTEM - Huawei",
+        "snippet": "2 The weight of the battery module is subject to the actual product, with a tolerance of ±3%.\n3 Refer to battery warranty letter for conditional application.\n4 Outdoor installation is recommended. For indoor installation, refer to the user manual for instruction.\n5 Noise level (typical): < 29 dB(A) @1 m, 30°C, power on and run stably for 2 hours 6 Please contact local engineer for the compatibility. [...] IP rating IP 66 Noise emission 5 < 29 dB Cell technology Lithium-iron phosphate (LiFePO4) Country of Manufacture China Compatible inverters 6 SUN2000-2/3/3.68/4/4.6/5/6KTL-L1, SUN2000-8/10K-LC0 SUN2000-3/4/5/6/8/10KTL-M1 , SUN2000-12/15/17/20/25K-MB0 Standards Compliance (More Available Upon Request) Certificates CE, RCM, CEC, VDE2510-50, IEC62619, IEC 60730, UN38.3 Ordering and Deliverable Part Available for ordering 7 LUNA2000-5KW-C0, LUNA2000-5-E0, LUNA2000 Wall Mounting Bracket Technical [...] 670 mm x 150 mm x 240 mm (26.4 in. x 5.9 in. x 9.4 in.) Power module weight 12 kg (26.5 lb) Battery module dimensions (W x D x H) 670 mm x 150 mm x 360 mm (26.4 in. x 5.9 in. x 14.0 in.) Battery module weight 50 kg (110.2 lb) 2 Installation Floor stand (standard), Wall mount (optional) Operating temperature –20°C to +55°C (–4°F to +131°F) 3 Max. operating altitude 4,000 m (13,123 ft.) (Derating above 2,000 m) Environment Outdoor / Indoor 4 Relative humidity 5%-95% RH Cooling Natural convection",
+        "score": 0.7447496,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://solar.huawei.com/download?p=%2F-%2Fmedia%2FSolarV4%2Fsolar-version2%2Fcommon%2Fservice-support%2Fwarranty%2Fpdf%2Fc-i-ess-warranty-policy-oversea-v2-0.pdf",
+        "title": "[PDF] C&I ESS Warranty Policy V2.0 - Huawei",
+        "snippet": "responsibility for damages or otherwise shall not exceed the purchase price paid by the original Buyer for the Products. 4.2.3. Huawei commercial and industrial energy storage systems have a two-year basic warranty by default. A advanced warranty can be provided only when they are connected to Huawei PV cloud or purchasing for five-year(ten-year in Europe) Preventive Maintenance.If the customer fails to connect to Huawei management system for more than six months, Huawei has the right to cancel [...] basic warranty and advanced warranty. After devices are delivered, both of them are automatically obtained.For products that have been disconnected from the network for more than six months or have not been connected to the FusionSolar SmartPVMS, Huawei will not continue to provide the advanced warranty service. Category Device Basic warranty Advanced warranty Devices Smart String ESS 2 3 DCDC PCS Fire suppression module Auxiliary products SACU/SmartLogger 1 1 1. The actual warranty period is [...] subject to the warranty and maintenance periods agreed upon in the signed contract or purchase order (PO). 2. The device list is subject to the actual product situation. 3. The spare parts of the ESS are replaced by parts replacement, which does not affect the warranty period of the entire system. 4. The warranty period of spare parts such as the SmartLogger complies with the original rules of the region. Before the end of the standard warranty period, the Buyer may purchase extended warranty",
+        "score": 0.78963995,
+        "bucket": "other"
+      },
+      {
+        "url": "https://digitalpower.huawei.com/attachments/service/5d297ac21a0749b1a42d22ba18120ac9.pdf",
+        "title": "[PDF] Lithium Battery Warranty Agreement - Huawei Digital Power",
+        "snippet": "installation. The product warranty starts from the date when the preliminary acceptance certificate is issued, the date when the product is put into commercial use, or the date when the product is put into operation on the network, whenever earlier. Scenario 2: Party B is responsible for product installation. The product warranty starts from no later than three months after the product arrival or no later than six months after the product shipment. Two parties negotiate to specify the start [...] date based on project conditions. Scenario 3: If Party B is responsible for product installation, and it is specified that Party B needs to fulfill the warranty responsibilities during the trial run, the product warranty starts from the trial run. Scenario 4: Party B is not responsible for product installation. The product warranty starts from no later than three months after the product arrival or no later than six months after the product shipment. Two parties negotiate to specify the start [...] for a long time.  The lithium battery is damaged, broken, or leaks due to improper operations or incorrect connection.  Party A does not recharge the batteries in time and the batteries are stored longer than the storage term, which causes capacity loss or irreversible damage to the batteries.  After the batteries are installed and connected to the system, Party A does not power on the batteries in time, which causes the batteries to be overdischarged and thus causes damage to the batteries.",
+        "score": 0.69870013,
+        "bucket": "other"
+      },
+      {
+        "url": "https://solar.huawei.com/admin/asset/v1/pro/view/3cd6d840c4c34f4bb53ec8dc838eadfa.pdf",
+        "title": "[PDF] Smart String ESS Solution - Huawei",
+        "snippet": "1: Compatible with communication mode of PLC (Power Line Communication). Smart. Simple. Reliable. Support one-click commissioning. Patented anti-PID module.",
+        "score": 0.6964752,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "fronius",
+    "product": "Fronius Symo GEN24 Plus",
+    "candidates": [
+      {
+        "url": "https://www.fronius.com/~/downloads/Solar%20Energy/Datasheets/SE_DS_GEN24_GEN24Plus_Symo_EN_AU.pdf",
+        "title": "[PDF] Fronius Symo GEN24 / GEN24 Plus",
+        "snippet": "The Fronius GEN24/Plus are sustainable, reliable inverters for PV systems, with the Plus offering battery storage and backup power. GEN24 is the inverter, GEN",
+        "score": 0.81524754,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.fronius.com/~/downloads/Solar%20Energy/Datasheets/SE_DS_Fronius_Symo_GEN24_GEN24Plus_3_to_10_kW_EN_UK.pdf",
+        "title": "[PDF] Fronius Symo GEN24 and GEN24 Plus",
+        "snippet": "The Fronius GEN24 Plus impress with premium efficiency and maximum power at high temperatures. 0.7 - 1 ind. / cap. The Full Backup power function is available",
+        "score": 0.76972175,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.fronius.com/~/downloads/Company/Legal%20Documents/C_TERMS_Informationsblatt_Datenverordnung_EN.pdf",
+        "title": "[PDF] Information about our products and related services in accordance ...",
+        "snippet": "Please also specify which product or related service the data is to be provided from. Please note that Fronius may require user identification in order to",
+        "score": 0.3436946,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.fronius.com/~/downloads/Solar%20Energy/Datasheets/SE_DS_Fronius_Primo_EN_US.pdf",
+        "title": "[PDF] FRONIUS PRIMO",
+        "snippet": "With power categories ranging from 3.8 kW to 15.0 kW, the transformerless Fronius Primo is the ideal compact single-phase.",
+        "score": 0.21867809,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.fronius.com/~/downloads/Solar%20Energy/Operating%20Instructions/42,0426,0315,EA.pdf",
+        "title": "[PDF] Operating Instructions - Fronius International",
+        "snippet": "Fronius Symo GEN24 Plus. Battery parallel operation 3). BYD Battery-Box ... User interface secondary device GEN24 / Verto / Tauro. 1 Select the user",
+        "score": 0.71185225,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.fronius.com/~/downloads/Solar%20Energy/Application%20Guides/SE_APG_Symo_GEN24_Full_Backup_V4_EN_AU.pdf",
+        "title": "[PDF] setting up full battery backup with fronius symo gen24 plus (6 - 10)",
+        "snippet": "* Follow BYD's installation manual on correct installation/configuration instructions when paralleling multiple batteries. Page 4. (c) Fronius",
+        "score": 0.68318754,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.fronius.com/~/downloads/Solar%20Energy/Flyer/SE_FLY_5_Plus_5_Year_Warranty_Fronius_GEN24_EN_AU.pdf",
+        "title": "[PDF] FOR ALL GEN24 & GEN24 PLUS INVERTERS. - Fronius International",
+        "snippet": "Fronius Warranty. 5 End customers must register the inverter as well as claim ex- tended warranty promotion on www.solarweb.com",
+        "score": 0.77792513,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.fronius.com/~/downloads/Solar%20Energy/Brochures/SE_BRO_Fronius_GEN24_GEN24Plus_Web_EN.pdf",
+        "title": "[PDF] Fronius GEN24 and GEN24 Plus",
+        "snippet": "The Fronius GEN24 is the inverter, that directly and flexibly lets you use the solar energy you generate. You can even enjoy 24 hours of sun in.",
+        "score": 0.7646988,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.fronius.com/da/~/downloads/Solar%20Energy/Warranty%20Extensions/SE_WE_ST_EN.pdf",
+        "title": "[PDF] Warranty Extensions - Fronius International",
+        "snippet": "- The Fronius warranty extension is a low-cost way of covering your risk. In case of warranty, Fronius will cover material costs. - With the Fronius warranty",
+        "score": 0.63750535,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "fronius",
+    "product": "Fronius Energy Package",
+    "candidates": [
+      {
+        "url": "https://www.fronius.com/~/downloads/Solar%20Energy/Datasheets/SE_DS_Fronius_Reserva_EN.pdf",
+        "title": "[PDF] The Fronius storage solution",
+        "snippet": "The Fronius storage solution. Page 2. Technical details. 1The charging and discharging current is limited by the inverter. 2An identical number of modules per",
+        "score": 0.62248284,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.fronius.com/da/~/downloads/Solar%20Energy/Installation%20Instructions/42,0426,0172,EN.pdf",
+        "title": "[PDF] Installation Instructions - Fronius International",
+        "snippet": "Install the inverter in a protected location, e.g. in the vicinity of the solar modules or beneath the eaves. UDCmax at an altitude of: 0 to 2000 m = 1000 V.",
+        "score": 0.67140645,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.fronius.com/~/downloads/Solar%20Energy/Installation%20Instructions/42,0426,0201,EN.pdf",
+        "title": "[PDF] Fronius Symo Hybrid with battery - Installation Instructions",
+        "snippet": "Settings for the entire PV system are entered (see also \"Fronius Energy Package. - System overview\" Operating Instructions). 5. Dynamic power. Settings for",
+        "score": 0.6504012,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.fronius.com/~/downloads/Solar%20Energy/Installation%20Instructions/42,0426,0197,EA.pdf",
+        "title": "[PDF] Installation Instructions - Fronius International",
+        "snippet": "The inverter should be installed in a protected location, e.g., near the solar modules or under an over- hanging roof. Fronius Primo 3.8–8.2. Altitude above sea",
+        "score": 0.6366926,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.fronius.com/~/downloads/Solar%20Energy/Installation%20Instructions/42,0426,0209,EN.pdf",
+        "title": "[PDF] Fronius Symo Hybrid Wiring examples emergency power switchover",
+        "snippet": "The default values for the pins correspond to the settings used in the document entitled \"Fronius Energy Package - Examples of emergency power switchover\".",
+        "score": 0.49084634,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.fronius.com/~/downloads/Solar%20Energy/Datasheets/SE_DS_Fronius_Primo_GEN24_GEN24Plus_3_to_6_kW_EN.pdf",
+        "title": "[PDF] Fronius Primo GEN24 & GEN24 Plus 3.0 - 6.0 kW",
+        "snippet": "The Fronius GEN24 has integrated backup power, open interfaces, and energy management. The GEN24 Plus offers full backup with battery connection. Both have",
+        "score": 0.5087155,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.fronius.com/~/downloads/Solar%20Energy/Brochures/SE_BRO_Fronius_GEN24_GEN24Plus_Web_EN.pdf",
+        "title": "[PDF] Fronius GEN24 and GEN24 Plus",
+        "snippet": "The Fronius GEN24 is the inverter, that directly and flexibly lets you use the solar energy you generate. You can even enjoy 24 hours of sun in.",
+        "score": 0.48733237,
+        "bucket": "other"
+      }
+    ]
+  }
+]

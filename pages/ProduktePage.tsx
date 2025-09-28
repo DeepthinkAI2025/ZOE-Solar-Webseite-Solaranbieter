@@ -1,12 +1,57 @@
-import React, { useState, useMemo } from 'react';
-import { productCatalog } from '../data/products.generated';
-import { ProductCategory, Product } from '../data/productTypes';
+import React, { useState, useMemo, useEffect } from 'react';
+import axios from 'axios';
+import { ProductCategory, Product, Manufacturer } from '../data/productTypes';
 import ProductDetailModal from '../components/ProductDetailModal';
 import AIRecommender from '../components/AIRecommender';
 import SubHeader from '../components/SubHeader';
 import AnimatedSection from '../components/AnimatedSection';
 import ServiceWizard from '../components/ServiceWizard';
 import ProductsPreview from '../components/ProductsPreview';
+
+// IndexedDB Setup
+const DB_NAME = 'ProductsDB';
+const STORE_NAME = 'products';
+const CACHE_DURATION = 604800000; // 7 Tage in ms
+
+const openDB = (): Promise<IDBDatabase> => {
+    return new Promise((resolve, reject) => {
+        const request = indexedDB.open(DB_NAME, 1);
+        request.onupgradeneeded = () => {
+            const db = request.result;
+            if (!db.objectStoreNames.contains(STORE_NAME)) {
+                db.createObjectStore(STORE_NAME, { keyPath: 'id' });
+            }
+        };
+        request.onsuccess = () => resolve(request.result);
+        request.onerror = () => reject(request.error);
+    });
+};
+
+const saveToDB = async (data: any) => {
+    const db = await openDB();
+    const tx = db.transaction(STORE_NAME, 'readwrite');
+    const store = tx.objectStore(STORE_NAME);
+    store.put({ id: 'productsData', data, timestamp: Date.now() });
+    return tx.complete;
+};
+
+const loadFromDB = async (): Promise<any | null> => {
+    const db = await openDB();
+    const tx = db.transaction(STORE_NAME, 'readonly');
+    const store = tx.objectStore(STORE_NAME);
+    const request = store.get('productsData');
+    return new Promise((resolve) => {
+        request.onsuccess = () => {
+            const result = request.result;
+            if (result) {
+                resolve({ data: result.data, timestamp: result.timestamp });
+            } else {
+                resolve(null);
+            }
+        };
+        request.onerror = () => resolve(null);
+    });
+};
 
 interface ProduktePageProps {
     onSelectHersteller: (slug: string) => void;
@@ -15,7 +60,6 @@ interface ProduktePageProps {
     bannerHeight: number;
     headerHeight: number;
 }
-
 
 const ProductCard: React.FC<{ 
     product: Product & { manufacturerName: string }; 
@@ -156,17 +200,82 @@ const ProdukteHero = () => (
     </section>
 );
 
-const { manufacturers, allCategories } = productCatalog;
-
 const ProduktePage: React.FC<ProduktePageProps> = ({ onSelectHersteller, comparisonList, onToggleCompare, bannerHeight, headerHeight }) => {
     const [selectedCategory, setSelectedCategory] = useState<ProductCategory>('Module');
     const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+    const [manufacturers, setManufacturers] = useState<Manufacturer[]>([]);
+    const [allCategories, setAllCategories] = useState<ProductCategory[]>([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState<string | null>(null);
+    const [isOffline, setIsOffline] = useState(!navigator.onLine);
+
+    useEffect(() => {
+        const handleOnline = () => setIsOffline(false);
+        const handleOffline = () => setIsOffline(true);
+
+        window.addEventListener('online', handleOnline);
+        window.addEventListener('offline', handleOffline);
+
+        return () => {
+            window.removeEventListener('online', handleOnline);
+            window.removeEventListener('offline', handleOffline);
+        };
+    }, []);
+
+    useEffect(() => {
+        const fetchProducts = async () => {
+            try {
+                setLoading(true);
+                const cached = await loadFromDB();
+                const now = Date.now();
+
+                if (cached && (now - cached.timestamp < CACHE_DURATION || !navigator.onLine)) {
+                    // Use cached data if valid or offline
+                    setManufacturers(cached.data.manufacturers || []);
+                    setAllCategories(cached.data.allCategories || []);
+                    setError(navigator.onLine ? null : 'Offline-Modus: Daten aus Cache geladen (möglicherweise veraltet).');
+                    setLoading(false);
+                    return;
+                }
+
+                if (!navigator.onLine) {
+                    if (cached) {
+                        // Use expired cache if offline
+                        setManufacturers(cached.data.manufacturers || []);
+                        setAllCategories(cached.data.allCategories || []);
+                        setError('Offline-Modus: Daten aus Cache geladen (möglicherweise veraltet).');
+                        setLoading(false);
+                        return;
+                    } else {
+                        setError('Offline-Modus: Keine gecachten Daten verfügbar.');
+                        setLoading(false);
+                        return;
+                    }
+                }
+
+                // Fetch from API
+                const response = await axios.get('/api/products/live');
+                const data = response.data.data;
+                setManufacturers(data.manufacturers || []);
+                setAllCategories(data.allCategories || []);
+                await saveToDB(data); // Cache the data
+                setError(null);
+            } catch (err) {
+                console.error('Failed to load products:', err);
+                setError('Fehler beim Laden der Produkte. Bitte versuchen Sie es später erneut.');
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchProducts();
+    }, [isOffline]);
 
     const allProducts = useMemo(() => {
         return manufacturers.flatMap(m => 
             m.products.map(p => ({ ...p, manufacturerName: m.name }))
         );
-    }, []);
+    }, [manufacturers]);
 
     const filteredProducts = useMemo(() => {
         return allProducts.filter(p => p.category === selectedCategory);
@@ -191,11 +300,11 @@ const ProduktePage: React.FC<ProduktePageProps> = ({ onSelectHersteller, compari
         document.dispatchEvent(new CustomEvent('start-chat-with-context', { detail }));
     };
 
-    const navItems = allCategories.map(cat => ({
+    const navItems = useMemo(() => allCategories.map(cat => ({
         id: cat,
         title: cat,
         page: 'produkte'
-    }));
+    })), [allCategories]);
 
     const handleCategoryClick = (id: string) => {
         setSelectedCategory(id as ProductCategory);
@@ -229,30 +338,49 @@ const ProduktePage: React.FC<ProduktePageProps> = ({ onSelectHersteller, compari
                 }}
                 onSelectHersteller={onSelectHersteller}
             />
-             <SubHeader
-                navItems={navItems}
-                activeItemId={selectedCategory}
-                onItemClick={(id) => handleCategoryClick(id)}
-                bannerHeight={bannerHeight}
-                headerHeight={headerHeight}
-            />
+            {!loading && !error && (
+                <SubHeader
+                    navItems={navItems}
+                    activeItemId={selectedCategory}
+                    onItemClick={(id) => handleCategoryClick(id)}
+                    bannerHeight={bannerHeight}
+                    headerHeight={headerHeight}
+                />
+            )}
             <div id="product-catalog" className="py-20 scroll-mt-24">
                 <div className="container mx-auto px-6">
                     <AIRecommender />
                     
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-12">
-                        {filteredProducts.map(product => (
-                            <ProductCard 
-                                key={product.name}
-                                product={product}
-                                onQuote={openChatWithContext}
-                                comparisonList={comparisonList}
-                                onToggleCompare={onToggleCompare}
-                                onShowDetails={setSelectedProduct}
-                                onSelectHersteller={onSelectHersteller}
-                            />
-                        ))}
-                    </div>
+                    {loading ? (
+                        <div className="flex justify-center items-center py-20">
+                            <div className="w-12 h-12 border-4 border-green-500 border-t-transparent rounded-full animate-spin" />
+                            <span className="ml-4 text-slate-600">Produkte werden geladen...</span>
+                        </div>
+                    ) : error ? (
+                        <div className="text-center py-20">
+                            <div className="text-red-600 mb-4">{error}</div>
+                            <button 
+                                onClick={() => window.location.reload()} 
+                                className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700"
+                            >
+                                Erneut versuchen
+                            </button>
+                        </div>
+                    ) : (
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-12">
+                            {filteredProducts.map(product => (
+                                <ProductCard 
+                                    key={product.name}
+                                    product={product}
+                                    onQuote={openChatWithContext}
+                                    comparisonList={comparisonList}
+                                    onToggleCompare={onToggleCompare}
+                                    onShowDetails={setSelectedProduct}
+                                    onSelectHersteller={onSelectHersteller}
+                                />
+                            ))}
+                        </div>
+                    )}
                 </div>
             </div>
              <section className="py-20 bg-white">

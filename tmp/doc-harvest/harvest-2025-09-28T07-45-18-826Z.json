@@ -1,0 +1,674 @@
+[
+  {
+    "manufacturer": "apsystems",
+    "product": "APSystems YC500A",
+    "candidates": [
+      {
+        "url": "https://offgridisbetter.com/wp-content/uploads/2018/12/YC500A.pdf",
+        "title": "[PDF] YC500A",
+        "snippet": "90.1” (2290mm) 8.7” (221mm) 6.5” (167mm) Leading the Industry in Solar Microinverter Technology APsystems YC500A Microinverter Datasheet INPUT DATA (DC) MPPT Voltage Range 22-45V Maximum Input Voltage 55V Maximum Input Current 12A X 2 OUTPUT DATA (AC) Rated Output Power 500W Maximum Output Current 2.08A @ 240V 2.4A @208V Nominal Output Voltage/Range - 240V 240V/211V-264V Nominal Output Voltage/Range - 208V 208V/183V-229V Nominal Output Frequency/Range 60Hz/ 59.3-60.5Hz Power Factor >0.99 Total [...] YC500A • Single unit connects two solar modules • Maximum output power 500W • Individual MPPT for each module • Up to 14 solar modules (7x YC500s) in a string with a 20A breaker Microinverter DIMENSIONS Our flagship product, the APsystems YC500A is a grid-tied microinverter with intelligent networking and monitoring systems to ensure maximum efficiency. Highly dependable and cost effective, the YC500A can accommodate PV modules up to 365W with dual MPPT but is ideally suited for modules from 280 [...] & COMPLIANCE Communication Power line (PLC) Warranty 10 years standard, extendable to 25 years Emissions & Immunity (EMC) Compliance FCC PART 15, ANSI C63.4 2003, ICES-003 Safety Class Compliance Grid Connection Compliance IEEE 1547 10.25.16 © All Rights Reserved Specifications subject to change without notice – please ensure you are using the most recent update found at www.APsystems.com UL 1741 , CSA C22.2, No. 107.1-01, NEC2014 690.12 \u0007 Default AC output is 240V mode. Programmable to 208V",
+        "score": 0.8571119,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://global.apsystems.com/wp-content/uploads/2018/04/4270152002_APsystems-YC500A-For-APAC-Datasheet_Rev1.1_2017-9-12.pdf",
+        "title": "[PDF] YC500A - APsystems Global",
+        "snippet": "YC500A 2017/9/12 Version 1.1 2 YC500A Microinverter Datasheet Model YC500A-SAA Input Data (DC) MPPT Voltage Range 22V-45V Operation Voltage Range 16V-52V Maximum Input Voltage 55V Startup Voltage 22V Maximum Input Current 10.5A x 2 Output Data (AC) Maximum Output Power 530W Nominal Output Voltage 230V Maximum Continuous Output Current 2.30A Default Output Voltage Range 200V-270V Extended Output Voltage Range 149V-278V Nominal Output Frequency 50Hz Default Output Frequency Range 47.5Hz-50.5Hz [...] Extended Output Frequency Range 45.1Hz -54.9Hz Power Factor >0.99 Total Harmonic Distortion <3% Maximum Units per Branch 9 for 20 Breaker / 11 for 25A Breaker Efficiency Max. Inverter Efficiency 95.5% Night Power Consumption 120mW Mechanical Data Operating Ambient Temperature Range -40 oF to +149 oF (-40 °C to +65 °C ) Storage Temperature Range -40 oF to +185 oF (-40 °C to +85 °C ) Dimensions (W x H x D) 221mm x 167mm x 29mm (8.7” x 6.6” x 1.1”) Weight 5.5lbs/2.5kg Enclosure Rating IP67 Cooling [...] for residential and commercial customers.",
+        "score": 0.846159,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://saveenergy.mx/wp-content/uploads/2018/10/APsystems-YC500A-For-Mexico-Datasheet_EN.pdf",
+        "title": "[PDF] APsystems YC500 Microinverter Datasheet - Save Energy",
+        "snippet": "YC500A Leading the Industry in Solar Microinverter Technology Version 1.1 1 APsystems YC500 Microinverter Datasheet Region Mexico Model YC500A-MX YC500A-NA-MX Input Data (DC) MPPT Voltage Range 22V-45V Operation Voltage Range 16V-52V Maximum Input Voltage 55V Startup Voltage 22V Maximum Input Current 10.5A x 2 12A x 2 Output Data (AC) Nominal Output Voltage 127V 220V Maximum Continuous Output Power 450W 500W Nominal Output Current 3.54A 2.27A Default Output Voltage Range 95V-155V 181V-264V [...] DIMENSIONS (For Mexico) Microinverter  Single unit connects two solar modules  Individual MPPT for each module Our flagship product, the APsystems YC500A is a grid-tied microinverter with intelligent networking and monitoring systems to ensure maximum efficiency. Highly dependable and cost effective, the YC500A delivers 225W to 250W AC per module with dual MPPT. Half the inverters and half the installation means real cost savings for residential and commercial customers. [...] Extended Output Voltage Range 82V-155V 181V-298V Nominal Output Frequency 60Hz Default Output Frequency Range 57Hz-62Hz Extended Output Frequency Range 55.1Hz -64.9Hz Power Factor >0.99 Total Harmonic Distortion <3% Maximum Units per Branch 4 for 20A Breaker 5 for 25A Breaker 7 for 20A Breaker 8 for 25A Breaker Efficiency Peak Efficiency 95.5% Night Power Consumption 120mW Mechanical Data Operating Ambient Temperature Range -40°C to +65°C（-40 oF to +149 oF） Storage Temperature Range -40°C to",
+        "score": 0.8396422,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://saegroup.com.au/wp-content/uploads/aps-yc500-micro-inverter-datasheet.pdf",
+        "title": "[PDF] APsystems YC500A/I Microinverter Datasheet | SAE Group",
+        "snippet": "APsystems YC250/YC500 Installation/User Manual 20 APsystems YC500A/I Microinverter Datasheet Input Data (DC) Recommended PV Module Power (STC)Range 180W-310W MPPT Voltage Range 22V-45V Operation Voltage Range 16V-52V Maximum Input Voltage 55V Startup Voltage 22V Maximum Input Current 10.5A x 2 12A x 2 Output Data (AC) Nominal Output Voltage 127V 220V Maximum Continuous Output Power 450W 500W Nominal Output Current 3.54A 2.27A Default Output Voltage Range 95V-155V 181V-264V Extended Output [...] Voltage Range 82V-155V 181V-298V Nominal Output Frequency 60Hz Default Output Frequency Range 57Hz-62Hz Extended Output Frequency Range 55.1Hz -64.9Hz Power Factor >0.99 Total Harmonic Distortion <3% Maximum Units per Branch 4 for 20A Breaker 5 for 25A Breaker 7 for 20A Breaker 8 for 25A Breaker Efficiency Peak Efficiency 95.5% (HF Transformer Isolation) Night Power Consumption 120mW Mechanical Data Operating Ambient Temperature Range -40 oF to +149 oF (-40°C to +65°C ) Storage Temperature [...] Range -40 oF to +185 oF (-40°C to +85°C ) Dimensions (W x H x D) 221mm × 167mm× 29mm (8.7” × 6.6” × 1.1”) Weight 5.5lbs/2.5kg AC CABLE 12AWG Enclosure Rating NEMA 4X NEMA 6 Cooling Natural Convection Features & Compliance Communication Power line Design Lifetime 25yrs Monitoring Life monitoring via EMA software Compliance NOM FCC Part15; ANSIC63.4;ICES-003; UL1741,CSA C22.2 No.107.1-01;IEEE1547 © All Rights Reserved Specifications subject to change without notice - please ensure you are using",
+        "score": 0.7750779,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://cdn.myced.com/images/Products/ZZ0000/ZZ2994/00000/ZZ299400030_DS.pdf",
+        "title": "[PDF] YC500 & YC1000 Datasheet - My CED",
+        "snippet": "C63.4; ICES-003 Safety Class Compliance UL 1741 , CSA C22.2, No. 107.1-01, NEC2014 690.12 UL1741xCSA C22.2 No.107.1-01 Grid Connection Compliance IEEE 1547 IEEE1547 Warranty 10 years standard, extendable to 25 years 10 years standard, extendable to 25 years 277/480V 208V YC500A YC1000-3 240V 208V 8.21.15 © All Rights Reserved 600 Ericksen Ave NE, Suite 200, Seattle, WA 98110 | 844.666.7035 | APsystems.com Specifications subject to change without notice – please ensure you are using the most [...] • Can be unlocked with use of flat head screwdriver (pictured) Accessories The APsystems microinverter solution includes a full range of certified products and accessories to suit any PV application. Contact your APsystems distributor, or see our full catalog online at APsystems.com. [...] recent update found at www.APsystems.com  Programmable per customer and utility requirements. All settings UL approved YC500 & YC1000 Datasheet Part No. ECU or ECU ZigBee The ECU provides the Power Line Communication (PLC) to each microinverter, allowing monitoring of each individual PV module in the array. The ECU is offered with either Power Line Communication (PLC) or ZigBee technology. ZigBee technology is required for the monitoring of the YC 1000.",
+        "score": 0.7474137,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.umasolar.com/wp-content/uploads/2018/09/APsystems-combo-datasheet-11.7.16.pdf",
+        "title": "APmicroTM",
+        "snippet": "INPUT DATA (DC) MPPT Voltage Range 22-45V 16-55V Maximum Input Voltage 55V 60V Maximum Input Current 12A X 2 14.8A x 4 Startup Voltage 22V 22V OUTPUT DATA (AC) Maximum Output Power YC500A 500W 500W Maximum Output Power YC500i 548W 548W Maximum Output Power YC1000 900W 900W Grid Type Single phase 3 phase 3 phase 3 phase Nominal Output Current 2.08A 2.40A 1.08Ax3 2.50Ax3 Peak Output Current (YC500i) 2.62A 2.28A Nominal Output Voltage 211V-264V 183V-229V 277Yx3 120Yx3 Nominal Output Frequency [...] 2003, ICES-003 FCC Part15; ANSI C63.4; ICES-003 Safety Class Compliance UL1741, CSA C22.2 No.107.1-01, NEC 690.12, NEC 690.11 UL1741, CSA C22.2 No.107.1-01, NEC 690.12, NEC 690.11 Grid Connection Compliance IEEE 1547 IEEE 1547 Warranty 10 years standard, extendable to 25 years 10 years standard, extendable to 25 years 277Y/480V 120Y/208V YC500 SERIES: YC1000 SERIES: 240V 120Y / 208V 8.16 © All Rights Reserved 600 Ericksen Ave NE, Suite 200, Seattle, WA 98110 | 844.666.7035 | APsystems.com [...] Legend A. Pair of MC4 Caps (Male and Female) B. AC 25A Female Cap C. AC Connector Cable D. AC Extension Connector Cable APSYSTEMS YC500A APSYSTEMS YC500i APSYSTEMS YC1000-3 ECU or ECU ZigBee (pictured) A B C I K J E F G H The ECU provides the Power Line Communication (PLC) to each microinverter, allowing monitoring of each individual PV module in the array. D E. YC500i Trunk Cable F. YC500i Trunk Cable T-CONN Cap G. YC500i Trunk Cable End Cap H. YC500i AC Connector Unlock Tool I. YC1000-3 Trunk",
+        "score": 0.7216064,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://global.apsystems.com/wp-content/uploads/2017/12/4062308203_APsystems-YC500-For-Sri-Lanka-User-manual_Rev1.0_2017-11-27.pdf",
+        "title": "[PDF] Installation / User Manual - APsystems Global",
+        "snippet": "Go to AC junction box YC500A/I Installation/User Manual 9 YC500A Installation Procedures Step 2 - Attaching the APsystems Microinverters to the Racking or the PV Module Frame Attach to the racking a. Mark the location of the Microinverter on the rack, with respect to the PV module junction box or any other obstructions.\nb. Mount one Microinverter at each of these locations using hardware recommended by your module racking vendor. [...] SAVE THESE INSTRUCTIONS! This manual contains important instructions for models YC500A/YC500I that must be followed during Installation and maintenance of the Photovoltaic Grid-connected Inverter.\nSpecifications subject to change without notice - please ensure you are using the most recent update found at www.APsystems.com WARNING: This indicates a situation where failure to follow instructions may cause a serious hardware failure or personnel danger if not applied appropriately. [...] WARNING: Do not place the inverters (including DC and AC connectors) Where exposed to the sun, rain or snow, even gap between modules. Allow a minimum of 3/4’’(1.5cm.) between the roof and the bottom of the Microinverter to allow proper air flow.\nM8 (not supplied by APsystems) 54 54 46 M4 YC500A/I Installation/User Manual 10 YC500A Installation Procedures Step 3 - Connecting the APsystems Microinverter AC Cables A B Figure 7 Best Practice: Use screwdriver to split the Main connectors.",
+        "score": 0.82728493,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://global.apsystems.com/wp-content/uploads/2017/12/4060308102_APsystems-YC500A-LK-Quick-Installation-Guide_Rev1.0_2017-11-30.pdf",
+        "title": "[PDF] YC500A-LK Microinverter Quick Installation Guide - APsystems Global",
+        "snippet": "2017/11/30 REV1.0 Quick Installation Guide 1 100mm YC500A-LK Microinverter Quick Installation Guide Step 1.\nVerify the grid voltage to match with microinverter rating.\nStep 2.\nInstall the AC branch circuit isolator.\nStep3.\nConnect the cables to the branch isolator.\na.\nPut the unused end of the AC interconnector cable into the branch isolator.\nb.\nPlace cable connecting to the point of utility interconnection into the branch isolator.\nc.\nWire the conductors: L- BROWN; N - BLUE; PE - YELLOW GREEN. [...] (Please download manuals at www.APsystems.com).\nL N PE N L PE [...] Place the PV modules and connecting each YC500A to the two PV modules close-by.\nA B Step8.\nComplete the APsystems installation map.\nEach APsystems microinverter has two removable serial number labels. Peel labels off, affix one to the respective location on the APsystemsinstallation map, and affix another to the PV module frame which is easy to see. Use the Scanning Gun to scan the serial numbers on the map into the computer or scan by mobile phone, then complete the setting (see ECU manual).",
+        "score": 0.767847,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.umasolar.com/wp-content/uploads/2018/09/APsystems_YC500A_Installation_UserManual-v4.2-11.6.15.pdf",
+        "title": "Installation/User Manual - UMA Solar",
+        "snippet": "Installation/User Manual APsystems YC500-A Photovoltaic Grid-connected Inverter Version 4.2 11/15 © All Rights Reserved APsystems 600 Ericksen Ave. NE Ste 200 Seattle, WA 98110 TEL: 844-666-7035 EMAIL: info@APsystems.com WEB: www.APsystems.com TABLE OF CONTENTS IMPORTANT SAFETY INSTRUCTIONS 1 Radio interference statement 2 APsystems YC500-A System Introduction 3 APsystems microinverter system installation 6 Additional installation components from APsystems 6 Required parts and tools from [...] WARNING: The maximum open circuit voltage of the PV module must not exceed the specified maximum input voltage of the APsystems microinverter. APsystems YC500A Microinverter Datasheet APsystems YC500A/I Installation/User Manual 19 APsystems YC500A/I Microinverter Datasheet Input Data (DC) Recommended PV Module Power (STC)Range 180W-310W MPPT Voltage Range 22V-45V Operation Voltage Range 16V-52V Maximum Input Voltage 55V Startup Voltage 22V Maximum Input Current 12A x 2 Output Data (AC) Nominal [...] indications and error reporting 14 • Operation LED 14 • GFDI error 14 • Other faults 14 Troubleshooting a non-operating APsystems microinverter 15-16 Replace a microinverter 17 Technical data 18-19 Efficency curves 20 Wiring diagrams 21 • Sample wiring diagram – 120V/240V split phase 21 • Sample wiring diagram – 120V/ 208V three phase 22 iii APsystems YC500-A Installation/User Manual APsystems YC500-A Installation/User Manual 1 IMPORTANT SAFETY INSTRUCTIONS SAVE THESE INSTRUCTIONS! This manual",
+        "score": 0.7634314,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://ia803403.us.archive.org/21/items/manualzilla-id-5721596/5721596.pdf",
+        "title": "Installation/User Manual",
+        "snippet": "WARNING: The maximum open circuit voltage of the PV module must not exceed the specified maximum input voltage of the APS Microinverter. APS YC500A-MIW Installation/User Manual 18 YC500-A Technical Data INPUT DATA (DC) Recommended PV Module Power Range (STC) 180-310W MPPT Voltage Range 22-45V Maximum Input Voltage 55V Maximum Input Current 12A X 2 OUTPUT DATA (AC) Rated Output Power 500W Maximum Output Current 2.08A @ 240V 2.4A @208V Nominal Output Voltage/Range - 240V 240V/211V-264V Nominal [...] Installation/User Manual APS YC500A-MIW Photovoltaic Grid-connected Inverter Version 3.1 4/2014 APS America 1015 Hostmark St. Ste 104; Poulsbo, WA 98370 TEL: 206-855-5100 EMAIL: info@apsamerica.com WEB: www.APSamerica.com Table of Contents IMPORTANT SAFETY INSTRUCTIONS 1 APS Microinverter System Introduction 2 APS Microinverter 500 series Introduction 4 APS Microinverter System Installation 5 Additional Installation components from APS 5 Required Parts and Tools from installer 5 Installation [...] for module racking ✹ ✹Sockets and wrenches for mounting hardware ✹ ✹Continuous grounding conductor and grounding washers ✹ ✹Phillips screwdriver ✹ ✹Torque wrench APS YC500A-MIW Installation/User Manual 6 Installation Procedures APS Microinverters are designed to only operate when they can sense power coming from the grid. Even if they are plugged into the PV array, they will not turn themselves on until they can read power from the grid.",
+        "score": 0.72278196,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://xlstore.exelsolar.com/Multimedia/ManualUsuario/APS-QS1-1200-220_ManualUsuario.pdf",
+        "title": "[PDF] APS M1P-MX - XLStore",
+        "snippet": "important safety instructions. SAVE THESE INSTRUCTIONS– This manual contains important instructions for Models YC250A/YC250I, YC500A/YC500I that must be followed during installation and maintenance of the Photovoltaic Grid-connected Inverter. WARNING: This indicates a situation where failure to follow instructions may cause a serious hardware failure or personnel danger if not applied appropriately. Use extreme caution when performing this task. NOTE: This indicates information that is [...] branch for 25A breaker. Maximum parallel combination of modules 8 per branch for 20A breaker. Max. units per branch of YC500A/YC500I for 127V situation: Maximum parallel combination of modules 5 per branch for 25A breaker. Maximum parallel combination of modules 4 per branch for 20A breaker. Max. units per branch of YC250A/YC250I for 240V situation: Maximum parallel combination of modules 21 per branch for 25 A breaker. Maximum parallel combination of modules 17 per branch for 20 A breaker. [...] 60,72 Cell MC-4 Type or Customize YC250I 60Hz/127V 60,72 Cell MC-4 Type or Customize YC500A 60Hz/127V 60,72 Cell MC-4 Type or Customize YC500I 60Hz/127V 60,72 Cell MC-4 Type or Customize YC250A 60Hz/240V 60,72 Cell MC-4 Type or Customize YC250I 60Hz/240V 60,72 Cell MC-4 Type or Customize YC500A 60Hz/240V 60,72 Cell MC-4 Type or Customize YC500I 60Hz/240V 60,72 Cell MC-4 Type or Customize Max. units per branch of YC250A/YC250I for 127V situation: Maximum parallel combination of modules 10 per",
+        "score": 0.70287734,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.solaris-shop.com/content/YC500i%20Warranty.pdf?srsltid=AfmBOoq7nHOFEu_8DbKyAgel3ekFMUN_AoSVhSlwEvMQoToBDD4Ittrg",
+        "title": "[PDF] APsystems YC250, YC500 & YC1000 ... - Solaris-shop.com",
+        "snippet": "The Limited Warranty does not apply to, and APsystems will not be responsible for, any defect in, or damage to, any Product that (1) has been moved from its original installation location, or (2) has been disassembled, tampered with, or modified in any way, or (3) has been misused, neglected, improperly installed, or used under conditions for which the product was not designed to be used or used differently than outlined in the APsystems User Manual, or (4) has been subjected to fire, water, [...] THIS LIMITED WARRANTY IS THE SOLE AND EXCLUSIVE WARRANTY GIVEN BY APsystems, AND ITS AFFILIATES, AND, WHERE PERMITTED BY LAW, IS MADE EXPRESSLY IN LIEU OF ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, STATUTORY OR OTHERWISE, INCLUDING, WITHOUT LIMITATION, WARRANTIES OF TITLE, QUALITY, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT, OR WARRANTIES AS TO THE ACCURACY, SUFFICIENCY, OR SUITABILITY OF ANY TECHNICAL OR OTHER INFORMATION PROVIDED IN MANUALS OR OTHER DOCUMENTATION. IN [...] APsystems YC250, YC500 & YC1000 Microinverter Limited Warranty North America L2.1NA © All Rights Reserved 07/2015 The YC250, YC500 & YC1000 Microinverters (the “Product”) supplied by Altenergy Power Systems USA Inc. (“APsystems”) are designed to withstand normal operating conditions when used for their originally intended purpose in compliance with the APsystems User Manual supplied with the system. This APsystems Limited Warranty (“Limited Warranty”) covers Defective Products for a period of",
+        "score": 0.5948579,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://global.apsystems.com/wp-content/uploads/2019/08/4271651002_APsystems-Microinverter-YC600%C2%A3%C2%AEY%C2%A3%C2%A9-For-APAC-User-manual_Rev1.6_2019-07-08.pdf",
+        "title": "[PDF] Installation / User Manual - APsystems Global",
+        "snippet": "This manual contains important instructions to follow during installation and maintenance of the APsystems Photovoltaic Grid-connected Inverter (Microinverter).",
+        "score": 0.5780915,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.firemountainsolar.com/wp-content/uploads/2020/11/YC500A_SPEC-1.pdf",
+        "title": "[PDF] APsystems YC500A Microinverter Datasheet - Fire Mountain Solar",
+        "snippet": "Our flagship product, the APsystems YC500A is a grid-tied microinverter with intelligent networking and monitoring systems to ensure maximum efficiency.",
+        "score": 0.83290404,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.solaris-shop.com/content/YC500i%20Extended%20Warranty.pdf?srsltid=AfmBOorlOtcol34zvBFqNzQENiAYyVFrzaEUnZloeyZzL7uUdflf_Fq-",
+        "title": "[PDF] WARRANTY CERTIFICATE - Solaris-shop.com",
+        "snippet": "EXTENDED LIMITED WARRANTY APsystems YC250, YC500 & YC1000 Microinverter WARRANTY CERTIFICATE All APsystems YC250, YC500 & YC1000 Microinverters are covered by a 10 year Limited Warranty. This certificate confirms that the APsystems Microinverters listed below are covered, in addition to the 10 year Limited Warranty, for a further 15 years, beginning 10 years after the above date, in accordance with the rights and conditions specified on this Certificate. [...] 1 2 • I E E E 1 5 4 7 • APsystems YC250, YC500 & YC1000 Microinverter Extended Limited Warranty North America E2.1NA © All Rights Reserved 07/2015 The YC250, YC500 & YC1000 Microinverters (the “Product”) supplied by Altenergy Power Systems USA Inc. (“APsystems”) are designed to withstand normal operating conditions when used for their originally intended purpose in compliance with the APsystems User Manual supplied with the system. This APsystems Extended Limited Warranty (“Extended Limited [...] Warranty” or “ELW”) covers Defective Products for a period starting at the termination of the standard ten (10) years Limited Warranty Period, for an additional fifteen (15) years, from the date of original purchase of the Product from APsystems (the “Extended Warranty Period”). A Product is defective if it is inoperable because of defects in material and workmanship, provided that APsystems, through inspection, establishes the existence of that defect (“Defective Product”). To obtain service",
+        "score": 0.7785319,
+        "bucket": "other"
+      },
+      {
+        "url": "https://hotsolarsolutions.com/wp-content/uploads/2020/01/aps-warranty-certificate.pdf",
+        "title": "[PDF] Warranty Certificate | Hot Solar Solutions",
+        "snippet": "EXTENDED LIMITED WARRANTY APsystems YC250, YC500 & YC1000 Microinverter WARRANTY CERTIFICATE All APsystems YC250, YC500 & YC1000 Microinverters are covered by a 10 year Limited Warranty. This certificate confirms that the APsystems Microinverters listed below are covered, in addition to the 10 year Limited Warranty, for a further 15 years, beginning 10 years after the above date, in accordance with the rights and conditions specified on this Certificate. [...] 600 Ericksen Ave NE, Suite 200 Seattle, WA 98110 844-666-7035 info@APsystems.com www.APsystems.com Authorized Signature APsystems YC250, YC500 & YC1000 Microinverter Limited Warranty North America L2.1NA © All Rights Reserved 07/2015 The YC250, YC500 & YC1000 Microinverters (the “Product”) supplied by Altenergy Power Systems USA Inc. (“APsystems”) are designed to withstand normal operating conditions when used for their originally intended purpose in compliance with the APsystems User Manual [...] 1 2 • I E E E 1 5 4 7 • APsystems YC250, YC500 & YC1000 Microinverter Warranty Transfer Form North America T2.1NA © All Rights Reserved 07/2015 The YC250, YC500 & YC1000 Microinverters (the “Product”) supplied by Altenergy Power Systems USA Inc. (“APsystems”) are designed to withstand normal operating conditions when used for their originally intended purpose in compliance with the APsystems User Manual supplied with the system. The APsystems Limited Warranty (“Limited Warranty”) and Extended",
+        "score": 0.7781275,
+        "bucket": "other"
+      },
+      {
+        "url": "https://global.apsystems.com/wp-content/uploads/2018/08/QW-ED-37-01_APsystems-Warranty-Transfer-T2.6ROW-7.18.pdf",
+        "title": "[PDF] APsystems Warranty Transfer Form",
+        "snippet": "APsystems Warranty Transfer Form T2.6ROW © All Rights Reserved 7/18 The YC250, YC500, YC600, YC1000, QS1 Microinverters (the “Product”) supplied by Altenergy Power System Inc. (“APsystems”) are designed to withstand normal operating conditions when used for their originally intended purpose in compliance with the APsystems User Manual supplied with the system. The APsystems Limited Warranty (“Limited Warranty”) covers Products that are inoperable because of defects in material and workmanship [...] APsystems will transfer the existing Warranty on the system shown below upon receipt of this duly executed form and the $100 USD transfer fee (or the equivalent in local currency as may be authorized by APsystems upon request), provided this request is made within 30 days of the actual date of ownership transfer. APsystems reserves the right to confirm the actual date of ownership transfer. APsystems will provide written confirmation of the Warranty transfer. Please mail this form, and the [...] (“Defective Product”) during the Warranty Period. To determine if the system remains under warranty, please contact APsystems at www.",
+        "score": 0.7644879,
+        "bucket": "other"
+      },
+      {
+        "url": "https://global.apsystems.com/wp-content/uploads/2018/01/APsystems-Limited-Warranty-L2.5ROW-12.17.pdf",
+        "title": "[PDF] APsystems YC250, YC500, YC600, YC1000 Microinverter Limited ...",
+        "snippet": "(10) years begining three months after the date of original purchase of the Product from APsystems (the “Warranty Period”). A Product is defective if it is inoperable because of defects in material and workmanship, provided that APsystems, through inspection, establishes the existence of that defect (“Defective Product”). To obtain service under this Limited Warranty, the holder of the Warranty must comply with the Return Merchandise Authorization (“RMA”) procedures, which can be found at [...] APsystems YC250, YC500, YC600, YC1000 Microinverter Limited Warranty L2.5ROW © All Rights Reserved 12/17 The YC250, YC500, YC600 and YC1000 Microinverters (the “Product”) supplied by Altenergy Power System Inc. (“APsystems”) are designed to withstand normal operating conditions when used for their originally intended purpose in compliance with the APsystems User Manual supplied with the system. This APsystems Limited Warranty (“Limited Warranty”) covers Defective Products for a period of ten [...] During the Warranty Period, APsystems will, at its option, either (1) repair or replace the Defective Product free of charge, or (2) provide a refund to the holder of the Warranty of an amount equal to the actual value of the Defective Product at the time of the discovery of the defect. APsystems may, at its option, use new and/or reconditioned parts, and/or parts of the original or a subsequent design, in repairing or replacing the Defective Product. If APsystems repairs or replaces the",
+        "score": 0.75027883,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "chilicon-power",
+    "product": "Chilicon CP-250-60-800",
+    "candidates": [
+      {
+        "url": "https://www.amerescosolar.com/wp-content/uploads/CP-250e-60-72-208-240-MC4-Data-Sheet-R6.pdf",
+        "title": "[PDF] CHILICON POWER CP-250E - Ameresco Solar",
+        "snippet": "/ 192 – 288 V Nominal frequency / range 60.0 / 59.3 – 60.5 Hz 60.0 / 59.3 – 60.5 Hz Extended frequency range 54.22 – 66.75 Hz 54.22 – 66.75 Hz Power factor -0.8 to 0.8 programmable -0.8 to 0.8 programmable Maximum units per branch circuit 18 (30A 10 AWG) / 12 (20A 12AWG) 20 (30A 10AWG) / 13 (20A 12AWG) Maximum output fault current & duration 1.6 A peak for > 10% of any cycle 1.6 A peak for > 10% of any cycle Maximum output overcurrent protection 6.3 A 6.3 A 50Hz operation; 50.0 / 49.5 – 50.5 Hz [...] voltage 60 V MPPT voltage range 22 – 38.5 V Operating range 18 – 38.5 V Min./Max. start voltage 22 – 47 V Max. DC input short circuit current 21 A Max. DC input current 12 A Ground fault protection Transformer isolated 2000 Vrms input/output/chassis OUTPUT DATA (AC) @ 208 V @ 240 V Max. continuous output power 277 W 289 W Max. continuous output current 1.33 A 1.20 A Nominal output voltage / range 208 / 183 – 229 V 240 / 211 – 264 V Extended output voltage range 133 / 150 / 166 – 250 V 153 / 173 [...] 60-cell modules Monitoring Power line (130.2 kHz carrier); Free monitoring via gateway or online software Compliance UL1741SA Rule-21, IEEE std 1547, IEEE std C62.41.2, CSA C22.2 NO. 107.1 & CISPR 22 Class B HECO Rule14H (Advanced Inverter), HECO Rule 22 (Self-Supply), NEC 2014 and NEC 2017 Rapid Shutdown Compliant Compatibility 60/72 cell PV modules with compatible input voltage range specifications above CP-250E-60-72-208/240-MC4 Microinverter Specifications To learn more about Chilicon Power",
+        "score": 0.66569364,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://uploads-ssl.webflow.com/5df8db96837d915f3f6cfca2/5e29722b5c2a4b8dc8db88f7_30_EMC-CISPR-22-Class-B.pdf",
+        "title": "[PDF] FCC Class B Report Number: D30129P1 - Webflow",
+        "snippet": "energy from a single 60-cell solar panel to a standard AC grid. Modifications: The EUT was not modified during the testing. Manufacturer: Chilicon Power 1563 Calle Patricia Pacific Palisades, CA 90272 Test Date: January 28 and 29, 2013 Test Specifications: EMI requirements FCC CFR Title 47, Part 15 Subpart B, Class B per CISPR 22 Limits Test Procedure: ANSI C63.4. SUMMARY OF TEST RESULTS TEST DESCRIPTION RESULTS 1 Conducted RF Emissions, 150 kHz - 30 MHz. Complies with the Class B limits of FCC [...] Compatible Electronics, 20621 Pascal Way, Lake Forest, California 92630. 2.2 Traceability Statement The calibration certificates of all test equipment used during the test are on file at the location of the test. The calibration is traceable to the National Institute of Standards and Technology (NIST). 2.3 Cognizant Personnel Chilicon Power Christopher R. Jones Co-Founder Compatible Electronics, Inc. Eugene Adams Test Technician Josh Hansen Lab Manager 2.4 Date Test Sample was Received The test [...] sample was received on January 28, 2013. 2.5 Disposition of the Test Sample The test sample was returned to Chilicon Power. 2.6 Abbreviations and Acronyms The following abbreviations and acronyms may be used in this document. RF Radio Frequency EMI Electromagnetic Interference EUT Equipment Under Test P/N Part Number S/N Serial Number HP Hewlett Packard ITE Information Technology Equipment CML Corrected Meter Limit LISN Line Impedance Stabilization Network FCC Class B Report Number: D30129P1",
+        "score": 0.51032627,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/5df8db96837d915f3f6cfca2/672bfc987cbc341a9281f3d2_CP-760%20Data%20Sheet.pdf",
+        "title": "[PDF] CHILICON POWER CP-760-V2",
+        "snippet": "range) • Self-supply mode (zero-export) • Supports branch circuits up to 30A Reliability, Safety, & Compliance • NEMA 6 rated construction • 25-year warranty • AC branch circuits will not support arc faults • Quick disconnect circuit to mitigate grid instabilities • NEC 690.12(B)(2) rapid shutdown compliant • CA Rule 21 (UL 1741-SB) compliant REV721 06.04.24 Dual Panel Microinverter www.chiliconpower.com INPUT DATA (DC) Recommended input power (STC) (300 - 450 W) x 2 Maximum DC input voltage [...] C62.41.2, CSA C22.2 NO. 107.1 FCC15 Class B; Rule 21 / UL1741SB; Complies with NEC 690.12(B)(2) Rapid Shutdown; Product Warranty 25 Years Compatibility (Single SKU) 2 x Series 60/72 Cell Mono or Poly PV modules 1Maximum DC exposed voltage equals single module Voc when in shutdown 2Supports 50Hz operating in extended mode range (45.2-55.7 Hz) To learn more about Chilicon Power microinverters, call (310) 800-1396 or visit chiliconpower.com CP-760-V2 Microinverter Specifications [...] / 166 – 250 V Nominal frequency / range 60.0 / 59.3 – 60.5 Hz 60.0 / 59.3 – 60.5 Hz Extended frequency range 54.22 – 66.75 Hz2 54.22 – 66.75 Hz2 Power factor -0.6 to 0.6 programmable -0.6 to 0.6 programmable Maximum units per 30 A branch circuit 7 (14 modules) 6 (12 modules) Maximum output overcurrent protection 15A Fuse; 18A peak for 30 uSec 15 A Fuse; 18A peak for 30 uSec EFFICIENCY CEC weighted efficiency 97 % 96.8 % Peak inverter efficiency 97.3% 97.1 % Static MPPT efficiency (EN 50530)",
+        "score": 0.5037359,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://sunwatts.com/content/specs/Chilicon-Power-CP-720-Micro-Inverter-datasheet.pdf?srsltid=AfmBOoqg2eAUXUW1BZt9_CRwIo1r7ZQlSt4q-OenkU8zTJ9CGMPa9cYR",
+        "title": "[PDF] CHILICON POWER CP-720 - SunWatts",
+        "snippet": "NEMA 6 FEATURES Communication Mesh Networked Power Line (130.2 kHz carrier) Monitoring Monitoring via CP‐100 gateway and Online Cloud Certifications UL1741, IEEE std 1547, IEEE std C62.41.2, CSA C22.2 NO. 107.1 CISPR 22 Class B; HECO Rule14H (Advanced Inverter), HECO Rule 22 (Self‐Supply) Rule 21 / UL1741SA; Complies with NEC 690.12 Rapid Shutdown Product Warranty 25 Years 2 S i 60/72 C ll M P l PV d l To learn more about Chilicon Power microinverters, call (310) 800-1396 or visit [...] pp p • Up to 20 panels possible on one branch circuit Reliability, Safety, & Compliance • NEMA 6 rated construction • 25 year warranty • AC branch circuits will not support arc faults • Quick disconnect circuit to mitigate grid instabilities • Quick disconnect circuit to mitigate grid instabilities • NEC 690.12 rapid shutdown compliant • CA Rule 21 (UL 1741‐SA) compliant www.chiliconpower.com INPUT DATA (DC) Recommended input power (STC) (190 ‐ 420 W) x 2; (380 ‐ 840 W) x 1 [...] chiliconpower.com Compatibility (Single SKU) 2 x Series 60/72 Cell Mono or Poly PV modules 2 x Parallel HV Panasonic Modules; 2 x Parallel 96/128 Cell SunPower Modules 1Maximum DC exposed voltage equals single module Voc when in shutdown 2Supports 50Hz operating in extended mode range (45.2‐55.7 Hz) 3When current limited to 2.66A for 208V or 2.4A for 240V",
+        "score": 0.4893821,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.bchydro.com/content/dam/BCHydro/customer-portal/documents/power-smart/residential/programs/self-generation-program-inverter-list.pdf",
+        "title": "[PDF] elf-generation program - Commonly used inverter list (August 8, 2025)",
+        "snippet": "No. 107.1, comply with rules in CSA 22.3 No. 9:20, and are equipped with anti-islanding protection per CEC Part I, rule 84-008. Inverter Make Inverter Model ABB PVI-5000-TL-OUTD-US APS ELS-5K APS ELS-3K APS QT2-208 APS QT2-480 APS DS3 APS DS3-L APS DS3-S APS QS1A APS QS1 APS QS1200 APS YC600 APS YC1000-3 APS YC500A APS YC500i ATI-WATT YT-P5000TL1-US ATI-WATT YT-P6000TL1-US ATI-WATT YT-P8000TL1-US ATI-WATT YT-P10K0TL1-US Chilicon CP-720-60/72/96-208/240-MC4 Chilicon CP-250E-60/72-208/240-MC4 [...] LAST UPDATED: 2025-07-29 1 Self-generation program Commonly used inverter list This is a list of commonly used inverters that have come through the Self-generation (previously net metering) program, and are not intended to be an exhaustive list. If the inverter you’d like to use is not listed below, please submit the inverter datasheet with certification information as part of your Self-generation application. Note that grid interactive photovoltaic inverters must be certified under CSA C22.2 [...] and rebate application before March 12, 2025 and were accepted to proceed via technical acceptance, will be eligible for the rebate. Product purchase, installation and invoice date must be prior to March 12, 2025.",
+        "score": 0.45289946,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/5df8db96837d915f3f6cfca2/5ea09576e73c44cb76dc59b0_Residential%20Design%20and%20Installation%20Manual.pdf",
+        "title": "[PDF] CP Residential Design and Installation Guide",
+        "snippet": "This installation manual describes the design, installation, and commissioning of residential systems using the. Chilicon Power CP-720 and CP-250E line of",
+        "score": 0.98554,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://sunmodo.com/wp-content/uploads/D10264-V1.6.4-UL3741-SunModo-Addendum.pdf",
+        "title": "[PDF] UL3741 - SunModo",
+        "snippet": "String Isolation Device(s) Sub-Array UL3741 LISTED SYSTEM WITH NON-CONTIGUOUS SUB-ARRAY 14 COMMERCIAL CASE 4: Case 4: Sub-array(s) using MLPEs to control circuits for 690.12(B)(1) and (B)(2) compliance • Outside Array Boundary: ≤ 30V within 30 Seconds • Inside Array Boundary: ≤ 1000V • Inside Sub-Array Boundary: ≤ 80V inside within 30 Seconds Case 4: Maintaining NEC Compliance with sub-array(s) outside of array boundary NOTE: When using MLPE devices, review installation instructions for both the MLPE device and Inverter to verify that both devices are compatible and comply with UL1741 Rapid Shutdown requirements.",
+        "score": 0.98462,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/5df8db96837d915f3f6cfca2/613f9106a9bf3b02ba709ddf_Chilicon%20Power%20AC%20Coupling%20White%20Paper%20Ver%201.3.pdf",
+        "title": "[PDF] On and Off Grid Interactive Features AC Coupling",
+        "snippet": "Step 1: Ensure the battery inverter raises it’s frequency between Fstart and Fstop in order to curtail the microinverters between these limit levels Step 2: Disable Rule-21 HLVFRT so that indefinite frequency ride through is possible (maximum rule-21 ride through is 300 seconds) Step 2: Make sure Pmax has been set to the desired level (and sent) Step 3: Expand the allowed Frequency operating range to include Freq-Watt Range of interest (the maximum allowed frequency should be higher than the desired Fstop frequency) Step 4: Select and Push Freq-Watt Range of Interest by choosing Fstart and Fstop to match closely with the start and stop frequency control programmed into the battery inverter January 18, 2021 CHILICON POWER AC COUPLING SOLUTIONS Traverse to the following screens.",
+        "score": 0.98368,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.invertersupply.com/media/data/5e3320dba9de2c7fdb8f6563_Cable%20Guide%20R3.4.pdf?srsltid=AfmBOooFrRjGuq3LYOuj63VpqTFbg-LglBBVl3NC18zDTxRDxnFpGdgc",
+        "title": "[PDF] CABLING GUIDE - Inverter Supply",
+        "snippet": "Single microinverter: CP-250E. 60 OR 72 CELL PORTRAIT-ONE ROW. -ODD PANEL ... Contact Chilicon Power at (310) 579-2449 if you require assistance.",
+        "score": 0.97657,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://registry.mvlwb.ca/Documents/W2020L8-0003/Rayrock%20-%20CDF%20Design%20Plan%20-%20Version%201.1%20-%20Appendix%20C%20-%20Specifications%20-%20Aug%203_23.pdf",
+        "title": "[PDF] Appendix C. Issued for Construction Specifications",
+        "snippet": "Division 01 - General Requirements. 01 10 00. Definitions. 13. 01 11 00. Summary of Work. 20. 01 29 83. Payment Procedures for Testing Laboratory Services.",
+        "score": 0.97457,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://sunwatts.com/content/specs/Chilicon-Power-CP-720-Micro-Inverter-datasheet.pdf?srsltid=AfmBOopKiZn8qwrNUJFZ5SUaWt1Qjy66AskKioLqVuIPyFY-_B1EFuFV",
+        "title": "[PDF] CHILICON POWER CP-720 - SunWatts",
+        "snippet": "grounding, modular bus cabling, and ability to support up to 20 modules on a 30A branch circuit, the CP-720 simplifies both design and installation.",
+        "score": 0.9734,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://7534425.app.netsuite.com/core/media/media.nl?id=4484736&c=7534425&h=kk_ahUEE_icjB3KwjgPaKqPJbO_VT3N3cRiENmheWeYvsL1s&_xt=.pdf",
+        "title": "[PDF] CP-250E-60/72-208/240-MC4 Microinverter with Modular Trunk Cable",
+        "snippet": "Chilicon Power | Aug 2016 4 IMPORTANT SAFETY INFORMATION This manual contains important instructions to follow during installation and maintenance of the Chilicon Power CP-250 microinverter. To reduce the risk of electrical shock and ensure the safe installation and operation of microinverters, the following symbols appear throughout this document to indicate dangerous conditions and important safety instructions. SAVE THESE INSTRUCTIONS – This manual contains important instructions for model [...] not rated for removal under load. WARNING: Do NOT exceed the maximum number of microinverters in an AC branch circuit, as displayed on the unit label (15 devices). INVERTER LABEL INFORMATION Installation and Operation Manual Chilicon Power | Aug 2016 6 INSTALLATION OVERVIEW A PV system using Chilicon Power microinverters is simple to install. Each microinverter mounts on the PV racking, directly beneath each PV module. Low voltage DC wires connect from the PV module directly to the [...] Trunk Cable Segment, portrait shown, 1.7M landscape also available Branch Cable Segment, 0.5M 500 Color Codes Installation and Operation Manual Chilicon Power | Aug 2016 7 INSTALLATION INSTRUCTIONS STEP1: DC CONNECTION IMPORTANT: ALWAYS CONNECT DC FIRST. DO NOT ENERGIZE AC BUS TO INVERTERS UNTIL ALL INVERTERS HAVE BEEN DC POWERED WITH ENOUGH SUN LIGHT (LED code continuously blinking) STEP2: AC CONNECTOR – INSTALLATION PROCEDURE IMPORTANT: all MCB connections must be placed with care not to",
+        "score": 0.73207545,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/5df8db96837d915f3f6cfca2/61b781dbcc19ec5301af83ba_Chilicon%20Installation%20Guidance.pdf",
+        "title": "[PDF] Chilicon Installation Guidance",
+        "snippet": "racking and mount microinverters Energize AC and wait for 1 blink per 8 seconds (5 - 15min) LED Blink Sequence Description Slow — 1 blink every 4 seconds DC Connected, pre-charging, WAIT to energize AC grid connection Rapid blinking DC Connected, microinverters are pre-charged and ready for AC to be applied 1 blink per 8 seconds Normal production, inverter NOT bound to gateway 1 blink per 16 seconds Normal production, inverter bound to gateway 2 rapid blinks per 4 seconds Initializing after [...] grid present (5 — 15 minutes) 3 — 4 rapid blinks per 4 sec ERROR — grid voltage out of range 5 rapid blinks per 4 sec ERROR — PV voltage out of range 3) Gateway Setup Plug in the gateway Connect internet Select time zone Register system Ensure strong PLC communication Find microinverters Add Z-Wave devices Connect internet WiFi and ethernet are supported (only one is required) Internet connection required for: firmware updates full product warranty To connect WiFi, select Menu Wifi [...] Setup  Enter the customer’s WiFi information Select time zone Select zone from pulldown menu And select OK Select Menu Preferences Set Time zone Register system Enter the customer and installer information NOTE: Please double check for the correct email address Ensure the confirmation email was received by customer Use the link to sign into cloud.chiliconpower.com Customer’s login credentials will allow monitoring of the system from a computer and the mobile app Select Menu  Advanced",
+        "score": 0.650934,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://invertersrus.com/wp-content/uploads/images/products/pdf/CP-250-datasheet.pdf?srsltid=AfmBOopWPQ_5M1_yFwnU74IuTOS3hGKaNFZ6pkmjfXSQ67QTWXH5FfQS",
+        "title": "[PDF] CHILICON POWER CP-250 - Inverters R US",
+        "snippet": "To learn more about Chilicon Power Microinverters, visit chiliconpower.com Chilicon Power Microinverters CHILICON POWER CP-250 Maximum Energy Production Reliability by Design Enhanced Monitoring Simplified Installation Safety To learn more about Chilicon Power Microinverters, visit chiliconpower.com CP-250-60-208/240-MC4 Microinverter Specifications INPUT DATA (DC) Recommended input power (STC) 190 - 300 W Maximum DC input voltage 44 V MPPT voltage range 22 – 38.5 V Operating range 18 – 38.5 V [...] operating range specification [...] Min./Max. start voltage 22 – 40 V Max. DC input short circuit current 21 A Max. DC input current 12 A Ground fault protection Integrated GFD; Transformer isolated 2000 Vrms input/output/chassis OUTPUT DATA (AC) @ 208 V @ 240 V Nominal output power 220 W 220 W Max. continuous output power 285 W 285 W Max. continuous output current 1.37 A (285 W @ 208 V) 1.19 A (285 W @ 240 V) Nominal output voltage / range 208 / 183 – 229 V 240 / 211 – 264 V Extended output voltage range 133 / 150 / 166 – 250 V",
+        "score": 0.6255073,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://uploads-ssl.webflow.com/5df8db96837d915f3f6cfca2/61698be21d300781e5739cfd_Chilicon%20Installation%20Guidance.pdf",
+        "title": "[PDF] Chilicon Installation Guidance - Webflow",
+        "snippet": "guide will illustrate appropriate DC wiring configuration o Solar energy will begin to pre-charge the microinverters o Once fully pre-charged, microinverter will blink continuously Do not leave in this DC-only state for more than 60 days Energize AC and wait for 1 blink per 8 seconds (5 - 15min) 3) Gateway Setup • Plug in the gateway • Connect internet • Select time zone • Register system • Ensure strong PLC communication • Find microinverters • Add Z-Wave devices Connect internet o WiFi and [...] Split Phase or Tri-Phase depending on system (split phase is the residential standard) o Wait for the microinverters to be found and bind (1 beep for every unit found) Note: Before powering down the gateway, press Safe Shutdown and then de-energize during the countdown, or it will re-boot. [...] “good” phase ▪This indicates that the gateway’s outlet is bonded to L1 (black wire from microinverters) • If the signal indicates a connection on the “bad” phase ▪the gateway can be relocated to another properly phased outlet ▪the outlet’s breaker can be moved to the “good” phase at the distribution panel ▪the PV wiring (L1 & L2) can be swapped in the combiner panel to switch the phasing Find microinverters o Select Menu > Inverter Wizard o Enter the number of installed microinverters o Choose",
+        "score": 0.59880555,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.solarflexion.com/v/vspfiles/files/pdfs/CP-250-60-208-240-MC4-MTC_Shipping_Insert_v3.0.pdf?srsltid=AfmBOorFAB_HCw-O7kWU_WIH0mLdaM5naiQQ4NL6j0scnGwUVOq-TwcQ",
+        "title": "[PDF] IMPORTANT INSTRUCTIONS FOR CP-250E-60-208/240-MC4-MTC",
+        "snippet": "Chilicon Power LLC | 2016 1 IMPORTANT INSTRUCTIONS FOR CP-250E-60-208/240-MC4-MTC STEP1: DC CONNECTION IMPORTANT: ALWAYS CONNECT DC FIRST. DO NOT ENERGIZE AC BUS TO INVERTERS UNTIL ALL INVERTERS HAVE BEEN DC POWERED WITH ENOUGH SUN LIGHT (LED code continuously blinking) STEP2: AC CONNECTOR – INSTALLATION PROCEDURE IMPORTANT: all MCB connections must be placed with care not to miss-align and push male pins backward into the inverter. The pin furthest away from ground (indicated with marking on [...] step 1 warning) AFTER AC is applied: Blink Sequence Meaning 1 blink every 16 seconds Normal operation, inverter bound to gateway 1 blink every 8 seconds Normal operation, inverter not bound to gateway 2 blinks every 4 seconds Inverter phase locked to Grid, no export, no errors 4 blinks every 4 seconds Error: Grid Voltage out of range 5 blinks every 4 seconds Error: Panel VoA out of range Chilicon Power LLC | 2016 2 WIRING FOR COMMUNICATION TO THE GATEWAY (240 V SPLIT-PHASE SYSTEMS) Chilicon",
+        "score": 0.5957048,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.solarflexion.com/v/vspfiles/files/pdfs/CP-250-60-208-240-MC4-MTC_Shipping_Insert_v3.0.pdf?srsltid=AfmBOopBL7Q3VvOw5KrwrmG0Mj9CoDr70s5uwaPiDEZt4ERodPt7s1ZP",
+        "title": "[PDF] IMPORTANT INSTRUCTIONS FOR CP-250E-60-208/240-MC4-MTC",
+        "snippet": "Chilicon Power LLC | 2016 1 IMPORTANT INSTRUCTIONS FOR CP-250E-60-208/240-MC4-MTC STEP1: DC CONNECTION IMPORTANT: ALWAYS CONNECT DC FIRST. DO NOT ENERGIZE AC BUS TO INVERTERS UNTIL ALL INVERTERS HAVE BEEN DC POWERED WITH ENOUGH SUN LIGHT (LED code continuously blinking) STEP2: AC CONNECTOR – INSTALLATION PROCEDURE IMPORTANT: all MCB connections must be placed with care not to miss-align and push male pins backward into the inverter. The pin furthest away from ground (indicated with marking on [...] step 1 warning) AFTER AC is applied: Blink Sequence Meaning 1 blink every 16 seconds Normal operation, inverter bound to gateway 1 blink every 8 seconds Normal operation, inverter not bound to gateway 2 blinks every 4 seconds Inverter phase locked to Grid, no export, no errors 4 blinks every 4 seconds Error: Grid Voltage out of range 5 blinks every 4 seconds Error: Panel VoA out of range Chilicon Power LLC | 2016 2 WIRING FOR COMMUNICATION TO THE GATEWAY (240 V SPLIT-PHASE SYSTEMS) Chilicon",
+        "score": 0.5957048,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/5df8db96837d915f3f6cfca2/5e29717f118c044c45a177e9_22_CP-250E_and_CP-720_Warranty.pdf",
+        "title": "[PDF] CP-250E & CP-720 LIMITED WARRANTY",
+        "snippet": "of each Chilicon Microinverter (“Defective Product”) for a period of twenty five (25) years from the date of original purchase of such Microinverter at point of sale to the originally-installed end user location (the \"Warranty Period\"). The warranty program also requires that the Microinverter system is connected to the Chilicon Cloud system via a CP-100 gateway monitoring device. Chilicon Power maintains inverter firmware to all inverters and Chilicon Power requires that inverters are [...] 1 Originally published May 2014 R e v i s e d D e c 2 0 1 8 f o r C P 7 2 0 Chilicon Power Microinverters CP-250E & CP-720 LIMITED WARRANTY Chilicon Power LLC (\"Chilicon\") has developed a highly reliable Microinverters that are designed to withstand normal operating conditions when used for originally intended purposes in compliance with the Chilicon User Manuals available from www.chiliconpower.com. The Chilicon limited warranty (“Limited Warranty”) covers defects in workmanship and materials [...] where the equipment was installed changes owner, then for a fee of $50/inverter, Chilicon will extend the warranty to the new owner for the remainder of the original 25 year term. Owners wishing to procure a warranty transfer should contact Chilicon via support@chiliconpower.com within 90 days of transfer of ownership. If a customer wishes to return unused equipment, then this may be done within 30 days of shipment. Return shipping fees shall be borne by the customer. Chilicon will refund the",
+        "score": 0.74541736,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "darfon",
+    "product": "Darfon M1P350A",
+    "candidates": [
+      {
+        "url": "https://www.darfonenergy.com/Content/Upload/files/GEP/Ebike_battery/Download/01259201.pdf",
+        "title": "[PDF] Battery Charger - DARFON ENERGY TECH.",
+        "snippet": "SAVE THESE INSTRUCTIONS – This manual contains important safety and operating instructions for battery charger Models. B259-201. 2. Before using battery",
+        "score": 0.518815,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.fortresspower.com/wp-content/uploads/2018/03/H5000-Installation-Manual.pdf",
+        "title": "PDF INSTALLATION MANUAL - Fortress Power",
+        "snippet": "secure it with two screws on each side. Step 2. Remove the eleven screws on the bottom of the inverter and pull the bottom cover off. I N S T A L L A T I O N M A N U A L H 5 0 0 0 H Y B R I D I N V E R T E R R e v . 2 © 2 0 1 7 D a r f o n E l e c t r o n i c s C o r p . 6 | P a g e Step 3. Using the mounting bracket as a template and install anchors as needed. Step 4. Install the mounting bracket onto the wall. Step 5. Hang the unit onto the mounting bracket and secure it with two screws on [...] IRMS@(V=90%~109% - No applicable when the voltage range is between 211.2Vac and 264Vac UV tTRIP (70%<V<88%) 21 sec Trip time when the voltage range is between 168Vac and 211.2Vac @IRMS,max tTRIP (50%<V<70%) 11 sec Trip time when the voltage range is between 120Vac and 168Vac tTRIP (V<50%) 1.5 sec Trip time when the voltage is below 120Vac I N S T A L L A T I O N M A N U A L H 5 0 0 0 H Y B R I D I N V E R T E R R e v . 2 © 2 0 1 7 D a r f o n E l e c t r o n i c s C o r p . 3 1 | P a g e [...] BOOT-LOAD AND COMMUNICATION JUMPER. 5. USB PORT 6. RS-485 SLAVE 7. RS-485 MASTER Can-bus board External RS485 board ① ② ③ ④ ⑤ ⑥ ⑦ I N S T A L L A T I O N M A N U A L H 5 0 0 0 H Y B R I D I N V E R T E R R e v . 2 © 2 0 1 7 D a r f o n E l e c t r o n i c s C o r p . 2 2 | P a g e Step 2: Please use the USB wires (Type-A <->Type-B) and plug in the USB Type-B connector to the USB port, another side (Type A) connecting to the computer. Step 3: Please make sure the jumper pins on Tx-2 and Rx-2.",
+        "score": 0.78393924,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://datasheet.datasheetarchive.com/originals/crawler/darfonsolar.com/3d1e61e88bf58915821d3f95556a31e0.pdf",
+        "title": "INSTALLATION MANUAL - datasheet.datasheetarchive.com",
+        "snippet": "BEFORE INSTALLING AND KEEP FOR FUTURE REFERENCE. This manual contains important instructions for the installation and maintenance of Darfon’s Monitoring System. Before installing, please read these safety instructions carefully. Take special care to follow the warnings indicated on the unit itself as well as the safety instructions listed below. Safety Symbols To reduce the risk of injury and to ensure the continued safe operation of this product, the following safety instructions and warnings [...] Auto MDI/MDIX RJ-45 Ports 4x FE LAN to connect local devices WiFi Antennas I N S T A L L A T I O N M A N U A L C L O U D - B A S E D M O N I T O R I N G S Y S T E M R e v . 1 © 2 0 1 7 D a r f o n E l e c t r o n i c s C o r p . 1 4 | P a g e TECHNICAL SPECIFICATIONS PLC Box COMMUNICATION Serial Port DB9 RS485 for Data Logger1 Number of Devices Up to 24 Microinverters Transmission Distance2 Up to 164ft (50m) MEMORY Internal Memory Flash ROM 16kb MECHNICAL DATA Operating Temperature -10 to 50°C [...] ON: Ethernet connection of LAN is established Flash: Data packets are transferred High 3G Signal Green Steady ON: The signal strength of 3G is strong Low 3G Signal Green Steady ON: The signal strength of 3G is weak USB Green Steady ON: If USB device is attached Serial Port Green Steady ON: If serial device is attached I N S T A L L A T I O N M A N U A L C L O U D - B A S E D M O N I T O R I N G S Y S T E M R e v . 1 © 2 0 1 7 D a r f o n E l e c t r o n i c s C o r p . 7 | P a g e Installing",
+        "score": 0.70944256,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://datasheet.datasheetarchive.com/originals/crawler/darfon.com/44e84f3d2f8c687e3a8e19049b732b70.pdf",
+        "title": "PLC Box and Data Logger USER MANUAL",
+        "snippet": "operation of the device. If any special problems arise which are not recorded in this manual, please contact our authorized dealer, service partner, or DARFON customer care for information. 4 2. Introduction Thank you for choosing the DARFON as your monitoring system. This document contains important information for installing and setting up this product. It is highly recommended that you read this manual carefully before starting the installation and setup of this product. This monitoring [...] 3.3 Installation Procedure 3.3.1 PLC box Installation Step 1. Remove 2 screws on left side red cover (use wrench 2.5mm) Step 2. Connect AC power to L、N terminal with screw driver L connect to DARFON AC Cable “BLACK” Line N connect to DARFON AC Cable “WHITE” Line Step 3. Connecting RS 485 communication port wiring from PLC box to Data logger. PLC RS- 485 T+ → Logger RS-485 T+ PLC RS- 485 T- → Logger RS-485 T- TR Switch Connect to Logger 11 Technical specification PLC BOX Communication RS-485/422 [...] Parts and Tools………..….…………………………………..5 3.2 Connection………………………..….…………………………………...8 3.2.1. PV module system with the monitoring system layout plan..8 3.2.2. Monitoring system setup plan………………………………....8 3.3 Installation Procedure………………………………………...…….…..10 3.3.1 PLC box Installation…………………………..……….….……10 3.3.2 Data Logger Installation…………………..……..………...…..12 2 1. Safety Information 1.1 Notifications READ THIS FIRST SAVE THESE INSTRUCTIONS: This manual contains important instructions for DARFON",
+        "score": 0.7014069,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://archive.org/download/OEM_Darfon_4H.0.S02/OEM_Darfon_4H.0.S02_text.pdf",
+        "title": "Schematics: OEM Darfon 4H.0 - Archive.org",
+        "snippet": "Schematics: OEM Darfon 4H.0. 5 4 3 21. C. B3;C65?,W«£,EC652. 04:C650,1C6S2,Q656,,M7E,H*74,ft6?7. B5lC$«Q,FGOl,7**0J. e1iC605,M. 54. r0*5. 1. TRG*G,RG70,M. 72,R*73,R*74 C2. :C053,CSSS,C646,DSSS,IC6S1,R6S5,K664. Sfi66,R6*9 Ci. tC*51 ,C$62MS6,R6S9,R$$l C4;C663,C$64. ,IC653,0654,*650,RGSl,*6$3,*654*656,*676,;p*5 1 CS»UOe,Ft652JVWtl 01:D651. r.",
+        "score": 0.39880496,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.snapav.com/wcsstore/ExtendedSitesCatalogAssetStore/attachments/documents/RemotesAndIR/ManualsAndGuides/URC-CCP-MX350_OwnerManual.pdf",
+        "title": "Snap One Owner’s Manual OCE-0024B_Rev05 2007.3.9 9:35 AM 페이지1",
+        "snippet": "ID # - Setting Base Station Address 1 2 3 Select a device Page Buttons display the other page of devices. OCE-0024B_Rev05 2007.3.9 9:37 AM 페이지32 The display changes to a list of the names of your devices. If you have two pages of devices, pressing either of the page buttons will display the other page. Select the device you would like to change the Emitter settings, then go to Step 4. [...] 3 4 5 RF Button Signal (IR, RF or Both) Base Station ID # Emitters - ALL or a specific Emitter Blaster - Turn the Blaster On or Off Exit this Menu OCE-0024B_Rev05 2007.3.9 9:36 AM 페이지30 33 When you are installing a system within 100 feet of another equipment location in the same home OR near a home, condo, yacht or motor home that might potentially have an RF remote control of any kind, it is recommended that you use an addressable base station and set the address as described here. [...] Refer to the pre-programmed code tables on pages 38 - 59 and write down the code numbers listed for your A/V component. The code numbers are listed by categories of devices, then by brand.\nSee page 37 for a category list.\nPress and hold both the MAIN and ENT (Enter) buttons for approxi-mately three seconds. The top of the display will show “SETUP”.\nYou are in SETUP mode now.",
+        "score": 0.2188283,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.fortresspower.com/wp-content/uploads/2018/08/Warranty-basic-180612-2.pdf",
+        "title": "[PDF] Limited Product Warranty | Fortress Power",
+        "snippet": "Limited Product Warranty 1 | P a g e © 2 0 1 8 D a r f on Electronics / Darfon America R e v . 0 4 This Darfon Electronics Corporation and Darfon America Corporation (“Darfon”) Limited Product Warranty is effective and applicable to all purchases of the Product Types stated below conducted after June 15, 2018 and supersedes all prior Darfon Limited Product Warranty rights. This Limited Warranty is not a guarantee of durability and does not include device availability. It covers the below-listed [...] products (“Product(s)”): Micro inverter models MIG240, MIG300, G320 and G640, hybrid Inverter models H5000, H5001, HB5 and HB51, integrated system models H100 and H200, battery modules, monitoring hardware models DL-200, CB-100, CMB1C and CMB4C. The Darfon Limited Warranty covers defects in workmanship and materials for a Product that (i) is in compliance with the installation instructions supplied with it; (ii) have been used and operated for its intended purpose in compliance with the [...] limited to salt water, acid rain and biological infestations; 4. Has been uninstalled from the originally-installed end user location and reinstalled elsewhere. The items below are expressly not covered by this warranty: 1. All items not originally sold by Darfon including, but not limited to, installed cables, controllers, small internal (rechargeable) batteries, current transformers or transducers (CT), Voltage transformers or transducers (VT), and communications devices; 2. Consumables and",
+        "score": 0.7604555,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.fortresspower.com/wp-content/uploads/2018/08/Darfon_Warranty_Extension_Order_Form_2018.pdf",
+        "title": "[PDF] Warranty Extension Order Form | Fortress Power",
+        "snippet": "original purchase date of the Product(s). • All other terms and conditions, including warranty exclusions, in the Limited Product Warranty shall continue to be applicable. The Darfon Limited Product Warranty can be downloaded from www.darfonsolar.com or obtained by writing to pvsales@darfon.com. INSTRUCTIONS: Simply fill out the order form and fax, email, or mail by post to us. Please enclose your check with this order form if you are paying by check Fax number: +1 650 3166301 Email address: [...] Warranty Extension Order Form 1 | P a g e © 2 0 1 8 D a r f on Electronics / Darfon America R e v . 0 1 Thank you for considering buying warranty extension for your Darfon products. Purchasing warranty extension allows extra time to be added to the standard warranty period stipulated in the Darfon Limited Product Warranty. CONDITIONS: • This warranty extension order form is only valid for the following products (“Product(s)”): Hybrid inverters H5000, H5001, HB5 and HB51, either standalone or [...] purchase. Payment by Credit card Visa Mastercard American Express Total amount US$ Credit card number: C V V: Name as it appears on card: Expiration date: Credit card billing address: City Credit card billing address: State Zip Code: Country Signature Date Online Warranty Registration  Hours of Operation USA 9AM-6PM (PST), Monday- Friday Asia 8AM-5PM (GMT+8), Monday-Friday Darfon Technical Support Tel : +1 650 316 6300 (USA), +886 3 250 8800 (Asia) Email: support@darfon.com Web:  Office",
+        "score": 0.6991933,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "darfon",
+    "product": "Darfon M1P400A",
+    "candidates": [
+      {
+        "url": "https://datasheet.datasheetarchive.com/originals/crawler/darfon.com/7547a09475242eef98d35cdaf1f5afe8.pdf",
+        "title": "Darfon Electronics Corp. - datasheet.datasheetarchive.com",
+        "snippet": "CHARACTERISTICS: 2.1 输入电压/Input Voltage: 额定电压/Rated Voltage:100~240Vac 调整范围/Variation Range:90-264Vac 2.2 输入频率/Input Frequency: 额定频率/ Rated Frequency: 50/60Hz. 调整频率/Variation Frequency:47-63Hz 2.3 输入电流/Input Current: 当输入交流电压为额定值的下限电压负载满载时,最大输入交流电流1.5A. 1.5Amps Max. input current at any input AC voltage and output full load. 2.4 浪涌电流/Inrush Current: 当输出为额定负载,环境温度为25℃,输入240Vac 冷态起机时的最大浪涌电流小于为60A. 100 Amps Max. Cold start at 240Vac input, rated output load and 25℃ ambient. 2.5AC 漏电流/Ac Leakage [...] of power supply reach 4.0-6.9A, the over current protection shall operate, the power supply will be auto recovered when over current faults remove, 5、环境要求/ENVIRONMENTAL REQUIREMET: 5.1 工作温度/Operating Temperature: 0℃-40℃,满载,正常工作/ 0℃ to 40℃, Full load, Normal operation. 5.2 储藏温度/Storage Temperature: -40℃ to 85℃ 带外壳/With package 5.3 工作湿度/Relative Humidity: 5%（0℃）~95%（30℃）,72 小时,满载,正常工作. 5% (0℃) ~95% (30℃) RH, 72Hrs, Full load, Normal operating. 5.4 振动/Vibration: 1. 测试标准:国际电工电子委员会 Operating: IEC [...] finished products. Drop them freely to the surface of hardwood three times and the contact area should be the part easiest to get damaged. 76cm 高度，自由跌落于20mm 厚的木板上，外观允许有磨损但不能有裂痕，输入插头 不能松动、歪斜，各项功能均正常. 76cm height, free fall on the 20mm thick planks, the appearance allowed to wear but cannot crack, input plug is not loose, crooked, various functions were normal. 6. 可靠性要求/ Reliability Requirements 6.1. 老化/ Burn-in 产品至少要在 35℃±5℃的环境及 80%额定负载条件下煲机 2-4 小时 The power supply shall be burn-in for 2-4 Hours",
+        "score": 0.71425,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.darfonenergy.com/Content/Upload/files/GEP/Ebike_battery/Download/01259201.pdf",
+        "title": "[PDF] Battery Charger - DARFON ENERGY TECH.",
+        "snippet": "User’s Manual Model Name B259-201 Input Voltage AC100-240V 50/60Hz Output Voltage DC18-42V 5.6A(168W Max.) Charging mode Constant Power State Red LED Green LED Orange LED Battery unconnected Initial pre-charge Battery Capacity < 20% Battery Capacity 20~39% Battery Capacity 40~59% Battery Capacity 60~79% Battery Capacity >= 80% Charge completed Battery failure / Charger failure LED is flashing Operating -10 to 40 ℃ 5 to 95 %RH Non- Operating -20 to 65 ℃ 5 to 95 %RH When getting through AC power, [...] disconnect the equipment from power supply to avoid being damaged by transient over voltage. 9. Children should be supervised to ensure that they do not play with the appliance. 10. Cleaning and user maintenance shall not be made by children without supervision. 11. Can’t use for charging non-rechargeable batteries. 12. Disconnect AC power before DC output unplug. 13. The power unit is capable of operating at different voltage without user adjustment. 14. This appliance is not intended for use [...] charge only Li-ion type rechargeable batteries. Other types of batteries may burst causing personal injury and damage. 4. Please read these operating instructions carefully before operating the battery charger. 5. Keep this instruction for later reference. 6. Do not open the equipment to reduce the risk of electrical shock. For safety reasons it is only allow to be opened by qualified service personnel. 7. Protect equipment from humidity. 8. If the equipment is not used for long time,",
+        "score": 0.62303346,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.darfon.com.cn/Folder/Darfon's+DM_2008+English.pdf",
+        "title": "Darfon Darfon Electronics Corp.",
+        "snippet": "Darfon is the world's No. 1 notebook keyboard and precision component solutions leading manufacturer.",
+        "score": 0.59089786,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.darfon.com/Content/Upload/113%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83/%E9%81%94%E6%96%B9112%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1ENG.pdf",
+        "title": "[PDF] DARFON ELECTRONICS CORP. 2023 Annual Report",
+        "snippet": "Development Overview of Technology and Product (1) Overview of Product Development ●Ultra-thin RGB Per Key gaming keyboard ●Ultra-thin RGB luminous keyboard ●Ultra-thin mechanical gaming keyboard ●Ultra-thin magnetic keyboard ●Switchable keyboard ●Lifetable keyboard ●Leather keyboard ●Full waterproof keyboard ●Optical axis button ●Touchpad ●Fingerprint identification module ●Wireless Stereo Bluetooth Headset ●Li-ion battery module for energy storage ●Ceramic material formula modulation [...] series and parallel battery modules of the energy storage system to cooperate and manage. The Company has established a complete study of material impedance characteristics, mastered heat dissipation and temperature technology, and continued to verify the reliability of each power supply and energy storage module system. At the same time, integration system has been optimized continuously, including Li-ion battery module management new high-level serial-parallel platform, safe use, and motor [...] battery pack ●Electric assisted mountain bike ●Electric assisted folding bike ●Electric assisted city bike ●Electric assisted road bike ●E-Bike GSM/GPS positioning module ●E-Bike Bluetooth wireless communication module ●E-Bike man-machine interface system ●E-Bike electronic automatic transmission ●E-Bike Darfon Cloud ●High efficiency energy recovery system ●Hybrid solar energy storage system ●Solar power generation monitoring system ●In-wheel motor electric control system ●Mid-mounted motor",
+        "score": 0.58919704,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.darfon.com.cn/Folder/ITD/BTM0909RC3E4_DataSheet.pdf",
+        "title": "Darfon Darfon",
+        "snippet": "Darfon is the world's No. 1 notebook keyboard and precision component solutions leading manufacturer.",
+        "score": 0.5596998,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://datasheet.sisoog.com/file/7a657573/datasheet/745f4db6ce7e1dea5eba1a2b96570ed84b268ae0.pdf",
+        "title": "Darfon Electronics Corp. Approval Sheet - datasheet.sisoog.com",
+        "snippet": "Darfon Electronics Corp. Approval Sheet 4-3 External appearance criterion for exposed wire Exposed end of the winding wire at the secondary side should be 2mm and below.(i.e. c 2mm) 4-4 Electrode appearance criterion for exposed wire Cross section of wire joint part Appearance judgment Only top side wire is exposed.",
+        "score": 0.5342973,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://datasheet.lcsc.com/szlcsc/Darfon-Elec-C0603NPO279CFT_C267355.pdf",
+        "title": "LCSC Darfon Elec C0603NP0279CFT Datasheet",
+        "snippet": "C0603NP0279CFT Darfon Elec $0.0066 - 25V 2.7pF NP0 0201 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS datasheet , price, inventory C267355",
+        "score": 0.33183438,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.darfon.com/Content/Upload/ICM/Inductor_EMI_Components_Catalogue.pdf",
+        "title": "[PDF] 8 Rev. 2024 CONTENT (POWER INDUCTOR) ORDERING CODE ...",
+        "snippet": "This catalog contains typical product specifications. When you consider using our products, please check our product specification sheets. (Characteristic",
+        "score": 0.22551079,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.lcsc.com/datasheet/lcsc_datasheet_1811081023_Darfon-Elec-C1005NP0471JGTS_C147490.pdf",
+        "title": "LCSC Electronics Datasheet - LCSC Electronics",
+        "snippet": "LCSC Electronics is a global components distributor with a wider selection in stock. Choose us for all your component needs - where quality, selection, and honest prices can be offered.",
+        "score": 0.09272903,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.fortresspower.com/wp-content/uploads/2018/03/H5000-Installation-Manual.pdf",
+        "title": "INSTALLATION MANUAL - Fortress Power",
+        "snippet": "secure it with two screws on each side. Step 2. Remove the eleven screws on the bottom of the inverter and pull the bottom cover off. I N S T A L L A T I O N M A N U A L H 5 0 0 0 H Y B R I D I N V E R T E R R e v . 2 © 2 0 1 7 D a r f o n E l e c t r o n i c s C o r p . 6 | P a g e Step 3. Using the mounting bracket as a template and install anchors as needed. Step 4. Install the mounting bracket onto the wall. Step 5. Hang the unit onto the mounting bracket and secure it with two screws on [...] BOOT-LOAD AND COMMUNICATION JUMPER. 5. USB PORT 6. RS-485 SLAVE 7. RS-485 MASTER Can-bus board External RS485 board ① ② ③ ④ ⑤ ⑥ ⑦ I N S T A L L A T I O N M A N U A L H 5 0 0 0 H Y B R I D I N V E R T E R R e v . 2 © 2 0 1 7 D a r f o n E l e c t r o n i c s C o r p . 2 2 | P a g e Step 2: Please use the USB wires (Type-A <->Type-B) and plug in the USB Type-B connector to the USB port, another side (Type A) connecting to the computer. Step 3: Please make sure the jumper pins on Tx-2 and Rx-2. [...] IRMS@(V=90%~109% - No applicable when the voltage range is between 211.2Vac and 264Vac UV tTRIP (70%<V<88%) 21 sec Trip time when the voltage range is between 168Vac and 211.2Vac @IRMS,max tTRIP (50%<V<70%) 11 sec Trip time when the voltage range is between 120Vac and 168Vac tTRIP (V<50%) 1.5 sec Trip time when the voltage is below 120Vac I N S T A L L A T I O N M A N U A L H 5 0 0 0 H Y B R I D I N V E R T E R R e v . 2 © 2 0 1 7 D a r f o n E l e c t r o n i c s C o r p . 3 1 | P a g e",
+        "score": 0.7125728,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://datasheet.datasheetarchive.com/originals/crawler/darfonsolar.com/3d1e61e88bf58915821d3f95556a31e0.pdf",
+        "title": "INSTALLATION MANUAL - datasheet.datasheetarchive.com",
+        "snippet": "BEFORE INSTALLING AND KEEP FOR FUTURE REFERENCE. This manual contains important instructions for the installation and maintenance of Darfon’s Monitoring System. Before installing, please read these safety instructions carefully. Take special care to follow the warnings indicated on the unit itself as well as the safety instructions listed below. Safety Symbols To reduce the risk of injury and to ensure the continued safe operation of this product, the following safety instructions and warnings [...] Auto MDI/MDIX RJ-45 Ports 4x FE LAN to connect local devices WiFi Antennas I N S T A L L A T I O N M A N U A L C L O U D - B A S E D M O N I T O R I N G S Y S T E M R e v . 1 © 2 0 1 7 D a r f o n E l e c t r o n i c s C o r p . 1 4 | P a g e TECHNICAL SPECIFICATIONS PLC Box COMMUNICATION Serial Port DB9 RS485 for Data Logger1 Number of Devices Up to 24 Microinverters Transmission Distance2 Up to 164ft (50m) MEMORY Internal Memory Flash ROM 16kb MECHNICAL DATA Operating Temperature -10 to 50°C [...] ON: Ethernet connection of LAN is established Flash: Data packets are transferred High 3G Signal Green Steady ON: The signal strength of 3G is strong Low 3G Signal Green Steady ON: The signal strength of 3G is weak USB Green Steady ON: If USB device is attached Serial Port Green Steady ON: If serial device is attached I N S T A L L A T I O N M A N U A L C L O U D - B A S E D M O N I T O R I N G S Y S T E M R e v . 1 © 2 0 1 7 D a r f o n E l e c t r o n i c s C o r p . 7 | P a g e Installing",
+        "score": 0.7099254,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.fortresspower.com/wp-content/uploads/2018/08/InstallationManual_H5001.pdf",
+        "title": "INSTALLATION MANUAL - Fortress Power",
+        "snippet": "U A L H 5 0 0 1 H Y B R I D I N V E R T E R R e v . 1 © 2 0 1 8 D a r f o n E l e c t r o n i c s C o r p . 2 9 | P a g e Dmin - Dmax 235 - 245V Deadband range (V) Power Ramp Rate RRNORM_UP_MIN RRNORM_UP_MAX ACCURACY DESCRIPTION Normal Operating 1% (Irate/sec) 50% (Irate/sec) 3% Percentage of nominal generated power per second Soft Start 1% (Irate/sec) 50% (Irate/sec) 3% Percentage of nominal generated power per second for the first time start up. I N S T A L L A T I O N M A N U A L H 5 0 0 1 H [...] will cause leakage current to the inverter. CAUTION. To reduce the risk of damage due to surge, Darfon recommends surge protection between the modules and the inverter. CAUTION. To reduce the risk of injury, use the proper cable size for PV module connection. CAUTION. Exceeding the maximum input voltage can destroy the unit. Check the PV string voltage before wiring the connection. Connecting the PV Arrays Step 1. For each PV input string, make sure the input voltage is between 250VDC and [...] setting mode. ESC Exit Exits setting mode. Left Go to previous page, move or decreasing all Number. Right Go to next page; move; to increase all Number. I N S T A L L A T I O N M A N U A L H 5 0 0 1 H Y B R I D I N V E R T E R R e v . 1 © 2 0 1 8 D a r f o n E l e c t r o n i c s C o r p . 1 3 | P a g e LCD Screen – Icons and Pages The LCD screen will display three different pages: “Power Flows”, “Power Information” and “System Settings”. Use the ← or → keys to toggle between the various pages.",
+        "score": 0.6396691,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.darfonenergy.com/Content/Upload/files/GEP/Ebike_battery/Download/E3C090A1.pdf",
+        "title": "5J.E3C09.0A1_User manual_20240822 - darfonenergy.com",
+        "snippet": "• Contact the place of purchase or a distributor for information on installation , adjustment, and replacement of the products which are not found in the user's manual .",
+        "score": 0.5315261,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.fortresspower.com/wp-content/uploads/2018/08/Warranty-basic-180612-2.pdf",
+        "title": "[PDF] Limited Product Warranty | Fortress Power",
+        "snippet": "Limited Product Warranty 1 | P a g e © 2 0 1 8 D a r f on Electronics / Darfon America R e v . 0 4 This Darfon Electronics Corporation and Darfon America Corporation (“Darfon”) Limited Product Warranty is effective and applicable to all purchases of the Product Types stated below conducted after June 15, 2018 and supersedes all prior Darfon Limited Product Warranty rights. This Limited Warranty is not a guarantee of durability and does not include device availability. It covers the below-listed [...] limited to salt water, acid rain and biological infestations; 4. Has been uninstalled from the originally-installed end user location and reinstalled elsewhere. The items below are expressly not covered by this warranty: 1. All items not originally sold by Darfon including, but not limited to, installed cables, controllers, small internal (rechargeable) batteries, current transformers or transducers (CT), Voltage transformers or transducers (VT), and communications devices; 2. Consumables and [...] products (“Product(s)”): Micro inverter models MIG240, MIG300, G320 and G640, hybrid Inverter models H5000, H5001, HB5 and HB51, integrated system models H100 and H200, battery modules, monitoring hardware models DL-200, CB-100, CMB1C and CMB4C. The Darfon Limited Warranty covers defects in workmanship and materials for a Product that (i) is in compliance with the installation instructions supplied with it; (ii) have been used and operated for its intended purpose in compliance with the",
+        "score": 0.76512027,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.fortresspower.com/wp-content/uploads/2018/08/Darfon_Warranty_Extension_Order_Form_2018.pdf",
+        "title": "[PDF] Warranty Extension Order Form | Fortress Power",
+        "snippet": "original purchase date of the Product(s). • All other terms and conditions, including warranty exclusions, in the Limited Product Warranty shall continue to be applicable. The Darfon Limited Product Warranty can be downloaded from www.darfonsolar.com or obtained by writing to pvsales@darfon.com. INSTRUCTIONS: Simply fill out the order form and fax, email, or mail by post to us. Please enclose your check with this order form if you are paying by check Fax number: +1 650 3166301 Email address: [...] Warranty Extension Order Form 1 | P a g e © 2 0 1 8 D a r f on Electronics / Darfon America R e v . 0 1 Thank you for considering buying warranty extension for your Darfon products. Purchasing warranty extension allows extra time to be added to the standard warranty period stipulated in the Darfon Limited Product Warranty. CONDITIONS: • This warranty extension order form is only valid for the following products (“Product(s)”): Hybrid inverters H5000, H5001, HB5 and HB51, either standalone or [...] purchase. Payment by Credit card Visa Mastercard American Express Total amount US$ Credit card number: C V V: Name as it appears on card: Expiration date: Credit card billing address: City Credit card billing address: State Zip Code: Country Signature Date Online Warranty Registration  Hours of Operation USA 9AM-6PM (PST), Monday- Friday Asia 8AM-5PM (GMT+8), Monday-Friday Darfon Technical Support Tel : +1 650 316 6300 (USA), +886 3 250 8800 (Asia) Email: support@darfon.com Web:  Office",
+        "score": 0.69968605,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "darfon",
+    "product": "Darfon M1P500A",
+    "candidates": [
+      {
+        "url": "https://www.darfonenergy.com/Content/Upload/files/GEP/Ebike_battery/Download/01259201.pdf",
+        "title": "[PDF] Battery Charger - DARFON ENERGY TECH.",
+        "snippet": "User’s Manual Model Name B259-201 Input Voltage AC100-240V 50/60Hz Output Voltage DC18-42V 5.6A(168W Max.) Charging mode Constant Power State Red LED Green LED Orange LED Battery unconnected Initial pre-charge Battery Capacity < 20% Battery Capacity 20~39% Battery Capacity 40~59% Battery Capacity 60~79% Battery Capacity >= 80% Charge completed Battery failure / Charger failure LED is flashing Operating -10 to 40 ℃ 5 to 95 %RH Non- Operating -20 to 65 ℃ 5 to 95 %RH When getting through AC power, please check the power LED lighted “Green” first(not plug-in Battery yet), If power LED not lighted “Green”: Please confirm the AC power cord is well connected or not.",
+        "score": 0.98548,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://datasheet.datasheetarchive.com/originals/crawler/darfonsolar.com/3d1e61e88bf58915821d3f95556a31e0.pdf",
+        "title": "INSTALLATION MANUAL - datasheet.datasheetarchive.com",
+        "snippet": "BEFORE INSTALLING AND KEEP FOR FUTURE REFERENCE. This manual contains important instructions for the installation and maintenance of Darfon’s Monitoring System. Before installing, please read these safety instructions carefully. Take special care to follow the warnings indicated on the unit itself as well as the safety instructions listed below. Safety Symbols To reduce the risk of injury and to ensure the continued safe operation of this product, the following safety instructions and warnings [...] Auto MDI/MDIX RJ-45 Ports 4x FE LAN to connect local devices WiFi Antennas I N S T A L L A T I O N M A N U A L C L O U D - B A S E D M O N I T O R I N G S Y S T E M R e v . 1 © 2 0 1 7 D a r f o n E l e c t r o n i c s C o r p . 1 4 | P a g e TECHNICAL SPECIFICATIONS PLC Box COMMUNICATION Serial Port DB9 RS485 for Data Logger1 Number of Devices Up to 24 Microinverters Transmission Distance2 Up to 164ft (50m) MEMORY Internal Memory Flash ROM 16kb MECHNICAL DATA Operating Temperature -10 to 50°C [...] ON: Ethernet connection of LAN is established Flash: Data packets are transferred High 3G Signal Green Steady ON: The signal strength of 3G is strong Low 3G Signal Green Steady ON: The signal strength of 3G is weak USB Green Steady ON: If USB device is attached Serial Port Green Steady ON: If serial device is attached I N S T A L L A T I O N M A N U A L C L O U D - B A S E D M O N I T O R I N G S Y S T E M R e v . 1 © 2 0 1 7 D a r f o n E l e c t r o n i c s C o r p . 7 | P a g e Installing",
+        "score": 0.70847535,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.darfonenergy.com/Content/Upload/files/GEP/Ebike_battery/Download/E3C090A1.pdf",
+        "title": "5J.E3C09.0A1_User manual_20240822 - darfonenergy.com",
+        "snippet": "NOTICE • • • Please ensure all parts are included without omission before assembly. Please follow the specified torque according to the instruction while screwing the bolts.\nPlease do not pin or excessively bent the cables.\nINSTALL THE MOUNT SET • The lock through the lock holder and secure it tightly with screws.\n※The torque is 3N-M • Place the spring and install it into the frame.\n※The torque is 10N-M • Install the spring, latch, and case in sequence, and secure them tightly with screws. [...] DANGER Failure to follow the instructions will result in death or serious injury.\nWARNING Failure to follow the instructions could result in death or serious injury.\nCAUTION Failure to follow the instructions could cause personal injury or physical damage to equipment and surroundings.\nIMPORTANT SAFETY INFORMATION CAUTION • Do not disassemble or modify the product. This may cause the product to not operate correctly, and you may thus get injured. [...] TROUBLESHOOTING Details Causes / possibilities Remedy Unable to install / remove the battery.\nThe battery drops off by itself.\nUnable to assembly completely.\nUnable to assembly completely.\nThe front and rear mount distance is improper.\nThe lock is not properly positioned.\nParts are missing or damaged.\nAdjust the mount gap.\nRe-adjust the screw position.\nContact the place of purchase.\nThe front and rear mount distance is improper.\nCable routing inside the frame is causing interference.",
+        "score": 0.64746445,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.fortresspower.com/wp-content/uploads/2018/08/InstallationManual_H5001.pdf",
+        "title": "INSTALLATION MANUAL - Fortress Power",
+        "snippet": "U A L H 5 0 0 1 H Y B R I D I N V E R T E R R e v . 1 © 2 0 1 8 D a r f o n E l e c t r o n i c s C o r p . 2 9 | P a g e Dmin - Dmax 235 - 245V Deadband range (V) Power Ramp Rate RRNORM_UP_MIN RRNORM_UP_MAX ACCURACY DESCRIPTION Normal Operating 1% (Irate/sec) 50% (Irate/sec) 3% Percentage of nominal generated power per second Soft Start 1% (Irate/sec) 50% (Irate/sec) 3% Percentage of nominal generated power per second for the first time start up. I N S T A L L A T I O N M A N U A L H 5 0 0 1 H [...] will cause leakage current to the inverter. CAUTION. To reduce the risk of damage due to surge, Darfon recommends surge protection between the modules and the inverter. CAUTION. To reduce the risk of injury, use the proper cable size for PV module connection. CAUTION. Exceeding the maximum input voltage can destroy the unit. Check the PV string voltage before wiring the connection. Connecting the PV Arrays Step 1. For each PV input string, make sure the input voltage is between 250VDC and [...] setting mode. ESC Exit Exits setting mode. Left Go to previous page, move or decreasing all Number. Right Go to next page; move; to increase all Number. I N S T A L L A T I O N M A N U A L H 5 0 0 1 H Y B R I D I N V E R T E R R e v . 1 © 2 0 1 8 D a r f o n E l e c t r o n i c s C o r p . 1 3 | P a g e LCD Screen – Icons and Pages The LCD screen will display three different pages: “Power Flows”, “Power Information” and “System Settings”. Use the ← or → keys to toggle between the various pages.",
+        "score": 0.6391287,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.darfon.com/Content/Upload/files/DARAD/For_Customers/Quick_Assembly_Guide/BESV/JF1_JR1_JG1/BESV_JF1_JR1_JG1_QAG_CN.pdf",
+        "title": "Quick Assembly Guide - DARFON",
+        "snippet": "Inspect the condition of the brakes, derailleur, and chain device – they must function well. Check the function of the electric module and the remaining battery power level. Please refer to the user manual for more details.",
+        "score": 0.608897,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.robotshop.com/media/U/UTR/RB-Utr-08/pdf/robosense-rs-lidar-m1-plus-advanced-2d-mems-smart-chip-lidar-200m-range-user-guide.pdf",
+        "title": "RS-LiDAR-M1P User Guide - Robotshop",
+        "snippet": "Frequecy_Setting 9 1 4 Ethernet Source_IP 10 4 Destination_IP 14 4 MAC_Address 18 6 MSOP_Port 24 2 DIFOP_Port 26 2 5 FW Mian_Board_PL_PN 28 5 Main_Board_PS_PN 33 5 6 Reserve 38 16 7 Wave Return_Mode 54 1 8 Time Timesync_Mode 55 1 Timesync_Status 56 1 Time_Status 57 10 9 Volt Battery_Volt 67 2 10 Reserve 69 67 11 Diagnosis Lidar fault status 136 1 12 Reserve 137 118 Note: 1. The Header (DIFOP identification header) in the table is 0xa5, 0xff, 0x00, 0x5a, 0x11,0x11,0x55, 0x55, which can be used [...] related data, including laser ranging value, return reflectivity value, vertical angle, horizontal angle and time stamp. The payload length of the MSOP packet is 1210 bytes, which consists of a synchronization header of 32 bytes, a data packet of 1175 bytes (a total of 25 data blocks of 47 bytes), and a tail of 3 bytes. The basic structure of the MSOP packet is as shown in the figure below: MSOP Packet (1210 Bytes) 3 Bytes 32 Bytes data packet 25  47 Bytes = 1175 Bytes 32 Bytes （The 11th ~ 20th [...] mode Timestamp: store timestamps. The defined timestamp is used to record the system time. The high 6 bytes are the second bits, and the low 4 bytes are the microsecond bits. reserved: reserved bit lidar_type: the type of LiDAR, default value is 0x10 mems_tmp: mems temperature, Temp=mems_tmp-80; namely when mems_tmp Header（32 Bytes) pkt_header pkt_psn protocol version wave_mode time_sync_mode 4 Bytes 2 Bytes 2 Bytes 1 Byte 1 Byte timestamp reserved lidar_type mems_tmp 10 Bytes 10 Bytes 1 Byte 1",
+        "score": 0.6063825,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.darfon.com/Content/Upload/113年股東會/達方113年議事手冊ENG.pdf",
+        "title": "Darfon Darfon",
+        "snippet": "Darfon is the world's No. 1 notebook keyboard and precision component solutions leading manufacturer.",
+        "score": 0.4800161,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://archive.org/download/OEM_Darfon_4H.0.S02/OEM_Darfon_4H.0.S02_text.pdf",
+        "title": "Schematics: OEM Darfon 4H.0 - Archive.org",
+        "snippet": "bi:rS€o B2:C56S,CSG6,£SH,it5U, SS5 J ^59, a5 9ft, aSfiS ^ B4 :CSS7„ CSS ft, LSS7, RSS6, ZDSSS, ZDSS4 BS:LS42 CliCUSSl «;«63wC5(, LSS5 r 5$l, 5« Cl:CSSl, CSS2, CSS 1, CSS4 , CSSS, Cl SG , rc SSl C4 : LiSl , LSS3 , Li t , R545, RSS7 C$CS6l,C$$2,K$Sl Audio cpe I can _ w$r iBcKimcoi H3ink Audio CPE Audio CHD icaai H» jwiKnoui HSink 6 4 3 5 4 3 2 I Cl :QB51 Cl :D853 Cl : JW13 Cl : JW12 Cl :L852 CZ : JW7 CZ; JW15 CZ : JW14 cz : icasi i nf o rma r EilBf! [...] L61 C608 T65 1 R 6 6 1 R 658 JW31 JW& JW17 J W1 6 Jffl 1 C87 1 IC702 JW8 JWZ JW18 C718 IC701 C71 6 L 652 L fi 1 2 IC652 p Side M M M Al A2 A2 A3 A3 A3 A5 A5 a AS AS B B B B B B 1 B2 B2 B2 BE BE B3 B3 B3 B4 B4 B4 B4 B5 B5 B5 B 5 BG B& B6 B6 CN551 JW33 JW3 C565 IC551 JW1 H55 1 L55 1 C661 L608 C5 0 4 m i VARl TR601 JW9 JW4 JW10 LB5 1 C563 C865 D852 D05 1 C55Z m ;UUi __ _fl LS53 C711 JW2S L55S D70 1 L65 1 DG51 C662 BD6Q1 L60 1 C605 JW32 ceai JW2Q RGea RG57 FG01 E 5 : C 6 1 3 E5 : C6 10 E5 : C6 1 1 [...] 5 4 3 2 1 C B3;C65?,W«£,EC652 04 :C650, 1C6S2, Q656,, M7E, H74, ft6?7 B5lC$«Q, FGOl, 70J e 1 i C60 5,M54 r 05 T RGG, RG70,M72, R73, R74 C2 : C053, CSSS, C646, DSSS, IC6S1, R6S 5, K6 64 , Sfi 66, R69 Ci t C 5 1 , C$62 , MS 6 , R6S 9, R$$l C4 ; C663, C$64 , IC 65 3, 0654 , 650, RGSl, 6$3, 654 , 656, 67 6, ;p5 CS»UOe,Ft652 J VWtl 01 :D651 r D6S2, L6S3, L653, RB71 P3t667, rSSl D3 :R6S7, R660 04 tBDS01,C66l,C662, USl B$iCS0l,C603 f C604, 0601, 62 6, 62 9, 630 D B A A 5 4 3 2 1 D D V Auto M:LS59",
+        "score": 0.4751919,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.dranetz.com/wp-content/uploads/2020/11/Dranetz-HDPQ-User-Guide.pdf",
+        "title": "Dranetz USER GUIDE",
+        "snippet": "• Remote Mobile UI - uses personal communication devices such as mobile and smart phones. Compatible with devices such as Smartphone or equivalent devices with small, typically 3” to 4\" display. The capabilities are based on various “apps” that the user can download from the Dranetz web site, like viewing real time and stored data in a format compatible with smaller display. [...] 2 Plug the AC adapter into an AC power source.\n3 Press the On/Off power switch located at the left side to turn the instrument on.\nResult: The Dranetz logo will be displayed while the instrument is booting. [...] Contact Dranetz Customer Service if you need information on the optional Weather Resistant Enclosure (P/N ENCL-HDPQ).\nStep Action 1 Remove the hanger bracket from the instrument by removing two #6-32 x 5/ 16\" long screws and two flat washers from the hanger bracket.\n2 Replace the hanger bracket with the keyhole mounting plate (P/N 118312-G1) and secure it to the instrument with the supplied hardware (two #6-32 x 3/4\" inch long screws and two flat washers) as shown below.",
+        "score": 0.29752147,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.fortresspower.com/wp-content/uploads/2018/08/Warranty-basic-180612-2.pdf",
+        "title": "[PDF] Limited Product Warranty | Fortress Power",
+        "snippet": "Limited Product Warranty 1 | P a g e © 2 0 1 8 D a r f on Electronics / Darfon America R e v . 0 4 This Darfon Electronics Corporation and Darfon America Corporation (“Darfon”) Limited Product Warranty is effective and applicable to all purchases of the Product Types stated below conducted after June 15, 2018 and supersedes all prior Darfon Limited Product Warranty rights. This Limited Warranty is not a guarantee of durability and does not include device availability. It covers the below-listed [...] products (“Product(s)”): Micro inverter models MIG240, MIG300, G320 and G640, hybrid Inverter models H5000, H5001, HB5 and HB51, integrated system models H100 and H200, battery modules, monitoring hardware models DL-200, CB-100, CMB1C and CMB4C. The Darfon Limited Warranty covers defects in workmanship and materials for a Product that (i) is in compliance with the installation instructions supplied with it; (ii) have been used and operated for its intended purpose in compliance with the [...] limited to salt water, acid rain and biological infestations; 4. Has been uninstalled from the originally-installed end user location and reinstalled elsewhere. The items below are expressly not covered by this warranty: 1. All items not originally sold by Darfon including, but not limited to, installed cables, controllers, small internal (rechargeable) batteries, current transformers or transducers (CT), Voltage transformers or transducers (VT), and communications devices; 2. Consumables and",
+        "score": 0.76279575,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.fortresspower.com/wp-content/uploads/2018/08/Darfon_Warranty_Extension_Order_Form_2018.pdf",
+        "title": "[PDF] Warranty Extension Order Form | Fortress Power",
+        "snippet": "original purchase date of the Product(s). • All other terms and conditions, including warranty exclusions, in the Limited Product Warranty shall continue to be applicable. The Darfon Limited Product Warranty can be downloaded from www.darfonsolar.com or obtained by writing to pvsales@darfon.com. INSTRUCTIONS: Simply fill out the order form and fax, email, or mail by post to us. Please enclose your check with this order form if you are paying by check Fax number: +1 650 3166301 Email address: [...] Warranty Extension Order Form 1 | P a g e © 2 0 1 8 D a r f on Electronics / Darfon America R e v . 0 1 Thank you for considering buying warranty extension for your Darfon products. Purchasing warranty extension allows extra time to be added to the standard warranty period stipulated in the Darfon Limited Product Warranty. CONDITIONS: • This warranty extension order form is only valid for the following products (“Product(s)”): Hybrid inverters H5000, H5001, HB5 and HB51, either standalone or [...] purchase. Payment by Credit card Visa Mastercard American Express Total amount US$ Credit card number: C V V: Name as it appears on card: Expiration date: Credit card billing address: City Credit card billing address: State Zip Code: Country Signature Date Online Warranty Registration  Hours of Operation USA 9AM-6PM (PST), Monday- Friday Asia 8AM-5PM (GMT+8), Monday-Friday Darfon Technical Support Tel : +1 650 316 6300 (USA), +886 3 250 8800 (Asia) Email: support@darfon.com Web:  Office",
+        "score": 0.6972179,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "darfon",
+    "product": "Darfon M1P600A",
+    "candidates": [
+      {
+        "url": "https://www.darfonenergy.com/Content/Upload/files/GEP/Ebike_battery/Download/01259201.pdf",
+        "title": "[PDF] Battery Charger - DARFON ENERGY TECH.",
+        "snippet": "User’s Manual Model Name B259-201 Input Voltage AC100-240V 50/60Hz Output Voltage DC18-42V 5.6A(168W Max.) Charging mode Constant Power State Red LED Green LED Orange LED Battery unconnected Initial pre-charge Battery Capacity < 20% Battery Capacity 20~39% Battery Capacity 40~59% Battery Capacity 60~79% Battery Capacity >= 80% Charge completed Battery failure / Charger failure LED is flashing Operating -10 to 40 ℃ 5 to 95 %RH Non- Operating -20 to 65 ℃ 5 to 95 %RH When getting through AC power, [...] disconnect the equipment from power supply to avoid being damaged by transient over voltage. 9. Children should be supervised to ensure that they do not play with the appliance. 10. Cleaning and user maintenance shall not be made by children without supervision. 11. Can’t use for charging non-rechargeable batteries. 12. Disconnect AC power before DC output unplug. 13. The power unit is capable of operating at different voltage without user adjustment. 14. This appliance is not intended for use [...] charge only Li-ion type rechargeable batteries. Other types of batteries may burst causing personal injury and damage. 4. Please read these operating instructions carefully before operating the battery charger. 5. Keep this instruction for later reference. 6. Do not open the equipment to reduce the risk of electrical shock. For safety reasons it is only allow to be opened by qualified service personnel. 7. Protect equipment from humidity. 8. If the equipment is not used for long time,",
+        "score": 0.61972505,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://datasheet.lcsc.com/szlcsc/Darfon-Elec-C0603NPO279CFT_C267355.pdf",
+        "title": "LCSC Darfon Elec C0603NP0279CFT Datasheet",
+        "snippet": "ORDERING INFORMATION 6 STRUCTURE AND DIMENSIONS 7 PRODUCT RANGE AND THICKNESS 8 ELECTRICAL SPECIFICATIONS General Purpose 13 NP0 High Frequency Type 16 TYPICAL CHARACTERISTICS CURVES 17 RF CHARACTERISTICS OF NPO Q series 19 PACKAGING 22 APPLICATION NOTES 26 ENVIRONMENTAL CONCERNS 34 SELECTION GUIDE DARFON MLCC 3 Version:C1007 Darfon’s series of Multilayer Ceramic Chip Capacitors are designed to meet a wide variety of needs. We offer a complete range of products for both general and specialized [...] calculated from the formula given below. T.C.=(C85-C25)/C25ΔT106(PPM/℃) 2. High dielectric constant type: The ranges of capacitance change compared with the 25℃ value over the temperature ranges shall be within the specified ranges. 10 Termination Strength No removal of the terminations or marking defect. Apply a parallel force of 5N to a PCB mounted sample for 10±1sec. 2N for 0603 (EIA 0201). No cracking or marking defects shall occur at 1mm deflection. Capacitance change: NP0: within ±5% or ± [...] INTRODUCTION DARFON MLCC 1 Version:C1007 A Professional MLCC (Multi-Layer Ceramic Capacitor) Manufacturer In the post-PC 21st century, all information and communication technology products will be closely connected with our daily lives. In a colorful communication world, DARFON’s Multi-layer Ceramic Capacitor is significant. This product addresses the market's application needs by combining technology from materials engineering, chemical engineering, electronic engineering, and mechanical",
+        "score": 0.4928966,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.fortresspower.com/wp-content/uploads/2018/08/InstallationManual_H5001.pdf",
+        "title": "PDF INSTALLATION MANUAL - Fortress Power",
+        "snippet": "+1.650.316.6300 For more information www.darfonsolar.com ©2018 Darfon Electronics Corp. All rights reserved. All specifications are subject to change without prior notice. Darfon and the Darfon logo are trademarks of Darfon Electronics Corp. All other trademarks are the property of the respective owners. [...] will cause leakage current to the inverter. CAUTION. To reduce the risk of damage due to surge, Darfon recommends surge protection between the modules and the inverter. CAUTION. To reduce the risk of injury, use the proper cable size for PV module connection. CAUTION. Exceeding the maximum input voltage can destroy the unit. Check the PV string voltage before wiring the connection. Connecting the PV Arrays Step 1. For each PV input string, make sure the input voltage is between 250VDC and [...] setting mode. ESC Exit Exits setting mode. Left Go to previous page, move or decreasing all Number. Right Go to next page; move; to increase all Number. I N S T A L L A T I O N M A N U A L H 5 0 0 1 H Y B R I D I N V E R T E R R e v . 1 © 2 0 1 8 D a r f o n E l e c t r o n i c s C o r p . 1 3 | P a g e LCD Screen – Icons and Pages The LCD screen will display three different pages: “Power Flows”, “Power Information” and “System Settings”. Use the ← or → keys to toggle between the various pages.",
+        "score": 0.6244086,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.dth.net/solar/darfon/H5001-manual-44822.pdf",
+        "title": "PDF INSTALLATION MANUAL - dth.net",
+        "snippet": "INSTALLATION MANUAL H5001 HYBRID INVERTER REV. 4 ©20 22 DARFON ELECTRONICS CORP. 3| PAGE IMPORTANT SAFETY WARNINGS Please read all instructions and cautionary markings on the unit and this manual before using the inverter. And, Store this user manual where it can be accessed easily. This manual is for qualified personnel.",
+        "score": 0.46774563,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.fortresspower.com/wp-content/uploads/2018/08/Warranty-basic-180612-2.pdf",
+        "title": "[PDF] Limited Product Warranty | Fortress Power",
+        "snippet": "Limited Product Warranty 1 | P a g e © 2 0 1 8 D a r f on Electronics / Darfon America R e v . 0 4 This Darfon Electronics Corporation and Darfon America Corporation (“Darfon”) Limited Product Warranty is effective and applicable to all purchases of the Product Types stated below conducted after June 15, 2018 and supersedes all prior Darfon Limited Product Warranty rights. This Limited Warranty is not a guarantee of durability and does not include device availability. It covers the below-listed [...] products (“Product(s)”): Micro inverter models MIG240, MIG300, G320 and G640, hybrid Inverter models H5000, H5001, HB5 and HB51, integrated system models H100 and H200, battery modules, monitoring hardware models DL-200, CB-100, CMB1C and CMB4C. The Darfon Limited Warranty covers defects in workmanship and materials for a Product that (i) is in compliance with the installation instructions supplied with it; (ii) have been used and operated for its intended purpose in compliance with the [...] limited to salt water, acid rain and biological infestations; 4. Has been uninstalled from the originally-installed end user location and reinstalled elsewhere. The items below are expressly not covered by this warranty: 1. All items not originally sold by Darfon including, but not limited to, installed cables, controllers, small internal (rechargeable) batteries, current transformers or transducers (CT), Voltage transformers or transducers (VT), and communications devices; 2. Consumables and",
+        "score": 0.75809944,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.fortresspower.com/wp-content/uploads/2018/08/Darfon_Warranty_Extension_Order_Form_2018.pdf",
+        "title": "[PDF] Warranty Extension Order Form | Fortress Power",
+        "snippet": "original purchase date of the Product(s). • All other terms and conditions, including warranty exclusions, in the Limited Product Warranty shall continue to be applicable. The Darfon Limited Product Warranty can be downloaded from www.darfonsolar.com or obtained by writing to pvsales@darfon.com. INSTRUCTIONS: Simply fill out the order form and fax, email, or mail by post to us. Please enclose your check with this order form if you are paying by check Fax number: +1 650 3166301 Email address: [...] Warranty Extension Order Form 1 | P a g e © 2 0 1 8 D a r f on Electronics / Darfon America R e v . 0 1 Thank you for considering buying warranty extension for your Darfon products. Purchasing warranty extension allows extra time to be added to the standard warranty period stipulated in the Darfon Limited Product Warranty. CONDITIONS: • This warranty extension order form is only valid for the following products (“Product(s)”): Hybrid inverters H5000, H5001, HB5 and HB51, either standalone or [...] purchase. Payment by Credit card Visa Mastercard American Express Total amount US$ Credit card number: C V V: Name as it appears on card: Expiration date: Credit card billing address: City Credit card billing address: State Zip Code: Country Signature Date Online Warranty Registration  Hours of Operation USA 9AM-6PM (PST), Monday- Friday Asia 8AM-5PM (GMT+8), Monday-Friday Darfon Technical Support Tel : +1 650 316 6300 (USA), +886 3 250 8800 (Asia) Email: support@darfon.com Web:  Office",
+        "score": 0.6964752,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "darfon",
+    "product": "Darfon M1P700A",
+    "candidates": [
+      {
+        "url": "https://www.darfon.com/Content/Upload/images/product/green/ODM%20e-Bike/Catalogue/Re-label/Re-label_e-Road%20with%20hub-drive.pdf",
+        "title": "[PDF] PowerPoint 簡報 - DARFON",
+        "snippet": "M Size 16kg (35.2lbs). XS Size 15.7kg(34.54lbs). Colors. White / Black. Speed power. 25km/h, 16mph. Frame. Aluminum. Power Drive System. Algorhythm (Bafang).",
+        "score": 0.6768127,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.darfonenergy.com/Content/Upload/files/GEP/Ebike_battery/Download/01259201.pdf",
+        "title": "[PDF] Battery Charger - DARFON ENERGY TECH.",
+        "snippet": "User’s Manual Model Name B259-201 Input Voltage AC100-240V 50/60Hz Output Voltage DC18-42V 5.6A(168W Max.) Charging mode Constant Power State Red LED Green LED Orange LED Battery unconnected Initial pre-charge Battery Capacity < 20% Battery Capacity 20~39% Battery Capacity 40~59% Battery Capacity 60~79% Battery Capacity >= 80% Charge completed Battery failure / Charger failure LED is flashing Operating -10 to 40 ℃ 5 to 95 %RH Non- Operating -20 to 65 ℃ 5 to 95 %RH When getting through AC power, [...] disconnect the equipment from power supply to avoid being damaged by transient over voltage. 9. Children should be supervised to ensure that they do not play with the appliance. 10. Cleaning and user maintenance shall not be made by children without supervision. 11. Can’t use for charging non-rechargeable batteries. 12. Disconnect AC power before DC output unplug. 13. The power unit is capable of operating at different voltage without user adjustment. 14. This appliance is not intended for use [...] charge only Li-ion type rechargeable batteries. Other types of batteries may burst causing personal injury and damage. 4. Please read these operating instructions carefully before operating the battery charger. 5. Keep this instruction for later reference. 6. Do not open the equipment to reduce the risk of electrical shock. For safety reasons it is only allow to be opened by qualified service personnel. 7. Protect equipment from humidity. 8. If the equipment is not used for long time,",
+        "score": 0.6271529,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.darfonenergy.com/Content/Upload/files/GEP/Ebike_battery/Download/E3C090A1.pdf",
+        "title": "PDF 5J.E3C09.0A1_User manual_20240822 - darfonenergy.com",
+        "snippet": "NOTICE • • • Please ensure all parts are included without omission before assembly. Please follow the specified torque according to the instruction while screwing the bolts.\nPlease do not pin or excessively bent the cables.\nINSTALL THE MOUNT SET • The lock through the lock holder and secure it tightly with screws.\n※The torque is 3N-M • Place the spring and install it into the frame.\n※The torque is 10N-M • Install the spring, latch, and case in sequence, and secure them tightly with screws. [...] TROUBLESHOOTING Details Causes / possibilities Remedy Unable to install / remove the battery.\nThe battery drops off by itself.\nUnable to assembly completely.\nUnable to assembly completely.\nThe front and rear mount distance is improper.\nThe lock is not properly positioned.\nParts are missing or damaged.\nAdjust the mount gap.\nRe-adjust the screw position.\nContact the place of purchase.\nThe front and rear mount distance is improper.\nCable routing inside the frame is causing interference. [...] FR 1 4X 11 7 2X 6 10 3 4 5 2X 8 2 5 2X 6 7 2X 8 1 4X 2 3 4 7 2X 11 10 1 4X 1. This lock will not be included in mount set, needs to be purchased separately.\nNOTE 1.",
+        "score": 0.7511561,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.darfon.com/Content/Upload/files/DARAD/For_Customers/Quick_Assembly_Guide/BESV/JF1_JR1_JG1/BESV_JF1_JR1_JG1_QAG_CN.pdf",
+        "title": "Quick Assembly Guide - DARFON",
+        "snippet": "Reflector ② Rear Reflector ⑧ Cable ③ Charger ⑨ User Manual ④ Reflector tool ⑩ Safety Precautions ⑤ Information of Rear Derailleur ⑪ Warranty Card ⑥ Pedals ⑫ Loss Prevention Insurance Leaflet Quick Assembly Guide – JF1 / JR1 / JG1 6 2. Component Assembly and Adjustment 2.1 Stem and Handlebars 1. Rotate the stem frontwards and tighten the bolts indicated below to 6 Nm as marked on the stem. 2. Adjust the angles of the stem and handlebars and the height properly. Then secure the bolts to the [...] side. 2. Attach the right pedal marked with “R” to the right crank arm. Use a torque wrench or rotate the pedal clockwise to tighten the pedal. 3. Attach the left pedal marked with “L” to the left crank arm. Use a torque wrench or rotate the pedal counter-clockwise to tighten the pedal. Quick Assembly Guide – JF1 / JR1 / JG1 9 2.4 The Saddle Post and Rear Reflector 1. To adjust the saddle height for the JF1, release the saddle post clamp. For the JR1 / JG1, use a torque wrench to loosen the [...] .......................................................................................................................................... 4 2. Component Assembly and Adjustment ......................................................................................................... 6 2.1 Stem and Handlebars .............................................................................................................................. 6 2.2 Front Wheel",
+        "score": 0.6519982,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.fortresspower.com/wp-content/uploads/2018/08/InstallationManual_H5001.pdf",
+        "title": "PDF INSTALLATION MANUAL - Fortress Power",
+        "snippet": "+1.650.316.6300 For more information www.darfonsolar.com ©2018 Darfon Electronics Corp. All rights reserved. All specifications are subject to change without prior notice. Darfon and the Darfon logo are trademarks of Darfon Electronics Corp. All other trademarks are the property of the respective owners. [...] will cause leakage current to the inverter. CAUTION. To reduce the risk of damage due to surge, Darfon recommends surge protection between the modules and the inverter. CAUTION. To reduce the risk of injury, use the proper cable size for PV module connection. CAUTION. Exceeding the maximum input voltage can destroy the unit. Check the PV string voltage before wiring the connection. Connecting the PV Arrays Step 1. For each PV input string, make sure the input voltage is between 250VDC and [...] U A L H 5 0 0 1 H Y B R I D I N V E R T E R R e v . 1 © 2 0 1 8 D a r f o n E l e c t r o n i c s C o r p . 2 9 | P a g e Dmin - Dmax 235 - 245V Deadband range (V) Power Ramp Rate RRNORM_UP_MIN RRNORM_UP_MAX ACCURACY DESCRIPTION Normal Operating 1% (Irate/sec) 50% (Irate/sec) 3% Percentage of nominal generated power per second Soft Start 1% (Irate/sec) 50% (Irate/sec) 3% Percentage of nominal generated power per second for the first time start up. I N S T A L L A T I O N M A N U A L H 5 0 0 1 H",
+        "score": 0.6246834,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.robotshop.com/media/U/UTR/RB-Utr-08/pdf/robosense-rs-lidar-m1-plus-advanced-2d-mems-smart-chip-lidar-200m-range-user-guide.pdf",
+        "title": "RS-LiDAR-M1P User Guide - Robotshop",
+        "snippet": "Frequecy_Setting 9 1 4 Ethernet Source_IP 10 4 Destination_IP 14 4 MAC_Address 18 6 MSOP_Port 24 2 DIFOP_Port 26 2 5 FW Mian_Board_PL_PN 28 5 Main_Board_PS_PN 33 5 6 Reserve 38 16 7 Wave Return_Mode 54 1 8 Time Timesync_Mode 55 1 Timesync_Status 56 1 Time_Status 57 10 9 Volt Battery_Volt 67 2 10 Reserve 69 67 11 Diagnosis Lidar fault status 136 1 12 Reserve 137 118 Note: 1. The Header (DIFOP identification header) in the table is 0xa5, 0xff, 0x00, 0x5a, 0x11,0x11,0x55, 0x55, which can be used [...] related data, including laser ranging value, return reflectivity value, vertical angle, horizontal angle and time stamp. The payload length of the MSOP packet is 1210 bytes, which consists of a synchronization header of 32 bytes, a data packet of 1175 bytes (a total of 25 data blocks of 47 bytes), and a tail of 3 bytes. The basic structure of the MSOP packet is as shown in the figure below: MSOP Packet (1210 Bytes) 3 Bytes 32 Bytes data packet 25  47 Bytes = 1175 Bytes 32 Bytes （The 11th ~ 20th [...] mode Timestamp: store timestamps. The defined timestamp is used to record the system time. The high 6 bytes are the second bits, and the low 4 bytes are the microsecond bits. reserved: reserved bit lidar_type: the type of LiDAR, default value is 0x10 mems_tmp: mems temperature, Temp=mems_tmp-80; namely when mems_tmp Header（32 Bytes) pkt_header pkt_psn protocol version wave_mode time_sync_mode 4 Bytes 2 Bytes 2 Bytes 1 Byte 1 Byte timestamp reserved lidar_type mems_tmp 10 Bytes 10 Bytes 1 Byte 1",
+        "score": 0.60245985,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.darfonenergy.com/Content/Upload/files/GEP/Ebike_battery/Download/E4C0C012.pdf",
+        "title": "Darfonenergy • • • Please ensure all parts are included without omission before assembly.",
+        "snippet": "Please ensure all parts are included without omission before assembly · Please follow the specified torque according to the instruction while screwing the bolts",
+        "score": 0.52042377,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.darfon.com.cn/Folder/Darfon's+DM_2008+English.pdf",
+        "title": "Darfon Darfon Electronics Corp.",
+        "snippet": "Darfon is the world's No. 1 notebook keyboard and precision component solutions leading manufacturer.",
+        "score": 0.50007385,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://darfonsolar.com/_downloads/Manuals/B09ULF+User+Manual+v2+190822.pdf",
+        "title": "Darfonsolar installation manual - b09ulf lithium battery",
+        "snippet": "If you're the site owner, log in to launch this site · If you are a visitor, check back soon",
+        "score": 0.42993253,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://usermanual.wiki/Darfon-Electronics/MA1GF-1799483.pdf",
+        "title": "2603142 TM User’s Guide Wireless Touchpad Mouse",
+        "snippet": ".................................................. Laser Sensor Contact Method................................................................. Micro Switch USB.....................................................................2.0 Version (480 Mbps) Power Supply Mouse...................................................................3V, 2 × AAA Batteries Receiver. [...] 2. Follow the onscreen instructions to complete installation. A Touchpad shortcut icon will appear on your desktop for easy access to touchpad settings and demonstration. nNote: To access the Touchpad settings and demo go to the Control Panel, click Mouse, click the Touchpad tab, and then click select Options.\nFunction Gesture Swipe page • Move three fingers to the left to launch the assigned function (Page Up).\n• Move three fingers to the right to launch assigned function (Page Down). [...] • If you do not plan to use the mouse for some time, remove the batteries. Batteries can leak chemicals that can damage electronic parts.\n2 1 3 4 Plug in the Receiver 1. Turn on your computer.\n2. Plug the USB receiver dongle into your computer’s USB port. 3. Slide the ON/OFF switch to ON. Your mouse and receiver are automatically paired.\nnNotes: • If you do not plan to use your mouse for a long time, slide ON/ OFF to OFF to save battery power.",
+        "score": 0.25820017,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.transaudiogroup.com/wp-content/uploads/2024/05/1971-operators-manual.pdf",
+        "title": "Transaudiogroup DRAWMER DUAL PARAMETRIC EQUALISER OPERATOR’S MANUAL CONTENTS Warranty",
+        "snippet": ". . . . . . 8 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13 . . . . . . . . [...] ONE YEAR LIMITED WARRANTY COPYRIGHT This manual is copyrighted © 2024 by Drawmer Electronics Ltd. With all rights reserved. Under copyright laws, no part of this publication may be reproduced, transmitted, stored in a retrieval system or translated into any language in any form by any means, mechanical, optical, electronic, recording, or otherwise, without the written permission of Drawmer Electronics Ltd. [...] . . . . . . . . . . . . . . . . . . . . . . 3 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+        "score": 0.13476478,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.fortresspower.com/wp-content/uploads/2018/08/Warranty-basic-180612-2.pdf",
+        "title": "[PDF] Limited Product Warranty | Fortress Power",
+        "snippet": "Limited Product Warranty 1 | P a g e © 2 0 1 8 D a r f on Electronics / Darfon America R e v . 0 4 This Darfon Electronics Corporation and Darfon America Corporation (“Darfon”) Limited Product Warranty is effective and applicable to all purchases of the Product Types stated below conducted after June 15, 2018 and supersedes all prior Darfon Limited Product Warranty rights. This Limited Warranty is not a guarantee of durability and does not include device availability. It covers the below-listed [...] limited to salt water, acid rain and biological infestations; 4. Has been uninstalled from the originally-installed end user location and reinstalled elsewhere. The items below are expressly not covered by this warranty: 1. All items not originally sold by Darfon including, but not limited to, installed cables, controllers, small internal (rechargeable) batteries, current transformers or transducers (CT), Voltage transformers or transducers (VT), and communications devices; 2. Consumables and [...] products (“Product(s)”): Micro inverter models MIG240, MIG300, G320 and G640, hybrid Inverter models H5000, H5001, HB5 and HB51, integrated system models H100 and H200, battery modules, monitoring hardware models DL-200, CB-100, CMB1C and CMB4C. The Darfon Limited Warranty covers defects in workmanship and materials for a Product that (i) is in compliance with the installation instructions supplied with it; (ii) have been used and operated for its intended purpose in compliance with the",
+        "score": 0.756376,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.fortresspower.com/wp-content/uploads/2018/08/Darfon_Warranty_Extension_Order_Form_2018.pdf",
+        "title": "[PDF] Warranty Extension Order Form | Fortress Power",
+        "snippet": "original purchase date of the Product(s). • All other terms and conditions, including warranty exclusions, in the Limited Product Warranty shall continue to be applicable. The Darfon Limited Product Warranty can be downloaded from www.darfonsolar.com or obtained by writing to pvsales@darfon.com. INSTRUCTIONS: Simply fill out the order form and fax, email, or mail by post to us. Please enclose your check with this order form if you are paying by check Fax number: +1 650 3166301 Email address: [...] Warranty Extension Order Form 1 | P a g e © 2 0 1 8 D a r f on Electronics / Darfon America R e v . 0 1 Thank you for considering buying warranty extension for your Darfon products. Purchasing warranty extension allows extra time to be added to the standard warranty period stipulated in the Darfon Limited Product Warranty. CONDITIONS: • This warranty extension order form is only valid for the following products (“Product(s)”): Hybrid inverters H5000, H5001, HB5 and HB51, either standalone or [...] purchase. Payment by Credit card Visa Mastercard American Express Total amount US$ Credit card number: C V V: Name as it appears on card: Expiration date: Credit card billing address: City Credit card billing address: State Zip Code: Country Signature Date Online Warranty Registration  Hours of Operation USA 9AM-6PM (PST), Monday- Friday Asia 8AM-5PM (GMT+8), Monday-Friday Darfon Technical Support Tel : +1 650 316 6300 (USA), +886 3 250 8800 (Asia) Email: support@darfon.com Web:  Office",
+        "score": 0.6991933,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.darfon.com/Content/Upload/113%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83/%E9%81%94%E6%96%B9112%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1ENG.pdf",
+        "title": "[PDF] DARFON ELECTRONICS CORP. 2023 Annual Report",
+        "snippet": "have accumulated almost a thousand patents from various countries. As a responsible global corporate citizen, Darfon is committed to becoming an exemplary sustainable enterprise and has promoted positive changes, including green manufacturing, responsible supply chains, diverse talent cultivation, and creating friendly and inclusive workplaces. The Group actively implements the three major pillars of corporate social responsibility— environmental protection, social responsibility, and corporate [...] any of those positions at another company or institution are the same person or are spouses: a director (or governor), supervisor, or employee of that other company or institution. (4) A director, supervisor, officer, or shareholder holding five percent or more of the shares, of a specified Company or institution that has a financial or business relationship with the Company. 4.A professional individual who, or an owner, partner, director, supervisor, or officer of a sole proprietorship, [...] that ranks among the top five in shareholdings, or that designates its representative to serve as a director or supervisor of the Company under Article 27, paragraph 1 or 2 of the Company Act.。 (2) If a majority of the Company's director seats or voting shares and those of any other Company are controlled by the same person: a director, supervisor, or employee of that other Company. (3) If the chairperson, general manager, or person holding an equivalent position of the Company and a person in",
+        "score": 0.34846824,
+        "bucket": "other"
+      }
+    ]
+  }
+]

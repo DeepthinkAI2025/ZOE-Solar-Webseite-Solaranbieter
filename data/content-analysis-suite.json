@@ -1,0 +1,331 @@
+{
+  "timestamp": "2025-09-28T13:48:36.704Z",
+  "analysis": {
+    "gaps": {
+      "missingTopics": [
+        {
+          "topic": "kosten",
+          "competitorContent": 1,
+          "ownContent": 0,
+          "priority": "high"
+        },
+        {
+          "topic": "installation",
+          "competitorContent": 1,
+          "ownContent": 0,
+          "priority": "high"
+        }
+      ],
+      "underservedKeywords": [
+        {
+          "keyword": "agri pv kosten",
+          "competitors": 1,
+          "opportunity": 210
+        },
+        {
+          "keyword": "wirtschaftlichkeit",
+          "competitors": 1,
+          "opportunity": 210
+        },
+        {
+          "keyword": "agri pv installation",
+          "competitors": 1,
+          "opportunity": 210
+        },
+        {
+          "keyword": "montage",
+          "competitors": 1,
+          "opportunity": 210
+        }
+      ],
+      "contentTypeGaps": [],
+      "depthGaps": []
+    },
+    "competitorAnalysis": {
+      "contentStrategy": {
+        "blog": 1,
+        "guide": 1
+      },
+      "keywordStrategy": [
+        [
+          "agri pv kosten",
+          1
+        ],
+        [
+          "wirtschaftlichkeit",
+          1
+        ],
+        [
+          "agri pv installation",
+          1
+        ],
+        [
+          "montage",
+          1
+        ]
+      ],
+      "performanceMetrics": {
+        "avgContentLength": 4300,
+        "avgKeywordsPerContent": 4
+      },
+      "opportunities": [
+        {
+          "type": "underexploited_keyword",
+          "keyword": "agri pv kosten",
+          "opportunity": "Nutze dieses Keyword stärker"
+        },
+        {
+          "type": "underexploited_keyword",
+          "keyword": "wirtschaftlichkeit",
+          "opportunity": "Nutze dieses Keyword stärker"
+        },
+        {
+          "type": "underexploited_keyword",
+          "keyword": "agri pv installation",
+          "opportunity": "Nutze dieses Keyword stärker"
+        },
+        {
+          "type": "underexploited_keyword",
+          "keyword": "montage",
+          "opportunity": "Nutze dieses Keyword stärker"
+        }
+      ]
+    },
+    "insights": {
+      "trends": [
+        {
+          "metric": "organic_traffic",
+          "change": 11.11111111111111,
+          "direction": "up",
+          "significance": "medium"
+        },
+        {
+          "metric": "average_ranking",
+          "change": -3,
+          "direction": "up",
+          "significance": "high"
+        }
+      ],
+      "anomalies": [],
+      "opportunities": [],
+      "risks": []
+    },
+    "trends": {
+      "seasonal": [
+        {
+          "keyword": "agri pv installation",
+          "peak": "spring",
+          "reason": "Pflanzsaison"
+        },
+        {
+          "keyword": "agri pv förderung",
+          "peak": "year-round",
+          "reason": "Staatliche Förderungen"
+        },
+        {
+          "keyword": "agri pv winter",
+          "peak": "winter",
+          "reason": "Wintervorbereitung"
+        }
+      ],
+      "emerging": [],
+      "declining": [],
+      "predictions": []
+    },
+    "recommendations": {
+      "immediate": [],
+      "shortTerm": [
+        {
+          "action": "Erstelle Content für \"agri pv kosten\"",
+          "priority": "high",
+          "reason": "1 Konkurrenten ranken dafür",
+          "expectedImpact": "Potenzieller Traffic-Gewinn: 210"
+        },
+        {
+          "action": "Erstelle Content für \"wirtschaftlichkeit\"",
+          "priority": "high",
+          "reason": "1 Konkurrenten ranken dafür",
+          "expectedImpact": "Potenzieller Traffic-Gewinn: 210"
+        },
+        {
+          "action": "Erstelle Content für \"agri pv installation\"",
+          "priority": "high",
+          "reason": "1 Konkurrenten ranken dafür",
+          "expectedImpact": "Potenzieller Traffic-Gewinn: 210"
+        },
+        {
+          "action": "Erstelle Content für \"montage\"",
+          "priority": "high",
+          "reason": "1 Konkurrenten ranken dafür",
+          "expectedImpact": "Potenzieller Traffic-Gewinn: 210"
+        }
+      ],
+      "longTerm": [],
+      "prioritized": [
+        {
+          "action": "Erstelle Content für \"agri pv kosten\"",
+          "priority": "high",
+          "reason": "1 Konkurrenten ranken dafür",
+          "expectedImpact": "Potenzieller Traffic-Gewinn: 210"
+        },
+        {
+          "action": "Erstelle Content für \"wirtschaftlichkeit\"",
+          "priority": "high",
+          "reason": "1 Konkurrenten ranken dafür",
+          "expectedImpact": "Potenzieller Traffic-Gewinn: 210"
+        },
+        {
+          "action": "Erstelle Content für \"agri pv installation\"",
+          "priority": "high",
+          "reason": "1 Konkurrenten ranken dafür",
+          "expectedImpact": "Potenzieller Traffic-Gewinn: 210"
+        },
+        {
+          "action": "Erstelle Content für \"montage\"",
+          "priority": "high",
+          "reason": "1 Konkurrenten ranken dafür",
+          "expectedImpact": "Potenzieller Traffic-Gewinn: 210"
+        }
+      ]
+    },
+    "reports": {
+      "comprehensive": {
+        "title": "Comprehensive SEO Analysis Report",
+        "date": "2025-09-28T13:48:36.700Z",
+        "sections": [
+          {
+            "title": "Content Analysis",
+            "data": {
+              "missingTopics": [
+                {
+                  "topic": "kosten",
+                  "competitorContent": 1,
+                  "ownContent": 0,
+                  "priority": "high"
+                },
+                {
+                  "topic": "installation",
+                  "competitorContent": 1,
+                  "ownContent": 0,
+                  "priority": "high"
+                }
+              ],
+              "underservedKeywords": [
+                {
+                  "keyword": "agri pv kosten",
+                  "competitors": 1,
+                  "opportunity": 210
+                },
+                {
+                  "keyword": "wirtschaftlichkeit",
+                  "competitors": 1,
+                  "opportunity": 210
+                },
+                {
+                  "keyword": "agri pv installation",
+                  "competitors": 1,
+                  "opportunity": 210
+                },
+                {
+                  "keyword": "montage",
+                  "competitors": 1,
+                  "opportunity": 210
+                }
+              ],
+              "contentTypeGaps": [],
+              "depthGaps": []
+            },
+            "insights": [
+              {
+                "type": "opportunity",
+                "severity": "high",
+                "message": "4 ungenutzte Keywords gefunden",
+                "action": "Erstelle Content für diese Keywords"
+              }
+            ]
+          },
+          {
+            "title": "Performance Overview",
+            "data": {
+              "trends": [
+                {
+                  "metric": "organic_traffic",
+                  "change": 11.11111111111111,
+                  "direction": "up",
+                  "significance": "medium"
+                },
+                {
+                  "metric": "average_ranking",
+                  "change": -3,
+                  "direction": "up",
+                  "significance": "high"
+                }
+              ],
+              "anomalies": [],
+              "opportunities": [],
+              "risks": []
+            }
+          },
+          {
+            "title": "Trend Analysis",
+            "data": {
+              "seasonal": [
+                {
+                  "keyword": "agri pv installation",
+                  "peak": "spring",
+                  "reason": "Pflanzsaison"
+                },
+                {
+                  "keyword": "agri pv förderung",
+                  "peak": "year-round",
+                  "reason": "Staatliche Förderungen"
+                },
+                {
+                  "keyword": "agri pv winter",
+                  "peak": "winter",
+                  "reason": "Wintervorbereitung"
+                }
+              ],
+              "emerging": [],
+              "declining": [],
+              "predictions": []
+            },
+            "insights": []
+          }
+        ],
+        "summary": {
+          "totalInsights": 1,
+          "criticalIssues": 0,
+          "opportunities": 1,
+          "risks": 0
+        },
+        "recommendations": [
+          {
+            "action": "Erstelle Content für \"agri pv kosten\"",
+            "priority": "high",
+            "reason": "1 Konkurrenten ranken dafür",
+            "expectedImpact": "Potenzieller Traffic-Gewinn: 210"
+          },
+          {
+            "action": "Erstelle Content für \"wirtschaftlichkeit\"",
+            "priority": "high",
+            "reason": "1 Konkurrenten ranken dafür",
+            "expectedImpact": "Potenzieller Traffic-Gewinn: 210"
+          },
+          {
+            "action": "Erstelle Content für \"agri pv installation\"",
+            "priority": "high",
+            "reason": "1 Konkurrenten ranken dafür",
+            "expectedImpact": "Potenzieller Traffic-Gewinn: 210"
+          },
+          {
+            "action": "Erstelle Content für \"montage\"",
+            "priority": "high",
+            "reason": "1 Konkurrenten ranken dafür",
+            "expectedImpact": "Potenzieller Traffic-Gewinn: 210"
+          }
+        ]
+      }
+    }
+  }
+}

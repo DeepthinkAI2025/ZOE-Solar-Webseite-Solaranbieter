@@ -1,5 +1,14 @@
 // Adapter interface helpers
-export function makeProduct({ name, imageUrl, description, basePrice }) {
+export function makeProduct({
+  name,
+  imageUrl,
+  description,
+  basePrice,
+  datasheetUrls,
+  installationManualUrls,
+  additionalDocumentUrls,
+  documents
+}) {
   return {
     name: name || 'Unknown Product',
     imageUrl: imageUrl || null,
@@ -7,7 +16,11 @@ export function makeProduct({ name, imageUrl, description, basePrice }) {
     basePrice: basePrice || null,
     configurable: false,
     specs: {},
-    keyFeatures: []
+    keyFeatures: [],
+    datasheetUrls: datasheetUrls || [],
+    installationManualUrls: installationManualUrls || [],
+    additionalDocumentUrls: additionalDocumentUrls || [],
+    documents: documents || []
   };
 }
 

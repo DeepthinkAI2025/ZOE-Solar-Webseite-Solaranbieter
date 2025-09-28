@@ -1,0 +1,389 @@
+[
+  {
+    "manufacturer": "trina-solar",
+    "product": "Honey M TSM-DE14A 410W",
+    "candidates": [
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/Datasheet_Tallmax_1500V%20M%20Plus_2019_May.pdf",
+        "title": "[PDF] DE14A Data Sheet - Trina Solar",
+        "snippet": "(Please refer to product warranty for details). WARRANTY. 10 year Product Workmanship Warranty. 25 year Linear Power Warranty. PACKAGING CONFIGURATION. Modules",
+        "score": 0.7173491,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/EN_TSM_DE14A_II_Tallmaxplus_B_2017_web.pdf",
+        "title": "[PDF] 19.3% 0/+5W 340–375W 72 CELL - Trina Solar",
+        "snippet": "NOCT: Irradiance at 800 W/m², Ambient Temperature 20 °C, Wind Speed 1 m/s. MAXIMUM RATINGS. Operational Temperature. -40 to +85°C. Maximum System. Voltage.",
+        "score": 0.5021246,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/Installation%20Manual%20of%20Standard%20Module%20156%20Series_EN.PDF",
+        "title": "[PDF] INSTALLATION MANUAL - Trina Solar",
+        "snippet": "TSM-PD14(II)/.08(II)/.09(II). TSM-DD14A(II)/.08(II)/.09(II). TSM-DD05A(II)/.08 ... TSM-DE14A(II)/ .08(II)/.09(II). TSM-DE05A(II)/.08(II)/.09(II). TSM-PE14H",
+        "score": 0.6862234,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/PS-M-0434%20A%20Installation%20Manual%20of%20Standard%20Module_IEC_UL_2016_A.pdf",
+        "title": "[PDF] INSTALLATION MANUAL - Trina Solar",
+        "snippet": "The Honey M Plus Module. TSM-DC05A(II). TSM-DC05A.05(II). TSM-DC05A.08(II). TSM ... Maximum system voltage must not exceed 1000V DC when UL 1000V products (TSM-**",
+        "score": 0.57322514,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/UM-M-0002G_TrinaSolarVertexSeriesUserManual_EN_0.pdf",
+        "title": "[PDF] TRINA SOLAR USER MANUAL",
+        "snippet": "Trina Solar User Manual | Vertex Series Modules. 1. 1 INTRODUCTION. First, thank you for choosing our products. This manual shall only apply to the installation",
+        "score": 0.4902606,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/2025_GLOBAL_LIMITED_WARRANTY_TRINASOLAR.pdf",
+        "title": "[PDF] 2025 Limited Warranty - Trina Solar",
+        "snippet": "Trina Solar Co., Ltd (“Trina Solar”) hereby grants the following Global Limited Warranty to the first customer installing (for its own use) (the “Buyer”)",
+        "score": 0.6737291,
+        "bucket": "other"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/AP_Warranty_Standard_20190712_0.pdf",
+        "title": "[PDF] Page 1 of 9 Limited Warranty Trina Solar Co., Ltd (“Trina Solar ...",
+        "snippet": "1) Warranted Products. This Limited Warranty shall only apply to the following Products: a) Polycrystalline Products. TSM-***PA03, TSM-***PA05,",
+        "score": 0.5163278,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "trina-solar",
+    "product": "Tallmax M TSM-DEG19R.08 500W",
+    "candidates": [
+      {
+        "url": "https://pages.trinasolar.com/rs/567-KJK-096/images/DE19m%20Datasheet%20update.pdf",
+        "title": "[PDF] Trina Solar",
+        "snippet": "10% Irradiance ratio) Irradiance ratio (rear/front) Open Circuit Voltage-VOC (V) Short Circuit Current-ISC (A) Maximum Power Voltage-VMPP (V) Maximum Power Current-IMPP (A) Total Equivalent power -PMAX (Wp) Power Bifaciality:70±5%. [...] Version number: TSM_EN_2021_A Operational Temperature Maximum System Voltage -40~+85ºC 1500V DC (IEC) Modules per box: 31 pieces Modules per 40’ container: 620 pieces Monocrystalline Solar Cells Max Series Fuse Rating 35A MECHANICAL DATA TEMPERATURE RATINGS MAXIMUMRATINGS PACKAGING CONFIGUREATION WARRANTY (Please refer to product warranty for details) Front View Back View ELECTRICAL DATA (STC) ELECTRICAL DATA (NOCT) Measuring tolerance: ±3%. [...] Connector No. of cells 43°C (±2°C) - 0.34%/°C - 0.25%/°C 0.04%/°C Temperature Coefcient of PMAX Temperature Coefcient of VOC Temperature Coefcient of ISC NOCT(Nominal Operating Cell Temperature) 12 year Product Workmanship Warranty 30 year Power Warranty 0.45% Annual Power Attenuation 2% frst year degradation Maximum Power Voltage-VMPP (V) Maximum Power Current-IMPP (A) Open Circuit Voltage-VOC (V) Short Circuit Current-ISC (A) Electrical characteristics with diferent power bin (reference to",
+        "score": 0.7795405,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/Datasheet_Vertex_DE19R_EN_2022_PA1.pdf",
+        "title": "[PDF] DT-M Datasheet_Vertex_DE19R_EN_2022_PA1_web - Trina Solar",
+        "snippet": "The TSM-DE19R module has a range of 555-580W, up to 21.5% efficiency, 0~+5W power tolerance, and dimensions of 2384x1134x35 mm.",
+        "score": 0.63452125,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/MA_Datasheet_TallmaxM_DE17M(II)_202011.pdf",
+        "title": "Trina Solar PS-M-0881 D Datasheet_TallmaxM_DE17M(II) ...",
+        "snippet": "Trina Solar is a world leader in solar energy innovation and reliability. Power your energy future with industry-leading solar panels and solutions.",
+        "score": 0.4517382,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/Installation%20Manual%20-%20UM-M-0002_L_User%20Manual_Aug2024.pdf",
+        "title": "[PDF] User Manual - Trina Solar",
+        "snippet": "Please read the \"Safety and Installation Instructions\" carefully before using and operating the modules. The installer must inform the end customers (or",
+        "score": 0.98567,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/PS-M-0434 A Installation Manual of Standard Module_IEC_UL_2016_A.pdf",
+        "title": "INSTALLATION MANUAL",
+        "snippet": "TheTallmax MPlus Module.TSM-DD14A(II). TheTrinasmartModule.TSM-PD05.052 ... This is Only forTSM-DC03A.08(II). This is Only forTSM-PC05B. Clam ping",
+        "score": 0.98527,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/PS-M-0434+A+Installation+Manual+of+Standard+Module_IEC_UL_2016_A.pdf",
+        "title": "Trina Solar INSTALLATION MANUAL",
+        "snippet": "Trina Solar is a world leader in solar energy innovation and reliability. Power your energy future with industry-leading solar panels and solutions.",
+        "score": 0.6889923,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/Vertex_User_Manual_July2022.PDF",
+        "title": "Trina Solar TRINA SOLAR USER MANUAL",
+        "snippet": "Trina Solar is a world leader in solar energy innovation and reliability. Power your energy future with industry-leading solar panels and solutions.",
+        "score": 0.60750073,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/PS-M-0135%20X%20%20GLOBAL%20LIMITED%20WARRANTY%20FOR%20TRINA%20SOLAR%20BRANDCRYSTALLINE%20CLEAN.pdf",
+        "title": "[PDF] GLOBAL LIMITED WARRANTY FOR TRINA SOLAR BRAND ...",
+        "snippet": "Trina Solar Co., Ltd (“Trina Solar”) hereby grants the following Global Limited Warranty to the first customer installing (for its own use) (the “Buyer”)",
+        "score": 0.6337056,
+        "bucket": "other"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/EN_Duomax_Warranty_20190410.pdf",
+        "title": "[PDF] Limited Warranty - Trina Solar",
+        "snippet": "... warranty claim (per watt) * remaining warranty period (year) / original total warranty period provided by Trina; or ii) repair the defective Product(s) at",
+        "score": 0.61279696,
+        "bucket": "other"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/MA_Datasheet_Vertex_DE19_202011.pdf",
+        "title": "[PDF] DT-M-0001 Datasheet_Vertex_DE19_EN_2020_A_web - Trina Solar",
+        "snippet": "The TSM-DE19 module has a power range of 530-555W, up to 21.2% efficiency, high reliability, and dimensions of 2384x1096x35 mm.",
+        "score": 0.56661874,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "trina-solar",
+    "product": "Vertex S TSM-DE09.08 405W",
+    "candidates": [
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/EN_Datasheet_VertexS_DE09.08_2021B.pdf",
+        "title": "[PDF] EN_Datasheet_VertexS_DE09.08_2021B.pdf - Trina Solar",
+        "snippet": "Small in size, big on power. • Small form factor. Generate a huge amount of energy even in limited space. Up to 405W, 21.1% module efficiency with high",
+        "score": 0.8215175,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/EU_Datasheet_VertexS_DE09.08_2021_A.pdf",
+        "title": "[PDF] 405 W+ 0/+5 W 21.1 % - Trina Solar",
+        "snippet": "This module generates up to 405W with 21.1% efficiency, 0/+5W tolerance, 1754x1096x30mm, 21kg, 15 year workmanship and 25 year power warranty.",
+        "score": 0.8033131,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "http://static.trinasolar.com/sites/default/files/Vertex%20S%2B_NEG9R.28_EN_2024_APAC_A_web.pdf",
+        "title": "[PDF] Vertex S+_NEG9R.28_EN_2024_APAC_A_web - Trina Solar",
+        "snippet": "Tolerance-PMAX (W) Peak Power Watts-PMAX (Wp) 435 10.64 440 43.6 9.99 51.8 21.8 10.67 44.0 10.01 52.2 22.0 Maximum Power-PMAX (Wp) 336 8.60 8.14 Maximum Power Voltage-VMPP (V) Maximum Power Current-IMPP (A) Open Circuit Voltage-VOC (V) Short Circuit Current-ISC (A) 329 8.54 8.08 430 10.59 43.2 9.96 51.4 21.5 332 48.7 49.5 49.1 8.58 8.12 1000W/m2 800W/m2 600W/m2 400W/m2 200W/m2 1000W/m2 400W/m2 10.77 45.0 10.11 53.4 22.8 455 348 8.68 8.22 50.6 42.3 41.4 445 10.71 44.3 10.05 52.6 22.3 339 8.63 [...] Portrait: 350/280 mm(13.78/11.02 inches) Length can be customized 1762×1134×30 mm (69.06×43.15×1.18 inches) 21.0kg (46.30 lb) 1.6 mm (0.06 inches), High Transmission, AR Coated Heat Strengthened Glass POE/EVA 30mm (1.18 inches) Anodized Aluminium Alloy, Black IP 68 rated Photovoltaic Technology Cable 4.0mm2 (0.006 inches2), 144 cells 1.6mm(0.06 inches), Heat Strengthened Glass Module Dimensions Weight Front Glass Encapsulant material Back Glass Frame J-Box Cables Connector No. of cells 43°C [...] Mechanical performance up to 5400 Pa positive load and 4000 Pa negative load 87.4% 90% 100% 99.0% Years 5 10 15 20 25 30 Guaranteed Power IEC61215/IEC61730/IEC61701/IEC62716 ISO 9001: Quality Management System ISO 14001: Environmental Management System ISO14064: Greenhouse Gases Emissions Verifcation ISO45001: Occupational Health and Safety Management System EU-28 WEEE COMPLIANT RECYCLABLE PACKAGING N-type i-TOPCon Monofacial Dual Glass MONOCRYSTALLINE MODULE DIMENSIONS OF PV MODULE(mm)",
+        "score": 0.5515985,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/230531_Datasheet_Vertex%20S+_NEG9R.28_EN_2023_B_web.pdf",
+        "title": "[PDF] 230531_Datasheet_Vertex S+_NEG9R.28_EN_2023_B_web",
+        "snippet": "Generates up to 450 W, 22.5 % module efficiency with high density interconnect technology. • Multi-busbar technology for better light trapping, lower series",
+        "score": 0.45522344,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/Datasheet_Vertex%20S+_NEG18R.28_EN_2024_A_web_0.pdf",
+        "title": "[PDF] 240117_2_Datasheet_Vertex S+_NEG18R.28_EN_2024_A_web",
+        "snippet": "STC: Irrdiance 1000 W/m2, Cell Temperature 25 ºC, Air Mass AM 1.5. NOCT: Irradiance at 800 W/m2, Ambient Temperature 20 °C, Wind Speed 1 m/s. 1961×1134×",
+        "score": 0.38304168,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/Installation%20Manual%20-%20UM-M-0002_L_User%20Manual_Aug2024.pdf",
+        "title": "[PDF] User Manual - Trina Solar",
+        "snippet": "This manual covers introduction, safety, site selection, transport, unpacking, and installation, including screw, clamp, and single-axis installation.",
+        "score": 0.75852895,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/UM-M-0002G_TrinaSolarVertexSeriesUserManual_EN_0.pdf",
+        "title": "[PDF] TRINA SOLAR USER MANUAL",
+        "snippet": "Method C: Unpacking from one side for DE09 / DE09.05 / DE09.08 / DE09R / DE09R.05 / ... Distance between mounting holes is 1100 mm (for DE09 series/DE09C",
+        "score": 0.72184175,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/UM_M_0002_D_TrinaSolarVertexSeriesUserManual_EN_DEG21C.20_2021A_EN_20210512.pdf",
+        "title": "[PDF] UM_M_0002_D_TrinaSolarVerte...",
+        "snippet": "Trina Solar User Manual | Vertex Series Modules. 13. 6 INSTALLATION. 6.1 INSTALLATION SAFETY ... Distance between mounting holes is 1400 mm. DE09. DE09.05. DE09.",
+        "score": 0.6937432,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/PS-M-0434%20A%20Installation%20Manual%20of%20Standard%20Module_IEC_UL_2016_A.pdf",
+        "title": "[PDF] INSTALLATION MANUAL - Trina Solar",
+        "snippet": "The Honey/Allmax Module. TSM-PC05A. TSM-PC05A.05. TSM-PC05A.08. TSM-PD05. TSM-PD05.05. TSM-PD05.08. TSM-PE05A. TSM-PE05A.08. The Honey Plus Module.",
+        "score": 0.5798055,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/DT_M_A%20Datasheet_VertexS_DE09R.08_EN_2022_A_web.pdf",
+        "title": "[PDF] DT-M A Datasheet_VertexS_DE09R.08_EN_2022_A_web",
+        "snippet": "Small in size, big on power. • Small form factor. Generate a huge amount of energy even in limited space. • Up to 435W, 21.8% module efficiency with high",
+        "score": 0.45420644,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/PS-M-0135WarrantyMarch2022.pdf",
+        "title": "[PDF] GLOBAL LIMITED WARRANTY FOR TRINA SOLAR BRAND ...",
+        "snippet": "Trina Solar Co., Ltd (“Trina Solar”) hereby grants the following Global Limited Warranty to the first customer.",
+        "score": 0.98541,
+        "bucket": "other"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/VertexS_DE09.08_2021_AUS_B%20web_0.pdf",
+        "title": "[PDF] VertexS_DE09.08_2021_AUS_B web - Trina Solar",
+        "snippet": "WARRANTY. (Please refer to product warranty for details). ELECTRICAL DATA (STC) TSM-XXXDE09.08(XXX=390-405). ELECTRICAL DATA (NOCT). *Measuring tolerance: ±3",
+        "score": 0.98525,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "trina-solar",
+    "product": "Vertex S+ DEG21C.20 550W Bifacial",
+    "candidates": [
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/Datasheet_Vertex_DEG21C.20_EN_2024_A.pdf",
+        "title": "[PDF] Datasheet_Vertex_DEG21C.20_EN_2024_A.pdf - Trina Solar",
+        "snippet": "Excellent IAM (Incident Angle Modifier) and low irradiation performance, validated by 3rd party certifications. - The unique design provides optimized",
+        "score": 0.7216064,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/Datasheet_Vertex_DEG21C.20_EN_2022_A_0.pdf",
+        "title": "[PDF] Datasheet_Vertex_DEG21C.20_EN_2022_A_0.pdf - Trina Solar",
+        "snippet": "Minimized micro-cracks with innovative non-destructive cutting technology. • Ensured PID resistance through cell process and module material control.",
+        "score": 0.69622743,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/230531_Datasheet_Vertex+S+_NEG9R.28_EN_2023_B_web.pdf",
+        "title": "230531_Datasheet_Vertex S+_NEG9R.28_EN_2023_B_web - Trina Solar",
+        "snippet": "MAXIMUM RATINGS Operational Temperature Maximum System Voltage Max Series Fuse Rating – 1500 V DC (IEC) 20 A",
+        "score": 0.432807,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/UM_M_0002_D_TrinaSolarVertexSeriesUserManual_EN_DEG21C.20_2021A_EN_20210512.pdf",
+        "title": "[PDF] UM_M_0002_D_TrinaSolarVerte...",
+        "snippet": "This manual shall only apply to the installation, maintenance and use of the 210 Vertex series solar modules manufactured by Trina Solar Co., Ltd. (hereinafter",
+        "score": 0.68571854,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/UM-M-0002G_TrinaSolarVertexSeriesUserManual_EN_0.pdf",
+        "title": "[PDF] TRINA SOLAR USER MANUAL",
+        "snippet": "The PV modules must be installed in accordance with the installation instructions specified in this ... DEG19C.20 / DE20 / DEG20C.20 / DE21 / DEG21C.20 /. NEG19C.",
+        "score": 0.64344186,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://pages.trinasolar.com/rs/567-KJK-096/images/Vertex_Reliability16-9_EN_V8_compressed.pdf",
+        "title": "[PDF] PowerPoint 演示文稿 - Trina Solar",
+        "snippet": "Enhanced Installations > To optimize for extreme weather such as heavy snow or strong winds Trina Solar recommends hybrid installation methods to ensure better system stability Hybrid Fixation Clamp + Bolt 12 Vertex Modules – Global Deployment China China China Singapore China Vietnam Vietnam Vietnam 550W, 50MW 550W, 100MW 550W, 400MW 510W, 60MW 510W, 100MW 510W, 50MW 510W, 40MW 510W, 49MW 13 SUMMARY 1 The Vertex 670W module achieves outstanding mechanical load performance. [...] 3 Trina Solar Vertex Family Trina Solar – Pioneering Ultra-high Power Modules RESIDENTIAL, COMMERCIAL & INDUSTRIAL GROUND-MOUNTED PLANT Vertex modules are available from 410 to 670W+ in power, covering all applications In various applications, Vertex output is 35W to 90W higher than the industry average, BOS savings in range of 0.5~1.6 c USD/W UP to 410W UP to 510W UP to 550W UP to 600W UP to 670W 370W 450W 540W 580W Industrial average 210 -40 210 -50 210 -55 210 -60 210 -66 4 Enhanced Tests [...] 2 3 The installation method strongly impacts system stability. Hybrid fixation is recommended for extreme weather conditions. Verified in enhanced tests for extreme weather conditions such as strong wind, heavy snow, extreme cold and hail.\n14",
+        "score": 0.6021791,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://pages.trinasolar.com/rs/567-KJK-096/images/210%20Vertex%20white%20paper_EN_DE09_2021C_EN_20210728_compressed.pdf",
+        "title": "[PDF] 210 Vertex White Paper 2.0 - Trina Solar",
+        "snippet": "Figure 4. Vertex module series Vertex modules are available in two types: the monofacial module and the bifacial module. With a power range of 410 to 670W+, they can be widely used in residential, commercial, and industrial rooftops and large-scale ground-mounted power plant, as shown in Figure 4. In various application scenarios, the power of Vertex modules is 40 to 90W above the industry average, creating more value to customers. [...] As shown in Figure 19, for both the monofacial and bifacial modules, the heat generated by the 210 and 166 modules were similar, and the junction temperatures were all below 200°C. Thus, the junction boxes can be operating in a safe temperature range, and there is no reliability risk for 210mm Vertex modules. [...] (BSI) in new IEC draft standard, the diode temperature could meet the requirement of the IEC standard. In addition, for the 166 series, all the monofacial and bifacial modules used 18A junction boxes.",
+        "score": 0.55623144,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/VertexS+_brochure_EN.pdf",
+        "title": "[PDF] Vertex S+ brochure_EN-V18 - Trina Solar",
+        "snippet": "For 25-year power generation on a south-faced sloping rooftop with size of 16.7m x 5.5m. Power(W). Efficiency(%). Structure. Dimension(mm). Weight(kg).",
+        "score": 0.6450534,
+        "bucket": "other"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/PS-M-0135%20Y%20%20GLOBAL%20LIMITED%20WARRANTY%20FOR%20TRINA%20SOLAR%20BRANDCRYSTALLINE%20SOLAR%20PHOTOVOLTAIC%20MODULES_202408_clean_0.pdf",
+        "title": "[PDF] GLOBAL LIMITED WARRANTY FOR TRINA SOLAR BRAND ...",
+        "snippet": "1) j) (ii) Trina Solar warrants that for a period of five years commencing on the Warranty Start Date (as defined in Sec. 4)) there will be no",
+        "score": 0.55767727,
+        "bucket": "other"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/PS-M-0135WarrantyMarch2022.pdf",
+        "title": "[PDF] GLOBAL LIMITED WARRANTY FOR TRINA SOLAR BRAND ...",
+        "snippet": "Trina Solar Co., Ltd (“Trina Solar”) hereby grants the following Global Limited Warranty to the first customer.",
+        "score": 0.5489884,
+        "bucket": "other"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/PS-M-0135%20X%20%20GLOBAL%20LIMITED%20WARRANTY%20FOR%20TRINA%20SOLAR%20BRANDCRYSTALLINE%20CLEAN.pdf",
+        "title": "[PDF] GLOBAL LIMITED WARRANTY FOR TRINA SOLAR BRAND ...",
+        "snippet": "Trina Solar Co., Ltd (“Trina Solar”) hereby grants the following Global Limited Warranty to the first customer installing (for its own use) (the “Buyer”)",
+        "score": 0.5489884,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "trina-solar",
+    "product": "Vertex S+ TSM-NEG9R.28 425W",
+    "candidates": [
+      {
+        "url": "http://static.trinasolar.com/sites/default/files/Vertex%20S%2B_NEG9R.28_EN_2024_APAC_A_web.pdf",
+        "title": "[PDF] Vertex S+_NEG9R.28_EN_2024_APAC_A_web - Trina Solar",
+        "snippet": "Mono Multi Solutions 0~+5W POSITIVE POWER TOLERANCE MAXIMUM POWER OUTPUT 455W MAXIMUM EFFICIENCY 22.8% Comprehensive Products and System Certifcates PRODUCT: TSM-NEG9R.28 PRODUCT RANGE: 425-455W Trina Solar’s Vertex Monofacial Dual Glass Performance Warranty Small in size, bigger on power Dual-glass Design, more secure and sustainable Ultra-low Degradation, longer warranty, higher output Universal solution for residential and C&I rooftops • Up to 455W, 22.8% module efciency with high density [...] Tolerance-PMAX (W) Peak Power Watts-PMAX (Wp) 435 10.64 440 43.6 9.99 51.8 21.8 10.67 44.0 10.01 52.2 22.0 Maximum Power-PMAX (Wp) 336 8.60 8.14 Maximum Power Voltage-VMPP (V) Maximum Power Current-IMPP (A) Open Circuit Voltage-VOC (V) Short Circuit Current-ISC (A) 329 8.54 8.08 430 10.59 43.2 9.96 51.4 21.5 332 48.7 49.5 49.1 8.58 8.12 1000W/m2 800W/m2 600W/m2 400W/m2 200W/m2 1000W/m2 400W/m2 10.77 45.0 10.11 53.4 22.8 455 348 8.68 8.22 50.6 42.3 41.4 445 10.71 44.3 10.05 52.6 22.3 339 8.63 [...] (±2°C) -0.29%/°C - 0.24%/°C 0.04%/°C Temperature Coefcient of PMAX Temperature Coefcient of VOC Temperature Coefcient of ISC NOCT(Nominal Operating Cell Temperature) 15 / 25 year Product Workmanship Warranty 30 year Power Warranty 0.4% Annual Power Attenuation 1% frst year degradation N-type i-TOPCon Monofacial Dual Glass Module Maximum Power Voltage-VMPP (V) Maximum Power Current-IMPP (A) Open Circuit Voltage-VOC (V) Short Circuit Current-ISC (A) Module Efciency η m (%) 0 ~ +5 Power",
+        "score": 0.82994765,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/Datasheet_Vertex%20S+_NEG9R.28_EN_2024_C_web.pdf",
+        "title": "[PDF] Datasheet_Vertex S+_NEG9R.28_EN_2024_C_web.pdf - Trina Solar",
+        "snippet": "Generates up to 460 W, 23.0 % module efficiency with high density interconnect technology. • Multi-busbar technology for better light trapping,.",
+        "score": 0.7625837,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/Datasheet%20-%20Vertex%20S+_NEG9R.28_425-460%20EN_2024_Aus_C_web.pdf",
+        "title": "[PDF] Vertex S+_NEG9R.28_425-460 EN_2024_Aus_C_web - Trina Solar",
+        "snippet": "Suitable for residential and C&I rooftop. - Perfect size and low weight for handling and installation. - Compatible with mainstream inverters and diverse",
+        "score": 0.7373288,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/230531_Datasheet_Vertex%20S+_NEG9R.28_EN_2023_B_web.pdf",
+        "title": "[PDF] 230531_Datasheet_Vertex S+_NEG9R.28_EN_2023_B_web",
+        "snippet": "Generates up to 450 W, 22.5 % module efficiency with high density interconnect technology. • Multi-busbar technology for better light trapping,.",
+        "score": 0.71948266,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/Vertex_S_NEG9R28_EN_2022_Aus_A_web.pdf",
+        "title": "[PDF] Vertex S+_NEG9R.28_EN_2022_Aus_A_web - Trina Solar",
+        "snippet": "Upgraded dual glass of Vertex S, less prone to micro-cracks and scratches on the back during installation. • Double-glass + innovative non-destructive",
+        "score": 0.7253574,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/PS-M-0434%20A%20Installation%20Manual%20of%20Standard%20Module_IEC_UL_2016_A.pdf",
+        "title": "[PDF] INSTALLATION MANUAL - Trina Solar",
+        "snippet": "Maximum system voltage must not exceed 1000V DC when UL 1000V products (TSM-****D*. ... (s) and all metallic structural members together continuously using",
+        "score": 0.7045877,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/UM-M-0002G_TrinaSolarVertexSeriesUserManual_EN_0.pdf",
+        "title": "[PDF] TRINA SOLAR USER MANUAL",
+        "snippet": "Trina Solar User Manual | Vertex Series Modules. 1. 1 INTRODUCTION. First ... / NEG9.28 / NEG9C.27 / NEG9R.20 / NEG9R.28. All parts in contact with the",
+        "score": 0.6701125,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/Limited_Warranty_Supplement25year_product_warranty_for_VertexS+.pdf",
+        "title": "[PDF] 25 year product warranty for - Trina Solar",
+        "snippet": "25 year product warranty for. TSM-***NEG9RC.27, TSM-***NEG9R.28. To Whom it may concern,. It is hereby stated that the module of TSM-***NEG9RC.27, TSM-***NEG9R.",
+        "score": 0.7366474,
+        "bucket": "other"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/Limited_Warranty_Supplement25_year_VertexS_All_1.1.pdf",
+        "title": "warranty for TSM-***NEG9RC.27, TSM-***NEG9R.28",
+        "snippet": "... Trina Solar warrants that for a period of twenty-five (25) years commencing on the Warranty Start Date (as defined in Global Limited Warranty Sec. 4) there",
+        "score": 0.72019166,
+        "bucket": "other"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/Vertex%20S+_NEG9R.28_EN_2024_Aus_B_web.pdf",
+        "title": "[PDF] Vertex S+_NEG9R.28_EN_2024_Aus_B_web.pdf - Trina Solar",
+        "snippet": "Up to 455W, 22.8% module efficiency with high density interconnect technology. • Multi-busbar technology for better light trapping, lower series.",
+        "score": 0.7018975,
+        "bucket": "other"
+      },
+      {
+        "url": "https://static.trinasolar.com/sites/default/files/2025_GLOBAL_LIMITED_WARRANTY_TRINASOLAR.pdf",
+        "title": "2025 Limited Warranty",
+        "snippet": "1) j) (ii) Trina Solar warrants that for a period of five years commencing on the Warranty Start Date (as defined in Sec. 4)) there will be no defects in",
+        "score": 0.63777614,
+        "bucket": "other"
+      }
+    ]
+  }
+]

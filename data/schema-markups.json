@@ -1,0 +1,212 @@
+{
+  "timestamp": "2025-09-28T13:39:45.971Z",
+  "schemas": {
+    "organization": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ZOE Solar GmbH",
+      "url": "https://zoe-solar.de",
+      "logo": "https://zoe-solar.de/assets/logos/zoe-solar-logo.png",
+      "description": "Professionelle Agri-Photovoltaik Lösungen für Landwirte. Kombinieren Sie Landwirtschaft und Stromerzeugung für maximale Effizienz.",
+      "foundingDate": "2020",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Musterstraße 123",
+        "addressLocality": "Berlin",
+        "postalCode": "10115",
+        "addressCountry": "DE"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+49-30-12345678",
+        "contactType": "customer service",
+        "availableLanguage": [
+          "German",
+          "English"
+        ]
+      },
+      "sameAs": [
+        "https://www.facebook.com/zoesolar",
+        "https://www.linkedin.com/company/zoe-solar",
+        "https://www.youtube.com/@zoesolar"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Agri-PV Lösungen",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Agri-Photovoltaik Beratung",
+              "description": "Kostenlose Erstberatung für Agri-PV Projekte"
+            }
+          }
+        ]
+      }
+    },
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Agri-Photovoltaik: Die Zukunft der Landwirtschaft",
+      "description": "Erfahren Sie, wie Agri-PV Landwirtschaft und Stromerzeugung kombiniert",
+      "image": "https://zoe-solar.de/assets/blog/agri-pv-zukunft.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Max Mustermann"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ZOE Solar GmbH",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://zoe-solar.de/assets/logos/zoe-solar-logo.png"
+        }
+      },
+      "datePublished": "2024-01-15T10:00:00+01:00",
+      "dateModified": "2024-01-15T10:00:00+01:00",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://zoe-solar.de/blog/agri-photovoltaik-zukunft"
+      },
+      "keywords": [
+        "Agri-PV",
+        "Landwirtschaft",
+        "Photovoltaik",
+        "Nachhaltigkeit"
+      ],
+      "articleSection": "Agri-Photovoltaik"
+    },
+    "product": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Agri-PV Komplettsystem 100kW",
+      "description": "Professionelles Agri-Photovoltaik System für landwirtschaftliche Flächen",
+      "image": "https://zoe-solar.de/assets/products/agri-pv-100kw.jpg",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://zoe-solar.de/produkte/agri-pv-100kw",
+        "priceCurrency": "EUR",
+        "price": "150000",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "ZOE Solar GmbH"
+        }
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "ZOE Solar"
+      },
+      "category": "Photovoltaik Systeme",
+      "sku": "APV-100KW-001",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "ZOE Solar GmbH"
+      }
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was ist Agri-Photovoltaik?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Agri-Photovoltaik kombiniert Landwirtschaft und Photovoltaik auf derselben Fläche."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche Förderungen gibt es für Agri-PV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es gibt verschiedene Förderprogramme wie KfW und BAFA für Agri-PV Projekte."
+          }
+        }
+      ]
+    },
+    "breadcrumb": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://zoe-solar.de"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Produkte",
+          "item": "https://zoe-solar.de/produkte"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Agri-PV Systeme",
+          "item": "https://zoe-solar.de/produkte/agri-pv"
+        }
+      ]
+    },
+    "localBusiness": {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ZOE Solar Berlin",
+      "image": "https://zoe-solar.de/assets/locations/berlin.jpg",
+      "telephone": "+49-30-12345678",
+      "email": "berlin@zoe-solar.de",
+      "url": "https://zoe-solar.de/standort/berlin",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Musterstraße 123",
+        "addressLocality": "Berlin",
+        "postalCode": "10115",
+        "addressCountry": "DE"
+      },
+      "priceRange": "€€€",
+      "openingHours": [
+        "Mo-Fr 09:00-18:00",
+        "Sa 10:00-14:00"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "127"
+      }
+    },
+    "service": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Agri-PV Beratung",
+      "description": "Professionelle Beratung für Agri-Photovoltaik Projekte",
+      "provider": {
+        "@type": "Organization",
+        "name": "ZOE Solar GmbH"
+      },
+      "areaServed": [
+        "Deutschland",
+        "Österreich",
+        "Schweiz"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Erstberatung",
+          "description": "Kostenlose Erstberatung für Agri-PV Projekte",
+          "price": "0",
+          "priceCurrency": "EUR"
+        },
+        {
+          "@type": "Offer",
+          "name": "Vollberatung",
+          "description": "Komplette Projektberatung inkl. Wirtschaftlichkeitsberechnung",
+          "price": "1500",
+          "priceCurrency": "EUR"
+        }
+      ]
+    }
+  }
+}

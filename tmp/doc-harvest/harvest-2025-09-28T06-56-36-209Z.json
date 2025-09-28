@@ -1,0 +1,511 @@
+[
+  {
+    "manufacturer": "canadian-solar",
+    "product": "HiKu7 Mono PERC CS7L-545MS",
+    "candidates": [
+      {
+        "url": "https://www.canadiansolar.com/wp-content/uploads/2020/08/Installation_Manual_of_Standard_Solar_Modules_en.pdf",
+        "title": "[PDF] INSTALLATION MANUAL OF STANDARD SOLAR MODULES",
+        "snippet": "· Rev 1.8 was released in September, 2019.\n· Rev 1.9 was released in October, 2019.\n· Rev 2.0 was released in December, 2019.\n· Rev 2.1 was released in April, 2020.\n· Rev 2.2 was released in July, 2020.\nCANADIAN SOLAR INC.\n545 Speedvale Avenue West, Guelph, Ontario, Canada N1K 1E6 www.canadiansolar.com [...] GENERAL SAFETY · All modules must be installed by licensed electricians in accordance to the applicable electrical codes such as, the latest National Electrical Code (USA) or Canadian Electric Code (Canada) or other national or international applicable electrical codes. Protective clothing (non-slip gloves, clothes, etc.) must be worn during installation to prevent direct contact with 30 V DC or greater, and to protect hands EN-Rev IM/GN-AM-EN/2.2 Copyright © July, 2020. Canadian Solar Inc. [...] · Modules must always be unpacked and installed by two people. Always use both hands when handling modules.\n· Do not stand, step, walk and / or jump on modules under any circumstances. Localized heavy loads may cause severe micro-cracks at cell level, which in turn may compromise module reliability and void Canadian Solar Inc’s warranty. · Do not support the module by the backsheet when handling or installing the module.\n· Do not carry modules on your head.",
+        "score": 0.6780931,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.canadiansolar.com/wp-content/uploads/2019/12/PV_HiDM_Module_Warranty_en.pdf",
+        "title": "[PDF] LIMITED WARRANTY STATEMENT PHOTOVOLTAIC HiDM ...",
+        "snippet": "contained herein, Canadian Solar warrants to the original buyer (the “Buyer”) of the Products that the Products shall be free from defects in materials and workmanship which have an effect on Products functionality under normal application, installation, use, and service conditions as specified in Canadian Solar’s standard product documentation such as the installation manual and its annexes. Claims under this warranty will only be accepted if the Buyer can prove that the malfunctioning or non- [...] twenty-five years the Products will maintain a level of performance as set forth below: • During the first year, Canadian Solar warrants the actual power output of the Products will be no less than 97.5% of the labeled power output. • From year 2 to year 25, the actual annual power decline will be no more than 0.6%; by the end of year 25, the actual power output will be no less than 83.1% of the labeled power output. The actual power output of the Products shall be determined for verification [...] respect of the Fifteen (15) Year Limited Product Warranty, if Canadian Solar verifies in its reasonable judgment that the Products fail to conform to the terms of the Limited Product Warranty set forth herein, Canadian Solar, at its option, will provide one of the following remedies: 1) repair the Products; 2) replace the Products with new products whose labeled power wattages equal to or exceed the Warranted Wattages of replaced Products (the Warranted Wattages is defined as the contracted",
+        "score": 0.6208291,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.canadiansolar.com/wp-content/uploads/2020/06/Canadian_Solar-Flyer-HiKu6_CS6W-MS_EN.pdf",
+        "title": "[PDF] HiKu6 Mono - 525 W ~ 545 W - Canadian Solar",
+        "snippet": "MORE POWER Dimensions: 2261 ˣ 1134 ˣ 35 mm (89.0 ˣ 44.6 ˣ 1.38 in) Weight: 28.4 kg (62.6 lbs) Max. System Voltage: 1500 V (IEC/UL) or 1000 V (IEC/UL) MORE RELIABLE Comprehensive LID / LeTID mitigation technology, up to 50% lower degradation Module power up to 545 W Module efficiency up to 21.3 % 545 W Minimizes micro-crack impacts Better shading tolerance Compatible with mainstream trackers, cost effective product for utility power plant Up to 4.5 % lower LCOE Up to 5.6 % lower system cost [...] year power degradation no more than 2% Subsequent annual power degradation no more than 0.55% [...] CS6W-525|530|535|540|545MS 525 W ~ 545 W CANADIAN SOLAR INC. is committed to providing high quality solar products, solar system solutions and services to customers around the world. No. 1 module supplier for quality and per­ formance/price ratio in IHS Module Customer Insight Survey. As a leading PV project developer and manufacturer of solar modu­ les with over 43 GW deployed around the world since 2001.",
+        "score": 0.5404151,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "canadian-solar",
+    "product": "BiHiKu7 CS7N-665MS Bifacial",
+    "candidates": [
+      {
+        "url": "https://www.canadiansolar.com/wp-content/uploads/2019/12/Installation_Manual_of_Bifacial_Module_en.pdf",
+        "title": "[PDF] INSTALLATION MANUAL OF BIFACIAL MODULE | Canadian Solar",
+        "snippet": "Use 4 clamps on the long side. Mounting rails run parallel to the long side frame.\nUse 4 clamps on the long side. Mounting rails run perpendicular to the long side frame. [...] Use 4 clamps on the long side. Mounting rails run perpendicular to the long side fra-me.\nClamp length ≥ 40 mm A = 270 – 380 mm C = 10 ± 2 mm Maximum Load: Uplift load ≤ 2400 Pa Downforce load ≤ 3600 Pa Clamp length ≥ 80mm A = 270 – 380 mm Maximum Load: Uplift load ≤ 3600 Pa Downforce load ≤ 5400 Pa Use 4 clamps on the short side. Mounting rails run perpendicular to the long side frame. [...] · Each module must be securely fastened at a minimum of four points on two opposite sides. The clamps should be positioned symmetrically. The clamps should be positio-ned according to the authorized position ranges defined in table below. Install and tighten the module clamps to the mounting rails using the torque stated by the moun-ting hardware manufacturer. M8 X 1.25 (5/16”) bolt and nut are used for this clamping method. The yield strength of bolt and nut should not be less than 450MPa.",
+        "score": 0.78670514,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.canadiansolar.com/wp-content/uploads/2020/08/Installation_Manual_of_Standard_Solar_Modules_en.pdf",
+        "title": "[PDF] INSTALLATION MANUAL OF STANDARD SOLAR MODULES",
+        "snippet": "THIRD PARTY TRACKER |16 |16 |32 |36 ANNEX B: ALTERNATIVE GROUNDING METHODS |37 ANNEX C: MECHANICAL AND ELECTRICAL RATINGS |39 ANNEX D: MODULE CLEANING GUIDELINES |46 AMENDED EDITIONS AND DATES |47 www.canadiansolar.com | 3 1.0 GENERAL INFORMATION This general manual provides important safety information relating to the installation, maintenance and handling of CS-series solar modules. Professional installer must read these guidelines carefully and strictly follow these instructions. Failure to [...] GENERAL SAFETY · All modules must be installed by licensed electricians in accordance to the applicable electrical codes such as, the latest National Electrical Code (USA) or Canadian Electric Code (Canada) or other national or international applicable electrical codes. Protective clothing (non-slip gloves, clothes, etc.) must be worn during installation to prevent direct contact with 30 V DC or greater, and to protect hands EN-Rev IM/GN-AM-EN/2.2 Copyright © July, 2020. Canadian Solar Inc. [...] 1.1 INSTALLATION MANUAL DISCLAIMER The information contained in this manual is subject to change by Canadian Solar Inc. without prior notice. Canadian Solar Inc. gives no warranty of any kind whatsoever, either explicitly or implicitly, with respect to the information contained herein. In the event of any inconsistency among different language versions of this document, the English version shall prevail. Please refer to our product lists and documents published on our website at: http://",
+        "score": 0.6271529,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.canadiansolar.com/wp-content/uploads/2019/12/PV_HiDM_Module_Warranty_en.pdf",
+        "title": "[PDF] LIMITED WARRANTY STATEMENT PHOTOVOLTAIC HiDM ...",
+        "snippet": "contained herein, Canadian Solar warrants to the original buyer (the “Buyer”) of the Products that the Products shall be free from defects in materials and workmanship which have an effect on Products functionality under normal application, installation, use, and service conditions as specified in Canadian Solar’s standard product documentation such as the installation manual and its annexes. Claims under this warranty will only be accepted if the Buyer can prove that the malfunctioning or non- [...] twenty-five years the Products will maintain a level of performance as set forth below: • During the first year, Canadian Solar warrants the actual power output of the Products will be no less than 97.5% of the labeled power output. • From year 2 to year 25, the actual annual power decline will be no more than 0.6%; by the end of year 25, the actual power output will be no less than 83.1% of the labeled power output. The actual power output of the Products shall be determined for verification [...] LIABILITY WHATSOEVER FOR, DAMAGE OR INJURY TO PERSONS OR PROPERTY OR FOR OTHER LOSS OR INJURY RESULTING FROM ANY CAUSE WHATSOEVER ARISING OUT OF OR RELATED TO ANY OF ITS PRODUCTS OR THEIR USE. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, UNDER NO CIRCUMSTANCES SHALL CANADIAN SOLAR BE LIABLE TO THE BUYER, OR TO ANY THIRD PARTY CLAIMING THROUGH OR UNDER THE BUYER, FOR ANY LOST PROFITS, LOSS OF USE, OR EQUIPMENT DOWNTIME, OR FOR ANY INCIDENTAL, CONSEQUENTIAL OR SPECIAL DAMAGES OF ANY KIND,",
+        "score": 0.568057,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "canadian-solar",
+    "product": "HiKu6 Mono PERC CS6W-410MS",
+    "candidates": [
+      {
+        "url": "https://www.canadiansolar.com/wp-content/uploads/2020/08/Installation_Manual_of_Standard_Solar_Modules_en.pdf",
+        "title": "[PDF] INSTALLATION MANUAL OF STANDARD SOLAR MODULES",
+        "snippet": "This manual covers safety, module installation, wiring, grounding, and mounting. Professional installation by licensed electricians is required, and only for",
+        "score": 0.98201,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.canadiansolar.com/wp-content/uploads/2019/12/Canadian_Solar-Datasheet-HiDM_CS1U-MS_EN.pdf",
+        "title": "[PDF] 400W~420W - Canadian Solar",
+        "snippet": "545 Speedvale Avenue West, Guelph, Ontario N1K 1E6, Canada, www.canadiansolar.com, support@canadiansolar.com Mounting Hole 4-7x10 400 992 2078 1300 944 180 1155 A A 6-Ф5 Grounding Hole Mounting Hole 8-14x9 35 9 14 R=4.5 7 10 R=3.5 35 35 ELECTRICAL DATA | STC* CS1U 400MS 405MS 410MS 415MS 420MS Nominal Max. Power (Pmax) 400 W 405 W 410 W 415 W 420 W Opt. Operating Voltage (Vmp)44.1 V 44.3 V 44.5 V 44.7 V 44.9 V Opt. Operating Current (Imp) 9.08 A 9.16 A 9.23 A 9.30 A 9.37 A Open Circuit Voltage (Voc) 53.4 V 53.5 V 53.6 V 53.7 V 53.8 V Short Circuit Current (Isc) 9.60 A 9.65 A 9.70 A 9.75 A 9.80 A Module Eﬃciency 19.4% 19.6% 19.9% 20.1% 20.4% Operating Temperature -40°C ~ +85°C Max. System Voltage 1500V (IEC) or 1000V (IEC) Module Fire Performance CLASS C (IEC 61730) Max. Series Fuse Rating 15 A Application Classification Class A Power Tolerance * Under Standard Test Conditions (STC) of irradiance of 1000 W/m2, spectrum AM 1.5 and cell temperature of 25°C.",
+        "score": 0.9814,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.canadiansolar.com/wp-content/uploads/2019/12/Canadian_Solar-Datasheet-HiKu_CS3W-P_EN.pdf",
+        "title": "[PDF] Canadian_Solar-Datasheet-HiKu_CS3W-P_EN.pdf - Canadian Solar",
+        "snippet": "PARTNER SECTION ELECTRICAL DATA | STC* CS3W 395P 400P 405P 410P 415P 420P Nominal Max. Power (Pmax) 395 W 400 W 405 W 410 W 415 W 420 W Opt. Operating Voltage (Vmp) 38.5 V 38.7 V 38.9 V 39.1 V 39.3 V 39.5 V Opt. Operating Current (Imp) 10.26 A 10.34 A 10.42 A 10.49 A 10.56 A 10.64 A Open Circuit Voltage (Voc) 47.0 V 47.2 V 47.4 V 47.6 V 47.8 V 48.0 V Short Circuit Current (Isc) 10.82 A 10.90 A 10.98 A 11.06 A 11.14 A 11.26 A Module Eﬃciency 17.9% 18.1% 18.3% 18.6% 18.8% 19.0% Operating Temperature -40°C ~ +85°C Max. System Voltage 1500V (IEC/UL) or 1000V (IEC/UL) Module Fire Performance TYPE 1 (UL 1703) or CLASS C (IEC 61730) Max. Series Fuse Rating 20 A Application Classification Class A Power Tolerance * Under Standard Test Conditions (STC) of irradiance of 1000 W/m2, spectrum AM 1.5 and cell tempera-ture of 25°C.",
+        "score": 0.97673,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.canadiansolar.com/wp-content/uploads/2019/12/Canadian_Solar-Datasheet-HiKu_CS3W-MS_EN.pdf",
+        "title": "[PDF] Canadian_Solar-Datasheet- HiKu_CS3W-MS_(1000V & 1500V)_EN",
+        "snippet": "12 PARTNER SECTION ELECTRICAL DATA | STC* CS3W 430MS 435MS 440MS 445MS 450MS 455MS Nominal Max. Power (Pmax) 430 W 435 W 440 W 445 W 450 W 455 W Opt. Operating Voltage (Vmp) 40.3 V 40.5 V 40.7 V 40.9 V 41.1 V 41.3 V Opt. Operating Current (Imp) 10.68 A 10.75 A 10.82 A 10.89 A 10.96 A 11.02 A Open Circuit Voltage (Voc) 48.3 V 48.5 V 48.7 V 48.9 V 49.1 V 49.3 V Short Circuit Current (Isc) 11.37 A 11.42 A 11.48 A 11.54 A 11.60 A 11.66 A Module Eﬃciency 19.5% 19.7% 19.9% 20.1% 20.4% 20.6% Operating Temperature -40°C ~ +85°C Max. System Voltage 1500V (IEC/UL) or 1000V (IEC/UL) Module Fire Performance TYPE 1 (UL 1703) or CLASS C (IEC 61730) Max. Series Fuse Rating 20 A Application Classification Class A Power Tolerance * Under Standard Test Conditions (STC) of irradiance of 1000 W/m2, spectrum AM 1.5 and cell tempera-ture of 25°C.",
+        "score": 0.96342,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.canadiansolar.com/na/wp-content/uploads/sites/3/2020/06/Canadian-Solar_Warranty_Inverter_EN-Rev1.0-INV-NA-Copyright%C2%A9-May.-2020.-2020.pdf",
+        "title": "[PDF] LIMITED WARRANTY STATEMENT CANADIAN SOLAR INVERTER ...",
+        "snippet": "inverters will be subject to a 10-year limited warranty and Canadian Solar inverter accessory products will be subject to a 2-year limited warranty (collectively, the “Limited Warranty”). The underlying Products shall be free from defects in materials and workmanship that have caused an adverse effect on product functionality under normal application, installation, use, and service conditions as specified in Canadian Solar’s standard product documentation. Claims under the warranty will only be [...] following will render this Limited Warranty inapplicable or null and void and of no further force or effect: • Misuse and/or improper use, negligence, improper installation, physical damage or alteration, either internally or externally, use in an unsuitable environment for the Product, including any environment or location that causes excessive wear and tear or debris buildup within the Product; • Where repairs have been performed on the Product other than by an authorized service partner of [...] the functionality of the Product. WARRANTY EFFECTIVE DATE The warranty effective date shall be defined as the date of installation or ninety (90) days after the delivery by Canadian Solar, whichever date is earlier. WARRANTY EXTENSION For Canadian Solar inverter products, the warranty can be extended up to 20 years at the Buyer’s option prior to the applicable warranty effective date. A purchased warranty extension is assigned to one inverter unit only and is not transferable. EXCEPTIONS The",
+        "score": 0.6964752,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "rec",
+    "product": "REC Alpha Pure-R 430W",
+    "candidates": [
+      {
+        "url": "http://recgroup.com/sites/default/files/2025-01/Web_DS_REC_Alpha_Pure-R_EN%20US.pdf",
+        "title": "[PDF] datasheet - REC ALPHA® PURE-R",
+        "snippet": "ELIGIBLE 400 - 430W H E T E R OJ U N C T I O N ​ TECHNOLOGY REC ALPHA ® PURE-R DA T ASHEET 22.3% MAX EFFICIENCY >92% POWER IN YEAR 25 -0.24%/°C TEMPERA TURE COEFFICIENT OF PMAX 9 A MODULE CURRENT COMPATIBLE WITH MLPE Lead-free ROHS Compliant Compact Panel Size Founded in 1996, REC Group is an international pioneering solar energy company dedicated to empowering consumers with clean, affordable solar power. As Solar’s Most Trusted, REC is committed to high quality, innovation, and a low carbon [...] Internal testing. Refer to installation manual. ELECTRICAL DATA Power Output - PMAX (WP) 400 410 420 430 Watt Class Sorting - (W) 0/+10 0/+10 0/+10 0/+10 Nominal Power Voltage - VMPP(V) 48.8 49.4 50.0 50.5 Nominal Power Current - IMPP(A) 8.20 8.30 8.40 8.52 Open Circuit Voltage - VOC (V) 58.9 59.2 59.4 59.7 Short Circuit Current - ISC (A) 8.80 8.84 8.88 8.91 Power Density (W/ft²) 19.2 19.7 20.2 20.7 Panel Efficiency (%) 20.7 21.2 21.8 22.3 Power Output - PMAX (WP) 305 312 320 327 Nominal Power [...] Specifications subject to change without notice.\nREF: PM-DS-12-06-REV-/D UL EN 6.2025 Available from: REC Solar PTE. LTD.",
+        "score": 0.86358756,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.recgroup.com/sites/default/files/2024-07/REC%20Product%20Brochure%20Rev%2010.pdf",
+        "title": "[PDF] REC Product Brochure - REC Solar",
+        "snippet": "REC ALPHA ® Pure SERIES 6 430 Wp Dimensions: 1730 x 1118 x 30 mm (1.93 m²) Weight: 21.5 kg Efficiency: 22,3 % Power Density: 223 W/m2 Max. System Voltage: 1000 V Temperature Coefficient: -0.24 %/°C 430 Wp Higher power density in a practical size Full-black design panel with a gapless cell layout for an elegant and compelling rooftop panel choice Power More power for residential rooftops • Most advanced cell structure for high efficiency • Maximized power for maximum savings • Gapless cell [...] REC’s Twin Design REC’s iconic Twin Design delivers a significant power boost to REC Alpha Pure panels compared to conventional layouts, as well as improving performance in shaded conditions. The REC Alpha Pure-R takes this principle even further by dividing than panel into four zones that mean even more output under shaded conditions. [...] Super Strong Frame With its distinctive frame, including two support bars across the rear, REC Alpha panels are able to withstand loads, e.g., snow, of up to 7000 Pa, making them stronger and more robust than competitive products. The innovative frame protects against deformation, increasing reliability and long-term high power.",
+        "score": 0.72348577,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.recgroup.com/sites/default/files/2025-01/IM_RECAlpha_UL_EN.pdf",
+        "title": "[PDF] REC ALPHA PURE PANELS INSTALLATION MANUAL",
+        "snippet": "When installing solar panels using a slide-in system, the drainage holes found in the underside of the panel frame (fig. 1-3) must not be covered. For any questions regarding installation on such systems, please contact REC directly. MOUNTING METHODS: MOUNTING HOLES The REC solar panels covered by this manual can be installed utilizing the mounting holes (11 mm x 6.6 mm (0.43 in x 0.26in)) on the underside of the panel (fig. 1-3). [...] INSTALLATION INSTRUCTIONS System installation • All cables used for the installation must have sufficient length and slack to prevent damage due to water level changes and wave motions.\nMounting panels • Installation of REC solar panels must be in accordance with the aforementioned standard mounting instructions. [...] Installing Alpha Pure solar panels using the mounting holes has been found to comply with IEC 61215 & UL 61730 requirements for downward pressure,e.g., snow, of up to 3600 Pa (5400 Pa design load) and upward pressure,e.g., wind, of up to 1600 Pa (2400 Pa design load) according to the following instructions (design loads apply a safety factor of 1.5 to the stated test load, e.g., test load 3600 Pa / 1.5 = 5400 Pa design load). When installing using mounting holes, the frame and panel edge of",
+        "score": 0.77873385,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.recgroup.com/sites/default/files/2025-01/IM_RECAlpha_IEC_EN.pdf",
+        "title": "[PDF] REC ALPHA PURE PANELS INSTALLATION MANUAL",
+        "snippet": "When installing solar panels using a slide-in system, the drainage holes found in the underside of the panel frame (fig. 1-3) must not be covered. For any questions regarding installation on such systems, please contact REC directly. MOUNTING METHODS: MOUNTING HOLES The REC solar panels covered by this manual can be installed utilizing the mounting holes (11 mm x 6.6 mm (0.43 in x 0.26in)) on the underside of the panel (fig. 1-3). [...] for securing REC solar panels depending on the design of the array. Mounting hardware is not supplied by REC. Ensure the mounting structure can withstand anticipated wind and snow loads. Follow the mounting hardware manufacturer’s instructions and recommendations at all times. [...] Installing Alpha Pure solar panels using the mounting holes has been found to comply with IEC 61215 & IEC 61730 requirements for downward pressure,e.g., snow, of up to 3600 Pa (5400 Pa design load) and upward pressure,e.g., wind, of up to 1600 Pa (0 Pa design load) according to the following instructions (design loads apply a safety factor of 1.5 to the stated test load, e.g., test load 3600 Pa / 1.5 = 5400 Pa design load). When installing using mounting holes, the frame and panel edge of each",
+        "score": 0.77873385,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.recgroup.com/sites/default/files/documents/information_sheet_rec_alpha_pure-r_series_eng_web.pdf",
+        "title": "[PDF] rec Alphα® pure-R Series",
+        "snippet": "REC Alpha Pure-R 430 Wp Conventional panel 415 Wp greater annual yields from dawn to dusk more warranted power after 25 years REC’s consistently low claims rate justifies an outstanding warranty which reflects this leadership and supports our premium product quality.\nThe REC Alpha Pure-R packs in more energy than ever before. With no LID, a leading temperature coefficient and its high power density, it is ideal for increasing energy yields and making the most of available rooftop space. [...] Plant the seed for a sustainable future Cuts risks to humans and animals Certified lead-free RoHS-compliant Do even more than just producing clean energy Our commitment to a lead-free and toxin-safe future No toxic leakage of lead after recycling Exclusive to REC Certified Solar Professionals, the REC ProTrust Warranty offers enhanced product and labor coverage, ensuring peace of mind and a lifetime of high power generation: • 25 years performance warranty • 25 years product warranty • Up to 25 [...] Extra energy generated with the REC Alpha Pure-R Average Daily Energy Production Comparison Over One Year More power warranted REC Alpha Pure-R Conventional Panel 92% 84.8% 70% 0 5 10 15 Year 20 25 75% 80% 85% 90% 95% 100% 98% % of Nameplate power 20 year product warranty Extra 5 years with REC ProTrust www.recgroup.com Rev- A 07.22 USA REC AMERICAS, LLC 330 James Way, Suite #170 Pismo Beach, CA 93449 USA Phone +1 877 332 4807 (North America regional hub) JAPAN REC SOLAR JAPAN CO., LTD.",
+        "score": 0.8138313,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.recgroup.com/sites/default/files/2024-08/Warranty%20Alpha%20Rev%206.pdf",
+        "title": "[PDF] rec AlpHA Solar panels",
+        "snippet": "10 REC Warranty Conditions - REC Alpha Products Rev 6 - 8.24 Ref: PM-WARR-12 FRANÇAIS Certificat de Garantie pour Modules REC Alpha (À compter du 1er janvier 2019) Pour REC Alpha Pure, REC Alpha Pure-R, REC Alpha Pure-RX, REC Alpha Pure 21 La Garantie est valable pour l’ensemble des Produits tels que définis ci-dessus livrés à compter du 1er janvier 2019 dans tous les états membres de l’Union Européenne (UE) et de l’Espace Économique Européen (EEE), ainsi que les pays appartenant au group [...] 5 REC Warranty Conditions - REC Alpha Products Rev 6 - 8.24 Ref: PM-WARR-12 Garantiebedingungen für REC Alpha Solarmodule (gültig ab 1. Januar 2019) für REC Alpha Pure, REC Alpha Pure-R, REC Alpha Pure-RX, REC Alpha Pure 2 1 Diese Herstellergarantie gilt für alle oben angegebene REC-Solarmodule mit einem Lieferdatum zum REC-Kunde ab 1. Januar 2019 in allen Mitgliedsstaaten der Europäischen Union (EU), des Europäischen Wirtschaftsraums (EWR) sowie in der Schweiz, Länder der Regionalgruppe [...] 7 REC Warranty Conditions - REC Alpha Products Rev 6 - 8.24 Ref: PM-WARR-12 Certificado de garantía limitada para los módulos REC Alpha (válida a partir del 1 de enero de 2019) para REC Alpha Pure, REC Alpha Pure-R, REC Alpha Pure-RX, REC Alpha Pure 2 1 Esta garantía es válida para todos los productos REC (según lo definido anteriormente) entregados a partir del 1 de enero de 2019 en todos los Estados miembro de la Unión Europea, en el Espacio Económico Europeo, los estados del Grupo regional",
+        "score": 0.7803451,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.recgroup.com/sites/default/files/2024-08/Web_DS%20REC%20Alpha%20Pure_EN.pdf",
+        "title": "[PDF] Datasheet - REC AlphA",
+        "snippet": "Founded in 1996, REC Group is an international pioneering solar energy company dedicated to empowering consumers with clean, affordable solar power. As Solar’s Most Trusted, REC is committed to high quality, innovation, and a low carbon footprint in the solar materials and solar panels it manufactures. Headquartered in Norway with operational headquarters in Singapore, REC also has regional hubs in North America, Europe, and Asia-Pacific. [...] REC AlphA ® Pure Series Da t asheet Compact Panel Size LEAD-FREE ROHS COMPLIANT 390–410 Wp HETEROJUNCTION TECHNOLOGY 222 W/M2 POWER DENSITY 92% MIN. POWER IN YEAR 25 -0.24% /°C TEMP. COEFF. PMAX ELIGIBLE REC Solar PTE. LTD. [...] mm² solar cable, 1.1 m + 1.2 m in accordance with EN50618 Dimensions 1821 x 1016 x 30 mm (1.85 m²) Weight 20.5 kg Origin Made in Singapore MAXIMUM RATINGS Operational Temperature -40 °C - 85 °C System Voltage 1000 V Maximum Test Load (front) +7000 Pa (713 kg/m²) Maximum Test Load (rear) -4000 Pa (407 kg/m²) Max Series Fuse Rating 25 A Max Reverse Current 25 A  See installation manual for mounting instructions. Design load = Test load / 1.5 (safety factor) TEMPERATURE RATINGS Nominal Module",
+        "score": 0.6551821,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "rec",
+    "product": "REC Alpha Pure Black 405W",
+    "candidates": [
+      {
+        "url": "https://www.recgroup.com/sites/default/files/2024-08/Web_DS%20REC%20Alpha%20Pure_EN.pdf",
+        "title": "[PDF] Datasheet - REC AlphA",
+        "snippet": "mm² solar cable, 1.1 m + 1.2 m in accordance with EN50618 Dimensions 1821 x 1016 x 30 mm (1.85 m²) Weight 20.5 kg Origin Made in Singapore MAXIMUM RATINGS Operational Temperature -40 °C - 85 °C System Voltage 1000 V Maximum Test Load (front) +7000 Pa (713 kg/m²) Maximum Test Load (rear) -4000 Pa (407 kg/m²) Max Series Fuse Rating 25 A Max Reverse Current 25 A  See installation manual for mounting instructions. Design load = Test load / 1.5 (safety factor) TEMPERATURE RATINGS Nominal Module [...] REC AlphA ® Pure Series Da t asheet Compact Panel Size LEAD-FREE ROHS COMPLIANT 390–410 Wp HETEROJUNCTION TECHNOLOGY 222 W/M2 POWER DENSITY 92% MIN. POWER IN YEAR 25 -0.24% /°C TEMP. COEFF. PMAX ELIGIBLE REC Solar PTE. LTD. [...] REC AlpHA ® Pure Series DA T ASHEET LOW LIGHT BEHAVIOUR Rel. Efficiency (%) Irradiance (W/m²) 85 90 95 100 105 200 100 300 400 500 600 700 800 900 1000 Typical low irradiance performance of module at STC: CERTIFICATIONS IEC 61215:2016; IEC61730:2016; UL61730 IEC 62804 PID IEC 62782 Dynamic Mechanical Load ISO 11925-2 Ignitability (EN 13501-1 Class E) IEC 62716 Ammonia Resistance IEC 61701 Salt Mist (SM6) IEC 61215:2016 Hailstone (35 mm) IEC 62321 Lead-free acc. to RoHS EU 863/2015 ISO 14001;",
+        "score": 0.73846215,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.recgroup.com/sites/default/files/documents/information_sheet_rec_alpha_pure_series_en_us.pdf",
+        "title": "[PDF] rec Alphα® pure Series",
+        "snippet": "16 x 400 Wp REC Alpha Pure (19.9 ft² panel area): System size = 6.40 kW 14 x 415 Wp conventional panels (> 20.1 ft² panel area): System size = 5.81 kW Lead and other toxins can be found in almost all solar panels today. That means all the panels produced in 2020 will potentially add around 10,000 tons of lead to the environment in the future! Using advanced manufacturing techniques, the REC Alpha Pure has removed the lead from all components so that it is compliant with Restriction of Hazardous [...] The REC Alpha Pure packs in more energy than ever before. With no LID, a leading temperature coefficient and its high power density, it is ideal for increasing energy yields and making the most of available rooftop space.\nMORE POWER WITH THE REC ALPHA PURE! [...] sides of the panel Guaranteed better durability • Withstands up to 7000 Pa • Better protection against harsh weather more power makes the most of your rooftop space High power density of 20.6 W/ft² • Generates more clean energy from the available space, e.g. rooftop Improved looks • Gapless cells for great aesthetics • Full black appearance for an elegant look Environmentally-friendly • Lead-free (RoHS compliant) • Manufacturing with minimal carbon footprint REC’s iconic Twin Design • Reduces",
+        "score": 0.67243975,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.recgroup.com/sites/default/files/2025-01/IM_RECAlpha_UL_EN.pdf",
+        "title": "[PDF] REC ALPHA PURE PANELS INSTALLATION MANUAL",
+        "snippet": "INSTALLATION INSTRUCTIONS System installation • All cables used for the installation must have sufficient length and slack to prevent damage due to water level changes and wave motions.\nMounting panels • Installation of REC solar panels must be in accordance with the aforementioned standard mounting instructions. [...] When installing solar panels using a slide-in system, the drainage holes found in the underside of the panel frame (fig. 1-3) must not be covered. For any questions regarding installation on such systems, please contact REC directly. MOUNTING METHODS: MOUNTING HOLES The REC solar panels covered by this manual can be installed utilizing the mounting holes (11 mm x 6.6 mm (0.43 in x 0.26in)) on the underside of the panel (fig. 1-3). [...] Installing Alpha Pure solar panels using the mounting holes has been found to comply with IEC 61215 & UL 61730 requirements for downward pressure,e.g., snow, of up to 3600 Pa (5400 Pa design load) and upward pressure,e.g., wind, of up to 1600 Pa (2400 Pa design load) according to the following instructions (design loads apply a safety factor of 1.5 to the stated test load, e.g., test load 3600 Pa / 1.5 = 5400 Pa design load). When installing using mounting holes, the frame and panel edge of",
+        "score": 0.767847,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.recgroup.com/sites/default/files/2024-08/Warranty%20Alpha%20Rev%206.pdf",
+        "title": "[PDF] rec AlpHA Solar panels",
+        "snippet": "5 REC Warranty Conditions - REC Alpha Products Rev 6 - 8.24 Ref: PM-WARR-12 Garantiebedingungen für REC Alpha Solarmodule (gültig ab 1. Januar 2019) für REC Alpha Pure, REC Alpha Pure-R, REC Alpha Pure-RX, REC Alpha Pure 2 1 Diese Herstellergarantie gilt für alle oben angegebene REC-Solarmodule mit einem Lieferdatum zum REC-Kunde ab 1. Januar 2019 in allen Mitgliedsstaaten der Europäischen Union (EU), des Europäischen Wirtschaftsraums (EWR) sowie in der Schweiz, Länder der Regionalgruppe [...] 7 REC Warranty Conditions - REC Alpha Products Rev 6 - 8.24 Ref: PM-WARR-12 Certificado de garantía limitada para los módulos REC Alpha (válida a partir del 1 de enero de 2019) para REC Alpha Pure, REC Alpha Pure-R, REC Alpha Pure-RX, REC Alpha Pure 2 1 Esta garantía es válida para todos los productos REC (según lo definido anteriormente) entregados a partir del 1 de enero de 2019 en todos los Estados miembro de la Unión Europea, en el Espacio Económico Europeo, los estados del Grupo regional [...] 10 REC Warranty Conditions - REC Alpha Products Rev 6 - 8.24 Ref: PM-WARR-12 FRANÇAIS Certificat de Garantie pour Modules REC Alpha (À compter du 1er janvier 2019) Pour REC Alpha Pure, REC Alpha Pure-R, REC Alpha Pure-RX, REC Alpha Pure 21 La Garantie est valable pour l’ensemble des Produits tels que définis ci-dessus livrés à compter du 1er janvier 2019 dans tous les états membres de l’Union Européenne (UE) et de l’Espace Économique Européen (EEE), ainsi que les pays appartenant au group",
+        "score": 0.7279179,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.recgroup.com/sites/default/files/documents/information_sheet_rec_alpha_pure_series_en.pdf",
+        "title": "[PDF] rec Alphα® pure Series",
+        "snippet": "solar installation. The REC Alpha Pure allows you to pack in as much power as possible, generating more energy and more savings on your bills. [...] panel compact N-type technology = more power • No initial power loss (no LID) • You get the power you pay for Higher light transmission • Special anti-reflective glass increases light transmission for higher power The REC Alpha Pure Series unites leading cell technologies to create a revolutionary, powerful and reliable solar panel to help you make more savings from your rooftop: Guaranteed better durability • Withstands up to 7000 Pa • Better protection against harsh weather High power density [...] for REC’s strong reliability is advanced and highly efficient manufacturing using Industry 4.0 practices. Founded in 1996 in Norway, REC has always been committed to a low carbon footprint in its solar materials and panels. REC is headquartered in Norway with operational headquarters in Singapore and regional hubs in North America, Europe, and Asia-Pacific.",
+        "score": 0.6737291,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "rec",
+    "product": "REC TwinPeak 5 Mono 380W",
+    "candidates": [
+      {
+        "url": "https://www.recgroup.com/sites/default/files/documents/ds_rec_twinpeak_5_series_rev_1.1_eng_web.pdf",
+        "title": "[PDF] rec TwinPeak 5 SeriEs",
+        "snippet": "ELECTRICAL DATA Product Code: RECxxxTP5 Power Output - PMAX (Wp) 395 400 405 410 Watt Class Sorting - (W) 0/+5 W 0/+5 W 0/+5 W 0/+5 W Nominal Power Voltage - VMPP (V) 37.2 37.6 38.0 38.3 Nominal Power Current - IMPP (A) 10.62 10.64 10.67 10.71 Open Circuit Voltage - VOC (V) 44.9 45.0 45.1 45.2 Short Circuit Current - ISC (A) 11.35 11.39 11.43 11.47 Panel Efficiency (%) 20.1 20.3 20.6 20.8 Power Output - PMAX (Wp) 298 302 306 310 Nominal Power Voltage - VMPP (V) 34.8 35.2W 35.5 35.8 Nominal [...] GENERAL DATA Cell type: 132 half-cut mono c-Si p-type cells, 6 strings of 22 cells in series Glass: 3.2 mm solar glass with anti-reflective surface treatment in accordance with EN 12150 Backsheet: Highly resistant polymer Frame: Anodized aluminum (black) with silver support bars Junction box: 3-part, 3 bypass diodes, lead-free IP68 rated, in accordance with IEC 62790 Connectors: Stäubli MC4 PV-KBT4/KST4 (4 mm²) in accordance with IEC 62852, IP68 only when connected Cable: 4 mm² solar cable, 1.2 [...] Design load = Test load / 1.5 (safety factor) 85 90 95 100 105 200 100 300 400 500 600 700 800 900 1000 STC NMOT Available from: TEMPERATURE RATINGS Nominal Module Operating Temperature: 44.6°C (±2°C) Temperature coefficient of PMAX: -0.34 %/°C Temperature coefficient of VOC: -0.26 %/°C Temperature coefficient of ISC: 0.04 %/°C The temperature coefficients stated are linear values CERTIFICATIONS IEC 61215:2016, IEC 61730:2016, UL 61730 IEC 62804 PID IEC 61701 Salt Mist Corrosion IEC 62716",
+        "score": 0.7927375,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.recgroup.com/sites/default/files/2024-11/ds_rec_twinpeak_5_series_kor_web.pdf",
+        "title": "[PDF] rec TwinPeak 5 SeriEs",
+        "snippet": "85 90 95 100 105 200 100 300 400 500 600 700 800 900 1000 전기 데이터 제품 코드: RECxxxTP5 출력 - PMAX (Wp) 395 400 405 410 와트 등급 분류 - (W) 0/+5 W 0/+5 W 0/+5 W 0/+5 W 최대출력전압 - VMPP(V) 37.2 37.6 38.0 38.3 최대출력전류 - IMPP(A) 10.62 10.64 10.67 10.71 개방전압 - VOC(V) 44.9 45.0 45.1 45.2 단락전류 - ISC(A) 11.35 11.39 11.43 11.47 패널 효율(%) 20.1 20.3 20.6 20.8 전력 출력 - PMAX(Wp) 298 302 306 310 공칭전압 - VMPP(V) 34.8 35.2W 35.5 35.8 공칭전류 - IMPP(A) 8.58 8.59 8.62 8.65 개방전압 - VOC(V) 42.0 42.1 42.2 42.3 단락전류 - ISC(A) 9.17 9.20 [...] 단위: mm[in] 저조도 성능 STC 상에서 일반적인 모듈의 저조도 성능: 보증 표준 REC ProTrust REC Certified Solar Professional이 설치 아니오 예 예 시스템 규모 전체 ≤25kW 25-500kW 제품 보증 기간(년) 20 25 25 출력보증(년) 25 25 25 인력 보증(년) 0 25 10 첫 해 발전율 98% 98% 98% 연간 발전율 감소 0.5% 0.5% 0.5% 25년 차 발전율 86% 86% 86% REC ProTrust 보증은 REC Certified Solar Professional 설치업체를 통해 구입한 패널에만 적용 됩니다. 보증조건을 정용하려면. 자세한 내용은 www.recgroup.com을 참조하십시오. 복사 조도(W/m²) 상대 효율(%) 온도계수  공칭 모듈 동작 온도: 44.6°C (±2°C) PMAX의 온도 계수: -0.34 %/°C VOC의 온도 계수: -0.26 %/°C ISC의 온도 계수: 0.04 %/°C [...] 인증 IEC 61215:2016, IEC 61730:2016, UL 61730 IEC 62804 PID IEC 61701 염수 분무 IEC 62716 암모니아 저항성 ISO 11925-2 인화성(Class E) UL 790 Fire Class C IEC 62782 동적 기계 하중 IEC 61215-2:2016 우박(35mm) ISO 14001, ISO 9001, IEC 45001, IEC 62941 배송 정보 팔레트당 패널: 33 13.6m 트럭 패널: 858 (26 팔레트) 40피트 HC콘테이너 패널: 792 (24 팔레트) 최대 등급 동작 온도: -40 ... +85°C 최대 시스템 전압: 1000 V 최대 테스트 하중(앞면): +7000 Pa (713 kg/m²) 최대 테스트 하중(뒷면): -4000 Pa (407 kg/m²) 최대 시리즈 퓨즈 등급: 25 A 최대 역전류: 25 A  탑재 방법은 설치 매뉴얼을 참조하십시오.",
+        "score": 0.76617163,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.recgroup.com/sites/default/files/2024-11/im_rec_panels_iec_rev_l.en_.pdf",
+        "title": "[PDF] REC SOLAR PANELS INSTALLATION MANUAL",
+        "snippet": "panels depending on the design of the array. Mounting hardware is not supplied by REC. Ensure the mounting structure can withstand anticipated wind and snow loads. Follow the mounting hardware manufacturer’s instructions and recommendations at all times. [...] Long Side Mounting Short Side Mounting Rail position Rail position REC Installation Manual - REC Solar Panels - IEC 61215 /61730 Rev 15 - 11.22 Ref: PM-IM-20 13 250 mm 100 mm 750 mm 0 0 250 mm 100 mm 0 250 mm 100 mm 0 0 250 mm 100 mm 0 750 mm Fig. 7: Clamping of REC TwinPeak 5 Series panels with rails parallel to long side of the panel MOUNTING REC TWINPEAK 5 SERIES PANELS WITH CONTINOUS RAILS PARALLEL TO LONG SIDE OF THE PANEL A continous rail (or other support structure) spans the complete [...] Fig. 8: Clamping of REC TwinPeak 5 Series panels using short rails MOUNTING REC TWINPEAK 5 SERIES PANELS WITH SHORT RAILS A short rail (or other short support structure) has a minimum length of 25 mm and does not span the complete underside of a panel.",
+        "score": 0.709684,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.recgroup.com/sites/default/files/2024-11/im_rec_panels_ul_rev_l.pdf",
+        "title": "[PDF] REC SOLAR PANELS INSTALLATION MANUAL",
+        "snippet": "depending on the design of the array. Mounting hardware is not supplied by REC. Ensure the mounting structure can withstand anticipated wind and snow loads. Follow the mounting hardware manufacturer’s instructions and recommendations at all times. [...] screws, lockbolts or structural blind fasteners, with specifications suitable for the installation (fig. 13). Installing the REC solar panels using the mounting holes has been found to comply with IEC 61215 & UL 61730 requirements for downward pressure,e.g., snow, of up to 5400 Pa (3600 Pa design load) and upward pressure,e.g., wind, of up to 2400 Pa (1600 Pa design load) according to the following instructions (design loads apply a safety factor of 1.5 to the stated test load, e.g., test load [...] • In the case of any questions regarding mounting systems, or if the mounting system to be used does not match any of the instructions shown in this installation manual, please contact REC for further support.",
+        "score": 0.7062922,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.recgroup.com/sites/default/files/documents/warranty_tp_rev_d.pdf",
+        "title": "[PDF] rec TwinPeak Panels",
+        "snippet": "In the case of the REC TwinPeak 4 and REC TwinPeak 5 panels, REC warrants that the actual power output (performance) of the Product will reach at least 98 % of the nameplate power output specified on the Product during the first year (calculated from the date of production as identified on the Product). From the second year, the actual power output will decline annually by no more than 0.5 % for a period of 24 years, so that by the end of the 25th year, an actual output of at least 86 % of the [...] En el caso del REC TwinPeak 4 y REC TwinPeak 5, REC garantiza, que la potencia nominal real del producto llegará como mínimo al 98 % de la potencia nominal especificada en la placa del producto durante el primer año (calculado a partir de la fecha de fabricación indicada en el producto). A partir del segundo año, la reducción anual de la potencia nominal real no superará el 0,5 % durante un periodo de 24 años, de modo que al finalizar el 25º año, la potencia nominal real alcanzará como mínimo [...] 5 REC Warranty Conditions - REC TwinPeak Rev D - 11.21 Ref: PM-WARR-6 Garantiebedingungen für REC TwinPeak Solarmodule1 (gültig ab 1. Oktober 2018) Diese Herstellergarantie gilt für alle oben angegebene REC-Solarmodule mit einem Lieferdatum zum REC-Kunde ab 1. Oktober 20182 in allen Mitgliedsstaaten der Europäischen Union (EU), des Europäischen Wirtschaftsraums (EWR) sowie in der Schweiz, Länder der Regionalgruppe Osteuropa (EEG)3 und weitere Länder wie unten angegeben4.",
+        "score": 0.78846955,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.recgroup.com/sites/default/files/2024-07/REC%20Product%20Brochure%20Rev%2010.pdf",
+        "title": "[PDF] REC Product Brochure - REC Solar",
+        "snippet": "provide even more power than ever! REC’s Twin Design is an iconic advancement in crystalline solar panel technology that delivers a power boost of up to 20 Wp per panel compared to standard panels. 11 Dimensions: 1899 x 1040 x 30 mm (1.97m²) Weight: 21.6 kg Efficiency: 20.8 % Power Density: 208 W/m2 Max. System Voltage: 1000 V Temperature Coefficient: -0.34 %/°C 410 Wp Power REC TWINPEAK 5 SERIES ELIGIBLE Darker appearance • Monocrystalline cells for a dark color and high efficiency • Reduced [...] efficiency, a compact size and improved aesthetics More power through reduced resistance • 66 p-type monocrystalline cells for more light absorption • Half-cut cells reduce resistance for higher power Improved performance in shaded conditions • REC’s iconic Twin Design generates more energy • When one half is shaded, the other half can still generate electricity Reliable production • Lower operating temperature for better reliability • Reduced chance of defects due to lower operating [...] cell spacing for higher panel efficiency, a compact size and improved aesthetics More power through reduced resistance • 66 p-type monocrystalline cells for more light absorption • Half-cut cells reduce resistance for higher power Improved performance in shaded conditions • REC’s iconic Twin Design generates more energy • When one half is shaded, the other half can still generate electricity Reliable production • Lower operating temperature for better reliability • Reduced chance of defects due",
+        "score": 0.72629017,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.recgroup.com/sites/default/files/documents/rec_warranty_fact_sheet_en_web.pdf",
+        "title": "[PDF] PREMIUM QUALITY EMPOWERING WARRANTY - REC Solar",
+        "snippet": "Ensures that REC panels perform exactly as expected to – every year for 25 years. Higher warranted power and higher annual yields, enable greater ROI predictability.\nCovers panel defects and promises superior quality for at least 20 years. All panels are eligible for a +5 year product warranty extension, as part of the REC ProTrust Warranty. [...] LABOR Product Family PERFORMANCE WARRANTY Year 1 minimum power Year 2-25 maximum annual degradation Guaranteed % of nameplate power in year 25 REC Alpha 98.0% 0.25% 92.0% REC N-Peak 3 REC TwinPeak 5 0.5% 86.0% v.20221216 [...] conditions) pERFORMANCE product The following table provides an overview of REC's 25-year Performance Warranty by product, applicable to panels delivered to REC customers on or after October 1, 2018: Visit the REC Download Center for details of each product’s warranty conditions: www.recgroup.com/warranty Unique to the REC ProTrust Warranty, this gives added protection in the unlikely event that an REC panel needs to be serviced.",
+        "score": 0.6708892,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "lg-solar",
+    "product": "NeON R LG400N2R-A5",
+    "candidates": [
+      {
+        "url": "https://www.lg.com/us/solar/solar/files/resources/LG_Solar_2021ProductCatalog_Digital_08252021.pdf",
+        "title": "[PDF] LG NeON® Solar Panels",
+        "snippet": "Monocrystalline / N-type Monocrystalline / N-type # of Cells 66 Cell (6 x 11) 66 Cell (6 x 11) Maximum Power 435W 440W 425W Module Efficiency 21.9% 22.1% 21.4% Dimensions (L x W x H) 1,910mm x 1,042mm x 40mm 1,910mm x 1,042mm x 40mm Weight 20.5kg 20.5kg Frame | Backsheet Black | White Black | Black Output Linear Warranty 1st year 98.5%, from 2-24th year: -0.25%/year down, 92.5% at year 25 Product Warranty 25-Year Limited The LG NeON® R is a high-power luxury solar panel featuring Back Contact [...] High Power Output, High-Efficiency Panels Technical Data 12 5,400 Pa Front Load / Phosphorus in N-Type Wafers Improves LID Rates + -11 Long-Term Durability All LG Solar panels feature a reinforced frame design that withstands high loads.\nThe NeON® R models can handle a front load of 5,400 Pa and a rear load of 4,000 Pa. [...] Low Temperature Coefficient The LG NeON® R panels boast a low -0.29% temperature coefficient, which means they perform well even on hot days.",
+        "score": 0.79675186,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.lg.com/us/business/download/resources/BT00002151/Neon2_72_80115_ck_FRD_V4.pdf",
+        "title": "[PDF] 405W | 400W | 395W | 390W - LG",
+        "snippet": "LG405N2W-A5 I LG400N2W-A5 I LG395N2W-A5 I LG390N2W-A5 About LG Electronics LG Electronics is a global big player, committed to expanding its operations with the solar market. The company first embarked on a solar energy source research program in 1985, supported by LG Group’s vast experience in the semi-conductor, LCD, chemistry and materials industries. In 2010, LG Solar successfully released its first MonoX® series to the market, which is now available in 32 countries. The NeON® (previous. [...] 293 289 MPP Voltage (Vmpp) [V] 38.0 37.6 37.2 36.9 MPP Current (Impp) [A] 7.91 7.88 7.86 7.84 Open Circuit Voltage (Voc) [V] 46.2 46.1 46.0 45.9 Short Circuit Current (Isc) [A] 8.44 8.41 8.38 8.35 North America Solar Business Team LG Electronics U.S.A. Inc 1000 Sylvan Ave, Englewood Cliffs, NJ 07632 Contact: lg.solar@lge.com www.lgsolarusa.com Product specifications are subject to change without notice. [...] 405W | 400W | 395W | 390W The LG NeON® 2 is LG’s best-selling solar module. The 72cell-version of the NeON® 2 is especially suited for commercial or utility applications, as it makes space management easier while maximizing power.\n72 Feature Enhanced Performance Warranty LG NeON® 2 has an enhanced performance warranty. The annual degradation has fallen from -0.6%/yr to -0.5%/yr. Even after 25 years, the cell guarantees 2.4% more output than the previous LG NeON® 2 modules.",
+        "score": 0.65252984,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.lg.com/us/business/download/resources/BT00002151/lg-business-solar-spec-neon-2-72cell-400n2w-A5-051118.pdf",
+        "title": "lg-business-solar-spec-neon-2-72cell-400n2w-A5-042618",
+        "snippet": "01/01/2017 Innovation for a Better Life Electrical Properties (NOCT) Module Maximum Power (Pmax) MPP Voltage (Vmpp) MPP Current (Impp) Open Circuit Voltage (Voc) Short Circuit Current (Isc)  NOCT (Nominal Operating Cell Temperature): Irradiance 800W/m², ambient temperature 20 °C, wind speed 1m/st Electrical Properties (STC ) Module Maximum Power (Pmax) MPP Voltage (Vmpp) MPP Current (Impp) Open Circuit Voltage (Voc) Module Efﬁciency Operating Temperature Maximum System Voltage Maximum Series [...] Tolerance (%) -40 ~ +90 0 ~ +3  STC (Standard Test Condition): Irradiance 1,000 W/m², Cell Temperature 25 °C, AM 1.5  The nameplate power output is measured and determined by LG Electronics at its sole and absolute discretion. [...] Enhanced Performance Warranty High Power Output Compared with previous models, the LG NeON® 2 Roof Aesthetics Double-Sided Cell Structure Improved Performance on Sunny Days Outstanding Durability LG400N2W-A5 About LG Electronics Innovation for a Better Life 72 cell LG Electronics is a global player who has been committed to expanding its operations with the solar market. The company ﬁrst embarked on a solar energy source research programs in 1985, supported by LG Group’s vast experience in the",
+        "score": 0.53619206,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.lg.com/us/support/products/documents/MFL67647124-English.pdf",
+        "title": "[PDF] INSTALLATION MANUAL AIR CONDITIONER - LG",
+        "snippet": "Fixing Installation Plate The wall you select should be strong and solid enough to prevent vibration 1 Mount the installation plate on the wall with type \"A\" screws. If mounting the unit on a concrete wall, use anchor bolts.\n- Mount the installation plate horizontally by aligning the centerline using Horizontal meter.\nBoth Installation Plates can be used for this model. [...] mount between the chassis and instal-lation plate in order to separate the bottom side of the indoor unit from the wall. [...] - Replace the pipe cover to the outdoor unit by one screw Now the air conditioner is ready for test run.\n The feature can be changed according to the type of model.\n- Fix the outdoor unit with a bolt and nut(ø10mm) tightly and horizontally on a con-crete or rigid mount.\n- When installing on the wall, roof or rooftop, anchor the mounting base securely with a nail or wire assuming the influence of wind and earthquake.",
+        "score": 0.48908922,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.lg.com/us/business/download/resources/BT00002151/Neon2_72_80115_ck_FRD_V5.pdf",
+        "title": "405W 400W 395W 390W - LG USA",
+        "snippet": "293 289 MPP Voltage (Vmpp) [V] 38.0 37.6 37.2 36.9 MPP Current (Impp) [A] 7.91 7.88 7.86 7.84 Open Circuit Voltage (Voc) [V] 46.2 46.1 46.0 45.9 Short Circuit Current (Isc) [A] 8.44 8.41 8.38 8.35 North America Solar Business Team LG Electronics U.S.A. Inc 1000 Sylvan Ave, Englewood Cliffs, NJ 07632 Contact: lg.solar@lge.com www.lgsolarusa.com Product specifications are subject to change without notice. [...] BOS KM 564573 BS EN 61215 Photovoltaic Modules TM 15yrs Dimensions (mm / inch) 1024 / 40.3 (Size of short side) 984 / 38.7 175 / 6.9 (Distance between grounding & mounting holes) Junction box Ø 4.3 / 0.2 Grounding holes (8ea) 8.5 x 12 / 0.3 x 0.5 Mounting holes (4ea) 7.0 x 10 / 0.3 x 0.4 Mounting holes (4ea) 40 /1.6 Frame cross-section 29 / 1.1 40 / 1.6 1200 / 47.2 Cable Length 1424 / 56.1 (Distance between mounting holes) 400 / 15.7 (Distance between mounting holes) 2024 / 79.7 (Size of long [...] LG405N2W-A5 I LG400N2W-A5 I LG395N2W-A5 I LG390N2W-A5 About LG Electronics LG Electronics is a global big player, committed to expanding its operations with the solar market. The company first embarked on a solar energy source research program in 1985, supported by LG Group’s vast experience in the semi-conductor, LCD, chemistry and materials industries. In 2010, LG Solar successfully released its first MonoX® series to the market, which is now available in 32 countries. The NeON® (previous.",
+        "score": 0.47563025,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.lg.com/us/business/download/resources/CT00002151/SolarLimitedWarranty_072519[20190730_000936].pdf",
+        "title": "[PDF] LG SOLAR MODULE LIMITED WARRANTY",
+        "snippet": "2. 25 Year Limited Warranty for Power Output NeON R: LG warrants that for a period of one (1) year from the Warranty Start Date the actual power output of the Module(s) will be no less than 98% of the labeled power output. Commencing on the second year from the Warranty Start Date, the warranty for power output will decline annually by 0.30% in each of the remaining 24 years, so that during the 25th year, an actual output of at least 90.80% of the nameplate power output specified on the [...] achieved. NeON 2 BiFacial: LG warrants that for a period of one (1) year from the Warranty Start Date the actual power output of the Module(s) will be no less than 98% of the labeled power output. Commencing on the second year from the Warranty Start Date, the warranty for power output will decline annually by 0.35% in each of the remaining 24 years, so that during the 25th year, an actual output of at least 89.60% of the nameplate power output specified on the Module(s) will be achieved. LG [...] 1. 25 Year Limited Warranty for Module(s) LG will, at its sole discretion, repair or replace the Module(s) if it proves to be defective in material or workmanship for a period ending twenty-five (25) years from the Warranty Start Date under normal and proper installation, use and service conditions.",
+        "score": 0.82560414,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.lg.com/us/business/download/resources/BT00002151/BT00002151_2573.pdf",
+        "title": "[PDF] LG SOLAR MODULE LIMITED WARRANTY",
+        "snippet": "be defective in material or workmanship for a period ending 25 years from the Warranty Start Date under normal application, installation, use and service conditions. 2. 25 Years Limited Warranty for Power Output LG warrants that for a period of five (5) year from Warranty Start Date the actual power output of the module will be no less than 95% of the labeled power output. From the 6th year, the warranty for power output will decline annually by 0.4% in each of the remaining 20 years, so that [...] Module(s) is originally installed (all such persons hereinafter referred to as “Customer”). The warranty start date (\"Warranty Start Date\") shall be the date of purchase by the original end use purchaser. If the Customer is unable to provide adequate documentation of the original purchase, the Warranty Start Date shall be ninety (90) days after the Module(s) was manufactured. 1. 25 Years Limited Warranty for Module(s) LG will, at its sole option, repair or replace the Module(s) if it proves to [...] LG Solar Module(s) Warranty- LGxxxQxx-A5 1 / 4 www.lg-solar.com LG SOLAR MODULE LIMITED WARRANTY The limited warranties specified below (hereinafter “Limited Warranty”) apply to LG Solar Module models listed under Section 11 below (hereinafter “Module(s)”) sold by LG Electronics U.S.A., Inc. (hereinafter “LG”) and installed by a licensed contractor under applicable local and state laws, and extend only to the original end use purchaser and subsequent owner(s) of the location on which the",
+        "score": 0.7173491,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.lg.com/us/business/download/resources/BT00002151/LG400N2W-A5.pdf",
+        "title": "[PDF] LG400N2W-A5 - 72 cell",
+        "snippet": "Better Performance on a Sunny Day LG NeON® 2 now performs better on sunny days thanks Outstanding Durability With its newly reinforced frame design, LG has extended the warranty of the LG NeON® 2 for an additional 2 years. Additionally, LG NeON® 2 can endure a front load up to 5400 Pa, and a rear load up to 4300 Pa. [...] -0.26%/°C 0.02 %/°C Module Fire Performance (USA) Product Warranty Output Warranty of Pmax IEC 61215, IEC 61730-1/-2 UL 1703 IEC 61701 (Salt mist corrosion test) IEC 62716 (Ammonia corrosion test) Type 1 15 years Linear warranty  1) 1st year : 98%, 2) After 1st year : 0.5% annual degradation, 3) 25 years : 86% Dimensions (mm/in) Fire Rating (CANADA) Class C (ULC / ORD C1703) Certiﬁcations and Warranty Voltage (V) 10 1000W 600W 200W 800W 400W 6 2 8 4 0 10 30 20 40 15 35 25 5 Current (A) ISO 9001 [...] LG400N2W-A5 About LG Electronics Innovation for a Better Life 72 cell LG’s new module, LG NeON® 2, adopts Cello technology. Cello technology replaces 3 busbars with 12 thin wires to enhance power output and reliability. LG NeON® 2 demonstrates LG’s efforts to increase customer’s value beyond efﬁciency. It features enhanced warranty, durability, performance under real environment, and aesthetic design suitable for roofs.",
+        "score": 0.6929958,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.lg.com/global/business/download/resources/solar/DS_NeON2_72cells.pdf",
+        "title": "[PDF] 400W | 395W | 390W - LG",
+        "snippet": "LG400N2W-A5 I LG395N2W-A5 I LG390N2W-A5 About LG Electronics LG Electronics is a global big player, committed to expanding its operations with the solar market. The company first embarked on a solar energy source research program in 1985, supported by LG Group’s vast experience in the semi-conductor, LCD, chemistry and materials industries. In 2010, LG Solar successfully released its first MonoX® series to the market, which is now available in 32 countries. The NeON® (previous. MonoX® NeON), [...] 400W | 395W | 390W The LG NeON® 2 is LG’s best selling solar module. Especially 72cell-version of the NeON® 2 is suited for commercial or utility applications, that make it easier to manage space with maximizing the power of a unit. 72 Feature Enhanced Performance Warranty LG NeON® 2 has an enhanced performance warranty. After 25 years, LG NeON® 2 is guar­ anteed at least 84.8% of initial performance. [...] NeON®2, NeON®2 BiFacial won the “Intersolar AWARD” in 2013, 2015 and 2016, which demonstrates LG Solar’s lead, innovation and commitment to the industry.",
+        "score": 0.69024646,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.lg.com/us/solar/solar/files/resources/2020ProductLineUp.pdf",
+        "title": "[PDF] 2020 LG SOLAR PRODUCT CATALOG",
+        "snippet": "The LG NeON® R has been manufactured with N-type wafers, which use phosphorus. This leads to extremely low Light Induced Degradation (LID) rates. [...] 3:00 0.0 0.2 0.4 0.6 0.8 5:00 7:00 9:00 11 :00 13 :00 15 :00 17 :00 19 :00 Time 발전량 (kWh/kWp) (외산 업체) Features Technical Data Linear Warranty 25 years Monocrystalline / N-type 60cell (6 x 10) 1,700 x 1,016 x 40 mm 17.5kg LG NeON® R is a powerful, high-performing solar module. A cell structure that eliminates electrodes on the front to decrease the possibility of shading and increase the potential for light absorption. LG NeON® R features powerful performance and a streamlined design suitable [...] LG: A Name You Can Trust LG SOLAR LG Solar Awards & Innovation in Technology LG Solar Module Power Output Graph LEADING TECHNOLOGY The LG NeON® R was awarded the 2018 Judges' Choice Award from Energy Manager Today as a high-efﬁciency residential module with high power output. Leading Technology % Glass Backsheet Cells N-type cells convert sunlight into energy more efﬁciently than P-type cells.",
+        "score": 0.69024646,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "lg-solar",
+    "product": "NeON 3 LG415N2T-A6 Bifacial",
+    "candidates": [
+      {
+        "url": "https://www.lg.com/global/business/download/resources/solar/NeON%202%20BiFacial%2072cells(LGxxxN2T-L5).pdf",
+        "title": "[PDF] 415W | 410W | 405W - LG",
+        "snippet": "415W | 410W | 405W 72 The LG NeON®2 BiFacial is designed to absorb sunlight both from the front and the rear sides of its NeON® cell by using a transparent back sheet. The dual faces of the cell result in higher energy generation. [...] 11.83 Module Efficiency [%] 20.0 21.2 22.7 19.8 21.0 22.4 19.5 20.7 22.2 Pmax Bifaciality Coefficient [%] 75 ± 5 Power Tolerance [%] 0 ~ +3 Electrical Properties (NMOT) Model LG415N2T-L5 LG410N2T-L5 LG405N2T-L5 STC BiFi100 BiFi200 STC BiFi100 BiFi200 STC BiFi100 BiFi200 Maximum Power (Pmax) [W] 311 330 352 307 326 348 303 322 345 MPP Voltage (Vmpp) [V] 39.8 39.8 39.8 39.4 39.4 39.4 39.0 39.0 39.0 MPP Current (Impp) [A] 7.83 8.29 8.86 7.80 8.28 8.85 7.78 8.26 8.84 Open Circuit Voltage (Voc) [V] [...] NMOT (Nominal Module Operating Temperature) : Irradiance 800 W/m2, Ambient temperature 20°C, Wind speed 1m/s, Spectrum AM1.5 Temperature Characteristics NMOT [°C] 42 ± 3 Pmax [%/°C] -0.35 Voc [%/°C] -0.26 Isc [%/°C] 0.03  STC (Standard Test Condition) : Irradiance 1000 W/m2, Cell temperature 25°C, AM 1.5 , Measure tolerance : ±3%  The electrical properties of BiFi100 and BiFi200 measure under the front side irradiance 1000W/m2 + (100W/m2 or 200W/m2 ) BiFi. Use 100W/m2 for BiFi100 and 200W/m2",
+        "score": 0.7568076,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.lg.com/content/dam/channel/wcms/es/business/download/resources/ct32016002/YDRAY-LG_NeON_H_BiFacial_N1T_E6_EN_20210812_181837_.pdf",
+        "title": "LG BiFacial module Transparent backsheet EN www.lg.com/uk/business/solar The next",
+        "snippet": "415 360 385 410 MPP Voltage (Vmpp) [V] 34.7 34.7 34.7 34.5 34.5 34.5 MPP Current (Impp) [A] 10.54 11.24 11.96 10.46 11.16 11.88 Open Circuit Voltage (Voc) [V] 41.3 41.3 41.3 41.2 41.2 41.2 Short Circuit Current (Isc) [A] 11.08 11.82 12.58 10.98 11.71 12.47 Module Efficiency [%] 19.8 21.2 22.5 19.5 20.9 22.3 Operating Temperature [°C] -40 ~ +85 Maximum System Voltage [V] 1.000 Maximum Series Fuse Rating [A] 20 Pmax Bifaciality Coefficient [%] 70 ± 5 Power Tolerance [%] 0 ~ +3 4 \u0007 NMOT (Nominal [...] Velocity 2, Brooklands Drive, Brooklands, Weybridge, KT13 0SL. United Kingdom E-Mail: solar@lge.de www.lg-solar.com/uk All details in this data sheet comply with DIN EN 50380. Subject to errors and alterations. [...] Date: 04/2021 Document: DS-N1T-E6-EN-202104 Dimensions (mm)  \u0007 Under BiFi100 conditions, 1st year : 105.4%, after 1st year : 0.35 annual degradation, 96.4% for 25 years Certifications and Warranty Certifications IEC 61215-1/-1-1 / 2:20161, IEC 61730-1/2:20161, IEC 61701:2012 Severity 6 (Salt mist corrosion test) IEC 62716:2013 (Ammonia corrosion test) OHSAS 18001 ISO 9001, ISO 14001 Fire Resistance Class Class C, Fire Class 1 (Italy) Product Warranty 25 Years Output Warranty of Pmax Linear",
+        "score": 0.7043437,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.lg.com/us/solar/solar/files/resources/LG_Solar_2021ProductCatalog_Digital_08252021.pdf",
+        "title": "[PDF] LG NeON® Solar Panels",
+        "snippet": "Double-Sided Generation Technical Data 18 Albedo (%) 15 Soil, Meadows Dirt, Gravel, Concrete Sand Snow White Membrane 30 50 70 80 5.4% 9.6% 15.2% 20.5% 24.5% Panel Elevation and Pitch Ground BiFacial Module Ground Monofacial Module Front Back Front Back 19 N-Type Cell (double-sided-generation cell structure) Using a NeON® cell that can generate energy on both sides, LG developed a panel for bifacial generation. [...] Higher panel elevation provides higher energy yields for BiFacial panels. LG recommends a panel elevation of 1 meter, noting that higher installations off the ground or roof also mean higher wind loads, and a pitch (tilt angle) of 30°. When panels are elevated and at the proper angle, more reflected light reaches the bottom of the panel. [...] Cells (6 x 24) 144 Half-Cut Cells (6 x 24) Maximum Power 445W 450W 400W 435W Module Efficiency (BiFi 100) 20.2% 20.5% 21.0% 21.2% Dimensions (L x W x H) 2,110mm x 1,042mm x 40mm 2,110mm x 1,042mm x 40mm Weight 23kg 23kg Frame | Backsheet Silver | White Silver | Transparent Output Linear Warranty (BiFi 100) Initial 107%, 1st year 105.4%, After 1st year : -0.35%/year, 96.9% at year 25 Product Warranty 25-Year Limited The LG NeON® H BiFacial has a double-sided cell structure with a transparent",
+        "score": 0.68191797,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.lg.com/us/solar/solar/files/resources/LG_Solar_2021ProductCatalog_Digital_09092021.pdf",
+        "title": "LG LG NeON® Solar Panels",
+        "snippet": "back sheet. Panels generate energy from the front and back side. [...] Higher panel elevation provides higher energy yields for BiFacial panels. LG recommends a panel elevation of 1 meter, noting that higher installations off the ground or roof also mean higher wind loads, and a pitch (tilt angle) of 30°. When panels are elevated and at the proper angle, more reflected light reaches the bottom of the panel. [...] Double-Sided Generation Technical Data 18 Albedo (%) 15 Soil, Meadows Dirt, Gravel, Concrete Sand Snow White Membrane 30 50 70 80 5.4% 9.6% 15.2% 20.5% 24.5% Panel Elevation and Pitch Ground BiFacial Module Ground Monofacial Module Front Back Front Back 19 N-Type Cell (double-sided-generation cell structure) Using a NeON® cell that can generate energy on both sides, LG developed a panel for bifacial generation.",
+        "score": 0.56920683,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.lg.com/global/business/download/resources/solar/NeON2_MFL69021104_IEC_G4_N_150610.pdf",
+        "title": "[PDF] Installation Instructions - LG",
+        "snippet": "Mounting Methods General Information • Select the appropriate orientation to maximize sunlight exposure. • In order to prevent water from entering the junction box, which could present a safety hazard, module should not be mounted such that the front/top glass faces downward. [...] • Dirt build-up on the surface of the panel can cause active solar cells to be shaded and electrical performance to be impaired.\n• Always keep the back surface of the panel free from any foreign objects or structural elements which could come into contact with the panel, especially when the panel is under mechanical load.\n• For permission to use mounting methods not described in the Mounting Guide please consult LG Solar. Failure to do so will void the warranty and panel certification. [...] • The maximum solar module configuration can be found in “Product Specifications”.\nSeries connection for more voltage 6 Mechanical Installation Module Mounting • The LG Electronics’ (LGE) Limited Warranty for solar modules is contingent upon modules being mounted in accordance with the requirements described in this section.\n• The solar modules are in Application Class A and have the Safety Class II. Therefore they can be operated in systems with 120 V DC and higher.",
+        "score": 0.6708892,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.lg.com/global/business/download/resources/solar/NeON%202%20BiFacial%2060cells%20Installation%20Manual%20(LGxxxN1T-L5).pdf",
+        "title": "[PDF] PV Solar MODULE - LG",
+        "snippet": "08 MECHANICAL INSTALLATION Module Mounting • The LG Electronics’ (LGE) Limited Warranty for solar modules is contingent upon modules being mounted in accordance with the requirements described in this section.\n• The solar modules are in Application Class A and • Use corrosion resistant material mounting rails and hardware.\n• Use appropriate bolted connections as per manufacturer’s instructions. [...] • The solar module may be mounted by using the following methods: (Torque:8~12N∙m)  Mounting Rails Material : Aluminum, Stainless steel, etc.\n→ We recommend more than 40x40mm mounting rails.\nModule frame Bolt Flat washer Flat washer Spring washer Nut Mounting Rail Disclaimer of Liability • By beginning to installation process, the installer has to read and completely understand this Installation Manual. [...] m ① ② ① ② ① ② ① ② 60Cell ①: 200mm 72Cell ①: 300mm ②: 300mm Module Strength(Basic Load) ; IEC61215-2:2016 m Design Load : A 3600 Pascal Front Side Force Direction 60Cell Rear Side 2650 Pascal 5400 Pascal 4000 Pascal 3600 Pascal Front Side 72Cell Rear Side 2000 Pascal 5400 Pascal 3000 Pascal Test Load : B (B = A x Y ) ※ This mounting method is by using frame bolt holes.\n※ The mounting rails must run perpendicularly to the module long side.",
+        "score": 0.64719695,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.lg.com/global/business/download/resources/solar/NeON%202%2060cells%20Installation%20Manual%20(LGxxxN1C-L5).pdf",
+        "title": "[PDF] PV Solar MODULE - LG",
+        "snippet": "08 MECHANICAL INSTALLATION Module Mounting • The LG Electronics’ (LGE) Limited Warranty for solar modules is contingent upon modules being mounted in accordance with the requirements described in this section.\n• The solar modules are in Application Class A and • Use corrosion resistant material mounting rails and hardware.\n• Use appropriate bolted connections as per manufacturer’s instructions. [...] Mounting Methods General Information • Select the appropriate orientation to maximize sunlight exposure. The module generates maximum output power when it faces the sun directly. The tilt angle of the modules should be selected to optimize seasonal and sunlight -based performance in the installation place.\n• Module should not be mounted or stored in a way that the front/top glass faces downward in order to prevent water from entering the junction box, which could cause a safety hazard. [...] • The solar module may be mounted by using the following methods: (Torque:8~12N∙m)  Mounting Rails Material : Aluminum, Stainless steel, etc.\n→ We recommend more than 40x40mm mounting rails.\nModule frame Bolt Flat washer Flat washer Spring washer Nut Mounting Rail Disclaimer of Liability • By beginning to installation process, the installer has to read and completely understand this Installation Manual.",
+        "score": 0.64719695,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.lg.com/global/business/download/resources/solar/Bifacial_design_guide_Full_ver.pdf",
+        "title": "LG Global Bifacial_design_guide_Full_ver.pdf",
+        "snippet": "Ground Coverage Ratio (GCR) is the ratio of the PV modules area and the total ground area. As the value of GCR increases, both the Pitch value as well as the installation area decreases. [...] Unlike conventional modules, the bifacial PV Module can produce energy from both the front and backside, utilizing sunlight on the front and reflected light on the back simultaneously. The bifacial PV module offer greater power output when compared to conventional monofacial PV modules, due to its ability to harvest light that is reflected onto the backside. The reflected light can come from a variety of sources, such as reflection from the ground or from a neighboring row of PV modules. [...] Tilt Angle (degrees) θ = 10 o θ = 20 o θ = 25 o θ = 30 o θ = 60 o θ = 90 o 30 96% 100% 100% 100% 88% 65% 85 95% 99% 100% 100% 92% 77% Additional yield simulation (Munchen, Germany) Expected Energy Yield by install condition Tilt angle correction factor  Note1: this value is calculated by internal simulation using small single array. The bifacial gain value shall change by PV system capacity and installation condition.",
+        "score": 0.61112726,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.lg.com/global/business/download/resources/solar/UL_NeON2%20BiFacial_60_72cells_Installation%20Manual.pdf",
+        "title": "[PDF] Installation Manual PV Solar MODULE - LG",
+        "snippet": "Module frame Bolt Flat washer Star washer Cup washer Grounding wire Spring washer Nut Flat washer 08 MECHANICAL INSTALLATION Module Mounting • The LG Electronics’ (LGE) Limited Warranty for solar modules is contingent upon modules being mounted in accordance with the requirements described in this section. • Any module without a frame (laminate) shall not be • Use corrosion resistant material mounting rails and hardware.\n• Use appropriate bolted connections as per manufacturer’s instructions. [...] ① ② ① ② ① ② ① ② 60Cell ① : 200mm(7.9in) ② : 300mm (11.8in) 72Cell ① : 300mm(11.8in) Excluded Operating Environments • The solar modules from LG Electronics can not be ※ This mounting method is by using frame bolt holes.\n※ The mounting rails must run perpendicularly to the module long side.\noperated in a location where they could come in direct contact with salt water or ammonia. [...] DANGER WARNING CAUTION Non-compliance with the instructions may cause product damage, product failure, and/or serious bodily injury or death.\nDANGER Do not contact electrically active parts of the panel, such as terminals, without appropriate safety gear. Contact may result in lethal spark or electric shock.\nDo not use or install if the module is broken or torn. Failure to comply may result in electric shock.",
+        "score": 0.6041426,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.lg.com/global/business/download/resources/solar/NeON+2+60cells+Installation+Manual+(LGxxxN1C-L5).pdf",
+        "title": "LG Global Please read this manual carefully before operating",
+        "snippet": "Please read this manual carefully before operating · your set and retain it for future reference",
+        "score": 0.3510001,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.lg.com/us/business/download/resources/CT00002151/SolarLimitedWarranty_072519[20190730_000936].pdf",
+        "title": "[PDF] LG SOLAR MODULE LIMITED WARRANTY",
+        "snippet": "achieved. NeON 2 BiFacial: LG warrants that for a period of one (1) year from the Warranty Start Date the actual power output of the Module(s) will be no less than 98% of the labeled power output. Commencing on the second year from the Warranty Start Date, the warranty for power output will decline annually by 0.35% in each of the remaining 24 years, so that during the 25th year, an actual output of at least 89.60% of the nameplate power output specified on the Module(s) will be achieved. LG [...] 2. 25 Year Limited Warranty for Power Output NeON R: LG warrants that for a period of one (1) year from the Warranty Start Date the actual power output of the Module(s) will be no less than 98% of the labeled power output. Commencing on the second year from the Warranty Start Date, the warranty for power output will decline annually by 0.30% in each of the remaining 24 years, so that during the 25th year, an actual output of at least 90.80% of the nameplate power output specified on the [...] 1. 25 Year Limited Warranty for Module(s) LG will, at its sole discretion, repair or replace the Module(s) if it proves to be defective in material or workmanship for a period ending twenty-five (25) years from the Warranty Start Date under normal and proper installation, use and service conditions.",
+        "score": 0.7274535,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.lg.com/us/solar/solar/files/resources/Brochure-LG-Solar-BiFacial-Modules_Ver14_01082020.pdf",
+        "title": "[PDF] LG Solar BiFacial Modules",
+        "snippet": "Bifacial gain depends on a variety of factors: albedo, height, elevation, shading, etc. Based on STC (Standard Test Conditions).\nAll LG Solar NeON® 2 modules, including BiFacial modules, feature Cello (Cell Connection with Electrically Low loss, Low stress, and Optical absorption enhancement) Technology™. [...] BiFacial modules have a transparent backsheet that enables reflected light to be absorbed by the cells. In addition, the cells in each module have a symmetrical structure designed to capture both front and rear irradiance. [...] BiFacial Gain The additional power gained from the back of the double-sided cells in our BiFacial modules changes the electrical values of the module. Voltage stays constant while current increases proportionally with the power boost.",
+        "score": 0.70799106,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.lg.com/us/business/download/resources/CT00002151/Warranty%20Residential%20Flyer_Ver02_01132021[20210526_221123].pdf",
+        "title": "[PDF] LG Solar Warranty",
+        "snippet": "an outstanding 25-year product warranty. [...] LG Warranties Protect Our Customers Not all warranties are created equal. It’s important to purchase a product that is covered long-term by a warranty from a company you trust, so you don’t have to worry about paying for repair or replacement costs. We back up our solar products with a 25-year limited warranty that covers product, performance and labor because we believe in the quality of every solar module we design, develop, manufacture and ship to customers. [...] Product Our commitment to controlling every step of the manufacturing process from start to finish ensures that we build and deliver a quality product every time. Thanks to thorough testing processes, LG ensures that each module off the production line will perform well in real-world conditions. No solar modules leave our factory until our quality-control specialists approve their performance. LG’s high standards result in world-class products for our customers. That’s why we are able to offer",
+        "score": 0.6947383,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.lg.com/global/business/download/resources/solar/Neon_2_72_200708(410~425W).pdf",
+        "title": "[PDF] 425W | 420W | 415W | 410W - LG",
+        "snippet": "NeON®2, NeON®2 BiFacial won the “Intersolar AWARD” in 2013, 2015 and 2016, which demonstrates LG Solar’s lead, innovation and commitment to the industry. [...] Feature 425W | 420W | 415W | 410W 72 About LG Electronics LG Electronics is a global big player, committed to expanding its operations with the solar market. The company first embarked on a solar energy source research program in 1985, supported by LG Group’s vast experience in the semi-conductor, LCD, chemistry and materials industries. In 2010, LG Solar successfully released its first MonoX® series to the market, which is now available in 32 countries. The NeON® (previous. MonoX® NeON), [...] Module Fire Performance Type 1 (UL 61730) Fire Rating Class C (UL 790) Solar Module Product Warranty 25 Years Solar Module Output Warranty Linear Warranty  \u0007 NMOT (Nominal Module Operating Temperature): Irradiance 800 W/m2, Ambient temperature 20 °C, Wind speed 1 m/s, Spectrum AM 1.5 Temperature Characteristics NMOT [ °C ] 42 ± 3 Pmax [%/°C] -0.35 Voc [%/°C] -0.26 Isc [%/°C] 0.025 I-V Curves  STC (Standard Test Condition): Irradiance 1000 W/m², Cell temperature 25 °C, AM 1.5  Measure Tolerance",
+        "score": 0.66569364,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "lg-solar",
+    "product": "NeON H LG420N2W-A6 Bifacial",
+    "candidates": [
+      {
+        "url": "https://www.lg.com/us/solar/solar/files/resources/LG_Solar_2021ProductCatalog_Digital_08252021.pdf",
+        "title": "[PDF] LG NeON® Solar Panels",
+        "snippet": "Cells (6 x 24) 144 Half-Cut Cells (6 x 24) Maximum Power 445W 450W 400W 435W Module Efficiency (BiFi 100) 20.2% 20.5% 21.0% 21.2% Dimensions (L x W x H) 2,110mm x 1,042mm x 40mm 2,110mm x 1,042mm x 40mm Weight 23kg 23kg Frame | Backsheet Silver | White Silver | Transparent Output Linear Warranty (BiFi 100) Initial 107%, 1st year 105.4%, After 1st year : -0.35%/year, 96.9% at year 25 Product Warranty 25-Year Limited The LG NeON® H BiFacial has a double-sided cell structure with a transparent [...] Double-Sided Generation Technical Data 18 Albedo (%) 15 Soil, Meadows Dirt, Gravel, Concrete Sand Snow White Membrane 30 50 70 80 5.4% 9.6% 15.2% 20.5% 24.5% Panel Elevation and Pitch Ground BiFacial Module Ground Monofacial Module Front Back Front Back 19 N-Type Cell (double-sided-generation cell structure) Using a NeON® cell that can generate energy on both sides, LG developed a panel for bifacial generation. [...] Higher panel elevation provides higher energy yields for BiFacial panels. LG recommends a panel elevation of 1 meter, noting that higher installations off the ground or roof also mean higher wind loads, and a pitch (tilt angle) of 30°. When panels are elevated and at the proper angle, more reflected light reaches the bottom of the panel.",
+        "score": 0.8020137,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.lg.com/global/business/download/resources/solar/Neon_2_72_200708(410~425W).pdf",
+        "title": "[PDF] 425W | 420W | 415W | 410W - LG",
+        "snippet": "NeON®2, NeON®2 BiFacial won the “Intersolar AWARD” in 2013, 2015 and 2016, which demonstrates LG Solar’s lead, innovation and commitment to the industry. [...] Module Fire Performance Type 1 (UL 61730) Fire Rating Class C (UL 790) Solar Module Product Warranty 25 Years Solar Module Output Warranty Linear Warranty  \u0007 NMOT (Nominal Module Operating Temperature): Irradiance 800 W/m2, Ambient temperature 20 °C, Wind speed 1 m/s, Spectrum AM 1.5 Temperature Characteristics NMOT [ °C ] 42 ± 3 Pmax [%/°C] -0.35 Voc [%/°C] -0.26 Isc [%/°C] 0.025 I-V Curves  STC (Standard Test Condition): Irradiance 1000 W/m², Cell temperature 25 °C, AM 1.5  Measure Tolerance [...] Feature 425W | 420W | 415W | 410W 72 About LG Electronics LG Electronics is a global big player, committed to expanding its operations with the solar market. The company first embarked on a solar energy source research program in 1985, supported by LG Group’s vast experience in the semi-conductor, LCD, chemistry and materials industries. In 2010, LG Solar successfully released its first MonoX® series to the market, which is now available in 32 countries. The NeON® (previous. MonoX® NeON),",
+        "score": 0.725824,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.lg.com/content/dam/channel/wcms/es/business/download/resources/ct32016002/LG_NeON_H+_EN_1002_RZ_20220216_194203_.pdf",
+        "title": "[PDF] Introducing the new star performer - LG",
+        "snippet": "Up to 420 watts LG Cello Design 6,000PA load www.lg.com/uk/business/solar Introducing the new star performer EN Product and Performance Warranty LG NeON® H+ – Better. More efficient. Guaranteed.\nThe new LG NeON® H+ solar module now offers even more performance. Equipped with half-cut technology, it provides up to 420 watts and withstands a pressure of 6,000 Pa. In addition, the LG NeON® H+ offers a 25-year product and performance guarantee for more performance and reliability. [...] Gross Weight [kg] 530 Certifications and Warranty Certifications IEC 61215-1/-1-1 / 2 : 2016, IEC 61730-1/2 : 2016, UL 61730-1 : 2017, UL 61730-2 : 2017 ISO 9001, ISO 14001, ISO 50001 OHSAS 18001 Salt Mist Corrosion Test IEC 61701 : 2011 Severity 6 Ammonia Corrosion Test IEC 62716 : 2013 Module Fire Performance Type 1 (UL 61730) Fire Rating Class C (UL 790) Solar Module Product Warranty 25 Years Solar Module Output Warranty Linear Warranty  1) First years : 98.5%, 2) After 1st year : [...] 20.9 20.6 20.4 20.1 19.8 19.5 Power Tolerance [%] 0 ~ +3 Preliminary  STC (Standard Test Condition) : Irradiance 1,000W/m2, Cell temperature 25°C, AM 1.5, Measure tolerance of Pmax : ±3% General Data Cell Properties (Material / Type) Monocrystalline / N-type Cell Maker LG Cell Configuration 120 Cells (6 x 20) Number of Busbars 9 EA Module Dimensions (L x W x H) 1,768 x 1,042 x 40 mm Weight 18.5 kg Glass (Material) Tempered Glass with AR coating Backsheet (Color) White Frame (Material) Anodized",
+        "score": 0.65597594,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.lg.com/global/business/download/resources/solar/Bifacial_design_guide_Full_ver.pdf",
+        "title": "[PDF] Bifacial_design_guide_Full_ver.pdf - LG",
+        "snippet": "the mounting structure decrease bifacial gain. The loss of the backside gain depends on various factors associated with the module and the mounting structure, shown below: 1) Rail thickness and width 2) Number of rails below module 3) Rail design 4) Distance Mounting structure for bifacial (Rail on edge of module) The best way to minimize loss is to use and install a mounting structure optimized for the bifacial PV Module (i.e. rail edge on module frame) Other ways to maximize bifacial gain [...] Unlike conventional modules, the bifacial PV Module can produce energy from both the front and backside, utilizing sunlight on the front and reflected light on the back simultaneously. The bifacial PV module offer greater power output when compared to conventional monofacial PV modules, due to its ability to harvest light that is reflected onto the backside. The reflected light can come from a variety of sources, such as reflection from the ground or from a neighboring row of PV modules. [...] The module height (elevation) is defined as the distance between the bottom of the lowest part of the module and the ground (surface). Based on internal simulation, bifacial gain value kept increasing with module height moving up to 1m. However, if the module height went over 1m (39.37 in), the bifacial gain would be saturated.",
+        "score": 0.6641271,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.lg.com/global/business/download/resources/solar/NeON%202%2072cells%20Installation%20Manual%20(LGxxxN2W-L5).pdf",
+        "title": "[PDF] PV Solar MODULE - LG",
+        "snippet": "08 MECHANICAL INSTALLATION Module Mounting • The LG Electronics’ (LGE) Limited Warranty for solar modules is contingent upon modules being mounted in accordance with the requirements described in this section.\n• The solar modules are in Application Class A and • Use corrosion resistant material mounting rails and hardware.\n• Use appropriate bolted connections as per manufacturer’s instructions. [...] Mounting Methods General Information • Select the appropriate orientation to maximize sunlight exposure. The module generates maximum output power when it faces the sun directly. The tilt angle of the modules should be selected to optimize seasonal and sunlight -based performance in the installation place. [...] m ① ① ① ① 72Cell ① : 300mm Module Strength(Basic Load) ; IEC61215-2:2016 m Design Load : A Force Direction 3600 Pascal Front Side 72Cell Rear Side 2000 Pascal 5400 Pascal 3000 Pascal Test Load : B (B = A x Y ) Excluded Operating Environments • • The solar modules from LG Electronics can not be ※ This mounting method is by using frame bolt holes.\n※ The mounting rails must run perpendicularly to the module long side.",
+        "score": 0.6530611,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.lg.com/us/solar/solar/files/resources/Bifacial-Modules-Ebook-Comm-Tilt-Mount-Module_Ver15_01132020.pdf",
+        "title": "LG Solar BiFacial Modules",
+        "snippet": "12 Thin Round Wires All LG Solar NeON® 2 modules, including BiFacial modules, feature Cello (Cell Connection with Electrically Low loss, Low stress, and Optical absorption enhancement) Technology™. Cello Technology™ features 12 thin, circular-shaped wires instead of the usual 3-5 busbars. Photons absorbed from sunlight have more pathways to enter to produce electrical current in NeON® 2 cells. This also reduces vulnerability to power generation loss due to micro-cracks. [...] Module Pitch The ideal pitch (tilt angle of each module) is about 30o. Pitch is directly correlated with the Ground Coverage Ratio (GCR). The GCR is the ratio of the modules area and the total ground area: GCR = Module Area Ground Area When modules are elevated and at the proper angle, more reflected light reaches the bottom of the panel without sacrificing any sunlight that hits the top. A higher pitch provides greater energy production. [...] Albedo of the surface = Reflected light Incident light Albedo range for a variety of surfaces Asphalt Snow Ice Water White sand Sand Soil Grass Concrete Module Elevation Higher module elevation provides higher energy yields for BiFacial modules. LG Solar recommends a module elevation of 1 meter, noting that higher installations off the ground or roof also mean higher wind loads. Higher elevation also provides module uniformity.",
+        "score": 0.63750535,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.lg.com/us/business/download/resources/BT00002151/BT00002151_2571.pdf",
+        "title": "[PDF] Installation manual - PV Solar MODULE - LG",
+        "snippet": "① ② ① ② ① ② ① ② 60Cell ① : 200mm(7.9in) ② : 300mm (11.8in) 72Cell ① : 300mm(11.8in) Excluded Operating Environments • The solar modules from LG Electronics can not be ※ This mounting method is by using frame bolt holes.\n※ The mounting rails must run perpendicularly to the module long side.\noperated in a location where they could come in direct contact with salt water or ammonia. [...] Module frame Bolt Flat washer Star washer Cup washer Grounding wire Spring washer Nut Flat washer 08 MECHANICAL INSTALLATION Module Mounting • The LG Electronics’ (LGE) Limited Warranty for solar modules is contingent upon modules being mounted in accordance with the requirements described in this section. • Any module without a frame (laminate) shall not be • Use corrosion resistant material mounting rails and hardware.\n• Use appropriate bolted connections as per manufacturer’s instructions. [...] DANGER WARNING CAUTION Non-compliance with the instructions may cause product damage, product failure, and/or serious bodily injury or death.\nDANGER Do not contact electrically active parts of the panel, such as terminals, without appropriate safety gear. Contact may result in lethal spark or electric shock.\nDo not use or install if the module is broken or torn. Failure to comply may result in electric shock.",
+        "score": 0.6175132,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.lg.com/global/business/download/resources/solar/UL_NeON2%20BiFacial_60_72cells_Installation%20Manual.pdf",
+        "title": "[PDF] Installation Manual PV Solar MODULE - LG",
+        "snippet": "① ② ① ② ① ② ① ② 60Cell ① : 200mm(7.9in) ② : 300mm (11.8in) 72Cell ① : 300mm(11.8in) Excluded Operating Environments • The solar modules from LG Electronics can not be ※ This mounting method is by using frame bolt holes.\n※ The mounting rails must run perpendicularly to the module long side.\noperated in a location where they could come in direct contact with salt water or ammonia. [...] Module frame Bolt Flat washer Star washer Cup washer Grounding wire Spring washer Nut Flat washer 08 MECHANICAL INSTALLATION Module Mounting • The LG Electronics’ (LGE) Limited Warranty for solar modules is contingent upon modules being mounted in accordance with the requirements described in this section. • Any module without a frame (laminate) shall not be • Use corrosion resistant material mounting rails and hardware.\n• Use appropriate bolted connections as per manufacturer’s instructions. [...] DANGER WARNING CAUTION Non-compliance with the instructions may cause product damage, product failure, and/or serious bodily injury or death.\nDANGER Do not contact electrically active parts of the panel, such as terminals, without appropriate safety gear. Contact may result in lethal spark or electric shock.\nDo not use or install if the module is broken or torn. Failure to comply may result in electric shock.",
+        "score": 0.6158511,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.lg.com/us/business/download/resources/CT00002151/SolarLimitedWarranty_072519[20190730_000936].pdf",
+        "title": "[PDF] LG SOLAR MODULE LIMITED WARRANTY",
+        "snippet": "achieved. NeON 2 BiFacial: LG warrants that for a period of one (1) year from the Warranty Start Date the actual power output of the Module(s) will be no less than 98% of the labeled power output. Commencing on the second year from the Warranty Start Date, the warranty for power output will decline annually by 0.35% in each of the remaining 24 years, so that during the 25th year, an actual output of at least 89.60% of the nameplate power output specified on the Module(s) will be achieved. LG [...] 2. 25 Year Limited Warranty for Power Output NeON R: LG warrants that for a period of one (1) year from the Warranty Start Date the actual power output of the Module(s) will be no less than 98% of the labeled power output. Commencing on the second year from the Warranty Start Date, the warranty for power output will decline annually by 0.30% in each of the remaining 24 years, so that during the 25th year, an actual output of at least 90.80% of the nameplate power output specified on the [...] 1. 25 Year Limited Warranty for Module(s) LG will, at its sole discretion, repair or replace the Module(s) if it proves to be defective in material or workmanship for a period ending twenty-five (25) years from the Warranty Start Date under normal and proper installation, use and service conditions.",
+        "score": 0.8016413,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.lg.com/us/solar/solar/files/resources/LG_Solar_2021ProductCatalog_Digital_09092021.pdf",
+        "title": "[PDF] LG NeON® Solar Panels",
+        "snippet": "Cells (6 x 24) 144 Half-Cut Cells (6 x 24) Maximum Power 445W 450W 400W 435W Module Efficiency (BiFi 100) 20.2% 20.5% 21.0% 21.2% Dimensions (L x W x H) 2,110mm x 1,042mm x 40mm 2,110mm x 1,042mm x 40mm Weight 23kg 23kg Frame | Backsheet Silver | White Silver | Transparent Output Linear Warranty (BiFi 100) Initial 107%, 1st year 105.4%, After 1st year : -0.35%/year, 96.9% at year 25 Product Warranty 25-Year Limited The LG NeON® H BiFacial has a double-sided cell structure with a transparent [...] outstanding 25-year product warranty. [...] year: 0.33%/year down, 90.6% at year 25 Product Warranty 25-Year Limited LG NeON® 2 solar panels provide high efficiency, high power output, appealing aesthetics and reliable performance. The panels incorporate Cello Technology (Cell connection with Electrically Low loss, Low stress and Optical absorption enhancement), developed by LG to increase power output and improve panel appearance.",
+        "score": 0.77751994,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.lg.com/us/solar/solar/files/resources/Brochure-LG-Solar-BiFacial-Modules_Ver14_01082020.pdf",
+        "title": "[PDF] LG Solar BiFacial Modules",
+        "snippet": "Bifacial gain depends on a variety of factors: albedo, height, elevation, shading, etc. Based on STC (Standard Test Conditions).\nAll LG Solar NeON® 2 modules, including BiFacial modules, feature Cello (Cell Connection with Electrically Low loss, Low stress, and Optical absorption enhancement) Technology™. [...] Outstanding Durability All LG Solar modules feature a reinforced frame design that allows for a strong load. Our 72-cell NeON® 2 BiFacial modules can handle a 5400 Pa (Pascal) front load and a 3000 Pa rear load. [...] BiFacial modules have a transparent backsheet that enables reflected light to be absorbed by the cells. In addition, the cells in each module have a symmetrical structure designed to capture both front and rear irradiance.",
+        "score": 0.7185356,
+        "bucket": "other"
+      }
+    ]
+  }
+]

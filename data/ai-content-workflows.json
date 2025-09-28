@@ -1,0 +1,227 @@
+{
+  "timestamp": "2025-09-28T13:49:02.455Z",
+  "workflows": [
+    {
+      "workflow": "blog_post",
+      "results": {
+        "keywordList": {
+          "keywords": [
+            {
+              "keyword": "Agri-Photovoltaik Installation grundlagen",
+              "volume": 1200,
+              "competition": "low"
+            },
+            {
+              "keyword": "Agri-Photovoltaik Installation anleitung",
+              "volume": 800,
+              "competition": "medium"
+            },
+            {
+              "keyword": "Agri-Photovoltaik Installation tipps",
+              "volume": 1500,
+              "competition": "high"
+            }
+          ],
+          "primaryKeyword": "Agri-Photovoltaik Installation",
+          "longTailKeywords": [
+            "wie funktioniert Agri-Photovoltaik Installation",
+            "Agri-Photovoltaik Installation für anfänger",
+            "beste Agri-Photovoltaik Installation 2024"
+          ]
+        },
+        "outline": {
+          "structure": [
+            {
+              "level": "h1",
+              "title": "Agri-Photovoltaik Installation"
+            },
+            {
+              "level": "h2",
+              "title": "Einführung und Grundlagen"
+            },
+            {
+              "level": "h2",
+              "title": "Detaillierte Anleitung"
+            },
+            {
+              "level": "h3",
+              "title": "Schritt 1: Vorbereitung"
+            },
+            {
+              "level": "h3",
+              "title": "Schritt 2: Durchführung"
+            },
+            {
+              "level": "h2",
+              "title": "Häufige Fehler vermeiden"
+            },
+            {
+              "level": "h2",
+              "title": "Fazit und nächste Schritte"
+            }
+          ],
+          "wordCount": 2000,
+          "sections": 7
+        },
+        "introduction": {
+          "content": "Beispiel-Content für Introduction. Dieser Text wurde AI-generiert und sollte von einem Menschen überprüft werden.",
+          "wordCount": 150,
+          "readability": "gut",
+          "tone": "professionell"
+        },
+        "mainContent": {
+          "content": "Beispiel-Content für Main Content. Dieser Text wurde AI-generiert und sollte von einem Menschen überprüft werden.",
+          "wordCount": 150,
+          "readability": "gut",
+          "tone": "professionell"
+        },
+        "conclusion": {
+          "content": "Beispiel-Content für Conclusion & CTA. Dieser Text wurde AI-generiert und sollte von einem Menschen überprüft werden.",
+          "wordCount": 150,
+          "readability": "gut",
+          "tone": "professionell"
+        },
+        "seoOptimized": {
+          "seoTitle": "Optimierter Title Tag für bessere Rankings",
+          "metaDescription": "Kompakte Meta-Description mit Keywords und CTA",
+          "internalLinks": [
+            {
+              "anchor": "Weitere Informationen",
+              "url": "/related-page"
+            },
+            {
+              "anchor": "Jetzt beraten lassen",
+              "url": "/contact"
+            }
+          ],
+          "improvements": [
+            "Keywords natürlicher integriert",
+            "Interne Verlinkung verbessert",
+            "Meta-Tags optimiert"
+          ]
+        },
+        "finalContent": {
+          "qualityScore": 85,
+          "issues": [
+            {
+              "type": "minor",
+              "description": "Kleiner Grammatikfehler korrigiert"
+            }
+          ],
+          "suggestions": [
+            "Content-Struktur könnte noch verbessert werden",
+            "Mehr Beispiele hinzufügen"
+          ],
+          "approved": true
+        }
+      },
+      "duration": 7,
+      "completedSteps": 7,
+      "totalSteps": 7
+    },
+    {
+      "workflow": "landing_page",
+      "results": {
+        "valueProp": {
+          "content": "Beispiel-Output für Value Proposition"
+        },
+        "headlines": {
+          "content": "Beispiel-Output für Headline Creation"
+        },
+        "benefits": {
+          "content": "Beispiel-Content für Benefits Section. Dieser Text wurde AI-generiert und sollte von einem Menschen überprüft werden.",
+          "wordCount": 150,
+          "readability": "gut",
+          "tone": "professionell"
+        },
+        "socialProof": {
+          "content": "Beispiel-Output für Social Proof"
+        },
+        "ctas": {
+          "content": "Beispiel-Output für CTA Optimization"
+        }
+      },
+      "duration": 5,
+      "completedSteps": 5,
+      "totalSteps": 5
+    },
+    {
+      "workflow": "social_media",
+      "results": {
+        "platforms": {
+          "research": "Beispiel Research Output"
+        },
+        "calendar": {
+          "outline": "Beispiel Outline"
+        },
+        "posts": {
+          "content": "Beispiel-Content für Post Creation. Dieser Text wurde AI-generiert und sollte von einem Menschen überprüft werden.",
+          "wordCount": 150,
+          "readability": "gut",
+          "tone": "professionell"
+        },
+        "hashtags": {
+          "seoTitle": "Optimierter Title Tag für bessere Rankings",
+          "metaDescription": "Kompakte Meta-Description mit Keywords und CTA",
+          "internalLinks": [
+            {
+              "anchor": "Weitere Informationen",
+              "url": "/related-page"
+            },
+            {
+              "anchor": "Jetzt beraten lassen",
+              "url": "/contact"
+            }
+          ],
+          "improvements": [
+            "Keywords natürlicher integriert",
+            "Interne Verlinkung verbessert",
+            "Meta-Tags optimiert"
+          ]
+        }
+      },
+      "duration": 4,
+      "completedSteps": 4,
+      "totalSteps": 4
+    }
+  ],
+  "qualityAssurance": [
+    {
+      "score": 100,
+      "issues": [],
+      "suggestions": [],
+      "passed": true
+    },
+    {
+      "score": 70,
+      "issues": [
+        {
+          "type": "plagiarism",
+          "severity": "high",
+          "message": "Potenzielles Plagiat entdeckt"
+        }
+      ],
+      "suggestions": [],
+      "passed": false
+    },
+    {
+      "score": 100,
+      "issues": [],
+      "suggestions": [],
+      "passed": true
+    }
+  ],
+  "analytics": {
+    "totalWorkflows": 3,
+    "successfulWorkflows": 3,
+    "failedWorkflows": 0,
+    "averageDuration": 5.333333333333333,
+    "mostUsedWorkflow": "blog_post",
+    "productivityGains": 5
+  },
+  "summary": {
+    "totalWorkflows": 3,
+    "successRate": 100,
+    "averageQualityScore": 90
+  }
+}

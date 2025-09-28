@@ -1,0 +1,57 @@
+[
+  {
+    "manufacturer": "q-cells",
+    "product": "Q.PEAK DUO RSF XL-G11S.3/BFG",
+    "candidates": [
+      {
+        "url": "https://us.qcells.com/wp-content/uploads/2024/04/Qcells_Brochure_Q.PEAK_DUO_RSF_XL-G11S.3-BFG_2024-03_Rev01_NA.pdf",
+        "title": "[PDF] reinforced steel frame (rsf) solar module - Qcells",
+        "snippet": "Q.PEAK DUO RSF XL-G11S.3/BFG Q.PEAK DUO RSF XL-G11S.3/BFG Q.PEAK DUO RSF ML-G12S.3/BFG Q.PEAK DUO RSF ML-G12S.3/BFG Specifications Specifications Cell Cell Power Class Power Class Temperature Coefficient of PMPP Temperature Coefficient of PMPP Max Efficiency Max Efficiency Format (including frame) Format (including frame) Weight Weight Frame Frame Warranty Warranty 6 × 26 monocrystalline Q.ANTUM solar half cells 6 × 22 monocrystalline Q.ANTUM solar half cells 12-year product warranty & 30-year [...] 04 05 Q.PEAK DUO Q.PEAK DUO RSF RSF XL-G11S.3/BFG XL-G11S.3/BFG Explore the cutting-edge technology of Qcells' steel frame solar module for C&I and utility projects ● Enhanced bifaciality from unique frame design ● Improved mechanical load capacity ● Water drainage design IMPROVED DESIGN 2 ● 3 fasteners only ● Notch-tab alignment feature ● 3 times faster installation than conventional module FAST AND EASY INSTALLATION 1 07 Perfect fit between tracker and module Fast and easy installation step [...] performance warranty 12-year product warranty & 30-year performance warranty Q.PEAK DUO RSF XL-G11S.3/BFG Q.PEAK DUO RSF ML-G12S.3/BFG -0.34 %/K -0.34 %/K 21.5% 22.1% 96.9 in × 44.6 in × 1.38 in (including frame) (2462 mm × 1134 mm × 35 mm) 93.8 in × 51.3 in × 1.38 in (including frame) (2384 mm × 1303 mm × 35 mm) 80.2 lbs (36.4 kg) 89.3 lbs (40.5 kg) Steel (Zn-Al-Mg coating) Steel (Zn-Al-Mg coating) Specification Specification 585Wp - 600Wp 670Wp - 685Wp 10 Available from 2025 ©2024 Qcells All",
+        "score": 0.8646883,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://us.qcells.com/wp-content/uploads/2024/04/Qcells_Data_sheet_Q.PEAK_DUO_RSF_XL-G11S-BFG_series_585-600_2024-02_Rev04_NA.pdf",
+        "title": "[PDF] Q.PEAK DUO RSF XL-G11S SERIES - Qcells",
+        "snippet": "A reliable investment PRELIMINARY Q.PEAK DUO RSF XL-G11S.3 / BFG Q.PEAK DUO RSF XL-G11S SERIES MODEL 585-600 Wp | 156 Cells 21.5 % Maximum Module Efficiency The ideal solution for: Solar power plants with tracker Unlock unparalleled strength with Qcells steel frames for cost-effective tracker mounting Increased design loads for short rails Mechanical Specification Format 96.9 in × 44.6 in × 1.38 in (including frame) (2462 mm × 1134 mm × 35 mm) Weight 80.2 lbs (36.4 kg) Front Cover 0.08 in (2.0 [...] Coefficient of ISC α [% / K] +0.04 Temperature Coefficient of VOC β [% / K] −0.27 Temperature Coefficient of PMPP γ [% / K] −0.34 Nominal Module Operating Temperature NMOT [°F] 108 ± 5.4 (42 ± 3 °C) POWER CLASS 585 590 595 600 MINIMUM PERFORMANCE AT STANDARD TEST CONDITIONS, STC1 (POWER TOLERANCE +5 W / −0 W) BSTC BSTC BSTC BSTC Minimum Power at MPP 1 PMPP [W] 585 639.9 590 645.4 595 650.8 600 656.3 Short Circuit Current1 ISC [A] 13.72 15.01 13.74 15.04 13.77 15.07 13.80 15.10 Open Circuit [...] Hanwha Q CELLS America Inc. 400 Spectrum Center Drive, Suite 1400, Irvine, CA 92618, USA | TEL +1 949 748 59 96 | EMAIL hqc-inquiry@qcells.com | WEB www.qcells.com Specifications subject to technical changes © Qcells Q.PEAK_DUO_RSF_XL-G11S-BFG_series_585-600_2024-02_Rev04_NA_PRELIMINARY Properties for System Design Maximum System Voltage VSYS [V] 1500 PV module classification Class II Maximum Series Fuse Rating [A DC] 25 Fire Rating based on ANSI / UL 61730 TYPE 294 Max. Push Load3, Test /",
+        "score": 0.85421735,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://us.qcells.com/wp-content/uploads/2023/11/Qcells_Data_sheet_Q.PEAK_DUO_XL-G11S-BFG_series_585-600_DA_2023-11_Rev02_NA.pdf",
+        "title": "[PDF] Q.PEAK DUO XL-G11S SERIES - Qcells",
+        "snippet": "Q.PEAK DUO XL-G11S.3 / BFG Q.PEAK DUO XL-G11S SERIES MODEL 585 - 600 Wp | 156 Cells 21.5 % Maximum Module Efficiency The ideal solution for: Ground-mounted solar power plants 1 See data sheet on rear for further information. [...] [W] 440.5 444.2 448.0 451.8 Short Circuit Current ISC [A] 11.05 11.07 11.09 11.11 Open Circuit Voltage VOC [V] 50.67 50.69 50.72 50.75 Current at MPP IMPP [A] 10.30 10.34 10.38 10.42 Voltage at MPP VMPP [V] 42.79 42.97 43.15 43.34 1Measurement tolerances PMPP ± 3 %; ISC; VOC ± 5 % at STC: 1000 W/m2, 25 ± 2 °C, AM 1.5 according to IEC 60904-3 • ²800 W/m2, NMOT, spectrum AM 1.5 Properties for System Design Maximum System Voltage VSYS [V] 1500 PV module classiﬁcation Class II Maximum Series Fuse [...] Rating [A DC] 25 Fire Rating based on ANSI / UL 61730 TYPE 294 Max. Design Load, Push / Pull3 [lbs / ft2] 75 (3600 Pa) / 33 (1600 Pa) Permitted Module Temperature on Continuous Duty −40 °F up to +185 °F (−40 °C up to +85 °C) Max. Test Load, Push / Pull3 [lbs / ft2] 113 (5400 Pa) / 50 (2400 Pa) 3 See Installation Manual 4 New Type is similar to Type 3 but with metallic frame TEMPERATURE COEFFICIENTS Temperature Coefcient of ISC α [% / K] +0.04 Temperature Coefcient of VOC β [% / K] −0.27",
+        "score": 0.83093774,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://us.qcells.com/wp-content/uploads/2023/07/Qcells_Data_sheet_Q.PEAK_DUO_XL-G11_series_570-590_2022-07_Rev01_NA.pdf",
+        "title": "[PDF] Q.PEAK DUO XL-G11 SERIES - Qcells",
+        "snippet": "(3600 Pa) / 33 (1600 Pa) Permitted Module Temperature on Continuous Duty −40 °F up to +185 °F (−40 °C up to +85 °C) Max. Test Load, Push / Pull3 [lbs / ft2] 113 (5400 Pa) / 50 (2400 Pa) 3 See Installation Manual Quality Controlled PV - TÜV Rheinland; IEC 61215:2016; IEC 61730:2016. This data sheet complies with DIN EN 50380. [...] PMPP [W] 570 575 580 585 590 Short Circuit Current1 ISC [A] 13.49 13.51 13.54 13.57 13.59 Open Circuit Voltage1 VOC [V] 53.59 53.62 53.64 53.67 53.70 Current at MPP IMPP [A] 12.82 12.87 12.92 12.97 13.01 Voltage at MPP VMPP [V] 44.46 44.68 44.90 45.12 45.33 Efciency1 η [%] ≥ 20.8 ≥ 21.0 ≥ 21.2 ≥ 21.4 ≥ 21.5 MINIMUM PERFORMANCE AT NORMAL OPERATING CONDITIONS, NMOT2 Minimum Power at MPP PMPP [W] 427.6 431.4 435.1 438.9 442.6 Short Circuit Current ISC [A] 10.87 10.89 10.91 10.93 10.95 Open Circuit [...] Voltage VOC [V] 50.54 50.56 50.59 50.62 50.64 Current at MPP IMPP [A] 10.09 10.13 10.17 10.22 10.26 Voltage at MPP VMPP [V] 42.39 42.58 42.77 42.96 43.14 1Measurement tolerances PMPP ± 3 %; ISC; VOC ± 5 % at STC: 1000 W/m2, 25 ± 2 °C, AM 1.5 according to IEC 60904-3 • ²800 W/m2, NMOT, spectrum AM 1.5 Qcells PERFORMANCE WARRANTY PERFORMANCE AT LOW IRRADIANCE At least 98 % of nominal power during ﬁrst year. Thereafter max. 0.5 % degradation per year. At least 93.5 % of nominal power up to 10",
+        "score": 0.7859175,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://us.qcells.com/wp-content/uploads/2024/10/Qcells_Installation_Manual_Q.PEAK_DUO-RSF_XL-G11S.3-BFG_modules_series_2024-07_Rev03_NA.pdf",
+        "title": "[PDF] Installation and operation manual - Qcells",
+        "snippet": "regulations, and the regulations of the local energy provider. DOCUMENT REVISION 03 This installation manual is valid for North America as of July 1st 2024 for Q.PEAK DUO RSF XL-G11S.3 / BFG solar modules, and replaces all earlier versions. [...] § GB § I § D INSTALLATION AND OPERATION MANUAL SOLAR MODULES Q.PEAK DUO RSF XL-G11S.3 / BFG INSTALLATION AND OPERATION MANUAL SOLAR MODULES Q.PEAK DUO RSF XL-G11S.3 / BFG 10 11 3 Installation 3.1\tSafety and transport Note! Module damage may occur!\nÎDo not stack modules.\nNote! Module damage may occur!\nÎDo not install modules near flammable gas / vapors.\nÎDo not install modules in close proximity to air condi-tioning systems.\nNote! Module damage may occur!\nÎDo not drop modules. [...] ÎOnly use dry, insulated tools for electrical work.\nDanger! Risk of fatal injury due to electric shock!\nÎNever touch live contacts with bare hands.\nÎCover connectors by suitable protective caps until installation.\nDanger! Risk of fatal injury due to electric shock!\nÎInsulate any exposed cable ends.\nÎOnly connect cables with plugs.\nÎFor mounting Q.PEAK DUO RSF XL-G11S.3/BFG solar modules, use only parts approved by FLEXRACK!",
+        "score": 0.8708723,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://us.qcells.com/wp-content/uploads/2023/11/Qcells_Installation_Manual_Q.PEAK_DUO_XL-G11S.X-BFG_modules_series_2023-10_Rev09_NA.pdf",
+        "title": "[PDF] Installation and operation manual - Qcells",
+        "snippet": "PRODUCT LINE Q.PEAK DUO XL-G11S.3 / BFG, Q.PEAK DUO XL-G11S.7 / BFG Type Q.ANTUM DUO Length [in] 96.9 (2462 mm) Width [in] 44.6 (1134 mm) Frame height [in] 1.38 (35 mm) Area [yd²] 3.3 (2.79 m²) Weight [lbs] 76.9 (34.9 kg) Max. system voltage VSYS 1500 V (IEC) / 1500 V (UL) Max. series fuse rating 25 A Permissible temperature range –40 °F to +185 °F (–40 °C to +85 °C) Junction box protection class ≥ IP67 with bypass diode Connector protection class IP67 or IP68 Fire rating based on ANSI / UL [...] INSTALLATION AND OPERATION MANUAL SOLAR MODULES Q.PEAK DUO XL-G11S.X / BFG INSTALLATION AND OPERATION MANUAL SOLAR MODULES Q.PEAK DUO XL-G11S.X / BFG 10 11 Mounting options with bolts The illustrated installation options apply for both horizontal and vertical module orientation. [...] regulations, and the regulations of the local energy provider. DOCUMENT REVISION 09 This installation manual is valid for North America as of October 1st 2023 for Q.PEAK DUO XL-G11S.3 / BFG, Q.PEAK DUO XL-G11S.7 / BFG solar modules, and replaces all earlier versions.",
+        "score": 0.82728493,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://us.qcells.com/wp-content/uploads/2023/06/Qcells_Installation_Manual_Q.PEAK_DUO_XL-G11.X-BFG_modules_series_2022-07_Rev01_NA.pdf",
+        "title": "[PDF] Installation and operation manual - Qcells",
+        "snippet": "PRODUCT LINE Q.PEAK DUO XL-G11.3 / BFG Q.PEAK DUO XL-G11.7 / BFG Type Q.ANTUM DUO Z Length [in] 95.1 (2416 mm) Width [in] 44.6 (1134 mm) Frame height [in] 1.38 (35 mm) Area [yd²] 3.28 (2.74 m²) Weight [lbs] 75.8 (34.4 kg) Max. system voltage VSYS 1500 V (IEC) / 1500 V (UL) Max. reverse current 25 A Permitted Module Temperature on Continuous Duty –40 °C to +85 °C (–40 °F to +185 °F) Junction box protection class ≥ IP67 with bypass diode Connector protection class IP67 or IP68 Fire rating based [...] INSTALLATION AND OPERATION MANUAL SOLAR MODULES Q.PEAK DUO XL-G11.X / BFG INSTALLATION AND OPERATION MANUAL SOLAR MODULES Q.PEAK DUO XL-G11.X / BFG 8 9 2 Planning 2.3 Mounting options 2 Planning 2.3 Mounting options The module is considered to be in compliance with UL 61730 only when the module is either mounted in the manner specified by the mounting instructions, or when the mounting means has been evaluated with this PV module to UL 2703. A module with exposed conductive parts is considered [...] INSTALLATION AND OPERATION MANUAL SOLAR MODULES Q.PEAK DUO XL-G11.X / BFG INSTALLATION AND OPERATION MANUAL SOLAR MODULES Q.PEAK DUO XL-G11.X / BFG 16 17 0.39 in (10 mm) 0.2 in (5 mm) \u0007 Maintain an interval of at least 0.39 in (10 mm) between two modules along the short side and 0.20 in (5 mm) along the long side.",
+        "score": 0.7476348,
+        "bucket": "installation"
+      }
+    ]
+  }
+]

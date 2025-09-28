@@ -1,0 +1,329 @@
+[
+  {
+    "manufacturer": "growatt",
+    "product": "Growatt MAX 50-80KTL3-X LV",
+    "candidates": []
+  },
+  {
+    "manufacturer": "growatt",
+    "product": "Growatt MIN 2500-6000TL-X",
+    "candidates": [
+      {
+        "url": "https://latam.growatt.com/upload/file/MIN_7000-10000TL-X2_Manual_de_usuario_MX.pdf",
+        "title": "[PDF] Installation & Operation Manual MIN 9000TL-X2 MIN 10000TL-X2 ...",
+        "snippet": "MPP voltage range 60V~550V AC nominal voltage 220V/230V/240V AC grid frequency 50/60 Hz Max. apparent power 7000VA 8000VA 9000VA 10000VA AC normal output current 31.8A 36.4A 40.9A 45.5A Power factor 0.8leading…0.8lagging Environmental Protection Rating IP 66 Operation Ambienttemperature -30...+60℃ (-22...+ 140°F) with derating above 45°C（113°F） Model Height (H) Width (W) Depth (D) Weight MIN 7000-10000 TL-X2 425mm 16.7inch 392mm 15.4inch 180mm 7.1inch 18.2kg If you want to storage the inverter [...] Ÿ Electrical installation, repairs and conversions may only be carried out by electrically qualified persons.\nŸ Do not touch damaged inverters.\nØ Danger to life due to high voltages in the inverter Ø Persons with limited physical or mental abilities may only work with the Growatt inverter following proper instruction and under constant supervision. Children are forbidden to play with the Growatt inverter. Must keep the Growatt inverter away from children. [...] The MIN TL-X2 Inverters is designed and tested according to international safety requirements（IEC62109-1,CE,VDE0126-1-1, AS4777,etc）; however, certain safety precautions must be observed when installing and operating this inverter. Read and follow all instructions, cautions and warnings in this installation manual. If questions arise, please contact Growatt's technical services at +86 (0)755 2747 1942.",
+        "score": 0.51969254,
+        "bucket": "datasheets"
+      }
+    ]
+  },
+  {
+    "manufacturer": "growatt",
+    "product": "Growatt MOD 17-25KTL3-X",
+    "candidates": [
+      {
+        "url": "https://au.growatt.com/upload/file/20221219/1d3238b90d2d9b338805d0352b41da19.pdf",
+        "title": "[PDF] Growatt MID 17~25KTL3-X AU 2022.12.12.cdr",
+        "snippet": "Max.efficiency 98.75%. · 40% compact and lighter. · Three MPP trackers. · Supports export control. · Touch key and OLED display.",
+        "score": 0.7135319,
+        "bucket": "datasheets"
+      }
+    ]
+  },
+  {
+    "manufacturer": "growatt",
+    "product": "Growatt MOD 3-10KTL3-X",
+    "candidates": [
+      {
+        "url": "https://au.growatt.com/upload/file/MOD3-10KTL3-XA202309.pdf",
+        "title": "[PDF] MOD 3~10KTL3-XA(AU)",
+        "snippet": "SHENZHEN GROWATT NEW ENERGY CO.,LTD. A: 4-13/F,Building A,Sino-German(Europe) ... Datasheet. Max. AC apparent power. Max. output current. 4000W. 5000W. 3000W.",
+        "score": 0.77893573,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://au.growatt.com/upload/file/20221115/007b7fe49d86c80457d680eed6bac11a.pdf",
+        "title": "[PDF] MOD 10~15KTL3-X(AU)",
+        "snippet": "Relative humidity. 0~100%. Altitude. 4000m. DC connection. H4/MC4(Optional). AC connection. Connector. Display. OLED+LED/WIFI+APP.",
+        "score": 0.39936703,
+        "bucket": "datasheets"
+      }
+    ]
+  },
+  {
+    "manufacturer": "growatt",
+    "product": "Growatt MOD 30-40KTL3-X",
+    "candidates": []
+  },
+  {
+    "manufacturer": "ibc-solar",
+    "product": "IBC AeroFix",
+    "candidates": [
+      {
+        "url": "https://hkraft.no/wp-content/uploads/2019/02/ibc-aerofix_691.2-dataark-for-montasjesystem-tak.pdf",
+        "title": "[PDF] IBC AeroFix",
+        "snippet": "The IBC AeroFix is an in-house development from IBC SOLAR, based on years of experience with ballasted flat roof mounting systems.",
+        "score": 0.78154784,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.pv-magazine.com/wp-content/uploads/2021/08/pv-magazine-Spotlight_IBC-SOLAR-AeroFix_EN.pdf",
+        "title": "[PDF] Maximum flexibility – The new AeroFix G3 for flat roofs. - PV Magazine",
+        "snippet": "7 8 General requirements Roof pitch 0°-10° From 5% or 2,8° secure the system against thermal hiking Roof covering foil, bitumen, gravel, green roof Building height max. 35 m Higher buildings only with IBC SOLAR approval Minimum field size 2x3 or 3x2 modules Maximum field size 20x20 m Module size Length: 1500 – 2100 mm width: 980 – 1150 mm Only one tool plug nut SW10 Clamp for potential equalization TX40 G3 Module clamp TX40 Components Less is more. [...] Maximum flexibility – The new AeroFix G3 for flat roofs.\nW E B I N A R Johannes Cayé, Product Manager Mounting Structures at IBC SOLAR Dieter Miener, Teammanager Technical Application Engineer at IBC SOLAR Agenda pv magazine Spotlight 2 Wind tunnel test Systems General requirements Components Module support Cable laying www.ibc-solar.com/AeroFixG3 Wind tunnel test Perfect aerodynamics.\n3 4 Systems 6 setup variants. [...] J O H A N N E S C A Y É P r o d u c t M a n a g e r M o u n t i n g S t r u c t u r e s Tel: +49 9573 9224 - 884 Email: johannes.caye@ibc-solar.de @IBC-SOLAR-AG @IBCSOLAR @IBCSOLAR.DE D I E T E R M I E N E R T e c h n i c a l A p p l i c a t i o n E n g i n e e r Tel: +49 9573 9224 - 422 Email: dieter.miener@ibc-solar.de @IBC-SOLAR-International @IBCSOLAR_Int",
+        "score": 0.74273956,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://shop.ibc-solar.com/userdata/files/files/Installation_manual_AeroFix-AeroFlat_EN_V_19_01.pdf",
+        "title": "[PDF] Installation instructions - IBC AeroFix / AeroFlat",
+        "snippet": "The IBC AeroFix / AeroFlat flat roof system is for mounting solar modules onto flat roofs and pitched roofs. The modules are attached on supports or base",
+        "score": 0.8399576,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.exiteme.com/exitetogo/www.neosolar-ng.com/userfiles/files/2004200013_IBC%20MonoSol%20310%20VL4_installation%20manual_EN.pdf",
+        "title": "[PDF] Installation guide",
+        "snippet": "the valid IBC AeroFix installation manual. Module type Long side Short side AeroFix AeroFix+ IBC Snow Load Rail G2 AeroFix+ 3´rd IBC AeroFix mounting rail PolySol MS 1650x992x40 permitted (max 5400Pa) permitted (max 2400Pa) permitted (max 2400Pa) permitted (max 2400Pa) permitted (max 2400Pa) PolySol GX/GX4 1654x989x40 permitted (max 5400Pa) permitted (max 2400Pa) permitted (max 2400Pa) permitted (max 2400Pa) permitted (max 2400Pa) PolySol CS5 1956x992x40 permitted (max 5400Pa) permitted (max [...] responsibility for patent infringements or other infringements from third parties that may be caused through the use of the modules. \"Use\" does not include implicit or other licensing under any patent or Patent Act. The information in this manual is based on the knowledge and experience of IBC SOLAR AG and is considered to be reliable. However, information, product specifications (without restriction) and suggestions have neither the explicit or implicit nature of a guarantee. IBC SOLAR AG [...] reserves the right to make changes to products, specifications or this manual without prior notice. 20 IAEE-V170810 IBC SOLAR AG Am Hochgericht 10 96231 Bad Staffelstein Phone +49 (0) 9573-92 24 0 Fax +49 (0) 9573-92 24 111 info@ibc-solar.de www.ibc-solar.com",
+        "score": 0.8066246,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.e-nummersok.se/infoDocs/MAN/MAN_34887_5288922.pdf",
+        "title": "[PDF] IBC AeroFix G3",
+        "snippet": "The IBC AeroFix G3 flat roof system is for mounting solar modules onto flat roofs and pitched roofs. The modules are attached on supports or",
+        "score": 0.7625837,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.gelia.se/external-assets/Documents/36/95/AssetDocument60853695.pdf",
+        "title": "[PDF] Installation guide - Gelia",
+        "snippet": "1600 IBC MonoSol xxx OS9-HC 2094x1038x35 mm 2400 / 2400 1600 / 1600 1600 / 1600 1066 / 1066 18 IAEE-V220510 3.4.3 IBC AeroFix G3 and G2 mounting system 19 IAEE-V220510 Note: AeroFix system with clamping on the short side, C= starting directly at the outer edge of the module on the short frame side in the length of the clamp. Please refer for more information to the valid IBC AeroFix installation manual. Loads according to IEC 61215-2:2016 ; Design load = Test load / safety factor 1,5 Module [...] the installation instructions of the IBC mounting products. Please do not damage the modules whilst doing this and ensure a proper connection between clamp and module. ▪ Only use corrosion-free screws, nuts and washers during assembly. ▪ Sufficient lightning protection is recommended, particularly on exposed sites. Integration into any existing lightning protection must follow the relevant guidelines. ▪ Only mount solar modules upright with the socket facing upwards or transversely. ▪ On the [...] .......................................................................................... 14 3.4.2 Insertion systems for long and short side .................................................................................. 16 3.4.3 IBC AeroFix G3 and G2 mounting system ................................................................................ 18 4. Maintenance",
+        "score": 0.75377536,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.exiteme.com/exitetogo/www.neosolar-ng.com/userfiles/files/2004100044_IBC%20MonoSol%20305%20ZX5_installation%20manual_EN.pdf",
+        "title": "[PDF] Das ist die neue Word-Vorlage",
+        "snippet": "2400Pa) MonoSol VL5 1640x992x40 150 mm (max 5400Pa) 330 mm (max 5400Pa) 50 mm (max 2400Pa) 190 mm (max 2400Pa) 15 IAEE-V170810 Insertion systems and Aerofix Long side short side  Please refer to the valid IBC AeroFix installation manual. Module type Long side Short side AeroFix AeroFix+ IBC Snow Load Rail G2 AeroFix+ 3´rd IBC AeroFix mounting rail PolySol MS 1650x992x40 permitted (max 5400Pa) permitted (max 2400Pa) permitted (max 2400Pa) permitted (max 2400Pa) permitted (max 2400Pa) PolySol GX5 [...] must be disposed of correctly. They should not be disposed of with household waste but according to the valid disposal regulations for electronic scrap. 19 IAEE-V170810 8. Disclaimer IBC SOLAR AG does not control the use of this safety, installation and instruction manual or the conditions and procedures for installing, operating, using and maintaining the modules. Therefore, IBC SOLAR AG does not accept any responsibility for loss, damage, injury or costs that may occur during installation, [...] use assembly procedures that are not described in the diagrams please contact IBC SOLAR AG for approval. Otherwise your guarantee and module certification will become invalid.  Alongside the instructions in the installation manual, please always follow the installation instructions from the elevated installation manufacturer. In cases where the instructions from this manufacturer are stricter than the ones in this installation manual, they take priority.  If the maximum permitted load",
+        "score": 0.735737,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://shop.ibc-solar.com/userdata/files/files/Installation_manual_IBC_TopFix200_EN_V_19_01.pdf",
+        "title": "[PDF] Installation manual - IBC SOLAR Fachpartnerportal",
+        "snippet": "To simplify the installation and commissioning of your IBC TopFix 200 mounting system, we have included these detailed installation instructions. They are",
+        "score": 0.6836946,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.ibc-solar.com/fileadmin/redaktion/int/Installers/Products/Warranty_IBC_SOLAR_AeroFix_TopFix200.pdf",
+        "title": "[PDF] Terms and conditions of warranty - IBC Solar",
+        "snippet": "Version 17.01, last update: July 2017 1 IBC AeroFix / TopFix 200 IBC SOLAR AG, Am Hochgericht 10, 96231 Bad Staffelstein, Germany Tel. +49 (0)9573/ 92 24 0; Fax +49 (0)9573/ 92 24 111 hereinafter referred to as “IBC”, provides for each of the assembly systems IBC AeroFix and TopFix 200 the following worldwide product warranty (“Warranty”): Product warranty The legal rights of rectification, withdrawal, reduction or compensation in the event of defects in the assembly system IBC AeroFix or TopFix [...] Term of Warranty The term of warranty (”Warranty Period“) given to the Customer by IBC for the assembly systems IBC AeroFix or TopFix 200, as applicable, shall be 10 years and commences with the date of the invoice issued by the installer or seller to the first Customer. In any case, the warranty period starts latest six (6) months after delivery by IBC to their buyer. Warranty conditions and warranty For the duration of the Warranty Period, IBC guarantees Customer that each of the assembly [...] systems IBC AeroFix or TopFix 200, as applicable, is free of material defects. However, for sealing and plastic materials, no warranty or whatsoever is provided by IBC. At this, the Warranty is only provided in the case of compliance with the following conditions: 01. The assembly systems IBC AeroFix or TopFix 200, as applicable, has been dimensioned, installed and maintained in a proper and professional manner according to the current version of the assembly instruction at the date of its",
+        "score": 0.90452427,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.ibc-solar.com/fileadmin/redaktion/int/Installers/Products/IBC_Systemwarranty_EN.pdf",
+        "title": "[PDF] Terms and conditions of warranty - IBC Solar",
+        "snippet": "page 1 of 5 TERMS AND CONDITION OF WARRANTY (Version 1.10 / Last Update: July 2025) System consisting of IBC AeroFix / IBC AeroFlat / IBC TopFix 200 / IBC WallFix mounting systems and IBC Module / IBC MonoSol solar modules. Guarantor: IBC SOLAR AG Am Hochgericht 10 96231 Bad Staffelstein Phone +49 (0)9573/ 92 24 0 Fax +49 (0)9573/ 92 24 111 hereinafter referred to as „IBC“. A. General warranty conditions Beneficiary IBC provides the end customer (hereinafter „Customer“) a non-transferable [...] by this warranty. Applicable law This warranty is subject to the law of the Federal Republic of Germany. The courts of Coburg, Germany shall be the place of jurisdiction for all disputes arising from or in connection with this warranty. B. Specific warranty conditions for the mounting system used in the system Product Warranty For the duration of the Warranty Period, IBC guarantees Customer in the system that each of the assembly systems in IBC AeroFix, IBC AeroFlat, IBC TopFix 200 or IBC [...] case may be, do not constitute a warranty claim. Normal wear and tear, in particular normal wear and tear of the IBC AeroFix, IBC AeroFlat, IBC TopFix 200 or IBC WallFix, 200 mounting systems due to use, does not constitute a warranty claim. Warranty performance In case of a warranty claim, IBC shall, in its sole discretion, deliver Customer either a defect-free part, repair the defect part or reimburse the fair value of the defect part to the Customer. The expenses necessary for fulfilling the",
+        "score": 0.85797083,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.ibc-solar.com/fileadmin/redaktion/int/Installers/Products/Warranty-IBC-Solar-modules-EU_EN.pdf",
+        "title": "[PDF] Warranty Statement - ibc solar",
+        "snippet": "As of: 15. October 2024 Page 1 from 5 Warranty Statement (Valid within the EU, Albania, Andorra, Armenia, Azerbaijan, Bosnia and Herzegovina, Georgia, Ice-land, Kazakhstan, Kosovo, Liechtenstein, Macedonia, Moldova, Monaco, Montenegro, Norway, San Marino, Switzerland, Serbia, Turkey, Ukraine, Vatican City, Belarus and also Japan) IBC SOLAR AG Am Hochgericht 10 96231 Bad Staffelstein, Germany P +49 (0)9573/92 24 0 F +49 (0)9573/92 24 111 (hereinafter referred to as ´IBC SOLAR´) as the [...] SOLAR. As of: 15. October 2024 Page 2 from 5 3. Product Warranty IBC SOLAR grants a Product Warranty for quality in material and processing of the Module. For glass foil modules (Example: IBC MonoSol xxx MS10-HC-N): In the event a defect due to material or manufacturing fault(s) occurs within the first fifteen (15) years and that certain defect impairs Module's functionality more than trivial and does not simultaneously constitute claim(s) relating to the Power Warranty as defined in Section 4. [...] time of the warranty event. Only the Beneficiary shall be entitled to assert any warranty event. That Warranty applies to a Module IBC SOLAR delivered as from January 1st, 2024, until the concerned Module forms part of the photovoltaic system in which it had been initially installed. Any Module that was removed and reinstalled is not covered by that Warranty, unless it was removed and reinstalled as part of repair work (in terms of section 5.). Note: This Warranty excludes the junction box",
+        "score": 0.77487355,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.theboilerguys.com/wp-content/uploads/2019/02/T-Series-Warranty.pdf",
+        "title": "[PDF] T SERIES IBC Technologies LIMITED WARRANTY INFORMATION ...",
+        "snippet": "Page 1 WARRANTY STATEMENT - T SERIES IBC Technologies LIMITED WARRANTY INFORMATION IBC warranty obligations are limited to the terms set forth below: IBC warrants to the original purchaser that this product will be free of manufacturing defects in material and workmanship for a period of one (1) year from the original purchase date, or eighteen (18) months from IBC’s original invoice, whichever expires first. The original purchase date as used herein shall mean the date stated in the vendor’s [...] the product fail to perform according to the specifications set forth by IBC during the warranty period, IBC will repair or replace, free of charge, the products that it finds defective. If you wish to make a warranty claim, please complete this form. Incomplete forms will not be processed. To make multiple claims, please fill out one form for each individual unit. Name: Company: Address: Telephone: Fax: Product Information: Model Name: Comments: Serial Number: (indicate source/symptoms of [...] responsible for such costs. IBC RESERVES THE RIGHT TO CHANGE SPECIFICATIONS OR DISCONTINUE MODELS WITHOUT NOTICE. 120-266 Page 2 X WARRANTY CLAIMS FORM IBC WARRANTY CLAIMS FORM IBC warrants this product against defects in materials and workmanship for a period of one (1) year from the original purchase date, or eighteen (18) months from IBC’s original invoice, whichever expires first. The original purchase date as used herein shall mean the date stated in the vendor’s original invoice. Should",
+        "score": 0.6760432,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.ibcboiler.com/support/TIPortal/Content/Installation_&_Maintenance/Warranties/PDF/IWT_warranty_EN.pdf",
+        "title": "[PDF] LIMITED WARRANTY",
+        "snippet": "description of the claim. All alleged appliances and defective component parts must be returned through IBC-authorized distributor channels. Replacement component parts, if the conditions of this Limited Warranty are met, will be provided by IBC through such authorized distributor or relevant representatives. No contractor or distributor may grant any service under this warranty without the prior approval of IBC. If there are any questions about the coverage of this Limited Warranty, please [...] applicable building codes/ordinances, regulations and standards, good plumbing and electrical trade practices, or the Installation and Operating Manual) will invalidate warranty coverage. IBC warrants this appliance, and its component parts, to be free from defects in materials and manufacture, under normal use and service, during the Applicable Limited Warranty Periods and subject to the Limited Warranty Exclusions set out below. In its sole discretion, IBC will repair or replace the defective [...] behalf of IBC. ANY APPLICABLE IMPLIED WARRANTIES, INCLUDING OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, SHALL NOT EXTEND BEYOND THE APPLICABLE LIMITED WARRANTY PERIODS SPECIFIED BELOW. IBC’S SOLE LIABILITY, WITH RESPECT TO ANY DEFECT IN THIS APPLIANCE, SHALL BE AS SET FORTH IN THIS LIMITED WARRANTY. IBC SHALL HAVE NO LIABILITY WHATSOEVER FOR ANY AND ALL CLAIMS FOR SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES (INCLUDING DAMAGE RESULTING FROM WATER LEAKAGE), ALL OF WHICH ARE",
+        "score": 0.6628188,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "ibc-solar",
+    "product": "IBC FlatFix",
+    "candidates": [
+      {
+        "url": "https://www.pvo-int.com/wp-content/uploads/2019/01/Brochure-FlatFix-Fusion-EN.pdf",
+        "title": "[PDF] THE INNOVATIVE",
+        "snippet": "Quick and easy assembly 100% Dutch product One-tool approach 20 year warranty 20 YEAR Dual formation Lightweight system The system only needs to be ballasted on a few strategic points due to the interconnected and closed structure. This keeps the additional roof load very low.\nUnique click connection The revolutionary and unique click connection makes the FlatFix Fusion system a very quick and easy to install mounting system. Only one tool is required to mount the solar panels. [...] • Aesthetic TRANSPORT AND HANDLING • Minimal number of components • Lightweight • Shorter profiles for easy transportation • Fixed measurements INSTALLATION TIME • Click joints instead of screws • One single tool for the installation of the panels • Fixed dimensions, no measurement errors UP TO 40% FASTER INSTALLATION FlatFix Fusion is a revolutionary and lightweight racking system for solar panels on both large and small surface flat roofs. The system can be mounted in different ways so as to [...] Unique thermal-effect compensation built-in The FlatFix Fusion system is thermally disconnected through self-aligning roof supports. The system can ‘glide’ across the roof supports, whereby the forces are not transferred to the roof and vice versa. 1 2 3 4 2 1 4 Integrated cable management system FlatFix Fusion is equipped with an integrated cable management system. The cables and plugs of the solar panels can be simply attached to the mounting system. This reduces the chance of malfunctions in",
+        "score": 0.6708892,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://natec.com/wp-content/uploads/2021/09/Esdec-Brochure_FlatFix_WaveEntry_EN_212.pdf",
+        "title": "[PDF] PROFESSIONAL ENTRY-LEVEL - Natec",
+        "snippet": "Pitch length of 2300 mm • Angle of inclination 10° SAFE & ROBUST • Roof support with movable connectors • Unique thermal decoupling prevents damage to roof material • Integrated bonding • Multiple ballast options for optimal weight distribution and maximum safety • High coupling factor due to clamping on both panel sides Quick & easy installation FlatFix Wave Entry can be installed easy and quickly thanks to the limited number of mounting steps and components. Align and extend the pre-assembled [...] Pre-assembled base units for 2 panels: easy to handle on the roof Cable management Quick and easy feeding and stowing of cables using the cable rack Integrated bonding Adapter bracket: Integrated bonding Robust system Clamping on both the long and the short side of the solar panel Only 1 tool needed Multi head screw T30 and SW10 1 2 3 4 5 1 2 4 3 5 FlatFix Fusion is focused on the benefits that installers and end-users are looking for in the residen-tial sector, ideally suited for roofs with",
+        "score": 0.58237284,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.pv-tech.org/wp-content/uploads/legacy-publication-pdfs/14d226d30c-pv-tech-power-volume-18.pdf",
+        "title": "[PDF] Leaving the rest in the shade - PV Tech",
+        "snippet": "tracking systems and inverters, and presenting comparative simulation and measurement results from bifacial and monofacial systems PV systems with lowest LCOE using bifacial modules: State-of-the-art systems and components Figure 1. Bifacial IBC (interdigitated back contact) cell with bifacial character (ISC Konstanz, “ZEBRA” cell; bifacial factor in module >0.75) Bifacial systems cover story www.pv-tech.org | February 2019 | 17 easily upgraded from monofacial PERC and PERC is currently [...] For bifacial as for monofacial modules, a common attribute is the used cell technol-ogy, which is often not directly referring to the underlying technology, such as n-PERT, IBC, HJT or p-PERC, but to the name chosen by the manufacturer for their specific process. There is a wide field of technologies, which allow a differentiation. A detailed discussion of the respective cell concepts, their advantages and drawbacks, would be beyond the scope of this article, but comprehensive information can [...] HJT and IBC, both with more complex processes and more expensive n-type wafers, promise the highest efficiencies and HJT is superior with regard to the bifaciality. Bifacial IBC is the most complex but least investigated technology. N-PERT and also PERC+ are the most common bifacial cell types today, with n-PERT showing a higher bifaciality and higher efficiency potential, but at higher cost. There is a large number of n-type manufac-turers, but there is also a steadily growing amount of p-type",
+        "score": 0.18590319,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.pv-tech.org/wp-content/uploads/legacy-publication-pdfs/1a4ff77a68-pv-tech-power-volume-16.pdf",
+        "title": "[PDF] Puzzling times - PV Tech",
+        "snippet": "Availability: Available since July 2018.\nblack back sheet and frame, with power classes up to 320Wp.\nApplications: Residential and commercial. [...] fl exibility and compatibility with high-output PV panels. [...] harsh, such as heavy load or impact load (snow), it is common that inverter will go offl ine and damage the circuit making the fault hard to fi nd.",
+        "score": 0.16881615,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://solar-media.s3.amazonaws.com/assets/Pubs/PVTP%2016/PVTP16.pdf",
+        "title": "[PDF] Puzzling times - AWS",
+        "snippet": "fl exibility and compatibility with high-output PV panels. [...] harsh, such as heavy load or impact load (snow), it is common that inverter will go offl ine and damage the circuit making the fault hard to fi nd. [...] Availability: First production and sales in The Netherlands starting in November, while full capacity production is expected to be reached in the first quarter of 2019. between busbars, losses from micro cracks in a cell are lower, providing security from large losses. Applications: Utility-scale PV power plants.",
+        "score": 0.09726189,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://portal.segensolar.de/reseller/docs/Manual_FlatFixFusion_Single_EN_051.pdf",
+        "title": "[PDF] FlatFix Fusion Flat roof mounting system for solar panels in a single ...",
+        "snippet": "MANUAL FOR FLATFIX FUSION MOUNTING SYSTEM FOR FLAT ROOFS. 1. Introduction. This manual describes the installation of the FlatFix Fusion mounting system for",
+        "score": 0.98577,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://amonraenergy.eu/wp-content/uploads/2024/03/Manual_FlatFixFusion_Single_EN_316.pdf",
+        "title": "[PDF] MANUAL",
+        "snippet": "1007196) 24 MANUAL FOR FLATFIX FUSION MOUNTING SYSTEM FOR FLAT ROOFS Article number Description Panel length [mm] Min Max 1007202 Ballast container 1600 1550 1690 1007210 Ballast container 1700 1655 1795 1007213 Ballast container 1900 1830 1970 1007086 Ballast container 2000 1940 2080 1007219 Ballast container 2100 (DTO) 2050 2190 Article number Description Panel length [mm] Grey Black Min Max 1007201 1007201-B Wind deflector back 1600 1550 1690 1007209 1007209-B Wind deflector back 1700 1655 1795 1007212 1007212-B Wind deflector back 1900 1830 1970 1007085 1007585-B Wind deflector back 2000 1940 2080 1007218 1007218-B Wind deflector back 2100 (DTO) 2050 2190 7.2 Installing cable exit guides, cables and wind deflectors 25 MANUAL FOR FLATFIX FUSION MOUNTING SYSTEM FOR FLAT ROOFS 7.2.1 Mounting cable exit guides (optional) Optional cable exit guides should be placed on the edge (left or right) of the panel array, on the first or last base profile of a row.",
+        "score": 0.98455,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://shop.ibc-solar.com/userdata/files/files/Installation_manual_IBC_TopFix200_EN_V_19_01.pdf",
+        "title": "[PDF] Installation manual - IBC SOLAR Fachpartnerportal",
+        "snippet": "To simplify the installation and commissioning of your IBC TopFix 200 mounting system, we have included these detailed installation instructions. They are",
+        "score": 0.98176,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://shop.ibc-solar.com/userdata/files/files/Installation_manual_AeroFix-AeroFlat_EN_V_19_01.pdf",
+        "title": "[PDF] Installation instructions - IBC AeroFix / AeroFlat",
+        "snippet": "The IBC AeroFix / AeroFlat flat roof system is for mounting solar modules onto flat roofs and pitched roofs. The modules are attached on supports or base",
+        "score": 0.97308,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.esdec.com/wp-content/uploads/2023/06/Manual_FlatFixWave_Plus_EN_REV05.pdf",
+        "title": "[PDF] manual - flatfix wave plus - Esdec",
+        "snippet": "FlatFix Wave Roof support 1009120 WIND DEFLECTORS BALLAST 105 105 80 210 4 kg PANEL FRAME X Y 1,2 mm 14 mm 2 mm 35 mm min max Y X 1b. FlatFix Wave Ballast Tray 1009129 7b 8 7a 6R 7b 7c 6L 13 13 14 03 2 PREPARATIONS FOR ASSEMBLY 3 PLACE DUAL START UNIT 1 PREPARING THE ROOF AND ALIGNING (THE FIELDS) 2 MEASURING AND MARKING (OF FIELD) 2 UNFOLD THE TOP OF THE DUAL START UNIT UNTIL IT IS COMPLETELY FLAT AND CLICKS INTO PLACE 3 PLACE THE HIGH BASE (2x) IN STANDING POSITION SO THAT IT CLICKS NB: Follow the installation drawing and make sure the fields are well coordinated.",
+        "score": 0.97219,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://pimassetsprdst.blob.core.windows.net/assets/apc_Original/85/08/25458508.pdf",
+        "title": "[PDF] manual - flatfix wave entry - NET",
+        "snippet": "Slide the clips of 2 lower adapters on the panel locks over the edge of the front panel until the panel is firmly clamped in place. Click! 7",
+        "score": 0.96886,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.e-nummersok.se/infoDocs/MAN/MAN_34887_5288922.pdf",
+        "title": "[PDF] IBC AeroFix G3",
+        "snippet": "The IBC AeroFix G3 flat roof system is for mounting solar modules onto flat roofs and pitched roofs. The modules are attached on supports or",
+        "score": 0.96582,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.esdec.com/wp-content/uploads/2023/03/22-0801-DNV-Report-Esdec-Solar-Group-Bankability-Study-Flatfix-Wave-Series.pdf",
+        "title": "[PDF] Esdec FlatFix Wave Series",
+        "snippet": "is completed on the roof, based on the layout drawing and installation manual provided by Esdec. FlatFix Wave system is a unique toolless solution to install, easy to understand and unfold. All these properties allow for a significant labor time saving and make the system cost effective. The uniqueness of its mechanism makes it significantly unconventional in comparison with other systems but DNV does not expect assembly or operating issues. Specially, since this mechanism plays an important [...] environment, mounting systems are not completely “manufactured” until they are assembled and commissioned at a project site. The FlatFix Wave plan involves the shipment of components to the installation site, storage and staging onsite. The final assembly will be done by the contractors of the project on site. The design of the system is by Esdec and the production is done by selected, external and exclusively working for Esdec manufacturers. The manufactured components are transported and [...] performing the proper checks to verify the installed system is in conformance with the installation manual. FlatFix Wave has adequate installation manual with an illustrative procedure for the installation of the mounting system (see Chapter 2). The FlatFix Wave checklist includes delivered material, alignment and placement, and installation procedure of the components. However, it does not provide any recommendation or awareness towards visual checks of corrosion protection coating and signs",
+        "score": 0.6337056,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.energy-storage.news/wp-content/uploads/legacy-publication-pdfs/c147564d00-pv-tech-power-volume-17.pdf",
+        "title": "[PDF] The solar briefing - Energy-Storage.News",
+        "snippet": "Platform: Using self-levelling baseplates, FlatFix is available with ballasted and hybrid attachment options. The fl exible system can be oriented in a traditional south-facing direction or in a dual-tilt orientation. FlatFix’s materials and design compensate for thermal eff ects, reducing potential heat-induced degradation of the PV modules and protecting the integrity of the roof. The system comes with a 20-year warranty and UL certifi cation. [...] system design. A fl exible ballasted non-penetrating system that can be oriented in a traditional south-facing direction or in a dual-tilt orien-tation is often required. Solution: The FlatFix system is said to guarantee the use all common solar panels on any fl at roof. The lightweight system exerts less of a load on the roof, is quick to mount thanks to the click-fi t connectors, and has a unique thermal decoupling. FlatFix’s racking components, including bonding straps, are assembled by [...] Credit: Flickr: 193days products 14 | December 2018 | www.pv-tech.org December Product Outline: Solar rooftop mounting solutions provider Esdec has launched its fi rst product into the US market, off ering its ‘FlatFix’ system, a lightweight, clickable solar mounting system for fl at roofs. FlatFix’s innovative design enables rapid assembly, allowing commercial installers to signifi -cantly reduce installation times.",
+        "score": 0.6016175,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.nacleanenergy.com/magazine/issues/NACE_NovDec2018-WEB.pdf",
+        "title": "[PDF] 2019 WIND - North American Clean Energy",
+        "snippet": "roofs. Featuring a 20-year warranty and UL certification, FlatFix’s design enables rapid assembly, allowing commercial installers to significantly reduce installation times. FlatFix’s racking components, including bonding straps, are assembled by snapping into a locked position without the need for tools. The rails click together easily and quickly to form an interconnected, solid structure. Complete module installation requires just one tool and minimal parts, while power optimizers can be [...] attached via snap-on clips in a matter of seconds. Using self-levelling baseplates, FlatFix is available with ballasted and hybrid attachment options. The flexible system can be oriented in a traditional south-facing direction or in a dual-tilt orientation. FlatFix’s materials and design compensate for thermal effects, reducing potential heat-induced degradation of the PV modules and protecting the integrity of the roof. Esdec is also introducing its ClickFit product to the U.S. market. A [...] lightweight, fully adjustable rail-based racking system, ClickFit can be used on various types of pitched residential and commercial roofs. FlatFix and ClickFit are both UL-certified Class A fire-rated, having achieved fire mitigation for Type 1 and 2 PV modules.",
+        "score": 0.5455042,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://dualsun.com/wp-content/uploads/etn-esdec-flatfix-wave-1.pdf",
+        "title": "[PDF] etn-esdec-flatfix-wave-1.pdf - Dualsun",
+        "snippet": "tous les accessoires). o Le chargement limite (normal non pondéré incluant le champ lui-même et tous les accessoires) admis en fonction de la portée des bacs entre appuis (2, 3 ou plus de 3 appuis). Contraintes générales : • Pose en mode PAYSAGE uniquement. • Mise en œuvre sur bâtiments neufs ou existants (charpente bois, béton ou acier) • Possibilité de mise en œuvre sur des bâtiments commerciaux, industriels, résidentiels ou agricoles. • Possibilité de mise en œuvre sur des bâtiments type [...] 2,30m 2,35m 150 50 200 2,10m 2,20m 2,25m 150 60 210 2,00m 2,10m 2,15m 150 70 220 1,90m 2,00m 2,10m 150 80 230 1,80m 1,90m 2,00m 150 90 240 1,70m 1,80m 1,90m 150 100 250 1,60m 1,70m 1,80m 175 30 205 2,05m 2,15m 2,20m 175 40 215 1,95m 2,05m 2,10m 175 50 225 1,80m 1,90m 2,00m 175 60 235 1,70m 1,80m 1,90m 175 70 245 1,60m 1,70m 1,80m 175 90 265 1,40m 1,50m 1,60m 175 100 275 1,30m 1,40m 1,50m 200 30 230 1,90m 2,10m 2,15m 200 40 240 1,80m 2,00m 2,10m 200 50 250 1,70m 1,80m 1,90m 200 60 260 1,60m [...] du présent rapport. (Se référer également à la notice de montage). Pour les projets de réhabilitation et/ou sur des ouvrages existants, l'installation d'un champ générateur implique des modifications de cas de chargements : l'installateur devra impérativement missionner un bureau d'études spécialisé pour mener toutes les vérifications nécessaires. Dans les ouvrages existants, quel que soit le cas de figure, un diagnostic de la solidité des structures existantes devra être effectué par un bureau",
+        "score": 0.53385985,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://dl.bisol.com/files/Certificates/ETN%20Procede%20FLATFIX%20FUSION.pdf",
+        "title": "[PDF] ETN Procede FLATFIX FUSION - BISOL Group",
+        "snippet": "• L'un référencé « Manuel d'installation FLATFIX FUSION - Système de montage FlatFix Fusion sur toits plats pour ... 1-182mm Hafl cut 390w-410w",
+        "score": 0.5122296,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://enstall.com/wp-content/uploads/2023/10/ENSTALL_sustainability_report_2022_v1.0.pdf",
+        "title": "[PDF] Accelerating a sustainable future - Enstall",
+        "snippet": "Empowers, with the help of a dedicated group of volunteers, teamed up to deliver and install a solar system for OpenDoor, a sustainable living community for disabled young individuals to learn independence and feel supported in their daily activities. With the donation of our FlatFix Fusion system, we proudly contributed to the development and sustainability of this community, supplying the community with solar energy to support a completely gas-free home. Marc Dalderup, a member of the [...] quality, stress, and safety standards and certifications, such as Kiwa, MCS, UL, VDE, ASCE 7, the IBC, and the IRC. Opportunities • Maintain a market-leading position by upholding customer safety standards and ensuring exceptional product quality. [...] Making it happen, together with our partners Supply chain collaboration Design & engineering Design for low weight and maximum strength We continuously optimize the balance between the weight and the strength of our solutions to enable the most solar with the least metal.\nDesign for safety With light and innovative systems, we minimize the need for heavy lifting, complex handling maneuvers and power tool usage.",
+        "score": 0.42935818,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.pv-tech.org/wp-content/uploads/legacy-publication-pdfs/9fd9d033f7-pv-tech-power-volume-15.pdf",
+        "title": "[PDF] Repowering, retrofitting and the future of asset management - PV Tech",
+        "snippet": "Platform: Due to its size – 1,318 x 980 x 46 millimeters and weighing only 17 kilograms – the module is easy to install, especially in difficult installation conditions. The corresponding IEC certifications (IEC/ EN 61215 and IEC/EN 61730) confirm the module’s safety, quality and long service life; the module has also been tested according to IEC 61215 for a snow load test exerting 5,400 Pa.\nAvailability: March 2018 onwards in Europe. [...] The entire contents of this publication are pro-tected by copyright, full details of which are available from the publisher. All rights reserved. No part of this publication may be reproduced, stored in a retrieval system or transmitted in any form or by any means – electronic, me-chanical, photocopying, recording or otherwise – without the prior permission of the copyright owner. [...] easy commissioning and less cabling. The individual units are managed and interact with the grid as connection speeds installation and reduces labour. The new Power+ Solution off ers 50% faster commissioning within Sunny Portal Applications: Residential rooftop PV systems. Platform: Tool-free installation is claimed to save 75-90 minutes per system compared to other brands. Selective deployment can eliminate up to 72 minutes per system compared to other solutions. The Power+ Solution now also",
+        "score": 0.16587698,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.ibc-solar.com/fileadmin/redaktion/int/Installers/Products/IBC_Systemwarranty_EN.pdf",
+        "title": "[PDF] Terms and conditions of warranty - IBC Solar",
+        "snippet": "page 1 of 5 TERMS AND CONDITION OF WARRANTY (Version 1.10 / Last Update: July 2025) System consisting of IBC AeroFix / IBC AeroFlat / IBC TopFix 200 / IBC WallFix mounting systems and IBC Module / IBC MonoSol solar modules. Guarantor: IBC SOLAR AG Am Hochgericht 10 96231 Bad Staffelstein Phone +49 (0)9573/ 92 24 0 Fax +49 (0)9573/ 92 24 111 hereinafter referred to as „IBC“. A. General warranty conditions Beneficiary IBC provides the end customer (hereinafter „Customer“) a non-transferable [...] by this warranty. Applicable law This warranty is subject to the law of the Federal Republic of Germany. The courts of Coburg, Germany shall be the place of jurisdiction for all disputes arising from or in connection with this warranty. B. Specific warranty conditions for the mounting system used in the system Product Warranty For the duration of the Warranty Period, IBC guarantees Customer in the system that each of the assembly systems in IBC AeroFix, IBC AeroFlat, IBC TopFix 200 or IBC [...] case may be, do not constitute a warranty claim. Normal wear and tear, in particular normal wear and tear of the IBC AeroFix, IBC AeroFlat, IBC TopFix 200 or IBC WallFix, 200 mounting systems due to use, does not constitute a warranty claim. Warranty performance In case of a warranty claim, IBC shall, in its sole discretion, deliver Customer either a defect-free part, repair the defect part or reimburse the fair value of the defect part to the Customer. The expenses necessary for fulfilling the",
+        "score": 0.78054583,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.ibc-solar.com/fileadmin/redaktion/int/Installers/Products/Warranty_IBC_SOLAR_AeroFix_TopFix200.pdf",
+        "title": "[PDF] Terms and conditions of warranty - IBC Solar",
+        "snippet": "Term of Warranty The term of warranty (”Warranty Period“) given to the Customer by IBC for the assembly systems IBC AeroFix or TopFix 200, as applicable, shall be 10 years and commences with the date of the invoice issued by the installer or seller to the first Customer. In any case, the warranty period starts latest six (6) months after delivery by IBC to their buyer. Warranty conditions and warranty For the duration of the Warranty Period, IBC guarantees Customer that each of the assembly [...] Version 17.01, last update: July 2017 1 IBC AeroFix / TopFix 200 IBC SOLAR AG, Am Hochgericht 10, 96231 Bad Staffelstein, Germany Tel. +49 (0)9573/ 92 24 0; Fax +49 (0)9573/ 92 24 111 hereinafter referred to as “IBC”, provides for each of the assembly systems IBC AeroFix and TopFix 200 the following worldwide product warranty (“Warranty”): Product warranty The legal rights of rectification, withdrawal, reduction or compensation in the event of defects in the assembly system IBC AeroFix or TopFix [...] Warranty Claims The entity entitled to warranty must submit a warranty claim to the respective retailer or installer of the assembly systems IBC AeroFix or TopFix 200, as the case may be, and enclose the original invoice to identify the delivery date immediately after discovering the warranty case, however, at the latest three months after the entity entitled to warranty has become aware of the facts that justify a warranty claim or if the entity did not become aware of the facts due to gross",
+        "score": 0.76490957,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.ibc-solar.com/fileadmin/redaktion/int/Installers/Products/Warranty-IBC-Solar-modules-EU_EN.pdf",
+        "title": "[PDF] Warranty Statement - ibc solar",
+        "snippet": "As of: 15. October 2024 Page 1 from 5 Warranty Statement (Valid within the EU, Albania, Andorra, Armenia, Azerbaijan, Bosnia and Herzegovina, Georgia, Ice-land, Kazakhstan, Kosovo, Liechtenstein, Macedonia, Moldova, Monaco, Montenegro, Norway, San Marino, Switzerland, Serbia, Turkey, Ukraine, Vatican City, Belarus and also Japan) IBC SOLAR AG Am Hochgericht 10 96231 Bad Staffelstein, Germany P +49 (0)9573/92 24 0 F +49 (0)9573/92 24 111 (hereinafter referred to as ´IBC SOLAR´) as the [...] time of the warranty event. Only the Beneficiary shall be entitled to assert any warranty event. That Warranty applies to a Module IBC SOLAR delivered as from January 1st, 2024, until the concerned Module forms part of the photovoltaic system in which it had been initially installed. Any Module that was removed and reinstalled is not covered by that Warranty, unless it was removed and reinstalled as part of repair work (in terms of section 5.). Note: This Warranty excludes the junction box [...] SOLAR. As of: 15. October 2024 Page 2 from 5 3. Product Warranty IBC SOLAR grants a Product Warranty for quality in material and processing of the Module. For glass foil modules (Example: IBC MonoSol xxx MS10-HC-N): In the event a defect due to material or manufacturing fault(s) occurs within the first fifteen (15) years and that certain defect impairs Module's functionality more than trivial and does not simultaneously constitute claim(s) relating to the Power Warranty as defined in Section 4.",
+        "score": 0.75464433,
+        "bucket": "other"
+      },
+      {
+        "url": "https://portal.segensolar.de/reseller/docs/210315-Esdec-Warranty-Conditions-ENG.pdf",
+        "title": "[PDF] Warranty Conditions",
+        "snippet": "ClickFit/FlatFix solar rooftop mounting products as provided by Esdec under the Sales Agreement (the \"Products\") shall, for a period of 20 (twenty) years from the date of delivery by Esdec or such longer period as is demonstrably required under mandatory provisions of applicable law (the \"Warranty Period\"), be free from material deficiencies in materials and workmanship conform to their functional and technical specifications as set forth in the product documentation provided by Esdec in [...] damage due to chemical, electrical, electrolytic, corrosive or environmental influences (k) When the correct quantities or components have not been used as prescribed in the assembly instructions and calculators. When the building, roof, roof covering or construction is not suitable for installing solar panels with the Products. [...] limitation) hail, lightning, storm, flood, explosions, fire, vandalism, extreme wind speeds or temperatures, other extreme weather conditions, or any other events of force majeure as may be set out in the Sales Agreement or that may apply in accordance with applicable law. (j) In the absence of proper professional maintenance, non-compliance with the applicable installation and / or assembly instructions, incompetent, injudicious or improper use, normal wear and tear and aging, poor assembly,",
+        "score": 0.7163977,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.ibcboiler.com/wp-content/uploads/warranty/IBC-Warranty-HC-DC.pdf",
+        "title": "[PDF] 10 YEAR LIMITED WARRANTY – HC & DC SERIES BOILERS",
+        "snippet": "“FIVE YEAR LIMITED WARRANTY – All Parts” Within five years of the original installation of the boiler and registration of the installation with IBC; the Five Year Limited Warranty covers repair or replacement of all parts found to suffer from manufacturing defect.\nPage 1 of 2 1. [...] Summary of Coverage IBC Technologies Inc., warrants each boiler to be free from defects in material and workmanship, and will provide redress when such defects are proven, in accordance with the following terms, conditions and periods;  HC & DC Series Warrranty 120-228B Mixed residential / non-residential / multi-family residential or changed to any of these from single-family residential. [...] Legal Rights No other party is authorized to make any other warranties on IBC’s behalf. No other warranty expressed or implied (including warranty of merchantability and warranty of fitness for a particular purpose) is made. This warranty does not extend to liability for incidentals, special or consequential damage. All disputes, claims or demands arising from or relating to the Warranty, or from the terms and conditions herein contained and all claims, demands, rights or liabilities arising",
+        "score": 0.62742686,
+        "bucket": "other"
+      }
+    ]
+  }
+]

@@ -1,7 +1,6 @@
 import fs from 'fs';
 import path from 'path';
 import { cacheLogoForManufacturer, probeAndCacheLogo } from './logoCache.js';
-import { fetchManufacturerData } from './firecrawlClient.js';
 import { hasManualScraper, runManualScraper } from './manualScrapers/index.js';
 import { geminiProvider, isGeminiConfigured } from './providers/geminiProvider.js';
 import { analyseAssetCandidates } from './assetGuardian.js';
@@ -12,6 +11,7 @@ import {
   saveAssetWhitelist
 } from './assetWhitelist.js';
 import { resolveManufacturerSeed } from '../config/manufacturers.js';
+import { fetchProductDocuments } from './productSync/adapters/generic.js';
 
 const STORAGE_DIR = path.join(process.cwd(), 'server', 'storage');
 const LIVE_PRODUCTS_FILE = path.join(STORAGE_DIR, 'products.live.json');
@@ -68,6 +68,40 @@ function addUrlCandidates(target, values) {
     if (!trimmed) continue;
     target.add(trimmed);
   }
+}
+
+function filterManufacturerUrls(urls = [], manufacturer = {}) {
+  if (!Array.isArray(urls) || urls.length === 0) return [];
+  let manufacturerDomain = null;
+  try {
+    manufacturerDomain = new URL(manufacturer.website).hostname.replace(/^www\./, '').toLowerCase();
+  } catch (err) {
+    manufacturerDomain = null;
+  }
+
+  const slugVariants = new Set();
+  if (typeof manufacturer.slug === 'string' && manufacturer.slug.trim()) {
+    const slugLower = manufacturer.slug.toLowerCase();
+    slugVariants.add(slugLower);
+    slugVariants.add(slugLower.replace(/[^a-z0-9]/g, ''));
+  }
+  if (manufacturerDomain) {
+    slugVariants.add(manufacturerDomain);
+  }
+
+  return urls.filter((url) => {
+    if (!url || typeof url !== 'string') return false;
+    const value = url.toLowerCase();
+    if (manufacturerDomain && value.includes(manufacturerDomain)) {
+      return true;
+    }
+    for (const slug of slugVariants) {
+      if (slug && slug.length >= 3 && value.includes(slug)) {
+        return true;
+      }
+    }
+    return false;
+  });
 }
 
 function isConnectivityError(err) {
@@ -203,7 +237,7 @@ export async function runProductSync({ manufacturers = [] } = {}) {
         products: Array.isArray(entry.products) ? entry.products : [],
         datasheetCandidates: Array.isArray(entry.datasheetCandidates) ? entry.datasheetCandidates : [],
         logoUrl: entry.logoUrl ?? null,
-        providersUsed: dedupeProviders(entry.providersUsed, ['firecrawl-mcp']),
+  providersUsed: dedupeProviders(entry.providersUsed),
         syncMeta: entry.syncMeta ?? null
       };
     })
@@ -234,11 +268,9 @@ export async function runProductSync({ manufacturers = [] } = {}) {
     );
   }
 
-  const firecrawlEnabled = process.env.DISABLE_FIRECRAWL === 'true' ? false : true;
+  const tavilyEnabled = process.env.DISABLE_TAVILY === 'true' ? false : true;
   const geminiEnabled = isGeminiConfigured();
   const startedAt = Date.now();
-  let firecrawlGlobalError = null;
-  let firecrawlGlobalErrorCount = 0;
   const globalProviders = new Set();
 
   const enrichedManufacturers = await mapWithConcurrency(limitedManufacturers, async (manufacturer) => {
@@ -257,14 +289,18 @@ export async function runProductSync({ manufacturers = [] } = {}) {
         ? previous.datasheetCandidates
         : manufacturer.datasheetCandidates,
       logoUrl: previous?.logoUrl ?? manufacturer.logoUrl ?? null,
-      providersUsed: dedupeProviders(previous?.providersUsed, manufacturer.providersUsed, ['firecrawl-mcp'])
+  providersUsed: dedupeProviders(previous?.providersUsed, manufacturer.providersUsed)
     };
+
+    if (Array.isArray(base.providersUsed)) {
+      base.providersUsed = base.providersUsed.filter((provider) => provider && provider !== 'firecrawl-mcp');
+    }
 
     base.lastSyncedAt = new Date().toISOString();
     base.syncMeta = {
       ...(previous?.syncMeta ?? {}),
-      lastFirecrawlRun: base.lastSyncedAt,
-      firecrawlEnabled,
+      lastSyncRun: base.lastSyncedAt,
+      tavilyEnabled,
       manufacturerLimit,
       manufacturerLimitReason
     };
@@ -273,15 +309,22 @@ export async function runProductSync({ manufacturers = [] } = {}) {
     const logoCandidateSet = new Set();
     const datasheetCandidateSet = new Set();
 
-    addUrlCandidates(datasheetCandidateSet, base.datasheetCandidates);
+    const syncDatasheetCandidates = () => {
+      const filtered = filterManufacturerUrls(Array.from(datasheetCandidateSet), base);
+      datasheetCandidateSet.clear();
+      addUrlCandidates(datasheetCandidateSet, filtered);
+      base.datasheetCandidates = filtered;
+    };
+
+    addUrlCandidates(datasheetCandidateSet, filterManufacturerUrls(base.datasheetCandidates, base));
     if (typeof base.logoUrl === 'string' && base.logoUrl.startsWith('http')) {
       addUrlCandidates(logoCandidateSet, [base.logoUrl]);
     }
 
     addUrlCandidates(logoCandidateSet, manufacturerWhitelist.logos);
-    addUrlCandidates(datasheetCandidateSet, manufacturerWhitelist.datasheets);
+    addUrlCandidates(datasheetCandidateSet, filterManufacturerUrls(manufacturerWhitelist.datasheets, base));
 
-    base.datasheetCandidates = Array.from(datasheetCandidateSet);
+    syncDatasheetCandidates();
 
     base.syncMeta = {
       ...base.syncMeta,
@@ -290,86 +333,80 @@ export async function runProductSync({ manufacturers = [] } = {}) {
         datasheetCount: manufacturerWhitelist.datasheets.length
       }
     };
+    let tavilySucceeded = false;
+    let fallbackNeeded = !tavilyEnabled;
+    let manualScraperSucceeded = false;
 
-  let firecrawlSucceeded = false;
-  let fallbackNeeded = !firecrawlEnabled;
-  let manualScraperSucceeded = false;
+    if (tavilyEnabled) {
+      const validProducts = Array.isArray(base.products) ? base.products : [];
 
-    if (firecrawlEnabled && base.website) {
-      if (firecrawlGlobalError) {
+      for (const product of validProducts) {
+        const productName = product?.name ?? '';
+        if (!productName || /beispiel/i.test(productName)) {
+          continue;
+        }
+
+        try {
+          const docs = await fetchProductDocuments(productName, base.name || base.slug, base.website);
+          if (!docs) continue;
+
+          const nextDatasheets = Array.isArray(docs.datasheetUrls) ? docs.datasheetUrls : [];
+          const nextManuals = Array.isArray(docs.installationManualUrls) ? docs.installationManualUrls : [];
+          const nextAdditional = Array.isArray(docs.additionalDocumentUrls)
+            ? docs.additionalDocumentUrls
+            : [];
+          const nextDocuments = Array.isArray(docs.documents) ? docs.documents : [];
+
+          product.datasheetUrls = nextDatasheets;
+          product.installationManualUrls = nextManuals;
+          product.additionalDocumentUrls = nextAdditional;
+          product.documents = nextDocuments;
+
+          if (nextDatasheets.length > 0) {
+            addUrlCandidates(datasheetCandidateSet, nextDatasheets);
+            syncDatasheetCandidates();
+          }
+
+          if (nextDatasheets.length || nextManuals.length || nextAdditional.length || nextDocuments.length) {
+            tavilySucceeded = true;
+          }
+        } catch (tavilyErr) {
+          console.warn('[productSync] Tavily enrichment failed for', base.slug, productName, tavilyErr?.message ?? tavilyErr);
+          base.syncMeta = {
+            ...base.syncMeta,
+            tavilyError: tavilyErr?.message ?? String(tavilyErr)
+          };
+        }
+      }
+
+      if (!tavilySucceeded && (!Array.isArray(base.products) || base.products.length === 0)) {
+        try {
+          const docs = await fetchProductDocuments(base.name || base.slug, base.name || base.slug, base.website);
+          if (docs?.datasheetUrls?.length) {
+            addUrlCandidates(datasheetCandidateSet, docs.datasheetUrls);
+            syncDatasheetCandidates();
+            tavilySucceeded = true;
+          }
+        } catch (generalErr) {
+          console.warn('[productSync] Tavily manufacturer-level search failed for', base.slug, generalErr?.message ?? generalErr);
+          base.syncMeta = {
+            ...base.syncMeta,
+            tavilyError: generalErr?.message ?? String(generalErr)
+          };
+        }
+      }
+
+      if (tavilySucceeded) {
+        fallbackNeeded = false;
+        base.providersUsed = dedupeProviders(base.providersUsed, ['tavily']);
         base.syncMeta = {
           ...base.syncMeta,
-          firecrawlSkippedDueToGlobalError: true
+          tavilyUsed: true
         };
-        fallbackNeeded = true;
-      } else {
-        const firecrawlStarted = Date.now();
-        try {
-          const data = await fetchManufacturerData({ slug: base.slug, name: base.name, website: base.website });
-          base.syncMeta = {
-            ...base.syncMeta,
-            firecrawlDurationMs: Date.now() - firecrawlStarted
-          };
-
-          if (Array.isArray(data?.products) && data.products.length > 0) {
-            base.products = data.products;
-            firecrawlSucceeded = true;
-          }
-
-          if (Array.isArray(data?.datasheetCandidates) && data.datasheetCandidates.length > 0) {
-            addUrlCandidates(datasheetCandidateSet, data.datasheetCandidates);
-            base.datasheetCandidates = Array.from(datasheetCandidateSet);
-            firecrawlSucceeded = true;
-          }
-
-          if (Array.isArray(data?.logoCandidates) && data.logoCandidates.length > 0) {
-            addUrlCandidates(logoCandidateSet, data.logoCandidates);
-            for (const candidate of data.logoCandidates) {
-              if (!candidate) continue;
-              try {
-                const local = await cacheLogoForManufacturer(base.slug, candidate);
-                if (local) {
-                  base.logoUrl = local;
-                  break;
-                }
-              } catch (logoErr) {
-                console.warn('[productSync] Failed to cache logo candidate for', base.slug, logoErr.message || logoErr);
-              }
-            }
-          }
-
-          fallbackNeeded = !firecrawlSucceeded;
-        } catch (err) {
-          base.syncMeta = {
-            ...base.syncMeta,
-            firecrawlError: err?.message ?? String(err)
-          };
-          const status = err?.status || err?.body?.status || null;
-          const isAuthError = status === 401 || status === 403 || /\b401\b|UNAUTHORIZED/i.test(err?.message || '');
-          if (isAuthError) {
-            firecrawlGlobalError = err;
-            firecrawlGlobalErrorCount += 1;
-            fallbackNeeded = true;
-            if (firecrawlGlobalErrorCount === 1) {
-              console.error('[productSync] Firecrawl API verweigert den Zugriff (401/403). Breche weitere Anfragen ab.');
-            }
-          } else if (isConnectivityError(err)) {
-            firecrawlGlobalError = err;
-            firecrawlGlobalErrorCount += 1;
-            fallbackNeeded = true;
-            if (firecrawlGlobalErrorCount === 1) {
-              console.error(
-                '[productSync] Firecrawl nicht erreichbar. Überspringe weitere Firecrawl-Anfragen. Error:',
-                err?.message ?? err
-              );
-            }
-          }
-          console.warn('[productSync] Firecrawl enrichment failed for', base.slug, err?.message ?? err);
-        }
       }
     }
 
-    if (fallbackNeeded && hasManualScraper(base.slug)) {
+  if (fallbackNeeded && hasManualScraper(base.slug)) {
       const manualStarted = Date.now();
       try {
         const manual = await runManualScraper({ slug: base.slug, name: base.name, website: base.website });
@@ -389,8 +426,8 @@ export async function runProductSync({ manufacturers = [] } = {}) {
         }
 
         if (Array.isArray(manual?.datasheetCandidates) && manual.datasheetCandidates.length > 0) {
-          addUrlCandidates(datasheetCandidateSet, manual.datasheetCandidates);
-          base.datasheetCandidates = Array.from(datasheetCandidateSet);
+          addUrlCandidates(datasheetCandidateSet, filterManufacturerUrls(manual.datasheetCandidates, base));
+          syncDatasheetCandidates();
           manualScraperSucceeded = true;
         }
 
@@ -437,8 +474,8 @@ export async function runProductSync({ manufacturers = [] } = {}) {
           base.products = ai.products;
         }
         if (Array.isArray(ai?.datasheetCandidates) && ai.datasheetCandidates.length > 0) {
-          addUrlCandidates(datasheetCandidateSet, ai.datasheetCandidates);
-          base.datasheetCandidates = Array.from(datasheetCandidateSet);
+          addUrlCandidates(datasheetCandidateSet, filterManufacturerUrls(ai.datasheetCandidates, base));
+          syncDatasheetCandidates();
         }
         if (Array.isArray(ai?.logoCandidates) && ai.logoCandidates.length > 0) {
           addUrlCandidates(logoCandidateSet, ai.logoCandidates);
@@ -464,6 +501,8 @@ export async function runProductSync({ manufacturers = [] } = {}) {
       }
     }
 
+    syncDatasheetCandidates();
+
     if (logoCandidateSet.size || datasheetCandidateSet.size) {
       try {
         const guardianResult = await analyseAssetCandidates(
@@ -481,9 +520,12 @@ export async function runProductSync({ manufacturers = [] } = {}) {
         };
 
         if (Array.isArray(guardianResult?.datasheets) && guardianResult.datasheets.length > 0) {
-          base.datasheetCandidates = guardianResult.datasheets;
+          const filteredGuardian = filterManufacturerUrls(guardianResult.datasheets, base);
+          base.datasheetCandidates = filteredGuardian;
+          datasheetCandidateSet.clear();
+          addUrlCandidates(datasheetCandidateSet, filteredGuardian);
         } else {
-          base.datasheetCandidates = Array.from(datasheetCandidateSet);
+          syncDatasheetCandidates();
         }
 
         let cachedFrom = null;
@@ -570,11 +612,11 @@ export async function runProductSync({ manufacturers = [] } = {}) {
   }
 
   if (!globalProviders.size) {
-    globalProviders.add('firecrawl-mcp');
+    globalProviders.add(tavilyEnabled ? 'tavily' : 'manual-scraper');
   }
 
-  const firecrawlUsedCount = enrichedManufacturers.filter((m) =>
-    Array.isArray(m?.providersUsed) && m.providersUsed.includes('firecrawl-mcp')
+  const tavilyUsedCount = enrichedManufacturers.filter((m) =>
+    Array.isArray(m?.providersUsed) && m.providersUsed.includes('tavily')
   ).length;
   const geminiUsedCount = enrichedManufacturers.filter((m) =>
     Array.isArray(m?.providersUsed) && m.providersUsed.includes('gemini')
@@ -582,18 +624,16 @@ export async function runProductSync({ manufacturers = [] } = {}) {
 
   const nextSnapshot = {
     generatedAt: new Date().toISOString(),
-    source: 'firecrawl-mcp',
+    source: tavilyEnabled ? 'tavily-mcp' : 'manual-scraper',
     providers: Array.from(globalProviders),
     syncMeta: {
       startedAt: new Date(startedAt).toISOString(),
       durationMs: Date.now() - startedAt,
-      firecrawlEnabled,
+      tavilyEnabled,
       geminiEnabled,
-      firecrawlError: firecrawlGlobalError ? firecrawlGlobalError.message ?? String(firecrawlGlobalError) : null,
-      firecrawlUnavailable: Boolean(firecrawlGlobalError),
       manufacturerCount: enrichedManufacturers.length,
       concurrency: DEFAULT_CONCURRENCY,
-      firecrawlUsedCount,
+      tavilyUsedCount,
       geminiUsedCount,
       manufacturerLimit,
       manufacturerLimitReason

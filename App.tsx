@@ -601,7 +601,7 @@ const App: React.FC = () => {
         <Suspense
           fallback={
             <div className="py-32 flex justify-center">
-              <div className="w-12 h-12 border-4 border-green-500 border-t-transparent rounded-full animate-spin" aria-label="Lade Produkte" />
+              <div className="w-12 h-12 border-4 border-green-500 border-t-transparent rounded-full animate-spin" role="status" aria-label="Lade Produkte" />
             </div>
           }
         >

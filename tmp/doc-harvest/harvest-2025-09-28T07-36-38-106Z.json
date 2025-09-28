@@ -1,0 +1,706 @@
+[
+  {
+    "manufacturer": "abb",
+    "product": "ABB PVS-100-TL",
+    "candidates": [
+      {
+        "url": "https://library.e.abb.com/public/96677d94e4f246ae9e792586be477a34/PVP_INVERTERS_Warranty_UAP.01255_revC.pdf",
+        "title": "Warranty conditions STANDARD, ASSURE and accessories",
+        "snippet": "This factory warranty is freely provided by ABB and does not prejudice in any way the inverter’s conditions of sale, including any warranty provided by a third party entity from which it has been purchased. [...] The STANDARD and accessory warranty programs are applicable in other installation countries.\nDuration of warranty The default warranty period for the STANDARD, ASSURE and accessories integrated into the inverter is 5 years starting from the installation/commissioning date but in any case not longer than +66 months from manufacturing date.\nThe default warranty period for accessories sold separately is 2 years starting from the manufacturing date. [...] −Non observance of documentation, including preventative maintenance − −Force majeure, including but not restricted to lightning, power surges, natural disasters and fires − −Returned inverter shows no fault after analysis − −Improper or no application of safety regulations − −Utilization in combination with equipment, items or materials not permitted by ABB documentation The warranty exclusion may be discovered by the warranty holder, by the technician in the field or during the repair of the",
+        "score": 0.6266047,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "abb",
+    "product": "ABB TRIO-20.0-TL-OUTD",
+    "candidates": [
+      {
+        "url": "https://library.e.abb.com/public/0532ff447707475da241d939627ff7dd/Addendum_Product-Manual-and-QIG_TRIO-20.0-27.6_NA.pdf?x-sign=INEGJpR8VSrFf4FupTcHRMTTuVBN7pCtReAUd2BGSG13kuswaa+pQGiuaBYiVYwW",
+        "title": "[PDF] Addendum - product manual and quick installation guide (QIG) - ABB",
+        "snippet": "It is to be used together with the current. TRIO-20.0/27.6 product manual (BCG.00627.2_AB NA) or the Quick installation guide (BCM.00202.2_Rev AB), both located",
+        "score": 0.96554,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://library.e.abb.com/public/9ddffa465aa146bfa43bd0854abbcc81/TRIO-20.0-27.6-TL-US_Product_Manual.pdf?x-sign=bZY+m5OkAuRNgJzQObNZEfedw1KHd0tXJIoBZRy8OTH90IUbKk5fCBsU8QyaCszh",
+        "title": "[PDF] Product manual TRIO-20.0/27.6-TL-US (20.0 to 27.6 kW) - ABB",
+        "snippet": "This inverter is designed for outdoor use, but can be used indoors if installed to specified environmental and mounting parameters stated in this manual, and",
+        "score": 0.98578,
+        "bucket": "other"
+      },
+      {
+        "url": "https://library.e.abb.com/public/96677d94e4f246ae9e792586be477a34/PVP_INVERTERS_Warranty_UAP.01255_revC.pdf",
+        "title": "[PDF] ABB solar inverters Warranty conditions STANDARD, ASSURE and ...",
+        "snippet": "STANDARD, ASSURE and Accessories Table 1: details of the Service terms and conditions Definition Inverter Accessories STANDARD Warranty ASSURE Warranty ACCESSORIES Warranty Default duration (years) 5 5 2 when sold separately 5 when integrated in Inverter Extended duration (total years) Must be purchased when the inverter is purchased 10 10 No extension Repair material and labor costs in repair center Included Included Included Removal and reinstall costs (See conditions in description) Not included Included Not included Parameter setup of replacement product Not included Included Not included Material freight costs returning defective unit (to location defined by ABB) Not included Included Not included Material freight costs of repaired (or replacement) unit to customer Not included Included Not included Advanced replacement unit (where technically possible, the alternative is on-site repair) Not included Included Not included Technical hotline A list of countries offering hotline is available on ABB Web site Included Ask your local ABB Representative for covered countries Effective availability (percentage) Not included Not included Not applicable Preventive maintenance Not included Not included Not included Ready to ship indication After acceptance of claim.",
+        "score": 0.98523,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "abb",
+    "product": "ABB TRIO-5.8-TL-OUTD",
+    "candidates": [
+      {
+        "url": "https://library.e.abb.com/public/66559a0e4ccf4563b23d0777bb9b9f72/Modbus_RTU_registers_map_for_TRIO_8.5(5.8)_TL_OUTD.pdf?x-sign=K110FZ1zDySb43+vTLpiyU0Np3Tv/sX/n/gHcG+W5mEwyum82wOppy+o2m2esJWM",
+        "title": "[PDF] Modbus RTU registers map for TRIO - ABB",
+        "snippet": "The main purpose of this document is to describe the Modbus RTU registers map for the monitoring and control of the TRIO over a RS-485 serial line. 2 Peripheral",
+        "score": 0.95251,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://library.e.abb.com/public/96677d94e4f246ae9e792586be477a34/PVP_INVERTERS_Warranty_UAP.01255_revC.pdf",
+        "title": "[PDF] ABB solar inverters Warranty conditions STANDARD, ASSURE and ...",
+        "snippet": "STANDARD, ASSURE and Accessories Table 1: details of the Service terms and conditions Definition Inverter Accessories STANDARD Warranty ASSURE Warranty ACCESSORIES Warranty Default duration (years) 5 5 2 when sold separately 5 when integrated in Inverter Extended duration (total years) Must be purchased when the inverter is purchased 10 10 No extension Repair material and labor costs in repair center Included Included Included Removal and reinstall costs (See conditions in description) Not included Included Not included Parameter setup of replacement product Not included Included Not included Material freight costs returning defective unit (to location defined by ABB) Not included Included Not included Material freight costs of repaired (or replacement) unit to customer Not included Included Not included Advanced replacement unit (where technically possible, the alternative is on-site repair) Not included Included Not included Technical hotline A list of countries offering hotline is available on ABB Web site Included Ask your local ABB Representative for covered countries Effective availability (percentage) Not included Not included Not applicable Preventive maintenance Not included Not included Not included Ready to ship indication After acceptance of claim.",
+        "score": 0.98544,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "abb",
+    "product": "ABB TRIO-50.0-TL-OUTD",
+    "candidates": [
+      {
+        "url": "https://library.e.abb.com/public/93b2934d819145da9d25ec33289b2004/TRIO-50.0-TL-OUTD-Product manual EN-RevB(M000030BG).pdf?x-sign=5Cjehl1N5sRp45jME2JGSKrTtU3aPRcWQ4Nwx1uiw4pqv80feTIy6mhv9zfI4Ct9",
+        "title": "Product manual TRIO-50.0-TL-OUTD (50 kW)",
+        "snippet": "This chapter contains information about the models,detailsof the equipment,characteristicsandtechnical data, overall dimensions and equipment",
+        "score": 0.69573146,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://library.e.abb.com/public/93b2934d819145da9d25ec33289b2004/TRIO-50.0-TL-OUTD-Product%20manual%20EN-RevB%28M000030BG%29.pdf?x-sign=5Cjehl1N5sRp45jME2JGSKrTtU3aPRcWQ4Nwx1uiw4pqv80feTIy6mhv9zfI4Ct9",
+        "title": "[PDF] Product manual TRIO-50.0-TL-OUTD (50 kW) - ABB",
+        "snippet": "In addition to what is explained in this guide, the safety and installation information provided in the installation manual must be read and followed. The",
+        "score": 0.98537,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://library.e.abb.com/public/96677d94e4f246ae9e792586be477a34/PVP_INVERTERS_Warranty_UAP.01255_revC.pdf",
+        "title": "[PDF] ABB solar inverters Warranty conditions STANDARD, ASSURE and ...",
+        "snippet": "This factory warranty is freely provided by ABB and does not prejudice in any way the inverter’s conditions of sale, including any warranty provided by a third party entity from which it has been purchased. [...] The STANDARD and accessory warranty programs are applicable in other installation countries.\nDuration of warranty The default warranty period for the STANDARD, ASSURE and accessories integrated into the inverter is 5 years starting from the installation/commissioning date but in any case not longer than +66 months from manufacturing date.\nThe default warranty period for accessories sold separately is 2 years starting from the manufacturing date. [...] −Non observance of documentation, including preventative maintenance − −Force majeure, including but not restricted to lightning, power surges, natural disasters and fires − −Returned inverter shows no fault after analysis − −Improper or no application of safety regulations − −Utilization in combination with equipment, items or materials not permitted by ABB documentation The warranty exclusion may be discovered by the warranty holder, by the technician in the field or during the repair of the",
+        "score": 0.61972505,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "abb",
+    "product": "ABB UNO-DM-3.3-TL-PLUS",
+    "candidates": [
+      {
+        "url": "https://library.e.abb.com/public/9300aae6404f4cf88177cad3a380d6d3/UNO-DM-3.3-3.8-4.6-5.0-PLUS_BCD.00650_US_RevF.pdf?x-sign=/FAvcFQWsG+skZw+6cC3K6Rbk6nvlfagMXZJc1UqV2JrMbUHrB+/g+iudMhuTgI5",
+        "title": "[PDF] — ABB string inverters UNO-DM-3.3/3.8/4.6/5.0-TL-PLUS-US 3.3 to ...",
+        "snippet": "The new UNO-DM-PLUS single- phase inverter family, with power ratings from 3.3 to 5.0 kW, is the optimal solution for residential installations. One size fits",
+        "score": 0.98134,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://new.abb.com/docs/librariesprovider117/default-document-library/solar-inverters/uno-dm-1-2-2-0-3-3-4-0-4-6-5-0-plus_bcd-00647_hun_revf_print.pdf?sfvrsn=5fbad013_2",
+        "title": "[PDF] — ABB string inverterek UNO-DM-1.2/2.0/3.3/4.0/4.6/5.0-TL-PLUS ...",
+        "snippet": "UNO-DM-3.3-TL-PLUS-B. DC kapcsolóval. UNO-DM-1.2-TL-PLUS-SB. UNO-DM-2.0-TL-PLUS ... A termékleírásban nem feltüntetett jellemzőket nem tartalmazza a termék. —.",
+        "score": 0.95182,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://library.e.abb.com/public/96677d94e4f246ae9e792586be477a34/PVP_INVERTERS_Warranty_UAP.01255_revC.pdf",
+        "title": "[PDF] ABB solar inverters Warranty conditions STANDARD, ASSURE and ...",
+        "snippet": "This factory warranty is freely provided by ABB and does not prejudice in any way the inverter’s conditions of sale, including any warranty provided by a third party entity from which it has been purchased. [...] The STANDARD and accessory warranty programs are applicable in other installation countries.\nDuration of warranty The default warranty period for the STANDARD, ASSURE and accessories integrated into the inverter is 5 years starting from the installation/commissioning date but in any case not longer than +66 months from manufacturing date.\nThe default warranty period for accessories sold separately is 2 years starting from the manufacturing date. [...] ABB solar inverters Warranty conditions STANDARD, ASSURE and accessories Valid from: August 1st 2016 Applicable products These warranty terms and conditions are applicable for the following ABB inverters: single and three phase string inverters, PRO, CENTRAL PLUS, ULTRA and accessories. Concerning the REACT product, these warranty terms and conditions are applicable only for REACT-UNO. REACT-BATT has a dedicated warranty T&C.",
+        "score": 0.66464967,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "alumero",
+    "product": "Alumero Compact",
+    "candidates": [
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/68106bda48460e8b171b78b0_Katalog_ALUMERO_DE_EN_2025_WEB.pdf",
+        "title": "[PDF] KATALOG PV MONTAGE SYSTEME",
+        "snippet": "(Schraubverbindung direkt in das Trapezblech) Fastening 4 pcs. drilling screws (direct connection into the trapezoidal sheet ) Module Neigung Dachparallel Module Inclination Parallel to the roof Ausrichtung Vertikal und horizontal Orientation Vertical and horizontal Abmessungen Beliebig Dimensions Any Feldgröße Max. 12 Meter in Modul-Klemmrichtung Field size Max. 12 meters in module clamping direction Lasten Wind Berechnung gemäß DIN EN 1991-1-3:2010-12 mittels ALUMERO Solar.Pro.Tool Loads Wind [...] (Schraubverbindung direkt in das Trapezblech) Fastening 4 pcs. drilling screws (direct connection into the trapezoidal sheet) Module Neigung Dachparallel Module Inclination Parallel to the roof Ausrichtung Vertikal und horizontal Orientation Vertical and horizontal Abmessungen Beliebig Dimensions Any Feldgröße Max. 12 Meter in Modulklemmrichtung Field size Max. 12 Meters in module clamping direction Lasten Wind Berechnung gemäß DIN EN 1991-1-3:2010-12 mittels ALUMERO Solar.Pro.Tool Loads Wind [...] EN 1991-1-4:2010-12 using ALUMERO Solar.Pro.Tool Gebäudehöhe ≤ 25 m Building height ≤ 25 m Bauseitige Anforderungen Statische Tragfähigkeit der Dachkonstruktion bzw. des Gebäudes sind bauseitig sicherzustellen On-site requirements The static load-bearing capacity of the roof structure or the building must be ensured on site Material Tragende Komponenten aus Aluminium EN AW 6063 T66; Edelstahl V2A; Kleinteile aus rostfreiem Stahl A2-70; EPDM Materials Supporting components made of aluminium EN",
+        "score": 0.60049355,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/683fda2d2aa1aa61879995f5_ALUMERO%20Datasheet%20easyBOLT.pdf",
+        "title": "[PDF] easyBOLT",
+        "snippet": "areas F and G can be used in accordance with EN 1991-1-4 Module orientation: Horizontal and vertical Module dimensions: Any length and width Max. Module field size: 12 metres in rail direction Max. Snow/wind loads: are determined on a project-specific basis using the Alumero.Pro.Tool online software Max. Building height: 25 metres (higher on request) Roof condition: The static load-bearing capacity of the roof structure and the building support structure must be ensured on site Materials: [...] ALUMERO Systematic Solutions GmbH Sonnenweg 1-2 | 5162 Seeham - Österreich T +436217 / 68 41 - 0 alumero@alumero.at | www.alumero.at Hanger bolt 2.1 Stockschraube 2.1 Produktnummer/Product No.: M10 × 200: 802403 M12 × 250: 802410 M12 × 300: 802404 Solar fastener 2.1 Solarbefestiger 2.1 Produktnummer/Product No.: 8,0 × 80 / 70: 802458 8,0 × 100 / 70: 802459 8,0 × 125 / 70: 802457 Profile connector 37 Profilverbinder 37 Produktnummer/Product No.: 802155 Profile connector 45 Profilverbinder 45 [...] Produktnummer/Product No.: 802609 Middle clamp Click 2.1 Mittelklemme Click 2.1 Produktnummer/Product No.: Blank/sheer: 802301C P1 30-45 Schwarz/black: 802391C P1 30-45 System components You can find further articles in our product catalogue or on our website: www.alumerogroup.eu",
+        "score": 0.51076555,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/683fda968c8fb6d4505d4dfa_ALUMERO%20Datasheet%20easyLIGHT%20E%3AW%2010.pdf",
+        "title": "[PDF] easyLIGHT",
+        "snippet": "System components You can find further articles in our product catalogue or on our website: www.alumerogroup.eu Project planning in 8 steps 1 2 3 4 5 6 7 Master data Roof data Roof measurement PV modules Structure CAD diagram Structural design ALUMERO Solar.Pro.Tool 8 Material list Building protection mat Bautenschutzmatte, PES Produktnummer/Product No.: 823037V Long ballast tray BT-1800 Ballastwanne lang BT-1800 Produktnummer/Product No.: 706001-1800 Long ballast tray BT-2050 Ballastwanne lang [...] Connector short with building protection mat Produktnummer/Product No.: 821032V-5 Verbinder lang mit Bautenschutzmatte Connector long with building protection mat Produktnummer/Product No.: 821031V-5 Starting support E/W 10 with building protection mat Anfangsfuß E/W 10 mit Bautenschutzmatte Produktnummer/Product No.: 821011V-5 ALUMERO Systematic Solutions GmbH Sonnenweg 1-2 | 5162 Seeham - Österreich T +436217 / 68 41 - 0 alumero@alumero.at | www.alumero.at [...] E/W 10 – 297 mm Flat roof E/W 10 – 464 mm 270 950 - 1150 78 10° 10° 303 69 112 2163 - 2568 2163 - 2568 88,5 69 88,5 230 59 182 270 10° 950 - 1150 245 10° 303 2331 - 2736 88,5 69 350 112 230 2331 - 2736 59 Technical drawings We give our customers the possibility of creating technical, project-related system designs incl. static calculation and project reports using our online software ALUMERO Solar.Pro.Tool.",
+        "score": 0.4836734,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/683fdaa3dceaf3f05a908ef0_ALUMERO%20Datasheet%20easyLIGHT%20S15.pdf",
+        "title": "[PDF] easyLIGHT",
+        "snippet": "mm: 706151-2300 Building protection mat PES Bautenschutzmatte, PES Produktnummer/Product No.: 823037V Allen screw Inbusschraube Produktnummer/Product No.: 800612 Edge clip Kantenclip Produktnummer/Product No.: 800707 ALUMERO Systematic Solutions GmbH Sonnenweg 1-2 | 5162 Seeham - Österreich T +436217 / 68 41 - 0 alumero@alumero.at | www.alumero.at [...] System components You can find further articles in our product catalogue or on our website: www.alumerogroup.eu Project planning in 8 steps 1 2 3 4 5 6 7 Master data Roof data Roof measurement PV modules Structure CAD diagram Structural design ALUMERO Solar.Pro.Tool 8 Material list Starting support S 15 with building protection mat Anfangsfuß S 15 mit Bautenschutzmatte Produktnummer/Product No.: 821511V-5 Ending support S 15 with building protection mat Endfuß S 15 mit Bautenschutzmatte [...] E M S | A L U M I U M P A R T S G U A R A N T E E D Q U A L I T Y Technical drawings Flat roof S15 – 571 mm Flat roof S15 – 790 mm 270 15° 950 - 1150 270 303 88,5 88,5 1486 - 1692 571 350 1486 - 1692 317 25° 60 950 - 1150 270 15° 270 677 303 88,5 88,5 1705 - 1911 790 18° 317 350 1705 - 1911 60 We give our customers the possibility of creating technical, project-related system designs incl. static calculation and project reports using our online software ALUMERO Solar.Pro.Tool.",
+        "score": 0.47066417,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/683eb26f0bd1aae726421966_ALUMERO%20Assembly%20Manual%20easyLIGHT_E%3AW.pdf",
+        "title": "[PDF] easyLIGHT",
+        "snippet": "The installer of the photovoltaic system must ensure before installation begins that the roof substructure provided is designed for the additional loads.\nThis manual describes the assembly processes for the according ALUMERO system, attachment in open terrain, and the installation of modules.\nThis ALUMERO mounting system is designed exclusively for mounting PV modules. Any other use is considered inappropriate. [...] The layout and planning of the mounting system should be done using the ALUMERO.PRO.TOOL software. Refer to the required materials, positions, and arrangement of individual components as detailed in the project report provided by ALUMERO.PRO.TOOL or your ALUMERO sales representative. This data has been statically calculated and are essential for the safe and proper functioning of the system. [...] 4 1 2 3 32 33 The following documents are required in addition to the installation instructions and for correct installation of the system: + Project report from ALUMERO.PRO.TOOL + Planning documents and drawings + The generally applicable document “Installation instructions” at  under “General” -> “Other” Please also inform yourself about the safety regulations of the other system components.\nPLEASE NOTE THE FOLLOWING ADDITIONAL DOCUMENTS!\n34 CONGRATULATIONS, WELL DONE!",
+        "score": 0.72814995,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/683da6730b5dd25a451fd0a3_ALUMERO%20Assembly%20Manual%20easyGROUND_E_W.pdf",
+        "title": "[PDF] easyGROUND",
+        "snippet": "The installer of the photovoltaic system must ensure before installation begins that the roof substructure provided is designed for the additional loads.\nThis manual describes the assembly processes for the according ALUMERO system, attachment in open terrain, and the installation of modules.\nThis ALUMERO mounting system is designed exclusively for mounting PV modules. Any other use is considered inappropriate. [...] EN SUSTAINABLE SOLAR SOLUTIONS easyGROUND East / West ASSEMBLY MANUAL Please read the safety instructions at the end of this manual before starting the installation. Make sure you are using the latest version of the assembly manual. The layout and planning of the mounting system should be done using the ALUMERO.PRO.TOOL software. Refer to the required materials, positions, and arrangement of individual components as detailed in the project report provided by ALUMERO.PRO.TOOL or your ALUMERO [...] 2 2 1 20 21 The following documents are required in addition to the installation instructions and for correct installation of the system: + Project report from ALUMERO.PRO.TOOL + Planning documents and drawings + The generally applicable document “Installation instructions” at  under “General” -> “Other” Please also inform yourself about the safety regulations of the other system components.\nPLEASE NOTE THE FOLLOWING ADDITIONAL DOCUMENTS!\n22 CONGRATULATIONS, WELL DONE!",
+        "score": 0.7230167,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://supplier-offers-media-production.s3.eu-central-1.amazonaws.com/fcad2cbc-6d13-11ef-a0fb-0a58a9feac02.pdf",
+        "title": "[PDF] AS 2.1 - AWS",
+        "snippet": "- ALUMERO shall under no circumstances accept liability for losses of performance suffered by the system, or damage to the system, whatever their nature.\nAll work carried out on the PV system should be conducted in full compliance with these instructions. Installation, commissioning, servicing and repair may only be conducted by specialists with recognised relevant certification and qualifications.\nPlease observe all current and applicable rules and safety advice. [...] Prior to commencement, technicians responsible for installing the photovoltaic system must ensure the existing roof construction is capable of bearing the additional loads and forces.\nThese installation instructions explain correct mounting procedures for ALUMERO tra-pezoidal sheet roofing components, how to attach them to the roof substructure and how to mount the modules. [...] 13 SAFETY INFORMATION AND WARNINGS The AS 2.1 pitched roof system is intended solely to carry PV modules. Any other applicati-ons of the system shall be considered examples of misuse. Correct use of this infrastructure also entails adherence to the guidelines and recommendations in these instructions. ALU-MERO shall accept no liability for damages resulting from neglect to adhere to the installa-tion manual, particularly in cases of incorrect use of the product.",
+        "score": 0.6543875,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/683da6730b5dd25a451fd0a3_ALUMERO Assembly Manual easyGROUND_E_W.pdf",
+        "title": "easyGROUND",
+        "snippet": "EN SUSTAINABLE SOLAR SOLUTIONS easyGROUND East / West ASSEMBLY MANUAL Please read the safety instructions at the end of this manual before starting the installation. Make sure you are using the latest version of the assembly manual. The layout and planning of the mounting system should be done using the ALUMERO.PRO.TOOL software. Refer to the required materials, positions, and arrangement of individual components as detailed in the project report provided by ALUMERO.PRO.TOOL or your ALUMERO [...] The installer of the photovoltaic system must ensure before installation begins that the roof substructure provided is designed for the additional loads.\nThis manual describes the assembly processes for the according ALUMERO system, attachment in open terrain, and the installation of modules.\nThis ALUMERO mounting system is designed exclusively for mounting PV modules. Any other use is considered inappropriate. [...] 2 2 1 20 21 The following documents are required in addition to the installation instructions and for correct installation of the system: + Project report from ALUMERO.PRO.TOOL + Planning documents and drawings + The generally applicable document “Installation instructions” at  under “General” -> “Other” Please also inform yourself about the safety regulations of the other system components.\nPLEASE NOTE THE FOLLOWING ADDITIONAL DOCUMENTS!\n22 CONGRATULATIONS, WELL DONE!",
+        "score": 0.629889,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.solarworld.co.za/wp-content/uploads/2020/01/ALUMEROSolar-MontagesystemeEN.pdf",
+        "title": "[PDF] SOLAR MOUNTING SYSTEMS",
+        "snippet": "ALUMERO's most economical pv mounting system for pitched roofs is quick and easy to install. The system AS 2.1 scores with structurally optimized profiles",
+        "score": 0.5737984,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.aluminium-exhibition.com/content/dam/sitebuilder/rxde/aluminium/downloads/ALU22_ePaper_Show_Guide.pdf.coredownload.631372161.pdf",
+        "title": "[PDF] SHOW GUIDE. ALUMINIUM 2022.",
+        "snippet": "groß genug, um einen hochwertigen Service zu bieten, klein genug, um sich um alle unsere Kunden zu kümmern. [...] you. Our community needs you more than ever! [...] auf der ALUMINIUM begrüßen zu dürfen. Unsere Community braucht Sie mehr denn je!",
+        "score": 0.2276929,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.presezziextrusiongroup.com/pdf/journal/presezzi_extrusion_group_journal_april_2015.pdf",
+        "title": "[PDF] Creating powerful synergies - Presezzi Extrusion Group",
+        "snippet": "Each furnace is designed and in a “ tailor made” way, so that the size of the furnace , the number and the size of the burners and the position of the heating zones are optimized for every single plant, to ensure the maximum efficiency and a heating accuracy. Especially, our installations stand out for their strength and reliability in time. The refractories are practically eternal, the rollers and the burners are guaranteed for many years, the costs in spare parts and ordinary and [...] Read the article on page 3 OUR TECHNOLOGIES Energy Saving System This patented system reduces the energy consumption of an extrusion press by 25 percent compared with a hydraulically operated press equipped with a conventional drive system. Read the article on page 9 www.presezziextrusiongroup.com Profile Packing Handling Storage www.pasrl.com April 2015 2 SPECIAL EDITION FOR ALUMINIUM MIDDLE EAST 2015 Read the article on page 1 Each component is built with the utmost care and is inspected by [...] and doors. They cover the whole process from aluminum melting and billet casting, to extrusion, machining, and finishing, with a yearly production of 40,000 tons. In it’s 30 year history, the company has always been quality oriented, emphasizing product innovation and customer service. They have a strong focus on the environment having achieved ISO 9001:2008 and ISO 14001:2004. The double chamber melting furnace was chosen to replace one of Indinvest’s existing single chamber furnaces to",
+        "score": 0.047306996,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://midsummer.ie/pdfs/alumero-warranty-mounting-systems-english.pdf",
+        "title": "[PDF] 10-year warranty",
+        "snippet": "the installation instructions supplied by us and, if applicable, separate design documents and structural engineering calculations apply to the installation. For products of the Alumero mounting systems made out of stainless steel and aluminium, we guarantee that their bearing capacity and functionality will maintain in the guarantee period if all previously named conditions will be met. Products made out of plastic and galvanized steel will not be considered and not included in this warranty. [...] MADE IN EUROPE on all alumero mounting systems 10-year warranty Alumero Systematic Solutions GmbH Sonnenweg 1 - 2 / 5164 Seeham T +43 (0) 6217 6841-0 alumero@alumero.com www.alumero.com The specified performance is restricted to the replacement of defective components if the damage is reported within the guarantee period. Any applicable legal warranty and liability claims shall remain unaffected by the guarantee. The gua-rantee is not applicable if the damage was caused by faulty installation, [...] ALUMERO Systematic Solutions GmbH guarantees the proper functioning and freedom from defects of the products delivered by Alumero.\nEdition may 2016 S O L A R M O U N T I N G S Y S T E M Q U A L I T Y W A R R A N T Y 10 YEARS Best Functionality",
+        "score": 0.7672197,
+        "bucket": "other"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/683da46194f083256006b361_Assembly%20notes.pdf",
+        "title": "[PDF] Assembly notes",
+        "snippet": "ALUMERO accepts no liability for damage and faults caused by: + Non-intended use + Use of non-certified components + Unauthorised modifications to the product + Improper work on and with the product + Installation errors + Disregarding the installation instructions or planning documents GARANTIE We guarantee that the aluminium components and profiles of the Alumero mounting systems will retain their load-bearing capacity and functionality within the guarantee period, provided that all the [...] EN SUSTAINABLE SOLAR SOLUTIONS Assembly notes ADDITIONAL DOCUMENT ABOUT THIS DOCUMENT This is a supplementary document to the installation instructions for ALUMERO systems and contains important information on installation, warranty, liability and safety, among other things. [...] Any other use of the ALUMERO mounting systems is considered improper use.\nLIABILITY AND WARRANTY In addition to this document, the installation instructions and the project report supplied with the pro-duct also form part of the product. The information, data and notes provided in the installation instruc-tions were up to date at the time of printing. No claims can be made for products already delivered on the basis of the information, illustrations and descriptions.",
+        "score": 0.6937432,
+        "bucket": "other"
+      },
+      {
+        "url": "https://szalontai.co.hu/_actual/export/image/alumero-portfolio.pdf",
+        "title": "[PDF] PRODUCT CATALOGUE SOLAR",
+        "snippet": "ALUMERO is specialised in the production of formwork technology and mounting frames for photovoltaic and solar power systems, outdoor ground-mounted solu- tions",
+        "score": 0.64773196,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.pv.de/media/product_advantages_alumero.pdf",
+        "title": "[PDF] ALUMERO Systematic Solutions - PV.de",
+        "snippet": "requirements according to EN-ISO 3834-2 ● ●Production of pitched roof solar mounting system AS 2.1 according to MCS (Multiple Chemical Sensitivity) ● ●10 years product warranty Product variety & innovation ● ●Aerocompact S and + for optimal mounting of framed modules on flat roofs ● ●Aerocompact G and G+ for fast installation of ground mounted systems ● ●Own technology competence centre ensures product optimisation and development ● ●Flexible solutions, thanks to the clever mix of high-quality [...] ALUMERO guarantees sustainable solutions, functional design and effective machine use – all from one hand and Made in Europe. [...] stainless steel and innovative aluminium components Service & customer satisfaction ● ●Only one contact person from design to assembly ● ●ALUMERO Solar.Pro.Tool allows for easy, effective and professional project design ● ●Comprehensive training material ● ●Best price-performance ratio S O L A R M O U N T I N G S Y S T E M Q U A L I T Y W A R R A N T Y 10 YEARS Best Functionality",
+        "score": 0.644248,
+        "bucket": "other"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/65d5b5275e745cb3f10286e3_Solar-Alumero-GESAMT-EN_WEB.pdf",
+        "title": "[PDF] solar systems & technologies",
+        "snippet": "ALUMERO is specialised in the production of formwork technology and mounting frames for photovoltaic and solar power systems, outdoor ground-mounted solu-tions, and ones for flat and for pitched roofs. Individual laminate and modular clamping technology and bespoke, non-standard solutions for customers are also well within our scope of expertise. [...] 31 80% recycled aluminium 20% primary aluminium from renewable energies Ø Worldwide Ø Europe Tons of CO2 per Ton of Aluminium 18 7 4 32 ALUMERO specialises in bespoke aluminium solutions, winning over customers as a manufacturer of superior-quality aluminium extrusion profiles, aluminium component groups and mechanical integ-ration, and as a system provider for several sectors, including solar and photovoltaic, living, industry and building - with ALUMERO. [...] ALUMERO turns innovative ideas into sustainable solutions based on functional design and effective machinery. We believe customers should be provided with a convincing solution that meets every requirement to the fullest extent.",
+        "score": 0.6133529,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "alumero",
+    "product": "Alumero FlatFix",
+    "candidates": [
+      {
+        "url": "https://szalontai.co.hu/_actual/export/image/alumero-portfolio.pdf",
+        "title": "[PDF] PRODUCT CATALOGUE SOLAR",
+        "snippet": "dimensions: 14,4 x 21,4 mm material: EN AW 6063 / T66 weight: 0,051 kg/Stk packaging: 10 pcs. per box / 600 pcs. per pallet artikel-nr: 16417 Cross connector 2.1 drawing number: 802200 A product-nr: 802200 surface: mill finish for Mounting profile 37, 45 and 65 inkl. Socket screw M8x30 with square nut inkl. Socket screw M8x16 with threaded plate 28x15 and Tuflock material: EN AW 6063 / T66; A2-70 weight: 0,092 kg/Stk packaging: 20 pcs. per box / 2.800 pcs. per pallet Alumero delivery program [...] material: EN AW 6063 / T66; A2-70 weight: 0,063 kg/Stk packaging: 50 pcs. per box / 4.950 pcs. per pallet Alumero delivery program printed on 23.08.2021 end of page 12 18 clamps artikel-nr: 17753 End clamp for fast mounting 30 drawing number: 802304-30V A product-nr: 802304-30V surface: mill finish L=50mm Incl. Opening-function for Frame height 30 mm for Mounting profiles with threaded plate channel M8 material: EN AW 6063 / T66; A2-70 weight: 0,046 kg/Stk packaging: 20 pcs. per box / 7.000 [...] drawing number: 802394-30V P1 product-nr: 802394-30V P1 surface: anodized E6/C35 L=50 mm Incl. Opening-function for Frame height 30 mm for Mounting profiles with threaded plate channel M8 material: EN AW 6063 / T66; A2-70 weight: 0,047 kg/Stk packaging: 20 Stk. pro Karton / 7.000 Stk. pro Palette Alumero delivery program printed on 23.08.2021 end of page 22 28 clamps artikel-nr: 21666 End clamp for fast mounting 32 black drawing number: 802394-32V product-nr: 802394-32V surface: anodized",
+        "score": 0.5775198,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.solarworld.co.za/wp-content/uploads/2020/01/ALUMEROSolar-MontagesystemeEN.pdf",
+        "title": "[PDF] SOLAR MOUNTING SYSTEMS",
+        "snippet": "surface: anodized E6/C35 L=50 mm Incl. Opening-function and clamping element For Frame height 33-50 mm and Mounting profiles with threaded plate channel M8 material: EN AW 6063 / T66; A2-70 weight: 0,060 kg/Stk packaging: 50 Stk. pro Karton / 4.950 Stk. pro Palette Alumero delivery program printed on 08.02.2018 end of page 20 23 PITCHED ROOF AS 2.1 PITCHED ROOF AS 2.1 LANDSCAPE 2.1 LAMINATE CLAMP AEROCOMPACT GROUND MOUNT SOLAR.PRO.TOOL AEROCOMPACT 2.1 SOLAR THERMAL ENERGY ALUMERO TECHNOLOGY [...] drawing number: 802304-43V B product-nr: 802304-43V surface: mill finish L=50 mm Incl. Opening-function for Frame height 43 mm for Mounting profiles with threaded plate channel M8 material: EN AW 6063 / T66; A2-70 weight: 0,052 kg/Stk packaging: 20 Stk. pro Karton / 7.000 Stk. pro Palette Alumero delivery program printed on 08.02.2018 end of page 16 19 PITCHED ROOF AS 2.1 PITCHED ROOF AS 2.1 LANDSCAPE 2.1 LAMINATE CLAMP AEROCOMPACT GROUND MOUNT SOLAR.PRO.TOOL AEROCOMPACT 2.1 SOLAR THERMAL [...] surface: mill finish L=50 mm Incl. Opening-function for Frame height 30 mm for Mounting profiles with threaded plate channel M8 material: EN AW 6063 / T66; A2-70 weight: 0,046 kg/Stk packaging: 20 Stk. pro Karton / 7.000 Stk. pro Palette Alumero delivery program printed on 08.02.2018 end of page 11 14 PITCHED ROOF AS 2.1 clamps artikel-nr: 21352 End clamp 30 with pin drawing number: 802304-30V P1 product-nr: 802304-30V P1 surface: mill finish L=50 mm Incl. Opening-function for Frame height 31mm",
+        "score": 0.57437146,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.pv.de/media/product_advantages_alumero.pdf",
+        "title": "[PDF] ALUMERO Systematic Solutions - PV.de",
+        "snippet": "ALUMERO guarantees sustainable solutions, functional design and effective machine use – all from one hand and Made in Europe. [...] Version: 10/2019 © EWS GmbH & Co. KG At a glance ...\nALUMERO Systematic Solutions Product advantages ALUMERO is a specialist in the field of mounting systems for photovoltaic and solar thermal installations with more than 25 years of experience. The company offers innovative solutions for ground mounted, pitched roof and flat roof systems. A staff of several hundred people at four different locations work on efficient product planning and consistent high-quality products. [...] Ease of installation ● ●Pre-assembled components for a fast installation ● ●Installation of ground screws replace the costly and time-consuming pouring of concrete blocks for ground mounted projects ● ●Specific roof hook design in case of overload: each mounting rail is compatible ● ●Easily adjustable components to fit various surfaces Quality management ● ●Quality management according to EN ISO 9001:2015 ● ●Manufacturing of load-bearing constructions according to EN 1090 ● ●Welding quality",
+        "score": 0.5174983,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.alumerogroup.eu/fileadmin/user_upload/downloads/technologien/legierungen/ALUMERO_Legierungen_EN-AW-6005A_EN.pdf",
+        "title": "Alumerogroup EN AW-6005A | Data Sheet - ALUMERO",
+        "snippet": "#### PV-Dachmontage\n\n#### PV-Freifläche\n\n#### PV-Software\n\n#### Fertigung nach Kundenzeichnung\n\nDas Logo der ALUMERO Group\n\n# Service & Downloads\n\n## Montageanleitungen\n\n### Flachdach\n\n### Metalldach\n\n### Ziegeldach\n\n### Wellblech / Welleternit\n\n### Freifläche\n\n## Datenblätter\n\n### Flachdach\n\n### Metalldach\n\n### Ziegeldach\n\n### Wellblech / Welleternit\n\n### Freifläche\n\n## Allgemeines\n\n### Folder\n\n### Erfassungsbögen, Garantien etc.\n\n### Sonstiges\n\n## Zertifikate\n\n### Allgemein [...] Die Ergebnisse basieren auf dem gewählten ALUMERO Montagesystem, den damit verbundenen Statikberechnungen und den jeweils hinterlegten Berechnungsnormen. Mit dem ALUMERO solar.pro.tool wird die Planung und statische Berechnung der Unterkonstruktion zum Kinderspiel.\n\n## Kontakt\n\n### Seeham, AT\n\n### Chorzów, PL\n\n### Helmond, NL\n\n### Nenzing, AT [...] ### ISO Zertifikate\n\nDas ALUMERO solar.pro.tool hilft bei der Planung von PV-Anlagen\n\n# solar.pro.tool\n\nDas ALUMERO solar.pro.tool ist eine Software zur einfachen Erfassung und schnellen Planung unserer PV-Montagesysteme. Nach abgeschlossener Projekterfassung erhältst du einen Modulplan mit Simulation der Verschattung, eine bearbeitbare CAD-Konstruktionszeichnung und Materialliste sowie einen Projektbericht.",
+        "score": 0.5053471,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.alumerogroup.eu/fileadmin/user_upload/downloads/folder/technologien/ALUMERO_Legierungen_EN-AW-6061_EN.pdf",
+        "title": "Alumerogroup Alumerogroup",
+        "snippet": "#### PV-Dachmontage\n\n#### PV-Freifläche\n\n#### PV-Software\n\n#### Fertigung nach Kundenzeichnung\n\nDas Logo der ALUMERO Group\n\n# Service & Downloads\n\n## Montageanleitungen\n\n### Flachdach\n\n### Metalldach\n\n### Ziegeldach\n\n### Wellblech / Welleternit\n\n### Freifläche\n\n## Datenblätter\n\n### Flachdach\n\n### Metalldach\n\n### Ziegeldach\n\n### Wellblech / Welleternit\n\n### Freifläche\n\n## Allgemeines\n\n### Folder\n\n### Erfassungsbögen, Garantien etc.\n\n### Sonstiges\n\n## Zertifikate\n\n### Allgemein [...] ### ISO Zertifikate\n\nDas ALUMERO solar.pro.tool hilft bei der Planung von PV-Anlagen\n\n# solar.pro.tool\n\nDas ALUMERO solar.pro.tool ist eine Software zur einfachen Erfassung und schnellen Planung unserer PV-Montagesysteme. Nach abgeschlossener Projekterfassung erhältst du einen Modulplan mit Simulation der Verschattung, eine bearbeitbare CAD-Konstruktionszeichnung und Materialliste sowie einen Projektbericht. [...] Die Ergebnisse basieren auf dem gewählten ALUMERO Montagesystem, den damit verbundenen Statikberechnungen und den jeweils hinterlegten Berechnungsnormen. Mit dem ALUMERO solar.pro.tool wird die Planung und statische Berechnung der Unterkonstruktion zum Kinderspiel.\n\n## Kontakt\n\n### Seeham, AT\n\n### Chorzów, PL\n\n### Helmond, NL\n\n### Nenzing, AT",
+        "score": 0.43208793,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "http://www.alumero.pl/userfiles/file/2016/Solar/ALUMERO_Solar-Montagesysteme_EN.pdf",
+        "title": "Alumero Alumero - Systematic Solutions GmbH",
+        "snippet": "######### Dieser Inhalt ist versteckt ########\n\n### ALUMERO - Your OEM Producer\n\nWe’re your OEM producer for all mounting profiles, components, fastening systems, laminate clamps and module and collector frames for photovoltaic and solar systems. Whatever the requirement, Alumero’s project specialists provide expert advice and maintain an ongoing dialogue with the customer to find the most efficient, most economical solution.\n\nde\nen\npl\nsl\n\n###### LME Details\n\n###### Business\n\n###### Locations [...] Be where the sun shines! There is no segment that allows us to prove  \nthe sustainability of our innovative concepts better than this one.  \n  \nWe invest all our energy into the ultimate developmental goal of  \nharnessing the power of the sun. All our efforts are focussed on  \nthe development of new technologies in the field of renewable energy.  \nLooks like AL has deserved his place in the sun!\n\nAL always says:  \nThe sun is nature’s best filling station!\n\nSolarfolder EN [...] Verwenden Sie bitte einen modernen Browser wie zb.:  \nFirefox oder eine neue Version des Internet Explorers\n\n# Alumero Aluminiumtechnik, Aluminium Profile\n\nAlumero Aluminiumtechnik, Aluminium Profile\n\n# Solar\n\n### Your big advantage\n\nDelivery Program for On Roof System 2.1\n\nimg/slideshow/slideshow_20110712044404.jpg\nimg/slideshow/slideshow_20110712044307.jpg\nimg/slideshow/slideshow_20110712044240.jpg\n\n|  |  |  |  |\n ---  --- |\n|  |  |  |  |",
+        "score": 0.3569626,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.alumerogroup.eu/fileadmin/user_upload/downloads/sonstiges/solar/ALUMERO_Installation_Instruction_RoofHook_english.pdf",
+        "title": "Alumerogroup Alumerogroup",
+        "snippet": "#### PV-Dachmontage #### PV-Freifläche #### PV-Software #### Fertigung nach Kundenzeichnung ![](https://cdn.prod.website-files.com/63c66bc29f353aa10f79a8d1/64ed879f6b74f784b527ab2d_download.svg) ![Das Logo der ALUMERO Group](https://cdn.prod.website-files.com/63c66bc29f353aa10f79a8d1/63c6bf5ae74bba4d027b0985_alumero-logo.svg) ![](https://cdn.prod.website-files.com/63c66bc29f353aa10f79a8d1/6614e8b31196958457bfd4a2_metagreen-siegel-CMYK-ohne-Logo.svg) ![](https://cdn.prod.website-files.com/63c66bc29f353aa10f79a8d1/6614e8f99f498f75807f0ddb_sustainable_solar_solutions-wh.svg) # Service & Downloads ## Montageanleitungen ### Flachdach ### Metalldach ### Ziegeldach ### Wellblech / Welleternit ### Freifläche ### Freifläche ## Zertifikate ### ISO Zertifikate ![Das ALUMERO solar.pro.tool hilft bei der Planung von PV-Anlagen](https://cdn.prod.website-files.com/63c66bc29f353aa10f79a8d1/65c378c25f039bcad5d59518_csm_S-Solar-Pro-Tool-01_2949d9df69.webp) # solar.pro.tool Das ALUMERO solar.pro.tool ist eine Software zur einfachen Erfassung und schnellen Planung unserer PV-Montagesysteme. Nach abgeschlossener Projekterfassung erhältst du einen Modulplan mit Simulation der Verschattung, eine bearbeitbare CAD-Konstruktionszeichnung und Materialliste sowie einen Projektbericht. Die Ergebnisse basieren auf dem gewählten ALUMERO Montagesystem, den damit verbundenen Statikberechnungen und den jeweils hinterlegten Berechnungsnormen. Mit dem ALUMERO solar.pro.tool wird die Planung und statische Berechnung der Unterkonstruktion zum Kinderspiel. ![](https://cdn.prod.website-files.com/63c66bc29f353aa10f79a8d1/6614e8b31196958457bfd4a2_metagreen-siegel-CMYK-ohne-Logo.svg) ![](https://cdn.prod.website-files.com/63c66bc29f353aa10f79a8d1/6614e8f125bd7b6bbe63a7bd_sustainable_solar_solutions.svg)",
+        "score": 0.98568,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://portal.segensolar.de/reseller/docs/Manual_FlatFixFusion_Single_EN_051.pdf",
+        "title": "Segensolar FlatFix Fusion Flat roof mounting system for solar panels in ...",
+        "snippet": "Registrieren Sie sich kostenlos und profitieren Sie von den vielen Vorteilen als SegenSolar Kunde",
+        "score": 0.98449,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://portal.segen.co.uk/reseller/docs/Manual_FlatFixFusion_Dual_EN_051.pdf",
+        "title": "Segen FlatFix Fusion Flat roof mounting system for solar panels in ...",
+        "snippet": "I agree to Segen's cookies and privacy policy · Sign up to become a Segen account holder and enjoy the many benefits",
+        "score": 0.97911,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.memodo.cz/media/pdf/ae/27/d4/memodo-substructure-alumero-pauschale-fuer-trapezblech-tbb-21-laenge-400mm-installation_manual_9.pdf",
+        "title": "Memodo ALUMERO AS 2.1 - Memodo",
+        "snippet": "Abyste mohli využívat náš obchod v plném rozsahu, aktivujte si ve svém prohlížeči Javascript · Problém s přihlášením, nebo poprvé na Memodo.cz · Pokud máte problém s přihlášením, napište nám prosím na info@memodo.cz . Problém co nejdříve vyřešíme.",
+        "score": 0.97215,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/683eb2209599fb9a42cdd097_ALUMERO%20Assembly%20Manual%20easyBRIDGE.pdf",
+        "title": "[PDF] easyBRIDGE",
+        "snippet": "This manual describes the assembly processes for the according ALUMERO system, attachment in open terrain, and the installation of modules. This ALUMERO",
+        "score": 0.9649,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/68779f0d4406ad1bb4db86b7_Assembly%20notes.pdf",
+        "title": "[PDF] Assembly notes",
+        "snippet": "INTENDED USE ALUMERO mounting systems are intended exclusively for mounting PV modules in the defined area of application. Intended use also includes professional installation in accordance with the relevant installa-tion instructions.\nThe compatibility of specific PV modules with ALUMERO systems must be clarified with the module manufacturer. ALUMERO accepts no liability for loss of performance or damage of any kind to the PV modules, particularly in the event of improper installation. [...] Any other use of the ALUMERO mounting systems is considered improper use. [...] The original language of these installation instructions is German. Any assembly instructions in another language are a translation of the assembly instructions in German.\nMANUFACTURER ALUMERO Systematic Solutions GmbH Sonnenweg 1-2 5162 Seeham - Österreich T +436217 / 68 41 - 0 F +436217 / 68 41 - 41 alumero@alumero.at www.alumerogroup.eu UPDATE These instructions are subject to change without notice. This does not constitute an obligation on the part of the manufacturer.\nCREATION DATE 07.2025",
+        "score": 0.75442725,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.pvo-int.com/wp-content/uploads/2019/01/Manual-FlatFix-Fusion-Portrait_EN_XXX.pdf",
+        "title": "[PDF] Manual FlatFix Fusion Portrait",
+        "snippet": "This manual describes the installation of the FlatFix Fusion mounting system for flat roofs (for solar panels in portrait setup). Read the manual carefully",
+        "score": 0.7434107,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://image.schrackcdn.com/montageanleitungen/b_pvf51xxxxx_en.pdf",
+        "title": "[PDF] ASSEMBLY INSTRUCTIONS",
+        "snippet": "These assembly instructions explain the assembly processes of the eponymous system, the attachment to the roof substructure and the installation of the modules.",
+        "score": 0.14754318,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://midsummer.ie/pdfs/alumero-warranty-mounting-systems-english.pdf",
+        "title": "[PDF] 10-year warranty",
+        "snippet": "the installation instructions supplied by us and, if applicable, separate design documents and structural engineering calculations apply to the installation. For products of the Alumero mounting systems made out of stainless steel and aluminium, we guarantee that their bearing capacity and functionality will maintain in the guarantee period if all previously named conditions will be met. Products made out of plastic and galvanized steel will not be considered and not included in this warranty. [...] MADE IN EUROPE on all alumero mounting systems 10-year warranty Alumero Systematic Solutions GmbH Sonnenweg 1 - 2 / 5164 Seeham T +43 (0) 6217 6841-0 alumero@alumero.com www.alumero.com The specified performance is restricted to the replacement of defective components if the damage is reported within the guarantee period. Any applicable legal warranty and liability claims shall remain unaffected by the guarantee. The gua-rantee is not applicable if the damage was caused by faulty installation, [...] ALUMERO Systematic Solutions GmbH guarantees the proper functioning and freedom from defects of the products delivered by Alumero.\nEdition may 2016 S O L A R M O U N T I N G S Y S T E M Q U A L I T Y W A R R A N T Y 10 YEARS Best Functionality",
+        "score": 0.7418428,
+        "bucket": "other"
+      },
+      {
+        "url": "https://portal.segensolar.de/reseller/docs/210315-Esdec-Warranty-Conditions-ENG.pdf",
+        "title": "[PDF] Warranty Conditions",
+        "snippet": "ClickFit/FlatFix solar rooftop mounting products as provided by Esdec under the Sales Agreement (the \"Products\") shall, for a period of 20 (twenty) years from the date of delivery by Esdec or such longer period as is demonstrably required under mandatory provisions of applicable law (the \"Warranty Period\"), be free from material deficiencies in materials and workmanship conform to their functional and technical specifications as set forth in the product documentation provided by Esdec in [...] limitation) hail, lightning, storm, flood, explosions, fire, vandalism, extreme wind speeds or temperatures, other extreme weather conditions, or any other events of force majeure as may be set out in the Sales Agreement or that may apply in accordance with applicable law. (j) In the absence of proper professional maintenance, non-compliance with the applicable installation and / or assembly instructions, incompetent, injudicious or improper use, normal wear and tear and aging, poor assembly, [...] damage due to chemical, electrical, electrolytic, corrosive or environmental influences (k) When the correct quantities or components have not been used as prescribed in the assembly instructions and calculators. When the building, roof, roof covering or construction is not suitable for installing solar panels with the Products.",
+        "score": 0.68798697,
+        "bucket": "other"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/65d5b5275e745cb3f10286e3_Solar-Alumero-GESAMT-EN_WEB.pdf",
+        "title": "[PDF] solar systems & technologies",
+        "snippet": "ALUMERO is specialised in the production of formwork technology and mounting frames for photovoltaic and solar power systems, outdoor ground-mounted solu-tions, and ones for flat and for pitched roofs. Individual laminate and modular clamping technology and bespoke, non-standard solutions for customers are also well within our scope of expertise. [...] ALUMERO turns innovative ideas into sustainable solutions based on functional design and effective machinery. We believe customers should be provided with a convincing solution that meets every requirement to the fullest extent. [...] 31 80% recycled aluminium 20% primary aluminium from renewable energies Ø Worldwide Ø Europe Tons of CO2 per Ton of Aluminium 18 7 4 32 ALUMERO specialises in bespoke aluminium solutions, winning over customers as a manufacturer of superior-quality aluminium extrusion profiles, aluminium component groups and mechanical integ-ration, and as a system provider for several sectors, including solar and photovoltaic, living, industry and building - with ALUMERO.",
+        "score": 0.6445166,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.solarworld.co.za/wp-content/uploads/2020/01/ALUMEROSolar-SystemeTechnologienEN.pdf",
+        "title": "[PDF] SOLAR SYSTEMS & TECHNOLOGY",
+        "snippet": "SOLAR EN SYSTEMS & TECHNOLOGY 2 ALUMERO SOLAR ALUMERO is specialized in mounting systems for photovoltaic and solar installations on flat roofs, pitched roofs and for ground moun-ting. Individual clamping technologies for laminated and framed modules, as well as customized constructions are also part of our core competency.\nALUMERO – your system- and OEM-producer. [...] LIVING SOLAR INDUSTRY BAUTEC / BMA 20 ALUMERO ALUMERO GROUP DESIGN, DEVELOPMENT, CONSTRUCTION UND PRODUCTION ALUMERO is a specialist for tailor-made aluminium solutions. Thereby we can convince as a manufacturer of high-quality aluminium extrusion profiles and aluminium assemblies with mechanical processing, as well as system provider in the business areas solar and photovoltaic, furniture and kitchen industry, metal and façade structures, noise protection, fences, balconies, winter gardens, [...] THE INNOVATIVE PITCHED ROOF MOUNTING SYSTEM COMPONENTS + Roof Hooks + Trapezoidal Bridge + Hanger Bolt + Standing Metal Seam Clamp + Mounting Profile + various Clamps + and many more All product ranges from this catalog you can find online at www.alumero.com AEROCOMPACT 2.1 + AEROCOMPACT 2.1 S AEROCOMPACT 2.1 S & AEROCOMPACT 2.1 + MADE IN EUROPE C O N F O R M S T O SUB 2703 4 AEROCOMPACT 2.1 AERODYNAMIC FLAT ROOF MOUNTING SYSTEM S O L A R M O U N T I N G S Y S T E M Q U A L I T Y W A R R A N T",
+        "score": 0.6180666,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "alumero",
+    "product": "Alumero FlatFix Plus",
+    "candidates": [
+      {
+        "url": "https://szalontai.co.hu/_actual/export/image/alumero-portfolio.pdf",
+        "title": "[PDF] PRODUCT CATALOGUE SOLAR",
+        "snippet": "dimensions: 14,4 x 21,4 mm material: EN AW 6063 / T66 weight: 0,051 kg/Stk packaging: 10 pcs. per box / 600 pcs. per pallet artikel-nr: 16417 Cross connector 2.1 drawing number: 802200 A product-nr: 802200 surface: mill finish for Mounting profile 37, 45 and 65 inkl. Socket screw M8x30 with square nut inkl. Socket screw M8x16 with threaded plate 28x15 and Tuflock material: EN AW 6063 / T66; A2-70 weight: 0,092 kg/Stk packaging: 20 pcs. per box / 2.800 pcs. per pallet Alumero delivery program [...] material: EN AW 6063 / T66; A2-70 weight: 0,063 kg/Stk packaging: 50 pcs. per box / 4.950 pcs. per pallet Alumero delivery program printed on 23.08.2021 end of page 12 18 clamps artikel-nr: 17753 End clamp for fast mounting 30 drawing number: 802304-30V A product-nr: 802304-30V surface: mill finish L=50mm Incl. Opening-function for Frame height 30 mm for Mounting profiles with threaded plate channel M8 material: EN AW 6063 / T66; A2-70 weight: 0,046 kg/Stk packaging: 20 pcs. per box / 7.000 [...] product-nr: 802394-42V surface: anodized E6/C35; stainless steel A2-70 L=50mm Oberfläche schwarz eloxiert inkl. Öffnungs-Funktion Für Modulrahmenhöhe 42 mm Für Trägerprofil mit Gewindeplattenkanal M8 material: EN AW 6063 / T66; A2-70 weight: 0,051 kg/Stk packaging: 20 Stk. Alumero delivery program printed on 23.08.2021 end of page 25 31 clamps artikel-nr: 21368 End clamp 42 black with pin drawing number: 802394-42V P1 product-nr: 802394-42V P1 surface: anodized E6/C35 L=50 mm Incl.",
+        "score": 0.56517935,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.solarworld.co.za/wp-content/uploads/2020/01/ALUMEROSolar-MontagesystemeEN.pdf",
+        "title": "[PDF] SOLAR MOUNTING SYSTEMS",
+        "snippet": "surface: anodized E6/C35 L=50 mm Incl. Opening-function and clamping element For Frame height 33-50 mm and Mounting profiles with threaded plate channel M8 material: EN AW 6063 / T66; A2-70 weight: 0,060 kg/Stk packaging: 50 Stk. pro Karton / 4.950 Stk. pro Palette Alumero delivery program printed on 08.02.2018 end of page 20 23 PITCHED ROOF AS 2.1 PITCHED ROOF AS 2.1 LANDSCAPE 2.1 LAMINATE CLAMP AEROCOMPACT GROUND MOUNT SOLAR.PRO.TOOL AEROCOMPACT 2.1 SOLAR THERMAL ENERGY ALUMERO TECHNOLOGY [...] surface: mill finish L=50 mm Incl. Opening-function for Frame height 30 mm for Mounting profiles with threaded plate channel M8 material: EN AW 6063 / T66; A2-70 weight: 0,046 kg/Stk packaging: 20 Stk. pro Karton / 7.000 Stk. pro Palette Alumero delivery program printed on 08.02.2018 end of page 11 14 PITCHED ROOF AS 2.1 clamps artikel-nr: 21352 End clamp 30 with pin drawing number: 802304-30V P1 product-nr: 802304-30V P1 surface: mill finish L=50 mm Incl. Opening-function for Frame height 31mm [...] drawing number: 802304-43V B product-nr: 802304-43V surface: mill finish L=50 mm Incl. Opening-function for Frame height 43 mm for Mounting profiles with threaded plate channel M8 material: EN AW 6063 / T66; A2-70 weight: 0,052 kg/Stk packaging: 20 Stk. pro Karton / 7.000 Stk. pro Palette Alumero delivery program printed on 08.02.2018 end of page 16 19 PITCHED ROOF AS 2.1 PITCHED ROOF AS 2.1 LANDSCAPE 2.1 LAMINATE CLAMP AEROCOMPACT GROUND MOUNT SOLAR.PRO.TOOL AEROCOMPACT 2.1 SOLAR THERMAL",
+        "score": 0.55912215,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://portal.segen.co.uk/reseller/docs/Manual_FlatFixFusion_Dual_EN_051.pdf",
+        "title": "[PDF] FlatFix Fusion Flat roof mounting system for solar panels in a dual ...",
+        "snippet": "number Description Row distance dual [mm] Grey Black 100-7121 100-7621 Base profile 210 mm 2110 100-7137 100-7637 Base profile 370 mm 2270  100-7155 100-7655 Base profile 550 mm 2450 100-7175 100-7675 Base profile 750 mm 2650 100-7194 100-7694 Base profile 940 mm 2840  Standard length in the FlatFix Fusion calculator Item number Description Panel length [mm] Min. [...] 100-6563 (63mm) 100-6575 (75mm) 36 100-4136 100-4936 37 100-4137 100-4937 38 100-4138 100-4938 39 100-4139 100-4939 40 100-4140 100-4940 100-6570 (70mm) 100-6570 (70mm) 100-6580 (80mm) 41 100-4141 100-4941 42 100-4142 100-4942 43 100-4143 100-4943 44 100-4144 100-4944 45 100-4145 100-4945 46 100-4146 100-4946 100-6575 (75mm) 100-6575 (75mm) 100-6585 (85mm) 47 100-4147 100-4947 48 49 50 100-4150 100-4950 10 35 27 35 24 Rev. 10.12.20 MANUAL FOR FLATFIX FUSION MOUNTING SYSTEM FOR FLAT ROOFS Item [...] Annex section 7 8. End clamp Item no: 100-41__ For type, see Annex section 7 9. Mounting screw 6,5 x __ Item no: 100-65__ For type, see Annex section 7 10. Universal mid clamp Item no: 100-3022 4. Base element low Item no: 100-7021 12. Stabiliser Item no: 100-72__ For length, see Annex section 7 14. Wind deflector left Item no:100-7204 11. Cable clip optimiser ready Item no: 100-7041 3. Base element high Item no: 100-7030 14A. Wind deflector right Item no: 100-7205 13. Mounting screw 6,5 x 19",
+        "score": 0.542161,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.pv.de/media/product_advantages_alumero.pdf",
+        "title": "[PDF] ALUMERO Systematic Solutions - PV.de",
+        "snippet": "ALUMERO guarantees sustainable solutions, functional design and effective machine use – all from one hand and Made in Europe. [...] Version: 10/2019 © EWS GmbH & Co. KG At a glance ...\nALUMERO Systematic Solutions Product advantages ALUMERO is a specialist in the field of mounting systems for photovoltaic and solar thermal installations with more than 25 years of experience. The company offers innovative solutions for ground mounted, pitched roof and flat roof systems. A staff of several hundred people at four different locations work on efficient product planning and consistent high-quality products. [...] Ease of installation ● ●Pre-assembled components for a fast installation ● ●Installation of ground screws replace the costly and time-consuming pouring of concrete blocks for ground mounted projects ● ●Specific roof hook design in case of overload: each mounting rail is compatible ● ●Easily adjustable components to fit various surfaces Quality management ● ●Quality management according to EN ISO 9001:2015 ● ●Manufacturing of load-bearing constructions according to EN 1090 ● ●Welding quality",
+        "score": 0.49553296,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://szalontai.co.hu/_actual/export/image/Alumero_Assembly_instructions_CompactFLAT_S10_PLUS_en.pdf",
+        "title": "ASSEMBLYINSTRUCTION COMPACTFLATS10PLUS",
+        "snippet": "CompactFLATS10PLUS 11 ASSEMBLY INSTALLATION INSTRUCTIONSFORGRAVELROOFS Theplanningdocumentsdefinewhetherthesystemistobeinstalleddirectlyonthesealingorprotectivefleece(coef- ficientoffriction1.5)orfreelyonthegravel(coefficientoffriction0.3). Mountthesystemonthesealingorprotectivefleece",
+        "score": 0.98547,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.alumerogroup.eu/fileadmin/user_upload/downloads/sonstiges/solar/ALUMERO_Installation_Instruction_RoofHook_english.pdf",
+        "title": "Alumerogroup Alumerogroup",
+        "snippet": "#### PV-Dachmontage #### PV-Freifläche #### PV-Software #### Fertigung nach Kundenzeichnung ![](https://cdn.prod.website-files.com/63c66bc29f353aa10f79a8d1/64ed879f6b74f784b527ab2d_download.svg) ![Das Logo der ALUMERO Group](https://cdn.prod.website-files.com/63c66bc29f353aa10f79a8d1/63c6bf5ae74bba4d027b0985_alumero-logo.svg) ![](https://cdn.prod.website-files.com/63c66bc29f353aa10f79a8d1/6614e8b31196958457bfd4a2_metagreen-siegel-CMYK-ohne-Logo.svg) ![](https://cdn.prod.website-files.com/63c66bc29f353aa10f79a8d1/6614e8f99f498f75807f0ddb_sustainable_solar_solutions-wh.svg) # Service & Downloads ## Montageanleitungen ### Flachdach ### Metalldach ### Ziegeldach ### Wellblech / Welleternit ### Freifläche ### Freifläche ## Zertifikate ### ISO Zertifikate ![Das ALUMERO solar.pro.tool hilft bei der Planung von PV-Anlagen](https://cdn.prod.website-files.com/63c66bc29f353aa10f79a8d1/65c378c25f039bcad5d59518_csm_S-Solar-Pro-Tool-01_2949d9df69.webp) # solar.pro.tool Das ALUMERO solar.pro.tool ist eine Software zur einfachen Erfassung und schnellen Planung unserer PV-Montagesysteme. Nach abgeschlossener Projekterfassung erhältst du einen Modulplan mit Simulation der Verschattung, eine bearbeitbare CAD-Konstruktionszeichnung und Materialliste sowie einen Projektbericht. Die Ergebnisse basieren auf dem gewählten ALUMERO Montagesystem, den damit verbundenen Statikberechnungen und den jeweils hinterlegten Berechnungsnormen. Mit dem ALUMERO solar.pro.tool wird die Planung und statische Berechnung der Unterkonstruktion zum Kinderspiel. ![](https://cdn.prod.website-files.com/63c66bc29f353aa10f79a8d1/6614e8b31196958457bfd4a2_metagreen-siegel-CMYK-ohne-Logo.svg) ![](https://cdn.prod.website-files.com/63c66bc29f353aa10f79a8d1/6614e8f125bd7b6bbe63a7bd_sustainable_solar_solutions.svg)",
+        "score": 0.98332,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://manuals.plus/esdec/flatfix-fusion-the-versatile-click-system-for-flat-roofs-manual.pdf",
+        "title": "Manuals+ Manuals",
+        "snippet": "User Manuals Simplified · Welcome to Manuals . Plus , your one-stop-shop for free online manuals and user guides. Our mission is to simplify your life by providing comprehensive, accessible, and free instruction manuals for a vast range of products, all at your fingertips",
+        "score": 0.97249,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/683eb2209599fb9a42cdd097_ALUMERO%20Assembly%20Manual%20easyBRIDGE.pdf",
+        "title": "[PDF] easyBRIDGE",
+        "snippet": "4-5 Installation of trapezoidal sheet bridges / modules vertical p. 9 Installation of trapezoidal sheet bridges / modules horizontal p. Option: If the clamping area of the module and the distance of the high bead allow it, the trapezoidal sheet metal bridge can be mounted offset on the high bead for thermal separation. The distance X depends on the module length + clamping width (20 mm) + minimum distance to the end of the respecti-ve trapezoidal sheet metal bridge (20 mm).",
+        "score": 0.96622,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.esdec.com/wp-content/uploads/2023/06/Manual_FlatFixWave_Plus_EN_REV05.pdf",
+        "title": "Esdec manual - flatfix wave plus",
+        "snippet": "FlatFix Wave Roof support 1009120 WIND DEFLECTORS BALLAST 105 105 80 210 4 kg PANEL FRAME X Y 1,2 mm 14 mm 2 mm 35 mm min max Y X 1b. FlatFix Wave Ballast Tray 1009129 7b 8 7a 6R 7b 7c 6L 13 13 14 03 2 PREPARATIONS FOR ASSEMBLY 3 PLACE DUAL START UNIT 1 PREPARING THE ROOF AND ALIGNING (THE FIELDS) 2 MEASURING AND MARKING (OF FIELD) 2 UNFOLD THE TOP OF THE DUAL START UNIT UNTIL IT IS COMPLETELY FLAT AND CLICKS INTO PLACE 3 PLACE THE HIGH BASE (2x) IN STANDING POSITION SO THAT IT CLICKS NB: Follow the installation drawing and make sure the fields are well coordinated.",
+        "score": 0.94644,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/68779f0d4406ad1bb4db86b7_Assembly%20notes.pdf",
+        "title": "[PDF] Assembly notes",
+        "snippet": "INTENDED USE ALUMERO mounting systems are intended exclusively for mounting PV modules in the defined area of application. Intended use also includes professional installation in accordance with the relevant installa-tion instructions.\nThe compatibility of specific PV modules with ALUMERO systems must be clarified with the module manufacturer. ALUMERO accepts no liability for loss of performance or damage of any kind to the PV modules, particularly in the event of improper installation. [...] Any other use of the ALUMERO mounting systems is considered improper use. [...] EN SUSTAINABLE SOLAR SOLUTIONS Assembly notes ADDITIONAL DOCUMENT ABOUT THIS DOCUMENT This is a supplementary document to the installation instructions for ALUMERO systems and contains important information on installation, warranty, liability and safety, among other things.",
+        "score": 0.7548612,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://image.schrackcdn.com/montageanleitungen/b_pvf51100-a_en.pdf",
+        "title": "[PDF] ASSEMBLY INSTRUCTIONS - Schrack Technik GmbH",
+        "snippet": "ALUMERO mounting systems are designed exclusively to accommodate PV modules. ... It must be ensured that the installation instructions and in particular the",
+        "score": 0.64880073,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://portal.segensolar.de/reseller/docs/Manual_FlatFixFusion_Single_EN_051.pdf",
+        "title": "[PDF] FlatFix Fusion Flat roof mounting system for solar panels in a single ...",
+        "snippet": "6.5 Coupling FlatFix Fusion segments 1. Set two FlatFix Fusion segments upright and place them at a distance behind one another so that the base profile can be mounted between them. Slide the tip of the base profile into the opening on the low side of the first FlatFix Fusion segment until it clicks together.\n2. Slide the second FlatFix Fusion segment with the opening of the high side over the end of the base profile until it clicks together. [...] 2. Set the base element (incl. roof support) upright and slide the tip of the base profile (length 94 cm) in the opening of the high base element until it clicks into place.\n3. Place the grounding spring in the grooves of the low base element before clicking the base profile in the low base element.\n4. Slide the low base element (incl. roof support) to the other tip of the base profile until it clicks into place. [...] As a result of our continuous pursuit of improvement, it may occur that the product deviates in detail from that which is described in this manual. For this reason, the instructions provided serve only as a guideline for installing the product stated in this manual.\nThis manual is compiled with the greatest possible care, but the manufacturer cannot be held responsible for any errors in this manual or any resulting consequences.",
+        "score": 0.5837973,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://midsummer.ie/pdfs/alumero-warranty-mounting-systems-english.pdf",
+        "title": "[PDF] 10-year warranty",
+        "snippet": "the installation instructions supplied by us and, if applicable, separate design documents and structural engineering calculations apply to the installation. For products of the Alumero mounting systems made out of stainless steel and aluminium, we guarantee that their bearing capacity and functionality will maintain in the guarantee period if all previously named conditions will be met. Products made out of plastic and galvanized steel will not be considered and not included in this warranty. [...] MADE IN EUROPE on all alumero mounting systems 10-year warranty Alumero Systematic Solutions GmbH Sonnenweg 1 - 2 / 5164 Seeham T +43 (0) 6217 6841-0 alumero@alumero.com www.alumero.com The specified performance is restricted to the replacement of defective components if the damage is reported within the guarantee period. Any applicable legal warranty and liability claims shall remain unaffected by the guarantee. The gua-rantee is not applicable if the damage was caused by faulty installation, [...] ALUMERO Systematic Solutions GmbH guarantees the proper functioning and freedom from defects of the products delivered by Alumero.\nEdition may 2016 S O L A R M O U N T I N G S Y S T E M Q U A L I T Y W A R R A N T Y 10 YEARS Best Functionality",
+        "score": 0.7244226,
+        "bucket": "other"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/65d5b5275e745cb3f10286e3_Solar-Alumero-GESAMT-EN_WEB.pdf",
+        "title": "[PDF] solar systems & technologies",
+        "snippet": "ALUMERO is specialised in the production of formwork technology and mounting frames for photovoltaic and solar power systems, outdoor ground-mounted solu-tions, and ones for flat and for pitched roofs. Individual laminate and modular clamping technology and bespoke, non-standard solutions for customers are also well within our scope of expertise. [...] ALUMERO turns innovative ideas into sustainable solutions based on functional design and effective machinery. We believe customers should be provided with a convincing solution that meets every requirement to the fullest extent. [...] 31 80% recycled aluminium 20% primary aluminium from renewable energies Ø Worldwide Ø Europe Tons of CO2 per Ton of Aluminium 18 7 4 32 ALUMERO specialises in bespoke aluminium solutions, winning over customers as a manufacturer of superior-quality aluminium extrusion profiles, aluminium component groups and mechanical integ-ration, and as a system provider for several sectors, including solar and photovoltaic, living, industry and building - with ALUMERO.",
+        "score": 0.6222074,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.solarworld.co.za/wp-content/uploads/2020/01/ALUMEROSolar-SystemeTechnologienEN.pdf",
+        "title": "[PDF] SOLAR SYSTEMS & TECHNOLOGY",
+        "snippet": "SOLAR EN SYSTEMS & TECHNOLOGY 2 ALUMERO SOLAR ALUMERO is specialized in mounting systems for photovoltaic and solar installations on flat roofs, pitched roofs and for ground moun-ting. Individual clamping technologies for laminated and framed modules, as well as customized constructions are also part of our core competency.\nALUMERO – your system- and OEM-producer. [...] THE INNOVATIVE PITCHED ROOF MOUNTING SYSTEM COMPONENTS + Roof Hooks + Trapezoidal Bridge + Hanger Bolt + Standing Metal Seam Clamp + Mounting Profile + various Clamps + and many more All product ranges from this catalog you can find online at www.alumero.com AEROCOMPACT 2.1 + AEROCOMPACT 2.1 S AEROCOMPACT 2.1 S & AEROCOMPACT 2.1 + MADE IN EUROPE C O N F O R M S T O SUB 2703 4 AEROCOMPACT 2.1 AERODYNAMIC FLAT ROOF MOUNTING SYSTEM S O L A R M O U N T I N G S Y S T E M Q U A L I T Y W A R R A N T [...] LIVING SOLAR INDUSTRY BAUTEC / BMA 20 ALUMERO ALUMERO GROUP DESIGN, DEVELOPMENT, CONSTRUCTION UND PRODUCTION ALUMERO is a specialist for tailor-made aluminium solutions. Thereby we can convince as a manufacturer of high-quality aluminium extrusion profiles and aluminium assemblies with mechanical processing, as well as system provider in the business areas solar and photovoltaic, furniture and kitchen industry, metal and façade structures, noise protection, fences, balconies, winter gardens,",
+        "score": 0.5709301,
+        "bucket": "other"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/683fda968c8fb6d4505d4dfa_ALUMERO%20Datasheet%20easyLIGHT%20E%3AW%2010.pdf",
+        "title": "[PDF] easyLIGHT",
+        "snippet": "E/W 10 – 297 mm Flat roof E/W 10 – 464 mm 270 950 - 1150 78 10° 10° 303 69 112 2163 - 2568 2163 - 2568 88,5 69 88,5 230 59 182 270 10° 950 - 1150 245 10° 303 2331 - 2736 88,5 69 350 112 230 2331 - 2736 59 Technical drawings We give our customers the possibility of creating technical, project-related system designs incl. static calculation and project reports using our online software ALUMERO Solar.Pro.Tool. [...] Connector short with building protection mat Produktnummer/Product No.: 821032V-5 Verbinder lang mit Bautenschutzmatte Connector long with building protection mat Produktnummer/Product No.: 821031V-5 Starting support E/W 10 with building protection mat Anfangsfuß E/W 10 mit Bautenschutzmatte Produktnummer/Product No.: 821011V-5 ALUMERO Systematic Solutions GmbH Sonnenweg 1-2 | 5162 Seeham - Österreich T +436217 / 68 41 - 0 alumero@alumero.at | www.alumero.at [...] System components You can find further articles in our product catalogue or on our website: www.alumerogroup.eu Project planning in 8 steps 1 2 3 4 5 6 7 Master data Roof data Roof measurement PV modules Structure CAD diagram Structural design ALUMERO Solar.Pro.Tool 8 Material list Building protection mat Bautenschutzmatte, PES Produktnummer/Product No.: 823037V Long ballast tray BT-1800 Ballastwanne lang BT-1800 Produktnummer/Product No.: 706001-1800 Long ballast tray BT-2050 Ballastwanne lang",
+        "score": 0.38477397,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "alumero",
+    "product": "Alumero GroundFix",
+    "candidates": [
+      {
+        "url": "https://www.solarworld.co.za/wp-content/uploads/2020/01/ALUMEROSolar-SystemeTechnologienEN.pdf",
+        "title": "[PDF] SOLAR SYSTEMS & TECHNOLOGY",
+        "snippet": "Inclination: Flexible angle, 5° – 25° Max. Wind-/Snowload: Windload up to 250 Km/h Snowload up to 2,4 KN Module clamps: Available with and without grounding pins 20° 2600 ca. 3300 ca. 1800 ca. 1750 MADE IN EUROPE LANDSCAPE 2.1 LANDSCAPE 2.1 10 LANDSCAPE 2.1 S O L A R M O U N T I N G S Y S T E M Q U A L I T Y W A R R A N T Y 10 YEARS Best Functionality With a clever mix of high-quality steel components and innovative aluminum components our ALUMERO ground mounting system LANDSCAPE 2.1 can [...] SOLAR EN SYSTEMS & TECHNOLOGY 2 ALUMERO SOLAR ALUMERO is specialized in mounting systems for photovoltaic and solar installations on flat roofs, pitched roofs and for ground moun-ting. Individual clamping technologies for laminated and framed modules, as well as customized constructions are also part of our core competency.\nALUMERO – your system- and OEM-producer. [...] optimal respond to your requirements. Ease installation is also of paramount importance for ground mounting system as in the entire portfolio of ALUMERO. With the pre-assembled components for quick mounting you can achieve maximum installation speed. Due to sophisticated standard components different table configurations can be realized immediately from stock. In addition, the simple adjustability makes it easy to adapt the table configuration at site to the different terrain. Thereby your",
+        "score": 0.6680367,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.solarworld.co.za/wp-content/uploads/2020/01/ALUMEROSolar-MontagesystemeEN.pdf",
+        "title": "[PDF] SOLAR MOUNTING SYSTEMS",
+        "snippet": "artikel-nr: 21365 End clamp Universal with pin drawing number: 802305C VP1 product-nr: 802305C VP1 surface: mill finish L=80 mm incl. grounding-pins and O-ring suitable for framed PV-modules with a frame height from 33 up to 50 mm material: EN AW 6063 / T66; A2-70 weight: 0,087 kg/Stk packaging: 20 Stk. pro Karton / 10.500 Stk. pro Palette Alumero delivery program printed on 08.02.2018 end of page 18 21 PITCHED ROOF AS 2.1 PITCHED ROOF AS 2.1 LANDSCAPE 2.1 LAMINATE CLAMP AEROCOMPACT GROUND [...] surface: anodized E6/C35 L=50 mm Incl. Opening-function and clamping element For Frame height 33-50 mm and Mounting profiles with threaded plate channel M8 material: EN AW 6063 / T66; A2-70 weight: 0,060 kg/Stk packaging: 50 Stk. pro Karton / 4.950 Stk. pro Palette Alumero delivery program printed on 08.02.2018 end of page 20 23 PITCHED ROOF AS 2.1 PITCHED ROOF AS 2.1 LANDSCAPE 2.1 LAMINATE CLAMP AEROCOMPACT GROUND MOUNT SOLAR.PRO.TOOL AEROCOMPACT 2.1 SOLAR THERMAL ENERGY ALUMERO TECHNOLOGY [...] drawing number: 802304-43V B product-nr: 802304-43V surface: mill finish L=50 mm Incl. Opening-function for Frame height 43 mm for Mounting profiles with threaded plate channel M8 material: EN AW 6063 / T66; A2-70 weight: 0,052 kg/Stk packaging: 20 Stk. pro Karton / 7.000 Stk. pro Palette Alumero delivery program printed on 08.02.2018 end of page 16 19 PITCHED ROOF AS 2.1 PITCHED ROOF AS 2.1 LANDSCAPE 2.1 LAMINATE CLAMP AEROCOMPACT GROUND MOUNT SOLAR.PRO.TOOL AEROCOMPACT 2.1 SOLAR THERMAL",
+        "score": 0.6296157,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://szalontai.co.hu/_actual/export/image/alumero-portfolio.pdf",
+        "title": "[PDF] PRODUCT CATALOGUE SOLAR",
+        "snippet": "dimensions: 14,4 x 21,4 mm material: EN AW 6063 / T66 weight: 0,051 kg/Stk packaging: 10 pcs. per box / 600 pcs. per pallet artikel-nr: 16417 Cross connector 2.1 drawing number: 802200 A product-nr: 802200 surface: mill finish for Mounting profile 37, 45 and 65 inkl. Socket screw M8x30 with square nut inkl. Socket screw M8x16 with threaded plate 28x15 and Tuflock material: EN AW 6063 / T66; A2-70 weight: 0,092 kg/Stk packaging: 20 pcs. per box / 2.800 pcs. per pallet Alumero delivery program [...] drawing number: 802394-30V P1 product-nr: 802394-30V P1 surface: anodized E6/C35 L=50 mm Incl. Opening-function for Frame height 30 mm for Mounting profiles with threaded plate channel M8 material: EN AW 6063 / T66; A2-70 weight: 0,047 kg/Stk packaging: 20 Stk. pro Karton / 7.000 Stk. pro Palette Alumero delivery program printed on 23.08.2021 end of page 22 28 clamps artikel-nr: 21666 End clamp for fast mounting 32 black drawing number: 802394-32V product-nr: 802394-32V surface: anodized [...] material: EN AW 6063 / T66; A2-70 weight: 0,063 kg/Stk packaging: 50 pcs. per box / 4.950 pcs. per pallet Alumero delivery program printed on 23.08.2021 end of page 12 18 clamps artikel-nr: 17753 End clamp for fast mounting 30 drawing number: 802304-30V A product-nr: 802304-30V surface: mill finish L=50mm Incl. Opening-function for Frame height 30 mm for Mounting profiles with threaded plate channel M8 material: EN AW 6063 / T66; A2-70 weight: 0,046 kg/Stk packaging: 20 pcs. per box / 7.000",
+        "score": 0.595987,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.pv.de/media/product_advantages_alumero.pdf",
+        "title": "[PDF] ALUMERO Systematic Solutions - PV.de",
+        "snippet": "Ease of installation ● ●Pre-assembled components for a fast installation ● ●Installation of ground screws replace the costly and time-consuming pouring of concrete blocks for ground mounted projects ● ●Specific roof hook design in case of overload: each mounting rail is compatible ● ●Easily adjustable components to fit various surfaces Quality management ● ●Quality management according to EN ISO 9001:2015 ● ●Manufacturing of load-bearing constructions according to EN 1090 ● ●Welding quality [...] ALUMERO guarantees sustainable solutions, functional design and effective machine use – all from one hand and Made in Europe. [...] Version: 10/2019 © EWS GmbH & Co. KG At a glance ...\nALUMERO Systematic Solutions Product advantages ALUMERO is a specialist in the field of mounting systems for photovoltaic and solar thermal installations with more than 25 years of experience. The company offers innovative solutions for ground mounted, pitched roof and flat roof systems. A staff of several hundred people at four different locations work on efficient product planning and consistent high-quality products.",
+        "score": 0.5925965,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.alumerogroup.eu/fileadmin/user_upload/downloads/technologien/legierungen/ALUMERO_Legierungen_EN-AW-6005A_EN.pdf",
+        "title": "Alumerogroup EN AW-6005A | Data Sheet - ALUMERO",
+        "snippet": "Die Ergebnisse basieren auf dem gewählten ALUMERO Montagesystem, den damit verbundenen Statikberechnungen und den jeweils hinterlegten Berechnungsnormen. Mit dem ALUMERO solar.pro.tool wird die Planung und statische Berechnung der Unterkonstruktion zum Kinderspiel.\n\n## Kontakt\n\n### Seeham, AT\n\n### Chorzów, PL\n\n### Helmond, NL\n\n### Nenzing, AT [...] ### ISO Zertifikate\n\nDas ALUMERO solar.pro.tool hilft bei der Planung von PV-Anlagen\n\n# solar.pro.tool\n\nDas ALUMERO solar.pro.tool ist eine Software zur einfachen Erfassung und schnellen Planung unserer PV-Montagesysteme. Nach abgeschlossener Projekterfassung erhältst du einen Modulplan mit Simulation der Verschattung, eine bearbeitbare CAD-Konstruktionszeichnung und Materialliste sowie einen Projektbericht. [...] #### PV-Dachmontage\n\n#### PV-Freifläche\n\n#### PV-Software\n\n#### Fertigung nach Kundenzeichnung\n\nDas Logo der ALUMERO Group\n\n# Service & Downloads\n\n## Montageanleitungen\n\n### Flachdach\n\n### Metalldach\n\n### Ziegeldach\n\n### Wellblech / Welleternit\n\n### Freifläche\n\n## Datenblätter\n\n### Flachdach\n\n### Metalldach\n\n### Ziegeldach\n\n### Wellblech / Welleternit\n\n### Freifläche\n\n## Allgemeines\n\n### Folder\n\n### Erfassungsbögen, Garantien etc.\n\n### Sonstiges\n\n## Zertifikate\n\n### Allgemein",
+        "score": 0.5191075,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/683da6730b5dd25a451fd0a3_ALUMERO+Assembly+Manual+easyGROUND_E_W.pdf",
+        "title": "easyGROUND - cdn.prod.website-files.com",
+        "snippet": "The installer of the photovoltaic system must ensure before installation begins that the roof substructure provided is designed for the additional loads.\nThis manual describes the assembly processes for the according ALUMERO system, attachment in open terrain, and the installation of modules.\nThis ALUMERO mounting system is designed exclusively for mounting PV modules. Any other use is considered inappropriate. [...] 1 2 2 2 1 h h 17 ATTACHING THE BALLAST VARIANT 4: LONG BALLAST TRAY The long ballast tray can be attached in the following positions: 1 at the starting foot 2 at the mid support 3 at the connector 4 at the starting foot - last row, mirror-inverted The exact number and position of the long ballast trays can be found in the ALUMERO.PRO.TOOL planning documents. [...] 2 2 1 20 21 The following documents are required in addition to the installation instructions and for correct installation of the system: + Project report from ALUMERO.PRO.TOOL + Planning documents and drawings + The generally applicable document “Installation instructions” at  under “General” -> “Other” Please also inform yourself about the safety regulations of the other system components.\nPLEASE NOTE THE FOLLOWING ADDITIONAL DOCUMENTS!\n22 CONGRATULATIONS, WELL DONE!",
+        "score": 0.46687052,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/68779f0d4406ad1bb4db86b7_Assembly%20notes.pdf",
+        "title": "[PDF] Assembly notes",
+        "snippet": "INTENDED USE ALUMERO mounting systems are intended exclusively for mounting PV modules in the defined area of application. Intended use also includes professional installation in accordance with the relevant installa-tion instructions.\nThe compatibility of specific PV modules with ALUMERO systems must be clarified with the module manufacturer. ALUMERO accepts no liability for loss of performance or damage of any kind to the PV modules, particularly in the event of improper installation. [...] Any other use of the ALUMERO mounting systems is considered improper use. [...] The original language of these installation instructions is German. Any assembly instructions in another language are a translation of the assembly instructions in German.\nMANUFACTURER ALUMERO Systematic Solutions GmbH Sonnenweg 1-2 5162 Seeham - Österreich T +436217 / 68 41 - 0 F +436217 / 68 41 - 41 alumero@alumero.at www.alumerogroup.eu UPDATE These instructions are subject to change without notice. This does not constitute an obligation on the part of the manufacturer.\nCREATION DATE 07.2025",
+        "score": 0.7606688,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/683da6730b5dd25a451fd0a3_ALUMERO%20Assembly%20Manual%20easyGROUND_E_W.pdf",
+        "title": "[PDF] easyGROUND",
+        "snippet": "EN SUSTAINABLE SOLAR SOLUTIONS easyGROUND East / West ASSEMBLY MANUAL Please read the safety instructions at the end of this manual before starting the installation. Make sure you are using the latest version of the assembly manual. The layout and planning of the mounting system should be done using the ALUMERO.PRO.TOOL software. Refer to the required materials, positions, and arrangement of individual components as detailed in the project report provided by ALUMERO.PRO.TOOL or your ALUMERO [...] The installer of the photovoltaic system must ensure before installation begins that the roof substructure provided is designed for the additional loads.\nThis manual describes the assembly processes for the according ALUMERO system, attachment in open terrain, and the installation of modules.\nThis ALUMERO mounting system is designed exclusively for mounting PV modules. Any other use is considered inappropriate. [...] 2 2 1 20 21 The following documents are required in addition to the installation instructions and for correct installation of the system: + Project report from ALUMERO.PRO.TOOL + Planning documents and drawings + The generally applicable document “Installation instructions” at  under “General” -> “Other” Please also inform yourself about the safety regulations of the other system components.\nPLEASE NOTE THE FOLLOWING ADDITIONAL DOCUMENTS!\n22 CONGRATULATIONS, WELL DONE!",
+        "score": 0.7373288,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://supplier-offers-media-production.s3.eu-central-1.amazonaws.com/fcad2cbc-6d13-11ef-a0fb-0a58a9feac02.pdf",
+        "title": "[PDF] AS 2.1 - AWS",
+        "snippet": "Prior to commencement, technicians responsible for installing the photovoltaic system must ensure the existing roof construction is capable of bearing the additional loads and forces.\nThese installation instructions explain correct mounting procedures for ALUMERO tra-pezoidal sheet roofing components, how to attach them to the roof substructure and how to mount the modules. [...] The ALUMERO ‘Trapezoidal Sheet’ system is intended solely to carry PV modules. Any other applications of the system shall be considered examples of misuse.\nWe do not recommend installing extra-tilt frames.\nMounting must only be conducted by trained personnel. Roofing tasks in particular should only be carried out by professional roof contractors. [...] - ALUMERO shall under no circumstances accept liability for losses of performance suffered by the system, or damage to the system, whatever their nature.\nAll work carried out on the PV system should be conducted in full compliance with these instructions. Installation, commissioning, servicing and repair may only be conducted by specialists with recognised relevant certification and qualifications.\nPlease observe all current and applicable rules and safety advice.",
+        "score": 0.7192461,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.alumerogroup.eu/fileadmin/user_upload/downloads/sonstiges/solar/ALUMERO_Installation_Instruction_RoofHook_english.pdf",
+        "title": "Alumerogroup Alumerogroup",
+        "snippet": "#### PV-Dachmontage\n\n#### PV-Freifläche\n\n#### PV-Software\n\n#### Fertigung nach Kundenzeichnung\n\nDas Logo der ALUMERO Group\n\n# Service & Downloads\n\n## Montageanleitungen\n\n### Flachdach\n\n### Metalldach\n\n### Ziegeldach\n\n### Wellblech / Welleternit\n\n### Freifläche\n\n## Datenblätter\n\n### Flachdach\n\n### Metalldach\n\n### Ziegeldach\n\n### Wellblech / Welleternit\n\n### Freifläche\n\n## Allgemeines\n\n### Folder\n\n### Erfassungsbögen, Garantien etc.\n\n### Sonstiges\n\n## Zertifikate\n\n### Allgemein [...] ### ISO Zertifikate\n\nDas ALUMERO solar.pro.tool hilft bei der Planung von PV-Anlagen\n\n# solar.pro.tool\n\nDas ALUMERO solar.pro.tool ist eine Software zur einfachen Erfassung und schnellen Planung unserer PV-Montagesysteme. Nach abgeschlossener Projekterfassung erhältst du einen Modulplan mit Simulation der Verschattung, eine bearbeitbare CAD-Konstruktionszeichnung und Materialliste sowie einen Projektbericht. [...] Die Ergebnisse basieren auf dem gewählten ALUMERO Montagesystem, den damit verbundenen Statikberechnungen und den jeweils hinterlegten Berechnungsnormen. Mit dem ALUMERO solar.pro.tool wird die Planung und statische Berechnung der Unterkonstruktion zum Kinderspiel.\n\n## Kontakt\n\n### Seeham, AT\n\n### Chorzów, PL\n\n### Helmond, NL\n\n### Nenzing, AT",
+        "score": 0.40995342,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.alumaform.com/uploads/7/3/0/1/73010353/af-equipment-mounts.pdf",
+        "title": "Alumaform EQUIPMENT MOUNTS For mounting cutouts, power fuses, arresters, capacitors,",
+        "snippet": "tested to 600 lbs. with a safety fac-tor of 2. Factory pre-assembled into 1 piece and ready for installation. Spring locking clip that permits instant adjust-ment to perfect fit on 73/4” to 121/4” round metal, concrete Model #FMP Bent Adapter Plates Product #51847 For Flange mounted termina-tion. Plates fit on EMB series and Models #TB-EMB-1, R3CA, 1HCA, R3CA-48, and 1HCA-18. 5 mounting bolts with nuts are included with each plate. [...] torsion-resistant mount to receive 6 pieces of equipment. Mounts on wood poles with 5/8” thru-bolt and 3 lag screws (not furnished). Each mounting position of Model R3CA tested, without braces to 250 pounds with a safety factor of 2. Braces offer extra strength and rigidity to assist lineman in opening and closing cutouts. Grounding device supplied. [...] MODEL #R3A-3FMP PRODUCT # 51870 Mounts three intermediate lightning arresters and three flange mounted terminations (20˚ angle). All arrester and termination mounting hardware is supplied. Mounts with two 5/8” thru-bolts on 7” centers (not supplied). Grounding device supplied.",
+        "score": 0.13306585,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.solag.at/wp-content/uploads/2023/01/Garantie-Erdungsklemmen_EN_V1.0.pdf",
+        "title": "[PDF] Garantie Erdungsklemmen.indd - Solag",
+        "snippet": "10-YEAR WARRANTY. CONDUCTIVITY-WARRANTY ON ALL. ALUMERO GROUNDING-CLAMPS ... The warranty service only covers a subsequent delivery of defective parts if",
+        "score": 0.7730283,
+        "bucket": "other"
+      },
+      {
+        "url": "https://midsummer.ie/pdfs/alumero-warranty-mounting-systems-english.pdf",
+        "title": "[PDF] 10-year warranty",
+        "snippet": "the installation instructions supplied by us and, if applicable, separate design documents and structural engineering calculations apply to the installation. For products of the Alumero mounting systems made out of stainless steel and aluminium, we guarantee that their bearing capacity and functionality will maintain in the guarantee period if all previously named conditions will be met. Products made out of plastic and galvanized steel will not be considered and not included in this warranty. [...] MADE IN EUROPE on all alumero mounting systems 10-year warranty Alumero Systematic Solutions GmbH Sonnenweg 1 - 2 / 5164 Seeham T +43 (0) 6217 6841-0 alumero@alumero.com www.alumero.com The specified performance is restricted to the replacement of defective components if the damage is reported within the guarantee period. Any applicable legal warranty and liability claims shall remain unaffected by the guarantee. The gua-rantee is not applicable if the damage was caused by faulty installation, [...] ALUMERO Systematic Solutions GmbH guarantees the proper functioning and freedom from defects of the products delivered by Alumero.\nEdition may 2016 S O L A R M O U N T I N G S Y S T E M Q U A L I T Y W A R R A N T Y 10 YEARS Best Functionality",
+        "score": 0.7668008,
+        "bucket": "other"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/65d5b5275e745cb3f10286e3_Solar-Alumero-GESAMT-EN_WEB.pdf",
+        "title": "[PDF] solar systems & technologies",
+        "snippet": "ALUMERO is specialised in the production of formwork technology and mounting frames for photovoltaic and solar power systems, outdoor ground-mounted solu-tions, and ones for flat and for pitched roofs. Individual laminate and modular clamping technology and bespoke, non-standard solutions for customers are also well within our scope of expertise. [...] Alumero (50 mm) Hersteller: Alumero Artikelnummer: Erdungsklemme 17747 Endklemme 17211 modul lAgerung lAST AnmerKung SL2-F Punkt- und Linienlagerung 2400 Pa Schienenbreite von min. 40 mm verwenden!\nSeite 3 Freigegebene Klemmen FÜr module der Serie Sl2 und Sl2-F Alumero (50 mm) Hersteller: Alumero Artikelnummer: Erdungsklemme 17746 Endklemme 17754 modul lAgerung lAST AnmerKung SL2-F Punkt- und Linienlagerung 2400 Pa Schienenbreite von min. 40 mm verwenden! [...] earthing pins Ground-mounted systems 14 15 MADE IN EUROPE The ALUMERO ground-mounted 2.2 system features a clever combination of steel components and innovative aluminium structural parts for an otimum response to your needs. As is the case across the entire ALUMERO portfolio, ease-of-installation for the ground-mounted system is of utmost im-portance. Pre-assembled components make extremely speedy mounting a reality. Sophisticated standard components allow a variety of table layouts to be",
+        "score": 0.65173227,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "alumero",
+    "product": "Alumero TiltFix",
+    "candidates": [
+      {
+        "url": "https://www.solarworld.co.za/wp-content/uploads/2020/01/ALUMEROSolar-SystemeTechnologienEN.pdf",
+        "title": "[PDF] SOLAR SYSTEMS & TECHNOLOGY",
+        "snippet": "Inclination: Flexible angle, 5° – 25° Max. Wind-/Snowload: Windload up to 250 Km/h Snowload up to 2,4 KN Module clamps: Available with and without grounding pins 20° 2600 ca. 3300 ca. 1800 ca. 1750 MADE IN EUROPE LANDSCAPE 2.1 LANDSCAPE 2.1 10 LANDSCAPE 2.1 S O L A R M O U N T I N G S Y S T E M Q U A L I T Y W A R R A N T Y 10 YEARS Best Functionality With a clever mix of high-quality steel components and innovative aluminum components our ALUMERO ground mounting system LANDSCAPE 2.1 can [...] SOLAR EN SYSTEMS & TECHNOLOGY 2 ALUMERO SOLAR ALUMERO is specialized in mounting systems for photovoltaic and solar installations on flat roofs, pitched roofs and for ground moun-ting. Individual clamping technologies for laminated and framed modules, as well as customized constructions are also part of our core competency.\nALUMERO – your system- and OEM-producer. [...] LIVING SOLAR INDUSTRY BAUTEC / BMA 20 ALUMERO ALUMERO GROUP DESIGN, DEVELOPMENT, CONSTRUCTION UND PRODUCTION ALUMERO is a specialist for tailor-made aluminium solutions. Thereby we can convince as a manufacturer of high-quality aluminium extrusion profiles and aluminium assemblies with mechanical processing, as well as system provider in the business areas solar and photovoltaic, furniture and kitchen industry, metal and façade structures, noise protection, fences, balconies, winter gardens,",
+        "score": 0.6058229,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://szalontai.co.hu/_actual/export/image/alumero-portfolio.pdf",
+        "title": "[PDF] PRODUCT CATALOGUE SOLAR",
+        "snippet": "dimensions: 14,4 x 21,4 mm material: EN AW 6063 / T66 weight: 0,051 kg/Stk packaging: 10 pcs. per box / 600 pcs. per pallet artikel-nr: 16417 Cross connector 2.1 drawing number: 802200 A product-nr: 802200 surface: mill finish for Mounting profile 37, 45 and 65 inkl. Socket screw M8x30 with square nut inkl. Socket screw M8x16 with threaded plate 28x15 and Tuflock material: EN AW 6063 / T66; A2-70 weight: 0,092 kg/Stk packaging: 20 pcs. per box / 2.800 pcs. per pallet Alumero delivery program [...] material: EN AW 6063 / T66; A2-70 weight: 0,063 kg/Stk packaging: 50 pcs. per box / 4.950 pcs. per pallet Alumero delivery program printed on 23.08.2021 end of page 12 18 clamps artikel-nr: 17753 End clamp for fast mounting 30 drawing number: 802304-30V A product-nr: 802304-30V surface: mill finish L=50mm Incl. Opening-function for Frame height 30 mm for Mounting profiles with threaded plate channel M8 material: EN AW 6063 / T66; A2-70 weight: 0,046 kg/Stk packaging: 20 pcs. per box / 7.000 [...] drawing number: 802394-30V P1 product-nr: 802394-30V P1 surface: anodized E6/C35 L=50 mm Incl. Opening-function for Frame height 30 mm for Mounting profiles with threaded plate channel M8 material: EN AW 6063 / T66; A2-70 weight: 0,047 kg/Stk packaging: 20 Stk. pro Karton / 7.000 Stk. pro Palette Alumero delivery program printed on 23.08.2021 end of page 22 28 clamps artikel-nr: 21666 End clamp for fast mounting 32 black drawing number: 802394-32V product-nr: 802394-32V surface: anodized",
+        "score": 0.51310796,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/683da6730b5dd25a451fd0a3_ALUMERO Assembly Manual easyGROUND_E_W.pdf",
+        "title": "easyGROUND",
+        "snippet": "2 + Tighten the screws to 15 Nm. 1 2 2 2 1 h h 17 ATTACHING THE BALLAST VARIANT 4: LONG BALLAST TRAY The long ballast tray can be attached in the following positions: 1 at the starting foot 2 at the mid support 3 at the connector 4 at the starting foot - last row, mirror-inverted The exact number and position of the long ballast trays can be found in the ALUMERO.PRO.TOOL planning documents.",
+        "score": 0.97738,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://supplier-offers-media-production.s3.eu-central-1.amazonaws.com/0225b384-6cee-11ef-8bfb-0a58a9feac02.pdf",
+        "title": "[PDF] AS 2.1 - AWS",
+        "snippet": "This installation instruction manual explains installation procedures for ALU-. MERO tiled roof components, attachment to the substructure for the roof, and.",
+        "score": 0.97386,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/68779f0d4406ad1bb4db86b7_Assembly%20notes.pdf",
+        "title": "[PDF] Assembly notes",
+        "snippet": "ALUMERO accepts no liability for damage and faults caused by: + Non-intended use + Use of non-certified components + Unauthorised modifications to the product + Improper work on and with the product + Installation errors + Disregarding the installation instructions or planning documents + Insufficient survey of the local conditions or violation of the specifications of the manufacturers of other trades that are directly or indirectly connected to the ALUMERO system WARRANTY We warrant that the aluminium components and profiles of the Alumero mounting systems will retain their load-bearing capacity and functionality within the guarantee period, provided that all the general conditions mentioned above are met.",
+        "score": 0.96643,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.solarworld.co.za/wp-content/uploads/2020/01/ALUMEROSolar-MontagesystemeEN.pdf",
+        "title": "SOLAR MOUNTING SYSTEMS",
+        "snippet": "Opening-function for Frame height 43-50mm for Mounting profiles with threaded plate channel M8 This clamp can be used together with the trapezoidal short rail (802442) for all frame heights (33-50mm) material: EN AW 6063 / T66; A2-70 weight: 0,056 kg/Stk packaging: 50 Stk. pro Karton / 4.950 Stk. pro Palette Alumero delivery program printed on 08.02.2018 end of page 10 13 PITCHED ROOF AS 2.1 PITCHED ROOF AS 2.1 LANDSCAPE 2.1 LAMINATE CLAMP AEROCOMPACT GROUND MOUNT SOLAR.PRO.TOOL AEROCOMPACT 2.1 SOLAR THERMAL ENERGY ALUMERO TECHNOLOGY clamps artikel-nr: 21349 Middle clamp with pin 43-50 drawing number: 802301-43-50V P1 B product-nr: 802301-43-50V P1 surface: mill finish L=50 mm Incl.",
+        "score": 0.95225,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/65d5b5275e745cb3f10286e3_Solar-Alumero-GESAMT-EN_WEB.pdf",
+        "title": "[PDF] solar systems & technologies",
+        "snippet": "GROUND-MOUNTED 2.2 several options for making optimum adjustments to compensate for unevenness in terrain effective use of materials quick and easy installation limited number of individual components project-related planning and statics no sealing of soil surfaces superior-quality components guarantee excellent longevity Corrosion resistant ground, soil and fields can be easily cultivated complete recyclability high resale value + + + + + + + + + + + Technical data Panel table layout: 2 modules upright - one above the other Tilt angle: 10° - 25° Panel table lengths: Up to 25 m Piledriving depth: Standard 1,750 mm or according to specifications Height of lower table edge: Variable Bridge gaps: Calculated according to project specifics and dependant on local wind and snow conditions Superstructure: Calculated according to project specifics and dependant on local wind and snow conditions Material for module bridge: Hot-dip galvanised steel Material for superstructure: EN AW 6063 / T66 Material for attaching elements: A2-70 Accessories: Earthing clamps for linking up to electrical bonding network, components for cable conduits, components for internal electrical bonding, earthing wire, clamps for all types of module The classic outdoor ground-mounted system 16 17 MADE IN EUROPE KITS: Optionally available as pre-sized set solution.",
+        "score": 0.95208,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://image.schrackcdn.com/montageanleitungen/b_pvf51045--_en.pdf",
+        "title": "[PDF] AS 2.1 - Schrack Technik GmbH",
+        "snippet": "This installation instruction manual explains installation procedures for ALU-. MERO tiled roof components, attachment to the substructure for the roof, and.",
+        "score": 0.65887916,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/683da6730b5dd25a451fd0a3_ALUMERO%20Assembly%20Manual%20easyGROUND_E_W.pdf",
+        "title": "[PDF] easyGROUND",
+        "snippet": "The installer of the photovoltaic system must ensure before installation begins that the roof substructure provided is designed for the additional loads.\nThis manual describes the assembly processes for the according ALUMERO system, attachment in open terrain, and the installation of modules.\nThis ALUMERO mounting system is designed exclusively for mounting PV modules. Any other use is considered inappropriate. [...] 2 2 1 20 21 The following documents are required in addition to the installation instructions and for correct installation of the system: + Project report from ALUMERO.PRO.TOOL + Planning documents and drawings + The generally applicable document “Installation instructions” at  under “General” -> “Other” Please also inform yourself about the safety regulations of the other system components.\nPLEASE NOTE THE FOLLOWING ADDITIONAL DOCUMENTS!\n22 CONGRATULATIONS, WELL DONE! [...] EN SUSTAINABLE SOLAR SOLUTIONS easyGROUND East / West ASSEMBLY MANUAL Please read the safety instructions at the end of this manual before starting the installation. Make sure you are using the latest version of the assembly manual. The layout and planning of the mounting system should be done using the ALUMERO.PRO.TOOL software. Refer to the required materials, positions, and arrangement of individual components as detailed in the project report provided by ALUMERO.PRO.TOOL or your ALUMERO",
+        "score": 0.63288915,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/683eb2209599fb9a42cdd097_ALUMERO%20Assembly%20Manual%20easyBRIDGE.pdf",
+        "title": "[PDF] easyBRIDGE",
+        "snippet": "The installer of the photovoltaic system must ensure before installation begins that the roof substructure provided is designed for the additional loads.\nThis manual describes the assembly processes for the according ALUMERO system, attachment in open terrain, and the installation of modules.\nThis ALUMERO mounting system is designed exclusively for mounting PV modules. Any other use is considered inappropriate. [...] 16 Das beschriebene System ist ausschließlich für die Aufnahme von PV-Modulen konzipiert. Jede andere Verwendung gilt als nicht bestim-mungsgemäß. Zum bestimmungsgemäßen Gebrauch gehört auch die Einhaltung der Angaben dieser Montageanleitung. ALUMERO haftet nicht für Schäden, die aus Nichtbeachtung der Montageanleitung, insbesonde-re der Sicherheitshinweise, sowie aus missbräuchlicher Verwendung des Produkts entstehen. [...] the safety instructions at the end of this manual before starting the installation. Make sure you are using the latest version of the assembly manual. The layout and planning of the mounting system should be done using the ALUMERO.PRO.TOOL software. Refer to the required materials, positions, and arrangement of individual components as detailed in the project report provided by ALUMERO.PRO.TOOL or your ALUMERO sales representative. This data has been statically calculated and are essential for",
+        "score": 0.6279746,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/683eb212058d8ee0264e6161_ALUMERO%20Assembly%20Manual%20easyBRIDGE_Tilt.pdf",
+        "title": "[PDF] easyBRIDGE",
+        "snippet": "The installer of the photovoltaic system must ensure before installation begins that the roof substructure provided is designed for the additional loads.\nThis manual describes the assembly processes for the according ALUMERO system, attachment in open terrain, and the installation of modules.\nThis ALUMERO mounting system is designed exclusively for mounting PV modules. Any other use is considered inappropriate. [...] 20 The following documents are required in addition to the installation instructions and for correct installation of the system: + Project report from ALUMERO.PRO.TOOL + Planning documents and drawings + The generally applicable document “Installation instructions” at  under “General” -> “Other” Please also inform yourself about the safety regulations of the other system components.\nPLEASE NOTE THE FOLLOWING ADDITIONAL DOCUMENTS!\nCONGRATULATIONS, WELL DONE! [...] 20-24 Please read the safety instructions at the end of this manual before starting the installation. Make sure you are using the latest version of the assembly manual. The layout and planning of the mounting system should be done using the ALUMERO.PRO.TOOL software. Refer to the required materials, positions, and arrangement of individual components as detailed in the project report provided by ALUMERO.PRO.TOOL or your ALUMERO sales representative. This data has been statically calculated and",
+        "score": 0.6279746,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://supplier-offers-media-production.s3.eu-central-1.amazonaws.com/fcad2cbc-6d13-11ef-a0fb-0a58a9feac02.pdf",
+        "title": "[PDF] AS 2.1 - AWS",
+        "snippet": "- ALUMERO shall under no circumstances accept liability for losses of performance suffered by the system, or damage to the system, whatever their nature.\nAll work carried out on the PV system should be conducted in full compliance with these instructions. Installation, commissioning, servicing and repair may only be conducted by specialists with recognised relevant certification and qualifications.\nPlease observe all current and applicable rules and safety advice. [...] The ALUMERO ‘Trapezoidal Sheet’ system is intended solely to carry PV modules. Any other applications of the system shall be considered examples of misuse.\nWe do not recommend installing extra-tilt frames.\nMounting must only be conducted by trained personnel. Roofing tasks in particular should only be carried out by professional roof contractors. [...] 13 SAFETY INFORMATION AND WARNINGS The AS 2.1 pitched roof system is intended solely to carry PV modules. Any other applicati-ons of the system shall be considered examples of misuse. Correct use of this infrastructure also entails adherence to the guidelines and recommendations in these instructions. ALU-MERO shall accept no liability for damages resulting from neglect to adhere to the installa-tion manual, particularly in cases of incorrect use of the product.",
+        "score": 0.61057013,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.aluminium-exhibition.com/content/dam/sitebuilder/rxde/aluminium/downloads/ALU22_ePaper_Show_Guide.pdf.coredownload.631372161.pdf",
+        "title": "[PDF] SHOW GUIDE. ALUMINIUM 2022.",
+        "snippet": "groß genug, um einen hochwertigen Service zu bieten, klein genug, um sich um alle unsere Kunden zu kümmern. [...] you. Our community needs you more than ever! [...] for appropriate suppliers is provided free of charge.",
+        "score": 0.14917187,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.presezziextrusiongroup.com/pdf/journal/presezzi_extrusion_group_journal_march_2016.pdf",
+        "title": "[PDF] Jordan Aluminium invests in a state of the art extrusion line",
+        "snippet": "In the past years also a 30 ton tilting holding furnace, to feed an aluminium billet casting line, and a 4 coil annealing furnace for a strip plant, were supplied. Further, we can supply complete billet or slab casting plants as well, thanks to our internal expertise in the field and to our cooperation with primary manufacturers of casting equipment. Our projects manage complete “turnkey” installations wordwide as well as part supply contracts whereby our customers may only require engineering [...] assembly/storage area to the die oven zone. The manipulator can be equipped with an additional tools for the lifting of the dies. In this configuration, it can be used in manual mode and move the die from the die tilting to the assembly machines. At the end of the assembly process the manipulator can lift the die-stack and can be switch in automatic mode. Presezzi Extrusion Group does not only create high performance and reliable equipment but can also supply any specific complementary tools to [...] These furnaces and these special machines have been designed by our Technical Department and we fully own the know-how of furnaces at the best state of the art, as the ones described above. Therefore for any kind of furnaces we are able to propose the right solutions in terms of furnace design (stationary or tilting), combustion system, charging system or device, melt transfer system (tap, transfer pump), according to the needs of the process and of the layout.",
+        "score": 0.08059611,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://midsummer.ie/pdfs/alumero-warranty-mounting-systems-english.pdf",
+        "title": "[PDF] 10-year warranty",
+        "snippet": "the installation instructions supplied by us and, if applicable, separate design documents and structural engineering calculations apply to the installation. For products of the Alumero mounting systems made out of stainless steel and aluminium, we guarantee that their bearing capacity and functionality will maintain in the guarantee period if all previously named conditions will be met. Products made out of plastic and galvanized steel will not be considered and not included in this warranty. [...] MADE IN EUROPE on all alumero mounting systems 10-year warranty Alumero Systematic Solutions GmbH Sonnenweg 1 - 2 / 5164 Seeham T +43 (0) 6217 6841-0 alumero@alumero.com www.alumero.com The specified performance is restricted to the replacement of defective components if the damage is reported within the guarantee period. Any applicable legal warranty and liability claims shall remain unaffected by the guarantee. The gua-rantee is not applicable if the damage was caused by faulty installation, [...] ALUMERO Systematic Solutions GmbH guarantees the proper functioning and freedom from defects of the products delivered by Alumero.\nEdition may 2016 S O L A R M O U N T I N G S Y S T E M Q U A L I T Y W A R R A N T Y 10 YEARS Best Functionality",
+        "score": 0.7451949,
+        "bucket": "other"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/64ae5a3d1109baf182f6b840/68106bda48460e8b171b78b0_Katalog_ALUMERO_DE_EN_2025_WEB.pdf",
+        "title": "[PDF] KATALOG PV MONTAGE SYSTEME",
+        "snippet": "(Schraubverbindung direkt in das Trapezblech) Fastening 4 pcs. drilling screws (direct connection into the trapezoidal sheet ) Module Neigung Dachparallel Module Inclination Parallel to the roof Ausrichtung Vertikal und horizontal Orientation Vertical and horizontal Abmessungen Beliebig Dimensions Any Feldgröße Max. 12 Meter in Modul-Klemmrichtung Field size Max. 12 meters in module clamping direction Lasten Wind Berechnung gemäß DIN EN 1991-1-3:2010-12 mittels ALUMERO Solar.Pro.Tool Loads Wind [...] (Schraubverbindung direkt in das Trapezblech) Fastening 4 pcs. drilling screws (direct connection into the trapezoidal sheet) Module Neigung Dachparallel Module Inclination Parallel to the roof Ausrichtung Vertikal und horizontal Orientation Vertical and horizontal Abmessungen Beliebig Dimensions Any Feldgröße Max. 12 Meter in Modulklemmrichtung Field size Max. 12 Meters in module clamping direction Lasten Wind Berechnung gemäß DIN EN 1991-1-3:2010-12 mittels ALUMERO Solar.Pro.Tool Loads Wind [...] metal underconstruction Module Neigung Dachparallel Module Inclination Parallel to the roof Ausrichtung Vertikal und horizontal Orientation Vertical and horizontal Abmessungen Beliebig Dimensions Any Feldgröße Max. 12 Meter in Schienenrichtung Field size Max. 12 meters in direction of rail Lasten Wind Berechnung gemäß DIN EN 1991-1-3:2010-12 mittels ALUMERO Solar.Pro.Tool Loads Wind Calculation according to DIN EN 1991-1-3:2010-12 using ALUMERO Solar.Pro.Tool Schnee Berechnung gemäß DIN EN",
+        "score": 0.5297749,
+        "bucket": "other"
+      }
+    ]
+  }
+]

@@ -1,0 +1,198 @@
+[
+  {
+    "manufacturer": "sma",
+    "product": "SMA Sunny Tripower X 50-50",
+    "candidates": [
+      {
+        "url": "https://files.sma.de/downloads/STPxx-50-DS-en-21.pdf",
+        "title": "[PDF] Sunny Tripower X",
+        "snippet": "voltage 50 Hz / 230 V Rated output current / max. output current 17.4 A / 20 A4) 21.7 A / 25 A4) 29 A / 36.6 A 36.2 A / 36.6 A Feed-in phases / AC connection 3 / 3-(N)-PE Power factor at rated power / adjustable displacement power factor 1 / 0 overexcited to 0 underexcited Harmonic (THD) < 3 % Efficiency Max. efficiency / European efficiency 98.2 % / 97.6 % 98.2 % / 97.8 % 98.2 % / 97.9 % 98.2 % / 98.0 % Protective devices Input-side disconnection point ● Ground fault monitoring / grid [...] monitoring ● / ● DC reverse polarity protection / AC short-circuit current capability ● / ● All-pole sensitive residual-current monitoring unit ● Protection class (according to IEC 62109-1) / overvoltage category (according to IEC 62109-1) I / AC: III; DC: II Arc-fault circuit interrupter (AFCI) / I-V generator diagnostics ● / ●1) DC surge arrester (type 2, type 1/2) ○ General data Dimensions (W/H/D) 728 mm / 762 mm / 266 mm (28.7 in / 30.0 in / 10.5 in) Weight 35 kg (77 lbs) Operating [...] paper. All products and services described, as well as technical data, are subject to change, including for reasons of country-specific requirements, at any time without notice. SMA assumes no liability for mistakes or printing errors. For the latest information, please visit www.SMA-Solar.com Solar inverters made in Germany by SMA Solar Technology AG.",
+        "score": 0.8184036,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://files.sma.de/downloads/STP8-17-STP15-20TLEE-AC-CON-RM-xx-10.pdf",
+        "title": "[PDF] STP8-17-STP15-20TLEE-AC-CON-RM-xx-10",
+        "snippet": "The information contained in these documents is the property of SMA Solar Technology AG. No part of this document may be reproduced, stored in a retrieval",
+        "score": 0.3658876,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://files.sma.de/downloads/STP50-4x-BE-en-23.pdf",
+        "title": "[PDF] Operating manual - SUNNY TRIPOWER CORE1 (STP 50-40 / STP ...",
+        "snippet": "When mounting with profile rails, SMA Solar Technology AG recommends to bolt the profile rails. e.g. to the profile of the module frame or to",
+        "score": 0.71040785,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://files.sma.de/downloads/STPxx-50-BE-en-11.pdf",
+        "title": "[PDF] Operating manual - SUNNY TRIPOWER X 12 / 15 / 20 / 25",
+        "snippet": "PDF format and as an eManual at www.SMA-Solar.com. You can also ... written permission of and according to the instructions from SMA Solar Technology AG.",
+        "score": 0.7099254,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://files.sma.de/downloads/STP50-DCStecker-RM-xx-10.pdf",
+        "title": "[PDF] Replacement Manual - Spare part set \"DC Connectors\" for SUNNY ...",
+        "snippet": "Replacement Manual. Page 13. 5 Disconnecting the Inverter from Voltage Sources. SMA Solar ... 9 Returning and Disposing of the Defective Assembly. SMA Solar",
+        "score": 0.49245724,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://files.sma.de/assets/278702.pdf",
+        "title": "[PDF] SMA Limited Factory Warranty - Home & Business",
+        "snippet": "SUNNY ISLAND X: SI27-US208-20, SI40-US480-20, SI60-US480-20, SI27-US208-LCD-20, SI40-US480-LCD-20, SI60-US480-LCD-20 x SMA COMMERCIAL STORAGE SOLUTION x (when registering6) 5 The warranty period for -US Sunny Tripower, and -US Sunny Boy model types as well as the –US SMA Connection Units installed in countries other than Canada, Mexico or the United States of America is 5 years. [...] Product 2 years 5 years 10 years SUNNY ISLAND: SIxxM-13, SIxxH-13 SUNNY ISLAND X: SI30-20, SI50-20, SI30-LCD-20, SI50-LCD-20 SUNNY BOY STORAGE: SBSxx-1VL-10, SBSxx-10 SUNNY BOY: SBxx1VL-40, SBxx1AV-41 SUNNY BOY SMART ENERGY: SBSExx-50 SUNNY TRIPOWER: STPxx-3AV-40 SUNNY TRIPOWER SMART ENERGY: STP xxx-3SE-4x x x (when registering2) 2 The warranty period of the SMA Limited Factory Warranty for these products extends automatically to 10 YEARS from initial commissioning of the product or the invoice [...] Product 2 years 5 years 10 years 25 years ENERGY METER-US: EMETER-US-50, EMT-CTKIT-US-50 x SMA RAPID SHUTDOWN INITIATOR US: RSI-US-50 x SUNNY TRIPOWER5: STP xx000TL-US-10, STP xx-US-40, STP xx- US-41, STP xx-US-50 SUNNY BOY5: SB xx00TL-US-22, SB xx000TL-US-12, SB xx-1SP-US-4x, SB xx-1TP-US-4x, SUNNY BOY SMART ENERGY US: SBSExx-US-505 SUNNY BOY STORAGE: SBS xx-US-10, SBS xx-JP-10, SBS-ABU-200- US-10 SMA RAPID SHUTDOWN SYSTEM, GATEWAY SMA CONNECTION UNIT: CU1000-US5 SUNNY ISLAND: SIxxxx-US-10",
+        "score": 0.77893573,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "sma",
+    "product": "SMA Sunny Central Storage 2200",
+    "candidates": [
+      {
+        "url": "https://files.sma.de/assets/275864.pdf",
+        "title": "[PDF] SUNNY CENTRAL STORAGE 1900 / 2200 / 2475 / 2900",
+        "snippet": "It is designed to compensate fluctuations in solar energy genera- tion and offers comprehensive grid management services, e.g., automatic frequency control.",
+        "score": 0.98541,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://files.sma.de/downloads/SCSXXXX-DS-en-38.pdf",
+        "title": "[PDF] Sunny Central Storage-US 2200 / 2475 / 2900",
+        "snippet": "The Sunny Central Storage is designed to work with the SMA Hybrid Controller and is also available as a medium-voltage block turnkey solution. Sunny Central.",
+        "score": 0.9818,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://files.sma.de/downloads/MVPS-S2-SCS-US-B8-SH-en-11.pdf",
+        "title": "[PDF] System Manual - MEDIUM VOLTAGE POWER STATION with ...",
+        "snippet": "Inverter..............................................................................................................................................................264 Table of Contents SMA Solar Technology AG System Manual MVPS-S2-SCS-US-B8-SH-en-11 10 16.1.1 Sunny Central Storage 2200-US................................................................................................................... 264 16.1.2 Sunny Central Storage [...] Station from production version 1.0 • MVPS-2200-S2-US-11 (Medium Voltage Power Station with 1 Sunny Central Storage 2200-US) • MVPS-2475-S2-US-11 (Medium Voltage Power Station with 1 Sunny Central Storage 2475-US) • MVPS-2900-S2-US-11 (Medium Voltage Power Station with 1 Sunny Central Storage 2900-US) Inverters as of firmware version 8.00.##.R • SCS-2200-US-10 (Sunny Central Storage 2200-US) • SCS-2475-US-10 (Sunny Central Storage 2475-US) • SCS-2900-US-10 (Sunny Central Storage 2900-US) [...] 1 Information on this Document SMA Solar Technology AG System Manual 13 MVPS-S2-SCS-US-B8-SH-en-11 1.7 Additional Information For more information, please go to www.SMA-Solar.com.\nTitle and information content Type of information \"PUBLIC CYBER SECURITY - Guidelines for a Secure PV System Communication\" Technical Information \"Grid Support Utility Interactive Inverters for Sunny Central-US and Sunny Cen-tral Storage-US\" Information on setting the grid support in accordance with UL 1741 SA.",
+        "score": 0.7680558,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://files.sma.de/downloads/SBU2200-TEN083320.pdf",
+        "title": "[PDF] SUNNY BACKUP SYSTEM S - Technical Description",
+        "snippet": "Mounting the Sunny Backup 2200 using the wall mounting bracket . ... The Sunny Backup 2200 operates with all the Sunny Boy devices from SMA Solar Technology AG.",
+        "score": 0.725824,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://files.sma.de/assets/278702.pdf",
+        "title": "[PDF] SMA Limited Factory Warranty - Home & Business",
+        "snippet": "Taiwan Thailand Ukraine United Arab Emirates Vatican City Vietnam Specification of Obligations Within the Active-level, the SMA Limited Factory Warranty covers the costs incurred for a replacement device of equivalent value in regard of product type, kVA power class or age as well as its shipping and the return of the defective device during the defined warranty period as part of and in accordance with the conditions stipulated herein from the date the warranty period begins. [...] Product 2 years 5 years 10 years SUNNY ISLAND: SIxxM-13, SIxxH-13 SUNNY ISLAND X: SI30-20, SI50-20, SI30-LCD-20, SI50-LCD-20 SUNNY BOY STORAGE: SBSxx-1VL-10, SBSxx-10 SUNNY BOY: SBxx1VL-40, SBxx1AV-41 SUNNY BOY SMART ENERGY: SBSExx-50 SUNNY TRIPOWER: STPxx-3AV-40 SUNNY TRIPOWER SMART ENERGY: STP xxx-3SE-4x x x (when registering2) 2 The warranty period of the SMA Limited Factory Warranty for these products extends automatically to 10 YEARS from initial commissioning of the product or the invoice [...] • The SMA Limited Factory Warranty for the entire SMA Commercial Storage Solution system is only granted if proper Product registration of all components, including their serial numbers via  service.com, is carried out within 30 days of completion of initial commissioning. In addition, the warranty eligible person must provide the commissioning protocol (including serial numbers of all components) for the respective system upon request.",
+        "score": 0.7208996,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "byd",
+    "product": "BYD Battery-Box Premium HVS/HVM",
+    "candidates": []
+  },
+  {
+    "manufacturer": "byd",
+    "product": "BYD Cube Energy Storage System",
+    "candidates": [
+      {
+        "url": "https://sg.byd.com/wp-content/uploads/2021/07/Combined-Brochure-less-mini-ess.pdf",
+        "title": "[PDF] BYD-Cube",
+        "snippet": "Energy (BOL)@FAT 2580kWh 2590kWh 2600kWh 2600kWh DC Energy at Full Power (BOL)@FAT 2450kWh 2590kWh 2600kWh 2600kWh Battery Voltage Range 957.6～1231.2V 957.6～1231.2V 957.6～1231.2V 957.6～1231.2V Nominal Power 2480kW 1245kW 830kW 625kW General Data Dimensions of ESS (W×D×H) 9800×1700×2645mm 9800×1700×2645mm 9800×1700×2645mm 9800×1700×2645mm Weight of ESS 28800kg 28800kg 28800kg 28800kg Ingress Protection Rating IP55 IP55 IP55 IP55 Operating Temperature Range -30℃～+55℃【1】 -30℃～+55℃【1】 -30℃～+55℃【1】 [...] 232kWh 236kWh Nominal voltage 400V 400V Voltage range 360～440V 360～440V Nominal grid frequency 50Hz 50Hz Grid frequency range 47～52Hz 47～52Hz Power factor 1 lagging～1 leading 1 lagging～1 leading Max. THD of current ＜3% (@nominal power) ＜3% (@nominal power) DC component ＜0.5% (@nominal power) ＜0.5% (@nominal power) Isolation method Transformer-less Transformer-less General Data Dimensions of ESS unit (WDH) Around 1690×1900×2300 Around 1690×1720×2300 Weight of ESS unit About 3110kg About 2970kg [...] 深圳市坪山区坑梓街道坪山大道6531号 邮编：518122 电话:0755 8988 8888-55724 标称电压 51.2 V 工作电压范围 40~57.6V 宽度 482.6mm 高度 130mm 深度 400mm 输出端子规格 M6 净重 39.5±0.5 kg 初始容量 ≥100 Ah，25±3℃ at0.2C 标准充电电流 20 A 最大持续充电电流 100 A，At 25℃ 标准放电电流 20 A 最大持续放电电流 100 A，At 25℃ 放电直流内阻 ≤20 mΩ，1.5C 30S, 25%SOC at 25℃ ≤3%，25±3℃ 25%SOC 28 day ≤5%，25±3℃ 25%SOC 90 day 充电温度范围 0~60℃ 放电温度范围 -20~60℃ 工作湿度范围 5%-95% RH 工作海拔 ＜3000m 认证 IEC62619 /62368-1、UN38.3、 EN300386-1、UL1642、UN38.3 IP等级 IP20 自放电 FM48100-TIE1 规格参数 FM48100-TIE1 FM48100-TIE1 is a 48V100Ah",
+        "score": 0.8412138,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://sg.byd.com/wp-content/uploads/2017/10/Energy-Storage-System.pdf",
+        "title": "[PDF] BYD Energy Storage System",
+        "snippet": "The high efficiency of BYD energy storage system is ensured by the advanced Fe battery technology and the intelligent Battery Management. System. BYD self-",
+        "score": 0.71088976,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.byd.com/content/dam/byd-site/eu/support/service/warranty/en/BYD%20HAN%20Limited%20Warranty%20Manual-Europe%20and%20Israel-EN.pdf",
+        "title": "[PDF] LIMITED WARRANTY MANUAL - BYD",
+        "snippet": " Indirect damage or subsequent costs caused by product defects shall be handled in accordance with the substantive defect liability.\n All lead wire seals or sealant must be intact and not tampered with in any improper way. [...] (if any). [...] Customers are advised to consult the respective party for details of any warranty they may offer.",
+        "score": 0.6803909,
+        "bucket": "other"
+      },
+      {
+        "url": "https://en.byd.com/wp-content/uploads/2017/06/b-box-eur-spec.pdf",
+        "title": "[PDF] BYD ENERGY STORAGE PRODUCTS(B-BOX)",
+        "snippet": "standard compliance Safety standard compliance IP level Maintenance Scalability IP20 / / / Charge the battery half a year when storage or inactive status Yes , Up to 40Kwh B-plus2.51PCS B-plus2.52PCS B-plus2.53PCS B-plus2.54PCS B-Box 2.5 B-Box 5.0 B-Box 7.5 B-Box 10.0 I [...] system. The modular design gives flexibility of 1/2/3/4 pcs of battery modules in one battery rack. [...] depth 600 mm height 1108 (with wheels) 88Kg 126Kg 164Kg 202Kg Width 482.6 depth 489.5 mm height 130mm 38Kg 0℃~+55℃ 6000[100%DOD,+20℃,80% Capacity left] -20℃~55℃ UN3480 & UN38.3 12 months@+25℃; 6 months@+35℃; 3 months@+45℃ EN 61000 chapter 4.2,4.3,4.5,4.6/EN55022 UL1642 for cell; CE and TUV(JP) for battery module Dimension of cabinet Net Weight of B-BOX Dimension of B-plus 2.5 Net Weight of B-plus 2.5 Battery Cycle life Operating temperature Storage temperature Transport Storage duration EMC",
+        "score": 0.6439794,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "tesla",
+    "product": "Tesla Powerwall 3",
+    "candidates": [
+      {
+        "url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+        "title": "[PDF] Powerwall 3 Datasheet | Energy Library",
+        "snippet": "3 Technical Specifications System Technical Specifications Model Number 1707000-xx-y Nominal Grid Voltage (Input & Output) 120/240 VAC Grid Type Split phase Frequency 60 Hz Nominal Battery Energy 13.5 kWh AC 1 Nominal Output Power (AC) 5.8 kW 7.6 kW 10 kW 11.5 kW Maximum Apparent Power 5,800 VA 7,600 VA 10,000 VA 11,500 VA Maximum Continuous Current 24 A 31.7 A 41.7 A 48 A Overcurrent Protection Device 2 30 A 40 A 60 A 60 A Maximum Continuous Charge Current / Power 20.8 A AC / 5 kW Output Power [...] 609 mm 168 mm 1105 mm 5 2024 Powerwall 3 Datasheet Electrical Specifications Model MCI-1 MCI-2 Nominal Input DC Current Rating (IMP) 13 A 13 A Maximum Input Short Circuit Current (ISC) 19 A 17 A Maximum System Voltage (PVHCS) 600 V DC 1000 V DC 13 Maximum Disconnect Voltage 14 600 V DC 165 V DC Solar Shutdown Device Technical Specifications Environmental Specifications Operating Temperature -40°C to 50°C (-40°F to 122°F) -45°C to 70°C (-49°F to 158°F) Storage Temperature –30°C to 70°C (–22°F to [...] 175.8 204.86 74 175.8 204.86 74 176 mm 205 mm 74 mm 8 2024 Powerwall 3 Datasheet Backup Gateway 2 Performance Specifications Model Number 1232100-xx-y AC Voltage (Nominal) 120/240 V Feed-in Type Split phase Grid Frequency 60 Hz Current Rating 200 A Maximum Supply Short Circuit Current 10 kA 18 Overcurrent Protection Device 100 - 200 A, Service entrance rated Overvoltage Category Category IV Mechanical Specifications Dimensions 660 x 411 x 149 mm (26 x 16 x 6 in) Weight 20.4 kg (45 lb) Mounting",
+        "score": 0.8668671,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-za/Powerwall-3-Datasheet-ZA.pdf",
+        "title": "[PDF] Powerwall 3 Datasheet - Energy Library",
+        "snippet": "Powerwall 3 is designed for fast and efficient installations, modular system expansion, and simple connection to any electrical service. Page 2",
+        "score": 0.7882741,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-uk/Powerwall-3-Datasheet-EN.pdf",
+        "title": "[PDF] Powerwall 3 Datasheet - Energy Library",
+        "snippet": "Powerwall 3 is a fully integrated solar and battery system designed to accelerate the world's transition to sustainable energy. Powerwall 3 can store solar",
+        "score": 0.78493005,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-au/Powerwall-3-Datasheet-AU-EN.pdf",
+        "title": "[PDF] Powerwall 3 Datasheet | Energy Library",
+        "snippet": "It has the ability to store up to 13.5 kWh of energy and start heavy loads rated up to 185 A LRA, meaning a single Powerwall 3 can support the power needs of",
+        "score": 0.76992935,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/OwnerManual/Print/en-emea-apac/Powerwall-3-Owner-Manual-EN.pdf",
+        "title": "[PDF] Powerwall 3 Owner's Manual & Safety Instructions - Energy Library",
+        "snippet": "WARNING: Powerwall 3 installation must be carried out only by Tesla Certified Installers who are licensed electricians. WARNING: Powerwall 3 is heavy. Use",
+        "score": 0.8235701,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/OwnerManual/Print/en-us/Powerwall-3-Owner-Manual-EN-US.pdf",
+        "title": "[PDF] Powerwall 3 Owner's Manual & Safety Instructions - Energy Library",
+        "snippet": "WARNING: Powerwall 3 installation must be carried out only by Tesla Certified Installers who are licensed electricians. WARNING: Powerwall 3 is heavy. Use",
+        "score": 0.8235701,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/General/Warranty/en-us/Powerwall-Warranty-EN.pdf",
+        "title": "[PDF] Tesla Powerwall Limited Warranty (USA) - Energy Library",
+        "snippet": "Ten Year Limited Warranty. This Limited Warranty applies to the Powerwall 2, Powerwall+, and/or the Powerwall 3. (collectively referred to as",
+        "score": 0.8080827,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "tesla",
+    "product": "Tesla Megapack 2XL",
+    "candidates": [
+      {
+        "url": "https://www.tesla.com/sites/default/files/downloads/Lithium-Ion_Battery_Emergency_Response_Guide_en.pdf",
+        "title": "[PDF] Industrial Lithium-Ion Battery Emergency Response Guide - Tesla",
+        "snippet": "This guide is for emergency responders and authorities regarding safety of Tesla Industrial Energy products, including Megapack and Powerpack,",
+        "score": 0.55883324,
+        "bucket": "installation"
+      }
+    ]
+  }
+]

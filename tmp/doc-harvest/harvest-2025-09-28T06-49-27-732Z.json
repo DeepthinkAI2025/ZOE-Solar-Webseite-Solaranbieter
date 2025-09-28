@@ -1,0 +1,318 @@
+[
+  {
+    "manufacturer": "jinko-solar",
+    "product": "Cheetah HC 72M 535W",
+    "candidates": [
+      {
+        "url": "https://www.jinkosolar.com/uploads/5e68b53d/c4.pdf",
+        "title": "[PDF] CheetahPerc JKM380-400M-72-(V)",
+        "snippet": "www.jinkosolar.com KEY FEATURES Cheetah 72M Positive power tolerance of 0~+3% 380-400 Watt MONO PERC MODULE Advanced glass and surface texturing allow for excellent performance in low-light environment. Low-light Performance: LOW LIGHT Certified to withstand: wind load (2400 Pascal) and snow load (5400 Pascal).\nSevere Weather Resilience 2400 Pa 5400 Pa High salt mist and ammonia resistance certified by TUV NORD. [...] PID Resistance ISO9001:20015, ISO14001:2015, OHSAS18001 certified factory IEC61215, IEC61730, UL1703 certified product PERC Cheetah years Guaranteed Power Performance linear performance warranty Standard performance warranty Additional value from Jinko Solar’s linear warranty 83.1% 90% 97.5% 100% 1 5 12 25 Nomenclature: JKMxxxM-60/72H-V Code Cell null Full H Half Code Certification null 1000V V 1500V Engineering Drawings SPECIFICATIONS Mechanical Characteristics Electrical Performance & [...] High\u0003Transmission,\u0003Low\u0003Iron,\u0003Tempered\u0003Glass 20A 0~+3% -0.37%/℃ -0.29%/℃ 0.048%/℃ 45±2℃ Module\u0003Type\u0003 Maximum\u0003Power\u0003(Pmax) Maximum\u0003Power\u0003Voltage\u0003(Vmp) Maximum\u0003Power\u0003Current\u0003(Imp) Open-circuit\u0003Voltage\u0003(Voc) Short-circuit\u0003Current\u0003(Isc) Module\u0003Efficiency\u0003STC\u0003(%) Operating\u0003Temperature\u0003(℃) Maximum\u0003System\u0003Voltage Maximum\u0003Series\u0003Fuse\u0003Rating Power\u0003Tolerance Temperature\u0003Coefficients\u0003of\u0003Pmax Temperature\u0003Coefficients\u0003of\u0003Voc Temperature\u0003Coefficients\u0003of\u0003Isc Nominal\u0003Operating\u0003Cell\u0003Temperature\u0003\u0003(NOCT) Voltage (",
+        "score": 0.7040996,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/5ff587a0/JKM530-550M-72HL4-(V)-F1-EN.pdf",
+        "title": "[PDF] Tiger Pro 72HC",
+        "snippet": "Length: ±2mm Width: ±2mm Height: ±1mm Row Pitch: ±2mm 10.0 7.0 -40℃~+85℃ 1000/1500VDC (IEC) 25A 0~+3% -0.35%/℃ -0.28%/℃ 0.048%/℃ 45±2℃ Ⅰ Ⅱ Front Side Back Current (A) Voltage (V) Cell Temperature (℃） Power (W) Normalized Isc, Voc, Pmax (%) 14.0 9.0 35 33 A-A H 1086mm A A 2274mm 1134mm 1400mm 1100mm 400mm 20.55% 530Wp 40.56V 13.07A 49.26V 13.71A 394Wp 10.42A 37.84V 46.50V 11.07A 20.75% 535Wp 40.63V 13.17A 49.34V 13.79A 398Wp 10.50A 37.91V 46.57V 11.14A 20.94% 540Wp 40.70V 13.27A 49.42V 13.85A [...] Current-Voltage & Power-Voltage Curves (540W) 144 (6×24) P type Mono-crystalline NOCT STC NOCT STC NOCT STC JKM530M-72HL4 JKM535M-72HL4 JKM540M-72HL4 JKM530-550M-72HL4-(V)-F1-EN ©2020 Jinko Solar Co., Ltd. All rights reserved. [...] P-Type Tiger Pro 72HC 530-550 Watt www.jinkosolar.com MBB HC Technology MONO-FACIAL MODULE Positive power tolerance of 0~+3% ISO9001:2015: Quality Management System ISO14001:2015: Environment Management System ISO45001:2018 Occupational health and safety management systems IEC61215(2016), IEC61730(2016) Key Features Multi Busbar Technology Better light trapping and current collection to improve module power output and reliability.",
+        "score": 0.62687886,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/5ee2dd25/Cheetah%20Plus%20brochure.pdf",
+        "title": "[PDF] Cheetah Series",
+        "snippet": "Cheetah has an improved temperature coefficient of -0.35%/°C. Real world energy output can be increased up to 1% per day, perfect for delivering more",
+        "score": 0.4920179,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/JinkoSolar%20Global%20Installation%20Manual_20240814_A1.pdf",
+        "title": "[PDF] JinKoSolar Photovoltaic Modules - Installation Manual",
+        "snippet": "values provided in this manual are maximum test load values, measured in Pa and describe as follows: Maximum Test Load = 1.5 (Safety factor) x Design load - The module must be mounted on the bracket according to the following installation. If there are other installation, please consult JinKoSolar and obtain approval, otherwise the warranty will be invalid. - Under the mounting method of the fixed bracket as specified in this manual, the modules will be concave to varying degrees due to the [...] designs, should be tested by the mounting companies, to ensure the reliability of the systems. - JinKoSolar will not provide related mounting accessories. - the system installer or trained professional personnel must be responsible for the PV system's design, installation, and mechanical load calculation and system security. The design must take into consideration module’s bent/torsion, frame dimensions, fixation holes location and any other mechanic characteristic. - Before installation, the [...] Method A Long side clamping (4pcs.), rails (2pcs) parallel to short side. Method B Long side clamping (4pcs.), rails (2pcs) parallel to long side. Method C Long side clamping (6pcs.), rails (3pcs) parallel to short side. Mounting method /Range Module Type / Height Method A Method B Method C L= A/4±50 L=A/5~ A/4 L= A/5±50 L= A/4±50 L= A/5±50 L1=450 L2=(A/2-L1+50） L3=(A/2-L1-50） Maximum test load (Pa) N-54HL4R-BDB / / +6000 /-4000 / / / N-54HL4R-(V) N-54HL4R-B / / +6000 /-4000 / +2400 /-2400",
+        "score": 0.6739866,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/JinkoSolar-Global%20Limited%20Warranty_(REV112219-LINEAR).pdf",
+        "title": "[PDF] LIMITED WARRANTY",
+        "snippet": "collectively as the “Parties”. 1. WARRANTY START DATE. Jinko provides the Warranties set forth herein commencing upon the earlier of delivery of Modules to the original purchaser thereof or that date which is one hundred and eighty (180) days following the Module manufacture date, as indicated by the serial number [digit no. 7 – 12 (YYMMDD), starting from the left side of the serial number] for such Module (“Warranty Start Date”). 2. LIMITED PRODUCT WARRANTY. Beginning on the Warranty Start [...] Date and terminating on that date which is one hundred and forty-four (144) months thereafter, Jinko warrants that the Modules and their respective DC connectors and cables, if any, shall be free from material defects in design, materials and workmanship that impair the performance of the Module (“Limited Product Warranty”). Material defects shall not include normal wear and tear. 3. LIMITED POWER WARRANTY. Jinko warrants that the Degradation Rate shall not exceed the amount for the applicable [...] LIMITED WARRANTY REV. 112219-LINEAR 1 / 5 Jinko Solar Import and Export Co., Ltd. (“Jinko”) generally provides the Warranties set forth herein to the original purchaser and its permitted successors and assigns (“Customer”) with respect to all solar photovoltaic modules sold by Jinko under purchase agreements signed on or after November 22, 2019 (“Modules”), subject to the terms and conditions herein (“Limited Warranty”). Jinko and Customer may hereinafter be referred to each as a “Party” and",
+        "score": 0.7040996,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/JKM525-545M-72HL4-TV-F1-EN.pdf",
+        "title": "[PDF] Tiger Pro 72HC-TV",
+        "snippet": "Factor BIFACIAL OUTPUT-REARSIDE POWER GAIN 2274×1134×35mm (89.53×44.65×1.38 inch) Current-Voltage & Power-Voltage Curves (535W) 144 (6×24) P type Mono-crystalline NOCT STC NOCT STC NOCT STC JKM525M-72HL4-TV JKM530M-72HL4-TV JKM535M-72HL4-TV JKM540M-72HL4-TV JKM545M-72HL4-TV ©2020 Jinko Solar Co., Ltd. All rights reserved. [...] 49.35V 13.71A 394Wp 10.41A 37.88V 46.58V 11.07A 20.55% 535Wp 40.81V 13.11A 49.42V 13.79A 398Wp 10.48A 37.98V 46.65V 11.14A 20.75% NOCT STC NOCT STC 540Wp 40.91V 13.20A 49.49V 13.87A 402Wp 10.55A 38.08V 46.71V 11.20A 20.94% 545Wp 41.07V 13.27A 49.65V 13.94A 405Wp 10.62A 38.18V 46.86V 11.26A 21.13% 21.38% 551Wp 23.41% 604Wp 25.45% 656Wp 21.58% 557Wp 23.64% 610Wp 25.69% 663Wp 21.78% 562Wp 23.86% 615Wp 25.93% 669Wp A A 22.19% 572Wp 24.30% 623Wp 26.42% 681Wp 21.99% 567Wp 24.08% 621Wp 26.18% 675Wp [...] 98% 98% 100% 1 5 12 30 years Guaranteed Power Performance Additional value from Jinko Solar’s linear warranty 84.95% 84.95% BIFACIAL MODULE WITH TRANSPARENT BACKSHEET Higher Power Output Tiger Pro 72HC-TV 525-545 Watt www.jinkosolar.com Bifacial Technology Positive power tolerance of 0~+3% ISO9001:2015: Quality Management System ISO14001:2015: Environment Management System ISO45001:2018 Occupational health and safety management systems IEC61215(2016), IEC61730(2016) Key Features Multi Busbar",
+        "score": 0.6533265,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/JinkoSolar-Global%20Limited%20Warranty%20(Rev112318)-EN.pdf",
+        "title": "[PDF] LIMITED WARRANTY - Jinko Solar-Tiger Neo 3.0",
+        "snippet": "identified following the Warranty Start Date (“Limited Power Warranty”): (A) EAGLE/CHEETAH SERIES: (a) for Poly-crystalline Modules: (i) 2.5% in the first year; (ii) 0.7% each year thereafter until that date which is twenty-five (25) years following the Warranty Start Date, at which time the Actual Power Output shall be not less than 80.7% of the Nominal Power Output; (b) for Mono Modules: (i) 3.0% in the first year; (ii) 0.7% each year thereafter until that date which is twenty-five (25) years [...] following the Warranty Start Date, at which time the Actual Power Output shall be not less than 80.2% of the Nominal Power Output; (B) EAGLE/CHEETAH DUAL SERIES: (a) for Dual Poly Modules: (i) 2.5 % in the first year; (ii) 0.5 % each year thereafter until that date which is thirty (30) years following the Warranty Start Date, at which time the Actual Power Output shall be not less than 83.0 % of the Nominal Power Output; (b) for Dual Mono Modules (i) 3.0% in the first year; (ii) 0.5% each year [...] thereafter until that date which is thirty (30) years following the Warranty Start Date, at which time the Actual Power Output shall be not less than 82.5 % of the Nominal Power Output; and (C) EAGLE/CHEETAH BIFACIAL SERIES: for P-Type Bifacial Modules (i) 3.0% in the first year; (ii) 0.5% each year thereafter until that date which is thirty (30) years following the Warranty Start Date, at which time the Actual Power Output shall be not less than 82.5% of the Nominal Power Output.",
+        "score": 0.59344494,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "jinko-solar",
+    "product": "Cheetah HC 72M 540W",
+    "candidates": [
+      {
+        "url": "https://www.jinkosolar.com/uploads/5e68b53d/c4.pdf",
+        "title": "[PDF] CheetahPerc JKM380-400M-72-(V)",
+        "snippet": "www.jinkosolar.com KEY FEATURES Cheetah 72M Positive power tolerance of 0~+3% 380-400 Watt MONO PERC MODULE Advanced glass and surface texturing allow for excellent performance in low-light environment. Low-light Performance: LOW LIGHT Certified to withstand: wind load (2400 Pascal) and snow load (5400 Pascal).\nSevere Weather Resilience 2400 Pa 5400 Pa High salt mist and ammonia resistance certified by TUV NORD. [...] PID Resistance ISO9001:20015, ISO14001:2015, OHSAS18001 certified factory IEC61215, IEC61730, UL1703 certified product PERC Cheetah years Guaranteed Power Performance linear performance warranty Standard performance warranty Additional value from Jinko Solar’s linear warranty 83.1% 90% 97.5% 100% 1 5 12 25 Nomenclature: JKMxxxM-60/72H-V Code Cell null Full H Half Code Certification null 1000V V 1500V Engineering Drawings SPECIFICATIONS Mechanical Characteristics Electrical Performance & [...] High\u0003Transmission,\u0003Low\u0003Iron,\u0003Tempered\u0003Glass 20A 0~+3% -0.37%/℃ -0.29%/℃ 0.048%/℃ 45±2℃ Module\u0003Type\u0003 Maximum\u0003Power\u0003(Pmax) Maximum\u0003Power\u0003Voltage\u0003(Vmp) Maximum\u0003Power\u0003Current\u0003(Imp) Open-circuit\u0003Voltage\u0003(Voc) Short-circuit\u0003Current\u0003(Isc) Module\u0003Efficiency\u0003STC\u0003(%) Operating\u0003Temperature\u0003(℃) Maximum\u0003System\u0003Voltage Maximum\u0003Series\u0003Fuse\u0003Rating Power\u0003Tolerance Temperature\u0003Coefficients\u0003of\u0003Pmax Temperature\u0003Coefficients\u0003of\u0003Voc Temperature\u0003Coefficients\u0003of\u0003Isc Nominal\u0003Operating\u0003Cell\u0003Temperature\u0003\u0003(NOCT) Voltage (",
+        "score": 0.7036111,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/5ff587a0/JKM530-550M-72HL4-(V)-F1-EN.pdf",
+        "title": "[PDF] Tiger Pro 72HC",
+        "snippet": "Current-Voltage & Power-Voltage Curves (540W) 144 (6×24) P type Mono-crystalline NOCT STC NOCT STC NOCT STC JKM530M-72HL4 JKM535M-72HL4 JKM540M-72HL4 JKM530-550M-72HL4-(V)-F1-EN ©2020 Jinko Solar Co., Ltd. All rights reserved. [...] Length: ±2mm Width: ±2mm Height: ±1mm Row Pitch: ±2mm 10.0 7.0 -40℃~+85℃ 1000/1500VDC (IEC) 25A 0~+3% -0.35%/℃ -0.28%/℃ 0.048%/℃ 45±2℃ Ⅰ Ⅱ Front Side Back Current (A) Voltage (V) Cell Temperature (℃） Power (W) Normalized Isc, Voc, Pmax (%) 14.0 9.0 35 33 A-A H 1086mm A A 2274mm 1134mm 1400mm 1100mm 400mm 20.55% 530Wp 40.56V 13.07A 49.26V 13.71A 394Wp 10.42A 37.84V 46.50V 11.07A 20.75% 535Wp 40.63V 13.17A 49.34V 13.79A 398Wp 10.50A 37.91V 46.57V 11.14A 20.94% 540Wp 40.70V 13.27A 49.42V 13.85A [...] Durability Against Extreme Environmental Conditions 12 Year Product Warranty 25 Year Linear Power Warranty 0.55% Annual Degradation Over 25 years LINEAR PERFORMANCE WARRANTY 98% 98% 100% 1 5 12 25 years Guaranteed Power Performance Additional value from Jinko Solar’s linear warranty 84.8% 84.8% HOT 2400 Pa 5400 Pa Packaging Configuration Engineering Drawings SPECIFICATIONS Mechanical Characteristics Cell Type No. of cells Dimensions Weight Front Glass Frame Junction Box Output Cables 28.9 kg",
+        "score": 0.7004242,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/5ee2dd25/Cheetah%20Plus%20brochure.pdf",
+        "title": "[PDF] Cheetah Series",
+        "snippet": "The Cheetah series has high output, power up to 410/445 Wp, high module efficiency, improved temperature coefficient, and half-cell design for better shading.",
+        "score": 0.66959417,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/JinkoSolar%20Global%20Installation%20Manual_20240814_A1.pdf",
+        "title": "[PDF] JinKoSolar Photovoltaic Modules - Installation Manual",
+        "snippet": "values provided in this manual are maximum test load values, measured in Pa and describe as follows: Maximum Test Load = 1.5 (Safety factor) x Design load - The module must be mounted on the bracket according to the following installation. If there are other installation, please consult JinKoSolar and obtain approval, otherwise the warranty will be invalid. - Under the mounting method of the fixed bracket as specified in this manual, the modules will be concave to varying degrees due to the [...] Method A Long side clamping (4pcs.), rails (2pcs) parallel to short side. Method B Long side clamping (4pcs.), rails (2pcs) parallel to long side. Method C Long side clamping (6pcs.), rails (3pcs) parallel to short side. Mounting method /Range Module Type / Height Method A Method B Method C L= A/4±50 L=A/5~ A/4 L= A/5±50 L= A/4±50 L= A/5±50 L1=450 L2=(A/2-L1+50） L3=(A/2-L1-50） Maximum test load (Pa) N-54HL4R-BDB / / +6000 /-4000 / / / N-54HL4R-(V) N-54HL4R-B / / +6000 /-4000 / +2400 /-2400 [...] designs, should be tested by the mounting companies, to ensure the reliability of the systems. - JinKoSolar will not provide related mounting accessories. - the system installer or trained professional personnel must be responsible for the PV system's design, installation, and mechanical load calculation and system security. The design must take into consideration module’s bent/torsion, frame dimensions, fixation holes location and any other mechanic characteristic. - Before installation, the",
+        "score": 0.6711479,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/TUV%20Manual%20%20IEC2016.pdf",
+        "title": "[PDF] Installation Manual",
+        "snippet": "Solar PV modules usually can be mounted by using the following methods: bolts and clamps. ﹡Note: 1) All installation methods herein are only for reference, and",
+        "score": 0.32665846,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/JinkoSolar-Global%20Limited%20Warranty_(REV112219-LINEAR).pdf",
+        "title": "[PDF] LIMITED WARRANTY",
+        "snippet": "collectively as the “Parties”. 1. WARRANTY START DATE. Jinko provides the Warranties set forth herein commencing upon the earlier of delivery of Modules to the original purchaser thereof or that date which is one hundred and eighty (180) days following the Module manufacture date, as indicated by the serial number [digit no. 7 – 12 (YYMMDD), starting from the left side of the serial number] for such Module (“Warranty Start Date”). 2. LIMITED PRODUCT WARRANTY. Beginning on the Warranty Start [...] Date and terminating on that date which is one hundred and forty-four (144) months thereafter, Jinko warrants that the Modules and their respective DC connectors and cables, if any, shall be free from material defects in design, materials and workmanship that impair the performance of the Module (“Limited Product Warranty”). Material defects shall not include normal wear and tear. 3. LIMITED POWER WARRANTY. Jinko warrants that the Degradation Rate shall not exceed the amount for the applicable [...] JKMSxxxM-72-DV, JKMxxxM-72-DV-J, JKMSxxxM-72-DV-J, JKMxxxM-72H-DV, JKMxxxM-60-DV, JKMSxxxM-60-DV, JKMxxxM-60-DV-J, JKMSxxxM-60-DV-J, JKMxxxM-60H-DV, JKMxxxM-66-DV, JKMxxxM-66H-DV, JKMxxxM-78-DV, JKMxxxM-78H-DV, JKMxxxM-6RL3-DV, JKMxxxM-7RL3-DV (i) 2.5% in the first year; (ii) 0.5% each year thereafter until that date which is thirty (30) years following the Warranty Start Date, at which time the Actual Power Output shall be not less than 83 % of the Nominal Power Output; (D) BIFACIAL SERIES:",
+        "score": 0.70336664,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/JinkoSolar-Global%20Limited%20Warranty%20(Rev112318)-EN.pdf",
+        "title": "[PDF] LIMITED WARRANTY - Jinko Solar-Tiger Neo 3.0",
+        "snippet": "identified following the Warranty Start Date (“Limited Power Warranty”): (A) EAGLE/CHEETAH SERIES: (a) for Poly-crystalline Modules: (i) 2.5% in the first year; (ii) 0.7% each year thereafter until that date which is twenty-five (25) years following the Warranty Start Date, at which time the Actual Power Output shall be not less than 80.7% of the Nominal Power Output; (b) for Mono Modules: (i) 3.0% in the first year; (ii) 0.7% each year thereafter until that date which is twenty-five (25) years [...] following the Warranty Start Date, at which time the Actual Power Output shall be not less than 80.2% of the Nominal Power Output; (B) EAGLE/CHEETAH DUAL SERIES: (a) for Dual Poly Modules: (i) 2.5 % in the first year; (ii) 0.5 % each year thereafter until that date which is thirty (30) years following the Warranty Start Date, at which time the Actual Power Output shall be not less than 83.0 % of the Nominal Power Output; (b) for Dual Mono Modules (i) 3.0% in the first year; (ii) 0.5% each year [...] thereafter until that date which is thirty (30) years following the Warranty Start Date, at which time the Actual Power Output shall be not less than 82.5 % of the Nominal Power Output; and (C) EAGLE/CHEETAH BIFACIAL SERIES: for P-Type Bifacial Modules (i) 3.0% in the first year; (ii) 0.5% each year thereafter until that date which is thirty (30) years following the Warranty Start Date, at which time the Actual Power Output shall be not less than 82.5% of the Nominal Power Output.",
+        "score": 0.58408195,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "jinko-solar",
+    "product": "Tiger Neo 72HC 545W",
+    "candidates": [
+      {
+        "url": "https://www.jinkosolar.com/uploads/JKM525-545M-72HL4-BDVP-F1-EN.pdf",
+        "title": "[PDF] Tiger Pro 72HC-BDVP",
+        "snippet": "98% 98% 100% 1 5 12 30 years Guaranteed Power Performance Additional value from Jinko Solar’s linear warranty 84.95% 84.95% BIFACIAL MODULE WITH DUAL GLASS Higher Power Output Tiger Pro 72HC-BDVP 525-545 Watt www.jinkosolar.com Bifacial Technology Positive power tolerance of 0~+3% ISO9001:2015: Quality Management System ISO14001:2015: Environment Management System ISO45001:2018 Occupational health and safety management systems IEC61215(2016), IEC61730(2016) Key Features Multi Busbar Technology [...] 398Wp 10.49A 37.94V 46.76V 11.17A A NOCT STC NOCT STC JKM540M-72HL4-BDVP JKM545M-72HL4-BDVP 545Wp 41.32V 13.19A 49.92V 13.95A 405Wp 10.60A 38.25V 47.12V 11.27A 540Wp 41.13V 13.13A 49.73V 13.89A 402Wp 10.55A 38.08V 46.94V 11.22A 20.94% 21.13% 21.38% 551Wp 23.41% 604Wp 25.45% 656Wp 21.58% 557Wp 23.64% 610Wp 25.69% 663Wp 21.78% 562Wp 23.86% 615Wp 25.93% 669Wp 22.19% 572Wp 24.30% 623Wp 26.42% 681Wp 21.99% 567Wp 24.08% 621Wp 26.18% 675Wp 5 10 15 20 25 30 35 40 45 50 0 0 2 4 6 8 10 12 0 70 140 210 [...] Packaging Configuration JKM525-545M-72HL4-BDVP-F1-EN Engineering Drawings SPECIFICATIONS Mechanical Characteristics Cell Type No. of cells Dimensions Weight Front Glass Frame Junction Box Output Cables 34.3 kg (75.6 lbs) IP68 Rated Electrical Performance & Temperature Dependence Irradiance 1000W/m 2 AM=1.5 Irradiance 800W/m 2 AM=1.5 NOCT: STC: Wind Speed 1m/s Module Type Maximum Power (Pmax) Maximum Power Voltage (Vmp) Maximum Power Current (Imp) Open-circuit Voltage (Voc) Short-circuit Current",
+        "score": 0.67501575,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.jinkosolar.com/2023/PDF/20231211EN.pdf",
+        "title": "20231211EN.pdf - Jinko Solar-Tiger Neo 3.0",
+        "snippet": "Compared to the 70% bifacial factor of conventional PERC modules, JinkoSolar N-Type TOPCon modules have an optimized bifacial factor of up to 85%.",
+        "score": 0.5411427,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/JinkoSolar%20Global%20Installation%20Manual_20240814_A1.pdf",
+        "title": "[PDF] JinKoSolar Photovoltaic Modules - Installation Manual",
+        "snippet": "right to change the product specifications and this installation manual without prior notice. We recommend that you refer to the JinKoSolar website (www.jinkosolar.com) for the latest product and documentation information. JinKoSolar does not accept any responsibility for any loss, damage or expense arising from the installation, operation, use or maintenance of the Module, as the use of this manual and the conditions under which the Module is installed, operated, used, and maintained are [...] back frame of the module, by the edge part. The grounding hole on the frame is marked with typical grounding symbol ( ) according to IEC 61730-1:2023 standard. These holes can only be used for grounding with bolts, so cannot be used for module installation. This method includes bolt, flat washer, start washer, washer and nut（see Figure 9）. The bolts should be tightened when grounding is installed. The frame of the module must not be punched with additional holes and no damage should be done to [...] values provided in this manual are maximum test load values, measured in Pa and describe as follows: Maximum Test Load = 1.5 (Safety factor) x Design load - The module must be mounted on the bracket according to the following installation. If there are other installation, please consult JinKoSolar and obtain approval, otherwise the warranty will be invalid. - Under the mounting method of the fixed bracket as specified in this manual, the modules will be concave to varying degrees due to the",
+        "score": 0.6737291,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/5e8c0c06/Installation%20Manual%202020%20UL.pdf",
+        "title": "[PDF] JinkoSolar",
+        "snippet": "(2) Before installation, the following items should be addressed: 1) Visually check the module for any damage. Clean the module if any dirt or residue remains from shipping.\n2) Check if module serial number stickers match.\n3) The minimum distance between modules should be more than 10mm for all installation methods. [...] otherwise under any patent or patent rights. The information in this manual is based on Jinko’s knowledge and experience and is believed to be reliable, but such information including product specification (without limitations) and suggestions do not constitute a warranty, expresses or implied. Jinko reserves the right to change the installation manual, the PV product, the electrical specifications, or product information sheets without prior notice. - 15 - - 16 - Appendix 1： Applicable [...] please reconfirm with the supplier for the appropriate torque value. Please find detailed mounting information in figure 3. The installation instructions shall specify that the modules have been evaluated by UL for bolt mounting using the 8 provided mounting holes in the frame with a torque of 16~20 Nm. The following M8 stainless steel mounting hardware should be included in the installation instructions: For eight 14x9 holes and four 10x7 holes（Red label for mounting hole), mounting hardware",
+        "score": 0.6737291,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/TUV%20Certificate%20For%20IEC61215-2017-1.pdf",
+        "title": "[PDF] TUV Certificate For IEC61215-2017-1.pdf",
+        "snippet": "Jinko Solar Co., Ltd. No.1 Jinko Road. Shangrao Economic Development Zone. Jiangxi Province 334100. P. R. China. Manufacturing Plant: Zhejiang Jinko Solar Co.,",
+        "score": 0.33469868,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/JinkoSolar-Global%20Limited%20Warranty%20(Rev112318)-EN.pdf",
+        "title": "[PDF] LIMITED WARRANTY - Jinko Solar-Tiger Neo 3.0",
+        "snippet": "collectively as the “Parties”. 1. WARRANTY START DATE. Jinko provides the Warranties set forth herein commencing upon the earlier of delivery of Modules to the original purchaser thereof or that date which is one hundred and eighty (180) days following the Module manufacture date, as indicated by the serial number [digit no. 7 – 12 (YYMMDD), starting from the left side of the serial number] for such Module (“Warranty Start Date”). 2. LIMITED PRODUCT WARRANTY. Beginning on the Warranty Start [...] Date and terminating on that date which is one hundred and twenty (120) months thereafter, Jinko warrants that the Modules and their respective DC connectors and cables, if any, shall be free from material defects in design, materials and workmanship that affect the performance of the Module (“Limited Product Warranty”). Material defects shall not include normal wear and tear. 3. LIMITED POWER WARRANTY. Jinko warrants that the Degradation Rate shall not exceed the following for the periods [...] LIMITED WARRANTY REV. 112318-LINEAR 1 / 4 Jinko Solar Import and Export Co., Ltd. (“Jinko”) generally provides the Warranties set forth herein to the original purchaser and its permitted successors and assigns (“Customer”) with respect to all solar photovoltaic modules sold by Jinko under purchase agreements signed on or after November 23, 2018 (“Modules”), subject to the terms and conditions herein (“Limited Warranty”). Jinko and Customer may hereinafter be referred to each as a “Party” and",
+        "score": 0.769306,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/JKM525-545M-72HL4-TV-F1-EN.pdf",
+        "title": "[PDF] Tiger Pro 72HC-TV",
+        "snippet": "98% 98% 100% 1 5 12 30 years Guaranteed Power Performance Additional value from Jinko Solar’s linear warranty 84.95% 84.95% BIFACIAL MODULE WITH TRANSPARENT BACKSHEET Higher Power Output Tiger Pro 72HC-TV 525-545 Watt www.jinkosolar.com Bifacial Technology Positive power tolerance of 0~+3% ISO9001:2015: Quality Management System ISO14001:2015: Environment Management System ISO45001:2018 Occupational health and safety management systems IEC61215(2016), IEC61730(2016) Key Features Multi Busbar [...] Longer Life-time Power Yield 12 Year Product Warranty 30 Year Linear Power Warranty 0.45% Annual Degradation Over 30 years LINEAR PERFORMANCE WARRANTY 2400 Pa 5400 Pa P-Type Packaging Configuration JKM525-545M-72HL4-TV-F1-EN Engineering Drawings SPECIFICATIONS Mechanical Characteristics Cell Type No. of cells Dimensions Weight Front Glass Frame Junction Box Output Cables 28.9 kg (63.7 lbs) IP68 Rated Electrical Performance & Temperature Dependence Irradiance 1000W/m 2 AM=1.5 Irradiance 800W/m 2 [...] Factor BIFACIAL OUTPUT-REARSIDE POWER GAIN 2274×1134×35mm (89.53×44.65×1.38 inch) Current-Voltage & Power-Voltage Curves (535W) 144 (6×24) P type Mono-crystalline NOCT STC NOCT STC NOCT STC JKM525M-72HL4-TV JKM530M-72HL4-TV JKM535M-72HL4-TV JKM540M-72HL4-TV JKM545M-72HL4-TV ©2020 Jinko Solar Co., Ltd. All rights reserved.",
+        "score": 0.74652773,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/5ff587a0/JKM530-550M-72HL4-(V)-F1-EN.pdf",
+        "title": "[PDF] Tiger Pro 72HC",
+        "snippet": "Durability Against Extreme Environmental Conditions 12 Year Product Warranty 25 Year Linear Power Warranty 0.55% Annual Degradation Over 25 years LINEAR PERFORMANCE WARRANTY 98% 98% 100% 1 5 12 25 years Guaranteed Power Performance Additional value from Jinko Solar’s linear warranty 84.8% 84.8% HOT 2400 Pa 5400 Pa Packaging Configuration Engineering Drawings SPECIFICATIONS Mechanical Characteristics Cell Type No. of cells Dimensions Weight Front Glass Frame Junction Box Output Cables 28.9 kg [...] 402Wp 10.55A 38.08V 46.65V 11.19A NOCT STC NOCT STC JKM545M-72HL4 JKM550M-72HL4 JKM530M-72HL4-V JKM535M-72HL4-V JKM540M-72HL4-V JKM545M-72HL4-V JKM550M-72HL4-V 21.13% 545Wp 40.80V 13.36A 49.52V 13.94A 405Wp 10.60A 38.25V 46.74V 11.26A 21.33% 550Wp 40.90V 13.45A 49.62V 14.03A 409Wp 10.65A 38.42V 46.84V 11.33A 5 10 15 20 25 30 35 40 45 50 0 0 2 4 6 8 10 12 0 70 140 210 350 280 420 490 560 14 16 Ⅱ Ⅰ [...] Reduced Hot Spot Loss Optimized electrical design and lower operating current for reduced hot spot loss and better temperature coefficient.\nLonger Life-time Power Yield 0.55% annual power degradation and 25 year linear power warranty.\nCertified to withstand: wind load (2400 Pascal) and snow load (5400 Pascal).\nEnhanced Mechanical Load High salt mist and ammonia resistance.",
+        "score": 0.7451949,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "jinko-solar",
+    "product": "Tiger Pro 72HC-BDVP 560W Bifacial",
+    "candidates": [
+      {
+        "url": "https://www.jinkosolar.com/uploads/JKM525-545M-72HL4-BDVP-F1-EN.pdf",
+        "title": "[PDF] Tiger Pro 72HC-BDVP",
+        "snippet": "Length: ±2mm Width: ±2mm Height: ±1mm Row Pitch: ±2mm 2274mm 1134mm 1400mm 1100mm 400mm 1086mm 10.0 7.0 -40℃~+85℃ 1500VDC (IEC) 30A 0~+3% -0.35%/℃ -0.28%/℃ 0.048%/℃ 45±2℃ 70±5% A Ⅰ Ⅰ Ⅱ Ⅱ Front Side Back Current (A) Voltage (V) Cell Temperature (℃） Power (W) Normalized Isc, Voc, Pmax (%) 14.0 9.0 30 33 A-A 20.36% 525Wp 40.80V 12.87A 49.42V 13.63A 391Wp 10.33A 37.81V 46.65V 11.01A 20.55% 530Wp 40.87V 12.97A 49.48V 13.73A 394Wp 10.41A 37.88V 46.70V 11.09A 20.75% 535Wp 40.94V 13.07A 49.54V 13.83A [...] Specifications included in this datasheet are subject to change without notice. [...] 98% 98% 100% 1 5 12 30 years Guaranteed Power Performance Additional value from Jinko Solar’s linear warranty 84.95% 84.95% BIFACIAL MODULE WITH DUAL GLASS Higher Power Output Tiger Pro 72HC-BDVP 525-545 Watt www.jinkosolar.com Bifacial Technology Positive power tolerance of 0~+3% ISO9001:2015: Quality Management System ISO14001:2015: Environment Management System ISO45001:2018 Occupational health and safety management systems IEC61215(2016), IEC61730(2016) Key Features Multi Busbar Technology",
+        "score": 0.79119295,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/5ff587a0/JKM530-550M-72HL4-(V)-F1-EN.pdf",
+        "title": "[PDF] Tiger Pro 72HC",
+        "snippet": "Length: ±2mm Width: ±2mm Height: ±1mm Row Pitch: ±2mm 10.0 7.0 -40℃~+85℃ 1000/1500VDC (IEC) 25A 0~+3% -0.35%/℃ -0.28%/℃ 0.048%/℃ 45±2℃ Ⅰ Ⅱ Front Side Back Current (A) Voltage (V) Cell Temperature (℃） Power (W) Normalized Isc, Voc, Pmax (%) 14.0 9.0 35 33 A-A H 1086mm A A 2274mm 1134mm 1400mm 1100mm 400mm 20.55% 530Wp 40.56V 13.07A 49.26V 13.71A 394Wp 10.42A 37.84V 46.50V 11.07A 20.75% 535Wp 40.63V 13.17A 49.34V 13.79A 398Wp 10.50A 37.91V 46.57V 11.14A 20.94% 540Wp 40.70V 13.27A 49.42V 13.85A [...] Durability Against Extreme Environmental Conditions 12 Year Product Warranty 25 Year Linear Power Warranty 0.55% Annual Degradation Over 25 years LINEAR PERFORMANCE WARRANTY 98% 98% 100% 1 5 12 25 years Guaranteed Power Performance Additional value from Jinko Solar’s linear warranty 84.8% 84.8% HOT 2400 Pa 5400 Pa Packaging Configuration Engineering Drawings SPECIFICATIONS Mechanical Characteristics Cell Type No. of cells Dimensions Weight Front Glass Frame Junction Box Output Cables 28.9 kg [...] Specifications included in this datasheet are subject to change without notice.",
+        "score": 0.76279575,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/619f40ec/JKM550-570N-72HL4-BDV-F1-EN.pdf",
+        "title": "[PDF] JKM550-570N-72HL4-BDV-F1-EN.pdf - Jinko Solar-Tiger Neo 3.0",
+        "snippet": "36pcs/pallets, 72pcs/stack, 720pcs/ 40'HQ Container Temperature Dependence of Isc,Voc,Pmax 5% 15% 25% TUV 1×4.0mm 2 (+): 400mm , (-): 200mm or Customized Length 2.0mm, Anti-Reflection Coating Back Glass 2.0mm, Heat Strengthened Glass Anodized Aluminium Alloy Refer. Bifacial Factor BIFACIAL OUTPUT-REARSIDE POWER GAIN 2278×1134×30mm (89.69×44.65×1.18 inch) Current-Voltage & Power-Voltage Curves (560W) 144 (6×24) N type Mono-crystalline NOCT STC NOCT STC NOCT STC JKM550N-72HL4-BDV [...] Length: ±2mm Width: ±2mm Height: ±1mm Row Pitch: ±2mm 2278mm 1134mm 1400mm 1100mm 400mm 1086mm 10.0 7.0 -40℃~+85℃ 1500VDC (IEC) 30A 0~+3% -0.30%/℃ -0.25%/℃ 0.046%/℃ 45±2℃ 80±5% A Ⅰ Ⅰ Ⅱ Ⅱ Front Side Back Current (A) Voltage (V) Cell Temperature (℃） Power (W) Normalized Isc, Voc, Pmax (%) 14.0 9.0 30 33 30 18 A-A B-B 550Wp 41.58V 13.23A 50.27V 14.01A 414Wp 10.57A 39.13V 47.75V 11.31A 555Wp 41.77V 13.29A 50.47V 14.07A 417Wp 10.63A 39.26V 47.94V 11.36A 560Wp 41.95V 13.35A 50.67V 14.13A 421Wp 10.69A [...] 39.39V 48.13V 11.41A A B NOCT STC NOCT STC 570Wp 42.29V 13.48A 51.07V 14.25A 429Wp 10.81A 39.65V 48.51V 11.50A 565Wp 42.14V 13.41A 50.87V 14.19A 425Wp 10.75A 39.52V 48.32V 11.46A 22.36% 578Wp 24.48% 633Wp 26.61% 688Wp 22.56% 583Wp 24.71% 638Wp 26.86% 694Wp 22.77% 588Wp 24.93% 644Wp 27.10% 700Wp 23.17% 599Wp 25.37% 656Wp 27.58% 713Wp 22.97% 593Wp 25.15% 650Wp 27.34% 706Wp 0 5 10 15 20 25 30 35 40 45 50 55 0 2 4 6 8 10 12 0 70 140 210 350 280 420 490 560 14 16 B -50 -25 0 25 50 75 100 20 40 60 80",
+        "score": 0.70263255,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/JKM525-545M-72HL4-TV-F1-EN.pdf",
+        "title": "[PDF] Tiger Pro 72HC-TV",
+        "snippet": "Factor BIFACIAL OUTPUT-REARSIDE POWER GAIN 2274×1134×35mm (89.53×44.65×1.38 inch) Current-Voltage & Power-Voltage Curves (535W) 144 (6×24) P type Mono-crystalline NOCT STC NOCT STC NOCT STC JKM525M-72HL4-TV JKM530M-72HL4-TV JKM535M-72HL4-TV JKM540M-72HL4-TV JKM545M-72HL4-TV ©2020 Jinko Solar Co., Ltd. All rights reserved. [...] Length: ±2mm Width: ±2mm Height: ±1mm Row Pitch: ±2mm 2274mm 1134mm 1400mm 1100mm 400mm 1086mm 10.0 7.0 5 10 15 20 25 30 35 40 45 50 0 0 2 4 6 8 10 12 0 70 140 210 350 280 420 490 560 14 16 -40℃~+85℃ 1500VDC (IEC) 30A 0~+3% -0.35%/℃ -0.28%/℃ 0.048%/℃ 45±2℃ 70±5% Ⅰ Ⅱ Ⅰ Ⅱ k c a B e d i S t n o r F Current (A) Voltage (V) Cell Temperature (℃） Power (W) Normalized Isc, Voc, Pmax (%) 14.0 9.0 35 33 A-A 525Wp 40.61V 12.93A 49.27V 13.64A 391Wp 10.35A 37.74V 46.50V 11.02A 20.36% 530Wp 40.71V 13.02A [...] 98% 98% 100% 1 5 12 30 years Guaranteed Power Performance Additional value from Jinko Solar’s linear warranty 84.95% 84.95% BIFACIAL MODULE WITH TRANSPARENT BACKSHEET Higher Power Output Tiger Pro 72HC-TV 525-545 Watt www.jinkosolar.com Bifacial Technology Positive power tolerance of 0~+3% ISO9001:2015: Quality Management System ISO14001:2015: Environment Management System ISO45001:2018 Occupational health and safety management systems IEC61215(2016), IEC61730(2016) Key Features Multi Busbar",
+        "score": 0.69795954,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/JinkoSolar%20Global%20Installation%20Manual_20240814_A1.pdf",
+        "title": "[PDF] JinKoSolar Photovoltaic Modules - Installation Manual",
+        "snippet": "right to change the product specifications and this installation manual without prior notice. We recommend that you refer to the JinKoSolar website (www.jinkosolar.com) for the latest product and documentation information. JinKoSolar does not accept any responsibility for any loss, damage or expense arising from the installation, operation, use or maintenance of the Module, as the use of this manual and the conditions under which the Module is installed, operated, used, and maintained are [...] values provided in this manual are maximum test load values, measured in Pa and describe as follows: Maximum Test Load = 1.5 (Safety factor) x Design load - The module must be mounted on the bracket according to the following installation. If there are other installation, please consult JinKoSolar and obtain approval, otherwise the warranty will be invalid. - Under the mounting method of the fixed bracket as specified in this manual, the modules will be concave to varying degrees due to the [...] with bolts, fixed installation-mounting with clamps and tracker installation. ﹡Notes: - All installation methods herein are only for reference, and they are based on the test results from third-party tests and JinKoSolar internal tests. While we extensively test various mounting scenarios, the vast diversity in materials and designs globally, including special profiles, makes it impossible to guarantee exact load specifications for installations with unique materials or designs. Special",
+        "score": 0.6803909,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/JinkoSolar-Global%20Limited%20Warranty_(REV112219-LINEAR).pdf",
+        "title": "[PDF] LIMITED WARRANTY",
+        "snippet": "for P-Type Bifacial Modules: (1) DUAL GLASS BIFACIAL SERIES, only applicable to the following Modules types: JKMxxxM-60-BDVP, JKMxxxM-60H-BDVP, JKMxxxM-72-BDVP, JKMxxxM-72H-BDVP JKMxxxM-60HL-BDVP, JKMxxxM-72HL-BDVP, JKMxxxM-66H-BDVP, JKMxxxM-78H-BDVP ， JKMxxxM-7RL3-BDVP (i) 2.5% in the first year; (ii) 0.5% each year thereafter until that date which is thirty (30) years following the Warranty Start Date, at which time the Actual Power Output shall be not less than 83% of the Nominal Power [...] JKMSxxxM-72-DV, JKMxxxM-72-DV-J, JKMSxxxM-72-DV-J, JKMxxxM-72H-DV, JKMxxxM-60-DV, JKMSxxxM-60-DV, JKMxxxM-60-DV-J, JKMSxxxM-60-DV-J, JKMxxxM-60H-DV, JKMxxxM-66-DV, JKMxxxM-66H-DV, JKMxxxM-78-DV, JKMxxxM-78H-DV, JKMxxxM-6RL3-DV, JKMxxxM-7RL3-DV (i) 2.5% in the first year; (ii) 0.5% each year thereafter until that date which is thirty (30) years following the Warranty Start Date, at which time the Actual Power Output shall be not less than 83 % of the Nominal Power Output; (D) BIFACIAL SERIES: [...] collectively as the “Parties”. 1. WARRANTY START DATE. Jinko provides the Warranties set forth herein commencing upon the earlier of delivery of Modules to the original purchaser thereof or that date which is one hundred and eighty (180) days following the Module manufacture date, as indicated by the serial number [digit no. 7 – 12 (YYMMDD), starting from the left side of the serial number] for such Module (“Warranty Start Date”). 2. LIMITED PRODUCT WARRANTY. Beginning on the Warranty Start",
+        "score": 0.6742441,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "jinko-solar",
+    "product": "Tiger Pro 78HC-BDVP 580W Bifacial",
+    "candidates": [
+      {
+        "url": "https://www.jinkosolar.com/uploads/JKM525-545M-72HL4-BDVP-F1-EN.pdf",
+        "title": "[PDF] Tiger Pro 72HC-BDVP",
+        "snippet": "98% 98% 100% 1 5 12 30 years Guaranteed Power Performance Additional value from Jinko Solar’s linear warranty 84.95% 84.95% BIFACIAL MODULE WITH DUAL GLASS Higher Power Output Tiger Pro 72HC-BDVP 525-545 Watt www.jinkosolar.com Bifacial Technology Positive power tolerance of 0~+3% ISO9001:2015: Quality Management System ISO14001:2015: Environment Management System ISO45001:2018 Occupational health and safety management systems IEC61215(2016), IEC61730(2016) Key Features Multi Busbar Technology [...] Length: ±2mm Width: ±2mm Height: ±1mm Row Pitch: ±2mm 2274mm 1134mm 1400mm 1100mm 400mm 1086mm 10.0 7.0 -40℃~+85℃ 1500VDC (IEC) 30A 0~+3% -0.35%/℃ -0.28%/℃ 0.048%/℃ 45±2℃ 70±5% A Ⅰ Ⅰ Ⅱ Ⅱ Front Side Back Current (A) Voltage (V) Cell Temperature (℃） Power (W) Normalized Isc, Voc, Pmax (%) 14.0 9.0 30 33 A-A 20.36% 525Wp 40.80V 12.87A 49.42V 13.63A 391Wp 10.33A 37.81V 46.65V 11.01A 20.55% 530Wp 40.87V 12.97A 49.48V 13.73A 394Wp 10.41A 37.88V 46.70V 11.09A 20.75% 535Wp 40.94V 13.07A 49.54V 13.83A [...] 70pcs/stack, 630pcs/ 40'HQ Container Temperature Dependence of Isc,Voc,Pmax -50 -25 0 25 50 75 100 20 40 60 80 100 120 140 160 180 Isc Voc Pmax 5% 15% 25% TUV 1×4.0mm 2 (+): 400mm , (-): 200mm or Customized Length 2.0mm, Anti-Reflection Coating Back Glass 2.0mm, Anti-Reflection Coating Anodized Aluminium Alloy Refer. Bifacial Factor BIFACIAL OUTPUT-REARSIDE POWER GAIN 2274×1134×30mm (89.53×44.65×1.18 inch) Current-Voltage & Power-Voltage Curves (535W) 144 (6×24) P type Mono-crystalline NOCT STC",
+        "score": 0.5683445,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/5ff587a0/JKM530-550M-72HL4-(V)-F1-EN.pdf",
+        "title": "[PDF] Tiger Pro 72HC",
+        "snippet": "Length: ±2mm Width: ±2mm Height: ±1mm Row Pitch: ±2mm 10.0 7.0 -40℃~+85℃ 1000/1500VDC (IEC) 25A 0~+3% -0.35%/℃ -0.28%/℃ 0.048%/℃ 45±2℃ Ⅰ Ⅱ Front Side Back Current (A) Voltage (V) Cell Temperature (℃） Power (W) Normalized Isc, Voc, Pmax (%) 14.0 9.0 35 33 A-A H 1086mm A A 2274mm 1134mm 1400mm 1100mm 400mm 20.55% 530Wp 40.56V 13.07A 49.26V 13.71A 394Wp 10.42A 37.84V 46.50V 11.07A 20.75% 535Wp 40.63V 13.17A 49.34V 13.79A 398Wp 10.50A 37.91V 46.57V 11.14A 20.94% 540Wp 40.70V 13.27A 49.42V 13.85A [...] Specifications included in this datasheet are subject to change without notice. [...] Durability Against Extreme Environmental Conditions 12 Year Product Warranty 25 Year Linear Power Warranty 0.55% Annual Degradation Over 25 years LINEAR PERFORMANCE WARRANTY 98% 98% 100% 1 5 12 25 years Guaranteed Power Performance Additional value from Jinko Solar’s linear warranty 84.8% 84.8% HOT 2400 Pa 5400 Pa Packaging Configuration Engineering Drawings SPECIFICATIONS Mechanical Characteristics Cell Type No. of cells Dimensions Weight Front Glass Frame Junction Box Output Cables 28.9 kg",
+        "score": 0.52670854,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/JinkoSolar%20Global%20Installation%20Manual_20240814_A1.pdf",
+        "title": "[PDF] JinKoSolar Photovoltaic Modules - Installation Manual",
+        "snippet": "values provided in this manual are maximum test load values, measured in Pa and describe as follows: Maximum Test Load = 1.5 (Safety factor) x Design load - The module must be mounted on the bracket according to the following installation. If there are other installation, please consult JinKoSolar and obtain approval, otherwise the warranty will be invalid. - Under the mounting method of the fixed bracket as specified in this manual, the modules will be concave to varying degrees due to the [...] designs, should be tested by the mounting companies, to ensure the reliability of the systems. - JinKoSolar will not provide related mounting accessories. - the system installer or trained professional personnel must be responsible for the PV system's design, installation, and mechanical load calculation and system security. The design must take into consideration module’s bent/torsion, frame dimensions, fixation holes location and any other mechanic characteristic. - Before installation, the [...] with bolts, fixed installation-mounting with clamps and tracker installation. ﹡Notes: - All installation methods herein are only for reference, and they are based on the test results from third-party tests and JinKoSolar internal tests. While we extensively test various mounting scenarios, the vast diversity in materials and designs globally, including special profiles, makes it impossible to guarantee exact load specifications for installations with unique materials or designs. Special",
+        "score": 0.6100127,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/JKM525-545M-72HL4-TV-F1-EN.pdf",
+        "title": "Jinko Solar Tiger Pro 72HC-TV",
+        "snippet": "Length: ±2mm Width: ±2mm Height: ±1mm Row Pitch: ±2mm 2274mm 1134mm 1400mm 1100mm 400mm 1086mm 10.0 7.0 5 10 15 20 25 30 35 40 45 50 0 0 2 4 6 8 10 12 0 70 140 210 350 280 420 490 560 14 16 -40℃~+85℃ 1500VDC (IEC) 30A 0~+3% -0.35%/℃ -0.28%/℃ 0.048%/℃ 45±2℃ 70±5% Ⅰ Ⅱ Ⅰ Ⅱ k c a B e d i S t n o r F Current (A) Voltage (V) Cell Temperature (℃） Power (W) Normalized Isc, Voc, Pmax (%) 14.0 9.0 35 33 A-A 525Wp 40.61V 12.93A 49.27V 13.64A 391Wp 10.35A 37.74V 46.50V 11.02A 20.36% 530Wp 40.71V 13.02A [...] 98% 98% 100% 1 5 12 30 years Guaranteed Power Performance Additional value from Jinko Solar’s linear warranty 84.95% 84.95% BIFACIAL MODULE WITH TRANSPARENT BACKSHEET Higher Power Output Tiger Pro 72HC-TV 525-545 Watt www.jinkosolar.com Bifacial Technology Positive power tolerance of 0~+3% ISO9001:2015: Quality Management System ISO14001:2015: Environment Management System ISO45001:2018 Occupational health and safety management systems IEC61215(2016), IEC61730(2016) Key Features Multi Busbar [...] 49.35V 13.71A 394Wp 10.41A 37.88V 46.58V 11.07A 20.55% 535Wp 40.81V 13.11A 49.42V 13.79A 398Wp 10.48A 37.98V 46.65V 11.14A 20.75% NOCT STC NOCT STC 540Wp 40.91V 13.20A 49.49V 13.87A 402Wp 10.55A 38.08V 46.71V 11.20A 20.94% 545Wp 41.07V 13.27A 49.65V 13.94A 405Wp 10.62A 38.18V 46.86V 11.26A 21.13% 21.38% 551Wp 23.41% 604Wp 25.45% 656Wp 21.58% 557Wp 23.64% 610Wp 25.69% 663Wp 21.78% 562Wp 23.86% 615Wp 25.93% 669Wp A A 22.19% 572Wp 24.30% 623Wp 26.42% 681Wp 21.99% 567Wp 24.08% 621Wp 26.18% 675Wp",
+        "score": 0.4851368,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/TUV%20Manual%20%20IEC2016.pdf",
+        "title": "[PDF] Installation Manual",
+        "snippet": "Solar PV modules usually can be mounted by using the following methods: bolts and clamps. ﹡Note: 1) All installation methods herein are only for reference, and",
+        "score": 0.34900057,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/JinkoSolar-Global%20Limited%20Warranty_(REV112219-LINEAR).pdf",
+        "title": "[PDF] LIMITED WARRANTY",
+        "snippet": "for P-Type Bifacial Modules: (1) DUAL GLASS BIFACIAL SERIES, only applicable to the following Modules types: JKMxxxM-60-BDVP, JKMxxxM-60H-BDVP, JKMxxxM-72-BDVP, JKMxxxM-72H-BDVP JKMxxxM-60HL-BDVP, JKMxxxM-72HL-BDVP, JKMxxxM-66H-BDVP, JKMxxxM-78H-BDVP ， JKMxxxM-7RL3-BDVP (i) 2.5% in the first year; (ii) 0.5% each year thereafter until that date which is thirty (30) years following the Warranty Start Date, at which time the Actual Power Output shall be not less than 83% of the Nominal Power [...] collectively as the “Parties”. 1. WARRANTY START DATE. Jinko provides the Warranties set forth herein commencing upon the earlier of delivery of Modules to the original purchaser thereof or that date which is one hundred and eighty (180) days following the Module manufacture date, as indicated by the serial number [digit no. 7 – 12 (YYMMDD), starting from the left side of the serial number] for such Module (“Warranty Start Date”). 2. LIMITED PRODUCT WARRANTY. Beginning on the Warranty Start [...] JKMSxxxM-72-DV, JKMxxxM-72-DV-J, JKMSxxxM-72-DV-J, JKMxxxM-72H-DV, JKMxxxM-60-DV, JKMSxxxM-60-DV, JKMxxxM-60-DV-J, JKMSxxxM-60-DV-J, JKMxxxM-60H-DV, JKMxxxM-66-DV, JKMxxxM-66H-DV, JKMxxxM-78-DV, JKMxxxM-78H-DV, JKMxxxM-6RL3-DV, JKMxxxM-7RL3-DV (i) 2.5% in the first year; (ii) 0.5% each year thereafter until that date which is thirty (30) years following the Warranty Start Date, at which time the Actual Power Output shall be not less than 83 % of the Nominal Power Output; (D) BIFACIAL SERIES:",
+        "score": 0.66959417,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "jinko-solar",
+    "product": "Tiger Pro 78HC 590W",
+    "candidates": [
+      {
+        "url": "https://www.jinkosolar.com/uploads/61a0507f/JKM590-610N-78HL4-BDV-F1-EN.pdf",
+        "title": "[PDF] JKM590-610N-78HL4-BDV-F1-EN.pdf - Jinko Solar-Tiger Neo 3.0",
+        "snippet": "Specifications included in this datasheet are subject to change without notice. [...] Length: ±2mm Width: ±2mm Height: ±1mm Row Pitch: ±2mm 2465mm 1134mm 1600mm 1200mm 400mm 1086mm 10.0 7.0 -40℃~+85℃ 1500VDC (IEC) 30A 0~+3% -0.30%/℃ -0.25%/℃ 0.046%/℃ 45±2℃ 80±5% A Ⅰ Ⅰ Ⅱ Ⅱ Front Side Back Current (A) Voltage (V) Cell Temperature (℃） Power (W) Normalized Isc, Voc, Pmax (%) 14.0 9.0 35 30 35 13 A-A B-B A B NOCT STC NOCT STC JKM605N-78HL4-BDV JKM610N-78HL4-BDV 22.16% 620Wp 24.27% 679Wp 26.38% 738Wp 22.35% 625Wp 24.48% 684Wp 26.61% 744Wp 22.54% 630Wp 24.68% 690Wp 26.83% 750Wp 22.91% [...] 641Wp 25.10% 702Wp 27.28% 763Wp 22.73% 635Wp 24.89% 696Wp 27.05% 756Wp B 0 5 10 15 20 25 30 35 40 45 50 60 55 0 2 4 6 8 10 12 0 70 140 210 350 280 420 490 560 630 14 16 -50 -25 0 25 50 75 100 20 40 60 80 100 120 140 160 180 Isc Voc Pmax 21.11% 590Wp 44.91V 13.14A 54.76V 13.71A 444Wp 10.59A 41.89V 52.02V 11.07A 21.29% 595Wp 45.08V 13.20A 54.90V 13.79A 447Wp 10.65A 42.00V 52.15V 11.13A 21.46% 600Wp 45.25V 13.26A 55.03V 13.87A 451Wp 10.71A 42.12V 52.27V 11.20A 610Wp 45.60V 13.38A 55.31V 14.03A",
+        "score": 0.7132923,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/5ff587a0/JKM530-550M-72HL4-(V)-F1-EN.pdf",
+        "title": "[PDF] Tiger Pro 72HC",
+        "snippet": "Length: ±2mm Width: ±2mm Height: ±1mm Row Pitch: ±2mm 10.0 7.0 -40℃~+85℃ 1000/1500VDC (IEC) 25A 0~+3% -0.35%/℃ -0.28%/℃ 0.048%/℃ 45±2℃ Ⅰ Ⅱ Front Side Back Current (A) Voltage (V) Cell Temperature (℃） Power (W) Normalized Isc, Voc, Pmax (%) 14.0 9.0 35 33 A-A H 1086mm A A 2274mm 1134mm 1400mm 1100mm 400mm 20.55% 530Wp 40.56V 13.07A 49.26V 13.71A 394Wp 10.42A 37.84V 46.50V 11.07A 20.75% 535Wp 40.63V 13.17A 49.34V 13.79A 398Wp 10.50A 37.91V 46.57V 11.14A 20.94% 540Wp 40.70V 13.27A 49.42V 13.85A [...] Durability Against Extreme Environmental Conditions 12 Year Product Warranty 25 Year Linear Power Warranty 0.55% Annual Degradation Over 25 years LINEAR PERFORMANCE WARRANTY 98% 98% 100% 1 5 12 25 years Guaranteed Power Performance Additional value from Jinko Solar’s linear warranty 84.8% 84.8% HOT 2400 Pa 5400 Pa Packaging Configuration Engineering Drawings SPECIFICATIONS Mechanical Characteristics Cell Type No. of cells Dimensions Weight Front Glass Frame Junction Box Output Cables 28.9 kg [...] Specifications included in this datasheet are subject to change without notice.",
+        "score": 0.56920683,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/5e8c0c06/Installation%20Manual%202020%20UL.pdf",
+        "title": "[PDF] JinkoSolar",
+        "snippet": "please reconfirm with the supplier for the appropriate torque value. Please find detailed mounting information in figure 3. The installation instructions shall specify that the modules have been evaluated by UL for bolt mounting using the 8 provided mounting holes in the frame with a torque of 16~20 Nm. The following M8 stainless steel mounting hardware should be included in the installation instructions: For eight 14x9 holes and four 10x7 holes（Red label for mounting hole), mounting hardware [...] following stainless steel mounting hardware should be included in the installation instructions. [...] be big enough to mount the modules steadily (Please consult with the clamp or racking supplier for the specific torque value). Please find detailed mounting information in the below illustration. The mounting zone is greater than J and less than K. Figure 4 shows how a clamp should be mounted to the module frame.",
+        "score": 0.7325349,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/JinkoSolar%20Global%20Installation%20Manual_20240814_A1.pdf",
+        "title": "[PDF] JinKoSolar Photovoltaic Modules - Installation Manual",
+        "snippet": "values provided in this manual are maximum test load values, measured in Pa and describe as follows: Maximum Test Load = 1.5 (Safety factor) x Design load - The module must be mounted on the bracket according to the following installation. If there are other installation, please consult JinKoSolar and obtain approval, otherwise the warranty will be invalid. - Under the mounting method of the fixed bracket as specified in this manual, the modules will be concave to varying degrees due to the [...] Method A Long side clamping (4pcs.), rails (2pcs) parallel to short side. Method B Long side clamping (4pcs.), rails (2pcs) parallel to long side. Method C Long side clamping (6pcs.), rails (3pcs) parallel to short side. Mounting method /Range Module Type / Height Method A Method B Method C L= A/4±50 L=A/5~ A/4 L= A/5±50 L= A/4±50 L= A/5±50 L1=450 L2=(A/2-L1+50） L3=(A/2-L1-50） Maximum test load (Pa) N-54HL4R-BDB / / +6000 /-4000 / / / N-54HL4R-(V) N-54HL4R-B / / +6000 /-4000 / +2400 /-2400 [...] designs, should be tested by the mounting companies, to ensure the reliability of the systems. - JinKoSolar will not provide related mounting accessories. - the system installer or trained professional personnel must be responsible for the PV system's design, installation, and mechanical load calculation and system security. The design must take into consideration module’s bent/torsion, frame dimensions, fixation holes location and any other mechanic characteristic. - Before installation, the",
+        "score": 0.6530611,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/JinkoSolar-Global%20Limited%20Warranty_(REV112219-LINEAR).pdf",
+        "title": "[PDF] LIMITED WARRANTY",
+        "snippet": "Date and terminating on that date which is one hundred and forty-four (144) months thereafter, Jinko warrants that the Modules and their respective DC connectors and cables, if any, shall be free from material defects in design, materials and workmanship that impair the performance of the Module (“Limited Product Warranty”). Material defects shall not include normal wear and tear. 3. LIMITED POWER WARRANTY. Jinko warrants that the Degradation Rate shall not exceed the amount for the applicable [...] collectively as the “Parties”. 1. WARRANTY START DATE. Jinko provides the Warranties set forth herein commencing upon the earlier of delivery of Modules to the original purchaser thereof or that date which is one hundred and eighty (180) days following the Module manufacture date, as indicated by the serial number [digit no. 7 – 12 (YYMMDD), starting from the left side of the serial number] for such Module (“Warranty Start Date”). 2. LIMITED PRODUCT WARRANTY. Beginning on the Warranty Start [...] LIMITED WARRANTY REV. 112219-LINEAR 1 / 5 Jinko Solar Import and Export Co., Ltd. (“Jinko”) generally provides the Warranties set forth herein to the original purchaser and its permitted successors and assigns (“Customer”) with respect to all solar photovoltaic modules sold by Jinko under purchase agreements signed on or after November 22, 2019 (“Modules”), subject to the terms and conditions herein (“Limited Warranty”). Jinko and Customer may hereinafter be referred to each as a “Party” and",
+        "score": 0.6836946,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.jinkosolar.com/uploads/JinkoSolar-Global%20Limited%20Warranty%20(Rev112318)-EN.pdf",
+        "title": "[PDF] LIMITED WARRANTY - Jinko Solar-Tiger Neo 3.0",
+        "snippet": "collectively as the “Parties”. 1. WARRANTY START DATE. Jinko provides the Warranties set forth herein commencing upon the earlier of delivery of Modules to the original purchaser thereof or that date which is one hundred and eighty (180) days following the Module manufacture date, as indicated by the serial number [digit no. 7 – 12 (YYMMDD), starting from the left side of the serial number] for such Module (“Warranty Start Date”). 2. LIMITED PRODUCT WARRANTY. Beginning on the Warranty Start [...] Date and terminating on that date which is one hundred and twenty (120) months thereafter, Jinko warrants that the Modules and their respective DC connectors and cables, if any, shall be free from material defects in design, materials and workmanship that affect the performance of the Module (“Limited Product Warranty”). Material defects shall not include normal wear and tear. 3. LIMITED POWER WARRANTY. Jinko warrants that the Degradation Rate shall not exceed the following for the periods [...] LIMITED WARRANTY REV. 112318-LINEAR 1 / 4 Jinko Solar Import and Export Co., Ltd. (“Jinko”) generally provides the Warranties set forth herein to the original purchaser and its permitted successors and assigns (“Customer”) with respect to all solar photovoltaic modules sold by Jinko under purchase agreements signed on or after November 23, 2018 (“Modules”), subject to the terms and conditions herein (“Limited Warranty”). Jinko and Customer may hereinafter be referred to each as a “Party” and",
+        "score": 0.65146625,
+        "bucket": "other"
+      }
+    ]
+  }
+]

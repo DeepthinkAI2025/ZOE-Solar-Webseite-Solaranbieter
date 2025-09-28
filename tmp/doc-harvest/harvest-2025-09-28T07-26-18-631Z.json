@@ -1,0 +1,41 @@
+[
+  {
+    "manufacturer": "byd",
+    "product": "BYD Battery-Box Premium HVS/HVM",
+    "candidates": []
+  },
+  {
+    "manufacturer": "byd",
+    "product": "BYD Cube Energy Storage System",
+    "candidates": [
+      {
+        "url": "https://sg.byd.com/wp-content/uploads/2021/07/Combined-Brochure-less-mini-ess.pdf",
+        "title": "[PDF] BYD-Cube",
+        "snippet": "Energy (BOL)@FAT 2580kWh 2590kWh 2600kWh 2600kWh DC Energy at Full Power (BOL)@FAT 2450kWh 2590kWh 2600kWh 2600kWh Battery Voltage Range 957.6～1231.2V 957.6～1231.2V 957.6～1231.2V 957.6～1231.2V Nominal Power 2480kW 1245kW 830kW 625kW General Data Dimensions of ESS (W×D×H) 9800×1700×2645mm 9800×1700×2645mm 9800×1700×2645mm 9800×1700×2645mm Weight of ESS 28800kg 28800kg 28800kg 28800kg Ingress Protection Rating IP55 IP55 IP55 IP55 Operating Temperature Range -30℃～+55℃【1】 -30℃～+55℃【1】 -30℃～+55℃【1】 [...] 232kWh 236kWh Nominal voltage 400V 400V Voltage range 360～440V 360～440V Nominal grid frequency 50Hz 50Hz Grid frequency range 47～52Hz 47～52Hz Power factor 1 lagging～1 leading 1 lagging～1 leading Max. THD of current ＜3% (@nominal power) ＜3% (@nominal power) DC component ＜0.5% (@nominal power) ＜0.5% (@nominal power) Isolation method Transformer-less Transformer-less General Data Dimensions of ESS unit (WDH) Around 1690×1900×2300 Around 1690×1720×2300 Weight of ESS unit About 3110kg About 2970kg [...] 深圳市坪山区坑梓街道坪山大道6531号 邮编：518122 电话:0755 8988 8888-55724 标称电压 51.2 V 工作电压范围 40~57.6V 宽度 482.6mm 高度 130mm 深度 400mm 输出端子规格 M6 净重 39.5±0.5 kg 初始容量 ≥100 Ah，25±3℃ at0.2C 标准充电电流 20 A 最大持续充电电流 100 A，At 25℃ 标准放电电流 20 A 最大持续放电电流 100 A，At 25℃ 放电直流内阻 ≤20 mΩ，1.5C 30S, 25%SOC at 25℃ ≤3%，25±3℃ 25%SOC 28 day ≤5%，25±3℃ 25%SOC 90 day 充电温度范围 0~60℃ 放电温度范围 -20~60℃ 工作湿度范围 5%-95% RH 工作海拔 ＜3000m 认证 IEC62619 /62368-1、UN38.3、 EN300386-1、UL1642、UN38.3 IP等级 IP20 自放电 FM48100-TIE1 规格参数 FM48100-TIE1 FM48100-TIE1 is a 48V100Ah",
+        "score": 0.8412138,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://sg.byd.com/wp-content/uploads/2017/10/Energy-Storage-System.pdf",
+        "title": "[PDF] BYD Energy Storage System",
+        "snippet": "The high efficiency of BYD energy storage system is ensured by the advanced Fe battery technology and the intelligent Battery Management. System. BYD self-",
+        "score": 0.71088976,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.byd.com/content/dam/byd-site/eu/support/service/warranty/en/BYD%20HAN%20Limited%20Warranty%20Manual-Europe%20and%20Israel-EN.pdf",
+        "title": "[PDF] LIMITED WARRANTY MANUAL - BYD",
+        "snippet": " Indirect damage or subsequent costs caused by product defects shall be handled in accordance with the substantive defect liability.\n All lead wire seals or sealant must be intact and not tampered with in any improper way. [...] (if any). [...] Customers are advised to consult the respective party for details of any warranty they may offer.",
+        "score": 0.6803909,
+        "bucket": "other"
+      },
+      {
+        "url": "https://en.byd.com/wp-content/uploads/2017/06/b-box-eur-spec.pdf",
+        "title": "[PDF] BYD ENERGY STORAGE PRODUCTS(B-BOX)",
+        "snippet": "standard compliance Safety standard compliance IP level Maintenance Scalability IP20 / / / Charge the battery half a year when storage or inactive status Yes , Up to 40Kwh B-plus2.51PCS B-plus2.52PCS B-plus2.53PCS B-plus2.54PCS B-Box 2.5 B-Box 5.0 B-Box 7.5 B-Box 10.0 I [...] system. The modular design gives flexibility of 1/2/3/4 pcs of battery modules in one battery rack. [...] depth 600 mm height 1108 (with wheels) 88Kg 126Kg 164Kg 202Kg Width 482.6 depth 489.5 mm height 130mm 38Kg 0℃~+55℃ 6000[100%DOD,+20℃,80% Capacity left] -20℃~55℃ UN3480 & UN38.3 12 months@+25℃; 6 months@+35℃; 3 months@+45℃ EN 61000 chapter 4.2,4.3,4.5,4.6/EN55022 UL1642 for cell; CE and TUV(JP) for battery module Dimension of cabinet Net Weight of B-BOX Dimension of B-plus 2.5 Net Weight of B-plus 2.5 Battery Cycle life Operating temperature Storage temperature Transport Storage duration EMC",
+        "score": 0.6439794,
+        "bucket": "other"
+      }
+    ]
+  }
+]

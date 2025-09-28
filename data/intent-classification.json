@@ -1,0 +1,510 @@
+{
+  "timestamp": "2025-09-28T13:41:07.119Z",
+  "classifiedKeywords": [
+    {
+      "keyword": "wie funktioniert agri photovoltaik",
+      "intent": "informational",
+      "confidence": 4.8,
+      "scores": {
+        "informational": 4.8,
+        "commercial": 0,
+        "transactional": 0,
+        "navigational": 0,
+        "local": 0
+      },
+      "reasoning": [
+        "Beginnt mit Fragewort"
+      ]
+    },
+    {
+      "keyword": "beste agri pv anbieter",
+      "intent": "commercial",
+      "confidence": 2.6999999999999997,
+      "scores": {
+        "informational": 0,
+        "commercial": 2.6999999999999997,
+        "transactional": 0,
+        "navigational": 0,
+        "local": 0
+      },
+      "reasoning": [
+        "Enthält Vergleichs-Begriffe"
+      ]
+    },
+    {
+      "keyword": "agri photovoltaik kaufen",
+      "intent": "transactional",
+      "confidence": 5.28,
+      "scores": {
+        "informational": 0,
+        "commercial": 0,
+        "transactional": 5.28,
+        "navigational": 0,
+        "local": 0
+      },
+      "reasoning": [
+        "Enthält Kauf-Begriffe"
+      ]
+    },
+    {
+      "keyword": "zoe solar login",
+      "intent": "navigational",
+      "confidence": 2.0999999999999996,
+      "scores": {
+        "informational": 0,
+        "commercial": 0,
+        "transactional": 0,
+        "navigational": 2.0999999999999996,
+        "local": 0
+      },
+      "reasoning": [
+        "Enthält Navigations-Begriffe"
+      ]
+    },
+    {
+      "keyword": "agri pv in der nähe",
+      "intent": "local",
+      "confidence": 1.7999999999999998,
+      "scores": {
+        "informational": 0,
+        "commercial": 0,
+        "transactional": 0,
+        "navigational": 0,
+        "local": 1.7999999999999998
+      },
+      "reasoning": [
+        "Enthält lokale Such-Begriffe"
+      ]
+    },
+    {
+      "keyword": "warum agri photovoltaik",
+      "intent": "informational",
+      "confidence": 2.4,
+      "scores": {
+        "informational": 2.4,
+        "commercial": 0,
+        "transactional": 0,
+        "navigational": 0,
+        "local": 0
+      },
+      "reasoning": [
+        "Beginnt mit Fragewort"
+      ]
+    },
+    {
+      "keyword": "agri pv vergleich",
+      "intent": "commercial",
+      "confidence": 2.6999999999999997,
+      "scores": {
+        "informational": 0,
+        "commercial": 2.6999999999999997,
+        "transactional": 0,
+        "navigational": 0,
+        "local": 0
+      },
+      "reasoning": [
+        "Enthält Bewertungs-Begriffe"
+      ]
+    },
+    {
+      "keyword": "agri photovoltaik preis",
+      "intent": "transactional",
+      "confidence": 2.4,
+      "scores": {
+        "informational": 0,
+        "commercial": 0,
+        "transactional": 2.4,
+        "navigational": 0,
+        "local": 0
+      },
+      "reasoning": [
+        "Enthält Preis-Begriffe"
+      ]
+    },
+    {
+      "keyword": "agri pv beratung"
+    },
+    {
+      "keyword": "top agri photovoltaik",
+      "intent": "commercial",
+      "confidence": 2.6999999999999997,
+      "scores": {
+        "informational": 0,
+        "commercial": 2.6999999999999997,
+        "transactional": 0,
+        "navigational": 0,
+        "local": 0
+      },
+      "reasoning": [
+        "Enthält Vergleichs-Begriffe"
+      ]
+    },
+    {
+      "keyword": "agri photovoltaik installation"
+    },
+    {
+      "keyword": "was ist agri photovoltaik",
+      "intent": "informational",
+      "confidence": 4.8,
+      "scores": {
+        "informational": 4.8,
+        "commercial": 0,
+        "transactional": 0,
+        "navigational": 0,
+        "local": 0
+      },
+      "reasoning": [
+        "Beginnt mit Fragewort"
+      ]
+    },
+    {
+      "keyword": "agri pv förderung"
+    },
+    {
+      "keyword": "agri photovoltaik erfahrungen",
+      "intent": "commercial",
+      "confidence": 2.6999999999999997,
+      "scores": {
+        "informational": 0,
+        "commercial": 2.6999999999999997,
+        "transactional": 0,
+        "navigational": 0,
+        "local": 0
+      },
+      "reasoning": [
+        "Basierend auf allgemeinen Mustern"
+      ]
+    }
+  ],
+  "intentGroups": {
+    "informational": [
+      {
+        "keyword": "wie funktioniert agri photovoltaik",
+        "intent": "informational",
+        "confidence": 4.8,
+        "scores": {
+          "informational": 4.8,
+          "commercial": 0,
+          "transactional": 0,
+          "navigational": 0,
+          "local": 0
+        },
+        "reasoning": [
+          "Beginnt mit Fragewort"
+        ]
+      },
+      {
+        "keyword": "was ist agri photovoltaik",
+        "intent": "informational",
+        "confidence": 4.8,
+        "scores": {
+          "informational": 4.8,
+          "commercial": 0,
+          "transactional": 0,
+          "navigational": 0,
+          "local": 0
+        },
+        "reasoning": [
+          "Beginnt mit Fragewort"
+        ]
+      },
+      {
+        "keyword": "warum agri photovoltaik",
+        "intent": "informational",
+        "confidence": 2.4,
+        "scores": {
+          "informational": 2.4,
+          "commercial": 0,
+          "transactional": 0,
+          "navigational": 0,
+          "local": 0
+        },
+        "reasoning": [
+          "Beginnt mit Fragewort"
+        ]
+      }
+    ],
+    "commercial": [
+      {
+        "keyword": "beste agri pv anbieter",
+        "intent": "commercial",
+        "confidence": 2.6999999999999997,
+        "scores": {
+          "informational": 0,
+          "commercial": 2.6999999999999997,
+          "transactional": 0,
+          "navigational": 0,
+          "local": 0
+        },
+        "reasoning": [
+          "Enthält Vergleichs-Begriffe"
+        ]
+      },
+      {
+        "keyword": "agri pv vergleich",
+        "intent": "commercial",
+        "confidence": 2.6999999999999997,
+        "scores": {
+          "informational": 0,
+          "commercial": 2.6999999999999997,
+          "transactional": 0,
+          "navigational": 0,
+          "local": 0
+        },
+        "reasoning": [
+          "Enthält Bewertungs-Begriffe"
+        ]
+      },
+      {
+        "keyword": "top agri photovoltaik",
+        "intent": "commercial",
+        "confidence": 2.6999999999999997,
+        "scores": {
+          "informational": 0,
+          "commercial": 2.6999999999999997,
+          "transactional": 0,
+          "navigational": 0,
+          "local": 0
+        },
+        "reasoning": [
+          "Enthält Vergleichs-Begriffe"
+        ]
+      },
+      {
+        "keyword": "agri photovoltaik erfahrungen",
+        "intent": "commercial",
+        "confidence": 2.6999999999999997,
+        "scores": {
+          "informational": 0,
+          "commercial": 2.6999999999999997,
+          "transactional": 0,
+          "navigational": 0,
+          "local": 0
+        },
+        "reasoning": [
+          "Basierend auf allgemeinen Mustern"
+        ]
+      }
+    ],
+    "transactional": [
+      {
+        "keyword": "agri photovoltaik kaufen",
+        "intent": "transactional",
+        "confidence": 5.28,
+        "scores": {
+          "informational": 0,
+          "commercial": 0,
+          "transactional": 5.28,
+          "navigational": 0,
+          "local": 0
+        },
+        "reasoning": [
+          "Enthält Kauf-Begriffe"
+        ]
+      },
+      {
+        "keyword": "agri photovoltaik preis",
+        "intent": "transactional",
+        "confidence": 2.4,
+        "scores": {
+          "informational": 0,
+          "commercial": 0,
+          "transactional": 2.4,
+          "navigational": 0,
+          "local": 0
+        },
+        "reasoning": [
+          "Enthält Preis-Begriffe"
+        ]
+      }
+    ],
+    "navigational": [
+      {
+        "keyword": "zoe solar login",
+        "intent": "navigational",
+        "confidence": 2.0999999999999996,
+        "scores": {
+          "informational": 0,
+          "commercial": 0,
+          "transactional": 0,
+          "navigational": 2.0999999999999996,
+          "local": 0
+        },
+        "reasoning": [
+          "Enthält Navigations-Begriffe"
+        ]
+      }
+    ],
+    "local": [
+      {
+        "keyword": "agri pv in der nähe",
+        "intent": "local",
+        "confidence": 1.7999999999999998,
+        "scores": {
+          "informational": 0,
+          "commercial": 0,
+          "transactional": 0,
+          "navigational": 0,
+          "local": 1.7999999999999998
+        },
+        "reasoning": [
+          "Enthält lokale Such-Begriffe"
+        ]
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "intent": "informational",
+      "contentTypes": [
+        "Blog Artikel",
+        "Leitfaden",
+        "FAQ",
+        "Tutorial"
+      ],
+      "examples": [
+        "\"wie funktioniert agri photovoltaik\": Leitfaden für Einsteiger\"",
+        "\"was ist agri photovoltaik\": Leitfaden für Einsteiger\"",
+        "\"warum agri photovoltaik\": Leitfaden für Einsteiger\""
+      ],
+      "priority": "high"
+    },
+    {
+      "intent": "commercial",
+      "contentTypes": [
+        "Vergleichsartikel",
+        "Reviews",
+        "Top-Listen"
+      ],
+      "examples": [
+        "\"beste agri pv anbieter\": Vergleich der besten Anbieter\"",
+        "\"agri pv vergleich\": Vergleich der besten Anbieter\"",
+        "\"top agri photovoltaik\": Vergleich der besten Anbieter\""
+      ],
+      "priority": "high"
+    },
+    {
+      "intent": "transactional",
+      "contentTypes": [
+        "Produktseiten",
+        "Preisrechner",
+        "Angebotsseiten"
+      ],
+      "examples": [
+        "\"agri photovoltaik kaufen\": Jetzt anfragen\"",
+        "\"agri photovoltaik preis\": Jetzt anfragen\""
+      ],
+      "priority": "medium"
+    },
+    {
+      "intent": "local",
+      "contentTypes": [
+        "Standortseiten",
+        "GMB Optimierung",
+        "Lokale Inhalte"
+      ],
+      "examples": [
+        "\"agri pv in der nähe\": Standort Berlin\""
+      ],
+      "priority": "medium"
+    }
+  ],
+  "serpAnalysis": {
+    "informational": {
+      "features": [
+        "Featured Snippets",
+        "Knowledge Panels",
+        "People Also Ask"
+      ],
+      "strategy": "Optimiere für Position 1-3, strukturiere Content für Snippets",
+      "keywordCount": 3,
+      "topKeywords": [
+        "wie funktioniert agri photovoltaik",
+        "warum agri photovoltaik",
+        "was ist agri photovoltaik"
+      ]
+    },
+    "commercial": {
+      "features": [
+        "Local Pack",
+        "Reviews",
+        "Comparison Shopping"
+      ],
+      "strategy": "Baue Autorität auf, sammle Reviews, erstelle Vergleichs-Content",
+      "keywordCount": 4,
+      "topKeywords": [
+        "beste agri pv anbieter",
+        "agri pv vergleich",
+        "top agri photovoltaik",
+        "agri photovoltaik erfahrungen"
+      ]
+    },
+    "transactional": {
+      "features": [
+        "Shopping Results",
+        "Product Carousels",
+        "Price Comparison"
+      ],
+      "strategy": "Optimiere für Conversions, klare CTAs, Vertrauenssignale",
+      "keywordCount": 2,
+      "topKeywords": [
+        "agri photovoltaik kaufen",
+        "agri photovoltaik preis"
+      ]
+    },
+    "navigational": {
+      "features": [
+        "Sitelinks",
+        "Knowledge Panel",
+        "Brand Results"
+      ],
+      "strategy": "Stärke Brand-Signale, optimiere interne Verlinkung",
+      "keywordCount": 1,
+      "topKeywords": [
+        "zoe solar login"
+      ]
+    },
+    "local": {
+      "features": [
+        "Local Pack",
+        "Maps Integration",
+        "GMB Listings"
+      ],
+      "strategy": "Optimiere GMB, baue lokale Zitate, sammle Reviews",
+      "keywordCount": 1,
+      "topKeywords": [
+        "agri pv in der nähe"
+      ]
+    }
+  },
+  "summary": {
+    "totalKeywords": 14,
+    "intents": [
+      {
+        "intent": "informational",
+        "count": 3,
+        "percentage": 21
+      },
+      {
+        "intent": "commercial",
+        "count": 4,
+        "percentage": 29
+      },
+      {
+        "intent": "transactional",
+        "count": 2,
+        "percentage": 14
+      },
+      {
+        "intent": "navigational",
+        "count": 1,
+        "percentage": 7
+      },
+      {
+        "intent": "local",
+        "count": 1,
+        "percentage": 7
+      }
+    ]
+  }
+}

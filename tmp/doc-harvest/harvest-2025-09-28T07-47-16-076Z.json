@@ -1,0 +1,1026 @@
+[
+  {
+    "manufacturer": "altenergy-power",
+    "product": "Altenergy Power TS4-F",
+    "candidates": [
+      {
+        "url": "https://www.chintpowersystems.com/wp-content/uploads/2020/06/Tigo-Rapid-Shutdown-Manual.pdf",
+        "title": "[PDF] Installation Manual - TS4-F, TS4-AF, TS4-A-2F and RSS Transmitter",
+        "snippet": "Electrical Ratings TS4-F Fire Safety Input Rated DC Input Power 475W Input Voltage 16 - 90V Max Continuous Input Current (IMAX) 12.5A Output Output Power Range 0 - 475W Output Voltage Range 0 – VOC Communication Type Power Line Communication (PLC) Rapid Shutdown UL Listed (NEC 2014 & 2017 690.12) Yes Impedance Matching Capability No Output Voltage Limit No Maximum System Voltage 1500V Specify system voltage when ordering (1000V / 1500V) for appropriate cables & connectors. [...] MECHANICAL SPECIFICATIONS – TS4-F 17 Specifications TS4-F Fire Safety Mechanical Operating Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 85% Storage Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 60% Cooling Method Natural Convection Dimensions (with cover) 178.5mm x 134mm x 25.5mm Weight (base and cover) 670g Outdoor Rating IP68, NEMA 3R Cabling Type H1Z2Z2-K Output Length 1.2m standard, other lengths available Cable Options 1000V rated, 1500V rated Cable Cross-Section [...] The units constantly receive a “keep-alive” signal from the transmitter over PLC. When power to the transmitter is cut, this keep-alive signal ceases, sending every TS4-F into shutdown mode with output reduced to 0.6V.",
+        "score": 0.8446273,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.solar-electric.com/lib/wind-sun/Tigo_Installation-Manual-TS4-mlfp.pdf?srsltid=AfmBOop9gMj7BSvYITJFSlJrmf_UKoIdAoCiwa-YnTs-Ytz17iCr2rph",
+        "title": "[PDF] Installation Manual - TS4-F, TS4-AF, TS4-A-2F and RSS Transmitter",
+        "snippet": "20 Appendix TS4-F, TS4-A-F, TS4-A-2F, RSS Transmitter TECHNICAL SPECIFICATIONS – TS4-F 22 Electrical Ratings TS4-F Fire Safety Input Rated DC Input Power 475W Input Voltage 16 - 90V Max Continuous Input Current (IMAX) 12.5A Output Output Power Range 0 - 475W Output Voltage Range 0 – VOC Communication Type Power Line Communication (PLC) Rapid Shutdown UL Listed (NEC 2017 & 2020 690.12) Yes Impedance Matching Capability No Output Voltage Limit No Maximum System Voltage 1500V Specify system [...] Mechanical Operating Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 85% Storage Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 60% Cooling Method Natural Convection Dimensions (with cover) 178.5mm x 134mm x 25.5mm Weight (base and cover) 670g Outdoor Rating IP68, NEMA 3R Cabling Type H1Z2Z2-K Output Length 1.2m standard, other lengths available Cable Options 1000V rated, 1500V rated Cable Cross-Section 6.3 ± 0.3mm Connectors MC4, MC4 comparable UV Resistance 500hr with UV [...] TABLE OF CONTENTS TS4-F Rapid Shutdown System 4 System Overview: TS4-F 5 System Overview: TS4-A-F 6 System Overview: TS4-A-2F 7 Installation Notes 8 TS4-F Installation 9 TS4-A-F Installation 10 TS4-A-2F Installation 11 PV Conductor Installation - Multi-Transmitter Systems - Required Practices 12 RSS Transmitter Installation – Single RSS Core 13 RSS Transmitter Wiring – Single RSS Core 14 RSS Transmitter Grounding – Single RSS Core 15 RSS Transmitter Installation – Dual RSS Core 16 RSS",
+        "score": 0.83742094,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.solar-electric.com/lib/wind-sun/Tigo_Installation-Manual-TS4-mlfp.pdf?srsltid=AfmBOorKsiSXHuwFVQbsbSvY8ikTfoehY17hKxckVcas_95rSYj_F5sr",
+        "title": "[PDF] Installation Manual - TS4-F, TS4-AF, TS4-A-2F and RSS Transmitter",
+        "snippet": "20 Appendix TS4-F, TS4-A-F, TS4-A-2F, RSS Transmitter TECHNICAL SPECIFICATIONS – TS4-F 22 Electrical Ratings TS4-F Fire Safety Input Rated DC Input Power 475W Input Voltage 16 - 90V Max Continuous Input Current (IMAX) 12.5A Output Output Power Range 0 - 475W Output Voltage Range 0 – VOC Communication Type Power Line Communication (PLC) Rapid Shutdown UL Listed (NEC 2017 & 2020 690.12) Yes Impedance Matching Capability No Output Voltage Limit No Maximum System Voltage 1500V Specify system [...] Mechanical Operating Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 85% Storage Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 60% Cooling Method Natural Convection Dimensions (with cover) 178.5mm x 134mm x 25.5mm Weight (base and cover) 670g Outdoor Rating IP68, NEMA 3R Cabling Type H1Z2Z2-K Output Length 1.2m standard, other lengths available Cable Options 1000V rated, 1500V rated Cable Cross-Section 6.3 ± 0.3mm Connectors MC4, MC4 comparable UV Resistance 500hr with UV [...] TABLE OF CONTENTS TS4-F Rapid Shutdown System 4 System Overview: TS4-F 5 System Overview: TS4-A-F 6 System Overview: TS4-A-2F 7 Installation Notes 8 TS4-F Installation 9 TS4-A-F Installation 10 TS4-A-2F Installation 11 PV Conductor Installation - Multi-Transmitter Systems - Required Practices 12 RSS Transmitter Installation – Single RSS Core 13 RSS Transmitter Wiring – Single RSS Core 14 RSS Transmitter Grounding – Single RSS Core 15 RSS Transmitter Installation – Dual RSS Core 16 RSS",
+        "score": 0.83742094,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://invertersrus.com/wp-content/uploads/2024/03/Installation-Manual-TS4-F-TS4-R-F-RSS-Transmitter-1.pdf?srsltid=AfmBOopcsn9swm9HuOEOVe559bU9CH5mrjqVSp62AIzhMB1epTeeQPYR",
+        "title": "[PDF] Installation Manual - TS4-F and TS4-RF, RSS Transmitter",
+        "snippet": "Fuse Rating 20A 4.1.1 MECHANICAL SPECIFICATIONS – TS4-F / TS4-R-F ELECTRICAL RATINGS FIRE SAFETY TS4-F / TS4-R-F MECHANICAL Operating Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 85% Storage Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 60% Cooling Method Natural Convection Dimensions (with cover) 178.5mm x 134mm x 25.5mm Weight (base and cover) 670g Outdoor Rating IP68, NEMA 3R CABLING Type H1Z2Z2-K Output Length Standard 1.0m, other lengths on request Cable Options [...] ELECTRICAL RATINGS FIRE SAFETY TS4-F / TS4-R-F INPUT Rated DC Input Power 475W Maximum Input Voltage at Lowest Temperature 90V Max Continuous Input Current (IMAX) 12.5A Maximum VOC @ STC 75V Minimum VMP 16V OUTPUT Output Power Range 0 - 475W Output Voltage Range 0 – VOC Communication Type Power Line Communication (PLC) Rapid Shutdown UL Listed (NEC 2014 & 2017 690.12) Any SunSpec-compliant signaling device Impedance Matching Capability No Output Voltage Limit No Maximum System Voltage 1500V [...] APPENDIX A. Product Specifications B. Testing Rapid Shutdown C. Troubleshooting 4.1 TECHNICAL SPECIFICATIONS – TS4-F / TS4-R-F Specify system voltage when ordering (1000V / 1500V) for appropriate cables & connectors.\nRapid shutdown requires a SunSpec-compliant signaling device.",
+        "score": 0.8055255,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://invertersrus.com/wp-content/uploads/2024/03/Installation-Manual-TS4-F-TS4-R-F-RSS-Transmitter-1.pdf?srsltid=AfmBOopEGTRW3i7cREFRzy-Oe5ng-BAYOwAKBYCNu0CY0FkfVfKDi8JP",
+        "title": "[PDF] Installation Manual - TS4-F and TS4-RF, RSS Transmitter",
+        "snippet": "Fuse Rating 20A 4.1.1 MECHANICAL SPECIFICATIONS – TS4-F / TS4-R-F ELECTRICAL RATINGS FIRE SAFETY TS4-F / TS4-R-F MECHANICAL Operating Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 85% Storage Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 60% Cooling Method Natural Convection Dimensions (with cover) 178.5mm x 134mm x 25.5mm Weight (base and cover) 670g Outdoor Rating IP68, NEMA 3R CABLING Type H1Z2Z2-K Output Length Standard 1.0m, other lengths on request Cable Options [...] ELECTRICAL RATINGS FIRE SAFETY TS4-F / TS4-R-F INPUT Rated DC Input Power 475W Maximum Input Voltage at Lowest Temperature 90V Max Continuous Input Current (IMAX) 12.5A Maximum VOC @ STC 75V Minimum VMP 16V OUTPUT Output Power Range 0 - 475W Output Voltage Range 0 – VOC Communication Type Power Line Communication (PLC) Rapid Shutdown UL Listed (NEC 2014 & 2017 690.12) Any SunSpec-compliant signaling device Impedance Matching Capability No Output Voltage Limit No Maximum System Voltage 1500V [...] APPENDIX A. Product Specifications B. Testing Rapid Shutdown C. Troubleshooting 4.1 TECHNICAL SPECIFICATIONS – TS4-F / TS4-R-F Specify system voltage when ordering (1000V / 1500V) for appropriate cables & connectors.\nRapid shutdown requires a SunSpec-compliant signaling device.",
+        "score": 0.8055255,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://shop.frankensolar.ca/content/documentation/Tigo/Troubleshooting_Guide_Tigo_TS4-F.TS4-R-F.TS4-A-F.RSSTransmitter_(frankensolar).pdf?srsltid=AfmBOop5Qjt7Rl8V4HmC3wjY6jnbbQUJEXsMu5-4N2CiFuvZPAM1DoXo",
+        "title": "[PDF] Troubleshooting Guide - TS4-F, TS4-RF, TS4-AF and RSS Transmitter",
+        "snippet": "• TS4-R-F and TS4-A-F outputs are connected in series to form a string.\n• No additional grounding required.\n• MLPE are external to the module.\n1. SYSTEM OVERVIEW TS4-F • Module level power electronics (MLPE) are contained in the junction box, installed at the PV module factory.\n• Connected in series like regular modules.\n• No additional wiring connections to make.\nRSS Transmitter • Rapid Shutdown System transmitter for rapid shutdown activation of TS4-F or TS4-R-F units. [...] • It is recommended not to mix between TS4-F products to TS4-S, TS-O or TS4-L.\n• Make sure Rapid Shutdown System label is placed no more than 1m (3ft) from initiator (AC disconnect) or service panel containing means of disconnection if not at same location.\nRapid Shutdown System label to be placed in proper location TABLE OF CONTENTS 1.\nSystem Overview 1.\nRapid Shutdown System 2.\nSystem Configurations 3.\nRapid Shutdown Operation 2.\nTroubleshooting 101 1.\nStep-by-Step Guide – Prerequisite 2. [...] 2.1 STEP-BY-STEP GUIDE - PREREQUISITE 2.2 GENERAL SERVICE GUIDELINE 2.3 SYSTEM COMPONENTS 2.4 POTENTIAL ISSUES 2.4.1 String has no DC voltage (0.0V) Issue 1 String has no DC voltage (0.0V) Description TS4-F, TS4-R-F and TS4-A-F should pass 0.6 V per unit when the string is not connected to an active transmitter. If the output voltage is measured at 0.0V on a string, there is an open circuit condition. This is most often caused by a wiring issue within the string. Troubleshooting Step 1 Verify",
+        "score": 0.7701369,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOopovgn5NGWShu1SZlDuQA6c3wPLYwvRWx1BymDIW-p-yKb32lpJ",
+        "title": "[PDF] TS4 Installation Manual - RES Supply",
+        "snippet": "0.25 mm (1000V) 6.4 ± 0.2mm, 7.05 ± 0.2mm (1500V) Connectors MC4, MC4 compatible, Amphenol, EVO2 UV Resistance 500hr with UV light between 300-400nm @65C Maximum String Voltage 1500V UL/IEC1 1 All TS4 covers are 1500V compatible. Specify max system voltage when ordering modules with TS4 bases for appropriate cables & connectors. [...] Status 1.\nModules 1.\nSignal 2.\nVoltage 3.\nPower 2.\nDate / time 3.\nUnit ID 4.\nVersion 5.\nConfig (Tigo internal use only) Use the LCD and buttons to navigate the different menu options Blue are used during standard installation process Green may be used to get additional information Orange should only be used when instructed by technical support red are additional control buttons or advanced settings. Detailed explanation of each function can be found here.\n2.\nControl 1.\nDiscovery 2. [...] automatically entered PV-Safe mode.",
+        "score": 0.7180613,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/5fad551d7419c7a0e9e4aba4/673cd6c9bb22598569c0639c_002-00205-00%201.0%20Datasheet%20TS4-X-F%2020241105%20-%20EN.pdf",
+        "title": "[PDF] TS4-XF - Rapid shutdown for modules up to 800 W",
+        "snippet": "– 185 °F) Storage temperature range -20 – 65 °C (-4 – 149 °F) Maximum elevation 3000 m (9840 ft.) Outdoor IP rating IP68 Mechanical Dimensions (H/W/D) 139.7 x 138.4 x 22.9 mm (5.4 x 5.5 x 0.9 in.) Weight 520 g (1.15 lb.) General Standards compliance FCC, IC, CE-EMC, CE-RED, CISPR 31, CSA 22.2, IEC 62109, UL 1741 PVRSE/PVRSS, UL3741 PVHCE Warranty 25 years  Exact lengths within 3%. [...] Features • Rated 800 W, 25 A ISC to accomodate the latest high-power, high-current modules • Simple, fast installation – snaps to a standard PV module frame or mounts to racking • Automatic shutdown – PV array enters rapid shutdown mode in the event of AC grid loss • Rapid shutdown – UL Standards-certified PVRSS components operating over Power-line communications (PLC) signaling with RSS Transmitters (required) • Option to upgrade to TS4-X-S • Works with any system – fully compatible with [...] IDCU MAX Maximum output voltage VDCU MAX Maximum output power PDCU MAX Rapid Shutdown TS4 conductor AWG 12 Rapid shutdown time limit <30 sec.",
+        "score": 0.6617704,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://gzhls.at/blob/ldb/4/b/3/7/ae2bf0a5e8617d4056b6b62cde33f9039acb.pdf",
+        "title": "[PDF] 435 W+ 0/+5 W 21,8%",
+        "snippet": "*Der Nennspannungs-/Frequenzbereich kann auf Wunsch des Versorgungsunternehmens über den Nennwert hinaus erweitert werden.**Die Grenzen können variieren.",
+        "score": 0.37518036,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://sis.htu.edu.jo/pearson/construction/btec-hncd-cbe.pdf",
+        "title": "[PDF] HIGHER NATIONALS - Construction and the Built Environment",
+        "snippet": "Topics covered in this unit will include: energy systems, solar power systems, energy conservation, passive solar heating, wind energy, ocean energy",
+        "score": 0.11406249,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.htu.edu.jo/pearson/construction/btec-hncd-cbe.pdf",
+        "title": "[PDF] HIGHER NATIONALS - Construction and the Built Environment - HTU",
+        "snippet": "Topics covered in this unit will include: energy systems, solar power systems, energy conservation, passive solar heating, wind energy, ocean energy",
+        "score": 0.093520775,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://invertersrus.com/wp-content/uploads/2024/03/Installation-Manual-TS4-F-TS4-R-F-RSS-Transmitter-1.pdf?srsltid=AfmBOorQpM7mxvrBPnuvNaUfWWbYq6mFFMzyxbdpauMSQZk0KfjBz4DT",
+        "title": "[PDF] Installation Manual - TS4-F and TS4-RF, RSS Transmitter",
+        "snippet": "Install TS4-F before powering on RSS Transmitter • Drill holes in enclosure for conduit (see appendix for placement guide) • Mount RSS Transmitter and power supply on DIN rail • Connect DC leads from power supply (1) to transmitter (2) • Connect RSS Core (3) to transmitter 3.1 RSS TRANSMITTER INSTALLATION 1 2 3  Suggested locations for conduit    Install TS4-F before powering on RSS Transmitter • Pass either positive or negative homerun(s) through RSS Core (CT) • Use the same polarity when [...] Install TS4-F before powering on RSS Transmitter • Connect AC and DC ground wires to DIN rail • Ground all conduit connections • Turn on AC power to power supply to activate Transmitter signal 3.3 RSS TRANSMITTER GROUNDING Warning: nonmetallic enclosure does not provide bonding between conduit connections. Use grounding type bushings and jumper wires. [...] • Place rapid shutdown system label no more than 1m (3ft) from initiator (AC disconnect) or service panel containing means of disconnection if not at same location.\nPlace Rapid Shutdown System label in proper location.\n2.2 TS4-F INSTALLATION Smart modules with an integrated TS4 Junction box are installed and connected in series just like standard PV modules.",
+        "score": 0.79675186,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://invertersrus.com/wp-content/uploads/2024/03/Installation-Manual-TS4-F-TS4-R-F-RSS-Transmitter-1.pdf?srsltid=AfmBOorQYfnDJdyXo-6BV0p0g3l5j84_wPattnRUhlg2isn8cnmHPMvm",
+        "title": "[PDF] Installation Manual - TS4-F and TS4-RF, RSS Transmitter",
+        "snippet": "Install TS4-F before powering on RSS Transmitter • Drill holes in enclosure for conduit (see appendix for placement guide) • Mount RSS Transmitter and power supply on DIN rail • Connect DC leads from power supply (1) to transmitter (2) • Connect RSS Core (3) to transmitter 3.1 RSS TRANSMITTER INSTALLATION 1 2 3  Suggested locations for conduit    Install TS4-F before powering on RSS Transmitter • Pass either positive or negative homerun(s) through RSS Core (CT) • Use the same polarity when [...] Install TS4-F before powering on RSS Transmitter • Connect AC and DC ground wires to DIN rail • Ground all conduit connections • Turn on AC power to power supply to activate Transmitter signal 3.3 RSS TRANSMITTER GROUNDING Warning: nonmetallic enclosure does not provide bonding between conduit connections. Use grounding type bushings and jumper wires. [...] • Place rapid shutdown system label no more than 1m (3ft) from initiator (AC disconnect) or service panel containing means of disconnection if not at same location.\nPlace Rapid Shutdown System label in proper location.\n2.2 TS4-F INSTALLATION Smart modules with an integrated TS4 Junction box are installed and connected in series just like standard PV modules.",
+        "score": 0.79675186,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.solar-electric.com/lib/wind-sun/Tigo_Installation-Manual-TS4-mlfp.pdf?srsltid=AfmBOorV7GgMI0H53SPv6SwfKzNjDVGbJWmSX-TYGrBd2xmDfcQe7S3_",
+        "title": "[PDF] Installation Manual - TS4-F, TS4-AF, TS4-A-2F and RSS Transmitter",
+        "snippet": "• Connected in series like regular modules • No additional wiring connections to make TS4-F TS4-F 1. Modules with TS4-A-F add-on 2. RSS Transmitter and RSS Core 3. UL PVRSS Listed Inverter SYSTEM OVERVIEW: TS4-A-F 6 The TS4-A-F requires a Tigo RSS Transmitter or inverter with built-in transmitter for operation.\n• TS4-A-F mounting is recommended on the upper right as shown, but can be placed elsewhere on the frame or bolted to the racking if needed.\n• TS4-A-F cable glands must not be facing up. [...] 8 Place safety labels in proper location FRAME THICKNESS RANGE GLASS 1.2mm - 3mm min. 30mm min. 22mm ALUMINUM FRAME Module frame specifications for mounting TS4-A TS4-F INSTALLATION Smart modules with an integrated TS4 Junction box are installed and connected in series just like standard PV modules.\nConnect modules with TS4-F in series before powering on the RSS Transmitter. [...] • Allow clearance between PV module and mounting surface for air circulation around TS4-A-F.\n• For installation on frameless modules, remove metal clips and bolt TS4-A to rail. Do not drill additional mounting holes in the frame or metal bracket.",
+        "score": 0.78413767,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.solar-electric.com/lib/wind-sun/Tigo_Installation-Manual-TS4-mlfp.pdf?srsltid=AfmBOorRfbW8oFiTXZxWxeDiYF93Q5u4Lx20IaCeo-xjcD5oFlfWvFuH",
+        "title": "[PDF] Installation Manual - TS4-F, TS4-AF, TS4-A-2F and RSS Transmitter",
+        "snippet": "• Connected in series like regular modules • No additional wiring connections to make TS4-F TS4-F 1. Modules with TS4-A-F add-on 2. RSS Transmitter and RSS Core 3. UL PVRSS Listed Inverter SYSTEM OVERVIEW: TS4-A-F 6 The TS4-A-F requires a Tigo RSS Transmitter or inverter with built-in transmitter for operation.\n• TS4-A-F mounting is recommended on the upper right as shown, but can be placed elsewhere on the frame or bolted to the racking if needed.\n• TS4-A-F cable glands must not be facing up. [...] 8 Place safety labels in proper location FRAME THICKNESS RANGE GLASS 1.2mm - 3mm min. 30mm min. 22mm ALUMINUM FRAME Module frame specifications for mounting TS4-A TS4-F INSTALLATION Smart modules with an integrated TS4 Junction box are installed and connected in series just like standard PV modules.\nConnect modules with TS4-F in series before powering on the RSS Transmitter. [...] • Allow clearance between PV module and mounting surface for air circulation around TS4-A-F.\n• For installation on frameless modules, remove metal clips and bolt TS4-A to rail. Do not drill additional mounting holes in the frame or metal bracket.",
+        "score": 0.78413767,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/5fad551d7419c7a0e9e4aba4/68599f186ce7de70e0577ce0_002-00157-00%201.3%20QSG%20TS4-A-F2F%20w%20RSS%20Transmitter%2020250610%20-%20EN.pdf",
+        "title": "[PDF] TS4-A-F/2F with RSS Transmitters",
+        "snippet": "• TS4s must not be installed in readily accessible locations. • Operating temperature range: -40 – 85 °C (-40 – 185 °F) • If frame thickness is ≤35mm (1.4”), install with the TS4 label facing the PV module.\n• To enable natural convection (air cooling), no part of the TS4 should be within 12.7 mm (0.5 in) of the module substrate on any side.\n• The TS4 ingress rating of TS4 is IP 68.\n• Check PV module instructions for restrictions on mounting devices under the module. [...] TS4 Mounting Options Frame Frame thickness Substrate Output cable (long) Output cable (long) Removable spring clips M8 bolt holes Input cable (short) Input cable (short) WARNING - THIS PHOTOVOLTAIC RAPID SHUTDOWN EQUIPMENT (PVRSE) DOES NOT PERFORM ALL OF THE FUNCTIONS OF A COMPLETE PHOTOVOLTAIC RAPID SHUTDOWN SYSTEM (PVRSS). THIS PVRSE MUST BE INSTALLED WITH OTHER EQUIPMENT TO FORM A COMPLETE PVRSS THAT MEETS THE REQUIREMENTS OF NEC (NFPA 70) SECTION 690.12 FOR CONTROLLED CONDUCTORS OUTSIDE THE",
+        "score": 0.76490957,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOoqlOeM_QXH4TevZocSWn0QIA-LQyB3jWZkMEzN07ZPah9pHtZrI",
+        "title": "[PDF] TS4 Installation Manual - RES Supply",
+        "snippet": "• Failure to adhere to these instructions may result in injury or death, damage to the system or voiding the factory warranty. [...] NEW INSTALLATION Use a barcode scanner to save time and avoid typos Easy to use, simply plug and play TIP: USE A BARCODE SCANNER Follow the instructions of the installation wizard Click here for a detailed walk through INSTALLATION WIZARD Enter site information: Address Site owner information 3rd party finance, if such exists Click Next CONFIGURE THE SYSTEM Enter inverter information CONFIGURE THE SYSTEM Enter inverter information CONFIGURE THE SYSTEM Enter inverter information After choosing [...] 0.25 mm (1000V) 6.4 ± 0.2mm, 7.05 ± 0.2mm (1500V) Connectors MC4, MC4 compatible, Amphenol, EVO2 UV Resistance 500hr with UV light between 300-400nm @65C Maximum String Voltage 1500V UL/IEC1 1 All TS4 covers are 1500V compatible. Specify max system voltage when ordering modules with TS4 bases for appropriate cables & connectors.",
+        "score": 0.72278196,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/BTEC-Higher-Nationals/future-homes-design-and-construction/2018/specification/l45hncd-futurehomesdesign.pdf",
+        "title": "[PDF] HIGHER NATIONALS - Future Homes Design and Construction",
+        "snippet": "Design. 1st ed. Boston: Cengage. TWIDELL, J. and WEIR, T. (2015) Renewable Energy Resources. 3rd ed. Abingdon: Routledge. Websites www.altenergy.org Alternative Energy (General Reference) www.therenewableenergycentre.co.uk The Renewable Energy Centre (General Reference) Links This unit links to the following related units: Unit 2: Construction Technology Unit 40: Alternative Energy Systems Design & Installation Unit 50: Housing Design & Specification Unit 53: Advanced Housing Design & [...] LO2 Evaluate the principles that underpin the design and installation of alternative methods of power generation and distribution P2 Analyse a given energy generation system in order to define an installation strategy P3 Discuss the installation requirements of a given alternative energy generation system M2 Compare different systems of power generation in order to select a suitable system LO3 Discuss the social, political, environmental and economic factors related to alternative energy [...] monitoring the energy production and savings for the scheme. Data gathering: Customer requirements, specification, method statement, project planning. Installation: Installation methods for renewable systems. LO4 Describe ways in which different forms of alternative energy address broader environmental issues and provide sustainable solutions Political: Kyoto Agreement, global targets, regional targets, carbon trading. Environmental: Effects of CO2 emissions, greenhouse effect, waste products",
+        "score": 0.28516832,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://gzhls.at/blob/ldb/e/9/c/2/8abbd8ccc822bb9bb0243dfac2ab32f75f80.pdf",
+        "title": "[PDF] 435 W+ 0/+5 W 21,8%",
+        "snippet": "*Der Nennspannungs-/Frequenzbereich kann auf Wunsch des Versorgungsunternehmens über den Nennwert hinaus erweitert werden.**Die Grenzen können variieren.",
+        "score": 0.255962,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://solarmagazine.nl/u/files/sm1-2015.pdf",
+        "title": "[PDF] Special vakbeurs Solar Solutions vanaf pagina 25 Netregistratie pv ...",
+        "snippet": "Altenergy Poswer System Inc. A2.1. Arrowsol BV. E3.10. ATB Motors B.V.. B11. Atlas Acomfa BV. E3.7. Aventia Solar. C16. B&B Power Co., Ltd. D11.",
+        "score": 0.22820848,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/BTEC-Higher-Nationals/construction/2018/specification-and-sample-assessments/hncd-construction-rqf.pdf",
+        "title": "[PDF] HIGHER NATIONALS - Construction - Pearson qualifications",
+        "snippet": "installation of power and distribution systems, electromagnetic compatibility equipment and electrical equipment. P1 Explore the principles of design and",
+        "score": 0.15429981,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://unirac.com/wp-content/uploads/bsk-pdf-manager/2025/05/CDR_20250411_105302975LAX-001_R.pdf",
+        "title": "[PDF] Photovoltaic Hazard Control - Unirac",
+        "snippet": "Installer is responsible for and shall provide an appropriate installation to the applicable edition of the. National Electrical Code. RM10, RM10 EV0, RMDT, RM5",
+        "score": 0.09532438,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.htu.edu.jo/pearson/construction/btec-hncd-cbe%20construction%20L5%20update.pdf",
+        "title": "[PDF] HIGHER NATIONALS - Construction and the Built Environment - HTU",
+        "snippet": "Topics covered in this unit will include: energy systems, solar power systems, energy conservation, passive solar heating, wind energy, ocean energy",
+        "score": 0.09492092,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.sapthagiri.edu.in/designs/naac/ICGCP/EEE_ECE.pdf",
+        "title": "[PDF] sapthagiri college of engineering",
+        "snippet": "power quality before and after installation of DGs in a power system network is an important task because. DG might have a negative impact",
+        "score": 0.05496988,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.solar-electric.com/lib/wind-sun/Tigo_Installation-Manual-TS4-mlfp.pdf?srsltid=AfmBOorMTKy0GsRf2Rs-vWSQCIGIZWgecyzY52TtSDA6yb0xp9oTNMnU",
+        "title": "[PDF] Installation Manual - TS4-F, TS4-AF, TS4-A-2F and RSS Transmitter",
+        "snippet": "• Failing to follow the sequence of installation steps may result in TS4 damage not covered under warranty.\n• Connect all TS4-A-F or TS4-A-2F units to their respective modules before connecting their outputs in series.\n• Install all TS4-F, TS4-A-F, or TS4-A-2F units before powering on the RSS Transmitter.\n• Never modify or extend wires between RSS Transmitter and RSS Core.\n• Never apply an external voltage source to a module or string equipped with TS4-F, TS4-A-F, or TS4-A-2F units. [...] 20 Appendix TS4-F, TS4-A-F, TS4-A-2F, RSS Transmitter TECHNICAL SPECIFICATIONS – TS4-F 22 Electrical Ratings TS4-F Fire Safety Input Rated DC Input Power 475W Input Voltage 16 - 90V Max Continuous Input Current (IMAX) 12.5A Output Output Power Range 0 - 475W Output Voltage Range 0 – VOC Communication Type Power Line Communication (PLC) Rapid Shutdown UL Listed (NEC 2017 & 2020 690.12) Yes Impedance Matching Capability No Output Voltage Limit No Maximum System Voltage 1500V Specify system [...] 9 1 2 4 - 123A 4 - 123A 4 - 123A 4 - 123A TS4-F TS4-F TS4-F TS4-F RSS Transmitter must be powered OFF during TS4-F installation.\nTS4-A-F INSTALLATION Standard modules can be equipped with TS4-A-F add-on units as shown below.\nAlways connect modules to TS4-A inputs before connecting outputs.\nEach TS4-A-F must have a PV module connected to its input before connecting the outputs of TS4-A-F units in series.",
+        "score": 0.7722049,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.solar-electric.com/lib/wind-sun/Tigo_Installation-Manual-TS4-mlfp.pdf?srsltid=AfmBOoq1TqmPEbYZ6KT5NyTcQgZ7U8HKhUA3dIppOoJJnf9crdvFi68z",
+        "title": "[PDF] Installation Manual - TS4-F, TS4-AF, TS4-A-2F and RSS Transmitter",
+        "snippet": "20 Appendix TS4-F, TS4-A-F, TS4-A-2F, RSS Transmitter TECHNICAL SPECIFICATIONS – TS4-F 22 Electrical Ratings TS4-F Fire Safety Input Rated DC Input Power 475W Input Voltage 16 - 90V Max Continuous Input Current (IMAX) 12.5A Output Output Power Range 0 - 475W Output Voltage Range 0 – VOC Communication Type Power Line Communication (PLC) Rapid Shutdown UL Listed (NEC 2017 & 2020 690.12) Yes Impedance Matching Capability No Output Voltage Limit No Maximum System Voltage 1500V Specify system [...] TABLE OF CONTENTS TS4-F Rapid Shutdown System 4 System Overview: TS4-F 5 System Overview: TS4-A-F 6 System Overview: TS4-A-2F 7 Installation Notes 8 TS4-F Installation 9 TS4-A-F Installation 10 TS4-A-2F Installation 11 PV Conductor Installation - Multi-Transmitter Systems - Required Practices 12 RSS Transmitter Installation – Single RSS Core 13 RSS Transmitter Wiring – Single RSS Core 14 RSS Transmitter Grounding – Single RSS Core 15 RSS Transmitter Installation – Dual RSS Core 16 RSS [...] Method of Operation All TS4-F units start in the OFF position and measure 0.6V at the output. When power is supplied to the RSS Transmitter, the TS4-F units turn ON and allow full PV module voltage.\nThe units constantly receive a “keep-alive” signal from the transmitter over PLC. When power to the transmitter is cut, this keep-alive signal ceases, sending every TS4-F into shutdown mode with output reduced to 0.6V.",
+        "score": 0.7668008,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.solar-electric.com/lib/wind-sun/Tigo_Installation-Manual-TS4-mlfp.pdf?srsltid=AfmBOoqcyjkebIZIW6W5AeHTIrCW959P1n8lDvheCuRYAQISmnyjInxE",
+        "title": "[PDF] Installation Manual - TS4-F, TS4-AF, TS4-A-2F and RSS Transmitter",
+        "snippet": "20 Appendix TS4-F, TS4-A-F, TS4-A-2F, RSS Transmitter TECHNICAL SPECIFICATIONS – TS4-F 22 Electrical Ratings TS4-F Fire Safety Input Rated DC Input Power 475W Input Voltage 16 - 90V Max Continuous Input Current (IMAX) 12.5A Output Output Power Range 0 - 475W Output Voltage Range 0 – VOC Communication Type Power Line Communication (PLC) Rapid Shutdown UL Listed (NEC 2017 & 2020 690.12) Yes Impedance Matching Capability No Output Voltage Limit No Maximum System Voltage 1500V Specify system [...] TABLE OF CONTENTS TS4-F Rapid Shutdown System 4 System Overview: TS4-F 5 System Overview: TS4-A-F 6 System Overview: TS4-A-2F 7 Installation Notes 8 TS4-F Installation 9 TS4-A-F Installation 10 TS4-A-2F Installation 11 PV Conductor Installation - Multi-Transmitter Systems - Required Practices 12 RSS Transmitter Installation – Single RSS Core 13 RSS Transmitter Wiring – Single RSS Core 14 RSS Transmitter Grounding – Single RSS Core 15 RSS Transmitter Installation – Dual RSS Core 16 RSS [...] Method of Operation All TS4-F units start in the OFF position and measure 0.6V at the output. When power is supplied to the RSS Transmitter, the TS4-F units turn ON and allow full PV module voltage.\nThe units constantly receive a “keep-alive” signal from the transmitter over PLC. When power to the transmitter is cut, this keep-alive signal ceases, sending every TS4-F into shutdown mode with output reduced to 0.6V.",
+        "score": 0.7668008,
+        "bucket": "other"
+      },
+      {
+        "url": "https://invertersrus.com/wp-content/uploads/2024/03/Installation-Manual-TS4-F-TS4-R-F-RSS-Transmitter-1.pdf?srsltid=AfmBOor-JkQmRQpzbpmHmnOzMQZEqe3kyJHFLhwee2AyCWn9oFNeo52J",
+        "title": "[PDF] Installation Manual - TS4-F and TS4-RF, RSS Transmitter",
+        "snippet": "The transmitter control power supply MUST be on the same AC branch circuit as the inverter to meet rapid shutdown requirements.\nTABLE OF CONTENTS 1.\nSystem Overview 1.\nRapid Shutdown System 2.\nTS4 Fire Safety Products 3.\nSystem Diagram 1.\nSystem Overview: TS4-F 2.\nSystem Overview: TS4-R-F 2.\nMLPE Installation 1.\nRSS Installation Notes 2.\nTS4-F Installation 3.\nTS4-R-F Installation 3.\nRSS Transmitter Installation 1.\nRSS Transmitter Installation 2.\nRSS Transmitter Wiring 3. [...] ELECTRICAL RATINGS FIRE SAFETY TS4-F / TS4-R-F INPUT Rated DC Input Power 475W Maximum Input Voltage at Lowest Temperature 90V Max Continuous Input Current (IMAX) 12.5A Maximum VOC @ STC 75V Minimum VMP 16V OUTPUT Output Power Range 0 - 475W Output Voltage Range 0 – VOC Communication Type Power Line Communication (PLC) Rapid Shutdown UL Listed (NEC 2014 & 2017 690.12) Any SunSpec-compliant signaling device Impedance Matching Capability No Output Voltage Limit No Maximum System Voltage 1500V [...] Fuse Rating 20A 4.1.1 MECHANICAL SPECIFICATIONS – TS4-F / TS4-R-F ELECTRICAL RATINGS FIRE SAFETY TS4-F / TS4-R-F MECHANICAL Operating Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 85% Storage Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 60% Cooling Method Natural Convection Dimensions (with cover) 178.5mm x 134mm x 25.5mm Weight (base and cover) 670g Outdoor Rating IP68, NEMA 3R CABLING Type H1Z2Z2-K Output Length Standard 1.0m, other lengths on request Cable Options",
+        "score": 0.7500592,
+        "bucket": "other"
+      },
+      {
+        "url": "https://invertersrus.com/wp-content/uploads/2024/03/Installation-Manual-TS4-F-TS4-R-F-RSS-Transmitter-1.pdf?srsltid=AfmBOorA1m-9PEEsY0qFTzaPy-TWVMf7qE8AF1-UpHHSldmYOvIDJymC",
+        "title": "[PDF] Installation Manual - TS4-F and TS4-RF, RSS Transmitter",
+        "snippet": "The transmitter control power supply MUST be on the same AC branch circuit as the inverter to meet rapid shutdown requirements.\nTABLE OF CONTENTS 1.\nSystem Overview 1.\nRapid Shutdown System 2.\nTS4 Fire Safety Products 3.\nSystem Diagram 1.\nSystem Overview: TS4-F 2.\nSystem Overview: TS4-R-F 2.\nMLPE Installation 1.\nRSS Installation Notes 2.\nTS4-F Installation 3.\nTS4-R-F Installation 3.\nRSS Transmitter Installation 1.\nRSS Transmitter Installation 2.\nRSS Transmitter Wiring 3. [...] ELECTRICAL RATINGS FIRE SAFETY TS4-F / TS4-R-F INPUT Rated DC Input Power 475W Maximum Input Voltage at Lowest Temperature 90V Max Continuous Input Current (IMAX) 12.5A Maximum VOC @ STC 75V Minimum VMP 16V OUTPUT Output Power Range 0 - 475W Output Voltage Range 0 – VOC Communication Type Power Line Communication (PLC) Rapid Shutdown UL Listed (NEC 2014 & 2017 690.12) Any SunSpec-compliant signaling device Impedance Matching Capability No Output Voltage Limit No Maximum System Voltage 1500V [...] Fuse Rating 20A 4.1.1 MECHANICAL SPECIFICATIONS – TS4-F / TS4-R-F ELECTRICAL RATINGS FIRE SAFETY TS4-F / TS4-R-F MECHANICAL Operating Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 85% Storage Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 60% Cooling Method Natural Convection Dimensions (with cover) 178.5mm x 134mm x 25.5mm Weight (base and cover) 670g Outdoor Rating IP68, NEMA 3R CABLING Type H1Z2Z2-K Output Length Standard 1.0m, other lengths on request Cable Options",
+        "score": 0.7500592,
+        "bucket": "other"
+      },
+      {
+        "url": "https://invertersrus.com/wp-content/uploads/2024/03/Installation-Manual-TS4-F-TS4-R-F-RSS-Transmitter-1.pdf?srsltid=AfmBOoolCwIOZAZ2Tzoi4HgeQa53P_qLODlxJzrtxrTpGrlA5pBDFKA3",
+        "title": "[PDF] Installation Manual - TS4-F and TS4-RF, RSS Transmitter",
+        "snippet": "RSS Transmitter Note: connect modules to TS4-R inputs before connecting outputs 2.1 RSS INSTALLATION NOTES • TS4-F and TS4-R-F are shipped in the OFF position and will measure 0.6V at the output when the keep-alive signal is not present.\n• Failing to follow the sequence of installation steps may result in TS4 damage not covered under warranty. [...] ELECTRICAL RATINGS FIRE SAFETY TS4-F / TS4-R-F INPUT Rated DC Input Power 475W Maximum Input Voltage at Lowest Temperature 90V Max Continuous Input Current (IMAX) 12.5A Maximum VOC @ STC 75V Minimum VMP 16V OUTPUT Output Power Range 0 - 475W Output Voltage Range 0 – VOC Communication Type Power Line Communication (PLC) Rapid Shutdown UL Listed (NEC 2014 & 2017 690.12) Any SunSpec-compliant signaling device Impedance Matching Capability No Output Voltage Limit No Maximum System Voltage 1500V [...] • Place rapid shutdown system label no more than 1m (3ft) from initiator (AC disconnect) or service panel containing means of disconnection if not at same location.\nPlace Rapid Shutdown System label in proper location.\n2.2 TS4-F INSTALLATION Smart modules with an integrated TS4 Junction box are installed and connected in series just like standard PV modules.",
+        "score": 0.67911536,
+        "bucket": "other"
+      },
+      {
+        "url": "https://invertersrus.com/wp-content/uploads/2024/03/Installation-Manual-TS4-F-TS4-R-F-RSS-Transmitter-1.pdf?srsltid=AfmBOopjKpCDYHizknZKaMvNwMoRyC0VhDKS7crFsgkhILa-wp_ZiP4H",
+        "title": "[PDF] Installation Manual - TS4-F and TS4-RF, RSS Transmitter",
+        "snippet": "RSS Transmitter Note: connect modules to TS4-R inputs before connecting outputs 2.1 RSS INSTALLATION NOTES • TS4-F and TS4-R-F are shipped in the OFF position and will measure 0.6V at the output when the keep-alive signal is not present.\n• Failing to follow the sequence of installation steps may result in TS4 damage not covered under warranty. [...] ELECTRICAL RATINGS FIRE SAFETY TS4-F / TS4-R-F INPUT Rated DC Input Power 475W Maximum Input Voltage at Lowest Temperature 90V Max Continuous Input Current (IMAX) 12.5A Maximum VOC @ STC 75V Minimum VMP 16V OUTPUT Output Power Range 0 - 475W Output Voltage Range 0 – VOC Communication Type Power Line Communication (PLC) Rapid Shutdown UL Listed (NEC 2014 & 2017 690.12) Any SunSpec-compliant signaling device Impedance Matching Capability No Output Voltage Limit No Maximum System Voltage 1500V [...] • Place rapid shutdown system label no more than 1m (3ft) from initiator (AC disconnect) or service panel containing means of disconnection if not at same location.\nPlace Rapid Shutdown System label in proper location.\n2.2 TS4-F INSTALLATION Smart modules with an integrated TS4 Junction box are installed and connected in series just like standard PV modules.",
+        "score": 0.67911536,
+        "bucket": "other"
+      },
+      {
+        "url": "https://shop.frankensolar.ca/content/documentation/Tigo/Troubleshooting_Guide_Tigo_TS4-F.TS4-R-F.TS4-A-F.RSSTransmitter_(frankensolar).pdf?srsltid=AfmBOooPk3_zL-ycaPPYP7_9rNM13e8gs5vPFDTpKqaxMQafyoEj0SQA",
+        "title": "[PDF] Troubleshooting Guide - TS4-F, TS4-RF, TS4-AF and RSS Transmitter",
+        "snippet": "• Using the Tigo Key, remove the TS4 cover. 3.2 OPEN AND CLOSE A TS4-F UNIT ! DO NOT use a flat head screw driver ! Using a flat head screw driver is likely to damage the latches and will void the warranty.\n• Use only the TS4 key; it is designed to install and remove covers without exerting any force on the PV module. [...] For detailed instructions see section 3.2.1 Step 5 Swap the cover with another cover known to be working fine.\n• If the functioning cover also has issues once swapped, it is a base/module problem.\n• If the functioning cover is still fine once swapped, it is an issue with the original cover.\nIf this is deemed a cover issue, please proceed to section 2.5. [...] 2.1 STEP-BY-STEP GUIDE - PREREQUISITE 2.2 GENERAL SERVICE GUIDELINE 2.3 SYSTEM COMPONENTS 2.4 POTENTIAL ISSUES 2.4.1 String has no DC voltage (0.0V) Issue 1 String has no DC voltage (0.0V) Description TS4-F, TS4-R-F and TS4-A-F should pass 0.6 V per unit when the string is not connected to an active transmitter. If the output voltage is measured at 0.0V on a string, there is an open circuit condition. This is most often caused by a wiring issue within the string. Troubleshooting Step 1 Verify",
+        "score": 0.6786044,
+        "bucket": "other"
+      },
+      {
+        "url": "https://shop.frankensolar.ca/content/documentation/Tigo/Catalog_Tigo_Rapid-Shutdows-Solutions_(frankensolar).pdf?srsltid=AfmBOoqcR_fuMzt3tEvFIvo73rl94XoFY4kkemVdzOaY3E458WCn3gPN",
+        "title": "[PDF] Rapid Shutdown Solutions - Frankensolar Shop Canada",
+        "snippet": "Dual-certified MLPE Training PV-OFF Risk Mitigation Tigo TS4-F (Fire Safety) TS4 Integrated PV Modules PV Inverter Tigo RSS Transmitter Fire Safety FIRE SAFETY TS4-F \u0001 NEC 2014 & 2017 690.12 rapid shutdown compliant \u0001 Module-level deactivation \u0001 Automatic or manual shutdown \u0001 PLC signaling Fire Safety Fire Safety Fire Safety Cost-effective Rapid Shutdown TS4-F (Fire Safety) is a specialized rapid shutdown solution that pairs with an integrated modular junction box base (TS4-F) or add-on base [...] SO LARUSAMANUFAC TURING Ordering Information TS4-F: Rapid Shutdown only Flex MLPE: Rapid Shutdown and More Part Number RSS Transmitter (Power Line Communication for TS4-F Rapid Shutdown Control) 490-00000-10 Single Core (150A) RSS DIN Rail Transmitter (no PS or enclosure) 490-00000-20 Dual Core (300A) RSS DIN Rail Transmitter (no PS or enclosure) 492-00000-10 Single Core RSS DIN Rail Transmitter Kit, 120/240VAC PS, Outdoor Enclosure 492-00000-20 Dual Core RSS DIN Rail Transmitter Kit, [...] (TS4-A-F). Rapid shutdown activation is controlled by power-line communication (PLC) with an RSS Transmitter.",
+        "score": 0.6188962,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.stellavolta.com/content/Tigo%20TS4-F%20Installation%20Manual%20-%20Stellavolta.pdf?srsltid=AfmBOorW38dDKTIL-vde5fSJYG0fdLXWC3mEFBj0SvUGx59gCW-ONYSW",
+        "title": "[PDF] Rapid Shutdown System (RSS) for Fire Safety - Stellavolta.com",
+        "snippet": "white ends of the core leads are in the proper transmitter terminals. Ensure both cores have the white side facing towards the inverter. If not, disconnect the leads and reposition. No LEDs on any transmitters. No power to devices. Check power supplies to transmitters. Check power wiring to each transmitter. LEDs on transmitters look correct/normal, yet all strings are not coming up to full voltage and a safety voltage of 0.6V per TS4 is observed. Cores are not properly oriented (one or more [...] ........................................................................................................................ 19 String Has No VDC ................................................................................................................. 19 TS4 Has No VDC .................................................................................................................... 20 TS4 with Active Transmitter Not Passing Full Voltage [...] ................................................................................. 4 Required Practices...................................................................................................................... 4 Install TS4s ................................................................................................................................... 5 Install a Transmitter Enclosure",
+        "score": 0.5826579,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.chintpowersystems.com/wp-content/uploads/2022/03/APsystems-Limited-Warranty-for-Rapid-Shutdown-Devices-Transmitter_0610.pdf",
+        "title": "[PDF] APsystems Limited Warranty for Rapid Shutdown Devices ...",
+        "snippet": "L 3.0 © All Rights Reserved 06/21 2/2 Altenergy Power Systems USA Inc.\n600 Ericksen Ave NE, Suite 200 Seattle, WA 98110 737-218-8486 info@apsmartglobal.com www.apsmartglobal.com [...] APsystems Limited Warranty for Rapid Shutdown Devices & Transmitter Altenergy Power Systems USA Inc. (“APsystems”) supplies Rapid Shutdown Devices, including RSD-S-PLC and RSD-D, Transmitter-PLC, Transmitter-PLC Outdoor Kit, and RSD-EYE+ (the “Products”) The Products are designed to withstand normal operating conditions when used for their original intended purpose in compliance with the APsystems User Manual supplied with the system. [...] module power warranty period provided by the PV module manufactur-er. • Transmitter-PLC: ten (10) years beginning from the Warranty Start Date. For inverter-embedded Product, the Warranty Period shall not exceed the inverter warranty period provided by the inverter manufacturer. • Transmitter-PLC Outdoor Kit: three (3) years beginning from the Warranty Start Date, when used with the APsystems Rapid Shutdown Devices. • RSD-EYE+: one (1) year beginning from the Warranty Start Date, when used with",
+        "score": 0.5550741,
+        "bucket": "other"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/5fad551d7419c7a0e9e4aba4/63eb1d38f03250be5ca594b2_002-00131-00%20REV1.0_Tigo%20TS4%20Warranty%20-%20As%20of%202023.02.03%20-%20EN.pdf",
+        "title": "[PDF] Tigo Energy Limited Warranty",
+        "snippet": "its original location of installation and any reinstallation is done in accordance with the installation instructions and use guidelines Tigo Energy Limited Warranty 002-00131-00 Rev 1.0 Effective for Equipment purchased after September 9, 2022 Page 2 of 4 accompany the Equipment and available on the Tigo Resource Center at support.tigoenergy.com (collectively the “Documentation”). The Limited Warranty applies to all versions of the TS4-F if and only if it is being used with Tigo’s RSS [...] materials of the Equipment for the following applicable duration(s) (“Warranty Period”): • TS4, add-on TS4-A, and retrofit TS4-R Platforms: twenty-five (25) years commencing on the Warranty Start Date, provided, however, that for the module embedded Equipment, the Warranty Period shall not exceed the maximum of (1) the PV Module product warranty period and (2) the PV Module power warranty periods provided by the applicable module manufacturer. • Cloud Connect Advanced and Tigo Access Point: [...] Only Equipment installed in accordance with the Documentation shall be covered by this Limited Warranty. No rights under this Limited Warranty will be available unless installation and removal of Equipment must be performed only with the approved tools: TS4 Key or TS4 Production Key. Only Equipment installed in accordance with the Documentation shall be covered by this Limited Warranty. To obtain repair or replacement service, or a credit or a refund (as applicable), under this Limited",
+        "score": 0.5052006,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "altenergy-power",
+    "product": "Altenergy Power TS4-M",
+    "candidates": [
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOor1IrzTrk4N7wKqnKP7cVoqMN3UmOc2es5e2sUwNM7vMrM9UQvV",
+        "title": "[PDF] TS4 Installation Manual - RES Supply",
+        "snippet": "1. SYSTEM OVERVIEW & PRODUCT DESCRIPTION TS4-M: MONITORING: The TS4-M provides continuous system-wide monitoring for fleets to make customer support and fleet workflow on track Diodes Monitoring Safety Optimization Diodes Monitoring Safety Diodes Monitoring Diodes Monitoring Safety Optimization Long Strings Click here to learn more, watch a video and see the TS4 platform datasheet.\nMORE INFORMATION: Connect multiple Gateways in series and leave terminating resistor only in final Gateway. [...] 1. SYSTEM OVERVIEW & PRODUCT DESCRIPTION TS4-M: MONITORING: The TS4-M provides continuous system-wide monitoring for fleets to make customer support and fleet workflow on track Diodes Monitoring Safety Optimization Diodes Monitoring Safety Diodes Monitoring Diodes Monitoring Safety Optimization Long Strings Click here to learn more, watch a video and see the TS4 platform datasheet.\nMORE INFORMATION: Connect multiple Gateways in series and leave terminating resistor only in final Gateway. [...] 0.25 mm (1000V) 6.4 ± 0.2mm, 7.05 ± 0.2mm (1500V) Connectors MC4, MC4 compatible, Amphenol, EVO2 UV Resistance 500hr with UV light between 300-400nm @65C Maximum String Voltage 1500V UL/IEC1 1 All TS4 covers are 1500V compatible. Specify max system voltage when ordering modules with TS4 bases for appropriate cables & connectors.",
+        "score": 0.81595254,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOor_XQWt5DJaheAJwUvD3as3AR4qSCZZnizLhLK1NE7VA8PJfKm4",
+        "title": "[PDF] TS4 Installation Manual - RES Supply",
+        "snippet": "1. SYSTEM OVERVIEW & PRODUCT DESCRIPTION TS4-M: MONITORING: The TS4-M provides continuous system-wide monitoring for fleets to make customer support and fleet workflow on track Diodes Monitoring Safety Optimization Diodes Monitoring Safety Diodes Monitoring Diodes Monitoring Safety Optimization Long Strings Click here to learn more, watch a video and see the TS4 platform datasheet.\nMORE INFORMATION: Connect multiple Gateways in series and leave terminating resistor only in final Gateway. [...] 1. SYSTEM OVERVIEW & PRODUCT DESCRIPTION TS4-M: MONITORING: The TS4-M provides continuous system-wide monitoring for fleets to make customer support and fleet workflow on track Diodes Monitoring Safety Optimization Diodes Monitoring Safety Diodes Monitoring Diodes Monitoring Safety Optimization Long Strings Click here to learn more, watch a video and see the TS4 platform datasheet.\nMORE INFORMATION: Connect multiple Gateways in series and leave terminating resistor only in final Gateway. [...] 0.25 mm (1000V) 6.4 ± 0.2mm, 7.05 ± 0.2mm (1500V) Connectors MC4, MC4 compatible, Amphenol, EVO2 UV Resistance 500hr with UV light between 300-400nm @65C Maximum String Voltage 1500V UL/IEC1 1 All TS4 covers are 1500V compatible. Specify max system voltage when ordering modules with TS4 bases for appropriate cables & connectors.",
+        "score": 0.81595254,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://zonnepaneel-info.nl/pdf/datasheet/TS4_Platform_datasheet.pdf",
+        "title": "[PDF] ts4 platform - Zonnepaneel-info",
+        "snippet": "Maximum DC Input Voltage (VOC) 90V 52V 52V 52V 52V Operating Voltage 0-80V 16-48V 16-48V 16-48V 16-48V Maximum Short Circuit Current (ISC) 12A 12A 12A 10A 10A Output Voltage Range 0-VOC 0-VOC 0-VOC 0-VOC 0-VOC Output Power Range 0-375W 0-375W 0-375W 0-375W 0-375W Communication Type n/a 802.15.4 2.4GHz 802.15.4 2.4GHz 802.15.4 2.4GHz 802.15.4 2.4GHz Rapid Shutdown Verified (NEC 2014 690.12) Need additional RS device Need additional RS device Yes Yes Yes Impedance Matching Capability No No No Yes [...] Mechanical Operating Temperature Range -40°C to +75°C (-40°F to +167°F) Storage Temperature Range -40°C to +75°C (-40°F to +167°F) Cooling Method Natural Convection Dimensions (with cover) TS4-B: 152.5mm x 108mm x 25mm, TS4-R: 195.5mm x 158mm x 23mm Weight (without cover) TS4-B: 270g, TS4-R: 470g Environmental Rating IP65/67, NEMA 3R Cabling Cabling Type PV1-F Output Cable Length 1.0m, other lengths on request Connector MC4, MC4 compatible UV Resistance 500hr with UBV light between 300-400nm @ [...] LONG STRINGS OPTIMIZATION SAFETY MONITORING DIODES TS4-L TS4-O TS4-S TS4-M · String length increased by up to 30% · Fewer BOS components · Faster installation · Shade and age tolerance · Enhanced energy yield · Greater design flexibility · NEC 2014 690.12 rapid shutdown compliant · Module-level deactivation · Automatic or manual shutdown · Reduced O&M costs · PV-2.0 data synchronization · Module bar code tracking · Inverter optimization · Lower wire-losses · Plus all the benefits of",
+        "score": 0.7515939,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://midsummer.ie/pdfs/tigo-retrofit-duo-datasheet.pdf",
+        "title": "[PDF] TS4 PLATFORM",
+        "snippet": "- 700W Communication Type 802.15.4 2.4GHz 802.15.4 2.4GHz 802.15.4 2.4GHz OUTPUT 1000V / 1500V 1000V / 1500V 1000V / 1500V INPUT 90V 90V 90V [...] -30°C to +75°C (-22°F to +167°F) -30°C to +75°C (-22°F to +167°F) Natural Convection 178.5mm x 134mm x 25.5mm 770g (O-Duo), 710g (S-Duo, M-Duo) IP68, NEMA 3R Mechanical Operating Temperature Range Storage Temperature Range Cooling Method Dimensions (with cover) Weight per unit Outdoor Rating Cabling Type Output Cable Length Cable & Connector Options Cable Cross-Section Connectors UV Resistance Maximum String Voltage H1Z2Z2-K 1.8m 1000V rated 1500V rated 6.4 ± 0.2mm, 7.05 ± 0.2mm MC4, EVO2, UTX, [...] Monitoring Safety Optimization 1000V TÜV / UL, MC4, 1.8m cable (Certification Pending) Add-on / Retrofit Unit TS4-R-M-Duo TS4-R-S-Duo TS4-R-O-Duo Connector Options 1500V TÜV / UL INPUT Output Voltage Limit No No No Rapid Shutdown Maximum System Voltage Impedance Matching Capability No No Yes No Yes Yes Maximum DC Input Power Maximum Input Voltage 700W 700W 700W Maximum Continuous Input Current (IMAX) 12A 12A 12A Output Voltage Range 0 - VIN 0 - VIN 0 - VIN Output Power Range 0 - 700W 0 - 700W 0",
+        "score": 0.72977066,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://xlstore.exelsolar.com/Multimedia/FichaTecnica/TS4-A-M_FichaTecnica.pdf",
+        "title": "[PDF] TS4-A-M - XLStore",
+        "snippet": "455-00252-32 1500V UL / 1000V TÜV, 1.2m cable, MC4 Options 455-00257-12 1000V UL / TÜV, 1.2m cable, MC4 comparable 455-00261-32 1500V UL / TÜV, 1.2m cable, EVO2 455-00263-12 1500V UL / TÜV, 1.2m cable, EVO comparable Environmental Operating Temperature Range -40°C to +85°C (-40°F to +185°F) Outdoor Rating IP68, NEMA 3R Mechanical Dimensions 138.4mm x 139.7mm x 22.9mm Weight 490g Electrical Voltage Range 16 - 90V Maximum Current 15A Maximum Power 500W Output Cable Length 1.2m (standard) [...] Flex MLPE Flex MLPE The TS4-A-M (Monitoring) is the advanced add-on module-level solution that brings smart module functionality to standard PV modules for higher reliability. Ensure the healthy operation of new or existing PV systems by adding this monitoring feature. [...] Connectors MC4 (standard) Communication Type Wireless Cloud Connect Advanced (CCA) and TAP are required for monitoring with TS4-A-M.",
+        "score": 0.6711479,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.irishellas.com/files/TS4-M---Monitoring.pdf",
+        "title": "[PDF] Monitoring Strings - Iris Hellas",
+        "snippet": "Rated DC Input Power Output Voltage Range Output Power Range Rapid Shutdown UL Listed (NEC 2014 & 2017 690.12) Impedance Matching Function Output Voltage Limit Maximum System Voltage INPUT OUTPUT ELECTRICAL RATINGS Max. Continuous Input Current (IMAX) Maximum VOC @ STC Minimum VMP Maximum Input Voltage No No Meet any projects' needs with the TS4 covers Tigo has expanded its smart module platform to provide five levels of customization. TS4 increases your freedom of choice by allowing to select [...] Tigo Energy, Inc. | 420 Blossom Hill Road | Los Gatos, California 95032 USA P: +1.408.402.0802 | F: +1.408.358.6279 | sales@tigoenergy.com | www.tigoenergy.com T TS S4 4--M M Monitoring Strings TS4-M is one of five functional covers that pairs with an integrated modular junction box base (TS4-M), a single retrofit/add-on base (TS4-R-M), or a Duo retrofit/add-on base (TS4-R-M-Duo). [...] Damage Damage Burned Connector Burned Connector Corrosion Corrosion MONITORING TS4-M Tigo Energy, Inc. 420 Blossom Hill Rd, Los Gatos, California 95032 USA | www.tigoenergy.com P: +1.408.402.0802 F: +1.408.358.6279 | sales@tigoenergy.com 90V 75V 16V 12A No 0 - VOC 0 - 475W 1500V 475W Cloud Connect and Gateway required for rapid shutdown compliance.",
+        "score": 0.542161,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/5fad551d7419c7a0e9e4aba4/68cc644d83e782109f5d7d82_002-00099-00%201.1%20IOM%20TS4-X%20w%20TAP%20CCA%20and%20MFRS%2020250826%20-%20EN.pdf",
+        "title": "[PDF] TS4-X platform of Flex MLPE",
+        "snippet": "correctly. • All conduit attachments are secure. • Measured string safety voltage should be 0.6V x N (N being the number of TS4-Xs in the string), +/- 0.1V √N. For example, in a string of 10 TS4 units, the expected safe voltage is 0.6V  10 = 6V. The margin of error in this case is +/- 0.1V √10 = +/-0.3V. If any string has greater or less than expected safety voltage +/- margin of error, de-energize the system and correct the issue before continuing. • The PVRSS label is within 914 mm (3 ft.) of [...] supply, it must be rated to 12 volts and 1A. Power supplies with lower current ratings can cause system abnormal behavior. • Each Core accommodates up to 10 DC conductors from the array. A PV inverter MPPT input with more than 10 strings must use two Cores, up to 20 conductors in total. • When using a single-core transmitter, the entire length of the DC run should be less than 300 meters to maintain signal strength and integrity. Distances over 300 meters using a single Core may cause abnormal [...] power supply’s DC output leads to the CCA power terminals: Rail power supply: External power supply: Complete all communications connections before powering on the CCA. LED Status Indicators The LED on the right of the CCA indicates system status as well as the status of the commissioning Discovery process: LED State Description Solid green System OK The system is operating normally. Blinking green/gray SMART app activity The CCA is connected to the Tigo SMART app. Blinking green/yellow User",
+        "score": 0.45551404,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://gzhls.at/blob/ldb/4/b/3/7/ae2bf0a5e8617d4056b6b62cde33f9039acb.pdf",
+        "title": "[PDF] 435 W+ 0/+5 W 21,8%",
+        "snippet": "*Der Nennspannungs-/Frequenzbereich kann auf Wunsch des Versorgungsunternehmens über den Nennwert hinaus erweitert werden.**Die Grenzen können variieren.",
+        "score": 0.365344,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://solarmagazine.nl/u/files/sm1-2015.pdf",
+        "title": "[PDF] Special vakbeurs Solar Solutions vanaf pagina 25 Netregistratie pv ...",
+        "snippet": "Smart module with Tigo TS4. A smart module with Tigo TS4 junction box, optional function of monitoring, safety, optimizing, longer string. T",
+        "score": 0.09106655,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.sapthagiri.edu.in/designs/naac/ICGCP/EEE_ECE.pdf",
+        "title": "[PDF] sapthagiri college of engineering",
+        "snippet": "Index Terms - distribution systems, network equivalents, power system analysis, transmission systems. I.INTRODUCTION. In recent times, the",
+        "score": 0.07170176,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/BTEC-Higher-Nationals/construction/2018/specification-and-sample-assessments/hncd-construction-rqf.pdf",
+        "title": "[PDF] HIGHER NATIONALS - Construction - Pearson qualifications",
+        "snippet": "All information in this specification is correct at time of publication. Original image by EVPWI113499 – Higher Nationals in Construction and the Built.",
+        "score": 0.057076775,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.solar-electric.com/lib/wind-sun/Tigo_QSG_TS4-A_CCA_TAP.pdf?srsltid=AfmBOopwFqp58_DIl2pgI8LOoqucfL-FHsY-a0PhuKdVCq-ETsrlXw_R",
+        "title": "[PDF] TS4-A-O/S/M with TAP and CCA - NAZ Solar Electric",
+        "snippet": "• Adhere to ANSI/NFPA 70 (North America) and local electrical code requirements.\n1. Save the QR/barcode sticker on a site map or string list.\n2. Attach the TS4 to the top of the PV module frame. If frame thickness is ≤35mm (1.4in), install with the TS4 label facing the PV module.\n3. Connect the short input cables to the PV module. 4. Connect the long output leads to the adjacent TS4.\nInstall TS4s • Always assume that TS4s are in an ON state. [...] Input cable (short) Input cable (short) Cable locations may vary by model Output cable (long) Output cable (long) TS4 Mounting Options For frameless modules, use M8 bolts torqued to 10.2Nm.\nRemovable spring clips M8 bolt holes Frame Frame thickness If frame thickness is ≤35mm (1.4in), install with the TS4 label facing the PV module. [...] 10m (33ft) max 10m (33ft) max 35m (115ft) max Connect the TAP and CCA using 4-wire or CAT5/6 cables.\n– + B A Install a TAP One TAP can communicate with up to 300 TS4s.\n• Ensure the TAP is within 10m (33ft) of a TS4. • Ensure the cable glands of the NEMA 4 TAP face down and cannot collect moisture.\n• Make all TAP connections to the CCA before powering on the CCA.",
+        "score": 0.76152116,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOopIxPbZHOdCfgNtrtOdgoCbbRYgz_RBDbjiJyd9lyu5AmAhalWV",
+        "title": "[PDF] TS4 Installation Manual - RES Supply",
+        "snippet": "1. SYSTEM OVERVIEW & PRODUCT DESCRIPTION TS4-M: MONITORING: The TS4-M provides continuous system-wide monitoring for fleets to make customer support and fleet workflow on track Diodes Monitoring Safety Optimization Diodes Monitoring Safety Diodes Monitoring Diodes Monitoring Safety Optimization Long Strings Click here to learn more, watch a video and see the TS4 platform datasheet.\nMORE INFORMATION: Connect multiple Gateways in series and leave terminating resistor only in final Gateway. [...] 1. SYSTEM OVERVIEW & PRODUCT DESCRIPTION TS4-M: MONITORING: The TS4-M provides continuous system-wide monitoring for fleets to make customer support and fleet workflow on track Diodes Monitoring Safety Optimization Diodes Monitoring Safety Diodes Monitoring Diodes Monitoring Safety Optimization Long Strings Click here to learn more, watch a video and see the TS4 platform datasheet.\nMORE INFORMATION: Connect multiple Gateways in series and leave terminating resistor only in final Gateway. [...] INSTALLATION: TS4 COVERS ELECTRICAL RATINGS DIODES TS4-D MONITORING TS4-M SAFETY TS4-S OPTIMIZATION TS4-O LONG STRINGS TS4-L INPUT Rated DC Input Power 375W 475W 475W 475W 475W Maximum VOC @ STC 90V 75V 75V 75V 75V Maximum Short Circuit Current (ISC) 12A 12A 12A 12A 12A Minimum VMP N/A 16V 16V 16V 16V Max Input Voltage @ Lowest Temp N/A 90V 90V 90V 90V OUTPUT Output Power Range 0 - 375W 0 - 475W 0 - 475W 0 - 475W 0 - 475W Output Voltage Range 0 - VOC 0 - VOC 0 - VOC 0 - VOC 0 - VOC",
+        "score": 0.7587435,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOoo5ACHCtCmghq2gR989zKKGBBzAb8QQCH9sqy-75awSJxQcRrmQ",
+        "title": "TS4 Installation Manual",
+        "snippet": "1. SYSTEM OVERVIEW & PRODUCT DESCRIPTION TS4-M: MONITORING: The TS4-M provides continuous system-wide monitoring for fleets to make customer support and fleet workflow on track Diodes Monitoring Safety Optimization Diodes Monitoring Safety Diodes Monitoring Diodes Monitoring Safety Optimization Long Strings Click here to learn more, watch a video and see the TS4 platform datasheet.\nMORE INFORMATION: Connect multiple Gateways in series and leave terminating resistor only in final Gateway. [...] 1. SYSTEM OVERVIEW & PRODUCT DESCRIPTION TS4-M: MONITORING: The TS4-M provides continuous system-wide monitoring for fleets to make customer support and fleet workflow on track Diodes Monitoring Safety Optimization Diodes Monitoring Safety Diodes Monitoring Diodes Monitoring Safety Optimization Long Strings Click here to learn more, watch a video and see the TS4 platform datasheet.\nMORE INFORMATION: Connect multiple Gateways in series and leave terminating resistor only in final Gateway. [...] INSTALLATION: TS4 COVERS ELECTRICAL RATINGS DIODES TS4-D MONITORING TS4-M SAFETY TS4-S OPTIMIZATION TS4-O LONG STRINGS TS4-L INPUT Rated DC Input Power 375W 475W 475W 475W 475W Maximum VOC @ STC 90V 75V 75V 75V 75V Maximum Short Circuit Current (ISC) 12A 12A 12A 12A 12A Minimum VMP N/A 16V 16V 16V 16V Max Input Voltage @ Lowest Temp N/A 90V 90V 90V 90V OUTPUT Output Power Range 0 - 375W 0 - 475W 0 - 475W 0 - 475W 0 - 475W Output Voltage Range 0 - VOC 0 - VOC 0 - VOC 0 - VOC 0 - VOC",
+        "score": 0.70726365,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://gatech.trueenergy-usa.com/wp-content/uploads/2017/05/TIGO_InstallationManualTS4Platform.pdf",
+        "title": "INTERACTIVE INSTALLATION AND SAFETY MANUAL ...",
+        "snippet": "INSTALLATION: TS4 COVERS ELECTRICAL RATINGS DIODES TS4-D MONITORING TS4-M SAFETY TS4-S OPTIMIZATION TS4-O LONG STRINGS TS4-L INPUT @ STC Rated DC Input Power 375W 375W 375W 375W 375W Maximum DC Input Voltage (VOC) 90V 52V 52V 52V 52V Maximum Short Circuit Current (ISC) 12A 12A 12A 10A 10A Operating Voltage 0-80V 16-48V 16-48V 16-18V 16-48V OUTPUT Output Power Range 0-375W 0-375W 0-375W 0-375W 0-375W Output Voltage Range 0-VOC 0-VOC 0-VOC 0-VOC 0-VOC Communication Type N/A 802.15.4 2.4GHz [...] 1. SYSTEM OVERVIEW & PRODUCT DESCRIPTION TS4-M: MONITORING: The TS4-M provides continuous system-wide monitoring for fleets to make customer support and fleet workflow on track Diodes Monitoring Safety Optimization Diodes Monitoring Safety Diodes Monitoring Diodes Monitoring Safety Optimization Long Strings Click here to learn more, watch a video and see the TS4 platform datasheet. [...] 1. SYSTEM OVERVIEW & PRODUCT DESCRIPTION TS4-M: MONITORING: The TS4-M provides continuous system-wide monitoring for fleets to make customer support and fleet workflow on track Diodes Monitoring Safety Optimization Diodes Monitoring Safety Diodes Monitoring Diodes Monitoring Safety Optimization Long Strings Click here to learn more, watch a video and see the TS4 platform datasheet.",
+        "score": 0.69622743,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.solar-electric.com/lib/wind-sun/Tigo_Installation-Manual-TS4-mlfp.pdf?srsltid=AfmBOorR3ksfvWSQdlyQ7Xnr9JbQK1dU2O8VZLrkGXDwxaMB7Q72FyU_",
+        "title": "[PDF] Installation Manual - TS4-F, TS4-AF, TS4-A-2F and RSS Transmitter",
+        "snippet": "Mechanical Operating Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 85% Storage Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 60% Cooling Method Natural Convection Dimensions (with cover) 178.5mm x 134mm x 25.5mm Weight (base and cover) 670g Outdoor Rating IP68, NEMA 3R Cabling Type H1Z2Z2-K Output Length 1.2m standard, other lengths available Cable Options 1000V rated, 1500V rated Cable Cross-Section 6.3 ± 0.3mm Connectors MC4, MC4 comparable UV Resistance 500hr with UV [...] connections. Use grounding type bushings and jumper wires. [...] Cores for 300A) Maximum MPPT String Voltage 1500VDC Internal Opening for Wires ~25mm Outside Dimensions 59mm Maximum Number of Strings per Core 10 Maximum String Length 30 modules Environmental Temperature -40°C to 85°C Recommended max. torque 0.4 N/m for wiring (3.5 Lb/in), Wire range: 14-22 AWG All dimensions in mm.",
+        "score": 0.5889134,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.chintpowersystems.com/wp-content/uploads/2020/06/Tigo-Rapid-Shutdown-Manual.pdf",
+        "title": "[PDF] Installation Manual - TS4-F, TS4-AF, TS4-A-2F and RSS Transmitter",
+        "snippet": "• Always assume TS4 units are in “ON” state, or may turn on when restarting.\nThe transmitter control power supply MUST be on the same AC branch circuit as the inverter to meet rapid shutdown requirements. [...] module with or without the TS4 units attached. [...] • Allow clearance between PV module and mounting surface for air circulation around TS4-A-F.\n• For installation on frameless modules, remove metal clips and bolt TS4-A to rail. Do not drill additional mounting holes in the frame or metal bracket.",
+        "score": 0.580091,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/BTEC-Higher-Nationals/future-homes-design-and-construction/2018/specification/l45hncd-futurehomesdesign.pdf",
+        "title": "[PDF] HIGHER NATIONALS - Future Homes Design and Construction",
+        "snippet": "Design. 1st ed. Boston: Cengage. TWIDELL, J. and WEIR, T. (2015) Renewable Energy Resources. 3rd ed. Abingdon: Routledge. Websites www.altenergy.org Alternative Energy (General Reference) www.therenewableenergycentre.co.uk The Renewable Energy Centre (General Reference) Links This unit links to the following related units: Unit 2: Construction Technology Unit 40: Alternative Energy Systems Design & Installation Unit 50: Housing Design & Specification Unit 53: Advanced Housing Design & [...] LO2 Evaluate the principles that underpin the design and installation of alternative methods of power generation and distribution P2 Analyse a given energy generation system in order to define an installation strategy P3 Discuss the installation requirements of a given alternative energy generation system M2 Compare different systems of power generation in order to select a suitable system LO3 Discuss the social, political, environmental and economic factors related to alternative energy [...] monitoring the energy production and savings for the scheme. Data gathering: Customer requirements, specification, method statement, project planning. Installation: Installation methods for renewable systems. LO4 Describe ways in which different forms of alternative energy address broader environmental issues and provide sustainable solutions Political: Kyoto Agreement, global targets, regional targets, carbon trading. Environmental: Effects of CO2 emissions, greenhouse effect, waste products",
+        "score": 0.2840499,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/BTEC-Higher-Nationals/Construction-and-the-Built-Environment/2017/specification-and-sample-assessments/btec-hncd-cbe.pdf",
+        "title": "[PDF] BTEC Higher Nationals in Construction and the Built Environment",
+        "snippet": "instructions for assembly and erection, and to allow for accurate costing and ... installation of power and distribution systems, electromagnetic",
+        "score": 0.18943146,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://core.ac.uk/download/pdf/30732189.pdf",
+        "title": "[PDF] University of Huddersfield Repository - CORE",
+        "snippet": "A control and guidance system was also required and evolved into a top down management system from CEO to the manual worker and governed by ISO Standards",
+        "score": 0.052062023,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://lesprominform.ru/media/_protected/journals_pdf/1383/lesprominform_85.pdf",
+        "title": "[PDF] Л П И № 3 '2 0 12 w w w .le s p ro m in fo rm .ru - ЛесПромИнформ",
+        "snippet": "РЕгИОН НОМЕРА: ИВАНОВСкАЯ ОБЛАСТь. REgION IN FOCUS: ThE IVaNOVO REgION. Ситец, лен и березовые рощи .................................56.",
+        "score": 0.026317844,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.htu.edu.jo/pearson/construction/btec-hncd-cbe%20construction%20L5%20update.pdf",
+        "title": "[PDF] HIGHER NATIONALS - Construction and the Built Environment - HTU",
+        "snippet": "The guide should also set out your Centre's approach to operating assessments, such as how students must submit assignments/work and the consequences of",
+        "score": 0.024239996,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOopBZLo46QQ-ow_Kg_DJwRsdnNBu8GfH2c4Z4448gTsFHoMQPwMy",
+        "title": "[PDF] TS4 Installation Manual - RES Supply",
+        "snippet": "1. SYSTEM OVERVIEW & PRODUCT DESCRIPTION TS4-M: MONITORING: The TS4-M provides continuous system-wide monitoring for fleets to make customer support and fleet workflow on track Diodes Monitoring Safety Optimization Diodes Monitoring Safety Diodes Monitoring Diodes Monitoring Safety Optimization Long Strings Click here to learn more, watch a video and see the TS4 platform datasheet.\nMORE INFORMATION: Connect multiple Gateways in series and leave terminating resistor only in final Gateway. [...] 1. SYSTEM OVERVIEW & PRODUCT DESCRIPTION TS4-M: MONITORING: The TS4-M provides continuous system-wide monitoring for fleets to make customer support and fleet workflow on track Diodes Monitoring Safety Optimization Diodes Monitoring Safety Diodes Monitoring Diodes Monitoring Safety Optimization Long Strings Click here to learn more, watch a video and see the TS4 platform datasheet.\nMORE INFORMATION: Connect multiple Gateways in series and leave terminating resistor only in final Gateway. [...] INSTALLATION: TS4 COVERS ELECTRICAL RATINGS DIODES TS4-D MONITORING TS4-M SAFETY TS4-S OPTIMIZATION TS4-O LONG STRINGS TS4-L INPUT Rated DC Input Power 375W 475W 475W 475W 475W Maximum VOC @ STC 90V 75V 75V 75V 75V Maximum Short Circuit Current (ISC) 12A 12A 12A 12A 12A Minimum VMP N/A 16V 16V 16V 16V Max Input Voltage @ Lowest Temp N/A 90V 90V 90V 90V OUTPUT Output Power Range 0 - 375W 0 - 475W 0 - 475W 0 - 475W 0 - 475W Output Voltage Range 0 - VOC 0 - VOC 0 - VOC 0 - VOC 0 - VOC",
+        "score": 0.7923522,
+        "bucket": "other"
+      },
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOop_CW5zO55LBk6hH4Abvy1XEaLTIhpgrBkK2Q_hXQzrwLowbAMn",
+        "title": "[PDF] TS4 Installation Manual - RES Supply",
+        "snippet": "1. SYSTEM OVERVIEW & PRODUCT DESCRIPTION TS4-M: MONITORING: The TS4-M provides continuous system-wide monitoring for fleets to make customer support and fleet workflow on track Diodes Monitoring Safety Optimization Diodes Monitoring Safety Diodes Monitoring Diodes Monitoring Safety Optimization Long Strings Click here to learn more, watch a video and see the TS4 platform datasheet.\nMORE INFORMATION: Connect multiple Gateways in series and leave terminating resistor only in final Gateway. [...] 1. SYSTEM OVERVIEW & PRODUCT DESCRIPTION TS4-M: MONITORING: The TS4-M provides continuous system-wide monitoring for fleets to make customer support and fleet workflow on track Diodes Monitoring Safety Optimization Diodes Monitoring Safety Diodes Monitoring Diodes Monitoring Safety Optimization Long Strings Click here to learn more, watch a video and see the TS4 platform datasheet.\nMORE INFORMATION: Connect multiple Gateways in series and leave terminating resistor only in final Gateway. [...] INSTALLATION: TS4 COVERS ELECTRICAL RATINGS DIODES TS4-D MONITORING TS4-M SAFETY TS4-S OPTIMIZATION TS4-O LONG STRINGS TS4-L INPUT Rated DC Input Power 375W 475W 475W 475W 475W Maximum VOC @ STC 90V 75V 75V 75V 75V Maximum Short Circuit Current (ISC) 12A 12A 12A 12A 12A Minimum VMP N/A 16V 16V 16V 16V Max Input Voltage @ Lowest Temp N/A 90V 90V 90V 90V OUTPUT Output Power Range 0 - 375W 0 - 475W 0 - 475W 0 - 475W 0 - 475W Output Voltage Range 0 - VOC 0 - VOC 0 - VOC 0 - VOC 0 - VOC",
+        "score": 0.7923522,
+        "bucket": "other"
+      },
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOoqcyqCIn_X3wlfYgAs3HxWLDNDEUQT67mg3OD9_gMRpu1kGbRjw",
+        "title": "TS4 Installation Manual",
+        "snippet": "• Failure to adhere to these instructions may result in injury or death, damage to the system or voiding the factory warranty. [...] 1. SYSTEM OVERVIEW & PRODUCT DESCRIPTION TS4-M: MONITORING: The TS4-M provides continuous system-wide monitoring for fleets to make customer support and fleet workflow on track Diodes Monitoring Safety Optimization Diodes Monitoring Safety Diodes Monitoring Diodes Monitoring Safety Optimization Long Strings Click here to learn more, watch a video and see the TS4 platform datasheet.\nMORE INFORMATION: Connect multiple Gateways in series and leave terminating resistor only in final Gateway. [...] 1. SYSTEM OVERVIEW & PRODUCT DESCRIPTION TS4-M: MONITORING: The TS4-M provides continuous system-wide monitoring for fleets to make customer support and fleet workflow on track Diodes Monitoring Safety Optimization Diodes Monitoring Safety Diodes Monitoring Diodes Monitoring Safety Optimization Long Strings Click here to learn more, watch a video and see the TS4 platform datasheet.\nMORE INFORMATION: Connect multiple Gateways in series and leave terminating resistor only in final Gateway.",
+        "score": 0.6063825,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.pioneersolarenergy.com/wp-content/uploads/2023/07/APS-Micro-Inverter-Warranty.pdf?srsltid=AfmBOorJj-_VhOfoOVLz48d3coszMKcdrXUvU829G6VlUUOp6QgUMpHc",
+        "title": "WARRANTY CERTIFICATE",
+        "snippet": "Some jurisdictions do not allow limitations or exclusions on implied warranties or on the duration of an implied warranty or on the limitation or exclusion of certain damages, so the above limitation(s) or exclusion(s) may not apply. This Extended Limited Warranty gives the customer specific legal rights, and the customer may have other rights that may vary from jurisdiction to jurisdiction.\nAltenergy Power Systems USA Inc. [...] The APsystems Microinverters (the “Product”) supplied by Altenergy Power Systems America Inc. (“APsystems”) are designed to withstand normal operating conditions when used for their originally intended purpose in compliance with the APsystems User Manual supplied with the system. This APsystems Extended Limited Warranty (“Extended Limited Warranty” or “ELW”) covers Defective Products for a period starting at the termination of the standard ten (10) years Limited Warranty Period, for an [...] water, corrosion, infestations, or input voltage outside the parameters listed in the Product specifications, whether from the grid, generators, or lightning strikes, or (5) has been impacted by incidental or consequential damage caused by other components of the electrical system within which it is installed, or (6) has been subject to any attempt to alter or remove the original identification markings (including trademark, model number, or serial number). This ELW does not cover costs related",
+        "score": 0.5818027,
+        "bucket": "other"
+      },
+      {
+        "url": "https://firemountainsolar.com/wp-content/uploads/2022/02/APsystems-Microinverter-Limited-Warranty_United-States-2021.pdf",
+        "title": "APsystems Microinverter Limited Warranty",
+        "snippet": "Warranty gives the customer specific legal rights, and the customer may have other rights that may vary from jurisdiction. Altenergy Power Systems USA Inc. [...] This Limited Warranty does not cover costs related to the removal, installation or troubleshooting of any components of the customer’s electrical systems. During the Warranty Period, this Limited Warranty may be transferred to subsequent owners of the Product upon completion of a “Warranty Transfer Form” available from the APsystems website, and payment of the nominal transfer fee as shown on that form. THIS LIMITED WARRANTY IS THE SOLE AND EXCLUSIVE WARRANTY GIVEN BY ALTENERGY POWER SYSTEM [...] APsystems Microinverter Limited Warranty L4.0US © All Rights Reserved 01/21 United States The Microinverters (the “Products”) supplied by Altenergy Power Systems USA Inc. (“APsystems”), and installed after Jan 1, 2021 are eligible to this APsystems Limited Warranty (“Limited Warranty”) only if they are continuously connected to the internet via an ECU (Energy Communica-tion Unit) • For systems of more than 4 PV modules: ECU-R or ECU-C, or any compatible ECU • For systems up to 4 PV modules:",
+        "score": 0.562874,
+        "bucket": "other"
+      },
+      {
+        "url": "https://sunwatts.com/content/warranty/APsmart_RSD-S-PLC_Transmitter_Warranty.pdf?srsltid=AfmBOorJxPCGMvEUoHEoEi4eJJeZuPqxDWE3ZFCjijEdHW2-CPYNGJr0",
+        "title": "[PDF] APsystems Limited Warranty for Rapid Shutdown Devices ...",
+        "snippet": "L3.1 © All Rights Reserved 04/24 2/2 Altenergy Power Systems USA Inc.\n8627 N. Mopac Expy, Ste 150, Austin, TX 78759 737-218-8486 info@apsmartglobal.com www.apsmartglobal.com [...] APsystems Limited Warranty for Rapid Shutdown Devices & Transmitter Altenergy Power Systems USA Inc. (“APsystems”) supplies Rapid Shutdown Devices, including RSD-S-PLC and RSD-D, Transmitter-PLC/Transmitter-PLC-1P, Transmitter-PLC Outdoor Kit, and RSD-EYE+ (the “Products”).\nThe Products are designed to withstand normal operating conditions when used for their original intended purpose in compliance with the APsystems User Manual supplied with the system. [...] module power warranty period provided by the PV module manufacturer. • Transmitter-PLC/Transmitter-PLC-1P: ten (10) years beginning from the Warranty Start Date. For invert-er-embedded Product, the Warranty Period shall not exceed the inverter warranty period provided by the invert-er manufacturer. • Transmitter-PLC Outdoor Kit: three (3) years beginning from the Warranty Start Date, when used with the APsystems Rapid Shutdown Devices. • RSD-EYE+: one (1) year beginning from the Warranty Start",
+        "score": 0.5489884,
+        "bucket": "other"
+      },
+      {
+        "url": "https://minhacasasolar.fbitsstatic.net/media/1-certificado_de_garantia_interface_de_monitoramento_wi-fi_ecu-r.pdf",
+        "title": "[PDF] APsystems ECU Limited Warranty",
+        "snippet": "Some jurisdictions do not allow limitations or exclusions on implied warranties or on the duration of an implied warranty or on the limitation or exclusion of certain damages, so the above limitation(s) or exclusion(s) may not apply. This Limited Warranty gives the customer specific legal rights, and the customer may have other rights that may vary from jurisdiction to jurisdiction.\nAltenergy Power System Inc. [...] APsystems ECU Limited Warranty Asia, New Zealand, South America, North America (excluding USA/Canada) ECU2.5ROW © All Rights Reserved 12/17 The Energy Communications Unit (ECU or the “Product”) supplied by Altenergy Power Systems USA Inc. (“APsystems”) is designed to withstand normal operating conditions when used for its originally intended purpose in compliance with the APsystems User Manual supplied with the system. This APsystems Limited Warranty (“Limited Warranty”) covers Defective [...] Products for a period of three (3) years from the date of original registration of the ECU on the APsystems EMA database (the “Warranty Period”). A Product is defective if it is inoperable because of defects in material and workmanship, provided that APsystems, through inspection, establishes the existence of that defect (“Defective Product”). To obtain service under this Limited Warranty, the holder of the Warranty must comply with the Return Merchandise Authorization (“RMA”) procedures, which",
+        "score": 0.5393963,
+        "bucket": "other"
+      },
+      {
+        "url": "https://file.apsystemsema.com:8083/apsystems/apeasypower/resource/4306626102_APsystems%20Microinverter%20EZ1-M%20EZ1-H%20for%20EMEA%20User%20manual_%20Rev1.1_2024-12-09%20BC01.pdf",
+        "title": "[PDF] APsystems Microinverter User Manual",
+        "snippet": "APsystems EZ1 series Microinverters (For EMEA) APsystems Microinverter User Manual © All Rights Reserved ALTENERGY POWER SYSTEM Inc.\nemea.APsystems.com APsystems Karspeldreef 8, 1101 CJ Amsterdam, The Netherlands EMAIL: info.emea@APsystems.com APsystems 22 Avenue Lionel Terray 69330 Jonage, France EMAIL: info.emea@APsystems.com Please scan this QR code to have access to our APPs and Products Information. [...] Hereby, [ALTENERGY POWER SYSTEM INC.] declares that the radio equipment type [EZ1-M, EZ1-H] is in compliance with Directive 2014/53/EU.\nThe full text of the EU declaration of conformity is available at the following internet address:  APsystems Microinverter EZ1 series User manual 4 1. Important Safety Instructions 1.3 Symbols in Lieu of Words Trademark.\nCaution, risk of electric shock.\nCaution, hot surface. [...] Output Current 2.6A (1) / 3.5A 4.2A Nominal Output Frequency/ Range 50Hz/48Hz-51Hz Power Factor 0.99 Inrush Current 11.92A Maximum Output Fault Current 34A Maximum Output Overcurrent Protection 10A Wi-Fi Frequency Range 2412MHz - 2472MHz Wi-Fi Maximum Power (EIRP) 19.86dBm Bluetooth Frequency Range 2402MHz - 2480MHz Bluetooth Maximum Power (EIRP) 18.18dBm Efficiency Peak Efficiency 96.7% Nominal MPPT Efficiency 99.5% Night Power Consumption 20mW Mechanical Data Operating Ambient Temperature",
+        "score": 0.282637,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "altenergy-power",
+    "product": "Altenergy Power TS4-O",
+    "candidates": [
+      {
+        "url": "https://midsummerwholesale.co.uk/pdfs/tigo-ts4-o-optimizer-datasheet.pdf",
+        "title": "[PDF] TS4-O - Midsummer Wholesale",
+        "snippet": "-O TS4 -O TS4 -D TS4 -D TS4 -D TS4 -D TS4 -D TS4 -D TS4 -D TS4 -D TS4 -D TS4 -D TS4 -D TS4 -D TS4 -D TS4 -D TS4 -D TS4 -D Optimize only where needed TS4-O is one of the 5 functional covers that plugs in our Integrated Modular base (TS4-B) and in our Retrofit Modular base (TS4-R). [...] TS4-O TS4-O (1) (2) (3) 1) Photon lab report 2) NREL report 3) For residential systems 4) Selective deployment of optimization is intended for systems with a single string per MPPT. Use 100% deployment of optimization on parallel strings connected to the same MPPT. Rapid shutdown compliance requires 100% deployment of at least TS4-S (4) OPTIMIZATION Maximum Series Fuse Rating Rated DC Input Power Output Voltage Range Output Power Range Rapid Shutdown Verified (NEC 2014 690.12) Impedance [...] expanded its smart module platform to provide five levels of customization. TS4 increases your freedom of choice by allowing to select the right features for each project and budget.",
+        "score": 0.8025714,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://cpssolar.co.nz/wp-content/uploads/2021/11/tigo-micro-inverter-data-sheet.pdf",
+        "title": "[PDF] TS4 PLATFORM - CPS Solar",
+        "snippet": "Continuous Input Current (IMP) n/a n/a n/a Yes Yes Schottky 3 200°C 10A 9.5A Yes No Schottky 3 200°C 10A 9.5A Maximum Input Voltage (VOC) n/a n/a 52V MPPT Voltage Range (VMP) n/a n/a n/a 52V 16-48V 52V 16-40V Rated String Voltage 1000V IEC 600V/1000V UL 1000V IEC 600V/1000V UL 1000V IEC 600V/1000V UL Nominal Input Power n/a n/a n/a 1000V IEC 600V/1000V UL 375W 1000V IEC 600V/1000V UL 375W Maximum Output Power n/a n/a n/a Communication Type n/a 802.15 2.4GHz 802.15 2.4GHz 375W 802.15 2.4GHz 375W [...] OPTIMIZATION LONG STRINGS DIODES MONITORING SAFETY Mechanical Ambient Temperature Range -40°C to +85°C (-40°F to +185°F) Storage Temperature Range -40°C to +85°C (-40°F to +185°F) Cooling Method Natural Convection Dimensions (with cover) TS4-B: 152.5mm x 108mm x 25mm, TS4-R: 195.5mm x 158mm x 23mm Weight (without cover) TS4-B: 270g, TS4-R: 470g Environmental Rating IP65/67, NEMA 3R Cabling Cabling Type PV1-F Output Cable Length 1.0m, other lengths on request Connector MC4, MC4 compatible UV [...] LONG STRINGS TS4-L OPTIMIZATION TS4-O SAFETY TS4-S MONITORING TS4-M DIODES TS4-D · String length increased by up to 30% · Fewer BOS components · Faster installation · Inverter optimization · Lower wire-losses · Plus all the benefits of Optimization · Shade and age tolerance · Enhanced energy yield · Greater design flexibility · Maximized roof usage · Plus all the benefits of Safety · NEC 2014 690.12 rapid shutdown compliant · Module-level deactivation · Automatic or manual shutdown ·",
+        "score": 0.7482976,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOopJAcbPkUvtja7z3Jpkdb-gdVu15hxeP-aW-0ePf_1GU6TdaBAZ",
+        "title": "[PDF] TS4 Installation Manual - RES Supply",
+        "snippet": "INSTALLATION: TS4 COVERS ELECTRICAL RATINGS DIODES TS4-D MONITORING TS4-M SAFETY TS4-S OPTIMIZATION TS4-O LONG STRINGS TS4-L INPUT Rated DC Input Power 375W 475W 475W 475W 475W Maximum VOC @ STC 90V 75V 75V 75V 75V Maximum Short Circuit Current (ISC) 12A 12A 12A 12A 12A Minimum VMP N/A 16V 16V 16V 16V Max Input Voltage @ Lowest Temp N/A 90V 90V 90V 90V OUTPUT Output Power Range 0 - 375W 0 - 475W 0 - 475W 0 - 475W 0 - 475W Output Voltage Range 0 - VOC 0 - VOC 0 - VOC 0 - VOC 0 - VOC [...] 0.25 mm (1000V) 6.4 ± 0.2mm, 7.05 ± 0.2mm (1500V) Connectors MC4, MC4 compatible, Amphenol, EVO2 UV Resistance 500hr with UV light between 300-400nm @65C Maximum String Voltage 1500V UL/IEC1 1 All TS4 covers are 1500V compatible. Specify max system voltage when ordering modules with TS4 bases for appropriate cables & connectors. [...] Next Gateway TS4-O: OPTIMIZATION: In addition to safety, monitoring, and PV2.0 synchronization, TS4-O optimizes each PV module when its performance is affected by shade or mismatch TS4-S: SAFETY: The TS4-S provides the necessary safety and monitoring services required by municipalities TS4-L: LONG STRINGS: The TS4-L is the complete Smart Module solution. It is ideal for systems requiring fully optimized performance at the module level, monitoring, safety, and longer strings CLICK HERE to see",
+        "score": 0.7368747,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/5fad551d7419c7a0e9e4aba4/60103c6ce1e19276818c61d5_TS4-A-O%20(Optimization%20Add-on)%20(TU%CC%88V).pdf",
+        "title": "[PDF] TS4-A-O",
+        "snippet": "cable, EVO2 Environmental Operating Temperature Range -40°C to +85°C (-40°F to +185°F) Outdoor Rating IP68 Maximum Elevation 2000m Mechanical Dimensions 138.4mm x 139.7mm x 22.9mm Weight 520g Electrical Total Max Input Voltage (VOC @ Lowest Temperature) 90V Voltage Range 16 - 90V Maximum Current 12A Maximum Power 500W Output Cable Length 1.2m (standard) Connectors MC4 (standard) Communication Type Wireless Recommended Fuse Rating 15A 120±10 1000±10 138.4 30 139.7 8 22.9 TAP required for [...] Flex MLPE Flex MLPE The TS4-A-O (Optimization) is the advanced add-on optimization solution that brings smart module functionality to standard PV modules for higher reliability. Improve energy efficiency by upgrading underperforming PV systems or adding smart features to new installations.\nThe TS4-A-O with UHD-Core technology and expanded specifications supports PV modules up to 500W. [...] module-level shutdown and CCA required for monitoring with TS4-A-O.",
+        "score": 0.7192461,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://aisolarmall.com/wp-content/uploads/2025/04/GW_ES-US-SBP-US-_Certificate-CSA-C22.2-UL1741UL1699B.pdf",
+        "title": "[PDF] Certificate of Compliance - AI Solar",
+        "snippet": "RSD-S-PLC-A RSD-S-PLC-B RSD-D-15-1000 RSD-D-20-1000 RSD-D-25-1000 RSD-D-15-1500 RSD-D-20-1500 RSD-D-25-1500 Altenergy Power System Inc.\nSingle Core Transmitter-PLC (no power supply) GoodWe Technologies Co., Ltd.\nGW5000-ES-US20, GW6000-ES-US20, GW7600-ES-US20, GW9600-ES-US20, GW11K4-ES-US20, GEH5.0-1U-US20, GEH6.0-1U-US20, GEH7.6-1U-US20, GEH9.6-1U-US20, GEH11.4-1U-US20 600 Vdc maximum system voltage.\nRapid shutdown time limit 30s with inverter. [...] 3.\nPV input inverter, ES series and GEH series are verified with PVRSS function according to NEC-2020 Article 690.12 and CEC-2018 Sec 64-218 with Inverter integrated transmitter and external mounted RSD as following: Model Attenuators Initiation Device Inverter System Ratings Certificate: 80103086 Project: 80103084 Master Contract: 300612 Date Issued:2022-07-19 DQD 507 Rev. 2019-04-30 © 2018 CSA Group. All rights reserved.\nPage 3 Goodwe PVRSS System Altenergy Power System Inc. [...] Note: The functional safety has been evaluated according to applicable requirement of CSA C22.2 No. 0.8-19, UL 991 Edition 3 and UL 1998 Edition 3 as required by the product standard.\nNote: The products have been verified with PVRSS function according to NEC-2020 Article 690.12 and CEC-2018 Sec 64-218.\nNote: The products have evaluated inverter and ESS operating modes according to UL 1741 PCS CRD are: Import Only Mode and No Exchange Mode.",
+        "score": 0.5240786,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/BTEC-Higher-Nationals/construction/2018/specification-and-sample-assessments/hncd-construction-rqf.pdf",
+        "title": "[PDF] HIGHER NATIONALS - Construction - Pearson qualifications",
+        "snippet": "Topics covered in this unit will include: energy systems, solar power systems, energy conservation, passive solar heating, wind energy, ocean energy",
+        "score": 0.10415817,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://unirac.com/wp-content/uploads/bsk-pdf-manager/2025/05/CDR_20250411_105302975LAX-001_R.pdf",
+        "title": "[PDF] Listing Constructional Data Report (CDR) - Unirac",
+        "snippet": "Installer is responsible for and shall provide an appropriate installation to the applicable edition of the. National Electrical Code. RM10, RM10 EV0, RMDT, RM5",
+        "score": 0.98527,
+        "bucket": "installation"
+      },
+      {
+        "url": "http://en.goodwe.com/Ftp/EN/Downloads/Certificate/GW_A-ES,%20A-BP,%20A-MS_Certificate%20UL1741.pdf",
+        "title": "[PDF] Certification Report Template - GoodWe",
+        "snippet": "For details related to rating, size, configuration, etc., reference should be made to the CSA Certification. Record, Certificate of Compliance Annex A, or the",
+        "score": 0.98379,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/BTEC-Higher-Nationals/Construction-and-the-Built-Environment/2017/specification-and-sample-assessments/btec-hncd-cbe.pdf",
+        "title": "[PDF] BTEC Higher Nationals in Construction and the Built Environment",
+        "snippet": "o Unit 40: Alternative Energy Systems Design & Installation o Unit 43: Hydraulics ... installation of power and distribution systems, electromagnetic",
+        "score": 0.98198,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.htu.edu.jo/pearson/construction/btec-hncd-cbe%20construction%20L5%20update.pdf",
+        "title": "[PDF] HIGHER NATIONALS - Construction and the Built Environment - HTU",
+        "snippet": "installation of alternative methods of power generation and distribution. P2 Analyse a given energy generation system in order to define an installation.",
+        "score": 0.98051,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/BTEC-Higher-Nationals/future-homes-design-and-construction/2018/specification/l45hncd-futurehomesdesign.pdf",
+        "title": "[PDF] HIGHER NATIONALS - Future Homes Design and Construction",
+        "snippet": "installation of alternative methods of power generation and distribution. P2 Analyse a given energy generation system in order to define an installation.",
+        "score": 0.97756,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.sapthagiri.edu.in/designs/naac/ICGCP/EEE_ECE.pdf",
+        "title": "[PDF] sapthagiri college of engineering",
+        "snippet": "Sapthagiri College of Engineering, Bengaluru was established in the year 2001 by Srinivasa Education and. Charitable Trust with a vision to",
+        "score": 0.97309,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://solarmagazine.nl/u/files/sm1-2015.pdf",
+        "title": "[PDF] Special vakbeurs Solar Solutions vanaf pagina 25 Netregistratie pv ...",
+        "snippet": "Duitslandweg 13 | 2411 NT Bodegraven | Tel. 0172 - 650 737 www.energie-opslag.nl | info@topsystems-energy.nl 3 Je slaat je eigen opgewekte energie op, CO2 neutraal 3 Je bent niet meer volledig afhankelijk van energiemaatschappijen 3 Je bent goed bezig voor het milieu en je eigen portemonnee Solar energie opslag 67 Energy Storage NL van start op snijvlak duurzame energie en smart grids: Het FME Cluster Energie richtte eind vorig jaar een samenwerkingsverband op voor energieopslag in Nederland. Kijk voor meer informatie op www.smartgridevent.com Intersolar Europe 2015 maandag 9 tot en met vrijdag 12 juni 2015 Intersolar is nog een van de grootste zonne-energiebeurzen ter wereld, ondanks dat ze de afgelopen jaren in formaat kromp. Kijk voor meer informatie op www.intersolar.de EU PVSEC 2015 maandag 14 september tot en met vrijdag 18 september 2015 Hamburg is dit jaar het toneel van de Europese PV Solar Energy Conference & Ex-hibition (EU PVSEC), de conferentie en beurs gericht op solar machinebouwers.",
+        "score": 0.96427,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://gatech.trueenergy-usa.com/wp-content/uploads/2017/05/TIGO_InstallationManualTS4Platform.pdf",
+        "title": "[PDF] INTERACTIVE INSTALLATION AND SAFETY MANUAL FOR TS4",
+        "snippet": "INSTALLATION: TS4 COVERS ELECTRICAL RATINGS DIODES TS4-D MONITORING TS4-M SAFETY TS4-S OPTIMIZATION TS4-O LONG STRINGS TS4-L INPUT @ STC Rated DC Input Power 375W 375W 375W 375W 375W Maximum DC Input Voltage (VOC) 90V 52V 52V 52V 52V Maximum Short Circuit Current (ISC) 12A 12A 12A 10A 10A Operating Voltage 0-80V 16-48V 16-48V 16-18V 16-48V OUTPUT Output Power Range 0-375W 0-375W 0-375W 0-375W 0-375W Output Voltage Range 0-VOC 0-VOC 0-VOC 0-VOC 0-VOC Communication Type N/A 802.15.4 2.4GHz [...] • Failure to adhere to these instructions may result in injury or death, damage to the system or voiding the factory warranty. [...] - + + - + 159.5mm (6.28”) 90.2mm (3.55”) 57.5mm (2.26”) RS485 For 3rd party devices G ■B A - + B A Connect multiple Gateways in series and leave terminating resistor only in final Gateway.",
+        "score": 0.77994305,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOooGqK23tc_cjx4MgDkOVWLhkCaQ-iCNIUrKjFmtSRIIQDlXritk",
+        "title": "[PDF] TS4 Installation Manual - RES Supply",
+        "snippet": "INSTALLATION: TS4 COVERS ELECTRICAL RATINGS DIODES TS4-D MONITORING TS4-M SAFETY TS4-S OPTIMIZATION TS4-O LONG STRINGS TS4-L INPUT Rated DC Input Power 375W 475W 475W 475W 475W Maximum VOC @ STC 90V 75V 75V 75V 75V Maximum Short Circuit Current (ISC) 12A 12A 12A 12A 12A Minimum VMP N/A 16V 16V 16V 16V Max Input Voltage @ Lowest Temp N/A 90V 90V 90V 90V OUTPUT Output Power Range 0 - 375W 0 - 475W 0 - 475W 0 - 475W 0 - 475W Output Voltage Range 0 - VOC 0 - VOC 0 - VOC 0 - VOC 0 - VOC [...] • Failure to adhere to these instructions may result in injury or death, damage to the system or voiding the factory warranty. [...] NEW INSTALLATION Use a barcode scanner to save time and avoid typos Easy to use, simply plug and play TIP: USE A BARCODE SCANNER Follow the instructions of the installation wizard Click here for a detailed walk through INSTALLATION WIZARD Enter site information: Address Site owner information 3rd party finance, if such exists Click Next CONFIGURE THE SYSTEM Enter inverter information CONFIGURE THE SYSTEM Enter inverter information CONFIGURE THE SYSTEM Enter inverter information After choosing",
+        "score": 0.7621591,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOoosOEIerPGsycU7oplPFoIRhjSt2lkyLddFTivIzairZwWAea5j",
+        "title": "TS4 Installation Manual",
+        "snippet": "INSTALLATION: TS4 COVERS ELECTRICAL RATINGS DIODES TS4-D MONITORING TS4-M SAFETY TS4-S OPTIMIZATION TS4-O LONG STRINGS TS4-L INPUT Rated DC Input Power 375W 475W 475W 475W 475W Maximum VOC @ STC 90V 75V 75V 75V 75V Maximum Short Circuit Current (ISC) 12A 12A 12A 12A 12A Minimum VMP N/A 16V 16V 16V 16V Max Input Voltage @ Lowest Temp N/A 90V 90V 90V 90V OUTPUT Output Power Range 0 - 375W 0 - 475W 0 - 475W 0 - 475W 0 - 475W Output Voltage Range 0 - VOC 0 - VOC 0 - VOC 0 - VOC 0 - VOC [...] • Failure to adhere to these instructions may result in injury or death, damage to the system or voiding the factory warranty. [...] 0.25 mm (1000V) 6.4 ± 0.2mm, 7.05 ± 0.2mm (1500V) Connectors MC4, MC4 compatible, Amphenol, EVO2 UV Resistance 500hr with UV light between 300-400nm @65C Maximum String Voltage 1500V UL/IEC1 1 All TS4 covers are 1500V compatible. Specify max system voltage when ordering modules with TS4 bases for appropriate cables & connectors.",
+        "score": 0.7206637,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.stellavolta.com/content/Tigo Installation Manual for CCA-TAP-TS4 - Stellavolta.pdf?srsltid=AfmBOopCIijI7JjhRzcRSuvd3afXn0AAy6oo6ZEcqYlZk0xgwbZDCI51",
+        "title": "Tigo Installation Manual for CCA, TAP, and TS4",
+        "snippet": "the solar array. Try to match the physical layout of modules on the roof. 2. Attach the TS4 to the top of the PV module frame using the silver clips with the cable glands facing down. The TS4 and its cables, cable glands, and connectors must not touch the roof surface. 3. Connect the shorter TS4 input leads to the PV modules. You must connect the shorter TS4 input leads to the PV modules before connecting to neighboring TS4s. Failure to do so can damage the TS4 units. Install TS4s TS4-A with [...] power supply information on page 8. 2.2 20240815 Remove TS4-O functionality from text from page 6. Update TAP images. Contents Disclaimer of Warranties and Limitation of Liability.................................................................2 Document Revision History ..............................................................................................2 Contents ......................................................................................................................3 [...] require a TAP or CCA. Design Considerations A CCA should control all TS4s on all strings connected to a specific inverter or MPPT. Install the CCA near this inverter with access to AC power and the internet. Ethernet and WiFi are built in. • For PV RSS compliance, the CCA must be on the same AC branch circuit as the inverter(s) it is controlling. The rapid shutdown initiator, whether it is an automatic disconnect or a manual switch, must turn off power to the CCA. • One CCA can communicate with",
+        "score": 0.55709904,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.chintpowersystems.com/wp-content/uploads/2020/06/Tigo-Rapid-Shutdown-Manual.pdf",
+        "title": "TS4-F installation manual",
+        "snippet": "• Allow clearance between PV module and mounting surface for air circulation around TS4-A-F.\n• For installation on frameless modules, remove metal clips and bolt TS4-A to rail. Do not drill additional mounting holes in the frame or metal bracket. [...] module with or without the TS4 units attached. [...] • TS4-A-F mounting is recommended on the upper right as shown, but can be placed elsewhere on the frame or bolted to the racking if needed.\n• TS4-A-F cable glands must not be facing up.\n• Allow clearance between PV module and mounting surface for air circulation around TS4-A-F.\n• For installation on frameless modules, remove metal clips and bolt TS4-A to rail. Do not drill additional mounting holes in the frame or metal bracket.",
+        "score": 0.4429021,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://zonnepaneel-info.nl/pdf/datasheet/TS4_Platform_datasheet.pdf",
+        "title": "[PDF] ts4 platform - Zonnepaneel-info",
+        "snippet": "universal base and a range of covers containing the power electronics, TS4 increases your freedom of choice when selecting features for a particular project and budget. TS4 cover options range from standard diodes all the way to fully optimized performance and safety features. [...] Maximum DC Input Voltage (VOC) 90V 52V 52V 52V 52V Operating Voltage 0-80V 16-48V 16-48V 16-48V 16-48V Maximum Short Circuit Current (ISC) 12A 12A 12A 10A 10A Output Voltage Range 0-VOC 0-VOC 0-VOC 0-VOC 0-VOC Output Power Range 0-375W 0-375W 0-375W 0-375W 0-375W Communication Type n/a 802.15.4 2.4GHz 802.15.4 2.4GHz 802.15.4 2.4GHz 802.15.4 2.4GHz Rapid Shutdown Verified (NEC 2014 690.12) Need additional RS device Need additional RS device Yes Yes Yes Impedance Matching Capability No No No Yes [...] The base provides a single interface that can be matched with one of several electronic covers to address a range of functions and budgets. Together they form a new generation of module-level power electronics; flexible, replaceable, and upgradeable, accompanied by a powerful PV 2.0 communication backend.",
+        "score": 0.68191797,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.pioneersolarenergy.com/wp-content/uploads/2023/07/APS-Micro-Inverter-Warranty.pdf?srsltid=AfmBOorukrux-B4_wpNQolYOfQ0fLI9euLUeYNMgmjEnTWGlg9Vmqu5u",
+        "title": "[PDF] WARRANTY CERTIFICATE - Pioneer Solar & Renewables",
+        "snippet": "Some jurisdictions do not allow limitations or exclusions on implied warranties or on the duration of an implied warranty or on the limitation or exclusion of certain damages, so the above limitation(s) or exclusion(s) may not apply. This Extended Limited Warranty gives the customer specific legal rights, and the customer may have other rights that may vary from jurisdiction to jurisdiction.\nAltenergy Power Systems USA Inc. [...] The APsystems Microinverters (the “Product”) supplied by Altenergy Power Systems America Inc. (“APsystems”) are designed to withstand normal operating conditions when used for their originally intended purpose in compliance with the APsystems User Manual supplied with the system. This APsystems Extended Limited Warranty (“Extended Limited Warranty” or “ELW”) covers Defective Products for a period starting at the termination of the standard ten (10) years Limited Warranty Period, for an [...] 1 2 • I E E E 1 5 4 7 • E3.0NA © All Rights Reserved 11/20 APsystems Microinverter Extended Limited Warranty USA / Canada E3.0NA © All Rights Reserved 11/20 The Microinverters (the “Products”) supplied by Altenergy Power System America Inc. (“ APsystems”), and installed after Jan 1, 2021 are eligible to this APsystems Extended Limited Warranty only if (1) they are continuously connected to the internet via an ECU (Energy Communication Unit) • For systems of more than 4 PV modules, : ECU-R or",
+        "score": 0.6296157,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.chintpowersystems.com/wp-content/uploads/2020/06/APS-RSD-Warranty.pdf",
+        "title": "[PDF] APsystems Limited Warranty for RSD-S-PLC & Transmitter",
+        "snippet": "19925 Stevens Creek Blvd, Suite 100, Cupertino, CA 95014 APsmartGlobal.com APsystems Limited Warranty for RSD-S-PLC & Transmitter This Altenergy Power System, Inc. (“APsystems”) Limited warranty (“Limited Warranty”) covers defects in workmanship and materials of the Equipment for the specified duration (“Warranty Period”) described below: • RSD-S-PLC: twenty-five (25) years beginning on the earlier of (“Warranty Start Date”): (i) 4 months from the date the Equipment is shipped from APsystems; [...] fire, water, corrosion, infestations, or input voltage outside the parameters listed in the Product specifications, whether from the grid, generators, or lightning strikes, or (5) has been impacted by incidental or consequential damage caused by other components of the electrical system within which it is installed, or (6) has been subject to any attempt to alter or remove the original identification markings (including trademark, model number, or serial number). This Limited Warranty does not [...] • Transmitter: ten (10) years beginning on the Warranty Start Date. For inverter-embedded Equipment, the Warranty Period shall not exceed the inverter product warranty period provided by the inverter manufacturer.\nThe Limited Warranty does not apply to ancillary components which shall be considered separate from the Equipment, for example, cables, breakers, fuses, wires and connectors, whether supplied by APsystems or others. Some components may carry a separate manufacturer warranty.",
+        "score": 0.6257817,
+        "bucket": "other"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/5fad551d7419c7a0e9e4aba4/6570a210b20fedb13c961e2b_002-00143-00 1.4 TS4-A-O datasheet 20231129 EN.pdf",
+        "title": "TS4-AO - Module-level optimization, monitoring, and rapid ...",
+        "snippet": "Mechanical Dimensions (H/W/D) 139.7 x 138.4 x 22.9 mm (5.4 x 5.5 x 0.9 in.) Weight 520 g (1.15 lb.) General Standards compliance FCC 15b, ETSI EN 301 489, CISPR 31, CSA 22.2, IEC 62109, NEC 690.12 UL 1741 PVRSE/PVRSS Warranty 25 years TS4-A-O Specifications and Ordering Information Ordering Information More Resources Part Number VMAX Certifications UL/IEC Cable Lengths Connectors 461-00252-20 1500 V/1000 V 1.2/2 m MC4 461-00252-32 1500 V/1000 V 0.12/1.2 m MC4 461-00252-62 1500 V/1000 V 0.62/1.2 [...] Features • Simple, fast installation – snaps to a standard PV module frame or mounts to racking • Intelligent optimization – delivers the maximum energy from an array • Module-level monitoring – full visibility into module- and system-level production • Rapid shutdown – a UL Standards-certified component for photovoltaic rapid shutdown systems (PVRSS) worldwide • Works with any system – fully compatible with thousands of different inverter models from more than 50 inverter brands • 25-year [...] Shutdown TS4 conductor AWG 12 Rapid shutdown time limit <30 sec.",
+        "score": 0.6018984,
+        "bucket": "other"
+      },
+      {
+        "url": "https://s3.amazonaws.com/ecodirect_docs/APsystems/APsystems-ECU-Warranty.pdf",
+        "title": "[PDF] APsystems ECU Limited Warranty North America - Amazon S3",
+        "snippet": "Some states do not allow limitations or exclusions on implied warranties or on the duration of an implied warranty or on the limitation or exclusion of certain damages, so the above limitation(s) or exclusion(s) may not apply. This Limited Warranty gives the customer specific legal rights, and the customer may have other rights that may vary from jurisdiction to jurisdiction.\nAltenergy Power Systems USA Inc. [...] APsystems ECU Limited Warranty North America ECU1.1NA © All Rights Reserved 04/2016 The Energy Communications Unit (ECU or the “Product”) supplied by Altenergy Power Systems USA Inc. (“APsystems”) is designed to withstand normal operating conditions when used for its originally intended purpose in compliance with the APsystems User Manual supplied with the system. This APsystems Limited Warranty (“Limited Warranty”) covers Defective Products for a period of three (3) years from the date of",
+        "score": 0.5059329,
+        "bucket": "other"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/5fad551d7419c7a0e9e4aba4/609e85ddf144ab02cfa32def_Tigo%20TS4%20Brochure%20-%20v1.6.pdf",
+        "title": "[PDF] Tigo TS4 Brochure",
+        "snippet": "C22.1-2015 Rule 64.218 4 - 123A TS4-A-M Tigo Rapid Shutdown DO NOT DISCONNECT UNDER LOAD NEC 690.12-2017 and C22.1-2015 Rule 64.218 4 - 123A TS4-A-O 1. TS4: O, S, M Tigo TS4 units are connected to each module. Customers can selectively deploy any combination of the TS4-A-O, S, or M products to maximize returns for their particular site. [...] Each TS4 can be attached to a PV module in a matter of seconds.\nTigo TS4 is the only platform that lets you choose the equipment and features that maximize the benefit for your installation.\nSolutions can be applied to existing PV installations or new ones at virtually any scale.\nTigo Optimizers get the maximum energy output from your array and minimize the losses from shading, module mismatch, degradation, and other issues. [...] Enhance safety and compliance RAPID SHUTDOWN Enhance the economics of your PV system Tigo TS4 Flex MLPE O Tigo MLPE DO NOT DISCONNECT UNDER LOAD NEC 690.12-2017 and C22.1-2015 Rule 64.218 4 - 123A TS4-A-O S Tigo MLPE DO NOT DISCONNECT UNDER LOAD NEC 690.12-2017 and C22.1-2015 Rule 64.218 4 - 123A TS4-A-S M Tigo MLPE DO NOT DISCONNECT UNDER LOAD NEC 690.12-2017 and C22.1-2015 Rule 64.218 4 - 123A TS4-A-M F Tigo MLPE DO NOT DISCONNECT UNDER LOAD NEC 690.12-2017 and C22.1-2015 Rule 64.218 4 - 123A",
+        "score": 0.3351555,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "altenergy-power",
+    "product": "Altenergy Power TS4-P",
+    "candidates": [
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOopcplIo-24fh_gSFsw2JXOAfYk71oFq_Mfb2G1zYCaiUUU3PCNc",
+        "title": "[PDF] TS4 Installation Manual - RES Supply",
+        "snippet": "0.25 mm (1000V) 6.4 ± 0.2mm, 7.05 ± 0.2mm (1500V) Connectors MC4, MC4 compatible, Amphenol, EVO2 UV Resistance 500hr with UV light between 300-400nm @65C Maximum String Voltage 1500V UL/IEC1 1 All TS4 covers are 1500V compatible. Specify max system voltage when ordering modules with TS4 bases for appropriate cables & connectors. [...] Status 1.\nModules 1.\nSignal 2.\nVoltage 3.\nPower 2.\nDate / time 3.\nUnit ID 4.\nVersion 5.\nConfig (Tigo internal use only) Use the LCD and buttons to navigate the different menu options Blue are used during standard installation process Green may be used to get additional information Orange should only be used when instructed by technical support red are additional control buttons or advanced settings. Detailed explanation of each function can be found here.\n2.\nControl 1.\nDiscovery 2. [...] Wi-Fi connection to Cloud Connect Use the power (P), voltage (V), and current (I) views to make sure the smart modules are properly connected DISCOVERY DETAILS: USE THE ‘MODULES’ SCREEN TO COMPLETE COMMISSIONING Requires direct Wi-Fi connection to Cloud Connect • Press ‘Continue’ PRESSING ‘BACK’ WILL RETURN TO STATUS PAGE Requires direct Wi-Fi connection to Cloud Connect AND YOU’RE DONE!",
+        "score": 0.7132923,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://hetronic.com/wp-content/uploads/2020/08/HH-M-TS4-TS4P.pdf",
+        "title": "Microsoft Word - HH M TS 4 - TS 4 P .docx",
+        "snippet": "Specifications: Housing material: Ergonomically designed impact resistant polymer composite RF Unit: Type CS synthesized Environmental protection: IP 65 at 0 - 97% humidity non-condensing Power (RF Output): < 10mW Weight: 500Gr (1.1lbs) includes batteries Antenna: Internal Dimensions: H: 205mm (8.0”) W: 132mm (5.2“) D: 86mm (3.4”) Baud Rate: 2400, 4800 bps Power Supply: 2 AA batteries (1.5V) Operation time: Up to 20 h continuous transmission Control Configuration: 4 Three position momentary [...] spring return to centre function toggle switch 1 Push-pull mushroom head stop switch 1 Additional Proportional Grey Code trigger switch for the TS4P version. Temperature Range: -20oC to +70oC (-4oF to +158oF) Frequency Bands: 4xxMHz, 8xxMHz Safety: 20-bit programmable address concept with up to 1 million combinations; Active and passive Stop function; Parity & Checksum Typical operating range: Approximately 100m (328ft.) Includes: 1 Battery adaptor [...] hetronic.com hetronic.com HH M TS4 / TS4P Product Information HH M TS4 / TS4P Standard Features:  Several standard configurations available  Customized to application  Toggle and membrane switches  Status LED’s for operation and low battery  STOP Button  Supports Multi Frequencies, including 2.4 GHz Typical Applications:  Chain Hoists  Small Overhead Cranes  Conveyor Systems  Tow Trucks  Monorails  Tailgates  Concrete Mixers HH M TS4 / TS4P Product Information hetronic.com ABOUT",
+        "score": 0.6711479,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/BTEC-Higher-Nationals/construction/2018/specification-and-sample-assessments/hncd-construction-rqf.pdf",
+        "title": "[PDF] HIGHER NATIONALS - Construction - Pearson qualifications",
+        "snippet": "All information in this specification is correct at time of publication. Original image by EVPWI113499 – Higher Nationals in Construction and the Built.",
+        "score": 0.054666292,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOorDBnDxTS2K_tEPdO7jA3CIhvG4ZN0bX_sUHwBCH2no0Qh0FUei",
+        "title": "[PDF] TS4 Installation Manual - RES Supply",
+        "snippet": "• Failure to adhere to these instructions may result in injury or death, damage to the system or voiding the factory warranty. [...] NEW INSTALLATION Use a barcode scanner to save time and avoid typos Easy to use, simply plug and play TIP: USE A BARCODE SCANNER Follow the instructions of the installation wizard Click here for a detailed walk through INSTALLATION WIZARD Enter site information: Address Site owner information 3rd party finance, if such exists Click Next CONFIGURE THE SYSTEM Enter inverter information CONFIGURE THE SYSTEM Enter inverter information CONFIGURE THE SYSTEM Enter inverter information After choosing [...] scan barcodes click here for instructions Systems with 50< TS4 units or more, or any time exact physical positioning of modules is necessary MUST collect barcodes and complete online configuration before commissioning click here for instructions If using CC (not CCA) you can do this via LCD and buttons, no smart phone needed PLEASE SELECT one of the two processes in order to continue Place the sticker on the map, string list or construction drawing, in the exact position you are going to place",
+        "score": 0.71995544,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.chintpowersystems.com/wp-content/uploads/2020/06/Tigo-Rapid-Shutdown-Manual.pdf",
+        "title": "[PDF] Installation Manual - TS4-F, TS4-AF, TS4-A-2F and RSS Transmitter",
+        "snippet": "• Always assume TS4 units are in “ON” state, or may turn on when restarting.\nThe transmitter control power supply MUST be on the same AC branch circuit as the inverter to meet rapid shutdown requirements. [...] module with or without the TS4 units attached. [...] • Allow clearance between PV module and mounting surface for air circulation around TS4-A-F.\n• For installation on frameless modules, remove metal clips and bolt TS4-A to rail. Do not drill additional mounting holes in the frame or metal bracket.",
+        "score": 0.57035583,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.solar-electric.com/lib/wind-sun/Tigo_Installation-Manual-TS4-mlfp.pdf?srsltid=AfmBOoohJeCKFMzD1enYH5yoioDPuPXasjAdiP5FDIDbvLaekp9aw7B6",
+        "title": "[PDF] Installation Manual - TS4-F, TS4-AF, TS4-A-2F and RSS Transmitter",
+        "snippet": "connections. Use grounding type bushings and jumper wires. [...] Mechanical Operating Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 85% Storage Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 60% Cooling Method Natural Convection Dimensions (with cover) 178.5mm x 134mm x 25.5mm Weight (base and cover) 670g Outdoor Rating IP68, NEMA 3R Cabling Type H1Z2Z2-K Output Length 1.2m standard, other lengths available Cable Options 1000V rated, 1500V rated Cable Cross-Section 6.3 ± 0.3mm Connectors MC4, MC4 comparable UV Resistance 500hr with UV [...] • Allow clearance between PV module and mounting surface for air circulation around TS4-A-F.\n• For installation on frameless modules, remove metal clips and bolt TS4-A to rail. Do not drill additional mounting holes in the frame or metal bracket.",
+        "score": 0.56690645,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.solar-electric.com/lib/wind-sun/Tigo_Installation-Manual-TS4-mlfp.pdf?srsltid=AfmBOopLLovtNwNdH6S-YqQ2HrJPhCB29FOECWt_klkPBeGva3h6-aXn",
+        "title": "[PDF] Installation Manual - TS4-F, TS4-AF, TS4-A-2F and RSS Transmitter",
+        "snippet": "connections. Use grounding type bushings and jumper wires. [...] Mechanical Operating Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 85% Storage Temperature Range: -40°C to +70°C (-40°F to +158°F), RH < 60% Cooling Method Natural Convection Dimensions (with cover) 178.5mm x 134mm x 25.5mm Weight (base and cover) 670g Outdoor Rating IP68, NEMA 3R Cabling Type H1Z2Z2-K Output Length 1.2m standard, other lengths available Cable Options 1000V rated, 1500V rated Cable Cross-Section 6.3 ± 0.3mm Connectors MC4, MC4 comparable UV Resistance 500hr with UV [...] • Allow clearance between PV module and mounting surface for air circulation around TS4-A-F.\n• For installation on frameless modules, remove metal clips and bolt TS4-A to rail. Do not drill additional mounting holes in the frame or metal bracket.",
+        "score": 0.56690645,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://invertersrus.com/wp-content/uploads/2024/03/Installation-Manual-TS4-F-TS4-R-F-RSS-Transmitter-1.pdf?srsltid=AfmBOoqGHfk7tdzLJG1bCuhVCttMcSBciZN1KN1nn_LRSISzKwbIhoq8",
+        "title": "[PDF] Installation Manual - TS4-F and TS4-RF, RSS Transmitter",
+        "snippet": "Core: 300A) Max MPPT String Voltage 1500VDC Internal Opening for Wires 27.5mm Outside Dimensions 59mm Max Number of Strings per Core 10 Max String Length 30 modules Environmental Temperature -40°C to 85°C Recommended max. torque 0.79 N/m for wiring 4.2 TESTING RAPID SHUTDOWN Place Rapid Shutdown System label in proper location. [...] Transmitter: • Power LED should be lit and Signal LED should be blinking during operation • Verify that RSS Core wiring is correct • Power cycle RSS Transmitter if Signal LED is unlit • While RSS Transmitter is powered off, string voltage should be (0.6V  number of modules) • While RSS Transmitter is powered on, full string voltage should be present Test individual strings with active RSS Transmitter one at a time in case of unexpected voltage. [...] 1000V rated 1500V rated Cable Cross-Section 6.3 ± 0.3mm Connectors MC4, MC4 compatible, EVO2 UV Resistance 500hr with UV light between 300-400nm @65C Maximum String Voltage 1500V UL/IEC1 4.2 MECHANICAL SPECIFICATIONS – RSS TRANSMITTER ELECTRICAL RATINGS RSS Transmitter INPUT Input Voltage 12VDC Input Current 1A Average Supply Power 0.85W Recommended Power Supply Rating 12VDC and 2A Dimensions (Transmitter only) 90.2mm x 36.3mm x 57.7mm RSS Core Max Current 150A per Core (Single Core: 150A, Dual",
+        "score": 0.528169,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.stellavolta.com/content/Tigo%20Installation%20Manual%20for%20CCA-TAP-TS4%20-%20Stellavolta.pdf?srsltid=AfmBOooXsxY3I1ZrBpDJoGkDO-FYaHzuu0_SDCMBWhzsOYNSwS87nCzG",
+        "title": "[PDF] Tigo Installation Manual for CCA, TAP, and TS4 - Stellavolta.com",
+        "snippet": "the solar array. Try to match the physical layout of modules on the roof. 2. Attach the TS4 to the top of the PV module frame using the silver clips with the cable glands facing down. The TS4 and its cables, cable glands, and connectors must not touch the roof surface. 3. Connect the shorter TS4 input leads to the PV modules. You must connect the shorter TS4 input leads to the PV modules before connecting to neighboring TS4s. Failure to do so can damage the TS4 units. Install TS4s TS4-A with [...] require a TAP or CCA. Design Considerations A CCA should control all TS4s on all strings connected to a specific inverter or MPPT. Install the CCA near this inverter with access to AC power and the internet. Ethernet and WiFi are built in. • For PV RSS compliance, the CCA must be on the same AC branch circuit as the inverter(s) it is controlling. The rapid shutdown initiator, whether it is an automatic disconnect or a manual switch, must turn off power to the CCA. • One CCA can communicate with [...] Overview ........................................................................................................................1 Safety .........................................................................................................................2 Install TS4s .....................................................................................................................3 Install the Tigo Access Point (TAP)",
+        "score": 0.5068117,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://solarmagazine.nl/u/files/sm1-2015.pdf",
+        "title": "[PDF] Special vakbeurs Solar Solutions vanaf pagina 25 Netregistratie pv ...",
+        "snippet": "de overige Tigo componenten die compatibel zijn met alle merken omvormers zullen vanaf dan op voorraad zijn. Door het fl exibele TS4-princi-pe van Tigo kunnen installateurs zelf kiezen welke junction box het beste past bij de wensen en het budget van de klant. [...] Exposant Standnummer Afore New Energy Technology Co., Ltd. A2.7 aleo solar GmbH A6.5 AliusEnergy BV D14 Altenergy Poswer System Inc. A2.1 Arrowsol BV E3.10 ATB Motors B.V. B11 Atlas Acomfa BV E3.7 Aventia Solar C16 B&B Power Co., Ltd D11 Belpa BV A4.6 CARBOMAT NL (PV DISTRI) C4 CAST4ALL E2.8 CycloMedia Technology BV E3.9 De Centrale BTW Teruggave D12 DMEGC Benelux B10 Duramotion BV E3.3 Elektropraktijk E2.6 Enphase Energy SAS -Esdec BV C5 ESTG D1 Euro-Index BV B9 fischer Benelux A1 Friand [...] is de DMEGC Smart Module met geïntegreerde Tigo TS4 junctionbox te zien. Door het flexi-bele TS4-principe van Tigo kunnen instal-lateurs zelf kiezen welke junction box het beste past bij de wensen en het budget van de klant. Wanneer de behoeften ver-anderen is het pv-systeem gemakkelijk uit te breiden en dit geeft installateurs een grote vorm van flexibiliteit.",
+        "score": 0.23087682,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/BTEC-Higher-Nationals/future-homes-design-and-construction/2018/specification/l45hncd-futurehomesdesign.pdf",
+        "title": "[PDF] HIGHER NATIONALS - Future Homes Design and Construction",
+        "snippet": "Level 5 Units: Core Unit Mandatory 22 Group Project (Pearson-set) 30 5 Specialist Unit Mandatory 36 Advanced Building Information Modelling 15 5 Specialist Unit Mandatory 40 Alternative Energy Systems Design & Installation 15 5 Specialist Unit Mandatory 53 Advanced Housing Design & Specification 15 5 Specialist Unit Mandatory 54 Advanced Off-site Construction 15 5 Specialist Unit Mandatory 55 Future Housing Development & Prototyping 30 5 Pearson BTEC Levels 4 and 5 Higher Nationals in Future [...] Unit 22: Group Project (Pearson-set) 104 Unit 36: Advanced Building Information Modelling 110 Unit 40: Alternative Energy Systems Design & Installation 118 Unit 50: Housing Design & Specification 124 Unit 51: Principles of Off-site Construction 133 Unit 52: Principles of Housing Economics 143 Unit 53: Advanced Housing Design & Specification 151 Unit 54: Advanced Off-site Construction 159 Unit 55: Future Housing Development & Prototyping 167 11 Appendices 175 Appendix 1: Glossary of terms used [...] Unit credit Level Core Unit Mandatory 1 Individual Project (Pearson-set) 15 4 Core Unit Mandatory 2 Construction Technology 15 4 Core Unit Mandatory 4 Construction Practice & Management 15 4 Specialist Unit Mandatory 14 Building Information Modelling 15 4 Specialist Unit Mandatory 16 Principles of Alternative Energy 15 4 Specialist Unit Mandatory 50 Housing Design & Specification 15 4 Specialist Unit Mandatory 51 Principles of Off-site Construction 15 4 Specialist Unit Mandatory 52 Principles",
+        "score": 0.13745166,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/BTEC-Higher-Nationals/Construction-and-the-Built-Environment/2017/specification-and-sample-assessments/btec-hncd-cbe.pdf",
+        "title": "[PDF] BTEC Higher Nationals in Construction and the Built Environment",
+        "snippet": "Information (Drawing, Detailing, Specification) 15 4 And, two from the following list of Optional Units or one from the List of Optional Units and One Specialist Unit from another pathway Optional Unit 7 Surveying, Measuring & Setting-out 15 4 Optional Unit 13 Tender & Procurement 15 4 Optional Unit 14 Building Information Modelling 15 4 Optional Unit 15 Principles of Refurbishment 15 4 Optional Unit 16 Principles of Alternative Energy 15 4 Optional Unit 17 Principles of Public Health [...] Installation o Unit 20: Principles of Structural Design o Unit 28: Further Mathematics for Construction o Unit 30: Advanced Structural Design o Unit 33: Advanced Electrical Design & Installation o Unit 40: Alternative Energy Systems Design & Installation o Unit 43: Hydraulics You do not have to follow the order of the learning outcomes of a unit in setting assignments, but later learning outcomes often require students to apply the content of earlier learning outcomes, and they may require [...] Transport Systems for Buildings 15 5 Optional Unit 40 Alternative Energy Systems Design & Installation 15 5 Optional Unit 42 Highway Engineering 15 5 Optional Unit 43 Hydraulics 15 5 Optional Unit 44 Advanced Surveying & Measurement 15 5 Optional Unit 45 Maintenance & Operations 15 5 Optional Unit 46 Advanced Materials 15 5 Optional Unit 47 Construction Data Management 15 5 Pearson BTEC Levels 4 and 5 Higher Nationals in Construction and the Built Environment Specification – Issue 9 – September",
+        "score": 0.13065127,
+        "bucket": "installation"
+      },
+      {
+        "url": "http://en.goodwe.com/Ftp/EN/Downloads/Certificate/GW_A-ES,%20A-BP,%20A-MS_Certificate%20UL1741.pdf",
+        "title": "[PDF] Certification Report Template - GoodWe",
+        "snippet": "For details related to rating, size, configuration, etc., reference should be made to the CSA Certification. Record, Certificate of Compliance Annex A, or the",
+        "score": 0.11809006,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://solarcircle.org/wp-content/uploads/APsystems_Limited_Warranty_Canada.pdf",
+        "title": "[PDF] APsystems Microinverter Limited Warranty Canada",
+        "snippet": "01/25 Altenergy Power System Inc. [...] L5.0CA © All Rights Reserved 01/25 APsystems Microinverter Limited Warranty Canada This APsystems Limited Warranty Policy (\"Warranty\") hereby applies to the microinverters and the Energy Communications Unit (ECU) provided by Altenergy Power System Inc. (\"APsystems\") in the Canada. It aims to clarify the speciﬁc terms and conditions related to the warranty of the above-mentioned products (the \"Products\") and shall come into efect on January 1, 2025. [...] the product's speciﬁcation parameters (whether the voltage comes from the power grid, generator, or lightning strike), and there are defects or damage; 10. The product is afected by incidental or indirect damage caused by other components in its electrical system, and there are defects or damage; 11. The product is attempted to be changed or have its original identiﬁcation marks (including trademarks, models, or serial numbers) removed, and there are defects or damage; 12. Costs related to the",
+        "score": 0.6041426,
+        "bucket": "other"
+      },
+      {
+        "url": "https://firemountainsolar.com/wp-content/uploads/2022/02/APsystems-Microinverter-Limited-Warranty_United-States-2021.pdf",
+        "title": "[PDF] APsystems Microinverter Limited Warranty - Fire Mountain Solar",
+        "snippet": "Warranty gives the customer specific legal rights, and the customer may have other rights that may vary from jurisdiction. Altenergy Power Systems USA Inc. [...] This Limited Warranty does not cover costs related to the removal, installation or troubleshooting of any components of the customer’s electrical systems. During the Warranty Period, this Limited Warranty may be transferred to subsequent owners of the Product upon completion of a “Warranty Transfer Form” available from the APsystems website, and payment of the nominal transfer fee as shown on that form. THIS LIMITED WARRANTY IS THE SOLE AND EXCLUSIVE WARRANTY GIVEN BY ALTENERGY POWER SYSTEM [...] APsystems Microinverter Limited Warranty L4.0US © All Rights Reserved 01/21 United States The Microinverters (the “Products”) supplied by Altenergy Power Systems USA Inc. (“APsystems”), and installed after Jan 1, 2021 are eligible to this APsystems Limited Warranty (“Limited Warranty”) only if they are continuously connected to the internet via an ECU (Energy Communica-tion Unit) • For systems of more than 4 PV modules: ECU-R or ECU-C, or any compatible ECU • For systems up to 4 PV modules:",
+        "score": 0.598524,
+        "bucket": "other"
+      },
+      {
+        "url": "https://sunwatts.com/content/warranty/APsmart_RSD-S-PLC_Transmitter_Warranty.pdf?srsltid=AfmBOoo_M3_TrgdgJvWvCjSEQX8z_ZqLguhG6Y-lwxhpAUQHYadKJZ9d",
+        "title": "[PDF] APsystems Limited Warranty for Rapid Shutdown Devices ...",
+        "snippet": "L3.1 © All Rights Reserved 04/24 2/2 Altenergy Power Systems USA Inc.\n8627 N. Mopac Expy, Ste 150, Austin, TX 78759 737-218-8486 info@apsmartglobal.com www.apsmartglobal.com [...] APsystems Limited Warranty for Rapid Shutdown Devices & Transmitter Altenergy Power Systems USA Inc. (“APsystems”) supplies Rapid Shutdown Devices, including RSD-S-PLC and RSD-D, Transmitter-PLC/Transmitter-PLC-1P, Transmitter-PLC Outdoor Kit, and RSD-EYE+ (the “Products”).\nThe Products are designed to withstand normal operating conditions when used for their original intended purpose in compliance with the APsystems User Manual supplied with the system. [...] module power warranty period provided by the PV module manufacturer. • Transmitter-PLC/Transmitter-PLC-1P: ten (10) years beginning from the Warranty Start Date. For invert-er-embedded Product, the Warranty Period shall not exceed the inverter warranty period provided by the invert-er manufacturer. • Transmitter-PLC Outdoor Kit: three (3) years beginning from the Warranty Start Date, when used with the APsystems Rapid Shutdown Devices. • RSD-EYE+: one (1) year beginning from the Warranty Start",
+        "score": 0.5521781,
+        "bucket": "other"
+      },
+      {
+        "url": "https://global.apsystems.com/wp-content/uploads/2018/08/QW-ED-37-01_APsystems-Warranty-Transfer-T2.6ROW-7.18.pdf",
+        "title": "[PDF] APsystems Warranty Transfer Form",
+        "snippet": "transfer fee, to APsystems at the address shown below: Altenergy Power System Inc. [...] APsystems Warranty Transfer Form T2.6ROW © All Rights Reserved 7/18 The YC250, YC500, YC600, YC1000, QS1 Microinverters (the “Product”) supplied by Altenergy Power System Inc. (“APsystems”) are designed to withstand normal operating conditions when used for their originally intended purpose in compliance with the APsystems User Manual supplied with the system. The APsystems Limited Warranty (“Limited Warranty”) covers Products that are inoperable because of defects in material and workmanship [...] APsystems will transfer the existing Warranty on the system shown below upon receipt of this duly executed form and the $100 USD transfer fee (or the equivalent in local currency as may be authorized by APsystems upon request), provided this request is made within 30 days of the actual date of ownership transfer. APsystems reserves the right to confirm the actual date of ownership transfer. APsystems will provide written confirmation of the Warranty transfer. Please mail this form, and the",
+        "score": 0.54608524,
+        "bucket": "other"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/5fad551d7419c7a0e9e4aba4/673cd6c9bb22598569c0639c_002-00205-00%201.0%20Datasheet%20TS4-X-F%2020241105%20-%20EN.pdf",
+        "title": "[PDF] TS4-XF - Rapid shutdown for modules up to 800 W",
+        "snippet": "Features • Rated 800 W, 25 A ISC to accomodate the latest high-power, high-current modules • Simple, fast installation – snaps to a standard PV module frame or mounts to racking • Automatic shutdown – PV array enters rapid shutdown mode in the event of AC grid loss • Rapid shutdown – UL Standards-certified PVRSS components operating over Power-line communications (PLC) signaling with RSS Transmitters (required) • Option to upgrade to TS4-X-S • Works with any system – fully compatible with [...] IDCU MAX Maximum output voltage VDCU MAX Maximum output power PDCU MAX Rapid Shutdown TS4 conductor AWG 12 Rapid shutdown time limit <30 sec. [...] – 185 °F) Storage temperature range -20 – 65 °C (-4 – 149 °F) Maximum elevation 3000 m (9840 ft.) Outdoor IP rating IP68 Mechanical Dimensions (H/W/D) 139.7 x 138.4 x 22.9 mm (5.4 x 5.5 x 0.9 in.) Weight 520 g (1.15 lb.) General Standards compliance FCC, IC, CE-EMC, CE-RED, CISPR 31, CSA 22.2, IEC 62109, UL 1741 PVRSE/PVRSS, UL3741 PVHCE Warranty 25 years  Exact lengths within 3%.",
+        "score": 0.49245724,
+        "bucket": "other"
+      },
+      {
+        "url": "https://signaturesolar.com/content/documents/TIGO/TS4-A-2F.pdf?srsltid=AfmBOooezOqYUtvjhcLo8JSE7Y_mjms207Th8HLHY7sJJnw0yD1onBJR",
+        "title": "[PDF] TS4-A-2F - Signature Solar",
+        "snippet": "General Data Operating temperature range -30°C to +80°C (-22°F to +176°F) Storage temperature range -40°C to +85°C (-40°F to +185°F) Recommended fuse rating 30A Outdoor rating IP68 Maximum altitude 3000m Efficiency 99.9% Communication PLC Rapid Shutdown UL Listed (NEC 2017 & 2020 690.12) Yes Rapid Shutdown Time Limit 30 secs or less³ Conductor AWG Range 10-12 AWG PVRSE Controlled Conductors ≤30 Vdc, ≤240VA, ≤8A³ ³Limits are based on NEC 690.12 rapid shutdown requirements. [...] nameplate. [...] two modules PN: 002-00092-00 | Rev. 2.1 2022.11.3 Quick Specs TS4-A-2F Dimensions (W x H x D) 138.4 x 139.7 x 22.9mm (5.4 x 5.5 x 0.9in) Weight 590g (1.3lbs) Max Current (Imp/Isc) 15A 20A/25A Max Wattage 1000W 1400W Use local codes/requirements to calculate maximum current.",
+        "score": 0.4558047,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.solar-electric.com/lib/wind-sun/Tigo_TS4-A-Fdatasheet.pdf?srsltid=AfmBOoqZUh1berPMupgZMgyJqetQtUVsGT7YjxvrXOtZcwOJ4sUtKD9-",
+        "title": "[PDF] TS4-AF - Module-level PV Rapid Shutdown - NAZ Solar Electric",
+        "snippet": "General Data Operating temperature range UL: -30°C to +75°C (-22°F to +167°F) IEC: -40°C to +85°C (-40°F to +185°F) UL/IEC: -40°C to +80°C (-40°F to +176°F) Storage temperature range -40°C to +85°C (-40°F to +185°F) -40°C to +85°C (-40°F to +185°F) Recommended fuse rating 20A 30A Outdoor rating IP68, NEMA 3R IP68 Maximum altitude 2000m 3000m Efficiency 99.6% 99.9% Communication PLC Rapid Shutdown UL Listed (NEC 2017 & 2020 690.12) Yes Rapid Shutdown Time Limit 30 secs or less³ Conductor AWG [...] T S 4 -A -F T S 4 -A -F W H W H D D tigoenergy.com PN: 002-00093-00 | Rev. 3.1 2022.11.3 Electrical Data 15A 25A Maximum input voltage 90V 80V Operating voltage range¹ 16 - 90V 16 - 80V Maximum input current (Isc) N/A 25A Maximum input current (Imp) 15A 20A Maximum wattage 700W 700W ¹Maximum output voltage of the TS4 is dependent on the PV module voltage. Refer to PV modules nameplate. [...] Connections Module Conductor lengths 0.12m, 0.62m, options available² 0.62m, options available² String Conductor lengths 1.2m, options available² Connectors MC4, EVO2, options available² ²Contact sales for additional connector and conductor length options. MOQ may apply.",
+        "score": 0.4391465,
+        "bucket": "other"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/5fad551d7419c7a0e9e4aba4/600ef37e2fe6793d64ce95b7_Product%20Warranty%20-%20March%202020.pdf",
+        "title": "[PDF] Tigo Energy Limited Warranty",
+        "snippet": "Equipment have been defaced, altered, or removed. The Limited Warranty does not cover cosmetic, superficial, technical or design defects, or shortcomings, which do not materially influence or affect the energy production or degrade form, fit or function of the Equipment. Tigo’s maximum obligation under this Limited Warranty for each piece of Equipment is limited to the original cost of such Equipment. No rights under this Limited Warranty for the TS4 integrated products will be available unless [...] all personnel installing or replacing TS4 integrated products have completed the TS4 Certification Course available online at tigoenergy.com/ts4key. Upon successful completion of the course, a certificate will be issued via email to the trainee. Tigo retains a record of certified personnel for these Limited Warranty purposes. No rights under this Limited Warranty will be available unless installation and removal of Equipment must be performed only with the approved tools: TS4 Key or TS4 [...] TS4-A, and retrofit TS4-R Platforms: twenty-five (25) years commencing on the earlier of (“Warranty Start Date”): (i) 4 months from the date the Equipment is shipped from Tigo; and (ii) the installation of the Equipment (“Warranty Start Date”), provided, however, that for the module embedded Equipment, the Warranty Period shall not exceed the maximum of (1) the PV Module product warranty period and (2) the PV Module power warranty periods provided by the applicable module manufacturer. • Cloud",
+        "score": 0.43885794,
+        "bucket": "other"
+      },
+      {
+        "url": "https://halcolenergy.com.au/wp-content/uploads/2019/05/TS4-R-M-F-S-O-Datasheet.pdf",
+        "title": "[PDF] TS4-F datasheet - Halcol Energy",
+        "snippet": "With a universal base and a range of covers containing the Flex MLPE, TS4 increases your freedom of choice when selecting features for a particular project and budget. TS4 retrofit cover options include monitoring, safety, and optimized performance features. [...] INPUT Rated DC Input Power 475W 475W 475W 475W Max Input Voltage @ Lowest Temperature 90V 90V 90V 90V Maximum Continuous Input Current (IMAX) 12A 12.5A 12A 12A Maximum VOC @ STC1 75V 75V 75V 75V Minimum VMP 16V 16V 16V 16V OUTPUT Output Power Range 0 - 475W 0 - 475W 0 - 475W 0 - 475W Output Voltage Range 0 - VOC 0 - VOC 0 - VOC 0 - VOC Communication Type Wireless PLC Wireless Wireless Rapid Shutdown UL Listed2 (NEC 2014 & 2017 690.12) No Yes Yes Yes Impedance Matching Capability No No No Yes [...] Output Voltage Limit No No No No Maximum System Voltage 1500V 1500V 1500V 1500V Recommended Fuse Rating 15A 15A 15A 15A Add-on / Retrofit Unit TS4-R 1000V TÜV / UL, MC4 compatible, 1m cable Connector Options 1000V TÜV / UL MC4, EVO2 1500V TÜV / UL EVO2, MC compatible Pre-Assembled Features TS4-R-M Monitoring TS4-R-F Fire Safety TS4-R-S Safety TS4-R-O Optimization",
+        "score": 0.39894548,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.solar-electric.com/lib/wind-sun/Tigo_TS4-A-Fdatasheet.pdf?srsltid=AfmBOooYYObx6c2aZpWzzjs-NJHOpkFl5uUtPQKiov844ezMg_YpryD2",
+        "title": "[PDF] TS4-AF - Module-level PV Rapid Shutdown - NAZ Solar Electric",
+        "snippet": "Warranty 25 years Ordering Information UL/IEC IEC 459-00252-32 TS4-A-F, 15A, 700W, 1500V UL / 1000V IEC, 1.2m Cable, MC4 • 459-00252-62 TS4-A-F, 15A, 700W, 1500V UL / 1000V IEC, 0.62/1.2m Cable, MC4 • 459-00261-32 TS4-A-F, 15A, 700W, 1500V UL / IEC, 1.2m Cable, EVO2 • 459-00261-62 TS4-A-F, 15A, 700W, 1500V UL / IEC, 0.62/1.2m Cable, EVO2 • 486-00252-32 TS4-A-F, 25A, 700W, 1500V UL / 1000V IEC, 0.12/1.2m Cable, MC4 • 486-00252-62 TS4-A-F, 25A, 700W, 1500V UL / 1000V IEC, 0.62/1.2m Cable, MC4 • [...] General Data Operating temperature range UL: -30°C to +75°C (-22°F to +167°F) IEC: -40°C to +85°C (-40°F to +185°F) UL/IEC: -40°C to +80°C (-40°F to +176°F) Storage temperature range -40°C to +85°C (-40°F to +185°F) -40°C to +85°C (-40°F to +185°F) Recommended fuse rating 20A 30A Outdoor rating IP68, NEMA 3R IP68 Maximum altitude 2000m 3000m Efficiency 99.6% 99.9% Communication PLC Rapid Shutdown UL Listed (NEC 2017 & 2020 690.12) Yes Rapid Shutdown Time Limit 30 secs or less³ Conductor AWG [...] T S 4 -A -F T S 4 -A -F W H W H D D tigoenergy.com PN: 002-00093-00 | Rev. 3.1 2022.11.3 Electrical Data 15A 25A Maximum input voltage 90V 80V Operating voltage range¹ 16 - 90V 16 - 80V Maximum input current (Isc) N/A 25A Maximum input current (Imp) 15A 20A Maximum wattage 700W 700W ¹Maximum output voltage of the TS4 is dependent on the PV module voltage. Refer to PV modules nameplate.",
+        "score": 0.39480802,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.stellavolta.com/content/Tigo%20TS4%20Brochure%20-%20Stellavolta.pdf?srsltid=AfmBOooiSsgf4XDPheZPk22tctisDAJbcrU3usknOncHobsRnMSJdUNr",
+        "title": "[PDF] Tigo TS4 Flex MLPE - Stellavolta.com",
+        "snippet": "Each TS4 can be attached to a PV module in a matter of seconds.\nTigo TS4 is the only platform that lets you choose the equipment and features that maximize the benefit for your installation.\nSolutions can be applied to existing PV installations or new ones at virtually any scale.\nTigo Optimizers get the maximum energy output from your array and minimize the losses from shading, module mismatch, degradation, and other issues. [...] FEATURES REQUIRED SEE SCHEMATIC BELOW OPTIONS 1. TS4: F or 2F Tigo's Fire Safety line of TS4 are completely dedicated to the rapid shutdown function and communication via PLC with the RSS Transmitter.\n2. CCA & TAP Tigo's Cloud Connect Advanced (CCA) is the data hub for TS4s and other devices (inverter, battery, etc.). It connects with an RS485 cable to the TAP which wirelessly communicates with TS4s. [...] Contact us  Copyright Tigo Energy, Inc. 2021 Contact us  Contact us  Copyright Tigo Energy, Inc. 2021 Contact us  Tigo is the worldwide leader in Flex MLPE (Module Level Power Electronics) with innovative solutions that significantly enhance safety, increase energy production, and decrease operating costs of photovoltaic (PV) systems. Tigo’s TS4 platform maximizes the benefit of PV systems and provides customers with the most scalable, versatile, and reliable MLPE solution available.",
+        "score": 0.18648028,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "altenergy-power",
+    "product": "Altenergy Power TS4-S",
+    "candidates": [
+      {
+        "url": "https://www.irishellas.com/files/TS4-S---Safety.pdf",
+        "title": "[PDF] TS4-S Safety - Iris Hellas",
+        "snippet": "• Works with almost ALL modules and more than 2,000 inverter types • UL-Certified for TS-B (Integrated) and TS4-R (Retrofit/Add-on) • Uses Tigo's Ultra High Definition (UHD) Core technology for superior performance TS4-S TS4-S TS4-S is one of five functional covers that pairs with an integrated modular junction box base (TS4-S), a single retrofit/add-on base (TS4-R-S), or a Duo retrofit/add-on base (TS4-R-S-Duo). [...] Features Safety • Meets NEC 690.12 rapid shutdown requirements • Module-level deactivation • Automatic or manual shutdown • Module-level monitoring capability • Over-temperature protection • PLUS all the benefits of Monitoring: o Reduced O&M costs o Module bar code tracking o CRM integration o Warranty o Fleet Management Protect your investment by enhancing safety for the best asset management. [...] Safety TS4-S Tigo Energy, Inc. 420 Blossom Hill Rd, Los Gatos, California 95032 USA | www.tigoenergy.com P: +1.408.402.0802 F: +1.408.358.6279 | sales@tigoenergy.com 90V 75V 16V 12A Yes 0 - VOC 0 - 475W 1500V 475W INPUT Rated DC Input Power Maximum Input Voltage Max. Continuous Input Current (IMAX) Maximum VOC @ STC Minimum VMP OUTPUT Output Power Range Output Voltage Range Rapid Shutdown UL Listed (NEC 2014 & 2017 690.12) Impedance Matching Function Output Voltage Limit Maximum System Voltage",
+        "score": 0.7760977,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://cpssolar.co.nz/wp-content/uploads/2021/11/tigo-micro-inverter-data-sheet.pdf",
+        "title": "[PDF] TS4 PLATFORM - CPS Solar",
+        "snippet": "Continuous Input Current (IMP) n/a n/a n/a Yes Yes Schottky 3 200°C 10A 9.5A Yes No Schottky 3 200°C 10A 9.5A Maximum Input Voltage (VOC) n/a n/a 52V MPPT Voltage Range (VMP) n/a n/a n/a 52V 16-48V 52V 16-40V Rated String Voltage 1000V IEC 600V/1000V UL 1000V IEC 600V/1000V UL 1000V IEC 600V/1000V UL Nominal Input Power n/a n/a n/a 1000V IEC 600V/1000V UL 375W 1000V IEC 600V/1000V UL 375W Maximum Output Power n/a n/a n/a Communication Type n/a 802.15 2.4GHz 802.15 2.4GHz 375W 802.15 2.4GHz 375W [...] OPTIMIZATION LONG STRINGS DIODES MONITORING SAFETY Mechanical Ambient Temperature Range -40°C to +85°C (-40°F to +185°F) Storage Temperature Range -40°C to +85°C (-40°F to +185°F) Cooling Method Natural Convection Dimensions (with cover) TS4-B: 152.5mm x 108mm x 25mm, TS4-R: 195.5mm x 158mm x 23mm Weight (without cover) TS4-B: 270g, TS4-R: 470g Environmental Rating IP65/67, NEMA 3R Cabling Cabling Type PV1-F Output Cable Length 1.0m, other lengths on request Connector MC4, MC4 compatible UV [...] LONG STRINGS TS4-L OPTIMIZATION TS4-O SAFETY TS4-S MONITORING TS4-M DIODES TS4-D · String length increased by up to 30% · Fewer BOS components · Faster installation · Inverter optimization · Lower wire-losses · Plus all the benefits of Optimization · Shade and age tolerance · Enhanced energy yield · Greater design flexibility · Maximized roof usage · Plus all the benefits of Safety · NEC 2014 690.12 rapid shutdown compliant · Module-level deactivation · Automatic or manual shutdown ·",
+        "score": 0.7621591,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://zonnepaneel-info.nl/pdf/datasheet/TS4_Platform_datasheet.pdf",
+        "title": "[PDF] ts4 platform - Zonnepaneel-info",
+        "snippet": "Maximum DC Input Voltage (VOC) 90V 52V 52V 52V 52V Operating Voltage 0-80V 16-48V 16-48V 16-48V 16-48V Maximum Short Circuit Current (ISC) 12A 12A 12A 10A 10A Output Voltage Range 0-VOC 0-VOC 0-VOC 0-VOC 0-VOC Output Power Range 0-375W 0-375W 0-375W 0-375W 0-375W Communication Type n/a 802.15.4 2.4GHz 802.15.4 2.4GHz 802.15.4 2.4GHz 802.15.4 2.4GHz Rapid Shutdown Verified (NEC 2014 690.12) Need additional RS device Need additional RS device Yes Yes Yes Impedance Matching Capability No No No Yes [...] Mechanical Operating Temperature Range -40°C to +75°C (-40°F to +167°F) Storage Temperature Range -40°C to +75°C (-40°F to +167°F) Cooling Method Natural Convection Dimensions (with cover) TS4-B: 152.5mm x 108mm x 25mm, TS4-R: 195.5mm x 158mm x 23mm Weight (without cover) TS4-B: 270g, TS4-R: 470g Environmental Rating IP65/67, NEMA 3R Cabling Cabling Type PV1-F Output Cable Length 1.0m, other lengths on request Connector MC4, MC4 compatible UV Resistance 500hr with UBV light between 300-400nm @ [...] universal base and a range of covers containing the power electronics, TS4 increases your freedom of choice when selecting features for a particular project and budget. TS4 cover options range from standard diodes all the way to fully optimized performance and safety features.",
+        "score": 0.75049835,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOor87i-ZJR6qq7w0gF5wCCzZMAi53qNBhpBcIBmf9BMz1tbRnpKU",
+        "title": "[PDF] TS4 Installation Manual - RES Supply",
+        "snippet": "INSTALLATION: TS4 COVERS ELECTRICAL RATINGS DIODES TS4-D MONITORING TS4-M SAFETY TS4-S OPTIMIZATION TS4-O LONG STRINGS TS4-L INPUT Rated DC Input Power 375W 475W 475W 475W 475W Maximum VOC @ STC 90V 75V 75V 75V 75V Maximum Short Circuit Current (ISC) 12A 12A 12A 12A 12A Minimum VMP N/A 16V 16V 16V 16V Max Input Voltage @ Lowest Temp N/A 90V 90V 90V 90V OUTPUT Output Power Range 0 - 375W 0 - 475W 0 - 475W 0 - 475W 0 - 475W Output Voltage Range 0 - VOC 0 - VOC 0 - VOC 0 - VOC 0 - VOC [...] 0.25 mm (1000V) 6.4 ± 0.2mm, 7.05 ± 0.2mm (1500V) Connectors MC4, MC4 compatible, Amphenol, EVO2 UV Resistance 500hr with UV light between 300-400nm @65C Maximum String Voltage 1500V UL/IEC1 1 All TS4 covers are 1500V compatible. Specify max system voltage when ordering modules with TS4 bases for appropriate cables & connectors. [...] Type 802.15.4 2.4GHz 802.15.4 2.4GHz 802.15.4 2.4GHz Rapid Shutdown Capability (NEC 2014 690.12) Need additional RS device Yes Yes Impedance Matching Capability No No Yes Output Voltage Limit No No No Maximum System Voltage 1500V 1500V 1500V TECHNICAL SPECIFICATIONS – RETROFIT UNIT WITH TS4-R BASE All TS4 covers are 1500V compatible. Specify system voltage when ordering (1000V / 1500V) for appropriate cables & connectors Rapid shutdown requires TS4-S or higher, installed with Cloud Connect and",
+        "score": 0.7272211,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOoqoKwfJvPSy2RcSyzwZ2k4UQ3sDnorD9MgawwFWfLl1PPrl8Bbe",
+        "title": "[PDF] TS4 Installation Manual - RES Supply",
+        "snippet": "INSTALLATION: TS4 COVERS ELECTRICAL RATINGS DIODES TS4-D MONITORING TS4-M SAFETY TS4-S OPTIMIZATION TS4-O LONG STRINGS TS4-L INPUT Rated DC Input Power 375W 475W 475W 475W 475W Maximum VOC @ STC 90V 75V 75V 75V 75V Maximum Short Circuit Current (ISC) 12A 12A 12A 12A 12A Minimum VMP N/A 16V 16V 16V 16V Max Input Voltage @ Lowest Temp N/A 90V 90V 90V 90V OUTPUT Output Power Range 0 - 375W 0 - 475W 0 - 475W 0 - 475W 0 - 475W Output Voltage Range 0 - VOC 0 - VOC 0 - VOC 0 - VOC 0 - VOC [...] 0.25 mm (1000V) 6.4 ± 0.2mm, 7.05 ± 0.2mm (1500V) Connectors MC4, MC4 compatible, Amphenol, EVO2 UV Resistance 500hr with UV light between 300-400nm @65C Maximum String Voltage 1500V UL/IEC1 1 All TS4 covers are 1500V compatible. Specify max system voltage when ordering modules with TS4 bases for appropriate cables & connectors. [...] Type 802.15.4 2.4GHz 802.15.4 2.4GHz 802.15.4 2.4GHz Rapid Shutdown Capability (NEC 2014 690.12) Need additional RS device Yes Yes Impedance Matching Capability No No Yes Output Voltage Limit No No No Maximum System Voltage 1500V 1500V 1500V TECHNICAL SPECIFICATIONS – RETROFIT UNIT WITH TS4-R BASE All TS4 covers are 1500V compatible. Specify system voltage when ordering (1000V / 1500V) for appropriate cables & connectors Rapid shutdown requires TS4-S or higher, installed with Cloud Connect and",
+        "score": 0.7272211,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://aisolarmall.com/wp-content/uploads/2025/04/GW_ES-US-SBP-US-_Certificate-CSA-C22.2-UL1741UL1699B.pdf",
+        "title": "[PDF] Certificate of Compliance - AI Solar",
+        "snippet": "RSD-S-PLC-A RSD-S-PLC-B RSD-D-15-1000 RSD-D-20-1000 RSD-D-25-1000 RSD-D-15-1500 RSD-D-20-1500 RSD-D-25-1500 Altenergy Power System Inc.\nSingle Core Transmitter-PLC (no power supply) GoodWe Technologies Co., Ltd.\nGW5000-ES-US20, GW6000-ES-US20, GW7600-ES-US20, GW9600-ES-US20, GW11K4-ES-US20, GEH5.0-1U-US20, GEH6.0-1U-US20, GEH7.6-1U-US20, GEH9.6-1U-US20, GEH11.4-1U-US20 600 Vdc maximum system voltage.\nRapid shutdown time limit 30s with inverter. [...] 3.\nPV input inverter, ES series and GEH series are verified with PVRSS function according to NEC-2020 Article 690.12 and CEC-2018 Sec 64-218 with Inverter integrated transmitter and external mounted RSD as following: Model Attenuators Initiation Device Inverter System Ratings Certificate: 80103086 Project: 80103084 Master Contract: 300612 Date Issued:2022-07-19 DQD 507 Rev. 2019-04-30 © 2018 CSA Group. All rights reserved.\nPage 3 Goodwe PVRSS System Altenergy Power System Inc. [...] Note: The functional safety has been evaluated according to applicable requirement of CSA C22.2 No. 0.8-19, UL 991 Edition 3 and UL 1998 Edition 3 as required by the product standard.\nNote: The products have been verified with PVRSS function according to NEC-2020 Article 690.12 and CEC-2018 Sec 64-218.\nNote: The products have evaluated inverter and ESS operating modes according to UL 1741 PCS CRD are: Import Only Mode and No Exchange Mode.",
+        "score": 0.529191,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/5fad551d7419c7a0e9e4aba4/673b9803edde4aafcc6b848d_002-00099-00%201.0%20IOM%20TS4-X%20w%20TAP%20CCA%20and%20MFRS%2020241107.pdf",
+        "title": "[PDF] TS4-X platform of Flex MLPE",
+        "snippet": "supply, it must be rated to 12 volts and 1A. Power supplies with lower current ratings can cause system abnormal behavior. • Each Core accommodates up to 10 DC conductors from the array. A PV inverter MPPT input with more than 10 strings must use two Cores, up to 20 conductor’s total. • When using a single-core transmitter, the entire length of the DC run should be less than 300 meters to maintain signal strength integrity. Distances over 300 meters using a single Core may cause abnormal TS4-X [...] phases: Design, Installation, and Commissioning. Each phase contains specific instructions and guidelines for different products. Section 1: TS4-X-O/S – Design Section 2: TS4-X-O/S – Installation Section 3: TS4-X-O/S – Commissioning Section 4: TS4-X-F – Design Section 5: TS4-X-F – Installation & turning on Section 6: Multi-factor Rapid Shutdown This structure should help in clearly presenting the information, making the manual easier to navigate and understand. Document Revision History Version [...] ........................................................................................................................ 45 Contents Amplify a Signal with Two Cores ............................................................................................ 47 Connect Signal Wiring .............................................................................................................. 48 Check Status LEDs",
+        "score": 0.4387136,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/BTEC-Higher-Nationals/Construction-and-the-Built-Environment/2017/specification-and-sample-assessments/btec-hncd-cbe.pdf",
+        "title": "[PDF] BTEC Higher Nationals in Construction and the Built Environment",
+        "snippet": "Information (Drawing, Detailing, Specification) 15 4 And, two from the following list of Optional Units or one from the List of Optional Units and One Specialist Unit from another pathway Optional Unit 7 Surveying, Measuring & Setting-out 15 4 Optional Unit 13 Tender & Procurement 15 4 Optional Unit 14 Building Information Modelling 15 4 Optional Unit 15 Principles of Refurbishment 15 4 Optional Unit 16 Principles of Alternative Energy 15 4 Optional Unit 17 Principles of Public Health [...] Transport Systems for Buildings 15 5 Optional Unit 40 Alternative Energy Systems Design & Installation 15 5 Optional Unit 42 Highway Engineering 15 5 Optional Unit 43 Hydraulics 15 5 Optional Unit 44 Advanced Surveying & Measurement 15 5 Optional Unit 45 Maintenance & Operations 15 5 Optional Unit 46 Advanced Materials 15 5 Optional Unit 47 Construction Data Management 15 5 Pearson BTEC Levels 4 and 5 Higher Nationals in Construction and the Built Environment Specification – Issue 9 – September [...] Construction Information (Drawing, Detailing, Specification) 15 4 And, two from the following list of Optional Units or one from the List of Optional Units and One Specialist Unit from another pathway Optional Unit 7 Surveying, Measuring & Setting-out 15 4 Optional Unit 13 Tender & Procurement 15 4 Optional Unit 14 Building Information Modelling 15 4 Optional Unit 15 Principles of Refurbishment 15 4 Optional Unit 16 Principles of Alternative Energy 15 4 Optional Unit 17 Principles of Public",
+        "score": 0.16297895,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://unirac.com/wp-content/uploads/bsk-pdf-manager/2025/05/CDR_20250411_105302975LAX-001_R.pdf",
+        "title": "[PDF] Photovoltaic Hazard Control - Unirac",
+        "snippet": "Installer is responsible for and shall provide an appropriate installation to the applicable edition of the. National Electrical Code. RM10, RM10 EV0, RMDT, RM5",
+        "score": 0.9851,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/BTEC-Higher-Nationals/construction/2018/specification-and-sample-assessments/hncd-construction-rqf.pdf",
+        "title": "[PDF] HIGHER NATIONALS - Construction - Pearson qualifications",
+        "snippet": "instructions for assembly and erection, and to allow for accurate costing and ... installation of power and distribution systems, electromagnetic",
+        "score": 0.98187,
+        "bucket": "installation"
+      },
+      {
+        "url": "http://en.goodwe.com/Ftp/EN/Downloads/Certificate/GW_A-ES,%20A-BP,%20A-MS_Certificate%20UL1741.pdf",
+        "title": "[PDF] Certification Report Template - GoodWe",
+        "snippet": "For details related to rating, size, configuration, etc., reference should be made to the CSA Certification. Record, Certificate of Compliance Annex A, or the",
+        "score": 0.98133,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://qualifications.pearson.com/content/dam/pdf/BTEC-Higher-Nationals/future-homes-design-and-construction/2018/specification/l45hncd-futurehomesdesign.pdf",
+        "title": "[PDF] HIGHER NATIONALS - Future Homes Design and Construction",
+        "snippet": "Unit 40: Alternative Energy Systems Design & Installation. 118. Unit 50: Housing Design & Specification. 124. Unit 51: Principles of Off-site Construction. 133.",
+        "score": 0.97718,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.sapthagiri.edu.in/designs/naac/ICGCP/EEE_ECE.pdf",
+        "title": "[PDF] sapthagiri college of engineering",
+        "snippet": "sources:Solar charging system,AC mains charging system.While the AC mains power is available,the load is run by AC mains,while the battery",
+        "score": 0.97385,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://gzhls.at/blob/ldb/e/9/c/2/8abbd8ccc822bb9bb0243dfac2ab32f75f80.pdf",
+        "title": "[PDF] 435 W+ 0/+5 W 21,8%",
+        "snippet": "*Der Nennspannungs-/Frequenzbereich kann auf Wunsch des Versorgungsunternehmens über den Nennwert hinaus erweitert werden.**Die Grenzen können variieren.",
+        "score": 0.97311,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.htu.edu.jo/pearson/construction/btec-hncd-cbe%20construction%20L5%20update.pdf",
+        "title": "[PDF] HIGHER NATIONALS - Construction and the Built Environment - HTU",
+        "snippet": "The guide should also set out your Centre's approach to operating assessments, such as how students must submit assignments/work and the consequences of",
+        "score": 0.97132,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://solarmagazine.nl/u/files/sm1-2015.pdf",
+        "title": "[PDF] Special vakbeurs Solar Solutions vanaf pagina 25 Netregistratie pv ...",
+        "snippet": "Duitslandweg 13 | 2411 NT Bodegraven | Tel. 0172 - 650 737 www.energie-opslag.nl | info@topsystems-energy.nl 3 Je slaat je eigen opgewekte energie op, CO2 neutraal 3 Je bent niet meer volledig afhankelijk van energiemaatschappijen 3 Je bent goed bezig voor het milieu en je eigen portemonnee Solar energie opslag 67 Energy Storage NL van start op snijvlak duurzame energie en smart grids: Het FME Cluster Energie richtte eind vorig jaar een samenwerkingsverband op voor energieopslag in Nederland. Kijk voor meer informatie op www.smartgridevent.com Intersolar Europe 2015 maandag 9 tot en met vrijdag 12 juni 2015 Intersolar is nog een van de grootste zonne-energiebeurzen ter wereld, ondanks dat ze de afgelopen jaren in formaat kromp. Kijk voor meer informatie op www.intersolar.de EU PVSEC 2015 maandag 14 september tot en met vrijdag 18 september 2015 Hamburg is dit jaar het toneel van de Europese PV Solar Energy Conference & Ex-hibition (EU PVSEC), de conferentie en beurs gericht op solar machinebouwers.",
+        "score": 0.95974,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://gatech.trueenergy-usa.com/wp-content/uploads/2017/05/TIGO_InstallationManualTS4Platform.pdf",
+        "title": "[PDF] INTERACTIVE INSTALLATION AND SAFETY MANUAL FOR TS4",
+        "snippet": "INSTALLATION: TS4 COVERS ELECTRICAL RATINGS DIODES TS4-D MONITORING TS4-M SAFETY TS4-S OPTIMIZATION TS4-O LONG STRINGS TS4-L INPUT @ STC Rated DC Input Power 375W 375W 375W 375W 375W Maximum DC Input Voltage (VOC) 90V 52V 52V 52V 52V Maximum Short Circuit Current (ISC) 12A 12A 12A 10A 10A Operating Voltage 0-80V 16-48V 16-48V 16-18V 16-48V OUTPUT Output Power Range 0-375W 0-375W 0-375W 0-375W 0-375W Output Voltage Range 0-VOC 0-VOC 0-VOC 0-VOC 0-VOC Communication Type N/A 802.15.4 2.4GHz [...] • Failure to adhere to these instructions may result in injury or death, damage to the system or voiding the factory warranty. [...] - + + - + 159.5mm (6.28”) 90.2mm (3.55”) 57.5mm (2.26”) RS485 For 3rd party devices G ■B A - + B A Connect multiple Gateways in series and leave terminating resistor only in final Gateway.",
+        "score": 0.78572035,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.solar-electric.com/lib/wind-sun/Tigo_QSG_TS4-A_CCA_TAP.pdf?srsltid=AfmBOopLTar2jog_LtNfthQM3kkZnyVZBZ04bPRUSKxdAiXYnQJ2Gg24",
+        "title": "[PDF] TS4-A-O/S/M with TAP and CCA - NAZ Solar Electric",
+        "snippet": "• Adhere to ANSI/NFPA 70 (North America) and local electrical code requirements.\n1. Save the QR/barcode sticker on a site map or string list.\n2. Attach the TS4 to the top of the PV module frame. If frame thickness is ≤35mm (1.4in), install with the TS4 label facing the PV module.\n3. Connect the short input cables to the PV module. 4. Connect the long output leads to the adjacent TS4.\nInstall TS4s • Always assume that TS4s are in an ON state. [...] Input cable (short) Input cable (short) Cable locations may vary by model Output cable (long) Output cable (long) TS4 Mounting Options For frameless modules, use M8 bolts torqued to 10.2Nm.\nRemovable spring clips M8 bolt holes Frame Frame thickness If frame thickness is ≤35mm (1.4in), install with the TS4 label facing the PV module. [...] 10m (33ft) max 10m (33ft) max 35m (115ft) max Connect the TAP and CCA using 4-wire or CAT5/6 cables.\n– + B A Install a TAP One TAP can communicate with up to 300 TS4s.\n• Ensure the TAP is within 10m (33ft) of a TS4. • Ensure the cable glands of the NEMA 4 TAP face down and cannot collect moisture.\n• Make all TAP connections to the CCA before powering on the CCA.",
+        "score": 0.7640656,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOorO3xWtuJCcZbyB688LdD_KWkPLNEbTYWS_hYZ16YjfhWWKSxc9",
+        "title": "[PDF] TS4 Installation Manual - RES Supply",
+        "snippet": "INSTALLATION: TS4 COVERS ELECTRICAL RATINGS DIODES TS4-D MONITORING TS4-M SAFETY TS4-S OPTIMIZATION TS4-O LONG STRINGS TS4-L INPUT Rated DC Input Power 375W 475W 475W 475W 475W Maximum VOC @ STC 90V 75V 75V 75V 75V Maximum Short Circuit Current (ISC) 12A 12A 12A 12A 12A Minimum VMP N/A 16V 16V 16V 16V Max Input Voltage @ Lowest Temp N/A 90V 90V 90V 90V OUTPUT Output Power Range 0 - 375W 0 - 475W 0 - 475W 0 - 475W 0 - 475W Output Voltage Range 0 - VOC 0 - VOC 0 - VOC 0 - VOC 0 - VOC [...] NEW INSTALLATION Use a barcode scanner to save time and avoid typos Easy to use, simply plug and play TIP: USE A BARCODE SCANNER Follow the instructions of the installation wizard Click here for a detailed walk through INSTALLATION WIZARD Enter site information: Address Site owner information 3rd party finance, if such exists Click Next CONFIGURE THE SYSTEM Enter inverter information CONFIGURE THE SYSTEM Enter inverter information CONFIGURE THE SYSTEM Enter inverter information After choosing [...] • Failure to adhere to these instructions may result in injury or death, damage to the system or voiding the factory warranty.",
+        "score": 0.7574541,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOor5S-2ae5pypXF0MkaNdDodQWsoNIRvoV3B8SMIkGWgEUykTnKO",
+        "title": "[PDF] TS4 Installation Manual - RES Supply",
+        "snippet": "INSTALLATION: TS4 COVERS ELECTRICAL RATINGS DIODES TS4-D MONITORING TS4-M SAFETY TS4-S OPTIMIZATION TS4-O LONG STRINGS TS4-L INPUT Rated DC Input Power 375W 475W 475W 475W 475W Maximum VOC @ STC 90V 75V 75V 75V 75V Maximum Short Circuit Current (ISC) 12A 12A 12A 12A 12A Minimum VMP N/A 16V 16V 16V 16V Max Input Voltage @ Lowest Temp N/A 90V 90V 90V 90V OUTPUT Output Power Range 0 - 375W 0 - 475W 0 - 475W 0 - 475W 0 - 475W Output Voltage Range 0 - VOC 0 - VOC 0 - VOC 0 - VOC 0 - VOC [...] NEW INSTALLATION Use a barcode scanner to save time and avoid typos Easy to use, simply plug and play TIP: USE A BARCODE SCANNER Follow the instructions of the installation wizard Click here for a detailed walk through INSTALLATION WIZARD Enter site information: Address Site owner information 3rd party finance, if such exists Click Next CONFIGURE THE SYSTEM Enter inverter information CONFIGURE THE SYSTEM Enter inverter information CONFIGURE THE SYSTEM Enter inverter information After choosing [...] • Failure to adhere to these instructions may result in injury or death, damage to the system or voiding the factory warranty.",
+        "score": 0.7574541,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.chintpowersystems.com/wp-content/uploads/2020/06/Tigo-Rapid-Shutdown-Manual.pdf",
+        "title": "[PDF] Installation Manual - TS4-F, TS4-AF, TS4-A-2F and RSS Transmitter",
+        "snippet": "• Always assume TS4 units are in “ON” state, or may turn on when restarting.\nThe transmitter control power supply MUST be on the same AC branch circuit as the inverter to meet rapid shutdown requirements. [...] module with or without the TS4 units attached. [...] • Allow clearance between PV module and mounting surface for air circulation around TS4-A-F.\n• For installation on frameless modules, remove metal clips and bolt TS4-A to rail. Do not drill additional mounting holes in the frame or metal bracket.",
+        "score": 0.585789,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://invertersrus.com/wp-content/uploads/2024/03/Installation-Manual-TS4-F-TS4-R-F-RSS-Transmitter-1.pdf?srsltid=AfmBOoqBV9OFjiOia-LPucINtswibMutqEVj2ySNbiM77f8wHboVrjH9",
+        "title": "[PDF] Installation Manual - TS4-F and TS4-RF, RSS Transmitter",
+        "snippet": "Core: 300A) Max MPPT String Voltage 1500VDC Internal Opening for Wires 27.5mm Outside Dimensions 59mm Max Number of Strings per Core 10 Max String Length 30 modules Environmental Temperature -40°C to 85°C Recommended max. torque 0.79 N/m for wiring 4.2 TESTING RAPID SHUTDOWN Place Rapid Shutdown System label in proper location. [...] Transmitter: • Power LED should be lit and Signal LED should be blinking during operation • Verify that RSS Core wiring is correct • Power cycle RSS Transmitter if Signal LED is unlit • While RSS Transmitter is powered off, string voltage should be (0.6V  number of modules) • While RSS Transmitter is powered on, full string voltage should be present Test individual strings with active RSS Transmitter one at a time in case of unexpected voltage. [...] 1000V rated 1500V rated Cable Cross-Section 6.3 ± 0.3mm Connectors MC4, MC4 compatible, EVO2 UV Resistance 500hr with UV light between 300-400nm @65C Maximum String Voltage 1500V UL/IEC1 4.2 MECHANICAL SPECIFICATIONS – RSS TRANSMITTER ELECTRICAL RATINGS RSS Transmitter INPUT Input Voltage 12VDC Input Current 1A Average Supply Power 0.85W Recommended Power Supply Rating 12VDC and 2A Dimensions (Transmitter only) 90.2mm x 36.3mm x 57.7mm RSS Core Max Current 150A per Core (Single Core: 150A, Dual",
+        "score": 0.54608524,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOop9pfN7G-DP0cmbmImhkZDoz7xThIwxyuoVvujMu4vMjNsbe1Sp",
+        "title": "[PDF] TS4 Installation Manual - RES Supply",
+        "snippet": "INSTALLATION: TS4 COVERS ELECTRICAL RATINGS DIODES TS4-D MONITORING TS4-M SAFETY TS4-S OPTIMIZATION TS4-O LONG STRINGS TS4-L INPUT Rated DC Input Power 375W 475W 475W 475W 475W Maximum VOC @ STC 90V 75V 75V 75V 75V Maximum Short Circuit Current (ISC) 12A 12A 12A 12A 12A Minimum VMP N/A 16V 16V 16V 16V Max Input Voltage @ Lowest Temp N/A 90V 90V 90V 90V OUTPUT Output Power Range 0 - 375W 0 - 475W 0 - 475W 0 - 475W 0 - 475W Output Voltage Range 0 - VOC 0 - VOC 0 - VOC 0 - VOC 0 - VOC [...] 0.25 mm (1000V) 6.4 ± 0.2mm, 7.05 ± 0.2mm (1500V) Connectors MC4, MC4 compatible, Amphenol, EVO2 UV Resistance 500hr with UV light between 300-400nm @65C Maximum String Voltage 1500V UL/IEC1 1 All TS4 covers are 1500V compatible. Specify max system voltage when ordering modules with TS4 bases for appropriate cables & connectors. [...] cables & connectors Rapid shutdown requires TS4-S or higher, installed with Cloud Connect and Gateway TS4-R ELECTRICAL RATINGS MONITORING TS4-R-M SAFETY TS4-R-S OPTIMIZATION TS4-R-O INPUT @ STC Rated DC Input Power 475W 475W 475W Maximum VOC @ STC 75V 75V 75V Maximum Short Circuit Current (ISC) 12A 12A 12A Minimum VMP 16V 16V 16V Maximum Input Voltage @ Lowest Temperature 90V 90V 90V OUTPUT Output Power Range 0 - 475W 0 - 475W 0 - 475W Output Voltage Range 0 – VOC 0 - VOC 0 - VOC Communication",
+        "score": 0.69024646,
+        "bucket": "other"
+      },
+      {
+        "url": "https://ressupply.com/documents/sma/TS4_Installation_Manual.pdf?srsltid=AfmBOopX7oFXOqvmdWbkLmS0vIp9Q2fSwbCQZyTLP3iNujOvo8kZgrgR",
+        "title": "[PDF] TS4 Installation Manual - RES Supply",
+        "snippet": "• Failure to adhere to these instructions may result in injury or death, damage to the system or voiding the factory warranty. [...] INSTALLATION: TS4 COVERS ELECTRICAL RATINGS DIODES TS4-D MONITORING TS4-M SAFETY TS4-S OPTIMIZATION TS4-O LONG STRINGS TS4-L INPUT Rated DC Input Power 375W 475W 475W 475W 475W Maximum VOC @ STC 90V 75V 75V 75V 75V Maximum Short Circuit Current (ISC) 12A 12A 12A 12A 12A Minimum VMP N/A 16V 16V 16V 16V Max Input Voltage @ Lowest Temp N/A 90V 90V 90V 90V OUTPUT Output Power Range 0 - 375W 0 - 475W 0 - 475W 0 - 475W 0 - 475W Output Voltage Range 0 - VOC 0 - VOC 0 - VOC 0 - VOC 0 - VOC [...] cables & connectors Rapid shutdown requires TS4-S or higher, installed with Cloud Connect and Gateway TS4-R ELECTRICAL RATINGS MONITORING TS4-R-M SAFETY TS4-R-S OPTIMIZATION TS4-R-O INPUT @ STC Rated DC Input Power 475W 475W 475W Maximum VOC @ STC 75V 75V 75V Maximum Short Circuit Current (ISC) 12A 12A 12A Minimum VMP 16V 16V 16V Maximum Input Voltage @ Lowest Temperature 90V 90V 90V OUTPUT Output Power Range 0 - 475W 0 - 475W 0 - 475W Output Voltage Range 0 – VOC 0 - VOC 0 - VOC Communication",
+        "score": 0.67758125,
+        "bucket": "other"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/5fad551d7419c7a0e9e4aba4/68599e8008025f447ded2ecb_002-00218-00%201.3%20QSG%20TS4-A-O-S-F%20(725)%2020250529%20-%20EN.pdf",
+        "title": "[PDF] TS4-A-O/S/F (725 W)",
+        "snippet": "Model Max. Power Max. Input V Max. Input IMP Max. Input ISC Max. System V1 TS4-A-O 725 W 80 V 16 A 22 A 1000/1500 V TS4-A-F 725 W 80 V 16 A 22 A 1000/1500 V TS4-A-S 725 W 80 V 16 A 22 A 1000/1500 V 1 Depending on UL/IEC certification Specifications System: Location: Date: Place TS4 serial stickers on the map per the system azimuth and layout for EI App scanning. Use only 1 sticker per square. Ensure at least one Tigo QR code (located in the corners) is visible when scanning the serial stickers. [...] • Disconnect TS4s from the array string before disconnecting from a solar module.\n• Each TS4 has an IP68 protection rating but only after properly installed. • Do not leave TS4 connectors exposed to the rain. Water intrusion may damage the TS4.\n• Connectors from different manufacturers cannot be mated with each other. [...] • Check PV module instructions for restrictions on mounting devices under the module. IMPORTANT SAFETY INFORMATION LETHAL VOLTAGE MAY BE PRESENT IN ANY PV INSTALLATION SAVE THESE INSTRUCTIONS Download the latest documentation with important updates.\nFrame Mounting • Mount the TS4 to the module frame using the metal clips.\n• Refer to the diagram for applicable mounting orientations.\n• Ensure the TS4 serial sticker faces towards you.",
+        "score": 0.6279746,
+        "bucket": "other"
+      },
+      {
+        "url": "https://solarcircle.org/wp-content/uploads/APsystems_Limited_Warranty_Canada.pdf",
+        "title": "[PDF] APsystems Microinverter Limited Warranty Canada",
+        "snippet": "01/25 Altenergy Power System Inc. [...] L5.0CA © All Rights Reserved 01/25 APsystems Microinverter Limited Warranty Canada This APsystems Limited Warranty Policy (\"Warranty\") hereby applies to the microinverters and the Energy Communications Unit (ECU) provided by Altenergy Power System Inc. (\"APsystems\") in the Canada. It aims to clarify the speciﬁc terms and conditions related to the warranty of the above-mentioned products (the \"Products\") and shall come into efect on January 1, 2025. [...] the product's speciﬁcation parameters (whether the voltage comes from the power grid, generator, or lightning strike), and there are defects or damage; 10. The product is afected by incidental or indirect damage caused by other components in its electrical system, and there are defects or damage; 11. The product is attempted to be changed or have its original identiﬁcation marks (including trademarks, models, or serial numbers) removed, and there are defects or damage; 12. Costs related to the",
+        "score": 0.6010557,
+        "bucket": "other"
+      },
+      {
+        "url": "https://firemountainsolar.com/wp-content/uploads/2022/02/APsystems-Microinverter-Limited-Warranty_United-States-2021.pdf",
+        "title": "[PDF] APsystems Microinverter Limited Warranty - Fire Mountain Solar",
+        "snippet": "Warranty gives the customer specific legal rights, and the customer may have other rights that may vary from jurisdiction. Altenergy Power Systems USA Inc. [...] This Limited Warranty does not cover costs related to the removal, installation or troubleshooting of any components of the customer’s electrical systems. During the Warranty Period, this Limited Warranty may be transferred to subsequent owners of the Product upon completion of a “Warranty Transfer Form” available from the APsystems website, and payment of the nominal transfer fee as shown on that form. THIS LIMITED WARRANTY IS THE SOLE AND EXCLUSIVE WARRANTY GIVEN BY ALTENERGY POWER SYSTEM [...] APsystems Microinverter Limited Warranty L4.0US © All Rights Reserved 01/21 United States The Microinverters (the “Products”) supplied by Altenergy Power Systems USA Inc. (“APsystems”), and installed after Jan 1, 2021 are eligible to this APsystems Limited Warranty (“Limited Warranty”) only if they are continuously connected to the internet via an ECU (Energy Communica-tion Unit) • For systems of more than 4 PV modules: ECU-R or ECU-C, or any compatible ECU • For systems up to 4 PV modules:",
+        "score": 0.595987,
+        "bucket": "other"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/5fad551d7419c7a0e9e4aba4/609e85ddf144ab02cfa32def_Tigo%20TS4%20Brochure%20-%20v1.6.pdf",
+        "title": "[PDF] Tigo TS4 Brochure",
+        "snippet": "FEATURES REQUIRED SEE SCHEMATIC BELOW OPTIONS 1. TS4: F or 2F Tigo's Fire Safety line of TS4 are completely dedicated to the rapid shutdown function and communication via PLC with the RSS Transmitter.\n2. CCA & TAP Tigo's Cloud Connect Advanced (CCA) is the data hub for TS4s and other devices (inverter, battery, etc.). It connects with an RS485 cable to the TAP which wirelessly communicates with TS4s. [...] Each TS4 can be attached to a PV module in a matter of seconds.\nTigo TS4 is the only platform that lets you choose the equipment and features that maximize the benefit for your installation.\nSolutions can be applied to existing PV installations or new ones at virtually any scale.\nTigo Optimizers get the maximum energy output from your array and minimize the losses from shading, module mismatch, degradation, and other issues. [...] With Tigo, only pay for what you need to maximize the benefit of your PV installation.",
+        "score": 0.33685493,
+        "bucket": "other"
+      }
+    ]
+  }
+]

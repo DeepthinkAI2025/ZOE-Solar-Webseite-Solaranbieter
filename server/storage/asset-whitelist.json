@@ -1,13 +1,32 @@
 {
   "version": 1,
-  "updatedAt": "2025-09-27T20:19:49.418Z",
+  "updatedAt": "2025-09-28T02:15:36.326Z",
   "manufacturers": {
     "meyer-burger": {
       "logos": [],
       "datasheets": [
-        "https://www.meyerburger.com/en/downloads"
+        "https://www.meyerburger.com/en/downloads",
+        "https://www.justice.gov/sites/default/files/jmd/legacy/2014/07/13/hear-99-1992.pdf",
+        "https://www.moma.org/documents/moma_catalogue_1985_300296981.pdf",
+        "https://monoskop.org/images/2/27/Foster_Hal_The_Return_of_the_Real_1996.pdf",
+        "https://bertrandmeyer.com/wp-content/upLoads/SUCCESS.pdf",
+        "https://inspirasifoundation.org/wp-content/uploads/2020/05/John-Hattie-Visible-Learning_-A-synthesis-of-over-800-meta-analyses-relating-to-achievement-2008.pdf",
+        "https://capitalmarketforum.swiss/wp-content/uploads/2021/11/MBT_Corporate-Presentation_November_2021_EN.pdf",
+        "https://www.pv-tech.org/wp-content/uploads/legacy-publication-pdfs/1cad7aa2b2-advances-in-module-interconnection-technologies-for-crystalline-silicon-solar-cells.pdf",
+        "https://images.assettype.com/taiyangnews/2024-08-26/sut8ojx0/TaiyangNews_New_Solar_Products_Overview_9M2022_Final_2022_10_V04.pdf",
+        "https://www.vde.com/resource/blob/2268118/3368ae5ff7b494056a8f9d7718fcc299/retc-pv-module-index-report-2023-data.pdf",
+        "https://www.meyerburger.com/fileadmin/user_upload/PDFs/Produktdatenblaetter/US/Meyer-Burger_Black_Datasheet_MB_B120AyB_XXX_UL_EN_V07.pdf",
+        "https://www.meyerburger.com/fileadmin/user_upload/PDFs/Produktdatenblaetter/EN/DS_Meyer_Burger_Black_en.pdf",
+        "https://www.meyerburger.com/fileadmin/user_upload/PDFs/Produktdatenblaetter/DE/DS_Meyer_Burger_Black_de.pdf",
+        "https://www.meyerburger.com/fileadmin/user_upload/PDFs/Produktdatenblaetter/US/Meyer-Burger_2023-01_Datasheet_White_UL_V05PP.pdf",
+        "https://www.meyerburger.com/fileadmin/user_upload/PDFs/Produktdatenblaetter/EN/Meyer-Burger_Panel__White_XL_540_560_Datasheet_MB_WG144Cyz_XXX_EN_V02.pdf",
+        "https://www.meyerburger.com/fileadmin/user_upload/PDFs/Produktdatenblaetter/EN/DS_Meyer_Burger_White_en.pdf",
+        "https://www.meyerburger.com/fileadmin/user_upload/PDFs/Logistikinformationen/Meyer_Burger_2023-04_Logistic_Information_en_1-3.pdf",
+        "https://www.meyerburger.com/fileadmin/user_upload/PDFs/Produktdatenblaetter/EN/DS_Meyer_Burger_Glass_en.pdf",
+        "https://www.meyerburger.com/fileadmin/user_upload/Solardachziegel/Meyer-Burger-Solar-Tile-product-info-EN_web.pdf",
+        "https://www.meyerburger.com/fileadmin/user_upload/PDFs/InstallationGuide/Meyer-Burger_Installation-Guide_Tile_EN_MB_BF6B1B_17.pdf"
       ],
-      "lastUpdatedAt": "2025-09-27T20:19:49.418Z"
+      "lastUpdatedAt": "2025-09-28T02:15:36.326Z"
     }
   }
 }

@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { fetchLogoCandidatesForWebsite } from './firecrawlClient.js';
+import { tavilySearch } from './tavilyClient.js';
 
 const PUBLIC_LOGO_DIR = path.join(process.cwd(), 'public', 'assets', 'logos');
 
@@ -202,18 +202,73 @@ export async function probeAndCacheLogo(slug, websiteUrl) {
       // ignore
     }
 
-    // 5) Firecrawl MCP fallback for logo discovery
+    // 5) Tavily fallback for logo discovery
     try {
-      const candidates = await fetchLogoCandidatesForWebsite(base, slug);
+      const candidates = await findLogoCandidatesWithTavily(slug, base);
       for (const candidate of candidates) {
         const local = await cacheLogoForManufacturer(slug, candidate);
         if (local) return local;
       }
     } catch (err) {
-      console.warn('[logoCache] Firecrawl logo fallback failed for', slug, err?.message ?? err);
+      console.warn('[logoCache] Tavily logo fallback failed for', slug, err?.message ?? err);
     }
   } catch (err) {
     // invalid URL or other error
   }
   return null;
+}
+
+function isImageUrl(url) {
+  if (!url || typeof url !== 'string') return false;
+  const normalized = url.split('?')[0];
+  return /\.(svg|png|jpe?g|webp)$/i.test(normalized);
+}
+
+async function findLogoCandidatesWithTavily(slug, website) {
+  const queries = new Set();
+  const companyName = slug.replace(/[-_]/g, ' ');
+  queries.add(`${companyName} company logo filetype:svg`);
+  queries.add(`${companyName} logo filetype:png`);
+  if (website) {
+    try {
+      const domain = new URL(website).hostname;
+      queries.add(`${domain} logo filetype:svg`);
+      queries.add(`${domain} logo filetype:png`);
+    } catch (err) {
+      // ignore malformed URL
+    }
+  }
+
+  const candidates = new Set();
+
+  for (const query of queries) {
+    try {
+      const response = await tavilySearch(query, {
+        maxResults: 6,
+        includeImages: true,
+        includeImageDescriptions: true
+      });
+
+      if (Array.isArray(response?.results)) {
+        for (const result of response.results) {
+          if (isImageUrl(result?.url)) {
+            candidates.add(result.url);
+          }
+        }
+      }
+
+      if (Array.isArray(response?.images)) {
+        for (const image of response.images) {
+          if (!image?.url) continue;
+          if (isImageUrl(image.url) || (image.description && /logo/i.test(image.description))) {
+            candidates.add(image.url);
+          }
+        }
+      }
+    } catch (err) {
+      console.warn('[logoCache] Tavily search error for', slug, query, err?.message ?? err);
+    }
+  }
+
+  return Array.from(candidates);
 }

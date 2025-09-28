@@ -19,11 +19,14 @@
     "wiki-sync": "tsx scripts/wiki-sync.ts",
     "product-sync": "node scripts/fetch-manufacturers.js",
     "product-sync:ts": "tsx scripts/fetch-manufacturers.ts",
-    "auto-product-sync": "tsx scripts/auto-product-sync.js"
+    "auto-product-sync": "tsx scripts/auto-product-sync.js",
+    "product-docs:harvest": "tsx scripts/harvest-manufacturer-docs.ts",
+    "generate:catalog": "tsx scripts/generate-product-catalog.ts"
   },
   "dependencies": {
     "@fontsource/poppins": "^5.0.8",
     "@google/genai": "^1.19.0",
+    "@tavily/core": "^0.5.12",
     "axios": "^1.7.9",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",

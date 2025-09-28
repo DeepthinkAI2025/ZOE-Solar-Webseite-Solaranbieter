@@ -1,0 +1,91 @@
+{
+  "timestamp": "2025-09-28T13:40:18.241Z",
+  "pagesAnalyzed": 4,
+  "totalSuggestions": 12,
+  "suggestions": [
+    {
+      "from": "/agri-pv",
+      "to": "/foerderungen",
+      "type": "pillar-to-cluster",
+      "anchor": "Erfahren Sie mehr über Förderungen für Agri-PV",
+      "relevance": 25
+    },
+    {
+      "from": "/agri-pv",
+      "to": "/produkte",
+      "type": "related-content",
+      "anchor": "Ähnlicher Artikel: Agri-PV Produkte",
+      "relevance": 15
+    },
+    {
+      "from": "/agri-pv",
+      "to": "/beratung",
+      "type": "related-content",
+      "anchor": "Ähnlicher Artikel: Professionelle Beratung",
+      "relevance": 15
+    },
+    {
+      "from": "/foerderungen",
+      "to": "/agri-pv",
+      "type": "related-content",
+      "anchor": "Ähnlicher Artikel: Agri-Photovoltaik Lösungen",
+      "relevance": 15
+    },
+    {
+      "from": "/foerderungen",
+      "to": "/beratung",
+      "type": "related-content",
+      "anchor": "Ähnlicher Artikel: Professionelle Beratung",
+      "relevance": 15
+    },
+    {
+      "from": "/foerderungen",
+      "to": "/produkte",
+      "type": "related-content",
+      "anchor": "Ähnlicher Artikel: Agri-PV Produkte",
+      "relevance": 15
+    },
+    {
+      "from": "/beratung",
+      "to": "/foerderungen",
+      "type": "related-content",
+      "anchor": "Ähnlicher Artikel: Förderungen für Agri-PV",
+      "relevance": 15
+    },
+    {
+      "from": "/beratung",
+      "to": "/produkte",
+      "type": "related-content",
+      "anchor": "Ähnlicher Artikel: Agri-PV Produkte",
+      "relevance": 15
+    },
+    {
+      "from": "/beratung",
+      "to": "/agri-pv",
+      "type": "related-content",
+      "anchor": "Ähnlicher Artikel: Agri-Photovoltaik Lösungen",
+      "relevance": 15
+    },
+    {
+      "from": "/produkte",
+      "to": "/agri-pv",
+      "type": "related-content",
+      "anchor": "Ähnlicher Artikel: Agri-Photovoltaik Lösungen",
+      "relevance": 15
+    },
+    {
+      "from": "/produkte",
+      "to": "/foerderungen",
+      "type": "related-content",
+      "anchor": "Ähnlicher Artikel: Förderungen für Agri-PV",
+      "relevance": 15
+    },
+    {
+      "from": "/produkte",
+      "to": "/beratung",
+      "type": "related-content",
+      "anchor": "Ähnlicher Artikel: Professionelle Beratung",
+      "relevance": 15
+    }
+  ]
+}

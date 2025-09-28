@@ -1,0 +1,162 @@
+{
+  "timestamp": "2025-09-28T13:40:01.621Z",
+  "optimizedMetaTags": {
+    "homepage": {
+      "basic": {
+        "title": "ZOE Solar - Professionelle Agri-Photovoltaik Lösungen",
+        "description": "ZOE Solar bietet professionelle Agri-Photovoltaik Lösungen für Landwirte. Kombinieren Sie Landwirtschaft und Stromerzeugung für maximale Effizienz. Kostenlos...",
+        "keywords": "Agri-Photovoltaik, agri photovoltaik, solarenergie, landwirtschaft",
+        "canonical": "https://zoe-solar.de/",
+        "robots": "index, follow"
+      },
+      "openGraph": {
+        "og:title": "ZOE Solar - Professionelle Agri-Photovoltaik Lösungen",
+        "og:description": "ZOE Solar bietet professionelle Agri-Photovoltaik Lösungen für Landwirte. Kombinieren Sie Landwirtschaft und Stromerzeugung für maximale Effizienz. Kostenlos...",
+        "og:url": "https://zoe-solar.de/",
+        "og:image": "https://zoe-solar.de/assets/og/homepage.jpg",
+        "og:type": "homepage",
+        "og:site_name": "ZOE Solar GmbH",
+        "og:locale": "de_DE"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "ZOE Solar - Professionelle Agri-Photovoltaik Lösungen",
+        "twitter:description": "ZOE Solar bietet professionelle Agri-Photovoltaik Lösungen für Landwirte. Kombinieren Sie Landwirtschaft und Stromerzeugung für maximale Effizienz. Kostenlos...",
+        "twitter:image": "https://zoe-solar.de/assets/og/homepage.jpg",
+        "twitter:site": "@zoesolar_de"
+      },
+      "scores": {
+        "titleScore": 60,
+        "descriptionScore": 55,
+        "overallScore": 58
+      }
+    },
+    "product": {
+      "basic": {
+        "title": "Agri-PV Systeme - Agri-PV Komplettsysteme - ZOE Solar",
+        "description": "Agri-PV Systeme - Professionelle Agri-PV Komplettsysteme für landwirtschaftliche Flächen. Hochwertige Module und Montagesysteme für optimale Erträge. Jetzt a...",
+        "keywords": "Agri-PV Systeme, agri photovoltaik, solarenergie, landwirtschaft",
+        "canonical": "https://zoe-solar.de/produkte",
+        "robots": "index, follow"
+      },
+      "openGraph": {
+        "og:title": "Agri-PV Systeme - Agri-PV Komplettsysteme - ZOE Solar",
+        "og:description": "Agri-PV Systeme - Professionelle Agri-PV Komplettsysteme für landwirtschaftliche Flächen. Hochwertige Module und Montagesysteme für optimale Erträge. Jetzt a...",
+        "og:url": "https://zoe-solar.de/produkte",
+        "og:image": "https://zoe-solar.de/assets/og/products.jpg",
+        "og:type": "product",
+        "og:site_name": "ZOE Solar GmbH",
+        "og:locale": "de_DE"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Agri-PV Systeme - Agri-PV Komplettsysteme - ZOE Solar",
+        "twitter:description": "Agri-PV Systeme - Professionelle Agri-PV Komplettsysteme für landwirtschaftliche Flächen. Hochwertige Module und Montagesysteme für optimale Erträge. Jetzt a...",
+        "twitter:image": "https://zoe-solar.de/assets/og/products.jpg",
+        "twitter:site": "@zoesolar_de"
+      },
+      "scores": {
+        "titleScore": 70,
+        "descriptionScore": 55,
+        "overallScore": 63
+      }
+    },
+    "service": {
+      "basic": {
+        "title": "Agri-PV Beratung und Planung - ZOE Solar",
+        "description": "Agri-PV Beratung - Professionelle Beratung für Agri-Photovoltaik Projekte. Von der Planung bis zur Umsetzung - Ihr Partner für erfolgreiche Agri-PV Projekte....",
+        "keywords": "Agri-PV Beratung, agri photovoltaik, solarenergie, landwirtschaft",
+        "canonical": "https://zoe-solar.de/beratung",
+        "robots": "index, follow"
+      },
+      "openGraph": {
+        "og:title": "Agri-PV Beratung und Planung - ZOE Solar",
+        "og:description": "Agri-PV Beratung - Professionelle Beratung für Agri-Photovoltaik Projekte. Von der Planung bis zur Umsetzung - Ihr Partner für erfolgreiche Agri-PV Projekte....",
+        "og:url": "https://zoe-solar.de/beratung",
+        "og:image": "https://zoe-solar.de/assets/og/consulting.jpg",
+        "og:type": "service",
+        "og:site_name": "ZOE Solar GmbH",
+        "og:locale": "de_DE"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Agri-PV Beratung und Planung - ZOE Solar",
+        "twitter:description": "Agri-PV Beratung - Professionelle Beratung für Agri-Photovoltaik Projekte. Von der Planung bis zur Umsetzung - Ihr Partner für erfolgreiche Agri-PV Projekte....",
+        "twitter:image": "https://zoe-solar.de/assets/og/consulting.jpg",
+        "twitter:site": "@zoesolar_de"
+      },
+      "scores": {
+        "titleScore": 55,
+        "descriptionScore": 55,
+        "overallScore": 55
+      }
+    },
+    "blog": {
+      "basic": {
+        "title": "Agri-PV Blog - Agri-Photovoltaik Blog - Expertenwissen vo...",
+        "description": "Agri-PV Blog - Aktuelle News, Tipps und Expertenwissen rund um Agri-Photovoltaik. Bleiben Sie informiert über die neuesten Entwicklungen in der Branche. Mehr...",
+        "keywords": "Agri-PV Blog, agri photovoltaik, solarenergie, landwirtschaft",
+        "canonical": "https://zoe-solar.de/blog",
+        "robots": "index, follow"
+      },
+      "openGraph": {
+        "og:title": "Agri-PV Blog - Agri-Photovoltaik Blog - Expertenwissen vo...",
+        "og:description": "Agri-PV Blog - Aktuelle News, Tipps und Expertenwissen rund um Agri-Photovoltaik. Bleiben Sie informiert über die neuesten Entwicklungen in der Branche. Mehr...",
+        "og:url": "https://zoe-solar.de/blog",
+        "og:image": "https://zoe-solar.de/assets/og/blog.jpg",
+        "og:type": "blog",
+        "og:site_name": "ZOE Solar GmbH",
+        "og:locale": "de_DE"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Agri-PV Blog - Agri-Photovoltaik Blog - Expertenwissen vo...",
+        "twitter:description": "Agri-PV Blog - Aktuelle News, Tipps und Expertenwissen rund um Agri-Photovoltaik. Bleiben Sie informiert über die neuesten Entwicklungen in der Branche. Mehr...",
+        "twitter:image": "https://zoe-solar.de/assets/og/blog.jpg",
+        "twitter:site": "@zoesolar_de"
+      },
+      "scores": {
+        "titleScore": 60,
+        "descriptionScore": 45,
+        "overallScore": 53
+      }
+    },
+    "contact": {
+      "basic": {
+        "title": "ZOE Solar Kontakt - Kontakt - ZOE Solar GmbH",
+        "description": "ZOE Solar Kontakt - Kontaktieren Sie ZOE Solar für Ihre Agri-Photovoltaik Projekte. Professionelle Beratung und Unterstützung für Landwirte in Deutschland. J...",
+        "keywords": "ZOE Solar Kontakt, agri photovoltaik, solarenergie, landwirtschaft",
+        "canonical": "https://zoe-solar.de/kontakt",
+        "robots": "index, follow"
+      },
+      "openGraph": {
+        "og:title": "ZOE Solar Kontakt - Kontakt - ZOE Solar GmbH",
+        "og:description": "ZOE Solar Kontakt - Kontaktieren Sie ZOE Solar für Ihre Agri-Photovoltaik Projekte. Professionelle Beratung und Unterstützung für Landwirte in Deutschland. J...",
+        "og:url": "https://zoe-solar.de/kontakt",
+        "og:image": "https://zoe-solar.de/assets/og/contact.jpg",
+        "og:type": "contact",
+        "og:site_name": "ZOE Solar GmbH",
+        "og:locale": "de_DE"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "ZOE Solar Kontakt - Kontakt - ZOE Solar GmbH",
+        "twitter:description": "ZOE Solar Kontakt - Kontaktieren Sie ZOE Solar für Ihre Agri-Photovoltaik Projekte. Professionelle Beratung und Unterstützung für Landwirte in Deutschland. J...",
+        "twitter:image": "https://zoe-solar.de/assets/og/contact.jpg",
+        "twitter:site": "@zoesolar_de"
+      },
+      "scores": {
+        "titleScore": 55,
+        "descriptionScore": 55,
+        "overallScore": 55
+      }
+    }
+  },
+  "htmlOutputs": {
+    "homepage": "<title>ZOE Solar - Professionelle Agri-Photovoltaik Lösungen</title>\n<meta name=\"description\" content=\"ZOE Solar bietet professionelle Agri-Photovoltaik Lösungen für Landwirte. Kombinieren Sie Landwirtschaft und Stromerzeugung für maximale Effizienz. Kostenlos...\">\n<meta name=\"keywords\" content=\"Agri-Photovoltaik, agri photovoltaik, solarenergie, landwirtschaft\">\n<link rel=\"canonical\" href=\"https://zoe-solar.de/\">\n<meta name=\"robots\" content=\"index, follow\">\n\n<!-- Open Graph / Facebook -->\n<meta property=\"og:og:title\" content=\"ZOE Solar - Professionelle Agri-Photovoltaik Lösungen\">\n<meta property=\"og:og:description\" content=\"ZOE Solar bietet professionelle Agri-Photovoltaik Lösungen für Landwirte. Kombinieren Sie Landwirtschaft und Stromerzeugung für maximale Effizienz. Kostenlos...\">\n<meta property=\"og:og:url\" content=\"https://zoe-solar.de/\">\n<meta property=\"og:og:image\" content=\"https://zoe-solar.de/assets/og/homepage.jpg\">\n<meta property=\"og:og:type\" content=\"homepage\">\n<meta property=\"og:og:site_name\" content=\"ZOE Solar GmbH\">\n<meta property=\"og:og:locale\" content=\"de_DE\">\n\n<!-- Twitter -->\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"ZOE Solar - Professionelle Agri-Photovoltaik Lösungen\">\n<meta name=\"twitter:description\" content=\"ZOE Solar bietet professionelle Agri-Photovoltaik Lösungen für Landwirte. Kombinieren Sie Landwirtschaft und Stromerzeugung für maximale Effizienz. Kostenlos...\">\n<meta name=\"twitter:image\" content=\"https://zoe-solar.de/assets/og/homepage.jpg\">\n<meta name=\"twitter:site\" content=\"@zoesolar_de\">\n",
+    "product": "<title>Agri-PV Systeme - Agri-PV Komplettsysteme - ZOE Solar</title>\n<meta name=\"description\" content=\"Agri-PV Systeme - Professionelle Agri-PV Komplettsysteme für landwirtschaftliche Flächen. Hochwertige Module und Montagesysteme für optimale Erträge. Jetzt a...\">\n<meta name=\"keywords\" content=\"Agri-PV Systeme, agri photovoltaik, solarenergie, landwirtschaft\">\n<link rel=\"canonical\" href=\"https://zoe-solar.de/produkte\">\n<meta name=\"robots\" content=\"index, follow\">\n\n<!-- Open Graph / Facebook -->\n<meta property=\"og:og:title\" content=\"Agri-PV Systeme - Agri-PV Komplettsysteme - ZOE Solar\">\n<meta property=\"og:og:description\" content=\"Agri-PV Systeme - Professionelle Agri-PV Komplettsysteme für landwirtschaftliche Flächen. Hochwertige Module und Montagesysteme für optimale Erträge. Jetzt a...\">\n<meta property=\"og:og:url\" content=\"https://zoe-solar.de/produkte\">\n<meta property=\"og:og:image\" content=\"https://zoe-solar.de/assets/og/products.jpg\">\n<meta property=\"og:og:type\" content=\"product\">\n<meta property=\"og:og:site_name\" content=\"ZOE Solar GmbH\">\n<meta property=\"og:og:locale\" content=\"de_DE\">\n\n<!-- Twitter -->\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"Agri-PV Systeme - Agri-PV Komplettsysteme - ZOE Solar\">\n<meta name=\"twitter:description\" content=\"Agri-PV Systeme - Professionelle Agri-PV Komplettsysteme für landwirtschaftliche Flächen. Hochwertige Module und Montagesysteme für optimale Erträge. Jetzt a...\">\n<meta name=\"twitter:image\" content=\"https://zoe-solar.de/assets/og/products.jpg\">\n<meta name=\"twitter:site\" content=\"@zoesolar_de\">\n",
+    "service": "<title>Agri-PV Beratung und Planung - ZOE Solar</title>\n<meta name=\"description\" content=\"Agri-PV Beratung - Professionelle Beratung für Agri-Photovoltaik Projekte. Von der Planung bis zur Umsetzung - Ihr Partner für erfolgreiche Agri-PV Projekte....\">\n<meta name=\"keywords\" content=\"Agri-PV Beratung, agri photovoltaik, solarenergie, landwirtschaft\">\n<link rel=\"canonical\" href=\"https://zoe-solar.de/beratung\">\n<meta name=\"robots\" content=\"index, follow\">\n\n<!-- Open Graph / Facebook -->\n<meta property=\"og:og:title\" content=\"Agri-PV Beratung und Planung - ZOE Solar\">\n<meta property=\"og:og:description\" content=\"Agri-PV Beratung - Professionelle Beratung für Agri-Photovoltaik Projekte. Von der Planung bis zur Umsetzung - Ihr Partner für erfolgreiche Agri-PV Projekte....\">\n<meta property=\"og:og:url\" content=\"https://zoe-solar.de/beratung\">\n<meta property=\"og:og:image\" content=\"https://zoe-solar.de/assets/og/consulting.jpg\">\n<meta property=\"og:og:type\" content=\"service\">\n<meta property=\"og:og:site_name\" content=\"ZOE Solar GmbH\">\n<meta property=\"og:og:locale\" content=\"de_DE\">\n\n<!-- Twitter -->\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"Agri-PV Beratung und Planung - ZOE Solar\">\n<meta name=\"twitter:description\" content=\"Agri-PV Beratung - Professionelle Beratung für Agri-Photovoltaik Projekte. Von der Planung bis zur Umsetzung - Ihr Partner für erfolgreiche Agri-PV Projekte....\">\n<meta name=\"twitter:image\" content=\"https://zoe-solar.de/assets/og/consulting.jpg\">\n<meta name=\"twitter:site\" content=\"@zoesolar_de\">\n",
+    "blog": "<title>Agri-PV Blog - Agri-Photovoltaik Blog - Expertenwissen vo...</title>\n<meta name=\"description\" content=\"Agri-PV Blog - Aktuelle News, Tipps und Expertenwissen rund um Agri-Photovoltaik. Bleiben Sie informiert über die neuesten Entwicklungen in der Branche. Mehr...\">\n<meta name=\"keywords\" content=\"Agri-PV Blog, agri photovoltaik, solarenergie, landwirtschaft\">\n<link rel=\"canonical\" href=\"https://zoe-solar.de/blog\">\n<meta name=\"robots\" content=\"index, follow\">\n\n<!-- Open Graph / Facebook -->\n<meta property=\"og:og:title\" content=\"Agri-PV Blog - Agri-Photovoltaik Blog - Expertenwissen vo...\">\n<meta property=\"og:og:description\" content=\"Agri-PV Blog - Aktuelle News, Tipps und Expertenwissen rund um Agri-Photovoltaik. Bleiben Sie informiert über die neuesten Entwicklungen in der Branche. Mehr...\">\n<meta property=\"og:og:url\" content=\"https://zoe-solar.de/blog\">\n<meta property=\"og:og:image\" content=\"https://zoe-solar.de/assets/og/blog.jpg\">\n<meta property=\"og:og:type\" content=\"blog\">\n<meta property=\"og:og:site_name\" content=\"ZOE Solar GmbH\">\n<meta property=\"og:og:locale\" content=\"de_DE\">\n\n<!-- Twitter -->\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"Agri-PV Blog - Agri-Photovoltaik Blog - Expertenwissen vo...\">\n<meta name=\"twitter:description\" content=\"Agri-PV Blog - Aktuelle News, Tipps und Expertenwissen rund um Agri-Photovoltaik. Bleiben Sie informiert über die neuesten Entwicklungen in der Branche. Mehr...\">\n<meta name=\"twitter:image\" content=\"https://zoe-solar.de/assets/og/blog.jpg\">\n<meta name=\"twitter:site\" content=\"@zoesolar_de\">\n",
+    "contact": "<title>ZOE Solar Kontakt - Kontakt - ZOE Solar GmbH</title>\n<meta name=\"description\" content=\"ZOE Solar Kontakt - Kontaktieren Sie ZOE Solar für Ihre Agri-Photovoltaik Projekte. Professionelle Beratung und Unterstützung für Landwirte in Deutschland. J...\">\n<meta name=\"keywords\" content=\"ZOE Solar Kontakt, agri photovoltaik, solarenergie, landwirtschaft\">\n<link rel=\"canonical\" href=\"https://zoe-solar.de/kontakt\">\n<meta name=\"robots\" content=\"index, follow\">\n\n<!-- Open Graph / Facebook -->\n<meta property=\"og:og:title\" content=\"ZOE Solar Kontakt - Kontakt - ZOE Solar GmbH\">\n<meta property=\"og:og:description\" content=\"ZOE Solar Kontakt - Kontaktieren Sie ZOE Solar für Ihre Agri-Photovoltaik Projekte. Professionelle Beratung und Unterstützung für Landwirte in Deutschland. J...\">\n<meta property=\"og:og:url\" content=\"https://zoe-solar.de/kontakt\">\n<meta property=\"og:og:image\" content=\"https://zoe-solar.de/assets/og/contact.jpg\">\n<meta property=\"og:og:type\" content=\"contact\">\n<meta property=\"og:og:site_name\" content=\"ZOE Solar GmbH\">\n<meta property=\"og:og:locale\" content=\"de_DE\">\n\n<!-- Twitter -->\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"ZOE Solar Kontakt - Kontakt - ZOE Solar GmbH\">\n<meta name=\"twitter:description\" content=\"ZOE Solar Kontakt - Kontaktieren Sie ZOE Solar für Ihre Agri-Photovoltaik Projekte. Professionelle Beratung und Unterstützung für Landwirte in Deutschland. J...\">\n<meta name=\"twitter:image\" content=\"https://zoe-solar.de/assets/og/contact.jpg\">\n<meta name=\"twitter:site\" content=\"@zoesolar_de\">\n"
+  }
+}

@@ -1,0 +1,1787 @@
+{
+  "timestamp": "2025-09-28T13:49:08.714Z",
+  "monitoring": {
+    "aiCitations": {
+      "total": 89,
+      "byPlatform": {
+        "chatgpt": {
+          "citations": 50,
+          "topKeywords": [
+            "Agri-Photovoltaik",
+            "Agri-PV Förderung",
+            "Agri-PV Kosten",
+            "Agri-PV Beratung",
+            "Photovoltaik Landwirtschaft"
+          ],
+          "recentMentions": [
+            {
+              "date": "2024-01-15",
+              "keyword": "Agri-Photovoltaik",
+              "context": "Antwort auf User-Frage"
+            },
+            {
+              "date": "2024-01-20",
+              "keyword": "Agri-PV Förderung",
+              "context": "Vergleich mit Konkurrenz"
+            }
+          ]
+        },
+        "perplexity": {
+          "citations": 16,
+          "topKeywords": [
+            "Agri-Photovoltaik",
+            "Agri-PV Förderung",
+            "Agri-PV Kosten",
+            "Agri-PV Beratung",
+            "Photovoltaik Landwirtschaft"
+          ],
+          "recentMentions": [
+            {
+              "date": "2024-01-15",
+              "keyword": "Agri-Photovoltaik",
+              "context": "Antwort auf User-Frage"
+            },
+            {
+              "date": "2024-01-20",
+              "keyword": "Agri-PV Förderung",
+              "context": "Vergleich mit Konkurrenz"
+            }
+          ]
+        },
+        "claude": {
+          "citations": 23,
+          "topKeywords": [
+            "Agri-Photovoltaik",
+            "Agri-PV Förderung",
+            "Agri-PV Kosten",
+            "Agri-PV Beratung",
+            "Photovoltaik Landwirtschaft"
+          ],
+          "recentMentions": [
+            {
+              "date": "2024-01-15",
+              "keyword": "Agri-Photovoltaik",
+              "context": "Antwort auf User-Frage"
+            },
+            {
+              "date": "2024-01-20",
+              "keyword": "Agri-PV Förderung",
+              "context": "Vergleich mit Konkurrenz"
+            }
+          ]
+        }
+      },
+      "byKeyword": {
+        "Agri-Photovoltaik": {
+          "totalCitations": 10,
+          "platforms": [
+            "chatgpt",
+            "perplexity",
+            "claude"
+          ],
+          "trend": "up",
+          "lastMention": "2025-09-07T06:56:31.652Z"
+        },
+        "Agri-PV Förderung": {
+          "totalCitations": 18,
+          "platforms": [
+            "chatgpt"
+          ],
+          "trend": "down",
+          "lastMention": "2025-09-09T10:57:37.765Z"
+        },
+        "Agri-PV Kosten": {
+          "totalCitations": 23,
+          "platforms": [
+            "perplexity"
+          ],
+          "trend": "up",
+          "lastMention": "2025-09-07T06:42:38.174Z"
+        },
+        "Agri-PV Beratung": {
+          "totalCitations": 24,
+          "platforms": [],
+          "trend": "up",
+          "lastMention": "2025-09-12T05:06:09.808Z"
+        },
+        "Photovoltaik Landwirtschaft": {
+          "totalCitations": 14,
+          "platforms": [],
+          "trend": "up",
+          "lastMention": "2025-09-07T17:00:11.680Z"
+        }
+      },
+      "trends": [],
+      "opportunities": []
+    },
+    "featuredSnippets": {
+      "total": 3,
+      "byType": {
+        "paragraph": 1,
+        "list": 0,
+        "table": 2,
+        "video": 0
+      },
+      "byKeyword": {
+        "Agri-Photovoltaik": {
+          "hasSnippet": true,
+          "type": "paragraph",
+          "position": 9,
+          "competitor": null,
+          "lastUpdate": "2025-09-26T17:22:13.060Z"
+        },
+        "Agri-PV Förderung": {
+          "hasSnippet": false,
+          "opportunity": "Featured Snippet Möglichkeit",
+          "difficulty": "hard"
+        },
+        "Agri-PV Kosten": {
+          "hasSnippet": false,
+          "opportunity": "Featured Snippet Möglichkeit",
+          "difficulty": "hard"
+        },
+        "Agri-PV Beratung": {
+          "hasSnippet": true,
+          "type": "table",
+          "position": 8,
+          "competitor": null,
+          "lastUpdate": "2025-09-26T22:49:32.805Z"
+        },
+        "Photovoltaik Landwirtschaft": {
+          "hasSnippet": true,
+          "type": "table",
+          "position": 8,
+          "competitor": "competitor.com",
+          "lastUpdate": "2025-09-23T08:02:27.882Z"
+        }
+      },
+      "opportunities": [
+        "Agri-PV Förderung",
+        "Agri-PV Kosten"
+      ],
+      "competitors": []
+    },
+    "voiceRankings": {
+      "byLocation": {
+        "germany": {
+          "totalQueries": 12390,
+          "voiceEnabledQueries": 2694,
+          "averagePosition": 3
+        },
+        "austria": {
+          "totalQueries": 8646,
+          "voiceEnabledQueries": 1892,
+          "averagePosition": 1
+        },
+        "switzerland": {
+          "totalQueries": 7924,
+          "voiceEnabledQueries": 2181,
+          "averagePosition": 3
+        }
+      },
+      "byKeyword": {
+        "Agri-Photovoltaik": {
+          "voiceQueries": [
+            "Was ist Agri-Photovoltaik?",
+            "Wie funktioniert Agri-Photovoltaik?",
+            "Wo finde ich Agri-Photovoltaik?",
+            "Agri-Photovoltaik near me"
+          ],
+          "estimatedVoiceTraffic": 460,
+          "currentRanking": 16,
+          "voiceOpportunity": true
+        },
+        "Agri-PV Förderung": {
+          "voiceQueries": [
+            "Was ist Agri-PV Förderung?",
+            "Wie funktioniert Agri-PV Förderung?",
+            "Wo finde ich Agri-PV Förderung?",
+            "Agri-PV Förderung near me"
+          ],
+          "estimatedVoiceTraffic": 179,
+          "currentRanking": 7,
+          "voiceOpportunity": true
+        },
+        "Agri-PV Kosten": {
+          "voiceQueries": [
+            "Was ist Agri-PV Kosten?",
+            "Wie funktioniert Agri-PV Kosten?",
+            "Wo finde ich Agri-PV Kosten?",
+            "Agri-PV Kosten near me"
+          ],
+          "estimatedVoiceTraffic": 223,
+          "currentRanking": 9,
+          "voiceOpportunity": false
+        },
+        "Agri-PV Beratung": {
+          "voiceQueries": [
+            "Was ist Agri-PV Beratung?",
+            "Wie funktioniert Agri-PV Beratung?",
+            "Wo finde ich Agri-PV Beratung?",
+            "Agri-PV Beratung near me"
+          ],
+          "estimatedVoiceTraffic": 358,
+          "currentRanking": 16,
+          "voiceOpportunity": false
+        },
+        "Photovoltaik Landwirtschaft": {
+          "voiceQueries": [
+            "Was ist Photovoltaik Landwirtschaft?",
+            "Wie funktioniert Photovoltaik Landwirtschaft?",
+            "Wo finde ich Photovoltaik Landwirtschaft?",
+            "Photovoltaik Landwirtschaft near me"
+          ],
+          "estimatedVoiceTraffic": 117,
+          "currentRanking": 3,
+          "voiceOpportunity": false
+        }
+      },
+      "featuredVoiceResults": [
+        {
+          "keyword": "Agri-Photovoltaik",
+          "query": "Agri-Photovoltaik near me",
+          "position": 2
+        },
+        {
+          "keyword": "Agri-PV Förderung",
+          "query": "Was ist Agri-PV Förderung?",
+          "position": 1
+        }
+      ],
+      "opportunities": [
+        {
+          "keyword": "Agri-Photovoltaik",
+          "opportunity": "Voice Search Optimierung möglich",
+          "potentialTraffic": 460
+        },
+        {
+          "keyword": "Agri-PV Förderung",
+          "opportunity": "Voice Search Optimierung möglich",
+          "potentialTraffic": 179
+        }
+      ]
+    },
+    "crossPlatform": {
+      "byPlatform": {
+        "google": {
+          "impressions": 59115,
+          "clicks": 520,
+          "ctr": "0.88",
+          "averagePosition": 8,
+          "topKeywords": [
+            "Agri-Photovoltaik",
+            "Agri-PV Förderung",
+            "Agri-PV Kosten"
+          ]
+        },
+        "youtube": {
+          "impressions": 54218,
+          "clicks": 242,
+          "ctr": "0.45",
+          "averagePosition": 7,
+          "topKeywords": [
+            "Agri-Photovoltaik",
+            "Agri-PV Förderung",
+            "Agri-PV Kosten"
+          ]
+        },
+        "instagram": {
+          "impressions": 54766,
+          "clicks": 1041,
+          "ctr": "1.90",
+          "averagePosition": 5,
+          "topKeywords": [
+            "Agri-Photovoltaik",
+            "Agri-PV Förderung",
+            "Agri-PV Kosten"
+          ]
+        },
+        "linkedin": {
+          "impressions": 51541,
+          "clicks": 839,
+          "ctr": "1.63",
+          "averagePosition": 4,
+          "topKeywords": [
+            "Agri-Photovoltaik",
+            "Agri-PV Förderung",
+            "Agri-PV Kosten"
+          ]
+        },
+        "tiktok": {
+          "impressions": 38217,
+          "clicks": 654,
+          "ctr": "1.71",
+          "averagePosition": 18,
+          "topKeywords": [
+            "Agri-Photovoltaik",
+            "Agri-PV Förderung",
+            "Agri-PV Kosten"
+          ]
+        }
+      },
+      "byKeyword": {
+        "Agri-Photovoltaik": {
+          "platforms": [
+            "google",
+            "instagram",
+            "linkedin",
+            "tiktok"
+          ],
+          "totalImpressions": 6128,
+          "totalClicks": 202,
+          "bestPlatform": "linkedin"
+        },
+        "Agri-PV Förderung": {
+          "platforms": [
+            "tiktok"
+          ],
+          "totalImpressions": 6833,
+          "totalClicks": 178,
+          "bestPlatform": "google"
+        },
+        "Agri-PV Kosten": {
+          "platforms": [
+            "google",
+            "youtube",
+            "instagram",
+            "linkedin",
+            "tiktok"
+          ],
+          "totalImpressions": 7054,
+          "totalClicks": 179,
+          "bestPlatform": "youtube"
+        },
+        "Agri-PV Beratung": {
+          "platforms": [
+            "linkedin"
+          ],
+          "totalImpressions": 1122,
+          "totalClicks": 97,
+          "bestPlatform": "linkedin"
+        },
+        "Photovoltaik Landwirtschaft": {
+          "platforms": [
+            "google",
+            "instagram"
+          ],
+          "totalImpressions": 10520,
+          "totalClicks": 155,
+          "bestPlatform": "instagram"
+        }
+      },
+      "totalImpressions": 257857,
+      "totalClicks": 3296,
+      "bestPerformingPlatform": "instagram",
+      "opportunities": [
+        {
+          "platform": "google",
+          "opportunity": "CTR-Optimierung möglich",
+          "currentCTR": "0.88",
+          "potential": "20% CTR-Verbesserung"
+        },
+        {
+          "platform": "youtube",
+          "opportunity": "CTR-Optimierung möglich",
+          "currentCTR": "0.45",
+          "potential": "20% CTR-Verbesserung"
+        }
+      ]
+    },
+    "gmbTracking": {
+      "totalImpressions": 32637,
+      "totalActions": 1320,
+      "byLocation": {
+        "berlin": {
+          "impressions": 14963,
+          "actions": 241,
+          "ctr": "1.61",
+          "topQueries": [
+            "öffnungszeiten",
+            "adresse"
+          ],
+          "photosViewed": 192,
+          "reviews": 9
+        },
+        "munich": {
+          "impressions": 5267,
+          "actions": 480,
+          "ctr": "9.11",
+          "topQueries": [
+            "öffnungszeiten"
+          ],
+          "photosViewed": 177,
+          "reviews": 9
+        },
+        "hamburg": {
+          "impressions": 12407,
+          "actions": 599,
+          "ctr": "4.83",
+          "topQueries": [
+            "öffnungszeiten"
+          ],
+          "photosViewed": 242,
+          "reviews": 8
+        }
+      },
+      "trends": [
+        {
+          "date": "2025-08-29",
+          "impressions": 363,
+          "actions": 27
+        },
+        {
+          "date": "2025-08-30",
+          "impressions": 324,
+          "actions": 35
+        },
+        {
+          "date": "2025-08-31",
+          "impressions": 540,
+          "actions": 58
+        },
+        {
+          "date": "2025-09-01",
+          "impressions": 358,
+          "actions": 56
+        },
+        {
+          "date": "2025-09-02",
+          "impressions": 190,
+          "actions": 28
+        },
+        {
+          "date": "2025-09-03",
+          "impressions": 205,
+          "actions": 41
+        },
+        {
+          "date": "2025-09-04",
+          "impressions": 486,
+          "actions": 44
+        },
+        {
+          "date": "2025-09-05",
+          "impressions": 539,
+          "actions": 13
+        },
+        {
+          "date": "2025-09-06",
+          "impressions": 327,
+          "actions": 31
+        },
+        {
+          "date": "2025-09-07",
+          "impressions": 366,
+          "actions": 16
+        },
+        {
+          "date": "2025-09-08",
+          "impressions": 509,
+          "actions": 52
+        },
+        {
+          "date": "2025-09-09",
+          "impressions": 165,
+          "actions": 28
+        },
+        {
+          "date": "2025-09-10",
+          "impressions": 414,
+          "actions": 38
+        },
+        {
+          "date": "2025-09-11",
+          "impressions": 308,
+          "actions": 56
+        },
+        {
+          "date": "2025-09-12",
+          "impressions": 113,
+          "actions": 39
+        },
+        {
+          "date": "2025-09-13",
+          "impressions": 486,
+          "actions": 10
+        },
+        {
+          "date": "2025-09-14",
+          "impressions": 428,
+          "actions": 37
+        },
+        {
+          "date": "2025-09-15",
+          "impressions": 106,
+          "actions": 47
+        },
+        {
+          "date": "2025-09-16",
+          "impressions": 355,
+          "actions": 15
+        },
+        {
+          "date": "2025-09-17",
+          "impressions": 415,
+          "actions": 44
+        },
+        {
+          "date": "2025-09-18",
+          "impressions": 591,
+          "actions": 40
+        },
+        {
+          "date": "2025-09-19",
+          "impressions": 147,
+          "actions": 55
+        },
+        {
+          "date": "2025-09-20",
+          "impressions": 353,
+          "actions": 53
+        },
+        {
+          "date": "2025-09-21",
+          "impressions": 341,
+          "actions": 20
+        },
+        {
+          "date": "2025-09-22",
+          "impressions": 165,
+          "actions": 32
+        },
+        {
+          "date": "2025-09-23",
+          "impressions": 177,
+          "actions": 59
+        },
+        {
+          "date": "2025-09-24",
+          "impressions": 146,
+          "actions": 28
+        },
+        {
+          "date": "2025-09-25",
+          "impressions": 324,
+          "actions": 32
+        },
+        {
+          "date": "2025-09-26",
+          "impressions": 158,
+          "actions": 38
+        },
+        {
+          "date": "2025-09-27",
+          "impressions": 483,
+          "actions": 27
+        },
+        {
+          "date": "2025-09-28",
+          "impressions": 354,
+          "actions": 47
+        }
+      ],
+      "topPerformingLocations": [
+        "berlin",
+        "hamburg",
+        "munich"
+      ],
+      "opportunities": [
+        {
+          "location": "berlin",
+          "opportunity": "GMB-Optimierung für höhere CTR",
+          "currentCTR": "1.61",
+          "potential": "30% mehr Actions"
+        }
+      ]
+    },
+    "callAnalysis": {
+      "totalCalls": 497,
+      "totalClicks": 2281,
+      "conversionRate": "21.79",
+      "byLocation": {
+        "berlin": {
+          "clicks": 688,
+          "calls": 190,
+          "conversionRate": "27.62",
+          "avgCallDuration": 8,
+          "peakHours": "14:00-16:00"
+        },
+        "munich": {
+          "clicks": 1147,
+          "calls": 161,
+          "conversionRate": "14.04",
+          "avgCallDuration": 7,
+          "peakHours": "09:00-11:00"
+        },
+        "hamburg": {
+          "clicks": 446,
+          "calls": 146,
+          "conversionRate": "32.74",
+          "avgCallDuration": 14,
+          "peakHours": "14:00-16:00"
+        }
+      },
+      "byTimeOfDay": {
+        "12": {
+          "calls": 15,
+          "conversionRate": "3.49"
+        },
+        "15": {
+          "calls": 27,
+          "conversionRate": "1.96"
+        },
+        "18": {
+          "calls": 14,
+          "conversionRate": "5.44"
+        },
+        "21": {
+          "calls": 30,
+          "conversionRate": "5.97"
+        },
+        "06": {
+          "calls": 29,
+          "conversionRate": "2.02"
+        },
+        "09": {
+          "calls": 39,
+          "conversionRate": "4.81"
+        }
+      },
+      "byDayOfWeek": {
+        "monday": {
+          "calls": 26,
+          "conversionRate": "3.14"
+        },
+        "tuesday": {
+          "calls": 70,
+          "conversionRate": "4.09"
+        },
+        "wednesday": {
+          "calls": 112,
+          "conversionRate": "5.90"
+        },
+        "thursday": {
+          "calls": 69,
+          "conversionRate": "1.22"
+        },
+        "friday": {
+          "calls": 27,
+          "conversionRate": "5.71"
+        },
+        "saturday": {
+          "calls": 96,
+          "conversionRate": "3.22"
+        },
+        "sunday": {
+          "calls": 20,
+          "conversionRate": "2.69"
+        }
+      },
+      "trends": [
+        {
+          "date": "2025-08-29",
+          "calls": 14,
+          "conversionRate": "3.05"
+        },
+        {
+          "date": "2025-08-30",
+          "calls": 22,
+          "conversionRate": "4.07"
+        },
+        {
+          "date": "2025-08-31",
+          "calls": 22,
+          "conversionRate": "2.86"
+        },
+        {
+          "date": "2025-09-01",
+          "calls": 22,
+          "conversionRate": "4.94"
+        },
+        {
+          "date": "2025-09-02",
+          "calls": 23,
+          "conversionRate": "2.83"
+        },
+        {
+          "date": "2025-09-03",
+          "calls": 21,
+          "conversionRate": "4.44"
+        },
+        {
+          "date": "2025-09-04",
+          "calls": 10,
+          "conversionRate": "4.02"
+        },
+        {
+          "date": "2025-09-05",
+          "calls": 20,
+          "conversionRate": "3.14"
+        },
+        {
+          "date": "2025-09-06",
+          "calls": 12,
+          "conversionRate": "4.46"
+        },
+        {
+          "date": "2025-09-07",
+          "calls": 22,
+          "conversionRate": "2.69"
+        },
+        {
+          "date": "2025-09-08",
+          "calls": 7,
+          "conversionRate": "2.39"
+        },
+        {
+          "date": "2025-09-09",
+          "calls": 12,
+          "conversionRate": "4.67"
+        },
+        {
+          "date": "2025-09-10",
+          "calls": 20,
+          "conversionRate": "4.50"
+        },
+        {
+          "date": "2025-09-11",
+          "calls": 13,
+          "conversionRate": "3.51"
+        },
+        {
+          "date": "2025-09-12",
+          "calls": 22,
+          "conversionRate": "2.24"
+        },
+        {
+          "date": "2025-09-13",
+          "calls": 8,
+          "conversionRate": "4.86"
+        },
+        {
+          "date": "2025-09-14",
+          "calls": 15,
+          "conversionRate": "2.22"
+        },
+        {
+          "date": "2025-09-15",
+          "calls": 14,
+          "conversionRate": "2.59"
+        },
+        {
+          "date": "2025-09-16",
+          "calls": 12,
+          "conversionRate": "4.02"
+        },
+        {
+          "date": "2025-09-17",
+          "calls": 7,
+          "conversionRate": "4.32"
+        },
+        {
+          "date": "2025-09-18",
+          "calls": 8,
+          "conversionRate": "2.46"
+        },
+        {
+          "date": "2025-09-19",
+          "calls": 6,
+          "conversionRate": "4.45"
+        },
+        {
+          "date": "2025-09-20",
+          "calls": 21,
+          "conversionRate": "3.66"
+        },
+        {
+          "date": "2025-09-21",
+          "calls": 5,
+          "conversionRate": "4.45"
+        },
+        {
+          "date": "2025-09-22",
+          "calls": 6,
+          "conversionRate": "4.01"
+        },
+        {
+          "date": "2025-09-23",
+          "calls": 5,
+          "conversionRate": "2.18"
+        },
+        {
+          "date": "2025-09-24",
+          "calls": 17,
+          "conversionRate": "4.89"
+        },
+        {
+          "date": "2025-09-25",
+          "calls": 18,
+          "conversionRate": "3.41"
+        },
+        {
+          "date": "2025-09-26",
+          "calls": 23,
+          "conversionRate": "2.88"
+        },
+        {
+          "date": "2025-09-27",
+          "calls": 17,
+          "conversionRate": "2.92"
+        },
+        {
+          "date": "2025-09-28",
+          "calls": 21,
+          "conversionRate": "4.39"
+        }
+      ],
+      "opportunities": [
+        {
+          "location": "munich",
+          "opportunity": "Call-Tracking-Optimierung",
+          "currentRate": "14.04",
+          "potential": "25% höhere Conversion"
+        }
+      ]
+    },
+    "reviewMonitoring": {
+      "totalReviews": 325,
+      "averageRating": "4.4",
+      "byPlatform": {
+        "google": {
+          "totalReviews": 139,
+          "averageRating": "4.2",
+          "recentReviews": 8,
+          "responseRate": "82.9",
+          "topThemes": [
+            "Qualität",
+            "Service",
+            "Preis",
+            "Beratung"
+          ]
+        },
+        "trustpilot": {
+          "totalReviews": 186,
+          "averageRating": "4.6",
+          "recentReviews": 12,
+          "responseRate": "93.1",
+          "topThemes": [
+            "Qualität",
+            "Service",
+            "Preis",
+            "Beratung"
+          ]
+        }
+      },
+      "byLocation": {
+        "berlin": {
+          "reviews": 35,
+          "rating": "4.1",
+          "velocity": 4,
+          "platforms": []
+        },
+        "munich": {
+          "reviews": 107,
+          "rating": "4.9",
+          "velocity": 2,
+          "platforms": [
+            "trustpilot"
+          ]
+        },
+        "hamburg": {
+          "reviews": 45,
+          "rating": "4.5",
+          "velocity": 1,
+          "platforms": [
+            "google",
+            "trustpilot"
+          ]
+        }
+      },
+      "trends": [
+        {
+          "date": "2025-08-29",
+          "newReviews": 5,
+          "averageRating": "4.7"
+        },
+        {
+          "date": "2025-08-30",
+          "newReviews": 5,
+          "averageRating": "4.7"
+        },
+        {
+          "date": "2025-08-31",
+          "newReviews": 4,
+          "averageRating": "4.8"
+        },
+        {
+          "date": "2025-09-01",
+          "newReviews": 9,
+          "averageRating": "4.5"
+        },
+        {
+          "date": "2025-09-02",
+          "newReviews": 4,
+          "averageRating": "5.0"
+        },
+        {
+          "date": "2025-09-03",
+          "newReviews": 2,
+          "averageRating": "4.8"
+        },
+        {
+          "date": "2025-09-04",
+          "newReviews": 8,
+          "averageRating": "4.5"
+        },
+        {
+          "date": "2025-09-05",
+          "newReviews": 5,
+          "averageRating": "4.9"
+        },
+        {
+          "date": "2025-09-06",
+          "newReviews": 3,
+          "averageRating": "4.5"
+        },
+        {
+          "date": "2025-09-07",
+          "newReviews": 9,
+          "averageRating": "4.5"
+        },
+        {
+          "date": "2025-09-08",
+          "newReviews": 7,
+          "averageRating": "4.6"
+        },
+        {
+          "date": "2025-09-09",
+          "newReviews": 10,
+          "averageRating": "4.6"
+        },
+        {
+          "date": "2025-09-10",
+          "newReviews": 1,
+          "averageRating": "4.7"
+        },
+        {
+          "date": "2025-09-11",
+          "newReviews": 9,
+          "averageRating": "4.7"
+        },
+        {
+          "date": "2025-09-12",
+          "newReviews": 6,
+          "averageRating": "4.5"
+        },
+        {
+          "date": "2025-09-13",
+          "newReviews": 3,
+          "averageRating": "4.8"
+        },
+        {
+          "date": "2025-09-14",
+          "newReviews": 8,
+          "averageRating": "4.7"
+        },
+        {
+          "date": "2025-09-15",
+          "newReviews": 10,
+          "averageRating": "4.8"
+        },
+        {
+          "date": "2025-09-16",
+          "newReviews": 3,
+          "averageRating": "4.8"
+        },
+        {
+          "date": "2025-09-17",
+          "newReviews": 1,
+          "averageRating": "4.8"
+        },
+        {
+          "date": "2025-09-18",
+          "newReviews": 5,
+          "averageRating": "4.7"
+        },
+        {
+          "date": "2025-09-19",
+          "newReviews": 8,
+          "averageRating": "4.7"
+        },
+        {
+          "date": "2025-09-20",
+          "newReviews": 7,
+          "averageRating": "5.0"
+        },
+        {
+          "date": "2025-09-21",
+          "newReviews": 9,
+          "averageRating": "5.0"
+        },
+        {
+          "date": "2025-09-22",
+          "newReviews": 6,
+          "averageRating": "4.8"
+        },
+        {
+          "date": "2025-09-23",
+          "newReviews": 5,
+          "averageRating": "4.6"
+        },
+        {
+          "date": "2025-09-24",
+          "newReviews": 5,
+          "averageRating": "4.9"
+        },
+        {
+          "date": "2025-09-25",
+          "newReviews": 2,
+          "averageRating": "4.9"
+        },
+        {
+          "date": "2025-09-26",
+          "newReviews": 6,
+          "averageRating": "4.5"
+        },
+        {
+          "date": "2025-09-27",
+          "newReviews": 4,
+          "averageRating": "4.9"
+        },
+        {
+          "date": "2025-09-28",
+          "newReviews": 9,
+          "averageRating": "4.8"
+        }
+      ],
+      "velocity": 7,
+      "opportunities": []
+    },
+    "geographicExpansion": {
+      "currentCoverage": [
+        "berlin",
+        "munich"
+      ],
+      "potentialMarkets": [
+        {
+          "location": "frankfurt",
+          "score": 149.953,
+          "priority": "high"
+        },
+        {
+          "location": "hamburg",
+          "score": 73.118,
+          "priority": "medium"
+        },
+        {
+          "location": "cologne",
+          "score": 44.511,
+          "priority": "medium"
+        }
+      ],
+      "marketAnalysis": {
+        "hamburg": {
+          "marketSize": 78118,
+          "competition": 3,
+          "demand": "medium",
+          "potentialRevenue": 78,
+          "entryDifficulty": "medium",
+          "roi": 34
+        },
+        "cologne": {
+          "marketSize": 59511,
+          "competition": 4,
+          "demand": "medium",
+          "potentialRevenue": 59,
+          "entryDifficulty": "medium",
+          "roi": 29
+        },
+        "frankfurt": {
+          "marketSize": 119953,
+          "competition": 2,
+          "demand": "high",
+          "potentialRevenue": 239,
+          "entryDifficulty": "medium",
+          "roi": 23
+        }
+      },
+      "expansionOpportunities": [
+        {
+          "location": "frankfurt",
+          "opportunity": "Marktexpansion möglich",
+          "marketSize": 119953,
+          "expectedROI": "23 Monate"
+        }
+      ],
+      "risks": []
+    },
+    "aiForRankings": {
+      "keywordAnalysis": {
+        "Agri-Photovoltaik": {
+          "currentRank": 5,
+          "predictedRank": 1,
+          "confidence": "96.6",
+          "factors": [
+            "Content-Qualität",
+            "Backlink-Profil",
+            "Technical SEO",
+            "User Experience"
+          ],
+          "improvementPotential": 20
+        },
+        "Agri-PV Förderung": {
+          "currentRank": 8,
+          "predictedRank": 1,
+          "confidence": "76.5",
+          "factors": [
+            "Content-Qualität",
+            "Backlink-Profil",
+            "Technical SEO",
+            "User Experience"
+          ],
+          "improvementPotential": 20
+        },
+        "Agri-PV Kosten": {
+          "currentRank": 12,
+          "predictedRank": 5,
+          "confidence": "76.5",
+          "factors": [
+            "Content-Qualität",
+            "Backlink-Profil",
+            "Technical SEO",
+            "User Experience"
+          ],
+          "improvementPotential": 5
+        },
+        "Agri-PV Beratung": {
+          "currentRank": 3,
+          "predictedRank": 1,
+          "confidence": "86.4",
+          "factors": [
+            "Content-Qualität",
+            "Backlink-Profil",
+            "Technical SEO",
+            "User Experience"
+          ],
+          "improvementPotential": 16
+        },
+        "Photovoltaik Landwirtschaft": {
+          "currentRank": 15,
+          "predictedRank": 14,
+          "confidence": "83.8",
+          "factors": [
+            "Content-Qualität",
+            "Backlink-Profil",
+            "Technical SEO",
+            "User Experience"
+          ],
+          "improvementPotential": 17
+        }
+      },
+      "contentSuggestions": [
+        {
+          "keyword": "Agri-Photovoltaik",
+          "suggestion": "Erweitere Content um AI-generierte Insights",
+          "expectedImprovement": 20,
+          "type": "content_expansion"
+        },
+        {
+          "keyword": "Agri-PV Förderung",
+          "suggestion": "Erweitere Content um AI-generierte Insights",
+          "expectedImprovement": 20,
+          "type": "content_expansion"
+        },
+        {
+          "keyword": "Agri-PV Beratung",
+          "suggestion": "Erweitere Content um AI-generierte Insights",
+          "expectedImprovement": 16,
+          "type": "content_expansion"
+        },
+        {
+          "keyword": "Photovoltaik Landwirtschaft",
+          "suggestion": "Erweitere Content um AI-generierte Insights",
+          "expectedImprovement": 17,
+          "type": "content_expansion"
+        }
+      ],
+      "rankingPredictions": {
+        "Agri-Photovoltaik": {
+          "1month": 1,
+          "3months": 2,
+          "6months": 1,
+          "confidence": "65.0"
+        },
+        "Agri-PV Förderung": {
+          "1month": 7,
+          "3months": 1,
+          "6months": 7,
+          "confidence": "78.2"
+        },
+        "Agri-PV Kosten": {
+          "1month": 11,
+          "3months": 5,
+          "6months": 1,
+          "confidence": "72.2"
+        },
+        "Agri-PV Beratung": {
+          "1month": 2,
+          "3months": 1,
+          "6months": 1,
+          "confidence": "68.3"
+        },
+        "Photovoltaik Landwirtschaft": {
+          "1month": 15,
+          "3months": 11,
+          "6months": 14,
+          "confidence": "67.7"
+        }
+      },
+      "optimizationOpportunities": []
+    },
+    "technicalSEO": {
+      "crawlability": {
+        "https://zoe-solar.de/": {
+          "crawlable": true,
+          "statusCode": 200,
+          "loadTime": 1805,
+          "size": 1959550
+        },
+        "https://zoe-solar.de/agri-pv": {
+          "crawlable": true,
+          "statusCode": 404,
+          "loadTime": 2041,
+          "size": 1013043
+        },
+        "https://zoe-solar.de/foerderungen": {
+          "crawlable": true,
+          "statusCode": 200,
+          "loadTime": 2336,
+          "size": 1519041
+        }
+      },
+      "indexability": {
+        "https://zoe-solar.de/": {
+          "indexed": false,
+          "inSitemap": true,
+          "canonical": true,
+          "robotsMeta": "index,follow"
+        },
+        "https://zoe-solar.de/agri-pv": {
+          "indexed": true,
+          "inSitemap": true,
+          "canonical": true,
+          "robotsMeta": "index,follow"
+        },
+        "https://zoe-solar.de/foerderungen": {
+          "indexed": true,
+          "inSitemap": true,
+          "canonical": true,
+          "robotsMeta": "index,follow"
+        }
+      },
+      "mobileFriendliness": {
+        "https://zoe-solar.de/": {
+          "score": 98,
+          "issues": []
+        },
+        "https://zoe-solar.de/agri-pv": {
+          "score": 63,
+          "issues": [
+            "Viewport nicht gesetzt"
+          ]
+        },
+        "https://zoe-solar.de/foerderungen": {
+          "score": 76,
+          "issues": []
+        }
+      },
+      "pageSpeed": {
+        "https://zoe-solar.de/": {
+          "score": 75,
+          "fcp": 1375,
+          "lcp": 1183,
+          "cls": "0.062"
+        },
+        "https://zoe-solar.de/agri-pv": {
+          "score": 73,
+          "fcp": 946,
+          "lcp": 1698,
+          "cls": "0.062"
+        },
+        "https://zoe-solar.de/foerderungen": {
+          "score": 64,
+          "fcp": 508,
+          "lcp": 1342,
+          "cls": "0.177"
+        }
+      },
+      "issues": [],
+      "recommendations": [
+        {
+          "category": "performance",
+          "priority": "high",
+          "recommendation": "Core Web Vitals optimieren",
+          "impact": "Verbesserte Rankings"
+        },
+        {
+          "category": "mobile",
+          "priority": "high",
+          "recommendation": "Mobile-First Design implementieren",
+          "impact": "Bessere Mobile Rankings"
+        }
+      ]
+    },
+    "scaledAnalytics": {
+      "dashboards": {
+        "google_analytics": {
+          "metrics": [
+            "traffic",
+            "conversions",
+            "rankings",
+            "backlinks"
+          ],
+          "refreshRate": "hourly",
+          "alerts": [
+            "traffic_drop",
+            "ranking_loss",
+            "conversion_decline"
+          ],
+          "stakeholders": [
+            "seo_team",
+            "management",
+            "marketing"
+          ]
+        },
+        "search_console": {
+          "metrics": [
+            "traffic",
+            "conversions",
+            "rankings",
+            "backlinks"
+          ],
+          "refreshRate": "hourly",
+          "alerts": [
+            "traffic_drop",
+            "ranking_loss",
+            "conversion_decline"
+          ],
+          "stakeholders": [
+            "seo_team",
+            "management",
+            "marketing"
+          ]
+        }
+      },
+      "automatedReports": {
+        "google_analytics": {
+          "frequency": "weekly",
+          "recipients": [
+            "seo@zoe-solar.de",
+            "management@zoe-solar.de"
+          ],
+          "format": "pdf",
+          "metrics": [
+            "performance",
+            "opportunities",
+            "risks"
+          ]
+        },
+        "search_console": {
+          "frequency": "weekly",
+          "recipients": [
+            "seo@zoe-solar.de",
+            "management@zoe-solar.de"
+          ],
+          "format": "pdf",
+          "metrics": [
+            "performance",
+            "opportunities",
+            "risks"
+          ]
+        }
+      },
+      "alerts": {
+        "traffic": {
+          "threshold": -20,
+          "timeframe": "24h"
+        },
+        "rankings": {
+          "threshold": -5,
+          "timeframe": "7d"
+        },
+        "conversions": {
+          "threshold": -15,
+          "timeframe": "24h"
+        }
+      },
+      "integrations": {
+        "slack": {
+          "channels": [
+            "seo-alerts",
+            "performance"
+          ]
+        },
+        "email": {
+          "templates": [
+            "alert",
+            "report",
+            "opportunity"
+          ]
+        },
+        "api": {
+          "endpoints": [
+            "data-export",
+            "alert-webhook"
+          ]
+        }
+      },
+      "scalability": {
+        "currentUsers": 5,
+        "maxUsers": 50,
+        "dataRetention": "2years",
+        "apiRateLimit": 1000,
+        "automationCoverage": 85
+      }
+    },
+    "aiIndexing": {
+      "contentStructure": {
+        "headings": 0,
+        "paragraphs": 0,
+        "lists": 0,
+        "tables": 0,
+        "readability": -28
+      },
+      "semanticMarkup": {
+        "schemaOrg": false,
+        "jsonLd": false,
+        "microdata": false,
+        "rdfa": false
+      },
+      "entityOptimization": {
+        "entities": [
+          "ZOE Solar",
+          "Agri-Photovoltaik",
+          "Photovoltaik",
+          "Landwirtschaft"
+        ],
+        "relationships": [
+          {
+            "from": "ZOE Solar",
+            "to": "Agri-Photovoltaik",
+            "type": "offers"
+          },
+          {
+            "from": "Agri-Photovoltaik",
+            "to": "Landwirtschaft",
+            "type": "supports"
+          }
+        ],
+        "disambiguation": {
+          "score": 85,
+          "issues": []
+        }
+      },
+      "llmReadability": {
+        "sentenceLength": 3,
+        "wordComplexity": 75,
+        "structure": {
+          "hasIntroduction": false,
+          "hasConclusion": false,
+          "hasHeadings": false,
+          "hasLists": false
+        },
+        "engagement": {
+          "questions": 0,
+          "examples": 1,
+          "statistics": 0,
+          "callsToAction": 0
+        }
+      },
+      "recommendations": [
+        {
+          "type": "markup",
+          "priority": "high",
+          "recommendation": "JSON-LD Schema Markup hinzufügen",
+          "impact": "Bessere AI-Verständlichkeit"
+        }
+      ]
+    },
+    "personalization": {
+      "userSegments": {
+        "newVisitors": {
+          "criteria": "first_visit",
+          "content": "educational"
+        },
+        "returningVisitors": {
+          "criteria": "visit_count > 3",
+          "content": "advanced"
+        },
+        "leads": {
+          "criteria": "contact_form_submitted",
+          "content": "conversion"
+        },
+        "customers": {
+          "criteria": "purchase_completed",
+          "content": "retention"
+        }
+      },
+      "contentVariants": {
+        "headlines": [
+          "Professionelle Agri-Photovoltaik Lösungen",
+          "Agri-PV für moderne Landwirtschaft",
+          "Zukunftssichere Energie für Ihren Betrieb"
+        ],
+        "ctas": [
+          "Kostenlose Beratung anfordern",
+          "Jetzt Angebot erhalten",
+          "Termin vereinbaren"
+        ],
+        "contentBlocks": {
+          "beginner": "Einführung in Agri-Photovoltaik...",
+          "advanced": "Technische Details und Optimierungen...",
+          "expert": "Fortgeschrittene Strategien und ROI-Analysen..."
+        }
+      },
+      "personalizationRules": {
+        "locationBased": {
+          "rule": "user_location",
+          "variants": {
+            "germany": "Deutsche Förderungen hervorheben",
+            "austria": "Österreichische Standards betonen",
+            "switzerland": "Schweizer Qualitätsstandards"
+          }
+        },
+        "behaviorBased": {
+          "rule": "time_on_page > 60",
+          "action": "Zeige detaillierte technische Informationen"
+        },
+        "deviceBased": {
+          "rule": "device_type",
+          "variants": {
+            "mobile": "Vereinfachte Navigation und CTAs",
+            "desktop": "Komplexere Inhalte und Interaktionen"
+          }
+        }
+      },
+      "performance": {
+        "conversionRate": 0,
+        "engagementRate": 0,
+        "personalizationImpact": 0,
+        "abTestResults": {}
+      },
+      "recommendations": [
+        {
+          "type": "implementation",
+          "priority": "high",
+          "recommendation": "Real-time Personalization Engine implementieren",
+          "impact": "25% höhere Conversion-Rate"
+        },
+        {
+          "type": "content",
+          "priority": "medium",
+          "recommendation": "Content-Varianten für verschiedene User-Segmente erstellen",
+          "impact": "Bessere User Experience"
+        }
+      ]
+    },
+    "multiPlatform": {
+      "platformStrategies": {
+        "google": {
+          "keywords": [
+            "Agri-Photovoltaik",
+            "Agri-PV Förderung",
+            "Agri-PV Kosten",
+            "Agri-PV Beratung",
+            "Photovoltaik Landwirtschaft"
+          ],
+          "contentTypes": [
+            "blog",
+            "landing_page",
+            "product_page"
+          ],
+          "postingSchedule": "content-focused, no specific schedule",
+          "optimizationRules": [
+            "SEO titles",
+            "meta descriptions",
+            "internal linking"
+          ]
+        },
+        "youtube": {
+          "keywords": [
+            "Agri-Photovoltaik",
+            "Agri-PV Förderung",
+            "Agri-PV Kosten",
+            "Agri-PV Beratung",
+            "Photovoltaik Landwirtschaft"
+          ],
+          "contentTypes": [
+            "educational_video",
+            "tutorial",
+            "case_study"
+          ],
+          "postingSchedule": "2-3 videos per week",
+          "optimizationRules": [
+            "video titles",
+            "thumbnails",
+            "descriptions",
+            "tags"
+          ]
+        },
+        "instagram": {
+          "keywords": [
+            "Agri-Photovoltaik",
+            "Agri-PV Förderung",
+            "Agri-PV Kosten",
+            "Agri-PV Beratung",
+            "Photovoltaik Landwirtschaft"
+          ],
+          "contentTypes": [
+            "carousel",
+            "reel",
+            "story",
+            "static_post"
+          ],
+          "postingSchedule": "daily posts, stories multiple times",
+          "optimizationRules": [
+            "hashtags",
+            "captions",
+            "posting times"
+          ]
+        },
+        "linkedin": {
+          "keywords": [
+            "Agri-Photovoltaik",
+            "Agri-PV Förderung",
+            "Agri-PV Kosten",
+            "Agri-PV Beratung",
+            "Photovoltaik Landwirtschaft"
+          ],
+          "contentTypes": [
+            "article",
+            "poll",
+            "video",
+            "carousel"
+          ],
+          "postingSchedule": "3-5 posts per week",
+          "optimizationRules": [
+            "professional tone",
+            "industry insights",
+            "engagement"
+          ]
+        }
+      },
+      "contentSyndication": {
+        "rules": [
+          {
+            "trigger": "blog_post_published",
+            "actions": [
+              "create_linkedin_post",
+              "create_twitter_thread",
+              "create_facebook_post"
+            ]
+          },
+          {
+            "trigger": "video_uploaded",
+            "actions": [
+              "create_youtube_description",
+              "create_instagram_reel",
+              "create_tiktok_clip"
+            ]
+          }
+        ],
+        "automation": {
+          "enabled": true,
+          "platforms": [
+            "google",
+            "youtube",
+            "instagram",
+            "linkedin"
+          ],
+          "scheduling": "immediate"
+        }
+      },
+      "crossPlatformOptimization": {
+        "keywordMapping": {
+          "Agri-Photovoltaik": {
+            "google": true,
+            "youtube": false,
+            "instagram": false,
+            "linkedin": false
+          },
+          "Agri-PV Förderung": {
+            "google": true,
+            "youtube": false,
+            "instagram": true,
+            "linkedin": true
+          },
+          "Agri-PV Kosten": {
+            "google": false,
+            "youtube": true,
+            "instagram": false,
+            "linkedin": true
+          },
+          "Agri-PV Beratung": {
+            "google": false,
+            "youtube": true,
+            "instagram": false,
+            "linkedin": false
+          },
+          "Photovoltaik Landwirtschaft": {
+            "google": false,
+            "youtube": false,
+            "instagram": true,
+            "linkedin": false
+          }
+        },
+        "contentReuse": {
+          "blog_to_social": 80,
+          "video_to_blog": 60,
+          "social_to_video": 40
+        },
+        "brandConsistency": {
+          "hashtags": [
+            "#AgriPV",
+            "#ZOE Solar",
+            "#NachhaltigeEnergie"
+          ],
+          "messaging": "Konsistente Value Propositions"
+        }
+      },
+      "performanceTracking": {
+        "metrics": {
+          "reach": "Impressions über alle Plattformen",
+          "engagement": "Interaktionen und Shares",
+          "conversions": "Cross-Platform Attribution",
+          "roi": "Revenue pro Plattform"
+        },
+        "dashboards": {
+          "unified": "Einheitliches Dashboard für alle Plattformen",
+          "platformSpecific": "Detaillierte Plattform-Analysen"
+        }
+      },
+      "automationRules": [
+        {
+          "rule": "high_performing_content",
+          "condition": "engagement_rate > 5%",
+          "action": "syndicate_to_additional_platforms"
+        },
+        {
+          "rule": "trending_topic",
+          "condition": "keyword_trend = up",
+          "action": "create_content_variant"
+        },
+        {
+          "rule": "platform_performance_drop",
+          "condition": "engagement_rate < baseline - 20%",
+          "action": "optimize_content_strategy"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "totalMonitoringPoints": 15,
+    "opportunitiesIdentified": 9,
+    "issuesFound": 0,
+    "recommendationsGenerated": 7
+  }
+}

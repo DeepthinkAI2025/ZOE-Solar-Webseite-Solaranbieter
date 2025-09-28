@@ -1,0 +1,693 @@
+[
+  {
+    "manufacturer": "byd",
+    "product": "BYD Battery-Box Premium HVS/HVM",
+    "candidates": []
+  },
+  {
+    "manufacturer": "byd",
+    "product": "BYD Cube Energy Storage System",
+    "candidates": [
+      {
+        "url": "https://sg.byd.com/wp-content/uploads/2021/07/Combined-Brochure-less-mini-ess.pdf",
+        "title": "[PDF] BYD-Cube",
+        "snippet": "Energy (BOL)@FAT 2580kWh 2590kWh 2600kWh 2600kWh DC Energy at Full Power (BOL)@FAT 2450kWh 2590kWh 2600kWh 2600kWh Battery Voltage Range 957.6～1231.2V 957.6～1231.2V 957.6～1231.2V 957.6～1231.2V Nominal Power 2480kW 1245kW 830kW 625kW General Data Dimensions of ESS (W×D×H) 9800×1700×2645mm 9800×1700×2645mm 9800×1700×2645mm 9800×1700×2645mm Weight of ESS 28800kg 28800kg 28800kg 28800kg Ingress Protection Rating IP55 IP55 IP55 IP55 Operating Temperature Range -30℃～+55℃【1】 -30℃～+55℃【1】 -30℃～+55℃【1】 [...] 232kWh 236kWh Nominal voltage 400V 400V Voltage range 360～440V 360～440V Nominal grid frequency 50Hz 50Hz Grid frequency range 47～52Hz 47～52Hz Power factor 1 lagging～1 leading 1 lagging～1 leading Max. THD of current ＜3% (@nominal power) ＜3% (@nominal power) DC component ＜0.5% (@nominal power) ＜0.5% (@nominal power) Isolation method Transformer-less Transformer-less General Data Dimensions of ESS unit (WDH) Around 1690×1900×2300 Around 1690×1720×2300 Weight of ESS unit About 3110kg About 2970kg [...] 深圳市坪山区坑梓街道坪山大道6531号 邮编：518122 电话:0755 8988 8888-55724 标称电压 51.2 V 工作电压范围 40~57.6V 宽度 482.6mm 高度 130mm 深度 400mm 输出端子规格 M6 净重 39.5±0.5 kg 初始容量 ≥100 Ah，25±3℃ at0.2C 标准充电电流 20 A 最大持续充电电流 100 A，At 25℃ 标准放电电流 20 A 最大持续放电电流 100 A，At 25℃ 放电直流内阻 ≤20 mΩ，1.5C 30S, 25%SOC at 25℃ ≤3%，25±3℃ 25%SOC 28 day ≤5%，25±3℃ 25%SOC 90 day 充电温度范围 0~60℃ 放电温度范围 -20~60℃ 工作湿度范围 5%-95% RH 工作海拔 ＜3000m 认证 IEC62619 /62368-1、UN38.3、 EN300386-1、UL1642、UN38.3 IP等级 IP20 自放电 FM48100-TIE1 规格参数 FM48100-TIE1 FM48100-TIE1 is a 48V100Ah",
+        "score": 0.8412138,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://sg.byd.com/wp-content/uploads/2017/10/Energy-Storage-System.pdf",
+        "title": "[PDF] BYD Energy Storage System",
+        "snippet": "System Parameter. System Capacity: 2MW/5.32MWh. Project Location: Tibet, China. Completion Time: December, 2013. Owner: Longyuan Tibet New Energy. Company.",
+        "score": 0.7192461,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://en.byd.com/wp-content/uploads/2017/06/byd-utility-scale-ess-brochure-v20160520.pdf",
+        "title": "[PDF] byd-utility-scale-ess-brochure-v20160520.pdf",
+        "snippet": "The high efficiency of BYD energy storage system is ensured by the advanced Fe battery technology and the intelligent Battery Management. System. BYD self-",
+        "score": 0.6155738,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.byd.com/content/dam/byd-site/eu/support/service/warranty/en/BYD%20HAN%20Limited%20Warranty%20Manual-Europe%20and%20Israel-EN.pdf",
+        "title": "[PDF] LIMITED WARRANTY MANUAL - BYD",
+        "snippet": " Indirect damage or subsequent costs caused by product defects shall be handled in accordance with the substantive defect liability.\n All lead wire seals or sealant must be intact and not tampered with in any improper way. [...] (if any). [...] Customers are advised to consult the respective party for details of any warranty they may offer.",
+        "score": 0.6803909,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "abb",
+    "product": "ABB PVS-100-TL",
+    "candidates": [
+      {
+        "url": "https://library.e.abb.com/public/1f5ad0b0b679d5d4c1257dce002c8ab6/PVI-6.0_8.0_10.0_12.5-TL-OUTD-Product%20manual%20EN.pdf",
+        "title": "[PDF] Product manual PVI-6.0/8.0/10.0/12.5-TL-OUTD (6.0 to 12.5 kW) - ABB",
+        "snippet": "(AC output) Dimensions (H x W x D) 716mm x 645mm x 224mm / 28.2” x 25.4” x 8.8” Weight < 41 kg / 90.4 lb Assembly System Wall bracket Safety Safety class I Insulation level Without transformer (TL) Marking CE (50Hz only) Safety and EMC Standards EN62109-1, EN62109-2, AS/NZS3100, AS/NZS 60950, EN61000-6-2, EN61000-6-3, EN61000-3-11, EN61000-3-12 Grid Standard VDE 0126-1-1, VDE-AR-N 4105, G83/2, G59/3, C10/11, EN 50438 (not for all natio­ nal appendices), RD1699, AS 4777, ABNT NBR 16149, Not [...] ...........................................................................................................40 Installations above 2000 metres.\n...........................................................................................40 Installation position. [...] .............................................................99 Replacing the input fuses (version -FS)...........................................................................................100 Models equipped with fuse holder extractors......................................................................101 Models equipped with safety caps.\n......................................................................................101 Replacement of the buffer battery.",
+        "score": 0.528899,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://library.e.abb.com/public/96677d94e4f246ae9e792586be477a34/PVP_INVERTERS_Warranty_UAP.01255_revC.pdf",
+        "title": "Warranty conditions STANDARD, ASSURE and accessories",
+        "snippet": "This factory warranty is freely provided by ABB and does not prejudice in any way the inverter’s conditions of sale, including any warranty provided by a third party entity from which it has been purchased. [...] The STANDARD and accessory warranty programs are applicable in other installation countries.\nDuration of warranty The default warranty period for the STANDARD, ASSURE and accessories integrated into the inverter is 5 years starting from the installation/commissioning date but in any case not longer than +66 months from manufacturing date.\nThe default warranty period for accessories sold separately is 2 years starting from the manufacturing date. [...] −Non observance of documentation, including preventative maintenance − −Force majeure, including but not restricted to lightning, power surges, natural disasters and fires − −Returned inverter shows no fault after analysis − −Improper or no application of safety regulations − −Utilization in combination with equipment, items or materials not permitted by ABB documentation The warranty exclusion may be discovered by the warranty holder, by the technician in the field or during the repair of the",
+        "score": 0.6266047,
+        "bucket": "other"
+      },
+      {
+        "url": "https://library.e.abb.com/public/f517fe1a89094eca8790631c3342b0bd/PVP%20Warranty%20service%20level%20agreements_Central_LBU_20150618.pdf",
+        "title": "[PDF] ABB central inverters PLUS, CORE and ULTRA warranty programs ...",
+        "snippet": "The STANDARD warranty agreement for ABB central inverters (Series PLUS, CORE and ULTRA) includes: − −Five (5) year parts warranty − −Repaired units / parts are typically ready to ship within ten (10) days at ABB repair center after reception − −The repair and material is covered during the warranty period − −Technical hotline for support and troubleshooting − −Accessibility to global field service and partner network for on-site troubleshooting (fees apply) ASSURE warranty In addition to the [...] The information set forth herein is a summation of, and subject to, the terms and conditions governing the purchase and sale of the product. Should there be any conflict between this document and the Terms and Conditions of Sale, the Terms and Conditions of Sale shall prevail. [...] Maintenance parts and consumables are not covered by warranty (i.e. Fans, fuses).\nOur product warranties, including coverage terms and warranty limitations, are set forth in the Product Terms and Conditions of Sale. For complete warranty coverage information, requirements and limitations relating to a specific product or service please refer to the contractual terms and conditions governing the purchase and sale of said product or service.",
+        "score": 0.6010557,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "abb",
+    "product": "ABB TRIO-20.0-TL-OUTD",
+    "candidates": [
+      {
+        "url": "https://library.e.abb.com/public/9ddffa465aa146bfa43bd0854abbcc81/TRIO-20.0-27.6-TL-US_Product_Manual.pdf?x-sign=bZY+m5OkAuRNgJzQObNZEfedw1KHd0tXJIoBZRy8OTH90IUbKk5fCBsU8QyaCszh",
+        "title": "[PDF] Product manual TRIO-20.0/27.6-TL-US (20.0 to 27.6 kW) - ABB",
+        "snippet": "This inverter is designed for outdoor use, but can be used indoors if installed to specified environmental and mounting parameters stated in this manual, and",
+        "score": 0.98538,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://library.e.abb.com/public/0532ff447707475da241d939627ff7dd/Addendum_Product-Manual-and-QIG_TRIO-20.0-27.6_NA.pdf?x-sign=INEGJpR8VSrFf4FupTcHRMTTuVBN7pCtReAUd2BGSG13kuswaa+pQGiuaBYiVYwW",
+        "title": "[PDF] Addendum - product manual and quick installation guide (QIG) - ABB",
+        "snippet": "The TRIO may be packaged with the new mounting bracket (see Figure 1 below) — (refer to page 25 of the current. TRIO manual or section 3 of the current TRIO QIG)",
+        "score": 0.96422,
+        "bucket": "installation"
+      }
+    ]
+  },
+  {
+    "manufacturer": "abb",
+    "product": "ABB TRIO-5.8-TL-OUTD",
+    "candidates": [
+      {
+        "url": "https://library.e.abb.com/public/66559a0e4ccf4563b23d0777bb9b9f72/Modbus_RTU_registers_map_for_TRIO_8.5(5.8)_TL_OUTD.pdf?x-sign=K110FZ1zDySb43+vTLpiyU0Np3Tv/sX/n/gHcG+W5mEwyum82wOppy+o2m2esJWM",
+        "title": "[PDF] Modbus RTU registers map for TRIO - ABB",
+        "snippet": "Version Registers Map - Inverter type supported 67 (‘C’) TRIO-5.8(8.5)-TL-OUTD - Output: 400 VAC 48 ‘0’ 51 ‘3’ 65 ‘A’ 3. Grid type (Country/Grid standard): Grid type Value Description 65 (‘A’) USA - UL1741 (-US model) 69 (‘E’) Germany - VDE0126 83 (‘S’) Spain - DR 1663/2000 73 (‘I’) Italy - ENEL DK 5950 85 (‘U’) UK - UK G83 75 (‘K’) Australia - AS 4777 70 (‘F’) France - VDE French Model 82 (‘R’) Ireland - EN50438 66 (‘B’) Belgium - VDE Belgium Model 79 (‘O’) Korea 71 (‘G’) Greece - VDE Greece [...] content description Unit Data type Notes 0100 1 Inverter - Start register Decimal Unsigned Integer Fixed Value: 4370 0101 1 Inverter - Map size Decimal Unsigned Integer Fixed Value: 72 0102 1 Inverter - Map Version - Major and minor version in numerical format Decimal Unsigned Integer Fixed Value: 02 0103 1 Inverter address Decimal Unsigned Integer 0104 1 Inverter - Serial number (SN0) Decimal (ASCII) Unsigned Integer Six bytes in write order: MSB........................................LSB SN0 [...] management; set fixed Q by percentage of Nominal Power (PNOM) in 1% steps -50 to 50 0 % Signed Integer Set a negative value for over-excited (capacitive injection) or a positive value for under-excited (inductive injection). Must be used with register 0190 0299 1 Setting register 0 to 1 1 Unsigned Integer 1 = enable use of reg 198 and 505 0 = disable use of reg 198 and 505 0300 1 Heartbeat counter 0 to 65535 0 Deci mal Unsigned Integer Increments every second. Resets to 0 automatically when",
+        "score": 0.67911536,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://library.e.abb.com/public/1f5ad0b0b679d5d4c1257dce002c8ab6/PVI-6.0_8.0_10.0_12.5-TL-OUTD-Product%20manual%20EN.pdf",
+        "title": "[PDF] Product manual PVI-6.0/8.0/10.0/12.5-TL-OUTD (6.0 to 12.5 kW) - ABB",
+        "snippet": "clude the wall installation bracket 645 mm 25.4” 224 mm 8.8” 716 mm 28.2” TRIO - 20 -000430AG 2 - Characteristics Bracket dimensions The wall mounting bracket dimensions are expressed in mm and inches 50.0 mm 1.96 in 8.0 mm 0.31 in 25.0 mm 0.98 in 7.0 mm 0.28 in 8.0 mm 0.31 in 1.5 mm 0.06 in 64.0 mm 2.52 in 257.5 mm 10.14 in 459.5 mm 18.09 in 515.0 mm 20.28 in 100.0 mm 3.94 in 315.0 mm 12.40 in 90.5 mm 3.56 in 55.5 mm 2.19 in - 21 -000431AG 2 - Characteristics Efficiency curves The equipment [...] (AC output) Dimensions (H x W x D) 716mm x 645mm x 224mm / 28.2” x 25.4” x 8.8” Weight < 41 kg / 90.4 lb Assembly System Wall bracket Safety Safety class I Insulation level Without transformer (TL) Marking CE (50Hz only) Safety and EMC Standards EN62109-1, EN62109-2, AS/NZS3100, AS/NZS 60950, EN61000-6-2, EN61000-6-3, EN61000-3-11, EN61000-3-12 Grid Standard VDE 0126-1-1, VDE-AR-N 4105, G83/2, G59/3, C10/11, EN 50438 (not for all natio­ nal appendices), RD1699, AS 4777, ABNT NBR 16149, Not [...] ................................................................................................................41 Wall mounting........................................................................................................................................42 Operations preparatory to PV generator connection.",
+        "score": 0.5694942,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://library.e.abb.com/public/96677d94e4f246ae9e792586be477a34/PVP_INVERTERS_Warranty_UAP.01255_revC.pdf",
+        "title": "[PDF] ABB solar inverters Warranty conditions STANDARD, ASSURE and ...",
+        "snippet": "This factory warranty is freely provided by ABB and does not prejudice in any way the inverter’s conditions of sale, including any warranty provided by a third party entity from which it has been purchased. [...] The STANDARD and accessory warranty programs are applicable in other installation countries.\nDuration of warranty The default warranty period for the STANDARD, ASSURE and accessories integrated into the inverter is 5 years starting from the installation/commissioning date but in any case not longer than +66 months from manufacturing date.\nThe default warranty period for accessories sold separately is 2 years starting from the manufacturing date. [...] −Non observance of documentation, including preventative maintenance − −Force majeure, including but not restricted to lightning, power surges, natural disasters and fires − −Returned inverter shows no fault after analysis − −Improper or no application of safety regulations − −Utilization in combination with equipment, items or materials not permitted by ABB documentation The warranty exclusion may be discovered by the warranty holder, by the technician in the field or during the repair of the",
+        "score": 0.6164054,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "abb",
+    "product": "ABB TRIO-50.0-TL-OUTD",
+    "candidates": [
+      {
+        "url": "https://library.e.abb.com/public/93b2934d819145da9d25ec33289b2004/TRIO-50.0-TL-OUTD-Product%20manual%20EN-RevB%28M000030BG%29.pdf?x-sign=5Cjehl1N5sRp45jME2JGSKrTtU3aPRcWQ4Nwx1uiw4pqv80feTIy6mhv9zfI4Ct9",
+        "title": "[PDF] Product manual TRIO-50.0-TL-OUTD (50 kW) - ABB",
+        "snippet": "1u®½.~^·-o·ççSår=bµyÎ'­T\\uÇîÓ=~§Ëëôx.(bz0Óy »Óeúh6¨nH> jf Ãs×iË´m&j@ 'I dÁIm1ý<-#.º ª¢ÃÙõmdÉÿ&YÓ%87tÃ²0¸Ù:¡D >®y´ÜÖ7h\\ñç/Äç±ÿ«ùÐ·wéÎöÖ[ÇßÎ>î®Þ¸óµ®øé½ßÓõÚ¶·úïë¨®ò³L¯\\¾ÿÙ¥7ÐµÍä| yyä ZU½|Í§uT ±©RUR ¯j7(­aãN3\"àà.µ[W®^Ñ~C29¤õ%Éñ©&¾i¡i±êsc)¡^®·6èõ±Ö×¢oZ7E¯Y¯úÝr xL\".x8\\à2NÅ pQ>¯23BêH=[.fð³¦NºF7iHèõ4`)ìn7:­m3hôWêË-1àÇ¹ ô°Q§K2& 84bVñ¸ÒÁ³!}Píj)ôHÜAÓ`éX  [+G©£ÞÿTxp:8nFjÞÔÙÔó¯t¿þûNØúUûÃåÕÛ[~äðÕ'Ä8Jç>}ç^JÿûÛÖÑY´ÿø½O~ÕL i¬¡«MÁdÃ.à [...] <1h-!jwDÕçõÐ$ÐVhLz=u;¾÷ÁÖõC¼=AÛ·aã{û;ÖõæZ¸?{úé¾³7÷Õ[OÖe¿bzÎ<{éì¿ÎËµ0W1\\U¦XÛe:A×§Ñ ô+ ò¦£+Øäî¤ ÎrÏ2¹/º\\_4·/ò\\7øÊ¿tuQÞZz²ò=GYB·Ð(ê×}7æ}ÚX»§¤T¶9xO)ó;j¨¸ª:ê´Ë[lÐñv=§(¡(.ÑÉmwúà3h¤dë>²×D\\p{ Ô£C}`ûÈ6dµ±!lrb2ÆÉ%äA[¸íË\\_à³v%ºd¦}Áíl¢§zRý×¡ÚLÒÿdìùPaªÆïzîDî?/\\_xõTûlÙ7®ÛwpÃú½¹ZÖ& [wnë¾í÷f2:þ/§/~|t¸m¿bT4êCkÚ7ÝHeQM²3ÙEìKlË ¢Ý­v  [...] ?¯8Ý#wÇ¢.uÀ·Å|^«¤­%¼\\VqiÙHª3Ã³:=ç~bhkÓQÐÞÒ±7fé80²l·®E|¢ç¶¥2÷®ÈNwÙLF` j@BÅÚAVw¸1Ô!\\_8)kzgjÌLK  åÖÏ2`­ê¦uÈ Ú/úýÜÿõ%zpH£2Îj?W<6¶o<ò<Ý¼\\»Ù­Y»{fÑ@KØÈrQeq&\\³L³\"@4ÅVèu<ÙO¶õýãeÐV÷ JÀß¬ÕAk6O`[9o^? 1Ûå\" 7¦PG¶Ã8SýLAÁþýÁ\\Ì»«(:«ÏÔ?Ãà&T¾ g©D\\w +ÄÙ{åYk¾$6¿½@�cïõº\\ÀÐm@ÛæP½)ÜK·nß¨÷þ¬ë6åA×Æ\\è&N·ìsÈ®Æÿ}´¯wyñèí4wñ«F®æ/ý§ù»÷qXoxÆ\\=ua½»?N?íÞ÷zhÛÖßÚ};zëL«¤îÎji;;%4jõw QåØ<¨3§°É0Îdm¿g}«ÚÖßª±] e\\~§s2¬<[ü¯1Ó £!ã&ÒÜ.",
+        "score": 0.8488849,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://library.e.abb.com/public/1f5ad0b0b679d5d4c1257dce002c8ab6/PVI-6.0_8.0_10.0_12.5-TL-OUTD-Product%20manual%20EN.pdf",
+        "title": "[PDF] Product manual PVI-6.0/8.0/10.0/12.5-TL-OUTD (6.0 to 12.5 kW) - ABB",
+        "snippet": "clude the wall installation bracket 645 mm 25.4” 224 mm 8.8” 716 mm 28.2” TRIO - 20 -000430AG 2 - Characteristics Bracket dimensions The wall mounting bracket dimensions are expressed in mm and inches 50.0 mm 1.96 in 8.0 mm 0.31 in 25.0 mm 0.98 in 7.0 mm 0.28 in 8.0 mm 0.31 in 1.5 mm 0.06 in 64.0 mm 2.52 in 257.5 mm 10.14 in 459.5 mm 18.09 in 515.0 mm 20.28 in 100.0 mm 3.94 in 315.0 mm 12.40 in 90.5 mm 3.56 in 55.5 mm 2.19 in - 21 -000431AG 2 - Characteristics Efficiency curves The equipment [...] (AC output) Dimensions (H x W x D) 716mm x 645mm x 224mm / 28.2” x 25.4” x 8.8” Weight < 41 kg / 90.4 lb Assembly System Wall bracket Safety Safety class I Insulation level Without transformer (TL) Marking CE (50Hz only) Safety and EMC Standards EN62109-1, EN62109-2, AS/NZS3100, AS/NZS 60950, EN61000-6-2, EN61000-6-3, EN61000-3-11, EN61000-3-12 Grid Standard VDE 0126-1-1, VDE-AR-N 4105, G83/2, G59/3, C10/11, EN 50438 (not for all natio­ nal appendices), RD1699, AS 4777, ABNT NBR 16149, Not [...] .......................................................................................................................50 Installation procedure for quick fit connectors.......................................................................52 Grid output connection (AC side).",
+        "score": 0.73642004,
+        "bucket": "installation"
+      }
+    ]
+  },
+  {
+    "manufacturer": "abb",
+    "product": "ABB UNO-DM-3.3-TL-PLUS",
+    "candidates": [
+      {
+        "url": "https://library.e.abb.com/public/9300aae6404f4cf88177cad3a380d6d3/UNO-DM-3.3-3.8-4.6-5.0-PLUS_BCD.00650_US_RevF.pdf?x-sign=/FAvcFQWsG+skZw+6cC3K6Rbk6nvlfagMXZJc1UqV2JrMbUHrB+/g+iudMhuTgI5",
+        "title": "— ABB string inverters UNO-DM-3.3/3.8/4.6/5.0-TL-PLUS- ...",
+        "snippet": "The new UNO-DM-PLUS single- phase inverter family, with power ratings from 3.3 to 5.0 kW, is the optimal solution for residential installations. One size fits",
+        "score": 0.98243,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://new.abb.com/docs/librariesprovider117/default-document-library/solar-inverters/uno-dm-1-2-2-0-3-3-4-0-4-6-5-0-plus_bcd-00647_hun_revf_print.pdf?sfvrsn=5fbad013_2",
+        "title": "[PDF] — ABB string inverterek UNO-DM-1.2/2.0/3.3/4.0/4.6/5.0-TL-PLUS ...",
+        "snippet": "1BÔ×Eµ+säíëtÃºEÉiðÝ&?t¼ý\\$pÓþ·'æÉÒäÎa2z5ËC¾ÄØÀó¹Ð²ÚPN¸É©10çíÑ8¯E.0YXx;ÖEÞ\\1rañ. bÝ!yXá¹ñZgú;G\\nçnÉØ¦SV¾gCÛi¬.`¤Ñ½ÞÓÌy\\_æ¼qØ\"Þ¿.U4U¹g)çDu¿teez9÷µåÞß}Þ¤HBbDMÜÐ'Ô´,«³áxªûöO©RTérgà\\ßrçá`ÇúèãÓðÒHZÆKÑ£ }O4ñÒfØã·¿,E ÒÇ.,Nñ<K©ñ¿Úà¢BÒJÝ 1©;Ì¯Y¥dfú8¿ó{²|ç©-èõt¢Ê }yS>ÎòÑÊòVeÎ5qD!¼ñ Á|D$Í[dªJRxÜßC2?ýy½¡\\¶<Xh�ð­øVÐñÇÇÝ­N³¯øÜfï¯ùº6OÆÐ«ßeTÊys 8&ùvÓYbõ¬:°Ã7¾Ú²{ÇÎÚö¶@«ßUZbúNEMME$ÙvºÝä.t=ë\\_fµ@ÁÑ÷C¶!0Ë0ó56¶QÄ\\}^£h+ [...] óÕ{CN[ F|Xdì[VÔÖ8ÇwÈÜÉíÁ`ÖWsn5sþ´¬é\\5ðhgNYkqÒfS´¹]2½C¨Ì µÌ]Fæ4#sfi±rwÈÎöÎ53?­dsI%XUFzb°# ®,ÓõÝfE¥µBp Hz:¤#¿]8üf¼óé|U%bYj½+w½×¾!àQT¿?ð½Ú#SÆk«ªÊùuu©HZüNÒ÷oÙA¥ÚÛá×+vlGÑ~)&ÆbÜjmÊSÐ6r-ë}aýÞÖQ¯®bÞè¯ÜgèïÍcçÒÈÖÙç¼ã\\O8g°ß!àð¼ÚÍÀx½\\_÷N,.|7ûÏKæºãØWç¶Ékýuá}2M^ó^ð%t Ù9lç.ë sÖä«ö£¥W0 ü¯h$mMüÊÞ#¹oÒ¦Ä%{½-2 ÈèEñy?&ï0>i«mµÇo>º¿ÃüÛÉúdéºïkÀ¼[¯Zkí3N­¡\\/oµË>kå1þÝaÕFÐzûµ/ouºÑ) [...] ðS4ÎvÒ¬ö­Ã!gPÊr2FÓ-ål!¯ãk2@·AN®³ræH9mO9ê\\_Ä} ~%ªà¾èÁýw²Øeº¹eª¤-j½¨ sD}¼A¹?Å¹ó�NgÑ³d¢«ÌR2Þ%sDbé²1z9ôÓÄ`/jbqnøUÑ}DÏ¾5µf«oC¶µÇàFÔ©T ÎÇ9&EÄ%bq=1®C§NÔ\\ô³ÐyäD:Qèðìqô¬ÄÀ3À!`ð(Æ\\_ùgäÏ=oB\\_£çjÈÉdg<|ðõAî|Mèlôó¼ã¹ð¼ ÀyÌ�Ý!åûÄÞ\\ðþå°]9äWDrÝÈqÈ¹½%×bëåÌk. ¶.ùF¹Ëuà9kä«°cX/¼\\0ÿ¬@ä¬¡«ÜÈBÃÆzcOì±¨ÆûA+UàwØïÃOí1ô\\_Õ8OXÆwÊàcèÿ}¤>õ¯r¹Oß¨8�ìÇØÓ#k­áã5×Ë[¾ñõ¯¥}Wk#lgøYØò¯­R§µ@æîuðFØÚh¶ñwëüWF;?7ìw{~áÃ:/gäû´ïqNìgÔ¡ï2¯°î0ßò",
+        "score": 0.74563974,
+        "bucket": "other"
+      },
+      {
+        "url": "https://library.e.abb.com/public/96677d94e4f246ae9e792586be477a34/PVP_INVERTERS_Warranty_UAP.01255_revC.pdf",
+        "title": "[PDF] ABB solar inverters Warranty conditions STANDARD, ASSURE and ...",
+        "snippet": "This factory warranty is freely provided by ABB and does not prejudice in any way the inverter’s conditions of sale, including any warranty provided by a third party entity from which it has been purchased. [...] The STANDARD and accessory warranty programs are applicable in other installation countries.\nDuration of warranty The default warranty period for the STANDARD, ASSURE and accessories integrated into the inverter is 5 years starting from the installation/commissioning date but in any case not longer than +66 months from manufacturing date.\nThe default warranty period for accessories sold separately is 2 years starting from the manufacturing date. [...] ABB solar inverters Warranty conditions STANDARD, ASSURE and accessories Valid from: August 1st 2016 Applicable products These warranty terms and conditions are applicable for the following ABB inverters: single and three phase string inverters, PRO, CENTRAL PLUS, ULTRA and accessories. Concerning the REACT product, these warranty terms and conditions are applicable only for REACT-UNO. REACT-BATT has a dedicated warranty T&C.",
+        "score": 0.66464967,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "panasonic",
+    "product": "EVERVOLT HIT Black VBHN325SA16",
+    "candidates": []
+  },
+  {
+    "manufacturer": "panasonic",
+    "product": "EVERVOLT HIT VBHN330SA17",
+    "candidates": [
+      {
+        "url": "https://ftp.panasonic.com/solar/datasheet/vbhn330sa17e_datasheet.pdf?fbclid=IwAR0FFb1uXDnCk0Pr86psk5uOQdYst9BN-ytnAROX1uxZLqGJ_spejIdqte0",
+        "title": "vbhn330sa17e_datasheet.pdf - Panasonic",
+        "snippet": "proof:pdf saved xmp.iid:318d93c0-6632-4930-b631-7ee3553cc57e 2016-02-24T16:30:33-05:00 Adobe Illustrator CC 2014 (Macintosh) / saved xmp.iid:1680e97d-0069-4428-910a-13a0310d040a 2017-04-10T16:11:20-04:00 Adobe Illustrator CC 2014 (Macintosh) / Adobe PDF library 11.00 endstream endobj 127 0 obj <>stream application/pdf HIT\\_Logo\\_pos 2017-05-01T09:52:33-04:00 2017-05-01T09:52:33-04:00 2017-04-18T17:08:20-04:00 Adobe Illustrator CC 2014 (Macintosh) uuid:1a4a3257-33ab-b742-9bea-43957b62c364 [...] ñéR2ÄMLÆ\\_UMobò?Éñ¼Zr|V-9\\_KÆ]Lø©r2ÄMPÆÿJQÎ÷¥ ¥eK qµe3ÿª?H¿áÌ«Ç×õÁnÿf¿jrë¼aà>§ðbèÿç<Ýèóý·%gHJÏq ´H¶ð&yc}¢(rDëé÷÷ÏX®½ê9ý¯\\u|µQ>þ¸õ-z!v±×ÅÆÏîbãGw±î]¬¿ëbý³ý»Øø·t±ñt±þÔÅú».ÖX[ßv±)FOgÆ7ýxjðáõjÙa-¶ÄÍ&³ýÁiF´QDö°±ªÑS0|z<¸sPNßÇ· ¾Õ¹íÌÌ£ÎûZ+­rßVÚºÆM¹]Å)µÊG]æÃæÉ7ÀO ÷ÕÅ¼&Z{±%WN[á¼Ë¼¥`æèÜËV'l¬¸¥½ ­\\øvÑRjXÝ ¤zÝ ¦ï¹o~ÛÓv¼4òthz&´ð§!ÖhDraçäÍ¦ÈL¤Eî%Äs·éWc^«·I ÑîÅcÄ¨tð~N,VÄÊ»ø¶Xý¬ó¢ZFÓ«'#Æø´`TQñ­87'¾ÜgM.Y¢ik¨Ø² v`HÊ \\¸ ö2²¥ÐÚb[¾îHéû²d¨ [...] ï:C1ú-Ã1B8VÄ¦PÓ°ÀEbè{¶øðùçqeAtúÃ×8\\DC9áÍAÊfËRî º¥aßJáw£\\_¹Üu\\­È1PÓü³ïqÛ¥æºõÈ9ìë ¡O0r SUE½ÍDQ5º14!©ºNSU@óQÔuª¨ë$MQ×iNE°TE]fi\\ ©ºNs\\ª¥\\ê:KUTÍ! i(úQ±�Hno·Æé9õ\\m§£3û :¹^QØ;Õêãq¯ò =À\\_Èîäì)Ã§4>é´ B¡»æ÷l¼Oß`©ðúþ¿¾Ödé­ñûÚ¿zR±?^ÅÆéëIµÇvËûñNÄm.óx)K¶fó«IÕXÞUä)\\ÌgHØªfQl�plÙn.'­ú ·`¾ix§ÖÉráE0óMòl3Ü©  £^rÑ,'Ïial¥NèÔVéur/Õ$VÈVeVK¥MgP å]øJæõÍº9S&$¨$g}&¹ûÎGÀ`9£Z¿zÜ jC(2¸Ó wgmtçQE?PÅCLÞu.ÑQrSÃ ô² úI¥H?ÁîÎ Xv\\ §Pí,j]ûwv²ì",
+        "score": 0.70287734,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "panasonic",
+    "product": "EVERVOLT HIT+ VBHN340SA17",
+    "candidates": [
+      {
+        "url": "https://ftp.panasonic.com/solar/datasheet/vbhn330sa17e_datasheet.pdf?fbclid=IwAR0FFb1uXDnCk0Pr86psk5uOQdYst9BN-ytnAROX1uxZLqGJ_spejIdqte0",
+        "title": "vbhn330sa17e_datasheet.pdf - Panasonic",
+        "snippet": "Æi²èr?YÏ¶¢²ú0)fc§°Ç°k#R�wS-k»«ðó-RsCÊ#Y'ªÁeñ¿hTÑ`kMY-/Hl!X·LaÜ¦BpïÖUÙ³ð\\_Òó±ºÊói¤çN][SçßëV4êá×ÿ·Cë¨0³O¦tÒÝ8qæek¨·²ZKf(hèº~t%'3¸´}ºUñ+/¾Õñ2®Á/7]àXK;qEòëö¶ÄL²w·p2}2kk«¶8R YSW;ÕåÛ@àýF¢58yMr\"£NsÊÔÚJ#3 Ä¤t»½0¤\\kù°MWoM »ãeáFÖlÒ·¥>=ü8§ÕÍ>]öi'XèA9ìfÔñaØWá%yöÒ=iè®ÉË(3qúr<ÛÜØÈk³º58Å:8å|Q=ú¡ ~6U]Ò5ÞcNbÉ|jgJç¤RËÞÊdR¶H¼ÉPlu5¸>Ó«zY²sgÝB}ÚÐgwçÜ;æé7U¨BUpæZþ `Oß#¯Iiq4¨ug.ü6Õ©öàÔÈ8\\Åo+ée0¶ÅehÊéêJÎ¨ý6  híé%4`]ëæ÷ª¾ú[ºLkïºþKÚ~»ÙA®ç/Q [...] ~ìò¹´ëæ>tAÓé£7fÌ9´çÐ-Ëüßg¸{QugI\\£py¹£3¢¸\\ØÉ¹äû¬Ö'ç¯½aÿ/³³éÐbAD¹ÓSÞfÖßbzsOöº:±N¡k£î i³#Î©ü»-}hß¶ÃM°Ü7Ý?e¿;¹Ü½\\_oKÝ°Ã3IÐÖÊ''l²M|.ÖGr/Vîu òvfL ¹À<ë@À4ÿ%ç}·c!¹Ð«öÅv;þ¦cQ×V)'F¤Ñ¡üÛ`ìa\\n- Õ2®¼%°vF¬N9R$|ùÈ wca5«ÐW3 í )HæðAñ i:cÿ^oXò+h] ²c44Y)8ø±xPiµòÑ ¿ ¥ÅcG.{õÍÞi­\\Û¼ r0²$dóAÙòSáÑëA.xØ&?X$&ëæ1¶NR ÈHù{Ùi­EA $o¼Dð5DóÅV\\æ\\_¤Åp]dÛ$8MøEm£/zqwìô¸8yyk<+° ©ËNùéäzäO-×#óc²¦e§|É¨^\\wLÌÛÆ [...] SÅRèSûª:lúJôDXUqf©4\"ýJ1UÉà%utVá,KåðÔU}q/TvZ­FÏöª\\_HS@¦ª\\ªxÀÞ¼i÷¢)z7uLHüÅm¦lÄñæ#÷6ïZ¿QÐ±iFï¦þUÉØp£-ÓLî&Ã¦w1ÎÄhÛqXÍ=$dZ,Pa6ºNVíÓsTµMrU÷¥r·íeFg½EU{§ Zëû|ZÌ;mÁl '­øÃÚØæ¾®AØòÇávï6·÷·¢3`J8Gç ³Òª vMhUE+E.¦\\ZÈ]Ön,ÉUeV<ÓÌE­3èþdpBELöqÍ8Ò=úä\\Xu@jUÍá1V«I[:jñ5)´¢&4µZ¢kqÐ Ú`@«OÚ$áÛû>  OMLÖ4{gÍÊmµÊ5 °%{R['|:³YI`ñzqe�«, »,.2[ Àt+ / ñbÝ¼áÕÊ~òª=ÒWqÛ'¯\"aÃúù?IØIwÄLN\"¤½3WmsA\"]{ò«ä£î¤ôê%¶¦à¼ÌÒ}»©½jk7áyéé}KÕ-éä¦-xäÆËEáeSU²ÑÍ�ÉM{Kï`lá·Iæº¾¦j6ÉHö õßÄWÛn\\×",
+        "score": 0.71425,
+        "bucket": "datasheets"
+      }
+    ]
+  },
+  {
+    "manufacturer": "panasonic",
+    "product": "HIT H350",
+    "candidates": [
+      {
+        "url": "https://help.na.panasonic.com/wp-content/uploads/2023/02/SCHTB350_HTB351_RQT9670_2P_ENG.pdf",
+        "title": "[PDF] Owner's Manual Home Theater Audio System - Panasonic",
+        "snippet": "≥ Attach the speaker foot directly below the wall mounting hole (as illustrated)..... Align the projecting parts on the speaker with support leg",
+        "score": 0.98542,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://help.na.panasonic.com/wp-content/uploads/2023/11/Warranty_Terms_PC_HC_10_2023.pdf",
+        "title": "[PDF] Limited Warranty (For USA Only) - Panasonic",
+        "snippet": "with a new or a refurbished equivalent value product, or (c) refund your purchase price. The decision to repair, replace or refund will be made by the warrantor. Product or Part Name Labor Parts Shavers, Trimmers, Beauty Care Products, Oral Care products 2 yrs. 2 yrs. Rechargeable Batteries 2 yrs. 2 yrs. USB Adapter 90 days 90 days During the “Labor” warranty period there will be no charge for labor. During the “Parts” warranty period, there will be no charge for parts. This Limited Warranty [...] Limited Warranty (For U.S.A. Only) Panasonic Products Limited Warranty Limited Warranty Coverage (For USA Only) If your product does not work properly because of a defect in materials or workmanship, Panasonic Consumer Electronics Corporation (referred to as “the warrantor”) will, for the length of the period indicated on the chart below, which starts with the date of original purchase (“warranty period”), at its option either (a) repair your product with new or refurbished parts, (b) replace it [...] REQUIRED TO FURNISH A SALES RECEIPT/PROOF OF PURCHASE INDICATING DATE OF PURCHASE, AMOUNT PAID AND PLACE OF PURCHASE. CUSTOMER WILL BE CHARGED FOR THE REPAIR OF ANY UNIT RECEIVED WITHOUT SUCH PROOF OF PURCHASE. Limited Warranty Limits and Exclusions This warranty ONLY COVERS failures due to defects in materials or workmanship, and DOES NOT COVER glass, plastic parts, temperature probes (if included) and normal wear and tear or cosmetic damage. The warranty ALSO DOES NOT COVER damages which",
+        "score": 0.5654673,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "panasonic",
+    "product": "HIT N340 Black",
+    "candidates": []
+  },
+  {
+    "manufacturer": "sonnen",
+    "product": "Sonnen ecoLinx",
+    "candidates": []
+  },
+  {
+    "manufacturer": "sonnen",
+    "product": "Sonnen sonnenBatterie 10",
+    "candidates": []
+  },
+  {
+    "manufacturer": "sonnen",
+    "product": "Sonnen sonnenBatterie 12",
+    "candidates": []
+  },
+  {
+    "manufacturer": "sonnen",
+    "product": "Sonnen sonnenBatterie 15",
+    "candidates": []
+  },
+  {
+    "manufacturer": "sonnen",
+    "product": "Sonnen sonnenBatterie 8",
+    "candidates": []
+  },
+  {
+    "manufacturer": "victron-energy",
+    "product": "Victron MultiPlus 12/3000/120",
+    "candidates": [
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-Multiplus-inverter-charger_2kVA-and-3kVA-120V-US-EN.pdf",
+        "title": "[PDF] MultiPlus Inverter/Chargers 2 kVA and 3 kVA - Victron Energy",
+        "snippet": "portal. Alarms can be received by e-mail or push notification. Victron Energy B.V. | De Paal 35 | 1351 JG Almere | The Netherlands E-mail: sales@victronenergy.com | www.victronenergy.com MultiPlus 12 Volt 24 Volt 12/2000/80 24/2000/50 12/3000/120 24/3000/70 PowerControl Yes PowerAssist Yes Transfer switch (A) 50 Parallel and 3-phase operation Yes INVERTER Input voltage range (VDC) 9,5 – 17 V 19 – 33 V Output Output voltage: 120 VAC ± 2 % Frequency: 60 Hz ± 0,1 % (1) Cont. output power at 25 ºC [...] Characteristics Operating temp. range: -40 - +65 °C / -40 to 150 °F (fan assisted cooling) Humidity (non-condensing): max 95% ENCLOSURE Common Characteristics Material & Colour: aluminium (blue RAL 5012) Protection category: IP 21 Battery-connection M8 bolts M8 bolts (2 plus and 2 minus connections) 120 V AC-connection Screw-terminal 6 AWG (13 mm²) Screw-terminal 6 AWG (13mm²) Weight 13 kg 25 lbs. 19kg 40 lbs. Dimensions (hxwxd in mm and inches) 520x255x125 mm 20.5x10.0x5.0 inch 362x258x218 mm [...] 14.3x10.2x8.6 inch STANDARDS Safety UL 458, EN-IEC 60335-1, EN-IEC 60335-2-29 UL 1741, UL 458, EN-IEC 60335-1, EN-IEC 60335-2-29 Emission and Immunity EN-IEC 61000-3-2/3-3/, EN-IEC 61000-6-1/6-2/6-3 EN-IEC 61000-3-2/3-3/, EN-IEC 61000-6-1/6-2/6-3 1) Can be adjusted to 50 HZ; 2) Protection key: a) output short circuit b) overload c) battery voltage too high d) battery voltage too low e) temperature too high f) 120 VAC on inverter output g) input voltage ripple too high 3) Non-linear load, crest",
+        "score": 0.79675186,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/MultiPlus-II_230V/32424-MultiPlus-II___Quattro-II-pdf-en.pdf",
+        "title": "[PDF] MultiPlus-II 230V (PDF) - Victron Energy",
+        "snippet": "Model Battery capacity DC fuse Cross-section per positive and negative terminal connection for cables between 0 and 5m , ,  Cross-section per positive and negative terminal connection for cables between 5 and 10m , ,  12/3000/120 400 - 1200Ah 400A 2x 50 mm2 2x 70 mm2 24/3000/70 200 - 700Ah 300A 50 mm2 95 mm2 48/3000/35 100 - 400Ah 125A 35 mm2 70 mm2 12/5000/220 600 - 2400Ah 600A 2x 95 mm2 2x 150 mm2 24/5000/120 400 - 1400Ah 400A 2x 50 mm2 2x 70 mm2 48/5000/70 200 - 800Ah 200A 70 mm2 120 mm2 [...] 2.3.5. More on batteries and battery charging Our book \"Energy Unlimited\" offers further information on batteries and battery charging and is available free of charge on our website. It can be downloaded from:  or a hard copy can be ordered from:  For more information on adaptive charging, please refer to the technical paper: Adaptive charging, how it works.\n2.4. ESS – Energy Storage Systems: feeding energy back into the grid Note that this is not applicable to the MultiPlus-II 12/3000/120-32. [...] V.",
+        "score": 0.74697095,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-MultiPlus-II-3kVA-2x120V-EN.pdf",
+        "title": "[PDF] \\ MultiPlus-II 2x120 V Inverter/Charger - Victron Energy",
+        "snippet": "12/3000/120-50 24/3000/70-50 PowerControl & PowerAssist Yes (on L1 input) Transfer switch 50 A Maximum AC input current 50A (each leg) INVERTER DC Input voltage range 9,5 – 17 V 19-33 V Output when in inverter mode Output voltage: 120 VAC ± 2 % Frequency: 60 Hz ± 0,1 % (1) Cont. output power at 25 °C (3) 3000 VA Cont. output power at 25 °C 2400 W Cont. output power at 40 °C 2200 W Cont. output power at 65 °C 1700 W Maximum apparent feed-in power 2500 VA Peak power 5500 W Maximum efficiency 93 % [...] input line (L1). Power needed to charge the batteries will therefore be drawn from L1. The MultiPlus switches to inverter operation when no AC source is available. The inverter output is 120 V single phase. In invert mode, the MultiPlus connects both output lines (L1 and L2) together to provide 120 VAC to loads on either line. Any 240 V loads will therefore be supplied only when the MultiPlus is supplied by a split phase AC source. This prevents heavy loads such as water heaters or 240 V air [...] (hxwxd) 578 x 275 x 148 mm (23 x 11 x 6 inch) 578 x 275 x 148 mm (23 x 11 x 6 inch) STANDARDS Safety EN-IEC 60335-1, EN-IEC 60335-2-29, UL 458 Emission, Immunity EN 55014-1, EN 55014-2 EN-IEC 61000-3-2, EN-IEC 61000-3-3 IEC 61000-6-1, IEC 61000-6-2, IEC 61000-6-3 1) Can be adjusted to 50 Hz 2) Protection key: a) output short circuit b) overload c) battery voltage too high d) battery voltage too low e) temperature too high f) 120 VAC on inverter output g) input voltage ripple too high 3)",
+        "score": 0.74161834,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-MultiPlus-II-120V-EN.pdf",
+        "title": "[PDF] \\ MultiPlus-II Inverter/Charger - Victron Energy",
+        "snippet": "Battery-connection M8 bolts 120 VAC-connection 13 mm² (6 AWG) 13 mm² (6 AWG) 13 mm² (6 AWG) 35 mm² (2 AWG) 35 mm² (2 AWG) Weight 19 kg / 42 lb 19 kg / 42 lb 19 kg / 42 lb 29 kg / 64 lb 32 kg / 71 lb Dimensions (hxwxd) mm / inch 578 x 277 x 148 22.8 x 10.9 x 5.8 536 x 277 x 147 21.1 x 10.9 x 5.8 572 x 277 x 147(7) 22.5 x 10.9 x 5.8(7) 627 x 350 x 150 24.7 x 13.8 x 5.9 676 x 330 x 164 26.6 x 13.0 x 6.5 STANDARDS Listings UL458 UL458 UL1741 - UL1741 Safety EN-IEC 60335-1, EN-IEC 60335-2-29, CSA [...] be taken into account by the PowerControl and PowerAssist function in order to limit AC input current to a safe value when AC power is available. Connection area 12/3000/120-50 Victron Energy B.V. | De Paal 35 | 1351 JG Almere | The Netherlands E-mail: sales@victronenergy.com | www.victronenergy.com MultiPlus-II 120V 12/3000/120-50 24/3000/70-50 48/3000/35-50 24/5000/120-95 48/5000/70-95 PowerControl & PowerAssist Yes Transfer switch 50A 50A 50A 95A 95A Maximum AC input current 50A 50A 50A 95A [...] 22.2 107.1-16 Emission, Immunity EN 55014-1, EN 55014-2 EN-IEC 61000-3-2, EN-IEC 61000-3-3 IEC 61000-6-1, IEC 61000-6-2, IEC 61000-6-3 1) Protection key: a) output short circuit b) overload c) battery voltage too high d) battery voltage too low e) temperature too high f) 120 VAC on inverter output g) input voltage ripple too high 2) Non-linear load, crest factor 3:1 3) Up to 75°F / 25 °C ambient 4) Switches off when no external AC source available 5) Programmable relay which can be set for",
+        "score": 0.71496695,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Manual-MultiPlus-3k-120V-(firmware-xxxx4xx)-EN.pdf",
+        "title": "[PDF] Manual - Victron Energy",
+        "snippet": "output power at 65°C / 150°F (W) 1700 1700 Peak power (W) 6000 6000 Maximum efficiency (%) 93 94 Zero-load power (W) 20 20 Zero-load power in AES mode (W) 15 15 Zero-load power in Search mode (W) 8 10 CHARGER AC Input Input voltage range: 95-140VAC Input frequency: 45 – 65Hz Power factor: 1 Charge voltage 'absorption' (V DC) 14,4 28,8 Charge voltage 'float' (V DC) 13,8 27,6 Storage mode (V DC) 13,2 26,4 Charge current house battery (A) (4) 120 70 Charge current starter battery (A) 4 Battery temperature sensor Yes GENERAL Auxiliary output Max. 32A Switches off when no external AC source available Programmable relay (5) Yes, 3x Protection (2) a - g VE.Bus communication port For parallel and three phase operation, remote monitoring and system integration General purpose comm.",
+        "score": 0.9859,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/MultiPlus-II_120V/32424-MultiPlus-II___Quattro-II-pdf-en.pdf",
+        "title": "[PDF] Manual - MultiPlus-II 120V",
+        "snippet": "Use, for example, to communicate with a Lithium-Ion battery BMS MultiPlus-II 120V 24/5000/120-95 48/5000/70-95 PowerControl & PowerAssist Yes Transfer switch 95A Maximum AC input current 95A INVERTER DC Input voltage range 19 - 33V 48V Output in inverter mode Output voltage: 120VAC ± 2% Frequency: 60Hz ± 0,1% Continuous output power at 25°C (2) 5000VA Continuous output power at 25°C 4000VA Continuous output power at 40°C 3700VA Continuous output power at 65°C 3000VA Peak power 9000VA Maximum efficiency 95% 96% Zero load power 24W 19W Zero load power in AES mode 10W 10W Zero load power in Search mode 3W 3W CHARGER AC Input Single phase: 90-140VAC 45-65Hz Charge voltage 'absorption' 28.8V 57.6V Charge voltage 'float' 27.6V 55.2V Storage mode 26.4V 52.8V Maximum battery charge current (3) 95A 70A Battery temperature sensor Yes GENERAL Auxiliary output (4) 43A 48A MultiPlus-II 120V Page 27 Technical specifications MultiPlus-II 120V 24/5000/120-95 48/5000/70-95 External AC current sensor (optional) 100A Programmable relay (5) Yes Protection (1) a – g VE.Bus communication port For parallel, split phase and three phase operation, remote monitoring and system integration General purpose com.",
+        "score": 0.98346,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/User-Manual-MultiPlus-3k-120V-(firmware-xxxx4xx)-EN-ES.pdf",
+        "title": "[PDF] User Manual - Victron Energy",
+        "snippet": "The MultiPlus can supply a huge charging current. This implies heavy loading of the shore connection or generator set. Therefore a maximum current can be",
+        "score": 0.98263,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/US-Van-Manual-&-Drawing-VEBus-BMS-V2-MultiPlus-II-3kVA-12V-120V-60Hz.pdf",
+        "title": "[PDF] US Van Manual & Drawing VEBus BMS V2 MultiPlus-II 3kVA 12V ...",
+        "snippet": "This system uses a 3kVA MultiPlus-II, Li battery, VE.Bus BMS V2, SmartShunt MPPT, and OrionTr for charging via AC, solar, and engine, typically for US vans.",
+        "score": 0.96866,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Service-Manual-MultiPlus-3k-120V-(firmware-xxxx4xx)-EN-ES.pdf",
+        "title": "[PDF] Service Manual - Victron Energy",
+        "snippet": "Reduced peak capacity, or shutdown of the inverter. • Never position the appliance directly above the batteries. The MultiPlus is suitable for wall mounting.",
+        "score": 0.96037,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Van_Motorhome-Manual-&-Drawing-3-monitoring-setups-MultiPlus-3kVA-12V-230V-50Hz-Drop-in-Li.pdf",
+        "title": "[PDF] Van/Motorhome Manual & Drawing 3 monitoring setups MultiPlus ...",
+        "snippet": "The manual shows 3 monitoring setups for a 3kVA 12V MultiPlus system with 300Ah lithium batteries, using 12V/230V/50Hz, with different control and monitoring",
+        "score": 0.95881,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-MultiPlus-II-inverter-charger-EN.pdf",
+        "title": "[PDF] \\ MultiPlus-II Inverter/Charger - Victron Energy",
+        "snippet": "output power at 65 °C 1700 W 3000 W 4000 W 6000 W 7000 W Max apparent feed-in power 3000 VA 5000 VA 8000 VA 10000 VA 15000 VA Peak power 5500 W 9000 W 15000 W 18000 W 27000 W Maximum efficiency 93%/94%/95% 95%96%/96% 95% 96% 95% Zero load power 13 / 13 / 11 W 15/18/18 W 29 W 38 W 55 W Zero load power in AES mode 9 / 9 / 7 W 11/12/12 W 19 W 27 W 39 W Zero load power in Search mode 3 / 3 / 2 W 3 / 3 / 2 W 3 W 4 W 6 W CHARGER AC Input Input voltage range: 187-265 VAC Input frequency: 45 – 65 Hz Charge voltage 'absorption' 14,4 / 28,8 / 57,6 V Charge voltage 'float' 13,8 / 27,6 / 55,2 V Storage mode 13,2 / 26,4 / 52,8 V Max. battery charge current (4) 120 /70 / 35 A 220/120/ 70 A 110 A 140 A 200 A Battery temperature sensor Yes GENERAL Auxiliary output Yes (32 A) Yes (50 A) External AC current sensor (optional) 50 A or 100 A Programmable relay (5) Yes Protection (2) a – g VE.Bus communication port For parallel and three phase operation, remote monitoring and system integration General purpose com.",
+        "score": 0.95281,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Quick-Install-Guide-MultiPlus-II-48V-3000VA-120Vac-EN.pdf",
+        "title": "[PDF] Quick Install Guide - MultiPlus-II 48V 3000VA 120Vac - Victron Energy",
+        "snippet": "www.victronenergy.com Quick Installation Guide MultiPlus-II 48V 3000VA 120Vac Rev.00 10 PH2 8 Ferrule pin/stripping length and insertion 0.7inch(18mm) CAUTION! [...] to the user manual Fuse (not included) Battery Battery Cable -Battery Cable + AC-IN AC-OUT 1 UTP-Cable Remote control E F H I L N Current Transformer J G Not included O AC-OUT 2 M V-sense K Included A D (5x) C B (T-sense) [...] 1inch(25.4mm) N PE L AC-IN 9 N PE L AC-OUT 1 L N PE L AC-OUT 2 3.5 e.g. PHOENIX ST-BW 1207608 or M N 7 I 10 6 O 5 H J B (T-sense) K (V-sense) 4 G F 13 3 2 3 4 5 8 6 7 7a 7b 7c 7d 6a 6b 6c 6d 6e 6f 6g 6h 1 Terminals explanation Read the manual 1 - Push button A 2 - Remote On/Off 3,4 - VE.Bus 5 - Current Sense 6 - a,b (+,-) K1 c,d (+,-) Ext. GND e,f (+,-) Aux2 g,h (+,-) Aux1 7 - a,b (+,-) T-Sense c,d (+,-) V-Sense 8 - Aux Relay 2 1 1 A D C PH2 1 I >100mm >100mm >100mm E A For fuse values: refer",
+        "score": 0.71040785,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Quick-Install-Guide-MultiPlus-12V-24V-48V-3000VA-50A-EN_outlines.pdf",
+        "title": "[PDF] Quick Install Guide - MultiPlus 12V 24V 48V 3000VA 50A - rev 01",
+        "snippet": "Quick Installation Guide. MultiPlus 12V 24V 48V 3000VA 50A 230Vac. 0 0 0 0 0 0 0 0 0 0. J J. Victron energy ... refer to the user manual. Fuse (not included).",
+        "score": 0.69795954,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/Manuals/PhoenixMulti/UKISM010054000-rev00.pdf",
+        "title": "[PDF] Phoenix Multi 12/1600/70 12/2500/120 24/1600/40 24/3000/70 ...",
+        "snippet": "1 GB NL F D Appendix INSTALLATION MANUAL INSTALLATIEHANDLEIDING MANUEL D'INSTALLATION INSTALLATIONSANLEITUNG Phoenix Multi 12/1600/70 12/2500/120 24/1600/40 24/3000/70 Phoenix MultiPlus 12/2500/120 24/3000/70 Phoenix Inverter 12/1600 12/2500 24/1600 24/3000 Copyrights  2003 Victron Energy B.V. All Rights Reserved This publication or parts thereof, may not be reproduced in any form, by any method, for any purpose. For conditions of use and permission to use this manual for publication in other [...] Victron Energy, in conjunction with a connection diagram. Parallel connection requires compliance with the following conditions: • No more than five units should be connected in parallel. • Only identical models should be connected in parallel. • Ensure sufficient battery capacity is available. • The prescribed cable cross sections (between battery and distribution point) must be multiplied with the number of appliances to be connected in parallel. • Position the products close to each other [...] product should be installed by a qualified electrician 1.1 Box Contents • Phoenix Multi, MultiPlus, or Inverter • User manual. • Installation manual. • Bag containing connection items, i.e.: • Temperature sensor. • Fuse (Mega fuse). • Four M8 nuts. • Four M8 washers. • Four M8 spring washers. • Charging current warning sticker. 1.2 Location The product must be installed in a dry and well-ventilated area, as close as possible to the batteries. There should be a clear space of at least 10 cm",
+        "score": 0.6688159,
+        "bucket": "installation"
+      }
+    ]
+  },
+  {
+    "manufacturer": "victron-energy",
+    "product": "Victron MultiPlus 24/3000/70",
+    "candidates": [
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-MultiPlus-inverter-charger-800VA-5kVA-EN.pdf",
+        "title": "[PDF] Datasheet-MultiPlus-inverter-charger-800VA-5kVA-EN.pdf",
+        "snippet": "www.victronenergy.com v\\ . MultiPlus Compact 12/2000/80 MultiPlus 24/3000/70 Two AC Outputs The main output has no break functionality. The MultiPlus takes over the supply to the connected loads in the event of a grid failure or when shore/generator power is disconnected. This happens so fast (less than 20 milliseconds) that computers and other electronic equipment will continue to operate without disruption. The second output is live only when AC is available on the input of the MultiPlus. [...] C 12/1200/50 C 24/1200/25 C 12/1600/70 C 24/1600/40 C 12/2000/80 C 24/2000/50 12/3000/120 24/3000/70 48/3000/35 24/5000/120 48/5000/70 Nominal Battery voltage 12 V battery 24 V battery 12 V battery 24 V battery 12 V battery 24 V battery 12 V battery 24 V battery 12 V battery 24 V battery 48 V battery 24 V battery 48 V battery PowerControl Yes Yes Yes Yes Yes Yes PowerAssist Yes Yes Yes Yes Yes Yes AC input Input voltage range: 187-250 V Input frequency: 50/60 Hz Cos Φ >0.8 Transfer switch (A) [...] a. Yes (16A) Yes (50A) Programmable relay (6) Yes Protection (2) a - g VE.Bus communication port For parallel and three phase operation, remote monitoring and system integration General purpose com. port n. a. n. a. n. a. n. a. Yes Yes Remote on-off Yes Common Characteristics Operating temp. range: -40 to +65 °C (fan assisted cooling) Humidity (non-condensing): max 95 % Maximum altitude 2000 m. ENCLOSURE Common Characteristics Material & Colour: aluminium (blue RAL 5012), Protection category:",
+        "score": 0.80771893,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-Multiplus-inverter-charger_2kVA-and-3kVA-120V-US-EN.pdf",
+        "title": "[PDF] MultiPlus Inverter/Chargers 2 kVA and 3 kVA - Victron Energy",
+        "snippet": "portal. Alarms can be received by e-mail or push notification. Victron Energy B.V. | De Paal 35 | 1351 JG Almere | The Netherlands E-mail: sales@victronenergy.com | www.victronenergy.com MultiPlus 12 Volt 24 Volt 12/2000/80 24/2000/50 12/3000/120 24/3000/70 PowerControl Yes PowerAssist Yes Transfer switch (A) 50 Parallel and 3-phase operation Yes INVERTER Input voltage range (VDC) 9,5 – 17 V 19 – 33 V Output Output voltage: 120 VAC ± 2 % Frequency: 60 Hz ± 0,1 % (1) Cont. output power at 25 ºC [...] www.victronenergy.com Multifunctional, with intelligent power management The MultiPlus is a powerful true sine wave inverter, a sophisticated battery charger that features adaptive charge technology, and a high-speed AC transfer switch in a single compact enclosure. Next to these primary functions, the MultiPlus has several advanced features, as outlined below. Two AC Outputs The main output has no-break functionality. The MultiPlus takes over the supply to the connected loads in the event of a [...] operation Up to six Multis can operate in parallel to achieve higher power output. Six 24/3000/70 units, for example, provide 15 kW / 18 kVA output power with 420 Amps of charging capacity. Three phase capability In addition to parallel connection, three units can be configured for three-phase output. But that’s not all: with three strings of six parallel units a 45 kW / 54 kVA three phase inverter and 1260 A charger can be built. Split phase options Two units can be stacked to provide",
+        "score": 0.76385427,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/MultiPlus-II_230V/32424-MultiPlus-II___Quattro-II-pdf-en.pdf",
+        "title": "[PDF] MultiPlus-II 230V (PDF) - Victron Energy",
+        "snippet": "Model Battery capacity DC fuse Cross-section per positive and negative terminal connection for cables between 0 and 5m , ,  Cross-section per positive and negative terminal connection for cables between 5 and 10m , ,  12/3000/120 400 - 1200Ah 400A 2x 50 mm2 2x 70 mm2 24/3000/70 200 - 700Ah 300A 50 mm2 95 mm2 48/3000/35 100 - 400Ah 125A 35 mm2 70 mm2 12/5000/220 600 - 2400Ah 600A 2x 95 mm2 2x 150 mm2 24/5000/120 400 - 1400Ah 400A 2x 50 mm2 2x 70 mm2 48/5000/70 200 - 800Ah 200A 70 mm2 120 mm2 [...] .................................................................................................. 24 6.3.1. VE.Bus OK codes ............................................................................................... 24 6.3.2. VE.Bus error codes ............................................................................................. 24 7. Technical specifications .......................................................................................................... 27 8. Appendix [...] 2.3.2. Second charge output for starter battery The 12V and 24V MultiPlus is equipped with a second charge output intended for maintenance charging of a starter battery. It uses a simple circuit with a current limiter and diode, allowing a continuous trickle charge (4A) from the main (domestic) battery to the starter battery. Due to the diode's 0.3 - 0.6 V drop, charging only occurs when the main battery is being actively charged or when the starter battery’s voltage is much lower.",
+        "score": 0.7463059,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-MultiPlus-II-GX-inverter-charger-EN.pdf",
+        "title": "[PDF] \\ MultiPlus-II GX Inverter/Charger - Victron Energy",
+        "snippet": "m. MultiPlus-II GX 24/3000/70-32 48/3000/35-32 48/5000/70-50 PowerControl & PowerAssist Yes Transfer switch 32 A 50 A Maximum AC input current 32 A 50 A Auxiliary output Yes (32 A) INVERTER DC Input voltage range 19 – 33 V 38 – 66 V Output Output voltage: 230 VAC ± 2 % Frequency: 50 Hz ± 0,1 % (1) Cont. output power at 25 °C (3) 3000 VA 5000 VA Cont. output power at 25 °C 2400 W 4000 W Cont. output power at 40 °C 2200 W 3700 W Cont. output power at 65 °C 1700 W 3000 W Maximum apparent feed-in [...] \\ MultiPlus-II GX Inverter/Charger MultiPlus-II 24/3000/70-32 GX, 48/3000/35-32 GX & 48/5000/70-50 GX Grid parallel topology with MPPT solar charge controller The MultiPlus-II will use data from the external AC current sensor (must be ordered separately) or power meter to optimise self-consumption and, if required, to prevent grid feed. In case of a power outage, the MultiPlus-II will continue to supply the critical loads Standard marine, mobile or off-grid application Loads that should shut [...] AC-connection Screw terminals 13 mm² (6 AWG) Weight 20 kg 31 kg Dimensions (hxwxd) mm 506 x 275 x 147 565 x 323 x 148 STANDARDS Safety EN-IEC 60335-1, EN-IEC 60335-2-29, EN-IEC 62109-1, EN-IEC 62109-2 Emission, Immunity EN 55014-1, EN 55014-2 EN-IEC 61000-3-2, EN-IEC 61000-3-3 IEC 61000-6-1, IEC 61000-6-2, IEC 61000-6-3 Uninterruptible power supply IEC 62040-1 Anti-islanding Please consult the certificates on our website. 1) Can be adjusted to 60 Hz 2) Protection key: a) output short circuit b)",
+        "score": 0.72207695,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-MultiPlus-II-3kVA-2x120V-EN.pdf",
+        "title": "[PDF] \\ MultiPlus-II 2x120 V Inverter/Charger - Victron Energy",
+        "snippet": "12/3000/120-50 24/3000/70-50 PowerControl & PowerAssist Yes (on L1 input) Transfer switch 50 A Maximum AC input current 50A (each leg) INVERTER DC Input voltage range 9,5 – 17 V 19-33 V Output when in inverter mode Output voltage: 120 VAC ± 2 % Frequency: 60 Hz ± 0,1 % (1) Cont. output power at 25 °C (3) 3000 VA Cont. output power at 25 °C 2400 W Cont. output power at 40 °C 2200 W Cont. output power at 65 °C 1700 W Maximum apparent feed-in power 2500 VA Peak power 5500 W Maximum efficiency 93 % [...] (hxwxd) 578 x 275 x 148 mm (23 x 11 x 6 inch) 578 x 275 x 148 mm (23 x 11 x 6 inch) STANDARDS Safety EN-IEC 60335-1, EN-IEC 60335-2-29, UL 458 Emission, Immunity EN 55014-1, EN 55014-2 EN-IEC 61000-3-2, EN-IEC 61000-3-3 IEC 61000-6-1, IEC 61000-6-2, IEC 61000-6-3 1) Can be adjusted to 50 Hz 2) Protection key: a) output short circuit b) overload c) battery voltage too high d) battery voltage too low e) temperature too high f) 120 VAC on inverter output g) input voltage ripple too high 3) [...] input line (L1). Power needed to charge the batteries will therefore be drawn from L1. The MultiPlus switches to inverter operation when no AC source is available. The inverter output is 120 V single phase. In invert mode, the MultiPlus connects both output lines (L1 and L2) together to provide 120 VAC to loads on either line. Any 240 V loads will therefore be supplied only when the MultiPlus is supplied by a split phase AC source. This prevents heavy loads such as water heaters or 240 V air",
+        "score": 0.69622743,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-MultiPlus-II-120V-EN.pdf",
+        "title": "[PDF] \\ MultiPlus-II Inverter/Charger - Victron Energy",
+        "snippet": "be taken into account by the PowerControl and PowerAssist function in order to limit AC input current to a safe value when AC power is available. Connection area 12/3000/120-50 Victron Energy B.V. | De Paal 35 | 1351 JG Almere | The Netherlands E-mail: sales@victronenergy.com | www.victronenergy.com MultiPlus-II 120V 12/3000/120-50 24/3000/70-50 48/3000/35-50 24/5000/120-95 48/5000/70-95 PowerControl & PowerAssist Yes Transfer switch 50A 50A 50A 95A 95A Maximum AC input current 50A 50A 50A 95A [...] Battery-connection M8 bolts 120 VAC-connection 13 mm² (6 AWG) 13 mm² (6 AWG) 13 mm² (6 AWG) 35 mm² (2 AWG) 35 mm² (2 AWG) Weight 19 kg / 42 lb 19 kg / 42 lb 19 kg / 42 lb 29 kg / 64 lb 32 kg / 71 lb Dimensions (hxwxd) mm / inch 578 x 277 x 148 22.8 x 10.9 x 5.8 536 x 277 x 147 21.1 x 10.9 x 5.8 572 x 277 x 147(7) 22.5 x 10.9 x 5.8(7) 627 x 350 x 150 24.7 x 13.8 x 5.9 676 x 330 x 164 26.6 x 13.0 x 6.5 STANDARDS Listings UL458 UL458 UL1741 - UL1741 Safety EN-IEC 60335-1, EN-IEC 60335-2-29, CSA [...] A MultiPlus with ESS (Energy Storage System) functionality The MultiPlus-II is a multifunctional inverter/charger with all the features of the MultiPlus, plus an external current sensor option which extends the PowerControl and PowerAssist function to 100 A. PowerControl and PowerAssist - Boosting the capacity of the grid or a generator A maximum grid or generator current can be set. The MultiPlus-II will then take account of other AC loads and use whatever is extra for battery charging, thus",
+        "score": 0.6399392,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Manual-MultiPlus-3k-120V-(firmware-xxxx4xx)-EN.pdf",
+        "title": "[PDF] Manual - Victron Energy",
+        "snippet": "There should be a clear space of at least 10cm around the appliance for cooling. Excessively high ambient temperature will result in the following: • Reduced service life. • Reduced charging current. • Reduced peak capacity, or shutdown of the inverter. • Never position the appliance directly above the batteries. The MultiPlus is suitable for wall mounting. For mounting purposes, a hook and two holes are provided at the back of the casing (see appendix G). The device can be fitted either [...] front of the enclosure and remove the front panel. • Connect the battery cables: see Appendix A. • Tighten the nuts well for minimal contact resistance. 9 EN Appendix 4.3 Connection of the AC cabling The MultiPlus is a safety class I product (supplied with a ground terminal for safety purposes). Its AC input and/or output terminals and/or grounding point on the outside of the product must be provided with an uninterruptible grounding point for safety purposes. The MultiPlus is provided with a [...] Connection of battery cables In order to utilize the full capacity of the product, batteries with sufficient capacity and battery cables with sufficient cross section should be used. See table. 12/3000/120 24/3000/70 Recommended battery capacity (Ah) 400–1200 200–700 Recommended DC fuse 400A 300A Recommended cross section (mm2) per + and - connection terminal ,  0 – 5m 2x 50mm2 50mm2 5 – 10m 2x 70mm2 2x 50mm2  Follow local installation rules.  Do not locate battery cables in a closed conduit.",
+        "score": 0.7750779,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/Manuals/PhoenixMulti/UKISM010054000-rev00.pdf",
+        "title": "[PDF] Phoenix Multi 12/1600/70 12/2500/120 24/1600/40 24/3000/70 ...",
+        "snippet": "1 GB NL F D Appendix INSTALLATION MANUAL INSTALLATIEHANDLEIDING MANUEL D'INSTALLATION INSTALLATIONSANLEITUNG Phoenix Multi 12/1600/70 12/2500/120 24/1600/40 24/3000/70 Phoenix MultiPlus 12/2500/120 24/3000/70 Phoenix Inverter 12/1600 12/2500 24/1600 24/3000 Copyrights  2003 Victron Energy B.V. All Rights Reserved This publication or parts thereof, may not be reproduced in any form, by any method, for any purpose. For conditions of use and permission to use this manual for publication in other [...] product should be installed by a qualified electrician 1.1 Box Contents • Phoenix Multi, MultiPlus, or Inverter • User manual. • Installation manual. • Bag containing connection items, i.e.: • Temperature sensor. • Fuse (Mega fuse). • Four M8 nuts. • Four M8 washers. • Four M8 spring washers. • Charging current warning sticker. 1.2 Location The product must be installed in a dry and well-ventilated area, as close as possible to the batteries. There should be a clear space of at least 10 cm [...] correct value. A defective battery. Replace the battery. The battery is too small. Reduce the charging current or use a battery with a higher capacity. The battery is too hot. Connect a temperature sensor. 21 GB NL F D 4. TECHNICAL DATA Phoenix 12/1600/70 12/2500/120 24/1600/40 24/3000/70 INVERTER and Multi/ MultiPlus Input voltage range (V DC) 9,5-16,1 9,5-16,1 19,0-32,2 19,0-32,2 Output voltage (V AC) 230 ± 2% Frequency (Hz) 50 ± 0,1% Cont. output power at 25 °C (VA) 1600 2500 1600 3000 Cont.",
+        "score": 0.7604555,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/User-Manual-MultiPlus-3k-120V-(firmware-xxxx4xx)-EN-ES.pdf",
+        "title": "[PDF] User Manual - Victron Energy",
+        "snippet": "La corriente alterna máxima que se puede conmutar es 16A o 50 A, según el modelo. Salida CA auxiliar Además de la salida ininterrumpida, hay una salida auxiliar disponible que desconecta su carga en caso de funcionamiento con batería. Ejemplo: hay una caldera eléctrica que sólo funciona con el grupo generador en marcha o con corriente de pantalán. Potencia prácticamente ilimitada gracias al funcionamiento en paralelo Hasta 6 Mults pueden funcionar en paralelo. Seis unidades 24/3000/70, por [...] de gas o polvo. Consulte las especificaciones suministradas por el fabricante de la batería para asegurarse de que puede utilizarse con este producto. Las instrucciones de seguridad del fabricante de la batería deben tenerse siempre en cuenta. AVISO: no levante objetos pesados sin ayuda. Instalación Lea las instrucciones antes de comenzar la instalación. Este producto es un dispositivo de clase de seguridad I (suministrado con terminal de puesta a tierra para seguridad). Sus terminales de [...] un pico de potencia durante un corto espacio de tiempo, como pasa a menudo, el MultiPlus compensará inmediatamente la posible falta de potencia de la corriente de la red o del generador con potencia de la batería. Cuando se reduce la carga, la potencia sobrante se utiliza para recargar la batería. Esta función única ofrece la solución definitiva para el \"problema de corriente de red\": herramientas eléctricas de alta potencia, lavavajillas, lavadoras, cocinas eléctricas, etc., pueden funcionar",
+        "score": 0.7487387,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/MultiPlus-II_GX/2983-MultiPlus-II_GX-pdf-en.pdf",
+        "title": "[PDF] Manual - MultiPlus-II GX",
+        "snippet": "24/3000/70 GX 48/3000/35 GX 48/5000/70 GX Recommended battery capacity (Ah) 200 - 700 100–400 200 - 800 Recommended DC fuse 300 A 125 A 200 A Recommended cross section (mm²) per + and - connection terminal 0 – 5 m 50 mm2 35 mm² 70 mm2 5 - 10 m 95 mm2 70 mm2 2 x 70 mm2 Remark: Internal resistance is the important factor when working with low capacity batteries. Please consult your supplier or the relevant sections of our book 'Energy Unlimited', downloadable from our website. [...] This manual applies to: • MultiPlus-II GX 24/3000/70-32 • MultiPlus-II GX 48/3000/35-32 • MultiPlus-II GX 48/5000/70-50 MultiPlus-II GX Page 1 Product Manual 2. Safety Instructions Please read the documentation supplied with this product first, so that you are familiar with the safety signs and directions before using the product. This product is designed and tested in accordance with international standards. The product should be used for the designated application only. [...] This product is suitable for wall mounting. A solid surface, suitable for the weight and dimensions of the product must be available (e.g., concrete, or masonry). For mounting purposes, a hook and two holes are provided at the back of the casing (see appendix G). The device can be fitted either horizontally or vertically. For optimal cooling, vertical fitting is preferred.\nThe interior of the product must remain accessible after installation.",
+        "score": 0.7101667,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Quick-Install-Guide-MultiPlus-II-24V48V-3000VA-48V-5000VA-230Vac-EN.pdf",
+        "title": "Quick Install Guide - MultiPlus-II",
+        "snippet": "AC-IN 1 N L PE L N PE AC-OUT 1 AC-OUT 2 2 3 4 5 8 6 7 7a 7b 7c 7d 6a 6b 6c 6d 6e 6f 6g 6h 1 Current Sense I Terminals explanation Read the manual 1 - Push button A 2 - Remote On/Off 3,4 - VE.Bus 5 - Current Sense 6 - a,b (+,-) K1 c,d (+,-) Ext. GND e,f (+,-) Aux2 g,h (+,-) Aux1 7 - a,b (+,-) T-Sense c,d (+,-) V-Sense 8 - Aux Relay VE.Bus H J 4 G F B (T-sense) A Battery Battery Cable -Battery Cable + AC-IN AC-OUT UTP-Cable Remote control E F H I L M Current Transformer J G Not included D (5x) C [...] 10 5 8 7 3 6 1 2 9 Included Rev.01 www.victronenergy.com Quick Installation Guide MultiPlus-II 48V 5000VA 230Vac (hw rev 03 and above) 48V 3000VA 230Vac (hw rev 08 and above) 24V 3000VA 230Vac www.victronenergy.com MultiPlus-II 48 | 5000 | 70 AMP VA VOLT AC transfer capacity: 50 A | Inverter 230 V Battery AC 0ut 2 AC 0ut 1 AC in temperature low battery overload inverter on inverter float absorption bulk mains on charger IP21 >100mm >100mm >100mm F A I 1 1 Battery www.victronenergy.com",
+        "score": 0.5809471,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Brochure_Self-Consumption-&-Energy-Storage_EN-2025.pdf",
+        "title": "[PDF] Self-consumption & energy storage",
+        "snippet": "MultiPlus Compact 12/2000/80 MultiPlus 24/3000/70 Two AC Outputs The main output has no break functionality. The MultiPlus takes over the supply to the connected loads in the event of a grid failure or when shore/generator power is disconnected. This happens so fast (less than 20 milliseconds) that computers and other electronic equipment will continue to operate without disruption. [...] www.victronenergy.com Multifunctional, with intelligent power management The MultiPlus is a powerful true sine wave inverter, a sophisticated battery charger that features adaptive charge technology, and a high-speed AC transfer switch in a single compact enclosure. Next to these primary functions, the MultiPlus has several advanced features, as outlined below. [...] Helpful system design resources Victron Energy offers one of the largest product ranges in the market to cover almost every power challenge. Admittedly, choosing the right system concept and products can be overwhelming. This brochure intends to assist with basics in systems design, covering a number of different system concepts. Check our helpful resources or feel free to discuss your ideas with a local Victron specialist.",
+        "score": 0.74363416,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-MultiPlus-II-inverter-charger-EN.pdf",
+        "title": "[PDF] \\ MultiPlus-II Inverter/Charger - Victron Energy",
+        "snippet": "our VRM (Victron Remote Management) website, free of charge. When connected to the internet, systems can be accessed remotely, and settings can be changed. Victron online product page  Connection Area MultiPlus-II 3k Victron Energy B.V. | De Paal 35 | 1351 JG Almere | The Netherlands E-mail: sales@victronenergy.com | www.victronenergy.com V MultiPlus-II 230V 12/3000/120-32 24/3000/70-32 48/3000/35-32 12/5000/220-50 24/5000/120-50 48/5000/70-50 48/8000/ 110-100 48/10000/ 140-100 48/15000/ [...] x 141 702 x 345 x 152 607 x 330 x 149 565 x 320 x 149 642 x 363 x 206 677 x 363 x 206 810 x 405 x 217 STANDARDS Safety EN-IEC 60335-1, EN-IEC 60335-2-29, EN-IEC 62109-1, EN-IEC 62109-2 Emission, Immunity EN 55014-1, EN 55014-2 EN-IEC 61000-3-2, EN-IEC 61000-3-3 IEC 61000-6-1, IEC 61000-6-2, IEC 61000-6-3 Uninterruptible power supply Please consult the certificates on our website. Anti-islanding Please consult the certificates on our website. 1) Can be adjusted to 60 Hz 2) Protection key: a) [...] second output (not shown). These loads will be taken into account by the PowerControl and PowerAssist function in order to limit AC input current to a safe value when AC power is available. A MultiPlus, plus ESS (Energy Storage System) functionality The MultiPlus-II is a multifunctional inverter/charger with all the features of the MultiPlus, plus an external current sensor option which extends the PowerControl and PowerAssist function to 50 A resp. 100 A. The MultiPlus-II is ideally suited for",
+        "score": 0.6847074,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "victron-energy",
+    "product": "Victron MultiPlus 48/5000/70",
+    "candidates": [
+      {
+        "url": "https://www.victronenergy.com/upload/documents/MultiPlus-II_230V/32424-MultiPlus-II___Quattro-II-pdf-en.pdf",
+        "title": "[PDF] MultiPlus-II 230V (PDF) - Victron Energy",
+        "snippet": "Model Battery capacity DC fuse Cross-section per positive and negative terminal connection for cables between 0 and 5m , ,  Cross-section per positive and negative terminal connection for cables between 5 and 10m , ,  12/3000/120 400 - 1200Ah 400A 2x 50 mm2 2x 70 mm2 24/3000/70 200 - 700Ah 300A 50 mm2 95 mm2 48/3000/35 100 - 400Ah 125A 35 mm2 70 mm2 12/5000/220 600 - 2400Ah 600A 2x 95 mm2 2x 150 mm2 24/5000/120 400 - 1400Ah 400A 2x 50 mm2 2x 70 mm2 48/5000/70 200 - 800Ah 200A 70 mm2 120 mm2 [...] V. [...] telecommunication applications.",
+        "score": 0.7339103,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/MultiPlus-II-48V-5000VA-230V-PMP482505000.pdf",
+        "title": "[PDF] MultiPlus-II 48V 5000VA 230V PMP482505000 .PDF - Victron Energy",
+        "snippet": "MultiPlus-ll 48/5000/70-50 - 230V. 6.2(3x). 32.5. 49.4. 55. 87.5. 87.5. 564.9. 564.9 ... Dimensions in mm. 98.3. 8. 7. A. ♡. C. E. F.",
+        "score": 0.73299384,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-MultiPlus-inverter-charger-800VA-5kVA-EN.pdf",
+        "title": "[PDF] Datasheet-MultiPlus-inverter-charger-800VA-5kVA-EN.pdf",
+        "snippet": "C 12/1200/50 C 24/1200/25 C 12/1600/70 C 24/1600/40 C 12/2000/80 C 24/2000/50 12/3000/120 24/3000/70 48/3000/35 24/5000/120 48/5000/70 Nominal Battery voltage 12 V battery 24 V battery 12 V battery 24 V battery 12 V battery 24 V battery 12 V battery 24 V battery 12 V battery 24 V battery 48 V battery 24 V battery 48 V battery PowerControl Yes Yes Yes Yes Yes Yes PowerAssist Yes Yes Yes Yes Yes Yes AC input Input voltage range: 187-250 V Input frequency: 50/60 Hz Cos Φ >0.8 Transfer switch (A) [...] IP20, pollution degree 2, OVCIII Icw: 6kA 30mS Battery-connection battery cables of 1.5 meter M8 bolts Four M8 bolts (2 plus and 2 minus connections) 230 VAC-connection G-ST18i connector Spring-clamp Screw terminals 13 mm2 (6 AWG) M6 bolts Weight (kg) 10 10 10 12 18 30 Dimensions (hxwxd in mm) 375 x 214 x 110 520 x 255 x 125 362 x 258 x 218 444 x 328 x 240 STANDARDS Safety EN-IEC 60335-1, EN-IEC 60335-2-29, IEC 62109-1 Emission, Immunity EN 55014-1, EN 55014-2, EN-IEC 61000-3-2, EN-IEC [...] a. Yes (16A) Yes (50A) Programmable relay (6) Yes Protection (2) a - g VE.Bus communication port For parallel and three phase operation, remote monitoring and system integration General purpose com. port n. a. n. a. n. a. n. a. Yes Yes Remote on-off Yes Common Characteristics Operating temp. range: -40 to +65 °C (fan assisted cooling) Humidity (non-condensing): max 95 % Maximum altitude 2000 m. ENCLOSURE Common Characteristics Material & Colour: aluminium (blue RAL 5012), Protection category:",
+        "score": 0.70944256,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-MultiPlus-II-120V-EN.pdf",
+        "title": "[PDF] \\ MultiPlus-II Inverter/Charger - Victron Energy",
+        "snippet": "Battery-connection M8 bolts 120 VAC-connection 13 mm² (6 AWG) 13 mm² (6 AWG) 13 mm² (6 AWG) 35 mm² (2 AWG) 35 mm² (2 AWG) Weight 19 kg / 42 lb 19 kg / 42 lb 19 kg / 42 lb 29 kg / 64 lb 32 kg / 71 lb Dimensions (hxwxd) mm / inch 578 x 277 x 148 22.8 x 10.9 x 5.8 536 x 277 x 147 21.1 x 10.9 x 5.8 572 x 277 x 147(7) 22.5 x 10.9 x 5.8(7) 627 x 350 x 150 24.7 x 13.8 x 5.9 676 x 330 x 164 26.6 x 13.0 x 6.5 STANDARDS Listings UL458 UL458 UL1741 - UL1741 Safety EN-IEC 60335-1, EN-IEC 60335-2-29, CSA [...] be taken into account by the PowerControl and PowerAssist function in order to limit AC input current to a safe value when AC power is available. Connection area 12/3000/120-50 Victron Energy B.V. | De Paal 35 | 1351 JG Almere | The Netherlands E-mail: sales@victronenergy.com | www.victronenergy.com MultiPlus-II 120V 12/3000/120-50 24/3000/70-50 48/3000/35-50 24/5000/120-95 48/5000/70-95 PowerControl & PowerAssist Yes Transfer switch 50A 50A 50A 95A 95A Maximum AC input current 50A 50A 50A 95A [...] 22.2 107.1-16 Emission, Immunity EN 55014-1, EN 55014-2 EN-IEC 61000-3-2, EN-IEC 61000-3-3 IEC 61000-6-1, IEC 61000-6-2, IEC 61000-6-3 1) Protection key: a) output short circuit b) overload c) battery voltage too high d) battery voltage too low e) temperature too high f) 120 VAC on inverter output g) input voltage ripple too high 2) Non-linear load, crest factor 3:1 3) Up to 75°F / 25 °C ambient 4) Switches off when no external AC source available 5) Programmable relay which can be set for",
+        "score": 0.69573146,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-MultiPlus-II-GX-inverter-charger-EN.pdf",
+        "title": "[PDF] \\ MultiPlus-II GX Inverter/Charger - Victron Energy",
+        "snippet": "m. MultiPlus-II GX 24/3000/70-32 48/3000/35-32 48/5000/70-50 PowerControl & PowerAssist Yes Transfer switch 32 A 50 A Maximum AC input current 32 A 50 A Auxiliary output Yes (32 A) INVERTER DC Input voltage range 19 – 33 V 38 – 66 V Output Output voltage: 230 VAC ± 2 % Frequency: 50 Hz ± 0,1 % (1) Cont. output power at 25 °C (3) 3000 VA 5000 VA Cont. output power at 25 °C 2400 W 4000 W Cont. output power at 40 °C 2200 W 3700 W Cont. output power at 65 °C 1700 W 3000 W Maximum apparent feed-in [...] \\ MultiPlus-II GX Inverter/Charger MultiPlus-II 24/3000/70-32 GX, 48/3000/35-32 GX & 48/5000/70-50 GX Grid parallel topology with MPPT solar charge controller The MultiPlus-II will use data from the external AC current sensor (must be ordered separately) or power meter to optimise self-consumption and, if required, to prevent grid feed. In case of a power outage, the MultiPlus-II will continue to supply the critical loads Standard marine, mobile or off-grid application Loads that should shut [...] AC-connection Screw terminals 13 mm² (6 AWG) Weight 20 kg 31 kg Dimensions (hxwxd) mm 506 x 275 x 147 565 x 323 x 148 STANDARDS Safety EN-IEC 60335-1, EN-IEC 60335-2-29, EN-IEC 62109-1, EN-IEC 62109-2 Emission, Immunity EN 55014-1, EN 55014-2 EN-IEC 61000-3-2, EN-IEC 61000-3-3 IEC 61000-6-1, IEC 61000-6-2, IEC 61000-6-3 Uninterruptible power supply IEC 62040-1 Anti-islanding Please consult the certificates on our website. 1) Can be adjusted to 60 Hz 2) Protection key: a) output short circuit b)",
+        "score": 0.6757865,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-MultiPlus-II-inverter-charger-3K-3K-GX-5K-5K-GX-off-grid-EN-AUS.pdf",
+        "title": "[PDF] \\ MultiPlus-II Inverter/chargers for off grid use in Australia",
+        "snippet": "data in a comprehensive graphical format. System settings can be changed remotely via the portal. Alarms can be received by e-mail. Current sensor To implement PowerControl and PowerAssist. MultiPlus-II 48/3000/35-32 230V 48/3000/35-32 230V GX 48/5000/70-50 230V 48/5000/70-50 230V GX PowerControl & PowerAssist Yes Transfer switch 32 A 50 A Maximum AC input current 32 A 50 A INVERTER DC Input voltage range 38 – 66 V AC Output voltage 230 V ± 2% AC output frequency 50 Hz ± 0,1% (1) AC output [...] \\ MultiPlus-II Inverter/chargers for off grid use in Australia 48/3000/35-32 230V, 48/3000/35-32 230V GX, 48/5000/70-50 230V, 48/5000/70-50 230V GX The MultiPlus-II The MultiPlus-II is a multifunctional inverter/charger with all the features of the MultiPlus, plus an external current sensor option which extends the PowerControl and PowerAssist function to 100A. The MultiPlus-II is ideally suited for professional marine, yachting, vehicle and land-based off-grid applications. The MultiPlus-II GX [...] Charge voltage 'float' 55.2 V Storage mode 52.8 V Max. battery charge current (4) 35 A 70 A Battery temperature sensor Yes Compatible battery chemistries Lead-acid, Lithium, Zinc-Bromine and others (5) GENERAL Auxiliary AC output Yes (32A) External AC current sensor (optional) 50A 100A Programmable relay (6) Yes Protection (2) a – g Inbuilt GX device No Yes No Yes VE.Bus communication port Yes VE.Can port No Yes No Yes VE.Direct port No Yes No Yes USB port No Yes No Yes Ethernet port No Yes No",
+        "score": 0.63288915,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Manual-MultiPlus-3k-120V-(firmware-xxxx4xx)-EN.pdf",
+        "title": "[PDF] Manual - Victron Energy",
+        "snippet": "There should be a clear space of at least 10cm around the appliance for cooling. Excessively high ambient temperature will result in the following: • Reduced service life. • Reduced charging current. • Reduced peak capacity, or shutdown of the inverter. • Never position the appliance directly above the batteries. The MultiPlus is suitable for wall mounting. For mounting purposes, a hook and two holes are provided at the back of the casing (see appendix G). The device can be fitted either [...] parallel. • The DC connection cables to the devices must be of equal length and cross-section. • If a positive and a negative DC distribution point is used, the cross-section of the connection between the batteries and the DC distribution point must at least equal the sum of the required cross-sections of the connections between the distribution point and the MultiPlus units. • Place the MultiPlus units close to each other, but allow at least 10cm for ventilation purposes under, above and [...] front of the enclosure and remove the front panel. • Connect the battery cables: see Appendix A. • Tighten the nuts well for minimal contact resistance. 9 EN Appendix 4.3 Connection of the AC cabling The MultiPlus is a safety class I product (supplied with a ground terminal for safety purposes). Its AC input and/or output terminals and/or grounding point on the outside of the product must be provided with an uninterruptible grounding point for safety purposes. The MultiPlus is provided with a",
+        "score": 0.82728493,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Manual-MultiPlus-II-48V-3k,-5k,-8k,-10k-15k-230V-(AUS)-EN--(P).pdf",
+        "title": "[PDF] MultiPlus-II inverter/charger Australia - Victron Energy",
+        "snippet": "Model Recommended battery capacity (Ah) Recommended DC fuse current rating (A) Recommended cross section (AWG) per + and - connection terminal ,  0 – 5 m Recommended cross section (AWG) per + and - connection terminal ,  5 – 10 m 48/3000/35 100 - 400 125 35 mm² 70 mm² 48/5000/70 200 - 800 200 70 mm² 120 mm² 48/8000/100 200 - 800 300 2x 50 mm² 2x 70 mm² 48/10000/140 250 - 1000 400 2x 50 mm² 2x 70 mm² 48/15000/200 300-1200 600 2x 95 mm² 2x 150 mm²  Follow local installation rules. [...] • Clean battery terminals. Be careful to keep corrosion from coming in contact with eyes.\n• Study all battery manufacturers' specific precautions, such as removing or not removing cell caps while charging and recommended rates of charge.\n3.2. Mounting Refer to the Dimensions  chapter for the location and dimensions of the mounting holes. [...] Excessively high ambient temperature will result in the following: • Reduced service life.\n• Reduced charging current.\n• Reduced peak capacity or shutdown of the inverter.\nNever position the appliance directly above the batteries.\nThe MultiPlus-II is suitable for wall mounting. A solid surface suitable for the weight and dimensions of the product must be available (e.g., concrete or masonry). For mounting purposes, a hook and two holes are provided at the back of the casing (see Appendix G).",
+        "score": 0.7882741,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Quick-Install-Guide-MultiPlus-II-24V48V-3000VA-48V-5000VA-230Vac-EN.pdf",
+        "title": "[PDF] Quick Install Guide - MultiPlus-II 24V48V 3000VA 48V 5000VA 230Vac",
+        "snippet": "10 5 8 7 3 6 1 2 9 Included Rev.01 www.victronenergy.com Quick Installation Guide MultiPlus-II 48V 5000VA 230Vac (hw rev 03 and above) 48V 3000VA 230Vac (hw rev 08 and above) 24V 3000VA 230Vac www.victronenergy.com MultiPlus-II 48 | 5000 | 70 AMP VA VOLT AC transfer capacity: 50 A | Inverter 230 V Battery AC 0ut 2 AC 0ut 1 AC in temperature low battery overload inverter on inverter float absorption bulk mains on charger IP21 >100mm >100mm >100mm F A I 1 1 Battery www.victronenergy.com [...] MultiPlus-II 48 | 5000 | 70 AMP VA VOLT AC transfer capacity: 50 A | Inverter 230 V Battery AC 0ut 2 AC 0ut 1 AC in temperature low battery overload inverter on inverter float absorption bulk mains on charger IP21 www.victronenergy.com MultiPlus-II 48 | 5000 | 70 AMP VA VOLT AC transfer capacity: 50 A | Inverter 230 V Battery AC 0ut 2 AC 0ut 1 AC in temperature low battery overload inverter on inverter float absorption bulk mains on charger IP21 IP21 www.victronenergy.com MultiPlus-II 48 | 5000 [...] | 70 AMP VA VOLT AC transfer capacity: 50 A | Inverter 230 V Battery AC 0ut 2 AC 0ut 1 AC in temperature low battery overload inverter on inverter float absorption bulk mains on charger IP21 www.victronenergy.com MultiPlus-II 48 | 5000 | 70 AMP VA VOLT AC transfer capacity: 50 A | Inverter 230 V Battery AC 0ut 2 AC 0ut 1 AC in temperature low battery overload inverter on inverter float absorption bulk mains on charger IP21 www.victronenergy.com MultiPlus-II 48 | 5000 | 70 AMP VA VOLT AC",
+        "score": 0.73868835,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/MultiPlus-II_GX_AU-Off_grid/157822-MP-II_3k_5k_230V_-_AU_Off-grid-pdf-en.pdf",
+        "title": "[PDF] MultiPlus-II inverter/charger off-grid Australia - Victron Energy",
+        "snippet": "48/3000/35 48/500/70 Recommended battery capacity (Ah) 100-400 200-800 Recommended DC fuse 125 A 200 A Recommended cross section (AWG) per + and - connection terminal ,  0 – 5 m 35 mm² 70 mm² 5 – 10 m 70 mm² 120 mm²  Follow local installation rules.\n Do not locate battery cables in a closed conduit. [...] off-grid Australia Page 17 Technical specifications MultiPlus-II 48/3000/35-32 230V GX 48/5000/70-50 230V GX Humidity (non-condensing) max 95% Maximum altitude 2000m Country of manufacture China India ENCLOSURE Material and colour Steel, blue RAL 5012 Protection category IP21 Battery connection M8 bolts AC connection Screw terminals for wire up to 13mm² (6 AWG) Weight 18 kg 29 kg Dimensions hxwxd (mm) 506 x 275 x 147 565 x 320 x 148 STANDARDS Safety EN-IEC 60335-1, EN-IEC 60335-2-29, EN-IEC [...] This manual applies to: • MultiPlus-II 48/3000/35-32 230V GX • MultiPlus-II 48/5000/70-50 230V GX 2.1. Features GX LCD display A backlit 2 x 16 character display screen shows system parameters.",
+        "score": 0.7300017,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/MultiPlus-II_GX/2983-MultiPlus-II_GX-pdf-en.pdf",
+        "title": "[PDF] Manual - MultiPlus-II GX",
+        "snippet": "24/3000/70 GX 48/3000/35 GX 48/5000/70 GX Recommended battery capacity (Ah) 200 - 700 100–400 200 - 800 Recommended DC fuse 300 A 125 A 200 A Recommended cross section (mm²) per + and - connection terminal 0 – 5 m 50 mm2 35 mm² 70 mm2 5 - 10 m 95 mm2 70 mm2 2 x 70 mm2 Remark: Internal resistance is the important factor when working with low capacity batteries. Please consult your supplier or the relevant sections of our book 'Energy Unlimited', downloadable from our website. [...] This manual applies to: • MultiPlus-II GX 24/3000/70-32 • MultiPlus-II GX 48/3000/35-32 • MultiPlus-II GX 48/5000/70-50 MultiPlus-II GX Page 1 Product Manual 2. Safety Instructions Please read the documentation supplied with this product first, so that you are familiar with the safety signs and directions before using the product. This product is designed and tested in accordance with international standards. The product should be used for the designated application only. [...] This product is suitable for wall mounting. A solid surface, suitable for the weight and dimensions of the product must be available (e.g., concrete, or masonry). For mounting purposes, a hook and two holes are provided at the back of the casing (see appendix G). The device can be fitted either horizontally or vertically. For optimal cooling, vertical fitting is preferred.\nThe interior of the product must remain accessible after installation.",
+        "score": 0.7159213,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://victronenergy.com/upload/documents/Victron-Energy-Limited-Warranty-Policy.pdf",
+        "title": "[PDF] 1. Victron Energy limited warranty policy",
+        "snippet": "Warranty Victron Energy warrants its products to be free from defects in workmanship and materials for a period of 5 years from the date of purchase by the original end-user, with a maximum of 66 months from the Victron Energy invoice date. Exceptions on this are: lead-acid batteries: 2 years from date of purchase by the original end-user, with a maximum of 30 months from the Victron Energy invoice date, Lithium batteries: 3 years from date of purchase by the original end-user, with a maximum [...] During the warranty period, Victron Energy will, at its discretion, repair, replace or (partly) credit the defective product free of charge. The warranty does not include performing or reimbursing de‐installation, transportation, and re‐installation. This warranty will be considered void if the unit has suffered any physical damage or alteration, either internally or externally, and does not cover damages arising from improper use like: • Reversed battery polarity.\n• Inadequate connection. [...] For a 10% surcharge on the current net price for products that came with a 5-year warranty, an additional 5 years of warranty can be purchased by Victron’s direct customers, bringing the total warranty to 10 years. Warranty extensions need to be applied for ultimately one year before the expiration of the original term. Victron may ask proof that the product was still functional at the time of purchase of the extended warranty.",
+        "score": 0.7837407,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Brochure_Self-Consumption-&-Energy-Storage_EN-2025.pdf",
+        "title": "[PDF] Self-consumption & energy storage",
+        "snippet": "www.victronenergy.com Multifunctional, with intelligent power management The MultiPlus is a powerful true sine wave inverter, a sophisticated battery charger that features adaptive charge technology, and a high-speed AC transfer switch in a single compact enclosure. Next to these primary functions, the MultiPlus has several advanced features, as outlined below. [...] Victron Energy B.V. | De Paal 35 | 1351 JG Almere | The Netherlands E-mail: sales@victronenergy.com | www.victronenergy.com MultiPlus 12 Volt 24 Volt 48 Volt C 12/800/35 C 24/ 800/16 C 12/1200/50 C 24/1200/25 C 12/1600/70 C 24/1600/40 C 12/2000/80 C 24/2000/50 12/3000/120 24/3000/70 48/3000/35 24/5000/120 48/5000/70 Nominal Battery voltage 12 V battery 24 V battery 12 V battery 24 V battery 12 V battery 24 V battery 12 V battery 24 V battery 12 V battery 24 V battery 48 V battery 24 V battery [...] MULTIPLUS INVERTER/CHARGER 800VA - 5KVA 230V 45 Victron Energy B.V. | De Paal 35 | 1351 JG Almere | The Netherlands E-mail: sales@victronenergy.com | www.victronenergy.com MultiPlus 12 Volt 24 Volt 48 Volt C 12/800/35 C 24/ 800/16 C 12/1200/50 C 24/1200/25 C 12/1600/70 C 24/1600/40 C 12/2000/80 C 24/2000/50 12/3000/120 24/3000/70 48/3000/35 24/5000/120 48/5000/70 Nominal Battery voltage 12 V battery 24 V battery 12 V battery 24 V battery 12 V battery 24 V battery 12 V battery 24 V battery 12 V",
+        "score": 0.7244226,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-MultiPlus-II-inverter-charger-EN.pdf",
+        "title": "[PDF] \\ MultiPlus-II Inverter/Charger - Victron Energy",
+        "snippet": "continue to operate without disruption. The second output is live only when AC is available on the input of the MultiPlus-II. Loads that should not discharge the battery, like a water heater for example, can be connected to this output. Virtually unlimited power thanks to parallel and three phase operation Up to 6 Multis can operate in parallel to achieve higher power output. Six 48/5000/70 units, for example, will provide 25 kW / 30 kVA output power with 420 Amps charging capacity. In addition [...] our VRM (Victron Remote Management) website, free of charge. When connected to the internet, systems can be accessed remotely, and settings can be changed. Victron online product page  Connection Area MultiPlus-II 3k Victron Energy B.V. | De Paal 35 | 1351 JG Almere | The Netherlands E-mail: sales@victronenergy.com | www.victronenergy.com V MultiPlus-II 230V 12/3000/120-32 24/3000/70-32 48/3000/35-32 12/5000/220-50 24/5000/120-50 48/5000/70-50 48/8000/ 110-100 48/10000/ 140-100 48/15000/ [...] x 141 702 x 345 x 152 607 x 330 x 149 565 x 320 x 149 642 x 363 x 206 677 x 363 x 206 810 x 405 x 217 STANDARDS Safety EN-IEC 60335-1, EN-IEC 60335-2-29, EN-IEC 62109-1, EN-IEC 62109-2 Emission, Immunity EN 55014-1, EN 55014-2 EN-IEC 61000-3-2, EN-IEC 61000-3-3 IEC 61000-6-1, IEC 61000-6-2, IEC 61000-6-3 Uninterruptible power supply Please consult the certificates on our website. Anti-islanding Please consult the certificates on our website. 1) Can be adjusted to 60 Hz 2) Protection key: a)",
+        "score": 0.6877354,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "victron-energy",
+    "product": "Victron Quattro 12/5000/200",
+    "candidates": [
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-Quattro-3kVA-15kVA-EN.pdf",
+        "title": "[PDF] Quattro Inverter/Charger - Victron Energy",
+        "snippet": "Characteristics Material & Colour: aluminium (blue RAL 5012) Protection category: IP20, pollution degree 2, OVC III Battery-connection Four M8 bolts (2 plus and 2 minus connections) 230 VAC-connection Screw terminals 13 mm2 (6 AWG) Bolts M6 Bolts M6 Bolts M6 Bolts M6 Weight (kg) 19 34 / 30 / 30 45 / 41 51 72 Dimensions (hxwxd in mm) 362 x 258 x 218 470 x 350 x 280 444 x 328 x 240 444 x 328 x 240 470 x 350 x 280 470 x 350 x 280 572 x 488 x 344 STANDARDS Safety EN-IEC 60335-1, EN-IEC 60335-2-29, [...] Portal. Victron Energy B.V. | De Paal 35 | 1351 JG Almere | The Netherlands E-mail: sales@victronenergy.com | www.victronenergy.com Quattro 12/3000/120-50/50 24/3000/70-50/50 12/5000/220-100/100 24/5000/120-100/100 48/5000/70-100/100 24/8000/200-100/100 48/8000/110-100/100 48/10000/140-100/100 48/15000/200-100/100 Nominal Battery Voltage 12/3000: 12 V battery 24/3000: 24 V battery 12/5000: 12 V battery 24/5000: 24 V battery 48/5000: 48 V Batttery 24/8000: 24 V battery 48/8000: 48 V battery 48 V [...] Cont. output power at 40 °C (W) 2200 3700 5500 6500 10000 Cont. output power at 65 °C (W) 1700 3000 3600 4500 7000 Peak power (W) 6000 10000 16000 20000 25000 Input current (A DC) 250 / 125 458/238/118 381/188 235 350 Maximum continuous Output current (A~) 11 19 30 37 53/50 Power factor range ±0.8 ±0.8 ±0.8 ±0.8 ±0.8 Maximum output fault current 32 A peak 1 sec. 53 A 1 sec. 100 A 1 sec 100 A 1 sec 150 A 1 sec Maximum efficiency (%) 93 / 94 94 / 94 / 95 94 / 96 96 96 Zero load power (W) 20 / 20",
+        "score": 0.71377134,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Manual-&-Drawing-Quattro-II-5kVA-230VAC-24VDC-600-800Ah-Li-Lynx-Smart-BMS-distributors-Cerbo-generator-MPPT-Orion-Tr-Smarts.pdf",
+        "title": "[PDF] Manual & Drawing Quattro-II 5kVA 230VAC 24VDC 600-800Ah Li ...",
+        "snippet": "header. Data at Can bus level between the BMS and the Cerbo has to be connected to a VE.Can port of each device. The VE.Can cable between the BMS and the Cerbo is a normal RJ45 cable. Do not forget to use a terminator at each open VE.Can port at the BMS and the Cerbo. Use the by Victron supplied terminators for this. The ATC contacts of the BMS will stop connected devices from charging to prevent Cell over-Voltage or a Cell temperature that runs too high. (Detailed description as explained [...] batteries, inverters, charger, inverter/ chargers and so on. With this book Victron aims to explain wiring basics of electrical systems. This book helps to explain the importance of ‘getting it right’ and the issues that might happen when a system has inferior wiring. It also assists electrical installers or users to troubleshoot issues that have arisen from bad wiring. This book will certainly help to get it right and to make sure proper conclusions can be drawn for the electrical systems its [...] victron energy B l u e P o w e r Starter Battery 12V-70Ah victron energy BLUE POWER 25.6V-200Ah-a Lithium Smart LiFePO4 victron energy BLUE POWER 25.6V-200Ah-a Lithium Smart LiFePO4 victron energy BLUE POWER 25.6V-200Ah-a Lithium Smart LiFePO4 RESET 30 AMPERE THERMAL CIRCUIT BREAKER 285030F L O A D B A T RESET 30 AMPERE THERMAL CIRCUIT BREAKER 285030F L O A D B A T RESET 30 AMPERE THERMAL CIRCUIT BREAKER 285030F L O A D B A T RESET 30 AMPERE THERMAL CIRCUIT BREAKER 285030F L O A D B A T RESET",
+        "score": 0.6052631,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Manual-Quattro-5k-8k-10k-15K-100-100A-230V-(firmware-xxxx4xx)-EN-NL-FR-DE-ES-SE-IT.pdf",
+        "title": "[PDF] Manual - Victron Energy",
+        "snippet": "Refer to the specifications provided by the manufacturer of the battery to ensure that the battery is suitable for use with this product. The battery",
+        "score": 0.56719416,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Manual-Quattro-5k-10k-120V-(firmware-xxxx4xx)-EN-ES.pdf",
+        "title": "[PDF] Manual Manual - Victron Energy",
+        "snippet": "at the front of the unit, and remove the lower front panel. - Connect the battery leads: + (red) to the right-hand terminal and - (black) to the left-hand terminal (see appendix A). - Tighten the connections after mounting the fastening parts. - Tighten the nuts well for minimal contact resistance. - Replace the DC fuse only after completing the whole installation procedure. 4.3 Connecting AC cables The Quattro is a safety class I product (supplied with an ground terminal for safety purposes). [...] temperature has the following consequences: - shorter lifecycle - lower charging current - lower peak power or full inverter shut off. Never place the device directly above the batteries. The Quattro is suitable for wall mounting. For mounting purposes, a hook and two holes are provided at the back of the casing (see appendix G). The device can be fitted either horizontally or vertically. For optimal cooling, vertical fitting is preferred. CAUTION When integrating inverter/chargers with [...] Its AC input and/or output terminals and/or grounding point on the outside of the product must be provided with an uninterruptable grounding point for safety purposes. See the following instructions in this regard. The Quattro is provided with a ground relay (see appendix) that automatically connects the N output to the casing if no external AC supply is available. If an external AC supply is provided, the ground relay will open before the input safety relay closes (relay H in appendix B). This",
+        "score": 0.81418616,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Manual-Quattro-5k-120-240V-EN.pdf",
+        "title": "[PDF] Manual Quattro - Victron Energy",
+        "snippet": "to the batteries. The device should be surrounded by a free space of at least 10 cm for cooling purposes. An excessively high environmental temperature has the following consequences: • shorter lifespan • lower charging current • lower peak power or inverter shut-down. Never place the device directly above the batteries. The Quattro is suitable for wall mounting. For mounting purposes, a hook and two holes are provided at the back of the casing (see appendix G). The device can be fitted either [...] horizontally or vertically. For optimal cooling, vertical fitting is preferred. The inner part of the device should remain accessible after installation. The distance between the Quattro and the battery should be as short as possible to reduce voltage loss across the battery cables to a minimum. Install the product in a heatproof environment. Ensure therefore that there are no chemicals, plastic parts, curtains or other textiles, etc. in the direct vicinity. The Quattro has no internal DC fuse. [...] cables: + (red) to the right-hand terminal and - (black) to the left-hand terminal (see appendix A). • Tighten the connections after mounting the fastening parts. • Tighten the nuts well for minimal contact resistance. 4.5 Connecting AC cables The Quattro is a safety class I product (supplied with a ground terminal for safety purposes). Its AC input and/or output terminals and/or grounding point on the outside of the product must be provided with an uninterruptible grounding point for safety",
+        "score": 0.8088086,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Manual-Quattro-5k-8k-10k-100-100A-230V-NO.pdf",
+        "title": "[PDF] Manual - Victron Energy",
+        "snippet": "et tørt og godt ventilert område, så nære batteriene som mulig. Enheten skal være omgitt av fri plass på minst 10 cm for avkjølingshensikter. En overdreven høy miljømessig temperatur har de følgende konsekvenser: - kortere livssyklus - lavere ladespenning - lavere toppeffekt eller komplett avstengning av inverter. Aldri monter innretningen direkte over batteriene. Quattro er passelig for veggmontering. For montering er en krok og to hull forsynt på baksiden av innfatningen (se vedlegg G). [...] sikring. DC sikringen skal installeres på utsiden av Quattro. 4.2 Tilkobling av batterikablene For å kunne bruke det komplette potensialet for Quattro bør batterier med tilstrekkelig kapasitet og batterikabler med riktig tverrsnitt brukes. Se tabell: 12/5000/200 24/8000/200 48/8000/110 48/10000/140 Anbefalt batterikapasitet (Ah) 800–2400 400–1400 200–800 250 - 1000 Anbefalt DC sikring 750A 500A 300A 400A Anbefalt tverrsnitt (mm2) per + og- koblingsterminal 0 – 5 m 2x 90 mm2 2x 70 mm2 2x 50 mm2 [...] Enheten kan festes enten horisontalt eller vertikalt. For optimal avkjøling, er vertikal festing foretrukket. Den indre delen av enheten bør forbli tilgjengelig etter installasjon. Avstanden mellom Quattro og batteriet bør være så kort som mulig for å redusere spenningstap over batterikablene til et minimum. Installer produktet i et varmebestandig miljø. Sikre derfor at det ikke er noen kjemikalier, plastikkdeler, gardiner eller andre stoffer, etc, i nærheten. Quattro har ingen intern DC",
+        "score": 0.79637206,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Digital_Multi_Control/153833-Digital_Multi_Control-pdf-en.pdf",
+        "title": "[PDF] Digital Multi Control - Victron Energy",
+        "snippet": "• If you are utilising the generator support  functionality, two wires are required to connect the control panel to the transfer switch. Use wires with a thickness between 0.25 and 1.0mm². These wires are not included with the control panel.\n5.1. Mounting Use the four screws to mount the control panel as indicated below.\nFor control panel dimensions and mounting hole locations, refer to the Dimensions  chapter. [...] with 2 AC sources and transfer switch ............................................................... 4 4.4. MultiPlus system with 2 AC sources ...................................................................................... 4 5. Installation ............................................................................................................................. 5 5.1. Mounting [...] 2.2. Quick start guide Installing the Digital Multi Control panel is straightforward. Simply connect the control panel to the inverter/charger system using an RJ45 UTP Cable. In most cases, no further setup is needed.\nFor expedited installation instructions, find your system type in the list below and click the appropriate link: System types: • MultiPlus system with 1 AC source .\n• Quattro system with 2 AC sources .\n• MultiPlus system with 2 AC sources and transfer switch .",
+        "score": 0.7352811,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Manual-MultiPlus-3k-120V-(firmware-xxxx4xx)-EN.pdf",
+        "title": "[PDF] Manual - Victron Energy",
+        "snippet": "horizontally or vertically. For optimal cooling, vertical fitting is preferred. The interior of the product must remain accessible after installation. Try and keep the distance between the product and the battery to a minimum in order to minimize cable voltage loss. For safety purposes, this product should be installed in a heat-resistant environment. You should prevent the presence of e.g. chemicals, synthetic components, curtains or other textiles, etc., in the immediate vicinity. 4.2 [...] “2x” means two positive and two negative cables. Remark: Internal resistance is the important factor when working with low capacity batteries. Please consult your supplier or the relevant sections of our book “Energy Unlimited”, downloadable from our website. Procedure Proceed as follows to connect the battery cables: Use a torque wrench with insulated box spanner in order to avoid shorting the battery. Recommended torque: 12 Nm Avoid shorting the battery cables. • Undo the four screws at the [...] too high. Install the converter in cool and well-ventilated environment, or reduce the load. “Low battery” and “overload” LEDs flash intermittently. Low battery voltage and excessively high load. Charge the batteries, disconnect or reduce the load, or install higher capacity batteries. Fit shorter and/or thicker battery cables. “Low battery” and “overload” LEDs flash simultaneously. Ripple voltage on the DC connection exceeds 1,5Vrms. Check the battery cables and battery connections. Check",
+        "score": 0.7161595,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://victronenergy.com/upload/documents/Victron-Energy-Limited-Warranty-Policy.pdf",
+        "title": "[PDF] 1. Victron Energy limited warranty policy",
+        "snippet": "Warranty Victron Energy warrants its products to be free from defects in workmanship and materials for a period of 5 years from the date of purchase by the original end-user, with a maximum of 66 months from the Victron Energy invoice date. Exceptions on this are: lead-acid batteries: 2 years from date of purchase by the original end-user, with a maximum of 30 months from the Victron Energy invoice date, Lithium batteries: 3 years from date of purchase by the original end-user, with a maximum [...] During the warranty period, Victron Energy will, at its discretion, repair, replace or (partly) credit the defective product free of charge. The warranty does not include performing or reimbursing de‐installation, transportation, and re‐installation. This warranty will be considered void if the unit has suffered any physical damage or alteration, either internally or externally, and does not cover damages arising from improper use like: • Reversed battery polarity.\n• Inadequate connection. [...] • For any electronic breakage except due to lightning (reverse polarity, over‐voltage due to external cause), the state of the internal control diode and/or the input/output X and Y capacitors determine the warranty.\nThis warranty will not apply where the product has been misused, neglected, improperly installed, or repaired by anyone other than Victron Energy or one of its authorized Repair Centres. In order to qualify for the warranty, the product must not be disassembled or modified.",
+        "score": 0.7604555,
+        "bucket": "other"
+      }
+    ]
+  },
+  {
+    "manufacturer": "victron-energy",
+    "product": "Victron Quattro 48/10000/140",
+    "candidates": [
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Certificate-G59-3-1-MultiPlus-and-Quattro-3kVA,-5kVA,-8kVA,-10kVA-and-15kVA.pdf",
+        "title": "[PDF] Certificate - Victron Energy",
+        "snippet": "Values at test impedance -1,87 -1,05 0 1,30 1,23 0 0,40 0,40 Normalised to standard impedance -15,86 -8,88 0 11,07 10,41 0 3,38 3,37 Normalised to required maximum impedance -1,34 -0,75 0 0,94 0,88 0 0,29 0,29 Limits set under BS EN 61000-3-11 4% 3,3% 3,3% 4% 3,3% 3,3% 1,0 0,65 Quattro 48/10000/140-100/100 Starting Stopping from full load Running dmax dc d(t) dmax dc d(t) Pst Plt 2 hours Measured Values at test impedance 6,12 5,91 0 6,10 5,90 0 1,37 1,35 Normalised to standard impedance 6,12 [...] 24/5000/120-100/100 48/5000/70-50 48/5000/70-100 48/5000/70-100/100 48/5000/70-100/100-S Rating: 4,5kW; 5,0kVA Model: Quattro 48/8000/110-100/100 48/10000/140-100/100 48/15000/200-100/100 Rating: 6,4kW; 8,0kVA 8,0kW; 10,0kVA 12,0kW; 15,0kVA Intended use: An automatic disconnection device with single-phase mains surveillance in accordance with Engineering Recommendation G59/3 for generators with a single-phase parallel coupling via an inverter to the public mains supply. The automatic [...] 0,078 0,110 0,048 2,67% 2,67% 7 1 0,522 0,313 0,138 7,2% 7,2% 8 0,22 0,115 0,151 0,067 2% 2% 9 0,5 0,261 0,209 0,092 3,8% Not stated 10 0,13 0,068 0,073 0,032 1,6% 1,6% 11 0,15 0,078 0,110 0,048 3,1% 3,1% 12 0,05 0,026 0,026 0,012 1,33% 1,33% 13 0,62 0,323 0,083 0,037 2% 2% THD - 5,781 - 5,270 23% 13% PWHD - 3,293 - 2,481 23% 22% Quattro 48/10000/140-100/100 Generating Unit rating per phase (rpp) 10 kVA Harmonics % =Measured Value (Amps) x 23/rating per phase (kVA) Harmonic At 45-55% of rated",
+        "score": 0.7548612,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-Quattro-3kVA-15kVA-EN.pdf",
+        "title": "[PDF] Quattro Inverter/Charger - Victron Energy",
+        "snippet": "Portal. Victron Energy B.V. | De Paal 35 | 1351 JG Almere | The Netherlands E-mail: sales@victronenergy.com | www.victronenergy.com Quattro 12/3000/120-50/50 24/3000/70-50/50 12/5000/220-100/100 24/5000/120-100/100 48/5000/70-100/100 24/8000/200-100/100 48/8000/110-100/100 48/10000/140-100/100 48/15000/200-100/100 Nominal Battery Voltage 12/3000: 12 V battery 24/3000: 24 V battery 12/5000: 12 V battery 24/5000: 24 V battery 48/5000: 48 V Batttery 24/8000: 24 V battery 48/8000: 48 V battery 48 V [...] Characteristics Material & Colour: aluminium (blue RAL 5012) Protection category: IP20, pollution degree 2, OVC III Battery-connection Four M8 bolts (2 plus and 2 minus connections) 230 VAC-connection Screw terminals 13 mm2 (6 AWG) Bolts M6 Bolts M6 Bolts M6 Bolts M6 Weight (kg) 19 34 / 30 / 30 45 / 41 51 72 Dimensions (hxwxd in mm) 362 x 258 x 218 470 x 350 x 280 444 x 328 x 240 444 x 328 x 240 470 x 350 x 280 470 x 350 x 280 572 x 488 x 344 STANDARDS Safety EN-IEC 60335-1, EN-IEC 60335-2-29, [...] Cont. output power at 40 °C (W) 2200 3700 5500 6500 10000 Cont. output power at 65 °C (W) 1700 3000 3600 4500 7000 Peak power (W) 6000 10000 16000 20000 25000 Input current (A DC) 250 / 125 458/238/118 381/188 235 350 Maximum continuous Output current (A~) 11 19 30 37 53/50 Power factor range ±0.8 ±0.8 ±0.8 ±0.8 ±0.8 Maximum output fault current 32 A peak 1 sec. 53 A 1 sec. 100 A 1 sec 100 A 1 sec 150 A 1 sec Maximum efficiency (%) 93 / 94 94 / 94 / 95 94 / 96 96 96 Zero load power (W) 20 / 20",
+        "score": 0.74363416,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-MultiPlus-II-inverter-charger-EN.pdf",
+        "title": "[PDF] \\ MultiPlus-II Inverter/Charger - Victron Energy",
+        "snippet": "our VRM (Victron Remote Management) website, free of charge. When connected to the internet, systems can be accessed remotely, and settings can be changed. Victron online product page  Connection Area MultiPlus-II 3k Victron Energy B.V. | De Paal 35 | 1351 JG Almere | The Netherlands E-mail: sales@victronenergy.com | www.victronenergy.com V MultiPlus-II 230V 12/3000/120-32 24/3000/70-32 48/3000/35-32 12/5000/220-50 24/5000/120-50 48/5000/70-50 48/8000/ 110-100 48/10000/ 140-100 48/15000/ [...] x 141 702 x 345 x 152 607 x 330 x 149 565 x 320 x 149 642 x 363 x 206 677 x 363 x 206 810 x 405 x 217 STANDARDS Safety EN-IEC 60335-1, EN-IEC 60335-2-29, EN-IEC 62109-1, EN-IEC 62109-2 Emission, Immunity EN 55014-1, EN 55014-2 EN-IEC 61000-3-2, EN-IEC 61000-3-3 IEC 61000-6-1, IEC 61000-6-2, IEC 61000-6-3 Uninterruptible power supply Please consult the certificates on our website. Anti-islanding Please consult the certificates on our website. 1) Can be adjusted to 60 Hz 2) Protection key: a) [...] voltage 'absorption' 14,4 / 28,8 / 57,6 V Charge voltage 'float' 13,8 / 27,6 / 55,2 V Storage mode 13,2 / 26,4 / 52,8 V Max. battery charge current (4) 120 /70 / 35 A 220/120/ 70 A 110 A 140 A 200 A Battery temperature sensor Yes GENERAL Auxiliary output Yes (32 A) Yes (50 A) External AC current sensor (optional) 50 A or 100 A Programmable relay (5) Yes Protection (2) a – g VE.Bus communication port For parallel and three phase operation, remote monitoring and system integration General purpose",
+        "score": 0.5046147,
+        "bucket": "datasheets"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Manual-Quattro-5k-10k-120V-(firmware-xxxx4xx)-EN-ES.pdf",
+        "title": "[PDF] Manual Manual - Victron Energy",
+        "snippet": "at the front of the unit, and remove the lower front panel. - Connect the battery leads: + (red) to the right-hand terminal and - (black) to the left-hand terminal (see appendix A). - Tighten the connections after mounting the fastening parts. - Tighten the nuts well for minimal contact resistance. - Replace the DC fuse only after completing the whole installation procedure. 4.3 Connecting AC cables The Quattro is a safety class I product (supplied with an ground terminal for safety purposes). [...] prácticamente ilimitada gracias al funcionamiento en paralelo Hasta 6 Quattro pueden funcionar en paralelo. Diez unidades 48/10000/140, por ejemplo, darán una potencia de salida de 40 kW/50 kVA y una capacidad de carga de 700 amperios. Capacidad de funcionamiento trifásico Se pueden configurar tres unidades para salida trifásica. Pero eso no es todo: hasta 6 grupos de tres unidades pueden conectarse en paralelo para lograr una potencia del inversor de 120 kW/150 kVA y más de 2000 A de capacidad [...] instrucciones de seguridad y funcionamiento importantes para los modelos de unidad marina: Quattro 12 | 5000 |220-100|100 120 V Quattro 24 | 5000 |120-100|100 120 V Quattro 48 | 5000 | 70-100|100 120 V Quattro 48 | 10000|140-100|100 120 V Lea en primer lugar la documentación que acompaña al producto para familiarizarse con las indicaciones de seguridad y las instrucciones antes de utilizarlo. Este producto se ha diseñado y probado de acuerdo con las normas internacionales. El equipo debe",
+        "score": 0.79845446,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Manual-Quattro-5k-120-240V-EN.pdf",
+        "title": "[PDF] Manual Quattro - Victron Energy",
+        "snippet": "to the batteries. The device should be surrounded by a free space of at least 10 cm for cooling purposes. An excessively high environmental temperature has the following consequences: • shorter lifespan • lower charging current • lower peak power or inverter shut-down. Never place the device directly above the batteries. The Quattro is suitable for wall mounting. For mounting purposes, a hook and two holes are provided at the back of the casing (see appendix G). The device can be fitted either [...] horizontally or vertically. For optimal cooling, vertical fitting is preferred. The inner part of the device should remain accessible after installation. The distance between the Quattro and the battery should be as short as possible to reduce voltage loss across the battery cables to a minimum. Install the product in a heatproof environment. Ensure therefore that there are no chemicals, plastic parts, curtains or other textiles, etc. in the direct vicinity. The Quattro has no internal DC fuse. [...] cables: + (red) to the right-hand terminal and - (black) to the left-hand terminal (see appendix A). • Tighten the connections after mounting the fastening parts. • Tighten the nuts well for minimal contact resistance. 4.5 Connecting AC cables The Quattro is a safety class I product (supplied with a ground terminal for safety purposes). Its AC input and/or output terminals and/or grounding point on the outside of the product must be provided with an uninterruptible grounding point for safety",
+        "score": 0.78532547,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/MultiPlus-II_230V/32424-MultiPlus-II___Quattro-II-pdf-en.pdf",
+        "title": "[PDF] MultiPlus-II 230V (PDF) - Victron Energy",
+        "snippet": "48/8000/110 200 - 800Ah 300A 2x 50 mm2 2x 70 mm2 48/10000/140 250 - 1000Ah 400A 2x 50 mm2 2x 70 mm2 48/15000/200 300 - 1200Ah 600A 2x 95 mm2 2x 150 mm2  Follow local installation rules. [...] The inverter/charger is suitable for wall mounting. A solid surface, suitable for the weight and dimensions of the product must be available (e.g., concrete, or masonry). For mounting purposes, a hook and two holes are provided at the back of the casing (see appendix G).\nThe interior of the product must remain accessible after installation.\nTry and keep the distance between the product and the battery to a minimum in order to minimize cable voltage losses. [...] Installation Read the installation instructions before commencing installation activities. Follow the local national wiring standards, regulations, and installation instructions for electrical work. The installation shall be in accordance with the Canadian Electrical Code, Part 1.\nThe wiring methods shall be in accordance with the National Electrical Code, ANSI/NFPA 70.",
+        "score": 0.7166357,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Manual-Quattro-5k-8k-10k-15K-100-100A-230V-(firmware-xxxx4xx)-EN-NL-FR-DE-ES-SE-IT.pdf",
+        "title": "[PDF] Manual - Victron Energy",
+        "snippet": "WARNING: do not lift heavy objects unassisted. Installation. Read the installation instructions before commencing installation activities. For electrical work,",
+        "score": 0.6944897,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Quick-Install-Guide-Quattro-12V-24V-48V-3000VA-230Vac-EN.pdf",
+        "title": "[PDF] Quick Install Guide - Quattro 12V 24V 48V 3000VA 230Vac",
+        "snippet": "www.victronenergy.com. Quick Installation Guide. Quattro 12V 24V 48V 3000VA 230Vac ... refer to the user manual. Fuse (not included). E (T-sense). MAIN. N. L. GND.",
+        "score": 0.59372765,
+        "bucket": "installation"
+      },
+      {
+        "url": "https://victronenergy.com/upload/documents/Victron-Energy-Limited-Warranty-Policy.pdf",
+        "title": "[PDF] 1. Victron Energy limited warranty policy",
+        "snippet": "Warranty Victron Energy warrants its products to be free from defects in workmanship and materials for a period of 5 years from the date of purchase by the original end-user, with a maximum of 66 months from the Victron Energy invoice date. Exceptions on this are: lead-acid batteries: 2 years from date of purchase by the original end-user, with a maximum of 30 months from the Victron Energy invoice date, Lithium batteries: 3 years from date of purchase by the original end-user, with a maximum [...] During the warranty period, Victron Energy will, at its discretion, repair, replace or (partly) credit the defective product free of charge. The warranty does not include performing or reimbursing de‐installation, transportation, and re‐installation. This warranty will be considered void if the unit has suffered any physical damage or alteration, either internally or externally, and does not cover damages arising from improper use like: • Reversed battery polarity.\n• Inadequate connection. [...] • For any electronic breakage except due to lightning (reverse polarity, over‐voltage due to external cause), the state of the internal control diode and/or the input/output X and Y capacitors determine the warranty.\nThis warranty will not apply where the product has been misused, neglected, improperly installed, or repaired by anyone other than Victron Energy or one of its authorized Repair Centres. In order to qualify for the warranty, the product must not be disassembled or modified.",
+        "score": 0.7272211,
+        "bucket": "other"
+      },
+      {
+        "url": "https://www.victronenergy.com/upload/documents/Brochure_Self-Consumption-&-Energy-Storage_EN-2025.pdf",
+        "title": "[PDF] Self-consumption & energy storage",
+        "snippet": "Helpful system design resources Victron Energy offers one of the largest product ranges in the market to cover almost every power challenge. Admittedly, choosing the right system concept and products can be overwhelming. This brochure intends to assist with basics in systems design, covering a number of different system concepts. Check our helpful resources or feel free to discuss your ideas with a local Victron specialist. [...] Note - for our latest datasheets please refer to our website: www.victronenergy.com 37 Technical information 38 EasySolar 12V and 24V, 1600VA 40 Easysolar-II 3kVA MPPT 250/70 GX & 5kVA MPPT 250/100 GX 42 MultiPlus inverter/charger 500VA - 2kVA 230V 44 MultiPlus inverter/charger 800VA - 5kVA 230V 46 Quattro inverter/charger 3kVA - 10kVA 230V 48 MultiPlus-II inverter/charger 3kVA - 15kVA 230V 50 MultiPlus-II inverter/charger 3kVA & 5kVA 230V GX 52 Multi RS solar 48/6000 hybrid inverter 54 [...] youtube.com/victronenergy C O M P O N E N T S AC Current sensor - single phase - max 40A The AC Current sensor is a simple external current sensor used to measure AC Current, Power (VA) and calculate energy of a PV Inverter connected to the AC input or output of a Multi or Quattro. These values can then be displayed and sent to the VRM-website by the Color Control. The two measurement wires can be connected to the AUX and/or temperature sense input of a Multi or Quattro.",
+        "score": 0.5942929,
+        "bucket": "other"
+      }
+    ]
+  }
+]
