@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-09-28T14:10:40.196Z",
+  "metrics": {
+    "organicTraffic": 5559,
+    "keywordRankings": {
+      "improved": 15,
+      "declined": 8,
+      "stable": 129
+    },
+    "backlinks": {
+      "new": 14,
+      "lost": 1
+    },
+    "pageSpeed": 93,
+    "mobileUsability": 98
+  },
+  "alerts": [
+    {
+      "type": "warning",
+      "message": "Page speed dropped below 85",
+      "severity": "medium"
+    }
+  ],
+  "recommendations": [
+    "Optimize images for better loading speed",
+    "Update meta descriptions for better CTR",
+    "Fix broken internal links"
+  ]
+}
