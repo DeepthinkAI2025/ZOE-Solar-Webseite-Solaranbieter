@@ -56,7 +56,7 @@ const MagazinHero: React.FC<{ onCtaClick: (anchor?: string) => void }> = ({ onCt
 
 const ArticleCard: React.FC<{ article: Article, onSelect: (article: Article) => void }> = ({ article, onSelect }) => {
     return (
-        <div onClick={() => onSelect(article)} className="group cursor-pointer block bg-white rounded-xl shadow-lg border border-slate-200 transform hover:-translate-y-2 transition-transform duration-300 hover:shadow-2xl hover:border-green-300 flex flex-col overflow-hidden h-full">
+        <div onClick={() => onSelect(article)} className="group cursor-pointer bg-white rounded-xl shadow-lg border border-slate-200 transform hover:-translate-y-2 transition-transform duration-300 hover:shadow-2xl hover:border-green-300 flex flex-col overflow-hidden h-full">
             <div className="overflow-hidden relative">
                 <img
                     src={article.imageUrl}

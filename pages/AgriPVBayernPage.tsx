@@ -2,6 +2,13 @@ import React from 'react';
 import { Page } from '../types';
 import PageHero from '../components/PageHero';
 import { pageHeroData } from '../data/pageContent';
+import PainPoints from '../components/PainPoints';
+import Solutions from '../components/Solutions';
+import Process from '../components/Process';
+import ProjectGallery from '../components/ProjectGallery';
+import PricingSection from '../components/PricingSection';
+import GuaranteeSection from '../components/GuaranteeSection';
+import FAQ from '../components/FAQ';
 
 const AgriPVBayernPage: React.FC = () => {
   const heroData = {
@@ -20,9 +27,21 @@ const AgriPVBayernPage: React.FC = () => {
     imageAlt: 'Agri-PV Anlage über bayerischen Hopfenfeldern'
   };
 
+  const setPage = (page: Page) => {
+    window.location.href = `/${page}`;
+  };
+
   return (
     <div className="min-h-screen">
       <PageHero {...heroData} />
+
+      <PainPoints />
+      <Solutions />
+      <Process customerType="business" setPage={setPage} />
+      <ProjectGallery customerType="business" setPage={setPage} />
+      <PricingSection setPage={setPage} customerType="business" />
+      <GuaranteeSection setPage={setPage} />
+      <FAQ customerType="business" setPage={setPage} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Lokale Agri-PV Informationen */}

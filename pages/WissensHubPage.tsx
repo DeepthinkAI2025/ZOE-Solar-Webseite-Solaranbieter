@@ -91,13 +91,13 @@ const WebinarModal: React.FC<{ webinar: Webinar; onClose: () => void }> = ({ web
     };
 
     return (
-        <div className="fixed inset-0 z-[200] flex items-center justify-center p-4 animate-fade-in" role="dialog" aria-modal="true">
+        <div className="fixed inset-0 z-[200] flex items-center justify-center p-4 animate-fade-in" role="dialog" aria-modal="true" aria-labelledby="webinar-modal-title">
             <div className="fixed inset-0 bg-black/70 backdrop-blur-sm" onClick={onClose}></div>
             <div className="relative z-10 w-full max-w-4xl bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col h-auto max-h-[90vh] animate-slide-in-up">
                 <header className="p-6 border-b border-slate-200 flex justify-between items-start">
                     <div>
                         <span className="text-sm font-semibold text-green-600 mb-1">{webinar.type}</span>
-                        <h2 className="text-2xl font-bold text-slate-800">{webinar.title}</h2>
+                        <h2 id="webinar-modal-title" className="text-2xl font-bold text-slate-800">{webinar.title}</h2>
                     </div>
                     <button onClick={onClose} className="p-1 text-slate-500 hover:text-slate-800" aria-label="Schließen">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
@@ -135,7 +135,7 @@ const ResourceCard: React.FC<{ resource: Resource, onSelect: (resource: Resource
     const ctaText = isWebinar ? 'Video ansehen' : 'Weiterlesen';
 
     return (
-        <div onClick={() => onSelect(resource)} className="group cursor-pointer block bg-white rounded-xl shadow-lg border border-slate-200 transform hover:-translate-y-2 transition-transform duration-300 hover:shadow-2xl hover:border-green-300 flex flex-col overflow-hidden h-full">
+        <div onClick={() => onSelect(resource)} className="group cursor-pointer bg-white rounded-xl shadow-lg border border-slate-200 transform hover:-translate-y-2 transition-transform duration-300 hover:shadow-2xl hover:border-green-300 flex flex-col overflow-hidden h-full">
             <div className="overflow-hidden relative">
                 <img 
                     src={resource.imageUrl} 

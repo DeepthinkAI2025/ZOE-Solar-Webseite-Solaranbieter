@@ -316,7 +316,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setPage, openCommandHub, b
           
           {/* Mobile Nav Trigger */}
           <div className="md:hidden flex items-center gap-2">
-             <button onClick={openCommandHub} className="p-2 rounded-full transition-colors text-slate-900">
+             <button onClick={openCommandHub} aria-label="Suchen" className="p-2 rounded-full transition-colors text-slate-900">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
              </button>
             <button

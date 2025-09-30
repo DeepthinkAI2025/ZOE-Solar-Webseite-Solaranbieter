@@ -64,6 +64,10 @@ const Solution: React.FC<{ solution: SolutionData }> = ({ solution }) => (
 );
 
 const AnwendungsfallDetailPage: React.FC<AnwendungsfallDetailPageProps> = ({ useCase, onSelectAnwendungsfall, bannerHeight, headerHeight }) => {
+    if (!useCase) {
+        return <div className="container mx-auto px-6 py-20 text-center">Fehler: Anwendungsfall nicht gefunden</div>;
+    }
+
     const contentRef = useRef<HTMLDivElement>(null);
     const [activeSection, setActiveSection] = useState('challenges');
 
@@ -95,7 +99,7 @@ const AnwendungsfallDetailPage: React.FC<AnwendungsfallDetailPageProps> = ({ use
         };
     }, [sections]);
     
-    const navItems = useCasesData.map(uc => ({
+    const navItems = useCasesData.filter(uc => uc && uc.id).map(uc => ({
         id: uc.id,
         title: uc.title,
         page: 'anwendungsfall-detail',
