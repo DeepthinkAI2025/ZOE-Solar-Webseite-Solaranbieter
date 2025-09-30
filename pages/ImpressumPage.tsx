@@ -27,12 +27,12 @@ const ImpressumPage: React.FC = () => {
                     </p>
 
                     <h2>Vertreten durch:</h2>
-                    <p>Max Mustermann (Geschäftsführer)</p>
+                    <p>Jeremy Schulze (Inhaber)</p>
 
                     <h2>Kontakt</h2>
                     <p>
-                        Telefon: +49 156 78876200<br />
-                        E-Mail: kontakt@zoe-solar.de
+                        Telefon: +49 15678876200<br />
+                        E-Mail: kundenervice@zukunftsorientierte-energie.de
                     </p>
 
                     <h2>Registereintrag</h2>
@@ -45,12 +45,18 @@ const ImpressumPage: React.FC = () => {
                     <h2>Umsatzsteuer-ID</h2>
                     <p>
                         Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br />
-                        DE123456789
+                        DE325514610
                     </p>
+
+                    <h2>HWK Betriebsnummer</h2>
+                    <p>134514</p>
+
+                    <h2>Unternehmensnr. BG Bau</h2>
+                    <p>7091 3114 7806 001</p>
 
                     <h2>Redaktionell verantwortlich</h2>
                     <p>
-                        Max Mustermann<br />
+                        Jeremy Schulze<br />
                         Kurfürstenstraße 124<br />
                         10785 Berlin
                     </p>
