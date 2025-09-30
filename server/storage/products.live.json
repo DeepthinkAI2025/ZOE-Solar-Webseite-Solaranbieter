@@ -1,20 +1,15 @@
 {
   "generatedAt": "2025-09-27T22:17:49.473Z",
-  "source": "firecrawl-mcp",
+  "source": "sync",
   "providers": [
-    "firecrawl-mcp",
     "manual-scraper"
   ],
   "syncMeta": {
     "startedAt": "2025-09-27T22:17:42.884Z",
     "durationMs": 6589,
-    "firecrawlEnabled": true,
     "geminiEnabled": false,
-    "firecrawlError": "fetch failed",
-    "firecrawlUnavailable": true,
     "manufacturerCount": 2,
     "concurrency": 3,
-    "firecrawlUsedCount": 2,
     "geminiUsedCount": 0,
     "manufacturerLimit": 2,
     "manufacturerLimitReason": "dev-default"
@@ -110,20 +105,15 @@
         "https://www.meyerburger.com/en/downloads"
       ],
       "providersUsed": [
-        "firecrawl-mcp",
         "manual-scraper"
       ],
       "syncMeta": {
-        "lastFirecrawlRun": "2025-09-27T22:17:42.895Z",
-        "firecrawlEnabled": true,
-        "firecrawlError": "fetch failed",
         "manufacturerLimit": 2,
         "manufacturerLimitReason": "dev-default",
         "whitelist": {
           "logoCount": 0,
           "datasheetCount": 1
         },
-        "firecrawlDurationMs": 11407,
         "assetGuardian": {
           "logoCandidates": 0,
           "datasheetCandidates": 2,
@@ -159,19 +149,15 @@
       ],
       "datasheetCandidates": [],
       "providersUsed": [
-        "firecrawl-mcp"
+        "manual-scraper"
       ],
       "syncMeta": {
-        "lastFirecrawlRun": "2025-09-27T22:17:42.922Z",
-        "firecrawlEnabled": true,
-        "firecrawlError": "fetch failed",
         "manufacturerLimit": 2,
         "manufacturerLimitReason": "dev-default",
         "whitelist": {
           "logoCount": 0,
           "datasheetCount": 0
         },
-        "firecrawlDurationMs": 15917,
         "assetGuardian": {
           "skipped": true
         }

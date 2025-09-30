@@ -89,6 +89,7 @@ export type Page =
     | 'dashboard'
     | 'empfehlungspraemie'
     | 'wissens-hub'
+    | 'magazin'
     | 'glossar'
     | 'guide-detail'
     | 'innovations'
@@ -132,4 +133,9 @@ export type Page =
     | 'fallstudien'
     | 'fallstudie-detail'
     | 'agri-pv-erfahrungen'
-    | 'mitarbeiter-login';
+    | 'mitarbeiter-login'
+    | 'photovoltaik-rechner-gewerbe'
+    | 'photovoltaik-planung-gewerbe'
+    | 'technology-page'
+    | 'guide-page'
+    | 'agripv-page';

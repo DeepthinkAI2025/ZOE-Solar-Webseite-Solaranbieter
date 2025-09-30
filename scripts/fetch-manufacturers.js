@@ -21,13 +21,6 @@ async function main() {
     console.log(`  Hersteller-Limit: ${result.syncMeta.manufacturerLimit}${reason}`);
   }
 
-  if (result?.syncMeta?.firecrawlUnavailable) {
-    console.error('\n⚠️  Firecrawl ist nicht erreichbar. Bitte Endpoint prüfen (`FIRECRAWL_MCP_ENDPOINT`) und Server starten.');
-    if (result?.syncMeta?.firecrawlError) {
-      console.error('  Fehler:', result.syncMeta.firecrawlError);
-    }
-    process.exitCode = 2;
-  }
 
   if (result?.syncMeta?.geminiEnabled && !result?.providers?.includes('gemini')) {
     console.warn('ℹ️  Gemini-Fallback ist aktiviert, aber hat keine Daten geliefert. Details siehe Logs.');

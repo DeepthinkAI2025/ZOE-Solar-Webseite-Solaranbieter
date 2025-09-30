@@ -1,7 +1,6 @@
 import fs from 'fs';
 import path from 'path';
 import { cacheLogoForManufacturer, probeAndCacheLogo } from './logoCache.js';
-import { fetchManufacturerData } from './firecrawlClient.js';
 import { hasManualScraper, runManualScraper } from './manualScrapers/index.js';
 import { geminiProvider, isGeminiConfigured } from './providers/geminiProvider.js';
 import { analyseAssetCandidates } from './assetGuardian.js';
@@ -203,7 +202,7 @@ export async function runProductSync({ manufacturers = [] } = {}) {
         products: Array.isArray(entry.products) ? entry.products : [],
         datasheetCandidates: Array.isArray(entry.datasheetCandidates) ? entry.datasheetCandidates : [],
         logoUrl: entry.logoUrl ?? null,
-        providersUsed: dedupeProviders(entry.providersUsed, ['firecrawl-mcp']),
+        providersUsed: dedupeProviders(entry.providersUsed),
         syncMeta: entry.syncMeta ?? null
       };
     })
@@ -234,11 +233,8 @@ export async function runProductSync({ manufacturers = [] } = {}) {
     );
   }
 
-  const firecrawlEnabled = process.env.DISABLE_FIRECRAWL === 'true' ? false : true;
   const geminiEnabled = isGeminiConfigured();
   const startedAt = Date.now();
-  let firecrawlGlobalError = null;
-  let firecrawlGlobalErrorCount = 0;
   const globalProviders = new Set();
 
   const enrichedManufacturers = await mapWithConcurrency(limitedManufacturers, async (manufacturer) => {
@@ -257,14 +253,12 @@ export async function runProductSync({ manufacturers = [] } = {}) {
         ? previous.datasheetCandidates
         : manufacturer.datasheetCandidates,
       logoUrl: previous?.logoUrl ?? manufacturer.logoUrl ?? null,
-      providersUsed: dedupeProviders(previous?.providersUsed, manufacturer.providersUsed, ['firecrawl-mcp'])
+      providersUsed: dedupeProviders(previous?.providersUsed, manufacturer.providersUsed)
     };
 
     base.lastSyncedAt = new Date().toISOString();
     base.syncMeta = {
       ...(previous?.syncMeta ?? {}),
-      lastFirecrawlRun: base.lastSyncedAt,
-      firecrawlEnabled,
       manufacturerLimit,
       manufacturerLimitReason
     };
@@ -291,83 +285,8 @@ export async function runProductSync({ manufacturers = [] } = {}) {
       }
     };
 
-  let firecrawlSucceeded = false;
-  let fallbackNeeded = !firecrawlEnabled;
+  let fallbackNeeded = true;
   let manualScraperSucceeded = false;
-
-    if (firecrawlEnabled && base.website) {
-      if (firecrawlGlobalError) {
-        base.syncMeta = {
-          ...base.syncMeta,
-          firecrawlSkippedDueToGlobalError: true
-        };
-        fallbackNeeded = true;
-      } else {
-        const firecrawlStarted = Date.now();
-        try {
-          const data = await fetchManufacturerData({ slug: base.slug, name: base.name, website: base.website });
-          base.syncMeta = {
-            ...base.syncMeta,
-            firecrawlDurationMs: Date.now() - firecrawlStarted
-          };
-
-          if (Array.isArray(data?.products) && data.products.length > 0) {
-            base.products = data.products;
-            firecrawlSucceeded = true;
-          }
-
-          if (Array.isArray(data?.datasheetCandidates) && data.datasheetCandidates.length > 0) {
-            addUrlCandidates(datasheetCandidateSet, data.datasheetCandidates);
-            base.datasheetCandidates = Array.from(datasheetCandidateSet);
-            firecrawlSucceeded = true;
-          }
-
-          if (Array.isArray(data?.logoCandidates) && data.logoCandidates.length > 0) {
-            addUrlCandidates(logoCandidateSet, data.logoCandidates);
-            for (const candidate of data.logoCandidates) {
-              if (!candidate) continue;
-              try {
-                const local = await cacheLogoForManufacturer(base.slug, candidate);
-                if (local) {
-                  base.logoUrl = local;
-                  break;
-                }
-              } catch (logoErr) {
-                console.warn('[productSync] Failed to cache logo candidate for', base.slug, logoErr.message || logoErr);
-              }
-            }
-          }
-
-          fallbackNeeded = !firecrawlSucceeded;
-        } catch (err) {
-          base.syncMeta = {
-            ...base.syncMeta,
-            firecrawlError: err?.message ?? String(err)
-          };
-          const status = err?.status || err?.body?.status || null;
-          const isAuthError = status === 401 || status === 403 || /\b401\b|UNAUTHORIZED/i.test(err?.message || '');
-          if (isAuthError) {
-            firecrawlGlobalError = err;
-            firecrawlGlobalErrorCount += 1;
-            fallbackNeeded = true;
-            if (firecrawlGlobalErrorCount === 1) {
-              console.error('[productSync] Firecrawl API verweigert den Zugriff (401/403). Breche weitere Anfragen ab.');
-            }
-          } else if (isConnectivityError(err)) {
-            firecrawlGlobalError = err;
-            firecrawlGlobalErrorCount += 1;
-            fallbackNeeded = true;
-            if (firecrawlGlobalErrorCount === 1) {
-              console.error(
-                '[productSync] Firecrawl nicht erreichbar. Überspringe weitere Firecrawl-Anfragen. Error:',
-                err?.message ?? err
-              );
-            }
-          }
-          console.warn('[productSync] Firecrawl enrichment failed for', base.slug, err?.message ?? err);
-        }
-      }
-    }
 
     if (fallbackNeeded && hasManualScraper(base.slug)) {
       const manualStarted = Date.now();
@@ -570,30 +489,22 @@ export async function runProductSync({ manufacturers = [] } = {}) {
   }
 
   if (!globalProviders.size) {
-    globalProviders.add('firecrawl-mcp');
+    globalProviders.add('manual-scraper');
   }
-
-  const firecrawlUsedCount = enrichedManufacturers.filter((m) =>
-    Array.isArray(m?.providersUsed) && m.providersUsed.includes('firecrawl-mcp')
-  ).length;
   const geminiUsedCount = enrichedManufacturers.filter((m) =>
     Array.isArray(m?.providersUsed) && m.providersUsed.includes('gemini')
   ).length;
 
   const nextSnapshot = {
     generatedAt: new Date().toISOString(),
-    source: 'firecrawl-mcp',
+    source: 'sync',
     providers: Array.from(globalProviders),
     syncMeta: {
       startedAt: new Date(startedAt).toISOString(),
       durationMs: Date.now() - startedAt,
-      firecrawlEnabled,
       geminiEnabled,
-      firecrawlError: firecrawlGlobalError ? firecrawlGlobalError.message ?? String(firecrawlGlobalError) : null,
-      firecrawlUnavailable: Boolean(firecrawlGlobalError),
       manufacturerCount: enrichedManufacturers.length,
       concurrency: DEFAULT_CONCURRENCY,
-      firecrawlUsedCount,
       geminiUsedCount,
       manufacturerLimit,
       manufacturerLimitReason

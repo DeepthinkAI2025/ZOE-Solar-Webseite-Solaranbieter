@@ -1,6 +1,7 @@
 import React from 'react';
 import { Page } from '../types';
 import { HeroData } from '../data/pageContent';
+import Breadcrumb from './Breadcrumb';
 
 interface PageHeroProps extends HeroData {
     onCtaClick: (page?: Page, action?: 'open-chat', anchor?: string) => void;
@@ -44,11 +45,7 @@ const PageHero: React.FC<PageHeroProps> = ({ title, subtitle, bgImage, stats, be
                     {/* Main Content */}
                     <div className="text-center lg:text-left">
                          <div className="page-hero-animate-item page-hero-breadcrumb mb-4">
-                            <nav aria-label="breadcrumb" className="text-sm font-medium text-slate-300 flex items-center gap-2 justify-center lg:justify-start">
-                                <a href="#" onClick={(e) => { e.preventDefault(); onCtaClick('home'); }} className="hover:text-white">Startseite</a>
-                                <span className="text-slate-500">/</span>
-                                <span className="text-green-400">{title}</span>
-                            </nav>
+                            <Breadcrumb variant="hero" />
                         </div>
 
                         <h1 className="text-5xl md:text-7xl font-extrabold leading-tight tracking-tighter text-white page-hero-animate-item page-hero-title [text-shadow:_0_3px_5px_rgb(0_0_0_/_50%)]">

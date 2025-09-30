@@ -24,17 +24,12 @@ jobs:
           mkdir -p logs
 
       - name: Build product-sync container
-        run: docker build -t product-sync-runner -f Dockerfile.firecrawl .
+        run: docker build -t product-sync-runner -f Dockerfile .
 
-      - name: Run Firecrawl product sync
-        env:
-          FIRECRAWL_MCP_ENDPOINT: https://api.firecrawl.dev/v1/scrape
-          FIRECRAWL_MCP_API_KEY: ${{ secrets.FIRECRAWL_MCP_API_KEY }}
+      - name: Run product sync
         run: |
           set -o pipefail
           docker run --rm \
-            -e FIRECRAWL_MCP_ENDPOINT="$FIRECRAWL_MCP_ENDPOINT" \
-            -e FIRECRAWL_MCP_API_KEY="$FIRECRAWL_MCP_API_KEY" \
             -v "${{ github.workspace }}/server/storage:/app/server/storage" \
             -v "${{ github.workspace }}/public/assets/logos:/app/public/assets/logos" \
             -v "${{ github.workspace }}/logs:/app/logs" \

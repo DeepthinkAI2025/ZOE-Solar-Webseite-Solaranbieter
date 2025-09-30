@@ -12,6 +12,26 @@ const StandortBerlinPage: React.FC = () => {
       latitude={52.520008}
       longitude={13.404954}
       radiusKm={180}
+      keywords={[
+        "Photovoltaik Berlin",
+        "Solar Berlin",
+        "Solaranlagen Berlin",
+        "PV-Anlage Berlin",
+        "Solarstrom Berlin",
+        "Solarförderung Berlin"
+      ]}
+      regionalOffers={[
+        "Förderprogramme für Solaranlagen in Berlin",
+        "Photovoltaik-Komplettpaket für Berliner Haushalte",
+        "Agri-PV Lösungen für Berliner Landwirtschaft"
+      ]}
+      geoData={{
+        city: "Berlin",
+        state: "Berlin",
+        postalCode: "10115",
+        latitude: 52.520008,
+        longitude: 13.404954
+      }}
     />
   );
 };

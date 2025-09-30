@@ -195,6 +195,9 @@ const AgriPVBayernPage: React.FC = () => {
               Kontakt aufnehmen
             </a>
           </div>
+          <p className="mt-6 text-sm opacity-75">
+            Erfahren Sie mehr über unsere <a href="/photovoltaik-gewerbe" className="underline hover:no-underline">Photovoltaik-Lösungen für Gewerbe</a>.
+          </p>
         </div>
       </div>
     </div>

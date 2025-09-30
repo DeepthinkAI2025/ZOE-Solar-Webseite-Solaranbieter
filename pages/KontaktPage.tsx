@@ -68,7 +68,7 @@ const KontaktPage: React.FC<KontaktPageProps> = ({ setPage }) => {
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-slate-700">E-Mail</h3>
-                                        <a href="mailto:kontakt@zoe-solar.de" className="text-green-600 hover:underline">kontakt@zoe-solar.de</a>
+                                        <a href="mailto:kundenervice@zukunftsorientierte-energie.de" className="text-green-600 hover:underline">kundenervice@zukunftsorientierte-energie.de</a>
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-slate-700">Telefon</h3>

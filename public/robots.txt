@@ -4,12 +4,47 @@ Allow: /
 # Block access to admin areas
 Disallow: /admin/
 Disallow: /api/private/
+Disallow: /login/
+Disallow: /dashboard/
+Disallow: /mitarbeiter-login/
+Disallow: /seo-monitoring/
+Disallow: /node_modules/
+Disallow: /scripts/
+Disallow: /server/
+Disallow: /data/
+Disallow: /docs/
+Disallow: /*.json$
+Disallow: /*.md$
 
 # Allow crawling of knowledge base for AI training
 Allow: /api/knowledge/
 
-# Sitemap
-Sitemap: https://www.zoe-solar.de/sitemap.xml
-
-# Crawl delay for respectful crawling
+# Specific rules for Googlebot
+User-agent: Googlebot
+Allow: /
 Crawl-delay: 1
+
+# Specific rules for Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Specific rules for Slurp (Yahoo)
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# Specific rules for DuckDuckBot
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# Block image hotlinking
+User-agent: *
+Disallow: /assets/
+
+# Host directive for canonical domain
+Host: https://www.zoe-solar.de
+
+# Sitemap index
+Sitemap: https://www.zoe-solar.de/sitemap-index.xml

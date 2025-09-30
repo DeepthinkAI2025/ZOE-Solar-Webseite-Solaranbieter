@@ -223,7 +223,7 @@ Inhalt:
 ### **Outreach-Tabelle:**
 | Ziel | Redakteur | Status | Erstkontakt | Follow-up | Ergebnis | Backlink |
 |------|-----------|--------|-------------|-----------|----------|----------|
-| pv-magazine.de | Max Mustermann | 📧 Gesendet | 25.09.2025 | - | - | - |
+| pv-magazine.de | Jeremy Schulze | 📧 Gesendet | 25.09.2025 | - | - | - |
 | erneuerbare-energien.de | Anna Beispiel | 📞 Gespräch | 26.09.2025 | 03.10.2025 | Interesse | - |
 
 ### **Status-Legende:**

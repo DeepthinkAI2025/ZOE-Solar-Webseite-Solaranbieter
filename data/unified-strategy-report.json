@@ -1,0 +1,165 @@
+{
+  "timestamp": "2025-09-28T17:14:39.419Z",
+  "systemVersion": "Unified Strategy Orchestrator v1.0",
+  "executionSummary": {
+    "completedStages": [
+      "seo",
+      "geo",
+      "correlations",
+      "optimization",
+      "execution"
+    ],
+    "failedStages": [
+      "alert-system"
+    ],
+    "totalStages": 6,
+    "successRate": "83.3%"
+  },
+  "unifiedKPIs": {
+    "seo": {
+      "avgPosition": 19.26771653543307,
+      "top3Keywords": 7,
+      "top10Keywords": 31,
+      "top20Keywords": 72,
+      "organicTraffic": 12386,
+      "organicTrafficGrowth": -7,
+      "conversionRate": 4.521233650896173,
+      "conversions": 560,
+      "revenue": 2525906,
+      "bounceRate": 47.196267233543736,
+      "avgSessionDuration": 193233,
+      "pagesPerSession": 3.3025189730340707,
+      "visibilityScore": 106.84325000000004,
+      "opportunityScore": 13,
+      "timestamp": "2025-09-28T17:14:39.325Z"
+    },
+    "geo": {
+      "avgVisibilityScore": 64.8148148148148,
+      "top3LocalPackCities": 1,
+      "totalLocalTraffic": 38255,
+      "totalGMBViews": 142961,
+      "totalGMBWebsiteClicks": 5675,
+      "totalGMBCalls": 1965,
+      "avgGMBRating": 4.453333333333333,
+      "marketCoverage": 86.66666666666667,
+      "highPotentialCities": 2,
+      "avgCompetitorRating": 4.515,
+      "timestamp": "2025-09-28T17:14:39.389Z"
+    },
+    "aeo": {
+      "entityAuthorityScore": 85,
+      "knowledgeGraphPresence": 88
+    },
+    "correlations": {
+      "seo_geo": {
+        "organicTraffic_localTraffic": 0,
+        "visibilityScore_localTraffic": 0,
+        "conversions_gmbClicks": 0
+      },
+      "seo_aeo": {
+        "organicTraffic_entityAuthority": 0,
+        "visibilityScore_knowledgeGraph": 0,
+        "conversions_socialProof": 0
+      },
+      "geo_aeo": {
+        "localTraffic_entityAuthority": 0,
+        "gmbRating_citationConsistency": 0,
+        "visibilityScore_socialProof": 0
+      }
+    }
+  },
+  "criticalAlerts": [],
+  "topRecommendations": [
+    {
+      "id": "aeo-lowAuthority-1759079679413",
+      "strategy": "AEO",
+      "type": "authority-building",
+      "priority": "high",
+      "confidence": 95,
+      "title": "AEO: Authority Building",
+      "description": "Bauen Sie Entity Authority durch strukturierte Daten und Social Proof",
+      "expectedImpact": "high",
+      "implementationEffort": "high",
+      "timeline": "1-2 Wochen",
+      "kpis": [
+        "Performance +15%",
+        "ROI +20%"
+      ],
+      "timestamp": "2025-09-28T17:14:39.413Z"
+    },
+    {
+      "id": "aeo-inconsistentCitations-1759079679413",
+      "strategy": "AEO",
+      "type": "citation-audit",
+      "priority": "medium",
+      "confidence": 90,
+      "title": "AEO: Citation Audit",
+      "description": "Führen Sie Citation Audit durch und standardisieren Sie NAP-Daten",
+      "expectedImpact": "medium",
+      "implementationEffort": "low",
+      "timeline": "2-4 Wochen",
+      "kpis": [
+        "Performance +15%",
+        "ROI +20%"
+      ],
+      "timestamp": "2025-09-28T17:14:39.413Z"
+    },
+    {
+      "id": "cross-strengthen-aeo-1759079679413",
+      "strategy": "CROSS",
+      "type": "strategy-balancing",
+      "priority": "medium",
+      "confidence": 75,
+      "title": "AEO Strategie stärken",
+      "description": "Die AEO-Strategie ist unterentwickelt. Integrieren Sie Cross-Strategy Elemente zur Verbesserung.",
+      "expectedImpact": "medium",
+      "implementationEffort": "high",
+      "timeline": "8-12 Wochen",
+      "kpis": [
+        "AEO Score +25%",
+        "Overall Performance +15%"
+      ],
+      "timestamp": "2025-09-28T17:14:39.413Z"
+    }
+  ],
+  "strategyInsights": [],
+  "performanceSummary": {
+    "overallHealth": "83%",
+    "strategyPerformance": {
+      "seo": "active",
+      "geo": "active",
+      "aeo": "partial",
+      "correlations": "active"
+    },
+    "alertsCount": 0,
+    "recommendationsCount": 3,
+    "lastExecution": "2025-09-28T17:14:39.419Z"
+  },
+  "nextSteps": [
+    "Beheben Sie Systemfehler und fehlende Datenquellen",
+    "Überprüfen Sie kritische Alerts und implementieren Sie sofortige Maßnahmen",
+    "Setzen Sie Top-Empfehlungen der KI-Engine um",
+    "Überwachen Sie KPI-Entwicklung in den nächsten 7 Tagen",
+    "Führen Sie nächsten vollständigen Strategie-Zyklus durch"
+  ],
+  "systemHealth": {
+    "score": 85,
+    "status": "excellent",
+    "issues": 1,
+    "missingComponents": [
+      "seo-monitoring",
+      "geo-monitoring",
+      "correlation-analysis",
+      "alert-system",
+      "strategy-optimization",
+      "automated-execution"
+    ]
+  },
+  "errors": [
+    {
+      "stage": "alert-system",
+      "error": "Cannot read properties of undefined (reading 'avgPosition')",
+      "timestamp": "2025-09-28T17:14:39.409Z"
+    }
+  ]
+}

@@ -1,12 +1,107 @@
-# Backlink-Strategie für ZOE Solar - Domain Authority 69 → 80+
+# Backlink-Strategie für ZOE Solar - AI-Era Authority Building 2026
 
-## 🎯 Ziel: DA 80+ erreichen
+## 🎯 Ziel: DA 80+ erreichen mit AI-Optimierung
 
 ### Aktuelle Situation
 - **Domain Authority**: 69
 - **Backlinks**: 1.304
 - **Neue Links/Monat**: 5
 - **Verlorene Links/Monat**: 1
+- **AI Citations**: 23 (Perplexity, ChatGPT)
+- **LLM Feeder Status**: Aktiv
+
+## 🤖 AI-Era Backlink-Strategien (2026)
+
+### 1. AI-Mentioned Resource Building
+**Priorität: HOCH** | **Schwierigkeit: MITTEL-HOCH** | **Zeit: Laufend**
+
+#### AI-Resource Identifikation
+- [ ] **ChatGPT Queries**: "beste Solaranlagen Deutschland" analysieren
+- [ ] **Perplexity Citations**: Top-zitierte Ressourcen identifizieren
+- [ ] **AI Response Analysis**: Welche Sites werden von LLMs zitiert?
+
+#### Resource Gap Analysis
+- [ ] **Superior Content Creation**: Bessere Ressourcen als AI-zitierte erstellen
+- [ ] **Citation Opportunities**: Wo können wir erwähnt werden?
+- [ ] **Expert Positioning**: Als AI-Quelle etablieren
+
+#### Implementation Steps
+```
+AI Resource Strategy:
+
+1. Query AI platforms for top resources in niche
+2. Analyze citation patterns and authority sources
+3. Identify content gaps for superior resources
+4. Create comprehensive, AI-citable content
+5. Targeted outreach to sites AI references
+6. Monitor AI citation growth
+```
+
+### 2. Expert Positioning & HARO 2.0
+**Priorität: HOCH** | **Schwierigkeit: MITTEL** | **Zeit: Laufend**
+
+#### HARO (Help A Reporter Out) 2.0
+- [ ] **Journalist Networks**: Reporter-Seiten für Energie-Themen
+- [ ] **Expert Database**: Als Solar-Experte registrieren
+- [ ] **Query Monitoring**: Tägliche HARO-Queries prüfen
+
+#### Advanced Expert Positioning
+- [ ] **Podcast Guesting**: Energie-Podcasts als Experte
+- [ ] **Conference Speaking**: Intersolar, EU PVSEC
+- [ ] **Expert Roundups**: "Top 10 Solar-Experten" Listen
+- [ ] **Original Research**: Marktstudien und Datenanalysen
+
+#### Media Relations Strategy
+```
+Expert Positioning Framework:
+
+1. Build comprehensive expert profile
+2. Monitor media opportunities daily
+3. Create newsworthy content regularly
+4. Network with journalists and influencers
+5. Position as go-to expert for solar topics
+6. Track media mentions and citations
+```
+
+### 3. AI-Optimized Outreach Templates
+**Priorität: MITTEL-HOCH** | **Schwierigkeit: LEICHT** | **Zeit: Laufend**
+
+#### Template 1: Resource Addition
+```
+Subject: Quick suggestion für your [Resource Page Title]
+
+Hi [Name],
+
+I came across your excellent resource page on [specific topic] and found it incredibly useful. I particularly appreciated your section on [specific detail].
+
+I recently published a comprehensive guide on [related topic] that your readers might find valuable: [URL]
+
+It covers [specific benefits that complement their resource] and includes [unique element like tool, template, data].
+
+Would this be worth considering for your resource list?
+
+Best,
+[Your name]
+```
+
+#### Template 2: Expert Commentary
+```
+Subject: Expert perspective on [Current Topic/News]
+
+Hi [Name],
+
+I saw your recent article about [topic] and wanted to share my perspective as a solar energy expert.
+
+[Brief expert insight that adds value]
+
+I'd be happy to provide a quote for your next piece or discuss this further.
+
+Best regards,
+[Your name]
+ZOE Solar GmbH
+```
+
+## 📈 Traditionelle Backlink-Strategien (Erweitert)
 
 ## 📈 Backlink-Strategien
 

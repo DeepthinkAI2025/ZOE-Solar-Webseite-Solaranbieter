@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-09-28T17:14:39.396Z",
+  "correlations": {
+    "seo_geo": {
+      "organicTraffic_localTraffic": 0,
+      "visibilityScore_localTraffic": 0,
+      "conversions_gmbClicks": 0
+    },
+    "seo_aeo": {
+      "organicTraffic_entityAuthority": 0,
+      "visibilityScore_knowledgeGraph": 0,
+      "conversions_socialProof": 0
+    },
+    "geo_aeo": {
+      "localTraffic_entityAuthority": 0,
+      "gmbRating_citationConsistency": 0,
+      "visibilityScore_socialProof": 0
+    }
+  },
+  "insights": [],
+  "efficiency": {
+    "seo": {
+      "trafficPerInvestment": 12.386,
+      "conversionEfficiency": 0.04521233650896173,
+      "scalabilityScore": 10
+    },
+    "geo": {
+      "localReachEfficiency": null,
+      "conversionPerLocation": 0,
+      "marketPenetrationScore": 86.66666666666667
+    },
+    "aeo": {
+      "authorityGrowthRate": 12.5,
+      "brandAmplification": 1.25,
+      "trustBuildingEfficiency": 0
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "medium",
+      "category": "resource-allocation",
+      "title": "Fokus auf SEO-Effizienz",
+      "description": "SEO zeigt die höchste Effizienz. Investieren Sie mehr Ressourcen in diesen Bereich.",
+      "actions": [
+        "Erhöhen Sie SEO-Budget um 20%",
+        "Replizieren Sie erfolgreiche SEO-Taktiken",
+        "Nutzen Sie SEO-Erfolge für andere Strategien"
+      ]
+    }
+  ],
+  "summary": {
+    "totalInsights": 0,
+    "strongCorrelations": 0,
+    "mostEfficientStrategy": "seo",
+    "nextAnalysisDate": "2025-10-05T17:14:39.396Z"
+  }
+}

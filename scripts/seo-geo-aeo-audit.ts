@@ -158,7 +158,7 @@ function coverageScore(flags: boolean[]): number {
   return Math.round((achieved / total) * 100);
 }
 
-function evaluateLocation(region: ServiceRegion): LocationInsight {
+async function evaluateLocation(region: ServiceRegion): Promise<LocationInsight> {
   const slug = getServiceRegionSlug(region);
   const routePath = `/standort/${slug}`;
   const hasRoute = true;
@@ -172,7 +172,7 @@ function evaluateLocation(region: ServiceRegion): LocationInsight {
 
   if (hasRoute) {
     try {
-      metadata = resolveSeoForPage({ page: 'standort', pathname: routePath });
+      metadata = await resolveSeoForPage({ page: 'standort', pathname: routePath });
       canonical = metadata?.canonical ?? canonical;
       const structuredData = Array.isArray(metadata?.structuredData) ? metadata.structuredData : [];
 
@@ -379,7 +379,7 @@ async function main(): Promise<void> {
     .filter((entry) => !faqCoversKeyword(entry.keyword))
     .sort((a, b) => (b.opportunityScore ?? 0) - (a.opportunityScore ?? 0));
 
-  const locationInsights = PRIMARY_SERVICE_REGIONS.map(evaluateLocation);
+  const locationInsights = await Promise.all(PRIMARY_SERVICE_REGIONS.map(evaluateLocation));
 
   const topLocations = [...locationInsights]
     .sort((a, b) => b.score - a.score)

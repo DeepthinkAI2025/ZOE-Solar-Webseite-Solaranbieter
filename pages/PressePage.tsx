@@ -104,7 +104,7 @@ const PressePage: React.FC = () => {
                             <div className="space-y-4">
                                 <h4 className="font-semibold text-slate-700">Pressekontakt:</h4>
                                 <p className="text-slate-600">
-                                    Max Mustermann<br />
+                                    Jeremy Schulze<br />
                                     <a href="mailto:presse@zoe-solar.de" className="text-green-600 hover:underline">presse@zoe-solar.de</a><br />
                                     <a href="tel:+493012345679" className="text-green-600 hover:underline">+49 (0) 30 123 456 79</a>
                                 </p>

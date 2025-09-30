@@ -2,7 +2,7 @@ import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import StandortPage from '../components/StandortPage';
 import { getServiceRegionBySlug, getServiceRegionSlug } from '../data/seoConfig';
-import { localContentByCity } from '../data/localContent';
+import { localContentByCity } from '../data/localContent.ts';
 
 const isKnownLocationKey = (value: string): value is keyof typeof localContentByCity =>
   Object.prototype.hasOwnProperty.call(localContentByCity, value);

@@ -33,8 +33,8 @@ const DatenschutzPage: React.FC = () => {
                         Kurfürstenstraße 124<br />
                         10785 Berlin<br />
                         Deutschland<br/>
-                        Telefon: +49 156 78876200<br/>
-                        E-Mail: kontakt@zoe-solar.de
+                        Telefon: +49 15678876200<br/>
+                        E-Mail: kundenervice@zukunftsorientierte-energie.de
                     </p>
                     
                     <h3>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>

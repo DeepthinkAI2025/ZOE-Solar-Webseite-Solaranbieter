@@ -173,7 +173,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setPage, openCommandHub, b
   const isPhotovoltaikActive = ['photovoltaik', 'service-photovoltaik', 'service-speicher', 'innovations', 'agri-pv', 'service-anmeldung-pv'].includes(currentPage);
   const isProdukteActive = ['produkte', 'hersteller-detail'].includes(currentPage);
   const isEMobilitaetActive = ['e-mobilitaet', 'service-ladeparks', 'service-anmeldung-ladestationen'].includes(currentPage);
-  const isWissenActive = ['wissens-hub', 'glossar', 'aktuelles', 'article-detail', 'guide-detail', 'faq-page', 'diy-hub'].includes(currentPage);
+  const isWissenActive = ['wissens-hub', 'magazin', 'glossar', 'aktuelles', 'article-detail', 'guide-detail', 'faq-page', 'diy-hub'].includes(currentPage);
   const isPreiseActive = ['preise', 'finanzierung', 'foerdermittel-check', 'sonderaktionen'].includes(currentPage);
   const isElektroActive = ['elektro', 'service-netzanschluss', 'service-verteilerbau', 'service-zaehlerbau'].includes(currentPage);
   const isNight = theme === 'night';
@@ -322,7 +322,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setPage, openCommandHub, b
 
             <div onMouseEnter={() => handleMouseEnter('wissen')} onMouseLeave={handleMouseLeave} className="relative">
                <NavLink
-                 to="/wissen"
+                 to="/wissens-hub"
                  onClick={() => handleLinkClick('wissens-hub')}
                  className={`${navLinkClasses('wissen_parent')} ${activeDropdown === 'wissen' ? dropdownActiveClass : ''}`}
                >
@@ -436,7 +436,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setPage, openCommandHub, b
                 <Link to="/e-mobilitaet" onClick={() => handleLinkClick('e-mobilitaet')} className="nav-item-stagger block text-slate-700 hover:text-green-600 cursor-pointer text-2xl font-semibold px-4 py-3 rounded-md hover:bg-slate-100">E-Mobilität</Link>
                 <Link to="/elektro" onClick={() => handleLinkClick('elektro')} className="nav-item-stagger block text-slate-700 hover:text-green-600 cursor-pointer text-2xl font-semibold px-4 py-3 rounded-md hover:bg-slate-100">Elektro</Link>
                 <Link to="/produkte" onClick={() => handleLinkClick('produkte')} className="nav-item-stagger block text-slate-700 hover:text-green-600 cursor-pointer text-2xl font-semibold px-4 py-3 rounded-md hover:bg-slate-100">Produkte</Link>
-                <Link to="/wissen" onClick={() => handleLinkClick('wissens-hub')} className="nav-item-stagger block text-slate-700 hover:text-green-600 cursor-pointer text-2xl font-semibold px-4 py-3 rounded-md hover:bg-slate-100">Wissen</Link>
+                <Link to="/wissens-hub" onClick={() => handleLinkClick('wissens-hub')} className="nav-item-stagger block text-slate-700 hover:text-green-600 cursor-pointer text-2xl font-semibold px-4 py-3 rounded-md hover:bg-slate-100">Wissen</Link>
                 <Link to="/kontakt" onClick={() => handleLinkClick('kontakt')} className="nav-item-stagger block text-slate-700 hover:text-green-600 cursor-pointer text-2xl font-semibold px-4 py-3 rounded-md hover:bg-slate-100">Kontakt</Link>
             </div>
             <div className="mt-auto nav-item-stagger" style={{transitionDelay: '500ms'}}>

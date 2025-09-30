@@ -1,6 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 import {
   loadApiKeys,
@@ -13,14 +15,22 @@ import { fetchAnalyticsData } from './services/analytics.js';
 import { fetchAhrefsData } from './services/ahrefs.js';
 import { fetchBusinessProfile } from './services/businessProfile.js';
 import { fetchMonitoringSummary } from './services/monitoringFeed.js';
-import { runProductSync, readLiveProducts } from './services/productSync.js';
-import cron from 'node-cron';
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(express.json({ limit: '4mb' }));
+
+// Performance: Statische Assets mit optimalen Caching-Headern ausliefern
+app.use(express.static('public', {
+  setHeaders: (res, path) => {
+    if (/\.(js|css|png|jpg|jpeg|webp|svg|gif|woff2?|ttf|eot)$/.test(path)) {
+      res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+    }
+  }
+}));
 
 const PORT = Number(process.env.PORT ?? 5001);
 
@@ -384,48 +394,6 @@ app.get('/health', (_req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// Serve latest live products if available
-app.get('/api/products/live', (_req, res) => {
-  const data = readLiveProducts();
-  if (!data) return res.status(404).json({ success: false, message: 'No live products available' });
-  res.json({ success: true, data });
-});
-
-// Admin endpoint to trigger a sync. Protect with simple API key if provided via env.
-app.post('/api/admin/products/sync', async (req, res) => {
-  try {
-    const providedKey = req.headers['x-sync-key'] || req.body?.syncKey;
-    const requiredKey = process.env.PRODUCTS_SYNC_KEY || null;
-    if (requiredKey && (!providedKey || providedKey !== requiredKey)) {
-      return res.status(401).json({ success: false, message: 'Unauthorized' });
-    }
-
-    const { manufacturers } = req.body ?? {};
-    const result = await runProductSync({ manufacturers });
-    res.json({ success: true, result });
-  } catch (err) {
-    console.error('Product sync failed:', err);
-    res.status(500).json({ success: false, message: err.message || 'Sync failed' });
-  }
-});
-
-const cronDisabled = process.env.DISABLE_PRODUCT_SYNC_CRON === 'true';
-const cronSchedule = process.env.PRODUCTS_SYNC_CRON_SCHEDULE || '15 3 * * *'; // daily at 03:15 UTC by default
-
-if (!cronDisabled) {
-  console.log('[server] Firecrawl product sync cron aktiv, schedule =', cronSchedule);
-  cron.schedule(cronSchedule, async () => {
-    try {
-      console.log('[cron] Starte geplanten Firecrawl-Productsync...');
-      await runProductSync();
-      console.log('[cron] Firecrawl-Productsync abgeschlossen');
-    } catch (err) {
-      console.error('[cron] Firecrawl-Productsync fehlgeschlagen:', err.message || err);
-    }
-  });
-} else {
-  console.log('[server] Firecrawl product sync cron deaktiviert (DISABLE_PRODUCT_SYNC_CRON=true)');
-}
 
 app.get('/api/admin/api-keys', (_req, res) => {
   const summary = summariseKeys(apiKeyState);
@@ -504,6 +472,35 @@ app.get('/api/monitoring/summary', async (req, res) => {
       success: false,
       message: 'Monitoring-Daten derzeit nicht verfügbar.'
     });
+// SSR Handler für alle React-Routen (außer API)
+app.get('*', async (req, res) => {
+  try {
+    // Dynamisches Import des SSR-Moduls
+    const { render } = await import(path.resolve(__dirname, 'dist/server/server.js'));
+
+    // Render die Seite server-seitig
+    const { html, helmet } = render(req.originalUrl);
+
+    // Lade die client-seitige index.html als Template
+    const template = await import('fs').then(fs => fs.readFileSync(path.resolve(__dirname, 'dist/index.html'), 'utf-8'));
+
+    // Ersetze Platzhalter mit SSR-Content
+    const finalHtml = template
+      .replace('<!--ssr-head-->', `${helmet.title}${helmet.meta}${helmet.link}${helmet.script}`)
+      .replace('<!--ssr-body-->', html);
+
+    res.status(200).set({ 'Content-Type': 'text/html' }).end(finalHtml);
+  } catch (error) {
+    console.error('SSR Error:', error);
+    // Fallback: Serviere die statische index.html
+    const fallbackHtml = await import('fs').then(fs => fs.readFileSync(path.resolve(__dirname, 'dist/index.html'), 'utf-8'));
+    res.status(200).set({ 'Content-Type': 'text/html' }).end(fallbackHtml);
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`Server läuft auf Port ${PORT} mit SSR-Unterstützung`);
+});
   }
 });
 

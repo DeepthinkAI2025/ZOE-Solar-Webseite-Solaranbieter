@@ -22,8 +22,9 @@ export const pageToPath: Record<Page, string> = {
   login: '/login',
   dashboard: '/dashboard',
   empfehlungspraemie: '/empfehlungspraemie',
-  'wissens-hub': '/wissen',
-  glossar: '/wissen/glossar',
+  'wissens-hub': '/wissens-hub',
+  magazin: '/magazin',
+  glossar: '/glossar',
   'guide-detail': '/wissen',
   innovations: '/innovationen',
   finanzierung: '/finanzierung',
@@ -60,6 +61,9 @@ export const pageToPath: Record<Page, string> = {
   'eigenheim-kosten': '/eigenheim-kosten',
   'eigenheim-einfamilienhaus-kosten': '/eigenheim-einfamilienhaus-kosten',
   'eigenheim-planung': '/eigenheim-planung',
+  'photovoltaik-gewerbe': '/photovoltaik-gewerbe',
+  'photovoltaik-logistikzentren': '/photovoltaik-logistikzentren',
+  'photovoltaik-einzelhandel': '/photovoltaik-einzelhandel',
   'photovoltaik-installation-dach': '/photovoltaik-installation-dach',
   'eigenheim-installation': '/eigenheim-installation',
   'seo-monitoring': '/seo-monitoring',
@@ -67,6 +71,8 @@ export const pageToPath: Record<Page, string> = {
   'fallstudie-detail': '/fallstudie',
   'agri-pv-erfahrungen': '/agri-pv-erfahrungen',
   'mitarbeiter-login': '/mitarbeiter-login',
+  'photovoltaik-rechner-gewerbe': '/photovoltaik-rechner-gewerbe',
+  'photovoltaik-planung-gewerbe': '/photovoltaik-planung-gewerbe',
 };
 
 export const derivePageFromPath = (pathname: string): Page => {
@@ -103,9 +109,10 @@ export const derivePageFromPath = (pathname: string): Page => {
   if (pathname.startsWith('/dashboard')) return 'dashboard';
   if (pathname.startsWith('/empfehlungspraemie')) return 'empfehlungspraemie';
   if (pathname.startsWith('/wissen/guide')) return 'guide-detail';
-  if (pathname.startsWith('/wissen/glossar')) return 'glossar';
+  if (pathname.startsWith('/glossar')) return 'glossar';
   if (pathname.startsWith('/wissen/faq')) return 'faq-page';
-  if (pathname.startsWith('/wissen')) return 'wissens-hub';
+  if (pathname.startsWith('/wissens-hub')) return 'wissens-hub';
+  if (pathname.startsWith('/magazin')) return 'magazin';
   if (pathname.startsWith('/innovationen')) return 'innovations';
   if (pathname.startsWith('/finanzierung')) return 'finanzierung';
   if (pathname.startsWith('/sonderaktionen')) return 'sonderaktionen';
@@ -134,11 +141,19 @@ export const derivePageFromPath = (pathname: string): Page => {
     if (pathname === '/eigenheim-installation') return 'eigenheim-installation';
     return 'eigenheim';
   }
+  if (pathname.startsWith('/photovoltaik-gewerbe')) return 'photovoltaik-gewerbe';
+  if (pathname.startsWith('/photovoltaik-industrie')) return 'photovoltaik-industrie';
+  if (pathname.startsWith('/photovoltaik-landwirtschaft')) return 'photovoltaik-landwirtschaft';
+  if (pathname.startsWith('/photovoltaik-gewerbegebaeude')) return 'photovoltaik-gewerbegebaeude';
+  if (pathname.startsWith('/photovoltaik-logistikzentren')) return 'photovoltaik-logistikzentren';
+  if (pathname.startsWith('/photovoltaik-einzelhandel')) return 'photovoltaik-einzelhandel';
   if (pathname.startsWith('/photovoltaik-installation-dach')) return 'photovoltaik-installation-dach';
   if (pathname.startsWith('/seo-monitoring')) return 'seo-monitoring';
   if (pathname.startsWith('/fallstudien')) return 'fallstudien';
   if (pathname.startsWith('/fallstudie/')) return 'fallstudie-detail';
   if (pathname.startsWith('/agri-pv-erfahrungen')) return 'agri-pv-erfahrungen';
   if (pathname.startsWith('/mitarbeiter-login')) return 'mitarbeiter-login';
+  if (pathname.startsWith('/photovoltaik-rechner-gewerbe')) return 'photovoltaik-rechner-gewerbe';
+  if (pathname.startsWith('/photovoltaik-planung-gewerbe')) return 'photovoltaik-planung-gewerbe';
   return 'home';
 };

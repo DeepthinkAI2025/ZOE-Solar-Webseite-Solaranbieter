@@ -1,6 +1,5 @@
 import fs from 'fs';
 import path from 'path';
-import { fetchLogoCandidatesForWebsite } from './firecrawlClient.js';
 
 const PUBLIC_LOGO_DIR = path.join(process.cwd(), 'public', 'assets', 'logos');
 
@@ -202,16 +201,6 @@ export async function probeAndCacheLogo(slug, websiteUrl) {
       // ignore
     }
 
-    // 5) Firecrawl MCP fallback for logo discovery
-    try {
-      const candidates = await fetchLogoCandidatesForWebsite(base, slug);
-      for (const candidate of candidates) {
-        const local = await cacheLogoForManufacturer(slug, candidate);
-        if (local) return local;
-      }
-    } catch (err) {
-      console.warn('[logoCache] Firecrawl logo fallback failed for', slug, err?.message ?? err);
-    }
   } catch (err) {
     // invalid URL or other error
   }

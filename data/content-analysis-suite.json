@@ -1,24 +1,24 @@
 {
-  "timestamp": "2025-09-28T14:40:03.176Z",
+  "timestamp": "2025-09-28T15:43:29.178Z",
   "contentMetrics": {
-    "totalPages": 650,
-    "pagesWithContent": 457,
-    "averageWordCount": 581,
+    "totalPages": 392,
+    "pagesWithContent": 462,
+    "averageWordCount": 361,
     "contentQuality": {
-      "excellent": 22,
-      "good": 31,
-      "needsImprovement": 22
+      "excellent": 30,
+      "good": 52,
+      "needsImprovement": 17
     }
   },
   "seoIssues": [
     {
       "type": "missing_meta_description",
-      "count": 54,
+      "count": 22,
       "severity": "high"
     },
     {
       "type": "duplicate_content",
-      "count": 11,
+      "count": 12,
       "severity": "medium"
     }
   ],

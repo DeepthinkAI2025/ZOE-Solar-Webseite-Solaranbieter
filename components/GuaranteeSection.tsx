@@ -24,9 +24,9 @@ const guarantees = [
     ),
   },
   {
-    title: 'Rendite-Versprechen',
+    title: 'Rendite-Maximierung',
     description:
-      'Liefern wir nicht die prognostizierte Anlagenleistung, kompensieren wir die Differenz finanziell. Ihr Business Case ist damit planbar abgesichert.',
+      'Durch AI-gestützte Simulationen und präzise Standortanalysen maximieren wir Ihre Anlagenleistung. So erreichen Sie die höchstmögliche Rendite bei minimalen Investitionskosten.',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -46,9 +46,9 @@ const guarantees = [
     ),
   },
   {
-    title: 'Verfügbarkeits-Check',
+    title: 'Direktvermarktung-Vorteil',
     description:
-      'Wir garantieren verbindliche Projekttermine und festes Montagepersonal. Sollte es Verzögerungen geben, reduzieren wir Ihre Investitionssumme.',
+      'Wir übernehmen die Direktvermarktung Ihrer Solarenergie und sichern Ihnen höhere Erlöse als über den Netzbetreiber. So amortisiert sich Ihre Anlage schneller und rentabler.',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

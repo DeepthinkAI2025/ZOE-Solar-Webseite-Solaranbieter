@@ -3,6 +3,7 @@ import { Page } from '../types';
 
 interface PricingSectionProps {
     setPage: (page: Page) => void;
+    customerType?: 'private' | 'business';
 }
 
 const Icon: React.FC<{ name: string }> = ({ name }) => {
@@ -26,37 +27,77 @@ const InfoCard: React.FC<{ iconName: string; title: string; text: string; linkTe
     </div>
 );
 
-const PricingSection: React.FC<PricingSectionProps> = ({ setPage }) => {
+const PricingSection: React.FC<PricingSectionProps> = ({ setPage, customerType = 'business' }) => {
+    const getPricingContent = () => {
+        if (customerType === 'private') {
+            return {
+                sectionTitle: "Transparent, fair & planbar für Ihr Zuhause.",
+                sectionDescription: "Ihre Investition in die Zukunft soll sich lohnen – vom ersten Tag an. Entdecken Sie unsere Festpreis-Pakete speziell für Einfamilienhäuser und attraktive Finanzierungs- und Fördermöglichkeiten.",
+                packages: {
+                    title: "Haus-Pakete & Preise",
+                    text: "Transparente Festpreise für Einfamilienhäuser. Finden Sie das passende Solarpaket für Ihr Zuhause – ohne versteckte Kosten."
+                },
+                financing: {
+                    title: "0€ Anzahlung möglich",
+                    text: "Starten Sie ohne Eigenkapital in die Energiewende. Dank KfW-Förderkredite übersteigt Ihre Ersparnis oft die monatliche Rate."
+                },
+                subsidies: {
+                    title: "Fördermittel für Privat",
+                    text: "Kein Geld verschenken. Wir navigieren Sie durch den Förderdschungel und finden die maximalen Zuschüsse für Ihr Einfamilienhaus."
+                }
+            };
+        } else {
+            return {
+                sectionTitle: "Transparent, fair & planbar für Ihr Unternehmen.",
+                sectionDescription: "Ihre Investition in die Zukunft soll sich lohnen – vom ersten Tag an. Entdecken Sie unsere Festpreis-Pakete für gewerbliche Solaranlagen und attraktive Finanzierungs- und Fördermöglichkeiten.",
+                packages: {
+                    title: "Gewerbe-Pakete & Preise",
+                    text: "Transparente Festpreise für Unternehmen. Finden Sie das passende Solarpaket für Ihre Geschäftsräume – ohne versteckte Kosten."
+                },
+                financing: {
+                    title: "Flexible Finanzierung",
+                    text: "Optimieren Sie Ihre Liquidität. Dank attraktiver Förderkredite und Leasing-Optionen schonen Sie Ihr Working Capital."
+                },
+                subsidies: {
+                    title: "Fördermittel für Gewerbe",
+                    text: "Maximale Förderung sichern. Wir navigieren Sie durch den Förderdschungel und finden die optimalen Zuschüsse für Ihr Unternehmen."
+                }
+            };
+        }
+    };
+
+    const content = getPricingContent();
+
     return (
         <section id="pricing-section" className="py-20 bg-slate-50">
             <div className="container mx-auto px-6">
                  <div className="text-center mb-16 max-w-4xl mx-auto">
                     <p className="font-bold text-green-600 uppercase tracking-wider">Preisgestaltung & Pakete</p>
-                    <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mt-2">Transparent, fair & planbar.</h2>
+                    <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mt-2">{content.sectionTitle}</h2>
                     <p className="text-lg text-slate-600 mt-4">
-                        Ihre Investition in die Zukunft soll sich lohnen – vom ersten Tag an. Entdecken Sie unsere Festpreis-Pakete und attraktiven Finanzierungs- und Fördermöglichkeiten.
+                        {content.sectionDescription}
                     </p>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                    <InfoCard 
+                    <InfoCard
                         iconName="packages"
-                        title="Pakete & Preise"
-                        text="Transparente Festpreise für Privat & Gewerbe. Finden Sie das passende Solarpaket für Ihre Bedürfnisse – ohne versteckte Kosten."
+                        title={content.packages.title}
+                        text={content.packages.text}
                         linkText="Zu den Paketen"
                         onClick={() => setPage('preise')}
                     />
-                    <InfoCard 
+                    <InfoCard
                         iconName="financing"
-                        title="0€ Anzahlung"
-                        text="Starten Sie ohne Eigenkapital in die Energiewende. Dank attraktiver Förderkredite übersteigt Ihre Ersparnis oft die Rate."
+                        title={content.financing.title}
+                        text={content.financing.text}
                         linkText="Mehr zur Finanzierung"
                         onClick={() => setPage('finanzierung')}
                         isFeatured={true}
                     />
-                     <InfoCard 
+                     <InfoCard
                         iconName="subsidies"
-                        title="Fördermittel-Check"
-                        text="Kein Geld verschenken. Wir navigieren Sie durch den Förderdschungel und finden die maximalen Zuschüsse für Ihr Projekt."
+                        title={content.subsidies.title}
+                        text={content.subsidies.text}
                         linkText="Jetzt Förderung prüfen"
                         onClick={() => setPage('foerdermittel-check')}
                     />

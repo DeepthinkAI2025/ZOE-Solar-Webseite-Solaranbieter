@@ -2,7 +2,7 @@ export const websiteKnowledge = `
 # About ZOE Solar
 - Mission: To make the energy transition a reality for businesses by providing economically and ecologically sound solutions. We are a strategic partner for energy independence.
 - Core Values: Quality (premium components, certified in-house experts, no subcontractors), Partnership (transparency, fair pricing, excellent service), Innovation (independent of manufacturers, using the best global technology).
-- Team: Experienced founders and engineers like Max Mustermann, Erika Mustermann, Klaus Kleber.
+- Team: Experienced founders and engineers like Jeremy Schulze, Erika Mustermann, Klaus Kleber.
 
 # Services
 - Commercial Photovoltaics: Custom large-scale PV systems for industry, agriculture, and commerce on roofs and open spaces. Includes solar carports.
@@ -38,5 +38,5 @@ Our process is a 4-step blueprint:
 - Payback period for commercial systems is often 6-10 years.
 - We handle all bureaucracy, including permits and grid applications.
 - All systems come with online monitoring.
-- Contact: kontakt@zoe-solar.de, +49 (0) 30 123 456 78, Office hours Mo-Fr 08:00 - 17:00.
+- Contact: kundenervice@zukunftsorientierte-energie.de, +49 (0) 30 123 456 78, Office hours Mo-Fr 08:00 - 17:00.
 `;

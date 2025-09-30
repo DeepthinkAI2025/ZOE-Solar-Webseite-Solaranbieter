@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getCaseStudyBySlug, CaseStudy } from '../data/caseStudies';
-import { localContentByCity } from '../data/localContent';
+import { localContentByCity } from '../data/localContent.ts';
 import PageHero from '../components/PageHero';
 import Footer from '../components/Footer';
 import Header from '../components/Header';

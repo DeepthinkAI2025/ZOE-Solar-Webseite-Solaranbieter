@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Page } from '../types';
-import { pricingPackages, PricingPackage } from '../data/pricingPackages';
+import { pricingPackages, PricingPackage } from '../data/pricingPackages.ts';
 import AIRecommender from '../components/AIRecommender';
 
 const SpecIcon: React.FC<{ type: 'modules' | 'storage' | 'wallbox' }> = ({ type }) => {
@@ -187,6 +188,38 @@ const PreisePage: React.FC<PreisePageProps> = ({ isLoggedIn }) => {
 
     return (
         <>
+            <Helmet>
+                <title>Solaranlage Kosten - Festpreise für Photovoltaik-Anlagen | ZOE Solar</title>
+                <meta name="description" content="Solaranlage Kosten: Transparente Festpreise für Photovoltaik-Anlagen. Ab 15.000€ inkl. Installation. Kostenlose Beratung. Jetzt Preise vergleichen!" />
+                <meta name="keywords" content="Solaranlage Kosten, Photovoltaik Preise, PV-Anlage Preis, Solaranlage Festpreis, Photovoltaik Kosten" />
+                <meta property="og:title" content="Solaranlage Kosten - Festpreise für Photovoltaik-Anlagen" />
+                <meta property="og:description" content="Solaranlage Kosten: Transparente Festpreise für Photovoltaik-Anlagen. Ab 15.000€ inkl. Installation. Kostenlose Beratung." />
+                <meta property="og:type" content="website" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Solaranlage Kosten - Festpreise für Photovoltaik-Anlagen" />
+                <meta name="twitter:description" content="Solaranlage Kosten: Transparente Festpreise für Photovoltaik-Anlagen. Ab 15.000€ inkl. Installation." />
+                <link rel="canonical" href="https://zoe-solar.de/preise" />
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": "Solaranlage Kosten",
+                        "description": "Transparente Festpreise für Photovoltaik-Anlagen mit kostenloser Beratung und professioneller Installation",
+                        "provider": {
+                            "@type": "Organization",
+                            "name": "ZOE Solar GmbH",
+                            "url": "https://www.zoe-solar.de"
+                        },
+                        "areaServed": "DE",
+                        "serviceType": "Photovoltaik Installation",
+                        "offers": {
+                            "@type": "Offer",
+                            "priceRange": "15000-50000",
+                            "priceCurrency": "EUR"
+                        }
+                    })}
+                </script>
+            </Helmet>
             <PreiseHero onCtaClick={handleHeroCta} />
             <div id="preise-pakete" className="py-20 bg-slate-50 scroll-mt-24">
                 <div className="container mx-auto px-6">

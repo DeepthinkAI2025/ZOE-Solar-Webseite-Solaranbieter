@@ -1,0 +1,117 @@
+{
+  "timestamp": "2025-09-28T19:45:59.716Z",
+  "platforms": {
+    "googleBard": {
+      "platform": "googleBard",
+      "name": "Google Bard/Gemini",
+      "timestamp": "2025-09-28T19:45:59.718Z",
+      "status": "offline",
+      "indicators": {
+        "featuredSnippet": false,
+        "knowledgePanel": false,
+        "aiAnswers": false,
+        "searchResults": [],
+        "lastUpdated": "2025-09-28T19:45:59.719Z",
+        "error": "Assignment to constant variable.",
+        "contentAccessible": true
+      },
+      "performance": {
+        "responseTime": 851,
+        "attempts": 1,
+        "errors": []
+      },
+      "errors": []
+    },
+    "bingCopilot": {
+      "platform": "bingCopilot",
+      "name": "Bing Copilot",
+      "timestamp": "2025-09-28T19:46:00.569Z",
+      "status": "offline",
+      "indicators": {
+        "copilotAnswers": false,
+        "sidebarResults": false,
+        "aiGenerated": false,
+        "searchResults": [],
+        "lastUpdated": "2025-09-28T19:46:00.569Z",
+        "error": "Assignment to constant variable.",
+        "contentAccessible": true
+      },
+      "performance": {
+        "responseTime": 623,
+        "attempts": 1,
+        "errors": []
+      },
+      "errors": []
+    },
+    "perplexity": {
+      "platform": "perplexity",
+      "name": "Perplexity AI",
+      "timestamp": "2025-09-28T19:46:01.192Z",
+      "status": "offline",
+      "indicators": {
+        "aiAnswers": false,
+        "sourcesCited": false,
+        "citations": [],
+        "lastUpdated": "2025-09-28T19:46:01.192Z",
+        "contentAccessible": true
+      },
+      "performance": {
+        "responseTime": 1892,
+        "attempts": 1,
+        "errors": []
+      },
+      "errors": []
+    },
+    "chatgpt": {
+      "platform": "chatgpt",
+      "name": "ChatGPT Plugins",
+      "timestamp": "2025-09-28T19:46:03.085Z",
+      "status": "offline",
+      "indicators": {
+        "webBrowsingEnabled": false,
+        "pluginsAvailable": [],
+        "contentIndexed": true,
+        "lastUpdated": "2025-09-28T19:46:03.085Z",
+        "contentAccessible": true
+      },
+      "performance": {
+        "responseTime": 1173,
+        "attempts": 1,
+        "errors": []
+      },
+      "errors": []
+    },
+    "claude": {
+      "platform": "claude",
+      "name": "Claude/Anthropic",
+      "timestamp": "2025-09-28T19:46:04.259Z",
+      "status": "offline",
+      "indicators": {
+        "webSearchEnabled": false,
+        "knowledgeCutoff": "2024-06",
+        "contentAccessible": true,
+        "lastUpdated": "2025-09-28T19:46:04.259Z"
+      },
+      "performance": {
+        "responseTime": 1055,
+        "attempts": 1,
+        "errors": []
+      },
+      "errors": []
+    }
+  },
+  "summary": {
+    "totalPlatforms": 5,
+    "onlinePlatforms": 0,
+    "platformsWithContent": 5,
+    "platformsWithErrors": 0,
+    "averageResponseTime": 1118.8,
+    "totalErrors": 0,
+    "errors": 0,
+    "performance": {
+      "averageResponseTime": 1118.8,
+      "totalResponseTime": 5594,
+      "errorRate": 0
+    }
+  }
+}

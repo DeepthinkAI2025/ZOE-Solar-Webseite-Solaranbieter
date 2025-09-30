@@ -1,6 +1,7 @@
 import React from 'react';
 import { Page } from '../types';
 import AnimatedSection from '../components/AnimatedSection';
+import Breadcrumb from '../components/Breadcrumb';
 
 interface ElektroPageProps {
   setPage: (page: Page) => void;
@@ -32,6 +33,9 @@ const ElektroHero: React.FC<{ onCtaClick: () => void }> = ({ onCtaClick }) => {
     return (
         <section className="leistungen-hero-v2 bg-slate-50 overflow-hidden">
             <div className="container mx-auto px-6 py-20 lg:py-24">
+                <div className="mb-8">
+                    <Breadcrumb variant="hero" />
+                </div>
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div className="text-center lg:text-left">
                          <p className="font-bold text-green-600 uppercase tracking-wider page-hero-animate-item page-hero-breadcrumb">Elektro-Fachbetrieb</p>

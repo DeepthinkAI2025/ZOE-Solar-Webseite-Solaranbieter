@@ -39,6 +39,17 @@ interface MonitoringData {
     perplexity: number;
     bingAI: number;
   };
+  aiPlatformMonitoring?: {
+    isRunning: boolean;
+    lastCheck?: string;
+    platforms: {
+      chatgpt: { status: string; lastCheck?: string };
+      googleBard: { status: string; lastCheck?: string };
+      bingCopilot: { status: string; lastCheck?: string };
+      perplexity: { status: string; lastCheck?: string };
+      claude: { status: string; lastCheck?: string };
+    };
+  };
   historicalData?: {
     dates: string[];
     rankings: { [keyword: string]: number[] };
@@ -101,6 +112,17 @@ const SEOMonitoringPage: React.FC = () => {
         chatGPT: 8,
         perplexity: 12,
         bingAI: 6
+      },
+      aiPlatformMonitoring: {
+        isRunning: true,
+        lastCheck: '2025-09-29T22:40:00.000Z',
+        platforms: {
+          chatgpt: { status: 'offline', lastCheck: '2025-09-29T22:35:00.000Z' },
+          googleBard: { status: 'offline', lastCheck: '2025-09-29T22:30:00.000Z' },
+          bingCopilot: { status: 'offline', lastCheck: '2025-09-29T22:25:00.000Z' },
+          perplexity: { status: 'offline', lastCheck: '2025-09-29T22:20:00.000Z' },
+          claude: { status: 'offline', lastCheck: '2025-09-29T22:15:00.000Z' }
+        }
       },
       historicalData: {
         dates: ['2025-09-19', '2025-09-20', '2025-09-21', '2025-09-22', '2025-09-23', '2025-09-24', '2025-09-25'],
@@ -482,6 +504,68 @@ const SEOMonitoringPage: React.FC = () => {
           <p className="text-sm text-gray-600 mt-4">
             Anzahl der Male, die Ihre Inhalte in AI-Antworten zitiert wurden ({selectedTimeframe})
           </p>
+        </div>
+
+        {/* AI Platform Monitoring */}
+        <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
+          <div className="flex justify-between items-center mb-6">
+            <h3 className="text-xl font-semibold text-gray-900">AI-Platform Monitoring</h3>
+            <div className="flex items-center space-x-2">
+              <div className={`w-3 h-3 rounded-full ${monitoringData?.aiPlatformMonitoring?.isRunning ? 'bg-green-500' : 'bg-red-500'}`}></div>
+              <span className="text-sm text-gray-600">
+                {monitoringData?.aiPlatformMonitoring?.isRunning ? 'Aktiv' : 'Inaktiv'}
+              </span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+            {monitoringData?.aiPlatformMonitoring?.platforms && Object.entries(monitoringData.aiPlatformMonitoring.platforms).map(([platformId, platform]) => (
+              <div key={platformId} className="border rounded-lg p-4">
+                <div className="flex justify-between items-center mb-2">
+                  <h4 className="font-medium text-gray-900 capitalize">
+                    {platformId === 'googleBard' ? 'Google Bard' :
+                     platformId === 'bingCopilot' ? 'Bing Copilot' :
+                     platformId === 'chatgpt' ? 'ChatGPT' :
+                     platformId === 'perplexity' ? 'Perplexity' :
+                     platformId === 'claude' ? 'Claude' : platformId}
+                  </h4>
+                  <div className={`w-2 h-2 rounded-full ${
+                    platform.status === 'online' ? 'bg-green-500' :
+                    platform.status === 'degraded' ? 'bg-yellow-500' : 'bg-red-500'
+                  }`}></div>
+                </div>
+                <div className="text-sm text-gray-600">
+                  <p>Status: <span className={`font-medium ${
+                    platform.status === 'online' ? 'text-green-600' :
+                    platform.status === 'degraded' ? 'text-yellow-600' : 'text-red-600'
+                  }`}>{platform.status}</span></p>
+                  {platform.lastCheck && (
+                    <p>Letzte Prüfung: {new Date(platform.lastCheck).toLocaleString('de-DE')}</p>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="border-t pt-4">
+            <div className="flex justify-between items-center text-sm text-gray-600">
+              <span>Letzte globale Prüfung:</span>
+              <span>{monitoringData?.aiPlatformMonitoring?.lastCheck ?
+                new Date(monitoringData.aiPlatformMonitoring.lastCheck).toLocaleString('de-DE') :
+                'Keine Daten'}</span>
+            </div>
+            <div className="mt-4 flex space-x-4">
+              <button className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition-colors">
+                🔄 Manuelle Prüfung
+              </button>
+              <button className="bg-green-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-green-700 transition-colors">
+                ⚙️ Konfiguration
+              </button>
+              <button className="border border-gray-300 text-gray-700 px-4 py-2 rounded-lg text-sm hover:bg-gray-50 transition-colors">
+                📊 Bericht anzeigen
+              </button>
+            </div>
+          </div>
         </div>
 
         {/* Action Buttons */}

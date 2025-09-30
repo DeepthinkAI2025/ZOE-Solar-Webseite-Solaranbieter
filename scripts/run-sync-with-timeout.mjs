@@ -18,13 +18,6 @@ const timeout = Number(process.env.SYNC_TIMEOUT_MS || 60000);
     } else {
       console.log('  Keine Änderungen gegenüber letztem Stand erkannt.');
     }
-    if (res?.syncMeta?.firecrawlUnavailable) {
-      console.error('\n⚠️  Firecrawl ist nicht erreichbar. Bitte Endpoint prüfen (`FIRECRAWL_MCP_ENDPOINT`) und Server starten.');
-      if (res?.syncMeta?.firecrawlError) {
-        console.error('  Fehler:', res.syncMeta.firecrawlError);
-      }
-      process.exitCode = 2;
-    }
   } catch (err) {
     console.error('Sync failed:', err.message || err);
     process.exit(1);

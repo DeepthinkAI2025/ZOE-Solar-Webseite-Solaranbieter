@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
+    <!-- SSR: Dynamic Head Content -->
+    <!--ssr-head-->
+
   <!-- Primary Meta Tags -->
   <title>ZOE Solar</title>
   <meta name="description" content="ZOE Solar plant, finanziert und betreibt hochrentable Photovoltaikanlagen für Gewerbe, Landwirtschaft, Industrie und Freiflächen." />
@@ -18,6 +21,32 @@
   <meta name="ICBM" content="52.520008, 13.404954" />
   <link rel="canonical" href="https://www.zoe-solar.de/" />
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <!-- ===== HTML-FIRST ARCHITECTURE: RESOURCE HINTS ===== -->
+  <!-- DNS Prefetch for external resources -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+
+  <!-- Preconnect for critical third-party connections -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload of JS/CSS handled automatically by Vite build -->
+
+  <!-- Resource hints for performance -->
+  <link rel="prefetch" href="/photovoltaik">
+  <link rel="prefetch" href="/kontakt">
+  <link rel="prefetch" href="/produkte">
+
+  <!-- Google Analytics 4 (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 
     <style>
       html, body, #root {
@@ -56,11 +85,11 @@
       .form-on-light textarea {
         color: #1e293b; /* slate-800, provides good contrast */
       }
-      
+
       /* Force light background on autofill to ensure text contrast on all browsers */
       .form-on-light input:-webkit-autofill,
-      .form-on-light input:-webkit-autofill:hover, 
-      .form-on-light input:-webkit-autofill:focus, 
+      .form-on-light input:-webkit-autofill:hover,
+      .form-on-light input:-webkit-autofill:focus,
       .form-on-light input:-webkit-autofill:active {
           -webkit-box-shadow: 0 0 0 40px #f8fafc inset !important; /* slate-50 background */
           -webkit-text-fill-color: #1e293b !important; /* slate-800 text */
@@ -130,7 +159,7 @@
         animation: slide-up-fade-in 0.7s ease-out 1.1s forwards;
         opacity: 0;
       }
-      
+
       /* NEW: Modern Hero Headline Animation */
       .animated-headline-container {
         position: relative;
@@ -138,7 +167,7 @@
         display: inline-block;
         vertical-align: top;
       }
-      
+
       .word-wrapper {
         display: inline-block;
         overflow: hidden;
@@ -177,7 +206,7 @@
         from { opacity: 0; transform: translateY(10px); }
         to { opacity: 1; transform: translateY(0); }
       }
-      
+
       /* Reading Progress Bar */
       #reading-progress-bar {
         position: fixed;
@@ -189,7 +218,7 @@
         z-index: 100;
         transition: width 0.1s ease-out;
       }
-      
+
       /* Article Content Styling */
       .prose-custom h2 {
         color: #1e293b; /* slate-800 */
@@ -365,7 +394,7 @@
         font-size: 0.95em;
         margin-top: 0.5rem;
       }
-      
+
       .embedded-image-caption {
         font-size: 0.9em;
         color: #475569; /* slate-600 */
@@ -373,8 +402,8 @@
         margin-top: 0.75rem;
         margin-bottom: 2em;
       }
-       
-      @keyframes infinite-scroll {
+
+       @keyframes infinite-scroll {
         from { transform: translateX(0); }
         to { transform: translateX(-50%); }
       }
@@ -382,7 +411,7 @@
         animation: infinite-scroll 60s linear infinite;
         width: 200%; /* Duplicated logos, so need twice the space */
       }
-      
+
       @keyframes infinite-scroll-reverse {
         from { transform: translateX(-50%); }
         to { transform: translateX(0); }
@@ -397,7 +426,7 @@
         50% { box-shadow: 0 0 20px #22c55e, 0 0 30px #22c55e; }
         100% { box-shadow: 0 0 5px #22c55e, 0 0 10px #22c55e; }
       }
-      
+
       .cta-button-glow:hover {
          animation: glow 2s infinite;
       }
@@ -446,7 +475,7 @@
       .mobile-menu-is-open .nav-item-stagger:nth-child(6) { transition-delay: 350ms; }
       .mobile-menu-is-open .nav-item-stagger:nth-child(7) { transition-delay: 400ms; }
       .mobile-menu-is-open .nav-item-stagger:nth-child(8) { transition-delay: 450ms; }
-      
+
       @keyframes text-overlay-animate {
         0% {
           opacity: 0;
@@ -475,7 +504,7 @@
           transform: translateY(0);
         }
       }
-      
+
       .animate-slide-in-up {
         animation: slide-in-up 0.5s ease-out forwards;
         opacity: 0;
@@ -544,7 +573,7 @@
          background-color: #f0fdf4; /* green-50 */
          border-left: 3px solid #22c55e; /* green-500 */
       }
-      
+
       @keyframes spin {
         to { transform: rotate(360deg); }
       }
@@ -636,7 +665,7 @@
         animation: ken-burns 25s ease-in-out infinite alternate;
         will-change: transform;
       }
-      
+
       /* NEW: Technology section background animation */
       .technology-bg {
           position: relative;
@@ -646,17 +675,17 @@
           content: '';
           position: absolute;
           inset: 0;
-          background-image: 
-              linear-gradient(rgba(34, 197, 94, 0.1) 1px, transparent 1px), 
+          background-image:
+              linear-gradient(rgba(34, 197, 94, 0.1) 1px, transparent 1px),
               linear-gradient(90deg, rgba(34, 197, 94, 0.1) 1px, transparent 1px);
           background-size: 40px 40px;
           animation: grid-pan 30s linear infinite;
           opacity: 0.5;
           z-index: 0;
       }
-      @keyframes grid-pan { 
-          0% { background-position: 0% 0%; } 
-          100% { background-position: 80px 80px; } 
+      @keyframes grid-pan {
+          0% { background-position: 0% 0%; }
+          100% { background-position: 80px 80px; }
       }
       .technology-bg > .container {
           position: relative;
@@ -679,11 +708,6 @@
           z-index: 20 !important;
           animation-play-state: paused;
       }
-      @keyframes float {
-          from { transform: translateY(0px) rotate(var(--start-rotate, 0deg)); }
-          to { transform: translateY(-15px) rotate(var(--end-rotate, 0deg)); }
-      }
-
       .floating-hero-img img {
           width: 100%;
           height: 100%;
@@ -738,7 +762,7 @@
       .photovoltaik-hero.img-1 { width: 50%; height: 50%; top: 0; left: 10%; z-index: 2; }
       .photovoltaik-hero.img-2 { width: 45%; height: 45%; top: 50%; right: 5%; transform: translateY(-40%); z-index: 3; }
       .photovoltaik-hero.img-3 { width: 40%; height: 40%; bottom: 0; left: 40%; z-index: 1; }
-      
+
       .speicher-hero.img-1 { width: 60%; height: 60%; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 3; }
       .speicher-hero.img-2 { width: 45%; height: 45%; top: 0; left: 0; z-index: 2; }
       .speicher-hero.img-3 { width: 40%; height: 40%; bottom: 0; right: 0; z-index: 1; }
@@ -821,7 +845,6 @@
       .mosaic-img.img-1 { width: 200px; height: 280px; top: 0; left: 0; }
       .mosaic-img.img-2 { width: 250px; height: 160px; top: 30%; right: 0; }
       .mosaic-img.img-3 { width: 180px; height: 180px; bottom: 0; left: 20%; }
-      .mosaic-img.img-4 { width: 120px; height: 120px; top: 0; right: 20%; border: 4px solid white; }
 
       .hero-image-container { position: relative; width: 100%; height: 100%; perspective: 1200px; }
       .hero-image-container .main-image {
@@ -871,7 +894,7 @@
           padding-bottom: 5rem;
           background-color: #1e293b;
           background-image:
-              linear-gradient(rgba(22, 163, 74, 0.1) 1px, transparent 1px), 
+              linear-gradient(rgba(22, 163, 74, 0.1) 1px, transparent 1px),
               linear-gradient(90deg, rgba(22, 163, 74, 0.1) 1px, transparent 1px);
           background-size: 40px 40px;
       }
@@ -939,11 +962,13 @@
       .service-card.card-2 { top: 35%; left: 50px; animation-delay: 0.65s; }
       .service-card.card-3 { top: 70%; left: 0; animation-delay: 0.8s; }
     </style>
-</head>
+  </head>
   <body class="bg-white text-slate-700">
     <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-[200] focus:top-2 focus:left-2 focus:bg-white focus:text-slate-800 focus:p-3 focus:rounded-md focus:shadow-lg focus:ring-2 focus:ring-green-500">Zum Hauptinhalt springen</a>
     <div id="reading-progress-bar"></div>
+    <!-- SSR: Dynamic Body Content -->
+    <!--ssr-body-->
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <script type="module" src="/index.tsx" defer></script>
   </body>
 </html>

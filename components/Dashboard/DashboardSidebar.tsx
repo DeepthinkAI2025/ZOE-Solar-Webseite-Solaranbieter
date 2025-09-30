@@ -18,6 +18,7 @@ const DashboardSidebar: React.FC<DashboardSidebarProps> = ({ activeView, setActi
         { id: 'overview', label: 'Übersicht', icon: <OverviewIcon /> },
         { id: 'projects', label: 'Meine Projekte', icon: <ProjectsIcon /> },
         { id: 'profile', label: 'Profil', icon: <ProfileIcon /> },
+        { id: 'docs', label: 'Dokumentation', icon: <DocsIcon /> },
         { id: 'review', label: 'Bewertung abgeben', icon: <StarIcon /> }
     ];
 

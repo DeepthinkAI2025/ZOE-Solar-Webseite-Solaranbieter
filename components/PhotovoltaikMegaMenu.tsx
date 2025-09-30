@@ -25,6 +25,12 @@ const specialServices = [
     { title: 'Wartung & Service', page: 'wartung-service' as Page },
     { title: 'Anmeldung & Anträge', page: 'service-anmeldung-pv' as Page },
 ];
+const gewerbeCluster = [
+    { title: 'Gewerbe Photovoltaik', page: 'photovoltaik-gewerbe' as Page },
+    { title: 'Wirtschaftlichkeitsrechner', page: 'photovoltaik-rechner-gewerbe' as Page },
+    { title: 'Gewerbe-Planung', page: 'photovoltaik-planung-gewerbe' as Page },
+    { title: 'Gewerbegebäude', page: 'photovoltaik-gewerbegebaeude' as Page },
+];
 
 const PhotovoltaikMegaMenu: React.FC<PhotovoltaikMegaMenuProps> = ({ setPage, closeMenu }) => {
 

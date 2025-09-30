@@ -1,118 +1,408 @@
 import React, { useState } from 'react';
+import { Page } from '../types';
 
-const steps = [
-  {
-    step: 1,
-    title: 'Analyse & Beratung',
-    description: 'Wir beginnen mit einer kostenlosen und unverbindlichen Analyse Ihrer Flächen. Sie erhalten eine transparente Einschätzung des Potenzials und eine erste Renditeprognose.',
-    icon: 'analyze',
-  },
-  {
-    step: 2,
-    title: 'Planung & Engineering',
-    description: 'Unser Expertenteam plant Ihre Anlage bis ins kleinste Detail, holt alle Genehmigungen ein und kümmert sich um die Anmeldung beim Netzbetreiber.',
-    icon: 'plan',
-  },
-  {
-    step: 3,
-    title: 'Installation',
-    description: 'Unsere festangestellten Montageteams installieren Ihre Photovoltaikanlage pünktlich, professionell und nach höchsten Qualitätsstandards.',
-    icon: 'install',
-  },
-  {
-    step: 4,
-    title: 'Inbetriebnahme & Service',
-    description: 'Wir nehmen die Anlage in Betrieb und übergeben Ihnen ein schlüsselfertiges Kraftwerk. Auch danach stehen wir Ihnen für Wartung und Service zur Seite.',
-    icon: 'service',
-  },
-];
+interface ProcessProps {
+  customerType?: 'private' | 'business';
+  setPage: (page: Page) => void;
+}
 
-const ProcessIcon: React.FC<{ name: string }> = ({ name }) => {
-    const className = "w-12 h-12 text-green-600 group-hover:text-green-700 transition-colors duration-300";
-    const strokeWidth = 1.5;
-    switch (name) {
-        case 'analyze': return <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={strokeWidth}><path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" /></svg>;
-        case 'plan': return <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={strokeWidth}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM10.5 12h3.75" /></svg>;
-        case 'install': return <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={strokeWidth}><path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.472-2.472a3.375 3.375 0 000-4.773L6.75 3.75l-4.773 0a3.375 3.375 0 00-4.773 4.773l2.472 2.472" /><path strokeLinecap="round" strokeLinejoin="round" d="M15 1.5l6 6" /></svg>;
-        case 'service': return <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={strokeWidth}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>;
-        default: return null;
-    }
+const processData = {
+  private: {
+    badge: 'Ihr Weg zur Unabhängigkeit',
+    title: 'Der ZOE Solar Weg',
+    subtitle: 'Vom ersten Gedanken bis zur eigenen Stromproduktion – wir machen es einfach und transparent für Sie.',
+    steps: [
+      {
+        step: 1,
+        title: 'Persönliche Beratung',
+        subtitle: 'Kostenlose Analyse',
+        description: 'Wir kommen zu Ihnen nach Hause und analysieren Ihr Dach, Ihren Stromverbrauch und Ihre Möglichkeiten. Sie erhalten eine maßgeschneiderte Empfehlung ohne Verpflichtung.',
+        details: [
+          'Vor-Ort-Besichtigung Ihres Dachs',
+          'Verbrauchsanalyse Ihrer Haushaltsgeräte',
+          'Transparente Kosten-Nutzen-Rechnung',
+          'Persönliche Beratung durch zertifizierte Experten'
+        ],
+        icon: 'consultation',
+        duration: '1-2 Tage',
+        cost: 'Kostenlos'
+      },
+      {
+        step: 2,
+        title: 'Maßgeschneiderte Planung',
+        subtitle: 'Individuelle Lösung',
+        description: 'Basierend auf Ihrer Situation erstellen wir einen detaillierten Plan. Von der kleinen Balkonanlage bis zur kompletten Dachsanierung – alles ist möglich.',
+        details: [
+          'Technische Planung und 3D-Visualisierung',
+          'Ermittlung aller Fördermöglichkeiten',
+          'Bauantrag und Genehmigungsmanagement',
+          'Finanzierungsberatung und Kreditoptionen'
+        ],
+        icon: 'planning',
+        duration: '1-2 Wochen',
+        cost: 'Im Paketpreis'
+      },
+      {
+        step: 3,
+        title: 'Professionelle Installation',
+        subtitle: 'Schlüsselfertige Montage',
+        description: 'Unsere zertifizierten Monteure installieren Ihre Anlage termingerecht und nach höchsten Qualitätsstandards. Sie müssen sich um nichts kümmern.',
+        details: [
+          'Termingerechte Montage durch Fachpersonal',
+          'Qualitätssicherung nach DIN-Normen',
+          'Sicherheitsprüfung und Funktionskontrolle',
+          'Reinigung und Endabnahme mit Ihnen'
+        ],
+        icon: 'installation',
+        duration: '1-3 Tage',
+        cost: 'Im Paketpreis'
+      },
+      {
+        step: 4,
+        title: 'Betreuung & Service',
+        subtitle: 'Langfristige Partnerschaft',
+        description: 'Nach der Installation betreuen wir Sie langfristig. Von der Garantie über Wartung bis hin zu Optimierungen – wir sind immer für Sie da.',
+        details: [
+          '10 Jahre Herstellergarantie auf Module',
+          '25 Jahre Leistungsgarantie',
+          'Jährliche Wartung und Überprüfung',
+          '24/7 Monitoring und Support-Hotline'
+        ],
+        icon: 'support',
+        duration: '25+ Jahre',
+        cost: 'Im Servicevertrag'
+      }
+    ]
+  },
+  business: {
+    badge: 'Professionelle Projektumsetzung',
+    title: 'Der ZOE Solar Business Blueprint',
+    subtitle: 'Von der Machbarkeitsstudie bis zur Inbetriebnahme – skalierbare Lösungen für Unternehmen jeder Größe.',
+    steps: [
+      {
+        step: 1,
+        title: 'Business Analyse',
+        subtitle: 'Potenzialbewertung',
+        description: 'Wir analysieren Ihre betrieblichen Strukturen, Energieverbräuche und Einsparpotenziale. Sie erhalten eine fundierte Wirtschaftlichkeitsberechnung.',
+        details: [
+          'Detaillierte Energieverbrauchsanalyse',
+          'ROI-Berechnung und Amortisationsplanung',
+          'Fördermittelrecherche und Beantragung',
+          'Risiko- und Chancenbewertung'
+        ],
+        icon: 'analysis',
+        duration: '1-2 Wochen',
+        cost: 'Kostenlos'
+      },
+      {
+        step: 2,
+        title: 'Strategische Planung',
+        subtitle: 'Maßgeschneiderte Konzepte',
+        description: 'Wir entwickeln skalierbare Lösungen für Ihr Unternehmen. Von der Produktionshalle bis zum Solarpark – wir planen Ihre Energiezukunft.',
+        details: [
+          'Technische und wirtschaftliche Feasibility-Studie',
+          'Projektstrukturierung und Finanzierungsmodell',
+          'Umweltverträglichkeitsprüfung und Genehmigungen',
+          'Integrationsplanung in bestehende Infrastruktur'
+        ],
+        icon: 'strategy',
+        duration: '2-4 Wochen',
+        cost: 'Im Projektbudget'
+      },
+      {
+        step: 3,
+        title: 'Professionelle Umsetzung',
+        subtitle: 'Qualitätsgesicherte Installation',
+        description: 'Unsere erfahrenen Teams realisieren Ihr Projekt termingerecht und budgetkonform. Minimale Betriebsunterbrechung, maximale Qualität.',
+        details: [
+          'Projektmanagement nach IPMA-Standards',
+          'Qualitätsmanagement nach ISO 9001',
+          'Sicherheitskoordination und Arbeitsschutz',
+          'Regelmäßige Fortschrittsberichterstattung'
+        ],
+        icon: 'execution',
+        duration: '4-12 Wochen',
+        cost: 'Im Projektbudget'
+      },
+      {
+        step: 4,
+        title: 'Betrieb & Optimierung',
+        subtitle: 'Langfristiger Erfolg',
+        description: 'Wir überwachen und optimieren Ihre Anlage kontinuierlich. Durch regelmäßige Analysen maximieren wir Ihre Rendite über die gesamte Lebensdauer.',
+        details: [
+          '24/7 Anlagenmonitoring und Fernwartung',
+          'Regelmäßige Performance-Optimierungen',
+          'Jahresberichte und Wirtschaftlichkeitsanalysen',
+          'Erweiterungsplanung und Skalierungsmöglichkeiten'
+        ],
+        icon: 'optimization',
+        duration: '25+ Jahre',
+        cost: 'Im Servicevertrag'
+      }
+    ]
+  }
 };
 
-const Process: React.FC = () => {
-    const [activeStep, setActiveStep] = useState(1);
-    const activeStepData = steps.find(s => s.step === activeStep);
+const ProcessIcon: React.FC<{ name: string }> = ({ name }) => {
+  const className = "w-8 h-8 text-white";
+  switch (name) {
+    case 'consultation':
+      return (
+        <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+        </svg>
+      );
+    case 'planning':
+      return (
+        <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        </svg>
+      );
+    case 'installation':
+      return (
+        <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+      );
+    case 'support':
+      return (
+        <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      );
+    case 'analysis':
+      return (
+        <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+        </svg>
+      );
+    case 'strategy':
+      return (
+        <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5a2 2 0 012-2h4a2 2 0 012 2v2H8V5z" />
+        </svg>
+      );
+    case 'execution':
+      return (
+        <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      );
+    case 'optimization':
+      return (
+        <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+        </svg>
+      );
+    default:
+      return null;
+  }
+};
 
-    return (
-        <section id="prozess" className="py-20 bg-slate-50">
-            <div className="container mx-auto px-6">
-                <div className="text-center mb-16">
-                    <p className="font-bold text-green-600 uppercase tracking-wider">Unser Vorgehen</p>
-                    <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mt-2">Der ZOE Solar Blueprint: <br/>Ihr Fahrplan zum Erfolg.</h2>
-                    <p className="text-lg text-slate-600 mt-4 max-w-3xl mx-auto">
-                        Von der ersten Idee bis zur Stromproduktion – unser Prozess ist darauf ausgelegt, für Sie maximal effizient und transparent zu sein.
-                    </p>
-                </div>
-                
-                <div className="max-w-5xl mx-auto">
-                    {/* Step Navigation */}
-                    <div className="relative mb-12" role="tablist" aria-label="Projektphasen">
-                        <div className="absolute top-1/2 left-0 w-full h-1 bg-slate-200" aria-hidden="true"></div>
-                        <div 
-                            className="absolute top-1/2 left-0 h-1 bg-green-500 transition-all duration-500 ease-in-out" 
-                            style={{ width: `${((activeStep - 1) / (steps.length - 1)) * 100}%` }}
-                            aria-hidden="true"
-                        ></div>
-                        <div className="relative flex justify-between">
-                            {steps.map(step => (
-                                <button
-                                    key={step.step}
-                                    onClick={() => setActiveStep(step.step)}
-                                    className="z-10 flex flex-col items-center text-center w-24 focus:outline-none"
-                                    role="tab"
-                                    aria-selected={activeStep === step.step}
-                                    aria-controls={`step-panel-${step.step}`}
-                                    id={`step-tab-${step.step}`}
-                                >
-                                    <div className={`w-12 h-12 rounded-full flex items-center justify-center border-4 transition-all duration-300 ${
-                                        activeStep >= step.step ? 'bg-green-500 border-green-500' : 'bg-white border-slate-300'
-                                    }`}>
-                                        <span className={`text-xl font-bold transition-colors duration-300 ${
-                                            activeStep >= step.step ? 'text-white' : 'text-slate-500'
-                                        }`}>{step.step}</span>
-                                    </div>
-                                    <p className={`mt-3 text-sm font-semibold transition-colors duration-300 ${
-                                        activeStep === step.step ? 'text-green-600' : 'text-slate-500'
-                                    }`}>{step.title.split(' ')[0]}</p>
-                                </button>
-                            ))}
-                        </div>
-                    </div>
+const Process: React.FC<ProcessProps> = ({ customerType = 'private', setPage }) => {
+  const [activeStep, setActiveStep] = useState(1);
+  const currentData = processData[customerType] || processData.private;
+  const activeStepData = currentData.steps.find(s => s.step === activeStep);
 
-                    {/* Content Display */}
-                    {activeStepData && (
-                        <div key={activeStep} className="bg-white p-8 md:p-12 rounded-xl shadow-2xl border border-slate-200 min-h-[250px]" style={{ animation: 'animate-step-content-fade-in 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards' }}
-                             role="tabpanel"
-                             id={`step-panel-${activeStepData.step}`}
-                             aria-labelledby={`step-tab-${activeStepData.step}`}
-                        >
-                           <div className="grid md:grid-cols-3 gap-8 items-center">
-                               <div className="md:col-span-1 flex flex-col items-center text-center">
-                                   <div className="bg-green-50 p-5 rounded-full mb-4 group">
-                                       <ProcessIcon name={activeStepData.icon} />
-                                   </div>
-                                   <h3 className="text-2xl font-bold text-slate-800">{activeStepData.title}</h3>
-                               </div>
-                               <div className="md:col-span-2">
-                                   <p className="text-slate-600 text-lg leading-relaxed">{activeStepData.description}</p>
-                               </div>
-                           </div>
-                        </div>
-                    )}
-                </div>
+  return (
+    <section className="relative py-32 bg-gradient-to-br from-slate-50 via-white to-blue-50/30 overflow-hidden">
+      {/* Enhanced Background Effects */}
+      <div className="absolute inset-0">
+        <div className="absolute -top-40 -right-40 h-[600px] w-[600px] rounded-full bg-gradient-to-br from-green-200/8 to-emerald-200/5 blur-[200px]" />
+        <div className="absolute top-1/4 -left-40 h-[500px] w-[500px] rounded-full bg-gradient-to-br from-blue-200/6 to-indigo-200/3 blur-[180px]" />
+        <div className="absolute bottom-0 right-1/3 h-[400px] w-[400px] rounded-full bg-gradient-to-br from-purple-200/4 to-pink-200/2 blur-[160px]" />
+        <div className="absolute top-3/4 left-1/4 h-[300px] w-[300px] rounded-full bg-white/20 blur-[140px]" />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Professional Header */}
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200/60 mb-8 shadow-sm">
+            <div className="p-1.5 rounded-full bg-green-100">
+              <svg className="h-5 w-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
             </div>
-        </section>
-    );
+            <span className="text-sm font-semibold text-green-700 uppercase tracking-wider">
+              {currentData.badge}
+            </span>
+          </div>
+
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-green-800 to-gray-900 leading-tight mb-6">
+            {currentData.title}
+          </h2>
+
+          <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-medium">
+            {currentData.subtitle}
+          </p>
+        </div>
+
+        {/* Professional Step Navigation */}
+        <div className="relative mb-16">
+          {/* Timeline Background */}
+          <div className="absolute top-8 left-0 w-full h-1 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 rounded-full"></div>
+          <div
+            className="absolute top-8 left-0 h-1 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full transition-all duration-700 ease-out shadow-sm"
+            style={{ width: `${((activeStep - 1) / (currentData.steps.length - 1)) * 100}%` }}
+          ></div>
+
+          {/* Step Indicators */}
+          <div className="relative flex justify-between">
+            {currentData.steps.map((step, index) => (
+              <button
+                key={step.step}
+                onClick={() => setActiveStep(step.step)}
+                className="group relative flex flex-col items-center focus:outline-none focus:ring-4 focus:ring-green-200 rounded-2xl p-4 transition-all duration-300"
+              >
+                {/* Step Circle */}
+                <div className={`relative w-16 h-16 rounded-full border-4 transition-all duration-500 shadow-lg ${
+                  activeStep >= step.step
+                    ? 'bg-gradient-to-br from-green-500 to-emerald-500 border-green-400 shadow-green-200'
+                    : 'bg-white border-gray-300 hover:border-green-300 hover:shadow-green-100'
+                }`}>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <ProcessIcon name={step.icon} />
+                  </div>
+                  {activeStep > step.step && (
+                    <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center shadow-md">
+                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                  )}
+                </div>
+
+                {/* Step Info */}
+                <div className="mt-6 text-center max-w-[200px]">
+                  <div className={`text-sm font-bold uppercase tracking-wider transition-colors duration-300 ${
+                    activeStep === step.step ? 'text-green-600' : 'text-gray-500 group-hover:text-green-500'
+                  }`}>
+                    Schritt {step.step}
+                  </div>
+                  <h3 className={`text-lg font-bold mt-2 transition-colors duration-300 ${
+                    activeStep === step.step ? 'text-gray-900' : 'text-gray-700 group-hover:text-gray-900'
+                  }`}>
+                    {step.title}
+                  </h3>
+                  <p className={`text-sm mt-1 transition-colors duration-300 ${
+                    activeStep === step.step ? 'text-green-600' : 'text-gray-500 group-hover:text-green-500'
+                  }`}>
+                    {step.subtitle}
+                  </p>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Professional Content Display */}
+        {activeStepData && (
+          <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl border border-gray-200/60 overflow-hidden">
+            <div className="grid lg:grid-cols-2 gap-0">
+              {/* Left Side - Main Content */}
+              <div className="p-8 lg:p-12">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center shadow-lg">
+                    <ProcessIcon name={activeStepData.icon} />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900">{activeStepData.title}</h3>
+                    <p className="text-green-600 font-semibold">{activeStepData.subtitle}</p>
+                  </div>
+                </div>
+
+                <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                  {activeStepData.description}
+                </p>
+
+                {/* Details List */}
+                <div className="space-y-4 mb-8">
+                  {activeStepData.details.map((detail, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <svg className="w-3 h-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="text-gray-700 font-medium">{detail}</span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Meta Information */}
+                <div className="grid grid-cols-2 gap-6 pt-6 border-t border-gray-200">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-green-600 mb-1">{activeStepData.duration}</div>
+                    <div className="text-sm text-gray-600 font-medium">Dauer</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-green-600 mb-1">{activeStepData.cost}</div>
+                    <div className="text-sm text-gray-600 font-medium">Kosten</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Side - Visual Enhancement */}
+              <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 lg:p-12 flex flex-col justify-center">
+                <div className="text-center mb-8">
+                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                    <ProcessIcon name={activeStepData.icon} />
+                  </div>
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">
+                    Warum Schritt {activeStepData.step} entscheidend ist
+                  </h4>
+                  <p className="text-gray-600">
+                    {activeStepData.step === 1 && (customerType === 'private'
+                      ? "Die Basis für Ihre Entscheidung – transparente Informationen ohne Verpflichtung."
+                      : "Fundierte Analyse als Grundlage für skalierbare und profitable Lösungen."
+                    )}
+                    {activeStepData.step === 2 && (customerType === 'private'
+                      ? "Ihre persönliche Lösung – maßgeschneidert auf Ihre Bedürfnisse und Möglichkeiten."
+                      : "Strategische Planung für maximale Wirtschaftlichkeit und Zukunftssicherheit."
+                    )}
+                    {activeStepData.step === 3 && (customerType === 'private'
+                      ? "Professionelle Ausführung – Sie können sich entspannt zurücklehnen."
+                      : "Qualitätsgesicherte Umsetzung mit minimalen Betriebsunterbrechungen."
+                    )}
+                    {activeStepData.step === 4 && (customerType === 'private'
+                      ? "Langfristige Partnerschaft – wir begleiten Sie über die gesamte Lebensdauer."
+                      : "Kontinuierliche Optimierung für maximale Rendite über 25+ Jahre."
+                    )}
+                  </p>
+                </div>
+
+                {/* Progress Indicator */}
+                <div className="space-y-3">
+                  <div className="flex justify-between text-sm font-medium text-gray-600">
+                    <span>Fortschritt</span>
+                    <span>{activeStepData.step} von {currentData.steps.length}</span>
+                  </div>
+                  <div className="w-full bg-gray-200 rounded-full h-3">
+                    <div
+                      className="bg-gradient-to-r from-green-500 to-emerald-500 h-3 rounded-full transition-all duration-700 ease-out"
+                      style={{ width: `${(activeStepData.step / currentData.steps.length) * 100}%` }}
+                    ></div>
+                  </div>
+                </div>
+
+                {/* CTA Button */}
+                <div className="mt-8 text-center">
+                  <button
+                    onClick={() => setPage('kontakt')}
+                    className="bg-gradient-to-r from-green-600 to-emerald-600 text-white font-bold py-4 px-8 rounded-2xl hover:from-green-700 hover:to-emerald-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
+                  >
+                    Jetzt Beratung anfordern
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  );
 };
 
 export default Process;

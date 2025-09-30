@@ -109,6 +109,7 @@ const Footer: React.FC<FooterProps> = ({ setPage }) => {
                     <h4 className="font-bold text-white uppercase tracking-wider mb-4">Support</h4>
                     <ul className="space-y-4">
                         <FooterLink page="faq-page" setPage={setPage}>Help Center (FAQ)</FooterLink>
+                        <FooterLink page="faq-page" setPage={setPage}>Top-FAQ</FooterLink>
                         <FooterLink page="diy-hub" setPage={setPage}>DIY-Hub</FooterLink>
                         <FooterLink page="dashboard" setPage={setPage}>Anlagen-Monitoring</FooterLink>
                         <FooterLink page="wartung-service" setPage={setPage}>Wartung & Service</FooterLink>
@@ -131,6 +132,10 @@ const Footer: React.FC<FooterProps> = ({ setPage }) => {
                     <FooterLink page="anwendungsfaelle" setPage={setPage}>Handel & Gewerbe</FooterLink>
                     <FooterLink page="anwendungsfaelle" setPage={setPage}>Landwirtschaft</FooterLink>
                     <FooterLink page="anwendungsfaelle" setPage={setPage}>Immobilienwirtschaft</FooterLink>
+                    <li className="pt-2"><a onClick={() => setPage('photovoltaik-gewerbe')} className="text-slate-500 hover:text-green-400 transition-colors cursor-pointer underline">Gewerbe-Cluster</a></li>
+                    <li className="pt-1"><a onClick={() => setPage('photovoltaik-rechner-gewerbe')} className="text-slate-500 hover:text-green-400 transition-colors cursor-pointer underline">Wirtschaftlichkeitsrechner</a></li>
+                    <li className="pt-1"><a onClick={() => setPage('agri-pv-bayern')} className="text-slate-500 hover:text-green-400 transition-colors cursor-pointer underline">Agri-PV Bayern</a></li>
+                    <li className="pt-1"><a onClick={() => setPage('photovoltaik-gewerbegebaeude')} className="text-slate-500 hover:text-green-400 transition-colors cursor-pointer underline">Gewerbegebäude</a></li>
                     <li className="pt-2"><a onClick={() => setPage('anwendungsfaelle')} className="text-slate-500 hover:text-green-400 transition-colors cursor-pointer underline">Mehr anzeigen</a></li>
                 </ul>
             </div>

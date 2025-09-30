@@ -12,6 +12,26 @@ const StandortMuenchenPage: React.FC = () => {
       latitude={48.135125}
       longitude={11.581981}
       radiusKm={160}
+      keywords={[
+        "Photovoltaik München",
+        "Solar München",
+        "Solaranlagen München",
+        "PV-Anlage München",
+        "Solarstrom München",
+        "Solarförderung Bayern"
+      ]}
+      regionalOffers={[
+        "Förderprogramme für Solaranlagen in Bayern",
+        "Photovoltaik-Komplettpaket für Münchner Haushalte",
+        "Agri-PV Lösungen für bayerische Landwirtschaft"
+      ]}
+      geoData={{
+        city: "München",
+        state: "Bayern",
+        postalCode: "80331",
+        latitude: 48.135125,
+        longitude: 11.581981
+      }}
     />
   );
 };

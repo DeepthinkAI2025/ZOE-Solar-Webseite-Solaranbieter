@@ -15,13 +15,6 @@
     console.log('  Produkte:', totalProducts);
     console.log('  Letztes Update:', result.generatedAt);
 
-    if (result?.syncMeta?.firecrawlUnavailable) {
-      console.error('\n⚠️  Firecrawl ist nicht erreichbar. Bitte Endpoint prüfen (`FIRECRAWL_MCP_ENDPOINT`) und Server starten.');
-      if (result?.syncMeta?.firecrawlError) {
-        console.error('  Fehler:', result.syncMeta.firecrawlError);
-      }
-      process.exitCode = 2;
-    }
   } catch (err) {
     console.error('Firecrawl Sync Script fehlgeschlagen:', err?.message ?? err);
     process.exit(1);

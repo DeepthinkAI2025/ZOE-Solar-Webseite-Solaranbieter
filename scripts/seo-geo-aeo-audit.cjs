@@ -120,7 +120,7 @@ function coverageScore(flags) {
   return Math.round((achieved / (total || 1)) * 100);
 }
 
-function evaluateLocation(region) {
+async function evaluateLocation(region) {
   const slug = slugifyCity(region.city);
   const pageKey = `standort-${slug}`;
   const hasRoute = Object.prototype.hasOwnProperty.call(pageToPath, pageKey);
@@ -135,7 +135,7 @@ function evaluateLocation(region) {
 
   if (hasRoute) {
     try {
-      metadata = resolveSeoForPage({ page: pageKey, pathname: routePath });
+      metadata = await resolveSeoForPage({ page: pageKey, pathname: routePath });
       canonical = metadata?.canonical ?? canonical;
       const structuredData = Array.isArray(metadata?.structuredData) ? metadata.structuredData : [];
 
@@ -251,91 +251,103 @@ function evaluateLocation(region) {
   };
 }
 
-const questionKeywords = collectQuestionKeywords();
-const uncoveredQuestionKeywords = questionKeywords
-  .filter((entry) => !faqCoversKeyword(entry.keyword))
-  .sort((a, b) => (b.opportunityScore || 0) - (a.opportunityScore || 0));
+async function main() {
+  const questionKeywords = collectQuestionKeywords();
+  const uncoveredQuestionKeywords = questionKeywords
+    .filter((entry) => !faqCoversKeyword(entry.keyword))
+    .sort((a, b) => (b.opportunityScore || 0) - (a.opportunityScore || 0));
 
-const locationInsights = PRIMARY_SERVICE_REGIONS.map(evaluateLocation);
+  const locationInsights = await Promise.all(PRIMARY_SERVICE_REGIONS.map(evaluateLocation));
 
-const topLocations = [...locationInsights]
-  .sort((a, b) => b.score - a.score)
-  .slice(0, 5)
-  .map((entry) => ({ region: entry.region, score: entry.score }));
+  const topLocations = [...locationInsights]
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 5)
+    .map((entry) => ({ region: entry.region, score: entry.score }));
 
-const lowestLocations = [...locationInsights]
-  .sort((a, b) => a.score - b.score)
-  .slice(0, 5)
-  .map((entry) => ({ region: entry.region, score: entry.score }));
+  const lowestLocations = [...locationInsights]
+    .sort((a, b) => a.score - b.score)
+    .slice(0, 5)
+    .map((entry) => ({ region: entry.region, score: entry.score }));
 
-const latestHistory = seoHistory[seoHistory.length - 1] || null;
+  const latestHistory = seoHistory[seoHistory.length - 1] || null;
 
-const entityOpportunities = buildEntityOpportunities(keywordAnalysis.keywords || []);
+  const entityOpportunities = buildEntityOpportunities(keywordAnalysis.keywords || []);
 
-const output = {
-  generatedAt: new Date().toISOString(),
-  totals: {
-    regions: PRIMARY_SERVICE_REGIONS.length,
-    analysedLocations: locationInsights.length,
-    uncoveredQuestionKeywords: uncoveredQuestionKeywords.length,
-  },
-  performance: {
-    topLocations,
-    lowestLocations,
-    averageLocationScore:
-      Math.round(
-        (locationInsights.reduce((sum, entry) => sum + entry.score, 0) / (locationInsights.length || 1)) * 100
-      ) / 100,
-    latestSeoSnapshot: latestHistory
-      ? {
-          timestamp: latestHistory.timestamp,
-          avgPosition: latestHistory.avgPosition,
-          top10Percentage: latestHistory.top10Percentage,
-          estimatedTraffic: latestHistory.estimatedTraffic,
-        }
-      : null,
-  },
-  answerEngine: {
-    uncoveredTopKeywords: uncoveredQuestionKeywords.slice(0, 25).map((entry) => ({
-      keyword: entry.keyword,
-      opportunityScore: entry.opportunityScore,
-      intent: entry.intent,
-      segment: entry.segment,
-    })),
-    coverageRatio:
-      Math.round(
-        ((questionKeywords.length - uncoveredQuestionKeywords.length) / (questionKeywords.length || 1)) * 10000
-      ) / 100,
-    totalQuestionKeywords: questionKeywords.length,
-  },
-  entityOpportunities,
-  locations: locationInsights,
-};
+  const output = {
+    generatedAt: new Date().toISOString(),
+    totals: {
+      regions: PRIMARY_SERVICE_REGIONS.length,
+      analysedLocations: locationInsights.length,
+      uncoveredQuestionKeywords: uncoveredQuestionKeywords.length,
+    },
+    performance: {
+      topLocations,
+      lowestLocations,
+      averageLocationScore:
+        Math.round(
+          (locationInsights.reduce((sum, entry) => sum + entry.score, 0) / (locationInsights.length || 1)) * 100
+        ) / 100,
+      latestSeoSnapshot: latestHistory
+        ? {
+            timestamp: latestHistory.timestamp,
+            avgPosition: latestHistory.avgPosition,
+            top10Percentage: latestHistory.top10Percentage,
+            estimatedTraffic: latestHistory.estimatedTraffic,
+          }
+        : null,
+    },
+    answerEngine: {
+      uncoveredTopKeywords: uncoveredQuestionKeywords.slice(0, 25).map((entry) => ({
+        keyword: entry.keyword,
+        opportunityScore: entry.opportunityScore,
+        intent: entry.intent,
+        segment: entry.segment,
+      })),
+      coverageRatio:
+        Math.round(
+          ((questionKeywords.length - uncoveredQuestionKeywords.length) / (questionKeywords.length || 1)) * 10000
+        ) / 100,
+      totalQuestionKeywords: questionKeywords.length,
+    },
+    entityOpportunities,
+    locations: locationInsights,
+  };
 
-const targetFile = path.join(rootDir, 'data', 'seo-geo-audit.json');
-fs.writeFileSync(targetFile, JSON.stringify(output, null, 2));
+  const targetFile = path.join(rootDir, 'data', 'seo-geo-audit.json');
+  fs.writeFileSync(targetFile, JSON.stringify(output, null, 2));
 
-console.log('✅ GEO & AEO Audit abgeschlossen. Zusammenfassung:');
-console.log(`   • Analysierte Regionen: ${output.totals.analysedLocations}`);
-console.log(`   • Durchschnittlicher Standort-Score: ${output.performance.averageLocationScore}`);
-console.log(`   • Unbeantwortete Frage-Keywords: ${output.totals.uncoveredQuestionKeywords}`);
+  console.log('✅ GEO & AEO Audit abgeschlossen. Zusammenfassung:');
+  console.log(`   • Analysierte Regionen: ${output.totals.analysedLocations}`);
+  console.log(`   • Durchschnittlicher Standort-Score: ${output.performance.averageLocationScore}`);
+  console.log(`   • Unbeantwortete Frage-Keywords: ${output.totals.uncoveredQuestionKeywords}`);
 
-if (output.performance.latestSeoSnapshot) {
-  const snapshot = output.performance.latestSeoSnapshot;
-  console.log(`   • Letztes SEO-Monitoring: ∅ Position ${snapshot.avgPosition}, Top10 ${snapshot.top10Percentage}%, Traffic ≈ ${snapshot.estimatedTraffic}`);
+  if (output.performance.latestSeoSnapshot) {
+    const snapshot = output.performance.latestSeoSnapshot;
+    console.log(`   • Letztes SEO-Monitoring: ∅ Position ${snapshot.avgPosition}, Top10 ${snapshot.top10Percentage}%, Traffic ≈ ${snapshot.estimatedTraffic}`);
+  }
+
+  console.log('\n📍 Top Regionen:');
+  output.performance.topLocations.forEach((entry) => {
+    console.log(`   - ${entry.region}: Score ${entry.score}`);
+  });
+
+  console.log('\n🚨 Unterdurchschnittliche Regionen:');
+  output.performance.lowestLocations.forEach((entry) => {
+    console.log(`   - ${entry.region}: Score ${entry.score}`);
+  });
+
+  console.log(`\n💾 Audit gespeichert unter data/${path.basename(targetFile)}`);
 }
 
-console.log('\n📍 Top Regionen:');
-output.performance.topLocations.forEach((entry) => {
-  console.log(`   - ${entry.region}: Score ${entry.score}`);
-});
-
-console.log('\n🚨 Unterdurchschnittliche Regionen:');
-output.performance.lowestLocations.forEach((entry) => {
-  console.log(`   - ${entry.region}: Score ${entry.score}`);
-});
-
-console.log(`\n💾 Audit gespeichert unter data/${path.basename(targetFile)}`);
+// Wrap the main execution in an async function
+(async () => {
+  try {
+    await main();
+  } catch (error) {
+    console.error('❌ Fehler beim Ausführen des GEO & AEO Audits:', error);
+    process.exit(1);
+  }
+})();
 
 function buildEntityOpportunities(keywords = []) {
   const clusters = new Map();

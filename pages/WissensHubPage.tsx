@@ -5,6 +5,7 @@ import { guides, Guide } from '../data/guidesData';
 import { webinars, Webinar } from '../data/webinarsData';
 import YouTubeEmbed from '../components/YouTubeEmbed';
 import { glossarData } from '../data/glossarData';
+import FAQ from '../components/FAQ';
 
 interface WissensHubPageProps {
   setPage: (page: Page) => void;
@@ -267,7 +268,7 @@ const WissensHubPage: React.FC<WissensHubPageProps> = ({ setPage, onSelectArticl
                         </div>
                         <div className="grid md:grid-cols-3 gap-8">
                             <ResourceToolCard title="Solar-Glossar" description="Von A wie Albedo bis Z wie Zelle. Alle Fachbegriffe einfach erklärt." icon={<svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" /></svg>} onClick={() => setPage('glossar')} />
-                            <ResourceToolCard title="Häufige Fragen (FAQ)" description="Die Antworten auf die wichtigsten Fragen rund um Ihr PV-Großprojekt." icon={<svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" /></svg>} onClick={() => { setPage('home'); setTimeout(() => document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' }), 100); }} />
+                            <ResourceToolCard title="Häufige Fragen (FAQ)" description="Die Antworten auf die wichtigsten Fragen rund um Ihr PV-Großprojekt." icon={<svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" /></svg>} onClick={() => document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' })} />
                             <ResourceToolCard title="Amortisationsrechner" description="Berechnen Sie in Echtzeit das Potenzial Ihrer Flächen und die Amortisationszeit." icon={<svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 7h6m0 10v-3m-3 3h3l-3-3m2-4H7a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-1M9 7V4a1 1 0 011-1h4a1 1 0 011 1v3" /></svg>} onClick={() => { setPage('home'); setTimeout(() => document.getElementById('rechner')?.scrollIntoView({ behavior: 'smooth' }), 100); }} />
                         </div>
                     </section>
@@ -308,6 +309,10 @@ const WissensHubPage: React.FC<WissensHubPageProps> = ({ setPage, onSelectArticl
                             </div>
                         )}
                     </section>
+                     {/* FAQ Section */}
+                     <section id="faq" className="py-20 bg-white">
+                         <FAQ customerType="business" setPage={setPage} />
+                     </section>
                 </div>
             </div>
         </>

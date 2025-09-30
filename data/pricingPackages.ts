@@ -1,28 +1,21 @@
-export interface PricingPackage {
+// Typdefinition für PricingPackage
+export type PricingPackage = {
   id: string;
   userType: 'private' | 'commercial';
   name: string;
   target: string;
   price: number;
-  priceNote?: string;
+  priceNote: string;
   badge?: string;
-  badgeColor?: 'green' | 'blue' | 'yellow';
+  badgeColor?: string;
   imageUrl: string;
-  specs: {
-    modulesKwp: number;
-    storageKwh?: number;
-    wallboxKw?: number;
-  };
+  specs: Record<string, number>;
   includes: string[];
-  components: {
-    module: string;
-    inverter: string;
-    storage?: string;
-    wallbox?: string;
-  };
+  components: Record<string, string>;
   componentLogos: string[];
-}
+};
 
+// Preispakete
 export const pricingPackages: PricingPackage[] = [
   // Private Packages
   {
@@ -55,7 +48,7 @@ export const pricingPackages: PricingPackage[] = [
       '/assets/logos/jinko-solar.png',
       '/assets/logos/goodwe.png',
       '/assets/logos/byd.png',
-    ]
+    ],
   },
   {
     id: 'paket-s',
@@ -85,7 +78,7 @@ export const pricingPackages: PricingPackage[] = [
       '/assets/logos/meyer-burger.png',
       '/assets/logos/sma.png',
       '/assets/logos/byd.png',
-    ]
+    ],
   },
   {
     id: 'paket-m',
@@ -120,7 +113,7 @@ export const pricingPackages: PricingPackage[] = [
       '/assets/logos/fronius.png',
       '/assets/logos/byd.png',
       '/assets/logos/wallbox.png',
-    ]
+    ],
   },
   {
     id: 'paket-emobility-starter',
@@ -147,9 +140,8 @@ export const pricingPackages: PricingPackage[] = [
     },
     componentLogos: [
       '/assets/logos/wallbox.png',
-    ]
+    ],
   },
-
   // Commercial Packages
   {
     id: 'gewerbe-eco',
@@ -176,9 +168,9 @@ export const pricingPackages: PricingPackage[] = [
       inverter: 'GoodWe GW25K-ET',
     },
     componentLogos: [
-        '/assets/logos/ja-solar.png',
-        '/assets/logos/goodwe.png',
-    ]
+      '/assets/logos/ja-solar.png',
+      '/assets/logos/goodwe.png',
+    ],
   },
   {
     id: 'gewerbe-m',
@@ -210,7 +202,7 @@ export const pricingPackages: PricingPackage[] = [
       '/assets/logos/q-cells.png',
       '/assets/logos/sma.png',
       '/assets/logos/sonnen.png',
-    ]
+    ],
   },
   {
     id: 'gewerbe-l',
@@ -240,9 +232,9 @@ export const pricingPackages: PricingPackage[] = [
       '/assets/logos/jinko-solar.png',
       '/assets/logos/fronius.png',
       '/assets/logos/byd.png',
-    ]
+    ],
   },
-    {
+  {
     id: 'solarpark-s',
     userType: 'commercial',
     name: 'Solarpark S',
@@ -267,7 +259,7 @@ export const pricingPackages: PricingPackage[] = [
     componentLogos: [
       '/assets/logos/trina-solar.png',
       '/assets/logos/sma.png',
-    ]
+    ],
   },
   {
     id: 'solarpark-m',
@@ -296,6 +288,6 @@ export const pricingPackages: PricingPackage[] = [
     componentLogos: [
       '/assets/logos/longi-solar.png',
       '/assets/logos/sma.png',
-    ]
+    ],
   },
 ];

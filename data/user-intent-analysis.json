@@ -1,0 +1,231 @@
+{
+  "timestamp": "2025-09-28T16:05:06.302Z",
+  "analysis": [
+    {
+      "keyword": "photovoltaik gewerbe",
+      "intent": "UNKNOWN",
+      "confidence": 0,
+      "indicators": [],
+      "searchVolume": 8138,
+      "competition": 56.21898856872425,
+      "serpFeatures": []
+    },
+    {
+      "keyword": "photovoltaik industrie",
+      "intent": "UNKNOWN",
+      "confidence": 0,
+      "indicators": [],
+      "searchVolume": 2077,
+      "competition": 45.840480526617156,
+      "serpFeatures": []
+    },
+    {
+      "keyword": "photovoltaik landwirtschaft",
+      "intent": "UNKNOWN",
+      "confidence": 0,
+      "indicators": [],
+      "searchVolume": 2535,
+      "competition": 49.144366105964025,
+      "serpFeatures": []
+    },
+    {
+      "keyword": "solaranlagen unternehmen",
+      "intent": "UNKNOWN",
+      "confidence": 0,
+      "indicators": [],
+      "searchVolume": 4603,
+      "competition": 18.716805265105684,
+      "serpFeatures": []
+    },
+    {
+      "keyword": "photovoltaik kosten",
+      "intent": "COMMERCIAL",
+      "confidence": 0.14285714285714285,
+      "indicators": [
+        "kosten"
+      ],
+      "contentType": "Commercial Content",
+      "priority": "High",
+      "searchVolume": 4543,
+      "competition": 10.176435423922815,
+      "serpFeatures": [
+        "shopping_results",
+        "local_pack"
+      ]
+    },
+    {
+      "keyword": "photovoltaik förderung",
+      "intent": "COMMERCIAL",
+      "confidence": 0.14285714285714285,
+      "indicators": [
+        "förderung"
+      ],
+      "contentType": "Commercial Content",
+      "priority": "High",
+      "searchVolume": 4403,
+      "competition": 32.34391480201355,
+      "serpFeatures": [
+        "shopping_results",
+        "local_pack"
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "keyword": "photovoltaik kosten",
+      "intent": "COMMERCIAL",
+      "contentType": "Commercial Content",
+      "priority": "High",
+      "recommendations": [
+        "Erstelle Vergleichsseite: \"Beste photovoltaik kosten Anbieter Vergleich\"",
+        "Entwickle Kostenrechner für photovoltaik kosten",
+        "Erstelle Förderübersicht für photovoltaik kosten",
+        "Biete kostenlose Erstberatung für photovoltaik kosten an"
+      ]
+    },
+    {
+      "keyword": "photovoltaik förderung",
+      "intent": "COMMERCIAL",
+      "contentType": "Commercial Content",
+      "priority": "High",
+      "recommendations": [
+        "Erstelle Vergleichsseite: \"Beste photovoltaik förderung Anbieter Vergleich\"",
+        "Entwickle Kostenrechner für photovoltaik förderung",
+        "Erstelle Förderübersicht für photovoltaik förderung",
+        "Biete kostenlose Erstberatung für photovoltaik förderung an"
+      ]
+    }
+  ],
+  "clusterStrategy": {
+    "pillarContent": "photovoltaik-gewerbe",
+    "supportingAssets": [
+      {
+        "keyword": "photovoltaik gewerbe",
+        "intent": "UNKNOWN",
+        "url": "/photovoltaik-gewerbe"
+      },
+      {
+        "keyword": "photovoltaik industrie",
+        "intent": "UNKNOWN",
+        "url": "/photovoltaik-industrie"
+      },
+      {
+        "keyword": "photovoltaik landwirtschaft",
+        "intent": "UNKNOWN",
+        "url": "/photovoltaik-landwirtschaft"
+      },
+      {
+        "keyword": "solaranlagen unternehmen",
+        "intent": "UNKNOWN",
+        "url": "/photovoltaik-unternehmen"
+      },
+      {
+        "keyword": "photovoltaik kosten",
+        "intent": "COMMERCIAL",
+        "url": "/photovoltaik-kosten",
+        "priority": "High"
+      },
+      {
+        "keyword": "photovoltaik förderung",
+        "intent": "COMMERCIAL",
+        "url": "/photovoltaik-förderung",
+        "priority": "High"
+      }
+    ],
+    "internalLinking": {
+      "pillarToSupporting": [
+        {
+          "from": "/photovoltaik-gewerbe",
+          "to": "/photovoltaik-gewerbe",
+          "anchor": "photovoltaik gewerbe",
+          "intent": "UNKNOWN"
+        },
+        {
+          "from": "/photovoltaik-gewerbe",
+          "to": "/photovoltaik-industrie",
+          "anchor": "photovoltaik industrie",
+          "intent": "UNKNOWN"
+        },
+        {
+          "from": "/photovoltaik-gewerbe",
+          "to": "/photovoltaik-landwirtschaft",
+          "anchor": "photovoltaik landwirtschaft",
+          "intent": "UNKNOWN"
+        },
+        {
+          "from": "/photovoltaik-gewerbe",
+          "to": "/photovoltaik-unternehmen",
+          "anchor": "solaranlagen unternehmen",
+          "intent": "UNKNOWN"
+        },
+        {
+          "from": "/photovoltaik-gewerbe",
+          "to": "/photovoltaik-kosten",
+          "anchor": "photovoltaik kosten",
+          "intent": "COMMERCIAL"
+        },
+        {
+          "from": "/photovoltaik-gewerbe",
+          "to": "/photovoltaik-förderung",
+          "anchor": "photovoltaik förderung",
+          "intent": "COMMERCIAL"
+        }
+      ],
+      "supportingToPillar": [
+        {
+          "from": "/photovoltaik-gewerbe",
+          "to": "/photovoltaik-gewerbe",
+          "anchor": "Zurück zur Übersicht",
+          "intent": "NAVIGATIONAL"
+        },
+        {
+          "from": "/photovoltaik-industrie",
+          "to": "/photovoltaik-gewerbe",
+          "anchor": "Zurück zur Übersicht",
+          "intent": "NAVIGATIONAL"
+        },
+        {
+          "from": "/photovoltaik-landwirtschaft",
+          "to": "/photovoltaik-gewerbe",
+          "anchor": "Zurück zur Übersicht",
+          "intent": "NAVIGATIONAL"
+        },
+        {
+          "from": "/photovoltaik-unternehmen",
+          "to": "/photovoltaik-gewerbe",
+          "anchor": "Zurück zur Übersicht",
+          "intent": "NAVIGATIONAL"
+        },
+        {
+          "from": "/photovoltaik-kosten",
+          "to": "/photovoltaik-gewerbe",
+          "anchor": "Zurück zur Übersicht",
+          "intent": "NAVIGATIONAL"
+        },
+        {
+          "from": "/photovoltaik-förderung",
+          "to": "/photovoltaik-gewerbe",
+          "anchor": "Zurück zur Übersicht",
+          "intent": "NAVIGATIONAL"
+        }
+      ],
+      "crossLinking": [
+        {
+          "from": "/photovoltaik-industrie",
+          "to": "/photovoltaik-landwirtschaft",
+          "anchor": "Vergleich Industrie vs. Landwirtschaft",
+          "intent": "COMMERCIAL"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "totalKeywords": 6,
+    "intentDistribution": {
+      "UNKNOWN": 4,
+      "COMMERCIAL": 2
+    },
+    "highPriorityKeywords": 2,
+    "totalSearchVolume": 26299
+  }
+}

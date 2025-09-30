@@ -61,15 +61,10 @@ jobs:
       - name: Build product-sync container
         run: docker build -t product-sync-runner -f Dockerfile .
 
-      - name: Run Firecrawl product sync
-        env:
-          FIRECRAWL_MCP_ENDPOINT: https://api.firecrawl.dev/v1/scrape
-          FIRECRAWL_MCP_API_KEY: ${{ secrets.FIRECRAWL_MCP_API_KEY }}
+      - name: Run product sync
         run: |
           set -o pipefail
           docker run --rm \
-            -e FIRECRAWL_MCP_ENDPOINT="$FIRECRAWL_MCP_ENDPOINT" \
-            -e FIRECRAWL_MCP_API_KEY="$FIRECRAWL_MCP_API_KEY" \
             -v "${{ github.workspace }}/server/storage:/app/server/storage" \
             -v "${{ github.workspace }}/public/assets/logos:/app/public/assets/logos" \
             -v "${{ github.workspace }}/logs:/app/logs" \
@@ -89,8 +84,8 @@ jobs:
 1. **Docker-Image bauen:**
    - Der Schritt `Build Docker Image` erstellt das Image direkt im Workflow.
 2. **Container ausführen:**
-  - Der Schritt `Run Firecrawl product sync` startet den Container auf Basis des lokalen `Dockerfile` und führt darin `npm run product-sync` aus. Alle benötigten Pfade (`server/storage`, Logos, Logs) werden via Volume in den Runner gespiegelt.
-  - Falls der Firecrawl-Endpoint nicht erreichbar ist oder keine Daten liefert, greift – sofern `SERVER_GEMINI_API_KEY` konfiguriert ist – automatisch ein Gemini-Fallback, das die Herstellerseite per LLM analysiert und Produkte extrahiert.
+  - Der Schritt `Run product sync` startet den Container auf Basis des lokalen `Dockerfile` und führt darin `npm run product-sync` aus. Alle benötigten Pfade (`server/storage`, Logos, Logs) werden via Volume in den Runner gespiegelt.
+  - Falls der Endpoint nicht erreichbar ist oder keine Daten liefert, greift – sofern `SERVER_GEMINI_API_KEY` konfiguriert ist – automatisch ein Gemini-Fallback, das die Herstellerseite per LLM analysiert und Produkte extrahiert.
 3. **Artefakte sichern:**
   - Logs sowie das aktualisierte `server/storage/products.live.json` werden als Workflow-Artefakt hochgeladen.
 

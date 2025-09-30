@@ -3,7 +3,7 @@ import { Page } from '../types';
 import ProblemSolution from '../components/ProblemSolution';
 
 const teamMembers = [
-    { name: 'Max Mustermann', role: 'Gründer & Geschäftsführer', imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop' },
+    { name: 'Jeremy Schulze', role: 'Gründer & Geschäftsführer', imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop' },
     { name: 'Erika Mustermann', role: 'Leitung Projektplanung', imageUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop' },
     { name: 'Klaus Kleber', role: 'Leitender Ingenieur', imageUrl: 'https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop' },
 ];

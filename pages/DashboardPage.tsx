@@ -5,8 +5,9 @@ import DashboardOverview from '../components/Dashboard/DashboardOverview';
 import DashboardProjects from '../components/Dashboard/DashboardProjects';
 import DashboardProfile from '../components/Dashboard/DashboardProfile';
 import DashboardReview from '../components/Dashboard/DashboardReview';
+import DocsPage from './DocsPage';
 
-export type DashboardView = 'overview' | 'projects' | 'profile' | 'messages' | 'new_inquiry' | 'review';
+export type DashboardView = 'overview' | 'projects' | 'profile' | 'messages' | 'new_inquiry' | 'review' | 'docs';
 
 interface DashboardPageProps {
     user: CustomerData;
@@ -34,6 +35,8 @@ const DashboardPage: React.FC<DashboardPageProps> = ({ user, message, clearMessa
                 return <DashboardProfile user={user} />;
             case 'review':
                 return <DashboardReview />;
+            case 'docs':
+                return <DocsPage />;
             case 'overview':
             default:
                 return <DashboardOverview user={user} setActiveView={setActiveView} />;

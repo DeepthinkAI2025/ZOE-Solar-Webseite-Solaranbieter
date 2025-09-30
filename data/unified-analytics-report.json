@@ -1,0 +1,411 @@
+{
+  "timestamp": "2025-09-28T17:08:15.527Z",
+  "dateRange": {
+    "start": "2025-08-29",
+    "end": "2025-09-28"
+  },
+  "summary": {
+    "totalUsers": 46062,
+    "totalSessions": 59520,
+    "totalPageViews": 139736,
+    "organicTraffic": 51803,
+    "searchConsoleClicks": 15192,
+    "searchConsoleImpressions": 738633,
+    "gmbTotalViews": 34146,
+    "gmbActions": {
+      "websiteClicks": 386,
+      "directions": 772,
+      "calls": 306,
+      "reviews": 83
+    },
+    "conversions": 1691,
+    "revenue": 522780.61,
+    "insightsCount": 1
+  },
+  "kpis": {
+    "organicTrafficGrowth": -4,
+    "conversionRate": 2.8,
+    "bounceRate": 62.81,
+    "avgPosition": 22.94,
+    "ctr": 4.7,
+    "impressionsGrowth": -3,
+    "gmbViewsGrowth": -2,
+    "gmbRating": 4.2,
+    "gmbActionsGrowth": 14
+  },
+  "crossPlatformInsights": {
+    "organicVsGMB": {
+      "correlation": 0.95,
+      "insight": "Starke Korrelation zwischen organischen Suchen und GMB-Sichtbarkeit"
+    },
+    "searchVsConversion": {
+      "correlation": 0.62,
+      "insight": "Such-Performance korreliert mit Conversion-Rate"
+    },
+    "localVsOrganic": {
+      "correlation": 0.44,
+      "insight": "Lokale Sichtbarkeit beeinflusst organische Rankings"
+    }
+  },
+  "dataSources": {
+    "googleAnalytics": {
+      "overview": {
+        "users": 46062,
+        "sessions": 59520,
+        "pageViews": 139736,
+        "avgSessionDuration": 204177,
+        "bounceRate": 62.81,
+        "newUsers": 29875
+      },
+      "trafficSources": {
+        "organic": {
+          "sessions": 51803,
+          "percentage": 87.03,
+          "users": 36035,
+          "newUsers": 29439
+        },
+        "direct": {
+          "sessions": 8655,
+          "percentage": 14.54,
+          "users": 7252,
+          "newUsers": 5021
+        },
+        "referral": {
+          "sessions": 8813,
+          "percentage": 14.81,
+          "users": 5633,
+          "newUsers": 4585
+        },
+        "social": {
+          "sessions": 5484,
+          "percentage": 9.21,
+          "users": 4299,
+          "newUsers": 3549
+        }
+      },
+      "goals": {
+        "totalConversions": 1691,
+        "conversionRate": 2.8,
+        "goalValue": 522780.61
+      },
+      "devices": {
+        "desktop": {
+          "sessions": 33647,
+          "percentage": 56.53
+        },
+        "mobile": {
+          "sessions": 41286,
+          "percentage": 69.36
+        },
+        "tablet": {
+          "sessions": 11141,
+          "percentage": 18.72
+        }
+      },
+      "topPages": [
+        {
+          "path": "/",
+          "pageViews": 5195,
+          "uniquePageViews": 3661,
+          "avgTimeOnPage": 66,
+          "bounceRate": 39,
+          "exitRate": 55
+        },
+        {
+          "path": "/photovoltaik",
+          "pageViews": 4356,
+          "uniquePageViews": 4276,
+          "avgTimeOnPage": 178,
+          "bounceRate": 23,
+          "exitRate": 59
+        },
+        {
+          "path": "/agri-pv",
+          "pageViews": 4277,
+          "uniquePageViews": 3744,
+          "avgTimeOnPage": 78,
+          "bounceRate": 23,
+          "exitRate": 73
+        },
+        {
+          "path": "/speicher",
+          "pageViews": 4903,
+          "uniquePageViews": 5985,
+          "avgTimeOnPage": 138,
+          "bounceRate": 29,
+          "exitRate": 47
+        },
+        {
+          "path": "/kontakt",
+          "pageViews": 7664,
+          "uniquePageViews": 5127,
+          "avgTimeOnPage": 171,
+          "bounceRate": 48,
+          "exitRate": 40
+        },
+        {
+          "path": "/preise",
+          "pageViews": 5309,
+          "uniquePageViews": 4533,
+          "avgTimeOnPage": 115,
+          "bounceRate": 53,
+          "exitRate": 51
+        },
+        {
+          "path": "/elektroauto-ladestation",
+          "pageViews": 8737,
+          "uniquePageViews": 4722,
+          "avgTimeOnPage": 151,
+          "bounceRate": 36,
+          "exitRate": 34
+        }
+      ],
+      "dateRange": {
+        "start": "2025-08-29",
+        "end": "2025-09-28"
+      }
+    },
+    "googleSearchConsole": {
+      "overview": {
+        "totalClicks": 15192,
+        "totalImpressions": 738633,
+        "avgCTR": 4.7,
+        "avgPosition": 22.94
+      },
+      "queries": [
+        {
+          "query": "photovoltaik",
+          "clicks": 772,
+          "impressions": 6147,
+          "ctr": 1.83,
+          "position": 6.86
+        },
+        {
+          "query": "solaranlage",
+          "clicks": 544,
+          "impressions": 9267,
+          "ctr": 3.13,
+          "position": 13.77
+        },
+        {
+          "query": "pv anlage",
+          "clicks": 883,
+          "impressions": 6066,
+          "ctr": 2.1,
+          "position": 10.23
+        },
+        {
+          "query": "solar installation",
+          "clicks": 513,
+          "impressions": 11821,
+          "ctr": 3.55,
+          "position": 6.6
+        },
+        {
+          "query": "zoe solar",
+          "clicks": 635,
+          "impressions": 11627,
+          "ctr": 3.15,
+          "position": 13.69
+        },
+        {
+          "query": "photovoltaik kosten",
+          "clicks": 546,
+          "impressions": 16673,
+          "ctr": 3.15,
+          "position": 19.36
+        },
+        {
+          "query": "solaranlage berlin",
+          "clicks": 739,
+          "impressions": 10512,
+          "ctr": 4.73,
+          "position": 19.9
+        },
+        {
+          "query": "pv speicher",
+          "clicks": 917,
+          "impressions": 16585,
+          "ctr": 2.81,
+          "position": 12.85
+        },
+        {
+          "query": "elektroauto laden",
+          "clicks": 982,
+          "impressions": 10976,
+          "ctr": 4.02,
+          "position": 8.1
+        },
+        {
+          "query": "agri pv",
+          "clicks": 523,
+          "impressions": 12279,
+          "ctr": 3.52,
+          "position": 6.5
+        },
+        {
+          "query": "solarteur",
+          "clicks": 879,
+          "impressions": 12549,
+          "ctr": 5.76,
+          "position": 12.32
+        },
+        {
+          "query": "photovoltaik förderung",
+          "clicks": 233,
+          "impressions": 16926,
+          "ctr": 4.6,
+          "position": 10.73
+        }
+      ],
+      "pages": [
+        {
+          "page": "/",
+          "clicks": 206,
+          "impressions": 4675,
+          "ctr": 1.83,
+          "position": 10.33
+        },
+        {
+          "page": "/photovoltaik",
+          "clicks": 410,
+          "impressions": 12814,
+          "ctr": 4.06,
+          "position": 16.06
+        },
+        {
+          "page": "/agri-pv",
+          "clicks": 330,
+          "impressions": 3048,
+          "ctr": 3.16,
+          "position": 14.18
+        },
+        {
+          "page": "/speicher",
+          "clicks": 340,
+          "impressions": 10232,
+          "ctr": 2.69,
+          "position": 10.71
+        },
+        {
+          "page": "/kontakt",
+          "clicks": 150,
+          "impressions": 6090,
+          "ctr": 1.76,
+          "position": 11.21
+        },
+        {
+          "page": "/preise",
+          "clicks": 412,
+          "impressions": 6460,
+          "ctr": 3.39,
+          "position": 8.68
+        }
+      ],
+      "countries": [
+        {
+          "country": "Germany",
+          "clicks": 140,
+          "impressions": 2508,
+          "ctr": 3.11,
+          "position": 14.26
+        },
+        {
+          "country": "Austria",
+          "clicks": 391,
+          "impressions": 3674,
+          "ctr": 3.88,
+          "position": 18.25
+        },
+        {
+          "country": "Switzerland",
+          "clicks": 470,
+          "impressions": 11727,
+          "ctr": 2.59,
+          "position": 15.08
+        },
+        {
+          "country": "Netherlands",
+          "clicks": 121,
+          "impressions": 5563,
+          "ctr": 4.67,
+          "position": 12.08
+        },
+        {
+          "country": "Belgium",
+          "clicks": 211,
+          "impressions": 8773,
+          "ctr": 4.82,
+          "position": 19.53
+        }
+      ],
+      "devices": {
+        "desktop": {
+          "clicks": 6315,
+          "impressions": 347270,
+          "ctr": 1.82,
+          "position": 19.13
+        },
+        "mobile": {
+          "clicks": 7598,
+          "impressions": 699395,
+          "ctr": 1.09,
+          "position": 23.2
+        },
+        "tablet": {
+          "clicks": 2088,
+          "impressions": 76730,
+          "ctr": 2.72,
+          "position": 23.79
+        }
+      },
+      "dateRange": {
+        "start": "2025-08-29",
+        "end": "2025-09-28"
+      }
+    },
+    "googleMyBusiness": {
+      "overview": {
+        "totalViews": 34146,
+        "searchViews": 24618,
+        "mapViews": 14187,
+        "actions": {
+          "websiteClicks": 386,
+          "directions": 772,
+          "calls": 306,
+          "reviews": 83
+        }
+      },
+      "reviews": {
+        "total": 212,
+        "averageRating": "4.2",
+        "newReviews": 5,
+        "ratingDistribution": {
+          "1": 5,
+          "2": 5,
+          "3": 17,
+          "4": 41,
+          "5": 48
+        }
+      },
+      "photos": {
+        "total": 20,
+        "views": 5737
+      },
+      "dateRange": {
+        "start": "2025-08-29",
+        "end": "2025-09-28"
+      }
+    }
+  },
+  "insights": [
+    {
+      "type": "insight",
+      "category": "correlation",
+      "title": "Starke organisch-lokale Korrelation",
+      "description": "Organische und lokale Sichtbarkeit korrelieren stark. Synergien nutzen.",
+      "impact": "medium",
+      "recommendation": "Integrierte SEO- und Local-SEO-Strategie entwickeln."
+    }
+  ]
+}

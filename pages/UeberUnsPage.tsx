@@ -4,7 +4,7 @@ import AnimatedSection from '../components/AnimatedSection';
 import VideoSection from '../components/VideoSection';
 
 const teamMembers = [
-    { name: 'Max Mustermann', role: 'Gründer & Geschäftsführer', imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop' },
+    { name: 'Jeremy Schulze', role: 'Gründer & Geschäftsführer', imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop' },
     { name: 'Erika Mustermann', role: 'Leitung Projektplanung', imageUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop' },
     { name: 'Klaus Kleber', role: 'Leitender Ingenieur', imageUrl: 'https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop' },
 ];
@@ -16,7 +16,7 @@ const stats = [
 ];
 
 const timeline = [
-    { year: '2018', title: 'Die Vision entsteht', text: 'Gründer Max Mustermann erkennt das enorme, ungenutzte Potenzial auf den Dächern des deutschen Mittelstands und gründet ZOE Solar mit der Mission, die Energiewende für Unternehmen einfach und profitabel zu machen.' },
+    { year: '2018', title: 'Die Vision entsteht', text: 'Gründer Jeremy Schulze erkennt das enorme, ungenutzte Potenzial auf den Dächern des deutschen Mittelstands und gründet ZOE Solar mit der Mission, die Energiewende für Unternehmen einfach und profitabel zu machen.' },
     { year: '2020', title: 'Erstes Großprojekt', text: 'Realisierung der ersten 1-Megawatt-Dachanlage für ein Logistikzentrum in Brandenburg. Ein Meilenstein, der unsere Expertise für komplexe Projekte unter Beweis stellt.' },
     { year: '2022', title: 'Expansion des Teams', text: 'Das Kernteam wächst auf über 20 festangestellte Experten. Wir beziehen unseren neuen Hauptsitz in Berlin und bauen unsere Planungs- und Montagekapazitäten massiv aus.' },
     { year: '2024', title: 'Testsieger 2025', text: 'ZOE Solar wird von PhotovoltaikTest.de als bester Anbieter für gewerbliche Solaranlagen ausgezeichnet. Eine Bestätigung unseres kompromisslosen Qualitätsanspruchs.' },

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero';
-import { pageHeroData } from '../data/pageContent';
-import { localContentByCity } from '../data/localContent';
+import { pageHeroData } from '../data/pageContent.ts';
+import { localContentByCity } from '../data/localContent.ts';
 
 interface StandortPageProps {
   locationKey?: keyof typeof localContentByCity;
@@ -13,6 +13,15 @@ interface StandortPageProps {
   latitude: number;
   longitude: number;
   radiusKm: number;
+  keywords?: string[];
+  regionalOffers?: string[];
+  geoData?: {
+    city: string;
+    state: string;
+    postalCode: string;
+    latitude: number;
+    longitude: number;
+  };
 }
 
 const StandortPage: React.FC<StandortPageProps> = ({
@@ -23,7 +32,10 @@ const StandortPage: React.FC<StandortPageProps> = ({
   postalCode,
   latitude,
   longitude,
-  radiusKm
+  radiusKm,
+  keywords = [],
+  regionalOffers = [],
+  geoData
 }) => {
   const displayCity = city;
   const localContent = locationKey ? localContentByCity[locationKey] : undefined;
@@ -55,6 +67,31 @@ const StandortPage: React.FC<StandortPageProps> = ({
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Ihr Solar-Partner in {displayCity}
             </h2>
+            <div className="mb-4">
+              <strong className="text-gray-900">Lokale Keywords:</strong>
+              <ul className="list-disc list-inside text-gray-600">
+                {keywords.map((kw) => (
+                  <li key={kw}>{kw}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="mb-4">
+              <strong className="text-gray-900">Regionale Angebote:</strong>
+              <ul className="list-disc list-inside text-gray-600">
+                {regionalOffers.map((offer) => (
+                  <li key={offer}>{offer}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="mb-4">
+              <strong className="text-gray-900">Standortdaten:</strong>
+              <ul className="list-disc list-inside text-gray-600">
+                <li>Stadt: {geoData?.city ?? city}</li>
+                <li>Bundesland/Kanton: {geoData?.state ?? state}</li>
+                <li>PLZ: {geoData?.postalCode ?? postalCode}</li>
+                <li>Koordinaten: {geoData?.latitude ?? latitude}, {geoData?.longitude ?? longitude}</li>
+              </ul>
+            </div>
             <p className="text-lg text-gray-600 mb-6">
               Mit über 10 Jahren Erfahrung sind wir Ihr vertrauensvoller Partner für Solaranlagen
               in {displayCity} und der Region {state}. Wir planen und installieren Photovoltaik-Anlagen

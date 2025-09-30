@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { GoogleGenAI, Type, GenerateContentResponse } from "@google/genai";
-import { pricingPackages, PricingPackage } from '../data/pricingPackages';
+import { pricingPackages, PricingPackage } from '../data/pricingPackages.ts';
 
 type RecommenderState = 'idle' | 'thinking' | 'asking' | 'recommending' | 'error';
 

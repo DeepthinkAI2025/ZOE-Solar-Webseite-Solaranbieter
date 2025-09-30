@@ -1,6 +1,5 @@
 import fs from 'fs';
 import path from 'path';
-import { fetchManufacturerData } from '../server/services/firecrawlClient.js';
 
 const LIVE = path.join(process.cwd(), 'server', 'storage', 'products.live.json');
 const OUT = path.join(process.cwd(), 'server', 'storage', 'sync-diagnostic.json');
@@ -32,15 +31,14 @@ async function run() {
   // target manufacturers with missing logos or only external logos
   const targets = manufacturers.filter(m => !m.logoUrl || (typeof m.logoUrl === 'string' && !m.logoUrl.startsWith('/assets/logos/')));
 
-  const report = { generatedAt: now(), total: manufacturers.length, targets: [], provider: 'firecrawl-mcp' };
+  const report = { generatedAt: now(), total: manufacturers.length, targets: [] };
 
   for (const m of targets) {
     process.stdout.write(`Diagnosing ${m.slug}... `);
-    const entry = { slug: m.slug, name: m.name, website: m.website, existingLogo: m.logoUrl || null, firecrawl: null, tested: [] };
+    const entry = { slug: m.slug, name: m.name, website: m.website, existingLogo: m.logoUrl || null, tested: [] };
     try {
-      const suggestion = await fetchManufacturerData(m);
-      entry.firecrawl = suggestion;
-      if (suggestion && Array.isArray(suggestion.logoCandidates)) {
+      // Firecrawl entfernt
+      if (false) {}
         for (const cand of suggestion.logoCandidates) {
           const res = await tryFetch(cand);
           entry.tested.push(res);

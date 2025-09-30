@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Page } from '../types';
 import AnimatedSection from '../components/AnimatedSection';
 import ServiceWizard from '../components/ServiceWizard';
+import Breadcrumb from '../components/Breadcrumb';
 import { pageToPath } from '../data/pageRoutes';
 
 interface PhotovoltaikPageProps {
@@ -27,6 +29,9 @@ const PhotovoltaikHero: React.FC<{ setPage: (page: Page) => void, onCtaClick: ()
     return (
         <section className="leistungen-hero-v2 bg-slate-50 overflow-hidden">
             <div className="container mx-auto px-6 py-20 lg:py-24">
+                <div className="mb-8">
+                    <Breadcrumb variant="hero" />
+                </div>
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Left Column: Text Content */}
                     <div className="text-center lg:text-left">
@@ -35,7 +40,7 @@ const PhotovoltaikHero: React.FC<{ setPage: (page: Page) => void, onCtaClick: ()
                              Ganzheitliche Solarlösungen.
                          </h1>
                          <p className="mt-6 text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 page-hero-animate-item page-hero-subtitle pillar-keyfacts">
-                            Wir sind Ihr strategischer Partner für die solare Energiewende und begleiten Sie von der ersten Analyse bis zur langfristigen Betriebsführung Ihrer Anlage.
+                            Wir sind Ihr strategischer Partner für die solare Energiewende und begleiten Sie von der ersten Analyse bis zur langfristigen Betriebsführung Ihrer Anlage. Erfahren Sie mehr über unsere <Link to="/preise" className="text-green-600 hover:text-green-700 font-semibold">Preise</Link> und <Link to="/foerdermittel-check" className="text-green-600 hover:text-green-700 font-semibold">Fördermöglichkeiten</Link>.
                          </p>
                          <div className="mt-8 page-hero-animate-item page-hero-cta">
                              <Link
@@ -87,9 +92,37 @@ const PhotovoltaikPage: React.FC<PhotovoltaikPageProps> = ({ setPage }) => {
         document.dispatchEvent(new CustomEvent('open-chat'));
     };
 
+    const pageTitle = "Photovoltaik mit Speicher - Komplette Solarlösungen für Ihr Zuhause";
+    const pageDescription = "Photovoltaik mit Speicher: Maximieren Sie Ihren Eigenverbrauch mit modernen Batteriespeichern. Professionelle Beratung ✓ Qualitätsgarantie ✓ Jetzt kostenlos anfragen!";
+    const pageKeywords = "Photovoltaik mit Speicher, Solaranlage mit Batteriespeicher, PV Speicher, Eigenverbrauch erhöhen, Solarstrom speichern";
+
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Photovoltaik mit Speicher",
+        "description": "Professionelle Installation von Photovoltaik-Anlagen mit modernen Batteriespeichern für maximale Energieautarkie",
+        "provider": {
+            "@type": "Organization",
+            "name": "ZOE Solar GmbH",
+            "url": "https://www.zoe-solar.de"
+        },
+        "areaServed": "DE",
+        "serviceType": "Photovoltaik Installation mit Speicher"
+    };
+
     return (
-        <div className="bg-white">
-            <PhotovoltaikHero setPage={setPage} onCtaClick={openChat} />
+        <>
+            <Helmet>
+                <title>{pageTitle}</title>
+                <meta name="description" content={pageDescription} />
+                <meta name="keywords" content={pageKeywords} />
+                <link rel="canonical" href="https://www.zoe-solar.de/photovoltaik" />
+                <script type="application/ld+json">
+                    {JSON.stringify(schema)}
+                </script>
+            </Helmet>
+            <div className="bg-white">
+                <PhotovoltaikHero setPage={setPage} onCtaClick={openChat} />
             
             <AnimatedSection>
                 <section id="service-finder" className="py-20 bg-slate-50 border-t border-slate-200">
@@ -106,6 +139,7 @@ const PhotovoltaikPage: React.FC<PhotovoltaikPageProps> = ({ setPage }) => {
                 </section>
             </AnimatedSection>
         </div>
+        </>
     );
 };
 

@@ -4,6 +4,7 @@ import { productCatalog } from '../data/products.generated';
 import { Page } from '../types';
 import { pageToPath } from '../data/pageRoutes';
 import { loadExternalScript } from '../utils/loadExternalScript';
+import Breadcrumb from './Breadcrumb';
 
 const THREE_SRC = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js';
 const VANTA_GLOBE_SRC = 'https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js';
@@ -31,10 +32,12 @@ const ManufacturerLogo: React.FC<{ name: string; src: string; slug: string; onSe
       title={`Mehr von ${name} erfahren`}
       className={`flex-shrink-0 mx-8 flex items-center justify-center h-10 cursor-pointer ${className}`}
     >
-      <img 
-        src={src} 
-        alt={name} 
-        className="h-full w-auto max-w-[150px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+      <img
+        src={src}
+        alt={name}
+        loading="lazy"
+        fetchPriority="low"
+        className="h-full w-auto max-w-[150px] object-contain transition-all duration-300"
       />
     </a>
   );
@@ -87,9 +90,19 @@ const CustomSlider: React.FC<{
 );
 // --- END: Reusable components for the calculator ---
 
-const HeroCalculator: React.FC = () => {
-    const [surfaceArea, setSurfaceArea] = React.useState(1000); // m²
+const HeroCalculator: React.FC<{ customerType: 'private' | 'business' }> = ({ customerType }) => {
+    const [surfaceArea, setSurfaceArea] = React.useState(customerType === 'private' ? 100 : 1000); // m²
     const [electricityPrice, setElectricityPrice] = React.useState(28); // ct/kWh
+
+    // Update default values when customerType changes
+    React.useEffect(() => {
+        if (customerType === 'private') {
+            setSurfaceArea(100);
+        } else {
+            setSurfaceArea(1000);
+        }
+        setElectricityPrice(28);
+    }, [customerType]);
 
     const calculation = React.useMemo(() => {
         const kwpPerSqM = 0.2;
@@ -164,20 +177,21 @@ const HeroCalculator: React.FC = () => {
                 <div className="pt-6 border-t border-slate-700 text-center">
                     <p className="text-sm text-green-300 font-semibold uppercase tracking-wider">Mögliche Ersparnis pro Jahr</p>
                     <p className="text-5xl font-bold text-green-300 mt-1">{calculation.yearlySavings}</p>
+                    
+                    <Link
+                        to={pageToPath.kontakt}
+                        onClick={(event) => {
+                            event.preventDefault();
+                            openChat();
+                        }}
+                        className="inline-block mt-6 bg-green-500 text-white font-bold py-3 px-6 rounded-lg text-lg hover:bg-green-600 transition-all duration-300 shadow-lg cta-button-glow transform hover:-translate-y-1"
+                    >
+                        Jetzt Potenzial analysieren
+                    </Link>
                 </div>
             </div>
-
-            <Link
-                to={pageToPath.kontakt}
-                onClick={(event) => {
-                    event.preventDefault();
-                    openChat();
-                }}
-                className="w-full mt-8 bg-green-500 text-center text-white font-bold py-4 px-8 rounded-lg text-lg hover:bg-green-600 transition-all duration-300 shadow-lg cta-button-glow transform hover:-translate-y-1"
-            >
-                Jetzt Potenzial analysieren
-            </Link>
-             <p className="text-xs text-slate-400 italic text-center mt-3">
+            
+            <p className="text-xs text-slate-400 italic text-center mt-3">
                 Dies ist eine Schätzung. Eine genaue Analyse berücksichtigt Ihren individuellen Lastgang und Standort.
             </p>
         </div>
@@ -188,22 +202,35 @@ interface HeroProps {
     onSelectHersteller: (slug: string) => void;
     setPage: (page: Page) => void;
     theme?: 'day' | 'night';
+    customerType: 'private' | 'business';
+    setCustomerType?: (type: 'private' | 'business') => void;
 }
 
 const { manufacturers } = productCatalog;
 
-const Hero: React.FC<HeroProps> = ({ onSelectHersteller, setPage }) => {
+const Hero: React.FC<HeroProps> = ({ onSelectHersteller, setPage, customerType, setCustomerType }) => {
     const vantaRef = useRef<HTMLDivElement | null>(null);
     
     // State for headline animation
     const [headlineIndex, setHeadlineIndex] = useState(0);
     
-    const headlines = useMemo(() => [
-        "Ihres Familienbetriebs.",
-        "Ihrer Landwirtschaft.",
-        "Ihres Unternehmens.",
-        "Ihrer Energiezukunft.",
-    ], []);
+    const headlines = useMemo(() => {
+        if (customerType === 'private') {
+            return [
+                "Ihres Zuhauses.",
+                "Ihrer Familie.",
+                "Ihrer Energiezukunft.",
+                "Ihres Eigenheims.",
+            ];
+        } else {
+            return [
+                "Ihres Unternehmens.",
+                "Ihrer Landwirtschaft.",
+                "Ihres Familienbetriebs.",
+                "Ihrer Energiezukunft.",
+            ];
+        }
+    }, [customerType]);
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -282,29 +309,53 @@ const Hero: React.FC<HeroProps> = ({ onSelectHersteller, setPage }) => {
         <div className="absolute inset-0 bg-slate-900/40 z-10"></div>
       
         <div className="relative z-20 container mx-auto px-6 flex-grow flex flex-col justify-center py-24">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mt-10">
                 <div className="text-center lg:text-left">
+                    {/* Breadcrumb Navigation - nur auf Unterseiten anzeigen */}
+                    {location.pathname !== '/' && (
+                        <Breadcrumb variant="hero" />
+                    )}
+
                     <div className="mb-6 opacity-0" style={{ animation: 'slide-up-fade-in 0.8s ease-out 0.1s forwards' }}>
-                        <Link
-                            to={pageToPath['agri-pv']}
-                            onClick={(event) => {
-                                event.preventDefault();
-                                setPage('agri-pv');
-                            }}
-                            className="inline-block bg-white/10 border border-white/30 rounded-full px-4 py-2 text-sm text-white transition-all duration-300 hover:bg-white/20 transform hover:-translate-y-0.5 group"
-                        >
-                            <div className="flex items-center gap-2">
-                                <span className="relative flex h-3 w-3">
-                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                                    <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-                                </span>
-                                <span className="font-semibold text-green-300">Neu: Agri-PV Förderung 2025</span>
-                                <span className="text-slate-300">| Bis zu 1 Mio. € Zuschuss</span>
+                        <div className="flex flex-col sm:flex-row items-center gap-4 mb-4">
+                            <Link
+                                to={customerType === 'private' ? pageToPath['preise'] : pageToPath['agri-pv']}
+                                onClick={(event) => {
+                                    event.preventDefault();
+                                    setPage(customerType === 'private' ? 'preise' : 'agri-pv');
+                                }}
+                                className="inline-block bg-white/10 border border-white/30 rounded-full px-4 py-2 text-sm text-white transition-all duration-300 hover:bg-white/20 transform hover:-translate-y-0.5 group"
+                            >
+                                <div className="flex items-center gap-2">
+                                    <span className="relative flex h-3 w-3">
+                                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                        <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                                    </span>
+                                    {customerType === 'private' ? (
+                                        <>
+                                            <span className="font-semibold text-green-300">KfW-Förderung 2025</span>
+                                            <span className="text-slate-300">| Bis zu 50% Zuschuss</span>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <span className="font-semibold text-green-300">Neu: Agri-PV Förderung 2025</span>
+                                            <span className="text-slate-300">| Bis zu 1 Mio. € Zuschuss</span>
+                                        </>
+                                    )}
+                                </div>
+                            </Link>
+                            <div className="bg-red-500/90 backdrop-blur-sm rounded-full px-4 py-2 text-sm text-white font-bold animate-pulse">
+                                <div className="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <span>Förderfrist endet in: 127 Tagen</span>
+                                </div>
                             </div>
-                        </Link>
+                        </div>
                     </div>
                     
-                    <h1 className="text-4xl md:text-6xl font-bold leading-tight animate-hero-heading mb-4 [text-shadow:_0_2px_4px_rgb(0_0_0_/_40%)] speakable-hero-headline hero-headline">
+                    <h1 className="text-4xl md:text-6xl font-bold leading-tight animate-hero-heading mb-4 [text-shadow:_0_2px_4px_rgb(0_0_0_/_40%)] speakable-hero-headline hero-headline" style={{lineHeight: '1.15'}}>
                         Sichern Sie die Zukunft
                         <br />
                         <span className="text-green-400 animated-headline-container">
@@ -327,7 +378,10 @@ const Hero: React.FC<HeroProps> = ({ onSelectHersteller, setPage }) => {
                     </h1>
 
                     <p className="text-xl text-slate-200 mt-4 max-w-xl animate-hero-p mx-auto lg:mx-0 speakable-hero-pitch hero-pitch">
-                        Wir helfen Familienbetrieben, ihre ungenutzten Flächen in eine sichere Zukunft zu verwandeln. Schaffen Sie eine nachhaltige Einnahmequelle, die Generationen überdauert und Ihren Hof für die Zukunft rüstet.
+                        {customerType === 'private'
+                            ? 'Wir helfen Ihnen, Ihr Zuhause unabhängig von Stromkosten zu machen. Schaffen Sie eine nachhaltige Zukunft für Ihre Familie mit sauberer, erneuerbarer Energie.'
+                            : 'Wir helfen Familienbetrieben, ihre ungenutzten Flächen in eine sichere Zukunft zu verwandeln. Schaffen Sie eine nachhaltige Einnahmequelle, die Generationen überdauert und Ihren Hof für die Zukunft rüstet.'
+                        }
                     </p>
                     
                     <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-x-8 gap-y-4 animate-hero-features">
@@ -344,40 +398,38 @@ const Hero: React.FC<HeroProps> = ({ onSelectHersteller, setPage }) => {
                     <div className="mt-8 text-left animate-hero-cta">
                         <p className="font-semibold text-green-300 uppercase tracking-wider text-sm mb-3">Unsere Expertise für:</p>
                         <div className="flex flex-wrap gap-x-6 gap-y-2 text-slate-200">
-                            <span className="font-semibold">✓ Familienbetriebe & Landwirte</span>
-                            <span className="font-semibold">✓ Grundbesitzer & die nächste Generation</span>
-                             <span className="font-semibold">✓ Zukunftsorientierte Unternehmen</span>
+                            {customerType === 'private' ? (
+                                <>
+                                    <span className="font-semibold">✓ Einfamilienhäuser</span>
+                                    <span className="font-semibold">✓ Mehrfamilienhäuser</span>
+                                    <span className="font-semibold">✓ Eigenheime & Wohnungen</span>
+                                </>
+                            ) : (
+                                <>
+                                    <span className="font-semibold">✓ Familienbetriebe & Landwirte</span>
+                                    <span className="font-semibold">✓ Grundbesitzer & die nächste Generation</span>
+                                    <span className="font-semibold">✓ Zukunftsorientierte Unternehmen</span>
+                                </>
+                            )}
                         </div>
                     </div>
                 </div>
 
-                <div className="flex justify-center lg:justify-end animate-hero-features">
-                   <HeroCalculator />
+                <div className="flex justify-center lg:justify-end animate-hero-features mt-4">
+                   <HeroCalculator customerType={customerType} />
                 </div>
             </div>
         </div>
         
-        <div className="relative z-20 w-full bg-slate-900/50 backdrop-blur-sm py-6">
-            <p className="text-center text-xs text-slate-300 mb-6 font-semibold uppercase tracking-wider animate-hero-partners">Unsere Premium-Partner für höchste Qualität</p>
-            <div className="relative w-full overflow-hidden animate-hero-partners space-y-6">
-                {/* Top row scrolling left */}
+        <div className="relative z-20 w-full bg-white backdrop-blur-sm py-6">
+            <p className="text-center text-xs text-gray-600 mb-6 font-semibold uppercase tracking-wider animate-hero-partners">Unsere Premium-Partner für höchste Qualität</p>
+            <div className="relative w-full overflow-hidden animate-hero-partners">
+                {/* Single row scrolling left */}
                 <div className="flex animate-infinite-scroll">
-                    {[...logosFirstRow, ...logosFirstRow].map((logo, index) => (
-                        <ManufacturerLogo 
-                            key={`${logo.slug}-${index}-top`} 
-                            name={logo.name} 
-                            src={logo.src} 
-                            slug={logo.slug}
-                            onSelect={onSelectHersteller}
-                        />
-                    ))}
-                </div>
-                {/* Bottom row scrolling right */}
-                <div className="flex animate-infinite-scroll-reverse">
-                    {[...logosSecondRow, ...logosSecondRow].map((logo, index) => (
-                        <ManufacturerLogo 
-                            key={`${logo.slug}-${index}-bottom`} 
-                            name={logo.name} 
+                    {[...allLogos, ...allLogos].map((logo, index) => (
+                        <ManufacturerLogo
+                            key={`${logo.slug}-${index}`}
+                            name={logo.name}
                             src={logo.src}
                             slug={logo.slug}
                             onSelect={onSelectHersteller}
