@@ -1,14 +1,14 @@
 {
-  "timestamp": "2025-10-04T06:08:10.387Z",
+  "timestamp": "2025-10-05T06:08:09.413Z",
   "stats": {
-    "totalIdeas": 9,
-    "blogCount": 2,
+    "totalIdeas": 8,
+    "blogCount": 1,
     "landingCount": 6,
     "faqCount": 1,
-    "totalEstimatedTraffic": 5444,
-    "avgOpportunityScore": 1571,
+    "totalEstimatedTraffic": 5417,
+    "avgOpportunityScore": 1597,
     "contentTypes": {
-      "blog": 2,
+      "blog": 1,
       "landingpage": 6,
       "faq": 1
     }
@@ -16,48 +16,9 @@
   "contentCalendar": [
     {
       "type": "blog",
-      "title": "Agri-PV Förderungen 2025: Der ultimative Leitfaden für Landwirte",
-      "keyword": "Agri-PV Förderungen 2025",
-      "targetPosition": 22,
-      "estimatedTraffic": 212,
-      "opportunityScore": 1287,
-      "category": "longtail",
-      "contentOutline": [
-        "Einführung in Agri-PV Förderungen 2025",
-        "Grundlagen und Funktionsweise",
-        "Vorteile und Nutzen",
-        "Praktische Umsetzung",
-        "Kosten und Wirtschaftlichkeit",
-        "Fazit und Handlungsempfehlungen"
-      ],
-      "seoTips": [
-        "Optimiere Title-Tag für \"Agri-PV Förderungen 2025\"",
-        "Integriere \"Agri-PV Förderungen 2025\" natürlich in den ersten 100 Wörtern",
-        "Erstelle eine H1-Überschrift mit \"Agri-PV Förderungen 2025\"",
-        "Füge interne Links zu verwandten Themen hinzu",
-        "Optimiere Meta-Description für höhere CTR",
-        "Verbessere On-Page-SEO für bessere Rankings",
-        "Erhöhe Content-Qualität und -Tiefe",
-        "Baue mehr Backlinks auf",
-        "Verbessere technische SEO"
-      ],
-      "priority": "high",
-      "estimatedWordCount": 2804,
-      "internalLinks": [
-        "/agri-pv",
-        "/foerderungen",
-        "/referenzen",
-        "/kontakt"
-      ],
-      "publishDate": "2025-10-04",
-      "status": "draft",
-      "weekOfYear": 40
-    },
-    {
-      "type": "blog",
       "title": "Stromspeicher Förderung Eigenheim: Der ultimative Leitfaden für Landwirte",
       "keyword": "Stromspeicher Förderung Eigenheim",
-      "targetPosition": 11,
+      "targetPosition": 19,
       "estimatedTraffic": 315,
       "opportunityScore": 1094,
       "category": "residential_financing",
@@ -75,26 +36,28 @@
         "Erstelle eine H1-Überschrift mit \"Stromspeicher Förderung Eigenheim\"",
         "Füge interne Links zu verwandten Themen hinzu",
         "Optimiere Meta-Description für höhere CTR",
+        "Verbessere On-Page-SEO für bessere Rankings",
+        "Erhöhe Content-Qualität und -Tiefe",
         "Baue mehr Backlinks auf",
         "Verbessere technische SEO"
       ],
       "priority": "high",
-      "estimatedWordCount": 2916,
+      "estimatedWordCount": 2606,
       "internalLinks": [
         "/agri-pv",
         "/foerderungen",
         "/referenzen",
         "/kontakt"
       ],
-      "publishDate": "2025-10-11",
+      "publishDate": "2025-10-05",
       "status": "draft",
-      "weekOfYear": 41
+      "weekOfYear": 40
     },
     {
       "type": "landingpage",
       "title": "Solaranlage Eigenheim Kosten - Professionelle Agri-PV Lösungen",
       "keyword": "Solaranlage Eigenheim Kosten",
-      "targetPosition": 2,
+      "targetPosition": 6,
       "estimatedTraffic": 1680,
       "opportunityScore": 3182,
       "category": "residential",
@@ -126,7 +89,7 @@
         "Optimiere Meta-Description für höhere CTR"
       ],
       "priority": "high",
-      "estimatedWordCount": 865,
+      "estimatedWordCount": 985,
       "internalLinks": [
         "/agri-pv",
         "/foerderungen",
@@ -134,9 +97,9 @@
         "/kontakt",
         "/preise"
       ],
-      "publishDate": "2025-10-18",
+      "publishDate": "2025-10-12",
       "status": "draft",
-      "weekOfYear": 42
+      "weekOfYear": 41
     },
     {
       "type": "landingpage",
@@ -174,7 +137,7 @@
         "Optimiere Meta-Description für höhere CTR"
       ],
       "priority": "high",
-      "estimatedWordCount": 926,
+      "estimatedWordCount": 976,
       "internalLinks": [
         "/agri-pv",
         "/foerderungen",
@@ -182,66 +145,15 @@
         "/kontakt",
         "/preise"
       ],
-      "publishDate": "2025-10-25",
+      "publishDate": "2025-10-19",
       "status": "draft",
-      "weekOfYear": 43
-    },
-    {
-      "type": "landingpage",
-      "title": "Agri-PV Installation - Professionelle Agri-PV Lösungen",
-      "keyword": "Agri-PV Installation",
-      "targetPosition": 29,
-      "estimatedTraffic": 278,
-      "opportunityScore": 1509,
-      "category": "technical",
-      "conversionGoal": "lead_generation",
-      "ctaText": "Kostenlose Beratung anfordern",
-      "contentSections": [
-        {
-          "title": "Ihre Vorteile",
-          "content": "Warum Sie sich für ZOE Solar entscheiden sollten"
-        },
-        {
-          "title": "Unsere Lösungen",
-          "content": "Spezialisierte Agri-PV Installation Angebote"
-        },
-        {
-          "title": "Referenzen",
-          "content": "Erfolgreiche Projekte unserer Kunden"
-        },
-        {
-          "title": "Kostenloses Angebot",
-          "content": "Fordern Sie jetzt Ihr persönliches Angebot an"
-        }
-      ],
-      "seoTips": [
-        "Optimiere Title-Tag für \"Agri-PV Installation\"",
-        "Integriere \"Agri-PV Installation\" natürlich in den ersten 100 Wörtern",
-        "Erstelle eine H1-Überschrift mit \"Agri-PV Installation\"",
-        "Füge interne Links zu verwandten Themen hinzu",
-        "Optimiere Meta-Description für höhere CTR",
-        "Verbessere On-Page-SEO für bessere Rankings",
-        "Erhöhe Content-Qualität und -Tiefe",
-        "Baue mehr Backlinks auf",
-        "Verbessere technische SEO"
-      ],
-      "priority": "high",
-      "estimatedWordCount": 1164,
-      "internalLinks": [
-        "/agri-pv",
-        "/foerderungen",
-        "/referenzen",
-        "/kontakt"
-      ],
-      "publishDate": "2025-11-01",
-      "status": "draft",
-      "weekOfYear": 44
+      "weekOfYear": 42
     },
     {
       "type": "landingpage",
       "title": "Solaranlage Eigenheim Planung - Professionelle Agri-PV Lösungen",
       "keyword": "Solaranlage Eigenheim Planung",
-      "targetPosition": 21,
+      "targetPosition": 20,
       "estimatedTraffic": 600,
       "opportunityScore": 1456,
       "category": "residential",
@@ -277,7 +189,7 @@
         "Verbessere technische SEO"
       ],
       "priority": "high",
-      "estimatedWordCount": 1185,
+      "estimatedWordCount": 996,
       "internalLinks": [
         "/agri-pv",
         "/foerderungen",
@@ -285,15 +197,15 @@
         "/kontakt",
         "/beratung"
       ],
-      "publishDate": "2025-11-08",
+      "publishDate": "2025-10-26",
       "status": "draft",
-      "weekOfYear": 45
+      "weekOfYear": 43
     },
     {
       "type": "landingpage",
       "title": "Photovoltaik Installation Dach - Professionelle Agri-PV Lösungen",
       "keyword": "Photovoltaik Installation Dach",
-      "targetPosition": 4,
+      "targetPosition": 20,
       "estimatedTraffic": 560,
       "opportunityScore": 1321,
       "category": "residential_installation",
@@ -322,25 +234,79 @@
         "Integriere \"Photovoltaik Installation Dach\" natürlich in den ersten 100 Wörtern",
         "Erstelle eine H1-Überschrift mit \"Photovoltaik Installation Dach\"",
         "Füge interne Links zu verwandten Themen hinzu",
-        "Optimiere Meta-Description für höhere CTR"
+        "Optimiere Meta-Description für höhere CTR",
+        "Verbessere On-Page-SEO für bessere Rankings",
+        "Erhöhe Content-Qualität und -Tiefe",
+        "Baue mehr Backlinks auf",
+        "Verbessere technische SEO"
       ],
       "priority": "high",
-      "estimatedWordCount": 1094,
+      "estimatedWordCount": 1042,
       "internalLinks": [
         "/agri-pv",
         "/foerderungen",
         "/referenzen",
         "/kontakt"
       ],
-      "publishDate": "2025-11-15",
+      "publishDate": "2025-11-02",
       "status": "draft",
-      "weekOfYear": 46
+      "weekOfYear": 44
+    },
+    {
+      "type": "landingpage",
+      "title": "Kosten Nutzen Rechnung Agri-PV - Professionelle Agri-PV Lösungen",
+      "keyword": "Kosten Nutzen Rechnung Agri-PV",
+      "targetPosition": 14,
+      "estimatedTraffic": 421,
+      "opportunityScore": 1283,
+      "category": "longtail",
+      "conversionGoal": "lead_generation",
+      "ctaText": "Kostenlose Beratung anfordern",
+      "contentSections": [
+        {
+          "title": "Ihre Vorteile",
+          "content": "Warum Sie sich für ZOE Solar entscheiden sollten"
+        },
+        {
+          "title": "Unsere Lösungen",
+          "content": "Spezialisierte Kosten Nutzen Rechnung Agri-PV Angebote"
+        },
+        {
+          "title": "Referenzen",
+          "content": "Erfolgreiche Projekte unserer Kunden"
+        },
+        {
+          "title": "Kostenloses Angebot",
+          "content": "Fordern Sie jetzt Ihr persönliches Angebot an"
+        }
+      ],
+      "seoTips": [
+        "Optimiere Title-Tag für \"Kosten Nutzen Rechnung Agri-PV\"",
+        "Integriere \"Kosten Nutzen Rechnung Agri-PV\" natürlich in den ersten 100 Wörtern",
+        "Erstelle eine H1-Überschrift mit \"Kosten Nutzen Rechnung Agri-PV\"",
+        "Füge interne Links zu verwandten Themen hinzu",
+        "Optimiere Meta-Description für höhere CTR",
+        "Baue mehr Backlinks auf",
+        "Verbessere technische SEO"
+      ],
+      "priority": "high",
+      "estimatedWordCount": 1051,
+      "internalLinks": [
+        "/agri-pv",
+        "/foerderungen",
+        "/referenzen",
+        "/kontakt",
+        "/preise"
+      ],
+      "publishDate": "2025-11-09",
+      "status": "draft",
+      "weekOfYear": 45
     },
     {
       "type": "landingpage",
       "title": "Solaranlage Eigenheim Installation - Professionelle Agri-PV Lösungen",
       "keyword": "Solaranlage Eigenheim Installation",
-      "targetPosition": 15,
+      "targetPosition": 2,
       "estimatedTraffic": 480,
       "opportunityScore": 1224,
       "category": "residential",
@@ -369,28 +335,26 @@
         "Integriere \"Solaranlage Eigenheim Installation\" natürlich in den ersten 100 Wörtern",
         "Erstelle eine H1-Überschrift mit \"Solaranlage Eigenheim Installation\"",
         "Füge interne Links zu verwandten Themen hinzu",
-        "Optimiere Meta-Description für höhere CTR",
-        "Baue mehr Backlinks auf",
-        "Verbessere technische SEO"
+        "Optimiere Meta-Description für höhere CTR"
       ],
       "priority": "high",
-      "estimatedWordCount": 1003,
+      "estimatedWordCount": 856,
       "internalLinks": [
         "/agri-pv",
         "/foerderungen",
         "/referenzen",
         "/kontakt"
       ],
-      "publishDate": "2025-11-22",
+      "publishDate": "2025-11-16",
       "status": "draft",
-      "weekOfYear": 47
+      "weekOfYear": 46
     },
     {
       "type": "faq",
       "title": "FAQ: Wie funktioniert Agri-PV",
       "keyword": "Wie funktioniert Agri-PV",
-      "estimatedTraffic": 159,
-      "opportunityScore": 705,
+      "estimatedTraffic": 201,
+      "opportunityScore": 861,
       "category": "longtail",
       "questions": [
         "Was ist der Unterschied zwischen normaler PV und Agri-PV?",
@@ -399,63 +363,25 @@
         "Wie lange dauert die Planung und Installation?"
       ],
       "priority": "high",
-      "estimatedWordCount": 660,
+      "estimatedWordCount": 611,
       "internalLinks": [
         "/agri-pv",
         "/foerderungen",
         "/referenzen",
         "/kontakt"
       ],
-      "publishDate": "2025-11-29",
+      "publishDate": "2025-11-23",
       "status": "draft",
-      "weekOfYear": 48
+      "weekOfYear": 47
     }
   ],
   "ideas": {
     "blog": [
       {
         "type": "blog",
-        "title": "Agri-PV Förderungen 2025: Der ultimative Leitfaden für Landwirte",
-        "keyword": "Agri-PV Förderungen 2025",
-        "targetPosition": 22,
-        "estimatedTraffic": 212,
-        "opportunityScore": 1287,
-        "category": "longtail",
-        "contentOutline": [
-          "Einführung in Agri-PV Förderungen 2025",
-          "Grundlagen und Funktionsweise",
-          "Vorteile und Nutzen",
-          "Praktische Umsetzung",
-          "Kosten und Wirtschaftlichkeit",
-          "Fazit und Handlungsempfehlungen"
-        ],
-        "seoTips": [
-          "Optimiere Title-Tag für \"Agri-PV Förderungen 2025\"",
-          "Integriere \"Agri-PV Förderungen 2025\" natürlich in den ersten 100 Wörtern",
-          "Erstelle eine H1-Überschrift mit \"Agri-PV Förderungen 2025\"",
-          "Füge interne Links zu verwandten Themen hinzu",
-          "Optimiere Meta-Description für höhere CTR",
-          "Verbessere On-Page-SEO für bessere Rankings",
-          "Erhöhe Content-Qualität und -Tiefe",
-          "Baue mehr Backlinks auf",
-          "Verbessere technische SEO"
-        ],
-        "priority": "high",
-        "estimatedWordCount": 2804,
-        "internalLinks": [
-          "/agri-pv",
-          "/foerderungen",
-          "/referenzen",
-          "/kontakt"
-        ],
-        "publishDate": null,
-        "status": "draft"
-      },
-      {
-        "type": "blog",
         "title": "Stromspeicher Förderung Eigenheim: Der ultimative Leitfaden für Landwirte",
         "keyword": "Stromspeicher Förderung Eigenheim",
-        "targetPosition": 11,
+        "targetPosition": 19,
         "estimatedTraffic": 315,
         "opportunityScore": 1094,
         "category": "residential_financing",
@@ -473,11 +399,13 @@
           "Erstelle eine H1-Überschrift mit \"Stromspeicher Förderung Eigenheim\"",
           "Füge interne Links zu verwandten Themen hinzu",
           "Optimiere Meta-Description für höhere CTR",
+          "Verbessere On-Page-SEO für bessere Rankings",
+          "Erhöhe Content-Qualität und -Tiefe",
           "Baue mehr Backlinks auf",
           "Verbessere technische SEO"
         ],
         "priority": "high",
-        "estimatedWordCount": 2916,
+        "estimatedWordCount": 2606,
         "internalLinks": [
           "/agri-pv",
           "/foerderungen",
@@ -493,7 +421,7 @@
         "type": "landingpage",
         "title": "Solaranlage Eigenheim Kosten - Professionelle Agri-PV Lösungen",
         "keyword": "Solaranlage Eigenheim Kosten",
-        "targetPosition": 2,
+        "targetPosition": 6,
         "estimatedTraffic": 1680,
         "opportunityScore": 3182,
         "category": "residential",
@@ -525,7 +453,7 @@
           "Optimiere Meta-Description für höhere CTR"
         ],
         "priority": "high",
-        "estimatedWordCount": 865,
+        "estimatedWordCount": 985,
         "internalLinks": [
           "/agri-pv",
           "/foerderungen",
@@ -572,7 +500,7 @@
           "Optimiere Meta-Description für höhere CTR"
         ],
         "priority": "high",
-        "estimatedWordCount": 926,
+        "estimatedWordCount": 976,
         "internalLinks": [
           "/agri-pv",
           "/foerderungen",
@@ -585,59 +513,9 @@
       },
       {
         "type": "landingpage",
-        "title": "Agri-PV Installation - Professionelle Agri-PV Lösungen",
-        "keyword": "Agri-PV Installation",
-        "targetPosition": 29,
-        "estimatedTraffic": 278,
-        "opportunityScore": 1509,
-        "category": "technical",
-        "conversionGoal": "lead_generation",
-        "ctaText": "Kostenlose Beratung anfordern",
-        "contentSections": [
-          {
-            "title": "Ihre Vorteile",
-            "content": "Warum Sie sich für ZOE Solar entscheiden sollten"
-          },
-          {
-            "title": "Unsere Lösungen",
-            "content": "Spezialisierte Agri-PV Installation Angebote"
-          },
-          {
-            "title": "Referenzen",
-            "content": "Erfolgreiche Projekte unserer Kunden"
-          },
-          {
-            "title": "Kostenloses Angebot",
-            "content": "Fordern Sie jetzt Ihr persönliches Angebot an"
-          }
-        ],
-        "seoTips": [
-          "Optimiere Title-Tag für \"Agri-PV Installation\"",
-          "Integriere \"Agri-PV Installation\" natürlich in den ersten 100 Wörtern",
-          "Erstelle eine H1-Überschrift mit \"Agri-PV Installation\"",
-          "Füge interne Links zu verwandten Themen hinzu",
-          "Optimiere Meta-Description für höhere CTR",
-          "Verbessere On-Page-SEO für bessere Rankings",
-          "Erhöhe Content-Qualität und -Tiefe",
-          "Baue mehr Backlinks auf",
-          "Verbessere technische SEO"
-        ],
-        "priority": "high",
-        "estimatedWordCount": 1164,
-        "internalLinks": [
-          "/agri-pv",
-          "/foerderungen",
-          "/referenzen",
-          "/kontakt"
-        ],
-        "publishDate": null,
-        "status": "draft"
-      },
-      {
-        "type": "landingpage",
         "title": "Solaranlage Eigenheim Planung - Professionelle Agri-PV Lösungen",
         "keyword": "Solaranlage Eigenheim Planung",
-        "targetPosition": 21,
+        "targetPosition": 20,
         "estimatedTraffic": 600,
         "opportunityScore": 1456,
         "category": "residential",
@@ -673,7 +551,7 @@
           "Verbessere technische SEO"
         ],
         "priority": "high",
-        "estimatedWordCount": 1185,
+        "estimatedWordCount": 996,
         "internalLinks": [
           "/agri-pv",
           "/foerderungen",
@@ -688,7 +566,7 @@
         "type": "landingpage",
         "title": "Photovoltaik Installation Dach - Professionelle Agri-PV Lösungen",
         "keyword": "Photovoltaik Installation Dach",
-        "targetPosition": 4,
+        "targetPosition": 20,
         "estimatedTraffic": 560,
         "opportunityScore": 1321,
         "category": "residential_installation",
@@ -717,10 +595,14 @@
           "Integriere \"Photovoltaik Installation Dach\" natürlich in den ersten 100 Wörtern",
           "Erstelle eine H1-Überschrift mit \"Photovoltaik Installation Dach\"",
           "Füge interne Links zu verwandten Themen hinzu",
-          "Optimiere Meta-Description für höhere CTR"
+          "Optimiere Meta-Description für höhere CTR",
+          "Verbessere On-Page-SEO für bessere Rankings",
+          "Erhöhe Content-Qualität und -Tiefe",
+          "Baue mehr Backlinks auf",
+          "Verbessere technische SEO"
         ],
         "priority": "high",
-        "estimatedWordCount": 1094,
+        "estimatedWordCount": 1042,
         "internalLinks": [
           "/agri-pv",
           "/foerderungen",
@@ -732,9 +614,58 @@
       },
       {
         "type": "landingpage",
+        "title": "Kosten Nutzen Rechnung Agri-PV - Professionelle Agri-PV Lösungen",
+        "keyword": "Kosten Nutzen Rechnung Agri-PV",
+        "targetPosition": 14,
+        "estimatedTraffic": 421,
+        "opportunityScore": 1283,
+        "category": "longtail",
+        "conversionGoal": "lead_generation",
+        "ctaText": "Kostenlose Beratung anfordern",
+        "contentSections": [
+          {
+            "title": "Ihre Vorteile",
+            "content": "Warum Sie sich für ZOE Solar entscheiden sollten"
+          },
+          {
+            "title": "Unsere Lösungen",
+            "content": "Spezialisierte Kosten Nutzen Rechnung Agri-PV Angebote"
+          },
+          {
+            "title": "Referenzen",
+            "content": "Erfolgreiche Projekte unserer Kunden"
+          },
+          {
+            "title": "Kostenloses Angebot",
+            "content": "Fordern Sie jetzt Ihr persönliches Angebot an"
+          }
+        ],
+        "seoTips": [
+          "Optimiere Title-Tag für \"Kosten Nutzen Rechnung Agri-PV\"",
+          "Integriere \"Kosten Nutzen Rechnung Agri-PV\" natürlich in den ersten 100 Wörtern",
+          "Erstelle eine H1-Überschrift mit \"Kosten Nutzen Rechnung Agri-PV\"",
+          "Füge interne Links zu verwandten Themen hinzu",
+          "Optimiere Meta-Description für höhere CTR",
+          "Baue mehr Backlinks auf",
+          "Verbessere technische SEO"
+        ],
+        "priority": "high",
+        "estimatedWordCount": 1051,
+        "internalLinks": [
+          "/agri-pv",
+          "/foerderungen",
+          "/referenzen",
+          "/kontakt",
+          "/preise"
+        ],
+        "publishDate": null,
+        "status": "draft"
+      },
+      {
+        "type": "landingpage",
         "title": "Solaranlage Eigenheim Installation - Professionelle Agri-PV Lösungen",
         "keyword": "Solaranlage Eigenheim Installation",
-        "targetPosition": 15,
+        "targetPosition": 2,
         "estimatedTraffic": 480,
         "opportunityScore": 1224,
         "category": "residential",
@@ -763,12 +694,10 @@
           "Integriere \"Solaranlage Eigenheim Installation\" natürlich in den ersten 100 Wörtern",
           "Erstelle eine H1-Überschrift mit \"Solaranlage Eigenheim Installation\"",
           "Füge interne Links zu verwandten Themen hinzu",
-          "Optimiere Meta-Description für höhere CTR",
-          "Baue mehr Backlinks auf",
-          "Verbessere technische SEO"
+          "Optimiere Meta-Description für höhere CTR"
         ],
         "priority": "high",
-        "estimatedWordCount": 1003,
+        "estimatedWordCount": 856,
         "internalLinks": [
           "/agri-pv",
           "/foerderungen",
@@ -784,8 +713,8 @@
         "type": "faq",
         "title": "FAQ: Wie funktioniert Agri-PV",
         "keyword": "Wie funktioniert Agri-PV",
-        "estimatedTraffic": 159,
-        "opportunityScore": 705,
+        "estimatedTraffic": 201,
+        "opportunityScore": 861,
         "category": "longtail",
         "questions": [
           "Was ist der Unterschied zwischen normaler PV und Agri-PV?",
@@ -794,7 +723,7 @@
           "Wie lange dauert die Planung und Installation?"
         ],
         "priority": "high",
-        "estimatedWordCount": 660,
+        "estimatedWordCount": 611,
         "internalLinks": [
           "/agri-pv",
           "/foerderungen",
