@@ -60,19 +60,19 @@ const KontaktPage: React.FC<KontaktPageProps> = ({ setPage }) => {
                                 </div>
                                 <div className="space-y-6">
                                     <div>
-                                        <h3 className="font-semibold text-slate-700">ZOE Solar GmbH</h3>
+                                        <h3 className="font-semibold text-slate-700">ZOE Solar</h3>
                                         <p className="text-slate-600">
-                                            Musterstraße 123<br/>
-                                            10115 Berlin
+                                            Kurfürstenstraße 124<br/>
+                                            10785 Berlin
                                         </p>
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-slate-700">E-Mail</h3>
-                                        <a href="mailto:kontakt@zoe-solar.de" className="text-green-600 hover:underline">kontakt@zoe-solar.de</a>
+                                        <a href="mailto:kundenervice@zukunftsorientierte-energie.de" className="text-green-600 hover:underline">kundenervice@zukunftsorientierte-energie.de</a>
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-slate-700">Telefon</h3>
-                                        <a href="tel:+493012345678" className="text-green-600 hover:underline">+49 (0) 30 123 456 78</a>
+                                        <a href="tel:+4915678876200" className="text-green-600 hover:underline">+49 15678876200</a>
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-slate-700">Bürozeiten</h3>
