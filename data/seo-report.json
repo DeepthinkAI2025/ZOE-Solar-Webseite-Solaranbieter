@@ -1,124 +1,124 @@
 {
-  "timestamp": "2025-10-06T06:09:44.947Z",
+  "timestamp": "2025-10-07T06:09:32.946Z",
   "metrics": {
     "totalKeywords": 127,
-    "avgPosition": 20.68,
-    "top10Count": 25,
-    "top10Percentage": 19.69,
-    "top3Count": 3,
-    "top3Percentage": 2.36,
+    "avgPosition": 20.3,
+    "top10Count": 24,
+    "top10Percentage": 18.9,
+    "top3Count": 1,
+    "top3Percentage": 0.79,
     "positionChanges": {
-      "improved": 37,
-      "declined": 71,
-      "stable": 19
+      "improved": 43,
+      "declined": 64,
+      "stable": 20
     },
-    "estimatedTraffic": 12659,
+    "estimatedTraffic": 11566,
     "categoryStats": {
       "seed": {
         "count": 18,
-        "avgPosition": 15.39,
+        "avgPosition": 15.83,
         "top10Count": 9
       },
       "residential": {
         "count": 10,
-        "avgPosition": 15.2,
-        "top10Count": 3
+        "avgPosition": 12.9,
+        "top10Count": 5
       },
       "residential_installation": {
         "count": 10,
-        "avgPosition": 13.1,
+        "avgPosition": 12.7,
         "top10Count": 5
       },
       "storage": {
         "count": 10,
-        "avgPosition": 16.5,
-        "top10Count": 4
+        "avgPosition": 21,
+        "top10Count": 2
       },
       "residential_financing": {
         "count": 10,
-        "avgPosition": 13.2,
-        "top10Count": 4
-      },
-      "technical": {
-        "count": 10,
-        "avgPosition": 24.7,
-        "top10Count": 0
-      },
-      "longtail": {
-        "count": 10,
-        "avgPosition": 26.6,
-        "top10Count": 0
-      },
-      "competitive": {
-        "count": 9,
-        "avgPosition": 25.33,
-        "top10Count": 0
+        "avgPosition": 16.8,
+        "top10Count": 2
       },
       "legal": {
         "count": 10,
-        "avgPosition": 24.5,
+        "avgPosition": 20.6,
         "top10Count": 0
       },
       "applications": {
         "count": 10,
-        "avgPosition": 27.7,
+        "avgPosition": 17.6,
+        "top10Count": 0
+      },
+      "technical": {
+        "count": 10,
+        "avgPosition": 27,
+        "top10Count": 0
+      },
+      "longtail": {
+        "count": 10,
+        "avgPosition": 26.7,
         "top10Count": 0
       },
       "regional_residential": {
         "count": 10,
-        "avgPosition": 25.4,
-        "top10Count": 0
+        "avgPosition": 22.5,
+        "top10Count": 1
       },
       "regional": {
         "count": 10,
-        "avgPosition": 25.2,
+        "avgPosition": 26.9,
+        "top10Count": 0
+      },
+      "competitive": {
+        "count": 9,
+        "avgPosition": 27.33,
         "top10Count": 0
       }
     },
     "segmentStats": {
       "residential": {
         "count": 40,
-        "avgPosition": 15.68,
-        "top10Count": 15,
-        "estimatedTraffic": 7152,
-        "top10Percentage": 37.5
+        "avgPosition": 14.58,
+        "top10Count": 18,
+        "estimatedTraffic": 6573,
+        "top10Percentage": 45
       },
       "storage": {
         "count": 9,
-        "avgPosition": 16,
-        "top10Count": 4,
-        "estimatedTraffic": 1437,
-        "top10Percentage": 44.44
+        "avgPosition": 17.89,
+        "top10Count": 3,
+        "estimatedTraffic": 1303,
+        "top10Percentage": 33.33
       },
       "sector-coupling": {
         "count": 2,
-        "avgPosition": 10,
-        "top10Count": 2,
-        "estimatedTraffic": 660,
-        "top10Percentage": 100
+        "avgPosition": 15,
+        "top10Count": 1,
+        "estimatedTraffic": 500,
+        "top10Percentage": 50
       },
       "general": {
         "count": 11,
-        "avgPosition": 17.73,
-        "top10Count": 3,
-        "estimatedTraffic": 904,
-        "top10Percentage": 27.27
+        "avgPosition": 23.73,
+        "top10Count": 1,
+        "estimatedTraffic": 690,
+        "top10Percentage": 9.09
       },
       "agri-pv": {
         "count": 65,
-        "avgPosition": 25.23,
+        "avgPosition": 23.74,
         "top10Count": 1,
-        "estimatedTraffic": 2507,
+        "estimatedTraffic": 2501,
         "top10Percentage": 1.54
       }
     },
-    "timestamp": "2025-10-06T06:09:44.914Z"
+    "timestamp": "2025-10-07T06:09:32.554Z"
   },
   "positions": {
     "Solaranlage Einfamilienhaus": {
       "keyword": "Solaranlage Einfamilienhaus",
-      "position": 10,
-      "previousPosition": 8,
+      "position": 8,
+      "previousPosition": 10,
       "searchVolume": 4400,
       "competition": 72,
       "difficulty": 60,
@@ -126,12 +126,12 @@
       "category": "seed",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik mit Speicher": {
       "keyword": "Photovoltaik mit Speicher",
       "position": 6,
-      "previousPosition": 5,
+      "previousPosition": 4,
       "searchVolume": 4100,
       "competition": 65,
       "difficulty": 58,
@@ -139,12 +139,12 @@
       "category": "seed",
       "intent": "mixed",
       "segment": "storage",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solaranlage Eigenheim Kosten": {
       "keyword": "Solaranlage Eigenheim Kosten",
-      "position": 3,
-      "previousPosition": 1,
+      "position": 10,
+      "previousPosition": 11,
       "searchVolume": 4200,
       "competition": 70,
       "difficulty": 62,
@@ -152,12 +152,12 @@
       "category": "residential",
       "intent": "commercial",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solaranlage Eigenheim": {
       "keyword": "Solaranlage Eigenheim",
-      "position": 6,
-      "previousPosition": 6,
+      "position": 9,
+      "previousPosition": 10,
       "searchVolume": 3600,
       "competition": 68,
       "difficulty": 55,
@@ -165,12 +165,12 @@
       "category": "seed",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Wärmepumpe und Photovoltaik": {
       "keyword": "Wärmepumpe und Photovoltaik",
-      "position": 10,
-      "previousPosition": 12,
+      "position": 6,
+      "previousPosition": 5,
       "searchVolume": 2800,
       "competition": 58,
       "difficulty": 49,
@@ -178,12 +178,12 @@
       "category": "seed",
       "intent": "mixed",
       "segment": "sector-coupling",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solaranlage Einfamilienhaus Kosten": {
       "keyword": "Solaranlage Einfamilienhaus Kosten",
-      "position": 7,
-      "previousPosition": 8,
+      "position": 6,
+      "previousPosition": 6,
       "searchVolume": 2900,
       "competition": 68,
       "difficulty": 55,
@@ -191,11 +191,11 @@
       "category": "residential",
       "intent": "commercial",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "PV Anlage Hausdach": {
       "keyword": "PV Anlage Hausdach",
-      "position": 9,
+      "position": 10,
       "previousPosition": 7,
       "searchVolume": 2500,
       "competition": 58,
@@ -204,11 +204,11 @@
       "category": "seed",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik Eigenverbrauch erhöhen": {
       "keyword": "Photovoltaik Eigenverbrauch erhöhen",
-      "position": 9,
+      "position": 8,
       "previousPosition": 8,
       "searchVolume": 2100,
       "competition": 58,
@@ -217,11 +217,11 @@
       "category": "residential_installation",
       "intent": "mixed",
       "segment": "general",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solarstrom Eigenheim": {
       "keyword": "Solarstrom Eigenheim",
-      "position": 2,
+      "position": 4,
       "previousPosition": 3,
       "searchVolume": 2100,
       "competition": 56,
@@ -230,12 +230,12 @@
       "category": "seed",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Agri-PV": {
       "keyword": "Agri-PV",
-      "position": 9,
-      "previousPosition": 11,
+      "position": 4,
+      "previousPosition": 4,
       "searchVolume": 2900,
       "competition": 75,
       "difficulty": 78,
@@ -243,11 +243,11 @@
       "category": "seed",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Batteriespeicher Eigenheim": {
       "keyword": "Batteriespeicher Eigenheim",
-      "position": 9,
+      "position": 8,
       "previousPosition": 9,
       "searchVolume": 2200,
       "competition": 64,
@@ -256,12 +256,12 @@
       "category": "residential_installation",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik Eigenheimbesitzer": {
       "keyword": "Photovoltaik Eigenheimbesitzer",
-      "position": 2,
-      "previousPosition": 2,
+      "position": 8,
+      "previousPosition": 6,
       "searchVolume": 1900,
       "competition": 60,
       "difficulty": 48,
@@ -269,12 +269,12 @@
       "category": "seed",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Batteriespeicher Förderung 2025": {
       "keyword": "Batteriespeicher Förderung 2025",
       "position": 5,
-      "previousPosition": 4,
+      "previousPosition": 5,
       "searchVolume": 2000,
       "competition": 66,
       "difficulty": 52,
@@ -282,12 +282,12 @@
       "category": "storage",
       "intent": "informational",
       "segment": "storage",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solaranlage Eigenheim Förderung": {
       "keyword": "Solaranlage Eigenheim Förderung",
-      "position": 10,
-      "previousPosition": 8,
+      "position": 1,
+      "previousPosition": 3,
       "searchVolume": 1800,
       "competition": 62,
       "difficulty": 50,
@@ -295,12 +295,12 @@
       "category": "residential",
       "intent": "informational",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik Finanzierung Eigenheim": {
       "keyword": "Photovoltaik Finanzierung Eigenheim",
-      "position": 8,
-      "previousPosition": 6,
+      "position": 7,
+      "previousPosition": 4,
       "searchVolume": 1600,
       "competition": 55,
       "difficulty": 48,
@@ -308,12 +308,12 @@
       "category": "residential_financing",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Wallbox Photovoltaik Eigenheim": {
       "keyword": "Wallbox Photovoltaik Eigenheim",
       "position": 10,
-      "previousPosition": 9,
+      "previousPosition": 10,
       "searchVolume": 1400,
       "competition": 52,
       "difficulty": 44,
@@ -321,12 +321,12 @@
       "category": "residential_installation",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solaranlage Eigenheim Planung": {
       "keyword": "Solaranlage Eigenheim Planung",
-      "position": 17,
-      "previousPosition": 19,
+      "position": 15,
+      "previousPosition": 13,
       "searchVolume": 1500,
       "competition": 55,
       "difficulty": 48,
@@ -334,12 +334,12 @@
       "category": "residential",
       "intent": "transactional",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "KfW Förderung Photovoltaik Eigenheim": {
       "keyword": "KfW Förderung Photovoltaik Eigenheim",
       "position": 17,
-      "previousPosition": 15,
+      "previousPosition": 19,
       "searchVolume": 1500,
       "competition": 58,
       "difficulty": 50,
@@ -347,25 +347,38 @@
       "category": "residential_financing",
       "intent": "informational",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
-    "Agri-PV Netzanschluss": {
-      "keyword": "Agri-PV Netzanschluss",
-      "position": 14,
-      "previousPosition": 12,
-      "searchVolume": 959,
-      "competition": 28,
-      "difficulty": 43,
-      "opportunityScore": 1351,
-      "category": "technical",
+    "Agri-PV Genehmigung": {
+      "keyword": "Agri-PV Genehmigung",
+      "position": 20,
+      "previousPosition": 22,
+      "searchVolume": 969,
+      "competition": 49,
+      "difficulty": 22,
+      "opportunityScore": 1365,
+      "category": "legal",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Wärmepumpe Photovoltaik Kombination": {
+      "keyword": "Wärmepumpe Photovoltaik Kombination",
+      "position": 24,
+      "previousPosition": 25,
+      "searchVolume": 1600,
+      "competition": 35,
+      "difficulty": 83,
+      "opportunityScore": 1356,
+      "category": "storage",
+      "intent": "mixed",
+      "segment": "sector-coupling",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik Einfamilienhaus Erfahrungen": {
       "keyword": "Photovoltaik Einfamilienhaus Erfahrungen",
-      "position": 17,
-      "previousPosition": 17,
+      "position": 7,
+      "previousPosition": 6,
       "searchVolume": 1300,
       "competition": 54,
       "difficulty": 44,
@@ -373,12 +386,12 @@
       "category": "residential",
       "intent": "comparison",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Heimspeicher Vergleich": {
       "keyword": "Heimspeicher Vergleich",
-      "position": 12,
-      "previousPosition": 11,
+      "position": 21,
+      "previousPosition": 20,
       "searchVolume": 1500,
       "competition": 63,
       "difficulty": 50,
@@ -386,12 +399,12 @@
       "category": "storage",
       "intent": "comparison",
       "segment": "storage",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik Installation Dach": {
       "keyword": "Photovoltaik Installation Dach",
-      "position": 12,
-      "previousPosition": 11,
+      "position": 10,
+      "previousPosition": 10,
       "searchVolume": 1400,
       "competition": 57,
       "difficulty": 49,
@@ -399,12 +412,12 @@
       "category": "residential_installation",
       "intent": "transactional",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Agri Photovoltaik": {
       "keyword": "Agri Photovoltaik",
-      "position": 24,
-      "previousPosition": 25,
+      "position": 13,
+      "previousPosition": 12,
       "searchVolume": 1800,
       "competition": 65,
       "difficulty": 72,
@@ -412,12 +425,12 @@
       "category": "seed",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik Eigenheim Rendite": {
       "keyword": "Photovoltaik Eigenheim Rendite",
-      "position": 11,
-      "previousPosition": 9,
+      "position": 13,
+      "previousPosition": 11,
       "searchVolume": 1300,
       "competition": 53,
       "difficulty": 46,
@@ -425,25 +438,25 @@
       "category": "residential_financing",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
-    "Kosten Nutzen Rechnung Agri-PV": {
-      "keyword": "Kosten Nutzen Rechnung Agri-PV",
-      "position": 22,
-      "previousPosition": 21,
-      "searchVolume": 1052,
-      "competition": 50,
-      "difficulty": 32,
-      "opportunityScore": 1283,
-      "category": "longtail",
-      "intent": "commercial",
+    "Agri-PV Biogas": {
+      "keyword": "Agri-PV Biogas",
+      "position": 17,
+      "previousPosition": 16,
+      "searchVolume": 1085,
+      "competition": 48,
+      "difficulty": 39,
+      "opportunityScore": 1247,
+      "category": "applications",
+      "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solaranlage Eigenheim Installation": {
       "keyword": "Solaranlage Eigenheim Installation",
-      "position": 13,
-      "previousPosition": 12,
+      "position": 6,
+      "previousPosition": 6,
       "searchVolume": 1200,
       "competition": 52,
       "difficulty": 46,
@@ -451,12 +464,12 @@
       "category": "residential",
       "intent": "transactional",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solaranlage Landwirtschaft": {
       "keyword": "Solaranlage Landwirtschaft",
-      "position": 20,
-      "previousPosition": 17,
+      "position": 12,
+      "previousPosition": 10,
       "searchVolume": 1600,
       "competition": 70,
       "difficulty": 65,
@@ -464,25 +477,38 @@
       "category": "seed",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
-    "Wärmepumpe Photovoltaik Kombination": {
-      "keyword": "Wärmepumpe Photovoltaik Kombination",
-      "position": 10,
-      "previousPosition": 11,
-      "searchVolume": 1600,
-      "competition": 62,
-      "difficulty": 77,
-      "opportunityScore": 1151,
-      "category": "storage",
+    "Agri-PV Gewächshaus": {
+      "keyword": "Agri-PV Gewächshaus",
+      "position": 19,
+      "previousPosition": 21,
+      "searchVolume": 962,
+      "competition": 34,
+      "difficulty": 48,
+      "opportunityScore": 1173,
+      "category": "applications",
       "intent": "mixed",
-      "segment": "sector-coupling",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Eigenverbrauch": {
+      "keyword": "Agri-PV Eigenverbrauch",
+      "position": 20,
+      "previousPosition": 21,
+      "searchVolume": 677,
+      "competition": 31,
+      "difficulty": 27,
+      "opportunityScore": 1167,
+      "category": "technical",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "PV Anlage Notstrom": {
       "keyword": "PV Anlage Notstrom",
-      "position": 16,
-      "previousPosition": 16,
+      "position": 24,
+      "previousPosition": 23,
       "searchVolume": 1250,
       "competition": 59,
       "difficulty": 50,
@@ -490,12 +516,25 @@
       "category": "residential_installation",
       "intent": "mixed",
       "segment": "general",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Forstwirtschaft": {
+      "keyword": "Agri-PV Forstwirtschaft",
+      "position": 11,
+      "previousPosition": 8,
+      "searchVolume": 1003,
+      "competition": 43,
+      "difficulty": 45,
+      "opportunityScore": 1140,
+      "category": "applications",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Batteriespeicher Kosten 10kWh": {
       "keyword": "Batteriespeicher Kosten 10kWh",
-      "position": 8,
-      "previousPosition": 6,
+      "position": 12,
+      "previousPosition": 13,
       "searchVolume": 1200,
       "competition": 60,
       "difficulty": 48,
@@ -503,11 +542,11 @@
       "category": "storage",
       "intent": "commercial",
       "segment": "storage",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Stromspeicher Förderung Eigenheim": {
       "keyword": "Stromspeicher Förderung Eigenheim",
-      "position": 6,
+      "position": 7,
       "previousPosition": 8,
       "searchVolume": 1050,
       "competition": 52,
@@ -516,12 +555,12 @@
       "category": "residential_financing",
       "intent": "informational",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "BAFA Zuschuss Photovoltaik Haus": {
       "keyword": "BAFA Zuschuss Photovoltaik Haus",
-      "position": 15,
-      "previousPosition": 14,
+      "position": 21,
+      "previousPosition": 18,
       "searchVolume": 1100,
       "competition": 54,
       "difficulty": 47,
@@ -529,12 +568,25 @@
       "category": "residential_financing",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Einspeisung": {
+      "keyword": "Agri-PV Einspeisung",
+      "position": 13,
+      "previousPosition": 13,
+      "searchVolume": 955,
+      "competition": 57,
+      "difficulty": 33,
+      "opportunityScore": 1061,
+      "category": "technical",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solaranlage Reihenhaus": {
       "keyword": "Solaranlage Reihenhaus",
-      "position": 6,
-      "previousPosition": 4,
+      "position": 5,
+      "previousPosition": 6,
       "searchVolume": 950,
       "competition": 47,
       "difficulty": 43,
@@ -542,12 +594,12 @@
       "category": "seed",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik Kredit Vergleich": {
       "keyword": "Photovoltaik Kredit Vergleich",
-      "position": 9,
-      "previousPosition": 6,
+      "position": 16,
+      "previousPosition": 15,
       "searchVolume": 1200,
       "competition": 60,
       "difficulty": 54,
@@ -555,12 +607,12 @@
       "category": "residential_financing",
       "intent": "comparison",
       "segment": "general",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Smart Home Photovoltaik": {
       "keyword": "Smart Home Photovoltaik",
-      "position": 9,
-      "previousPosition": 6,
+      "position": 23,
+      "previousPosition": 22,
       "searchVolume": 950,
       "competition": 50,
       "difficulty": 42,
@@ -568,12 +620,12 @@
       "category": "residential_installation",
       "intent": "mixed",
       "segment": "general",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solaranlage Dachneigung": {
       "keyword": "Solaranlage Dachneigung",
-      "position": 7,
-      "previousPosition": 8,
+      "position": 11,
+      "previousPosition": 13,
       "searchVolume": 980,
       "competition": 50,
       "difficulty": 45,
@@ -581,51 +633,12 @@
       "category": "residential_installation",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Garantie": {
-      "keyword": "Agri-PV Garantie",
-      "position": 17,
-      "previousPosition": 17,
-      "searchVolume": 979,
-      "competition": 24,
-      "difficulty": 71,
-      "opportunityScore": 1031,
-      "category": "competitive",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Baurecht": {
-      "keyword": "Agri-PV Baurecht",
-      "position": 19,
-      "previousPosition": 20,
-      "searchVolume": 1001,
-      "competition": 20,
-      "difficulty": 78,
-      "opportunityScore": 1021,
-      "category": "legal",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV KfW": {
-      "keyword": "Agri-PV KfW",
-      "position": 20,
-      "previousPosition": 18,
-      "searchVolume": 950,
-      "competition": 38,
-      "difficulty": 56,
-      "opportunityScore": 1011,
-      "category": "legal",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik steuerliche Vorteile Eigenheim": {
       "keyword": "Photovoltaik steuerliche Vorteile Eigenheim",
-      "position": 21,
-      "previousPosition": 18,
+      "position": 32,
+      "previousPosition": 32,
       "searchVolume": 980,
       "competition": 52,
       "difficulty": 46,
@@ -633,25 +646,12 @@
       "category": "residential_financing",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Zukunft der Landwirtschaft mit Solar": {
-      "keyword": "Zukunft der Landwirtschaft mit Solar",
-      "position": 38,
-      "previousPosition": 35,
-      "searchVolume": 586,
-      "competition": 35,
-      "difficulty": 24,
-      "opportunityScore": 993,
-      "category": "longtail",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik Dachsanierung": {
       "keyword": "Photovoltaik Dachsanierung",
-      "position": 34,
-      "previousPosition": 31,
+      "position": 32,
+      "previousPosition": 29,
       "searchVolume": 900,
       "competition": 49,
       "difficulty": 42,
@@ -659,12 +659,12 @@
       "category": "residential",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Agri-PV Förderung": {
       "keyword": "Agri-PV Förderung",
-      "position": 20,
-      "previousPosition": 21,
+      "position": 34,
+      "previousPosition": 32,
       "searchVolume": 1600,
       "competition": 80,
       "difficulty": 82,
@@ -672,25 +672,38 @@
       "category": "technical",
       "intent": "informational",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
-    "Agri-PV für Landwirte": {
-      "keyword": "Agri-PV für Landwirte",
+    "Agri-PV Gemüseanbau": {
+      "keyword": "Agri-PV Gemüseanbau",
       "position": 37,
-      "previousPosition": 38,
-      "searchVolume": 1063,
-      "competition": 51,
-      "difficulty": 59,
-      "opportunityScore": 966,
+      "previousPosition": 35,
+      "searchVolume": 1075,
+      "competition": 60,
+      "difficulty": 52,
+      "opportunityScore": 960,
+      "category": "applications",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Nachhaltige Landwirtschaft Solarenergie": {
+      "keyword": "Nachhaltige Landwirtschaft Solarenergie",
+      "position": 20,
+      "previousPosition": 21,
+      "searchVolume": 749,
+      "competition": 41,
+      "difficulty": 37,
+      "opportunityScore": 960,
       "category": "longtail",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solaranlage Dachlast": {
       "keyword": "Solaranlage Dachlast",
-      "position": 25,
-      "previousPosition": 27,
+      "position": 10,
+      "previousPosition": 9,
       "searchVolume": 860,
       "competition": 48,
       "difficulty": 43,
@@ -698,12 +711,12 @@
       "category": "residential_installation",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Batteriespeicher Nachrüstung": {
       "keyword": "Batteriespeicher Nachrüstung",
-      "position": 32,
-      "previousPosition": 33,
+      "position": 17,
+      "previousPosition": 15,
       "searchVolume": 980,
       "competition": 58,
       "difficulty": 46,
@@ -711,12 +724,25 @@
       "category": "storage",
       "intent": "mixed",
       "segment": "storage",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Versicherung": {
+      "keyword": "Agri-PV Versicherung",
+      "position": 16,
+      "previousPosition": 18,
+      "searchVolume": 581,
+      "competition": 33,
+      "difficulty": 30,
+      "opportunityScore": 922,
+      "category": "legal",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik Ziegeldach": {
       "keyword": "Photovoltaik Ziegeldach",
-      "position": 17,
-      "previousPosition": 16,
+      "position": 19,
+      "previousPosition": 17,
       "searchVolume": 780,
       "competition": 46,
       "difficulty": 40,
@@ -724,25 +750,25 @@
       "category": "residential",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
-    "Agri-PV Anlagenplanung Schritt für Schritt": {
-      "keyword": "Agri-PV Anlagenplanung Schritt für Schritt",
-      "position": 29,
-      "previousPosition": 29,
-      "searchVolume": 941,
-      "competition": 29,
-      "difficulty": 76,
+    "Agri-PV Planung": {
+      "keyword": "Agri-PV Planung",
+      "position": 34,
+      "previousPosition": 32,
+      "searchVolume": 950,
+      "competition": 32,
+      "difficulty": 74,
       "opportunityScore": 896,
-      "category": "longtail",
+      "category": "technical",
       "intent": "transactional",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "PV Speicher Dimensionierung": {
       "keyword": "PV Speicher Dimensionierung",
-      "position": 10,
-      "previousPosition": 8,
+      "position": 36,
+      "previousPosition": 33,
       "searchVolume": 860,
       "competition": 52,
       "difficulty": 45,
@@ -750,25 +776,25 @@
       "category": "storage",
       "intent": "mixed",
       "segment": "storage",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
-    "Agri-PV Eigenverbrauch": {
-      "keyword": "Agri-PV Eigenverbrauch",
-      "position": 22,
-      "previousPosition": 19,
-      "searchVolume": 617,
-      "competition": 26,
-      "difficulty": 44,
-      "opportunityScore": 881,
-      "category": "technical",
+    "Doppelnutzung Solaranlage Vorteile": {
+      "keyword": "Doppelnutzung Solaranlage Vorteile",
+      "position": 37,
+      "previousPosition": 36,
+      "searchVolume": 771,
+      "competition": 47,
+      "difficulty": 40,
+      "opportunityScore": 886,
+      "category": "longtail",
       "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "segment": "general",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "PV Anlage Bauernhof": {
       "keyword": "PV Anlage Bauernhof",
-      "position": 24,
-      "previousPosition": 23,
+      "position": 37,
+      "previousPosition": 39,
       "searchVolume": 880,
       "competition": 55,
       "difficulty": 45,
@@ -776,25 +802,12 @@
       "category": "seed",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Biogas": {
-      "keyword": "Agri-PV Biogas",
-      "position": 19,
-      "previousPosition": 18,
-      "searchVolume": 863,
-      "competition": 52,
-      "difficulty": 47,
-      "opportunityScore": 872,
-      "category": "applications",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solaranlage Wartung Eigenheim": {
       "keyword": "Solaranlage Wartung Eigenheim",
-      "position": 16,
-      "previousPosition": 16,
+      "position": 12,
+      "previousPosition": 11,
       "searchVolume": 690,
       "competition": 42,
       "difficulty": 38,
@@ -802,12 +815,12 @@
       "category": "residential_installation",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solaranlage Berlin Eigenheim": {
       "keyword": "Solaranlage Berlin Eigenheim",
-      "position": 29,
-      "previousPosition": 28,
+      "position": 34,
+      "previousPosition": 36,
       "searchVolume": 880,
       "competition": 57,
       "difficulty": 45,
@@ -815,38 +828,12 @@
       "category": "regional_residential",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Wie funktioniert Agri-PV": {
-      "keyword": "Wie funktioniert Agri-PV",
-      "position": 20,
-      "previousPosition": 18,
-      "searchVolume": 1007,
-      "competition": 36,
-      "difficulty": 81,
-      "opportunityScore": 861,
-      "category": "longtail",
-      "intent": "informational",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Fördermittel": {
-      "keyword": "Agri-PV Fördermittel",
-      "position": 11,
-      "previousPosition": 11,
-      "searchVolume": 828,
-      "competition": 48,
-      "difficulty": 50,
-      "opportunityScore": 845,
-      "category": "legal",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik Zählerschrank Umbau": {
       "keyword": "Photovoltaik Zählerschrank Umbau",
-      "position": 18,
-      "previousPosition": 16,
+      "position": 11,
+      "previousPosition": 11,
       "searchVolume": 740,
       "competition": 46,
       "difficulty": 42,
@@ -854,33 +841,46 @@
       "category": "residential_installation",
       "intent": "mixed",
       "segment": "general",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
-    "Doppelnutzung Solaranlage Vorteile": {
-      "keyword": "Doppelnutzung Solaranlage Vorteile",
-      "position": 25,
-      "previousPosition": 27,
-      "searchVolume": 764,
-      "competition": 49,
-      "difficulty": 43,
-      "opportunityScore": 830,
-      "category": "longtail",
-      "intent": "mixed",
-      "segment": "general",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+    "Agri-PV Installation": {
+      "keyword": "Agri-PV Installation",
+      "position": 33,
+      "previousPosition": 34,
+      "searchVolume": 887,
+      "competition": 30,
+      "difficulty": 76,
+      "opportunityScore": 837,
+      "category": "technical",
+      "intent": "transactional",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
-    "Photovoltaik und Ackerbau gleichzeitig": {
-      "keyword": "Photovoltaik und Ackerbau gleichzeitig",
-      "position": 23,
-      "previousPosition": 22,
-      "searchVolume": 497,
-      "competition": 31,
-      "difficulty": 30,
-      "opportunityScore": 815,
-      "category": "longtail",
+    "Agri-PV Sachsen-Anhalt": {
+      "keyword": "Agri-PV Sachsen-Anhalt",
+      "position": 22,
+      "previousPosition": 20,
+      "searchVolume": 962,
+      "competition": 51,
+      "difficulty": 64,
+      "opportunityScore": 837,
+      "category": "regional",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Gesetz": {
+      "keyword": "Agri-PV Gesetz",
+      "position": 37,
+      "previousPosition": 38,
+      "searchVolume": 780,
+      "competition": 28,
+      "difficulty": 66,
+      "opportunityScore": 830,
+      "category": "legal",
+      "intent": "informational",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Agri-PV Kosten": {
       "keyword": "Agri-PV Kosten",
@@ -893,51 +893,51 @@
       "category": "technical",
       "intent": "commercial",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
-    "Agri-PV BAFA": {
-      "keyword": "Agri-PV BAFA",
-      "position": 20,
-      "previousPosition": 19,
-      "searchVolume": 1061,
-      "competition": 54,
-      "difficulty": 81,
-      "opportunityScore": 786,
-      "category": "legal",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Schleswig-Holstein": {
-      "keyword": "Agri-PV Schleswig-Holstein",
-      "position": 25,
-      "previousPosition": 25,
-      "searchVolume": 1046,
-      "competition": 61,
+    "Agri-PV Garantie": {
+      "keyword": "Agri-PV Garantie",
+      "position": 22,
+      "previousPosition": 22,
+      "searchVolume": 804,
+      "competition": 28,
       "difficulty": 73,
-      "opportunityScore": 781,
-      "category": "regional",
+      "opportunityScore": 796,
+      "category": "competitive",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Agri-PV Tierhaltung": {
       "keyword": "Agri-PV Tierhaltung",
-      "position": 25,
-      "previousPosition": 22,
-      "searchVolume": 718,
-      "competition": 35,
-      "difficulty": 57,
-      "opportunityScore": 780,
+      "position": 11,
+      "previousPosition": 13,
+      "searchVolume": 919,
+      "competition": 39,
+      "difficulty": 79,
+      "opportunityScore": 779,
       "category": "applications",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Wie funktioniert Agri-PV": {
+      "keyword": "Wie funktioniert Agri-PV",
+      "position": 21,
+      "previousPosition": 20,
+      "searchVolume": 643,
+      "competition": 24,
+      "difficulty": 59,
+      "opportunityScore": 775,
+      "category": "longtail",
+      "intent": "informational",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solaranlage Leasing Eigenheim": {
       "keyword": "Solaranlage Leasing Eigenheim",
-      "position": 19,
-      "previousPosition": 16,
+      "position": 13,
+      "previousPosition": 10,
       "searchVolume": 720,
       "competition": 48,
       "difficulty": 45,
@@ -945,25 +945,25 @@
       "category": "residential_financing",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
-    "Nachhaltige Landwirtschaft Solarenergie": {
-      "keyword": "Nachhaltige Landwirtschaft Solarenergie",
-      "position": 36,
-      "previousPosition": 36,
-      "searchVolume": 1024,
-      "competition": 60,
-      "difficulty": 73,
-      "opportunityScore": 770,
-      "category": "longtail",
+    "Agri-PV Rendite": {
+      "keyword": "Agri-PV Rendite",
+      "position": 18,
+      "previousPosition": 20,
+      "searchVolume": 1061,
+      "competition": 78,
+      "difficulty": 60,
+      "opportunityScore": 769,
+      "category": "technical",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Notstromfähig Batteriespeicher": {
       "keyword": "Notstromfähig Batteriespeicher",
-      "position": 13,
-      "previousPosition": 12,
+      "position": 10,
+      "previousPosition": 10,
       "searchVolume": 720,
       "competition": 50,
       "difficulty": 44,
@@ -971,25 +971,12 @@
       "category": "storage",
       "intent": "mixed",
       "segment": "storage",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Genehmigung": {
-      "keyword": "Agri-PV Genehmigung",
-      "position": 33,
-      "previousPosition": 33,
-      "searchVolume": 980,
-      "competition": 45,
-      "difficulty": 84,
-      "opportunityScore": 760,
-      "category": "legal",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solarstrom Mietkauf": {
       "keyword": "Solarstrom Mietkauf",
-      "position": 16,
-      "previousPosition": 13,
+      "position": 28,
+      "previousPosition": 26,
       "searchVolume": 680,
       "competition": 46,
       "difficulty": 44,
@@ -997,12 +984,12 @@
       "category": "residential_financing",
       "intent": "mixed",
       "segment": "general",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik München Haus": {
       "keyword": "Photovoltaik München Haus",
-      "position": 18,
-      "previousPosition": 19,
+      "position": 34,
+      "previousPosition": 33,
       "searchVolume": 760,
       "competition": 55,
       "difficulty": 46,
@@ -1010,25 +997,25 @@
       "category": "regional_residential",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
-    "Solaranlage mit Landwirtschaft kombinieren": {
-      "keyword": "Solaranlage mit Landwirtschaft kombinieren",
-      "position": 18,
-      "previousPosition": 17,
-      "searchVolume": 833,
+    "Photovoltaik und Ackerbau gleichzeitig": {
+      "keyword": "Photovoltaik und Ackerbau gleichzeitig",
+      "position": 36,
+      "previousPosition": 35,
+      "searchVolume": 809,
       "competition": 41,
-      "difficulty": 70,
-      "opportunityScore": 750,
+      "difficulty": 67,
+      "opportunityScore": 749,
       "category": "longtail",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solaranlage Hamburg Dach": {
       "keyword": "Solaranlage Hamburg Dach",
-      "position": 28,
-      "previousPosition": 26,
+      "position": 15,
+      "previousPosition": 15,
       "searchVolume": 720,
       "competition": 53,
       "difficulty": 44,
@@ -1036,12 +1023,12 @@
       "category": "regional_residential",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik Flachdach Eigenheim": {
       "keyword": "Photovoltaik Flachdach Eigenheim",
-      "position": 16,
-      "previousPosition": 18,
+      "position": 11,
+      "previousPosition": 12,
       "searchVolume": 620,
       "competition": 45,
       "difficulty": 39,
@@ -1049,25 +1036,12 @@
       "category": "residential",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Forstwirtschaft": {
-      "keyword": "Agri-PV Forstwirtschaft",
-      "position": 37,
-      "previousPosition": 37,
-      "searchVolume": 829,
-      "competition": 49,
-      "difficulty": 64,
-      "opportunityScore": 734,
-      "category": "applications",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik Köln Einfamilienhaus": {
       "keyword": "Photovoltaik Köln Einfamilienhaus",
-      "position": 12,
-      "previousPosition": 12,
+      "position": 23,
+      "previousPosition": 20,
       "searchVolume": 680,
       "competition": 51,
       "difficulty": 43,
@@ -1075,38 +1049,12 @@
       "category": "regional_residential",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Planung": {
-      "keyword": "Agri-PV Planung",
-      "position": 28,
-      "previousPosition": 30,
-      "searchVolume": 950,
-      "competition": 73,
-      "difficulty": 64,
-      "opportunityScore": 693,
-      "category": "technical",
-      "intent": "transactional",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Förderungen 2025": {
-      "keyword": "Agri-PV Förderungen 2025",
-      "position": 18,
-      "previousPosition": 16,
-      "searchVolume": 741,
-      "competition": 22,
-      "difficulty": 86,
-      "opportunityScore": 686,
-      "category": "longtail",
-      "intent": "informational",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solaranlage Leipzig Eigenheim": {
       "keyword": "Solaranlage Leipzig Eigenheim",
-      "position": 33,
-      "previousPosition": 35,
+      "position": 13,
+      "previousPosition": 10,
       "searchVolume": 610,
       "competition": 48,
       "difficulty": 42,
@@ -1114,12 +1062,12 @@
       "category": "regional_residential",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solaranlage Frankfurt Eigenheim": {
       "keyword": "Solaranlage Frankfurt Eigenheim",
-      "position": 33,
-      "previousPosition": 34,
+      "position": 23,
+      "previousPosition": 24,
       "searchVolume": 650,
       "competition": 52,
       "difficulty": 44,
@@ -1127,12 +1075,12 @@
       "category": "regional_residential",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik Stuttgart Haus": {
       "keyword": "Photovoltaik Stuttgart Haus",
-      "position": 39,
-      "previousPosition": 40,
+      "position": 38,
+      "previousPosition": 37,
       "searchVolume": 630,
       "competition": 50,
       "difficulty": 43,
@@ -1140,12 +1088,12 @@
       "category": "regional_residential",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Agri-PV Bayern": {
       "keyword": "Agri-PV Bayern",
-      "position": 12,
-      "previousPosition": 14,
+      "position": 26,
+      "previousPosition": 24,
       "searchVolume": 650,
       "competition": 55,
       "difficulty": 42,
@@ -1153,12 +1101,12 @@
       "category": "regional",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik Hannover Dach": {
       "keyword": "Photovoltaik Hannover Dach",
-      "position": 29,
-      "previousPosition": 26,
+      "position": 10,
+      "previousPosition": 12,
       "searchVolume": 590,
       "competition": 47,
       "difficulty": 41,
@@ -1166,12 +1114,25 @@
       "category": "regional_residential",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Mecklenburg-Vorpommern": {
+      "keyword": "Agri-PV Mecklenburg-Vorpommern",
+      "position": 28,
+      "previousPosition": 28,
+      "searchVolume": 593,
+      "competition": 46,
+      "difficulty": 44,
+      "opportunityScore": 659,
+      "category": "regional",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solaranlage Doppelhaus": {
       "keyword": "Solaranlage Doppelhaus",
-      "position": 18,
-      "previousPosition": 17,
+      "position": 22,
+      "previousPosition": 21,
       "searchVolume": 540,
       "competition": 44,
       "difficulty": 38,
@@ -1179,12 +1140,12 @@
       "category": "residential",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik Abschreibung Privat": {
       "keyword": "Photovoltaik Abschreibung Privat",
-      "position": 10,
-      "previousPosition": 8,
+      "position": 14,
+      "previousPosition": 14,
       "searchVolume": 560,
       "competition": 45,
       "difficulty": 40,
@@ -1192,12 +1153,12 @@
       "category": "residential_financing",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Solaranlage Nürnberg Hausdach": {
       "keyword": "Solaranlage Nürnberg Hausdach",
-      "position": 16,
-      "previousPosition": 18,
+      "position": 12,
+      "previousPosition": 14,
       "searchVolume": 560,
       "competition": 46,
       "difficulty": 40,
@@ -1205,12 +1166,12 @@
       "category": "regional_residential",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik Dresden Eigenheim": {
       "keyword": "Photovoltaik Dresden Eigenheim",
-      "position": 17,
-      "previousPosition": 14,
+      "position": 23,
+      "previousPosition": 24,
       "searchVolume": 540,
       "competition": 45,
       "difficulty": 39,
@@ -1218,12 +1179,12 @@
       "category": "regional_residential",
       "intent": "mixed",
       "segment": "residential",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Lithium vs Salzbatterie": {
       "keyword": "Lithium vs Salzbatterie",
-      "position": 30,
-      "previousPosition": 30,
+      "position": 21,
+      "previousPosition": 18,
       "searchVolume": 550,
       "competition": 46,
       "difficulty": 40,
@@ -1231,12 +1192,25 @@
       "category": "storage",
       "intent": "mixed",
       "segment": "storage",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Naturschutz": {
+      "keyword": "Agri-PV Naturschutz",
+      "position": 27,
+      "previousPosition": 28,
+      "searchVolume": 660,
+      "competition": 33,
+      "difficulty": 71,
+      "opportunityScore": 635,
+      "category": "legal",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Photovoltaik Agrar": {
       "keyword": "Photovoltaik Agrar",
-      "position": 24,
-      "previousPosition": 26,
+      "position": 31,
+      "previousPosition": 33,
       "searchVolume": 720,
       "competition": 60,
       "difficulty": 58,
@@ -1244,25 +1218,12 @@
       "category": "seed",
       "intent": "mixed",
       "segment": "general",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Wirtschaftlichkeit": {
-      "keyword": "Agri-PV Wirtschaftlichkeit",
-      "position": 11,
-      "previousPosition": 13,
-      "searchVolume": 842,
-      "competition": 51,
-      "difficulty": 87,
-      "opportunityScore": 610,
-      "category": "technical",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Second Life Speicher": {
       "keyword": "Second Life Speicher",
-      "position": 28,
-      "previousPosition": 27,
+      "position": 33,
+      "previousPosition": 32,
       "searchVolume": 500,
       "competition": 44,
       "difficulty": 38,
@@ -1270,25 +1231,25 @@
       "category": "storage",
       "intent": "mixed",
       "segment": "storage",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
-    "Agri-PV Referenzen": {
-      "keyword": "Agri-PV Referenzen",
-      "position": 17,
-      "previousPosition": 14,
-      "searchVolume": 398,
-      "competition": 29,
-      "difficulty": 37,
-      "opportunityScore": 603,
-      "category": "competitive",
-      "intent": "mixed",
+    "Agri-PV Förderungen 2025": {
+      "keyword": "Agri-PV Förderungen 2025",
+      "position": 35,
+      "previousPosition": 32,
+      "searchVolume": 442,
+      "competition": 44,
+      "difficulty": 29,
+      "opportunityScore": 605,
+      "category": "longtail",
+      "intent": "informational",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Agri-PV Brandenburg": {
       "keyword": "Agri-PV Brandenburg",
-      "position": 24,
-      "previousPosition": 23,
+      "position": 19,
+      "previousPosition": 17,
       "searchVolume": 480,
       "competition": 45,
       "difficulty": 35,
@@ -1296,38 +1257,12 @@
       "category": "regional",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Installation": {
-      "keyword": "Agri-PV Installation",
-      "position": 32,
-      "previousPosition": 33,
-      "searchVolume": 574,
-      "competition": 72,
-      "difficulty": 24,
-      "opportunityScore": 598,
-      "category": "technical",
-      "intent": "transactional",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Mecklenburg-Vorpommern": {
-      "keyword": "Agri-PV Mecklenburg-Vorpommern",
-      "position": 32,
-      "previousPosition": 31,
-      "searchVolume": 640,
-      "competition": 27,
-      "difficulty": 81,
-      "opportunityScore": 593,
-      "category": "regional",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Agri-PV Nordrhein-Westfalen": {
       "keyword": "Agri-PV Nordrhein-Westfalen",
-      "position": 21,
-      "previousPosition": 19,
+      "position": 13,
+      "previousPosition": 13,
       "searchVolume": 520,
       "competition": 50,
       "difficulty": 38,
@@ -1335,51 +1270,103 @@
       "category": "regional",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
-    "Agri-PV Beratung": {
-      "keyword": "Agri-PV Beratung",
-      "position": 26,
-      "previousPosition": 25,
-      "searchVolume": 673,
-      "competition": 46,
-      "difficulty": 70,
-      "opportunityScore": 580,
+    "Agri-PV Erfahrungen": {
+      "keyword": "Agri-PV Erfahrungen",
+      "position": 33,
+      "previousPosition": 30,
+      "searchVolume": 655,
+      "competition": 39,
+      "difficulty": 72,
+      "opportunityScore": 590,
       "category": "competitive",
+      "intent": "comparison",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Wartung": {
+      "keyword": "Agri-PV Wartung",
+      "position": 27,
+      "previousPosition": 26,
+      "searchVolume": 617,
+      "competition": 70,
+      "difficulty": 38,
+      "opportunityScore": 571,
+      "category": "technical",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Baurecht": {
+      "keyword": "Agri-PV Baurecht",
+      "position": 14,
+      "previousPosition": 16,
+      "searchVolume": 837,
+      "competition": 66,
+      "difficulty": 82,
+      "opportunityScore": 566,
+      "category": "legal",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Steuervorteile": {
+      "keyword": "Agri-PV Steuervorteile",
+      "position": 11,
+      "previousPosition": 13,
+      "searchVolume": 495,
+      "competition": 31,
+      "difficulty": 59,
+      "opportunityScore": 550,
+      "category": "legal",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Solaranlage mit Landwirtschaft kombinieren": {
+      "keyword": "Solaranlage mit Landwirtschaft kombinieren",
+      "position": 27,
+      "previousPosition": 25,
+      "searchVolume": 635,
+      "competition": 62,
+      "difficulty": 54,
+      "opportunityScore": 547,
+      "category": "longtail",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Qualität": {
+      "keyword": "Agri-PV Qualität",
+      "position": 32,
+      "previousPosition": 34,
+      "searchVolume": 617,
+      "competition": 78,
+      "difficulty": 35,
+      "opportunityScore": 546,
+      "category": "competitive",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Anlagenplanung Schritt für Schritt": {
+      "keyword": "Agri-PV Anlagenplanung Schritt für Schritt",
+      "position": 19,
+      "previousPosition": 16,
+      "searchVolume": 683,
+      "competition": 43,
+      "difficulty": 82,
+      "opportunityScore": 546,
+      "category": "longtail",
       "intent": "transactional",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Ackerbau": {
-      "keyword": "Agri-PV Ackerbau",
-      "position": 23,
-      "previousPosition": 25,
-      "searchVolume": 380,
-      "competition": 23,
-      "difficulty": 47,
-      "opportunityScore": 543,
-      "category": "applications",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Service": {
-      "keyword": "Agri-PV Service",
-      "position": 12,
-      "previousPosition": 9,
-      "searchVolume": 382,
-      "competition": 27,
-      "difficulty": 44,
-      "opportunityScore": 538,
-      "category": "competitive",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "E3DC vs Sonnen": {
       "keyword": "E3DC vs Sonnen",
-      "position": 17,
-      "previousPosition": 17,
+      "position": 31,
+      "previousPosition": 30,
       "searchVolume": 450,
       "competition": 45,
       "difficulty": 39,
@@ -1387,443 +1374,466 @@
       "category": "storage",
       "intent": "mixed",
       "segment": "general",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
-    "Agri-PV Hopfenanbau": {
-      "keyword": "Agri-PV Hopfenanbau",
-      "position": 38,
-      "previousPosition": 38,
-      "searchVolume": 551,
-      "competition": 40,
-      "difficulty": 63,
-      "opportunityScore": 535,
-      "category": "applications",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Doppelnutzung Solar": {
-      "keyword": "Doppelnutzung Solar",
+    "Agri-PV Wirtschaftlichkeit": {
+      "keyword": "Agri-PV Wirtschaftlichkeit",
       "position": 33,
-      "previousPosition": 33,
-      "searchVolume": 450,
-      "competition": 56,
-      "difficulty": 29,
-      "opportunityScore": 529,
-      "category": "seed",
-      "intent": "mixed",
-      "segment": "general",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Umsetzung": {
-      "keyword": "Agri-PV Umsetzung",
-      "position": 28,
-      "previousPosition": 29,
-      "searchVolume": 580,
-      "competition": 43,
-      "difficulty": 67,
+      "previousPosition": 31,
+      "searchVolume": 669,
+      "competition": 55,
+      "difficulty": 72,
       "opportunityScore": 527,
-      "category": "competitive",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Niedersachsen": {
-      "keyword": "Agri-PV Niedersachsen",
-      "position": 35,
-      "previousPosition": 33,
-      "searchVolume": 854,
-      "competition": 75,
-      "difficulty": 88,
-      "opportunityScore": 524,
-      "category": "regional",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Gesetz": {
-      "keyword": "Agri-PV Gesetz",
-      "position": 12,
-      "previousPosition": 14,
-      "searchVolume": 780,
-      "competition": 66,
-      "difficulty": 87,
-      "opportunityScore": 510,
-      "category": "legal",
-      "intent": "informational",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Solarpark Landwirtschaft": {
-      "keyword": "Solarpark Landwirtschaft",
-      "position": 20,
-      "previousPosition": 18,
-      "searchVolume": 590,
-      "competition": 74,
-      "difficulty": 44,
-      "opportunityScore": 500,
-      "category": "seed",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV EEG": {
-      "keyword": "Agri-PV EEG",
-      "position": 30,
-      "previousPosition": 32,
-      "searchVolume": 540,
-      "competition": 71,
-      "difficulty": 61,
-      "opportunityScore": 409,
-      "category": "legal",
-      "intent": "informational",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Baden-Württemberg": {
-      "keyword": "Agri-PV Baden-Württemberg",
-      "position": 34,
-      "previousPosition": 35,
-      "searchVolume": 406,
-      "competition": 23,
-      "difficulty": 78,
-      "opportunityScore": 402,
-      "category": "regional",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Erfahrungen": {
-      "keyword": "Agri-PV Erfahrungen",
-      "position": 21,
-      "previousPosition": 20,
-      "searchVolume": 538,
-      "competition": 60,
-      "difficulty": 77,
-      "opportunityScore": 393,
-      "category": "competitive",
-      "intent": "comparison",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Weinbau": {
-      "keyword": "Agri-PV Weinbau",
-      "position": 23,
-      "previousPosition": 20,
-      "searchVolume": 365,
-      "competition": 28,
-      "difficulty": 74,
-      "opportunityScore": 358,
-      "category": "applications",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agrivoltaik": {
-      "keyword": "Agrivoltaik",
-      "position": 31,
-      "previousPosition": 30,
-      "searchVolume": 320,
-      "competition": 69,
-      "difficulty": 41,
-      "opportunityScore": 291,
-      "category": "seed",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Wartung": {
-      "keyword": "Agri-PV Wartung",
-      "position": 32,
-      "previousPosition": 30,
-      "searchVolume": 274,
-      "competition": 71,
-      "difficulty": 25,
-      "opportunityScore": 285,
       "category": "technical",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Hessen": {
-      "keyword": "Agri-PV Hessen",
-      "position": 26,
-      "previousPosition": 23,
-      "searchVolume": 377,
-      "competition": 72,
-      "difficulty": 67,
-      "opportunityScore": 271,
-      "category": "regional",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Weidewirtschaft": {
-      "keyword": "Agri-PV Weidewirtschaft",
-      "position": 33,
-      "previousPosition": 34,
-      "searchVolume": 290,
-      "competition": 58,
-      "difficulty": 51,
-      "opportunityScore": 266,
-      "category": "applications",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Agri-PV Obstplantage": {
       "keyword": "Agri-PV Obstplantage",
-      "position": 25,
-      "previousPosition": 24,
-      "searchVolume": 277,
-      "competition": 37,
-      "difficulty": 67,
-      "opportunityScore": 266,
+      "position": 20,
+      "previousPosition": 22,
+      "searchVolume": 331,
+      "competition": 35,
+      "difficulty": 28,
+      "opportunityScore": 525,
       "category": "applications",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
-    "Agri-PV Gewächshaus": {
-      "keyword": "Agri-PV Gewächshaus",
-      "position": 16,
-      "previousPosition": 14,
-      "searchVolume": 320,
-      "competition": 62,
-      "difficulty": 73,
-      "opportunityScore": 237,
-      "category": "applications",
+    "Agri-PV Hessen": {
+      "keyword": "Agri-PV Hessen",
+      "position": 36,
+      "previousPosition": 38,
+      "searchVolume": 782,
+      "competition": 66,
+      "difficulty": 84,
+      "opportunityScore": 521,
+      "category": "regional",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
-    "Solaranlage Feld": {
-      "keyword": "Solaranlage Feld",
-      "position": 19,
-      "previousPosition": 20,
-      "searchVolume": 280,
-      "competition": 45,
-      "difficulty": 74,
-      "opportunityScore": 235,
+    "Doppelnutzung Solar": {
+      "keyword": "Doppelnutzung Solar",
+      "position": 15,
+      "previousPosition": 15,
+      "searchVolume": 450,
+      "competition": 58,
+      "difficulty": 29,
+      "opportunityScore": 517,
       "category": "seed",
       "intent": "mixed",
       "segment": "general",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
-    "Agri-PV Gemüseanbau": {
-      "keyword": "Agri-PV Gemüseanbau",
-      "position": 38,
-      "previousPosition": 35,
-      "searchVolume": 290,
-      "competition": 74,
-      "difficulty": 55,
-      "opportunityScore": 225,
-      "category": "applications",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Vergleich": {
-      "keyword": "Agri-PV Vergleich",
-      "position": 36,
-      "previousPosition": 34,
-      "searchVolume": 241,
-      "competition": 65,
-      "difficulty": 42,
-      "opportunityScore": 225,
-      "category": "competitive",
-      "intent": "comparison",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Rheinland-Pfalz": {
-      "keyword": "Agri-PV Rheinland-Pfalz",
-      "position": 32,
-      "previousPosition": 29,
-      "searchVolume": 175,
-      "competition": 23,
-      "difficulty": 61,
-      "opportunityScore": 208,
+    "Agri-PV Baden-Württemberg": {
+      "keyword": "Agri-PV Baden-Württemberg",
+      "position": 29,
+      "previousPosition": 27,
+      "searchVolume": 547,
+      "competition": 27,
+      "difficulty": 80,
+      "opportunityScore": 511,
       "category": "regional",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
-    "PV Freifläche Landwirt": {
-      "keyword": "PV Freifläche Landwirt",
-      "position": 22,
-      "previousPosition": 20,
-      "searchVolume": 210,
-      "competition": 50,
-      "difficulty": 56,
-      "opportunityScore": 198,
+    "Solarpark Landwirtschaft": {
+      "keyword": "Solarpark Landwirtschaft",
+      "position": 16,
+      "previousPosition": 18,
+      "searchVolume": 590,
+      "competition": 73,
+      "difficulty": 44,
+      "opportunityScore": 504,
       "category": "seed",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV BAFA": {
+      "keyword": "Agri-PV BAFA",
+      "position": 23,
+      "previousPosition": 23,
+      "searchVolume": 530,
+      "competition": 61,
+      "difficulty": 45,
+      "opportunityScore": 500,
+      "category": "legal",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV KfW": {
+      "keyword": "Agri-PV KfW",
+      "position": 25,
+      "previousPosition": 27,
+      "searchVolume": 615,
+      "competition": 51,
+      "difficulty": 75,
+      "opportunityScore": 488,
+      "category": "legal",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Service": {
+      "keyword": "Agri-PV Service",
+      "position": 39,
+      "previousPosition": 36,
+      "searchVolume": 481,
+      "competition": 34,
+      "difficulty": 66,
+      "opportunityScore": 481,
+      "category": "competitive",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
     "Beste Agri-PV Anbieter": {
       "keyword": "Beste Agri-PV Anbieter",
-      "position": 38,
-      "previousPosition": 36,
-      "searchVolume": 236,
-      "competition": 60,
-      "difficulty": 80,
-      "opportunityScore": 169,
+      "position": 16,
+      "previousPosition": 17,
+      "searchVolume": 466,
+      "competition": 58,
+      "difficulty": 43,
+      "opportunityScore": 461,
       "category": "competitive",
       "intent": "comparison",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     },
-    "Agri-PV Rendite": {
-      "keyword": "Agri-PV Rendite",
-      "position": 15,
-      "previousPosition": 17,
-      "searchVolume": 220,
-      "competition": 58,
-      "difficulty": 75,
-      "opportunityScore": 165,
-      "category": "technical",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Naturschutz": {
-      "keyword": "Agri-PV Naturschutz",
-      "position": 34,
-      "previousPosition": 33,
-      "searchVolume": 180,
+    "Agri-PV Umsetzung": {
+      "keyword": "Agri-PV Umsetzung",
+      "position": 21,
+      "previousPosition": 18,
+      "searchVolume": 274,
       "competition": 24,
-      "difficulty": 89,
-      "opportunityScore": 159,
-      "category": "legal",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Versicherung": {
-      "keyword": "Agri-PV Versicherung",
-      "position": 38,
-      "previousPosition": 39,
-      "searchVolume": 172,
-      "competition": 74,
-      "difficulty": 38,
-      "opportunityScore": 154,
-      "category": "legal",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Sachsen-Anhalt": {
-      "keyword": "Agri-PV Sachsen-Anhalt",
-      "position": 11,
-      "previousPosition": 11,
-      "searchVolume": 128,
-      "competition": 62,
-      "difficulty": 28,
-      "opportunityScore": 142,
-      "category": "regional",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Steuervorteile": {
-      "keyword": "Agri-PV Steuervorteile",
-      "position": 28,
-      "previousPosition": 27,
-      "searchVolume": 134,
-      "competition": 59,
-      "difficulty": 43,
-      "opportunityScore": 131,
-      "category": "legal",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Einspeisung": {
-      "keyword": "Agri-PV Einspeisung",
-      "position": 34,
-      "previousPosition": 35,
-      "searchVolume": 104,
-      "competition": 30,
-      "difficulty": 66,
-      "opportunityScore": 108,
-      "category": "technical",
-      "intent": "mixed",
-      "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
-    },
-    "Agri-PV Qualität": {
-      "keyword": "Agri-PV Qualität",
-      "position": 33,
-      "previousPosition": 34,
-      "searchVolume": 150,
-      "competition": 58,
-      "difficulty": 84,
-      "opportunityScore": 106,
+      "difficulty": 42,
+      "opportunityScore": 415,
       "category": "competitive",
       "intent": "mixed",
       "segment": "agri-pv",
-      "lastUpdated": "2025-10-06T06:09:44.913Z"
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Fördermittel": {
+      "keyword": "Agri-PV Fördermittel",
+      "position": 18,
+      "previousPosition": 19,
+      "searchVolume": 473,
+      "competition": 54,
+      "difficulty": 63,
+      "opportunityScore": 404,
+      "category": "legal",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "PV Freifläche Landwirt": {
+      "keyword": "PV Freifläche Landwirt",
+      "position": 25,
+      "previousPosition": 22,
+      "searchVolume": 210,
+      "competition": 31,
+      "difficulty": 23,
+      "opportunityScore": 389,
+      "category": "seed",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Solaranlage Feld": {
+      "keyword": "Solaranlage Feld",
+      "position": 37,
+      "previousPosition": 38,
+      "searchVolume": 280,
+      "competition": 51,
+      "difficulty": 33,
+      "opportunityScore": 333,
+      "category": "seed",
+      "intent": "mixed",
+      "segment": "general",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV EEG": {
+      "keyword": "Agri-PV EEG",
+      "position": 15,
+      "previousPosition": 12,
+      "searchVolume": 540,
+      "competition": 73,
+      "difficulty": 89,
+      "opportunityScore": 333,
+      "category": "legal",
+      "intent": "informational",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agrivoltaik": {
+      "keyword": "Agrivoltaik",
+      "position": 39,
+      "previousPosition": 37,
+      "searchVolume": 320,
+      "competition": 61,
+      "difficulty": 51,
+      "opportunityScore": 286,
+      "category": "seed",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Rheinland-Pfalz": {
+      "keyword": "Agri-PV Rheinland-Pfalz",
+      "position": 35,
+      "previousPosition": 34,
+      "searchVolume": 293,
+      "competition": 42,
+      "difficulty": 61,
+      "opportunityScore": 284,
+      "category": "regional",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Kosten Nutzen Rechnung Agri-PV": {
+      "keyword": "Kosten Nutzen Rechnung Agri-PV",
+      "position": 17,
+      "previousPosition": 19,
+      "searchVolume": 159,
+      "competition": 33,
+      "difficulty": 24,
+      "opportunityScore": 279,
+      "category": "longtail",
+      "intent": "commercial",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Weinbau": {
+      "keyword": "Agri-PV Weinbau",
+      "position": 17,
+      "previousPosition": 17,
+      "searchVolume": 319,
+      "competition": 52,
+      "difficulty": 69,
+      "opportunityScore": 264,
+      "category": "applications",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Zukunft der Landwirtschaft mit Solar": {
+      "keyword": "Zukunft der Landwirtschaft mit Solar",
+      "position": 34,
+      "previousPosition": 32,
+      "searchVolume": 308,
+      "competition": 42,
+      "difficulty": 75,
+      "opportunityScore": 263,
+      "category": "longtail",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Netzanschluss": {
+      "keyword": "Agri-PV Netzanschluss",
+      "position": 19,
+      "previousPosition": 19,
+      "searchVolume": 341,
+      "competition": 64,
+      "difficulty": 67,
+      "opportunityScore": 260,
+      "category": "technical",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Weidewirtschaft": {
+      "keyword": "Agri-PV Weidewirtschaft",
+      "position": 18,
+      "previousPosition": 15,
+      "searchVolume": 290,
+      "competition": 63,
+      "difficulty": 49,
+      "opportunityScore": 259,
+      "category": "applications",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Ackerbau": {
+      "keyword": "Agri-PV Ackerbau",
+      "position": 12,
+      "previousPosition": 13,
+      "searchVolume": 380,
+      "competition": 68,
+      "difficulty": 82,
+      "opportunityScore": 253,
+      "category": "applications",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV für Landwirte": {
+      "keyword": "Agri-PV für Landwirte",
+      "position": 21,
+      "previousPosition": 18,
+      "searchVolume": 354,
+      "competition": 66,
+      "difficulty": 80,
+      "opportunityScore": 242,
+      "category": "longtail",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Niedersachsen": {
+      "keyword": "Agri-PV Niedersachsen",
+      "position": 34,
+      "previousPosition": 33,
+      "searchVolume": 244,
+      "competition": 41,
+      "difficulty": 69,
+      "opportunityScore": 222,
+      "category": "regional",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Schleswig-Holstein": {
+      "keyword": "Agri-PV Schleswig-Holstein",
+      "position": 27,
+      "previousPosition": 25,
+      "searchVolume": 274,
+      "competition": 71,
+      "difficulty": 74,
+      "opportunityScore": 189,
+      "category": "regional",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Hopfenanbau": {
+      "keyword": "Agri-PV Hopfenanbau",
+      "position": 14,
+      "previousPosition": 15,
+      "searchVolume": 166,
+      "competition": 33,
+      "difficulty": 63,
+      "opportunityScore": 173,
+      "category": "applications",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Beratung": {
+      "keyword": "Agri-PV Beratung",
+      "position": 20,
+      "previousPosition": 22,
+      "searchVolume": 203,
+      "competition": 69,
+      "difficulty": 49,
+      "opportunityScore": 172,
+      "category": "competitive",
+      "intent": "transactional",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Referenzen": {
+      "keyword": "Agri-PV Referenzen",
+      "position": 39,
+      "previousPosition": 37,
+      "searchVolume": 169,
+      "competition": 39,
+      "difficulty": 78,
+      "opportunityScore": 144,
+      "category": "competitive",
+      "intent": "mixed",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
+    },
+    "Agri-PV Vergleich": {
+      "keyword": "Agri-PV Vergleich",
+      "position": 24,
+      "previousPosition": 23,
+      "searchVolume": 158,
+      "competition": 75,
+      "difficulty": 67,
+      "opportunityScore": 111,
+      "category": "competitive",
+      "intent": "comparison",
+      "segment": "agri-pv",
+      "lastUpdated": "2025-10-07T06:09:32.553Z"
     }
   },
   "alerts": [
     {
       "type": "loss",
       "severity": "error",
-      "keyword": "Photovoltaik Eigenheim Rendite",
-      "segment": "residential",
-      "message": "\"Photovoltaik Eigenheim Rendite\" fällt aus Top 10 heraus (Position 11)",
-      "position": 11,
+      "keyword": "Solaranlage Landwirtschaft",
+      "segment": "agri-pv",
+      "message": "\"Solaranlage Landwirtschaft\" fällt aus Top 10 heraus (Position 12)",
+      "position": 12,
       "change": -2,
-      "timestamp": "2025-10-06T06:09:44.920Z"
+      "timestamp": "2025-10-07T06:09:32.560Z"
     },
     {
       "type": "loss",
       "severity": "error",
-      "keyword": "Agri-PV Service",
+      "keyword": "Agri-PV Forstwirtschaft",
       "segment": "agri-pv",
-      "message": "\"Agri-PV Service\" fällt aus Top 10 heraus (Position 12)",
-      "position": 12,
+      "message": "\"Agri-PV Forstwirtschaft\" fällt aus Top 10 heraus (Position 11)",
+      "position": 11,
       "change": -3,
-      "timestamp": "2025-10-06T06:09:44.920Z"
+      "timestamp": "2025-10-07T06:09:32.561Z"
+    },
+    {
+      "type": "loss",
+      "severity": "error",
+      "keyword": "Solaranlage Leasing Eigenheim",
+      "segment": "residential",
+      "message": "\"Solaranlage Leasing Eigenheim\" fällt aus Top 10 heraus (Position 13)",
+      "position": 13,
+      "change": -3,
+      "timestamp": "2025-10-07T06:09:32.561Z"
+    },
+    {
+      "type": "loss",
+      "severity": "error",
+      "keyword": "Solaranlage Leipzig Eigenheim",
+      "segment": "residential",
+      "message": "\"Solaranlage Leipzig Eigenheim\" fällt aus Top 10 heraus (Position 13)",
+      "position": 13,
+      "change": -3,
+      "timestamp": "2025-10-07T06:09:32.561Z"
     },
     {
       "type": "milestone",
       "severity": "success",
-      "keyword": "Wärmepumpe und Photovoltaik",
-      "segment": "sector-coupling",
-      "message": "\"Wärmepumpe und Photovoltaik\" erreicht Top 10 (Position 10)",
-      "position": 10,
-      "change": 2,
-      "timestamp": "2025-10-06T06:09:44.920Z"
-    },
-    {
-      "type": "milestone",
-      "severity": "success",
-      "keyword": "Agri-PV",
-      "segment": "agri-pv",
-      "message": "\"Agri-PV\" erreicht Top 10 (Position 9)",
-      "position": 9,
-      "change": 2,
-      "timestamp": "2025-10-06T06:09:44.920Z"
-    },
-    {
-      "type": "milestone",
-      "severity": "success",
-      "keyword": "Wärmepumpe Photovoltaik Kombination",
-      "segment": "sector-coupling",
-      "message": "\"Wärmepumpe Photovoltaik Kombination\" erreicht Top 10 (Position 10)",
+      "keyword": "Solaranlage Eigenheim Kosten",
+      "segment": "residential",
+      "message": "\"Solaranlage Eigenheim Kosten\" erreicht Top 10 (Position 10)",
       "position": 10,
       "change": 1,
-      "timestamp": "2025-10-06T06:09:44.920Z"
+      "timestamp": "2025-10-07T06:09:32.560Z"
+    },
+    {
+      "type": "milestone",
+      "severity": "success",
+      "keyword": "Photovoltaik Hannover Dach",
+      "segment": "residential",
+      "message": "\"Photovoltaik Hannover Dach\" erreicht Top 10 (Position 10)",
+      "position": 10,
+      "change": 2,
+      "timestamp": "2025-10-07T06:09:32.561Z"
     }
   ],
   "summary": {
     "totalKeywords": 127,
-    "avgPosition": 20.68,
-    "top10Percentage": 19.69,
-    "estimatedTraffic": 12659,
-    "alertCount": 5
+    "avgPosition": 20.3,
+    "top10Percentage": 18.9,
+    "estimatedTraffic": 11566,
+    "alertCount": 6
   }
 }
