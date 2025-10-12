@@ -1,18 +1,18 @@
 {
-  "timestamp": "2025-10-11T02:25:55.556Z",
+  "timestamp": "2025-10-12T02:30:06.308Z",
   "metrics": {
-    "organicTraffic": 11308,
+    "organicTraffic": 5149,
     "keywordRankings": {
-      "improved": 40,
-      "declined": 1,
-      "stable": 143
+      "improved": 27,
+      "declined": 15,
+      "stable": 99
     },
     "backlinks": {
-      "new": 21,
-      "lost": 3
+      "new": 14,
+      "lost": 4
     },
-    "pageSpeed": 98,
-    "mobileUsability": 93
+    "pageSpeed": 96,
+    "mobileUsability": 98
   },
   "alerts": [
     {
