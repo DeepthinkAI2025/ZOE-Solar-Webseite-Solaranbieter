@@ -6,7 +6,7 @@ export interface ContactFormData {
   projectStatus: string;
   message: string;
   dataPrivacy: boolean;
-  
+
   // Optional common fields
   phone?: string;
   address?: string;
@@ -19,7 +19,7 @@ export interface ContactFormData {
   surfaceType?: string;
   chargerCount?: string;
   storagePurpose?: string;
-  
+
   // Private specific (optional)
   privateSurfaceType?: string;
   additionalInterests?: string;
@@ -136,6 +136,7 @@ export type Page =
     | 'mitarbeiter-login'
     | 'photovoltaik-rechner-gewerbe'
     | 'photovoltaik-planung-gewerbe'
-    | 'technology-page'
-    | 'guide-page'
-    | 'agripv-page';
+    | 'photovoltaik-gewerbe'
+    | 'photovoltaik-industrie'
+    | 'photovoltaik-landwirtschaft'
+    | 'photovoltaik-gewerbegebaeude';

@@ -643,7 +643,7 @@ class AutomatedSitemapService {
         case '<': return '<';
         case '>': return '>';
         case '&': return '&';
-        case '\'': return ''';
+        case '\'': return '&apos;';
         case '"': return '"';
         default: return c;
       }

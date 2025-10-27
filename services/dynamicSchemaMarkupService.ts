@@ -100,7 +100,7 @@ class DynamicSchemaMarkupService {
     this.performanceMetrics = this.initializeMetrics();
     this.initializeSchemaRules();
     this.initializeBaseSchemas();
-    this.startSchemaOptimization();
+    this.initializeSchemaOptimization();
   }
 
   public static getInstance(): DynamicSchemaMarkupService {
@@ -247,6 +247,8 @@ class DynamicSchemaMarkupService {
         successRate: 0,
         averageScore: 0
       }
+    });
+
     // Event Schema Rule für Veranstaltungen
     this.schemaRules.set('event-schema-rule', {
       id: 'event-schema-rule',
@@ -269,7 +271,6 @@ class DynamicSchemaMarkupService {
         successRate: 0,
         averageScore: 0
       }
-    });
     });
   }
 
@@ -317,6 +318,37 @@ class DynamicSchemaMarkupService {
       active: true,
       createdAt: new Date(),
       lastUpdated: new Date()
+    });
+
+    // Extended Organization Schema
+    this.schemas.set('organization-extended', {
+      id: 'organization-extended',
+      type: 'Organization',
+      context: 'https://schema.org',
+      data: {
+        '@type': 'Organization',
+        name: 'ZOE Solar GmbH',
+        url: 'https://zoe-solar.de',
+        logo: 'https://zoe-solar.de/logo.png',
+        description: 'Ihr Partner für Photovoltaik-Lösungen in Deutschland',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Musterstraße 123',
+          addressLocality: 'Berlin',
+          postalCode: '10115',
+          addressCountry: 'DE'
+        },
+        contactPoint: {
+          '@type': 'ContactPoint',
+          telephone: '+49-30-123456',
+          contactType: 'customer service',
+          availableLanguage: ['German', 'English']
+        },
+        sameAs: [
+          'https://www.facebook.com/zoesolar',
+          'https://www.linkedin.com/company/zoe-solar',
+          'https://twitter.com/zoesolar'
+        ],
         foundingDate: '2020-01-01',
         numberOfEmployees: 50,
         knowsAbout: ['Photovoltaik', 'Solarenergie', 'Erneuerbare Energien'],
@@ -333,6 +365,20 @@ class DynamicSchemaMarkupService {
             }
           }
         ]
+      },
+      pageUrl: 'https://zoe-solar.de',
+      dynamic: false,
+      performance: {
+        impressions: 0,
+        clicks: 0,
+        richResults: 0,
+        ctr: 0,
+        validationErrors: 0
+      },
+      lastValidated: new Date(),
+      active: true,
+      createdAt: new Date(),
+      lastUpdated: new Date()
     });
 
     // WebSite Schema
@@ -352,11 +398,11 @@ class DynamicSchemaMarkupService {
         potentialAction: {
           '@type': 'SearchAction',
           target: 'https://zoe-solar.de/suche?q={search_term_string}',
+          'query-input': 'required name=search_term_string'
+        },
         speakable: {
           '@type': 'SpeakableSpecification',
           cssSelector: ['.hero-title', '.hero-description', '.faq-question', '.faq-answer']
-        }
-          'query-input': 'required name=search_term_string'
         }
       },
       pageUrl: 'https://zoe-solar.de',
@@ -375,7 +421,7 @@ class DynamicSchemaMarkupService {
     });
   }
 
-  private startSchemaOptimization(): void {
+  private initializeSchemaOptimization(): void {
     // Schema-Optimierung alle 6 Stunden
     this.schemaGenerationInterval = setInterval(() => {
       this.performSchemaOptimization();
@@ -436,10 +482,6 @@ class DynamicSchemaMarkupService {
       await this.generateDynamicSchemas();
 
       // Validiere alle Schemas
-      { url: '/events', type: 'event', content: 'Solar Events und Veranstaltungen' },
-      { url: '/about', type: 'organization', content: 'Über ZOE Solar' },
-      { url: '/contact', type: 'organization', content: 'Kontaktinformationen' },
-      { url: '/blog', type: 'article', content: 'Solar Blog und News' }
       await this.validateAllSchemas();
 
       // Optimiere Schema-Performance
@@ -606,70 +648,6 @@ class DynamicSchemaMarkupService {
         };
 
       case 'headline':
-       // Product Schema Rule für Produkte
-       this.schemaRules.set('product-schema-rule', {
-         id: 'product-schema-rule',
-         name: 'Product Schema',
-         description: 'Product Schema für Solarprodukte und Dienstleistungen',
-         trigger: {
-           pageType: 'product',
-           contentType: 'product'
-         },
-         schemaTemplate: {
-           type: 'Product',
-           requiredFields: ['name', 'description', 'offers'],
-           optionalFields: ['brand', 'manufacturer', 'category', 'image', 'aggregateRating'],
-           customLogic: 'includeProductDetails'
-         },
-         priority: 5,
-         active: true,
-         performance: {
-           generatedCount: 0,
-      case 'includeProductDetails':
-       // Service Schema Rule für Dienstleistungen
-       this.schemaRules.set('service-schema-rule', {
-         id: 'service-schema-rule',
-         name: 'Service Schema',
-         description: 'Service Schema für Solar-Dienstleistungen',
-         trigger: {
-           pageType: 'service',
-           contentType: 'service'
-         },
-         schemaTemplate: {
-           type: 'Service',
-           requiredFields: ['name', 'description', 'provider'],
-           optionalFields: ['areaServed', 'serviceType', 'offers', 'aggregateRating'],
-           customLogic: 'includeServiceDetails'
-         },
-      case 'includeServiceDetails':
-        data.areaServed = {
-          '@type': 'Country',
-          name: 'Germany'
-        };
-        data.serviceType = 'Solar Installation Services';
-        break;
-         priority: 6,
-         active: true,
-         performance: {
-           generatedCount: 0,
-           successRate: 0,
-           averageScore: 0
-         }
-       });
-        data.brand = {
-          '@type': 'Brand',
-          name: 'ZOE Solar'
-        };
-        data.manufacturer = {
-          '@type': 'Organization',
-          name: 'ZOE Solar GmbH'
-        };
-        data.category = 'Solar Energy Products';
-        break;
-           successRate: 0,
-           averageScore: 0
-         }
-       });
         return page.content;
 
       case 'author':
@@ -702,33 +680,6 @@ class DynamicSchemaMarkupService {
   private async generateAIDescription(content: string, schemaType: string): Promise<string> {
     try {
       const prompt = `Generiere eine SEO-optimierte Beschreibung für ${schemaType} Schema basierend auf: "${content}". Maximale Länge: 160 Zeichen.`;
-      case 'includeEventDetails':
-        data.eventAttendanceMode = 'https://schema.org/OfflineEventAttendanceMode';
-        data.performer = {
-          '@type': 'Organization',
-          name: 'ZOE Solar GmbH'
-        };
-        break;
-      case 'brand':
-        return {
-          '@type': 'Brand',
-          name: 'ZOE Solar'
-        };
-      case 'manufacturer':
-        return {
-          '@type': 'Organization',
-          name: 'ZOE Solar GmbH'
-        };
-      case 'category':
-        return 'Solar Energy Products';
-      case 'image':
-        return 'https://zoe-solar.de/images/product-placeholder.jpg';
-      case 'aggregateRating':
-        return {
-          '@type': 'AggregateRating',
-          ratingValue: '4.8',
-          reviewCount: '150'
-        };
 
       const aiResponse = await optimizeKeywords([prompt]);
       return aiResponse && aiResponse.length > 0 ? aiResponse[0] : content;
@@ -743,37 +694,6 @@ class DynamicSchemaMarkupService {
     return [
       {
         '@type': 'Question',
-      case 'startDate':
-        return new Date().toISOString().split('T')[0]; // Heutiges Datum als Standard
-      case 'endDate':
-        return new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString().split('T')[0]; // Morgen als Standard
-      case 'location':
-        return {
-          '@type': 'Place',
-          name: 'ZOE Solar GmbH',
-          address: {
-            '@type': 'PostalAddress',
-            streetAddress: 'Musterstraße 123',
-            addressLocality: 'Musterstadt',
-            postalCode: '12345',
-            addressCountry: 'DE'
-          }
-        };
-      case 'organizer':
-        return {
-          '@type': 'Organization',
-          name: 'ZOE Solar GmbH',
-          url: 'https://zoe-solar.de'
-        };
-      case 'offers':
-        return {
-          '@type': 'Offer',
-          price: '0',
-          priceCurrency: 'EUR',
-          availability: 'https://schema.org/InStock'
-        };
-      case 'eventStatus':
-        return 'https://schema.org/EventScheduled';
         name: 'Wie funktioniert Photovoltaik?',
         acceptedAnswer: {
           '@type': 'Answer',
@@ -808,7 +728,7 @@ class DynamicSchemaMarkupService {
   }
 
   private async validateAllSchemas(): Promise<void> {
-    for (const [id, schema] of this.schemas) {
+    for (const [id, schema] of Array.from(this.schemas.entries())) {
       const validation = await this.validateSchema(schema);
       schema.lastValidated = new Date();
 
@@ -827,32 +747,6 @@ class DynamicSchemaMarkupService {
       errors.push({
         field: '@type',
         message: 'Missing @type field',
-      case 'Event':
-        if (!schema.data.startDate) {
-          errors.push({
-            field: 'startDate',
-            message: 'Start date is required for Event',
-            severity: 'error'
-          });
-        }
-        if (!schema.data.location) {
-          errors.push({
-            field: 'location',
-            message: 'Location is required for Event',
-            severity: 'error'
-          });
-        }
-        break;
-
-      case 'Service':
-        if (!schema.data.provider) {
-          errors.push({
-            field: 'provider',
-            message: 'Provider is required for Service',
-            severity: 'error'
-          });
-        }
-        break;
         severity: 'error'
       });
     }
@@ -892,7 +786,7 @@ class DynamicSchemaMarkupService {
 
   private async optimizeSchemaPerformance(): Promise<void> {
     // Deaktiviere schlecht performende Schemas
-    for (const [id, schema] of this.schemas) {
+    for (const [id, schema] of Array.from(this.schemas.entries())) {
       if (schema.dynamic && schema.performance.impressions > 100) {
         const ctr = schema.performance.ctr;
         if (ctr < 0.01) { // Weniger als 1% CTR
@@ -902,7 +796,7 @@ class DynamicSchemaMarkupService {
     }
 
     // Optimiere aktive Schemas
-    for (const [id, schema] of this.schemas) {
+    for (const [id, schema] of Array.from(this.schemas.entries())) {
       if (schema.active) {
         await this.optimizeSchemaContent(schema);
       }
@@ -994,21 +888,6 @@ class DynamicSchemaMarkupService {
       url: pageUrl,
       type: 'dynamic',
       content: JSON.stringify(content)
-  public async monitorRichResults(): Promise<void> {
-    // Simuliere Rich Results Monitoring
-    for (const [id, schema] of this.schemas) {
-      if (schema.active) {
-        // Simuliere API-Call zu Google Search Console oder Rich Results Tool
-        const richResultsCount = Math.floor(Math.random() * 100); // Simuliert
-        schema.performance.richResults = richResultsCount;
-
-        // Berechne Speakable Score basierend auf Speakable Schema
-        if (schema.type === 'WebSite' && schema.data.speakable) {
-          schema.performance.speakableScore = Math.min(100, richResultsCount * 2);
-        }
-      }
-    }
-  }
     });
 
     const schemaId = `dynamic-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
@@ -1037,7 +916,23 @@ class DynamicSchemaMarkupService {
     return schemaId;
   }
 
-  public async updateSchemaPerformance(schemaId: string, event: 'impression' | 'click' | 'richResult'): void {
+  public async monitorRichResults(): Promise<void> {
+    // Simuliere Rich Results Monitoring
+    for (const [id, schema] of Array.from(this.schemas.entries())) {
+      if (schema.active) {
+        // Simuliere API-Call zu Google Search Console oder Rich Results Tool
+        const richResultsCount = Math.floor(Math.random() * 100); // Simuliert
+        schema.performance.richResults = richResultsCount;
+
+        // Berechne Speakable Score basierend auf Speakable Schema
+        if (schema.type === 'WebSite' && schema.data.speakable) {
+          schema.performance.speakableScore = Math.min(100, richResultsCount * 2);
+        }
+      }
+    }
+  }
+
+  public async updateSchemaPerformance(schemaId: string, event: 'impression' | 'click' | 'richResult'): Promise<void> {
     const schema = this.schemas.get(schemaId);
     if (!schema) return;
 
@@ -1079,7 +974,7 @@ class DynamicSchemaMarkupService {
 
   public startSchemaOptimization(): void {
     if (!this.schemaGenerationInterval) {
-      this.startSchemaOptimization();
+      this.initializeSchemaOptimization();
     }
   }
 }

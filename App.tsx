@@ -173,6 +173,38 @@ const App: React.FC = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  // Event listeners: 'select-article' and 'select-guide' aus Komponenten/Navigationen
+  useEffect(() => {
+    const onSelectArticle = (e: Event) => {
+      const detail = (e as CustomEvent).detail;
+      if (!detail) return;
+      const slug = String(detail);
+      const article = articles.find(a => (a as any).slug === slug) || null;
+      setSelectedArticle(article);
+      // Berechne Pfad anhand des zentralen Mappings und ersetze :slug
+      const path = pageToPath['article-detail'].replace(':slug', slug);
+      navigate(path);
+    };
+
+    const onSelectGuide = (e: Event) => {
+      const detail = (e as CustomEvent).detail;
+      if (!detail) return;
+      const slug = String(detail);
+      const guide = guides.find(g => (g as any).slug === slug) || null;
+      setSelectedGuide(guide);
+      const path = pageToPath['guide-detail'].replace(':slug', slug);
+      navigate(path);
+    };
+
+    document.addEventListener('select-article', onSelectArticle as EventListener);
+    document.addEventListener('select-guide', onSelectGuide as EventListener);
+
+    return () => {
+      document.removeEventListener('select-article', onSelectArticle as EventListener);
+      document.removeEventListener('select-guide', onSelectGuide as EventListener);
+    };
+  }, [navigate, articles, guides]);
+
   const handleSetPage = (page: Page) => {
     setCurrentPage(page);
     navigate(pageToPath[page]);
@@ -195,6 +227,12 @@ const App: React.FC = () => {
     navigate(-1);
   };
 
+  const handleLogout = useCallback(() => {
+    setIsLoggedIn(false);
+    setUser(null);
+    navigate('/');
+  }, [navigate]);
+
   const handleToggleCompare = (product: any) => {
     setComparisonList(prev => {
       const exists = prev.find(p => p.id === product.id);
@@ -204,6 +242,9 @@ const App: React.FC = () => {
         return [...prev, product];
       }
     });
+  };
+  const handleSelectWissen = (wissenKey: string) => {
+    handleSetPage(wissenKey as Page);
   };
 
   return (
@@ -215,9 +256,9 @@ const App: React.FC = () => {
         bannerHeight={bannerHeight}
         isLoggedIn={isLoggedIn}
         onHeightChange={() => {}}
-        onSelectHersteller={() => {}}
-        onSelectWissen={() => {}}
-        onLogout={() => {}}
+        onSelectHersteller={handleSelectHersteller}
+        onSelectWissen={handleSelectWissen}
+        onLogout={handleLogout}
         theme="day"
         onToggleTheme={() => {}}
       />
@@ -225,7 +266,7 @@ const App: React.FC = () => {
         onHeightChange={setBannerHeight}
         setPage={handleSetPage}
         isLoggedIn={isLoggedIn}
-        onLogout={() => {}}
+        onLogout={handleLogout}
         theme="day"
         onToggleTheme={() => {}}
       />
@@ -357,7 +398,7 @@ const App: React.FC = () => {
           <Route path="/unified-strategy-dashboard" element={<UnifiedStrategyDashboardPage />} />
           <Route path="/login" element={<LoginPage onLogin={handleLogin} setPage={handleSetPage} />} />
           <Route path="/empfehlungspraemie" element={<EmpfehlungspraemiePage />} />
-          <Route path="/innovations" element={<InnovationsPage setPage={handleSetPage} />} />
+          <Route path="/innovationen" element={<InnovationsPage setPage={handleSetPage} />} />
           <Route path="/finanzierung" element={<FinanzierungPage setPage={handleSetPage} />} />
           <Route path="/sonderaktionen" element={<SonderaktionenPage />} />
           <Route path="/wissen/faq" element={<FAQPage setPage={handleSetPage} />} />

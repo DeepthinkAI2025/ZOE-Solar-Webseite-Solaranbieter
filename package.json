@@ -52,6 +52,7 @@
     "tsyringe": "^4.10.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.55.1",
     "@types/cheerio": "^0.22.35",
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",

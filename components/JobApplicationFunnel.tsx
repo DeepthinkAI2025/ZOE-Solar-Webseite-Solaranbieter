@@ -76,7 +76,7 @@ const JobApplicationFunnel: React.FC<JobApplicationFunnelProps> = ({ onClose, jo
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        console.log("Submitting Job Application:", { jobTitle, ...formData });
+        
         setStep(totalSteps + 1);
     };
     

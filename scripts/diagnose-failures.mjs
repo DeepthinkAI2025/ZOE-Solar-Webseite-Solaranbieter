@@ -37,13 +37,13 @@ async function run() {
     process.stdout.write(`Diagnosing ${m.slug}... `);
     const entry = { slug: m.slug, name: m.name, website: m.website, existingLogo: m.logoUrl || null, tested: [] };
     try {
-      // Firecrawl entfernt
-      if (false) {}
-        for (const cand of suggestion.logoCandidates) {
-          const res = await tryFetch(cand);
-          entry.tested.push(res);
-        }
+      // Firecrawl entfernt - Logo Prüfung deaktiviert
+      /*
+      for (const cand of suggestion.logoCandidates) {
+        const res = await tryFetch(cand);
+        entry.tested.push(res);
       }
+      */
     } catch (err) {
       entry.error = err.message || String(err);
     }

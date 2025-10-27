@@ -132,8 +132,6 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setPage, openCommandHub, b
   }, [isMobileMenuOpen]);
 
   const handleLinkClick = (page: Page) => {
-    console.log('Header: handleLinkClick called with page:', page);
-    console.log('Header: pageToPath result:', pageToPath[page]);
     setPage(page);
     setActiveDropdown(null);
     setIsMobileMenuOpen(false);

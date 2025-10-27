@@ -26,7 +26,7 @@ const ServiceZaehlerbauPage: React.FC<ServiceZaehlerbauPageProps> = ({ setPage, 
             <div className="py-20">
                 <div className="container mx-auto px-6 prose-custom prose-lg max-w-4xl">
                     <AnimatedSection>
-                        <h2>Zählerplatz & Messkonzepte</h2>
+                        <h2>Zählerplatz &amp; Messkonzepte</h2>
                         <p className="lead">Die korrekte Erfassung von Energieströmen ist die Grundlage für jede Abrechnung und Optimierung. Wir errichten normgerechte Zählerplätze und entwickeln intelligente Messkonzepte für anspruchsvolle Anwendungsfälle.</p>
                         
                         <h3>Unsere Leistungen im Überblick</h3>

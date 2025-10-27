@@ -537,6 +537,7 @@ const PhotovoltaikGewerbePage: React.FC = () => {
         </section>
       </article>
     </main>
+    </div>
   );
 };
 

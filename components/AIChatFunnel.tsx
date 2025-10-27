@@ -851,7 +851,6 @@ const AIChatFunnel: React.FC<AIChatFunnelProps> = ({ onOpen, currentPage, initia
         try {
             // Step 1 & 2: Find a valid satellite image by trying different zoom levels and validating with AI
             for (const zoom of zoomLevels) {
-                console.log(`Trying zoom level ${zoom} for address: ${address}`);
                 const mapUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${encodeURIComponent(address)}&zoom=${zoom}&size=600x600&maptype=satellite&key=${process.env.API_KEY}`;
                 const mapResponse = await fetch(mapUrl);
                 if (!mapResponse.ok) {
@@ -896,7 +895,6 @@ const AIChatFunnel: React.FC<AIChatFunnelProps> = ({ onOpen, currentPage, initia
                 try {
                     const validationResponse = await callGeminiWithRetry<GenerateContentResponse>(validationApiCall, 2); // Fewer retries for validation
                     const validationResult = JSON.parse(validationResponse.text);
-                    console.log(`Validation for zoom ${zoom}:`, validationResult);
     
                     if (validationResult.isValid) {
                         bestImage = { base64: base64data, dataUrl };

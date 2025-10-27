@@ -50,13 +50,13 @@ export interface CustomerData {
 }
 
 
-export const mockCustomer: CustomerData = {
-    id: 'cus_12345',
-    name: 'Dr. Anna Schneider',
-    email: 'kunde@test.de',
-    companyName: 'Schneider Logistik GmbH',
-    address: 'Industriestraße 5, 14482 Potsdam',
-    phone: '+49 176 12345678',
+export const customerData: CustomerData = {
+    id: 'cus_001',
+    name: 'Thomas Müller',
+    email: 't.mueller@logistik-berlin.de',
+    companyName: 'Müller Logistik GmbH',
+    address: 'Industriestraße 15, 14482 Potsdam',
+    phone: '+49 331 88765432',
     projects: [
         {
             id: 'proj_abc',
@@ -79,13 +79,13 @@ export const mockCustomer: CustomerData = {
                 { date: '2023-03-10', event: 'Anfrage eingegangen' },
             ],
             messages: [
-                { id: 'msg_1', date: '2023-07-25', from: 'ZOE Solar', text: 'Guten Tag Frau Dr. Schneider, die Installation ist fast abgeschlossen. Wir planen die Inbetriebnahme für Anfang August. Passt Ihnen der 01.08.?' },
+                { id: 'msg_1', date: '2023-07-25', from: 'ZOE Solar', text: 'Guten Tag Herr Müller, die Installation ist fast abgeschlossen. Wir planen die Inbetriebnahme für Anfang August. Passt Ihnen der 01.08.?' },
                 { id: 'msg_2', date: '2023-07-26', from: 'Kunde', text: 'Hallo, ja der 1. August passt perfekt. Wir freuen uns!' }
             ]
         },
         {
             id: 'proj_def',
-            name: 'Ladepark für Mitarbeiter',
+            name: 'Mitarbeiter-Ladepark Potsdam',
             status: 'Angebot',
             power: '220 kW (20 Ladesäulen)',
             startDate: '2024-06-20',
@@ -94,11 +94,11 @@ export const mockCustomer: CustomerData = {
             ],
             invoices: [],
             history: [
-                 { date: '2024-07-10', event: 'Angebot erstellt' },
-                 { date: '2024-06-20', event: 'Anfrage für Ladepark gestellt' }
+                 { date: '2024-07-10', event: 'Angebot für Mitarbeiter-Ladepark erstellt' },
+                 { date: '2024-06-20', event: 'Anfrage für E-Mobilität-Lösung gestellt' }
             ],
             messages: [
-                 { id: 'msg_3', date: '2024-07-10', from: 'ZOE Solar', text: 'Sehr geehrte Frau Dr. Schneider, anbei das Angebot für Ihren neuen Mitarbeiter-Ladepark. Bei Fragen stehen wir Ihnen jederzeit zur Verfügung.' }
+                 { id: 'msg_3', date: '2024-07-10', from: 'ZOE Solar', text: 'Sehr geehrter Herr Müller, anbei das Angebot für Ihren neuen Mitarbeiter-Ladepark mit 20 Ladestationen. Bei Fragen stehen wir Ihnen jederzeit zur Verfügung.' }
             ]
         }
     ]

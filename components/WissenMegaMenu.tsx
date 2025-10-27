@@ -6,7 +6,8 @@ import { glossarData, GlossarItem } from '../data/glossarData';
 
 interface WissenMegaMenuProps {
   setPage: (page: Page) => void;
-  onSelectWissen: (slug: string) => void; 
+  // onSelectWissen erwartet nun ein Page-Key (z.B. 'wissens-hub', 'magazin', 'article-detail', ...)
+  onSelectWissen: (page: Page) => void;
   closeMenu: () => void;
 }
 
@@ -48,6 +49,16 @@ const wissenData: WissenDataItem[] = [
     }
   },
   {
+    id: 'aktuelles',
+    icon: <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-slate-500 group-data-[active=true]:text-green-600 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12.75A7.5 7.5 0 1112 5.25v0a7.5 7.5 0 017.5 7.5z" /><path strokeLinecap="round" strokeLinejoin="round" d="M12 7.5h6m-6 3h6M9.75 15H12m-4.5 0h.008v.008H7.5V15z" /></svg>,
+    title: 'Aktuelles',
+    page: 'aktuelles',
+    featured: {
+        type: 'article',
+        item: articles.find(a => a.slug === 'aktuelles') || articles.find(a => a.category === 'aktuelles') || articles[0],
+    }
+  },
+  {
     id: 'glossar',
     icon: <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-slate-500 group-data-[active=true]:text-green-600 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" /></svg>,
     title: 'Solar-Glossar',
@@ -86,14 +97,16 @@ export const WissenMegaMenu: React.FC<WissenMegaMenuProps> = ({ setPage, onSelec
   const [activeItem, setActiveItem] = useState(wissenData[0]);
   
   const handleSelect = (id: string, page: Page, slug?: string) => {
+    // For articles/guides we dispatch the select event with the slug, then navigate to the detail page key.
     if (page === 'article-detail' && slug) {
-        document.dispatchEvent(new CustomEvent('select-article', { detail: slug }));
+      document.dispatchEvent(new CustomEvent('select-article', { detail: slug }));
+      onSelectWissen('article-detail');
     } else if (page === 'guide-detail' && slug) {
-        document.dispatchEvent(new CustomEvent('select-guide', { detail: slug }));
-    } else if (page === 'diy-hub') {
-        setPage('diy-hub');
+      document.dispatchEvent(new CustomEvent('select-guide', { detail: slug }));
+      onSelectWissen('guide-detail');
     } else {
-        onSelectWissen(id);
+      // For normal knowledge pages use the page key
+      onSelectWissen(page);
     }
     closeMenu();
   };

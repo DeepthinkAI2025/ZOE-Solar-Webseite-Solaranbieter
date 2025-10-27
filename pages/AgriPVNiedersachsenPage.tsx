@@ -2,6 +2,13 @@ import React from 'react';
 import { Page } from '../types';
 import PageHero from '../components/PageHero';
 import { pageHeroData } from '../data/pageContent';
+import PainPoints from '../components/PainPoints';
+import Solutions from '../components/Solutions';
+import Process from '../components/Process';
+import ProjectGallery from '../components/ProjectGallery';
+import PricingSection from '../components/PricingSection';
+import GuaranteeSection from '../components/GuaranteeSection';
+import FAQ from '../components/FAQ';
 
 const AgriPVNiedersachsenPage: React.FC = () => {
   const heroData = {
@@ -172,6 +179,14 @@ const AgriPVNiedersachsenPage: React.FC = () => {
             </div>
           </div>
         </div>
+
+        <PainPoints />
+        <Solutions />
+        <Process customerType="business" />
+        <ProjectGallery customerType="business" />
+        <PricingSection customerType="business" />
+        <GuaranteeSection />
+        <FAQ customerType="business" />
 
         {/* CTA Sektion */}
         <div className="bg-green-600 text-white p-8 rounded-lg text-center">

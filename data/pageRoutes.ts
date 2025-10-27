@@ -1,5 +1,9 @@
 import { Page } from '../types';
 
+/**
+ * Zentralisiertes Mapping von Page-Keys auf die tatsächlichen Routen,
+ * abgestimmt auf die in App.tsx definierten <Route>-Paths.
+ */
 export const pageToPath: Record<Page, string> = {
   home: '/',
   photovoltaik: '/photovoltaik',
@@ -7,7 +11,7 @@ export const pageToPath: Record<Page, string> = {
   preise: '/preise',
   projekte: '/projekte',
   produkte: '/produkte',
-  'hersteller-detail': '/produkte',
+  'hersteller-detail': '/hersteller/:slug',
   'ueber-uns': '/ueber-uns',
   karriere: '/karriere',
   kontakt: '/kontakt',
@@ -16,16 +20,16 @@ export const pageToPath: Record<Page, string> = {
   'service-speicher': '/service/speicher',
   nachhaltigkeit: '/nachhaltigkeit',
   aktuelles: '/aktuelles',
-  'article-detail': '/aktuelles',
+  'article-detail': '/artikel/:slug',
   anwendungsfaelle: '/anwendungsfaelle',
-  'anwendungsfall-detail': '/anwendungsfaelle',
+  'anwendungsfall-detail': '/anwendungsfaelle/:slug',
   login: '/login',
   dashboard: '/dashboard',
   empfehlungspraemie: '/empfehlungspraemie',
   'wissens-hub': '/wissens-hub',
   magazin: '/magazin',
   glossar: '/glossar',
-  'guide-detail': '/wissen',
+  'guide-detail': '/leitfaden/:slug',
   innovations: '/innovationen',
   finanzierung: '/finanzierung',
   sonderaktionen: '/sonderaktionen',
@@ -37,7 +41,7 @@ export const pageToPath: Record<Page, string> = {
   presse: '/presse',
   'wartung-service': '/wartung-service',
   garantieabwicklung: '/garantieabwicklung',
-  'foerdermittel-check': '/foerdermittel/check',
+  'foerdermittel-check': '/foerdermittel-check',
   'diy-hub': '/diy-hub',
   'agri-pv': '/agri-pv',
   team: '/team',
@@ -51,40 +55,61 @@ export const pageToPath: Record<Page, string> = {
   'service-netzanschluss': '/service/netzanschluss',
   'service-verteilerbau': '/service/verteilerbau',
   'service-zaehlerbau': '/service/zaehlerbau',
-  standort: '/standort/:city',
+  // Match Param name with App.tsx route (/:stadt)
+  standort: '/standort/:stadt',
   'agri-pv-brandenburg': '/agri-pv/brandenburg',
   'agri-pv-sachsen-anhalt': '/agri-pv/sachsen-anhalt',
   'agri-pv-niedersachsen': '/agri-pv/niedersachsen',
   'agri-pv-bayern': '/agri-pv/bayern',
   'agri-pv-nordrhein-westfalen': '/agri-pv/nordrhein-westfalen',
-  'eigenheim': '/eigenheim',
-  'eigenheim-kosten': '/eigenheim-kosten',
-  'eigenheim-einfamilienhaus-kosten': '/eigenheim-einfamilienhaus-kosten',
-  'eigenheim-planung': '/eigenheim-planung',
-  'photovoltaik-gewerbe': '/photovoltaik-gewerbe',
-  'photovoltaik-logistikzentren': '/photovoltaik-logistikzentren',
-  'photovoltaik-einzelhandel': '/photovoltaik-einzelhandel',
-  'photovoltaik-installation-dach': '/photovoltaik-installation-dach',
-  'eigenheim-installation': '/eigenheim-installation',
+  eigenheim: '/eigenheim',
+  'eigenheim-kosten': '/eigenheim/kosten',
+  'eigenheim-einfamilienhaus-kosten': '/eigenheim/einfamilienhaus-kosten',
+  'eigenheim-planung': '/eigenheim/planung',
+  'photovoltaik-gewerbe': '/photovoltaik/gewerbe',
+  'photovoltaik-logistikzentren': '/photovoltaik/logistikzentren',
+  'photovoltaik-einzelhandel': '/photovoltaik/einzelhandel',
+  'photovoltaik-installation-dach': '/photovoltaik/installation-dach',
+  'eigenheim-installation': '/eigenheim/installation',
   'seo-monitoring': '/seo-monitoring',
   fallstudien: '/fallstudien',
-  'fallstudie-detail': '/fallstudie',
+  'fallstudie-detail': '/fallstudien/:slug',
   'agri-pv-erfahrungen': '/agri-pv-erfahrungen',
   'mitarbeiter-login': '/mitarbeiter-login',
-  'photovoltaik-rechner-gewerbe': '/photovoltaik-rechner-gewerbe',
-  'photovoltaik-planung-gewerbe': '/photovoltaik-planung-gewerbe',
+  'photovoltaik-rechner-gewerbe': '/photovoltaik/rechner-gewerbe',
+  'photovoltaik-planung-gewerbe': '/photovoltaik/planung-gewerbe',
 };
 
 export const derivePageFromPath = (pathname: string): Page => {
+  // Specific param routes first
   if (pathname === '/') return 'home';
+
+  // Article, guide and manufacturer detail routes
+  if (pathname.startsWith('/artikel/')) return 'article-detail';
+  if (pathname.startsWith('/leitfaden/')) return 'guide-detail';
+  if (pathname.startsWith('/hersteller/')) return 'hersteller-detail';
+
+  // Photovoltaik subpages (specific before generic /photovoltaik)
+  if (pathname.startsWith('/photovoltaik/logistikzentren')) return 'photovoltaik-logistikzentren';
+  if (pathname.startsWith('/photovoltaik/einzelhandel')) return 'photovoltaik-einzelhandel';
+  if (pathname.startsWith('/photovoltaik/installation-dach')) return 'photovoltaik-installation-dach';
+  if (pathname.startsWith('/photovoltaik/industrie')) return 'photovoltaik-industrie';
+  if (pathname.startsWith('/photovoltaik/landwirtschaft')) return 'photovoltaik-landwirtschaft';
+  if (pathname.startsWith('/photovoltaik/gewerbe')) return 'photovoltaik-gewerbe';
+  if (pathname.startsWith('/photovoltaik/rechner-gewerbe')) return 'photovoltaik-rechner-gewerbe';
+  if (pathname.startsWith('/photovoltaik/planung-gewerbe')) return 'photovoltaik-planung-gewerbe';
   if (pathname.startsWith('/photovoltaik')) return 'photovoltaik';
+
   if (pathname.startsWith('/e-mobilitaet')) return 'e-mobilitaet';
   if (pathname.startsWith('/elektro')) return 'elektro';
   if (pathname.startsWith('/preise')) return 'preise';
   if (pathname.startsWith('/projekte')) return 'projekte';
+
+  // Produkte / Hersteller
   if (pathname.startsWith('/produkte')) {
     return pathname.split('/').filter(Boolean).length > 1 ? 'hersteller-detail' : 'produkte';
   }
+
   if (pathname.startsWith('/ueber-uns')) return 'ueber-uns';
   if (pathname.startsWith('/team')) return 'team';
   if (pathname.startsWith('/warum-zoe-solar')) return 'warum-zoe-solar';
@@ -99,16 +124,19 @@ export const derivePageFromPath = (pathname: string): Page => {
   if (pathname.startsWith('/service/ladeparks')) return 'service-ladeparks';
   if (pathname.startsWith('/service/speicher')) return 'service-speicher';
   if (pathname.startsWith('/nachhaltigkeit')) return 'nachhaltigkeit';
+
+  // Aktuelles / Artikel list
   if (pathname.startsWith('/aktuelles')) {
     return pathname.split('/').filter(Boolean).length > 1 ? 'article-detail' : 'aktuelles';
   }
+
   if (pathname.startsWith('/anwendungsfaelle')) {
     return pathname.split('/').filter(Boolean).length > 1 ? 'anwendungsfall-detail' : 'anwendungsfaelle';
   }
+
   if (pathname.startsWith('/login')) return 'login';
   if (pathname.startsWith('/dashboard')) return 'dashboard';
   if (pathname.startsWith('/empfehlungspraemie')) return 'empfehlungspraemie';
-  if (pathname.startsWith('/wissen/guide')) return 'guide-detail';
   if (pathname.startsWith('/glossar')) return 'glossar';
   if (pathname.startsWith('/wissen/faq')) return 'faq-page';
   if (pathname.startsWith('/wissens-hub')) return 'wissens-hub';
@@ -134,26 +162,22 @@ export const derivePageFromPath = (pathname: string): Page => {
   if (pathname.startsWith('/agri-pv/niedersachsen')) return 'agri-pv-niedersachsen';
   if (pathname.startsWith('/agri-pv/bayern')) return 'agri-pv-bayern';
   if (pathname.startsWith('/agri-pv/nordrhein-westfalen')) return 'agri-pv-nordrhein-westfalen';
+
   if (pathname.startsWith('/eigenheim')) {
-    if (pathname === '/eigenheim-kosten') return 'eigenheim-kosten';
-    if (pathname === '/eigenheim-einfamilienhaus-kosten') return 'eigenheim-einfamilienhaus-kosten';
-    if (pathname === '/eigenheim-planung') return 'eigenheim-planung';
-    if (pathname === '/eigenheim-installation') return 'eigenheim-installation';
+    if (pathname === '/eigenheim/kosten') return 'eigenheim-kosten';
+    if (pathname === '/eigenheim/einfamilienhaus-kosten') return 'eigenheim-einfamilienhaus-kosten';
+    if (pathname === '/eigenheim/planung') return 'eigenheim-planung';
+    if (pathname === '/eigenheim/installation') return 'eigenheim-installation';
     return 'eigenheim';
   }
-  if (pathname.startsWith('/photovoltaik-gewerbe')) return 'photovoltaik-gewerbe';
-  if (pathname.startsWith('/photovoltaik-industrie')) return 'photovoltaik-industrie';
-  if (pathname.startsWith('/photovoltaik-landwirtschaft')) return 'photovoltaik-landwirtschaft';
-  if (pathname.startsWith('/photovoltaik-gewerbegebaeude')) return 'photovoltaik-gewerbegebaeude';
-  if (pathname.startsWith('/photovoltaik-logistikzentren')) return 'photovoltaik-logistikzentren';
-  if (pathname.startsWith('/photovoltaik-einzelhandel')) return 'photovoltaik-einzelhandel';
-  if (pathname.startsWith('/photovoltaik-installation-dach')) return 'photovoltaik-installation-dach';
+
   if (pathname.startsWith('/seo-monitoring')) return 'seo-monitoring';
   if (pathname.startsWith('/fallstudien')) return 'fallstudien';
-  if (pathname.startsWith('/fallstudie/')) return 'fallstudie-detail';
+  if (pathname.startsWith('/fallstudien/')) return 'fallstudie-detail';
   if (pathname.startsWith('/agri-pv-erfahrungen')) return 'agri-pv-erfahrungen';
   if (pathname.startsWith('/mitarbeiter-login')) return 'mitarbeiter-login';
   if (pathname.startsWith('/photovoltaik-rechner-gewerbe')) return 'photovoltaik-rechner-gewerbe';
-  if (pathname.startsWith('/photovoltaik-planung-gewerbe')) return 'photovoltaik-planung-gewerbe';
+  if (pathname.startsWith('/photovoltaik/planung-gewerbe')) return 'photovoltaik-planung-gewerbe';
+
   return 'home';
 };
