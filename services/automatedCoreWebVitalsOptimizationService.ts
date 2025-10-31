@@ -692,3 +692,4 @@ const worker = new Worker('./worker.js');`,
 
 export const automatedCoreWebVitalsOptimizationService = AutomatedCoreWebVitalsOptimizationService.getInstance();
 export default automatedCoreWebVitalsOptimizationService;
+export { AutomatedCoreWebVitalsOptimizationService };

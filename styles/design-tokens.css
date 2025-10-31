@@ -1,0 +1,382 @@
+/* ===== ZOE SOLAR STATE-OF-THE-ART DESIGN TOKENS ===== */
+/* Advanced Design System with AI-Driven Personalization */
+
+:root {
+  /* ===== CORE COLOR SYSTEM ===== */
+  /* Solar Energy Color Palette */
+  --solar-green-50: #f0fdf4;
+  --solar-green-100: #dcfce7;
+  --solar-green-200: #bbf7d0;
+  --solar-green-300: #86efac;
+  --solar-green-400: #4ade80;
+  --solar-green-500: #22c55e;
+  --solar-green-600: #16a34a;
+  --solar-green-700: #15803d;
+  --solar-green-800: #166534;
+  --solar-green-900: #14532d;
+
+  /* Seasonal Color Variations */
+  --solar-bright-50: #fffbeb;
+  --solar-bright-100: #fef3c7;
+  --solar-bright-200: #fde68a;
+  --solar-bright-300: #fcd34d;
+  --solar-bright-400: #fbbf24;
+  --solar-bright-500: #f59e0b;
+
+  --solar-soft-50: #eff6ff;
+  --solar-soft-100: #dbeafe;
+  --solar-soft-200: #bfdbfe;
+  --solar-soft-300: #93c5fd;
+  --solar-soft-400: #60a5fa;
+  --solar-soft-500: #3b82f6;
+
+  /* ===== SEMANTIC COLORS ===== */
+  --primary: var(--solar-green-600);
+  --primary-hover: var(--solar-green-700);
+  --primary-light: var(--solar-green-100);
+  --secondary: var(--solar-soft-500);
+  --accent: var(--solar-bright-500);
+  --success: var(--solar-green-500);
+  --warning: var(--solar-bright-500);
+  --error: #ef4444;
+  --info: var(--solar-soft-500);
+
+  /* ===== NEUTRAL PALETTE ===== */
+  --neutral-50: #f8fafc;
+  --neutral-100: #f1f5f9;
+  --neutral-200: #e2e8f0;
+  --neutral-300: #cbd5e1;
+  --neutral-400: #94a3b8;
+  --neutral-500: #64748b;
+  --neutral-600: #475569;
+  --neutral-700: #334155;
+  --neutral-800: #1e293b;
+  --neutral-900: #0f172a;
+
+  /* ===== TYPOGRAPHY SYSTEM ===== */
+  /* Font Families */
+  --font-primary: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  --font-display: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Font Sizes - Fluid Typography */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  --text-base: clamp(1rem, 0.925rem + 0.375vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.625vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  --text-3xl: clamp(1.875rem, 1.6rem + 1.375vw, 2.5rem);
+  --text-4xl: clamp(2.25rem, 1.9rem + 1.75vw, 3rem);
+  --text-5xl: clamp(3rem, 2.5rem + 2.5vw, 4rem);
+
+  /* Font Weights */
+  --font-thin: 100;
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
+
+  /* Line Heights */
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 2;
+
+  /* ===== SPACING SYSTEM ===== */
+  /* Consistent spacing scale */
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+  --space-40: 10rem;
+  --space-48: 12rem;
+  --space-56: 14rem;
+  --space-64: 16rem;
+
+  /* ===== BORDER RADIUS SYSTEM ===== */
+  --radius-none: 0;
+  --radius-sm: 0.125rem;
+  --radius-base: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* ===== SHADOW SYSTEM ===== */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-base: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+
+  /* Colored Shadows */
+  --shadow-solar: 0 10px 15px -3px rgb(34 197 94 / 0.3), 0 4px 6px -4px rgb(34 197 94 / 0.2);
+  --shadow-solar-lg: 0 20px 25px -5px rgb(34 197 94 / 0.4), 0 8px 10px -6px rgb(34 197 94 / 0.3);
+  --shadow-amber: 0 10px 15px -3px rgb(245 158 11 / 0.3), 0 4px 6px -4px rgb(245 158 11 / 0.2);
+
+  /* ===== ANIMATION SYSTEM ===== */
+  /* Animation Durations */
+  --duration-75: 75ms;
+  --duration-100: 100ms;
+  --duration-150: 150ms;
+  --duration-200: 200ms;
+  --duration-300: 300ms;
+  --duration-500: 500ms;
+  --duration-700: 700ms;
+  --duration-1000: 1000ms;
+
+  /* Animation Timing Functions */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-elastic: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+  /* ===== Z-INDEX SYSTEM ===== */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+  --z-toast: 1080;
+
+  /* ===== BREAKPOINT SYSTEM ===== */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* ===== CONTAINER WIDTHS ===== */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1400px;
+}
+
+/* ===== DARK THEME VARIABLES ===== */
+[data-theme="dark"] {
+  --neutral-50: #0f172a;
+  --neutral-100: #1e293b;
+  --neutral-200: #334155;
+  --neutral-300: #475569;
+  --neutral-400: #64748b;
+  --neutral-500: #94a3b8;
+  --neutral-600: #cbd5e1;
+  --neutral-700: #e2e8f0;
+  --neutral-800: #f1f5f9;
+  --neutral-900: #f8fafc;
+
+  --background: var(--neutral-50);
+  --foreground: var(--neutral-900);
+}
+
+/* ===== SEASONAL THEME VARIABLES ===== */
+[data-theme="seasonal-spring"] {
+  --primary: #22c55e;
+  --accent: #ec4899;
+  --background: linear-gradient(135deg, #f0fdf4 0%, #fce7f3 100%);
+}
+
+[data-theme="seasonal-summer"] {
+  --primary: #f59e0b;
+  --accent: #ef4444;
+  --background: linear-gradient(135deg, #fffbeb 0%, #fef2f2 100%);
+}
+
+[data-theme="seasonal-autumn"] {
+  --primary: #ea580c;
+  --accent: #84cc16;
+  --background: linear-gradient(135deg, #fed7aa 0%, #d9f99d 100%);
+}
+
+[data-theme="seasonal-winter"] {
+  --primary: #3b82f6;
+  --accent: #8b5cf6;
+  --background: linear-gradient(135deg, #eff6ff 0%, #ede9fe 100%);
+}
+
+/* ===== GLASSMORPHISM EFFECTS ===== */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(15, 23, 42, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ===== NEUMORPHISM EFFECTS ===== */
+.neuro-light {
+  background: linear-gradient(145deg, #ffffff, #f3f4f6);
+  box-shadow: 20px 20px 60px #d1d5db, -20px -20px 60px #ffffff;
+}
+
+.neuro-dark {
+  background: linear-gradient(145deg, #1f2937, #111827);
+  box-shadow: 20px 20px 60px #0f172a, -20px -20px 60px #374151;
+}
+
+/* ===== ANIMATION KEYFRAMES ===== */
+@keyframes pulse-solar {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glow-solar {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(34, 197, 94, 0.8);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ken-burns {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  25% {
+    transform: scale(1.1) translate(-5%, -5%);
+  }
+  50% {
+    transform: scale(1.2) translate(-3%, -3%);
+  }
+  75% {
+    transform: scale(1.1) translate(3%, 3%);
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
+}
+
+/* ===== UTILITY CLASSES ===== */
+.animate-pulse-solar {
+  animation: pulse-solar var(--duration-2000) var(--ease-in-out) infinite;
+}
+
+.animate-float {
+  animation: float var(--duration-3000) var(--ease-in-out) infinite;
+}
+
+.animate-glow-solar {
+  animation: glow-solar var(--duration-2000) var(--ease-in-out) infinite;
+}
+
+.animate-slide-up {
+  animation: slide-up var(--duration-500) var(--ease-out);
+}
+
+.animate-ken-burns {
+  animation: ken-burns var(--duration-10000) var(--ease-in-out) infinite alternate;
+}
+
+/* ===== RESPONSIVE TYPOGRAPHY ===== */
+@media (max-width: 768px) {
+  :root {
+    --text-4xl: clamp(2rem, 1.8rem + 1vw, 2.5rem);
+    --text-3xl: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  }
+}
+
+/* ===== ACCESSIBILITY ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ===== HIGH CONTRAST MODE ===== */
+@media (prefers-contrast: high) {
+  :root {
+    --primary: #000000;
+    --background: #ffffff;
+    --foreground: #000000;
+  }
+}
+
+/* ===== FOCUS VISIBLE ===== */
+.focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* ===== CURSOR EFFECTS ===== */
+.cursor-glow {
+  cursor: pointer;
+  position: relative;
+}
+
+.cursor-glow::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(34, 197, 94, 0.3) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  transition: width var(--duration-300) var(--ease-out),
+              height var(--duration-300) var(--ease-out);
+}
+
+.cursor-glow:hover::before {
+  width: 100px;
+  height: 100px;
+}

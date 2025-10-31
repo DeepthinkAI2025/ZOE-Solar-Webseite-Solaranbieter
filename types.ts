@@ -77,6 +77,7 @@ export type Page =
     | 'ueber-uns'
     | 'karriere'
     | 'kontakt'
+    | 'leistungen'
     | 'service-photovoltaik'
     | 'service-ladeparks'
     | 'service-speicher'

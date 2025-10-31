@@ -18,22 +18,36 @@ interface HeaderProps {
   onSelectWissen: (slug: string) => void;
   isLoggedIn: boolean;
   onLogout: () => void;
-  theme: 'day' | 'night';
+  theme: 'day' | 'night' | 'seasonal';
   onToggleTheme: () => void;
+  userPreferences: any;
+  voiceInterfaceActive: boolean;
+  arMode: boolean;
+  gestureControl: boolean;
 }
 
 type DropdownType = 'leistungen' | 'produkte' | 'wissen' | 'preise' | null;
 
-const Header: React.FC<HeaderProps> = ({ currentPage, setPage, openCommandHub, bannerHeight, onHeightChange, onSelectHersteller, onSelectWissen, isLoggedIn, onLogout, theme, onToggleTheme }) => {
+const Header: React.FC<HeaderProps> = ({
+  currentPage, setPage, openCommandHub, bannerHeight, onHeightChange,
+  onSelectHersteller, onSelectWissen, isLoggedIn, onLogout, theme, onToggleTheme,
+  userPreferences, voiceInterfaceActive, arMode, gestureControl
+}) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<DropdownType>(null);
   const [isCtaDropdownOpen, setIsCtaDropdownOpen] = useState(false);
   const [isMobileCtaOpen, setIsMobileCtaOpen] = useState(false);
-  
+
+  // ===== STATE-OF-THE-ART FEATURES =====
+  const [isVoiceListening, setIsVoiceListening] = useState(false);
+  const [arPreview, setArPreview] = useState(false);
+  const [gestureHint, setGestureHint] = useState('');
+
   const headerRef = useRef<HTMLElement>(null);
   const dropdownTimeout = useRef<number | null>(null);
   const ctaDropdownRef = useRef<HTMLDivElement>(null);
   const mobileCtaRef = useRef<HTMLDivElement>(null);
+  const voiceRecognitionRef = useRef<any>(null);
 
    useEffect(() => {
     const handleResize = () => {
@@ -175,7 +189,101 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setPage, openCommandHub, b
   const isWissenActive = ['wissens-hub', 'magazin', 'glossar', 'aktuelles', 'article-detail', 'guide-detail', 'faq-page', 'diy-hub'].includes(currentPage);
   const isPreiseActive = ['preise', 'finanzierung', 'foerdermittel-check', 'sonderaktionen'].includes(currentPage);
   const isNight = theme === 'night';
+  const isSeasonal = theme === 'seasonal';
   const dropdownActiveClass = isNight ? 'text-emerald-200 !border-b-transparent' : 'text-green-600 !border-b-transparent';
+
+  // ===== ADVANCED NAVIGATION EFFECTS =====
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY;
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = (scrolled / maxScroll) * 100;
+      setScrollProgress(progress);
+    };
+
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
+  // Voice interface handler
+  const toggleVoiceListening = () => {
+    if (!voiceInterfaceActive) return;
+
+    if (isVoiceListening) {
+      if (voiceRecognitionRef.current) {
+        voiceRecognitionRef.current.stop();
+      }
+      setIsVoiceListening(false);
+    } else {
+      const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+      if (SpeechRecognition) {
+        const recognition = new SpeechRecognition();
+        recognition.continuous = false;
+        recognition.interimResults = true;
+        recognition.lang = 'de-DE';
+
+        recognition.onresult = (event: any) => {
+          const command = event.results[0][0].transcript.toLowerCase();
+          handleVoiceCommand(command);
+        };
+
+        recognition.onend = () => {
+          setIsVoiceListening(false);
+        };
+
+        recognition.start();
+        voiceRecognitionRef.current = recognition;
+        setIsVoiceListening(true);
+      }
+    }
+  };
+
+  const handleVoiceCommand = (command: string) => {
+    if (command.includes('finanzierung')) {
+      setPage('finanzierung');
+    } else if (command.includes('kontakt')) {
+      setPage('kontakt');
+    } else if (command.includes('photovoltaik')) {
+      setPage('photovoltaik');
+    } else if (command.includes('produkte')) {
+      setPage('produkte');
+    }
+  };
+
+  // AR mode toggle
+  const toggleARMode = () => {
+    setArPreview(!arPreview);
+    // In a real implementation, this would trigger AR camera access
+    if ('xr' in navigator) {
+      console.log('WebXR supported');
+    }
+  };
+
+  // Advanced theme classes
+  const getThemeClasses = () => {
+    if (isSeasonal) {
+      return userPreferences?.colorScheme === 'solar-bright'
+        ? 'bg-gradient-to-r from-amber-50 to-orange-50 border-amber-200/50'
+        : userPreferences?.colorScheme === 'solar-soft'
+        ? 'bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200/50'
+        : 'bg-gradient-to-r from-purple-50 to-pink-50 border-purple-200/50';
+    }
+    return isNight
+      ? 'bg-slate-950/80 border-b border-slate-800/70'
+      : 'bg-white/95 border-b border-slate-200/80';
+  };
 
 
   const navLinkClasses = (page: Page | 'leistungen_parent' | 'produkte_parent' | 'wissen_parent' | 'preise_parent') => {
@@ -303,6 +411,66 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setPage, openCommandHub, b
             </div>
             
       <div className={`flex items-center gap-3 pl-4 border-l ${isNight ? 'border-slate-700' : 'border-slate-200'}`}>
+        {/* Voice Interface Button */}
+        {voiceInterfaceActive && (
+          <button
+            onClick={toggleVoiceListening}
+            title={`Sprachsteuerung ${isVoiceListening ? 'deaktivieren' : 'aktivieren'}`}
+            aria-label={`Sprachsteuerung ${isVoiceListening ? 'deaktivieren' : 'aktivieren'}`}
+            className={`p-2 rounded-full transition-all duration-300 relative ${
+              isVoiceListening
+                ? 'bg-red-500 text-white animate-pulse shadow-lg shadow-red-500/50'
+                : isNight
+                ? 'text-slate-200 hover:bg-slate-800'
+                : 'text-slate-500 hover:bg-slate-200'
+            }`}
+          >
+            {isVoiceListening ? (
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+                <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+              </svg>
+            ) : (
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+              </svg>
+            )}
+            {isVoiceListening && (
+              <span className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-ping"></span>
+            )}
+          </button>
+        )}
+
+        {/* AR Mode Button */}
+        {arMode && (
+          <button
+            onClick={toggleARMode}
+            title={`AR-Modus ${arPreview ? 'deaktivieren' : 'aktivieren'}`}
+            aria-label={`AR-Modus ${arPreview ? 'deaktivieren' : 'aktivieren'}`}
+            className={`p-2 rounded-full transition-all duration-300 ${
+              arPreview
+                ? 'bg-purple-500 text-white shadow-lg shadow-purple-500/50'
+                : isNight
+                ? 'text-slate-200 hover:bg-slate-800'
+                : 'text-slate-500 hover:bg-slate-200'
+            }`}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+            </svg>
+          </button>
+        )}
+
+        {/* Gesture Control Indicator */}
+        {gestureControl && (
+          <div className="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white text-xs font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
+            </svg>
+            Geste aktiv
+          </div>
+        )}
+
         <button onClick={openCommandHub} title="Suchen (Cmd+K)" aria-label="Suchen (Cmd+K)" className={`p-2 rounded-full transition-colors duration-200 ${isNight ? 'text-slate-200 hover:bg-slate-800' : 'text-slate-500 hover:bg-slate-200'}`}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                 </button>
