@@ -48,6 +48,7 @@ const AgriPVSachsenAnhaltPage = lazy(() => import('./pages/AgriPVSachsenAnhaltPa
 const AgriPVNiedersachsenPage = lazy(() => import('./pages/AgriPVNiedersachsenPage'));
 const AgriPVBayernPage = lazy(() => import('./pages/AgriPVBayernPage'));
 const AgriPVNordrheinWestfalenPage = lazy(() => import('./pages/AgriPVNordrheinWestfalenPage'));
+const LeistungenPage = lazy(() => import('./pages/LeistungenPage'));
 const SEOMonitoringPage = lazy(() => import('./pages/SEOMonitoringPage'));
 const UnifiedStrategyDashboardPage = lazy(() => import('./pages/UnifiedStrategyDashboardPage'));
 const LoginPage = lazy(() => import('./pages/LoginPage'));
@@ -267,8 +268,6 @@ const App: React.FC = () => {
         setPage={handleSetPage}
         isLoggedIn={isLoggedIn}
         onLogout={handleLogout}
-        theme="day"
-        onToggleTheme={() => {}}
       />
       {/* SEO Schema Markup */}
       <script type="application/ld+json">
@@ -363,6 +362,7 @@ const App: React.FC = () => {
       <Suspense fallback={<div className="flex justify-center items-center min-h-screen"><div className="loader"></div></div>}>
         <Routes>
           <Route path="/" element={<HomePage setPage={handleSetPage} onSelectAnwendungsfall={handleSelectAnwendungsfall} onSelectHersteller={handleSelectHersteller} />} />
+          <Route path="/leistungen" element={<LeistungenPage />} />
           <Route path="/photovoltaik" element={<PhotovoltaikPage setPage={handleSetPage} />} />
           <Route path="/e-mobilitaet" element={<EMobilitaetPage setPage={handleSetPage} />} />
           <Route path="/elektro" element={<ElektroPage setPage={handleSetPage} />} />

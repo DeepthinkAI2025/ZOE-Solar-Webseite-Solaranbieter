@@ -2,13 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 // FIX: Changed import to ../types to resolve circular dependency with App.tsx
 import { Page } from '../types';
-import PhotovoltaikMegaMenu from './PhotovoltaikMegaMenu';
+import LeistungenMegaMenu from './LeistungenMegaMenu';
 import ProductsMegaMenu from './ProductsMegaMenu';
-import EMobilitaetMegaMenu from './EMobilitaetMegaMenu';
 // FIX: The module does not have a default export, so we use a named import.
 import { WissenMegaMenu } from './WissenMegaMenu';
 import PreiseMegaMenu from './PreiseMegaMenu';
-import ElektroMegaMenu from './ElektroMegaMenu';
 
 interface HeaderProps {
   currentPage: Page;
@@ -24,7 +22,7 @@ interface HeaderProps {
   onToggleTheme: () => void;
 }
 
-type DropdownType = 'photovoltaik' | 'produkte' | 'e-mobilitaet' | 'wissen' | 'preise' | 'elektro' | null;
+type DropdownType = 'leistungen' | 'produkte' | 'wissen' | 'preise' | null;
 
 const Header: React.FC<HeaderProps> = ({ currentPage, setPage, openCommandHub, bannerHeight, onHeightChange, onSelectHersteller, onSelectWissen, isLoggedIn, onLogout, theme, onToggleTheme }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -94,18 +92,15 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setPage, openCommandHub, b
                     page = 'home';
                     break;
                 case '2':
-                    page = 'photovoltaik';
+                    page = 'leistungen';
                     break;
                 case '3':
                     page = 'produkte';
                     break;
                 case '4':
-                    page = 'e-mobilitaet';
-                    break;
-                case '5':
                     page = 'wissens-hub';
                     break;
-                case '6':
+                case '5':
                     page = 'kontakt';
                     break;
                 default:
@@ -170,24 +165,25 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setPage, openCommandHub, b
     }, 200);
   };
   
-  const isPhotovoltaikActive = ['photovoltaik', 'service-photovoltaik', 'service-speicher', 'innovations', 'agri-pv', 'service-anmeldung-pv'].includes(currentPage);
+  const isLeistungenActive = [
+    'photovoltaik', 'service-photovoltaik', 'service-speicher', 'innovations', 'agri-pv', 'service-anmeldung-pv',
+    'e-mobilitaet', 'service-ladeparks', 'service-anmeldung-ladestationen',
+    'elektro', 'service-netzanschluss', 'service-verteilerbau', 'service-zaehlerbau',
+    'wartung-service', 'innovations', 'leistungen'
+  ].includes(currentPage);
   const isProdukteActive = ['produkte', 'hersteller-detail'].includes(currentPage);
-  const isEMobilitaetActive = ['e-mobilitaet', 'service-ladeparks', 'service-anmeldung-ladestationen'].includes(currentPage);
   const isWissenActive = ['wissens-hub', 'magazin', 'glossar', 'aktuelles', 'article-detail', 'guide-detail', 'faq-page', 'diy-hub'].includes(currentPage);
   const isPreiseActive = ['preise', 'finanzierung', 'foerdermittel-check', 'sonderaktionen'].includes(currentPage);
-  const isElektroActive = ['elektro', 'service-netzanschluss', 'service-verteilerbau', 'service-zaehlerbau'].includes(currentPage);
   const isNight = theme === 'night';
   const dropdownActiveClass = isNight ? 'text-emerald-200 !border-b-transparent' : 'text-green-600 !border-b-transparent';
 
 
-  const navLinkClasses = (page: Page | 'photovoltaik_parent' | 'produkte_parent' | 'e-mobilitaet_parent' | 'wissen_parent' | 'preise_parent' | 'elektro_parent') => {
+  const navLinkClasses = (page: Page | 'leistungen_parent' | 'produkte_parent' | 'wissen_parent' | 'preise_parent') => {
     let activeCondition = false;
-    if (page === 'photovoltaik_parent') activeCondition = isPhotovoltaikActive;
+    if (page === 'leistungen_parent') activeCondition = isLeistungenActive;
     else if (page === 'produkte_parent') activeCondition = isProdukteActive;
-    else if (page === 'e-mobilitaet_parent') activeCondition = isEMobilitaetActive;
     else if (page === 'wissen_parent') activeCondition = isWissenActive;
     else if (page === 'preise_parent') activeCondition = isPreiseActive;
-    else if (page === 'elektro_parent') activeCondition = isElektroActive;
     else activeCondition = currentPage === page;
 
     const activeClasses = isNight
@@ -264,45 +260,17 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setPage, openCommandHub, b
                </div>
             </div>
 
-            <div onMouseEnter={() => handleMouseEnter('photovoltaik')} onMouseLeave={handleMouseLeave} className="relative">
+            <div onMouseEnter={() => handleMouseEnter('leistungen')} onMouseLeave={handleMouseLeave} className="relative">
                <NavLink
-                 to="/photovoltaik"
-                 onClick={() => handleLinkClick('photovoltaik')}
-                 className={`${navLinkClasses('photovoltaik_parent')} ${activeDropdown === 'photovoltaik' ? dropdownActiveClass : ''}`}
+                 to="/leistungen"
+                 onClick={() => handleLinkClick('leistungen')}
+                 className={`${navLinkClasses('leistungen_parent')} ${activeDropdown === 'leistungen' ? dropdownActiveClass : ''}`}
                >
-                Photovoltaik
-                <svg className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'photovoltaik' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                Leistungen
+                <svg className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'leistungen' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                </NavLink>
-               <div className={`transition-all duration-300 transform origin-top ${activeDropdown === 'photovoltaik' ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
-                 <PhotovoltaikMegaMenu setPage={handleLinkClick} closeMenu={() => setActiveDropdown(null)} />
-               </div>
-            </div>
-
-            <div onMouseEnter={() => handleMouseEnter('e-mobilitaet')} onMouseLeave={handleMouseLeave} className="relative">
-               <NavLink
-                 to="/e-mobilitaet"
-                 onClick={() => handleLinkClick('e-mobilitaet')}
-                 className={`${navLinkClasses('e-mobilitaet_parent')} ${activeDropdown === 'e-mobilitaet' ? dropdownActiveClass : ''}`}
-               >
-                E-Mobilität
-                <svg className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'e-mobilitaet' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
-               </NavLink>
-               <div className={`transition-all duration-300 transform origin-top ${activeDropdown === 'e-mobilitaet' ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
-                 <EMobilitaetMegaMenu setPage={handleLinkClick} closeMenu={() => setActiveDropdown(null)} />
-               </div>
-            </div>
-
-            <div onMouseEnter={() => handleMouseEnter('elektro')} onMouseLeave={handleMouseLeave} className="relative">
-               <NavLink
-                 to="/elektro"
-                 onClick={() => handleLinkClick('elektro')}
-                 className={`${navLinkClasses('elektro_parent')} ${activeDropdown === 'elektro' ? dropdownActiveClass : ''}`}
-               >
-                Elektro
-                <svg className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'elektro' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
-               </NavLink>
-               <div className={`transition-all duration-300 transform origin-top ${activeDropdown === 'elektro' ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
-                 <ElektroMegaMenu setPage={handleLinkClick} closeMenu={() => setActiveDropdown(null)} />
+               <div className={`transition-all duration-300 transform origin-top ${activeDropdown === 'leistungen' ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
+                 <LeistungenMegaMenu setPage={handleLinkClick} closeMenu={() => setActiveDropdown(null)} />
                </div>
             </div>
             
@@ -432,9 +400,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setPage, openCommandHub, b
             <div className="space-y-2 mb-8">
                 <Link to="/sonderaktionen" onClick={() => handleLinkClick('sonderaktionen')} className="nav-item-stagger block text-yellow-600 hover:text-yellow-700 cursor-pointer text-2xl font-semibold px-4 py-3 rounded-md hover:bg-yellow-50">Aktionen</Link>
                 <Link to="/preise" onClick={() => handleLinkClick('preise')} className="nav-item-stagger block text-slate-700 hover:text-green-600 cursor-pointer text-2xl font-semibold px-4 py-3 rounded-md hover:bg-slate-100">Preise</Link>
-                <Link to="/photovoltaik" onClick={() => handleLinkClick('photovoltaik')} className="nav-item-stagger block text-slate-700 hover:text-green-600 cursor-pointer text-2xl font-semibold px-4 py-3 rounded-md hover:bg-slate-100">Photovoltaik</Link>
-                <Link to="/e-mobilitaet" onClick={() => handleLinkClick('e-mobilitaet')} className="nav-item-stagger block text-slate-700 hover:text-green-600 cursor-pointer text-2xl font-semibold px-4 py-3 rounded-md hover:bg-slate-100">E-Mobilität</Link>
-                <Link to="/elektro" onClick={() => handleLinkClick('elektro')} className="nav-item-stagger block text-slate-700 hover:text-green-600 cursor-pointer text-2xl font-semibold px-4 py-3 rounded-md hover:bg-slate-100">Elektro</Link>
+                <Link to="/leistungen" onClick={() => handleLinkClick('leistungen')} className="nav-item-stagger block text-slate-700 hover:text-green-600 cursor-pointer text-2xl font-semibold px-4 py-3 rounded-md hover:bg-slate-100">Leistungen</Link>
                 <Link to="/produkte" onClick={() => handleLinkClick('produkte')} className="nav-item-stagger block text-slate-700 hover:text-green-600 cursor-pointer text-2xl font-semibold px-4 py-3 rounded-md hover:bg-slate-100">Produkte</Link>
                 <Link to="/wissens-hub" onClick={() => handleLinkClick('wissens-hub')} className="nav-item-stagger block text-slate-700 hover:text-green-600 cursor-pointer text-2xl font-semibold px-4 py-3 rounded-md hover:bg-slate-100">Wissen</Link>
                 <Link to="/kontakt" onClick={() => handleLinkClick('kontakt')} className="nav-item-stagger block text-slate-700 hover:text-green-600 cursor-pointer text-2xl font-semibold px-4 py-3 rounded-md hover:bg-slate-100">Kontakt</Link>
