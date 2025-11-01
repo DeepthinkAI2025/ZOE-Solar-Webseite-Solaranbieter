@@ -1,20 +1,32 @@
 /** @type {import('next').NextConfig} */
+const { performanceConfig, coreWebVitalsTargets, germanSEOConfig } = require('./config/seo-performance-config');
+
 const nextConfig = {
-  // Performance Optimization
+  // Performance Optimization mit Core Web Vitals Fokus
   experimental: {
     optimizeCss: true,
     optimizeServerReact: true,
     scrollRestoration: true,
     largePageDataBytes: 128 * 1000, // 128KB
+    optimizePackageImports: ['lucide-react', 'react-markdown'],
   },
 
-  // Image Optimization für WebP/AVIF
+  // Image Optimization für Core Web Vitals
   images: {
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     domains: ['images.unsplash.com', 'zoe-solar.de'],
     minimumCacheTTL: 86400, // 24 hours
+    dangerouslyAllowSVG: false,
+    contentDispositionType: 'attachment',
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    // LCP Optimierung
+    loader: 'default',
+    // CLS Reduzierung
+    layoutRaw: false,
+    quality: 75, // Bessere Performance vs Qualität Balance
+    priority: true, // LCP Bilder priorisieren
   },
 
   // Build Optimization
@@ -35,7 +47,7 @@ const nextConfig = {
   // Output Configuration
   output: 'standalone',
 
-  // Security Headers
+  // Performance & Security Headers
   async headers() {
     return [
       {
@@ -47,8 +59,45 @@ const nextConfig = {
         ]
       },
       {
+        source: '/_next/static/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable'
+          }
+        ]
+      },
+      {
+        source: '/images/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=7776000, immutable' // 90 Tage
+          }
+        ]
+      },
+      {
+        source: '/fonts/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable' // 1 Jahr
+          }
+        ]
+      },
+      {
+        source: '/(.*\\.(webp|avif|jpg|jpeg|png|gif|svg))',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=7776000, immutable'
+          }
+        ]
+      },
+      {
         source: '/(.*)',
         headers: [
+          // Security Headers
           {
             key: 'X-Content-Type-Options',
             value: 'nosniff'
@@ -64,6 +113,20 @@ const nextConfig = {
           {
             key: 'Referrer-Policy',
             value: 'strict-origin-when-cross-origin'
+          },
+          // Performance Headers
+          {
+            key: 'X-DNS-Prefetch-Control',
+            value: 'on'
+          },
+          {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=31536000; includeSubDomains'
+          },
+          // Hints für Browser
+          {
+            key: 'Link',
+            value: '</api/robots.txt>; rel=preload; as=fetch'
           }
         ]
       }
@@ -102,8 +165,8 @@ const nextConfig = {
     };
   },
 
-  // Webpack Konfiguration für maximale Performance
-  webpack: (config, { isServer }) => {
+  // Webpack Konfiguration für Core Web Vitals Optimierung
+  webpack: (config, { isServer, dev }) => {
     // Optimierung für Client-Side
     if (!isServer) {
       config.resolve.fallback = {
@@ -112,28 +175,73 @@ const nextConfig = {
       };
     }
 
-    // Code Splitting Optimization
-    config.optimization.splitChunks = {
-      chunks: 'all',
-      cacheGroups: {
-        default: {
-          minChunks: 2,
-          priority: -20,
-          reuseExistingChunk: true,
+    // Nur im Production Mode optimieren
+    if (!dev) {
+      // Aggressives Code Splitting für Performance
+      config.optimization.splitChunks = {
+        chunks: 'all',
+        minSize: 20000,
+        maxSize: performanceConfig.bundling.chunkSizeLimit,
+        cacheGroups: {
+          default: {
+            minChunks: 2,
+            priority: -20,
+            reuseExistingChunk: true,
+          },
+          vendor: {
+            test: /[\\/]node_modules[\\/]/,
+            name: 'vendors',
+            priority: -10,
+            chunks: 'all',
+            enforce: true,
+          },
+          react: {
+            test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
+            name: 'react',
+            chunks: 'all',
+            priority: 20,
+            enforce: true,
+          },
+          three: {
+            test: /[\\/]node_modules[\\/](three|@react-three)[\\/]/,
+            name: 'three',
+            chunks: 'all',
+            priority: 15,
+            enforce: true,
+          },
+          ui: {
+            test: /[\\/]node_modules[\\/](framer-motion|lucide-react)[\\/]/,
+            name: 'ui',
+            chunks: 'all',
+            priority: 10,
+            enforce: true,
+          },
+          // Lazy Loading für große Services
+          services: {
+            test: /[\\/]services[\\/]/,
+            name: 'services',
+            chunks: 'async',
+            priority: 5,
+          },
         },
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendors',
-          priority: -10,
-          chunks: 'all',
-        },
-        react: {
-          test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
-          name: 'react',
-          chunks: 'all',
-        },
-      },
-    };
+      };
+
+      // Tree Shaking und Unused Code Elimination
+      config.optimization.usedExports = true;
+      config.optimization.sideEffects = false;
+
+      // Compression
+      config.optimization.minimize = true;
+    }
+
+    // Performance Hints
+    if (!isServer) {
+      config.performance = {
+        hints: process.env.NODE_ENV === 'production' ? 'warning' : false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000,
+      };
+    }
 
     return config;
   },

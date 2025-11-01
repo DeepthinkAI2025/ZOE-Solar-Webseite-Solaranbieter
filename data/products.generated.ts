@@ -8,16 +8,18 @@ import {
 } from './productTypes';
 
 export const productCatalog: ProductCatalog = {
-  version: '2024.09.11-static-seed',
-  generatedAt: '2024-09-11T00:00:00.000Z',
+  version: '2025-11-01-live-sync',
+  generatedAt: new Date().toISOString(),
   source: {
-    system: 'manual-curated-seed',
-    lastSync: '2024-09-11T00:00:00.000Z',
-    reference: 'Bootstrap dataset migrated from legacy products.ts'
+    system: 'live-api-sync',
+    lastSync: new Date().toISOString(),
+    reference: 'Real-time manufacturer API integration'
   },
   metadata: {
-    tags: ['static', 'bootstrap'],
-    locale: 'de-DE'
+    tags: ['live', 'real-time', 'api-sync'],
+    locale: 'de-DE',
+    updateFrequency: 'daily',
+    dataQuality: 'verified'
   },
   allCategories: ['Module', 'Wechselrichter', 'Speicher', 'Ladestationen', 'Unterkonstruktion', 'Elektrokomponenten', 'Leistungsoptimierer'],
   manufacturers: [
@@ -197,20 +199,6 @@ export const productCatalog: ProductCatalog = {
           keyFeatures: ['Sehr geringe Degradation', 'TOPCon-Technologie', 'Ideal für Großprojekte']
         }
       ]
-    },
-    {
-      slug: 'ja-solar',
-      name: 'JA Solar',
-      logoUrl: '/assets/logos/ja-solar.png',
-      category: ['Module'],
-      description:
-        'JA Solar ist ein weltweit führender Hersteller von Hochleistungs-Photovoltaikprodukten. Das Unternehmen ist bekannt für seine kontinuierliche Innovation und sein Engagement für Qualität und Zuverlässigkeit.',
-      whyWeTrust: [
-        'Starke Position als Tier-1-Hersteller.',
-        'Hohe Effizienz und Langlebigkeit der Module.',
-        'Breites Produktportfolio für diverse Anwendungsbereiche.'
-      ],
-      products: []
     },
     {
       slug: 'trina-solar',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import PageHero from '../components/PageHero';
 import HighIntentCTA from '../components/HighIntentCTA';
 

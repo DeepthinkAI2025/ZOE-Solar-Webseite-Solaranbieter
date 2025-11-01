@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import { Page } from '../types';
 import { SemanticMain, SemanticSection } from '../components/SemanticLayout';
 import InteractiveGuide from '../components/InteractiveGuide';

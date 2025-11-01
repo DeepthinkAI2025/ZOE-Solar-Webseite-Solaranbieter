@@ -19,6 +19,7 @@
     "content-optimization": "node scripts/content-optimization.cjs",
     "seo-workflow": "node scripts/seo-workflow.cjs",
     "seo-geo-audit": "tsx scripts/seo-geo-aeo-audit.ts",
+    "seo-optimization": "node scripts/seo-optimization.js",
     "wiki-sync": "tsx scripts/wiki-sync.ts",
     "product-sync": "node scripts/fetch-manufacturers.js",
     "product-sync:ts": "tsx scripts/fetch-manufacturers.ts",
@@ -48,10 +49,10 @@
     "puppeteer": "^24.22.3",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-helmet-async": "^2.0.5",
+    "react-helmet": "^6.1.0",
     "react-markdown": "^10.1.0",
     "react-router-dom": "^7.9.2",
-    "react-syntax-highlighter": "^15.6.6",
+    "react-syntax-highlighter": "^16.1.0",
     "schema-dts": "^1.1.5",
     "three": "^0.180.0",
     "tsyringe": "^4.10.0",
@@ -73,5 +74,15 @@
     "tsx": "^4.19.2",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
+  },
+  "overrides": {
+    "@radix-ui/react-tooltip": {
+      "react": "^19.1.1",
+      "react-dom": "^19.1.1"
+    },
+    "@radix-ui/react-popper": {
+      "react": "^19.1.1",
+      "react-dom": "^19.1.1"
+    }
   }
 }

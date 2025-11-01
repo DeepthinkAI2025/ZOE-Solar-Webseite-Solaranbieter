@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import { Page } from '../types';
 import { pricingPackages, PricingPackage } from '../data/pricingPackages.ts';
 import AIRecommender from '../components/AIRecommender';

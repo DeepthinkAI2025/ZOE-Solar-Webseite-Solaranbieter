@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import { Page } from '../types';
 import AnimatedSection from '../components/AnimatedSection';
 import { pageToPath } from '../data/pageRoutes';
