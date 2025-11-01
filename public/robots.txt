@@ -1,109 +1,44 @@
+# ZOE Solar robots.txt
+# Optimiert für deutsche SEO
+
 User-agent: *
 Allow: /
+Allow: /images/
+Allow: /css/
+Allow: /js/
 
-# Block access to admin areas
+# Admin-Bereiche blockieren
 Disallow: /admin/
+Disallow: /wp-admin/
 Disallow: /api/private/
-Disallow: /login/
-Disallow: /dashboard/
-Disallow: /mitarbeiter-login/
-Disallow: /seo-monitoring/
-Disallow: /node_modules/
-Disallow: /scripts/
-Disallow: /server/
-Disallow: /data/
-Disallow: /docs/
-Disallow: /*.json$
-Disallow: /*.md$
+Disallow: /.well-known/
 
-# Allow crawling of knowledge base for AI training
-Allow: /api/knowledge/
-Allow: /api/faq-data
+# Temporäre Dateien blockieren
+Disallow: /tmp/
+Disallow: /cache/
+Disallow: /*.tmp$
+Disallow: /*.cache$
 
-# Enhanced rules for AI crawlers and large language models
-User-agent: GPTBot
-Allow: /wissen/faq
-Allow: /api/faq-data
-Allow: /leistungen
-Allow: /photovoltaik
-Allow: /agri-pv
-Crawl-delay: 2
+# Suchparameter blockieren
+Disallow: /*?utm_*
+Disallow: /*?fbclid*
+Disallow: /*?gclid*
+Disallow: /*?*_ga*
 
-User-agent: Google-Extended
-Allow: /wissen/faq
-Allow: /api/faq-data
-Allow: /leistungen
-Allow: /photovoltaik
-Allow: /agri-pv
-Crawl-delay: 1
-
-User-agent: ChatGPT-User
-Allow: /wissen/faq
-Allow: /api/faq-data
-Allow: /leistungen
-Allow: /photovoltaik
-Allow: /agri-pv
-Crawl-delay: 2
-
-User-agent: anthropic-ai
-Allow: /wissen/faq
-Allow: /api/faq-data
-Allow: /leistungen
-Allow: /photovoltaik
-Allow: /agri-pv
-Crawl-delay: 2
-
-User-agent: Claude-Web
-Allow: /wissen/faq
-Allow: /api/faq-data
-Allow: /leistungen
-Allow: /photovoltaik
-Allow: /agri-pv
-Crawl-delay: 2
-
-User-agent: PerplexityBot
-Allow: /wissen/faq
-Allow: /api/faq-data
-Allow: /leistungen
-Allow: /photovoltaik
-Allow: /agri-pv
-Crawl-delay: 2
-
-User-agent: YouBot
-Allow: /wissen/faq
-Allow: /api/faq-data
-Allow: /leistungen
-Allow: /photovoltaik
-Allow: /agri-pv
-Crawl-delay: 2
-
-# Specific rules for Googlebot
+# Spezielle Crawler
 User-agent: Googlebot
 Allow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+# Sitemaps
+Sitemap: https://zoe-solar.de/sitemap.xml
+Sitemap: https://zoe-solar.de/sitemap-images.xml
+Sitemap: https://zoe-solar.de/sitemap-news.xml
+
+# Crawl-Delay für freundliche Crawler
 Crawl-delay: 1
-
-# Specific rules for Bingbot
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 2
-
-# Specific rules for Slurp (Yahoo)
-User-agent: Slurp
-Allow: /
-Crawl-delay: 2
-
-# Specific rules for DuckDuckBot
-User-agent: DuckDuckBot
-Allow: /
-Crawl-delay: 1
-
-# Block image hotlinking
-User-agent: *
-Disallow: /assets/
-
-# Host directive for canonical domain
-Host: https://www.zoe-solar.de
-
-# Sitemap index
-Sitemap: https://www.zoe-solar.de/sitemap-index.xml
-Sitemap: https://www.zoe-solar.de/faq-sitemap.xml

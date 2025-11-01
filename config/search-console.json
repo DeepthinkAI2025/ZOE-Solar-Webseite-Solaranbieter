@@ -1,0 +1,16 @@
+{
+  "verification": {
+    "meta_tag": "<meta name=\"google-site-verification\" content=\"YOUR_VERIFICATION_CODE\">",
+    "html_file": "google123456789.html",
+    "dns_txt": "google-site-verification=YOUR_VERIFICATION_CODE"
+  },
+  "sitemaps": [
+    "https://zoe-solar.de/sitemap.xml",
+    "https://zoe-solar.de/sitemap-images.xml"
+  ],
+  "monitoring": {
+    "performance": true,
+    "indexing": true,
+    "mobile_usability": true
+  }
+}

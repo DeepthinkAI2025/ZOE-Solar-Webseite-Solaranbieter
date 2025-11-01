@@ -183,7 +183,7 @@ export const productCatalog: ProductCatalog = {
           name: 'Tiger Neo N-type',
           category: 'Module',
           manufacturerSlug: 'jinko-solar',
-          imageUrl: 'https://images.unsplash.com/photo-1547283437-0e61a5339f1a?q=80&w=870&auto=format=fit-crop',
+          imageUrl: 'https://images.unsplash.com/photo-1547283437-0e61a5339f1a?q=80&w=870&auto=format&fit=crop',
           description:
             'N-Typ-Modul mit TOPCon-Technologie für extrem niedrige Degradation und hohe Leistung, optimiert für Großprojekte.',
           basePrice: 165,
@@ -201,6 +201,59 @@ export const productCatalog: ProductCatalog = {
       ]
     },
     {
+      slug: 'ja-solar',
+      name: 'JA Solar',
+      logoUrl: '/assets/logos/ja-solar.png',
+      category: ['Module'],
+      description:
+        'JA Solar ist ein weltweit führender Hersteller von Hochleistungs-Photovoltaikprodukten. Das Unternehmen ist bekannt für seine kontinuierliche Innovation und sein Engagement für Qualität und Zuverlässigkeit.',
+      whyWeTrust: [
+        'Starke Position als Tier-1-Hersteller.',
+        'Hohe Effizienz und Langlebigkeit der Module.',
+        'Breites Produktportfolio für diverse Anwendungsbereiche.'
+      ],
+      products: [
+        {
+          name: 'JAM72S-20',
+          category: 'Module',
+          manufacturerSlug: 'ja-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1628453483958-c8a709249a26?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Hochleistungsfähiges bifaziales Modul mit PERC-Technologie für maximale Effizienz und Zuverlässigkeit.',
+          basePrice: 185,
+          configurable: false,
+          specs: {
+            Leistung: '550 Wp',
+            Wirkungsgrad: '21.0 %',
+            'Zell-Technologie': 'PERC Bifazial',
+            Produktgarantie: '25 Jahre',
+            Leistungsgarantie: '25 Jahre (87%)',
+            'Temperaturkoeffizient Pmax': '-0.35 %/°C'
+          },
+          keyFeatures: ['Hohe Leistungsdichte', 'PERC-Technologie', 'Bifazial für Mehrertrag', 'Lange Lebensdauer']
+        },
+        {
+          name: 'JAM60S-20',
+          category: 'Module',
+          manufacturerSlug: 'ja-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1662973163920-7435f1f9f257?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Premium-Monokristallin-Modul mit hoher Effizienz und exzellenter Performance bei schwierigen Lichtbedingungen.',
+          basePrice: 195,
+          configurable: false,
+          specs: {
+            Leistung: '600 Wp',
+            Wirkungsgrad: '21.5 %',
+            'Zell-Technologie': 'Monokristallin PERC',
+            Produktgarantie: '25 Jahre',
+            Leistungsgarantie: '25 Jahre (87.5%)',
+            'Temperaturkoeffizient Pmax': '-0.33 %/°C'
+          },
+          keyFeatures: ['Monokristalline Qualität', 'Hohe Effizienz', 'Gutes Schwachlichtverhalten', 'Premium-Design']
+        }
+      ]
+    },
+    {
       slug: 'trina-solar',
       name: 'Trina Solar',
       logoUrl: '/assets/logos/trina-solar.png',
@@ -212,7 +265,46 @@ export const productCatalog: ProductCatalog = {
         'Fokus auf technologische Innovationen wie die Vertex-Plattform.',
         'Strenge Qualitätskontrollen entlang der gesamten Produktionskette.'
       ],
-      products: []
+      products: [
+        {
+          name: 'Vertex S+',
+          category: 'Module',
+          manufacturerSlug: 'trina-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1628453483958-c8a709249a26?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Hochleistungs-Vertex-Modul mit Multi-Busbar-Technologie für maximale Effizienz und Zuverlässigkeit.',
+          basePrice: 175,
+          configurable: false,
+          specs: {
+            Leistung: '550 Wp',
+            Wirkungsgrad: '22.0 %',
+            'Zell-Technologie': 'Multi-Busbar PERC',
+            Produktgarantie: '25 Jahre',
+            Leistungsgarantie: '25 Jahre (84.8%)',
+            'Temperaturkoeffizient Pmax': '-0.34 %/°C'
+          },
+          keyFeatures: ['Vertex-Technologie', 'Multi-Busbar Design', 'Hohe Effizienz', 'Lange Lebensdauer']
+        },
+        {
+          name: 'Vertex N+',
+          category: 'Module',
+          manufacturerSlug: 'trina-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1662973163920-7435f1f9f257?q=80&w=870&auto=format&fit=crop',
+          description:
+            'N-Type-Halbleiter-Modul mit Vertex-Technologie für höchste Effizienz und minimale Degradation.',
+          basePrice: 195,
+          configurable: false,
+          specs: {
+            Leistung: '580 Wp',
+            Wirkungsgrad: '22.8 %',
+            'Zell-Technologie': 'N-Type Vertex',
+            Produktgarantie: '25 Jahre',
+            Leistungsgarantie: '25 Jahre (87%)',
+            'Temperaturkoeffizient Pmax': '-0.29 %/°C'
+          },
+          keyFeatures: ['N-Type Premium', 'Vertex-Technologie', 'Minimale Degradation', 'Höchste Effizienz']
+        }
+      ]
     },
     {
       slug: 'longi-solar',
@@ -226,7 +318,27 @@ export const productCatalog: ProductCatalog = {
         'Hohe Effizienz und Zuverlässigkeit der Produkte.',
         'Starkes Engagement in Forschung und Entwicklung.'
       ],
-      products: []
+      products: [
+        {
+          name: 'Hi-MO X6',
+          category: 'Module',
+          manufacturerSlug: 'longi-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1628453483958-c8a709249a26?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Hochleistungs-Monokristallin-Modul mit der neuesten Generation der LONGi-Halbleiter-Technologie für maximale Effizienz.',
+          basePrice: 190,
+          configurable: false,
+          specs: {
+            Leistung: '570 Wp',
+            Wirkungsgrad: '22.6 %',
+            'Zell-Technologie': 'Monokristallin',
+            Produktgarantie: '25 Jahre',
+            Leistungsgarantie: '25 Jahre (87%)',
+            'Temperaturkoeffizient Pmax': '-0.29 %/°C'
+          },
+          keyFeatures: ['Höchste Effizienz', 'Monokristalline Qualität', 'Langlebigkeit', 'Premium-Design']
+        }
+      ]
     },
     {
       slug: 'sma',
@@ -445,7 +557,28 @@ export const productCatalog: ProductCatalog = {
         'Hohe Effizienz und Zuverlässigkeit.',
         'Integrierte Lösungen für PV, Speicher und Ladeinfrastruktur.'
       ],
-      products: []
+      products: [
+        {
+          name: 'SUN2000-185KTL',
+          category: 'Wechselrichter',
+          manufacturerSlug: 'huawei',
+          imageUrl: 'https://images.unsplash.com/photo-1632930603299-8a93917c9171?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Intelligenter String-Wechselrichter mit optimiertem Wirkungsgrad und integrierter Sicherheit für private Aufdachanlagen.',
+          basePrice: 980,
+          configurable: false,
+          specs: {
+            'AC-Nennleistung': '18.5 kW',
+            'Max. DC-Leistung': '25 kWp',
+            'Max. Wirkungsgrad': '98.6 %',
+            'MPP-Tracker': 8,
+            Kommunikation: 'WLAN, Ethernet',
+            Schutzart: 'IP65',
+            Garantie: '10 Jahre'
+          },
+          keyFeatures: ['Hohe Effizienz', 'Intelligente Sicherheit', 'Smart Monitoring', 'Einfache Installation']
+        }
+      ]
     },
     {
       slug: 'goodwe',
@@ -459,7 +592,28 @@ export const productCatalog: ProductCatalog = {
         'Gutes Preis-Leistungs-Verhältnis.',
         'Starke globale Präsenz und Service-Netzwerk.'
       ],
-      products: []
+      products: [
+        {
+          name: 'GW 50K-3P',
+          category: 'Wechselrichter',
+          manufacturerSlug: 'goodwe',
+          imageUrl: 'https://images.unsplash.com/photo-1632930603299-8a93917c9171?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Dreiphasiger Hybridwechselrichter mit integriertem Speicheranschluss für maximale Flexibilität und Unabhängigkeit.',
+          basePrice: 2200,
+          configurable: false,
+          specs: {
+            'AC-Nennleistung': '50.0 kW',
+            'Max. DC-Leistung': '75 kWp',
+            'Max. Wirkungsgrad': '98.5 %',
+            'MPP-Tracker': 3,
+            Speicheranschluss: 'Ja',
+            Hybrid: 'Ja',
+            Garantie: '5 + 5 Jahre'
+          },
+          keyFeatures: ['Hybrid-Funktionalität', 'Integrierter Speicheranschluss', 'Hohe Effizienz', 'Zuverlässigkeit']
+        }
+      ]
     },
     {
       slug: 'enphase',
@@ -473,7 +627,28 @@ export const productCatalog: ProductCatalog = {
         'Höchste Sicherheit durch Niederspannungs-Gleichstrom auf dem Dach.',
         'Monitoring und Management auf Modulebene.'
       ],
-      products: []
+      products: [
+        {
+          name: 'IQ8+ Microinverter',
+          category: 'Wechselrichter',
+          manufacturerSlug: 'enphase',
+          imageUrl: 'https://images.unsplash.com/photo-1632930603299-8a93917c9171?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Mikrowechselrichter der 8. Generation mit optimiertem Wirkungsgrad und erweiterter Funktionalität für maximale Energieerträge.',
+          basePrice: 280,
+          configurable: false,
+          specs: {
+            'AC-Nennleistung': '380 VA',
+            'Max. DC-Leistung': '460 Wp',
+            'Max. Wirkungsgrad': '97.5 %',
+            'MPP-Tracker': '1 pro Modul',
+            Kommunikation: 'Enphase Enlighten',
+            Schutzart: 'IP67',
+            Garantie: '25 Jahre'
+          },
+          keyFeatures: ['Mikrowechselrichter-Technologie', 'Modul-MPP-Tracking', 'Hohe Zuverlässigkeit', 'Einfache Installation']
+        }
+      ]
     },
     {
       slug: 'byd',
@@ -492,7 +667,7 @@ export const productCatalog: ProductCatalog = {
           name: 'Battery-Box Premium HVS',
           category: 'Speicher',
           manufacturerSlug: 'byd',
-          imageUrl: 'https://images.unsplash.com/photo-1633711124238-52260c6f5d81?q=80&w=870&auto=format&fit',
+          imageUrl: 'https://images.unsplash.com/photo-1633711124238-52260c6f5d81?q=80&w=870&auto=format&fit=crop',
           description:
             'Ein skalierbarer Hochvolt-Batteriespeicher auf LFP-Basis. Modularer Aufbau für maximale Flexibilität und Zukunftssicherheit.',
           basePrice: 3990,
@@ -511,7 +686,7 @@ export const productCatalog: ProductCatalog = {
           name: 'Battery-Box Premium LVS',
           category: 'Speicher',
           manufacturerSlug: 'byd',
-          imageUrl: 'https://images.unsplash.com/photo-1633711124238-52260c6f5d81?q=80&w=870&auto=format&fit',
+          imageUrl: 'https://images.unsplash.com/photo-1633711124238-52260c6f5d81?q=80&w=870&auto=format&fit=crop',
           description:
             'Die Niedervolt-Variante für maximale Kompatibilität mit vielen Wechselrichtern und einfache Erweiterbarkeit.',
           basePrice: 3100,
@@ -545,7 +720,7 @@ export const productCatalog: ProductCatalog = {
           name: 'RESU FLEX',
           category: 'Speicher',
           manufacturerSlug: 'lg-energy-solution',
-          imageUrl: 'https://images.unsplash.com/photo-1633711124238-52260c6f5d81?q=80&w=870&auto=format&fit',
+          imageUrl: 'https://images.unsplash.com/photo-1633711124238-52260c6f5d81?q=80&w=870&auto=format&fit=crop',
           description:
             'Ein flexibler Hochvolt-Heimspeicher, der je nach Bedarf in der Kapazität angepasst werden kann.',
           basePrice: 6200,
@@ -578,7 +753,7 @@ export const productCatalog: ProductCatalog = {
           name: 'sonnenBatterie 10',
           category: 'Speicher',
           manufacturerSlug: 'sonnen',
-          imageUrl: 'https://images.unsplash.com/photo-1633711124238-52260c6f5d81?q=80&w=870&auto=format&fit',
+          imageUrl: 'https://images.unsplash.com/photo-1633711124238-52260c6f5d81?q=80&w=870&auto=format&fit=crop',
           description:
             'Mehr als nur ein Speicher – eine intelligente Energieplattform für maximale Unabhängigkeit.',
           basePrice: 7500,
@@ -606,7 +781,27 @@ export const productCatalog: ProductCatalog = {
         'Einfache Installation und modularer Aufbau.',
         'Hohe Qualität und modernes Design.'
       ],
-      products: []
+      products: [
+        {
+          name: 'Fox Cube HV 10.0',
+          category: 'Speicher',
+          manufacturerSlug: 'fox-ess',
+          imageUrl: 'https://images.unsplash.com/photo-1633711124238-52260c6f5d81?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Hochvolt-Speichersystem mit hoher Kapazität und Leistung für maximale Unabhängigkeit vom Stromnetz.',
+          basePrice: 4500,
+          configurable: false,
+          specs: {
+            'Nutzbare Kapazität': '10.0 kWh',
+            'Max. Entladeleistung': '10.0 kW',
+            Spannungsbereich: '200-500 V',
+            Technologie: 'Lithium-Ionen',
+            Garantie: '10 Jahre',
+            'Zyklen (garantiert)': 8000
+          },
+          keyFeatures: ['Hohe Kapazität', 'Hohe Entladeleistung', 'Modular erweiterbar', 'Hohe Effizienz']
+        }
+      ]
     },
     {
       slug: 'victron-energy',
@@ -620,7 +815,27 @@ export const productCatalog: ProductCatalog = {
         'Hohe Flexibilität und Kompatibilität mit verschiedenen Systemen.',
         'Führend im Bereich Off-Grid und Backup-Lösungen.'
       ],
-      products: []
+      products: [
+        {
+          name: 'MultiPlus-II',
+          category: 'Speicher',
+          manufacturerSlug: 'victron-energy',
+          imageUrl: 'https://images.unsplash.com/photo-1633711124238-52260c6f5d81?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Vielseitiger Lithium-Ionen-Speicher mit hoher Effizienz und langer Lebensdauer für zuverlässige Stromversorgung.',
+          basePrice: 3200,
+          configurable: false,
+          specs: {
+            'Nutzbare Kapazität': '5.0 kWh',
+            'Max. Entladeleistung': '5.0 kW',
+            Spannungsbereich: '48 V',
+            Technologie: 'Lithium-Ionen',
+            Garantie: '5 Jahre',
+            'Zyklen (garantiert)': 6000
+          },
+          keyFeatures: ['Vielseitig einsetzbar', 'Hohe Effizienz', 'Robuste Bauweise', 'Lange Lebensdauer']
+        }
+      ]
     },
     {
       slug: 'wallbox-chargers',
@@ -639,7 +854,7 @@ export const productCatalog: ProductCatalog = {
           name: 'Pulsar Plus 11 kW',
           category: 'Ladestationen',
           manufacturerSlug: 'wallbox-chargers',
-          imageUrl: 'https://images.unsplash.com/photo-1675883196884-35805ac51268?q=80&w=870&auto=format&fit',
+          imageUrl: 'https://images.unsplash.com/photo-1675883196884-35805ac51268?q=80&w=870&auto=format&fit=crop',
           description:
             'Eine der kleinsten, leistungsstärksten und smartesten Wallboxen für zu Hause. Inklusive App-Steuerung und optionalem dynamischem Lastmanagement.',
           basePrice: 699,
@@ -658,7 +873,7 @@ export const productCatalog: ProductCatalog = {
           name: 'Commander 2 22 kW',
           category: 'Ladestationen',
           manufacturerSlug: 'wallbox-chargers',
-          imageUrl: 'https://images.unsplash.com/photo-1633333393122-2c63e2f5b80a?q=80&w=870&auto=format=fit',
+          imageUrl: 'https://images.unsplash.com/photo-1633333393122-2c63e2f5b80a?q=80&w=870&auto=format&fit=crop',
           description:
             'Die ideale Ladelösung für Firmenparkplätze mit 7-Zoll-Touchscreen, RFID-Authentifizierung und einfacher Nutzerverwaltung über die MyWallbox-Plattform.',
           basePrice: 1250,
@@ -721,7 +936,27 @@ export const productCatalog: ProductCatalog = {
         'Pionier und Standardsetzer in der E-Mobilität (Typ-2-Stecker).',
         'Robuste und zuverlässige Ladelösungen für den öffentlichen und privaten Bereich.'
       ],
-      products: []
+      products: [
+        {
+          name: 'Ammunition 22 kW',
+          category: 'Ladestationen',
+          manufacturerSlug: 'mennekes',
+          imageUrl: 'https://images.unsplash.com/photo-1617833418247-a6a5f02c5c4f?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Robuste Wandladestation für den öffentlichen und privaten Bereich mit integrierter Notstromfunktion und hoher Ladeleistung.',
+          basePrice: 2800,
+          configurable: true,
+          specs: {
+            'Max. Ladeleistung': '22 kW (3-phasig)',
+            Anschluss: 'Typ 2 (Buchse)',
+            Authentifizierung: 'RFID, App',
+            Kommunikation: 'OCPP 1.6',
+            Notstrom: 'Ja',
+            Schutzart: 'IP54'
+          },
+          keyFeatures: ['Robuste Bauweise', 'Integrierte Notstromfunktion', 'Hohe Ladeleistung']
+        }
+      ]
     },
     {
       slug: 'alpitronic',
@@ -735,7 +970,320 @@ export const productCatalog: ProductCatalog = {
         'Hohe Effizienz und Zuverlässigkeit im Dauerbetrieb.',
         'Kompaktes und wartungsfreundliches Design.'
       ],
-      products: []
+      products: [
+        {
+          name: 'Hypercharger 180',
+          category: 'Ladestationen',
+          manufacturerSlug: 'alpitronic',
+          imageUrl: 'https://images.unsplash.com/photo-1617833418247-a6a5f02c5c4f?q=80&w=870&auto=format&fit=crop',
+          description:
+            'DC-Schnellladesäule mit 180 kW Leistung für extrem schnelles Laden von Elektrofahrzeugen in gewerblichen Anwendungen.',
+          basePrice: 45000,
+          configurable: false,
+          specs: {
+            'Max. Ladeleistung': '180 kW',
+            'Anschluss': 'DC 400-950 V',
+            'Ladeschlüsse': 'CCS, CHAdeMO',
+            'Kühlung': 'Aktiv',
+            Schutzart: 'IP54',
+            Garantie: '3 Jahre'
+          },
+          keyFeatures: ['Extrem schnelles Laden', 'Hohe Leistung', 'DC-Technologie', 'Robuste Bauweise']
+        }
+      ]
+    },
+    {
+      slug: 'sunpower',
+      name: 'SunPower',
+      logoUrl: '/assets/logos/sunpower.png',
+      category: ['Module'],
+      description:
+        'SunPower ist ein amerikanisches Unternehmen und Pionier in der Entwicklung hocheffizienter Solarmodule. SunPower steht für maximale Qualität und Innovation in der Photovoltaik.',
+      whyWeTrust: [
+        'Höchste Wirkungsgrade und Bewährung auf dem Markt.',
+        'Über 40 Jahre Erfahrung in der Solarindustrie.',
+        'Hervorragende Garantieleistungen und Produktqualität.'
+      ],
+      products: [
+        {
+          name: 'Maxeon 6 AC',
+          category: 'Module',
+          manufacturerSlug: 'sunpower',
+          imageUrl: 'https://images.unsplash.com/photo-1628453483958-c8a709249a26?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Das weltweit leistungsstärkste Solarmodul für Privathaushalte mit der revolutionären Maxeon-Technologie.',
+          basePrice: 420,
+          configurable: false,
+          specs: {
+            Leistung: '435 Wp',
+            Wirkungsgrad: '22.8 %',
+            'Zell-Technologie': 'Maxeon (Back-Contact)',
+            Produktgarantie: '25 Jahre',
+            Leistungsgarantie: '25 Jahre (92%)',
+            'Temperaturkoeffizient Pmax': '-0.29 %/°C'
+          },
+          keyFeatures: ['Weltweit höchster Wirkungsgrad', 'Maxeon-Technologie', 'Premium Qualität']
+        }
+      ]
+    },
+    {
+      slug: 'rec-solar',
+      name: 'REC Solar',
+      logoUrl: '/assets/logos/rec-solar.png',
+      category: ['Module'],
+      description:
+        'REC Solar ist ein norwegisches Unternehmen, das sich auf die Entwicklung und Herstellung von hocheffizienten Solarmodulen spezialisiert hat. Bekannt für die Alpha-Serie mit Twin-Design.',
+      whyWeTrust: [
+        'Innovative Twin-Design-Technologie für höhere Erträge.',
+        'Starke Garantieleistungen mit erstklassigem Service.',
+        'Nachhaltigkeit und Verantwortung im Fokus der Produktion.'
+      ],
+      products: [
+        {
+          name: 'REC Alpha Pure-R',
+          category: 'Module',
+          manufacturerSlug: 'rec-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1662973163920-7435f1f9f257?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Premium-Modul mit innovativer Alpha-Technologie und Twin-Design für maximale Effizienz bei schwachem Licht.',
+          basePrice: 290,
+          configurable: false,
+          specs: {
+            Leistung: '405 Wp',
+            Wirkungsgrad: '21.9 %',
+            'Zell-Technologie': 'Alpha (Twin-Design)',
+            Produktgarantie: '20 Jahre',
+            Leistungsgarantie: '25 Jahre (91%)',
+            'Temperaturkoeffizient Pmax': '-0.26 %/°C'
+          },
+          keyFeatures: ['Twin-Design-Technologie', 'Alpha-Technologie', 'Hohe Effizienz bei Schwachlicht']
+        }
+      ]
+    },
+    {
+      slug: 'canadian-solar',
+      name: 'Canadian Solar',
+      logoUrl: '/assets/logos/canadian-solar.png',
+      category: ['Module'],
+      description:
+        'Canadian Solar ist ein globaler Hersteller von Solarenergiesystemen und einer der größten Solarproduzenten weltweit. Bekannt für robuste und zuverlässige Solarmodule.',
+      whyWeTrust: [
+        'Globaler Hersteller mit enormen Produktionskapazitäten.',
+        'Starke Bilanz und finanzielle Stabilität.',
+        'Breites Portfolio für verschiedene Anwendungen und Märkte.'
+      ],
+      products: [
+        {
+          name: 'HiKu6 BWDS54',
+          category: 'Module',
+          manufacturerSlug: 'canadian-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1547283437-0e61a5339f1a?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Hochleistungs-Modul mit N-Type-TOPCon-Technologie für maximale Energieausbeute und Langlebigkeit.',
+          basePrice: 175,
+          configurable: false,
+          specs: {
+            Leistung: '575 Wp',
+            Wirkungsgrad: '22.1 %',
+            'Zell-Technologie': 'N-Type TOPCon',
+            Produktgarantie: '15 Jahre',
+            Leistungsgarantie: '25 Jahre (84.8%)',
+            'Temperaturkoeffizient Pmax': '-0.30 %/°C'
+          },
+          keyFeatures: ['N-Type TOPCon-Technologie', 'Hohe Effizienz', 'Robust und zuverlässig']
+        }
+      ]
+    },
+    {
+      slug: 'tesla',
+      name: 'Tesla',
+      logoUrl: '/assets/logos/tesla.png',
+      category: ['Speicher', 'Ladestationen'],
+      description:
+        'Tesla ist ein amerikanisches Unternehmen, das nachhaltige Energielösungen entwickelt. Tesla Powerwall und Supercharger setzen neue Standards in Speichertechnologie und Ladeinfrastruktur.',
+      whyWeTrust: [
+        'Revolutionäre Technologien und Innovation im Bereich erneuerbare Energien.',
+        'Führend in der Elektromobilität und Energiespeicherung.',
+        'Hohe Qualität und kontinuierliche technologische Weiterentwicklung.'
+      ],
+      products: [
+        {
+          name: 'Powerwall 2',
+          category: 'Speicher',
+          manufacturerSlug: 'tesla',
+          imageUrl: 'https://images.unsplash.com/photo-1633711124238-52260c6f5d81?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Intelligenter Heimspeicher mit hoher Kapazität und Integration in das Tesla-Ökosystem für maximale Energieunabhängigkeit.',
+          basePrice: 5800,
+          configurable: false,
+          specs: {
+            'Nutzbare Kapazität': '13.5 kWh',
+            'Max. Entladeleistung': '5 kW (7 kW peak)',
+            Technologie: 'Lithium-Ionen',
+            Kommunikation: 'WiFi, Ethernet',
+            Schutzart: 'IP54',
+            Garantie: '10 Jahre'
+          },
+          keyFeatures: ['Tesla-Integration', 'Hohe Kapazität', 'Intelligente Steuerung']
+        },
+        {
+          name: 'Tesla Supercharger V3',
+          category: 'Ladestationen',
+          manufacturerSlug: 'tesla',
+          imageUrl: 'https://images.unsplash.com/photo-1617833418247-a6a5f02c5c4f?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Ultrafast DC-Ladestation mit bis zu 250 kW Leistung für Tesla-Fahrzeuge und kompatible Modelle.',
+          basePrice: 35000,
+          configurable: false,
+          specs: {
+            'Max. Ladeleistung': '250 kW',
+            Anschluss: 'Tesla Connector (CCS adapter)',
+            Ladeschlüsse: '4,
+            Kühlung: 'Flüssig-gekühlt',
+            Schutzart: 'IP54',
+            Garantie: '3 Jahre'
+          },
+          keyFeatures: ['Ultrafast Charging', '250 kW Leistung', 'Tesla-Ökosystem']
+        }
+      ]
+    },
+    {
+      slug: 'power-electronics',
+      name: 'Power Electronics',
+      logoUrl: '/assets/logos/power-electronics.png',
+      category: ['Wechselrichter'],
+      description:
+        'Power Electronics ist ein spanisches Unternehmen, das sich auf die Entwicklung von Wechselrichtern für große Photovoltaikanlagen spezialisiert hat. Weltweite Marktführung bei Utility-Scale-Anwendungen.',
+      whyWeTrust: [
+        'Marktführer bei großen PV-Anlagen und Solarparks.',
+        'Sehr hohe Effizienz und Zuverlässigkeit.',
+        'Umfassendes Portfolio für Utility-Scale-Anwendungen.'
+      ],
+      products: [
+        {
+          name: 'SolarRW 3.8',
+          category: 'Wechselrichter',
+          manufacturerSlug: 'power-electronics',
+          imageUrl: 'https://images.unsplash.com/photo-1632930603299-8a93917c9171?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Hochleistungs-Wechselrichter für kommerzielle und Utility-Scale-PV-Anlagen mit maximaler Effizienz.',
+          basePrice: 8500,
+          configurable: false,
+          specs: {
+            'AC-Nennleistung': '3.8 MW',
+            'Max. DC-Leistung': '5.0 MWp',
+            'Max. Wirkungsgrad': '99.2 %',
+            'MPP-Tracker': 'String-Level Monitoring',
+            Kommunikation: 'Ethernet, WiFi',
+            Schutzart: 'IP65',
+            Garantie: '5 Jahre'
+          },
+          keyFeatures: ['Utility-Scale-Performance', 'String-Level Monitoring', 'Höchste Effizienz']
+        }
+      ]
+    },
+    {
+      slug: 'kaco',
+      name: 'KACO new energy',
+      logoUrl: '/assets/logos/kaco.png',
+      category: ['Wechselrichter'],
+      description:
+        'KACO new energy ist ein deutscher Hersteller von Wechselrichtern für Photovoltaikanlagen. Seit über 20 Jahren entwickelt KACO innovative und zuverlässige Wechselrichterlösungen.',
+      whyWeTrust: [
+        'Deutscher Hersteller mit langjähriger Erfahrung.',
+        'Hohe Qualität und Zuverlässigkeit "Made in Germany".',
+        'Starke Innovation und technologische Führung.'
+      ],
+      products: [
+        {
+          name: 'blueplanet 50.0 TL3',
+          category: 'Wechselrichter',
+          manufacturerSlug: 'kaco',
+          imageUrl: 'https://images.unsplash.com/photo-1632930603299-8a93917c9171?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Zentralwechselrichter für mittlere bis große gewerbliche PV-Anlagen mit hoher Effizienz und Zuverlässigkeit.',
+          basePrice: 6200,
+          configurable: false,
+          specs: {
+            'AC-Nennleistung': '50.0 kW',
+            'Max. DC-Leistung': '75 kWp',
+            'Max. Wirkungsgrad': '98.6 %',
+            'MPP-Tracker': '3',
+            Kommunikation: 'Ethernet',
+            Schutzart: 'IP54',
+            Garantie: '5 Jahre'
+          },
+          keyFeatures: ['Made in Germany', 'Hohe Effizienz', 'Zuverlässige Technik']
+        }
+      ]
+    },
+    {
+      slug: 'chargepoint',
+      name: 'ChargePoint',
+      logoUrl: '/assets/logos/chargepoint.png',
+      category: ['Ladestationen'],
+      description:
+        'ChargePoint ist der weltweit führende Anbieter von Ladeinfrastruktur für Elektrofahrzeuge. Das Unternehmen betreibt das größte Netzwerk von Ladestationen in Nordamerika und expandiert global.',
+      whyWeTrust: [
+        'Marktführer im Bereich Ladeinfrastruktur für Unternehmen.',
+        'Umfassende Softwareplattform für Verwaltung und Abrechnung.',
+        'Starkes globales Netzwerk und internationale Präsenz.'
+      ],
+      products: [
+        {
+          name: 'ChargePoint Home Flex',
+          category: 'Ladestationen',
+          manufacturerSlug: 'chargepoint',
+          imageUrl: 'https://images.unsplash.com/photo-1617833418247-a6a5f02c5c4f?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Intelligente Wallbox für zu Hause mit einstellbarer Ladeleistung und Integration in die ChargePoint-App.',
+          basePrice: 899,
+          configurable: true,
+          specs: {
+            'Max. Ladeleistung': '12 kW (50 A)',
+            Anschluss: 'Typ 2',
+            Konnektivität: 'WiFi, Ethernet, Bluetooth',
+            Steuerung: 'App, Zeitplaner',
+            Schutzart: 'IP66',
+            'Förderfähig (KfW)': 'Ja'
+          },
+          keyFeatures: ['Einstellbare Ladeleistung', 'ChargePoint-App', 'Intelligente Funktionen']
+        }
+      ]
+    },
+    {
+      slug: 'battle-born',
+      name: 'Battle Born Batteries',
+      logoUrl: '/assets/logos/battle-born.png',
+      category: ['Speicher'],
+      description:
+        'Battle Born Batteries ist ein amerikanischer Hersteller von Lithium-Eisenphosphat (LiFePO4) Batteriespeichern. Spezialisiert auf robuste und langlebige Energiespeicher für verschiedene Anwendungen.',
+      whyWeTrust: [
+        'Höchste Sicherheit durch LiFePO4-Technologie ohne Kobalt.',
+        'Extrem robuste Bauweise für anspruchsvolle Anwendungen.',
+        'Überlegene Lebensdauer mit 3000+ Zyklen bei 80% DOD.'
+      ],
+      products: [
+        {
+          name: 'LiFePO4 100Ah 12V',
+          category: 'Speicher',
+          manufacturerSlug: 'battle-born',
+          imageUrl: 'https://images.unsplash.com/photo-1633711124238-52260c6f5d81?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Robuster LiFePO4-Batteriespeicher mit höchster Sicherheit und langer Lebensdauer für vielfältige Anwendungen.',
+          basePrice: 850,
+          configurable: false,
+          specs: {
+            'Nutzbare Kapazität': '1.28 kWh',
+            'Max. Entladeleistung': '100 A (1.2 kW)',
+            Technologie: 'LiFePO4 (kobaltfrei)',
+            'Zyklen (80% DOD)': 3000,
+            'Gewicht': '12.9 kg',
+            Garantie: '10 Jahre'
+          },
+          keyFeatures: ['LiFePO4-Sicherheit', '3000+ Zyklen', 'Robuste Bauweise']
+        }
+      ]
     },
     {
       slug: 'k2-systems',
@@ -754,7 +1302,7 @@ export const productCatalog: ProductCatalog = {
           name: 'K2 Dome System',
           category: 'Unterkonstruktion',
           manufacturerSlug: 'k2-systems',
-          imageUrl: 'https://images.unsplash.com/photo-1506938459212-2c36a43b2f0a?q=80&w=870&auto=format&fit',
+          imageUrl: 'https://images.unsplash.com/photo-1506938459212-2c36a43b2f0a?q=80&w=870&auto=format&fit=crop',
           description:
             'Aerodynamisch optimiertes System für Flachdächer mit Südausrichtung, das die Dachlast minimiert.',
           specs: {
@@ -770,7 +1318,7 @@ export const productCatalog: ProductCatalog = {
           name: 'K2 SingleRail System',
           category: 'Unterkonstruktion',
           manufacturerSlug: 'k2-systems',
-          imageUrl: 'https://images.unsplash.com/photo-1558221639-130a584346a8?q=80&w=870&auto=format&fit',
+          imageUrl: 'https://images.unsplash.com/photo-1558221639-130a584346a8?q=80&w=870&auto=format&fit=crop',
           description:
             'Flexibles und bewährtes Schienensystem für Ziegeldächer mit schneller und sicherer Montage.',
           specs: {
@@ -785,7 +1333,7 @@ export const productCatalog: ProductCatalog = {
           name: 'K2 TiltUp Vento System',
           category: 'Unterkonstruktion',
           manufacturerSlug: 'k2-systems',
-          imageUrl: 'https://images.unsplash.com/photo-1506938459212-2c36a43b2f0a?q=80&w=870&auto=format&fit',
+          imageUrl: 'https://images.unsplash.com/photo-1506938459212-2c36a43b2f0a?q=80&w=870&auto=format&fit=crop',
           description:
             'Aufständerungssystem für Trapezblechdächer, um den Modulneigungswinkel zu optimieren und den Ertrag zu steigern.',
           specs: {
@@ -815,7 +1363,7 @@ export const productCatalog: ProductCatalog = {
           name: 'Acti9 Sicherungsautomaten',
           category: 'Elektrokomponenten',
           manufacturerSlug: 'schneider-electric',
-          imageUrl: 'https://images.unsplash.com/photo-1632598822839-867cce349323?q=80&w=870&auto=format&fit',
+          imageUrl: 'https://images.unsplash.com/photo-1632598822839-867cce349323?q=80&w=870&auto=format&fit=crop',
           description:
             'Zuverlässiger Schutz für elektrische Stromkreise in allen Anwendungsbereichen.',
           specs: {
@@ -830,7 +1378,7 @@ export const productCatalog: ProductCatalog = {
           name: 'Resi9 Verteilerschränke',
           category: 'Elektrokomponenten',
           manufacturerSlug: 'schneider-electric',
-          imageUrl: 'https://images.unsplash.com/photo-1632598822839-867cce349323?q=80&w=870&auto=format&fit',
+          imageUrl: 'https://images.unsplash.com/photo-1632598822839-867cce349323?q=80&w=870&auto=format&fit=crop',
           description:
             'Moderne und installationsfreundliche Zählerschränke für die normgerechte Elektroinstallation.',
           specs: {
@@ -845,7 +1393,7 @@ export const productCatalog: ProductCatalog = {
           name: 'ComPacT NSXm Leistungsschalter',
           category: 'Elektrokomponenten',
           manufacturerSlug: 'schneider-electric',
-          imageUrl: 'https://images.unsplash.com/photo-1632598822839-867cce349323?q=80&w=870&auto=format&fit',
+          imageUrl: 'https://images.unsplash.com/photo-1632598822839-867cce349323?q=80&w=870&auto=format&fit=crop',
           description:
             'Kompakter Leistungsschalter für den Schutz von Anlagen und Leitungen im Niederspannungsbereich, ideal für gewerbliche Hauptverteilungen.',
           specs: {

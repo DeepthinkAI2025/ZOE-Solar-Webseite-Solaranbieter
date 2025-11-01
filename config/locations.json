@@ -1,0 +1,50 @@
+[
+  {
+    "name": "ZOE Solar Berlin",
+    "address": "Alt-Moabit 101, 10559 Berlin",
+    "phone": "+49 30 12345678",
+    "email": "berlin@zoe-solar.de",
+    "coordinates": {
+      "lat": 52.525,
+      "lng": 13.345
+    },
+    "radius": 100,
+    "cities": [
+      "Berlin",
+      "Potsdam",
+      "Cottbus"
+    ]
+  },
+  {
+    "name": "ZOE Solar München",
+    "address": "Sendlinger Str. 45, 80331 München",
+    "phone": "+49 89 12345678",
+    "email": "muenchen@zoe-solar.de",
+    "coordinates": {
+      "lat": 48.1351,
+      "lng": 11.582
+    },
+    "radius": 100,
+    "cities": [
+      "München",
+      "Augsburg",
+      "Ingolstadt"
+    ]
+  },
+  {
+    "name": "ZOE Solar Hamburg",
+    "address": "Rathausstraße 1, 20095 Hamburg",
+    "phone": "+49 40 12345678",
+    "email": "hamburg@zoe-solar.de",
+    "coordinates": {
+      "lat": 53.5511,
+      "lng": 9.9937
+    },
+    "radius": 100,
+    "cities": [
+      "Hamburg",
+      "Bremen",
+      "Lüneburg"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "targets": {
+    "LCP": {
+      "good": 2500,
+      "needs_improvement": 4000
+    },
+    "FID": {
+      "good": 100,
+      "needs_improvement": 300
+    },
+    "CLS": {
+      "good": 0.1,
+      "needs_improvement": 0.25
+    },
+    "FCP": {
+      "good": 1800,
+      "needs_improvement": 3000
+    },
+    "TTI": {
+      "good": 3800,
+      "needs_improvement": 7300
+    }
+  },
+  "monitoring": {
+    "real_user_monitoring": true,
+    "lab_testing": true,
+    "continuous_optimization": true
+  }
+}

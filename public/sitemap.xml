@@ -1,387 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+
+  <!-- Hauptseiten -->
   <url>
-    <loc>https://www.zoe-solar.de/</loc>
-    <lastmod>2025-09-28</lastmod>
+    <loc>https://zoe-solar.de/</loc>
+    <lastmod>2025-11-01T01:39:50.279Z</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1</priority>
+    <priority>1.0</priority>
   </url>
+
   <url>
-    <loc>https://www.zoe-solar.de/photovoltaik</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://zoe-solar.de/solaranlagen-fuer-unternehmen</loc>
+    <lastmod>2025-11-01T01:39:50.282Z</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
-    <loc>https://www.zoe-solar.de/e-mobilitaet</loc>
-    <lastmod>2025-09-28</lastmod>
+    <loc>https://zoe-solar.de/photovoltaik-beratung</loc>
+    <lastmod>2025-11-01T01:39:50.282Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://zoe-solar.de/kontakt</loc>
+    <lastmod>2025-11-01T01:39:50.282Z</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://zoe-solar.de/ueber-uns</loc>
+    <lastmod>2025-11-01T01:39:50.282Z</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://zoe-solar.de/faq</loc>
+    <lastmod>2025-11-01T01:39:50.282Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Service-Seiten -->
   <url>
-    <loc>https://www.zoe-solar.de/preise</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://zoe-solar.de/services/gewerbliche-solaranlagen</loc>
+    <lastmod>2025-11-01T01:39:50.282Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://zoe-solar.de/services/speicher-loesungen</loc>
+    <lastmod>2025-11-01T01:39:50.282Z</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://www.zoe-solar.de/projekte</loc>
-    <lastmod>2025-09-28</lastmod>
+    <loc>https://zoe-solar.de/services/wartung-service</loc>
+    <lastmod>2025-11-01T01:39:50.282Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog/News -->
+  <url>
+    <loc>https://zoe-solar.de/blog</loc>
+    <lastmod>2025-11-01T01:39:50.282Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Standorte -->
   <url>
-    <loc>https://www.zoe-solar.de/produkte</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/ueber-uns</loc>
-    <lastmod>2025-09-28</lastmod>
+    <loc>https://zoe-solar.de/standort/berlin</loc>
+    <lastmod>2025-11-01T01:39:50.282Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://www.zoe-solar.de/karriere</loc>
-    <lastmod>2025-09-28</lastmod>
+    <loc>https://zoe-solar.de/standort/muenchen</loc>
+    <lastmod>2025-11-01T01:39:50.282Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://www.zoe-solar.de/kontakt</loc>
-    <lastmod>2025-09-28</lastmod>
+    <loc>https://zoe-solar.de/standort/hamburg</loc>
+    <lastmod>2025-11-01T01:39:50.282Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://www.zoe-solar.de/service/photovoltaik</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/service/ladeparks</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/service/speicher</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/nachhaltigkeit</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/aktuelles</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/anwendungsfaelle</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/login</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/dashboard</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/empfehlungspraemie</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/wissen</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/wissen/glossar</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/innovationen</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/finanzierung</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/sonderaktionen</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/wissen/faq</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/partner-werden</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/impressum</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/datenschutz</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/agb</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/presse</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/wartung-service</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/garantieabwicklung</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/foerdermittel/check</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/diy-hub</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/agri-pv</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/team</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/warum-zoe-solar</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/foerdermittel/kfw</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/foerdermittel/ibb</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/foerdermittel/bafa</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/elektro</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/service/anmeldung-pv</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/service/anmeldung-ladestationen</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/service/netzanschluss</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/service/verteilerbau</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/service/zaehlerbau</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/standort/:city</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/agri-pv/brandenburg</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/agri-pv/sachsen-anhalt</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/agri-pv/niedersachsen</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/agri-pv/bayern</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/agri-pv/nordrhein-westfalen</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/eigenheim</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/eigenheim-kosten</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/eigenheim-einfamilienhaus-kosten</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/eigenheim-planung</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/photovoltaik-gewerbe</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/photovoltaik-logistikzentren</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/photovoltaik-einzelhandel</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/photovoltaik-installation-dach</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/eigenheim-installation</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/seo-monitoring</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/fallstudien</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/agri-pv-erfahrungen</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.zoe-solar.de/mitarbeiter-login</loc>
-    <lastmod>2025-09-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
+
 </urlset>

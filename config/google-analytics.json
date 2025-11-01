@@ -1,0 +1,10 @@
+{
+  "measurement_id": "GA_MEASUREMENT_ID",
+  "tracking_code": "\n<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'GA_MEASUREMENT_ID', {\n    page_title: 'ZOE Solar - Photovoltaik für Unternehmen',\n    page_location: 'https://zoe-solar.de',\n    content_group1: 'Solaranlagen',\n    content_group2: 'Gewerbe',\n    custom_map: {'custom_parameter_1': 'lead_type'}\n  });\n\n  // Custom Events für Lead Tracking\n  gtag('event', 'page_view', {\n    page_title: document.title,\n    page_location: window.location.href\n  });\n\n  // Form Tracking\n  gtag('event', 'form_submit', {\n    'event_category': 'Lead Generation',\n    'event_label': 'Kontaktformular'\n  });\n</script>",
+  "events": [
+    "contact_form_submit",
+    "phone_call",
+    "solar_calculator_use",
+    "download_brochure"
+  ]
+}
