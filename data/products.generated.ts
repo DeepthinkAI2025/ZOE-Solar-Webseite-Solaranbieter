@@ -1286,6 +1286,515 @@ export const productCatalog: ProductCatalog = {
       ]
     },
     {
+      slug: 'first-solar',
+      name: 'First Solar',
+      logoUrl: '/assets/logos/first-solar.png',
+      category: ['Module'],
+      description:
+        'First Solar ist ein amerikanisches Unternehmen und führender Hersteller von Dünnschicht-Solarmodulen auf Basis von Cadmiumtellurid (CdTe). Das Unternehmen ist bekannt für seine nachhaltige Produktion und hohe Recyclingfähigkeit.',
+      whyWeTrust: [
+        'Marktführer in der Dünnschicht-Technologie mit überlegenen Eigenschaften.',
+        'Höchste Nachhaltigkeit durch geschlossenen Produktionskreislauf.',
+        'Starke Position in Utility-Scale-Projekten weltweit.'
+      ],
+      products: [
+        {
+          name: 'Series 6 Plus',
+          category: 'Module',
+          manufacturerSlug: 'first-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1628453483958-c8a709249a26?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Das modernste Dünnschicht-Solarmodul mit niedrigstem Temperaturkoeffizienten und hervorragendem Schwachlichtverhalten.',
+          basePrice: 140,
+          configurable: false,
+          specs: {
+            Leistung: '465 Wp',
+            Wirkungsgrad: '19.4 %',
+            'Zell-Technologie': 'CdTe (Dünnschicht)',
+            Produktgarantie: '12 Jahre',
+            Leistungsgarantie: '25 Jahre (91.25%)',
+            'Temperaturkoeffizient Pmax': '-0.28 %/°C'
+          },
+          keyFeatures: ['Höchste Nachhaltigkeit', 'CdTe-Dünnschicht', 'Ausgezeichnetes Schwachlichtverhalten']
+        }
+      ]
+    },
+    {
+      slug: 'risen',
+      name: 'Risen Energy',
+      logoUrl: '/assets/logos/risen.png',
+      category: ['Module'],
+      description:
+        'Risen Energy ist ein chinesischer Hersteller von hocheffizienten Solarmodulen mit starkem Fokus auf Forschung und Entwicklung. Das Unternehmen ist einer der größten Produzenten von Solarmodulen weltweit.',
+      whyWeTrust: [
+        'Starke Technologie-Entwicklung und Innovation.',
+        'Hohe Qualität bei sehr gutem Preis-Leistungs-Verhältnis.',
+        'Breites Portfolio für verschiedene Anwendungen.'
+      ],
+      products: [
+        {
+          name: 'Titan TSM-NEG21C.20',
+          category: 'Module',
+          manufacturerSlug: 'risen',
+          imageUrl: 'https://images.unsplash.com/photo-1662973163920-7435f1f9f257?q=80&w=870&auto=format&fit=crop',
+          description:
+            'N-Type-TOPCon-Modul der neuesten Generation mit höchster Effizienz und minimaler Degradation.',
+          basePrice: 165,
+          configurable: false,
+          specs: {
+            Leistung: '580 Wp',
+            Wirkungsgrad: '22.4 %',
+            'Zell-Technologie': 'N-Type TOPCon',
+            Produktgarantie: '15 Jahre',
+            Leistungsgarantie: '30 Jahre (87.4%)',
+            'Temperaturkoeffizient Pmax': '-0.28 %/°C'
+          },
+          keyFeatures: ['TOPCon-Technologie', 'Hohe Effizienz', 'Lange Lebensdauer']
+        }
+      ]
+    },
+    {
+      slug: 'sharp',
+      name: 'Sharp',
+      logoUrl: '/assets/logos/sharp.png',
+      category: ['Module'],
+      description:
+        'Sharp ist ein japanisches Unternehmen mit über 60 Jahren Erfahrung in der Solarindustrie. Sharp war der erste Hersteller von kommerziell verfügbaren Solarmodulen und steht für höchste Qualität und Zuverlässigkeit.',
+      whyWeTrust: [
+        'Pionier und Erfahrungsführer mit über 60 Jahren Solar-Expertise.',
+        'Höchste Qualitätsstandards "Made in Japan".',
+        'Starke Position in der Dünnschicht-Technologie.'
+      ],
+      products: [
+        {
+          name: 'NU-JC420B',
+          category: 'Module',
+          manufacturerSlug: 'sharp',
+          imageUrl: 'https://images.unsplash.com/photo-1547283437-0e61a5339f1a?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Hochwertiges monokristallines Modul mit bewährter Technologie und hervorragender Langzeitstabilität.',
+          basePrice: 195,
+          configurable: false,
+          specs: {
+            Leistung: '420 Wp',
+            Wirkungsgrad: '21.3 %',
+            'Zell-Technologie': 'Monokristallin',
+            Produktgarantie: '15 Jahre',
+            Leistungsgarantie: '25 Jahre (85%)',
+            'Temperaturkoeffizient Pmax': '-0.35 %/°C'
+          },
+          keyFeatures: ['Made in Japan', 'Bewährte Technologie', 'Höchste Qualität']
+        }
+      ]
+    },
+    {
+      slug: 'panasonic',
+      name: 'Panasonic',
+      logoUrl: '/assets/logos/panasonic.png',
+      category: ['Module'],
+      description:
+        'Panasonic ist ein japanischer Technologiekonzern mit starker Präsenz in der Solarbranche. Das Unternehmen ist bekannt für seine hochwertigen und langlebigen Solarmodule.',
+      whyWeTrust: [
+        'Japanische Qualität und Zuverlässigkeit.',
+        'Innovative Technologien wie HIT-Zellen.',
+        'Starke Marke mit globaler Präsenz.'
+      ],
+      products: [
+        {
+          name: 'HIT N330',
+          category: 'Module',
+          manufacturerSlug: 'panasonic',
+          imageUrl: 'https://images.unsplash.com/photo-1628453483958-c8a709249a26?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Premium-Modul mit HIT-Technologie (Heterojunction mit Intrinsischem Dünnfilm) für höchste Effizienz bei hoher Temperatur.',
+          basePrice: 280,
+          configurable: false,
+          specs: {
+            Leistung: '330 Wp',
+            Wirkungsgrad: '19.7 %',
+            'Zell-Technologie': 'HIT (Heterojunction)',
+            Produktgarantie: '15 Jahre',
+            Leistungsgarantie: '25 Jahre (90%)',
+            'Temperaturkoeffizient Pmax': '-0.30 %/°C'
+          },
+          keyFeatures: ['HIT-Technologie', 'Japanische Qualität', 'Hohe Temperaturstabilität']
+        }
+      ]
+    },
+    {
+      slug: 'growatt',
+      name: 'Growatt',
+      logoUrl: '/assets/logos/growatt.png',
+      category: ['Wechselrichter'],
+      description:
+        'Growatt ist ein chinesisches Unternehmen, das sich auf die Entwicklung und Herstellung von PV-Wechselrichtern spezialisiert hat. Das Unternehmen bietet ein breites Portfolio für private und gewerbliche Anwendungen.',
+      whyWeTrust: [
+        'Innovative Technologie bei sehr gutem Preis-Leistungs-Verhältnis.',
+        'Breites Portfolio für alle Anwendungsgrößen.',
+        'Starke globale Präsenz und Expansion.'
+      ],
+      products: [
+        {
+          name: 'SPF 3500 TL3',
+          category: 'Wechselrichter',
+          manufacturerSlug: 'growatt',
+          imageUrl: 'https://images.unsplash.com/photo-1632930603299-8a93917c9171?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Zuverlässiger und effizienter Wechselrichter für private PV-Anlagen mit integriertem Display und WiFi.',
+          basePrice: 850,
+          configurable: false,
+          specs: {
+            'AC-Nennleistung': '3.5 kW',
+            'Max. DC-Leistung': '5.25 kWp',
+            'Max. Wirkungsgrad': '97.8 %',
+            'MPP-Tracker': '1',
+            Kommunikation: 'WiFi, RS485',
+            Schutzart: 'IP20',
+            Garantie: '5 Jahre'
+          },
+          keyFeatures: ['Sehr gutes Preis-Leistung', 'WiFi-Monitoring', 'Kompakte Bauweise']
+        }
+      ]
+    },
+    {
+      slug: 'solis',
+      name: 'Ginlong Solis',
+      logoUrl: '/assets/logos/solis.png',
+      category: ['Wechselrichter'],
+      description:
+        'Ginlong Solis ist ein chinesischer Hersteller von PV-Wechselrichtern mit starker Position im internationalen Markt. Das Unternehmen ist für seine technische Innovation und Qualität bekannt.',
+      whyWeTrust: [
+        'Technische Innovation und kontinuierliche Produktentwicklung.',
+        'Starke internationale Präsenz und Zertifizierungen.',
+        'Gutes Preis-Leistungs-Verhältnis bei hoher Qualität.'
+      ],
+      products: [
+        {
+          name: 'S6-GR1P6K',
+          category: 'Wechselrichter',
+          manufacturerSlug: 'solis',
+          imageUrl: 'https://images.unsplash.com/photo-1632930603299-8a93917c9171?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Hochleistungs-Wechselrichter mit hoher Effizienz und fortschrittlichem Design für gewerbliche Anwendungen.',
+          basePrice: 1450,
+          configurable: false,
+          specs: {
+            'AC-Nennleistung': '6.0 kW',
+            'Max. DC-Leistung': '9.0 kWp',
+            'Max. Wirkungsgrad': '98.5 %',
+            'MPP-Tracker': '2',
+            Kommunikation: 'WiFi, Ethernet',
+            Schutzart: 'IP66',
+            Garantie: '5 Jahre'
+          },
+          keyFeatures: ['Hohe Effizienz', 'IP66-Schutz', 'Fortschrittliches Design']
+        }
+      ]
+    },
+    {
+      slug: 'delta',
+      name: 'Delta Electronics',
+      logoUrl: '/assets/logos/delta.png',
+      category: ['Wechselrichter'],
+      description:
+        'Delta Electronics ist ein taiwanesisches Unternehmen, das sich auf die Entwicklung von Energieversorgungslösungen spezialisiert hat. Delta ist einer der weltweit führenden Anbieter von PV-Wechselrichtern.',
+      whyWeTrust: [
+        'Globaler Marktführer in der Leistungselektronik.',
+        'Innovative Technologien und hohe Qualitätsstandards.',
+        'Starke Präsenz in Utility-Scale-Projekten.'
+      ],
+      products: [
+        {
+          name: 'M70A-20',
+          category: 'Wechselrichter',
+          manufacturerSlug: 'delta',
+          imageUrl: 'https://images.unsplash.com/photo-1582285521820-22d24b611688?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Robuster Zentralwechselrichter für mittlere und große PV-Anlagen mit hoher Effizienz und Zuverlässigkeit.',
+          basePrice: 8500,
+          configurable: false,
+          specs: {
+            'AC-Nennleistung': '70.0 kW',
+            'Max. DC-Leistung': '105 kWp',
+            'Max. Wirkungsgrad': '98.9 %',
+            'MPP-Tracker': '4',
+            Kommunikation: 'Ethernet',
+            Schutzart: 'IP54',
+            Garantie: '5 Jahre'
+          },
+          keyFeatures: ['Hohe Effizienz', 'Robuste Bauweise', 'Utility-Scale optimiert']
+        }
+      ]
+    },
+    {
+      slug: 'abb',
+      name: 'ABB',
+      logoUrl: '/assets/logos/abb.png',
+      category: ['Wechselrichter', 'Elektrokomponenten'],
+      description:
+        'ABB ist ein schweizerisch-schwedisches Technologieunternehmen, das Lösungen für Energieeffizienz und Automatisierung entwickelt. ABB ist ein führender Anbieter von Wechselrichtern und Elektrokomponenten.',
+      whyWeTrust: [
+        'Globaler Technologieführer mit langjähriger Erfahrung.',
+        'Höchste Sicherheitsstandards und Qualität.',
+        'Umfassendes Portfolio für Energie- und Automatisierungslösungen.'
+      ],
+      products: [
+        {
+          name: 'TRIO-27.6-TL-OUTD',
+          category: 'Wechselrichter',
+          manufacturerSlug: 'abb',
+          imageUrl: 'https://images.unsplash.com/photo-1582285521820-22d24b611688?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Hochwertiger dreiphasiger Wechselrichter für gewerbliche PV-Anlagen mit exzellenten Performance-Eigenschaften.',
+          basePrice: 4200,
+          configurable: false,
+          specs: {
+            'AC-Nennleistung': '27.6 kW',
+            'Max. DC-Leistung': '41.4 kWp',
+            'Max. Wirkungsgrad': '98.4 %',
+            'MPP-Tracker': '2',
+            Kommunikation: 'Ethernet',
+            Schutzart: 'IP54',
+            Garantie: '5 Jahre'
+          },
+          keyFeatures: ['Swiss Quality', 'Hohe Effizienz', 'Gewerbeanlagen optimiert']
+        },
+        {
+          name: 'OT63F Fuses',
+          category: 'Elektrokomponenten',
+          manufacturerSlug: 'abb',
+          imageUrl: 'https://images.unsplash.com/photo-1632598822839-867cce349323?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Hochwertige Sicherungen und Schutzkomponenten für den sicheren Betrieb von PV-Anlagen.',
+          specs: {
+            Typ: 'NH-Sicherungslastschalter',
+            Nennstrom: '63 A',
+            Polzahl: '3P',
+            Spannung: '690 V AC',
+            Norm: 'IEC 60947-3'
+          },
+          keyFeatures: ['Swiss Engineering', 'Höchste Sicherheit', 'IEC-zertifiziert']
+        }
+      ]
+    },
+    {
+      slug: 'phoenix-contact',
+      name: 'Phoenix Contact',
+      logoUrl: '/assets/logos/phoenix-contact.png',
+      category: ['Elektrokomponenten'],
+      description:
+        'Phoenix Contact ist ein deutscher Hersteller von elektrischen Verbindungen und Automatisierungstechnik. Das Unternehmen ist ein weltweiter Marktführer in der Industriesteckverbinder-Technologie.',
+      whyWeTrust: [
+        'Höchste Qualität "Made in Germany".',
+        'Weltweiter Marktführer in der Verbindungs- und Automatisierungstechnik.',
+        'Umfassende Produktpalette für PV-Anlagen.'
+      ],
+      products: [
+        {
+          name: 'SUNCLIX Verbindungsstecker',
+          category: 'Elektrokomponenten',
+          manufacturerSlug: 'phoenix-contact',
+          imageUrl: 'https://images.unsplash.com/photo-1632598822839-867cce349323?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Zuverlässige DC-Verbindungsstecker für die sichere Verbindung von Solarmodulen mit der DC-Leitung.',
+          specs: {
+            Typ: 'DC-Steckverbinder',
+            Spannung: '1000 V DC',
+            Nennstrom: '30 A',
+            Schutzart: 'IP68',
+            Norm: 'IEC 62852'
+          },
+          keyFeatures: ['Made in Germany', 'IP68-Schutz', 'IEC-zertifiziert']
+        },
+        {
+          name: 'QUINT4 Stromversorgung',
+          category: 'Elektrokomponenten',
+          manufacturerSlug: 'phoenix-contact',
+          imageUrl: 'https://images.unsplash.com/photo-1632598822839-867cce349323?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Robuste Stromversorgung für die Versorgung von Wechselrichtern und Überwachungssystemen.',
+          specs: {
+            Typ: 'Schaltnetzteil',
+            Ausgangsspannung: '24 V DC',
+            Ausgangsstrom: '20 A',
+            Eingangsspannung: '400-500 V AC',
+            Wirkungsgrad: '>94 %'
+          },
+          keyFeatures: ['Hoher Wirkungsgrad', 'Robuste Bauweise', 'Überwacht und geregelt']
+        }
+      ]
+    },
+    {
+      slug: 'csun',
+      name: 'CSUN',
+      logoUrl: '/assets/logos/csun.png',
+      category: ['Module'],
+      description:
+        'CSUN ist ein chinesischer Hersteller von hocheffizienten Solarmodulen mit starkem Fokus auf Technologie-Entwicklung und Qualität. Das Unternehmen ist ein etablierter Player im globalen PV-Markt.',
+      whyWeTrust: [
+        'Starke technische Expertise und kontinuierliche Innovation.',
+        'Hohe Qualitätsstandards bei attraktiven Preisen.',
+        'Breites Produktportfolio für verschiedene Anwendungen.'
+      ],
+      products: [
+        {
+          name: 'CS7N-MS-540',
+          category: 'Module',
+          manufacturerSlug: 'csun',
+          imageUrl: 'https://images.unsplash.com/photo-1628453483958-c8a709249a26?q=80&w=870&auto=format&fit=crop',
+          description:
+            'N-Type-Solarmodul mit hoher Effizienz und hervorragender Performance bei verschiedenen Lichtbedingungen.',
+          basePrice: 155,
+          configurable: false,
+          specs: {
+            Leistung: '540 Wp',
+            Wirkungsgrad: '20.8 %',
+            'Zell-Technologie': 'N-Type PERC',
+            Produktgarantie: '12 Jahre',
+            Leistungsgarantie: '25 Jahre (84.8%)',
+            'Temperaturkoeffizient Pmax': '-0.35 %/°C'
+          },
+          keyFeatures: ['N-Type-Technologie', 'Hohe Effizienz', 'Gutes Preis-Leistung']
+        }
+      ]
+    },
+    {
+      slug: 'gcl',
+      name: 'GCL Group',
+      logoUrl: '/assets/logos/gcl.png',
+      category: ['Module'],
+      description:
+        'GCL Group ist ein chinesisches Unternehmen, das sich auf die Entwicklung und Produktion von Polysilizium und Solarmodulen spezialisiert hat. Das Unternehmen ist einer der größten Silizium-Produzenten weltweit.',
+      whyWeTrust: [
+        'Führende Position in der Polysilizium-Produktion.',
+        'Vertikale Integration von der Rohstoff- bis zur Endprodukt-Ebene.',
+        'Starke Marktposition und finanzielle Stabilität.'
+      ],
+      products: [
+        {
+          name: 'GCL-N-Poly 72/156-545W',
+          category: 'Module',
+          manufacturerSlug: 'gcl',
+          imageUrl: 'https://images.unsplash.com/photo-1662973163920-7435f1f9f257?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Hochwertiges N-Type-Modul mit eigener Silizium-Versorgung für maximale Kosteneffizienz.',
+          basePrice: 145,
+          configurable: false,
+          specs: {
+            Leistung: '545 Wp',
+            Wirkungsgrad: '21.0 %',
+            'Zell-Technologie': 'N-Type PERC',
+            Produktgarantie: '12 Jahre',
+            Leistungsgarantie: '25 Jahre (84.8%)',
+            'Temperaturkoeffizient Pmax': '-0.35 %/°C'
+          },
+          keyFeatures: ['Vertikale Integration', 'N-Type-Qualität', 'Kosteneffizient']
+        }
+      ]
+    },
+    {
+      slug: 'suntech',
+      name: 'Suntech Power',
+      logoUrl: '/assets/logos/suntech.png',
+      category: ['Module'],
+      description:
+        'Suntech Power ist ein chinesischer Hersteller von hocheffizienten Solarmodulen. Das Unternehmen war einer der ersten großen chinesischen Solarhersteller und hat eine starke Position im globalen Markt.',
+      whyWeTrust: [
+        'Langjährige Erfahrung und bewährte Qualität.',
+        'Starke internationale Präsenz und Markenbekanntheit.',
+        'Kontinuierliche technologische Weiterentwicklung.'
+      ],
+      products: [
+        {
+          name: 'STP285S-24/Vb',
+          category: 'Module',
+          manufacturerSlug: 'suntech',
+          imageUrl: 'https://images.unsplash.com/photo-1547283437-0e61a5339f1a?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Bewährtes monokristallines Modul mit zuverlässiger Performance und langjähriger Betriebserfahrung.',
+          basePrice: 160,
+          configurable: false,
+          specs: {
+            Leistung: '285 Wp',
+            Wirkungsgrad: '17.5 %',
+            'Zell-Technologie': 'Monokristallin',
+            Produktgarantie: '10 Jahre',
+            Leistungsgarantie: '25 Jahre (80.7%)',
+            'Temperaturkoeffizient Pmax': '-0.4 %/°C'
+          },
+          keyFeatures: ['Bewährte Technologie', 'Langjährige Erfahrung', 'Zuverlässige Performance']
+        }
+      ]
+    },
+    {
+      slug: 'yingli',
+      name: 'Yingli Solar',
+      logoUrl: '/assets/logos/yingli.png',
+      category: ['Module'],
+      description:
+        'Yingli Solar ist ein chinesischer Hersteller von Solarmodulen mit einer der längsten Erfolgsgeschichten in der PV-Branche. Das Unternehmen war weltweit einer der größten Solarmodulproduzenten.',
+      whyWeTrust: [
+        'Langjährige Erfahrung und etablierte Marktposition.',
+        'Starke technische Expertise und Qualitätskontrolle.',
+        'Breite Produktpalette und internationale Präsenz.'
+      ],
+      products: [
+        {
+          name: 'Yingli Panda 300',
+          category: 'Module',
+          manufacturerSlug: 'yingli',
+          imageUrl: 'https://images.unsplash.com/photo-1628453483958-c8a709249a26?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Hochwertiges monokristallines Modul mit bewährter Technologie und solider Langzeitleistung.',
+          basePrice: 170,
+          configurable: false,
+          specs: {
+            Leistung: '300 Wp',
+            Wirkungsgrad: '18.2 %',
+            'Zell-Technologie': 'Monokristallin',
+            Produktgarantie: '12 Jahre',
+            Leistungsgarantie: '25 Jahre (83.1%)',
+            'Temperaturkoeffizient Pmax': '-0.42 %/°C'
+          },
+          keyFeatures: ['Bewährte Technologie', 'Langjährige Erfahrung', 'Solide Performance']
+        }
+      ]
+    },
+    {
+      slug: 'kyocera',
+      name: 'Kyocera',
+      logoUrl: '/assets/logos/kyocera.png',
+      category: ['Module'],
+      description:
+        'Kyocera ist ein japanisches Unternehmen mit über 40 Jahren Erfahrung in der Entwicklung und Herstellung von Solarmodulen. Kyocera ist bekannt für seine langlebigen und zuverlässigen Produkte.',
+      whyWeTrust: [
+        'Japanische Qualität und Zuverlässigkeit.',
+        'Langjährige Erfahrung und kontinuierliche Innovation.',
+        'Hervorragende Langzeitstabilität und Garantieleistungen.'
+      ],
+      products: [
+        {
+          name: 'KC200GT',
+          category: 'Module',
+          manufacturerSlug: 'kyocera',
+          imageUrl: 'https://images.unsplash.com/photo-1547283437-0e61a5339f1a?q=80&w=870&auto=format&fit=crop',
+          description:
+            'Bewährtes monokristallines Modul mit japanischer Qualität und hervorragender Langzeitzuverlässigkeit.',
+          basePrice: 220,
+          configurable: false,
+          specs: {
+            Leistung: '200 Wp',
+            Wirkungsgrad: '15.3 %',
+            'Zell-Technologie': 'Monokristallin',
+            Produktgarantie: '20 Jahre',
+            Leistungsgarantie: '25 Jahre (90%)',
+            'Temperaturkoeffizient Pmax': '-0.44 %/°C'
+          },
+          keyFeatures: ['Japanese Quality', 'Langzeitzuverlässigkeit', '25 Jahre Garantie']
+        }
+      ]
+    },
+    {
       slug: 'k2-systems',
       name: 'K2 Systems',
       logoUrl: '/assets/logos/k2-systems.png',

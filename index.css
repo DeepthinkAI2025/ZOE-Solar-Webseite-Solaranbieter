@@ -152,3 +152,150 @@ textarea:focus {
 	mask-image: radial-gradient(circle at center, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.85) 45%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0) 100%);
 	-webkit-mask-image: radial-gradient(circle at center, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.85) 45%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0) 100%);
 }
+
+/* Mobile Menu & Navigation Optimierungen für besseres SEO */
+
+/* Hamburger Icon Animation */
+.hamburger-icon .line {
+	transition: all 0.3s ease-in-out;
+	transform-origin: center;
+}
+
+.hamburger-icon.open .line-1 {
+	transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-icon.open .line-2 {
+	opacity: 0;
+	transform: translateX(-10px);
+}
+
+.hamburger-icon.open .line-3 {
+	transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Mobile Menu Backdrop Blur - Modern Effect */
+.off-canvas-menu-overlay {
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+}
+
+/* Mobile Menu Slide-in Animation */
+.off-canvas-menu {
+	transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+	will-change: transform;
+}
+
+/* Mobile Menu Items Stagger Animation */
+.nav-item-stagger {
+	opacity: 0;
+	transform: translateX(30px);
+	transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-is-open .nav-item-stagger {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.mobile-menu-is-open .nav-item-stagger:nth-child(1) { transition-delay: 100ms; }
+.mobile-menu-is-open .nav-item-stagger:nth-child(2) { transition-delay: 150ms; }
+.mobile-menu-is-open .nav-item-stagger:nth-child(3) { transition-delay: 200ms; }
+.mobile-menu-is-open .nav-item-stagger:nth-child(4) { transition-delay: 250ms; }
+.mobile-menu-is-open .nav-item-stagger:nth-child(5) { transition-delay: 300ms; }
+.mobile-menu-is-open .nav-item-stagger:nth-child(6) { transition-delay: 350ms; }
+
+/* Body Scroll Lock für Mobile Menu */
+body.mobile-menu-open {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+}
+
+/* Touch-friendly Optimierungen */
+@media (max-width: 768px) {
+	/* Erhöhte Touch Targets für bessere Usability */
+	.nav-item-stagger {
+		min-height: 48px;
+		display: flex;
+		align-items: center;
+		padding: 12px 16px;
+		margin: 4px 0;
+		border-radius: 12px;
+	}
+
+	/* Verbesserte Mobile Navigation */
+	.off-canvas-menu {
+		width: 85vw;
+		max-width: 320px;
+		box-shadow: -4px 0 24px rgba(0, 0, 0, 0.15);
+	}
+
+	/* Mobile Menu Scrolling */
+	.off-canvas-menu .mobile-menu-is-open {
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	/* Bessere Mobile Button Sizes */
+	.hamburger-icon {
+		width: 32px;
+		height: 32px;
+		padding: 8px;
+	}
+
+	/* Mobile Dropdown Optimierungen */
+	.cta-button-glow {
+		min-height: 48px;
+		font-size: 16px;
+	}
+}
+
+/* Mega Menu Mobile Optimierungen */
+@media (max-width: 1024px) {
+	/* Verstecke Desktop Mega Menüs auf Mobile */
+	.header .mega-menu-dropdown {
+		display: none;
+	}
+
+	/* Mobile-friendly Navigation */
+	.header nav {
+		position: relative;
+	}
+}
+
+/* Performance Optimierungen für Mobile */
+@media (max-width: 768px) {
+	/* Reduzierte Animationen für bessere Performance */
+	.hamburger-icon .line {
+		transition: all 0.2s ease;
+	}
+
+	.off-canvas-menu {
+		transition: transform 0.3s ease;
+	}
+
+	.nav-item-stagger {
+		transition: all 0.2s ease;
+	}
+}
+
+/* Accessibility & SEO Verbesserungen */
+@media (prefers-reduced-motion: reduce) {
+	.hamburger-icon .line,
+	.off-canvas-menu,
+	.nav-item-stagger {
+		transition: none;
+	}
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+	.nav-item-stagger {
+		border: 2px solid currentColor;
+	}
+
+	.hamburger-icon .line {
+		border-width: 2px;
+	}
+}
