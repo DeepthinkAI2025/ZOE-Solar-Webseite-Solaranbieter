@@ -993,9 +993,9 @@ let googleVisionOCRService: GoogleVisionOCRService | null = null;
 
 export function getGoogleVisionOCRService(): GoogleVisionOCRService {
   if (!googleVisionOCRService) {
-    const apiKey = process.env.GOOGLE_VISION_API_KEY || process.env.GOOGLE_CLOUD_VISION_API_KEY;
+    const apiKey = process.env.GOOGLE_API_KEY;
     if (!apiKey) {
-      throw new Error('GOOGLE_VISION_API_KEY environment variable is required for OCR functionality');
+      throw new Error('GOOGLE_API_KEY environment variable is required for OCR functionality');
     }
 
     googleVisionOCRService = new GoogleVisionOCRService(apiKey);

@@ -413,18 +413,57 @@ const MitarbeiterLoginPage: React.FC = () => {
     event.preventDefault();
     setError(null);
 
-    const normalisedEmail = email.trim().toLowerCase();
-    const validCredentials = normalisedEmail === expectedEmail && password === expectedPassword;
-
-    if (!validCredentials) {
-      setError('Ungültige Zugangsdaten. Bitte prüfen Sie E-Mail und Passwort.');
+    // Input Validation
+    if (!email.trim() || !password.trim()) {
+      setError('Bitte geben Sie E-Mail und Passwort ein.');
       return;
     }
 
     setIsSubmitting(true);
     try {
-      await loadAdminResources();
-      setIsAuthenticated(true);
+      // JWT Authentication über neues Backend-API
+      const response = await fetchJson<{ success: boolean; data: { session: any; token: string } }>(
+        '/api/admin/auth/login',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            email: email.trim().toLowerCase(),
+            password: password.trim()
+          })
+        }
+      );
+
+      if (response.success && response.data?.token) {
+        // Token sicher speichern
+        localStorage.setItem('adminToken', response.data.token);
+        localStorage.setItem('adminSession', JSON.stringify(response.data.session));
+        
+        // Authentifizierung erfolgreich - Dashboard laden
+        await loadAdminResources();
+        setIsAuthenticated(true);
+        
+        console.log('[AUTH] Login erfolgreich für', email);
+      } else {
+        throw new Error('Ungültige Antwort vom Server erhalten');
+      }
+    } catch (error) {
+      console.error('[AUTH] Login fehlgeschlagen:', error);
+      const errorMessage = error instanceof Error ? error.message : 'Login fehlgeschlagen';
+      
+      if (errorMessage.includes('Invalid email or password')) {
+        setError('Ungültige Zugangsdaten. Bitte prüfen Sie E-Mail und Passwort.');
+      } else if (errorMessage.includes('MISSING_CREDENTIALS')) {
+        setError('E-Mail und Passwort sind erforderlich.');
+      } else {
+        setError(`Login fehlgeschlagen: ${errorMessage}`);
+      }
+      
+      // Tokens bei Fehler löschen
+      localStorage.removeItem('adminToken');
+      localStorage.removeItem('adminSession');
     } finally {
       setIsSubmitting(false);
     }

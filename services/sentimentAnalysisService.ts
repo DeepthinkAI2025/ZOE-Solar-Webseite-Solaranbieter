@@ -658,7 +658,7 @@ export class SentimentAnalysisService {
 // Standard-Konfiguration
 const defaultSentimentConfig: SentimentConfig = {
   apiEndpoint: 'https://api.sentiment-ai.example.com/v1',
-  apiKey: process.env.SENTIMENT_API_KEY || '',
+  apiKey: 'sentiment-disabled-free-mode',
   models: {
     primary: 'sentiment-v3-large',
     fallback: 'sentiment-v2-base',

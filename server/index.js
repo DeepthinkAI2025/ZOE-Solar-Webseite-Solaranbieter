@@ -19,6 +19,27 @@ import { fetchMonitoringSummary } from './services/monitoringFeed.js';
 // Content Management Routes
 import contentRoutes from './routes/contentRoutes.js';
 
+// Admin Authentication Routes
+import authRoutes from './routes/authRoutes.js';
+
+// Image Management Routes
+import imageRoutes from './routes/imageRoutes.js';
+
+// Blog Scheduling Routes
+import schedulingRoutes from './routes/schedulingRoutes.js';
+
+// Content Management Routes
+import contentManagementRoutes from './routes/contentManagementRoutes.js';
+
+// Knowledge Base Routes
+import knowledgeRoutes from './routes/knowledgeRoutes.js';
+
+// Customer Management Routes
+import customerManagementRoutes from './routes/customerManagementRoutes.js';
+
+// Advertisement Management Routes
+import advertisementRoutes from './routes/advertisementRoutes.js';
+
 // Test Routes for n8n Integration
 import testRoutes from './routes/testRoutes.js';
 
@@ -406,6 +427,27 @@ app.get('/health', (_req, res) => {
 // Content Management API Routes
 app.use('/api/content', contentRoutes);
 
+// Admin Authentication Routes
+app.use('/api/admin', authRoutes);
+
+// Image Management Routes
+app.use('/api/admin', imageRoutes);
+
+// Blog Scheduling Routes
+app.use('/api/admin', schedulingRoutes);
+
+// Content Management Routes
+app.use('/api/admin', contentManagementRoutes);
+
+// Knowledge Base Routes
+app.use('/api/admin', knowledgeRoutes);
+
+// Customer Management Routes
+app.use('/api/admin', customerManagementRoutes);
+
+// Advertisement Management Routes
+app.use('/api/admin', advertisementRoutes);
+
 // Test API Routes for n8n Integration
 app.use('/api', testRoutes);
 
@@ -490,6 +532,9 @@ app.get('/api/monitoring/summary', async (req, res) => {
       success: false,
       message: 'Monitoring-Daten derzeit nicht verfügbar.'
     });
+  }
+});
+
 // SSR Handler für alle React-Routen (außer API)
 app.get('*', async (req, res) => {
   try {
@@ -518,10 +563,4 @@ app.get('*', async (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server läuft auf Port ${PORT} mit SSR-Unterstützung`);
-});
-  }
-});
-
-app.listen(PORT, () => {
-  console.log(`Admin API Server läuft auf Port ${PORT}`);
 });
