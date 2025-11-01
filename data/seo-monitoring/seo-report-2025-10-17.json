@@ -1,0 +1,76 @@
+{
+  "timestamp": "2025-10-17T06:09:21.477Z",
+  "rankings": [
+    {
+      "keyword": "Agri-PV Deutschland",
+      "position": 11,
+      "previousPosition": 5,
+      "searchVolume": 1596,
+      "trend": "down",
+      "lastUpdated": "2025-10-17"
+    },
+    {
+      "keyword": "Photovoltaik Landwirtschaft",
+      "position": 7,
+      "previousPosition": 4,
+      "searchVolume": 2067,
+      "trend": "down",
+      "lastUpdated": "2025-10-17"
+    },
+    {
+      "keyword": "Solaranlage Brandenburg",
+      "position": 13,
+      "previousPosition": 14,
+      "searchVolume": 2833,
+      "trend": "down",
+      "lastUpdated": "2025-10-17"
+    },
+    {
+      "keyword": "Agri-PV Förderung 2025",
+      "position": 19,
+      "previousPosition": 8,
+      "searchVolume": 3209,
+      "trend": "down",
+      "lastUpdated": "2025-10-17"
+    },
+    {
+      "keyword": "Photovoltaik Gewerbe",
+      "position": 18,
+      "previousPosition": 11,
+      "searchVolume": 3991,
+      "trend": "up",
+      "lastUpdated": "2025-10-17"
+    },
+    {
+      "keyword": "Solarpark Bayern",
+      "position": 10,
+      "previousPosition": 16,
+      "searchVolume": 4800,
+      "trend": "stable",
+      "lastUpdated": "2025-10-17"
+    }
+  ],
+  "coreWebVitals": {
+    "lcp": 2.519941067404416,
+    "fid": 124.11117265650807,
+    "cls": 0.15326178125541728,
+    "overall": "good"
+  },
+  "structuredData": {
+    "valid": 0,
+    "total": 0,
+    "issues": []
+  },
+  "backlinks": {
+    "total": 1343,
+    "new": 5,
+    "lost": 1,
+    "domainAuthority": 68
+  },
+  "aiSearch": {
+    "googleBard": 11,
+    "chatGPT": 1,
+    "perplexity": 1,
+    "bingAI": 2
+  }
+}
