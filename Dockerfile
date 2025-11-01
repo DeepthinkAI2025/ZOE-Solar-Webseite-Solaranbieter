@@ -1,4 +1,4 @@
-FROM node:20-bookworm-slim
+FROM node:25-bookworm-slim
 
 ENV NODE_ENV=production \
 		NPM_CONFIG_UPDATE_NOTIFIER=false \
