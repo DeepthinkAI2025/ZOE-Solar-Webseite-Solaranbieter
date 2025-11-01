@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Main FAQ Page -->
+  <url>
+    <loc>https://zoe-solar.de/wissen/faq</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- FAQ API Endpoints for AI Crawlers -->
+  <url>
+    <loc>https://zoe-solar.de/api/faq-data</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://zoe-solar.de/api/faq-data?type=faq</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://zoe-solar.de/api/faq-data?type=howto</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://zoe-solar.de/api/faq-data?type=services</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Individual FAQ Categories (Virtual URLs for SEO) -->
+  <url>
+    <loc>https://zoe-solar.de/wissen/faq/grundlagen</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://zoe-solar.de/wissen/faq/kosten-foerderung</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://zoe-solar.de/wissen/faq/installation-technik</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://zoe-solar.de/wissen/faq/speicher-e-mobilitaet</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://zoe-solar.de/wissen/faq/gewerbe-landwirtschaft</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://zoe-solar.de/wissen/faq/versicherung-sicherheit</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://zoe-solar.de/wissen/faq/recht-vertraege</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Related Service Pages -->
+  <url>
+    <loc>https://zoe-solar.de/leistungen</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://zoe-solar.de/photovoltaik</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://zoe-solar.de/agri-pv</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://zoe-solar.de/e-mobilitaet</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Page for FAQ Follow-up -->
+  <url>
+    <loc>https://zoe-solar.de/kontakt</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

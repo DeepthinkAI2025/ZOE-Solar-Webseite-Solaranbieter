@@ -181,3 +181,6 @@ export const derivePageFromPath = (pathname: string): Page => {
 
   return 'home';
 };
+
+// Export pageRoutes for InternalLinkingOptimizer
+export const pageRoutes = pageToPath;

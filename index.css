@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Design System Integration */
+@import './styles/design-tokens.css';
+
 /* Core Web Vitals Optimierungen */
 * {
 	box-sizing: border-box;

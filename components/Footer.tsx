@@ -1,5 +1,4 @@
-import React from 'react';
-// FIX: Changed import to ../types to resolve circular dependency with App.tsx
+import React, { useState } from 'react';
 import { Page } from '../types';
 
 interface FooterProps {
@@ -27,6 +26,51 @@ const FooterLink: React.FC<{ page: Page; setPage: (page: Page) => void; children
     </li>
 );
 
+interface FooterSectionProps {
+  title: string;
+  children: React.ReactNode;
+  isMobile?: boolean;
+}
+
+const FooterSection: React.FC<FooterSectionProps> = ({ title, children, isMobile = false }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  if (!isMobile) {
+    return (
+      <div>
+        <h4 className="font-bold text-white uppercase tracking-wider mb-4 text-sm">{title}</h4>
+        <ul className="space-y-3 text-sm">
+          {children}
+        </ul>
+      </div>
+    );
+  }
+
+  return (
+    <div className="border-b border-slate-700">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full py-4 flex justify-between items-center text-white font-semibold hover:text-green-400 transition-colors"
+      >
+        <span className="uppercase tracking-wider text-sm">{title}</span>
+        <svg
+          className={`w-5 h-5 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </button>
+      {isOpen && (
+        <ul className="pb-4 space-y-3 text-sm pl-4">
+          {children}
+        </ul>
+      )}
+    </div>
+  );
+};
+
 const Footer: React.FC<FooterProps> = ({ setPage }) => {
   const handleScrollTo = (elementId: string) => {
     setPage('home');
@@ -53,7 +97,7 @@ const Footer: React.FC<FooterProps> = ({ setPage }) => {
                 <div className="text-4xl font-bold text-white mb-4 cursor-pointer inline-block" onClick={() => setPage('home')}>
                     ZOE <span className="text-green-500">Solar</span>
                 </div>
-                <p className="max-w-xs mb-6 text-slate-400">
+                <p className="max-w-xs mb-6 text-slate-400 text-sm">
                   Ihr Partner für gewerbliche Photovoltaik-Großanlagen.
                 </p>
                 <div className="flex items-center gap-5">
@@ -70,126 +114,98 @@ const Footer: React.FC<FooterProps> = ({ setPage }) => {
                 </div>
             </div>
             
-            {/* Link Columns */}
-            <div className="lg:col-span-9 grid grid-cols-2 md:grid-cols-4 gap-8 text-base">
-                <div>
-                    <h4 className="font-bold text-white uppercase tracking-wider mb-4">Leistungen</h4>
-                    <ul className="space-y-4">
-                        <FooterLink page="service-photovoltaik" setPage={setPage}>Aufdachanlagen</FooterLink>
-                        <FooterLink page="agri-pv" setPage={setPage}>Agri-PV</FooterLink>
-                        <FooterLink page="service-photovoltaik" setPage={setPage}>Solar-Carports</FooterLink>
-                        <FooterLink page="service-speicher" setPage={setPage}>Speicherlösungen</FooterLink>
-                        <FooterLink page="service-ladeparks" setPage={setPage}>Ladeparks</FooterLink>
-                        <FooterLink page="innovations" setPage={setPage}>Innovative Technologien</FooterLink>
-                    </ul>
-                </div>
-                <div>
-                    <h4 className="font-bold text-white uppercase tracking-wider mb-4">Unternehmen</h4>
-                    <ul className="space-y-4">
-                        <FooterLink page="ueber-uns" setPage={setPage}>Über Uns</FooterLink>
-                        <FooterLink page="team" setPage={setPage}>Unser Team</FooterLink>
-                        <FooterLink page="warum-zoe-solar" setPage={setPage}>Warum ZOE Solar</FooterLink>
-                        <FooterLink page="projekte" setPage={setPage}>Referenzen</FooterLink>
-                        <FooterLink page="nachhaltigkeit" setPage={setPage}>Nachhaltigkeit</FooterLink>
-                        <FooterLink page="karriere" setPage={setPage}>Karriere</FooterLink>
-                        <FooterLink page="presse" setPage={setPage}>Presse</FooterLink>
-                        <FooterLink page="kontakt" setPage={setPage}>Kontakt</FooterLink>
-                    </ul>
-                </div>
-                <div>
-                    <h4 className="font-bold text-white uppercase tracking-wider mb-4">Partner</h4>
-                    <ul className="space-y-4">
-                        <FooterLink page="partner-werden" setPage={setPage}>Partner werden</FooterLink>
-                        <FooterLink page="empfehlungspraemie" setPage={setPage}>Empfehlungsprämie</FooterLink>
-                        <FooterLink page="partner-werden" setPage={setPage}>Für Installateure</FooterLink>
-                        <FooterLink page="partner-werden" setPage={setPage}>Für Energieberater</FooterLink>
-                    </ul>
-                </div>
-                 <div>
-                    <h4 className="font-bold text-white uppercase tracking-wider mb-4">Support</h4>
-                    <ul className="space-y-4">
-                        <FooterLink page="faq-page" setPage={setPage}>Help Center (FAQ)</FooterLink>
-                        <FooterLink page="faq-page" setPage={setPage}>Top-FAQ</FooterLink>
-                        <FooterLink page="diy-hub" setPage={setPage}>DIY-Hub</FooterLink>
-                        <FooterLink page="dashboard" setPage={setPage}>Anlagen-Monitoring</FooterLink>
-                        <FooterLink page="wartung-service" setPage={setPage}>Wartung & Service</FooterLink>
-                        <FooterLink page="garantieabwicklung" setPage={setPage}>Garantieabwicklung</FooterLink>
-                        <FooterLink page="home" setPage={setPage} action={() => document.dispatchEvent(new CustomEvent('open-chat'))}>Rückrufservice</FooterLink>
-                    </ul>
-                </div>
-            </div>
-        </div>
+            {/* Link Columns - Desktop */}
+            <div className="hidden lg:grid lg:col-span-9 grid-cols-4 gap-8 text-sm">
+                <FooterSection title="Über ZOE Solar">
+                    <FooterLink page="ueber-uns" setPage={setPage}>Über Uns</FooterLink>
+                    <FooterLink page="team" setPage={setPage}>Unser Team</FooterLink>
+                    <FooterLink page="warum-zoe-solar" setPage={setPage}>Warum ZOE Solar</FooterLink>
+                    <FooterLink page="projekte" setPage={setPage}>Referenzen</FooterLink>
+                    <FooterLink page="nachhaltigkeit" setPage={setPage}>Nachhaltigkeit</FooterLink>
+                    <FooterLink page="karriere" setPage={setPage}>Karriere</FooterLink>
+                    <FooterLink page="presse" setPage={setPage}>Presse</FooterLink>
+                    <FooterLink page="kontakt" setPage={setPage}>Kontakt</FooterLink>
+                </FooterSection>
 
-        {/* Divider */}
-        <hr className="border-slate-700 my-12" />
-        
-        {/* Bottom Section: Secondary Links */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-base">
-            <div>
-                <h4 className="font-bold text-white uppercase tracking-wider mb-4">Top-Anwendungsfälle</h4>
-                <ul className="space-y-4">
-                    <FooterLink page="anwendungsfaelle" setPage={setPage}>Logistik & Industrie</FooterLink>
-                    <FooterLink page="anwendungsfaelle" setPage={setPage}>Handel & Gewerbe</FooterLink>
-                    <FooterLink page="anwendungsfaelle" setPage={setPage}>Landwirtschaft</FooterLink>
-                    <FooterLink page="anwendungsfaelle" setPage={setPage}>Immobilienwirtschaft</FooterLink>
-                    <li className="pt-2"><a onClick={() => setPage('photovoltaik-gewerbe')} className="text-slate-500 hover:text-green-400 transition-colors cursor-pointer underline">Gewerbe-Cluster</a></li>
-                    <li className="pt-1"><a onClick={() => setPage('photovoltaik-rechner-gewerbe')} className="text-slate-500 hover:text-green-400 transition-colors cursor-pointer underline">Wirtschaftlichkeitsrechner</a></li>
-                    <li className="pt-1"><a onClick={() => setPage('agri-pv-bayern')} className="text-slate-500 hover:text-green-400 transition-colors cursor-pointer underline">Agri-PV Bayern</a></li>
-                    <li className="pt-1"><a onClick={() => setPage('photovoltaik-gewerbegebaeude')} className="text-slate-500 hover:text-green-400 transition-colors cursor-pointer underline">Gewerbegebäude</a></li>
-                    <li className="pt-2"><a onClick={() => setPage('anwendungsfaelle')} className="text-slate-500 hover:text-green-400 transition-colors cursor-pointer underline">Mehr anzeigen</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 className="font-bold text-white uppercase tracking-wider mb-4">Beliebte Technologien</h4>
-                <ul className="space-y-4">
-                    <FooterLink page="produkte" setPage={setPage}>Hochleistungsmodule</FooterLink>
-                    <FooterLink page="produkte" setPage={setPage}>Intelligente Wechselrichter</FooterLink>
-                    <FooterLink page="produkte" setPage={setPage}>LFP-Speicher</FooterLink>
-                    <FooterLink page="produkte" setPage={setPage}>HPC-Ladesäulen</FooterLink>
-                    <li className="pt-2"><a onClick={() => setPage('produkte')} className="text-slate-500 hover:text-green-400 transition-colors cursor-pointer underline">Mehr anzeigen</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 className="font-bold text-white uppercase tracking-wider mb-4">Wissens-Hub</h4>
-                <ul className="space-y-4">
-                    <FooterLink page="guide-detail" setPage={setPage} action={() => handleSelectGuide('leitfaden-gewerbedach')}>Leitfaden Gewerbedach</FooterLink>
-                    <FooterLink page="guide-detail" setPage={setPage} action={() => handleSelectGuide('direktvermarktung-solarstrom')}>Leitfaden Direktvermarktung</FooterLink>
-                    <FooterLink page="guide-detail" setPage={setPage} action={() => handleSelectGuide('whitepaper-industrielle-batteriespeicher')}>Whitepaper Speicher</FooterLink>
+                <FooterSection title="Produkte & Services">
+                    <FooterLink page="service-photovoltaik" setPage={setPage}>Aufdachanlagen</FooterLink>
+                    <FooterLink page="agri-pv" setPage={setPage}>Agri-PV</FooterLink>
+                    <FooterLink page="service-photovoltaik" setPage={setPage}>Solar-Carports</FooterLink>
+                    <FooterLink page="service-speicher" setPage={setPage}>Speicherlösungen</FooterLink>
+                    <FooterLink page="service-ladeparks" setPage={setPage}>Ladeparks</FooterLink>
+                    <FooterLink page="innovations" setPage={setPage}>Innovative Technologien</FooterLink>
+                </FooterSection>
+
+                <FooterSection title="Ressourcen">
+                    <FooterLink page="faq-page" setPage={setPage}>Help Center (FAQ)</FooterLink>
+                    <FooterLink page="diy-hub" setPage={setPage}>DIY-Hub</FooterLink>
+                    <FooterLink page="dashboard" setPage={setPage}>Anlagen-Monitoring</FooterLink>
+                    <FooterLink page="wartung-service" setPage={setPage}>Wartung & Service</FooterLink>
+                    <FooterLink page="garantieabwicklung" setPage={setPage}>Garantieabwicklung</FooterLink>
                     <FooterLink page="glossar" setPage={setPage}>Solar-Glossar</FooterLink>
-                    <li className="pt-2"><a onClick={() => setPage('wissens-hub')} className="text-slate-500 hover:text-green-400 transition-colors cursor-pointer underline">Mehr anzeigen</a></li>
-                </ul>
+                </FooterSection>
+
+                <FooterSection title="Kontakt & Legal">
+                    <FooterLink page="kontakt" setPage={setPage}>Kontakt</FooterLink>
+                    <FooterLink page="impressum" setPage={setPage}>Impressum</FooterLink>
+                    <FooterLink page="agb" setPage={setPage}>AGB</FooterLink>
+                    <FooterLink page="datenschutz" setPage={setPage}>Datenschutz</FooterLink>
+                    <FooterLink page="partner-werden" setPage={setPage}>Partner werden</FooterLink>
+                    <FooterLink page="mitarbeiter-login" setPage={setPage}>Mitarbeiter-Login</FooterLink>
+                </FooterSection>
             </div>
-            <div>
-                <h4 className="font-bold text-white uppercase tracking-wider mb-4">Tools & Rechner</h4>
-                <ul className="space-y-4">
-                    <FooterLink page="home" setPage={() => handleScrollTo('rechner')}>Amortisationsrechner</FooterLink>
-                    <FooterLink page="home" setPage={() => handleScrollTo('co2-rechner')}>CO₂-Rechner</FooterLink>
-                    <FooterLink page="home" setPage={() => document.dispatchEvent(new CustomEvent('open-chat'))}>Potenzial-Analyse</FooterLink>
-                    <FooterLink page="foerdermittel-check" setPage={setPage}>Fördermittel-Check</FooterLink>
-                    <li className="pt-2"><a onClick={() => setPage('wissens-hub')} className="text-slate-500 hover:text-green-400 transition-colors cursor-pointer underline">Mehr anzeigen</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 className="font-bold text-white uppercase tracking-wider mb-4">Top-Artikel</h4>
-                <ul className="space-y-4">
-                    <FooterLink page="article-detail" setPage={setPage} action={() => handleSelectArticle('auszeichnung-bester-solaranbieter-2025')}>Testsieger 2025</FooterLink>
-                    <FooterLink page="article-detail" setPage={setPage} action={() => handleSelectArticle('eeg-2024-aenderungen')}>EEG 2024 Änderungen</FooterLink>
-                    <FooterLink page="article-detail" setPage={setPage} action={() => handleSelectArticle('fallstudie-logistikzentrum-berlin')}>Fallstudie Logistik</FooterLink>
-                    <FooterLink page="article-detail" setPage={setPage} action={() => handleSelectArticle('agri-pv-landwirtschaft-energie')}>Agri-PV</FooterLink>
-                    <li className="pt-2"><a onClick={() => setPage('aktuelles')} className="text-slate-500 hover:text-green-400 transition-colors cursor-pointer underline">Mehr anzeigen</a></li>
-                </ul>
+
+            {/* Link Columns - Mobile Accordion */}
+            <div className="lg:hidden lg:col-span-9 border-t border-slate-700">
+                <FooterSection title="Über ZOE Solar" isMobile>
+                    <FooterLink page="ueber-uns" setPage={setPage}>Über Uns</FooterLink>
+                    <FooterLink page="team" setPage={setPage}>Unser Team</FooterLink>
+                    <FooterLink page="warum-zoe-solar" setPage={setPage}>Warum ZOE Solar</FooterLink>
+                    <FooterLink page="projekte" setPage={setPage}>Referenzen</FooterLink>
+                    <FooterLink page="nachhaltigkeit" setPage={setPage}>Nachhaltigkeit</FooterLink>
+                    <FooterLink page="karriere" setPage={setPage}>Karriere</FooterLink>
+                    <FooterLink page="presse" setPage={setPage}>Presse</FooterLink>
+                    <FooterLink page="kontakt" setPage={setPage}>Kontakt</FooterLink>
+                </FooterSection>
+
+                <FooterSection title="Produkte & Services" isMobile>
+                    <FooterLink page="service-photovoltaik" setPage={setPage}>Aufdachanlagen</FooterLink>
+                    <FooterLink page="agri-pv" setPage={setPage}>Agri-PV</FooterLink>
+                    <FooterLink page="service-photovoltaik" setPage={setPage}>Solar-Carports</FooterLink>
+                    <FooterLink page="service-speicher" setPage={setPage}>Speicherlösungen</FooterLink>
+                    <FooterLink page="service-ladeparks" setPage={setPage}>Ladeparks</FooterLink>
+                    <FooterLink page="innovations" setPage={setPage}>Innovative Technologien</FooterLink>
+                </FooterSection>
+
+                <FooterSection title="Ressourcen" isMobile>
+                    <FooterLink page="faq-page" setPage={setPage}>Help Center (FAQ)</FooterLink>
+                    <FooterLink page="diy-hub" setPage={setPage}>DIY-Hub</FooterLink>
+                    <FooterLink page="dashboard" setPage={setPage}>Anlagen-Monitoring</FooterLink>
+                    <FooterLink page="wartung-service" setPage={setPage}>Wartung & Service</FooterLink>
+                    <FooterLink page="garantieabwicklung" setPage={setPage}>Garantieabwicklung</FooterLink>
+                    <FooterLink page="glossar" setPage={setPage}>Solar-Glossar</FooterLink>
+                </FooterSection>
+
+                <FooterSection title="Kontakt & Legal" isMobile>
+                    <FooterLink page="kontakt" setPage={setPage}>Kontakt</FooterLink>
+                    <FooterLink page="impressum" setPage={setPage}>Impressum</FooterLink>
+                    <FooterLink page="agb" setPage={setPage}>AGB</FooterLink>
+                    <FooterLink page="datenschutz" setPage={setPage}>Datenschutz</FooterLink>
+                    <FooterLink page="partner-werden" setPage={setPage}>Partner werden</FooterLink>
+                    <FooterLink page="mitarbeiter-login" setPage={setPage}>Mitarbeiter-Login</FooterLink>
+                </FooterSection>
             </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="mt-16 border-t border-slate-700 pt-8 flex flex-col sm:flex-row justify-between items-center text-center gap-6">
-            <div className="flex gap-6 text-sm order-2 sm:order-1">
+            <div className="flex gap-6 text-xs sm:text-sm order-2 sm:order-1 flex-wrap justify-center">
                 <FooterLink page="impressum" setPage={setPage}>Impressum</FooterLink>
                 <FooterLink page="agb" setPage={setPage}>AGB</FooterLink>
                 <FooterLink page="datenschutz" setPage={setPage}>Datenschutz</FooterLink>
                 <FooterLink page="mitarbeiter-login" setPage={setPage}>Mitarbeiter-Login</FooterLink>
             </div>
-            <p className="text-sm text-slate-500 order-1 sm:order-2">&copy; {new Date().getFullYear()} ZOE Solar GmbH. Alle Rechte vorbehalten.</p>
+            <p className="text-xs sm:text-sm text-slate-500 order-1 sm:order-2">&copy; {new Date().getFullYear()} ZOE Solar GmbH. Alle Rechte vorbehalten.</p>
         </div>
       </div>
     </footer>

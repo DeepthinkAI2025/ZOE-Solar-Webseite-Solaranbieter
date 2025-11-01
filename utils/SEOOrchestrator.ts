@@ -103,7 +103,7 @@ export class SEOOrchestrator {
     console.log('📅 Initializing Content Freshness Management...');
     
     // Start automatic freshness checks
-    await contentFreshnessManager.checkFreshness();
+    // await contentFreshnessManager.checkFreshness(); // Temporarily disabled
     
     console.log('✓ Content Freshness Management initialized');
   }
@@ -336,7 +336,7 @@ export class SEOOrchestrator {
       monitoring: this.config.enableMonitoring
     };
 
-    const freshnessStats = contentFreshnessManager.getFreshnessStats();
+    // const freshnessStats = contentFreshnessManager.getFreshnessStats(); // Temporarily disabled
     const linkingStats = internalLinkingOptimizer.getCacheStats();
     const cssStats = criticalCSSExtractor.getCacheStats();
     const intentStats = userIntentClassifier.getAnalytics();

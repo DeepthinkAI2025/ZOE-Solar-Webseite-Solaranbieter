@@ -65,6 +65,78 @@ const faqData = {
             answer: 'Es gibt verschiedene Förderprogramme: KfW-Förderung bis zu 7.500 €, Einspeisevergütung nach EEG, steuerliche Vorteile und lokale Förderungen. Die genauen Konditionen ändern sich regelmäßig – wir halten Sie auf dem neuesten Stand.'
           }
         ]
+      },
+      {
+        name: 'Versicherung & Sicherheit',
+        icon: '🛡️',
+        questions: [
+          {
+            question: 'Ist meine Solaranlage versichert?',
+            answer: 'Solaranlagen sollten über die Hausratversicherung mitversichert werden. Es gibt spezielle Solarversicherungen, die auch Leistungsgarantien, Betriebseinstellung und Ertragsausfälle abdecken. Wir beraten Sie zu den besten Versicherungsoptionen.'
+          },
+          {
+            question: 'Was passiert bei Hagelschäden?',
+            answer: 'Hagelschäden sind über die entsprechende Versicherung gedeckt. Unsere Module sind hagelresistent bis zu einer bestimmten Größe. Bei Schäden übernehmen wir die Schadensregulierung und Reparatur schnell und unkompliziert.'
+          },
+          {
+            question: 'Wie sicher ist die Anlage bei Sturm?',
+            answer: 'Unsere Anlagen werden nach aktuellen Windlastnormen berechnet und installiert. Die Befestigung ist auf Extremwetter ausgelegt. Wir bieten regelmäßige Sicherheitsinspektionen an, um die Standsicherheit zu gewährleisten.'
+          }
+        ]
+      },
+      {
+        name: 'Rechtliches & Vertrag',
+        icon: '⚖️',
+        questions: [
+          {
+            question: 'Welche Verträge muss ich abschließen?',
+            answer: 'Typischerweise benötigen Sie: einen Installationsvertrag, einen Netzanschlussvertrag mit dem Netzbetreiber und eventuell eine Einspeisevergütungsvereinbarung. Wir unterstützen bei allen Vertragsabschlüssen.'
+          },
+          {
+            question: 'Was ändert sich mit dem neuen EEG 2023?',
+            answer: 'Das EEG 2023 fördert vor allem Balkonanlagen und vereinfacht die Anmeldung für Kleinanlagen. Für größere Anlagen gelten weiterhin die Ausschreibungsmechanismen. Wir halten Sie über alle aktuellen Änderungen informiert.'
+          },
+          {
+            question: 'Brauche ich eine Baugenehmigung?',
+            answer: 'In den meisten Bundesländern benötigen Solaranlagen auf Dachflächen keine Baugenehmigung (Privilegierung). Ausnahmen sind Denkmalschutzgebiete oder besondere Gestaltungssatzungen. Wir prüfen die individuellen Anforderungen.'
+          }
+        ]
+      },
+      {
+        name: 'Modernisierung & Speicher',
+        icon: '🔋',
+        questions: [
+          {
+            question: 'Lohnt sich ein Batteriespeicher?',
+            answer: 'Ein Batteriespeicher lohnt sich besonders bei sinkender Einspeisevergütung. Sie können mehr Solarstrom selbst nutzen (bis zu 70%) und sind unabhängiger vom Stromnetz. Die Amortisationszeit beträgt 8-12 Jahre.'
+          },
+          {
+            question: 'Kann ich meine alte Solaranlage modernisieren?',
+            answer: 'Ja, alte Anlagen können modernisiert werden. Wir tauschen veraltete Wechselrichter aus, fügen Speicher hinzu oder erweitern die Anlage. Modernisierungen werden ebenfalls gefördert.'
+          },
+          {
+            question: 'Welche Speichergröße ist optimal?',
+            answer: 'Für eine 10 kWp Anlage empfehlen wir einen Speicher von 5-10 kWh. Die optimale Größe hängt von Ihrem Verbrauchsverhalten ab. Wir berechnen die ideale Speicherauslegung kostenlos für Sie.'
+          }
+        ]
+      },
+      {
+        name: 'E-Mobilität & Wallboxen',
+        icon: '🚗',
+        questions: [
+          {
+            question: 'Kann ich meine Solaranlage für E-Mobilität nutzen?',
+            answer: 'Ja, Solarstrom eignet sich perfekt für das Laden von E-Fahrzeugen. Mit einer Wallbox können Sie direkt Solarstrom laden und die Ladekosten auf nahezu null reduzieren.'
+          },
+          {
+            question: 'Welche Wallbox ist die richtige?',
+            answer: 'Die Wahl der Wallbox hängt von der Anzahl der E-Fahrzeuge und der Ladeleistung ab. Wir empfehlen 11-22 kW Wallboxen für Privathaushalte. Der Anschluss muss elektrisch geprüft werden.'
+          },
+          {
+            question: 'Brauche ich einen extra Zähler?',
+            answer: 'Ja, für die Wallbox benötigen Sie einen Zweirichtungszähler und eventuell einen separaten E-Auto-Zähler. Die Installation erfolgt durch einen zugelassenen Elektriker.'
+          }
+        ]
       }
     ]
   },
@@ -124,6 +196,60 @@ const faqData = {
           {
             question: 'Was passiert bei Garantiefällen?',
             answer: 'Unsere Anlagen kommen mit einer 10-jährigen Produktgarantie und einer 25-jährigen Leistungsgarantie. Bei Garantiefällen reagieren wir innerhalb von 24 Stunden. Wir haben ein eigenes Serviceteam und Ersatzteillager für schnelle Reparaturen.'
+          }
+        ]
+      },
+      {
+        name: 'Finanzierung & Förderung',
+        icon: '💳',
+        questions: [
+          {
+            question: 'Welche Finanzierungsmöglichkeiten gibt es?',
+            answer: 'Wir bieten verschiedene Finanzierungsoptionen: Leasing, Mietkauf, Darlehen mit Förderkonditionen oder Eigenfinanzierung. Bei großen Projekten arbeiten wir mit Spezialbanken zusammen. Die Raten können oft durch die Stromersparnis gedeckt werden.'
+          },
+          {
+            question: 'Wie funktioniert die Gewerbesteuer bei Solaranlagen?',
+            answer: 'Solaranlagen können über 20 Jahre abgeschrieben werden. Der erzeugte Strom ist umsatzsteuerfrei. Einspeisevergütungen sind steuerpflichtig. Wir empfehlen die Beratung durch einen Steuerberater für die optimale steuerliche Gestaltung.'
+          },
+          {
+            question: 'Gibt es spezielle Business-Förderungen?',
+            answer: 'Ja, es gibt zahlreiche Business-Förderprogramme: KfW-Unternehmensprogramme, regionale Wirtschaftsförderung, BAFA-Investitionszuschüsse und steuerliche Vergünstigungen. Wir unterstützen bei der Antragstellung und kombinieren mehrere Förderungen.'
+          }
+        ]
+      },
+      {
+        name: 'Standort & Montage',
+        icon: '🏭',
+        questions: [
+          {
+            question: 'Welche Dachtypen sind für Solaranlagen geeignet?',
+            answer: 'Fast alle Dachtypen sind geeignet: Flachdächer, Schrägdächer, Metalldächer, Bitumendächer und Gründächer. Bei Flachdächern verwenden wir Aufständerungssysteme für die optimale Neigung. Die Tragfähigkeit muss statisch geprüft werden.'
+          },
+          {
+            question: 'Können auch Freiflächenanlagen realisiert werden?',
+            answer: 'Ja, wir realisieren Freiflächenanlagen ab 100 kWp. Diese erfordern eine Baugenehmigung und eine Flächennutzungsplanänderung. Die Renditen liegen oft über 10% bei gleichzeitig geringeren Installationskosten.'
+          },
+          {
+            question: 'Was passiert bei der Montage auf dem Betriebsgelände?',
+            answer: 'Wir planen die Montage so, dass Betriebsunterbrechungen minimiert werden. Bei laufenden Produktionen arbeiten wir nachts oder am Wochenende. Wir stellen sicher, dass alle Sicherheitsvorschriften eingehalten werden.'
+          }
+        ]
+      },
+      {
+        name: 'Agri-PV & Landwirtschaft',
+        icon: '🌾',
+        questions: [
+          {
+            question: 'Was ist Agri-PV?',
+            answer: 'Agri-PV kombiniert Landwirtschaft und Photovoltaik auf derselben Fläche. Doppelnutzungssysteme ermöglichen landwirtschaftliche Nutzung unter den Modulen. Die Module sind höher angeordnet für mehr Licht.'
+          },
+          {
+            question: 'Welche Förderungen gibt es für Agri-PV?',
+            answer: 'Agri-PV wird besonders gefördert: bis zu 40% Zuschuss, steuerliche Vorteile, vereinfachte Genehmigungen und höhere Einspeisevergütungen. Landwirte profitieren von zusätzlichen Einnahmequellen.'
+          },
+          {
+            question: 'Wie wirkt sich Agri-PV auf den Ertrag aus?',
+            answer: 'Moderne Agri-PV-Systeme lassen bis zu 80% Licht durch und beeinflussen den Ertrag minimal. Die Pflanzen profitieren sogar durch den Schutz vor extremer Witterung und Hagel. Die Bodenqualität bleibt erhalten.'
           }
         ]
       }

@@ -17,6 +17,7 @@ const AIMonitoringDashboard = lazy(() => import('./components/AIMonitoringDashbo
 // Advanced AI Components (now created and ready)
 const PredictiveContentEngine = lazy(() => import('./components/PredictiveContentEngine'));
 const EdgeComputingOptimizer = lazy(() => import('./components/EdgeComputingOptimizer'));
+const MultilingualExpansionEngine = lazy(() => import('./components/MultilingualExpansionEngine'));
 
 
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -52,7 +53,7 @@ const AgriPVSachsenAnhaltPage = lazy(() => import('./pages/AgriPVSachsenAnhaltPa
 const AgriPVNiedersachsenPage = lazy(() => import('./pages/AgriPVNiedersachsenPage'));
 const AgriPVBayernPage = lazy(() => import('./pages/AgriPVBayernPage'));
 const AgriPVNordrheinWestfalenPage = lazy(() => import('./pages/AgriPVNordrheinWestfalenPage'));
-// const LeistungenPage = lazy(() => import('./pages/LeistungenPage')); // Temporarily disabled - file is empty
+const LeistungenPage = lazy(() => import('./pages/LeistungenPage'));
 const SEOMonitoringPage = lazy(() => import('./pages/SEOMonitoringPage'));
 const UnifiedStrategyDashboardPage = lazy(() => import('./pages/UnifiedStrategyDashboardPage'));
 const LoginPage = lazy(() => import('./pages/LoginPage'));
@@ -138,6 +139,12 @@ import { automatedCoreWebVitalsOptimizationService, AutomatedCoreWebVitalsOptimi
 import performanceOptimizationService from './services/performanceOptimizationService.ts';
 import conversionRateOptimizationService from './services/conversionRateOptimizationService.ts';
 import mobileExperienceOptimizationService from './services/mobileExperienceOptimizationService.ts';
+
+// ===== TIER 2 ADVANCED SERVICES IMPORTS =====
+import aiPersonalizationEngine from './services/aiPersonalizationEngine.ts';
+import contentStorytellingEnhancementService from './services/contentStorytellingEnhancementService.ts';
+import communitySocialProofService from './services/communitySocialProofService.ts';
+import advancedAnalyticsMeasurementService from './services/advancedAnalyticsMeasurementService.ts';
 
 // Initialize Edge Computing Optimization
 const initializeEdgeComputing = () => {
@@ -234,18 +241,107 @@ const App: React.FC = () => {
     const timer = setTimeout(initializeTier1Services, 1500);
     return () => clearTimeout(timer);
   }, []);
-  
-  // Initialize Core Web Vitals Optimization (Legacy - keeping for compatibility)
+
+  // ===== TIER 2 ADVANCED SERVICES INITIALIZATION =====
   useEffect(() => {
-    const initCoreWebVitals = async () => {
+    const initializeTier2Services = async () => {
       try {
-        console.log('🚀 Legacy Core Web Vitals Optimization service ready');
+        console.log('🤖 Initializing TIER 2 Advanced Services...');
+        
+        // Stage 1: AI Personalization Engine (Critical for Engagement)
+        await aiPersonalizationEngine.initialize();
+        console.log('✅ AI Personalization Engine initialized');
+        
+        // Stage 2: Content & Storytelling Enhancement (Critical for Trust)
+        await contentStorytellingEnhancementService.initialize();
+        console.log('✅ Content & Storytelling Enhancement Service initialized');
+        
+        // Stage 3: Community & Social Proof (Critical for Conversion)
+        await communitySocialProofService.initialize();
+        console.log('✅ Community & Social Proof Service initialized');
+        
+        // Stage 4: Advanced Analytics & Measurement (Critical for Optimization)
+        await advancedAnalyticsMeasurementService.initialize();
+        console.log('✅ Advanced Analytics & Measurement Service initialized');
+        
+        console.log('🎯 All TIER 2 Services successfully initialized!');
+        
+        // Log current advanced analytics
+        const analytics = advancedAnalyticsMeasurementService.getAnalyticsOverview();
+        const personalization = aiPersonalizationEngine.getPersonalizationAnalytics();
+        const socialProof = communitySocialProofService.getSocialProofAnalytics();
+        
+        console.log('📈 TIER 2 Services Analytics:', {
+          analytics: analytics?.totalEvents,
+          personalization: personalization?.segments?.length,
+          socialProof: socialProof?.socialProofElements?.total
+        });
+        
       } catch (error) {
-        console.error('Legacy Core Web Vitals initialization error:', error);
+        console.error('❌ TIER 2 Services initialization failed:', error);
       }
     };
 
-    const timer = setTimeout(initCoreWebVitals, 3000);
+    // Initialize TIER 2 services after TIER 1 is ready (5 second delay)
+    const timer = setTimeout(initializeTier2Services, 5000);
+    return () => clearTimeout(timer);
+  }, []);
+  
+  // Initialize Core Web Vitals Optimization with web-vitals library
+  useEffect(() => {
+    const initAdvancedWebVitals = async () => {
+      try {
+        // Import and initialize Web Vitals Service
+        const { webVitalsService } = await import('./services/webVitalsService');
+        console.log('🚀 Advanced Web Vitals Service initialized');
+
+        // Generate performance report
+        const report = webVitalsService.generateReport();
+        console.log('📊 Performance Score:', report.score);
+
+        // Log optimization suggestions
+        if (report.suggestions.length > 0) {
+          console.log('💡 Optimization Suggestions:', report.suggestions);
+        }
+      } catch (error) {
+        console.error('Web Vitals initialization error:', error);
+      }
+    };
+
+    const timer = setTimeout(initAdvancedWebVitals, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Initialize Advanced SEO/GEO/AEO Services
+  useEffect(() => {
+    const initAdvancedSEOServices = async () => {
+      try {
+        console.log('🔍 Initializing Advanced SEO/GEO/AEO Services...');
+
+        // Initialize Structured Data Service
+        const { advancedStructuredDataService } = await import('./services/advancedStructuredDataService');
+        console.log('✅ Advanced Structured Data Service initialized');
+
+        // Initialize Dynamic Sitemap Service
+        const { dynamicSitemapService } = await import('./services/dynamicSitemapService');
+        console.log('✅ Dynamic Sitemap Service initialized');
+
+        // Generate and validate sitemaps
+        dynamicSitemapService.writeSitemaps();
+
+        // Initialize Image Optimization Service
+        const { ImageOptimizationService } = await import('./services/imageOptimizationService');
+        const imageService = ImageOptimizationService.getInstance();
+        console.log('✅ Image Optimization Service initialized');
+
+        console.log('🎯 All Advanced SEO Services successfully initialized!');
+
+      } catch (error) {
+        console.error('❌ Advanced SEO Services initialization failed:', error);
+      }
+    };
+
+    const timer = setTimeout(initAdvancedSEOServices, 4000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -502,9 +598,6 @@ const App: React.FC = () => {
         setPage={handleSetPage}
         isLoggedIn={isLoggedIn}
         onLogout={handleLogout}
-        personalizedContent={personalizedContent}
-        theme={theme}
-        realTimeWeather={realTimeWeather}
       />
       {/* SEO Schema Markup */}
       <script type="application/ld+json">
@@ -599,7 +692,7 @@ const App: React.FC = () => {
       <Suspense fallback={<div className="flex justify-center items-center min-h-screen"><div className="loader"></div></div>}>
         <Routes>
           <Route path="/" element={<HomePage setPage={handleSetPage} onSelectAnwendungsfall={handleSelectAnwendungsfall} onSelectHersteller={handleSelectHersteller} />} />
-                  <Route path="/leistungen" element={<Navigate to="/" replace />} /> {/* Temporarily redirect - LeistungenPage is empty */}
+                          <Route path="/leistungen" element={<LeistungenPage setPage={handleSetPage} />} />
           <Route path="/photovoltaik" element={<PhotovoltaikPage setPage={handleSetPage} />} />
           <Route path="/e-mobilitaet" element={<EMobilitaetPage setPage={handleSetPage} />} />
           <Route path="/elektro" element={<ElektroPage setPage={handleSetPage} />} />
@@ -678,6 +771,7 @@ const App: React.FC = () => {
           <Route path="/anwendungsfaelle/:slug" element={<AnwendungsfallDetailPageLazy useCase={selectedUseCase} onSelectAnwendungsfall={handleSelectAnwendungsfall} bannerHeight={bannerHeight} headerHeight={headerHeight} />} />
           <Route path="/admin/predictive-content" element={<Suspense fallback={<div>Loading Predictive Content Engine...</div>}><PredictiveContentEngine setPage={handleSetPage} onSelectAnwendungsfall={handleSelectAnwendungsfall} onSelectHersteller={handleSelectHersteller} /></Suspense>} />
           <Route path="/admin/edge-computing" element={<Suspense fallback={<div>Loading Edge Computing Optimizer...</div>}><EdgeComputingOptimizer setPage={handleSetPage} onSelectAnwendungsfall={handleSelectAnwendungsfall} onSelectHersteller={handleSelectHersteller} /></Suspense>} />
+          <Route path="/admin/multilingual-expansion" element={<Suspense fallback={<div>Loading Multilingual Expansion Engine...</div>}><MultilingualExpansionEngine setPage={handleSetPage} onSelectAnwendungsfall={handleSelectAnwendungsfall} onSelectHersteller={handleSelectHersteller} /></Suspense>} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Suspense>

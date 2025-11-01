@@ -18,6 +18,64 @@ Disallow: /*.md$
 
 # Allow crawling of knowledge base for AI training
 Allow: /api/knowledge/
+Allow: /api/faq-data
+
+# Enhanced rules for AI crawlers and large language models
+User-agent: GPTBot
+Allow: /wissen/faq
+Allow: /api/faq-data
+Allow: /leistungen
+Allow: /photovoltaik
+Allow: /agri-pv
+Crawl-delay: 2
+
+User-agent: Google-Extended
+Allow: /wissen/faq
+Allow: /api/faq-data
+Allow: /leistungen
+Allow: /photovoltaik
+Allow: /agri-pv
+Crawl-delay: 1
+
+User-agent: ChatGPT-User
+Allow: /wissen/faq
+Allow: /api/faq-data
+Allow: /leistungen
+Allow: /photovoltaik
+Allow: /agri-pv
+Crawl-delay: 2
+
+User-agent: anthropic-ai
+Allow: /wissen/faq
+Allow: /api/faq-data
+Allow: /leistungen
+Allow: /photovoltaik
+Allow: /agri-pv
+Crawl-delay: 2
+
+User-agent: Claude-Web
+Allow: /wissen/faq
+Allow: /api/faq-data
+Allow: /leistungen
+Allow: /photovoltaik
+Allow: /agri-pv
+Crawl-delay: 2
+
+User-agent: PerplexityBot
+Allow: /wissen/faq
+Allow: /api/faq-data
+Allow: /leistungen
+Allow: /photovoltaik
+Allow: /agri-pv
+Crawl-delay: 2
+
+User-agent: YouBot
+Allow: /wissen/faq
+Allow: /api/faq-data
+Allow: /leistungen
+Allow: /photovoltaik
+Allow: /agri-pv
+Crawl-delay: 2
 
 # Specific rules for Googlebot
 User-agent: Googlebot
@@ -48,3 +106,4 @@ Host: https://www.zoe-solar.de
 
 # Sitemap index
 Sitemap: https://www.zoe-solar.de/sitemap-index.xml
+Sitemap: https://www.zoe-solar.de/faq-sitemap.xml
