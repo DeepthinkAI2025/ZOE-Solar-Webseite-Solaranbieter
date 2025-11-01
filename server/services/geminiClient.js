@@ -1,57 +1,89 @@
+/**
+ * Gemini Client - Migrated to OpenRouter
+ * This service has been consolidated into the new AI Gateway Service
+ * Uses OpenRouter API with minimax:m2 model for better performance and cost efficiency
+ */
+
+import { getAIGatewayService } from '../../services/core/AIGatewayService.js';
+
 export async function suggestForManufacturer() {
-  throw new Error('Die Gemini-Integration wurde entfernt. Verwende Firecrawl MCP für Datenextraktion.');
+  // This functionality is now handled by the AI Gateway Service
+  // Use getAIGatewayService().generateLocalSEO() for manufacturer-specific content
+  throw new Error('Die suggestForManufacturer-Funktionalität wurde in die AI Gateway Service migriert. Verwende getAIGatewayService().generateLocalSEO()');
 }
 
 export async function optimizeKeywords(content, targetKeywords, language = 'de') {
-  const { GoogleGenerativeAI } = await import('@google/genai');
-  const genAI = new GoogleGenerativeAI(process.env.GOOGLE_AI_API_KEY);
-  const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
-
-  const prompt = `
-Analysiere den folgenden Content und optimiere ihn für die gegebenen Keywords.
-Content: ${content}
-Target Keywords: ${targetKeywords.join(', ')}
-Sprache: ${language}
-
-Bitte gib eine optimierte Version des Contents zurück, die:
-1. Die Keywords natürlich integriert
-2. Die Lesbarkeit behält
-3. SEO-freundlich ist
-4. Semantische Relevanz berücksichtigt
-
-Optimiere Titel, Überschriften, Meta-Beschreibungen und Textinhalt.
-Gib das Ergebnis als JSON zurück mit den Feldern: optimizedTitle, optimizedMetaDescription, optimizedContent, keywordDensity, suggestions.
-  `;
-
+  // Use the new AI Gateway Service for keyword optimization
   try {
-    const result = await model.generateContent(prompt);
-    const response = await result.response;
-    const text = response.text();
+    const aiGateway = getAIGatewayService();
 
-    // Parse JSON response
-    const jsonMatch = text.match(/\{[\s\S]*\}/);
-    if (jsonMatch) {
-      return JSON.parse(jsonMatch[0]);
+    const result = await aiGateway.optimizeContent({
+      content,
+      targetKeywords,
+      language,
+      optimizationGoals: ['seo', 'readability', 'engagement']
+    });
+
+    if (result.success && result.content) {
+      // Parse JSON response from AI Gateway
+      const optimizedContent = JSON.parse(result.content);
+      return optimizedContent;
     }
 
-    // Fallback if no JSON found
+    // Fallback if AI Gateway fails
     return {
       optimizedTitle: content.split('\n')[0] || 'Optimiert Titel',
       optimizedMetaDescription: content.substring(0, 160),
       optimizedContent: content,
       keywordDensity: {},
-      suggestions: ['Content wurde analysiert']
+      suggestions: ['Content wurde analysiert mit Fallback-Methoden']
     };
+
   } catch (error) {
-    console.error('Keyword optimization error:', error);
+    // Handle migration error gracefully
+    console.error('AI Gateway Service error:', error);
+
+    // Return basic optimization as fallback
     return {
       optimizedTitle: content.split('\n')[0] || 'Optimiert Titel',
       optimizedMetaDescription: content.substring(0, 160),
       optimizedContent: content,
       keywordDensity: {},
-      suggestions: ['Fehler bei der Optimierung']
+      suggestions: ['Fehler bei der KI-Optimierung, Basis-Content verwendet']
     };
   }
 }
 
-export default { suggestForManufacturer, optimizeKeywords };
+/**
+ * Legacy migration helper for content optimization
+ * @deprecated Use getAIGatewayService().optimizeContent() instead
+ */
+export async function legacyContentOptimization(content, options = {}) {
+  const aiGateway = getAIGatewayService();
+  return aiGateway.optimizeContent({
+    content,
+    targetKeywords: options.keywords || [],
+    language: options.language || 'de',
+    optimizationGoals: options.goals || ['seo', 'readability']
+  });
+}
+
+/**
+ * Legacy migration helper for conversation
+ * @deprecated Use getAIGatewayService().generateConversation() instead
+ */
+export async function legacyConversation(message, context = 'ZOE Solar') {
+  const aiGateway = getAIGatewayService();
+  return aiGateway.generateConversation({
+    userMessage: message,
+    context,
+    userType: 'customer'
+  });
+}
+
+export default {
+  suggestForManufacturer,
+  optimizeKeywords,
+  legacyContentOptimization,
+  legacyConversation
+};

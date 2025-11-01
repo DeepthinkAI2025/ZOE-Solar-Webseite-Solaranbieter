@@ -30,3 +30,4 @@ dist-ssr
 !.env.example
 scripts/gbp-direct-creation-final.js
 scripts/gbp-direct-creation-final.cjs
+.vercel

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 // FIX: Import ContactInfo and ContactAddress from types.ts to avoid redefinition.
 import { ContactFormData, ContactInfo, ContactAddress } from '../types';
 import { sendInquiryToFapro } from '../services/faproService';
+import { getMultimodalAIService, FileAnalysis } from '../services/core/MultimodalAIService';
 
 // Add SpeechRecognition types for window
 declare global {
@@ -26,6 +27,13 @@ const ContactForm: React.FC = () => {
     const [isListening, setIsListening] = useState(false);
     const [activeField, setActiveField] = useState<keyof ContactFormData | null>(null);
     const recognitionRef = useRef<any | null>(null);
+
+    // NEU: AI-Integration States
+    const [aiSuggestions, setAiSuggestions] = useState<string[]>([]);
+    const [aiAnalysis, setAiAnalysis] = useState<FileAnalysis[]>([]);
+    const [isAiAnalyzing, setIsAiAnalyzing] = useState(false);
+    const [showAiInsights, setShowAiInsights] = useState(false);
+    const multimodalService = getMultimodalAIService();
 
     useEffect(() => {
         if ('contacts' in navigator && 'ContactsManager' in window) {
@@ -159,6 +167,92 @@ const ContactForm: React.FC = () => {
         }
     };
 
+    // NEU: AI-Funktionen für intelligente Formularunterstützung
+    const analyzeFormData = async () => {
+        setIsAiAnalyzing(true);
+        try {
+            // KI-generierte Vorschläge basierend auf Formulardaten
+            const context = `Formulardaten: ${JSON.stringify(formData, null, 2)}`;
+
+            const prompt = `Analysiere diese Anfrage für eine Solaranlage und gib intelligente Vorschläge:
+
+${context}
+
+Gib 3-5 konkrete Vorschläge als JSON Array mit Strings zurück. Beispiele:
+- ["Mention your current electricity bill for accurate savings calculation", "Consider roof age and condition in planning", "Think about battery storage for energy independence"]`;
+
+            const result = await multimodalService.processMultimodalConversation({
+                message: "Bitte analysiere diese Anfrage und gib passende Vorschläge.",
+                conversationHistory: [],
+                context: prompt
+            });
+
+            if (result.success && result.response) {
+                try {
+                    const suggestions = JSON.parse(result.response);
+                    setAiSuggestions(Array.isArray(suggestions) ? suggestions : [result.response]);
+                } catch {
+                    setAiSuggestions([result.response]);
+                }
+            }
+        } catch (error) {
+            console.error('Fehler bei der KI-Analyse:', error);
+        } finally {
+            setIsAiAnalyzing(false);
+        }
+    };
+
+    const applyAiSuggestion = (suggestion: string) => {
+        setFormData(prev => ({
+            ...prev,
+            message: (prev.message || '') + '\n\n' + suggestion
+        }));
+        setAiSuggestions([]);
+    };
+
+    const autoFillFromAi = async () => {
+        setIsAiAnalyzing(true);
+        try {
+            const currentMessage = formData.message || '';
+
+            const result = await multimodalService.processMultimodalConversation({
+                message: `Bitte vervollständige diese Solaranfrage mit intelligenten Annahmen: "${currentMessage}"`,
+                conversationHistory: [],
+                context: 'Ergänze fehlende Informationen für eine Solaranfrage (Adresse, Kontaktdaten, etc.)'
+            });
+
+            if (result.success && result.response) {
+                try {
+                    const aiData = JSON.parse(result.response);
+                    setFormData(prev => ({
+                        ...prev,
+                        ...aiData,
+                        message: (prev.message || '') + '\n\n(KI-ergänzt: ' + (aiData.message || 'Automatisch vervollständigt') + ')'
+                    }));
+                } catch {
+                    setFormData(prev => ({
+                        ...prev,
+                        message: (prev.message || '') + '\n\n' + result.response
+                    }));
+                }
+            }
+        } catch (error) {
+            console.error('Fehler bei der KI-Vervollständigung:', error);
+        } finally {
+            setIsAiAnalyzing(false);
+        }
+    };
+
+    // Automatische Analyse bei Änderungen
+    useEffect(() => {
+        if (formData.message && formData.message.length > 50) {
+            const timer = setTimeout(() => {
+                analyzeFormData();
+            }, 1500);
+            return () => clearTimeout(timer);
+        }
+    }, [formData.message]);
+
     if (status === 'success') {
         return (
             <div className="bg-green-50 border-2 border-dashed border-green-200 p-8 rounded-lg text-center">
@@ -277,6 +371,78 @@ const ContactForm: React.FC = () => {
                     <textarea name="message" id="message" value={formData.message || ''} rows={4} onChange={handleChange} className={baseInputClasses}></textarea>
                     <VoiceInputButton fieldName="message" className="right-3 top-3" />
                 </div>
+            </div>
+
+            {/* NEU: AI-Integration Bereich */}
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <div className="flex items-center justify-between mb-3">
+                    <h4 className="text-sm font-semibold text-blue-800 flex items-center gap-2">
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                        KI-Unterstützung
+                    </h4>
+                    <button
+                        type="button"
+                        onClick={() => setShowAiInsights(!showAiInsights)}
+                        className="text-xs text-blue-600 hover:text-blue-800 font-medium"
+                    >
+                        {showAiInsights ? 'Ausblenden' : 'Details'}
+                    </button>
+                </div>
+
+                {/* KI-Aktionen */}
+                <div className="flex flex-wrap gap-2 mb-3">
+                    <button
+                        type="button"
+                        onClick={autoFillFromAi}
+                        disabled={isAiAnalyzing}
+                        className="px-3 py-1.5 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                    >
+                        {isAiAnalyzing ? (
+                            <span className="flex items-center gap-2">
+                                <div className="w-3 h-3 border border-t-transparent border-white rounded-full animate-spin"></div>
+                                Analysiere...
+                            </span>
+                        ) : (
+                            <span className="flex items-center gap-2">
+                                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                                Intelligent vervollständigen
+                            </span>
+                        )}
+                    </button>
+                </div>
+
+                {/* KI-Vorschläge */}
+                {aiSuggestions.length > 0 && (
+                    <div className="mt-3">
+                        <p className="text-xs font-medium text-blue-700 mb-2">KI-Vorschläge für Ihre Anfrage:</p>
+                        <div className="space-y-1">
+                            {aiSuggestions.map((suggestion, index) => (
+                                <button
+                                    key={index}
+                                    type="button"
+                                    onClick={() => applyAiSuggestion(suggestion)}
+                                    className="w-full text-left p-2 bg-white border border-blue-200 rounded text-xs text-blue-700 hover:bg-blue-100 transition-colors"
+                                >
+                                    "{suggestion}"
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+                )}
+
+                {/* Erweiterte KI-Infos */}
+                {showAiInsights && (
+                    <div className="mt-3 pt-3 border-t border-blue-200">
+                        <p className="text-xs text-blue-600">
+                            Die KI analysiert Ihre Anfrage in Echtzeit und gibt personalisierte Vorschläge zur Optimierung Ihrer Solaranfrage.
+                            Dadurch erhalten Sie schneller eine präzise Antwort von unseren Experten.
+                        </p>
+                    </div>
+                )}
             </div>
 
             <div>

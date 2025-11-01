@@ -6,22 +6,35 @@ on:
     - cron: '0 6 * * *'
   workflow_dispatch: # Ermöglicht manuelles Ausführen
 
+permissions:
+  contents: write
+  actions: read
+  pull-requests: write
+
 jobs:
   seo-monitoring:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v4.1.7
 
     - name: Setup Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v4.1.0
       with:
-        node-version: '18'
+        node-version: '20'
         cache: 'npm'
 
+    - name: Cache Node.js modules
+      uses: actions/cache@v4
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
     - name: Install dependencies
-      run: npm install --legacy-peer-deps
+      run: npm ci --ignore-scripts
 
     - name: Run SEO Monitoring
       run: npm run seo-monitor
@@ -42,14 +55,20 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add data/seo-monitoring/
-        git add data/keyword-analysis.json
-        git add data/high-priority-keywords.json
-        git add data/seo-report.json
-        git add data/seo-history.json
-        git add data/content-plan.json
-        git diff --quiet && git diff --staged --quiet || git commit -m "🔍 Update SEO monitoring data [$(date +'%Y-%m-%d')]"
-        git push
+        git add data/seo-monitoring/ || true
+        git add data/keyword-analysis.json || true
+        git add data/high-priority-keywords.json || true
+        git add data/seo-report.json || true
+        git add data/seo-history.json || true
+        git add data/content-plan.json || true
+
+        # Prüfen ob Änderungen vorhanden sind
+        if ! git diff --quiet && ! git diff --staged --quiet; then
+          git commit -m "🔍 Update SEO monitoring data [$(date +'%Y-%m-%d')]"
+          git push
+        else
+          echo "No changes to commit"
+        fi
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

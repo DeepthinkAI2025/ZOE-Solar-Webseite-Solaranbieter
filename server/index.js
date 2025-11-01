@@ -22,6 +22,9 @@ import contentRoutes from './routes/contentRoutes.js';
 // Test Routes for n8n Integration
 import testRoutes from './routes/testRoutes.js';
 
+// Product Management Routes
+import productRoutes from './routes/simpleProductRoutes.js';
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 dotenv.config();
 
@@ -405,6 +408,9 @@ app.use('/api/content', contentRoutes);
 
 // Test API Routes for n8n Integration
 app.use('/api', testRoutes);
+
+// Product Management API Routes
+app.use('/api', productRoutes);
 
 
 app.get('/api/admin/api-keys', (_req, res) => {

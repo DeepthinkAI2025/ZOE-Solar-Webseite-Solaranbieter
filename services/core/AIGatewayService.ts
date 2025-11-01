@@ -1,782 +1,480 @@
 /**
- * 🎯 AI Gateway Service - Zentrale AI-Verwaltung für ZOE Solar
- *
- * Konsolidiert 18+ AI-Services in einer performanten, kosteneffizienten Einheit
- * Basiert auf OpenRouter API mit minimax:m2 Modell
+ * AI Gateway Service - Unified AI Service Interface
+ * Consolidates all AI functionality through OpenRouter API
+ * Replaces multiple fragmented AI services with single gateway
  */
 
-import { openRouterClient } from './OpenRouterClient';
+import { getOpenRouterClient, AIRequest, AIResponse } from './OpenRouterClient';
 
-// ===== TYPES & INTERFACES =====
-
-interface ContentOptimizationRequest {
-  url?: string;
-  content: string;
-  contentType: 'page' | 'article' | 'product' | 'faq' | 'documentation';
-  optimizationGoals: string[];
-  context?: Record<string, any>;
-  targetKeywords?: string[];
-}
-
-interface ConversationalRequest {
-  message: string;
-  conversationHistory?: string[];
-  context?: string;
-  userId?: string;
-}
-
-interface LocalSEORequest {
-  location: string;
-  service: string;
-  targetAudience?: string;
-  businessType?: 'solar' | 'energy' | 'consulting';
-}
-
-interface ProductDescriptionRequest {
-  product: string;
-  features: string[];
-  benefits: string[];
-  targetIndustry?: string;
-  technicalSpecs?: Record<string, any>;
-}
-
-interface SEOAnalysisRequest {
-  url: string;
+export interface ContentOptimizationRequest {
   content: string;
   targetKeywords: string[];
-  competitorUrls?: string[];
-  analysisType: 'basic' | 'comprehensive' | 'technical';
+  language?: string;
+  optimizationGoals?: ('seo' | 'readability' | 'engagement' | 'conversion')[];
 }
 
-interface PersonalizationRequest {
-  userProfile: {
-    industry?: string;
-    companySize?: string;
-    location?: string;
-    interests?: string[];
-    previousInteractions?: string[];
-  };
+export interface ConversationRequest {
+  userMessage: string;
+  conversationHistory?: Array<{role: string, content: string}>;
+  context?: string;
+  userType?: 'customer' | 'prospect' | 'partner' | 'general';
+}
+
+export interface LocalSEORequest {
+  businessType: string;
+  location: string;
+  services: string[];
+  targetRadius?: number; // in km
+}
+
+export interface ProductDescriptionRequest {
+  productType: string;
+  features: string[];
+  targetAudience: string;
+  technicalSpecs?: Record<string, any>;
+  usps?: string[]; // Unique Selling Points
+}
+
+export interface SEOAnalysisRequest {
   content: string;
-  personalizationGoals: string[];
+  targetKeywords: string[];
+  competitorContent?: string;
+  analysisType?: 'basic' | 'comprehensive' | 'competitive';
 }
 
-interface BatchRequest {
+export interface BatchRequest {
   requests: Array<{
-    type: 'seo' | 'local' | 'product' | 'conversation' | 'personalization';
+    type: 'content' | 'conversation' | 'localSEO' | 'product' | 'seoAnalysis';
     data: any;
-    priority?: 'low' | 'medium' | 'high';
   }>;
+  priority?: 'low' | 'normal' | 'high';
 }
-
-// ===== AI GATEWAY SERVICE =====
 
 class AIGatewayService {
-  private static instance: AIGatewayService;
-  private requestQueue: Map<string, Promise<any>>;
-  private performanceMetrics: Map<string, number[]>;
+  private openRouter = getOpenRouterClient();
+  private requestQueue: Array<{request: any, resolve: Function, reject: Function}> = [];
+  private isProcessing = false;
 
-  private constructor() {
-    this.requestQueue = new Map();
-    this.performanceMetrics = new Map();
+  constructor() {
+    this.startQueueProcessor();
   }
-
-  static getInstance(): AIGatewayService {
-    if (!AIGatewayService.instance) {
-      AIGatewayService.instance = new AIGatewayService();
-    }
-    return AIGatewayService.instance;
-  }
-
-  // ===== CONTENT OPTIMIZATION =====
 
   /**
-   * Konsolidiert: aiContentOptimizationService + aiFirstContentOptimizationService + dynamicContentOptimizationService
+   * Start processing queue for rate limiting
    */
-  async optimizeContent(request: ContentOptimizationRequest): Promise<any> {
-    const startTime = Date.now();
-    const cacheKey = `content-opt-${request.contentType}-${request.content.slice(0, 50)}`;
+  private startQueueProcessor(): void {
+    setInterval(() => {
+      if (!this.isProcessing && this.requestQueue.length > 0) {
+        this.processQueue();
+      }
+    }, 100); // Process queue every 100ms
+  }
 
-    try {
-      // SEO-Optimierung
-      let optimizedContent = request.content;
-      let appliedOptimizations: string[] = [];
+  /**
+   * Process queued requests
+   */
+  private async processQueue(): Promise<void> {
+    if (this.isProcessing || this.requestQueue.length === 0) return;
 
-      if (request.optimizationGoals.includes('seo')) {
-        const seoResult = await openRouterClient.generateSEOContent(
-          this.extractTopic(request.content),
-          request.targetKeywords || [],
-          request.contentType
-        );
+    this.isProcessing = true;
 
-        if (seoResult.success) {
-          optimizedContent = seoResult.content || optimizedContent;
-          appliedOptimizations.push('SEO-Optimierung');
-        }
+    while (this.requestQueue.length > 0) {
+      const {request, resolve, reject} = this.requestQueue.shift()!;
+
+      try {
+        const result = await this.executeRequest(request);
+        resolve(result);
+      } catch (error) {
+        reject(error);
       }
 
-      // Local SEO
-      if (request.optimizationGoals.includes('local') && request.context?.location) {
-        const localResult = await openRouterClient.generateLocalSEOContent(
-          request.context.location,
-          this.extractService(request.content),
-          request.targetAudience || 'Unternehmen'
-        );
+      // Small delay between requests to respect rate limits
+      await new Promise(resolve => setTimeout(resolve, 200));
+    }
 
-        if (localResult.success) {
-          optimizedContent = this.mergeContent(optimizedContent, localResult.content || '');
-          appliedOptimizations.push('Local SEO');
-        }
-      }
+    this.isProcessing = false;
+  }
 
-      // Performance Tracking
-      this.recordPerformance('contentOptimization', Date.now() - startTime);
-
-      return {
-        success: true,
-        optimizedContent,
-        originalContent: request.content,
-        appliedOptimizations,
-        metrics: {
-          wordCount: optimizedContent.split(' ').length,
-          optimizationScore: this.calculateOptimizationScore(optimizedContent, request.targetKeywords || []),
-          processingTime: Date.now() - startTime
-        },
-        usage: this.extractUsageFromCache(cacheKey),
-        timestamp: new Date().toISOString()
-      };
-
-    } catch (error) {
-      return {
-        success: false,
-        error: error instanceof Error ? error.message : 'Unknown error',
-        timestamp: new Date().toISOString()
-      };
+  /**
+   * Execute individual request
+   */
+  private async executeRequest(request: any): Promise<AIResponse> {
+    switch (request.type) {
+      case 'content':
+        return this.handleContentOptimization(request.data);
+      case 'conversation':
+        return this.handleConversation(request.data);
+      case 'localSEO':
+        return this.handleLocalSEO(request.data);
+      case 'product':
+        return this.handleProductDescription(request.data);
+      case 'seoAnalysis':
+        return this.handleSEOAnalysis(request.data);
+      default:
+        throw new Error(`Unknown request type: ${request.type}`);
     }
   }
 
-  // ===== CONVERSATIONAL AI =====
-
   /**
-   * Konsolidiert: conversationalAIService + aiPersonalizationService
+   * Queue request for processing
    */
-  async handleConversation(request: ConversationalRequest): Promise<any> {
-    const startTime = Date.now();
-
-    try {
-      // Kontext basierend auf User-Profil erstellen
-      let context = request.context || '';
-
-      if (request.userId) {
-        // User-Profil laden (Mock für jetzt)
-        const userProfile = await this.getUserProfile(request.userId);
-        context += this.buildPersonalizedContext(userProfile);
-      }
-
-      const response = await openRouterClient.generateConversationalResponse(
-        request.message,
-        request.conversationHistory || [],
-        context
-      );
-
-      // Performance Tracking
-      this.recordPerformance('conversation', Date.now() - startTime);
-
-      return {
-        success: true,
-        response: response.content,
-        personalizationLevel: request.userId ? 'personalized' : 'generic',
-        suggestedFollowUpQuestions: this.generateFollowUpQuestions(request.message, response.content || ''),
-        confidence: this.calculateConfidenceScore(response.content || ''),
-        usage: response.usage,
-        timestamp: new Date().toISOString()
-      };
-
-    } catch (error) {
-      return {
-        success: false,
-        error: error instanceof Error ? error.message : 'Unknown error',
-        timestamp: new Date().toISOString()
-      };
-    }
-  }
-
-  // ===== LOCAL SEO =====
-
-  /**
-   * Konsolidiert: gmbOptimizationService + localContentService + localSEOAnalyticsService
-   */
-  async generateLocalSEOContent(request: LocalSEORequest): Promise<any> {
-    const startTime = Date.now();
-
-    try {
-      const response = await openRouterClient.generateLocalSEOContent(
-        request.location,
-        request.service,
-        request.targetAudience || 'Unternehmen'
-      );
-
-      // Zusätzliche Local SEO Analysen
-      const geoKeywords = this.generateGeoKeywords(request.location, request.service);
-      const localEntities = this.extractLocalEntities(response.content || '');
-
-      // Performance Tracking
-      this.recordPerformance('localSEO', Date.now() - startTime);
-
-      return {
-        success: true,
-        content: response.content,
-        location: request.location,
-        service: request.service,
-        targetAudience: request.targetAudience,
-        seoElements: {
-          geoKeywords,
-          localEntities,
-          schemaMarkup: this.generateLocalSchema(request.location, request.service),
-          metaTags: this.generateLocalMetaTags(request.location, request.service)
-        },
-        usage: response.usage,
-        timestamp: new Date().toISOString()
-      };
-
-    } catch (error) {
-      return {
-        success: false,
-        error: error instanceof Error ? error.message : 'Unknown error',
-        timestamp: new Date().toISOString()
-      };
-    }
-  }
-
-  // ===== PRODUCT DESCRIPTIONS =====
-
-  /**
-   * Konsolidiert: productDescriptionServices + aiContentEnhancementService
-   */
-  async generateProductDescription(request: ProductDescriptionRequest): Promise<any> {
-    const startTime = Date.now();
-
-    try {
-      const response = await openRouterClient.generateProductDescription(
-        request.product,
-        request.features,
-        request.benefits,
-        request.targetIndustry
-      );
-
-      // Zusätzliche Produkt-Optimierungen
-      const uspAnalysis = this.analyzeUSPs(request.features, request.benefits);
-      const targetAudienceAnalysis = this.analyzeTargetAudience(request.targetIndustry);
-      const competitorComparison = this.generateCompetitorComparison(request.product);
-
-      // Performance Tracking
-      this.recordPerformance('productDescription', Date.now() - startTime);
-
-      return {
-        success: true,
-        description: response.content,
-        product: request.product,
-        targetIndustry: request.targetIndustry,
-        analytics: {
-          uniqueSellingPoints: uspAnalysis,
-          targetAudienceInsights: targetAudienceAnalysis,
-          competitorPositioning: competitorComparison,
-          readabilityScore: this.calculateReadabilityScore(response.content || ''),
-          conversionPotential: this.estimateConversionPotential(response.content || '')
-        },
-        usage: response.usage,
-        timestamp: new Date().toISOString()
-      };
-
-    } catch (error) {
-      return {
-        success: false,
-        error: error instanceof Error ? error.message : 'Unknown error',
-        timestamp: new Date().toISOString()
-      };
-    }
-  }
-
-  // ===== SEO ANALYSIS =====
-
-  /**
-   * Konsolidiert: seoAnalysisServices + competitorIntelligenceService
-   */
-  async analyzeSEO(request: SEOAnalysisRequest): Promise<any> {
-    const startTime = Date.now();
-
-    try {
-      // Content Analyse mit AI
-      const analysisPrompt = `Analysiere diese Webseite für SEO-Wirksamkeit: ${request.url}
-
-      Content: ${request.content.slice(0, 1000)}
-      Ziel-Keywords: ${request.targetKeywords.join(', ')}
-
-      Gib Empfehlungen für:
-      1. Content-Optimierung
-      2. technische SEO
-      3. Keyword-Verbesserungen
-      4. Wettbewerbsvorteile`;
-
-      const analysis = await openRouterClient.generateContent({
-        prompt: analysisPrompt,
-        systemPrompt: 'Du bist ein SEO-Experte. Analysiere Webseiten und gib konkrete, umsetzbare Empfehlungen.',
-        temperature: 0.3,
-        maxTokens: 2000
+  private queueRequest<T>(type: string, data: any): Promise<T> {
+    return new Promise((resolve, reject) => {
+      this.requestQueue.push({
+        request: {type, data},
+        resolve,
+        reject
       });
-
-      // Technische Analysen
-      const technicalScore = this.calculateTechnicalScore(request.content);
-      const keywordDensity = this.calculateKeywordDensity(request.content, request.targetKeywords);
-      const readabilityScore = this.calculateReadabilityScore(request.content);
-
-      // Performance Tracking
-      this.recordPerformance('seoAnalysis', Date.now() - startTime);
-
-      return {
-        success: true,
-        url: request.url,
-        analysisType: request.analysisType,
-        contentAnalysis: analysis.content,
-        technicalSEO: {
-          score: technicalScore,
-          issues: this.identifyTechnicalIssues(request.content),
-          recommendations: this.generateTechnicalRecommendations(technicalScore)
-        },
-        keywordAnalysis: {
-          targetKeywords: request.targetKeywords,
-          density: keywordDensity,
-          suggestions: this.generateKeywordSuggestions(request.content, request.targetKeywords)
-        },
-        performance: {
-          readabilityScore,
-          wordCount: request.content.split(' ').length,
-          estimatedReadTime: Math.ceil(request.content.split(' ').length / 200)
-        },
-        usage: analysis.usage,
-        timestamp: new Date().toISOString()
-      };
-
-    } catch (error) {
-      return {
-        success: false,
-        error: error instanceof Error ? error.message : 'Unknown error',
-        timestamp: new Date().toISOString()
-      };
-    }
+    });
   }
 
-  // ===== BATCH PROCESSING =====
+  /**
+   * Handle content optimization requests
+   * Consolidates: aiContentOptimizationService + aiFirstContentOptimizationService + dynamicContentOptimizationService
+   */
+  private async handleContentOptimization(request: ContentOptimizationRequest): Promise<AIResponse> {
+    const {content, targetKeywords, language = 'de', optimizationGoals = ['seo']} = request;
 
-  async processBatchRequests(request: BatchRequest): Promise<any> {
-    const startTime = Date.now();
-    const results: any[] = [];
+    // Build system prompt based on optimization goals
+    let systemPrompt = `You are an expert content optimizer for ZOE Solar, a German solar energy company. `;
 
-    try {
-      // Sortieren nach Priority
-      const sortedRequests = request.requests.sort((a, b) => {
-        const priorityOrder = { high: 3, medium: 2, low: 1 };
-        return (priorityOrder[b.priority || 'medium'] || 2) - (priorityOrder[a.priority || 'medium'] || 2);
-      });
+    if (optimizationGoals.includes('seo')) {
+      systemPrompt += `Focus on SEO optimization with natural keyword integration. `;
+    }
+    if (optimizationGoals.includes('readability')) {
+      systemPrompt += `Ensure content is easily readable and accessible. `;
+    }
+    if (optimizationGoals.includes('engagement')) {
+      systemPrompt += `Create engaging, compelling content that captures reader attention. `;
+    }
+    if (optimizationGoals.includes('conversion')) {
+      systemPrompt += `Include persuasive elements and clear calls-to-action. `;
+    }
 
-      // Parallele Verarbeitung mit Rate Limiting
-      const chunks = this.chunkArray(sortedRequests, 3); // Max 3 parallele Requests
+    systemPrompt += `
 
-      for (const chunk of chunks) {
-        const chunkPromises = chunk.map(async (req) => {
-          switch (req.type) {
-            case 'seo':
-              return this.analyzeSEO(req.data);
-            case 'local':
-              return this.generateLocalSEOContent(req.data);
-            case 'product':
-              return this.generateProductDescription(req.data);
-            case 'conversation':
-              return this.handleConversation(req.data);
-            case 'personalization':
-              return this.generatePersonalizedContent(req.data);
-            default:
-              return { success: false, error: `Unknown request type: ${req.type}` };
-          }
+Always respond with properly formatted JSON containing:
+- optimizedTitle
+- optimizedMetaDescription
+- optimizedContent
+- keywordDensity (object with keyword percentages)
+- readabilityScore (1-100)
+- engagementScore (1-100)
+- conversionElements (array of conversion-focused elements)
+- suggestions (array of improvement suggestions)`;
+
+    const prompt = `Optimize this content for ZOE Solar:
+
+Original Content: ${content}
+Target Keywords: ${targetKeywords.join(', ')}
+Language: ${language}
+Optimization Goals: ${optimizationGoals.join(', ')}
+
+Please provide optimized content that meets all the specified goals.`;
+
+    return this.openRouter.generateContent({
+      prompt,
+      systemPrompt,
+      temperature: 0.4,
+      maxTokens: 2500
+    });
+  }
+
+  /**
+   * Handle conversation requests
+   * Consolidates: conversationalAIService + aiCustomerService + smartChatAssistant
+   */
+  private async handleConversation(request: ConversationRequest): Promise<AIResponse> {
+    const {userMessage, conversationHistory = [], context = 'ZOE Solar business context', userType = 'customer'} = request;
+
+    let systemPrompt = `You are a helpful AI assistant for ZOE Solar, a leading German solar energy company. `;
+
+    switch (userType) {
+      case 'customer':
+        systemPrompt += `You're helping an existing customer with service, support, and technical questions. `;
+        break;
+      case 'prospect':
+        systemPrompt += `You're helping a potential customer learn about solar solutions and guide them toward making a decision. `;
+        break;
+      case 'partner':
+        systemPrompt += `You're helping a business partner with collaboration, technical details, and partnership opportunities. `;
+        break;
+      default:
+        systemPrompt += `You're helping general visitors with information about solar energy and ZOE Solar's services. `;
+    }
+
+    systemPrompt += `
+
+Your expertise includes:
+- Solar panel systems and installations
+- Battery storage solutions
+- EV charging infrastructure
+- Energy optimization and savings
+- Government incentives and regulations
+- Technical specifications and requirements
+- Cost calculations and ROI analysis
+
+Be friendly, professional, and helpful. Provide accurate, detailed information. If you don't know something, admit it and suggest connecting with ZOE Solar's human experts.
+
+Context: ${context}`;
+
+    // Build conversation context
+    const conversationContext = conversationHistory
+      .slice(-5) // Keep last 5 messages for context
+      .map(msg => `${msg.role}: ${msg.content}`)
+      .join('\n');
+
+    const prompt = `${conversationContext ? 'Previous conversation:\n' + conversationContext + '\n\n' : ''}User (${userType}): ${userMessage}`;
+
+    return this.openRouter.generateContent({
+      prompt,
+      systemPrompt,
+      temperature: 0.7,
+      maxTokens: 1200,
+      context
+    });
+  }
+
+  /**
+   * Handle local SEO requests
+   * Consolidates: localSEOService + geoOptimizationService + googleBusinessProfileService
+   */
+  private async handleLocalSEO(request: LocalSEORequest): Promise<AIResponse> {
+    const {businessType, location, services, targetRadius = 50} = request;
+
+    const systemPrompt = `You are an expert in local SEO for solar energy companies. Create content that helps ZOE Solar dominate local search results and Google Maps rankings.
+
+Always respond with properly formatted JSON containing:
+- businessDescription (compelling, locally-focused)
+- localKeywords (array of location-specific keywords)
+- serviceDescriptions (localized for the area)
+- locationSpecificContent (content mentioning local landmarks, climate, regulations)
+- googleBusinessProfilePosts (5 engaging posts)
+- localBacklinkOpportunities (suggestions for local partnerships)
+- serviceAreaDescriptions (for different neighborhoods in the area)
+- localFAQ (questions specific to the location)`;
+
+    const prompt = `Generate comprehensive local SEO content for ZOE Solar:
+
+Business Type: ${businessType}
+Primary Location: ${location}
+Service Radius: ${targetRadius}km
+Services: ${services.join(', ')}
+
+Create content that helps ZOE Solar rank #1 in local search results and appear in "solar company near me" searches. Consider local factors like:
+- Regional climate and sun conditions
+- Local electricity rates and regulations
+- Regional incentives and subsidies
+- Local competition and market conditions
+- Community-specific needs and concerns`;
+
+    return this.openRouter.generateContent({
+      prompt,
+      systemPrompt,
+      temperature: 0.5,
+      maxTokens: 2000
+    });
+  }
+
+  /**
+   * Handle product description requests
+   * Consolidates: productDescriptionService + aiProductContent + technicalSpecificationWriter
+   */
+  private async handleProductDescription(request: ProductDescriptionRequest): Promise<AIResponse> {
+    const {productType, features, targetAudience, technicalSpecs, usps = []} = request;
+
+    const systemPrompt = `You are an expert copywriter for solar energy products. Create compelling, professional product descriptions that drive conversions.
+
+Always respond with properly formatted JSON containing:
+- title (SEO-optimized, compelling)
+- shortDescription (1-2 sentences for quick overview)
+- detailedDescription (comprehensive, benefit-focused)
+- keyFeatures (array of main features with benefits)
+- benefits (array of customer benefits)
+- technicalSpecs (clear, accessible technical details)
+- installationSpecs (installation requirements)
+- warrantyInfo (warranty and support details)
+- callToAction (persuasive CTA)
+- faq (frequently asked questions)
+- targetAudiencePainPoints (addressed pain points)`;
+
+    const prompt = `Create a compelling product description for ZOE Solar:
+
+Product Type: ${productType}
+Key Features: ${features.join(', ')}
+Target Audience: ${targetAudience}
+${technicalSpecs ? `Technical Specifications: ${JSON.stringify(technicalSpecs)}` : ''}
+${usps.length > 0 ? `Unique Selling Points: ${usps.join(', ')}` : ''}
+
+Write persuasive copy that:
+1. Highlights key benefits over features
+2. Addresses customer pain points and needs
+3. Includes technical details in accessible language
+4. Builds trust and credibility
+5. Drives purchase decisions
+6. Is optimized for search engines
+7. Appeals specifically to the target audience`;
+
+    return this.openRouter.generateContent({
+      prompt,
+      systemPrompt,
+      temperature: 0.6,
+      maxTokens: 1800
+    });
+  }
+
+  /**
+   * Handle SEO analysis requests
+   * Consolidates: seoAnalysisService + contentAnalysisService + competitorAnalysisService
+   */
+  private async handleSEOAnalysis(request: SEOAnalysisRequest): Promise<AIResponse> {
+    const {content, targetKeywords, competitorContent, analysisType = 'comprehensive'} = request;
+
+    let systemPrompt = `You are an expert SEO analyst specializing in solar energy websites. `;
+
+    switch (analysisType) {
+      case 'basic':
+        systemPrompt += `Provide a basic SEO analysis with key recommendations. `;
+        break;
+      case 'comprehensive':
+        systemPrompt += `Provide a comprehensive SEO analysis with detailed recommendations. `;
+        break;
+      case 'competitive':
+        systemPrompt += `Provide competitive SEO analysis comparing against competitors. `;
+        break;
+    }
+
+    systemPrompt += `
+
+Always respond with properly formatted JSON containing:
+- seoScore (1-100)
+- keywordAnalysis (density, placement, variants)
+- contentStructure (headings, readability, length)
+- technicalSEO (meta tags, schema, internal links)
+- contentGaps (missing topics or keywords)
+- improvementSuggestions (prioritized recommendations)
+- competitorInsights (if competitor content provided)
+- localSEOFactors (local optimization opportunities)
+- mobileOptimization (mobile-specific recommendations)`;
+
+    let prompt = `Analyze this content for ZOE Solar:
+
+Content to Analyze: ${content}
+Target Keywords: ${targetKeywords.join(', ')}
+Analysis Type: ${analysisType}`;
+
+    if (competitorContent) {
+      prompt += `\n\nCompetitor Content: ${competitorContent}`;
+    }
+
+    prompt += `
+
+Provide actionable insights to improve search rankings and user experience.`;
+
+    return this.openRouter.generateContent({
+      prompt,
+      systemPrompt,
+      temperature: 0.3,
+      maxTokens: 2000
+    });
+  }
+
+  /**
+   * Public method for content optimization
+   */
+  async optimizeContent(request: ContentOptimizationRequest): Promise<AIResponse> {
+    return this.queueRequest<AIResponse>('content', request);
+  }
+
+  /**
+   * Public method for conversation
+   */
+  async generateConversation(request: ConversationRequest): Promise<AIResponse> {
+    return this.queueRequest<AIResponse>('conversation', request);
+  }
+
+  /**
+   * Public method for local SEO
+   */
+  async generateLocalSEO(request: LocalSEORequest): Promise<AIResponse> {
+    return this.queueRequest<AIResponse>('localSEO', request);
+  }
+
+  /**
+   * Public method for product descriptions
+   */
+  async generateProductDescription(request: ProductDescriptionRequest): Promise<AIResponse> {
+    return this.queueRequest<AIResponse>('product', request);
+  }
+
+  /**
+   * Public method for SEO analysis
+   */
+  async analyzeSEO(request: SEOAnalysisRequest): Promise<AIResponse> {
+    return this.queueRequest<AIResponse>('seoAnalysis', request);
+  }
+
+  /**
+   * Handle batch requests
+   */
+  async handleBatchRequest(request: BatchRequest): Promise<AIResponse[]> {
+    const results: AIResponse[] = [];
+
+    // Sort by priority
+    const sortedRequests = request.requests.sort((a, b) => {
+      const priority = { high: 3, normal: 2, low: 1 };
+      return (priority[b.priority || 'normal'] || 2) - (priority[a.priority || 'normal'] || 2);
+    });
+
+    for (const req of sortedRequests) {
+      try {
+        const result = await this.queueRequest<AIResponse>(req.type, req.data);
+        results.push(result);
+      } catch (error) {
+        results.push({
+          success: false,
+          error: error instanceof Error ? error.message : 'Unknown error'
         });
-
-        const chunkResults = await Promise.all(chunkPromises);
-        results.push(...chunkResults);
       }
-
-      const processingTime = Date.now() - startTime;
-      const successRate = results.filter(r => r.success).length / results.length;
-
-      return {
-        success: true,
-        processedRequests: results.length,
-        successRate,
-        processingTime,
-        results,
-        usage: this.calculateTotalUsage(results),
-        timestamp: new Date().toISOString()
-      };
-
-    } catch (error) {
-      return {
-        success: false,
-        error: error instanceof Error ? error.message : 'Unknown error',
-        timestamp: new Date().toISOString()
-      };
     }
+
+    return results;
   }
 
-  // ===== UTILITY METHODS =====
-
-  private extractTopic(content: string): string {
-    // Extrahiere das Hauptthema aus dem Content
-    const sentences = content.split('.').filter(s => s.trim().length > 0);
-    return sentences[0]?.trim().slice(0, 50) || 'Solarlösungen';
-  }
-
-  private extractService(content: string): string {
-    // Extrahiere den Service aus dem Content
-    if (content.toLowerCase().includes('photovoltaik')) return 'Photovoltaikanlagen';
-    if (content.toLowerCase().includes('speicher')) return 'Batteriespeicher';
-    if (content.toLowerCase().includes('lade')) return 'Ladeinfrastruktur';
-    return 'Solarlösungen';
-  }
-
-  private mergeContent(original: string, additional: string): string {
-    // Intelligente Content-Verbindung
-    const sentences = original.split('. ').filter(s => s.trim());
-    const additionalSentences = additional.split('. ').filter(s => s.trim());
-    return [...sentences.slice(0, -1), ...additionalSentences, sentences[sentences.length - 1]].join('. ');
-  }
-
-  private generateGeoKeywords(location: string, service: string): string[] {
-    return [
-      `${service} ${location}`,
-      `Solar ${location}`,
-      `Photovoltaik ${location}`,
-      `Solaranlagen ${location}`,
-      `Energieberatung ${location}`
-    ];
-  }
-
-  private extractLocalEntities(content: string): string[] {
-    const entities: string[] = [];
-    const patterns = [
-      /\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\b/g, // Orte und Firmen
-      /\b\d{5}\s+[A-Z][a-z]+\b/g // PLZ + Ort
-    ];
-
-    patterns.forEach(pattern => {
-      const matches = content.match(pattern);
-      if (matches) entities.push(...matches);
-    });
-
-    return [...new Set(entities)];
-  }
-
-  private generateLocalSchema(location: string, service: string): any {
+  /**
+   * Get service statistics
+   */
+  getServiceStats(): {
+    queueLength: number;
+    isProcessing: boolean;
+    openRouterStats: any;
+  } {
     return {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "ZOE Solar",
-      "description": `Professionelle ${service} in ${location}`,
-      "areaServed": location,
-      "serviceType": service
+      queueLength: this.requestQueue.length,
+      isProcessing: this.isProcessing,
+      openRouterStats: this.openRouter.getUsageStats()
     };
   }
 
-  private generateLocalMetaTags(location: string, service: string): any {
-    return {
-      title: `${service} in ${location} | ZOE Solar`,
-      description: `Professionelle ${service} für Unternehmen in ${location}. Jetzt beraten lassen!`,
-      keywords: this.generateGeoKeywords(location, service).join(', ')
-    };
-  }
-
-  private calculateOptimizationScore(content: string, keywords: string[]): number {
-    let score = 50; // Basis-Score
-
-    keywords.forEach(keyword => {
-      const density = (content.toLowerCase().split(keyword.toLowerCase()).length - 1) / content.split(' ').length * 100;
-      if (density >= 1 && density <= 3) score += 10;
+  /**
+   * Clear request queue
+   */
+  clearQueue(): void {
+    this.requestQueue.forEach(({reject}) => {
+      reject(new Error('Request cancelled'));
     });
-
-    return Math.min(score, 100);
-  }
-
-  private calculateTechnicalScore(content: string): number {
-    let score = 50;
-
-    // Check für verschiedene technische Elemente
-    if (content.includes('<h1>') || content.match(/^#{1}\s+/m)) score += 10;
-    if (content.includes('<h2>') || content.match(/^#{2}\s+/m)) score += 10;
-    if (content.length > 300) score += 10;
-    if (content.includes('alt=')) score += 10;
-    if (content.includes('href=')) score += 10;
-
-    return Math.min(score, 100);
-  }
-
-  private calculateKeywordDensity(content: string, keywords: string[]): Record<string, number> {
-    const densities: Record<string, number> = {};
-    const words = content.toLowerCase().split(/\s+/).length;
-
-    keywords.forEach(keyword => {
-      const occurrences = (content.toLowerCase().match(new RegExp(keyword.toLowerCase(), 'g')) || []).length;
-      densities[keyword] = (occurrences / words) * 100;
-    });
-
-    return densities;
-  }
-
-  private calculateReadabilityScore(content: string): number {
-    const sentences = content.split(/[.!?]+/).filter(s => s.trim()).length;
-    const words = content.split(/\s+/).length;
-    const syllables = content.toLowerCase().match(/[aeiou]/g)?.length || 0;
-
-    // Simplified Flesch Reading Ease
-    const score = 206.835 - 1.015 * (words / sentences) - 84.6 * (syllables / words);
-    return Math.max(0, Math.min(100, Math.round(score)));
-  }
-
-  private estimateConversionPotential(content: string): number {
-    let potential = 30; // Basis-Potenzial
-
-    const conversionWords = ['jetzt', 'kostenlos', 'beratung', 'kontakt', 'angebot', 'preise', 'anfragen'];
-    conversionWords.forEach(word => {
-      if (content.toLowerCase().includes(word)) potential += 10;
-    });
-
-    return Math.min(potential, 90);
-  }
-
-  private analyzeUSPs(features: string[], benefits: string[]): any {
-    return {
-      uniqueFeatures: features.slice(0, 3),
-      keyBenefits: benefits.slice(0, 3),
-      differentiators: features.filter(f => f.includes('einzigartig') || f.includes('speziell'))
-    };
-  }
-
-  private analyzeTargetAudience(industry?: string): any {
-    const industries: Record<string, any> = {
-      'produktion': { focus: 'Kosteneinsparung', decisionMaker: 'GF, Betriebsleiter' },
-      'handel': { focus: 'Unabhängigkeit', decisionMaker: 'Inhaber, Geschäftsführer' },
-      'dienstleistung': { focus: 'Nachhaltigkeit', decisionMaker: 'GF, CSR-Manager' }
-    };
-
-    return industries[industry || 'all'] || { focus: 'Allgemein', decisionMaker: 'Unternehmensentscheider' };
-  }
-
-  private generateCompetitorComparison(product: string): string[] {
-    return [
-      `Bessere Performance als Standard-${product}`,
-      `Langfristige Kostenersparnis vs. Konkurrenz`,
-      `Premium-Service inklusive`
-    ];
-  }
-
-  private identifyTechnicalIssues(content: string): string[] {
-    const issues: string[] = [];
-
-    if (content.length < 300) issues.push('Content zu kurz');
-    if (!content.includes('<h1>') && !content.match(/^#{1}\s+/m)) issues.push('Fehlende H1-Überschrift');
-    if (!content.match(/<h[2-6]>/) && !content.match(/^#{2,6}\s+/m)) issues.push('Keine Unterüberschriften');
-
-    return issues;
-  }
-
-  private generateTechnicalRecommendations(score: number): string[] {
-    const recommendations: string[] = [];
-
-    if (score < 70) {
-      recommendations.push('Content mit relevanten Keywords erweitern');
-      recommendations.push('Technische SEO-Elemente integrieren');
-    }
-    if (score < 50) {
-      recommendations.push('Content-Struktur überarbeiten');
-      recommendations.push('Meta-Daten optimieren');
-    }
-
-    return recommendations;
-  }
-
-  private generateKeywordSuggestions(content: string, existingKeywords: string[]): string[] {
-    const suggestions: string[] = [];
-    const baseKeywords = ['Solar', 'Photovoltaik', 'Energie', 'Nachhaltigkeit'];
-
-    baseKeywords.forEach(base => {
-      if (!existingKeywords.some(k => k.toLowerCase().includes(base.toLowerCase()))) {
-        suggestions.push(base);
-      }
-    });
-
-    return suggestions.slice(0, 5);
-  }
-
-  private generateFollowUpQuestions(question: string, response: string): string[] {
-    // Generiere relevante Folgefragen basierend auf der Konversation
-    const suggestions: string[] = [];
-
-    if (question.toLowerCase().includes('kosten')) {
-      suggestions.push('Welche Fördermittel gibt es?', 'Was ist die Amortisationszeit?');
-    }
-    if (question.toLowerCase().includes('leistung')) {
-      suggestions.push('Welche Größe wird benötigt?', 'Wie viel Strom kann erzeugt werden?');
-    }
-
-    return suggestions;
-  }
-
-  private calculateConfidenceScore(response: string): number {
-    // Berechne die Konfidenz in die AI-Antwort
-    if (response.length < 50) return 60;
-    if (response.includes('Ich weiß nicht') || response.includes('kann ich nicht sagen')) return 40;
-    return 85;
-  }
-
-  private async getUserProfile(userId: string): Promise<any> {
-    // Mock-Implementierung - würde normalerweise aus DB laden
-    return {
-      industry: 'handel',
-      companySize: 'klein',
-      location: 'München',
-      interests: ['Photovoltaik', 'Kosteneinsparung'],
-      previousInteractions: []
-    };
-  }
-
-  private buildPersonalizedContext(profile: any): string {
-    return `
-User-Profil:
-- Branche: ${profile.industry}
-- Unternehmensgröße: ${profile.companySize}
-- Standort: ${profile.location}
-- Interessen: ${profile.interests?.join(', ')}
-
-Passe die Antwort entsprechend an.`;
-  }
-
-  private async generatePersonalizedContent(request: PersonalizationRequest): Promise<any> {
-    const personalizedPrompt = `Personalisiere diesen Content für:
-
-${JSON.stringify(request.userProfile, null, 2)}
-
-Content: ${request.content}
-
-Personalisierungsziele: ${request.personalizationGoals.join(', ')}`;
-
-    const response = await openRouterClient.generateContent({
-      prompt: personalizedPrompt,
-      systemPrompt: 'Du bist ein Personalisierungs-Experte. Passe Content perfekt an User-Profile an.',
-      temperature: 0.7
-    });
-
-    return {
-      success: true,
-      personalizedContent: response.content,
-      personalizationLevel: 'high',
-      userProfile: request.userProfile,
-      usage: response.usage,
-      timestamp: new Date().toISOString()
-    };
-  }
-
-  private recordPerformance(operation: string, duration: number): void {
-    if (!this.performanceMetrics.has(operation)) {
-      this.performanceMetrics.set(operation, []);
-    }
-
-    const metrics = this.performanceMetrics.get(operation)!;
-    metrics.push(duration);
-
-    // Behalte nur die letzten 100 Messungen
-    if (metrics.length > 100) {
-      metrics.shift();
-    }
-  }
-
-  private extractUsageFromCache(cacheKey: string): any {
-    // Implementierung für Cache-Usage-Extraction
-    return {
-      tokens: 0,
-      cost: 0
-    };
-  }
-
-  private calculateTotalUsage(results: any[]): any {
-    let totalTokens = 0;
-    let totalCost = 0;
-
-    results.forEach(result => {
-      if (result.usage) {
-        totalTokens += result.usage.totalTokens || 0;
-        totalCost += result.usage.cost || 0;
-      }
-    });
-
-    return { totalTokens, totalCost };
-  }
-
-  private chunkArray<T>(array: T[], size: number): T[][] {
-    const chunks: T[][] = [];
-    for (let i = 0; i < array.length; i += size) {
-      chunks.push(array.slice(i, i + size));
-    }
-    return chunks;
-  }
-
-  // ===== PUBLIC UTILITY METHODS =====
-
-  getHealthStatus(): any {
-    const avgResponseTimes: Record<string, number> = {};
-
-    this.performanceMetrics.forEach((times, operation) => {
-      const avg = times.reduce((sum, time) => sum + time, 0) / times.length;
-      avgResponseTimes[operation] = Math.round(avg);
-    });
-
-    return {
-      status: 'healthy',
-      performance: avgResponseTimes,
-      cacheStatus: openRouterClient.getHealthStatus(),
-      uptime: process.uptime()
-    };
-  }
-
-  getUsageStatistics(): any {
-    return {
-      openRouter: openRouterClient.getUsageStats(),
-      gateway: {
-        totalRequests: Array.from(this.performanceMetrics.values()).reduce((sum, times) => sum + times.length, 0),
-        averageResponseTime: this.calculateOverallAverageResponseTime(),
-        cacheHitRate: 0 // Implementieren bei Bedarf
-      }
-    };
-  }
-
-  private calculateOverallAverageResponseTime(): number {
-    const allTimes = Array.from(this.performanceMetrics.values()).flat();
-    if (allTimes.length === 0) return 0;
-
-    const sum = allTimes.reduce((total, time) => total + time, 0);
-    return Math.round(sum / allTimes.length);
-  }
-
-  async testConnection(): Promise<boolean> {
-    try {
-      const testResponse = await openRouterClient.generateContent({
-        prompt: 'Test',
-        maxTokens: 5
-      });
-
-      return testResponse.success;
-    } catch (error) {
-      console.error('AI Gateway Connection Test failed:', error);
-      return false;
-    }
+    this.requestQueue = [];
   }
 }
 
-// Export Singleton
-export const aiGatewayService = AIGatewayService.getInstance();
-export default aiGatewayService;
+// Singleton instance
+let aiGatewayService: AIGatewayService | null = null;
+
+export function getAIGatewayService(): AIGatewayService {
+  if (!aiGatewayService) {
+    aiGatewayService = new AIGatewayService();
+  }
+  return aiGatewayService;
+}
+
+export default AIGatewayService;

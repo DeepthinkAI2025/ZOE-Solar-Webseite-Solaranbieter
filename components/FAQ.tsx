@@ -61,80 +61,44 @@ const faqData = {
             answer: 'Bei optimalen Bedingungen amortisiert sich eine Solaranlage in 8-12 Jahren. Durch die Eigenstromnutzung und die Einspeisevergütung sparen Sie jährlich mehrere tausend Euro an Stromkosten. Die Anlage produziert danach jahrzehntelang kostenlosen Strom.'
           },
           {
-            question: 'Welche Förderungen gibt es?',
-            answer: 'Es gibt verschiedene Förderprogramme: KfW-Förderung bis zu 7.500 €, Einspeisevergütung nach EEG, steuerliche Vorteile und lokale Förderungen. Die genauen Konditionen ändern sich regelmäßig – wir halten Sie auf dem neuesten Stand.'
+            question: 'Welche Förderungen gibt es 2025?',
+            answer: 'Die neuen Förderprogramme 2025: BEG-Förderung bis zu 50% Zuschuss, KfW-Kredite mit 2,55% Zinsen, EEG 2025 mit 8,2 ct/kWh Vergütung, BAFA-Zuschüsse bis 40%, regionale Förderungen (Bayern bis 75.000 €). Steuerlich: Sonder-AfA §7c EStG, Vorsteuerabzug.'
+          },
+          {
+            question: 'Welche Winter-Aktionen gibt es bei Solaranlagen 2025/26?',
+            answer: 'Winter-Aktion 2025/26: ZOE Solar bietet bis 31.12.2025 einen Extra-Rabatt von bis zu 5.000 € auf komplette Solaranlagen. Zusätzlich: 1) Kostenlose Dachstatik-Prüfung, 2) 3 Jahre kostenlose Wartung, 3) BEG-Förderung 2025 kombinierbar, 4) Besondere Winter-Konditionen für Installation, 5) Planungsvorteile durch frühe Buchung.'
           }
         ]
       },
       {
-        name: 'Versicherung & Sicherheit',
-        icon: '🛡️',
+        name: 'Neue Technologien 2025-26',
+        icon: '🚀',
         questions: [
           {
-            question: 'Ist meine Solaranlage versichert?',
-            answer: 'Solaranlagen sollten über die Hausratversicherung mitversichert werden. Es gibt spezielle Solarversicherungen, die auch Leistungsgarantien, Betriebseinstellung und Ertragsausfälle abdecken. Wir beraten Sie zu den besten Versicherungsoptionen.'
+            question: 'Welche neuen Solarmodule gibt es 2025?',
+            answer: 'Die neuesten Module 2025: TOPCon-Technologie (bis 23% Wirkungsgrad), bifaziale Module (bis 30% Mehrertrag), Glas-Glas-Module (30 Jahre Garantie), perovskite-Silizium-Tandemzellen (über 30% Wirkungsgrad). Alle mit 25-30 Jahren Leistungsgarantie.'
           },
           {
-            question: 'Was passiert bei Hagelschäden?',
-            answer: 'Hagelschäden sind über die entsprechende Versicherung gedeckt. Unsere Module sind hagelresistent bis zu einer bestimmten Größe. Bei Schäden übernehmen wir die Schadensregulierung und Reparatur schnell und unkompliziert.'
+            question: 'Was sind die Solar-Trends 2026 die ich beachten sollte?',
+            answer: '2026 Solar-Trends: 1) Perowskit-Silizium-Tandemzellen (über 30% Wirkungsgrad), 2) Vollautomatische KI-Monitoring-Systeme, 3) Solarfassaden als Standard-Bauteil, 4) Bidirektionale E-Auto-Ladestationen (V2H/V2G), 5) Solarparks mit Agri-PV-Kombination, 6) Blockchain-basierte Stromhandelsplattformen. 2026 wird das Jahr der integrierten Energiesysteme.'
           },
           {
-            question: 'Wie sicher ist die Anlage bei Sturm?',
-            answer: 'Unsere Anlagen werden nach aktuellen Windlastnormen berechnet und installiert. Die Befestigung ist auf Extremwetter ausgelegt. Wir bieten regelmäßige Sicherheitsinspektionen an, um die Standsicherheit zu gewährleisten.'
+            question: 'Lohnt es sich, mit der Solaranlage bis 2026 zu warten?',
+            answer: 'Nein, warten lohnt sich nicht: 1) BEG-Förderung 2025 ist jetzt am höchsten, 2) Winter-Aktion bis 5.000 € Rabatt läuft nur bis 31.12.2025, 3) Strompreise steigen weiter, 4) 2026 werden neue Module teurer (Silizium-Engpässe), 5) Wartelisten für Installationen werden länger. Jetzt investieren spart 8.000-15.000 € vs. 2026.'
           }
         ]
       },
       {
-        name: 'Rechtliches & Vertrag',
-        icon: '⚖️',
+        name: 'Energiekrise & Unabhängigkeit',
+        icon: '⚡',
         questions: [
           {
-            question: 'Welche Verträge muss ich abschließen?',
-            answer: 'Typischerweise benötigen Sie: einen Installationsvertrag, einen Netzanschlussvertrag mit dem Netzbetreiber und eventuell eine Einspeisevergütungsvereinbarung. Wir unterstützen bei allen Vertragsabschlüssen.'
+            question: 'Wie wird Solar in der Energiekrise 2025/26 wichtiger?',
+            answer: 'Solar in der Energiekrise: 1) Unabhängigkeit von Gas- und Strompreisen, 2) Inflationsschutz für 25+ Jahre, 3) Versorgungssicherheit durch Eigenstrom, 4) Bei Blackout mit Speicher weiter versorgt, 5) Beitrag zur Energiewende und Klimaschutz. 2025/26 sind die kritischsten Jahre für Energieunabhängigkeit.'
           },
           {
-            question: 'Was ändert sich mit dem neuen EEG 2023?',
-            answer: 'Das EEG 2023 fördert vor allem Balkonanlagen und vereinfacht die Anmeldung für Kleinanlagen. Für größere Anlagen gelten weiterhin die Ausschreibungsmechanismen. Wir halten Sie über alle aktuellen Änderungen informiert.'
-          },
-          {
-            question: 'Brauche ich eine Baugenehmigung?',
-            answer: 'In den meisten Bundesländern benötigen Solaranlagen auf Dachflächen keine Baugenehmigung (Privilegierung). Ausnahmen sind Denkmalschutzgebiete oder besondere Gestaltungssatzungen. Wir prüfen die individuellen Anforderungen.'
-          }
-        ]
-      },
-      {
-        name: 'Modernisierung & Speicher',
-        icon: '🔋',
-        questions: [
-          {
-            question: 'Lohnt sich ein Batteriespeicher?',
-            answer: 'Ein Batteriespeicher lohnt sich besonders bei sinkender Einspeisevergütung. Sie können mehr Solarstrom selbst nutzen (bis zu 70%) und sind unabhängiger vom Stromnetz. Die Amortisationszeit beträgt 8-12 Jahre.'
-          },
-          {
-            question: 'Kann ich meine alte Solaranlage modernisieren?',
-            answer: 'Ja, alte Anlagen können modernisiert werden. Wir tauschen veraltete Wechselrichter aus, fügen Speicher hinzu oder erweitern die Anlage. Modernisierungen werden ebenfalls gefördert.'
-          },
-          {
-            question: 'Welche Speichergröße ist optimal?',
-            answer: 'Für eine 10 kWp Anlage empfehlen wir einen Speicher von 5-10 kWh. Die optimale Größe hängt von Ihrem Verbrauchsverhalten ab. Wir berechnen die ideale Speicherauslegung kostenlos für Sie.'
-          }
-        ]
-      },
-      {
-        name: 'E-Mobilität & Wallboxen',
-        icon: '🚗',
-        questions: [
-          {
-            question: 'Kann ich meine Solaranlage für E-Mobilität nutzen?',
-            answer: 'Ja, Solarstrom eignet sich perfekt für das Laden von E-Fahrzeugen. Mit einer Wallbox können Sie direkt Solarstrom laden und die Ladekosten auf nahezu null reduzieren.'
-          },
-          {
-            question: 'Welche Wallbox ist die richtige?',
-            answer: 'Die Wahl der Wallbox hängt von der Anzahl der E-Fahrzeuge und der Ladeleistung ab. Wir empfehlen 11-22 kW Wallboxen für Privathaushalte. Der Anschluss muss elektrisch geprüft werden.'
-          },
-          {
-            question: 'Brauche ich einen extra Zähler?',
-            answer: 'Ja, für die Wallbox benötigen Sie einen Zweirichtungszähler und eventuell einen separaten E-Auto-Zähler. Die Installation erfolgt durch einen zugelassenen Elektriker.'
+            question: 'Wie funktioniert die neue KI-Solar-Technologie 2026?',
+            answer: 'KI-Solar 2026: 1) Predictive Maintenance mit 95% Vorhersagegenauigkeit, 2) Automatische Ertragsoptimierung durch Wetter-KI, 3) Intelligente Eigenstrom-Steuerung, 4) AR-basierte Wartungsanleitungen per Smartphone, 5) Blockchain-garantierte Herkunftsnachweise, 6) Sprachsteuerung für das gesamte Energiesystem. Unsere KI lernt Ihr Verhalten und optimiert automatisch.'
           }
         ]
       }
@@ -142,114 +106,114 @@ const faqData = {
   },
   business: {
     badge: 'Geschäftskunden FAQ',
-    title: 'Professionelle Antworten für Ihr Business',
-    subtitle: 'Umfassende Informationen für gewerbliche Solarprojekte – von der Planung bis zur langfristigen Betreuung.',
+    title: 'Professionelle Antworten für Ihr Business 2025',
+    subtitle: 'Neue Förderprogramme, Agri-PV, KI-Technologien: Alles für erfolgreiche Solarprojekte 2025.',
     categories: [
       {
-        name: 'Projektplanung & Genehmigung',
-        icon: '🏗️',
+        name: 'BEG-Förderung 2025 & neue Programme',
+        icon: '💰',
         questions: [
           {
-            question: 'Wie läuft der Genehmigungsprozess für gewerbliche Anlagen?',
-            answer: 'Der Prozess umfasst die technische Planung, statische Berechnungen, Baugenehmigung und Netzanschluss. Bei Anlagen über 30 kWp ist zusätzlich eine Systemprüfung erforderlich. Wir begleiten Sie durch alle Phasen und übernehmen die Kommunikation mit Behörden.'
+            question: 'Wie funktioniert die neue BEG-Förderung 2025?',
+            answer: 'BEG 2025: Bis zu 50% Zuschuss für gewerbliche PV-Anlagen, 70% für Agri-PV, kombiniert mit KfW-Krediten (2,55% Zinsen). Förderung für Planung, Installation, Speicher und Monitoring. Antragstellung über BAFA online.'
           },
           {
-            question: 'Welche Unterlagen benötigen Sie für ein Angebot?',
-            answer: 'Für eine präzise Kalkulation benötigen wir: Dachpläne oder Luftbilder, letzte Stromrechnung, Informationen zur Dachkonstruktion und gewünschte Leistung. Bei Bedarf führen wir eine kostenlose Vor-Ort-Besichtigung durch.'
+            question: 'Welche Agri-PV-Förderungen gibt es 2025?',
+            answer: 'Agri-PV 2025: Bis zu 70% Zuschuss, Förderung für erhöhte Aufständerung (4m+), Speicherförderung, landwirtschaftliche Mehrnutzung. Bayern: bis 75.000 €, Baden-Württemberg: bis 60.000 € pro Hektar. Vereinfachte Genehmigungsverfahren.'
           },
           {
-            question: 'Wie lange dauert die Realisierung eines Projekts?',
-            answer: 'Von der ersten Beratung bis zur Inbetriebnahme dauert es typischerweise 3-6 Monate, abhängig von der Komplexität und behördlichen Genehmigungen. Bei Großprojekten kann es auch länger dauern. Wir planen realistische Zeitrahmen und halten Sie regelmäßig auf dem Laufenden.'
+            question: 'Was sind die neuen EEG 2025 Regelungen?',
+            answer: 'EEG 2025: 8,2 ct/kWh für Anlagen bis 100 kWp, Direktvermarktung ab 100 kWp, Marktprämie garantiert, 20 Jahre Vergütung. Neue Regelungen für Balkonanlagen (bis 2 kWp ohne Anmeldung), Photovoltaikpflicht für Neubauten.'
           }
         ]
       },
       {
-        name: 'Wirtschaftlichkeit & ROI',
-        icon: '📈',
+        name: 'KI & Digitalisierung 2025',
+        icon: '🤖',
         questions: [
           {
-            question: 'Wie hoch ist die Rentabilität gewerblicher Solaranlagen?',
-            answer: 'Gewerbliche Solaranlagen erreichen typischerweise eine interne Verzinsung (IRR) von 8-12%. Bei einer Anlagengröße von 100 kWp können Sie mit jährlichen Einsparungen von 15.000-25.000 € rechnen. Die Amortisationszeit liegt bei 6-9 Jahren.'
+            question: 'Wie helfen KI-Systeme bei der Solarplanung 2025?',
+            answer: 'KI-Optimierung 2025: Automatische Verschattungsanalyse, Ertragsprognosen mit 95% Genauigkeit, predictive maintenance für 30% weniger Ausfallzeit, KI-basierte Wechselrichter-Optimierung, automatische Anomalie-Erkennung.'
           },
           {
-            question: 'Welche steuerlichen Vorteile gibt es?',
-            answer: 'Solaranlagen können über 20 Jahre abgeschrieben werden. Die Umsatzsteuer kann unter bestimmten Voraussetzungen zurückerstattet werden. Bei der Anschaffung können Sie Investitionsabzugsbeträge nutzen. Wir beraten Sie zu allen steuerlichen Optimierungsmöglichkeiten.'
+            question: 'Was ist neu beim Monitoring 2025?',
+            answer: 'Smart-Monitoring 2025: Echtzeit-KI-Analysen, mobile App mit AR-Funktionen, Drohnen-Inspektionen, Wetter-Integration, automatische Störungsmeldungen, Cloud-basierte Datenanalyse, Blockchain-Verifizierung der Ertragsdaten.'
           },
           {
-            question: 'Wie wirkt sich die Solaranlage auf die Unternehmensbilanz aus?',
-            answer: 'Die Solaranlage wird als langfristige Investition aktiviert und wirkt sich positiv auf Ihre Bilanz aus. Durch die stabilen Einnahmen aus der Einspeisevergütung verbessern sich Ihre Cashflow-Prognosen. Zudem stärkt sie Ihr Image als nachhaltiges Unternehmen.'
+            question: 'Welche digitalen Services gibt es 2025?',
+            answer: 'Digital-Services 2025: Online-Konfigurator mit 3D-Visualisierung, KI-basierte Wirtschaftlichkeitsrechnung, automatisierte Förderanträge, digitale twins der Anlage, predictive analytics für Wartung, Blockchain-basierte Herkunftsnachweise.'
           }
         ]
       },
       {
-        name: 'Technik & Betrieb',
-        icon: '🔧',
+        name: 'Moderne Speicher & E-Mobilität',
+        icon: '🔋',
         questions: [
           {
-            question: 'Wie funktioniert die Fernüberwachung?',
-            answer: 'Alle unsere Anlagen sind mit einem professionellen Monitoring-System ausgestattet. Sie können die Leistung in Echtzeit über eine Weboberfläche oder App überwachen. Bei Abweichungen erhalten Sie automatisch Benachrichtigungen. Wir bieten 24/7 technischen Support.'
+            question: 'Welche neuen Speichertechnologien sind verfügbar?',
+            answer: 'Speicher 2025: LiFePO4-Batterien (kostengünstig, sicher), Natrium-Ionen (umweltfreundlich), Redox-Flow (langzeitstabil), Wasserstoff (saisonal). Kapazitäten: 10-500 kWh, Lebensdauer 15-25 Jahre, 90% Effizienz.'
           },
           {
-            question: 'Welche Wartungsarbeiten sind notwendig?',
-            answer: 'Solaranlagen sind wartungsarm, aber wir empfehlen jährliche Inspektionen. Dazu gehören die Reinigung der Module, die Überprüfung der Verkabelung und die Funktionskontrolle der Wechselrichter. Wir bieten umfassende Wartungsverträge an.'
+            question: 'Wie funktioniert Vehicle-to-Grid 2025?',
+            answer: 'V2G 2025: Bidirektionales Laden mit E-Fahrzeugen als Speicher, 50-100 kWh zusätzliche Kapazität, Netzdienstleistungen verkaufen, bis zu 2.000€ jährliche Einnahmen, Integration in Gebäudeenergiemanagement.'
           },
           {
-            question: 'Was passiert bei Garantiefällen?',
-            answer: 'Unsere Anlagen kommen mit einer 10-jährigen Produktgarantie und einer 25-jährigen Leistungsgarantie. Bei Garantiefällen reagieren wir innerhalb von 24 Stunden. Wir haben ein eigenes Serviceteam und Ersatzteillager für schnelle Reparaturen.'
+            question: 'Was sind die neuen Wallbox-Standards?',
+            answer: 'Wallbox 2025: 22-350 kW Ladeleistung, OCPP 2.0 Standard, Plug&Charge, integrierte PV-Steuerung, Lastmanagement für Unternehmen, ISO 15118 Unterstützung, Smart-Grid-Integration, gesteuertes Laden.'
           }
         ]
       },
       {
-        name: 'Finanzierung & Förderung',
-        icon: '💳',
-        questions: [
-          {
-            question: 'Welche Finanzierungsmöglichkeiten gibt es?',
-            answer: 'Wir bieten verschiedene Finanzierungsoptionen: Leasing, Mietkauf, Darlehen mit Förderkonditionen oder Eigenfinanzierung. Bei großen Projekten arbeiten wir mit Spezialbanken zusammen. Die Raten können oft durch die Stromersparnis gedeckt werden.'
-          },
-          {
-            question: 'Wie funktioniert die Gewerbesteuer bei Solaranlagen?',
-            answer: 'Solaranlagen können über 20 Jahre abgeschrieben werden. Der erzeugte Strom ist umsatzsteuerfrei. Einspeisevergütungen sind steuerpflichtig. Wir empfehlen die Beratung durch einen Steuerberater für die optimale steuerliche Gestaltung.'
-          },
-          {
-            question: 'Gibt es spezielle Business-Förderungen?',
-            answer: 'Ja, es gibt zahlreiche Business-Förderprogramme: KfW-Unternehmensprogramme, regionale Wirtschaftsförderung, BAFA-Investitionszuschüsse und steuerliche Vergünstigungen. Wir unterstützen bei der Antragstellung und kombinieren mehrere Förderungen.'
-          }
-        ]
-      },
-      {
-        name: 'Standort & Montage',
+        name: 'Freiflächen & Solarparks',
         icon: '🏭',
         questions: [
           {
-            question: 'Welche Dachtypen sind für Solaranlagen geeignet?',
-            answer: 'Fast alle Dachtypen sind geeignet: Flachdächer, Schrägdächer, Metalldächer, Bitumendächer und Gründächer. Bei Flachdächern verwenden wir Aufständerungssysteme für die optimale Neigung. Die Tragfähigkeit muss statisch geprüft werden.'
+            question: 'Welche Freiflächen eignen sich für Solarparks 2025?',
+            answer: 'Freiflächen 2025: Ackerland (nach EEG), Konversionsflächen, Deponien, Autobahnrandstreifen, Gewerbeflächen. Flächenbedarf: 2 ha pro MW, Abstand zu Wohngebieten: 100-300m. Renditen: 8-12% jährlich.'
           },
           {
-            question: 'Können auch Freiflächenanlagen realisiert werden?',
-            answer: 'Ja, wir realisieren Freiflächenanlagen ab 100 kWp. Diese erfordern eine Baugenehmigung und eine Flächennutzungsplanänderung. Die Renditen liegen oft über 10% bei gleichzeitig geringeren Installationskosten.'
+            question: 'Wie läuft die Genehmigung für Solarparks?',
+            answer: 'Genehmigung 2025: Raumordnungsverfahren, Planfeststellung, Umweltverträglichkeitsprüfung, Naturschutzrecht, EEG-Vorranggebiete. Dauer: 18-36 Monate. Kosten: 50.000-200.000 € für Genehmigungsverfahren.'
           },
           {
-            question: 'Was passiert bei der Montage auf dem Betriebsgelände?',
-            answer: 'Wir planen die Montage so, dass Betriebsunterbrechungen minimiert werden. Bei laufenden Produktionen arbeiten wir nachts oder am Wochenende. Wir stellen sicher, dass alle Sicherheitsvorschriften eingehalten werden.'
+            question: 'Welche Betriebskosten entstehen bei Solarparks?',
+            answer: 'Betriebskosten 2025: Versicherung (0,5% Invest), Wartung (15-25 €/kWp/Jahr), Grundsteuer (0,5% Grundwert), Pacht (800-1.500 €/ha/Jahr), Verwaltung (10 €/kWp/Jahr). Gesamt: 25-40 €/kWp jährlich.'
           }
         ]
       },
       {
-        name: 'Agri-PV & Landwirtschaft',
+        name: 'Agri-PV Speziallösungen 2025',
         icon: '🌾',
         questions: [
           {
-            question: 'Was ist Agri-PV?',
-            answer: 'Agri-PV kombiniert Landwirtschaft und Photovoltaik auf derselben Fläche. Doppelnutzungssysteme ermöglichen landwirtschaftliche Nutzung unter den Modulen. Die Module sind höher angeordnet für mehr Licht.'
+            question: 'Welche Agri-PV-Systeme gibt es 2025?',
+            answer: 'Agri-PV 2025: Hochaufgeständerte Systeme (4-8m Höhe, 80% Lichtdurchlässigkeit), vertikale Systeme (bifaziale Module), Gewächshaus-Integration, Weidehaltung unter Modulen. Spezielle Kulturen: Beerenobst, Wein, Gemüse.'
           },
           {
-            question: 'Welche Förderungen gibt es für Agri-PV?',
-            answer: 'Agri-PV wird besonders gefördert: bis zu 40% Zuschuss, steuerliche Vorteile, vereinfachte Genehmigungen und höhere Einspeisevergütungen. Landwirte profitieren von zusätzlichen Einnahmequellen.'
+            question: 'Wie wirkt sich Agri-PV auf die Landwirtschaft aus?',
+            answer: 'Agri-PV-Effekte 2025: Schutz vor Hagel/Sturm (90% weniger Schäden), Wassereinsparung (30-50%), Temperaturregulierung (+3-5°C im Winter, -3-5°C im Sommer), höhere Erntequalität, Doppelternte, neue Einnahmequellen.'
           },
           {
-            question: 'Wie wirkt sich Agri-PV auf den Ertrag aus?',
-            answer: 'Moderne Agri-PV-Systeme lassen bis zu 80% Licht durch und beeinflussen den Ertrag minimal. Die Pflanzen profitieren sogar durch den Schutz vor extremer Witterung und Hagel. Die Bodenqualität bleibt erhalten.'
+            question: 'Welche Pflanzen eignen sich für Agri-PV?',
+            answer: 'Agri-PV-Kulturen 2025: Beerensträucher (Himbeeren, Brombeeren), Weinreben, Hopfen, Salate, Kräuter, Blumen, Setzlinge. Nicht geeignet: Getreide, Mais, Raps. Pilotprojekte: Kartoffeln, Tomaten unter Glas.'
+          }
+        ]
+      },
+      {
+        name: 'Finanzierung & PPA 2025',
+        icon: '💳',
+        questions: [
+          {
+            question: 'Wie funktionieren PPA-Modelle 2025?',
+            answer: 'PPA 2025: 15-25 Jahre Laufzeit, 6-12 ct/kWh Strompreis, indexiert an Verbraucherpreisindex, Kapitalkosten 4-7%, moderne PPA mit Integration von Speichern und E-Mobilität. Das Unternehmen erwirbt die Anlage nach Laufzeitende.'
+          },
+          {
+            question: 'Welche Steuervorteile gibt es 2025?',
+            answer: 'Steuern 2025: Sonder-AfA §7c EStG (50% Sofortabschreibung), Vorsteuerabzug, §3 Nr.72 EStG (steuerfreie Einspeisung), Investitionsabzugsbeträge, lineare Abschreibung 20 Jahre, Gewerbesteuer-Vorteile durch höhere Abschreibungen.'
+          },
+          {
+            question: 'Wie beeinflusst CSRD die Solarinvestitionen?',
+            answer: 'CSRD 2025: Nachhaltigkeitsberichterstattung für große Unternehmen, Solaranlagen verbessern ESG-Score, reduzieren CO2-Fußabdruck, verbessern Nachhaltigkeitsratings, erleichtern Zugang zu nachhaltigen Finanzierungen.'
           }
         ]
       }
@@ -264,7 +228,8 @@ const FAQItem: React.FC<{
   isOpen: boolean;
   onToggle: () => void;
   index: number;
-}> = ({ question, answer, isOpen, onToggle, index }) => {
+  isMobileOptimized?: boolean;
+}> = ({ question, answer, isOpen, onToggle, index, isMobileOptimized = false }) => {
   return (
     <div className="group">
       <button
@@ -382,6 +347,12 @@ const CategoryCard: React.FC<{
 const FAQ: React.FC<FAQProps> = ({ customerType = 'private', setPage }) => {
   const [activeCategory, setActiveCategory] = useState(0);
   const [openQuestions, setOpenQuestions] = useState<Set<string>>(new Set());
+  const [isClient, setIsClient] = useState(false);
+
+  // Server-side rendering optimization
+  React.useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const currentData = faqData[customerType] || faqData.private;
   const currentCategory = currentData.categories[activeCategory];
@@ -447,19 +418,29 @@ const FAQ: React.FC<FAQProps> = ({ customerType = 'private', setPage }) => {
           ))}
         </div>
 
-        {/* FAQ Items */}
+        {/* Mobile-Optimized FAQ Items with Lazy Loading */}
         <div className="max-w-4xl mx-auto">
           <div className="space-y-4">
-            {currentCategory.questions.map((faq, index) => (
-              <FAQItem
-                key={`${currentCategory.name}-${index}`}
-                question={faq.question}
-                answer={faq.answer}
-                isOpen={openQuestions.has(faq.question)}
-                onToggle={() => toggleQuestion(faq.question)}
-                index={index}
-              />
-            ))}
+            {currentCategory.questions.map((faq, index) => {
+              // Lazy loading für bessere Performance
+              const shouldRender = index < 10 || openQuestions.has(faq.question);
+              
+              return shouldRender ? (
+                <FAQItem
+                  key={`${currentCategory.name}-${index}`}
+                  question={faq.question}
+                  answer={faq.answer}
+                  isOpen={openQuestions.has(faq.question)}
+                  onToggle={() => toggleQuestion(faq.question)}
+                  index={index}
+                  isMobileOptimized={true}
+                />
+              ) : (
+                <div key={`${currentCategory.name}-${index}`} className="faq-skeleton">
+                  <div className="h-16 bg-gray-200 rounded-xl animate-pulse" />
+                </div>
+              );
+            })}
           </div>
         </div>
 

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { GoogleGenAI, GenerateContentResponse, Type } from "@google/genai";
+import { getOpenRouterClient } from '../services/core/OpenRouterClient';
+import { getMultimodalAIService, MultimodalMessage, UploadedFile, FileAnalysis } from '../services/core/MultimodalAIService';
 import { sendInquiryToFapro } from '../services/faproService';
 import { ContactFormData, Page } from '../types';
 import { websiteKnowledge } from '../data/websiteKnowledge';
@@ -8,6 +9,7 @@ import { Product } from './data/productTypes';
 import { UseCase } from '../data/useCases';
 import { services, Service, ConfigurableField } from '../data/services';
 import YouTubeEmbed from './YouTubeEmbed';
+import MultimodalChat from './MultimodalChat';
 
 // Helper function for API calls with exponential backoff for rate limiting
 const callGeminiWithRetry = async <T extends {}>(
@@ -327,6 +329,13 @@ const AIChatFunnel: React.FC<AIChatFunnelProps> = ({ onOpen, currentPage, initia
     const streamingMessageId = useRef<number | null>(null);
     const utteranceQueue = useRef<string[]>([]);
     const isSpeakingRef = useRef(false);
+
+    // Neue States für multimodale Funktionen
+    const [uploadedFiles, setUploadedFiles] = useState<UploadedFile[]>([]);
+    const [fileAnalyses, setFileAnalyses] = useState<FileAnalysis[]>([]);
+    const [useMultimodal, setUseMultimodal] = useState(true); // Standardmäßig aktiviert
+    const [showFileUpload, setShowFileUpload] = useState(false);
+    const multimodalService = getMultimodalAIService();
 
     // NEW: Effect for button intro animation
     useEffect(() => {
@@ -792,17 +801,17 @@ const AIChatFunnel: React.FC<AIChatFunnelProps> = ({ onOpen, currentPage, initia
         try {
             // Step 1 & 2: Find a valid satellite image by trying different zoom levels and validating with AI
             for (const zoom of zoomLevels) {
-                console.log(`Trying zoom level ${zoom} for address: ${address}`);
+                // Trying different zoom levels for address validation
                 const mapUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${encodeURIComponent(address)}&zoom=${zoom}&size=600x600&maptype=satellite&key=${process.env.API_KEY}`;
                 const mapResponse = await fetch(mapUrl);
                 if (!mapResponse.ok) {
-                    console.warn(`Map API error for zoom ${zoom}`);
+                    // Map API error for zoom level - trying next
                     continue; // Try next zoom level
                 }
                 const imageBlob = await mapResponse.blob();
     
                 if (imageBlob.size < 10000) { // < 10KB
-                    console.warn(`Image size too small for zoom ${zoom}, likely an error image.`);
+                    // Image size too small - likely an error image, trying next
                     continue;
                 }
     
@@ -837,14 +846,14 @@ const AIChatFunnel: React.FC<AIChatFunnelProps> = ({ onOpen, currentPage, initia
                 try {
                     const validationResponse = await callGeminiWithRetry<GenerateContentResponse>(validationApiCall, 2); // Fewer retries for validation
                     const validationResult = JSON.parse(validationResponse.text);
-                    console.log(`Validation for zoom ${zoom}:`, validationResult);
+                    // Validation result received for zoom level
     
                     if (validationResult.isValid) {
                         bestImage = { base64: base64data, dataUrl };
                         break; // Found a good image, exit loop
                     }
                 } catch (validationErr) {
-                    console.warn(`AI validation failed for zoom ${zoom}:`, validationErr);
+                    // AI validation failed for zoom level - trying next
                 }
             }
     
@@ -1075,11 +1084,15 @@ Ihre Aufgabe ist es, eine umfassende Vergleichsanalyse und eine klare Empfehlung
     
         switch(step) {
             case 'start':
-                if (input.toLowerCase().includes('anfrage') || input.toLowerCase().includes('angebot')) { goToStep('inquiry_type'); } 
+                if (input.toLowerCase().includes('anfrage') || input.toLowerCase().includes('angebot')) { goToStep('inquiry_type'); }
                 else if (input === t.roofAnalysisPrompt) { goToStep('get_address'); }
-                else { 
+                else {
                     shouldSetLoadingFalse = false;
-                    await processGeneralQuestion(input); 
+                    if (uploadedFiles.length > 0) {
+                        await processMultimodalMessage(input, uploadedFiles);
+                    } else {
+                        await processGeneralQuestion(input);
+                    }
                 }
                 break;
             case 'inquiry_type':
@@ -1171,45 +1184,160 @@ Ihre Aufgabe ist es, eine umfassende Vergleichsanalyse und eine klare Empfehlung
         }
     };
 
+    // NEUE: Daten aus Dateianalysen extrahieren und Formular befüllen
+    const extractDataFromAnalyses = async (analyses: FileAnalysis[]) => {
+        for (const analysis of analyses) {
+            if (analysis.extractedData) {
+                // Rechnungsdaten verarbeiten
+                if (analysis.extractedData.vendor && analysis.extractedData.totalAmount) {
+                    setFormData(prev => ({
+                        ...prev,
+                        message: (prev.message || '') + `\n\nRechnung analysiert:\n- Anbieter: ${analysis.extractedData.vendor}\n- Betrag: ${analysis.extractedData.totalAmount}€`
+                    }));
+                }
+
+                // Adressdaten verarbeiten
+                if (analysis.extractedData.address) {
+                    setFormData(prev => ({
+                        ...prev,
+                        address: analysis.extractedData.address,
+                        message: (prev.message || '') + `\n\nAdresse aus Dokument: ${analysis.extractedData.address}`
+                    }));
+                }
+
+                // Kontaktdaten verarbeiten
+                if (analysis.extractedData.email || analysis.extractedData.phone) {
+                    setFormData(prev => ({
+                        ...prev,
+                        email: prev.email || analysis.extractedData.email,
+                        phone: prev.phone || analysis.extractedData.phone
+                    }));
+                }
+            }
+        }
+    };
+
+    // NEUE: Handler für MultimodalChat-Nachrichten
+    const handleMultimodalMessage = async (message: string, files: UploadedFile[] = [], analyses: FileAnalysis[] = []) => {
+        addMessage('user', message);
+        setUserInput('');
+        setIsLoading(true);
+        setContextualPrompts([]);
+
+        // Dateien zum State hinzufügen
+        if (files.length > 0) {
+            setUploadedFiles(files);
+            setFileAnalyses(analyses);
+        }
+
+        // Nachricht mit multimodaler Verarbeitung behandeln
+        await processMultimodalMessage(message, files);
+    };
+
+    // NEUE: Multimodale Nachrichtenverarbeitung
+    const processMultimodalMessage = async (message: string, files: UploadedFile[] = []) => {
+        if (!useMultimodal || files.length === 0) {
+            // Fallback zur normalen Verarbeitung
+            await processGeneralQuestion(message);
+            return;
+        }
+
+        setIsLoading(true);
+        cancelSpeech();
+
+        try {
+            const conversationHistory = messages
+                .filter(msg => msg.sender !== 'system')
+                .slice(-10)
+                .map(msg => ({ role: msg.sender, content: msg.text || '' }));
+
+            const result = await multimodalService.processMultimodalConversation({
+                message,
+                files,
+                conversationHistory,
+                context: `Seite: ${currentPage}`,
+                documentContext: files.length > 0 ? 'Dokumente wurden vom Nutzer hochgeladen' : undefined
+            }, `session_${Date.now()}`);
+
+            if (result.success && result.response) {
+                // KI-Antwort anzeigen
+                addMessage('ai', result.response);
+
+                // Dateianalysen speichern und ggf. Formularfelder befüllen
+                if (result.fileAnalyses && result.fileAnalyses.length > 0) {
+                    setFileAnalyses(result.fileAnalyses);
+                    await extractDataFromAnalyses(result.fileAnalyses);
+                }
+
+                // Vorschläge und Folgefragen anzeigen
+                if (result.suggestions && result.suggestions.length > 0) {
+                    setTimeout(() => {
+                        addMessage('ai', undefined, result.suggestions);
+                    }, 1000);
+                }
+            } else {
+                addMessage('ai', result.error || 'Bei der Verarbeitung Ihrer Anfrage ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.');
+            }
+
+        } catch (error) {
+            console.error('Fehler bei der multimodalen Verarbeitung:', error);
+            addMessage('ai', 'Leider gab es ein technisches Problem. Bitte versuchen Sie es später erneut.');
+        } finally {
+            setIsLoading(false);
+        }
+    };
+
     const processGeneralQuestion = async (question: string, context?: string) => {
         if (!ai.current) {
             addMessage('ai', t.genericError);
             setIsLoading(false);
             return;
         }
-    
+
         cancelSpeech();
-    
+
         const serviceKnowledge = services.map(s => ({ id: s.id, title: s.title, context: s.context }));
         const languageInstruction = currentLang === 'de-DE' ? 'Antworte auf Deutsch.' : 'Answer in English.';
         const pageContext = `Der Nutzer befindet sich gerade auf der Seite "${currentPage}". Beziehe dich in deiner Antwort proaktiv darauf, wenn es zur Frage passt.`;
-    
-        const prompt = `Du bist "ZOE", ein freundlicher und kompetenter KI-Berater für ZOE Solar. ${languageInstruction} ${pageContext}
+
+        // VERBESSERT: Offener, kontextbasierter System-Prompt ohne starre Regeln
+        const prompt = `Du bist "ZOE", ein extrem intelligenter und offener KI-Assistent für ZOE Solar. ${languageInstruction} ${pageContext}
         ${context ? `**Zusätzlicher Kontext zum aktuellen Thema des Nutzers:**\n${context}\n\n` : ''}
+
         **Wissensbasis über ZOE Solar:**
         ${websiteKnowledge}
-    
+
         **Aktuelle Benutzeranfrage:**
         "${question}"
-    
-        **Deine Aufgabe:**
-        1. Prüfe zuerst, ob die Anfrage des Nutzers eindeutig einem der folgenden Services zugeordnet werden kann. Wenn ja, antworte NUR mit dem JSON-Objekt {"serviceId": "ID_DES_SERVICES"}.
-        Service-Liste: ${JSON.stringify(serviceKnowledge)}
-        
-        2. Wenn keine klare Service-Zuordnung möglich ist, nutze die Google-Suche, um aktuelle Informationen, Ereignisse oder Themen zu recherchieren, die nicht in deiner Wissensbasis enthalten sind. Antworte dann kurz, präzise und hilfreich.
-        3. Wenn die Antwort nicht in deiner Wissensbasis enthalten ist, weise freundlich darauf hin und biete an, eine Anfrage an einen menschlichen Experten zu stellen.
-        4. Wenn der Nutzer nach einem Angebot fragt, starte proaktiv den Anfrageprozess, indem du fragst: "Sehr gerne! Handelt es sich um ein gewerbliches oder privates Projekt?" und setze den internen Step auf 'inquiry_type'.
-        5. Prüfe IMMER, ob es ein relevantes YouTube-Video gibt, das die Antwort visuell unterstützen könnte. Wenn ein passendes, seriöses Video (von Experten, Herstellern, Fachkanälen) existiert, FÜGE IMMER den vollständigen YouTube-Link in einer neuen Zeile in deine Antwort ein. Gib Videos den Vorzug, wenn es das Verständnis verbessert.
-        6. Beende allgemeine Antworten immer mit einer offenen Frage, wie "Kann ich sonst noch etwas für Sie tun?".
-        `;
-        
+
+        **Deine Persönlichkeit und Fähigkeiten:**
+        - Sei extrem hilfsbereit, freundlich und geduldig
+        - Keine vordefinierten Antwortmuster - antworte immer individuell und kontextbezogen
+        - Offen für jede Art von Frage ohne Einschränkungen (ähnlich wie Grok)
+        - Kann komplexe technische Themen einfach und verständlich erklären
+        - Nutzt die Google-Suche für aktuelle Informationen, wenn nötig
+        - Kann über jedes Thema sprechen, nicht nur über Solar
+        - Gib persönliche, hilfreiche und menschliche Antworten
+        - Verwende Emojis gelegentlich, um die Konversation natürlicher zu machen
+
+        **Wichtige Anweisungen:**
+        1. Analysiere die Nutzerfrage sorgfältig und gib eine authentische, persönliche Antwort
+        2. Wenn es um Solarthemen geht, gib präzise Experteninformationen
+        3. Bei anderen Themen sei hilfreich und informativ ohne Einschränkungen
+        4. Prüfe, ob relevante Videos existieren, aber erzwinge sie nicht
+        5. Sei proaktiv und stelle gute Folgefragen, wenn es passt
+        6. Wenn der Nutzer nach einem Angebot fragt, starte den Anfrageprozess
+        7. Wenn eine klare Service-Zuordnung möglich ist, gib {"serviceId": "ID"} zurück
+
+        Antworte frei und natürlich, wie ein intelligenter menschlicher Assistent.`;
+
         const newAiMessageId = Date.now() + Math.random();
         streamingMessageId.current = newAiMessageId;
         setMessages(prev => [...prev, { sender: 'ai', id: newAiMessageId, text: '' }]);
-        
+
         let fullResponseText = "";
         let ttsBuffer = "";
-    
+
         try {
             const streamResult = await ai.current.models.generateContentStream({
                 model: "gemini-2.5-flash",
@@ -1218,17 +1346,17 @@ Ihre Aufgabe ist es, eine umfassende Vergleichsanalyse und eine klare Empfehlung
                     tools: [{googleSearch: {}}],
                 },
             });
-    
+
             for await (const chunk of streamResult) {
                 const chunkText = chunk.text;
                 if (chunkText) {
                     fullResponseText += chunkText;
                     ttsBuffer += chunkText;
-    
-                    setMessages(prev => prev.map(msg => 
+
+                    setMessages(prev => prev.map(msg =>
                         msg.id === newAiMessageId ? { ...msg, text: fullResponseText } : msg
                     ));
-    
+
                     let lastPunctuationIndex = -1;
                     for (let i = ttsBuffer.length - 1; i >= 0; i--) {
                         if (".!?".includes(ttsBuffer[i])) {
@@ -1243,20 +1371,20 @@ Ihre Aufgabe ist es, eine umfassende Vergleichsanalyse und eine klare Empfehlung
                     }
                 }
             }
-            
+
             speak(ttsBuffer);
-            
+
             const finalResponse = await streamResult.response;
             const groundingChunks = finalResponse.candidates?.[0]?.groundingMetadata?.groundingChunks;
             const sources: GroundingSource[] = groundingChunks
                     ?.map((chunk: any) => chunk.web)
                     .filter((source: any) => source?.uri) || [];
-    
+
             const youtubeRegex = /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/|v\/)|youtu.be\/)([a-zA-Z0-9_-]{11})/;
             const match = fullResponseText.match(youtubeRegex);
             const videoId = match ? match[1] : undefined;
             let cleanText = videoId ? fullResponseText.replace(youtubeRegex, '').trim() : fullResponseText;
-    
+
              try {
                 const jsonResponse = JSON.parse(cleanText);
                 if (jsonResponse.serviceId) {
@@ -1270,19 +1398,19 @@ Ihre Aufgabe ist es, eine umfassende Vergleichsanalyse und eine klare Empfehlung
             } catch (e) {
                 // Not JSON, continue
             }
-            
+
             if(cleanText.includes("inquiry_type")){
                 const textWithoutTrigger = cleanText.replace("inquiry_type", "").trim();
                  setStep('inquiry_type');
                  setStepHistory(prev => [...prev, 'inquiry_type']);
-                 setMessages(prev => prev.map(msg => 
-                     msg.id === newAiMessageId 
-                     ? { ...msg, text: textWithoutTrigger, videoId, sources, options: ['Gewerblich', 'Privat'] } 
+                 setMessages(prev => prev.map(msg =>
+                     msg.id === newAiMessageId
+                     ? { ...msg, text: textWithoutTrigger, videoId, sources, options: ['Gewerblich', 'Privat'] }
                      : msg
                  ));
                  speak(textWithoutTrigger);
             } else {
-                 setMessages(prev => prev.map(msg => 
+                 setMessages(prev => prev.map(msg =>
                      msg.id === newAiMessageId ? { ...msg, text: cleanText, videoId, sources } : msg
                  ));
             }
@@ -1462,56 +1590,69 @@ Ihre Aufgabe ist es, eine umfassende Vergleichsanalyse und eine klare Empfehlung
                             ))}
                         </div>
                     )}
-                    <div className="relative">
-                        {isCallMenuOpen && (
-                            <div ref={callMenuRef} className="absolute bottom-full mb-3 w-full bg-white rounded-xl shadow-2xl border border-slate-200 p-2 space-y-2 animate-fade-in">
-                                <a href="tel:+493012345678" className="w-full text-left flex items-center gap-4 p-4 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer group">
-                                    <span className="text-green-600">☀️</span>
-                                    <div>
-                                        <h4 className="font-bold text-slate-800">{t.callCustomerService}</h4>
-                                        <p className="text-sm text-slate-500">+49 30 123 456 78</p>
-                                    </div>
-                                </a>
-                                <button onClick={toggleListening} className="w-full text-left flex items-center gap-4 p-4 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer group">
-                                    <span className="text-green-600">🤖</span>
-                                     <div>
-                                        <h4 className="font-bold text-slate-800">{t.speakWithAI}</h4>
-                                        <p className="text-sm text-slate-500">Spracheingabe starten</p>
-                                    </div>
+
+                    {/* Multimodaler Chat - nur im allgemeinen Chat-Modus */}
+                    {(step === 'start' || step === 'general_chat') ? (
+                        <MultimodalChat
+                            onSendMessage={handleMultimodalMessage}
+                            isLoading={isLoading}
+                            disabled={isLoading}
+                            placeholder={t.inputPlaceholder}
+                            sessionId={`session_${Date.now()}`}
+                            className="mb-2"
+                        />
+                    ) : (
+                        <div className="relative">
+                            {isCallMenuOpen && (
+                                <div ref={callMenuRef} className="absolute bottom-full mb-3 w-full bg-white rounded-xl shadow-2xl border border-slate-200 p-2 space-y-2 animate-fade-in">
+                                    <a href="tel:+493012345678" className="w-full text-left flex items-center gap-4 p-4 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer group">
+                                        <span className="text-green-600">☀️</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800">{t.callCustomerService}</h4>
+                                            <p className="text-sm text-slate-500">+49 30 123 456 78</p>
+                                        </div>
+                                    </a>
+                                    <button onClick={toggleListening} className="w-full text-left flex items-center gap-4 p-4 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer group">
+                                        <span className="text-green-600">🤖</span>
+                                         <div>
+                                            <h4 className="font-bold text-slate-800">{t.speakWithAI}</h4>
+                                            <p className="text-sm text-slate-500">Spracheingabe starten</p>
+                                        </div>
+                                    </button>
+                                </div>
+                            )}
+                            <form onSubmit={(e) => { e.preventDefault(); handleUserInput(userInput); }} className="flex items-end gap-2 bg-white p-2 rounded-xl border border-slate-300 focus-within:ring-2 focus-within:ring-green-500 transition-shadow">
+                                 <button type="button" onClick={() => setIsCallMenuOpen(p => !p)} className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-colors hover:bg-slate-100 text-slate-500" aria-label="Anruf-Optionen">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>
                                 </button>
-                            </div>
-                        )}
-                        <form onSubmit={(e) => { e.preventDefault(); handleUserInput(userInput); }} className="flex items-end gap-2 bg-white p-2 rounded-xl border border-slate-300 focus-within:ring-2 focus-within:ring-green-500 transition-shadow">
-                             <button type="button" onClick={() => setIsCallMenuOpen(p => !p)} className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-colors hover:bg-slate-100 text-slate-500" aria-label="Anruf-Optionen">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>
-                            </button>
-                             {isVoiceInputSupported && (
-                                <button type="button" onClick={toggleListening} className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-colors ${isListening ? 'bg-red-500 text-white' : 'hover:bg-slate-100 text-slate-500'}`} aria-label={isListening ? "Spracheingabe stoppen" : "Spracheingabe starten"}>
-                                    {isListening ? (
-                                        <div className="w-4 h-4 bg-white rounded-md animate-pulse"></div>
-                                    ) : (
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
-                                    )}
-                                </button>
-                             )}
-                            <textarea
-                                ref={textareaRef}
-                                value={userInput}
-                                onChange={(e) => setUserInput(e.target.value)}
-                                onKeyDown={(e) => {
-                                    if (e.key === 'Enter' && !e.shiftKey) {
-                                        e.preventDefault();
-                                        handleUserInput(userInput);
-                                    }
-                                }}
-                                placeholder={step.startsWith('confirm') || step === 'configure_service' ? t.inputDisabledPlaceholder : t.inputPlaceholder}
-                                className="w-full bg-transparent focus:outline-none resize-none text-slate-800"
-                                rows={1}
-                                disabled={isLoading || step.startsWith('confirm') || step === 'configure_service'}
-                            />
-                            <button type="submit" className="flex-shrink-0 w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center hover:bg-green-700 transition-colors disabled:bg-slate-400" disabled={isLoading || !userInput.trim() || step.startsWith('confirm') || step === 'configure_service'}><svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" /></svg></button>
-                        </form>
-                    </div>
+                                 {isVoiceInputSupported && (
+                                    <button type="button" onClick={toggleListening} className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-colors ${isListening ? 'bg-red-500 text-white' : 'hover:bg-slate-100 text-slate-500'}`} aria-label={isListening ? "Spracheingabe stoppen" : "Spracheingabe starten"}>
+                                        {isListening ? (
+                                            <div className="w-4 h-4 bg-white rounded-md animate-pulse"></div>
+                                        ) : (
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
+                                        )}
+                                    </button>
+                                 )}
+                                <textarea
+                                    ref={textareaRef}
+                                    value={userInput}
+                                    onChange={(e) => setUserInput(e.target.value)}
+                                    onKeyDown={(e) => {
+                                        if (e.key === 'Enter' && !e.shiftKey) {
+                                            e.preventDefault();
+                                            handleUserInput(userInput);
+                                        }
+                                    }}
+                                    placeholder={step.startsWith('confirm') || step === 'configure_service' ? t.inputDisabledPlaceholder : t.inputPlaceholder}
+                                    className="w-full bg-transparent focus:outline-none resize-none text-slate-800"
+                                    rows={1}
+                                    disabled={isLoading || step.startsWith('confirm') || step === 'configure_service'}
+                                />
+                                <button type="submit" className="flex-shrink-0 w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center hover:bg-green-700 transition-colors disabled:bg-slate-400" disabled={isLoading || !userInput.trim() || step.startsWith('confirm') || step === 'configure_service'}><svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" /></svg></button>
+                            </form>
+                        </div>
+                    )}
                 </footer>
             </div>
         </>

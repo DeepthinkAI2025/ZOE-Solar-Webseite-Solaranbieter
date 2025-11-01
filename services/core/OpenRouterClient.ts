@@ -1,28 +1,18 @@
 /**
- * 🚀 OpenRouter API Client for ZOE Solar
- *
- * Zentrale AI-Integration mit OpenRouter API und minimax:m2 Modell
- * Konsolidiert alle AI-Services in einem performanten Gateway
+ * OpenRouter AI Client - Consolidated LLM Service
+ * Replaces multiple AI providers with single OpenRouter API integration
+ * Using minimax:m2 model for optimal performance and cost efficiency
  */
 
-interface OpenRouterConfig {
-  apiKey: string;
-  baseURL: string;
-  model: string;
-  timeout: number;
-  maxRetries: number;
-}
-
-interface AIRequest {
+export interface AIRequest {
   prompt: string;
-  context?: string;
-  systemPrompt?: string;
   temperature?: number;
   maxTokens?: number;
-  cacheKey?: string;
+  context?: string;
+  systemPrompt?: string;
 }
 
-interface AIResponse {
+export interface AIResponse {
   success: boolean;
   content?: string;
   usage?: {
@@ -32,360 +22,355 @@ interface AIResponse {
     cost: number;
   };
   error?: string;
-  cached?: boolean;
-  timestamp: string;
-  requestId: string;
 }
 
-interface CacheEntry {
-  content: string;
-  timestamp: number;
-  ttl: number;
-  usage: AIResponse['usage'];
+export interface OpenRouterConfig {
+  apiKey: string;
+  model?: string;
+  baseUrl?: string;
+  timeout?: number;
 }
 
 class OpenRouterClient {
   private config: OpenRouterConfig;
-  private cache: Map<string, CacheEntry>;
-  private rateLimiter: Map<string, number[]>;
+  private cache = new Map<string, AIResponse>();
+  private rateLimiter = {
+    tokens: 0,
+    lastReset: Date.now(),
+    maxTokens: 100, // Conservative rate limit
+    windowMs: 60000 // 1 minute window
+  };
 
-  constructor() {
+  constructor(config: OpenRouterConfig) {
     this.config = {
-      apiKey: process.env.OPENROUTER_API_KEY || '',
-      baseURL: 'https://openrouter.ai/api/v1',
       model: 'minimax/minimax-m2',
+      baseUrl: 'https://openrouter.ai/api/v1',
       timeout: 30000,
-      maxRetries: 3
+      ...config
     };
+  }
 
-    this.cache = new Map();
-    this.rateLimiter = new Map();
+  /**
+   * Check rate limiting and wait if necessary
+   */
+  private async checkRateLimit(): Promise<void> {
+    const now = Date.now();
+    const timeSinceLastReset = now - this.rateLimiter.lastReset;
 
-    if (!this.config.apiKey) {
-      console.warn('⚠️ OpenRouter API Key nicht gefunden - bitte .env überprüfen');
+    if (timeSinceLastReset >= this.rateLimiter.windowMs) {
+      this.rateLimiter.tokens = 0;
+      this.rateLimiter.lastReset = now;
     }
-  }
 
-  /**
-   * Zentrale AI-Anfrage mit Caching und Rate Limiting
-   */
-  async generateContent(request: AIRequest): Promise<AIResponse> {
-    const requestId = this.generateRequestId();
-    const startTime = Date.now();
-
-    try {
-      // Cache Check
-      if (request.cacheKey) {
-        const cached = this.getCachedResponse(request.cacheKey);
-        if (cached) {
-          return {
-            success: true,
-            content: cached.content,
-            usage: cached.usage,
-            cached: true,
-            timestamp: new Date().toISOString(),
-            requestId
-          };
-        }
-      }
-
-      // Rate Limiting Check
-      if (!this.checkRateLimit(requestId)) {
-        throw new Error('Rate limit exceeded');
-      }
-
-      // API Request
-      const response = await this.makeAPIRequest(request);
-
-      // Cache Response
-      if (request.cacheKey && response.success) {
-        this.setCachedResponse(request.cacheKey, response);
-      }
-
-      console.log(`✅ OpenRouter Request ${requestId} completed in ${Date.now() - startTime}ms`);
-      return response;
-
-    } catch (error) {
-      console.error(`❌ OpenRouter Request ${requestId} failed:`, error);
-      return {
-        success: false,
-        error: error instanceof Error ? error.message : 'Unknown error',
-        timestamp: new Date().toISOString(),
-        requestId
-      };
+    if (this.rateLimiter.tokens >= this.rateLimiter.maxTokens) {
+      const waitTime = this.rateLimiter.windowMs - timeSinceLastReset;
+      await new Promise(resolve => setTimeout(resolve, waitTime));
+      this.rateLimiter.tokens = 0;
+      this.rateLimiter.lastReset = Date.now();
     }
+
+    this.rateLimiter.tokens++;
   }
 
   /**
-   * Spezialisierte Methoden für verschiedene Use Cases
+   * Generate cache key for request
    */
-
-  async generateSEOContent(
-    topic: string,
-    keywords: string[],
-    contentType: 'page' | 'article' | 'product' = 'page'
-  ): Promise<AIResponse> {
-    const systemPrompt = `Du bist ein SEO-Experte für ZOE Solar, ein führendes Solarunternehmen in Deutschland.
-Erstelle hochwertigen, SEO-optimierten Content über ${topic}.
-Füge die Keywords natürlich ein: ${keywords.join(', ')}.
-Der Content soll professionell, informativ und überzeugend sein.
-Antworte auf Deutsch.`;
-
-    const prompt = `Erstelle einen ${contentType} über ${topic} mit Fokus auf Solarlösungen für Unternehmen.`;
-
-    return this.generateContent({
-      prompt,
-      systemPrompt,
-      temperature: 0.7,
-      maxTokens: 2000,
-      cacheKey: `seo-${topic}-${contentType}-${keywords.join('-')}`
-    });
-  }
-
-  async generateLocalSEOContent(
-    location: string,
-    service: string,
-    targetAudience: string = 'Unternehmen'
-  ): Promise<AIResponse> {
-    const systemPrompt = `Du bist ein Local SEO Experte für ZOE Solar.
-Erstelle location-spezifischen Content für ${service} in ${location}.
-Zielgruppe: ${targetAudience}.
-Füge lokale Bezüge und Geotags ein.
-Antworte auf Deutsch.`;
-
-    const prompt = `Erstelle einen überzeugenden Text über ${service} in ${location} für ${targetAudience}.`;
-
-    return this.generateContent({
-      prompt,
-      systemPrompt,
-      temperature: 0.8,
-      maxTokens: 1500,
-      cacheKey: `local-${location}-${service}-${targetAudience}`
-    });
-  }
-
-  async generateConversationalResponse(
-    userMessage: string,
-    conversationHistory: string[] = [],
-    context: string = ''
-  ): Promise<AIResponse> {
-    const systemPrompt = `Du bist ein hilfreicher Solar-Experte von ZOE Solar.
-Beantworte Fragen professionell und kundenfreundlich.
-Fokus auf Photovoltaik-Lösungen für Unternehmen.
-Sei präzise, aber verständlich.
-Antworte auf Deutsch.`;
-
-    const conversationContext = conversationHistory.length > 0
-      ? '\n\nVerlauf:\n' + conversationHistory.slice(-3).join('\n')
-      : '';
-
-    const prompt = `${context}${conversationContext}\n\nKundenfrage: ${userMessage}`;
-
-    return this.generateContent({
-      prompt,
-      systemPrompt,
-      temperature: 0.9,
-      maxTokens: 800,
-      cacheKey: `chat-${userMessage.slice(0, 50)}`
-    });
-  }
-
-  async generateProductDescription(
-    product: string,
-    features: string[],
-    benefits: string[],
-    targetIndustry: string = 'alle'
-  ): Promise<AIResponse> {
-    const systemPrompt = `Du bist ein Copywriter für ZOE Solar.
-Erstelle überzeugende Produktbeschreibungen für B2B-Kunden.
-Fokus auf Vorteile und ROI.
-Verwende professionelle, aber verständliche Sprache.
-Antworte auf Deutsch.`;
-
-    const prompt = `Beschreibe ${product} für die Zielgruppe ${targetIndustry}.
-
-Merkmale: ${features.join(', ')}
-Vorteile: ${benefits.join(', ')}`;
-
-    return this.generateContent({
-      prompt,
-      systemPrompt,
-      temperature: 0.6,
-      maxTokens: 1000,
-      cacheKey: `product-${product}-${targetIndustry}`
-    });
-  }
-
-  async generateTechnicalDocumentation(
-    topic: string,
-    technicalLevel: 'basic' | 'intermediate' | 'advanced' = 'intermediate',
-    targetAudience: string = 'technische Entscheidungsträger'
-  ): Promise<AIResponse> {
-    const levelDescriptions = {
-      basic: 'einfach verständlich für Nicht-Techniker',
-      intermediate: 'technisch fundiert für Entscheidungsträger',
-      advanced: 'detailliert für technische Experten'
-    };
-
-    const systemPrompt = `Du bist technischer Autor bei ZOE Solar.
-Erstelle ${levelDescriptions[technicalLevel]} technische Dokumentation.
-Fokus auf ${topic} im Kontext von Photovoltaik-Lösungen.
-Sei präzise und informativ.
-Antworte auf Deutsch.`;
-
-    const prompt = `Erstelle eine technische Erläuterung über ${topic} für ${targetAudience}.`;
-
-    return this.generateContent({
-      prompt,
-      systemPrompt,
-      temperature: 0.4,
-      maxTokens: 2500,
-      cacheKey: `tech-${topic}-${technicalLevel}`
-    });
+  private getCacheKey(request: AIRequest): string {
+    return `${request.prompt}-${request.temperature || 0.7}-${request.maxTokens || 1000}-${request.context || ''}`;
   }
 
   /**
-   * Private Helper Methods
+   * Calculate cost based on token usage
    */
+  private calculateCost(tokens: number): number {
+    // minimax:m2 pricing: ~$0.50 per 1M input tokens, ~$1.50 per 1M output tokens
+    const avgCostPerToken = 0.000001; // Conservative estimate
+    return tokens * avgCostPerToken;
+  }
 
-  private async makeAPIRequest(request: AIRequest): Promise<AIResponse> {
-    const requestBody = {
+  /**
+   * Make API request to OpenRouter
+   */
+  private async makeAPIRequest(request: AIRequest): Promise<any> {
+    await this.checkRateLimit();
+
+    const payload = {
       model: this.config.model,
       messages: [
         ...(request.systemPrompt ? [{ role: 'system', content: request.systemPrompt }] : []),
         { role: 'user', content: request.prompt }
       ],
       temperature: request.temperature || 0.7,
-      max_tokens: request.maxTokens || 1000
+      max_tokens: request.maxTokens || 1000,
+      ...(request.context && { context: request.context })
     };
 
-    const response = await fetch(`${this.config.baseURL}/chat/completions`, {
+    const response = await fetch(`${this.config.baseUrl}/chat/completions`, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${this.config.apiKey}`,
         'Content-Type': 'application/json',
-        'HTTP-Referer': 'https://zoe-solar.de',
-        'X-Title': 'ZOE Solar AI Platform'
+        'Authorization': `Bearer ${this.config.apiKey}`,
+        'HTTP-Referer': window.location.origin,
+        'X-Title': 'ZOE Solar Website'
       },
-      body: JSON.stringify(requestBody)
+      body: JSON.stringify(payload),
+      signal: AbortSignal.timeout(this.config.timeout || 30000)
     });
 
     if (!response.ok) {
-      throw new Error(`OpenRouter API Error: ${response.status} ${response.statusText}`);
+      const errorData = await response.json().catch(() => ({}));
+      throw new Error(`OpenRouter API Error: ${response.status} - ${errorData.error?.message || response.statusText}`);
     }
 
-    const data = await response.json();
-
-    return {
-      success: true,
-      content: data.choices[0]?.message?.content || '',
-      usage: {
-        promptTokens: data.usage?.prompt_tokens || 0,
-        completionTokens: data.usage?.completion_tokens || 0,
-        totalTokens: data.usage?.total_tokens || 0,
-        cost: this.calculateCost(data.usage?.total_tokens || 0)
-      },
-      cached: false,
-      timestamp: new Date().toISOString(),
-      requestId: this.generateRequestId()
-    };
-  }
-
-  private calculateCost(tokens: number): number {
-    // minimax:m2 pricing (approximately)
-    // $0.20 per 1M input tokens, $0.60 per 1M output tokens
-    // Using conservative estimate of $0.40 per 1M total tokens
-    return (tokens * 0.40) / 1000000;
-  }
-
-  private getCachedResponse(key: string): CacheEntry | null {
-    const entry = this.cache.get(key);
-    if (!entry) return null;
-
-    if (Date.now() - entry.timestamp > entry.ttl) {
-      this.cache.delete(key);
-      return null;
-    }
-
-    return entry;
-  }
-
-  private setCachedResponse(key: string, response: AIResponse): void {
-    if (response.success && response.usage) {
-      this.cache.set(key, {
-        content: response.content || '',
-        timestamp: Date.now(),
-        ttl: 3600000, // 1 hour
-        usage: response.usage
-      });
-    }
-  }
-
-  private checkRateLimit(requestId: string): boolean {
-    const now = Date.now();
-    const window = 60000; // 1 minute
-    const maxRequests = 60; // per minute
-
-    if (!this.rateLimiter.has(requestId)) {
-      this.rateLimiter.set(requestId, []);
-    }
-
-    const requests = this.rateLimiter.get(requestId)!;
-    const validRequests = requests.filter(time => now - time < window);
-
-    if (validRequests.length >= maxRequests) {
-      return false;
-    }
-
-    validRequests.push(now);
-    this.rateLimiter.set(requestId, validRequests);
-    return true;
-  }
-
-  private generateRequestId(): string {
-    return `or_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    return response.json();
   }
 
   /**
-   * Utility Methods
+   * Generate content using OpenRouter API
    */
+  async generateContent(request: AIRequest): Promise<AIResponse> {
+    try {
+      // Check cache first
+      const cacheKey = this.getCacheKey(request);
+      if (this.cache.has(cacheKey)) {
+        return this.cache.get(cacheKey)!;
+      }
 
-  getHealthStatus(): { status: 'healthy' | 'degraded' | 'unhealthy', details: any } {
-    const cacheSize = this.cache.size;
-    const activeRequests = this.rateLimiter.size;
-    const hasApiKey = !!this.config.apiKey;
+      const data = await this.makeAPIRequest(request);
 
-    let status: 'healthy' | 'degraded' | 'unhealthy' = 'healthy';
+      if (!data.choices || !data.choices[0]?.message?.content) {
+        throw new Error('Invalid response from OpenRouter API');
+      }
 
-    if (!hasApiKey) status = 'unhealthy';
-    else if (cacheSize > 1000 || activeRequests > 100) status = 'degraded';
+      const content = data.choices[0].message.content;
+      const usage = data.usage || { prompt_tokens: 0, completion_tokens: 0, total_tokens: 0 };
+
+      const response: AIResponse = {
+        success: true,
+        content,
+        usage: {
+          promptTokens: usage.prompt_tokens,
+          completionTokens: usage.completion_tokens,
+          totalTokens: usage.total_tokens,
+          cost: this.calculateCost(usage.total_tokens)
+        }
+      };
+
+      // Cache successful responses
+      this.cache.set(cacheKey, response);
+
+      // Limit cache size
+      if (this.cache.size > 100) {
+        const firstKey = this.cache.keys().next().value;
+        this.cache.delete(firstKey);
+      }
+
+      return response;
+
+    } catch (error) {
+      return {
+        success: false,
+        error: error instanceof Error ? error.message : 'Unknown error occurred'
+      };
+    }
+  }
+
+  /**
+   * Generate SEO-optimized content
+   */
+  async generateSEOContent(
+    content: string,
+    targetKeywords: string[],
+    language: string = 'de'
+  ): Promise<AIResponse> {
+    const systemPrompt = `You are an expert SEO content optimizer. Create content that is:
+1. SEO-optimized with natural keyword integration
+2. Engaging and readable for users
+3. Semantically relevant and comprehensive
+4. Optimized for search engines and user experience
+5. Written in ${language}
+
+Always respond with properly formatted JSON containing:
+- optimizedTitle
+- optimizedMetaDescription
+- optimizedContent
+- keywordDensity (object with keyword percentages)
+- suggestions (array of improvement suggestions)`;
+
+    const prompt = `Analyze and optimize this content for the given keywords:
+
+Content: ${content}
+Target Keywords: ${targetKeywords.join(', ')}
+Language: ${language}
+
+Please provide SEO-optimized versions of the title, meta description, and content that naturally integrates the keywords while maintaining readability and user engagement.`;
+
+    return this.generateContent({
+      prompt,
+      systemPrompt,
+      temperature: 0.3,
+      maxTokens: 2000
+    });
+  }
+
+  /**
+   * Generate conversational AI responses
+   */
+  async generateConversationResponse(
+    userMessage: string,
+    conversationHistory: Array<{role: string, content: string}> = [],
+    context: string = 'ZOE Solar business context'
+  ): Promise<AIResponse> {
+    const systemPrompt = `You are a helpful AI assistant for ZOE Solar, a German solar energy company. You help customers with:
+- Solar energy questions and advice
+- Product information and recommendations
+- General inquiries about solar solutions
+- Customer service and support
+
+Be friendly, professional, and helpful. Always provide accurate information about solar energy. If you don't know something, admit it and suggest contacting ZOE Solar's human experts.
+
+Context: ${context}`;
+
+    // Build conversation context
+    const conversationContext = conversationHistory
+      .slice(-5) // Keep last 5 messages for context
+      .map(msg => `${msg.role}: ${msg.content}`)
+      .join('\n');
+
+    const prompt = `${conversationContext ? 'Previous conversation:\n' + conversationContext + '\n\n' : ''}User: ${userMessage}`;
+
+    return this.generateContent({
+      prompt,
+      systemPrompt,
+      temperature: 0.7,
+      maxTokens: 1000,
+      context
+    });
+  }
+
+  /**
+   * Generate local SEO content
+   */
+  async generateLocalSEOContent(
+    businessType: string,
+    location: string,
+    services: string[]
+  ): Promise<AIResponse> {
+    const systemPrompt = `You are an expert in local SEO for businesses. Create content that helps businesses rank well in local search results and on Google Maps.
+
+Always respond with JSON containing:
+- businessDescription
+- localKeywords
+- serviceDescriptions
+- locationSpecificContent
+- googleBusinessProfilePosts`;
+
+    const prompt = `Generate local SEO content for:
+
+Business Type: ${businessType}
+Location: ${location}
+Services: ${services.join(', ')}
+
+Create content that helps this business rank well in local search results and appear in "near me" searches.`;
+
+    return this.generateContent({
+      prompt,
+      systemPrompt,
+      temperature: 0.4,
+      maxTokens: 1500
+    });
+  }
+
+  /**
+   * Generate product descriptions
+   */
+  async generateProductDescription(
+    productType: string,
+    features: string[],
+    targetAudience: string
+  ): Promise<AIResponse> {
+    const systemPrompt = `You are an expert copywriter for solar energy products. Create compelling, professional product descriptions that:
+1. Highlight key benefits and features
+2. Address customer pain points and needs
+3. Include technical details in accessible language
+4. Drive purchase decisions
+5. Are SEO-optimized
+
+Always respond with JSON containing:
+- title
+- shortDescription
+- detailedDescription
+- keyFeatures
+- benefits
+- technicalSpecs
+- callToAction`;
+
+    const prompt = `Create a product description for:
+
+Product Type: ${productType}
+Features: ${features.join(', ')}
+Target Audience: ${targetAudience}
+
+Write compelling copy that persuades customers to choose this product.`;
+
+    return this.generateContent({
+      prompt,
+      systemPrompt,
+      temperature: 0.6,
+      maxTokens: 1200
+    });
+  }
+
+  /**
+   * Get usage statistics
+   */
+  getUsageStats(): {
+    totalRequests: number;
+    cacheSize: number;
+    rateLimitStatus: {
+      tokens: number;
+      maxTokens: number;
+      resetIn: number;
+    };
+  } {
+    const timeUntilReset = this.rateLimiter.windowMs - (Date.now() - this.rateLimiter.lastReset);
 
     return {
-      status,
-      details: {
-        cacheSize,
-        activeRequests,
-        hasApiKey,
-        model: this.config.model
+      totalRequests: this.cache.size,
+      cacheSize: this.cache.size,
+      rateLimitStatus: {
+        tokens: this.rateLimiter.tokens,
+        maxTokens: this.rateLimiter.maxTokens,
+        resetIn: Math.max(0, timeUntilReset)
       }
     };
   }
 
+  /**
+   * Clear cache
+   */
   clearCache(): void {
     this.cache.clear();
-    console.log('🗑️ OpenRouter Cache cleared');
-  }
-
-  getUsageStats(): { totalRequests: number, cacheHits: number, totalCost: number } {
-    // Implementation for usage tracking
-    return {
-      totalRequests: 0,
-      cacheHits: 0,
-      totalCost: 0
-    };
   }
 }
 
-// Singleton Instance
-export const openRouterClient = new OpenRouterClient();
-export default openRouterClient;
+// Singleton instance for the application
+let openRouterClient: OpenRouterClient | null = null;
+
+export function getOpenRouterClient(): OpenRouterClient {
+  if (!openRouterClient) {
+    const apiKey = process.env.OPENROUTER_API_KEY;
+    if (!apiKey) {
+      throw new Error('OPENROUTER_API_KEY environment variable is required');
+    }
+
+    openRouterClient = new OpenRouterClient({
+      apiKey,
+      model: 'minimax/minimax-m2'
+    });
+  }
+
+  return openRouterClient;
+}
+
+export default OpenRouterClient;

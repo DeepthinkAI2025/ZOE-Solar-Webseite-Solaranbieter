@@ -11,23 +11,37 @@ on:
       - 'scripts/gbp-*.cjs'
       - '.github/workflows/google-business-profile.yml'
 
+permissions:
+  contents: write
+  actions: read
+  pull-requests: write
+
 jobs:
   gbp-sync:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.1.7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.1.0
         with:
           node-version: '20'
+          cache: 'npm'
+
+      - name: Cache Node.js modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm ci --ignore-scripts
 
       - name: Sync Google Business Profiles
         env:
@@ -52,10 +66,22 @@ jobs:
         run: |
           git config --local user.email "gbp-automation@github.com"
           git config --local user.name "GBP Automation"
-          git add data/gbp-*.json
-          git commit -m "🏢 Update Google Business Profile data [automated]" || echo "No changes to commit"
-          git pull --rebase origin main
-          git push
+          git add data/gbp-*.json || true
+
+          if ! git diff --quiet && ! git diff --staged --quiet; then
+            git commit -m "🏢 Update Google Business Profile data [automated]"
+            # Atomischer Push mit Retry-Mechanismus
+            for i in {1..3}; do
+              if git push; then
+                break
+              else
+                echo "Push attempt $i failed, retrying..."
+                sleep 5
+              fi
+            done
+          else
+            echo "No changes to commit"
+          fi
 
       - name: Notify on success
         if: success()
@@ -74,15 +100,24 @@ jobs:
     if: success()
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.1.7
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.1.0
         with:
           node-version: '20'
+          cache: 'npm'
+
+      - name: Cache Node.js modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm ci --ignore-scripts
 
       - name: Monitor GBP Performance
         env:
@@ -103,8 +138,20 @@ jobs:
         run: |
           git config --local user.email "gbp-monitoring@github.com"
           git config --local user.name "GBP Monitoring"
-          git add data/gbp-monitoring-*.json
-          git commit -m "📊 Update GBP monitoring results [automated]" || echo "No changes to commit"
-          git pull --rebase origin main
-          git push
+          git add data/gbp-monitoring-*.json || true
+
+          if ! git diff --quiet && ! git diff --staged --quiet; then
+            git commit -m "📊 Update GBP monitoring results [automated]"
+            # Atomischer Push mit Retry-Mechanismus
+            for i in {1..3}; do
+              if git push; then
+                break
+              else
+                echo "Push attempt $i failed, retrying..."
+                sleep 5
+              fi
+            done
+          else
+            echo "No changes to commit"
+          fi
 

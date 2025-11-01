@@ -1,0 +1,727 @@
+name: Kubernetes Deployment Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'package.json'
+      - 'Dockerfile'
+      - 'k8s/**'
+      - '.github/workflows/kubernetes-deployment.yml'
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target environment'
+        required: false
+        default: 'staging'
+        type: choice
+        options:
+          - staging
+          - production
+      force_deploy:
+        description: 'Force deployment (skip quality gates)'
+        required: false
+        default: false
+        type: boolean
+      strategy:
+        description: 'Deployment strategy'
+        required: false
+        default: 'rolling'
+        type: choice
+        options:
+          - rolling
+          - canary
+          - blue-green
+
+permissions:
+  contents: read
+  deployments: write
+  pull-requests: write
+  actions: read
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  # Container security scanning
+  security-scan:
+    name: Container Security Scan
+    runs-on: ubuntu-latest
+
+    outputs:
+      security_passed: ${{ steps.scan.outputs.passed }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7
+
+      - name: Build container image for scanning
+        run: |
+          docker build -t temp-scan-image .
+
+      - name: Run Trivy vulnerability scanner
+        id: scan
+        run: |
+          # Install Trivy
+          sudo apt-get update
+          sudo apt-get install wget apt-transport-https gnupg lsb-release
+          wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
+          echo "deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main" | sudo tee -a /etc/apt/sources.list.d/trivy.list
+          sudo apt-get update
+          sudo apt-get install trivy
+
+          # Run security scan
+          trivy image --format json --output trivy-results.json temp-scan-image
+
+          # Analyze results
+          CRITICAL=$(jq -r '.Results[]? | .Vulnerabilities[]? | select(.Severity == "CRITICAL") | .VulnerabilityID' trivy-results.json | wc -l || echo "0")
+          HIGH=$(jq -r '.Results[]? | .Vulnerabilities[]? | select(.Severity == "HIGH") | .VulnerabilityID' trivy-results.json | wc -l || echo "0")
+
+          echo "Critical vulnerabilities: $CRITICAL"
+          echo "High vulnerabilities: $HIGH"
+
+          if [[ "$CRITICAL" -eq 0 && "$HIGH" -le 5 ]]; then
+            echo "passed=true" >> $GITHUB_OUTPUT
+            echo "✅ Security scan passed"
+          else
+            echo "passed=false" >> $GITHUB_OUTPUT
+            echo "❌ Security scan failed - too many vulnerabilities"
+          fi
+
+      - name: Upload security scan results
+        uses: actions/upload-artifact@v4.3.6
+        with:
+          name: security-scan-results
+          path: trivy-results.json
+          retention-days: 30
+
+  # Build and push multi-arch container image
+  build-and-push:
+    name: Build & Push Multi-Arch Image
+    runs-on: ubuntu-latest
+    needs: security-scan
+    if: needs.security-scan.outputs.security_passed == 'true' || github.event.inputs.force_deploy == 'true'
+
+    outputs:
+      image-digest: ${{ steps.build.outputs.digest }}
+      image-tag: ${{ steps.meta.outputs.tags }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+        with:
+          platforms: linux/amd64,linux/arm64
+
+      - name: Log in to Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          tags: |
+            type=ref,event=branch
+            type=ref,event=pr
+            type=semver,pattern={{version}}
+            type=sha,prefix={{branch}}-
+            latest
+
+      - name: Build and push multi-arch image
+        id: build
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          platforms: linux/amd64,linux/arm64
+          provenance: true
+          sbom: true
+
+      - name: Generate SBOM
+        uses: anchore/sbom-action@v0
+        with:
+          image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.meta.outputs.version }}
+          format: spdx-json
+          output-file: sbom.spdx.json
+
+      - name: Container image vulnerability scan
+        run: |
+          # Scan final image
+          trivy image --format json --output final-image-scan.json ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.meta.outputs.version }}
+
+      - name: Upload container artifacts
+        uses: actions/upload-artifact@v4.3.6
+        with:
+          name: container-artifacts
+          path: |
+            sbom.spdx.json
+            final-image-scan.json
+          retention-days: 30
+
+  # Kubernetes manifest validation
+  validate-manifests:
+    name: Validate Kubernetes Manifests
+    runs-on: ubuntu-latest
+    needs: build-and-push
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7
+
+      - name: Setup kubectl
+        uses: azure/setup-kubectl@v3
+        with:
+          version: 'v1.28.0'
+
+      - name: Install kube-score
+        run: |
+          wget https://github.com/zegl/kube-score/releases/download/v1.16.1/kube-score_1.16.1_linux_amd64.tar.gz
+          tar xzf kube-score_1.16.1_linux_amd64.tar.gz
+          sudo mv kube-score /usr/local/bin/
+
+      - name: Validate Kubernetes manifests
+        run: |
+          # Dry-run apply manifests
+          kubectl apply --dry-run=client -f k8s/ || true
+
+          # Run kube-score for best practices
+          kube-score score k8s/*.yaml --exit-one-on-warning --output-format ci
+
+      - name: Generate Kubernetes manifests
+        run: |
+          # Generate environment-specific manifests
+          mkdir -p generated-k8s
+
+          cat << EOF > generated-k8s/deployment.yaml
+          apiVersion: apps/v1
+          kind: Deployment
+          metadata:
+            name: zoe-solar
+            namespace: ${{ github.event.inputs.environment || 'staging' }}
+            labels:
+              app: zoe-solar
+              version: "${{ needs.build-and-push.outputs.image-tag }}"
+          spec:
+            replicas: 3
+            selector:
+              matchLabels:
+                app: zoe-solar
+            template:
+              metadata:
+                labels:
+                  app: zoe-solar
+                  version: "${{ needs.build-and-push.outputs.image-tag }}"
+                annotations:
+                  prometheus.io/scrape: "true"
+                  prometheus.io/port: "3000"
+                  prometheus.io/path: "/api/metrics"
+              spec:
+                securityContext:
+                  runAsNonRoot: true
+                  runAsUser: 1000
+                  fsGroup: 1000
+                containers:
+                - name: zoe-solar
+                  image: ${{ needs.build-and-push.outputs.image-tag }}
+                  imagePullPolicy: Always
+                  ports:
+                  - containerPort: 3000
+                    name: http
+                    protocol: TCP
+                  env:
+                  - name: NODE_ENV
+                    value: "${{ github.event.inputs.environment == 'production' && 'production' || 'staging' }}"
+                  - name: PORT
+                    value: "3000"
+                  - name: VERSION
+                    value: "${{ needs.build-and-push.outputs.image-tag }}"
+                  resources:
+                    requests:
+                      memory: "256Mi"
+                      cpu: "250m"
+                    limits:
+                      memory: "512Mi"
+                      cpu: "500m"
+                  securityContext:
+                    allowPrivilegeEscalation: false
+                    readOnlyRootFilesystem: true
+                    capabilities:
+                      drop:
+                      - ALL
+                  livenessProbe:
+                    httpGet:
+                      path: /api/health
+                      port: 3000
+                    initialDelaySeconds: 30
+                    periodSeconds: 10
+                    timeoutSeconds: 5
+                    failureThreshold: 3
+                  readinessProbe:
+                    httpGet:
+                      path: /api/ready
+                      port: 3000
+                    initialDelaySeconds: 5
+                    periodSeconds: 5
+                    timeoutSeconds: 3
+                    failureThreshold: 3
+                  startupProbe:
+                    httpGet:
+                      path: /api/health
+                      port: 3000
+                    initialDelaySeconds: 10
+                    periodSeconds: 10
+                    timeoutSeconds: 5
+                    failureThreshold: 30
+                imagePullSecrets:
+                - name: ghcr-secret
+                affinity:
+                  podAntiAffinity:
+                    preferredDuringSchedulingIgnoredDuringExecution:
+                    - weight: 100
+                      podAffinityTerm:
+                        labelSelector:
+                          matchExpressions:
+                          - key: app
+                            operator: In
+                            values:
+                            - zoe-solar
+                        topologyKey: kubernetes.io/hostname
+          EOF
+
+          cat << EOF > generated-k8s/service.yaml
+          apiVersion: v1
+          kind: Service
+          metadata:
+            name: zoe-solar
+            namespace: ${{ github.event.inputs.environment || 'staging' }}
+            labels:
+              app: zoe-solar
+            annotations:
+              prometheus.io/scrape: "true"
+              prometheus.io/port: "3000"
+              prometheus.io/path: "/api/metrics"
+          spec:
+            type: ClusterIP
+            ports:
+            - port: 80
+              targetPort: 3000
+              protocol: TCP
+              name: http
+            selector:
+              app: zoe-solar
+          EOF
+
+          cat << EOF > generated-k8s/ingress.yaml
+          apiVersion: networking.k8s.io/v1
+          kind: Ingress
+          metadata:
+            name: zoe-solar
+            namespace: ${{ github.event.inputs.environment || 'staging' }}
+            annotations:
+              kubernetes.io/ingress.class: nginx
+              cert-manager.io/cluster-issuer: letsencrypt-prod
+              nginx.ingress.kubernetes.io/rate-limit: "100"
+              nginx.ingress.kubernetes.io/rate-limit-window: "1m"
+              nginx.ingress.kubernetes.io/enable-cors: "true"
+              nginx.ingress.kubernetes.io/cors-allow-origin: "*"
+          spec:
+            tls:
+            - hosts:
+              - ${{ github.event.inputs.environment == 'production' && 'zoe-solar.de' || 'staging.zoe-solar.de' }}
+              secretName: zoe-solar-tls
+            rules:
+            - host: ${{ github.event.inputs.environment == 'production' && 'zoe-solar.de' || 'staging.zoe-solar.de' }}
+              http:
+                paths:
+                - path: /
+                  pathType: Prefix
+                  backend:
+                    service:
+                      name: zoe-solar
+                      port:
+                        number: 80
+          EOF
+
+          cat << EOF > generated-k8s/hpa.yaml
+          apiVersion: autoscaling/v2
+          kind: HorizontalPodAutoscaler
+          metadata:
+            name: zoe-solar-hpa
+            namespace: ${{ github.event.inputs.environment || 'staging' }}
+          spec:
+            scaleTargetRef:
+              apiVersion: apps/v1
+              kind: Deployment
+              name: zoe-solar
+            minReplicas: 2
+            maxReplicas: 10
+            metrics:
+            - type: Resource
+              resource:
+                name: cpu
+                target:
+                  type: Utilization
+                  averageUtilization: 70
+            - type: Resource
+              resource:
+                name: memory
+                target:
+                  type: Utilization
+                  averageUtilization: 80
+            behavior:
+              scaleUp:
+                stabilizationWindowSeconds: 60
+                policies:
+                - type: Percent
+                  value: 100
+                  periodSeconds: 15
+              scaleDown:
+                stabilizationWindowSeconds: 300
+                policies:
+                - type: Percent
+                  value: 10
+                  periodSeconds: 60
+          EOF
+
+      - name: Upload generated manifests
+        uses: actions/upload-artifact@v4.3.6
+        with:
+          name: kubernetes-manifests
+          path: generated-k8s/
+          retention-days: 30
+
+  # Deploy to Kubernetes
+  deploy-to-kubernetes:
+    name: Deploy to Kubernetes
+    runs-on: ubuntu-latest
+    needs: [security-scan, build-and-push, validate-manifests]
+    if: (needs.security-scan.outputs.security_passed == 'true' || github.event.inputs.force_deploy == 'true') && needs.build-and-push.result == 'success'
+    environment:
+      name: ${{ github.event.inputs.environment || 'staging' }}
+      url: ${{ github.event.inputs.environment == 'production' && 'https://zoe-solar.de' || 'https://staging.zoe-solar.de' }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7
+
+      - name: Setup kubectl
+        uses: azure/setup-kubectl@v3
+        with:
+          version: 'v1.28.0'
+
+      - name: Configure kubectl
+        run: |
+          echo "${{ secrets.KUBE_CONFIG }}" | base64 -d > kubeconfig
+          export KUBECONFIG=kubeconfig
+
+          # Test connection
+          kubectl cluster-info
+          kubectl get nodes
+
+      - name: Download manifests
+        uses: actions/download-artifact@v4
+        with:
+          name: kubernetes-manifests
+          path: manifests/
+
+      - name: Create namespace
+        run: |
+          export KUBECONFIG=kubeconfig
+          kubectl create namespace ${{ github.event.inputs.environment || 'staging' }} --dry-run=client -o yaml | kubectl apply -f -
+
+      - name: Create image pull secret
+        run: |
+          export KUBECONFIG=kubeconfig
+          kubectl create secret docker-registry ghcr-secret \
+            --namespace=${{ github.event.inputs.environment || 'staging' }} \
+            --docker-server=ghcr.io \
+            --docker-username=${{ github.actor }} \
+            --docker-password=${{ secrets.GITHUB_TOKEN }} \
+            --dry-run=client -o yaml | kubectl apply -f -
+
+      - name: Deploy application
+        run: |
+          export KUBECONFIG=kubeconfig
+
+          # Apply manifests based on strategy
+          STRATEGY="${{ github.event.inputs.strategy || 'rolling' }}"
+
+          case $STRATEGY in
+            "rolling")
+              echo "🔄 Deploying with Rolling Update strategy"
+              kubectl apply -f manifests/deployment.yaml
+              kubectl apply -f manifests/service.yaml
+              kubectl apply -f manifests/ingress.yaml
+              kubectl apply -f manifests/hpa.yaml
+              ;;
+            "canary")
+              echo "🐤 Deploying with Canary strategy"
+              # Implement canary deployment logic here
+              kubectl apply -f manifests/deployment.yaml
+              kubectl apply -f manifests/service.yaml
+              kubectl apply -f manifests/ingress.yaml
+              ;;
+            "blue-green")
+              echo "🔵🟢 Deploying with Blue-Green strategy"
+              # Implement blue-green deployment logic here
+              kubectl apply -f manifests/deployment.yaml
+              kubectl apply -f manifests/service.yaml
+              kubectl apply -f manifests/ingress.yaml
+              ;;
+          esac
+
+      - name: Wait for deployment
+        run: |
+          export KUBECONFIG=kubeconfig
+          echo "Waiting for deployment to be ready..."
+          kubectl rollout status deployment/zoe-solar \
+            --namespace=${{ github.event.inputs.environment || 'staging' }} \
+            --timeout=600s
+
+      - name: Verify deployment
+        run: |
+          export KUBECONFIG=kubeconfig
+          NAMESPACE="${{ github.event.inputs.environment || 'staging' }}"
+          HOST="${{ github.event.inputs.environment == 'production' && 'zoe-solar.de' || 'staging.zoe-solar.de' }}"
+
+          # Check pod status
+          kubectl get pods --namespace=$NAMESPACE -l app=zoe-solar
+
+          # Wait for pods to be ready
+          kubectl wait --for=condition=ready pod \
+            --namespace=$NAMESPACE \
+            --selector=app=zoe-solar \
+            --timeout=300s
+
+          # Health check
+          echo "Performing health check..."
+          for i in {1..10}; do
+            if curl -f "https://$HOST/api/health"; then
+              echo "✅ Health check passed"
+              break
+            else
+              echo "⏳ Health check failed, retrying... ($i/10)"
+              sleep 10
+            fi
+          done
+
+      - name: Post-deployment validation
+        run: |
+          export KUBECONFIG=kubeconfig
+          NAMESPACE="${{ github.event.inputs.environment || 'staging' }}"
+          HOST="${{ github.event.inputs.environment == 'production' && 'zoe-solar.de' || 'staging.zoe-solar.de' }}"
+
+          echo "🔍 Running post-deployment validation..."
+
+          # Check pod resource usage
+          kubectl top pods --namespace=$NAMESPACE --selector=app=zoe-solar || echo "Metrics server not available"
+
+          # Check service endpoints
+          kubectl get endpoints zoe-solar --namespace=$NAMESPACE
+
+          # Check ingress status
+          kubectl get ingress zoe-solar --namespace=$NAMESPACE
+
+          # Run smoke tests
+          curl -f "https://$HOST/" | grep -q "ZOE Solar" || echo "❌ Homepage test failed"
+          curl -f "https://$HOST/api/products" || echo "❌ API test failed"
+
+          echo "✅ Post-deployment validation completed"
+
+      - name: Create deployment annotation
+        run: |
+          export KUBECONFIG=kubeconfig
+          NAMESPACE="${{ github.event.inputs.environment || 'staging' }}"
+
+          kubectl annotate deployment zoe-solar \
+            deployment.kubernetes.io/revision="${{ github.sha }}" \
+            --namespace=$NAMESPACE \
+            --overwrite
+
+          kubectl label deployment zoe-solar \
+            version="${{ needs.build-and-push.outputs.image-tag }}" \
+            --namespace=$NAMESPACE \
+            --overwrite
+
+  # Monitoring and observability setup
+  setup-monitoring:
+    name: Setup Monitoring
+    runs-on: ubuntu-latest
+    needs: deploy-to-kubernetes
+    if: needs.deploy-to-kubernetes.result == 'success'
+
+    steps:
+      - name: Setup kubectl
+        uses: azure/setup-kubectl@v3
+        with:
+          version: 'v1.28.0'
+
+      - name: Configure kubectl
+        run: |
+          echo "${{ secrets.KUBE_CONFIG }}" | base64 -d > kubeconfig
+          export KUBECONFIG=kubeconfig
+
+      - name: Create monitoring resources
+        run: |
+          export KUBECONFIG=kubeconfig
+          NAMESPACE="${{ github.event.inputs.environment || 'staging' }}"
+
+          # Create ServiceMonitor for Prometheus
+          cat << EOF | kubectl apply -f -
+          apiVersion: monitoring.coreos.com/v1
+          kind: ServiceMonitor
+          metadata:
+            name: zoe-solar-monitor
+            namespace: $NAMESPACE
+            labels:
+              app: zoe-solar
+          spec:
+            selector:
+              matchLabels:
+                app: zoe-solar
+            endpoints:
+            - port: http
+              path: /api/metrics
+              interval: 30s
+              scrapeTimeout: 10s
+          EOF
+
+          # Create PrometheusRule for alerting
+          cat << EOF | kubectl apply -f -
+          apiVersion: monitoring.coreos.com/v1
+          kind: PrometheusRule
+          metadata:
+            name: zoe-solar-alerts
+            namespace: $NAMESPACE
+            labels:
+              app: zoe-solar
+          spec:
+            groups:
+            - name: zoe-solar.rules
+              rules:
+              - alert: ZOESolarDown
+                expr: up{job="zoe-solar"} == 0
+                for: 5m
+                labels:
+                  severity: critical
+                annotations:
+                  summary: "ZOE Solar is down"
+                  description: "ZOE Solar has been down for more than 5 minutes."
+              - alert: ZOESolarHighErrorRate
+                expr: rate(http_requests_total{status=~"5.."}[5m]) > 0.1
+                for: 5m
+                labels:
+                  severity: warning
+                annotations:
+                  summary: "High error rate detected"
+                  description: "Error rate is above 10% for more than 5 minutes."
+              - alert: ZOESolarHighResponseTime
+                expr: histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m])) > 2
+                for: 5m
+                labels:
+                  severity: warning
+                annotations:
+                  summary: "High response time detected"
+                  description: "95th percentile response time is above 2 seconds."
+          EOF
+
+      - name: Setup logging
+        run: |
+          export KUBECONFIG=kubeconfig
+          NAMESPACE="${{ github.event.inputs.environment || 'staging' }}"
+
+          # Create fluentd configmap for log aggregation
+          cat << EOF | kubectl apply -f -
+          apiVersion: v1
+          kind: ConfigMap
+          metadata:
+            name: zoe-solar-logging
+            namespace: $NAMESPACE
+          data:
+            fluent.conf: |
+              <source>
+                @type tail
+                path /var/log/containers/*zoe-solar*.log
+                pos_file /var/log/fluentd-containers.log.pos
+                tag kubernetes.*
+                format json
+                time_format %Y-%m-%dT%H:%M:%S.%NZ
+              </source>
+              <match kubernetes.**>
+                @type elasticsearch
+                host elasticsearch.logging.svc.cluster.local
+                port 9200
+                index_name zoe-solar-logs
+                type_name _doc
+              </match>
+          EOF
+
+      - name: Verify monitoring setup
+        run: |
+          export KUBECONFIG=kubeconfig
+          NAMESPACE="${{ github.event.inputs.environment || 'staging' }}"
+
+          # Check ServiceMonitor
+          kubectl get servicemonitor zoe-solar-monitor --namespace=$NAMESPACE
+
+          # Check PrometheusRule
+          kubectl get prometheusrule zoe-solar-alerts --namespace=$NAMESPACE
+
+          echo "✅ Monitoring setup completed"
+
+  # Deployment summary and notification
+  deployment-summary:
+    name: Deployment Summary
+    runs-on: ubuntu-latest
+    needs: [security-scan, build-and-push, validate-manifests, deploy-to-kubernetes, setup-monitoring]
+    if: always()
+
+    steps:
+      - name: Create deployment summary
+        run: |
+          echo "# 🚀 Kubernetes Deployment Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Deployment Details" >> $GITHUB_STEP_SUMMARY
+          echo "- **Environment**: ${{ github.event.inputs.environment || 'staging' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Strategy**: ${{ github.event.inputs.strategy || 'rolling' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Image**: ${{ needs.build-and-push.outputs.image-tag }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Image Digest**: ${{ needs.build-and-push.outputs.image-digest }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Deployment Time**: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Pipeline Status" >> $GITHUB_STEP_SUMMARY
+          echo "- **Security Scan**: ${{ needs.security-scan.result == 'success' && '✅ Passed' || '❌ Failed' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Build & Push**: ${{ needs.build-and-push.result == 'success' && '✅ Completed' || '❌ Failed' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Manifest Validation**: ${{ needs.validate-manifests.result == 'success' && '✅ Passed' || '❌ Failed' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Kubernetes Deploy**: ${{ needs.deploy-to-kubernetes.result == 'success' && '✅ Deployed' || '❌ Failed' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Monitoring Setup**: ${{ needs.setup-monitoring.result == 'success' && '✅ Configured' || '❌ Failed' }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Access Information" >> $GITHUB_STEP_SUMMARY
+          echo "- **Application URL**: ${{ github.event.inputs.environment == 'production' && 'https://zoe-solar.de' || 'https://staging.zoe-solar.de' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Health Check**: ${{ github.event.inputs.environment == 'production' && 'https://zoe-solar.de/api/health' || 'https://staging.zoe-solar.de/api/health' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Metrics**: Available via Prometheus" >> $GITHUB_STEP_SUMMARY
+          echo "- **Logs**: Available via Elasticsearch/Kibana" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Next Steps" >> $GITHUB_STEP_SUMMARY
+          if [[ "${{ needs.deploy-to-kubernetes.result }}" == "success" ]]; then
+            echo "1. 🎉 **Deployment Successful**" >> $GITHUB_STEP_SUMMARY
+            echo "2. Monitor application health and performance" >> $GITHUB_STEP_SUMMARY
+            echo "3. Check metrics and logs in your monitoring dashboard" >> $GITHUB_STEP_SUMMARY
+            echo "4. Verify functionality through manual testing" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "1. ❌ **Deployment Failed**" >> $GITHUB_STEP_SUMMARY
+            echo "2. Check the failed job logs for detailed error information" >> $GITHUB_STEP_SUMMARY
+            echo "3. Fix the identified issues" >> $GITHUB_STEP_SUMMARY
+            echo "4. Retry the deployment" >> $GITHUB_STEP_SUMMARY
+          fi

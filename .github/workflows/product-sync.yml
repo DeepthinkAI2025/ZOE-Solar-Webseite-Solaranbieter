@@ -2,6 +2,8 @@ name: Daily product-sync
 
 permissions:
   contents: write
+  actions: read
+  pull-requests: write
 
 on:
   schedule:
@@ -13,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4.1.7
         with:
           fetch-depth: 0
 
@@ -59,7 +61,7 @@ jobs:
 
       - name: Upload sync logs
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4.3.6
         with:
           name: product-sync-log
           path: |

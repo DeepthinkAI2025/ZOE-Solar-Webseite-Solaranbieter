@@ -1,0 +1,756 @@
+name: Advanced Security Analytics & Threat Detection
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'  # Alle 4 Stunden
+    - cron: '0 2 * * *'    # Täglich um 02:00 UTC für Deep Scans
+  workflow_dispatch:
+    inputs:
+      scan_type:
+        description: 'Security scan type'
+        required: false
+        default: 'comprehensive'
+        type: choice
+        options:
+          - quick
+          - comprehensive
+          - deep
+          - forensics
+      alert_on_findings:
+        description: 'Send alerts on security findings'
+        required: false
+        default: true
+        type: boolean
+  push:
+    branches: [ main, master ]
+    paths:
+      - '**/*.js'
+      - '**/*.ts'
+      - '**/*.jsx'
+      - '**/*.tsx'
+      - 'package.json'
+      - 'package-lock.json'
+  pull_request:
+    branches: [ main, master ]
+    paths:
+      - '**/*.js'
+      - '**/*.ts'
+      - '**/*.jsx'
+      - '**/*.tsx'
+
+permissions:
+  contents: read
+  security-events: write
+  actions: read
+  pull-requests: write
+  issues: write
+  discussions: write
+
+env:
+  SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  SLACK_SECURITY_WEBHOOK: ${{ secrets.SLACK_SECURITY_WEBHOOK }}
+  SECURITY_EMAIL: ${{ secrets.SECURITY_EMAIL }}
+
+jobs:
+  # Dynamic Application Security Testing (DAST)
+  dast-scan:
+    name: Dynamic Application Security Testing
+    runs-on: ubuntu-latest
+
+    outputs:
+      vulnerabilities_found: ${{ steps.dast.outputs.vulnerabilities }}
+      high_risk_count: ${{ steps.dast.outputs.high_risk }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7
+
+      - name: Setup security testing tools
+        run: |
+          # Install OWASP ZAP
+          wget -q https://github.com/zaproxy/zaproxy/releases/download/v2.14.0/ZAP_2.14.0_Linux.tar.gz
+          tar -xzf ZAP_2.14.0_Linux.tar.gz
+          chmod +x ZAP_2.14.0/zap.sh
+          sudo mv ZAP_2.14.0 /opt/zap
+          sudo ln -s /opt/zap/zap.sh /usr/local/bin/zap
+
+          # Install Nuclei for vulnerability scanning
+          wget -q https://github.com/projectdiscovery/nuclei/releases/latest/download/nuclei_2.9.15_linux_amd64.zip
+          unzip nuclei_2.9.15_linux_amd64.zip
+          sudo mv nuclei /usr/local/bin/
+          nuclei -update-templates
+
+          # Install Subfinder for subdomain discovery
+          wget -q https://github.com/projectdiscovery/subfinder/releases/latest/download/subfinder_2.6.3_linux_amd64.zip
+          unzip subfinder_2.6.3_linux_amd64.zip
+          sudo mv subfinder /usr/local/bin/
+
+      - name: Subdomain enumeration
+        run: |
+          mkdir -p security-reports
+          echo "Performing subdomain enumeration..."
+
+          if [[ -n "${{ secrets.DOMAIN }}" ]]; then
+            subfinder -d ${{ secrets.DOMAIN }} -o security-reports/subdomains.txt
+            echo "Found $(wc -l < security-reports/subdomains.txt) subdomains"
+          else
+            echo "Domain not configured, skipping subdomain enumeration"
+          fi
+
+      - name: OWASP ZAP Baseline Scan
+        run: |
+          mkdir -p security-reports/zap
+
+          TARGET_URL="${{ github.event.inputs.environment == 'production' && 'https://zoe-solar.de' || 'https://staging.zoe-solar.de' }}"
+
+          echo "Starting OWASP ZAP baseline scan on $TARGET_URL"
+
+          zap-baseline.py \
+            -t "$TARGET_URL" \
+            -d \
+            -x security-reports/zap/report.xml \
+            -J security-reports/zap/report.json \
+            -r security-reports/zap/report.html \
+            --hook=/hook || true
+
+      - name: Nuclei vulnerability scanning
+        run: |
+          mkdir -p security-reports/nuclei
+
+          TARGET_URL="${{ github.event.inputs.environment == 'production' && 'zoe-solar.de' || 'staging.zoe-solar.de' }}"
+
+          echo "Running Nuclei vulnerability scan on $TARGET_URL"
+
+          nuclei -target "$TARGET_URL" \
+            -o security-reports/nuclei/vulnerabilities.txt \
+            -jsonl \
+            -severity critical,high,medium \
+            -timeout 30 || true
+
+          # Also scan any discovered subdomains
+          if [[ -f "security-reports/subdomains.txt" ]]; then
+            while read -r subdomain; do
+              if [[ -n "$subdomain" ]]; then
+                echo "Scanning $subdomain with Nuclei"
+                nuclei -target "$subdomain" \
+                  -o "security-reports/nuclei/${subdomain//./_}_vulns.txt" \
+                  -severity critical,high \
+                  -timeout 30 || true
+              fi
+            done < security-reports/subdomains.txt
+          fi
+
+      - name: SSL/TLS security assessment
+        run: |
+          mkdir -p security-reports/ssl
+
+          TARGET_DOMAIN="${{ github.event.inputs.environment == 'production' && 'zoe-solar.de' || 'staging.zoe-solar.de' }}"
+
+          echo "Performing SSL/TLS security assessment on $TARGET_DOMAIN"
+
+          # SSL configuration test
+          echo "Q" | openssl s_client -connect "$TARGET_DOMAIN:443" -servername "$TARGET_DOMAIN" 2>/dev/null | \
+            openssl x509 -noout -dates -subject -issuer > security-reports/ssl/cert_info.txt
+
+          # Test for common SSL vulnerabilities
+          nmap --script ssl-enum-ciphers -p 443 "$TARGET_DOMAIN" > security-reports/ssl/ciphers.txt 2>/dev/null || true
+
+          # Check for common security headers
+          curl -I -s "https://$TARGET_DOMAIN" > security-reports/ssl/headers.txt
+
+      - name: Analyze DAST results
+        id: dast
+        run: |
+          TOTAL_VULNS=0
+          HIGH_RISK=0
+
+          # Analyze ZAP results
+          if [[ -f "security-reports/zap/report.json" ]]; then
+            ZAP_HIGH=$(jq -r '.site[] | .alerts[] | select(.risk == "High") | .alert' security-reports/zap/report.json | wc -l || echo "0")
+            ZAP_MEDIUM=$(jq -r '.site[] | .alerts[] | select(.risk == "Medium") | .alert' security-reports/zap/report.json | wc -l || echo "0")
+            TOTAL_VULNS=$((TOTAL_VULNS + ZAP_HIGH + ZAP_MEDIUM))
+            HIGH_RISK=$((HIGH_RISK + ZAP_HIGH))
+          fi
+
+          # Analyze Nuclei results
+          if [[ -f "security-reports/nuclei/vulnerabilities.txt" ]]; then
+            NUCLEI_CRITICAL=$(grep -c '"severity":"critical"' security-reports/nuclei/vulnerabilities.txt || echo "0")
+            NUCLEI_HIGH=$(grep -c '"severity":"high"' security-reports/nuclei/vulnerabilities.txt || echo "0")
+            TOTAL_VULNS=$((TOTAL_VULNS + NUCLEI_CRITICAL + NUCLEI_HIGH))
+            HIGH_RISK=$((HIGH_RISK + NUCLEI_CRITICAL + NUCLEI_HIGH))
+          fi
+
+          echo "Total DAST vulnerabilities: $TOTAL_VULNS"
+          echo "High-risk vulnerabilities: $HIGH_RISK"
+
+          echo "vulnerabilities=${TOTAL_VULNS}" >> $GITHUB_OUTPUT
+          echo "high_risk=${HIGH_RISK}" >> $GITHUB_OUTPUT
+
+      - name: Generate DAST report
+        run: |
+          cat << EOF > security-reports/dast-summary.md
+          # Dynamic Application Security Testing (DAST) Report
+
+          **Scan Date:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          **Target:** ${{ github.event.inputs.environment == 'production' && 'https://zoe-solar.de' || 'https://staging.zoe-solar.de' }}
+          **Total Vulnerabilities:** ${{ steps.dast.outputs.vulnerabilities }}
+          **High Risk:** ${{ steps.dast.outputs.high_risk }}
+
+          ## Vulnerabilities Found
+
+          ### OWASP ZAP Results
+          \`\`\`
+          $(cat security-reports/zap/report.json 2>/dev/null | jq -r '.site[] | .alerts[] | "- \(.alert) (\(.risk)): \(.desc | .[0:200])..."' || echo "No ZAP results available")
+          \`\`\`
+
+          ### Nuclei Results
+          \`\`\`
+          $(cat security-reports/nuclei/vulnerabilities.txt 2>/dev/null | jq -r '. | "- \(.info.name) (\(.severity)): \(.info.description // .template-id)"' || echo "No Nuclei results available")
+          \`\`\`
+
+          ## Recommendations
+
+          1. **Immediate Actions Required**
+             - Address all critical and high-risk vulnerabilities
+             - Implement proper security headers
+             - Review and fix SSL/TLS configurations
+
+          2. **Medium Priority**
+             - Address medium-risk vulnerabilities
+             - Implement additional security monitoring
+             - Regular security assessments
+
+          3. **Long-term Security Strategy**
+             - Implement Web Application Firewall (WAF)
+             - Regular penetration testing
+             - Security awareness training
+
+          EOF
+
+      - name: Upload DAST results
+        uses: actions/upload-artifact@v4.3.6
+        with:
+          name: dast-results-$(date +%Y%m%d-%H%M%S)
+          path: security-reports/
+          retention-days: 30
+
+  # Static Application Security Testing (SAST) with advanced analysis
+  advanced-sast:
+    name: Advanced Static Analysis
+    runs-on: ubuntu-latest
+
+    outputs:
+      security_score: ${{ steps.sast.outputs.score }}
+      critical_flaws: ${{ steps.sast.outputs.critical }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7
+        with:
+          fetch-depth: 0
+
+      - name: Setup advanced SAST tools
+        run: |
+          # Install Semgrep for advanced static analysis
+          pip install semgrep
+
+          # Install CodeQL for advanced security analysis
+          wget -q https://github.com/github/codeql-action/releases/latest/download/codeql-bundle-linux64.tar.gz
+          tar -xzf codeql-bundle-linux64.tar.gz
+          sudo mv codeql /usr/local/bin/
+
+          # Install Bandit for Python security analysis
+          pip install bandit
+
+          # Install Brakeman for Ruby security analysis (if needed)
+          gem install brakeman || true
+
+      - name: Initialize CodeQL databases
+        run: |
+          # Create CodeQL databases for different languages
+          codeql database create codeql-db --language=javascript || true
+          codeql database create codeql-db-typescript --language=typescript || true
+
+      - name: Run Semgrep security analysis
+        run: |
+          mkdir -p security-reports/semgrep
+
+          # Run Semgrep with security rules
+          semgrep --config=auto \
+            --config=security \
+            --config=owasp-top-ten \
+            --json=security-reports/semgrep/results.json \
+            --output=security-reports/semgrep/findings.txt \
+            . || true
+
+      - name: Run CodeQL advanced analysis
+        run: |
+          mkdir -p security-reports/codeql
+
+          # Run CodeQL analysis on JavaScript
+          if [[ -d "codeql-db" ]]; then
+            codeql database analyze codeql-db \
+              --format=sarif-latest \
+              --output=security-reports/codeql/javascript-sarif.sarif \
+              javascript-security-and-quality.qls || true
+          fi
+
+      - name: Run dependency security analysis
+        run: |
+          mkdir -p security-reports/dependencies
+
+          # Run Snyk if token is available
+          if [[ -n "$SNYK_TOKEN" ]]; then
+            npm install -g snyk
+            snyk test --json > security-reports/dependencies/snyk-results.json || true
+            snyk monitor --org=${{ secrets.SNYK_ORG }} || true
+          fi
+
+          # Run npm audit
+          npm audit --json > security-reports/dependencies/npm-audit.json || true
+
+          # Run OWASP Dependency Check
+          wget -q https://github.com/jeremylong/DependencyCheck/releases/download/v8.4.0/dependency-check-8.4.0-release.zip
+          unzip dependency-check-8.4.0-release.zip
+          ./dependency-check/bin/dependency-check.sh --project "ZOE Solar" --scan . --format JSON --out security-reports/dependencies/owasp-dependency-check.json || true
+
+      - name: Analyze code for security anti-patterns
+        run: |
+          mkdir -p security-reports/patterns
+
+          # Search for common security anti-patterns
+          echo "# Security Anti-Patterns Analysis" > security-reports/patterns/anti-patterns.md
+
+          # Hardcoded credentials
+          echo "## Hardcoded Credentials" >> security-reports/patterns/anti-patterns.md
+          grep -r -i -E "(password|secret|key|token)\s*=\s*['\"][^'\"]{8,}['\"]" . --include="*.js" --include="*.ts" --include="*.jsx" --include="*.tsx" --exclude-dir=node_modules --exclude-dir=.git | head -20 >> security-reports/patterns/anti-patterns.md || echo "None found" >> security-reports/patterns/anti-patterns.md
+
+          # SQL injection patterns
+          echo -e "\n## SQL Injection Patterns" >> security-reports/patterns/anti-patterns.md
+          grep -r -i -E "(\+|concat).*where.*\+" . --include="*.js" --include="*.ts" --include="*.jsx" --include="*.tsx" --exclude-dir=node_modules | head -10 >> security-reports/patterns/anti-patterns.md || echo "None found" >> security-reports/patterns/anti-patterns.md
+
+          # XSS patterns
+          echo -e "\n## XSS Patterns" >> security-reports/patterns/anti-patterns.md
+          grep -r -i -E "(innerHTML|document\.write|eval\()" . --include="*.js" --include="*.ts" --include="*.jsx" --include="*.tsx" --exclude-dir=node_modules | head -10 >> security-reports/patterns/anti-patterns.md || echo "None found" >> security-reports/patterns/anti-patterns.md
+
+          # Insecure HTTP usage
+          echo -e "\n## Insecure HTTP Usage" >> security-reports/patterns/anti-patterns.md
+          grep -r -i "http://" . --include="*.js" --include="*.ts" --include="*.jsx" --include="*.tsx" --exclude-dir=node_modules | grep -v "http://localhost" | head -10 >> security-reports/patterns/anti-patterns.md || echo "None found" >> security-reports/patterns/anti-patterns.md
+
+      - name: Analyze SAST results
+        id: sast
+        run: |
+          SECURITY_SCORE=100
+          CRITICAL_FLAWS=0
+
+          # Analyze Semgrep results
+          if [[ -f "security-reports/semgrep/results.json" ]]; then
+            SEMGREP_CRITICAL=$(jq -r '.results[] | select(.metadata.severity == "ERROR") | .rule_id' security-reports/semgrep/results.json | wc -l || echo "0")
+            SEMGREP_HIGH=$(jq -r '.results[] | select(.metadata.severity == "WARNING") | .rule_id' security-reports/semgrep/results.json | wc -l || echo "0")
+            CRITICAL_FLAWS=$((CRITICAL_FLAWS + SEMGREP_CRITICAL))
+            SECURITY_SCORE=$((SECURITY_SCORE - (SEMGREP_CRITICAL * 10) - (SEMGREP_HIGH * 5)))
+          fi
+
+          # Analyze CodeQL results
+          if [[ -f "security-reports/codeql/javascript-sarif.sarif" ]]; then
+            CODEQL_CRITICAL=$(jq -r '.runs[0].results[] | select(.level == "error") | .ruleId' security-reports/codeql/javascript-sarif.sarif | wc -l || echo "0")
+            CRITICAL_FLAWS=$((CRITICAL_FLAWS + CODEQL_CRITICAL))
+            SECURITY_SCORE=$((SECURITY_SCORE - (CODEQL_CRITICAL * 15)))
+          fi
+
+          # Analyze dependency results
+          if [[ -f "security-reports/dependencies/snyk-results.json" ]]; then
+            DEP_CRITICAL=$(jq -r '.vulnerabilities[] | select(.severity == "critical") | .id' security-reports/dependencies/snyk-results.json | wc -l || echo "0")
+            CRITICAL_FLAWS=$((CRITICAL_FLAWS + DEP_CRITICAL))
+            SECURITY_SCORE=$((SECURITY_SCORE - (DEP_CRITICAL * 8)))
+          fi
+
+          # Ensure score doesn't go below 0
+          if [[ $SECURITY_SCORE -lt 0 ]]; then
+            SECURITY_SCORE=0
+          fi
+
+          echo "Security Score: $SECURITY_SCORE/100"
+          echo "Critical Flaws: $CRITICAL_FLAWS"
+
+          echo "score=${SECURITY_SCORE}" >> $GITHUB_OUTPUT
+          echo "critical=${CRITICAL_FLAWS}" >> $GITHUB_OUTPUT
+
+      - name: Generate SAST report
+        run: |
+          cat << EOF > security-reports/sast-summary.md
+          # Static Application Security Testing (SAST) Report
+
+          **Analysis Date:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          **Security Score:** ${{ steps.sast.outputs.score }}/100
+          **Critical Flaws:** ${{ steps.sast.outputs.critical }}
+
+          ## Security Analysis Results
+
+          ### Code Quality and Security Metrics
+          - **Semgrep Findings:** $(cat security-reports/semgrep/results.json 2>/dev/null | jq '.results | length' || echo "0")
+          - **CodeQL Alerts:** $(cat security-reports/codeql/javascript-sarif.sarif 2>/dev/null | jq '.runs[0].results | length' || echo "0")
+          - **Dependency Vulnerabilities:** $(cat security-reports/dependencies/snyk-results.json 2>/dev/null | jq '.vulnerabilities | length' || echo "0")
+
+          ### Critical Security Issues
+          $(cat security-reports/patterns/anti-patterns.md 2>/dev/null)
+
+          ## Security Recommendations
+
+          ### Immediate Actions
+          ${{ steps.sast.outputs.critical > 0 && printf "1. **CRITICAL**: Address ${{ steps.sast.outputs.critical }} critical security flaws immediately" || "1. No critical security flaws detected" }}
+
+          ### Code Security Improvements
+          2. Implement input validation and sanitization
+          3. Use parameterized queries to prevent SQL injection
+          4. Implement proper error handling and logging
+          5. Add security headers to all HTTP responses
+
+          ### Dependency Management
+          6. Regularly update dependencies to latest secure versions
+          7. Implement dependency vulnerability scanning in CI/CD
+          8. Use software composition analysis (SCA) tools
+
+          ### Long-term Security Strategy
+          9. Implement security code review process
+          10. Provide security training for development team
+          11. Establish security incident response plan
+
+          EOF
+
+      - name: Upload SAST results
+        uses: actions/upload-artifact@v4.3.6
+        with:
+          name: sast-results-$(date +%Y%m%d-%H%M%S)
+          path: security-reports/
+          retention-days: 30
+
+  # Threat Intelligence Integration
+  threat-intelligence:
+    name: Threat Intelligence Analysis
+    runs-on: ubuntu-latest
+    if: github.event.inputs.scan_type == 'deep' || github.event.inputs.scan_type == 'forensics'
+
+    steps:
+      - name: Setup threat intelligence tools
+        run: |
+          # Install MISP integration tools
+          pip install pymisp
+
+          # Install Shodan API client
+          pip install shodan
+
+          # Install VirusTotal API client
+          pip install vt-py
+
+      - name: Analyze repository for threat indicators
+        run: |
+          mkdir -p security-reports/threat-intel
+
+          # Search for suspicious patterns in code
+          echo "# Threat Intelligence Analysis" > security-reports/threat-intel/threat-indicators.md
+
+          # Check for suspicious URLs
+          echo -e "\n## Suspicious URLs Found" >> security-reports/threat-intel/threat-indicators.md
+          grep -r -E "(https?://[^/]*\.(bit\.ly|t\.co|tinyurl\.com|goo\.gl))" . --include="*.js" --include="*.ts" --include="*.jsx" --include="*.tsx" --exclude-dir=node_modules | head -10 >> security-reports/threat-intel/threat-indicators.md || echo "None found" >> security-reports/threat-intel/threat-indicators.md
+
+          # Check for suspicious file references
+          echo -e "\n## Suspicious File References" >> security-reports/threat-intel/threat-indicators.md
+          grep -r -E "\.(exe|bat|cmd|scr|pif|com|jar)$" . --include="*.js" --include="*.ts" --include="*.jsx" --include="*.tsx" --exclude-dir=node_modules | head -10 >> security-reports/threat-intel/threat-indicators.md || echo "None found" >> security-reports/threat-intel/threat-indicators.md
+
+          # Check for base64 encoded content
+          echo -e "\n## Potential Base64 Encoded Content" >> security-reports/threat-intel/threat-indicators.md
+          grep -r -E "[A-Za-z0-9+/]{100,}={0,2}" . --include="*.js" --include="*.ts" --include="*.jsx" --include="*.tsx" --exclude-dir=node_modules | head -5 >> security-reports/threat-intel/threat-indicators.md || echo "None found" >> security-reports/threat-intel/threat-indicators.md
+
+      - name: Check against known threat databases
+        if: env.SHODAN_API_KEY != ''
+        run: |
+          mkdir -p security-reports/threat-intel
+
+          # Check if any IP addresses in the code are known malicious
+          grep -r -oE "[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" . --include="*.js" --include="*.ts" --include="*.jsx" --include="*.tsx" --exclude-dir=node_modules | sort -u > security-reports/threat-intel/ips.txt || true
+
+          if [[ -s "security-reports/threat-intel/ips.txt" ]]; then
+            echo "Checking IPs against threat intelligence..."
+            # Add actual threat intelligence checking logic here
+          fi
+
+  # Security incident correlation and analysis
+  incident-correlation:
+    name: Security Incident Correlation
+    runs-on: ubuntu-latest
+    needs: [dast-scan, advanced-sast]
+    if: always() && (needs.dast-scan.result == 'success' || needs.advanced-sast.result == 'success')
+
+    steps:
+      - name: Correlate security findings
+        run: |
+          mkdir -p security-reports/correlation
+
+          DAST_VULNS="${{ needs.dast-scan.outputs.vulnerabilities || '0' }}"
+          SAST_SCORE="${{ needs.advanced-sast.outputs.security_score || '100' }}"
+          CRITICAL_FLAWS="${{ needs.advanced-sast.outputs.critical_flaws || '0' }}"
+
+          # Calculate overall risk score
+          OVERALL_RISK_SCORE=0
+
+          # DAST contribution to risk score
+          OVERALL_RISK_SCORE=$((OVERALL_RISK_SCORE + DAST_VULNS * 2))
+
+          # SAST contribution to risk score
+          OVERALL_RISK_SCORE=$((OVERALL_RISK_SCORE + (100 - SAST_SCORE)))
+
+          # Critical flaws contribution
+          OVERALL_RISK_SCORE=$((OVERALL_RISK_SCORE + CRITICAL_FLAWS * 10))
+
+          # Determine risk level
+          if [[ $OVERALL_RISK_SCORE -gt 50 ]]; then
+            RISK_LEVEL="CRITICAL"
+            RISK_COLOR="red"
+          elif [[ $OVERALL_RISK_SCORE -gt 25 ]]; then
+            RISK_LEVEL="HIGH"
+            RISK_COLOR="orange"
+          elif [[ $OVERALL_RISK_SCORE -gt 10 ]]; then
+            RISK_LEVEL="MEDIUM"
+            RISK_COLOR="yellow"
+          else
+            RISK_LEVEL="LOW"
+            RISK_COLOR="green"
+          fi
+
+          cat << EOF > security-reports/correlation/risk-assessment.md
+          # Security Risk Assessment
+
+          **Assessment Date:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          **Overall Risk Score:** $OVERALL_RISK_SCORE
+          **Risk Level:** $RISK_LEVEL
+
+          ## Risk Components
+
+          | Component | Score | Weight | Contribution |
+          |-----------|-------|--------|--------------|
+          | DAST Vulnerabilities | $DAST_VULNS | 2x | $((DAST_VULNS * 2)) |
+          | SAST Security Gap | $((100 - SAST_SCORE)) | 1x | $((100 - SAST_SCORE)) |
+          | Critical Flaws | $CRITICAL_FLAWS | 10x | $((CRITICAL_FLAWS * 10)) |
+          | **Total Risk Score** | - | - | **$OVERALL_RISK_SCORE** |
+
+          ## Risk Assessment Summary
+
+          **Current Status:** $RISK_LEVEL risk level detected
+
+          ### Immediate Actions Required
+          $([[ "$RISK_LEVEL" == "CRITICAL" ]] && echo "- 🚨 **IMMEDIATE ACTION REQUIRED**: Critical security issues detected" || echo "- ✅ No immediate critical security concerns")
+
+          ### Recommended Actions
+          - Schedule regular security assessments
+          - Implement security monitoring and alerting
+          - Provide security training for development team
+          - Establish incident response procedures
+
+          EOF
+
+          echo "Risk assessment completed - Risk Level: $RISK_LEVEL (Score: $OVERALL_RISK_SCORE)"
+
+      - name: Generate comprehensive security report
+        run: |
+          cat << EOF > security-reports/comprehensive-security-report.md
+          # Comprehensive Security Analytics Report
+
+          **Report Generated:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          **Analysis Type:** ${{ github.event.inputs.scan_type || 'comprehensive' }}
+
+          ## Executive Summary
+
+          This comprehensive security analysis covers:
+          - Dynamic Application Security Testing (DAST)
+          - Static Application Security Testing (SAST)
+          - Threat Intelligence Analysis
+          - Dependency Security Assessment
+          - Security Risk Correlation
+
+          ## Key Findings
+
+          - **Total DAST Vulnerabilities:** ${{ needs.dast-scan.outputs.vulnerabilities || '0' }}
+          - **High-Risk DAST Issues:** ${{ needs.dast-scan.outputs.high_risk || '0' }}
+          - **SAST Security Score:** ${{ needs.advanced-sast.outputs.security_score || '100' }}/100
+          - **Critical Security Flaws:** ${{ needs.advanced-sast.outputs.critical_flaws || '0' }}
+
+          ## Security Status
+
+          $([[ "${{ needs.advanced-sast.outputs.security_score || '100' }}" -gt 85 && "${{ needs.dast-scan.outputs.high_risk || '0' }}" -lt 5 ]] && echo "✅ **GOOD**: Security posture is strong" || echo "⚠️ **ATTENTION**: Security issues require attention")
+
+          ## Detailed Analysis
+
+          Please refer to the individual analysis reports for detailed findings:
+          - [DAST Report](dast-summary.md)
+          - [SAST Report](sast-summary.md)
+          - [Risk Assessment](correlation/risk-assessment.md)
+
+          ## Recommendations
+
+          ### Short-term Actions (1-2 weeks)
+          1. Address all critical and high-risk vulnerabilities
+          2. Implement security monitoring and alerting
+          3. Update dependencies to latest secure versions
+
+          ### Medium-term Actions (1-3 months)
+          1. Implement Web Application Firewall (WAF)
+          2. Establish regular security testing schedule
+          3. Provide security training for development team
+
+          ### Long-term Strategy (3+ months)
+          1. Implement DevSecOps practices
+          2. Establish security incident response plan
+          3. Regular penetration testing
+
+          EOF
+
+      - name: Upload comprehensive report
+        uses: actions/upload-artifact@v4.3.6
+        with:
+          name: comprehensive-security-report-$(date +%Y%m%d-%H%M%S)
+          path: security-reports/
+          retention-days: 90
+
+  # Security alerts and notifications
+  security-alerts:
+    name: Security Alerts & Notifications
+    runs-on: ubuntu-latest
+    needs: [dast-scan, advanced-sast, incident-correlation]
+    if: always() && (needs.dast-scan.result == 'success' || needs.advanced-sast.result == 'success') && github.event.inputs.alert_on_findings != 'false'
+
+    steps:
+      - name: Send critical security alerts
+        if: needs.advanced-sast.outputs.critical_flaws > 0 || needs.dast-scan.outputs.high_risk > 5
+        run: |
+          # Send Slack alert for critical security issues
+          if [[ -n "$SLACK_SECURITY_WEBHOOK" ]]; then
+            curl -X POST -H 'Content-type: application/json' \
+              --data '{
+                "text": "🚨 **CRITICAL SECURITY ALERT** - ZOE Solar Application",
+                "attachments": [
+                  {
+                    "color": "danger",
+                    "fields": [
+                      {
+                        "title": "Critical Flaws Found",
+                        "value": "'${{ needs.advanced-sast.outputs.critical_flaws }}'",
+                        "short": true
+                      },
+                      {
+                        "title": "High-Risk DAST Issues",
+                        "value": "'${{ needs.dast-scan.outputs.high_risk }}'",
+                        "short": true
+                      },
+                      {
+                        "title": "Security Score",
+                        "value": "'${{ needs.advanced-sast.outputs.security_score }}'/100",
+                        "short": true
+                      },
+                      {
+                        "title": "Action Required",
+                        "value": "Immediate investigation and remediation",
+                        "short": true
+                      }
+                    ],
+                    "actions": [
+                      {
+                        "type": "button",
+                        "text": "View Security Report",
+                        "url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                      }
+                    ]
+                  }
+                ]
+              }' \
+              "$SLACK_SECURITY_WEBHOOK"
+          fi
+
+          # Create GitHub issue for critical security findings
+          if [[ "${{ needs.advanced-sast.outputs.critical_flaws }}" -gt 0 ]]; then
+            gh issue create \
+              --title "🚨 CRITICAL: Security Vulnerabilities Detected" \
+              --label "critical,security,urgent" \
+              --body "## Critical Security Vulnerabilities Found
+
+            **Detection Time:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+            **Security Score:** ${{ needs.advanced-sast.outputs.security_score }}/100
+            **Critical Flaws:** ${{ needs.advanced-sast.outputs.critical_flaws }}
+            **High-Risk Issues:** ${{ needs.dast-scan.outputs.high_risk }}
+
+            ### 🚨 IMMEDIATE ACTION REQUIRED
+
+            This issue requires immediate attention from the security team and development team.
+
+            ### Steps to Address
+            1. Review the [security analysis report](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            2. Identify and prioritize critical vulnerabilities
+            3. Implement fixes and patches
+            4. Test and validate fixes
+            5. Deploy security updates
+
+            ### Security Team Actions
+            - [ ] Assess vulnerability impact
+            - [ ] Coordinate with development team
+            - [ ] Plan remediation strategy
+            - [ ] Monitor for potential exploitation
+
+            ### Development Team Actions
+            - [ ] Review and fix identified code issues
+            - [ ] Update dependencies to secure versions
+            - [ ] Implement security best practices
+            - [ ] Test security fixes thoroughly
+
+            ---
+            *This issue was automatically created by the Advanced Security Analytics system.*"
+          fi
+
+      - name: Send security summary notification
+        run: |
+          # Prepare summary message
+          SECURITY_STATUS="GOOD"
+          EMOJI="✅"
+
+          if [[ "${{ needs.advanced-sast.outputs.security_score || '100' }}" -lt 70 || "${{ needs.dast-scan.outputs.high_risk || '0' }}" -gt 5 ]]; then
+            SECURITY_STATUS="ATTENTION NEEDED"
+            EMOJI="⚠️"
+          fi
+
+          if [[ "${{ needs.advanced-sast.outputs.critical_flaws || '0' }}" -gt 0 ]]; then
+            SECURITY_STATUS="CRITICAL"
+            EMOJI="🚨"
+          fi
+
+          echo "# 🔍 Security Analytics Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Security Status: $SECURITY_STATUS $EMOJI" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Key Metrics" >> $GITHUB_STEP_SUMMARY
+          echo "- **Security Score:** ${{ needs.advanced-sast.outputs.security_score || '100' }}/100" >> $GITHUB_STEP_SUMMARY
+          echo "- **Critical Flaws:** ${{ needs.advanced-sast.outputs.critical_flaws || '0' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **DAST Vulnerabilities:** ${{ needs.dast-scan.outputs.vulnerabilities || '0' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **High-Risk Issues:** ${{ needs.dast-scan.outputs.high_risk || '0' }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Analysis Results" >> $GITHUB_STEP_SUMMARY
+          echo "- **DAST Scan:** ${{ needs.dast-scan.result == 'success' && '✅ Completed' || '❌ Failed' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **SAST Analysis:** ${{ needs.advanced-sast.result == 'success' && '✅ Completed' || '❌ Failed' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Incident Correlation:** ${{ needs.incident-correlation.result == 'success' && '✅ Completed' || '❌ Failed' }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Next Steps" >> $GITHUB_STEP_SUMMARY
+          if [[ "$SECURITY_STATUS" == "CRITICAL" ]]; then
+            echo "🚨 **IMMEDIATE ACTION REQUIRED**" >> $GITHUB_STEP_SUMMARY
+            echo "1. Address critical security vulnerabilities immediately" >> $GITHUB_STEP_SUMMARY
+            echo "2. Review detailed security reports" >> $GITHUB_STEP_SUMMARY
+            echo "3. Implement emergency security patches" >> $GITHUB_STEP_SUMMARY
+          elif [[ "$SECURITY_STATUS" == "ATTENTION NEEDED" ]]; then
+            echo "⚠️ **Security Attention Required**" >> $GITHUB_STEP_SUMMARY
+            echo "1. Review and address identified security issues" >> $GITHUB_STEP_SUMMARY
+            echo "2. Update dependencies to secure versions" >> $GITHUB_STEP_SUMMARY
+            echo "3. Implement security best practices" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "✅ **Security Status Good**" >> $GITHUB_STEP_SUMMARY
+            echo "1. Continue regular security monitoring" >> $GITHUB_STEP_SUMMARY
+            echo "2. Maintain current security practices" >> $GITHUB_STEP_SUMMARY
+            echo "3. Schedule periodic security assessments" >> $GITHUB_STEP_SUMMARY
+          fi

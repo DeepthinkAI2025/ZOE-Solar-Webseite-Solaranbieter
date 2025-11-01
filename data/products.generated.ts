@@ -1138,7 +1138,7 @@ export const productCatalog: ProductCatalog = {
           specs: {
             'Max. Ladeleistung': '250 kW',
             Anschluss: 'Tesla Connector (CCS adapter)',
-            Ladeschlüsse: '4,
+            Ladeschlüsse: '4',
             Kühlung: 'Flüssig-gekühlt',
             Schutzart: 'IP54',
             Garantie: '3 Jahre'

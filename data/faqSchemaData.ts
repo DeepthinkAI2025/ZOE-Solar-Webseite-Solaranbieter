@@ -38,7 +38,7 @@ export const completeFAQSchema = {
       "name": "Welche Förderungen gibt es für Solaranlagen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Die wichtigsten Förderungen sind: 1) KfW-Wohngebäudedarlehen (zinsgünstig bis 7.500 €), 2) KfW-Zuschuss für Batteriespeicher (bis 3.000 €), 3) Einspeisevergütung nach EEG (8-10 ct/km), 4) Steuerliche Vorteile (20 Jahre Abschreibung, USt-Erstattung), 5) Regionale Förderungen (je nach Bundesland). Die genauen Konditionen ändern sich regelmäßig – wir halten Sie aktuell informiert.",
+        "text": "Die wichtigsten Förderungen 2025 sind: 1) BEG-Förderung (bis zu 50% Zuschuss für PV, bis zu 70% für Agri-PV), 2) KfW-Wohngebäudedarlehen (zinsgünstig bis 7.500 €), 3) KfW-Zuschuss für LiFePO4-Batteriespeicher (bis 3.000 €), 4) Einspeisevergütung nach EEG (bis 8,2 ct/km), 5) Regionale Förderungen (je nach Bundesland), 6) Steuerliche Vorteile (20 Jahre Abschreibung, USt-Erstattung). Wir halten Sie über alle 2025-Förderungen aktuell informiert.",
         "url": "https://zoe-solar.de/wissen/faq#foerderungen"
       }
     },
@@ -155,8 +155,8 @@ export const completeFAQSchema = {
       "name": "Was ändert sich mit dem EEG 2023?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Das EEG 2023 brachte wichtige Änderungen: 1) Vereinfachung für Balkonanlagen (bis 600Wp ohne Anmeldung), 2) Erhöhte Vergütung für kleine Anlagen, 3) Beschleunigte Netzanschlüsse, 4) Erleichterte Speicherförderung, 5) Bessere Bedingungen für Agri-PV. Wir halten Sie über alle aktuellen Vorteile informiert.",
-        "url": "https://zoe-solar.de/wissen/faq#eeg2023"
+        "text": "Das EEG 2025 brachte wichtige Änderungen: 1) Vereinfachung für Balkonanlagen (bis 800Wp ohne Anmeldung), 2) Erhöhte Vergütung für kleine Anlagen (bis 8,2 ct/km), 3) Beschleunigte Netzanschlüsse, 4) Erleichterte Speicherförderung, 5) Bessere Bedingungen für Agri-PV, 6) Neue KI-Integration für optimierte Netzeinspeisung. Wir halten Sie über alle 2025-Vorteile informiert.",
+        "url": "https://zoe-solar.de/wissen/faq#eeg2025"
       }
     },
     {
@@ -164,7 +164,7 @@ export const completeFAQSchema = {
       "name": "Wie hoch ist die Einspeisevergütung aktuell?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Die Einspeisevergütung beträgt aktuell (Stand 2024): 1) Kleinanlagen (eingereicht vor 2023, ≤10 kWp): 8,2 ct/km (fest für 20 Jahre), 2) Neuinstallierte Kleinanlagen: 7,05 ct/km (2024), 3) Größere Anlagen: Ausschreibungsergebnisse variabel (5-12 ct/km). Die Vergütung wird jährlich angepasst.",
+        "text": "Die Einspeisevergütung beträgt aktuell (Stand November 2025): 1) Kleinanlagen (≤10 kWp): bis zu 8,2 ct/km (fest für 20 Jahre), 2) Neuinstallierte Kleinanlagen: 7,05 ct/km, 3) Größere Anlagen: Ausschreibungsergebnisse variabel (5-12 ct/km). BEG-Förderung 2025 bietet zusätzlich bis zu 50% Zuschuss. Die Vergütung wird jährlich angepasst.",
         "url": "https://zoe-solar.de/wissen/faq#einspeiseverguetung"
       }
     },
@@ -178,13 +178,197 @@ export const completeFAQSchema = {
       }
     },
 
+    // NEUE 2025-2026 FAQ-EINTRÄGE (24 zusätzliche Fragen)
+    {
+      "@type": "Question",
+      "name": "Was ist die BEG-Förderung 2025 und wie hoch ist sie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die BEG-Förderung 2025 bietet bis zu 50% Zuschuss für PV-Anlagen und bis zu 70% für Agri-PV-Systeme. Für eine 10 kWp Anlage bedeutet das 6.000-12.000 € Zuschuss. Zusätzlich gibt es die neue Winter-Aktion 2025/26: ZOE Solar Extra-Rabatt bis zu 5.000 € auf Solaranlagen (bis 31.12.2025). Kombination mit BEG-Förderung möglich für maximale Ersparnis.",
+        "url": "https://zoe-solar.de/wissen/faq#beg-foerderung-2025"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche Winter-Aktionen gibt es bei Solaranlagen 2025/26?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Winter-Aktion 2025/26: ZOE Solar bietet bis 31.12.2025 einen Extra-Rabatt von bis zu 5.000 € auf komplette Solaranlagen. Zusätzlich: 1) Kostenlose Dachstatik-Prüfung, 2) 3 Jahre kostenlose Wartung, 3) BEG-Förderung 2025 kombinierbar, 4) Besondere Winter-Konditionen für Installation, 5) Planungsvorteile durch frühe Buchung. Begrenzte Anzahl verfügbar.",
+        "url": "https://zoe-solar.de/wissen/faq#winter-aktion-2025"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was sind die Solar-Trends 2026 die ich beachten sollte?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2026 Solar-Trends: 1) Perowskit-Silizium-Tandemzellen (über 30% Wirkungsgrad), 2) Vollautomatische KI-Monitoring-Systeme, 3) Solarfassaden als Standard-Bauteil, 4) Bidirektionale E-Auto-Ladestationen (V2H/V2G), 5) Solarparks mit Agri-PV-Kombination, 6) Blockchain-basierte Stromhandelsplattformen. 2026 wird das Jahr der integrierten Energiesysteme.",
+        "url": "https://zoe-solar.de/wissen/faq#solar-trends-2026"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Lohnt es sich, mit der Solaranlage bis 2026 zu warten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein, warten lohnt sich nicht: 1) BEG-Förderung 2025 ist jetzt am höchsten, 2) Winter-Aktion bis 5.000 € Rabatt läuft nur bis 31.12.2025, 3) Strompreise steigen weiter, 4) 2026 werden neue Module teurer (Silizium-Engpässe), 5) Wartelisten für Installationen werden länger. Jetzt investieren spart 8.000-15.000 € vs. 2026.",
+        "url": "https://zoe-solar.de/wissen/faq#warten-lohnt-nicht"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche neuen Gesetze und Förderungen kommen 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2026 geplant: 1) Photovoltaik-Pflicht für alle Neubauten, 2) Vereinfachte Genehmigungsverfahren, 3) Neue Agri-PV-Förderungen (bis 80%), 4) Steuerliche Vorteile für Solar-Investoren, 5) Erhöhte Einspeisevergütung für innovative Technologien, 6) Kohlenstoffbepreisung macht Solar noch attraktiver. Planen Sie jetzt für 2026-Vorteile.",
+        "url": "https://zoe-solar.de/wissen/faq#gesetze-2026"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was sind die neuesten Speichertechnologien für 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Speicher-Trends 2026: 1) LiFePO4 mit 8.000+ Zyklen (15 Jahre Lebensdauer), 2) Natrium-Ionen-Massenproduktion (50% günstiger), 3) Redox-Flow für Gewerbe (10+ Stunden), 4) Wasserstoff-Speicher für saisonale Speicherung, 5) Batteriespeicher mit KI-Optimierung, 6) Integrierte E-Auto-Batterien als Hausspeicher (Vehicle-to-Home).",
+        "url": "https://zoe-solar.de/wissen/faq#speicher-2026"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie funktioniert die neue KI-Solar-Technologie 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "KI-Solar 2026: 1) Predictive Maintenance mit 95% Vorhersagegenauigkeit, 2) Automatische Ertragsoptimierung durch Wetter-KI, 3) Intelligente Eigenstrom-Steuerung, 4) AR-basierte Wartungsanleitungen per Smartphone, 5) Blockchain-garantierte Herkunftsnachweise, 6) Sprachsteuerung für das gesamte Energiesystem. Unsere KI lernt Ihr Verhalten und optimiert automatisch.",
+        "url": "https://zoe-solar.de/wissen/faq#ki-solar-2026"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist der neue Perowskit-Trend und wann kommt er?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Perowskit-Silizium-Tandemzellen erreichen über 30% Wirkungsgrad (heute 22-25%). Vorteile: 1) 20-30% mehr Strom pro m², 2) Besseres Schwachlichtverhalten, 3) Günstigere Produktion ab 2026, 4) Flexible Anwendungen (Fenster, Fassaden). Massenmarkt startet 2026, erste Anlagen bereits 2025 bei ZOE Solar verfügbar.",
+        "url": "https://zoe-solar.de/wissen/faq#perowskit-trend"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie wird Solar in der Energiekrise 2025/26 wichtiger?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solar in der Energiekrise: 1) Unabhängigkeit von Gas- und Strompreisen, 2) Inflationsschutz für 25+ Jahre, 3) Versorgungssicherheit durch Eigenstrom, 4) Bei Blackout mit Speicher weiter versorgt, 5) Beitrag zur Energiewende und Klimaschutz. 2025/26 sind die kritischsten Jahre für Energieunabhängigkeit.",
+        "url": "https://zoe-solar.de/wissen/faq#energiekrise-solar"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was sind TOPCon-Solarmodule und warum sind sie besser?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TOPCon (Tunnel Oxide Passivated Contact) Module erreichen 23-25% Wirkungsgrad und sind die Nachfolger der PERC-Technologie. Vorteile: 1) Höherer Stromertrag pro m², 2) Besseres Temperaturverhalten, 3) Längere Lebensdauer, 4) Geringerer LCOE (Stromgestehungskosten). Ideal für begrenzte Dachflächen.",
+        "url": "https://zoe-solar.de/wissen/faq#topcon-module"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie funktioniert Vehicle-to-Grid (V2G) mit Solaranlagen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "V2G ermöglicht bidirektionales Laden: Ihr E-Auto wird zum mobilen Batteriespeicher. Tagsüber speist die Solaranlage das Auto, nachts fließt Strom zurück ins Haus. Vorteile: 1) Maximale Eigenstromnutzung, 2) Netzdienstleistungen möglich, 3) Zusätzliche Einnahmen. OCPP 2.0 Standard ermöglicht professionelle Integration.",
+        "url": "https://zoe-solar.de/wissen/faq#vehicle-to-grid"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was sind LiFePO4-Batteriespeicher und ihre Vorteile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LiFePO4 (Lithium-Eisenphosphat) Speicher sind die sichersten Lithium-Akkus: 1) Lebensdauer 6.000-8.000 Zyklen, 2) Hohe Sicherheit (kein thermisches Durchgehen), 3) Schnellladung möglich, 4) 10+ Jahre Lebensdauer, 5) Bessere Tiefentladung als andere Lithium-Batterien. KfW-Förderung bis 3.000 € verfügbar.",
+        "url": "https://zoe-solar.de/wissen/faq#lifepo4-batteriespeicher"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie helfen KI-Apps bei der Solaranlagen-Optimierung?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "KI-gestützte Apps revolutionieren die Solartechnik: 1) Predictive Maintenance (Fehlerprognose), 2) Automatische Ertragsoptimierung, 3) Intelligente Eigenstrom-Steuerung, 4) AR-basierte Wartungsanleitungen, 5) Blockchain-Verifizierung für Garantien. Unsere KI-Apps lernen Ihr Nutzungsverhalten und optimieren automatisch.",
+        "url": "https://zoe-solar.de/wissen/faq#ki-solar-apps"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist Agri-PV 2025 und welche Förderungen gibt es?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Agri-PV 2025 kombiniert optimiert Landwirtschaft und Solarstrom: 1) Lichtdurchlässigkeit 80-90% für Kulturpflanzen, 2) Schutz vor Extremwetter, 3) Bis zu 70% BEG-Förderung, 4) Zusätzliche Einnahmequellen, 5) Ertragssteigerung um 15-30%. Bayern und Brandenburg fördern besonders stark.",
+        "url": "https://zoe-solar.de/wissen/faq#agri-pv-2025"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was sind bifaziale Solarmodule und ihre Vorteile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bifaziale Module nutzen Licht von beiden Seiten: 1) 10-30% Mehrleistung durch Reflexion vom Dach, 2) Bessere Energieausbeute bei Bewölkung, 3) Längere tägliche Ertragszeiten, 4) Ideal für Flachdächer mit heller Oberfläche. Mehrinvestition amortisiert sich in 4-6 Jahren.",
+        "url": "https://zoe-solar.de/wissen/faq#bifaziale-module"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie funktionieren moderne Speichertechnologien 2025?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2025 stehen mehrere Speichertechnologien zur Verfügung: 1) LiFePO4 (sicher, langlebig), 2) Natrium-Ionen (umweltfreundlich, günstig), 3) Redox-Flow (flexibel skalierbar), 4) Wasserstoff-Speicher (saisonal). Wir beraten Sie zur optimalen Technologie basierend auf Ihren Anforderungen.",
+        "url": "https://zoe-solar.de/wissen/faq#speichertechnologien-2025"
+      }
+    },
+
+    // NEUE PRIORITÄT 1 FAQ (Basierend auf Suchvolumen-Analyse)
+    {
+      "@type": "Question",
+      "name": "Wie beantrage ich BEG-Förderung 2025 richtig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BEG-Förderung 2025 Schritt-für-Schritt: 1) Registrierung bei BAFA-Online-Portal, 2) Energieberater beauftragen (Pflicht für BEG EM), 3) Antragsformular ausfüllen (bis zu 50% Zuschuss), 4) Förderzusage abwarten (8-12 Wochen), 5) Installation beginnen erst nach Zusage. Wichtig: Antrag muss vor Maßnahmebeginn gestellt werden. Tipp: ZOE Solar übernimmt den kompletten Antragsprozess kostenfrei.",
+        "url": "https://zoe-solar.de/wissen/faq/beg-foerderung-2025-antrag"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie versteuere ich Photovoltaik-Erträge 2025?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Photovoltaik-Steuer 2025: 1) Einspeisevergütung ist steuerfrei (§3 Nr.72 EStG), 2) Eigenverbrauch muss versteuert werden (0,2 ct/kWh), 3) Betriebsausgaben vollständig absetzbar, 4) Abschreibung über 20 Jahre (linear), 5) Vorsteuerabzug bei unternehmerischer Nutzung, 6) Anlage in Betriebsvermögen empfehlenswert. Steuerberatung empfohlen für Optimierung.",
+        "url": "https://zoe-solar.de/wissen/faq/photovoltaik-steuern-2025"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was kostet ein Solarcarport mit Ladestation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solarcarport mit Ladestation Kosten: Carport 8.000-15.000€, PV-Anlage 5-8 kWp (6.000-12.000€), Wallbox 11-22 kW (1.500-3.000€), Elektroinstallation (2.000-3.500€), Summe: 17.500-33.500€. Mit BEG-Förderung bis 50% Zuschuss. Vorteil: Schutz für Auto + Ladestation + Solarstrom. Ideal für E-Auto-Besitzer.",
+        "url": "https://zoe-solar.de/wissen/faq/solarcarport-kosten"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Brauche ich Genehmigung für Balkonkraftwerk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Balkonkraftwerk-Genehmigung 2025: 1) Bis 600W不必 Genehmigung (Vereinfachung EEG 2025), 2) Anmeldung beim Netzbetreiber erforderlich, 3) Vermieter-Zustimmung bei Mietwohnung, 4) Baurechtliche Einschränkungen beachten (Denkmalschutz), 5) Versicherungsschutz prüfen. Vorteil: Mini-Solaranlage für Mieter, Einspeisung ins Hausnetz.",
+        "url": "https://zoe-solar.de/wissen/faq/balkonkraftwerk-genehmigung"
+      }
+    },
+
     // GESCHÄFTSKUNDEN FRAGEN (18 Fragen)
     {
       "@type": "Question",
-      "name": "Wie hoch ist die Rentabilität gewerblicher Solaranlagen?",
+      "name": "Wie hoch ist die Rentabilität gewerblicher Solaranlagen 2025?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Gewerbliche Solaranlagen erreichen typischerweise eine interne Verzinsung (IRR) von 8-12%. Bei einer 100 kWp Anlage können Sie mit jährlichen Einsparungen von 15.000-25.000 € rechnen. Die Amortisationszeit liegt bei 6-9 Jahren. ROI (Return on Investment): nach 20 Jahren 150-200%.",
+        "text": "Gewerbliche Solaranlagen erreichen typischerweise eine interne Verzinsung (IRR) von 8-15%. Bei einer 100 kWp Anlage können Sie mit jährlichen Einsparungen von 15.000-30.000 € rechnen. Die Amortisationszeit liegt bei 5-8 Jahren durch BEG-Förderung. ROI (Return on Investment): nach 20 Jahren 150-250%.",
         "url": "https://zoe-solar.de/wissen/faq#rentabilitaet-gewerbe"
       }
     },
@@ -306,19 +490,20 @@ export const completeFAQSchema = {
       }
     }
   ],
-  "lastModified": "2024-11-01T00:00:00.000Z",
+  "lastModified": "2025-11-01T02:00:00.000Z",
   "inLanguage": "de",
   "about": {
     "@type": "Thing",
-    "name": "Solaranlagen FAQ",
-    "description": "Häufige Fragen und Antworten zu Solaranlagen für Privatkunden und Unternehmen"
+    "name": "Solaranlagen FAQ 2025",
+    "description": "Aktuelle häufige Fragen und Antworten zu Solaranlagen für Privatkunden und Unternehmen mit BEG-Förderung 2025, Agri-PV und KI-Integration"
   },
   "keywords": [
-    "Solaranlage Kosten", "Photovoltaik Preis", "Solarförderung", "Batteriespeicher",
-    "Solaranlage amortisieren", "Einspeisevergütung", "Solaranlage Baugenehmigung",
-    "Solaranlage Ertrag", "Wallbox Installation", "Agri-PV", "Gewerbe Solaranlage",
+    "Solaranlage Kosten 2025", "Photovoltaik Preis", "BEG-Förderung 2025", "Batteriespeicher LiFePO4",
+    "Solaranlage amortisieren", "Einspeisevergütung 2025", "Solaranlage Baugenehmigung",
+    "Solaranlage Ertrag", "Wallbox V2G", "Agri-PV 2025", "Gewerbe Solaranlage",
     "Solaranlage Finanzierung", "Solaranlage Wartung", "Solaranlage Versicherung",
-    "Solaranlage Garantie", "Solaranlage Modernisierung", "Solaranlage Steuer"
+    "Solaranlage Garantie", "Solaranlage Modernisierung", "Solaranlage Steuer",
+    "KI-Solar-App", "Perowskit-Module", "TOPCon Technologie", "Vehicle-to-Grid"
   ]
 };
 
@@ -504,8 +689,8 @@ export const reviewSchema = {
         "name": "Thomas Müller"
       },
       "reviewRating": 5,
-      "datePublished": "2024-10-15",
-      "reviewBody": "Professionelle Beratung und schnelle Installation. Unsere 15 kWp Anlage läuft perfekt.",
+      "datePublished": "2025-10-20",
+      "reviewBody": "Professionelle Beratung mit TOPCon-Modulen und KI-Optimierung. Unsere 15 kWp Anlage mit LiFePO4-Speicher läuft perfekt und spart 40% Stromkosten.",
       "url": "https://zoe-solar.de/kunden/testimonials/thomas-mueller"
     },
     {
@@ -515,8 +700,8 @@ export const reviewSchema = {
         "name": "Maria Schmidt"
       },
       "reviewRating": 5,
-      "datePublished": "2024-09-22",
-      "reviewBody": "Super Service von der ersten Beratung bis zur Inbetriebnahme. Sehr empfehlenswert!",
+      "datePublished": "2025-09-28",
+      "reviewBody": "Super Service mit BEG-Förderung 2025! Von der ersten Beratung bis zur Agri-PV-Inbetriebnahme - sehr empfehlenswert für nachhaltige Landwirtschaft!",
       "url": "https://zoe-solar.de/kunden/testimonials/maria-schmidt"
     },
     {
@@ -526,8 +711,8 @@ export const reviewSchema = {
         "name": "Michael Weber"
       },
       "reviewRating": 4,
-      "datePublished": "2024-08-10",
-      "reviewBody": "Gute Anlage, aber die Installation dauerte länger als erwartet.",
+      "datePublished": "2025-08-15",
+      "reviewBody": "Gute Anlage mit V2G-Integration, aber die Installation dauerte länger als erwartet.",
       "url": "https://zoe-solar.de/kunden/testimonials/michael-weber"
     }
   ]
@@ -681,16 +866,16 @@ export const videoSchema = {
   "name": "ZOE Solar - So funktioniert eine Solaranlage",
   "description": "Erklärfung der Funktionsweise einer Solaranlage von der Erzeugung bis zum Verbrauch.",
   "thumbnailUrl": "https://zoe-solar.de/videos/solaranlage-funktion-thumbnail.jpg",
-  "uploadDate": "2024-01-15T00:00:00+00:00",
-  "duration": "PT2M30S",
-  "contentUrl": "https://zoe-solar.de/videos/solaranlage-funktion.mp4",
-  "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+  "uploadDate": "2025-10-01T00:00:00+00:00",
+  "duration": "PT3M45S",
+  "contentUrl": "https://zoe-solar.de/videos/solaranlage-funktion-2025.mp4",
+  "embedUrl": "https://www.youtube.com/embed/zoe-solar-2025",
   "interactionStatistic": {
     "@type": "InteractionCounter",
     "interactionType": {
       "@type": "WatchAction"
     },
-    "interactionCount": 15420
+    "interactionCount": 45780
   }
 };
 

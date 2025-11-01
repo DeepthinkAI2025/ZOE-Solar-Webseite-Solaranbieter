@@ -330,27 +330,27 @@ router.get('/search', (req, res) => {
   // Suche in Artikeln
   if (!type || type === 'articles') {
     results.articles = testArticles.filter(article =>
-      article.title.toLowerCase().includes(searchQuery) ||
-      article.content.toLowerCase().includes(searchQuery) ||
-      article.category.toLowerCase().includes(searchQuery)
+      (article.title && article.title.toLowerCase().includes(searchQuery)) ||
+      (article.content && article.content.toLowerCase().includes(searchQuery)) ||
+      (article.category && article.category.toLowerCase().includes(searchQuery))
     ).slice(0, parseInt(limit));
   }
 
   // Suche in FAQ
   if (!type || type === 'faq') {
     results.faq = testFAQ.filter(item =>
-      item.question.toLowerCase().includes(searchQuery) ||
-      item.answer.toLowerCase().includes(searchQuery) ||
-      item.category.toLowerCase().includes(searchQuery)
+      (item.question && item.question.toLowerCase().includes(searchQuery)) ||
+      (item.answer && item.answer.toLowerCase().includes(searchQuery)) ||
+      (item.category && item.category.toLowerCase().includes(searchQuery))
     ).slice(0, parseInt(limit));
   }
 
   // Suche in Projekten
   if (!type || type === 'projects') {
     results.projects = testProjects.filter(project =>
-      project.title.toLowerCase().includes(searchQuery) ||
-      project.type.toLowerCase().includes(searchQuery) ||
-      project.location.toLowerCase().includes(searchQuery)
+      (project.title && project.title.toLowerCase().includes(searchQuery)) ||
+      (project.type && project.type.toLowerCase().includes(searchQuery)) ||
+      (project.location && project.location.toLowerCase().includes(searchQuery))
     ).slice(0, parseInt(limit));
   }
 
