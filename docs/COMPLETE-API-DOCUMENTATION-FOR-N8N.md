@@ -572,6 +572,326 @@ Bei Fragen zur API-Integration:
 
 ---
 
+## 👥 Kunden API (`/api/admin/customers`)
+
+### Alle Kunden abrufen
+```bash
+GET /api/admin/customers
+```
+**Query Parameter:**
+- `status` - Filter nach Status (active, lead, etc.)
+- `customerType` - Filter nach Kundentyp (private, commercial)
+- `industry` - Filter nach Branche
+- `limit` - Anzahl pro Seite (default: 50)
+- `offset` - Seiten-Offset
+
+**Response:**
+```json
+{
+  "customers": [
+    {
+      "id": "1",
+      "name": "Max Mustermann",
+      "email": "max@example.com",
+      "customerType": "commercial",
+      "status": "active",
+      "totalRevenue": 125000,
+      "projects": ["proj1", "proj2"],
+      "offers": []
+    }
+  ],
+  "total": 3,
+  "hasMore": false
+}
+```
+
+### Neuen Kunden erstellen
+```bash
+POST /api/admin/customers
+```
+**Required Fields:** `name`, `email`
+**Optional:** `companyName`, `customerType`, `industry`, `phone`
+
+### Kunden aktualisieren
+```bash
+PUT /api/admin/customers/1
+```
+
+### Kunden löschen
+```bash
+DELETE /api/admin/customers/1
+```
+
+### Kundenstatistiken
+```bash
+GET /api/admin/customers/stats
+```
+
+---
+
+## 🔧 Konfiguration API (`/api/admin/config`)
+
+### Alle Konfigurationen abrufen
+```bash
+GET /api/admin/config
+```
+
+**Response:**
+```json
+{
+  "general": {
+    "siteName": "ZOE Solar",
+    "siteDescription": "Ihr Experte für Solaranlagen",
+    "contactEmail": "info@zoe-solar.de"
+  },
+  "seo": {
+    "metaTitle": "ZOE Solar - Experte für Solaranlagen",
+    "metaDescription": "Professionelle Solaranlagen für Privat- und Geschäftskunden."
+  },
+  "business": {
+    "taxRate": 0.19,
+    "currencies": ["EUR"],
+    "defaultCurrency": "EUR"
+  },
+  "features": {
+    "enableBlog": true,
+    "enableShop": true,
+    "enableContactForm": true
+  }
+}
+```
+
+### Konfiguration aktualisieren
+```bash
+PUT /api/admin/config/general
+```
+
+### Feature-Flags aktualisieren
+```bash
+PUT /api/admin/config/features
+```
+
+---
+
+## 📊 Dashboard Analytics API (`/api/admin/dashboard`)
+
+### Analytics-Daten abrufen
+```bash
+GET /api/admin/dashboard/analytics
+```
+
+**Response:**
+```json
+{
+  "customers": {
+    "total": 150,
+    "active": 120,
+    "newThisMonth": 15,
+    "byType": {
+      "private": 90,
+      "commercial": 60
+    }
+  },
+  "projects": {
+    "total": 45,
+    "completed": 38,
+    "inProgress": 5,
+    "planning": 2,
+    "totalValue": 2500000
+  },
+  "revenue": {
+    "thisMonth": 125000,
+    "lastMonth": 98000,
+    "thisYear": 890000,
+    "averageOrderValue": 8500
+  }
+}
+```
+
+### Lead-Management Statistiken
+```bash
+GET /api/admin/dashboard/leads
+```
+
+---
+
+## 📅 Blog-Scheduling API (`/api/admin/scheduling`)
+
+### Geplante Artikel abrufen
+```bash
+GET /api/admin/scheduling
+```
+
+**Response:**
+```json
+{
+  "scheduledArticles": [
+    {
+      "id": "1",
+      "title": "Solar-Trends 2025",
+      "scheduledPublishDate": "2024-12-01T09:00:00Z",
+      "status": "scheduled",
+      "autoPublish": true,
+      "category": "trends"
+    }
+  ],
+  "total": 3
+}
+```
+
+### Artikel planen
+```bash
+POST /api/admin/scheduling
+```
+
+### Artikel sofort veröffentlichen
+```bash
+POST /api/admin/scheduling/1/publish
+```
+
+### Automatische Veröffentlichung prüfen
+```bash
+POST /api/admin/scheduling/check-publish
+```
+
+---
+
+## 📚 Wissensdatenbank API (`/api/admin/knowledge`)
+
+### Alle Dokumente abrufen
+```bash
+GET /api/admin/knowledge
+```
+
+### Dokument hochladen
+```bash
+POST /api/admin/knowledge/upload
+```
+**Content-Type:** `multipart/form-data`
+- `document` - Datei (PDF, DOC, etc.)
+- `title` - Dokumenttitel
+- `description` - Beschreibung
+- `category` - Kategorie
+- `tags` - Tags (komma-getrennt)
+
+### Dokument aktualisieren
+```bash
+PUT /api/admin/knowledge/1
+```
+
+### Dokument löschen
+```bash
+DELETE /api/admin/knowledge/1
+```
+
+### Wissensdatenbank durchsuchen
+```bash
+GET /api/admin/knowledge/search?q=solar
+```
+
+---
+
+## 🔐 Authentication API (`/api/admin/auth`)
+
+### Login
+```bash
+POST /api/admin/auth/login
+```
+**Request Body:**
+```json
+{
+  "email": "admin@zoe-solar.de",
+  "password": "password123"
+}
+```
+
+**Response:**
+```json
+{
+  "success": true,
+  "token": "jwt-token-here",
+  "user": {
+    "id": "1",
+    "email": "admin@zoe-solar.de",
+    "role": "admin",
+    "name": "Administrator"
+  }
+}
+```
+
+### Logout
+```bash
+POST /api/admin/auth/logout
+```
+
+### Token refresh
+```bash
+POST /api/admin/auth/refresh
+```
+
+---
+
+## 🖼️ Bild-Upload API (`/api/admin/images`)
+
+### Bild hochladen
+```bash
+POST /api/admin/images/upload
+```
+**Content-Type:** `multipart/form-data`
+- `image` - Bilddatei
+- `category` - Kategorie (products, projects, etc.)
+- `altText` - Alt-Text für Barrierefreiheit
+
+### Alle Bilder abrufen
+```bash
+GET /api/admin/images
+```
+
+### Bild löschen
+```bash
+DELETE /api/admin/images/1
+```
+
+---
+
+## 🚨 Wichtige Hinweise zur Nutzung
+
+### Authentifizierung bei neuen APIs:
+Die neuen Admin-APIs verwenden JWT-Authentication:
+1. Zuerst Login: `POST /api/admin/auth/login`
+2. Token im Header verwenden: `Authorization: Bearer jwt-token-here`
+3. Oder alternativ API-Key: `X-API-Key: test-key-123`
+
+### API-Status Übersicht:
+✅ **Working Core APIs:**
+- Blog Articles (`/api/articles`)
+- FAQ (`/api/faq`)
+- Projects (`/api/projects`)
+- Products (`/api/products`)
+- Manufacturers (`/api/manufacturers`)
+- Search (`/api/search`)
+
+✅ **New Working APIs:**
+- Configuration (`/api/admin/config`)
+- Customer Management (`/api/admin/customers`)
+- Scheduling (`/api/admin/scheduling`)
+
+🔧 **Advanced APIs (require service setup):**
+- Dashboard Analytics (`/api/admin/dashboard`)
+- Knowledge Base (`/api/admin/knowledge`)
+- Image Upload (`/api/admin/images`)
+- Authentication (`/api/admin/auth`)
+
+---
+
 **🎉 Ready for n8n Integration!**
 
-Alle 35+ API-Endpunkte sind getestet und bereit für die n8n-Integration. Beginne mit einfachen READ-Operationen und implementiere dann schrittweise die CRUD-Operationen für deine automatisierten Workflows.
+**50+ API-Endpunkte** sind implementiert und bereit für die n8n-Integration:
+
+**Für sofortige Nutzung:** Core APIs (Articles, FAQ, Projects, Products) funktionieren sofort mit API-Key `test-key-123`.
+
+**Für erweiterte Funktionen:** Configuration, Customer Management, und Scheduling APIs sind ebenfalls sofort nutzbar.
+
+**Für fortgeschrittene Features:** Dashboard Analytics, Knowledge Base, und Image Upload erfordern zusätzliche Service-Konfigurationen.
+
+Beginne mit den Core READ-Operationen und implementiere dann schrittweise die CRUD-Operationen für deine automatisierten Workflows.
