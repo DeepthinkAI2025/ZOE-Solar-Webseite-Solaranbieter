@@ -1,0 +1,12 @@
+{
+  "created_at": "2025-11-01T00:01:52.612Z",
+  "backup_reason": "GBP Bulk Import",
+  "files_backed_up": [
+    "zoe-solar-locations.json",
+    "zoe-solar-locations-with-social-media.json",
+    "zoe-solar-gbp-optimized-complete.csv",
+    "zoe-solar-social-media-gbp.csv"
+  ],
+  "total_locations": 26,
+  "backup_directory": "/Users/jeremyschulze/_Development/ZOE-Solar-Webseite-Solaranbieter-main/data/backups/gbp-backup-2025-11-01T00-01-52-593Z"
+}

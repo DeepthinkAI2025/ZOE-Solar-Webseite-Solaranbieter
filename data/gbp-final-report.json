@@ -1,0 +1,237 @@
+{
+  "timestamp": "2025-10-31T23:54:34.893Z",
+  "version": "FINAL",
+  "method": "Google My Business Business Information API",
+  "oauth2Token": "ya29.a0ATi6K2sOncDiC...",
+  "businessAccountId": "accounts/109514273851774054806",
+  "total_locations": 22,
+  "successful": 0,
+  "failed": 22,
+  "results": {
+    "successful": [],
+    "failed": [
+      {
+        "name": "ZOE Solar Berlin",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Hamburg",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar München",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Köln",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Frankfurt am Main",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Stuttgart",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Düsseldorf",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Dortmund",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Essen",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Leipzig",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Bremen",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Dresden",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Hannover",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Nürnberg",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Wien",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Graz",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Linz",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Salzburg",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Innsbruck",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Zürich",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Basel",
+        "error": "Kein Account Zugang"
+      },
+      {
+        "name": "ZOE Solar Bern",
+        "error": "Kein Account Zugang"
+      }
+    ]
+  },
+  "locations": [
+    {
+      "name": "ZOE Solar Berlin",
+      "address": "Friedrichstraße 123, 10117 Berlin, Germany",
+      "phone": "+49 30 12345678",
+      "website": "https://zoe-solar.de/berlin"
+    },
+    {
+      "name": "ZOE Solar Hamburg",
+      "address": "Rathausstraße 1, 20095 Hamburg, Germany",
+      "phone": "+49 40 12345678",
+      "website": "https://zoe-solar.de/hamburg"
+    },
+    {
+      "name": "ZOE Solar München",
+      "address": "Marienplatz 1, 80331 München, Germany",
+      "phone": "+49 89 12345678",
+      "website": "https://zoe-solar.de/muenchen"
+    },
+    {
+      "name": "ZOE Solar Köln",
+      "address": "Domkloster 4, 50667 Köln, Germany",
+      "phone": "+49 221 12345678",
+      "website": "https://zoe-solar.de/koeln"
+    },
+    {
+      "name": "ZOE Solar Frankfurt am Main",
+      "address": "Römerberg 1, 60311 Frankfurt am Main, Germany",
+      "phone": "+49 69 12345678",
+      "website": "https://zoe-solar.de/frankfurt"
+    },
+    {
+      "name": "ZOE Solar Stuttgart",
+      "address": "Königstraße 1, 70173 Stuttgart, Germany",
+      "phone": "+49 711 12345678",
+      "website": "https://zoe-solar.de/stuttgart"
+    },
+    {
+      "name": "ZOE Solar Düsseldorf",
+      "address": "Königsallee 1, 40212 Düsseldorf, Germany",
+      "phone": "+49 211 12345678",
+      "website": "https://zoe-solar.de/duesseldorf"
+    },
+    {
+      "name": "ZOE Solar Dortmund",
+      "address": "Westenhellweg 1, 44137 Dortmund, Germany",
+      "phone": "+49 231 12345678",
+      "website": "https://zoe-solar.de/dortmund"
+    },
+    {
+      "name": "ZOE Solar Essen",
+      "address": "Kettwiger Straße 1, 45127 Essen, Germany",
+      "phone": "+49 201 12345678",
+      "website": "https://zoe-solar.de/essen"
+    },
+    {
+      "name": "ZOE Solar Leipzig",
+      "address": "Markt 1, 04109 Leipzig, Germany",
+      "phone": "+49 341 12345678",
+      "website": "https://zoe-solar.de/leipzig"
+    },
+    {
+      "name": "ZOE Solar Bremen",
+      "address": "Am Markt 1, 28195 Bremen, Germany",
+      "phone": "+49 421 12345678",
+      "website": "https://zoe-solar.de/bremen"
+    },
+    {
+      "name": "ZOE Solar Dresden",
+      "address": "Neumarkt 1, 01067 Dresden, Germany",
+      "phone": "+49 351 12345678",
+      "website": "https://zoe-solar.de/dresden"
+    },
+    {
+      "name": "ZOE Solar Hannover",
+      "address": "Ernst-August-Platz 1, 30159 Hannover, Germany",
+      "phone": "+49 511 12345678",
+      "website": "https://zoe-solar.de/hannover"
+    },
+    {
+      "name": "ZOE Solar Nürnberg",
+      "address": "Hauptmarkt 1, 90403 Nürnberg, Germany",
+      "phone": "+49 911 12345678",
+      "website": "https://zoe-solar.de/nuernberg"
+    },
+    {
+      "name": "ZOE Solar Wien",
+      "address": "Stephansplatz 1, 1010 Wien, Austria",
+      "phone": "+43 1 12345678",
+      "website": "https://zoe-solar.de/wien"
+    },
+    {
+      "name": "ZOE Solar Graz",
+      "address": "Hauptplatz 1, 8010 Graz, Austria",
+      "phone": "+43 316 12345678",
+      "website": "https://zoe-solar.de/graz"
+    },
+    {
+      "name": "ZOE Solar Linz",
+      "address": "Hauptplatz 1, 4020 Linz, Austria",
+      "phone": "+43 732 12345678",
+      "website": "https://zoe-solar.de/linz"
+    },
+    {
+      "name": "ZOE Solar Salzburg",
+      "address": "Residenzplatz 1, 5020 Salzburg, Austria",
+      "phone": "+43 662 12345678",
+      "website": "https://zoe-solar.de/salzburg"
+    },
+    {
+      "name": "ZOE Solar Innsbruck",
+      "address": "Maria-Theresien-Straße 1, 6020 Innsbruck, Austria",
+      "phone": "+43 512 12345678",
+      "website": "https://zoe-solar.de/innsbruck"
+    },
+    {
+      "name": "ZOE Solar Zürich",
+      "address": "Bahnhofstrasse 1, 8001 Zürich, Switzerland",
+      "phone": "+41 44 12345678",
+      "website": "https://zoe-solar.de/zuerich"
+    },
+    {
+      "name": "ZOE Solar Basel",
+      "address": "Marktplatz 1, 4001 Basel, Switzerland",
+      "phone": "+41 61 12345678",
+      "website": "https://zoe-solar.de/basel"
+    },
+    {
+      "name": "ZOE Solar Bern",
+      "address": "Bundesplatz 1, 3003 Bern, Switzerland",
+      "phone": "+41 31 12345678",
+      "website": "https://zoe-solar.de/bern"
+    }
+  ]
+}

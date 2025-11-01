@@ -16,6 +16,12 @@ import { fetchAhrefsData } from './services/ahrefs.js';
 import { fetchBusinessProfile } from './services/businessProfile.js';
 import { fetchMonitoringSummary } from './services/monitoringFeed.js';
 
+// Content Management Routes
+import contentRoutes from './routes/contentRoutes.js';
+
+// Test Routes for n8n Integration
+import testRoutes from './routes/testRoutes.js';
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 dotenv.config();
 
@@ -393,6 +399,12 @@ function buildDashboardPayload(results, tasks) {
 app.get('/health', (_req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
+
+// Content Management API Routes
+app.use('/api/content', contentRoutes);
+
+// Test API Routes for n8n Integration
+app.use('/api', testRoutes);
 
 
 app.get('/api/admin/api-keys', (_req, res) => {

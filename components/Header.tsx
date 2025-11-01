@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 // FIX: Changed import to ../types to resolve circular dependency with App.tsx
 import { Page } from '../types';

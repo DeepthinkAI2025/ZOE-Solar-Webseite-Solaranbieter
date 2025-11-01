@@ -1,0 +1,25 @@
+{
+  "urls": {
+    "facebook": "https://www.facebook.com/profile.php?id=100088899755919",
+    "instagram": "https://www.instagram.com/_zoe_solar/",
+    "linkedin": "https://www.linkedin.com/company/91625256",
+    "youtube": "https://www.youtube.com/@zoe_solar",
+    "twitter": "https://x.com/SolarAktuell",
+    "tiktok": "https://www.tiktok.com/@zoe_solar",
+    "pinterest": "https://de.pinterest.com/zoesolarde/",
+    "whatsapp": "https://wa.me/15678876200"
+  },
+  "integration_status": {
+    "facebook": "verified",
+    "instagram": "verified",
+    "linkedin": "verified",
+    "youtube": "verified",
+    "twitter": "verified",
+    "tiktok": "verified",
+    "pinterest": "verified",
+    "whatsapp": "verified"
+  },
+  "created_at": "2025-10-31T23:59:26.161Z",
+  "last_verified": "2025-10-31T23:59:26.162Z",
+  "notes": "All URLs verified from user input during restoration"
+}

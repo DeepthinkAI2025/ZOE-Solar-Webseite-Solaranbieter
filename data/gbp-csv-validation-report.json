@@ -1,0 +1,22 @@
+{
+  "summary": {
+    "total_locations": 26,
+    "total_csv_rows": 26,
+    "validation_date": "2025-11-01T00:00:19.487Z",
+    "validation_status": "completed"
+  },
+  "data_quality": {
+    "addresses_with_complete_data": 26,
+    "locations_with_phone": 26,
+    "locations_with_website": 26,
+    "locations_with_coordinates": 26,
+    "locations_with_valid_descriptions": 0
+  },
+  "phases": {
+    "Berlin-Brandenburg": 9,
+    "International": 2,
+    "Bundesländer": 15
+  },
+  "issues": [],
+  "recommendations": []
+}

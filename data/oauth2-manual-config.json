@@ -1,0 +1,21 @@
+{
+  "oauth2_config": {
+    "web": {
+      "client_id": "764086051850-6qr4p6gpi6hn506pt8ejuq83di341hur.apps.googleusercontent.com",
+      "client_secret": "d-FL96QWqRn4xmsnUoym8dB1",
+      "redirect_uris": [
+        "http://localhost:8080"
+      ],
+      "auth_uri": "https://accounts.google.com/o/oauth2/v2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token"
+    }
+  },
+  "scopes": [
+    "https://www.googleapis.com/auth/business.manage",
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/userinfo.profile"
+  ],
+  "auth_url": "https://accounts.google.com/o/oauth2/v2/auth?client_id=764086051850-6qr4p6gpi6hn506pt8ejuq83di341hur.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8080&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fbusiness.manage+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&access_type=offline&prompt=consent",
+  "created_at": "2025-10-31T23:51:03.647Z",
+  "last_updated": "2025-10-31T23:51:03.647Z"
+}

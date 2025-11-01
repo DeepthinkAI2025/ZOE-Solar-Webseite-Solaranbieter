@@ -457,15 +457,4 @@ export const LiquidButton: React.FC<LiquidButtonProps> = ({
   );
 };
 
-// ===== COMPONENT EXPORTS =====
-export {
-  GlassCard,
-  ParticleField,
-  MorphingButton,
-  FloatingElement,
-  ParallaxContainer,
-  GradientText,
-  GlitchEffect,
-  HolographicCard,
-  LiquidButton
-};
+// All components are already exported individually above

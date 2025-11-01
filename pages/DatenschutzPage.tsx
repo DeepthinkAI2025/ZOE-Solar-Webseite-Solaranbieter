@@ -1,12 +1,23 @@
 import React from 'react';
+import Breadcrumb from '../components/Breadcrumb';
 
 const DatenschutzHero: React.FC = () => {
     return (
-        <section className="legal-hero-bg">
-            <div className="container mx-auto px-6 text-center">
-                <h1 className="text-5xl md:text-6xl font-extrabold text-white tracking-tighter">
+        <section className="bg-gradient-to-r from-slate-900 to-slate-800 py-16 md:py-24">
+            <div className="container mx-auto px-6">
+                <Breadcrumb
+                    items={[
+                        { label: 'Startseite', page: 'home' },
+                        { label: 'Datenschutz', isActive: true }
+                    ]}
+                    variant="hero"
+                />
+                <h1 className="text-4xl md:text-5xl font-bold text-white mt-6">
                     Datenschutzerklärung
                 </h1>
+                <p className="text-slate-300 mt-4 text-lg max-w-2xl">
+                    Transparenz und Datenschutz sind uns wichtig. Erfahren Sie, wie wir Ihre Daten schützen.
+                </p>
             </div>
         </section>
     );
