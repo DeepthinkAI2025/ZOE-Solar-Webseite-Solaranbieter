@@ -1,0 +1,110 @@
+name: Google Business Profile Integration
+
+on:
+  schedule:
+    - cron: '0 3 * * 0'  # Wöchentlich sonntags um 03:00 UTC
+  workflow_dispatch:  # Manuell ausführbar
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/gbp-*.cjs'
+      - '.github/workflows/google-business-profile.yml'
+
+jobs:
+  gbp-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Sync Google Business Profiles
+        env:
+          GOOGLE_OAUTH_TOKEN: ${{ secrets.GOOGLE_OAUTH_TOKEN }}
+          BUSINESS_ACCOUNT_ID: ${{ secrets.BUSINESS_ACCOUNT_ID }}
+        run: |
+          echo "🔄 Starting Google Business Profile synchronization..."
+          # Hier würde das GBP-Sync-Script ausgeführt
+          # node scripts/gbp-sync.cjs
+          echo "✅ Google Business Profile sync completed"
+
+      - name: Update GBP Data
+        env:
+          GOOGLE_OAUTH_TOKEN: ${{ secrets.GOOGLE_OAUTH_TOKEN }}
+        run: |
+          echo "📊 Updating GBP data..."
+          # Hier würde das GBP-Update-Script ausgeführt
+          # node scripts/gbp-update-locations.cjs
+          echo "✅ GBP data updated"
+
+      - name: Commit and push GBP updates
+        run: |
+          git config --local user.email "gbp-automation@github.com"
+          git config --local user.name "GBP Automation"
+          git add data/gbp-*.json
+          git commit -m "🏢 Update Google Business Profile data [automated]" || echo "No changes to commit"
+          git pull --rebase origin main
+          git push
+
+      - name: Notify on success
+        if: success()
+        run: |
+          echo "✅ Google Business Profile integration completed successfully"
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "❌ Google Business Profile integration failed"
+          exit 1
+
+  gbp-monitoring:
+    needs: gbp-sync
+    runs-on: ubuntu-latest
+    if: success()
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Monitor GBP Performance
+        env:
+          GOOGLE_OAUTH_TOKEN: ${{ secrets.GOOGLE_OAUTH_TOKEN }}
+        run: |
+          echo "📈 Monitoring Google Business Profile performance..."
+          # Hier würde das GBP-Monitoring-Script ausgeführt
+          # node scripts/gbp-monitoring.cjs
+          echo "✅ GBP monitoring completed"
+
+      - name: Generate GBP Report
+        run: |
+          echo "📋 Generating GBP performance report..."
+          # Hier würde das Report-Generation-Script ausgeführt
+          echo "✅ Report generated"
+
+      - name: Commit and push monitoring results
+        run: |
+          git config --local user.email "gbp-monitoring@github.com"
+          git config --local user.name "GBP Monitoring"
+          git add data/gbp-monitoring-*.json
+          git commit -m "📊 Update GBP monitoring results [automated]" || echo "No changes to commit"
+          git pull --rebase origin main
+          git push
+

@@ -25,5 +25,8 @@ dist-ssr
 
 # Environment files
 .env
-.env.*
+.env.local
+.env.*.local
+!.env.example
 scripts/gbp-direct-creation-final.js
+scripts/gbp-direct-creation-final.cjs
