@@ -43,9 +43,25 @@ jobs:
       - name: Install dependencies
         run: npm ci --ignore-scripts
 
+      - name: Validate secrets
+        run: |
+          echo "🔍 Validating required secrets..."
+          if [[ -z "$GOOGLE_OAUTH_ACCESS_TOKEN" ]]; then
+            echo "❌ GOOGLE_OAUTH_ACCESS_TOKEN secret is not set"
+            exit 1
+          fi
+          if [[ -z "$BUSINESS_ACCOUNT_ID" ]]; then
+            echo "❌ BUSINESS_ACCOUNT_ID secret is not set"
+            exit 1
+          fi
+          echo "✅ All required secrets are available"
+        env:
+          GOOGLE_OAUTH_ACCESS_TOKEN: ${{ secrets.GOOGLE_OAUTH_ACCESS_TOKEN }}
+          BUSINESS_ACCOUNT_ID: ${{ secrets.BUSINESS_ACCOUNT_ID }}
+
       - name: Sync Google Business Profiles
         env:
-          GOOGLE_OAUTH_TOKEN: ${{ secrets.GOOGLE_OAUTH_TOKEN }}
+          GOOGLE_OAUTH_ACCESS_TOKEN: ${{ secrets.GOOGLE_OAUTH_ACCESS_TOKEN }}
           BUSINESS_ACCOUNT_ID: ${{ secrets.BUSINESS_ACCOUNT_ID }}
         run: |
           echo "🔄 Starting Google Business Profile synchronization..."
@@ -55,7 +71,8 @@ jobs:
 
       - name: Update GBP Data
         env:
-          GOOGLE_OAUTH_TOKEN: ${{ secrets.GOOGLE_OAUTH_TOKEN }}
+          GOOGLE_OAUTH_ACCESS_TOKEN: ${{ secrets.GOOGLE_OAUTH_ACCESS_TOKEN }}
+          BUSINESS_ACCOUNT_ID: ${{ secrets.BUSINESS_ACCOUNT_ID }}
         run: |
           echo "📊 Updating GBP data..."
           # Hier würde das GBP-Update-Script ausgeführt
@@ -119,9 +136,26 @@ jobs:
       - name: Install dependencies
         run: npm ci --ignore-scripts
 
+      - name: Validate secrets for monitoring
+        run: |
+          echo "🔍 Validating required secrets for monitoring..."
+          if [[ -z "$GOOGLE_OAUTH_ACCESS_TOKEN" ]]; then
+            echo "❌ GOOGLE_OAUTH_ACCESS_TOKEN secret is not set"
+            exit 1
+          fi
+          if [[ -z "$BUSINESS_ACCOUNT_ID" ]]; then
+            echo "❌ BUSINESS_ACCOUNT_ID secret is not set"
+            exit 1
+          fi
+          echo "✅ All required secrets are available for monitoring"
+        env:
+          GOOGLE_OAUTH_ACCESS_TOKEN: ${{ secrets.GOOGLE_OAUTH_ACCESS_TOKEN }}
+          BUSINESS_ACCOUNT_ID: ${{ secrets.BUSINESS_ACCOUNT_ID }}
+
       - name: Monitor GBP Performance
         env:
-          GOOGLE_OAUTH_TOKEN: ${{ secrets.GOOGLE_OAUTH_TOKEN }}
+          GOOGLE_OAUTH_ACCESS_TOKEN: ${{ secrets.GOOGLE_OAUTH_ACCESS_TOKEN }}
+          BUSINESS_ACCOUNT_ID: ${{ secrets.BUSINESS_ACCOUNT_ID }}
         run: |
           echo "📈 Monitoring Google Business Profile performance..."
           # Hier würde das GBP-Monitoring-Script ausgeführt
