@@ -76,15 +76,24 @@ export default defineConfig(({ mode, command }) => {
       build: {
         target: 'esnext',
         minify: 'terser',
+        minifyWhitespace: true,
         terserOptions: {
           compress: {
             drop_console: mode === 'production',
             drop_debugger: mode === 'production',
-            pure_funcs: mode === 'production' ? ['console.log', 'console.info', 'console.debug'] : [],
+            pure_funcs: mode === 'production' ? ['console.log', 'console.info', 'console.debug', 'console.warn'] : [],
+            drop_empty: true,
+            drop_unused: true,
+            keep_infinity: true,
           },
           mangle: {
             safari10: true,
+            properties: { regex: /^_/ }
           },
+          format: {
+            comments: false,
+            beautify: false,
+          }
         },
         rollupOptions: isSSR ? {
           input: {
@@ -215,8 +224,12 @@ export default defineConfig(({ mode, command }) => {
         sourcemap: mode === 'development',
         reportCompressedSize: false,
         cssCodeSplit: true,
-        assetsInlineLimit: 4096,
-        chunkSizeWarningLimit: 1500, // Erhöht von 500KB auf 1500KB
+        assetsInlineLimit: 8192,
+        chunkSizeWarningLimit: 2000,
+        modulePreload: {
+          polyfill: false
+        },
+        experimentalMinify: true, // Erhöht von 500KB auf 1500KB
       },
       resolve: {
         alias: {
