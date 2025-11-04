@@ -298,4 +298,204 @@ body.mobile-menu-open {
 	.hamburger-icon .line {
 		border-width: 2px;
 	}
+/* ============================================================================
+   PROFESSIONAL LOGO SLIDER ANIMATIONS
+   ============================================================================ */
+
+/* Smooth Logo Scrolling Animation */
+@keyframes logo-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Scroll Progress Animation */
+@keyframes scroll-progress {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Logo Hover Enhancement */
+.manufacturer-logo-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 1;
+}
+
+.manufacturer-logo-hover:hover {
+    transform: translateY(-4px) scale(1.05);
+    filter: brightness(1.1) contrast(1.1);
+    z-index: 2;
+}
+
+/* Logo Glow Effect */
+.manufacturer-logo-glow::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(34, 197, 94, 0.1) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.manufacturer-logo-glow:hover::after {
+    opacity: 1;
+}
+
+/* Professional Badge Animations */
+@keyframes badge-pulse {
+    0%, 100% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.02);
+    }
+}
+
+.badge-pulse {
+    animation: badge-pulse 2s infinite ease-in-out;
+}
+
+/* Enhanced Gradient Overlays */
+.gradient-overlay-left {
+    background: linear-gradient(90deg, 
+        rgba(255, 255, 255, 1) 0%, 
+        rgba(255, 255, 255, 0.9) 60%, 
+        rgba(255, 255, 255, 0) 100%);
+}
+
+.gradient-overlay-right {
+    background: linear-gradient(270deg, 
+        rgba(255, 255, 255, 1) 0%, 
+        rgba(255, 255, 255, 0.9) 60%, 
+        rgba(255, 255, 255, 0) 100%);
+}
+
+/* Professional Trust Badge Styles */
+.trust-badge {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.trust-badge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(34, 197, 94, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.trust-badge:hover::before {
+    left: 100%;
+}
+
+.trust-badge:hover {
+    transform: translateY(-2px);
+}
+
+/* Custom Animation Classes for Hero Component */
+.animate-logo-scroll {
+    animation: logo-scroll 30s linear infinite;
+}
+
+.animate-scroll-progress {
+    animation: scroll-progress 8s ease-in-out infinite;
+}
+
+.animate-partner-glow {
+    animation: badge-pulse 3s ease-in-out infinite;
+}
+
+/* Responsive Logo Slider Adjustments */
+@media (max-width: 768px) {
+    .animate-logo-scroll {
+        animation-duration: 40s; /* Slower on mobile for better readability */
+    }
+    
+    .manufacturer-logo-hover:hover {
+        transform: translateY(-2px) scale(1.02); /* Reduced hover effect on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .animate-logo-scroll {
+        animation-duration: 50s; /* Even slower on small screens */
+    }
+}
+
+/* Performance Optimizations for Logo Slider */
+.logo-slider-container {
+    contain: layout style paint;
+    will-change: transform;
+}
+
+.manufacturer-logo-hover {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform, filter;
+}
+
+/* Accessibility Enhancements */
+@media (prefers-reduced-motion: reduce) {
+    .animate-logo-scroll,
+    .animate-scroll-progress,
+    .animate-partner-glow {
+        animation: none;
+    }
+    
+    .manufacturer-logo-hover,
+    .trust-badge {
+        transition: none;
+    }
+    
+    .manufacturer-logo-hover:hover {
+        transform: none;
+        filter: none;
+    }
+}
+
+/* High Contrast Mode Adjustments */
+@media (prefers-contrast: high) {
+    .manufacturer-logo-hover {
+        border: 1px solid currentColor;
+    }
+    
+    .trust-badge {
+        border: 1px solid currentColor;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .gradient-overlay-left,
+    .gradient-overlay-right {
+        background: linear-gradient(90deg, 
+            rgba(15, 23, 42, 1) 0%, 
+            rgba(15, 23, 42, 0.9) 60%, 
+            rgba(15, 23, 42, 0) 100%);
+    }
+    
+    .trust-badge::before {
+        background: linear-gradient(90deg, transparent, rgba(34, 197, 94, 0.2), transparent);
+    }
+}
 }

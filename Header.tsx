@@ -197,7 +197,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setPage, openCommandHub, b
     <header
       ref={headerRef}
       className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-md border-b border-slate-200/80"
-      style={{ top: `${bannerHeight}px` }}
+      style={{ top: `0px` }}
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between py-4">

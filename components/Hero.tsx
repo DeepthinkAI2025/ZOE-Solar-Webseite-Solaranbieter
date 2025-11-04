@@ -421,20 +421,65 @@ const Hero: React.FC<HeroProps> = ({ onSelectHersteller, setPage, customerType, 
             </div>
         </div>
         
-        <div className="relative z-20 w-full bg-white backdrop-blur-sm py-6">
-            <p className="text-center text-xs text-gray-600 mb-6 font-semibold uppercase tracking-wider animate-hero-partners">Unsere Premium-Partner für höchste Qualität</p>
-            <div className="relative w-full overflow-hidden animate-hero-partners">
-                {/* Single row scrolling left */}
-                <div className="flex animate-infinite-scroll">
-                    {[...allLogos, ...allLogos].map((logo, index) => (
-                        <ManufacturerLogo
-                            key={`${logo.slug}-${index}`}
-                            name={logo.name}
-                            src={logo.src}
-                            slug={logo.slug}
-                            onSelect={onSelectHersteller}
-                        />
-                    ))}
+        {/* Enhanced Partners Section with Professional Slider */}
+        <div className="relative z-20 w-full bg-gradient-to-b from-white to-gray-50 py-8 border-t border-gray-200">
+            {/* Section Header */}
+            <div className="text-center mb-8">
+                <h3 className="text-sm font-bold text-gray-700 uppercase tracking-wider mb-2 animate-hero-partners">
+                    Unsere Premium-Partner
+                </h3>
+                <p className="text-xs text-gray-500 max-w-md mx-auto">
+                    Exklusive Partnerschaften mit den weltweit führenden Herstellern für maximale Qualität und Zuverlässigkeit
+                </p>
+            </div>
+
+            {/* Professional Logo Slider Container */}
+            <div className="relative">
+                {/* Gradient Overlays for Professional Look */}
+                <div className="absolute left-0 top-0 w-24 h-full bg-gradient-to-r from-gray-50 to-transparent z-10"></div>
+                <div className="absolute right-0 top-0 w-24 h-full bg-gradient-to-l from-gray-50 to-transparent z-10"></div>
+                
+                {/* Scrolling Container */}
+                <div className="relative w-full overflow-hidden">
+                    <div className="flex animate-logo-scroll">
+                        {/* Duplicate logos for seamless loop */}
+                        {[...allLogos, ...allLogos].map((logo, index) => (
+                            <ManufacturerLogo
+                                key={`${logo.slug}-${index}`}
+                                name={logo.name}
+                                src={logo.src}
+                                slug={logo.slug}
+                                onSelect={onSelectHersteller}
+                            />
+                        ))}
+                    </div>
+                </div>
+
+                {/* Scroll Progress Indicator */}
+                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-0.5 bg-gray-200 rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-green-400 to-green-600 rounded-full animate-scroll-progress"></div>
+                </div>
+            </div>
+
+            {/* Trust Badges */}
+            <div className="flex justify-center items-center gap-6 mt-8 text-xs text-gray-500">
+                <div className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>Zertifizierte Partner</span>
+                </div>
+                <div className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    <span>Premium Qualität</span>
+                </div>
+                <div className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                    </svg>
+                    <span>Marktführer</span>
                 </div>
             </div>
         </div>
