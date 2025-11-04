@@ -15,15 +15,10 @@ const cacheStrategies = {
   static: [
     '/',
     '/index.html',
-    '/manifest.json',
     '/robots.txt',
     '/sitemap.xml',
     '/faq-sitemap.xml',
-    '/_next/static/css/',
-    '/_next/static/js/',
-    '/fonts/poppins-',
-    '/images/logo.png',
-    '/images/favicon.ico'
+    '/favicon.svg'
   ],
 
   // API-Endpunkte - Network First mit Cache Fallback
