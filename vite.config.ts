@@ -230,7 +230,7 @@ export default defineConfig(({ mode, command }) => {
           'Accept': 'application/javascript'
         }
       },
-      experimentalMinify: true, // MAXIMUM OPTIMIZATION
+      // experimentalMinify: true, // DISABLED FOR REACT COMPATIBILITY
       // AGGRESSIVE DEAD CODE ELIMINATION
       treeshake: 'recommended',
     },
