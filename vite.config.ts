@@ -82,18 +82,14 @@ export default defineConfig(({ mode, command }) => {
             drop_console: mode === 'production',
             drop_debugger: mode === 'production',
             pure_funcs: mode === 'production' ? ['console.log', 'console.info', 'console.debug', 'console.warn'] : [],
-            drop_unused: true,
-            keep_infinity: true,
             dead_code: true,
-            unused: true,
+            passes: 2,
           },
           mangle: {
             safari10: true,
-            properties: { regex: /^_/ }
           },
           format: {
             comments: false,
-            beautify: false,
           }
         },
         rollupOptions: isSSR ? {
