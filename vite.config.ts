@@ -16,7 +16,7 @@ export default defineConfig(({ mode, command }) => {
         react(),
         VitePWA({
           registerType: 'autoUpdate',
-          includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg', 'manifest.webmanifest'],
+          includeAssets: ['favicon.ico', 'apple-touch-icon.png'],
           strategies: 'generateSW',
           workbox: {
             globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
@@ -33,23 +33,12 @@ export default defineConfig(({ mode, command }) => {
                 },
               },
               {
-                urlPattern: /^https:\/\/zoe-solar\.de\/.*/i,
-                handler: 'NetworkFirst',
-                options: {
-                  cacheName: 'zoe-solar-cache',
-                  expiration: {
-                    maxEntries: 100,
-                    maxAgeSeconds: 60 * 60 * 24, // 24 hours
-                  },
-                },
-              },
-              {
                 urlPattern: /\.(?:png|jpg|jpeg|svg|webp)$/,
                 handler: 'CacheFirst',
                 options: {
                   cacheName: 'images-cache',
                   expiration: {
-                    maxEntries: 200,
+                    maxEntries: 50,
                     maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
                   },
                 },
@@ -60,7 +49,7 @@ export default defineConfig(({ mode, command }) => {
                 options: {
                   cacheName: 'fonts-cache',
                   expiration: {
-                    maxEntries: 50,
+                    maxEntries: 20,
                     maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
                   },
                 },
@@ -68,7 +57,7 @@ export default defineConfig(({ mode, command }) => {
             ],
           },
           devOptions: {
-            enabled: true,
+            enabled: false,
             type: 'module',
           },
         }),
@@ -89,15 +78,13 @@ export default defineConfig(({ mode, command }) => {
           unused: true,
           if_return: true,
           join_vars: true,
-          cascade: true,
           collapse_vars: true,
           reduce_vars: true,
           warnings: false,
           negate_iife: false,
           pure_getters: true,
           unsafe: true,
-          expressions: true,
-          passes: 3, // MAXIMUM COMPRESSION
+          passes: 2, // REDUCED FOR COMPATIBILITY
         },
         mangle: {
           safari10: true,
