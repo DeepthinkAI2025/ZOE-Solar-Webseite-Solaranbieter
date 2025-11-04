@@ -28,6 +28,7 @@
   "dependencies": {
     "@fontsource/poppins": "^5.0.8",
     "@google/genai": "^1.19.0",
+    "@notionhq/client": "^5.3.0",
     "@react-three/cannon": "^6.6.0",
     "@react-three/drei": "^10.7.6",
     "@react-three/fiber": "^9.3.0",
@@ -44,13 +45,14 @@
     "leva": "^0.10.0",
     "lucide-react": "^0.552.0",
     "multer": "^2.0.2",
-    
     "node-cron": "^3.0.3",
+    "notion-to-md": "^3.1.9",
     "puppeteer": "^24.22.3",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-helmet": "^6.1.0",
     "react-markdown": "^10.1.0",
+    "react-notion-x": "^7.7.1",
     "react-router-dom": "^7.9.2",
     "react-syntax-highlighter": "^16.1.0",
     "schema-dts": "^1.1.5",
