@@ -1,132 +1,94 @@
-// TypeScript React
-import React, { useState, useEffect, useRef } from 'react';
-import { GoogleGenAI } from "@google/genai";
+import React, { useState, useEffect } from 'react';
 
-interface ImageWithFallbackProps extends React.ImgHTMLAttributes<HTMLImageElement> {
-    // Muss Alt-Text für Fallback-Generierung enthalten
-    alt: string;
-    // Dimensionen für korrektes Seitenverhältnis
-    imgWidth?: number;
-    imgHeight?: number;
-    // Lazy Loading aktivieren
-    lazy?: boolean;
+interface ImageWithFallbackProps {
+  src: string;
+  alt: string;
+  className?: string;
+  fallbackSrc?: string;
+  fallbackText?: string;
+  [key: string]: any;
 }
 
 const ImageWithFallback: React.FC<ImageWithFallbackProps> = ({
-    src,
-    alt,
-    imgWidth,
-    imgHeight,
-    lazy = false,
-    ...props
+  src,
+  alt,
+  className = '',
+  fallbackSrc = '/assets/logos/default-logo.png',
+  fallbackText,
+  ...props
 }) => {
-    const [imgSrc, setImgSrc] = useState(lazy ? '' : src);
-    const [isLoading, setIsLoading] = useState(false);
-    const [isInView, setIsInView] = useState(!lazy);
-    const hasTriedFallback = useRef(false);
-    const imgRef = useRef<HTMLImageElement>(null);
-    const ai = useRef<GoogleGenAI | null>(null);
+  const [imageSrc, setImageSrc] = useState(src);
+  const [imageError, setImageError] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-        ai.current = new GoogleGenAI({ apiKey: process.env.API_KEY as string });
-    }, []);
+  useEffect(() => {
+    setImageSrc(src);
+    setImageError(false);
+    setIsLoading(true);
+  }, [src]);
 
-    useEffect(() => {
-        if (!lazy) return;
-        const observer = new window.IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        setIsInView(true);
-                        observer.disconnect();
-                    }
-                });
-            },
-            { threshold: 0.1 }
-        );
-        if (imgRef.current) {
-            observer.observe(imgRef.current);
-        }
-        return () => observer.disconnect();
-    }, [lazy]);
-
-    useEffect(() => {
-        if (isInView && lazy && imgSrc === '') {
-            setImgSrc(src);
-        }
-    }, [isInView, lazy, src, imgSrc]);
-
-    const getAspectRatio = (width?: number, height?: number): "1:1" | "4:3" | "3:4" | "16:9" | "9:16" => {
-        if (!width || !height || width === 0 || height === 0) return '1:1';
-        const ratio = width / height;
-        const ratios: Record<"1:1" | "4:3" | "3:4" | "16:9" | "9:16", number> = {
-            '1:1': 1,
-            '4:3': 4/3,
-            '3:4': 3/4,
-            '16:9': 16/9,
-            '9:16': 9/16,
-        };
-        const closest = (Object.keys(ratios) as Array<keyof typeof ratios>).reduce((a, b) => {
-            return Math.abs(ratios[b] - ratio) < Math.abs(ratios[a] - ratio) ? b : a;
-        });
-        return closest;
+  const handleImageError = () => {
+    console.warn(`Failed to load image: ${src}`);
+    setImageError(true);
+    setIsLoading(false);
+    
+    // Try fallback logo first
+    if (imageSrc !== fallbackSrc) {
+      setImageSrc(fallbackSrc);
+      setImageError(false);
     }
+  };
 
-    const handleError = async () => {
-        if (hasTriedFallback.current || !ai.current || !alt) return;
-        hasTriedFallback.current = true;
-        setIsLoading(true);
-        console.log(`Image failed to load: ${src}. Generating fallback for: ${alt}`);
+  const handleImageLoad = () => {
+    setIsLoading(false);
+    setImageError(false);
+  };
 
-        try {
-            const aspectRatio = getAspectRatio(imgWidth, imgHeight);
-
-            const response = await ai.current.models.generateImages({
-                model: 'imagen-4.0-generate-001',
-                prompt: `Photorealistic image of: ${alt}. For a professional corporate website about solar energy. High quality, clean, modern aesthetic. Aspect ratio ${aspectRatio}.`,
-                config: {
-                    numberOfImages: 1,
-                    outputMimeType: 'image/jpeg',
-                    aspectRatio: aspectRatio,
-                },
-            });
-
-            if (response && response.generatedImages && response.generatedImages.length > 0 && response.generatedImages[0].image?.imageBytes) {
-                const base64ImageBytes: string = response.generatedImages[0].image.imageBytes;
-                const imageUrl = `data:image/jpeg;base64,${base64ImageBytes}`;
-                setImgSrc(imageUrl);
-            } else {
-                throw new Error("API returned no images or image data was missing.");
-            }
-        } catch (error) {
-            console.error('Error generating fallback image:', error);
-            // Fallback zu Platzhalter falls Gemini fehlschlägt
-            setImgSrc(`https://via.placeholder.com/${imgWidth || 400}x${imgHeight || 300}.png?text=Bild+nicht+gefunden`);
-        } finally {
-            setIsLoading(false);
-        }
-    };
-
-    useEffect(() => {
-        // Reset state wenn src sich ändert
-        setImgSrc(lazy ? '' : src);
-        hasTriedFallback.current = false;
-    }, [src, lazy]);
-
-    if (isLoading) {
-        return <div className={`w-full h-full bg-slate-200 animate-pulse ${props.className}`}></div>;
-    }
-
+  // If both primary and fallback fail, show placeholder
+  if (imageError && imageSrc === fallbackSrc) {
     return (
-        <img
-            ref={imgRef}
-            src={imgSrc}
-            alt={alt}
-            loading={lazy ? "lazy" : undefined}
-            onError={handleError}
-            {...props}
-        />
+      <div 
+        className={`flex items-center justify-center bg-gray-100 text-gray-500 ${className}`}
+        {...props}
+      >
+        {fallbackText ? (
+          <span className="text-sm font-medium text-center px-2">
+            {fallbackText}
+          </span>
+        ) : (
+          <svg 
+            className="w-8 h-8" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth={2} 
+              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" 
+            />
+          </svg>
+        )}
+      </div>
     );
+  }
+
+  return (
+    <>
+      {isLoading && (
+        <div className={`animate-pulse bg-gray-200 ${className}`} />
+      )}
+      <img
+        src={imageSrc}
+        alt={alt}
+        className={`${className} ${isLoading ? 'hidden' : ''}`}
+        onError={handleImageError}
+        onLoad={handleImageLoad}
+        {...props}
+      />
+    </>
+  );
 };
 
 export default ImageWithFallback;

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Page } from '../types';
 import { productCatalog } from '../data/products.generated';
 import { ProductCategory } from '../data/productTypes';
+import ImageWithFallback from './ImageWithFallback';
 
 interface ProductsMegaMenuProps {
   setPage: (page: Page) => void;
@@ -72,7 +73,12 @@ const ProductsMegaMenu: React.FC<ProductsMegaMenuProps> = ({ setPage, onSelectHe
                                     onClick={() => onSelectHersteller(man.slug)}
                                     className="group flex flex-col items-center justify-center p-4 bg-white border border-slate-200 rounded-lg h-32 transition-all duration-300 hover:shadow-xl hover:border-green-300 hover:-translate-y-1 cursor-pointer"
                                 >
-                                    <img src={man.logoUrl} alt={man.name} className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+                                    <ImageWithFallback
+                                        src={man.logoUrl}
+                                        alt={man.name}
+                                        className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                                        fallbackText={man.name.substring(0, 2).toUpperCase()}
+                                    />
                                 </a>
                             ))}
                         </div>

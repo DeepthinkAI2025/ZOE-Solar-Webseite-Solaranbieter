@@ -1,5 +1,6 @@
 import React from 'react';
 import { Product } from '../data/productTypes';
+import ImageWithFallback from './ImageWithFallback';
 
 interface ProductDetailModalProps {
     product: Product;
@@ -17,7 +18,7 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product, onClos
     );
 
     return (
-        <div className="fixed inset-0 z-[250] flex items-center justify-center p-4" role="dialog" aria-modal="true">
+        <div className="fixed inset-0 z-[250] flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-label={`Produktdetails: ${product.name}`}>
             <div className="fixed inset-0 bg-black/70 backdrop-blur-sm" onClick={onClose}></div>
             <div className="relative z-10 w-full max-w-4xl bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col animate-slide-in-up">
                 <header className="p-6 border-b border-slate-200 flex justify-between items-start">
@@ -34,7 +35,12 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product, onClos
                     <div className="grid md:grid-cols-2 gap-8 p-8">
                         {/* Left Column: Image */}
                         <div>
-                            <img src={product.imageUrl} alt={product.name} className="w-full h-auto object-cover rounded-lg shadow-lg" />
+                            <ImageWithFallback
+                                src={product.imageUrl}
+                                alt={product.name}
+                                className="w-full h-auto object-cover rounded-lg shadow-lg"
+                                fallbackText={product.name.substring(0, 2).toUpperCase()}
+                            />
                         </div>
 
                         {/* Right Column: Details */}

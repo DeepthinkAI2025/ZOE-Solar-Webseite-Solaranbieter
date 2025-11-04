@@ -1,6 +1,7 @@
 import React from 'react';
 import { productCatalog } from '../data/products.generated';
 import { Manufacturer } from '../data/productTypes';
+import ImageWithFallback from './ImageWithFallback';
 
 interface ManufacturerNavigationProps {
     currentManufacturer: Manufacturer;
@@ -28,7 +29,12 @@ const ManufacturerNavigation: React.FC<ManufacturerNavigationProps> = ({ current
                                     : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'
                             }`}
                         >
-                            <img src={manufacturer.logoUrl} alt={manufacturer.name} className="h-6 w-auto object-contain flex-shrink-0" />
+                            <ImageWithFallback
+                                src={manufacturer.logoUrl}
+                                alt={manufacturer.name}
+                                className="h-6 w-auto object-contain flex-shrink-0"
+                                fallbackText={manufacturer.name.substring(0, 2).toUpperCase()}
+                            />
                             <span>{manufacturer.name}</span>
                         </button>
                     ))}

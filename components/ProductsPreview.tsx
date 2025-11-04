@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { productCatalog } from '../data/products.generated';
 import { Product, ProductCategory } from '../data/productTypes';
+import ImageWithFallback from './ImageWithFallback';
 import { fetchLiveProducts } from '../services/productService';
 import { Page } from '../types';
 
@@ -121,7 +122,12 @@ const ProductsPreview: React.FC<ProductsPreviewProps> = ({ setPage, onSelectHers
                                     onClick={() => onSelectHersteller(man.slug)}
                                     className="group flex items-center justify-center p-4 bg-slate-800 border border-slate-700 rounded-lg h-24 transition-all duration-300 hover:shadow-xl hover:border-green-400 hover:-translate-y-1 cursor-pointer"
                                 >
-                                    <img src={man.logoUrl} alt={man.name} className="max-h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300" />
+                                    <ImageWithFallback
+                                        src={man.logoUrl}
+                                        alt={man.name}
+                                        className="max-h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                                        fallbackText={man.name.substring(0, 2).toUpperCase()}
+                                    />
                                 </div>
                             ))}
                         </div>
