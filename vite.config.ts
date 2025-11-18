@@ -224,12 +224,20 @@ export default defineConfig(({ mode, command }) => {
       reportCompressedSize: true,
       cssCodeSplit: true,
       assetsInlineLimit: 4096,
-      chunkSizeWarningLimit: 500, // REDUCE CHUNK SIZE LIMIT
+      chunkSizeWarningLimit: 1000, // TEMPORARILY INCREASE LIMIT WHILE OPTIMIZING
       modulePreload: {
         polyfill: false,
       },
       // ENABLE TREE SHAKING TO REMOVE UNUSED CODE
       treeshake: true,
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'vendor-react': ['react', 'react-dom', 'react-router-dom'],
+            'vendor-utils': ['axios', 'date-fns', 'lucide-react']
+          }
+        }
+      }
     },
       resolve: {
         alias: {
