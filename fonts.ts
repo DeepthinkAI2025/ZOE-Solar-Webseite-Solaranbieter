@@ -1,78 +1,43 @@
-// Roboto fonts are loaded via CDN or system fonts
-// Removed @fontsource/roboto imports to fix build errors
-
-import poppins300 from '@fontsource/poppins/files/poppins-latin-300-normal.woff2?url';
-import poppins400 from '@fontsource/poppins/files/poppins-latin-400-normal.woff2?url';
-import poppins500 from '@fontsource/poppins/files/poppins-latin-500-normal.woff2?url';
-import poppins600 from '@fontsource/poppins/files/poppins-latin-600-normal.woff2?url';
-import poppins700 from '@fontsource/poppins/files/poppins-latin-700-normal.woff2?url';
-
-const FONT_PRELOADS = [poppins300, poppins400, poppins500, poppins600, poppins700];
-
+// Use Google Fonts for better reliability and performance
 export const ensureFontPreloads = (): void => {
   if (typeof document === 'undefined') {
     return;
   }
 
+  // Add Google Fonts link if not already present
+  if (!document.querySelector('link[data-google-fonts]')) {
+    const link = document.createElement('link');
+    link.rel = 'preconnect';
+    link.href = 'https://fonts.googleapis.com';
+    link.dataset.googleFonts = 'preconnect';
+    document.head.appendChild(link);
+
+    const link2 = document.createElement('link');
+    link2.rel = 'preconnect';
+    link2.href = 'https://fonts.gstatic.com';
+    link2.crossOrigin = 'anonymous';
+    link2.dataset.googleFonts = 'preconnect-gstatic';
+    document.head.appendChild(link2);
+
+    const link3 = document.createElement('link');
+    link3.rel = 'stylesheet';
+    link3.href = 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap';
+    link3.dataset.googleFonts = 'stylesheet';
+    document.head.appendChild(link3);
+  }
+
   // Add font-display CSS for better performance
   const fontCSS = document.createElement('style');
   fontCSS.textContent = `
-    @font-face {
-      font-family: 'Poppins';
-      font-style: normal;
-      font-weight: 300;
-      font-display: swap;
-      src: url('${poppins300}') format('woff2');
-    }
-    @font-face {
-      font-family: 'Poppins';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: url('${poppins400}') format('woff2');
-    }
-    @font-face {
-      font-family: 'Poppins';
-      font-style: normal;
-      font-weight: 500;
-      font-display: swap;
-      src: url('${poppins500}') format('woff2');
-    }
-    @font-face {
-      font-family: 'Poppins';
-      font-style: normal;
-      font-weight: 600;
-      font-display: swap;
-      src: url('${poppins600}') format('woff2');
-    }
-    @font-face {
-      font-family: 'Poppins';
-      font-style: normal;
-      font-weight: 700;
-      font-display: swap;
-      src: url('${poppins700}') format('woff2');
+    /* Ensure Poppins font is available */
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     }
   `;
 
   // Only add if not already present
-  if (!document.querySelector('style[data-font-faces]')) {
-    fontCSS.setAttribute('data-font-faces', 'true');
+  if (!document.querySelector('style[data-font-fallback]')) {
+    fontCSS.setAttribute('data-font-fallback', 'true');
     document.head.appendChild(fontCSS);
   }
-
-  // Preload critical fonts
-  FONT_PRELOADS.forEach((href) => {
-    if (document.querySelector(`link[data-font-preload="${href}"]`)) {
-      return;
-    }
-
-    const link = document.createElement('link');
-    link.rel = 'preload';
-    link.as = 'font';
-    link.href = href;
-    link.type = 'font/woff2';
-    link.crossOrigin = 'anonymous';
-    link.dataset.fontPreload = href;
-    document.head.appendChild(link);
-  });
 };
