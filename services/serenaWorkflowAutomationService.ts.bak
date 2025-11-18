@@ -1,0 +1,1087 @@
+/**
+ * Bereich 5: Workflow-Automatisierung - CI/CD & Testing Framework
+ * Nutzt kostenlose Automatisierungs-Tools für Entwicklung und Deployment
+ */
+
+export interface WorkflowStep {
+  id: string;
+  name: string;
+  type: 'build' | 'test' | 'deploy' | 'notify' | 'custom';
+  config: WorkflowStepConfig;
+  dependencies: string[];
+  status: 'pending' | 'running' | 'completed' | 'failed' | 'skipped';
+  startTime?: Date;
+  endTime?: Date;
+  output?: any;
+  error?: string;
+}
+
+export interface WorkflowStepConfig {
+  command?: string;
+  script?: string;
+  timeout?: number;
+  retryCount?: number;
+  conditions?: WorkflowCondition[];
+  environment?: Record<string, string>;
+  artifacts?: string[];
+  cache?: {
+    paths?: string[];
+    key?: string;
+  };
+  template?: string;
+}
+
+export interface WorkflowCondition {
+  field: string;
+  operator: 'equals' | 'not_equals' | 'greater_than' | 'less_than' | 'contains';
+  value: any;
+}
+
+export interface WorkflowDefinition {
+  id: string;
+  name: string;
+  description: string;
+  trigger: WorkflowTrigger;
+  steps: WorkflowStep[];
+  environment: WorkflowEnvironment;
+  notifications: NotificationConfig[];
+  onSuccess?: string[];
+  onFailure?: string[];
+  onTimeout?: string[];
+}
+
+export interface WorkflowTrigger {
+  type: 'manual' | 'webhook' | 'schedule' | 'file_change' | 'commit';
+  config: any;
+}
+
+export interface WorkflowEnvironment {
+  nodeVersion?: string;
+  pythonVersion?: string;
+  variables: Record<string, string>;
+  secrets: Record<string, string>;
+  cache: {
+    enabled: boolean;
+    paths: string[];
+    key?: string;
+  };
+}
+
+export interface NotificationConfig {
+  type: 'email' | 'slack' | 'webhook' | 'teams';
+  recipients: string[];
+  template: string;
+  conditions?: WorkflowCondition[];
+}
+
+export interface TestSuite {
+  id: string;
+  name: string;
+  type: 'unit' | 'integration' | 'e2e' | 'performance' | 'security';
+  framework: 'jest' | 'mocha' | 'cypress' | 'playwright' | 'lighthouse';
+  config: TestConfig;
+  tests: TestCase[];
+  coverage: TestCoverage;
+}
+
+export interface TestConfig {
+  pattern: string;
+  timeout: number;
+  retries: number;
+  parallel: boolean;
+  browsers?: string[];
+  headless: boolean;
+  environment: string;
+}
+
+export interface TestCase {
+  id: string;
+  name: string;
+  description: string;
+  tags: string[];
+  priority: 'low' | 'medium' | 'high' | 'critical';
+  status: 'pending' | 'running' | 'passed' | 'failed' | 'skipped';
+  duration?: number;
+  error?: string;
+  screenshots?: string[];
+  logs?: string[];
+}
+
+export interface TestCoverage {
+  lines: number;
+  branches: number;
+  functions: number;
+  statements: number;
+  uncovered: string[];
+}
+
+export interface DeploymentConfig {
+  environment: 'development' | 'staging' | 'production';
+  strategy: 'rolling' | 'blue_green' | 'canary';
+  rollbackEnabled: boolean;
+  healthCheck: HealthCheckConfig;
+  notifications: NotificationConfig[];
+  approval?: ApprovalConfig;
+}
+
+export interface HealthCheckConfig {
+  enabled: boolean;
+  path: string;
+  timeout: number;
+  retries: number;
+  expectedStatus: number;
+}
+
+export interface ApprovalConfig {
+  required: boolean;
+  roles: string[];
+  timeout: number;
+}
+
+export interface SerenaWorkflowConfig {
+  enabled: boolean;
+  defaultTimeout: number;
+  maxRetries: number;
+  parallelExecution: boolean;
+  caching: {
+    enabled: boolean;
+    strategy: 'docker' | 'npm' | 'local';
+  };
+  notifications: {
+    enabled: boolean;
+    defaultRecipients: string[];
+  };
+  security: {
+    secretScanning: boolean;
+    dependencyCheck: boolean;
+    vulnerabilityScanning: boolean;
+  };
+}
+
+class SerenaWorkflowAutomationService {
+  private static instance: SerenaWorkflowAutomationService;
+  private config: SerenaWorkflowConfig;
+  private workflows: Map<string, WorkflowDefinition> = new Map();
+  private testSuites: Map<string, TestSuite> = new Map();
+  private deploymentConfigs: Map<string, DeploymentConfig> = new Map();
+  private executionHistory: Map<string, WorkflowExecution[]> = new Map();
+
+  private constructor() {
+    this.config = this.getDefaultConfig();
+    this.initializeDefaultWorkflows();
+    this.initializeDefaultTestSuites();
+  }
+
+  public static getInstance(): SerenaWorkflowAutomationService {
+    if (!SerenaWorkflowAutomationService.instance) {
+      SerenaWorkflowAutomationService.instance = new SerenaWorkflowAutomationService();
+    }
+    return SerenaWorkflowAutomationService.instance;
+  }
+
+  private getDefaultConfig(): SerenaWorkflowConfig {
+    return {
+      enabled: true,
+      defaultTimeout: 300000, // 5 minutes
+      maxRetries: 3,
+      parallelExecution: true,
+      caching: {
+        enabled: true,
+        strategy: 'npm'
+      },
+      notifications: {
+        enabled: true,
+        defaultRecipients: ['dev@zoe-solar.de', 'admin@zoe-solar.de']
+      },
+      security: {
+        secretScanning: true,
+        dependencyCheck: true,
+        vulnerabilityScanning: true
+      }
+    };
+  }
+
+  private initializeDefaultWorkflows(): void {
+    // CI/CD Pipeline Workflow
+    this.workflows.set('ci-cd-pipeline', {
+      id: 'ci-cd-pipeline',
+      name: 'ZOE Solar CI/CD Pipeline',
+      description: 'Complete CI/CD pipeline with testing and deployment',
+      trigger: {
+        type: 'commit',
+        config: {
+          branches: ['main', 'develop'],
+          paths: ['src/**', 'services/**', 'package.json']
+        }
+      },
+      steps: [
+        {
+          id: 'checkout',
+          name: 'Checkout Code',
+          type: 'build',
+          config: {
+            command: 'git checkout ${{ github.ref }} && git pull'
+          },
+          dependencies: [],
+          status: 'pending'
+        },
+        {
+          id: 'install',
+          name: 'Install Dependencies',
+          type: 'build',
+          config: {
+            command: 'npm ci',
+            cache: {
+              paths: ['node_modules'],
+              key: 'npm-${{ hashFiles(\'**/package-lock.json\') }}'
+            }
+          },
+          dependencies: ['checkout'],
+          status: 'pending'
+        },
+        {
+          id: 'lint',
+          name: 'Code Quality Check',
+          type: 'test',
+          config: {
+            command: 'npm run lint',
+            timeout: 60000
+          },
+          dependencies: ['install'],
+          status: 'pending'
+        },
+        {
+          id: 'unit-tests',
+          name: 'Unit Tests',
+          type: 'test',
+          config: {
+            command: 'npm run test:unit',
+            timeout: 120000
+          },
+          dependencies: ['install'],
+          status: 'pending'
+        },
+        {
+          id: 'integration-tests',
+          name: 'Integration Tests',
+          type: 'test',
+          config: {
+            command: 'npm run test:integration',
+            timeout: 300000
+          },
+          dependencies: ['unit-tests'],
+          status: 'pending'
+        },
+        {
+          id: 'build',
+          name: 'Build Application',
+          type: 'build',
+          config: {
+            command: 'npm run build',
+            timeout: 180000
+          },
+          dependencies: ['lint'],
+          status: 'pending'
+        },
+        {
+          id: 'security-scan',
+          name: 'Security Scan',
+          type: 'test',
+          config: {
+            command: 'npm audit --audit-level=moderate',
+            timeout: 60000
+          },
+          dependencies: ['build'],
+          status: 'pending'
+        },
+        {
+          id: 'deploy-staging',
+          name: 'Deploy to Staging',
+          type: 'deploy',
+          config: {
+            command: 'npm run deploy:staging',
+            timeout: 300000
+          },
+          dependencies: ['security-scan', 'integration-tests'],
+          status: 'pending'
+        },
+        {
+          id: 'e2e-tests',
+          name: 'End-to-End Tests',
+          type: 'test',
+          config: {
+            command: 'npm run test:e2e',
+            timeout: 600000
+          },
+          dependencies: ['deploy-staging'],
+          status: 'pending'
+        },
+        {
+          id: 'performance-test',
+          name: 'Performance Tests',
+          type: 'test',
+          config: {
+            command: 'npm run test:performance',
+            timeout: 300000
+          },
+          dependencies: ['deploy-staging'],
+          status: 'pending'
+        },
+        {
+          id: 'deploy-production',
+          name: 'Deploy to Production',
+          type: 'deploy',
+          config: {
+            command: 'npm run deploy:production',
+            timeout: 300000,
+            conditions: [
+              {
+                field: 'e2e-tests.status',
+                operator: 'equals',
+                value: 'completed'
+              }
+            ]
+          },
+          dependencies: ['e2e-tests', 'performance-test'],
+          status: 'pending'
+        },
+        {
+          id: 'notify-success',
+          name: 'Success Notification',
+          type: 'notify',
+          config: {
+            command: 'send-notification',
+            template: 'deployment-success'
+          },
+          dependencies: ['deploy-production'],
+          status: 'pending'
+        }
+      ],
+      environment: {
+        nodeVersion: '18',
+        variables: {
+          NODE_ENV: 'production',
+          BUILD_ENV: 'production'
+        },
+        secrets: {
+          DEPLOY_TOKEN: '${{ secrets.DEPLOY_TOKEN }}',
+          SLACK_WEBHOOK: '${{ secrets.SLACK_WEBHOOK }}'
+        },
+        cache: {
+          enabled: true,
+          paths: ['node_modules', '.npm', 'dist']
+        }
+      },
+      notifications: [
+        {
+          type: 'slack',
+          recipients: ['#deployments'],
+          template: 'ci-cd-complete'
+        }
+      ],
+      onSuccess: ['notify-success'],
+      onFailure: ['notify-failure']
+    });
+
+    // Daily SEO Workflow
+    this.workflows.set('daily-seo-workflow', {
+      id: 'daily-seo-workflow',
+      name: 'Daily SEO Optimization',
+      description: 'Daily SEO analysis and optimization workflow',
+      trigger: {
+        type: 'schedule',
+        config: {
+          cron: '0 6 * * *', // Daily at 6 AM
+          timezone: 'Europe/Berlin'
+        }
+      },
+      steps: [
+        {
+          id: 'seo-audit',
+          name: 'SEO Audit',
+          type: 'test',
+          config: {
+            command: 'npm run seo:audit',
+            timeout: 300000
+          },
+          dependencies: [],
+          status: 'pending'
+        },
+        {
+          id: 'keyword-analysis',
+          name: 'Keyword Analysis',
+          type: 'test',
+          config: {
+            command: 'npm run seo:keywords',
+            timeout: 180000
+          },
+          dependencies: ['seo-audit'],
+          status: 'pending'
+        },
+        {
+          id: 'content-optimization',
+          name: 'Content Optimization',
+          type: 'custom',
+          config: {
+            script: 'seo-optimizer.js'
+          },
+          dependencies: ['keyword-analysis'],
+          status: 'pending'
+        },
+        {
+          id: 'sitemap-update',
+          name: 'Update Sitemap',
+          type: 'custom',
+          config: {
+            command: 'npm run sitemap:update'
+          },
+          dependencies: ['content-optimization'],
+          status: 'pending'
+        }
+      ],
+      environment: {
+        variables: {
+          SEO_TARGET_DOMAIN: 'zoe-solar.de'
+        },
+        secrets: {
+          SEO_API_KEY: '${{ secrets.SEO_API_KEY }}'
+        },
+        cache: {
+          enabled: true,
+          paths: ['.seo-cache']
+        }
+      },
+      notifications: [
+        {
+          type: 'email',
+          recipients: ['seo@zoe-solar.de'],
+          template: 'daily-seo-report'
+        }
+      ]
+    });
+  }
+
+  private initializeDefaultTestSuites(): void {
+    // Unit Tests Suite
+    this.testSuites.set('unit-tests', {
+      id: 'unit-tests',
+      name: 'Unit Tests',
+      type: 'unit',
+      framework: 'jest',
+      config: {
+        pattern: 'src/**/*.test.ts',
+        timeout: 60000,
+        retries: 2,
+        parallel: true,
+        headless: true,
+        environment: 'test'
+      },
+      tests: [
+        {
+          id: 'api-client-test',
+          name: 'API Client Tests',
+          description: 'Test API client functionality',
+          tags: ['api', 'client'],
+          priority: 'high',
+          status: 'pending'
+        },
+        {
+          id: 'service-tests',
+          name: 'Service Layer Tests',
+          description: 'Test business logic services',
+          tags: ['services', 'business-logic'],
+          priority: 'high',
+          status: 'pending'
+        },
+        {
+          id: 'utils-tests',
+          name: 'Utility Tests',
+          description: 'Test utility functions',
+          tags: ['utils', 'helpers'],
+          priority: 'medium',
+          status: 'pending'
+        }
+      ],
+      coverage: {
+        lines: 0,
+        branches: 0,
+        functions: 0,
+        statements: 0,
+        uncovered: []
+      }
+    });
+
+    // E2E Tests Suite
+    this.testSuites.set('e2e-tests', {
+      id: 'e2e-tests',
+      name: 'End-to-End Tests',
+      type: 'e2e',
+      framework: 'cypress',
+      config: {
+        pattern: 'cypress/e2e/**/*.cy.js',
+        timeout: 300000,
+        retries: 1,
+        parallel: false,
+        browsers: ['chrome', 'firefox'],
+        headless: true,
+        environment: 'staging'
+      },
+      tests: [
+        {
+          id: 'homepage-test',
+          name: 'Homepage Flow Test',
+          description: 'Test homepage loading and navigation',
+          tags: ['homepage', 'navigation'],
+          priority: 'critical',
+          status: 'pending'
+        },
+        {
+          id: 'contact-form-test',
+          name: 'Contact Form Test',
+          description: 'Test contact form submission',
+          tags: ['forms', 'contact'],
+          priority: 'high',
+          status: 'pending'
+        },
+        {
+          id: 'product-pages-test',
+          name: 'Product Pages Test',
+          description: 'Test product page functionality',
+          tags: ['products', 'pages'],
+          priority: 'high',
+          status: 'pending'
+        }
+      ],
+      coverage: {
+        lines: 0,
+        branches: 0,
+        functions: 0,
+        statements: 0,
+        uncovered: []
+      }
+    });
+
+    // Performance Tests Suite
+    this.testSuites.set('performance-tests', {
+      id: 'performance-tests',
+      name: 'Performance Tests',
+      type: 'performance',
+      framework: 'lighthouse',
+      config: {
+        pattern: 'performance/**/*.js',
+        timeout: 600000,
+        retries: 1,
+        parallel: false,
+        browsers: ['chrome'],
+        headless: true,
+        environment: 'staging'
+      },
+      tests: [
+        {
+          id: 'lighthouse-audit',
+          name: 'Lighthouse Performance Audit',
+          description: 'Comprehensive performance audit',
+          tags: ['performance', 'lighthouse'],
+          priority: 'high',
+          status: 'pending'
+        },
+        {
+          id: 'load-test',
+          name: 'Load Testing',
+          description: 'Test application under load',
+          tags: ['load', 'performance'],
+          priority: 'medium',
+          status: 'pending'
+        }
+      ],
+      coverage: {
+        lines: 0,
+        branches: 0,
+        functions: 0,
+        statements: 0,
+        uncovered: []
+      }
+    });
+  }
+
+  // ===== WORKFLOW EXECUTION =====
+
+  public async executeWorkflow(workflowId: string, context?: any): Promise<WorkflowExecution> {
+    const workflow = this.workflows.get(workflowId);
+    if (!workflow) {
+      throw new Error(`Workflow ${workflowId} not found`);
+    }
+
+    console.log(`🚀 Executing workflow: ${workflow.name}`);
+
+    const executionId = this.generateExecutionId();
+    const execution: WorkflowExecution = {
+      id: executionId,
+      workflowId,
+      startTime: new Date(),
+      status: 'running',
+      steps: workflow.steps.map(step => ({ ...step })), // Deep copy
+      context
+    };
+
+    this.storeExecution(execution);
+
+    try {
+      // Set up environment
+      await this.setupEnvironment(workflow.environment);
+
+      // Execute steps
+      await this.executeSteps(execution, workflow.steps);
+
+      execution.endTime = new Date();
+      execution.status = 'completed';
+
+      // Trigger success actions
+      await this.triggerActions(workflow.onSuccess, execution);
+
+    } catch (error) {
+      execution.endTime = new Date();
+      execution.status = 'failed';
+      execution.error = error instanceof Error ? error.message : 'Unknown error';
+
+      // Trigger failure actions
+      await this.triggerActions(workflow.onFailure, execution);
+
+      console.error(`Workflow ${workflowId} failed:`, error);
+    }
+
+    this.updateExecution(execution);
+    return execution;
+  }
+
+  private async executeSteps(execution: WorkflowExecution, steps: WorkflowStep[]): Promise<void> {
+    const readySteps = steps.filter(step => 
+      step.dependencies.length === 0 || step.dependencies.every(depId => 
+        steps.find(s => s.id === depId)?.status === 'completed'
+      )
+    );
+
+    const executingSteps: Promise<void>[] = [];
+
+    for (const step of readySteps) {
+      if (this.config.parallelExecution) {
+        executingSteps.push(this.executeStep(execution, step));
+      } else {
+        await this.executeStep(execution, step);
+      }
+    }
+
+    // Wait for all parallel steps to complete
+    if (executingSteps.length > 0) {
+      await Promise.all(executingSteps);
+    }
+
+    // Recursively execute remaining steps
+    const remainingSteps = steps.filter(step => step.status === 'pending');
+    if (remainingSteps.length > 0) {
+      await this.executeSteps(execution, remainingSteps);
+    }
+  }
+
+  private async executeStep(execution: WorkflowExecution, step: WorkflowStep): Promise<void> {
+    console.log(`📋 Executing step: ${step.name}`);
+
+    step.status = 'running';
+    step.startTime = new Date();
+
+    try {
+      // Check conditions
+      if (!this.evaluateConditions(step.config.conditions || [], execution.context)) {
+        step.status = 'skipped';
+        return;
+      }
+
+      // Execute based on step type
+      let result: any;
+      
+      switch (step.type) {
+        case 'build':
+          result = await this.executeBuildStep(step);
+          break;
+        case 'test':
+          result = await this.executeTestStep(step);
+          break;
+        case 'deploy':
+          result = await this.executeDeployStep(step);
+          break;
+        case 'notify':
+          result = await this.executeNotificationStep(step, execution);
+          break;
+        case 'custom':
+          result = await this.executeCustomStep(step);
+          break;
+        default:
+          throw new Error(`Unknown step type: ${step.type}`);
+      }
+
+      step.status = 'completed';
+      step.endTime = new Date();
+      step.output = result;
+
+      console.log(`✅ Step completed: ${step.name}`);
+
+    } catch (error) {
+      step.status = 'failed';
+      step.endTime = new Date();
+      step.error = error instanceof Error ? error.message : 'Unknown error';
+
+      console.error(`❌ Step failed: ${step.name}`, error);
+
+      // Retry if configured
+      if (step.config.retryCount && step.config.retryCount > 0) {
+        step.config.retryCount--;
+        await this.executeStep(execution, step);
+      }
+    }
+  }
+
+  private async executeBuildStep(step: WorkflowStep): Promise<any> {
+    const startTime = Date.now();
+    
+    // Simulate build process
+    if (step.config.command) {
+      console.log(`Running build command: ${step.config.command}`);
+      // In real implementation, would execute the command
+      await this.simulateCommandExecution(step.config.command, step.config.timeout);
+    }
+
+    return {
+      duration: Date.now() - startTime,
+      artifacts: step.config.artifacts || ['build/output'],
+      exitCode: 0
+    };
+  }
+
+  private async executeTestStep(step: WorkflowStep): Promise<any> {
+    const startTime = Date.now();
+    
+    if (step.config.command) {
+      console.log(`Running test command: ${step.config.command}`);
+      
+      // Simulate test execution
+      const testSuite = this.getTestSuiteByCommand(step.config.command);
+      if (testSuite) {
+        await this.runTestSuite(testSuite);
+      } else {
+        await this.simulateCommandExecution(step.config.command, step.config.timeout);
+      }
+    }
+
+    return {
+      duration: Date.now() - startTime,
+      testsRun: Math.floor(Math.random() * 100) + 50,
+      testsPassed: Math.floor(Math.random() * 80) + 45,
+      testsFailed: Math.floor(Math.random() * 5),
+      coverage: {
+        lines: Math.floor(Math.random() * 20) + 75,
+        branches: Math.floor(Math.random() * 20) + 70,
+        functions: Math.floor(Math.random() * 20) + 80,
+        statements: Math.floor(Math.random() * 20) + 75
+      }
+    };
+  }
+
+  private async executeDeployStep(step: WorkflowStep): Promise<any> {
+    const startTime = Date.now();
+    
+    if (step.config.command) {
+      console.log(`Running deploy command: ${step.config.command}`);
+      await this.simulateCommandExecution(step.config.command, step.config.timeout);
+    }
+
+    return {
+      duration: Date.now() - startTime,
+      environment: step.config.environment?.NODE_ENV || 'production',
+      deploymentId: this.generateDeploymentId(),
+      status: 'deployed'
+    };
+  }
+
+  private async executeNotificationStep(step: WorkflowStep, execution: WorkflowExecution): Promise<any> {
+    console.log(`Sending notification: ${step.config.template}`);
+    
+    // Simulate notification sending
+    return {
+      template: step.config.template,
+      sent: true,
+      recipients: this.config.notifications.defaultRecipients
+    };
+  }
+
+  private async executeCustomStep(step: WorkflowStep): Promise<any> {
+    const startTime = Date.now();
+    
+    if (step.config.script) {
+      console.log(`Running custom script: ${step.config.script}`);
+      // Simulate custom script execution
+      await this.simulateCommandExecution(`node ${step.config.script}`, step.config.timeout);
+    }
+
+    return {
+      duration: Date.now() - startTime,
+      script: step.config.script,
+      result: 'Custom script executed successfully'
+    };
+  }
+
+  // ===== TEST SUITE MANAGEMENT =====
+
+  private getTestSuiteByCommand(command: string): TestSuite | undefined {
+    for (const testSuite of this.testSuites.values()) {
+      if (command.includes(testSuite.id) || command.includes(testSuite.framework)) {
+        return testSuite;
+      }
+    }
+    return undefined;
+  }
+
+  private async runTestSuite(testSuite: TestSuite): Promise<void> {
+    console.log(`🧪 Running test suite: ${testSuite.name}`);
+
+    for (const testCase of testSuite.tests) {
+      testCase.status = 'running';
+      testCase.duration = Math.floor(Math.random() * 5000) + 1000; // 1-6 seconds
+
+      try {
+        // Simulate test execution
+        const passed = Math.random() > 0.1; // 90% pass rate
+        testCase.status = passed ? 'passed' : 'failed';
+        
+        if (!passed) {
+          testCase.error = 'Test assertion failed';
+        }
+
+      } catch (error) {
+        testCase.status = 'failed';
+        testCase.error = error instanceof Error ? error.message : 'Unknown error';
+      }
+    }
+
+    // Update coverage
+    testSuite.coverage = {
+      lines: Math.floor(Math.random() * 20) + 75,
+      branches: Math.floor(Math.random() * 20) + 70,
+      functions: Math.floor(Math.random() * 20) + 80,
+      statements: Math.floor(Math.random() * 20) + 75,
+      uncovered: ['src/unused/file.ts', 'src/legacy/old-feature.ts']
+    };
+  }
+
+  // ===== ENVIRONMENT MANAGEMENT =====
+
+  private async setupEnvironment(env: WorkflowEnvironment): Promise<void> {
+    console.log('🔧 Setting up environment');
+    
+    // Set environment variables
+    Object.entries(env.variables).forEach(([key, value]) => {
+      process.env[key] = value;
+    });
+
+    // Set up caching
+    if (env.cache.enabled) {
+      await this.setupCaching(env.cache);
+    }
+
+    // Prepare secrets (in real implementation, would fetch from secret manager)
+    console.log('🔐 Environment setup complete');
+  }
+
+  private async setupCaching(cacheConfig: any): Promise<void> {
+    console.log('💾 Setting up cache');
+    // Simulate cache setup
+  }
+
+  // ===== HELPER METHODS =====
+
+  private evaluateConditions(conditions: WorkflowCondition[], context: any): boolean {
+    if (conditions.length === 0) return true;
+
+    return conditions.every(condition => {
+      const fieldValue = this.getNestedValue(context, condition.field);
+      
+      switch (condition.operator) {
+        case 'equals':
+          return fieldValue === condition.value;
+        case 'not_equals':
+          return fieldValue !== condition.value;
+        case 'greater_than':
+          return fieldValue > condition.value;
+        case 'less_than':
+          return fieldValue < condition.value;
+        case 'contains':
+          return String(fieldValue).includes(String(condition.value));
+        default:
+          return true;
+      }
+    });
+  }
+
+  private getNestedValue(obj: any, path: string): any {
+    return path.split('.').reduce((current, key) => current?.[key], obj);
+  }
+
+  private async simulateCommandExecution(command: string, timeout?: number): Promise<void> {
+    const duration = Math.floor(Math.random() * 10000) + 1000; // 1-11 seconds
+    
+    await new Promise(resolve => setTimeout(resolve, Math.min(duration, timeout || 30000)));
+  }
+
+  private async triggerActions(actions: string[] | undefined, execution: WorkflowExecution): Promise<void> {
+    if (!actions) return;
+
+    for (const action of actions) {
+      console.log(`Triggering action: ${action}`);
+      // In real implementation, would trigger specific actions
+    }
+  }
+
+  private generateExecutionId(): string {
+    return `exec_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+  }
+
+  private generateDeploymentId(): string {
+    return `deploy_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`;
+  }
+
+  private storeExecution(execution: WorkflowExecution): void {
+    if (!this.executionHistory.has(execution.workflowId)) {
+      this.executionHistory.set(execution.workflowId, []);
+    }
+    
+    const history = this.executionHistory.get(execution.workflowId)!;
+    history.push(execution);
+    
+    // Keep last 50 executions
+    if (history.length > 50) {
+      history.shift();
+    }
+  }
+
+  private updateExecution(execution: WorkflowExecution): void {
+    const history = this.executionHistory.get(execution.workflowId);
+    if (history) {
+      const index = history.findIndex(exec => exec.id === execution.id);
+      if (index !== -1) {
+        history[index] = execution;
+      }
+    }
+  }
+
+  // ===== PUBLIC API =====
+
+  public addWorkflow(workflow: WorkflowDefinition): void {
+    this.workflows.set(workflow.id, workflow);
+    console.log(`✅ Added workflow: ${workflow.name}`);
+  }
+
+  public removeWorkflow(workflowId: string): boolean {
+    const removed = this.workflows.delete(workflowId);
+    if (removed) {
+      console.log(`🗑️ Removed workflow: ${workflowId}`);
+    }
+    return removed;
+  }
+
+  public getWorkflow(workflowId: string): WorkflowDefinition | undefined {
+    return this.workflows.get(workflowId);
+  }
+
+  public getAllWorkflows(): WorkflowDefinition[] {
+    return Array.from(this.workflows.values());
+  }
+
+  public addTestSuite(testSuite: TestSuite): void {
+    this.testSuites.set(testSuite.id, testSuite);
+    console.log(`✅ Added test suite: ${testSuite.name}`);
+  }
+
+  public getTestSuite(testSuiteId: string): TestSuite | undefined {
+    return this.testSuites.get(testSuiteId);
+  }
+
+  public getAllTestSuites(): TestSuite[] {
+    return Array.from(this.testSuites.values());
+  }
+
+  public async runTestSuiteManually(testSuiteId: string): Promise<TestSuite> {
+    const testSuite = this.getTestSuite(testSuiteId);
+    if (!testSuite) {
+      throw new Error(`Test suite ${testSuiteId} not found`);
+    }
+
+    await this.runTestSuite(testSuite);
+    return testSuite;
+  }
+
+  public getExecutionHistory(workflowId: string): WorkflowExecution[] {
+    return this.executionHistory.get(workflowId) || [];
+  }
+
+  public updateConfig(config: Partial<SerenaWorkflowConfig>): void {
+    this.config = { ...this.config, ...config };
+  }
+
+  public getConfig(): SerenaWorkflowConfig {
+    return { ...this.config };
+  }
+
+  public exportWorkflows(): object {
+    return {
+      workflows: Array.from(this.workflows.values()),
+      testSuites: Array.from(this.testSuites.values()),
+      config: this.config
+    };
+  }
+}
+
+interface WorkflowExecution {
+  id: string;
+  workflowId: string;
+  startTime: Date;
+  endTime?: Date;
+  status: 'pending' | 'running' | 'completed' | 'failed';
+  steps: WorkflowStep[];
+  context?: any;
+  error?: string;
+}
+
+export const serenaWorkflowAutomationService = SerenaWorkflowAutomationService.getInstance();
+export default serenaWorkflowAutomationService;
+
+/**
+ * ===== USAGE EXAMPLES =====
+ *
+ * // Execute CI/CD workflow
+ * const execution = await serenaWorkflowAutomationService.executeWorkflow('ci-cd-pipeline');
+ * console.log(`Workflow status: ${execution.status}`);
+ *
+ * // Add custom workflow
+ * serenaWorkflowAutomationService.addWorkflow({
+ *   id: 'custom-workflow',
+ *   name: 'Custom Deployment Workflow',
+ *   description: 'Custom deployment process',
+ *   trigger: { type: 'manual', config: {} },
+ *   steps: [ /* ... */ ],
+ *   environment: { variables: {}, secrets: {}, cache: { enabled: false } },
+ *   notifications: []
+ * });
+ *
+ * // Run test suite manually
+ * const testResults = await serenaWorkflowAutomationService.runTestSuiteManually('unit-tests');
+ * console.log(`Tests passed: ${testResults.tests.filter(t => t.status === 'passed').length}`);
+ *
+ * // Get execution history
+ * const history = serenaWorkflowAutomationService.getExecutionHistory('ci-cd-pipeline');
+ * console.log(`Last 5 executions:`, history.slice(-5));
+ *
+ * // Get all workflows
+ * const workflows = serenaWorkflowAutomationService.getAllWorkflows();
+ * workflows.forEach(workflow => {
+ *   console.log(`${workflow.name}: ${workflow.steps.length} steps`);
+ * });
+ */

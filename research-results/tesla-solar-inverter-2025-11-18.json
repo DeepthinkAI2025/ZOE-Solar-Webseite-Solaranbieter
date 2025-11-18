@@ -1,0 +1,38 @@
+{
+  "query": "Tesla Solar Inverter specifications technical data kWp efficiency warranty dimensions datasheet official 2024",
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.tesla.com/support/energy/solar-inverter/tesla-solar-inverter",
+      "title": "Tesla Solar Inverter | Tesla Support",
+      "content": "Specifications ; P ower 7.6 kW, 5.7 kW, 5 kW, 3.8 kW. Maximum Power Point Trackers: 4 ; Size 26 in x 16 in x 6 in ; Weight 52 lbs ; CEC Efficiency 98.0% at 240 V.",
+      "score": 0.99999
+    },
+    {
+      "url": "https://solartechonline.com/blog/tesla-solar-inverter-guide/",
+      "title": "Tesla Solar Inverter Complete Guide: Specs, Performance & Review ...",
+      "content": "Tesla inverters use string technology, have 97.5% efficiency, 3.8kW and 7.6kW models, and integrate with Powerwall and Tesla vehicles.",
+      "score": 0.99997497
+    },
+    {
+      "url": "https://www.energysage.com/equipment/solar-inverters/tesla/Tesla_Solar_Inverter_76-e41bba49/",
+      "title": "Tesla 7.6 kW - EnergySage",
+      "content": "The Tesla 7.6kW inverter converts DC to AC power, is compatible with Solar Roof and traditional panels, has 98% efficiency, and a 13 year warranty.",
+      "score": 0.9999738
+    },
+    {
+      "url": "https://www.enfsolar.com/pv/inverter-datasheet/15192",
+      "title": "Tesla Solar Inverter | Solar Inverter Datasheet | ENF Inverter Directory",
+      "content": "Tesla Solar Inverter ; 23.6 kg, 23.6 kg ; Operating Temperature, -30 ~ +45 ℃ ; Max. Altitude, 3000 m ; Display, None ; Protection Features, Ground Fault Monitoring.",
+      "score": 0.9999535
+    },
+    {
+      "url": "https://www.solarcrowdsource.com/wp-content/uploads/2023/04/Tesla_Solar_Inverter_and_Solar_Shutdown_Device_Datasheet.pdf",
+      "title": "[PDF] Tesla Solar Inverter and Solar Shutdown Device Datasheet",
+      "content": "4 Tesla Solar Inverter and Solar Shutdown Device Datasheet Electrical Specifications Nominal Input DC Current Rating (IMP) 12 A Maximum Input Short Circuit Current (ISC) 19 A Maximum System Voltage (PVHCS) 600 V DC Solar Shutdown Device 1 Technical Specifications Environmental Specifications Ambient Temperature -40°C to 50°C (-40°F to 122°F) Storage Temperature –30°C to 70°C (–22°F to 158°F) Enclosure Rating NEMA 4X / IP65 Compliance Information Certifications UL 1741 PVRSE, UL 3741, PVRSA (Photovoltaic Rapid Shutdown Array) RSD Initiation Method PV System AC Breaker or Switch Compatible Equipment See Compatibility Table below Mechanical Specifications Model Number MCI-1 Electrical Connections MC4 Connector Housing Plastic Dimensions 125 mm x 150 mm x 22 mm (5 in x 6 in x 1 in) Weight 350 g (0.77 lb) Mounting Options ZEP Home Run Clip M4 Screw (#10) M8 Bolt (5/16\") Nail / Wood screw RSD Module Performance Maximum Number of Devices per String 5 Control Power Line Excitation Passive State Normally Open Maximum Power Consumption 7 W Warranty 25 years ­ — The Solar Shutdown Device is a Mid-Circuit Interrupter (MCI) and is part of the PV system rapid shutdown (RSD) function in accordance with Article 690 of the applicable NEC.",
+      "score": 0.99991906
+    }
+  ],
+  "response_time": 1.26,
+  "request_id": "9905d8c3-f4c5-4391-8649-62c2005cb26a"
+}

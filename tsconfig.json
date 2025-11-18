@@ -1,0 +1,70 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "useDefineForClassFields": false,
+    "module": "ESNext",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "skipLibCheck": true,
+    "types": [
+      "node",
+      "vite/client"
+    ],
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types"
+    ],
+  "moduleResolution": "bundler",
+  "baseUrl": ".",
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "react-helmet": [
+        "./types/react-helmet"
+      ]
+    },
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true
+  },
+  "include": [
+    "src/**/*",
+    "components/**/*",
+    "services/**/*",
+    "hooks/**/*",
+    "utils/**/*",
+    "pages/**/*",
+    "types/**/*",
+    "App.tsx",
+    "index.tsx",
+    "types.ts",
+    "types.js",
+    "*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "scripts",
+    "dist",
+    "build",
+    "public",
+    "api",
+    "server"
+  ]
+}

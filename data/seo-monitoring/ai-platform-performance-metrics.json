@@ -1,0 +1,140 @@
+{
+  "timestamp": "2025-09-28T19:49:14.719Z",
+  "metrics": {
+    "googleBard": {
+      "platform": "googleBard",
+  "name": "Google Bard/OpenRouter-Mistral",
+      "current": {
+        "status": "online",
+        "responseTime": 1250,
+        "uptime": 99.8,
+        "errorRate": 0
+      },
+      "historical": {
+        "totalChecks": 0,
+        "successfulChecks": 0,
+        "failedChecks": 0,
+        "averageResponseTime": 0,
+        "uptimePercentage": 0,
+        "errorRateTrend": 0,
+        "responseTimeTrend": 0
+      },
+      "health": {
+        "score": 100,
+        "status": "excellent",
+        "recommendations": [
+          "Performance ist gut - Fortfahren mit regelmäßigen Überprüfungen"
+        ]
+      }
+    },
+    "bingCopilot": {
+      "platform": "bingCopilot",
+      "name": "Bing Copilot",
+      "current": {
+        "status": "online",
+        "responseTime": 1450,
+        "uptime": 99.5,
+        "errorRate": 0
+      },
+      "historical": {
+        "totalChecks": 0,
+        "successfulChecks": 0,
+        "failedChecks": 0,
+        "averageResponseTime": 0,
+        "uptimePercentage": 0,
+        "errorRateTrend": 0,
+        "responseTimeTrend": 0
+      },
+      "health": {
+        "score": 100,
+        "status": "excellent",
+        "recommendations": [
+          "Performance ist gut - Fortfahren mit regelmäßigen Überprüfungen"
+        ]
+      }
+    },
+    "perplexityAI": {
+      "platform": "perplexityAI",
+      "name": "Perplexity AI",
+      "current": {
+        "status": "online",
+        "responseTime": 1680,
+        "uptime": 99.7,
+        "errorRate": 0
+      },
+      "historical": {
+        "totalChecks": 0,
+        "successfulChecks": 0,
+        "failedChecks": 0,
+        "averageResponseTime": 0,
+        "uptimePercentage": 0,
+        "errorRateTrend": 0,
+        "responseTimeTrend": 0
+      },
+      "health": {
+        "score": 100,
+        "status": "excellent",
+        "recommendations": [
+          "Performance ist gut - Fortfahren mit regelmäßigen Überprüfungen"
+        ]
+      }
+    },
+    "chatGPT": {
+      "platform": "chatGPT",
+      "name": "ChatGPT",
+      "current": {
+        "status": "online",
+        "responseTime": 1320,
+        "uptime": 99.9,
+        "errorRate": 0
+      },
+      "historical": {
+        "totalChecks": 0,
+        "successfulChecks": 0,
+        "failedChecks": 0,
+        "averageResponseTime": 0,
+        "uptimePercentage": 0,
+        "errorRateTrend": 0,
+        "responseTimeTrend": 0
+      },
+      "health": {
+        "score": 100,
+        "status": "excellent",
+        "recommendations": [
+          "Performance ist gut - Fortfahren mit regelmäßigen Überprüfungen"
+        ]
+      }
+    },
+    "claude": {
+      "platform": "claude",
+      "name": "Claude",
+      "current": {
+        "status": "online",
+        "responseTime": 1580,
+        "uptime": 99.6,
+        "errorRate": 0
+      },
+      "historical": {
+        "totalChecks": 0,
+        "successfulChecks": 0,
+        "failedChecks": 0,
+        "averageResponseTime": 0,
+        "uptimePercentage": 0,
+        "errorRateTrend": 0,
+        "responseTimeTrend": 0
+      },
+      "health": {
+        "score": 100,
+        "status": "excellent",
+        "recommendations": [
+          "Performance ist gut - Fortfahren mit regelmäßigen Überprüfungen"
+        ]
+      }
+    }
+  },
+  "summary": {
+    "totalPlatforms": 5,
+    "onlinePlatforms": 5,
+    "averageHealthScore": 100
+  }
+}

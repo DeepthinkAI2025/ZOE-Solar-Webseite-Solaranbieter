@@ -1,0 +1,151 @@
+# Login Endpoint Specification
+post:
+  tags:
+    - Authentication
+  summary: User Login
+  description: |
+    Authenticate a user and return JWT tokens for subsequent API calls.
+
+    This endpoint validates user credentials and returns:
+    - JWT access token (valid for 24 hours)
+    - Refresh token (valid for 30 days)
+    - User profile information
+    - Role-based permissions
+
+    ## Authentication Flow
+    1. User provides email and password
+    2. Server validates credentials
+    3. Returns JWT tokens and user data
+    4. Use access token for API calls
+    5. Use refresh token to get new access tokens
+
+    ## Security Notes
+    - Passwords are hashed using bcrypt
+    - Failed login attempts are tracked and rate-limited
+    - Tokens are signed with HS256 algorithm
+    - All tokens expire automatically
+
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - email
+            - password
+          properties:
+            email:
+              type: string
+              format: email
+              example: "max.mustermann@unternehmen.de"
+              description: User's email address
+            password:
+              type: string
+              minLength: 8
+              example: "SecurePassword123!"
+              description: User's password (min 8 characters)
+            rememberMe:
+              type: boolean
+              default: false
+              example: true
+              description: Whether to extend session duration
+            deviceInfo:
+              type: object
+              properties:
+                userAgent:
+                  type: string
+                  example: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+                ipAddress:
+                  type: string
+                  example: "192.168.1.100"
+                device:
+                  type: string
+                  example: "desktop"
+              description: Device information for security tracking
+
+  responses:
+    '200':
+      description: Login successful
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../../openapi.yaml#/components/schemas/Success'
+              - type: object
+                properties:
+                  data:
+                    type: object
+                    required:
+                      - user
+                      - tokens
+                      - session
+                    properties:
+                      user:
+                        $ref: '../../openapi.yaml#/components/schemas/User'
+                      tokens:
+                        $ref: '../../openapi.yaml#/components/schemas/AuthToken'
+                      session:
+                        type: object
+                        properties:
+                          sessionId:
+                            type: string
+                            example: "sess_abc123def456"
+                            description: Unique session identifier
+                          lastLogin:
+                            type: string
+                            format: date-time
+                            example: "2025-11-17T15:30:00Z"
+                          loginMethod:
+                            type: string
+                            enum: [password, sso, oauth]
+                            example: "password"
+                          securityFlags:
+                            type: array
+                            items:
+                              type: string
+                            example: ["new_device", "new_location"]
+                            description: Security flags for this login
+          example:
+            success: true
+            data:
+              user:
+                id: "user_123456"
+                email: "max.mustermann@unternehmen.de"
+                firstName: "Max"
+                lastName: "Mustermann"
+                company: "Mustermann GmbH"
+                phone: "+49 30 12345678"
+                role: "customer"
+                verified: true
+                lastLogin: "2025-11-17T15:30:00Z"
+                createdAt: "2025-01-15T09:00:00Z"
+                updatedAt: "2025-11-17T15:30:00Z"
+              tokens:
+                token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+                refreshToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+                expiresIn: 86400
+                tokenType: "Bearer"
+                permissions: ["read:profile", "write:projects", "read:analytics"]
+              session:
+                sessionId: "sess_abc123def456"
+                lastLogin: "2025-11-17T15:30:00Z"
+                loginMethod: "password"
+                securityFlags: ["new_device"]
+            meta:
+              timestamp: "2025-11-17T15:30:00Z"
+              request_id: "req_login_abc123"
+              version: "1.0.0"
+
+    '401':
+      $ref: '../../openapi.yaml#/components/responses/Unauthorized'
+      description: Invalid credentials
+    '429':
+      $ref: '../../openapi.yaml#/components/responses/RateLimited'
+      description: Too many login attempts
+    '500':
+      $ref: '../../openapi.yaml#/components/responses/ServerError'
+      description: Internal server error
+
+  security:
+    - {}

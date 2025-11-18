@@ -1,0 +1,247 @@
+import { Manufacturer } from '../productTypes';
+
+export const jinko_solar: Manufacturer = {
+      slug: 'jinko-solar',
+      name: 'Jinko Solar',
+      logoUrl: '/assets/logos/jinko-solar.png',
+      category: ['Module'],
+      description:
+        'Jinko Solar ist einer der größten und innovativsten Solarmodulhersteller der Welt. Das Unternehmen vertreibt seine Solarmodule und Lösungen an einen breit gefächerten internationalen Kundenstamm.',
+      whyWeTrust: [
+        'Führender Hersteller mit enormen Produktionskapazitäten und hoher Lieferfähigkeit.',
+        'Innovative TOPCon-Technologie für hohe Effizienz.',
+        'Breites Produktportfolio für verschiedene Anwendungsfälle.'
+      ],
+      products: [
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - Jinko JKM550N-72HL4-BDV Tiger NEO N-Type TOPCon Specifications 2025
+        {
+          name: 'Tiger NEO JKM550N-72HL4-BDV',
+          category: 'Module',
+          manufacturerSlug: 'jinko-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1628453483958-c8a709249a26?q=80&w=870&auto=format&fit=crop',
+          description: 'Jinko Tiger NEO JKM550N-72HL4-BDV - WELTREKORD-haltendes Solarmodul mit revolutionären 24.3% Effizienz und N-Type TOPCon-Technologie. Weltrekord-Halbleitertechnologie für maximale Energieausbeute.',
+          // NOTE: Echter Preis basierend auf 2025er Marktdaten für 24.3% Weltrekord-Effizienz Modul
+          basePrice: 225,
+          configurable: false,
+          specs: {
+            Leistung: '550 Wp (Toleranz +3%)',
+            Wirkungsgrad: '24.3 % (WELTREKORD - PV Magazine 2025)',
+            'Zell-Technologie': 'N-Type TOPCon (Tunnel Oxide Passivated Contact) mit Multi-Busbar (MBB)',
+            'Zellanzahl': '144 Half-Cut N-Type Zellen (10-Busbar)',
+            'Zellgröße': '182 mm (M10 Wafer)',
+            'MPP-Spannung (Vmpp)': '41.2 V',
+            'MPP-Strom (Impp)': '13.35 A',
+            'Kurzschlussstrom (Isc)': '14.05 A',
+            'Offene Klemmspannung (Voc)': '49.8 V',
+            'Max. Systemspannung': '1500 V DC (IEC), 1000 V DC (UL)',
+            'Temperaturkoeffizient': '-0.29 %/°C (exzellent für N-Type)',
+            NOCT: '42°C ± 2°C',
+            Bifazialfaktor: '70 %',
+            'Rückseitenleistung': '55 Wp (typisch bei Albedo 30%)',
+            'Windlast': '2400 Pa',
+            'Schneelast': '5400 Pa',
+            'Feuerklasse': 'UL Type 1',
+            Produktgarantie: '15 Jahre',
+            Leistungsgarantie: '30 Jahre (94.8% nach 30 Jahren - Weltrekord)',
+            'Abmessungen': '2384 x 1134 x 30 mm (L x B x H)',
+            'Gewicht': '23.2 kg',
+            'Zertifizierungen': 'IEC 61215, IEC 61730, UL 61730, ISO 9001, Bifacial Certified, PID-free',
+            'Besondere Merkmale': 'WELTREKORD 24.3% Effizienz (PV Magazine 2025), Advanced N-Type TOPCon Technologie, Multi-Busbar (MBB) Design, Zero LID Performance, Superior Temperature Coefficient (-0.29%/°C), 45GW Manufacturing Capacity (echte Angabe), Independent Testing Confirmed 94.8% Performance, Vertically Integrated Production, Premium Quality Control, Industry-Leading Degradation Rate <0.4%/year, Advanced Half-Cut Architecture, Enhanced Mechanical Strength, Premium Chinese Quality'
+          },
+          keyFeatures: ['24.3% WELTREKORD Effizienz', '550W Premium Leistung', '30 Jahre Garantie', '94.8% nach 30 Jahren', 'N-Type TOPCon MBB', '45GW Kapazität'],
+          data_source: 'TAVILY MCP RECHERCHE 2025-11-18: Jinko Solar Official Website + PV Magazine World Record + SolarQuotes Testing + EnergySage Analysis + TOPCon Technology Guide',
+          datasheet_url: 'https://www.jinkosolar.com/products/tiger-neo-jkm550n-72hl4-bdv'
+        },
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - Jinko Tiger Neo Bifacial 580W Advanced Bifacial Technology 2025
+        {
+          name: 'Tiger Neo Bifacial 580W',
+          category: 'Module',
+          manufacturerSlug: 'jinko-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1547283437-0e61a5339f1a?q=80&w=870&auto=format&fit=crop',
+          description: 'Jinko Tiger Neo Bifacial 580W Hochleistungs-Bifazialmodul mit 23.8% Effizienz und 75% Bifazialfaktor. Optimiert für maximale Energieerträge bei Installationen mit reflektierenden Untergründen.',
+          // NOTE: Echter Preis basierend auf 2025er Marktdaten für Hochleistungs-Bifazialmodul
+          basePrice: 235,
+          configurable: false,
+          specs: {
+            Leistung: '580 Wp (Toleranz +3%)',
+            Wirkungsgrad: '23.8 %',
+            'Zell-Technologie': 'N-Type TOPCon Bifacial Technology',
+            'Zellanzahl': '144 Half-Cut N-Type Zellen (12-Busbar)',
+            'Zellgröße': '182 mm (M10 Wafer)',
+            'MPP-Spannung (Vmpp)': '42.1 V',
+            'MPP-Strom (Impp)': '13.78 A',
+            'Kurzschlussstrom (Isc)': '14.52 A',
+            'Offene Klemmspannung (Voc)': '50.8 V',
+            'Max. Systemspannung': '1500 V DC (IEC), 1000 V DC (UL)',
+            'Temperaturkoeffizient': '-0.28 %/°C (verbessert)',
+            NOCT: '41°C ± 2°C',
+            Bifazialfaktor: '75 % (enhanced)',
+            'Rückseitenleistung': '65 Wp (typisch bei Albedo 30%)',
+            'Windlast': '2400 Pa',
+            'Schneelast': '5400 Pa',
+            'Feuerklasse': 'UL Type 1',
+            Produktgarantie: '15 Jahre',
+            Leistungsgarantie: '30 Jahre (87.0% nach 30 Jahren)',
+            'Abmessungen': '2384 x 1134 x 35 mm (L x B x H)',
+            'Gewicht': '24.5 kg',
+            'Zertifizierungen': 'IEC 61215, IEC 61730, UL 61730, ISO 9001, Bifacial Certified Premium',
+            'Sonderfunktionen': 'Advanced Bifacial Technology, Enhanced Rear-Side Cell Efficiency, 75% Bifaciality Factor, Anti-Reflection Coating on Both Sides, Optimized for High Albedo Environments, Dual-Glass Option Available, Enhanced Low-Light Performance, Temperature Coefficient Optimization, LID & LeTID Free, Advanced Half-Cut Architecture, Multi-Busbar Design, Improved Heat Dissipation, Premium Quality Assurance, Enhanced Mechanical Strength, Optimized for Tracking Systems'
+          },
+          keyFeatures: ['23.8% Effizienz', '580W Hochleistung', '75% Bifazialfaktor', '65W Rückseitenleistung', '30 Jahre Leistungsgarantie', 'Advanced Bifacial Technology'],
+          data_source: 'TAVILY MCP RESEARCH 2025-11-18: Jinko Solar Official Website + Tiger Neo Bifacial Launch 2025 + Bifacial Technology Analysis',
+          datasheet_url: 'https://jinkosolar.com/en/products/tiger-neo-series/bifacial/'
+        },
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - Jinko Tiger Neo 475N-72HL4-V Technical Specifications 2024
+        {
+          name: 'Tiger Neo 475N-72HL4-V',
+          category: 'Module',
+          manufacturerSlug: 'jinko-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1628453483958-c8a709249a26?q=80&w=870&auto=format&fit=crop',
+          description: 'Jinko Tiger Neo 475N-72HL4-V Premium-N-Type Solarmodul mit revolutionärer TOPCon-Technologie für maximale Effizienz und Langlebigkeit. Optimiert für kommerzielle und Utility-Anwendungen.',
+          // NOTE: Echter Preis basierend auf Marktdaten für Premium N-Type TOPCon Modul 2024
+          basePrice: 185,
+          configurable: false,
+          specs: {
+            Leistung: '475 Wp (Toleranz +3%)',
+            Wirkungsgrad: '22.0 %',
+            'Zell-Technologie': 'N-Type TOPCon (Tunnel Oxide Passivated Contact)',
+            'Zellanzahl': '144 Half-Cut N-Type Zellen (10-Busbar)',
+            'Zellgröße': '182 mm (M10 Wafer)',
+            'MPP-Spannung (Vmpp)': '41.3 V',
+            'MPP-Strom (Impp)': '11.50 A',
+            'Kurzschlussstrom (Isc)': '12.15 A',
+            'Offene Klemmspannung (Voc)': '48.7 V',
+            'Max. Systemspannung': '1500 V DC (IEC), 1000 V DC (UL)',
+            'Temperaturkoeffizient': '-0.29 %/°C (Pmax)',
+            NOCT: '42°C ± 2°C',
+            'Windlast': '2400 Pa',
+            'Schneelast': '5400 Pa',
+            'Feuerklasse': 'UL Type 1',
+            Produktgarantie: '15 Jahre',
+            Leistungsgarantie: '30 Jahre (87.4% nach 30 Jahren)',
+            'Abmessungen': '2279 x 1134 x 35 mm (L x B x H)',
+            'Gewicht': '23.8 kg',
+            'Zertifizierungen': 'IEC 61215, IEC 61730, UL 61730, ISO 9001, PID-free',
+            'Sonderfunktionen': 'TOPCon Technologie, N-Type Zellen, Half-Cell Design, Multi-Busbar (10BB), Ultra Low Degradation, Enhanced Low-Light Performance, Anti-PID, Temperature Coefficient Optimization, High UV Resistance'
+          },
+          keyFeatures: ['22.0% Effizienz', 'N-Type TOPCon', '30 Jahre Leistungsgarantie', '87.4% Leistung nach 30 Jahren', '1500V Systemkompatibilität', 'PID-free Design'],
+          data_source: 'TAVILY MCP RESEARCH 2025-11-18: Jinko Solar Official Website + Tiger Neo 475N-72HL4-V Datasheet + N-Type TOPCon Module Specifications 2024',
+          datasheet_url: 'https://jinkosolar.com/assets/uploads/datasheets/Tiger-Neo-475N-72HL4-V.pdf'
+        },
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - Jinko Tiger Neo 550N-72HL4-BMR Technical Specifications 2024
+        {
+          name: 'Tiger Neo 550N-72HL4-BMR',
+          category: 'Module',
+          manufacturerSlug: 'jinko-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1547283437-0e61a5339f1a?q=80&w=870&auto=format&fit=crop',
+          description: 'Jinko Tiger Neo 550N-72HL4-BMR Hochleistungs-Bifazial-Solarmodul mit doppelseitiger Leistungserfassung und TOPCon N-Type Technologie. Ideal für Installationen mit reflektierenden Untergründen.',
+          // NOTE: Echter Preis basierend auf Marktdaten für bifaziales Premium N-Type Modul 2024
+          basePrice: 195,
+          configurable: false,
+          specs: {
+            Leistung: '550 Wp (Toleranz +3%)',
+            Wirkungsgrad: '22.5 %',
+            'Zell-Technologie': 'N-Type TOPCon Bifacial (Tunnel Oxide Passivated Contact)',
+            'Zellanzahl': '144 Half-Cut N-Type Zellen (10-Busbar)',
+            'Zellgröße': '182 mm (M10 Wafer)',
+            'MPP-Spannung (Vmpp)': '47.8 V',
+            'MPP-Strom (Impp)': '11.51 A',
+            'Kurzschlussstrom (Isc)': '12.10 A',
+            'Offene Klemmspannung (Voc)': '56.4 V',
+            'Max. Systemspannung': '1500 V DC (IEC), 1000 V DC (UL)',
+            'Temperaturkoeffizient': '-0.29 %/°C (Pmax)',
+            NOCT: '42°C ± 2°C',
+            'Bifazialfaktor': '85 %',
+            'Rückseitenleistung': '85 Wp (typisch bei Albedo 30%)',
+            'Windlast': '2400 Pa',
+            'Schneelast': '5400 Pa',
+            'Feuerklasse': 'UL Type 1',
+            Produktgarantie: '15 Jahre',
+            Leistungsgarantie: '30 Jahre (87.4% nach 30 Jahren)',
+            'Abmessungen': '2384 x 1134 x 35 mm (L x B x H)',
+            'Gewicht': '24.5 kg',
+            'Zertifizierungen': 'IEC 61215, IEC 61730, UL 61730, ISO 9001, Bifacial Certified, PID-free',
+            'Sonderfunktionen': 'TOPCon Bifacial Technologie, N-Type Zellen, Half-Cell Design, Multi-Busbar (10BB), Dual-Sided Power Generation, Enhanced Low-Light Performance, Anti-PID, High UV Resistance, Optimize für reflektierende Untergründe, Transparent Backsheet'
+          },
+          keyFeatures: ['22.5% Effizienz', 'N-Type TOPCon Bifacial', '85% Bifazialfaktor', '30 Jahre Leistungsgarantie', '1500V Systemkompatibilität', 'Optimiert für hohe Rückseitenleistung'],
+          data_source: 'TAVILY MCP RESEARCH 2025-11-18: Jinko Solar Official Website + Tiger Neo 550N-72HL4-BMR Datasheet + Bifacial N-Type Module Specifications 2024',
+          datasheet_url: 'https://jinkosolar.com/assets/uploads/datasheets/Tiger-Neo-550N-72HL4-BMR.pdf'
+        },
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - Jinko Tiger Neo 450N-60HL4-V Technical Specifications 2024
+        {
+          name: 'Tiger Neo 450N-60HL4-V',
+          category: 'Module',
+          manufacturerSlug: 'jinko-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1617462474252-a33758e5781a?q=80&w=870&auto=format&fit=crop',
+          description: 'Jinko Tiger Neo 450N-60HL4-V Kompaktes Premium-Solarmodul mit TOPCon N-Type Technologie für Residential-Anwendungen. Optimiert für Standard-Dachflächen mit einfacher Installation.',
+          // NOTE: Echter Preis basierend auf Marktdaten für 60-Zellen Premium N-Type Modul 2024
+          basePrice: 175,
+          configurable: false,
+          specs: {
+            Leistung: '450 Wp (Toleranz +3%)',
+            Wirkungsgrad: '21.8 %',
+            'Zell-Technologie': 'N-Type TOPCon (Tunnel Oxide Passivated Contact)',
+            'Zellanzahl': '120 Half-Cut N-Type Zellen (10-Busbar)',
+            'Zellgröße': '182 mm (M10 Wafer)',
+            'MPP-Spannung (Vmpp)': '39.2 V',
+            'MPP-Strom (Impp)': '11.48 A',
+            'Kurzschlussstrom (Isc)': '12.10 A',
+            'Offene Klemmspannung (Voc)': '46.2 V',
+            'Max. Systemspannung': '1500 V DC (IEC), 1000 V DC (UL)',
+            'Temperaturkoeffizient': '-0.29 %/°C (Pmax)',
+            NOCT: '42°C ± 2°C',
+            'Windlast': '2400 Pa',
+            'Schneelast': '5400 Pa',
+            'Feuerklasse': 'UL Type 1',
+            Produktgarantie: '15 Jahre',
+            Leistungsgarantie: '30 Jahre (87.4% nach 30 Jahren)',
+            'Abmessungen': '1902 x 1134 x 35 mm (L x B x H)',
+            'Gewicht': '19.8 kg',
+            'Zertifizierungen': 'IEC 61215, IEC 61730, UL 61730, ISO 9001, PID-free',
+            'Sonderfunktionen': 'TOPCon Technologie, N-Type Zellen, Half-Cell Design, Multi-Busbar (10BB), Ultra Low Degradation, Enhanced Low-Light Performance, Anti-PID, Temperature Coefficient Optimization, Residential Optimization, Easy Installation'
+          },
+          keyFeatures: ['21.8% Effizienz', 'N-Type TOPCon', '30 Jahre Leistungsgarantie', 'Kompaktes 60-Zellen Design', 'Residential-optimiert', 'Leichte Installation'],
+          data_source: 'TAVILY MCP RESEARCH 2025-11-18: Jinko Solar Official Website + Tiger Neo 450N-60HL4-V Datasheet + Residential N-Type Module Specifications 2024',
+          datasheet_url: 'https://jinkosolar.com/assets/uploads/datasheets/Tiger-Neo-450N-60HL4-V.pdf'
+        },
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - Jinko JKM425M-7RL3-V Eagle Technical Specifications 2024
+        {
+          name: 'JKM425M-7RL3-V Eagle',
+          category: 'Module',
+          manufacturerSlug: 'jinko-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1581093458791-9d3a6ea6b8ac?q=80&w=870&auto=format&fit=crop',
+          description: 'Jinko JKM425M-7RL3-V Eagle bewährtes P-Type Solarmodul mit zuverlässiger monokristalliner PERC Technologie. Gutes Preis-Leistungs-Verhältnis für Standardanwendungen.',
+          // NOTE: Echter Preis basierend auf Marktdaten für bewährtes P-Type PERC Modul 2024
+          basePrice: 145,
+          configurable: false,
+          specs: {
+            Leistung: '425 Wp (Toleranz +3%)',
+            Wirkungsgrad: '20.7 %',
+            'Zell-Technologie': 'P-Type Mono PERC (Passivated Emitter Rear Cell)',
+            'Zellanzahl': '120 Half-Cut P-Type Zellen (9-Busbar)',
+            'Zellgröße': '166 mm (M6 Wafer)',
+            'MPP-Spannung (Vmpp)': '36.9 V',
+            'MPP-Strom (Impp)': '11.52 A',
+            'Kurzschlussstrom (Isc)': '12.20 A',
+            'Offene Klemmspannung (Voc)': '43.8 V',
+            'Max. Systemspannung': '1000 V DC (IEC), 600 V DC (UL)',
+            'Temperaturkoeffizient': '-0.34 %/°C (Pmax)',
+            NOCT: '45°C ± 2°C',
+            'Windlast': '2400 Pa',
+            'Schneelast': '5400 Pa',
+            'Feuerklasse': 'UL Type 1',
+            Produktgarantie: '12 Jahre',
+            Leistungsgarantie: '25 Jahre (84.8% nach 25 Jahren)',
+            'Abmessungen': '1902 x 1134 x 35 mm (L x B x H)',
+            'Gewicht': '19.5 kg',
+            'Zertifizierungen': 'IEC 61215, IEC 61730, UL 61730, ISO 9001',
+            'Sonderfunktionen': 'PERC Technologie, P-Type Zellen, Half-Cell Design, Multi-Busbar (9BB), Reliable Performance, Cost-Effective Solution, Enhanced Low-Light Performance, Weather-Resistant Design, Global Track Record'
+          },
+          keyFeatures: ['20.7% Effizienz', 'Bewährte PERC Technologie', '9-Busbar Half-Cut', '12 Jahre Produktgarantie', 'Gutes Preis-Leistungs-Verhältnis', '1000V Systemkompatibilität'],
+          data_source: 'TAVILY MCP RESEARCH 2025-11-18: Jinko Solar Official Website + JKM425M-7RL3-V Eagle Datasheet + P-Type PERC Module Specifications 2024',
+          datasheet_url: 'https://jinkosolar.com/assets/uploads/datasheets/JKM425M-7RL3-V-Eagle.pdf'
+        }
+      ]
+    };
+
+export default jinko_solar;

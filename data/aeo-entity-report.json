@@ -1,0 +1,483 @@
+{
+  "timestamp": "2025-09-28T17:08:15.524Z",
+  "kpis": {
+    "avgEntityAuthority": 75.75,
+    "avgEntityStrengthScore": 77.75,
+    "knowledgePanelsPresent": 3,
+    "knowledgePanelCompleteness": 88.33333333333333,
+    "featuredSnippetsOwned": 0,
+    "knowledgePanelsInSERP": 3,
+    "avgCompetitiveAdvantage": 10.625,
+    "totalEntityRelationships": 10,
+    "avgRelationshipStrength": 84.9375,
+    "timestamp": "2025-09-28T17:08:15.524Z"
+  },
+  "entities": {
+    "ZOE Solar": {
+      "name": "ZOE Solar",
+      "type": "SolarEnergyCompany",
+      "authority": 85,
+      "mentions": 1250,
+      "knowledgePanel": {
+        "present": true,
+        "completeness": 92,
+        "lastUpdated": "2025-09-09T02:27:45.419Z",
+        "features": [
+          "Logo",
+          "Description",
+          "Contact Info",
+          "Website",
+          "Social Media",
+          "Reviews"
+        ]
+      },
+      "searchFeatures": {
+        "featuredSnippet": {
+          "present": true,
+          "position": 1,
+          "topic": "Solar Installation"
+        },
+        "localPack": {
+          "present": true,
+          "position": 2
+        },
+        "knowledgePanel": {
+          "present": true,
+          "expanded": true
+        },
+        "instantAnswer": {
+          "present": false
+        }
+      },
+      "entityRelationships": [
+        {
+          "entity": "Solar Energy",
+          "strength": 95,
+          "type": "industry"
+        },
+        {
+          "entity": "Renewable Energy",
+          "strength": 88,
+          "type": "industry"
+        },
+        {
+          "entity": "Photovoltaics",
+          "strength": 92,
+          "type": "product"
+        },
+        {
+          "entity": "Germany",
+          "strength": 78,
+          "type": "location"
+        }
+      ],
+      "entityStrengthScore": 100
+    },
+    "Photovoltaik": {
+      "name": "Photovoltaik",
+      "type": "Technology",
+      "authority": 78,
+      "mentions": 2100,
+      "knowledgePanel": {
+        "present": true,
+        "completeness": 88,
+        "features": [
+          "Description",
+          "History",
+          "Applications",
+          "Benefits"
+        ]
+      },
+      "searchFeatures": {
+        "featuredSnippet": {
+          "present": true,
+          "position": 1,
+          "topic": "What is Photovoltaics"
+        },
+        "knowledgePanel": {
+          "present": true,
+          "expanded": false
+        },
+        "localPack": {
+          "present": false
+        },
+        "instantAnswer": {
+          "present": false
+        }
+      },
+      "entityRelationships": [
+        {
+          "entity": "ZOE Solar",
+          "strength": 65,
+          "type": "provider"
+        },
+        {
+          "entity": "Solar Energy",
+          "strength": 98,
+          "type": "category"
+        }
+      ],
+      "entityStrengthScore": 97
+    },
+    "Solaranlage": {
+      "name": "Solaranlage",
+      "type": "Product",
+      "authority": 72,
+      "mentions": 1800,
+      "knowledgePanel": {
+        "present": true,
+        "completeness": 85,
+        "features": [
+          "Description",
+          "Types",
+          "Components",
+          "Installation"
+        ]
+      },
+      "searchFeatures": {
+        "featuredSnippet": {
+          "present": false
+        },
+        "knowledgePanel": {
+          "present": true,
+          "expanded": false
+        },
+        "localPack": {
+          "present": false
+        },
+        "instantAnswer": {
+          "present": false
+        }
+      },
+      "entityRelationships": [
+        {
+          "entity": "ZOE Solar",
+          "strength": 82,
+          "type": "provider"
+        },
+        {
+          "entity": "Photovoltaik",
+          "strength": 95,
+          "type": "technology"
+        }
+      ],
+      "entityStrengthScore": 78
+    },
+    "Elektroauto Ladestation": {
+      "name": "Elektroauto Ladestation",
+      "type": "Product",
+      "authority": 68,
+      "mentions": 950,
+      "knowledgePanel": {
+        "present": false,
+        "completeness": 0
+      },
+      "searchFeatures": {
+        "featuredSnippet": {
+          "present": false
+        },
+        "knowledgePanel": {
+          "present": false
+        },
+        "localPack": {
+          "present": false
+        },
+        "instantAnswer": {
+          "present": false
+        }
+      },
+      "entityRelationships": [
+        {
+          "entity": "ZOE Solar",
+          "strength": 75,
+          "type": "provider"
+        },
+        {
+          "entity": "Electric Vehicle",
+          "strength": 88,
+          "type": "category"
+        }
+      ],
+      "entityStrengthScore": 36
+    }
+  },
+  "aeoQueries": {
+    "Was ist Photovoltaik": {
+      "query": "Was ist Photovoltaik",
+      "searchVolume": 4934,
+      "features": {
+        "featuredSnippet": {
+          "present": false,
+          "position": 1,
+          "source": "Wikipedia/Other"
+        },
+        "knowledgePanel": {
+          "present": false,
+          "entity": "ZOE Solar",
+          "expanded": false
+        },
+        "localPack": {
+          "present": false,
+          "position": 3
+        },
+        "peopleAlsoAsk": {
+          "present": false,
+          "questions": 5
+        },
+        "relatedSearches": {
+          "present": true,
+          "count": 9
+        }
+      },
+      "competitiveAdvantage": 0,
+      "timestamp": "2025-09-28T17:08:15.523Z"
+    },
+    "Wie funktioniert eine Solaranlage": {
+      "query": "Wie funktioniert eine Solaranlage",
+      "searchVolume": 5413,
+      "features": {
+        "featuredSnippet": {
+          "present": false,
+          "position": 2,
+          "source": "Wikipedia/Other"
+        },
+        "knowledgePanel": {
+          "present": false,
+          "entity": "ZOE Solar",
+          "expanded": false
+        },
+        "localPack": {
+          "present": false,
+          "position": 3
+        },
+        "peopleAlsoAsk": {
+          "present": false,
+          "questions": 4
+        },
+        "relatedSearches": {
+          "present": true,
+          "count": 8
+        }
+      },
+      "competitiveAdvantage": 0,
+      "timestamp": "2025-09-28T17:08:15.523Z"
+    },
+    "Solaranlage Kosten": {
+      "query": "Solaranlage Kosten",
+      "searchVolume": 3993,
+      "features": {
+        "featuredSnippet": {
+          "present": true,
+          "position": 3,
+          "source": "Wikipedia/Other"
+        },
+        "knowledgePanel": {
+          "present": true,
+          "entity": "Photovoltaik",
+          "expanded": false
+        },
+        "localPack": {
+          "present": true,
+          "position": 1
+        },
+        "peopleAlsoAsk": {
+          "present": false,
+          "questions": 6
+        },
+        "relatedSearches": {
+          "present": true,
+          "count": 5
+        }
+      },
+      "competitiveAdvantage": 10,
+      "timestamp": "2025-09-28T17:08:15.523Z"
+    },
+    "ZOE Solar Erfahrungen": {
+      "query": "ZOE Solar Erfahrungen",
+      "searchVolume": 1301,
+      "features": {
+        "featuredSnippet": {
+          "present": true,
+          "position": 2,
+          "source": "Wikipedia/Other"
+        },
+        "knowledgePanel": {
+          "present": true,
+          "entity": "Photovoltaik",
+          "expanded": false
+        },
+        "localPack": {
+          "present": true,
+          "position": 2
+        },
+        "peopleAlsoAsk": {
+          "present": false,
+          "questions": 5
+        },
+        "relatedSearches": {
+          "present": true,
+          "count": 5
+        }
+      },
+      "competitiveAdvantage": 10,
+      "timestamp": "2025-09-28T17:08:15.523Z"
+    },
+    "Beste Solaranlagen 2024": {
+      "query": "Beste Solaranlagen 2024",
+      "searchVolume": 5711,
+      "features": {
+        "featuredSnippet": {
+          "present": true,
+          "position": 1,
+          "source": "Wikipedia/Other"
+        },
+        "knowledgePanel": {
+          "present": false,
+          "entity": "Photovoltaik",
+          "expanded": true
+        },
+        "localPack": {
+          "present": false,
+          "position": 2
+        },
+        "peopleAlsoAsk": {
+          "present": true,
+          "questions": 6
+        },
+        "relatedSearches": {
+          "present": true,
+          "count": 9
+        }
+      },
+      "competitiveAdvantage": 20,
+      "timestamp": "2025-09-28T17:08:15.523Z"
+    },
+    "Photovoltaik Förderungen": {
+      "query": "Photovoltaik Förderungen",
+      "searchVolume": 5936,
+      "features": {
+        "featuredSnippet": {
+          "present": true,
+          "position": 2,
+          "source": "Wikipedia/Other"
+        },
+        "knowledgePanel": {
+          "present": false,
+          "entity": "ZOE Solar",
+          "expanded": false
+        },
+        "localPack": {
+          "present": true,
+          "position": 2
+        },
+        "peopleAlsoAsk": {
+          "present": false,
+          "questions": 6
+        },
+        "relatedSearches": {
+          "present": true,
+          "count": 5
+        }
+      },
+      "competitiveAdvantage": 10,
+      "timestamp": "2025-09-28T17:08:15.523Z"
+    },
+    "Solar Installation Berlin": {
+      "query": "Solar Installation Berlin",
+      "searchVolume": 5031,
+      "features": {
+        "featuredSnippet": {
+          "present": false,
+          "position": 1,
+          "source": "Wikipedia/Other"
+        },
+        "knowledgePanel": {
+          "present": true,
+          "entity": "ZOE Solar",
+          "expanded": false
+        },
+        "localPack": {
+          "present": true,
+          "position": 2
+        },
+        "peopleAlsoAsk": {
+          "present": false,
+          "questions": 5
+        },
+        "relatedSearches": {
+          "present": true,
+          "count": 9
+        }
+      },
+      "competitiveAdvantage": 30,
+      "timestamp": "2025-09-28T17:08:15.523Z"
+    },
+    "Elektroauto laden zu Hause": {
+      "query": "Elektroauto laden zu Hause",
+      "searchVolume": 1778,
+      "features": {
+        "featuredSnippet": {
+          "present": false,
+          "position": 3,
+          "source": "Wikipedia/Other"
+        },
+        "knowledgePanel": {
+          "present": false,
+          "entity": "ZOE Solar",
+          "expanded": false
+        },
+        "localPack": {
+          "present": false,
+          "position": 1
+        },
+        "peopleAlsoAsk": {
+          "present": true,
+          "questions": 3
+        },
+        "relatedSearches": {
+          "present": true,
+          "count": 10
+        }
+      },
+      "competitiveAdvantage": 5,
+      "timestamp": "2025-09-28T17:08:15.523Z"
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "high",
+      "category": "knowledge-graph",
+      "title": "Knowledge Panel Präsenz erhöhen",
+      "description": "3/4 Entities haben Knowledge Panels. Optimieren Sie Entity-Daten.",
+      "impact": "high",
+      "effort": "medium"
+    },
+    {
+      "priority": "medium",
+      "category": "content-optimization",
+      "title": "Featured Snippets gewinnen",
+      "description": "Nur 0 Featured Snippets in Besitz. Optimieren Sie Content für häufige Fragen.",
+      "impact": "medium",
+      "effort": "medium"
+    },
+    {
+      "priority": "medium",
+      "category": "entity-optimization",
+      "title": "Entity \"Elektroauto Ladestation\" stärken",
+      "description": "Entity Strength Score: 36. Mehr strukturierte Daten und Backlinks benötigt.",
+      "impact": "medium",
+      "effort": "medium",
+      "entity": "Elektroauto Ladestation"
+    }
+  ],
+  "summary": {
+    "totalEntities": 4,
+    "avgEntityAuthority": 75.75,
+    "avgEntityStrengthScore": 77.75,
+    "knowledgePanelsPresent": 3,
+    "featuredSnippetsOwned": 0,
+    "avgCompetitiveAdvantage": 10.625,
+    "alerts": 1,
+    "opportunities": 2
+  }
+}

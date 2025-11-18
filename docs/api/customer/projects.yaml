@@ -1,0 +1,392 @@
+# Customer Projects Endpoint Specification
+get:
+  tags:
+    - Customer Management
+  summary: Get Customer Projects
+  description: |
+    Retrieve a paginated list of the authenticated customer's solar projects.
+
+    This endpoint returns:
+    - All projects associated with the customer
+    - Project status and progress information
+    - Basic project metadata
+    - Filtering and sorting options
+
+    ## Features
+    - Pagination with customizable page size
+    - Status filtering (pending, active, completed, cancelled)
+    - Project type filtering (photovoltaik, emobilitaet, etc.)
+    - Sorting by various criteria
+    - Search functionality
+
+  parameters:
+    - $ref: '../../openapi.yaml#/components/parameters/Authorization'
+    - $ref: '../../openapi.yaml#/components/parameters/Page'
+    - $ref: '../../openapi.yaml#/components/parameters/Limit'
+    - name: status
+      in: query
+      description: Filter projects by status
+      schema:
+        type: string
+        enum: [pending, active, completed, cancelled, all]
+        default: "all"
+      example: "active"
+    - name: type
+      in: query
+      description: Filter projects by type
+      schema:
+        type: string
+        enum: [photovoltaik, emobilitaet, energiespeicher, waermepumpe, carport, all]
+        default: "all"
+      example: "photovoltaik"
+    - name: sortBy
+      in: query
+      description: Sort projects by field
+      schema:
+        type: string
+        enum: [createdAt, updatedAt, title, power, status, progress]
+        default: "createdAt"
+      example: "createdAt"
+    - name: sortOrder
+      in: query
+      description: Sort order direction
+      schema:
+        type: string
+        enum: [asc, desc]
+        default: "desc"
+      example: "desc"
+    - name: search
+      in: query
+      description: Search projects by title or description
+      schema:
+        type: string
+        example: "Bürodach"
+
+  responses:
+    '200':
+      description: Projects retrieved successfully
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../../openapi.yaml#/components/schemas/Success'
+              - type: object
+                properties:
+                  data:
+                    type: object
+                    required:
+                      - projects
+                      - pagination
+                    properties:
+                      projects:
+                        type: array
+                        items:
+                          $ref: '../../openapi.yaml#/components/schemas/SolarProject'
+                        example:
+                          - id: "proj_123456"
+                            title: "Photovoltaikanlage Bürodach"
+                            type: "photovoltaik"
+                            power: 250
+                            status: "active"
+                            progress: 65
+                            estimatedBudget: 75000
+                            createdAt: "2025-02-01T10:00:00Z"
+                            updatedAt: "2025-11-17T14:30:00Z"
+                          - id: "proj_789012"
+                            title: "E-Mobilität Ladeninfrastruktur"
+                            type: "emobilitaet"
+                            power: 50
+                            status: "completed"
+                            progress: 100
+                            estimatedBudget: 25000
+                            createdAt: "2025-01-20T14:00:00Z"
+                            updatedAt: "2025-10-15T16:45:00Z"
+                      pagination:
+                        $ref: '../../openapi.yaml#/components/schemas/Pagination'
+          example:
+            success: true
+            data:
+              projects:
+                - id: "proj_123456"
+                  title: "Photovoltaikanlage Bürodach"
+                  type: "photovoltaik"
+                  power: 250
+                  status: "active"
+                  progress: 65
+                  location:
+                    street: "Musterstraße 1"
+                    city: "Berlin"
+                    zipCode: "10115"
+                    country: "Germany"
+                  estimatedBudget: 75000
+                  progress: 65
+                  estimatedCompletion: "2025-04-15T00:00:00Z"
+                  createdAt: "2025-02-01T10:00:00Z"
+                  updatedAt: "2025-11-17T14:30:00Z"
+                - id: "proj_789012"
+                  title: "E-Mobilität Ladeninfrastruktur"
+                  type: "emobilitaet"
+                  power: 50
+                  status: "completed"
+                  progress: 100
+                  location:
+                    street: "Musterstraße 1"
+                    city: "Berlin"
+                    zipCode: "10115"
+                    country: "Germany"
+                  estimatedBudget: 25000
+                  createdAt: "2025-01-20T14:00:00Z"
+                  updatedAt: "2025-10-15T16:45:00Z"
+              pagination:
+                page: 1
+                limit: 20
+                total: 3
+                totalPages: 1
+                hasNext: false
+                hasPrev: false
+            meta:
+              timestamp: "2025-11-17T15:30:00Z"
+              request_id: "req_projects_abc123"
+              version: "1.0.0"
+
+    '401':
+      $ref: '../../openapi.yaml#/components/responses/Unauthorized'
+    '500':
+      $ref: '../../openapi.yaml#/components/responses/ServerError'
+
+post:
+  tags:
+    - Customer Management
+  summary: Create New Project
+  description: |
+    Create a new solar project for the authenticated customer.
+
+    This endpoint creates a new project with:
+    - Basic project information
+    - Technical specifications
+    - Location and contact details
+    - Budget and timeline information
+    - Initial status and progress tracking
+
+    ## Project Creation Process
+    1. Validate project data and requirements
+    2. Create project record with unique ID
+    3. Initialize project status and milestones
+    4. Assign to appropriate project manager
+    5. Send confirmation notifications
+    6. Return created project details
+
+    ## Validation Rules
+    - Title must be unique for the customer
+    - Power must be within valid ranges (1-1000 kW)
+    - Location must be valid and complete
+    - Budget must be reasonable for project scope
+    - Contact information must be verifiable
+
+  parameters:
+    - $ref: '../../openapi.yaml#/components/parameters/Authorization'
+    - $ref: '../../openapi.yaml#/components/parameters/ContentType'
+
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - title
+            - type
+            - power
+            - location
+          properties:
+            title:
+              type: string
+              minLength: 5
+              maxLength: 100
+              example: "Photovoltaikanlage Bürodach Berlin"
+              description: Project title (must be unique for customer)
+            type:
+              type: string
+              enum: [photovoltaik, emobilitaet, energiespeicher, waermepumpe, carport]
+              example: "photovoltaik"
+              description: Type of solar project
+            power:
+              type: number
+              minimum: 1
+              maximum: 1000
+              example: 250
+              description: System power in kWp
+            location:
+              $ref: '../../openapi.yaml#/components/schemas/Address'
+            description:
+              type: string
+              maxLength: 1000
+              example: "Installation einer 250kWp Photovoltaikanlage auf dem Bürodach mit Speicherintegration"
+            estimatedBudget:
+              type: number
+              minimum: 1000
+              maximum: 10000000
+              example: 75000
+              description: Estimated project budget in EUR
+            timeline:
+              type: string
+              maxLength: 100
+              example: "3-4 Monate"
+              description: Expected project timeline
+            specialRequirements:
+              type: array
+              items:
+                type: string
+              example: ["Nachrüstung für E-Mobilität", "Besondere Dachlasten"]
+              description: Special requirements or constraints
+            contactPerson:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: "Hans Mueller"
+                email:
+                  type: string
+                  format: email
+                  example: "h.mueller@firma.de"
+                phone:
+                  type: string
+                  pattern: '^\\+?[1-9]\\d{1,14}$'
+                  example: "+49 30 87654321"
+                role:
+                  type: string
+                  example: "Technischer Leiter"
+            priority:
+              type: string
+              enum: [low, medium, high, urgent]
+              default: "medium"
+              example: "high"
+              description: Project priority level
+            internalNotes:
+              type: string
+              maxLength: 2000
+              example: "Kunde benötigt schnelle Umsetzung für Förderfrist"
+              description: Internal notes for project management
+            estimatedStart:
+              type: string
+              format: date
+              example: "2025-12-01"
+              description: Estimated project start date
+
+  responses:
+    '201':
+      description: Project created successfully
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../../openapi.yaml#/components/schemas/Success'
+              - type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      project:
+                        $ref: '../../openapi.yaml#/components/schemas/SolarProject'
+                      nextSteps:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            step:
+                              type: string
+                              example: "Technische Prüfung"
+                            description:
+                              type: string
+                              example: "Unser Team prüft die technischen Anforderungen"
+                            dueDate:
+                              type: string
+                              format: date-time
+                              example: "2025-11-20T17:00:00Z"
+                            assignedTo:
+                              type: string
+                              example: "projektmanager@zoe-solar.de"
+                        example:
+                          - step: "Technische Prüfung"
+                            description: "Unser Team prüft die technischen Anforderungen"
+                            dueDate: "2025-11-20T17:00:00Z"
+                            assignedTo: "projektmanager@zoe-solar.de"
+                          - step: "Standortbesichtigung"
+                            description: "Vor-Ort-Besichtigung der Dachfläche"
+                            dueDate: "2025-11-25T17:00:00Z"
+                            assignedTo: "techniker@zoe-solar.de"
+                      projectManager:
+                        type: object
+                        properties:
+                          name:
+                            type: string
+                            example: "Anna Schmidt"
+                          email:
+                            type: string
+                            example: "anna.schmidt@zoe-solar.de"
+                          phone:
+                            type: string
+                            example: "+49 30 12345678"
+          example:
+            success: true
+            data:
+              project:
+                id: "proj_xyz123"
+                title: "Photovoltaikanlage Bürodach Berlin"
+                type: "photovoltaik"
+                power: 250
+                status: "pending"
+                location:
+                  street: "Musterstraße 1"
+                  city: "Berlin"
+                  zipCode: "10115"
+                  country: "Germany"
+                  coordinates:
+                    lat: 52.5200
+                    lng: 13.4050
+                estimatedBudget: 75000
+                priority: "high"
+                progress: 0
+                createdAt: "2025-11-17T15:30:00Z"
+                updatedAt: "2025-11-17T15:30:00Z"
+              nextSteps:
+                - step: "Technische Prüfung"
+                  description: "Unser Team prüft die technischen Anforderungen"
+                  dueDate: "2025-11-20T17:00:00Z"
+                  assignedTo: "projektmanager@zoe-solar.de"
+                - step: "Standortbesichtigung"
+                  description: "Vor-Ort-Besichtigung der Dachfläche"
+                  dueDate: "2025-11-25T17:00:00Z"
+                  assignedTo: "techniker@zoe-solar.de"
+              projectManager:
+                name: "Anna Schmidt"
+                email: "anna.schmidt@zoe-solar.de"
+                phone: "+49 30 12345678"
+            meta:
+              timestamp: "2025-11-17T15:30:00Z"
+              request_id: "req_create_project_abc123"
+              version: "1.0.0"
+
+    '400':
+      $ref: '../../openapi.yaml#/components/responses/ValidationError'
+      description: Invalid input data
+    '409':
+      description: Conflict (duplicate project title)
+      content:
+        application/json:
+          schema:
+            $ref: '../../openapi.yaml#/components/schemas/Error'
+          example:
+            success: false
+            error:
+              code: "DUPLICATE_TITLE"
+              message: "A project with this title already exists"
+            request_id: "req_create_project_abc123"
+            timestamp: "2025-11-17T15:30:00Z"
+    '401':
+      $ref: '../../openapi.yaml#/components/responses/Unauthorized'
+    '500':
+      $ref: '../../openapi.yaml#/components/responses/ServerError'
+
+  security:
+    - BearerAuth: []

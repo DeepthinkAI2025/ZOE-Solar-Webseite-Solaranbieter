@@ -1,0 +1,418 @@
+{
+  "name": "ZOE Solar CMS Workspace Template",
+  "version": "1.0",
+  "description": "Vollständige Workspace-Struktur für ZOE Solar CMS Integration",
+  "workspace_id": "060d95db-e7b1-8199-bd5c-00031da83d2c",
+  "databases": {
+    "images_manager": {
+      "name": "🖼️ Bilder-Manager",
+      "properties": {
+        "Titel": { "type": "title" },
+        "Dateiname": { "type": "rich_text" },
+        "Alt-Text": { "type": "rich_text" },
+        "Kategorie": { 
+          "type": "select", 
+          "options": [
+            { "name": "Hero", "color": "blue" },
+            { "name": "Produkt", "color": "green" },
+            { "name": "Team", "color": "orange" },
+            { "name": "Referenzen", "color": "purple" },
+            { "name": "Galerie", "color": "red" }
+          ]
+        },
+        "Dateigröße": { "type": "number", "format": "kilobyte" },
+        "Abmessungen": { "type": "rich_text" },
+        "Format": {
+          "type": "select",
+          "options": [
+            { "name": "JPG", "color": "yellow" },
+            { "name": "PNG", "color": "blue" },
+            { "name": "WebP", "color": "green" },
+            { "name": "SVG", "color": "red" }
+          ]
+        },
+        "Qualität": {
+          "type": "select",
+          "options": [
+            { "name": "Optimiert", "color": "green" },
+            { "name": "Original", "color": "orange" }
+          ]
+        },
+        "Web-URL": { "type": "url" },
+        "Backup-URL": { "type": "url" },
+        "Status": {
+          "type": "select",
+          "options": [
+            { "name": "Aktiv", "color": "green" },
+            { "name": "Inaktiv", "color": "gray" },
+            { "name": "Archiviert", "color": "red" }
+          ]
+        },
+        "Letzte Aktualisierung": { "type": "date" }
+      }
+    },
+    "blog_articles": {
+      "name": "📝 Blog & Artikel",
+      "properties": {
+        "Titel": { "type": "title" },
+        "Slug": { "type": "rich_text" },
+        "Kategorie": {
+          "type": "select",
+          "options": [
+            { "name": "Technik", "color": "blue" },
+            { "name": "Business", "color": "green" },
+            { "name": "Recht", "color": "orange" },
+            { "name": "Trends", "color": "purple" }
+          ]
+        },
+        "Tags": { "type": "multi_select" },
+        "Datum": { "type": "date" },
+        "Teaser-Text": { "type": "rich_text" },
+        "Lesezeit": { "type": "number", "format": "minute" },
+        "Schwierigkeit": {
+          "type": "select",
+          "options": [
+            { "name": "Einsteiger", "color": "green" },
+            { "name": "Mittel", "color": "yellow" },
+            { "name": "Fortgeschritten", "color": "red" }
+          ]
+        },
+        "SEO-Titel": { "type": "rich_text" },
+        "Meta-Beschreibung": { "type": "rich_text" },
+        "Fokus-Keyword": { "type": "rich_text" },
+        "Status": {
+          "type": "select",
+          "options": [
+            { "name": "Entwurf", "color": "gray" },
+            { "name": "Review", "color": "yellow" },
+            { "name": "Geplant", "color": "blue" },
+            { "name": "Veröffentlicht", "color": "green" }
+          ]
+        },
+        "Veröffentlichung": { "type": "date" }
+      }
+    },
+    "api_endpoints": {
+      "name": "🔌 API-Endpunkte",
+      "properties": {
+        "Endpunkt-Name": { "type": "title" },
+        "HTTP-Methode": {
+          "type": "select",
+          "options": [
+            { "name": "GET", "color": "blue" },
+            { "name": "POST", "color": "green" },
+            { "name": "PUT", "color": "orange" },
+            { "name": "DELETE", "color": "red" }
+          ]
+        },
+        "Pfad": { "type": "rich_text" },
+        "Beschreibung": { "type": "rich_text" },
+        "Parameter": { "type": "rich_text" },
+        "Response-Beispiel": { "type": "rich_text" },
+        "Authentifizierung": {
+          "type": "select",
+          "options": [
+            { "name": "Öffentlich", "color": "green" },
+            { "name": "API-Key", "color": "blue" },
+            { "name": "OAuth", "color": "orange" }
+          ]
+        },
+        "Rate-Limit": { "type": "number", "format": "number_with_commas" },
+        "Cache-Dauer": { "type": "number", "format": "second" },
+        "Status": {
+          "type": "select",
+          "options": [
+            { "name": "Aktiv", "color": "green" },
+            { "name": "Inaktiv", "color": "gray" },
+            { "name": "Beta", "color": "yellow" }
+          ]
+        },
+        "Version": { "type": "rich_text" },
+        "Letzte Nutzung": { "type": "date" }
+      }
+    },
+    "website_pages": {
+      "name": "🗂️ Website-Seiten",
+      "properties": {
+        "Seitenname": { "type": "title" },
+        "URL-Pfad": { "type": "rich_text" },
+        "Seiten-Typ": {
+          "type": "select",
+          "options": [
+            { "name": "Landing", "color": "blue" },
+            { "name": "Produkt", "color": "green" },
+            { "name": "Service", "color": "orange" },
+            { "name": "Info", "color": "purple" }
+          ]
+        },
+        "Hauptkategorie": {
+          "type": "select",
+          "options": [
+            { "name": "Photovoltaik", "color": "yellow" },
+            { "name": "Speicher", "color": "blue" },
+            { "name": "Service", "color": "green" },
+            { "name": "Unternehmen", "color": "purple" }
+          ]
+        },
+        "Sortierung": { "type": "number", "format": "number" },
+        "Meta-Titel": { "type": "rich_text" },
+        "Meta-Beschreibung": { "type": "rich_text" },
+        "Breadcrumb": { "type": "rich_text" },
+        "Hauptnavigation": { "type": "checkbox" },
+        "Footer-Navigation": { "type": "checkbox" },
+        "Status": {
+          "type": "select",
+          "options": [
+            { "name": "Live", "color": "green" },
+            { "name": "Entwurf", "color": "yellow" },
+            { "name": "Archiviert", "color": "gray" }
+          ]
+        },
+        "Sichtbarkeit": {
+          "type": "select",
+          "options": [
+            { "name": "Öffentlich", "color": "green" },
+            { "name": "Intern", "color": "blue" },
+            { "name": "Exklusiv", "color": "orange" }
+          ]
+        }
+      }
+    },
+    "customers": {
+      "name": "👥 Kunden-Datenbank",
+      "properties": {
+        "Kunden-ID": { "type": "title" },
+        "Firma": { "type": "rich_text" },
+        "Ansprechpartner": { "type": "rich_text" },
+        "E-Mail": { "type": "email" },
+        "Telefon": { "type": "phone_number" },
+        "Straße": { "type": "rich_text" },
+        "PLZ": { "type": "rich_text" },
+        "Stadt": { "type": "rich_text" },
+        "Land": {
+          "type": "select",
+          "options": [
+            { "name": "Deutschland", "color": "blue" },
+            { "name": "Österreich", "color": "red" },
+            { "name": "Schweiz", "color": "orange" }
+          ]
+        },
+        "Kunden-Segment": {
+          "type": "select",
+          "options": [
+            { "name": "Privat", "color": "green" },
+            { "name": "Kleinbetrieb", "color": "blue" },
+            { "name": "Mittelstand", "color": "orange" },
+            { "name": "Großunternehmen", "color": "red" }
+          ]
+        },
+        "Status": {
+          "type": "select",
+          "options": [
+            { "name": "Aktiv", "color": "green" },
+            { "name": "Interessent", "color": "yellow" },
+            { "name": "Abgeschlossen", "color": "blue" },
+            { "name": "Archiviert", "color": "gray" }
+          ]
+        },
+        "Erstkontakt": { "type": "date" },
+        "Vertragsbeginn": { "type": "date" },
+        "Projektwert": { "type": "number", "format": "euro" },
+        "Bezahlverhalten": {
+          "type": "select",
+          "options": [
+            { "name": "Pünktlich", "color": "green" },
+            { "name": "Verspätet", "color": "yellow" },
+            { "name": "Problematisch", "color": "red" }
+          ]
+        },
+        "Zufriedenheit": {
+          "type": "select",
+          "options": [
+            { "name": "Sehr gut", "color": "green" },
+            { "name": "Gut", "color": "blue" },
+            { "name": "Befriedigend", "color": "yellow" },
+            { "name": "Schlecht", "color": "red" }
+          ]
+        },
+        "Referenz-Freigabe": { "type": "checkbox" },
+        "Notizen": { "type": "rich_text" },
+        "Letzte Aktivität": { "type": "date" }
+      }
+    },
+    "employees": {
+      "name": "🏢 Team-Datenbank",
+      "properties": {
+        "Name": { "type": "title" },
+        "Mitarbeiter-ID": { "type": "rich_text" },
+        "Position": {
+          "type": "select",
+          "options": [
+            { "name": "Geschäftsführung", "color": "red" },
+            { "name": "Projektleitung", "color": "blue" },
+            { "name": "Vertrieb", "color": "green" },
+            { "name": "Technik", "color": "orange" }
+          ]
+        },
+        "E-Mail": { "type": "email" },
+        "Telefon": { "type": "phone_number" },
+        "Handynummer": { "type": "phone_number" },
+        "Arbeitszeit": {
+          "type": "select",
+          "options": [
+            { "name": "Vollzeit", "color": "green" },
+            { "name": "Teilzeit", "color": "blue" },
+            { "name": "Freiberuflich", "color": "orange" }
+          ]
+        },
+        "Standort": { "type": "rich_text" },
+        "Qualifikationen": { "type": "multi_select" },
+        "Zertifikate": { "type": "multi_select" },
+        "Sprachen": { "type": "multi_select" },
+        "Zugangsrechte": { "type": "multi_select" },
+        "Arbeitsbeginn": { "type": "date" },
+        "Status": {
+          "type": "select",
+          "options": [
+            { "name": "Aktiv", "color": "green" },
+            { "name": "Inaktiv", "color": "gray" },
+            { "name": "Urlaub", "color": "blue" },
+            { "name": "Krank", "color": "orange" }
+          ]
+        },
+        "Notizen": { "type": "rich_text" }
+      }
+    },
+    "auth_credentials": {
+      "name": "🔐 Zugangsdaten-Verwaltung",
+      "properties": {
+        "Account-Name": { "type": "title" },
+        "Service": {
+          "type": "select",
+          "options": [
+            { "name": "CMS", "color": "blue" },
+            { "name": "Analytics", "color": "green" },
+            { "name": "Hosting", "color": "orange" },
+            { "name": "CRM", "color": "purple" },
+            { "name": "Social Media", "color": "red" }
+          ]
+        },
+        "Zugangsart": {
+          "type": "select",
+          "options": [
+            { "name": "Admin", "color": "red" },
+            { "name": "Redakteur", "color": "blue" },
+            { "name": "Moderator", "color": "green" },
+            { "name": "Betrachter", "color": "gray" }
+          ]
+        },
+        "Benutzername": { "type": "rich_text" },
+        "Passwort-Hash": { "type": "rich_text" },
+        "Zwei-Faktor-Auth": { "type": "checkbox" },
+        "Berechtigungen": { "type": "multi_select" },
+        "Status": {
+          "type": "select",
+          "options": [
+            { "name": "Aktiv", "color": "green" },
+            { "name": "Gesperrt", "color": "red" },
+            { "name": "Abgelaufen", "color": "orange" }
+          ]
+        },
+        "Letzte Anmeldung": { "type": "date" },
+        "Notizen": { "type": "rich_text" }
+      }
+    },
+    "projects": {
+      "name": "⚡ Projekt-Verwaltung",
+      "properties": {
+        "Projektname": { "type": "title" },
+        "Projekt-ID": { "type": "rich_text" },
+        "Typ": {
+          "type": "select",
+          "options": [
+            { "name": "Photovoltaik", "color": "yellow" },
+            { "name": "Speicher", "color": "blue" },
+            { "name": "Wartung", "color": "green" },
+            { "name": "Planung", "color": "orange" }
+          ]
+        },
+        "Status": {
+          "type": "select",
+          "options": [
+            { "name": "Angebot", "color": "gray" },
+            { "name": "Bestätigt", "color": "blue" },
+            { "name": "In Arbeit", "color": "yellow" },
+            { "name": "Abgeschlossen", "color": "green" },
+            { "name": "Storniert", "color": "red" }
+          ]
+        },
+        "Standort": { "type": "rich_text" },
+        "Fläche": { "type": "number", "format": "square_meter" },
+        "Leistung": { "type": "number", "format": "kilowatt" },
+        "Kosten": { "type": "number", "format": "euro" },
+        "Beginn": { "type": "date" },
+        "Geplante Fertigstellung": { "type": "date" },
+        "Tatsächliche Fertigstellung": { "type": "date" },
+        "Notizen": { "type": "rich_text" },
+        "Risiko-Bewertung": {
+          "type": "select",
+          "options": [
+            { "name": "Niedrig", "color": "green" },
+            { "name": "Mittel", "color": "yellow" },
+            { "name": "Hoch", "color": "red" }
+          ]
+        }
+      }
+    }
+  },
+  "views": {
+    "dashboard": {
+      "name": "📊 CMS Dashboard",
+      "type": "board",
+      "databases": ["blog_articles", "website_pages", "api_endpoints"],
+      "groupBy": "Status"
+    },
+    "media_library": {
+      "name": "🖼️ Medien-Bibliothek",
+      "type": "gallery",
+      "databases": ["images_manager"],
+      "groupBy": "Kategorie"
+    },
+    "team_management": {
+      "name": "👥 Team-Übersicht",
+      "type": "table",
+      "databases": ["employees", "auth_credentials"],
+      "sortBy": "Name"
+    },
+    "project_tracking": {
+      "name": "📈 Projekt-Tracking",
+      "type": "timeline",
+      "databases": ["projects"],
+      "timelineStart": "Beginn",
+      "timelineEnd": "Geplante Fertigstellung"
+    }
+  },
+  "automation": {
+    "webhooks": [
+      {
+        "name": "Website Cache Invalidierung",
+        "url": "https://your-domain.vercel.app/api/notion-webhook",
+        "events": ["page.created", "page.updated", "page.deleted"],
+        "secret": "your_webhook_secret"
+      }
+    ],
+    "formulas": {
+      "blog_reading_time": "if(prop('Lesezeit') > 0, prop('Lesezeit'), round(length(prop('Titel')) / 200))",
+      "project_status_color": "if(prop('Status') == 'Abgeschlossen', 'green', if(prop('Status') == 'In Arbeit', 'yellow', 'gray'))"
+    }
+  },
+  "integrations": {
+    "notion_api": {
+      "token": "secret_your_integration_token",
+      "version": "2022-06-28"
+    },
+    "webhooks": {
+      "verification_token": "your_verification_token"
+    }
+  }
+}

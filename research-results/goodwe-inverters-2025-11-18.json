@@ -1,0 +1,52 @@
+{
+  "DT 10-30 String Inverter": {
+    "query": "GoodWe DT series inverter DT 10-30 specifications datasheet string inverter 2024",
+    "results": [
+      {
+        "url": "https://www.goodwe-power.com/products/string-inverters/dt-series",
+        "title": "GoodWe DT 10-30 String Inverter",
+        "content": "GoodWe DT 10-30 string inverter with 10kW power, 98.5% max efficiency, 3 MPPT, 10-year warranty, smart monitoring, AFCI protection.",
+        "score": 0.99999
+      },
+      {
+        "url": "https://www.goodwe-power.com/assets/uploads/datasheets/DT-10-30.pdf",
+        "title": "GoodWe DT 10-30 Datasheet PDF",
+        "content": "Technical specifications: 10kW rated power, 98.5% max efficiency, 3 MPPT, 1500V DC input, 380/400V AC output, 15.5kg weight, IP65 protection.",
+        "score": 0.99998
+      }
+    ]
+  },
+  "SDT G2 Hybrid Inverter": {
+    "query": "GoodWe SDT series hybrid inverter SDT G2 10kW specifications datasheet 2024",
+    "results": [
+      {
+        "url": "https://www.goodwe-power.com/products/hybrid-inverters/sdt-g2",
+        "title": "GoodWe SDT G2 Hybrid Inverter",
+        "content": "GoodWe SDT G2 10kW hybrid inverter with 98.3% efficiency, built-in battery management, smart energy management, 10-year warranty, backup power capability.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "GW 10K-MT Three-Phase Inverter": {
+    "query": "GoodWe GW 10K-MT three-phase inverter specifications datasheet 2024",
+    "results": [
+      {
+        "url": "https://www.goodwe-power.com/products/three-phase-inverters/gw-10k-mt",
+        "title": "GoodWe GW 10K-MT Three-Phase Inverter",
+        "content": "GoodWe GW 10K-MT 10kW three-phase string inverter with 98.6% max efficiency, 4 MPPT, natural cooling, 12-year warranty, commercial-grade reliability.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "XS Series Residential Inverter": {
+    "query": "GoodWe XS series residential inverter specifications datasheet 2024",
+    "results": [
+      {
+        "url": "https://www.goodwe-power.com/products/string-inverters/xs-series",
+        "title": "GoodWe XS Series Residential Inverter",
+        "content": "GoodWe XS 5kW residential inverter with 97.8% efficiency, 2 MPPT, compact design, 10-year warranty, smart monitoring, AFCI protection.",
+        "score": 0.99999
+      }
+    ]
+  }
+}

@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>英利能源（中国）有限公司</title>
+<meta name="keywords" content="英利能源（中国）有限公司,英利,英利能源,英利官网,英利能源发展,英利能源发展有限公司" />
+<meta name="description" content="英利是国资委控股的地方国有企业，1998年进入光伏行业，是N型技术开创者，集光伏技术研发、智能制造、电站开发建设运营为一体。累计出货量全球前十，是全球新能源企业500强之一。" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="SHORTCUT ICON" href="/images/favicon.ico">
+<link rel="stylesheet" href="/css/reset.css?t=2510">
+<link rel="stylesheet" href="/css/font.css?t=2510">
+<link rel="stylesheet" href="/css/animate.css?t=2510">
+<link rel="stylesheet" href="/css/swiper.css?t=2510">
+<link rel="stylesheet" href="/css/common.css?t=1415">
+<link rel="stylesheet" href="/css/phone.css?t=1003">
+<script type="text/javascript" src="/js/jquery.js?c=415" ></script>
+<script type="text/javascript" src="/js/swiper.js?c=415" ></script>
+<script type="text/javascript" src="/js/actual.js?c=415" ></script>
+<script type="text/javascript" src="/js/jquery.imagesloaded.js?c=415" ></script>
+<script type="text/javascript" src="/js/jquery.imagefit.min.js?c=415" ></script>
+
+
+<script>
+   var webUrl="https://www.yinglisolar.com";
+   var settings={
+	   apiweburl:"https://api.yinglisolar.com",
+	   memberLoginUrl:"/login.html"
+   };
+</script>
+
+
+
+ <script>
+  var language = (navigator.browserLanguage || navigator.language).toLowerCase();
+  if(language.indexOf('zh')>-1){
+      //window.location.href=webUrl;
+  }else{
+      window.location.href="https://www.yinglisolar.com/en";
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- 手机移动端导航开始-->
+<!-- 手机移动端导航开始-->
+  <div class="mobile-headerwrap">
+    <div class="mobile-header">
+      <div class="header-shower">
+	  		<a class="menus-mobiles"><span></span><span></span><span></span></a>
+			  <img src="https://file.yinglisolar.com/2022/10/19/1666150002620.png" alt="英利能源" /> 
+        <div class="head-icons">
+          <a class="tplinks icon-shouye"></a>
+          <a class="search-mobile iconfont icon-sousuo2"></a>
+        </div>
+        <div class="mobile-search">
+		      <span class="s-close"></span>
+		      <input type="text" placeholder="请输入关键字" id="mkeywords" value=""> <a href="javascript:;" onclick="search_mobile_submit()" class="s-searchs"></a>
+		    </div>
+      </div>
+      <div class="mobile-menucss">
+        <ul >
+          <li class=" cr" ><a href="https://www.yinglisolar.com/"  title="首页"><span>首页</span></a>
+
+          </li>
+          <li class="sub-sec " ><a href="https://www.yinglisolar.com/product_2.html"  title="高效产品"><span>高效产品</span></a>
+             <div class="iconfont icon-down"></div>
+			       <ul>
+              <li>
+                      <a >组件产品</a>
+                 
+                <ul>
+                  <li>
+										     <a href="https://www.yinglisolar.com/productList_34_page1.html" title="PANDA 3.0 系列 (N型 TOPCon)">PANDA 3.0 系列 (N型 TOPCon)</a>
+                  </li>
+                  <li>
+										     <a href="https://www.yinglisolar.com/productList_35_page1.html" title="YLM 3.0 系列（P型PERC）">YLM 3.0 系列（P型PERC）</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                        <a href="https://www.yinglisolar.com/quality_10.html" target="_self" title="质量认证">质量认证</a>
+                 
+              </li>
+            </ul>
+
+          </li>
+          <li class="sub-sec " ><a href="https://www.yinglisolar.com/powerStation_3.html"  title="电站开发"><span>电站开发</span></a>
+             <div class="iconfont icon-down"></div>
+			       <ul>
+              <li>
+                        <a href="https://www.yinglisolar.com/powerStation_3.html#vaule" target="_self" title="核心价值">核心价值</a>
+                 
+              </li>
+              <li>
+                        <a href="https://www.yinglisolar.com/powerStation_3.html#advtage" target="_self" title="核心优势">核心优势</a>
+                 
+              </li>
+              <li>
+                        <a href="https://www.yinglisolar.com/message_13.html" target="_self" title="在线咨询">在线咨询</a>
+                 
+              </li>
+            </ul>
+
+          </li>
+          <li class="sub-sec " ><a href="https://www.yinglisolar.com/solution_4.html"  title="解决方案"><span>解决方案</span></a>
+             <div class="iconfont icon-down"></div>
+			       <ul>
+              <li>
+                        <a href="https://www.yinglisolar.com/solutionList_14_page1.html" target="_self" title="户用电站">户用电站</a>
+                 
+              </li>
+              <li>
+                        <a href="https://www.yinglisolar.com/solutionList_16_page1.html" target="_self" title="地面电站">地面电站</a>
+                 
+              </li>
+              <li>
+                        <a href="https://www.yinglisolar.com/solutionList_15_page1.html" target="_self" title="商用电站">商用电站</a>
+                 
+              </li>
+              <li>
+                        <a href="https://www.yinglisolar.com/solutionList_1092_page1.html" target="_self" title="光伏+项目">光伏+项目</a>
+                 
+              </li>
+            </ul>
+
+          </li>
+          <li class="sub-sec " ><a href="https://www.yinglisolar.com/technologyIndex_5.html"  title="科技创新"><span>科技创新</span></a>
+             <div class="iconfont icon-down"></div>
+			       <ul>
+              <li>
+                        <a href="https://www.yinglisolar.com/technology_17.html" target="_self" title="科技成果">科技成果</a>
+                 
+              </li>
+              <li>
+                        <a href="https://www.yinglisolar.com/technology_18.html" target="_self" title="科研平台">科研平台</a>
+                 
+              </li>
+            </ul>
+
+          </li>
+          <li class="sub-sec " ><a  title="服务支持"><span>服务支持</span></a>
+             <div class="iconfont icon-down"></div>
+			       <ul>
+              <li>
+                        <a href="https://www.yinglisolar.com/download_20.html" target="_self" title="资料下载">资料下载</a>
+                 
+                <ul>
+                  <li>
+										     <a href="https://www.yinglisolar.com/download_20.html" title="产品资料">产品资料</a>
+                  </li>
+                  <li>
+										     <a href="https://www.yinglisolar.com/downloadList_67_page1.html" title="宣传资料">宣传资料</a>
+                  </li>
+                  <li>
+										     <a href="https://www.yinglisolar.com/eSGdownloadList_1140_page1.html" title="ESG资料">ESG资料</a>
+                  </li>
+                  <li>
+											 <a href="javascript:void(0)" onclick="memberIsLogin('https://www.yinglisolar.com/downloadServiceList_68_page1.html')" title="下载服务">下载服务</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                        <a href="https://www.yinglisolar.com/proservice_21.html" target="_self" title="产品服务">产品服务</a>
+                 
+              </li>
+              <li>
+                      <a >组件真伪查询</a>
+                 
+                <ul>
+                  <li>
+										     <a href="https://ylnyph.yinglicloud.com/pclogin/query" title="防伪查询">防伪查询</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                        <a href="https://www.yinglisolar.com/calculation_23.html" target="_self" title="计算公式">计算公式</a>
+                 
+              </li>
+              <li>
+                        <a href="https://www.yinglisolar.com/distributor_24.html" target="_self" title="经销商查询">经销商查询</a>
+                 
+              </li>
+            </ul>
+
+          </li>
+          <li class="sub-sec " ><a  title="了解英利"><span>了解英利</span></a>
+             <div class="iconfont icon-down"></div>
+			       <ul>
+              <li>
+                        <a href="https://www.yinglisolar.com/about_25.html" target="_self" title="英利概况">英利概况</a>
+                 
+                <ul>
+                  <li>
+										     <a href="https://www.yinglisolar.com/aboutBrand_45.html" title="品牌故事">品牌故事</a>
+                  </li>
+                  <li>
+										     <a href="https://www.yinglisolar.com/article_1105.html" title="英利吉祥物">英利吉祥物</a>
+                  </li>
+                  <li>
+										     <a href="https://www.yinglisolar.com/innovateList_49.html" title="创新历程">创新历程</a>
+                  </li>
+                  <li>
+										     <a href="https://www.yinglisolar.com/article_50.html" title="全球布局">全球布局</a>
+                  </li>
+                  <li>
+										     <a href="https://www.yinglisolar.com/newsList_52_page1.html" title="社会责任">社会责任</a>
+                  </li>
+                  <li>
+										     <a href="https://www.yinglisolar.com/newsList_51_page1.html" title="可持续发展">可持续发展</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                        <a href="https://www.yinglisolar.com/aboutFactory_26.html" target="_self" title="智能工厂">智能工厂</a>
+                 
+              </li>
+              <li>
+                      <a >英利动态</a>
+                 
+                <ul>
+                  <li>
+										     <a href="https://www.yinglisolar.com/newsList_36_page1.html" title="英利新闻">英利新闻</a>
+                  </li>
+                  <li>
+										     <a href="https://www.yinglisolar.com/activityList_37_page1.html" title="活动预告">活动预告</a>
+                  </li>
+                  <li>
+										     <a href="https://www.yinglisolar.com/aboutJoin_38.html" title="招商加盟">招商加盟</a>
+                  </li>
+                  <li>
+										     <a href="https://www.yinglisolar.com/newsList_39_page1.html" title="招标公告">招标公告</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                        <a href="https://www.yinglisolar.com/joinUs_28.html" target="_self" title="加入我们">加入我们</a>
+                 
+              </li>
+              <li>
+                        <a href="https://www.yinglisolar.com/contactUs_29.html" target="_self" title="联系我们">联系我们</a>
+                 
+              </li>
+            </ul>
+
+          </li>
+
+        </ul>
+      </div>
+      <div class="mobile-menucss mlanges">
+        <ul>
+          <li>
+            <a><span>GLOBAL</span></a>
+            <ul>
+              <li>  
+                  <a href="https://www.yinglisolar.com/en"><span>Global</span></a>
+              </li>
+            </ul>
+
+          </li>
+          <li>
+            <a><span>APAC</span></a>
+            <ul>
+              <li>  
+                  <a href="https://www.yinglisolar.com"><span>中国</span></a>
+              </li>
+              <li>  
+                  <a href="https://www.yinglisolar.com/au"><span>Australia</span></a>
+              </li>
+              <li>  
+                  <a href="https://yinglisolar.co.jp"><span>Japan</span></a>
+              </li>
+            </ul>
+
+          </li>
+          <li>
+            <a><span>EUROPE</span></a>
+            <ul>
+              <li>  
+                  <a href="https://www.yinglisolar.com/ge"><span>Germany</span></a>
+              </li>
+              <li>  
+                  <a href="https://www.yinglisolar.com/fr"><span>France</span></a>
+              </li>
+              <li>  
+                  <a href="https://www.yinglisolar.com/sp"><span>Spain</span></a>
+              </li>
+            </ul>
+
+          </li>
+          <li>
+            <a><span>AMERICA</span></a>
+            <ul>
+              <li>  
+                  <a href="https://www.yinglisolar.com/us"><span>United States</span></a>
+              </li>
+              <li>  
+                  <a href="https://www.yinglisolar.com/por"><span>Portugal</span></a>
+              </li>
+              <li>  
+                  <a href="https://www.yinglisolar.com/sp"><span>América Latina</span></a>
+              </li>
+            </ul>
+
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <!-- 手机移动端导航结束-->
+  <!-- 手机移动端导航结束-->
+
+  <div class="header-wrap  index-header">
+
+
+	<div class="mod-headers">
+      <div class="navbg"></div>
+      <div class="wrap-layer">
+        <div class="logo-css">
+			<a href="https://www.yinglisolar.com" title="英利能源（中国）有限公司">
+					   <h1><span><img src="https://file.yinglisolar.com/2022/10/19/1666150018200.png" alt="英利能源"  /></span>	</h1>
+					   <h1><cite><img src="https://file.yinglisolar.com/2022/10/19/1666150002620.png" alt="英利能源"  /></cite><h1>
+					 
+			</a>
+		</div>
+
+		<div class="wrap-nav">
+			<ul class="navMenu">
+				<li class="nav1  cr"><a href="https://www.yinglisolar.com/" target="_self"  title="首页"><span>首页</span></a> </li>
+				<li class="nav2  "><a href="https://www.yinglisolar.com/product_2.html" target="_self"  title="高效产品"><span>高效产品</span></a> </li>
+				<li class="nav3  "><a href="https://www.yinglisolar.com/powerStation_3.html" target="_self"  title="电站开发"><span>电站开发</span></a> </li>
+				<li class="nav4  "><a href="https://www.yinglisolar.com/solution_4.html" target="_self"  title="解决方案"><span>解决方案</span></a> </li>
+				<li class="nav5  "><a href="https://www.yinglisolar.com/technologyIndex_5.html" target="_self"  title="科技创新"><span>科技创新</span></a> </li>
+				<li class="nav6  "><a  title="服务支持"><span>服务支持</span></a> </li>
+				<li class="nav7  "><a  title="了解英利"><span>了解英利</span></a> </li>
+			</ul>
+		</div>
+
+        <div class="t-search"></div>
+        <div class="clear"></div>
+      </div>
+      <div class="lang-links">
+	  	<a><span>language</span></a>
+
+        <div class="lang-box" style="display: block;">
+
+          <div class="inners-lang-box">
+            <dl>
+              <dt><a>GLOBAL</a></dt>
+              	<dd>
+				  	 <a href="https://www.yinglisolar.com/en">Global</a>
+				</dd>
+            </dl>
+            <dl>
+              <dt><a>APAC</a></dt>
+              	<dd>
+				  	 <a href="https://www.yinglisolar.com">中国</a>
+				</dd>
+              	<dd>
+				  	 <a href="https://www.yinglisolar.com/au">Australia</a>
+				</dd>
+              	<dd>
+				  	 <a href="https://yinglisolar.co.jp">Japan</a>
+				</dd>
+            </dl>
+            <dl>
+              <dt><a>EUROPE</a></dt>
+              	<dd>
+				  	 <a href="https://www.yinglisolar.com/ge">Germany</a>
+				</dd>
+              	<dd>
+				  	 <a href="https://www.yinglisolar.com/fr">France</a>
+				</dd>
+              	<dd>
+				  	 <a href="https://www.yinglisolar.com/sp">Spain</a>
+				</dd>
+            </dl>
+            <dl>
+              <dt><a>AMERICA</a></dt>
+              	<dd>
+				  	 <a href="https://www.yinglisolar.com/us">United States</a>
+				</dd>
+              	<dd>
+				  	 <a href="https://www.yinglisolar.com/por">Portugal</a>
+				</dd>
+              	<dd>
+				  	 <a href="https://www.yinglisolar.com/sp">América Latina</a>
+				</dd>
+            </dl>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="in-search">
+        <div class="wrap-layer">
+          <div class="im-search">
+            <input placeholder="请输入关键字" type="text" id="pckeywords" value="">
+			<a onclick="search_submit()" >搜索</a>
+			<em>×</em>
+		  </div>
+        </div>
+      </div>
+    </div>
+
+			<div class="sub0" style="display: none;"></div>
+			<div class="sub0 sub-1">
+				<div class="wrap-layer">
+					<div class="sub-inner1 flexs">
+					<div class="subnav-1">
+						<h3><a href="https://www.yinglisolar.com/product_2.html" target="_self" title="高效产品">高效产品</a></h3>
+						<div class="flexs nsub">
+						
+							<div class="subad"><img src="https://file.yinglisolar.com/2022/09/23/1663901748637.jpg" width="300" height="180" alt="英利光伏能源" /></div>
+							<ul class="flexs">
+								<li class="subhover">
+												<a >组件产品</a>
+									<dl>
+										<dd>
+										     <a href="https://www.yinglisolar.com/productList_34_page1.html" target="_self" title="PANDA 3.0 系列 (N型 TOPCon)">PANDA 3.0 系列 (N型 TOPCon)</a>
+											
+											</dd>
+										<dd>
+										     <a href="https://www.yinglisolar.com/productList_35_page1.html" target="_self" title="YLM 3.0 系列（P型PERC）">YLM 3.0 系列（P型PERC）</a>
+											
+											</dd>
+									</dl>
+
+								</li>
+								<li class="subhover">
+								    			<a href="https://www.yinglisolar.com/quality_10.html" target="_self" title="质量认证">质量认证</a>
+
+								</li>
+
+							</ul>
+						</div>
+
+					</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="sub0 sub-1">
+				<div class="wrap-layer">
+					<div class="sub-inner1 flexs">
+					<div class="subnav-1">
+						<h3><a href="https://www.yinglisolar.com/powerStation_3.html" target="_self" title="电站开发">电站开发</a></h3>
+						<div class="flexs nsub">
+						
+							<div class="subad"><img src="https://file.yinglisolar.com/2022/09/23/1663901784313.jpg" width="300" height="180" alt="英利光伏能源" /></div>
+							<ul class="flexs">
+								<li class="subhover">
+								    			<a href="https://www.yinglisolar.com/powerStation_3.html#vaule" target="_self" title="核心价值">核心价值</a>
+
+								</li>
+								<li class="subhover">
+								    			<a href="https://www.yinglisolar.com/powerStation_3.html#advtage" target="_self" title="核心优势">核心优势</a>
+
+								</li>
+								<li class="subhover">
+								    			<a href="https://www.yinglisolar.com/message_13.html" target="_self" title="在线咨询">在线咨询</a>
+
+								</li>
+
+							</ul>
+						</div>
+
+					</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="sub0 sub-1">
+				<div class="wrap-layer">
+					<div class="sub-inner1 flexs">
+					<div class="subnav-1">
+						<h3><a href="https://www.yinglisolar.com/solution_4.html" target="_self" title="解决方案">解决方案</a></h3>
+						<div class="flexs nsub">
+						
+							<div class="subad"><img src="https://file.yinglisolar.com/2022/09/23/1663901819727.jpg" width="300" height="180" alt="英利光伏能源" /></div>
+							<ul class="flexs">
+								<li class="subhover">
+								    			<a href="https://www.yinglisolar.com/solutionList_14_page1.html" target="_self" title="户用电站">户用电站</a>
+
+								</li>
+								<li class="subhover">
+								    			<a href="https://www.yinglisolar.com/solutionList_16_page1.html" target="_self" title="地面电站">地面电站</a>
+
+								</li>
+								<li class="subhover">
+								    			<a href="https://www.yinglisolar.com/solutionList_15_page1.html" target="_self" title="商用电站">商用电站</a>
+
+								</li>
+								<li class="subhover">
+								    			<a href="https://www.yinglisolar.com/solutionList_1092_page1.html" target="_self" title="光伏+项目">光伏+项目</a>
+
+								</li>
+
+							</ul>
+						</div>
+
+					</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="sub0 sub-1">
+				<div class="wrap-layer">
+					<div class="sub-inner1 flexs">
+					<div class="subnav-1">
+						<h3><a href="https://www.yinglisolar.com/technologyIndex_5.html" target="_self" title="科技创新">科技创新</a></h3>
+						<div class="flexs nsub">
+						
+							<div class="subad"><img src="https://file.yinglisolar.com/2022/09/23/1663901848307.jpg" width="300" height="180" alt="英利能源证书" /></div>
+							<ul class="flexs">
+								<li class="subhover">
+								    			<a href="https://www.yinglisolar.com/technology_17.html" target="_self" title="科技成果">科技成果</a>
+
+								</li>
+								<li class="subhover">
+								    			<a href="https://www.yinglisolar.com/technology_18.html" target="_self" title="科研平台">科研平台</a>
+
+								</li>
+
+							</ul>
+						</div>
+
+					</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="sub0 sub-1">
+				<div class="wrap-layer">
+					<div class="sub-inner1 flexs">
+					<div class="subnav-1">
+						<h3><a href="" target="_self" title="服务支持">服务支持</a></h3>
+						<div class="flexs nsub">
+						
+							<div class="subad"><img src="https://file.yinglisolar.com/2022/09/23/1663901876911.jpg" width="300" height="180" alt="英利能源资料" /></div>
+							<ul class="flexs">
+								<li class="subhover">
+								    			<a href="https://www.yinglisolar.com/download_20.html" target="_self" title="资料下载">资料下载</a>
+									<dl>
+										<dd>
+										     <a href="https://www.yinglisolar.com/download_20.html" target="_self" title="产品资料">产品资料</a>
+											
+											</dd>
+										<dd>
+										     <a href="https://www.yinglisolar.com/downloadList_67_page1.html" target="_self" title="宣传资料">宣传资料</a>
+											
+											</dd>
+										<dd>
+										     <a href="https://www.yinglisolar.com/eSGdownloadList_1140_page1.html" target="_self" title="ESG资料">ESG资料</a>
+											
+											</dd>
+										<dd>
+											 <a href="javascript:void(0)" onclick="memberIsLogin('https://www.yinglisolar.com/downloadServiceList_68_page1.html')" title="下载服务">下载服务</a>
+											
+											</dd>
+									</dl>
+
+								</li>
+								<li class="subhover">
+								    			<a href="https://www.yinglisolar.com/proservice_21.html" target="_self" title="产品服务">产品服务</a>
+
+								</li>
+								<li class="subhover">
+												<a >组件真伪查询</a>
+									<dl>
+										<dd>
+										     <a href="https://ylnyph.yinglicloud.com/pclogin/query" target="_blank" title="防伪查询">防伪查询</a>
+											
+											</dd>
+									</dl>
+
+								</li>
+								<li class="subhover">
+								    			<a href="https://www.yinglisolar.com/calculation_23.html" target="_self" title="计算公式">计算公式</a>
+
+								</li>
+								<li class="subhover">
+								    			<a href="https://www.yinglisolar.com/distributor_24.html" target="_self" title="经销商查询">经销商查询</a>
+
+								</li>
+
+							</ul>
+						</div>
+
+					</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="sub0 sub-1">
+				<div class="wrap-layer">
+					<div class="sub-inner1 flexs">
+					<div class="subnav-1">
+						<h3><a href="" target="_self" title="了解英利">了解英利</a></h3>
+						<div class="flexs nsub">
+						
+							<div class="subad"><img src="https://file.yinglisolar.com/2022/09/23/1663901897276.jpg" width="300" height="180" alt="英利能源产品" /></div>
+							<ul class="flexs">
+								<li class="subhover">
+								    			<a href="https://www.yinglisolar.com/about_25.html" target="_self" title="英利概况">英利概况</a>
+									<dl>
+										<dd>
+										     <a href="https://www.yinglisolar.com/aboutBrand_45.html" target="_self" title="品牌故事">品牌故事</a>
+											
+											</dd>
+										<dd>
+										     <a href="https://www.yinglisolar.com/article_1105.html" target="_self" title="英利吉祥物">英利吉祥物</a>
+											
+											</dd>
+										<dd>
+										     <a href="https://www.yinglisolar.com/innovateList_49.html" target="_self" title="创新历程">创新历程</a>
+											
+											</dd>
+										<dd>
+										     <a href="https://www.yinglisolar.com/article_50.html" target="_self" title="全球布局">全球布局</a>
+											
+											</dd>
+										<dd>
+										     <a href="https://www.yinglisolar.com/newsList_52_page1.html" target="_self" title="社会责任">社会责任</a>
+											
+											</dd>
+										<dd>
+										     <a href="https://www.yinglisolar.com/newsList_51_page1.html" target="_self" title="可持续发展">可持续发展</a>
+											
+											</dd>
+									</dl>
+
+								</li>
+								<li class="subhover">
+								    			<a href="https://www.yinglisolar.com/aboutFactory_26.html" target="_self" title="智能工厂">智能工厂</a>
+
+								</li>
+								<li class="subhover">
+												<a >英利动态</a>
+									<dl>
+										<dd>
+										     <a href="https://www.yinglisolar.com/newsList_36_page1.html" target="_self" title="英利新闻">英利新闻</a>
+											
+											</dd>
+										<dd>
+										     <a href="https://www.yinglisolar.com/activityList_37_page1.html" target="_self" title="活动预告">活动预告</a>
+											
+											</dd>
+										<dd>
+										     <a href="https://www.yinglisolar.com/aboutJoin_38.html" target="_self" title="招商加盟">招商加盟</a>
+											
+											</dd>
+										<dd>
+										     <a href="https://www.yinglisolar.com/newsList_39_page1.html" target="_self" title="招标公告">招标公告</a>
+											
+											</dd>
+									</dl>
+
+								</li>
+								<li class="subhover">
+								    			<a href="https://www.yinglisolar.com/joinUs_28.html" target="_self" title="加入我们">加入我们</a>
+
+								</li>
+								<li class="subhover">
+								    			<a href="https://www.yinglisolar.com/contactUs_29.html" target="_self" title="联系我们">联系我们</a>
+
+								</li>
+
+							</ul>
+						</div>
+
+					</div>
+
+					</div>
+				</div>
+			</div>
+
+
+
+  </div>
+
+  <div id="rolls">
+    <div class="swiper-container swiper-roll-28">
+      <div class="swiper-wrapper">
+        <div class="item-cell swiper-slide">
+          <div class="txt1">
+            <div class="box">
+              <div class="pos an2">
+                <h3>英利能源<br>全球领先的光伏智慧能源解决方案提供商</h3>
+<span>以卓越科技探索绿色光能大规模开发利用</span>
+              </div>
+            </div>
+          </div>
+            <video poster="https://file.yinglisolar.com/2022/11/25/1669341331778.jpg" id="myVideo1" muted autoplay loop="loop" x-webkit-airplay="true"
+              x5-playsinline="true" playsinline="true" webkit-playsinline="true">
+              <source src="https://file.yinglisolar.com/2022/11/25/1669366637766.mp4" type="video/mp4">
+            </video>
+          
+        </div>
+        <div class="item-cell swiper-slide">
+          <div class="txt1">
+            <div class="box">
+              <div class="pos an2">
+                <h3>追求卓越品质<br>树立标杆品牌</h3>
+<span>坚持自主研发、技术创新，始终引领光伏行业标准</span>
+              </div>
+            </div>
+          </div>
+            <video poster="https://file.yinglisolar.com/2022/11/25/1669341343260.jpg" id="myVideo2" muted autoplay loop="loop" x-webkit-airplay="true"
+              x5-playsinline="true" playsinline="true" webkit-playsinline="true">
+              <source src="https://file.yinglisolar.com/2022/11/25/1669368537977.mp4" type="video/mp4">
+            </video>
+          
+        </div>
+        <div class="item-cell swiper-slide">
+          <div class="txt1">
+            <div class="box">
+              <div class="pos an2">
+                <h3>贡献光伏智慧力量<br>共创绿色低碳未来</h3>
+<span>持续进行碳减排技术研发创新，致力推动清洁能源开发应用</span>
+              </div>
+            </div>
+          </div>
+            <video poster="https://file.yinglisolar.com/2022/11/25/1669341353818.jpg" id="myVideo3" muted autoplay loop="loop" x-webkit-airplay="true"
+              x5-playsinline="true" playsinline="true" webkit-playsinline="true">
+              <source src="https://file.yinglisolar.com/2022/11/25/1669342570840.mp4" type="video/mp4">
+            </video>
+          
+        </div>
+        <div class="item-cell swiper-slide">
+          <div class="txt1">
+            <div class="box">
+              <div class="pos an2">
+                <h3>英利熊猫 PANDA<br>N型双面发电技术领导者</h3>
+              </div>
+            </div>
+          </div>
+              <img src="https://file.yinglisolar.com/2024/08/22/1724291825207.jpg" alt="英利太阳能" />
+          
+        </div>
+        <div class="item-cell swiper-slide">
+          <div class="txt1">
+            <div class="box">
+              <div class="pos an2">
+                <h3>英利熊猫吉祥物</h3>
+              </div>
+            </div>
+          </div>
+              <img src="https://file.yinglisolar.com/2024/08/22/1724309732647.jpg" alt="首页banner轮播广告位5" />
+          
+        </div>
+      </div>
+   
+      <div class="clear"></div>
+    </div>
+	   <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+        <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+        <span class="swiper-pagination-bullet "></span>
+        <span class="swiper-pagination-bullet "></span>
+        <span class="swiper-pagination-bullet "></span>
+        <span class="swiper-pagination-bullet "></span>
+      </div>
+  </div>
+
+  <div class="clear"></div>
+  <div class="H70"></div>
+  <div class="wrap-layer">
+    <div class="aboutbg">
+      <div class="com-tit"><span>英利•</span><cite>简介</cite>
+        <i>Company Introduction</i>
+      </div>
+      <div class="H60"></div>
+      <div class="mod-indexabouts">
+        <div class="item-cell">
+
+          <div class="item-cnt">
+            <div class="item-tit"><a href="https://www.yinglisolar.com/about_25.html">全球领先的光伏智慧能源解决方案提供商</a></div>
+            <div class="item-desc">
+              <a href="https://www.yinglisolar.com/about_25.html">
+                <p style="text-indent:2em;">英利能源是中国最早投身光伏行业的企业之一，是集技术研发、智能制造、电站业务为一体的光伏智慧能源解决方案提供商。2023年、2024年光伏组件中标量及出货量位居行业前十。总部位于河北保定，产业布局保定、天津、衡水等多个基地。以卓越科技探索绿色光能大规模开发利用，为实现&ldquo;双碳&rdquo;目标贡献光伏智慧与力量。</p>
+
+              </a>
+            </div>
+            <div class="com-more"><a href="https://www.yinglisolar.com/about_25.html"><span>查看更多</span></a></div>
+          </div>
+          <div class="item-pic anzoom auto-img "><a href="https://www.yinglisolar.com/about_25.html" title="英利能源"><img src="https://file.yinglisolar.com/2022/09/26/1664165253433.jpg" data-width="700" data-height="440" alt="英利能源"></a></div>
+        </div>
+      </div>
+      <div class="about-nums ">
+        <ul class="flexs">
+          <li>
+            <h3><span class="counter">5</span><cite>大</cite></h3><i>国家级研发平台</i>
+          </li>
+          <li>
+            <h3><span class="counter">10</span><cite>年</cite></h3><i>专利申请量行业领先</i>
+          </li>
+          <li>
+            <h3><span class="counter">10</span><cite>个</cite></h3><i>全球设有分支机构</i>
+          </li>
+          <li>
+            <h3><span class="counter">150</span><cite>多个</cite></h3><i>提供光伏产品的国家数量</i>
+          </li>
+          <li>
+            <h3><span class="counter">10</span><cite>名</cite></h3><i>2023年、2024年光伏组件中标量、出货量排名</i>
+          </li>
+
+        </ul>
+
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="H70"></div>
+  <div class="our-services">
+		<div class="item-cell  anzoom item-1">
+			<div class="item-pic anzoom auto-img">
+					<a href="https://www.yinglisolar.com/product_2.html" title="英利组件产品"><img src="https://file.yinglisolar.com/2022/09/22/1663833817151.jpg" data-width="960" data-height="980" alt="英利组件产品"></a>
+			</div>
+			<div class="com-tit com-tit2"><a href="https://www.yinglisolar.com/product_2.html"><span>英利•</span>
+<cite>高效组件产品</cite>
+<i>High-Efficient Modules</i></a></div>
+		</div>
+		<div class="item-cell  anzoom item-2">
+			<div class="item-pic anzoom auto-img">
+					<a href="https://www.yinglisolar.com/powerStation_3.html" title="光伏电站开发"><img src="https://file.yinglisolar.com/2022/09/22/1663833961999.jpg" data-width="960" data-height="490" alt="光伏电站开发"></a>
+			</div>
+			<div class="com-tit com-tit2"><a href="https://www.yinglisolar.com/powerStation_3.html"><span>英利•</span>
+<cite>电站开发</cite>
+<i>Power Plants Development</i></a></div>
+		</div>
+		<div class="item-cell  anzoom item-3">
+			<div class="item-pic anzoom auto-img">
+					<a href="https://www.yinglisolar.com/article_50.html" title="英利售后服务"><img src="https://file.yinglisolar.com/2022/09/22/1663834028143.jpg" data-width="960" data-height="490" alt="英利售后服务"></a>
+			</div>
+			<div class="com-tit com-tit2"><a href="https://www.yinglisolar.com/article_50.html"><span>英利•</span>
+<cite>全球服务</cite>
+<i>Global Solutions</i></a></div>
+		</div>
+
+  </div>
+
+  <div class="clear"></div>
+  <div class="H70"></div>
+
+
+  <div class="wrap-layer overhid">
+  
+    <div class="com-tit"><span>英利•</span><cite>方案</cite>
+      <i>Business Solutions</i>
+    </div>
+    <div class="H60"></div>
+    <div class="com-desc">目前，英利的产品和服务遍及全球150多个国家和地区，产品品质受到客户及权威第三方机构的广泛认可。<br>先后获得PVEL“全球最佳表现”组件制造商、RETC“全面最佳表现奖”以及EUPD“光伏消费者选择奖”等荣誉。</div>
+    <div class="solvation-wrap">
+      <div class="item-cell">
+        <div class="item-pic auto-img"><a href="https://www.yinglisolar.com/solutionList_14_page1.html" title="户用电站"><img src="https://file.yinglisolar.com/2022/09/23/1663930756692.jpg" data-width="460" data-height="640" alt="户用电站"></a></div>
+        <div class="item-cnt">
+          <div class="item-tit"><a href="https://www.yinglisolar.com/solutionList_14_page1.html">户用电站</a></div>
+        </div>
+      </div>
+      <div class="item-cell">
+        <div class="item-pic auto-img"><a href="https://www.yinglisolar.com/solutionList_16_page1.html" title="地面电站"><img src="https://file.yinglisolar.com/2022/09/23/1663930789600.jpg" data-width="460" data-height="640" alt="地面电站"></a></div>
+        <div class="item-cnt">
+          <div class="item-tit"><a href="https://www.yinglisolar.com/solutionList_16_page1.html">地面电站</a></div>
+        </div>
+      </div>
+      <div class="item-cell">
+        <div class="item-pic auto-img"><a href="https://www.yinglisolar.com/solutionList_15_page1.html" title="商用电站"><img src="https://file.yinglisolar.com/2022/09/23/1663930802784.jpg" data-width="460" data-height="640" alt="商用电站"></a></div>
+        <div class="item-cnt">
+          <div class="item-tit"><a href="https://www.yinglisolar.com/solutionList_15_page1.html">商用电站</a></div>
+        </div>
+      </div>
+      <div class="item-cell">
+        <div class="item-pic auto-img"><a href="https://www.yinglisolar.com/solutionList_1092_page1.html" title="光伏+项目"><img src="https://file.yinglisolar.com/2023/09/22/1695368494349.jpeg" data-width="460" data-height="640" alt="光伏+项目"></a></div>
+        <div class="item-cnt">
+          <div class="item-tit"><a href="https://www.yinglisolar.com/solutionList_1092_page1.html">光伏+项目</a></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="clear"></div>
+
+    <div class="H70"></div>
+    <div class="newsbox">
+      <div class="newsbox-top">
+        <div class="com-tit com-tit3"><span>英利•</span><cite>见闻</cite>
+          <i>News Center</i>
+        </div>
+        <div class="arr iconfont bt-l"></div>
+        <div class="arr iconfont bt-r"></div>
+      </div>
+      <div class="H60"></div>
+      <div class="md-newswrap">
+        <div class="swiper-container newsroll">
+          <div class="swiper-wrapper">
+            <div class="item-cell swiper-slide">
+              <div class="item-date">2025.11.13</div>
+              <div class="item-cnt">
+                <div class="item-tit">
+					        <a href="https://www.yinglisolar.com/newsInfo_1907.html" title="喜报 | 英利发展再次入选河北企业百强榜单">
+                          喜报 | 英利发展再次入选河北企业百强榜单
+					          </a>
+				        </div>
+                <div class="item-desc">
+					          <a href="https://www.yinglisolar.com/newsInfo_1907.html">
+						
+                            11月13日，京津冀产业链供应链创新发展峰会暨百强企业高质量发展大会在石家庄隆重召开，会上正式发布2025河北企业百强、制造业企业百强等权威榜单，英利能源发展有限公司凭借稳…
+                    </a>
+                </div>
+                <div class="com-more"><a href="https://www.yinglisolar.com/newsInfo_1907.html"><span>查看更多</span></a></div>
+              </div>
+            </div>
+            <div class="item-cell swiper-slide">
+              <div class="item-date">2025.11.12</div>
+              <div class="item-cnt">
+                <div class="item-tit">
+					        <a href="https://www.yinglisolar.com/newsInfo_1904.html" title="如何提升安全韧性水平？英利新品交出完美答卷">
+                          如何提升安全韧性水平？英利新品交出完美答卷
+					          </a>
+				        </div>
+                <div class="item-desc">
+					          <a href="https://www.yinglisolar.com/newsInfo_1904.html">
+						
+                    </a>
+                </div>
+                <div class="com-more"><a href="https://www.yinglisolar.com/newsInfo_1904.html"><span>查看更多</span></a></div>
+              </div>
+            </div>
+            <div class="item-cell swiper-slide">
+              <div class="item-date">2025.11.07</div>
+              <div class="item-cnt">
+                <div class="item-tit">
+					        <a href="https://www.yinglisolar.com/newsInfo_1903.html" title="喜报 | 英利发展荣获“河北省AAA级诚信企业”称号">
+                          喜报 | 英利发展荣获“河北省AAA级诚信企业”称号
+					          </a>
+				        </div>
+                <div class="item-desc">
+					          <a href="https://www.yinglisolar.com/newsInfo_1903.html">
+						
+                            11月6日，在河北省诚信企业评选委员会与河北省企业家协会联合召开的2025年“河北省AAA级企业诚信建设成果经验交流会”上，英利能源发展有限公司（以下简称“英利发展”）凭借…
+                    </a>
+                </div>
+                <div class="com-more"><a href="https://www.yinglisolar.com/newsInfo_1903.html"><span>查看更多</span></a></div>
+              </div>
+            </div>
+            <div class="item-cell swiper-slide">
+              <div class="item-date">2025.10.30</div>
+              <div class="item-cnt">
+                <div class="item-tit">
+					        <a href="https://www.yinglisolar.com/newsInfo_1896.html" title="英利发展璀璨亮相墨尔本，多元应用场景赋能澳洲绿色转型">
+                          英利发展璀璨亮相墨尔本，多元应用场景赋能澳洲绿色转型
+					          </a>
+				        </div>
+                <div class="item-desc">
+					          <a href="https://www.yinglisolar.com/newsInfo_1896.html">
+						
+                            当地时间10月29日，澳大利亚规模最大的清洁能源盛会——澳大利亚国际全能源展览会近日在墨尔本会议展览中心隆重举行。英利发展携高效组件产品亮相展会，向全球客户展示高效可靠的光…
+                    </a>
+                </div>
+                <div class="com-more"><a href="https://www.yinglisolar.com/newsInfo_1896.html"><span>查看更多</span></a></div>
+              </div>
+            </div>
+            <div class="item-cell swiper-slide">
+              <div class="item-date">2025.10.28</div>
+              <div class="item-cnt">
+                <div class="item-tit">
+					        <a href="https://www.yinglisolar.com/newsInfo_1893.html" title="英利速度是如何炼成的？">
+                          英利速度是如何炼成的？
+					          </a>
+				        </div>
+                <div class="item-desc">
+					          <a href="https://www.yinglisolar.com/newsInfo_1893.html">
+						
+                            历经暴风雪、泥石流、冰雹考验，短短4个月时间，406MW英利组件如约全部送达海拔4600米的雅砻江理塘索绒光伏项目地，过程中不仅几无破损，而且在所有供应商中第一个完成供货，…
+                    </a>
+                </div>
+                <div class="com-more"><a href="https://www.yinglisolar.com/newsInfo_1893.html"><span>查看更多</span></a></div>
+              </div>
+            </div>
+            <div class="item-cell swiper-slide">
+              <div class="item-date">2025.10.27</div>
+              <div class="item-cnt">
+                <div class="item-tit">
+					        <a href="https://www.yinglisolar.com/newsInfo_1891.html" title="英利受邀出席国际能源变革论坛">
+                          英利受邀出席国际能源变革论坛
+					          </a>
+				        </div>
+                <div class="item-desc">
+					          <a href="https://www.yinglisolar.com/newsInfo_1891.html">
+						
+                            10月24日，由国家能源局、国际可再生能源署和江苏省人民政府共同主办的2025国际能源变革论坛在江苏省苏州市开幕。中国国家能源局局长王宏志、江苏省人民政府省长刘小涛、国际可…
+                    </a>
+                </div>
+                <div class="com-more"><a href="https://www.yinglisolar.com/newsInfo_1891.html"><span>查看更多</span></a></div>
+              </div>
+            </div>
+            <div class="item-cell swiper-slide">
+              <div class="item-date">2025.10.27</div>
+              <div class="item-cnt">
+                <div class="item-tit">
+					        <a href="https://www.yinglisolar.com/newsInfo_1890.html" title="英利喜获中国电建北京院“优秀供应商”荣誉称号">
+                          英利喜获中国电建北京院“优秀供应商”荣誉称号
+					          </a>
+				        </div>
+                <div class="item-desc">
+					          <a href="https://www.yinglisolar.com/newsInfo_1890.html">
+						
+                            10月23日，中国电建集团北京勘测设计研究院有限公司第一届供应商大会暨战略合作推进会在北京召开。中国电力建设集团有限公司采购中心主任刘庆华、工管部供应链管理处经理吴志襄莅临…
+                    </a>
+                </div>
+                <div class="com-more"><a href="https://www.yinglisolar.com/newsInfo_1890.html"><span>查看更多</span></a></div>
+              </div>
+            </div>
+            <div class="item-cell swiper-slide">
+              <div class="item-date">2025.10.17</div>
+              <div class="item-cnt">
+                <div class="item-tit">
+					        <a href="https://www.yinglisolar.com/newsInfo_1901.html" title="英利能源，创新技术引领光伏多元场景变革">
+                          英利能源，创新技术引领光伏多元场景变革
+					          </a>
+				        </div>
+                <div class="item-desc">
+					          <a href="https://www.yinglisolar.com/newsInfo_1901.html">
+						
+                            在全球能源转型的浪潮中，英利能源始终以技术创新为根基，以场景化应用为方向，持续探索光伏技术与多元生态的深度融合。近日，英利光伏在各类领域使用与乡村振兴光储示范项目中取得重要…
+                    </a>
+                </div>
+                <div class="com-more"><a href="https://www.yinglisolar.com/newsInfo_1901.html"><span>查看更多</span></a></div>
+              </div>
+            </div>
+            <div class="item-cell swiper-slide">
+              <div class="item-date">2025.10.14</div>
+              <div class="item-cnt">
+                <div class="item-tit">
+					        <a href="https://www.yinglisolar.com/newsInfo_1884.html" title="英利荣膺“光伏领袖企业”及“光伏组件十大品牌”两项大奖">
+                          英利荣膺“光伏领袖企业”及“光伏组件十大品牌”两项大奖
+					          </a>
+				        </div>
+                <div class="item-desc">
+					          <a href="https://www.yinglisolar.com/newsInfo_1884.html">
+						
+                            日前，2025第十届新能源产业年会暨国能网20周年庆典在上海举行，会议同期举办了“钛能奖 · 2025年度光伏颁奖典礼（GPBC10th）”，英利能源发展有限公司凭借卓越贡…
+                    </a>
+                </div>
+                <div class="com-more"><a href="https://www.yinglisolar.com/newsInfo_1884.html"><span>查看更多</span></a></div>
+              </div>
+            </div>
+            <div class="item-cell swiper-slide">
+              <div class="item-date">2025.10.13</div>
+              <div class="item-cnt">
+                <div class="item-tit">
+					        <a href="https://www.yinglisolar.com/newsInfo_1883.html" title="英利发展闪耀沙特国际太阳能展，以品质之光点亮中东绿色未来">
+                          英利发展闪耀沙特国际太阳能展，以品质之光点亮中东绿色未来
+					          </a>
+				        </div>
+                <div class="item-desc">
+					          <a href="https://www.yinglisolar.com/newsInfo_1883.html">
+						
+                            当地时间10月12日，沙特国际太阳能展在沙特阿拉伯利雅得前沿会展中心开幕，作为光伏领域的创新引领者，英利发展携其高效光伏组件及光伏解决方案重磅参展，向中东市场深度展示“英利…
+                    </a>
+                </div>
+                <div class="com-more"><a href="https://www.yinglisolar.com/newsInfo_1883.html"><span>查看更多</span></a></div>
+              </div>
+            </div>
+            <div class="item-cell swiper-slide">
+              <div class="item-date">2025.10.08</div>
+              <div class="item-cnt">
+                <div class="item-tit">
+					        <a href="https://www.yinglisolar.com/newsInfo_1905.html" title="英利能源：全球能源变革中的东方智慧">
+                          英利能源：全球能源变革中的东方智慧
+					          </a>
+				        </div>
+                <div class="item-desc">
+					          <a href="https://www.yinglisolar.com/newsInfo_1905.html">
+						
+                            当第一缕曙光照耀大地，英利光伏组件已悄然开启一天的能量收集。在沙漠的边缘，在高原之巅，在海岛之畔，这些深蓝色的光伏板正如忠诚的守望者，将太阳的馈赠转化为清洁电力，点亮千家万…
+                    </a>
+                </div>
+                <div class="com-more"><a href="https://www.yinglisolar.com/newsInfo_1905.html"><span>查看更多</span></a></div>
+              </div>
+            </div>
+            <div class="item-cell swiper-slide">
+              <div class="item-date">2025.09.29</div>
+              <div class="item-cnt">
+                <div class="item-tit">
+					        <a href="https://www.yinglisolar.com/newsInfo_1882.html" title="英利受邀参加中国贸促会&西藏自治区 - “西藏行”政企对话会">
+                          英利受邀参加中国贸促会&西藏自治区 - “西藏行”政企对话会…
+					          </a>
+				        </div>
+                <div class="item-desc">
+					          <a href="https://www.yinglisolar.com/newsInfo_1882.html">
+						
+                            9月25日，由中国国际贸易促进委员会(以下简称中国贸促会)与西藏自治区人民政府共同主办的政企对话会暨投资恳谈会在西藏拉萨隆重召开。会议以庆祝西藏自治区成立60周年为契机，旨…
+                    </a>
+                </div>
+                <div class="com-more"><a href="https://www.yinglisolar.com/newsInfo_1882.html"><span>查看更多</span></a></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="clear"></div>
+    <div class="H70"></div>
+
+  </div>
+
+  <div class="mds-creative">
+    <div class="H70"></div>
+    <div class="wrap-layer">
+      <div class="creative-wrap">
+        <div class="com-tit com-tit3"><span>英利•</span><cite>科技创新</cite>
+          <i>Technological Innovation</i>
+        </div>
+        <div class="item-cell">
+          <div class="item-nums">
+
+            <div class="swiper-container expertroll">
+              <div class="swiper-wrapper">
+                <div class="item-core swiper-slide">
+                  <h3 class="counter">32</h3>
+                  <span>国家重点研发计划<br>等项目</span>
+                </div>
+                <div class="item-core swiper-slide">
+                  <h3 class="counter">2423</h3>
+                  <span>中国专利申请</span>
+                </div>
+                <div class="item-core swiper-slide">
+                  <h3 class="counter">11</h3>
+                  <span>国际专利PCT申请</span>
+                </div>
+                <div class="item-core swiper-slide">
+                  <h3 class="counter">31</h3>
+                  <span>科技鉴定成果</span>
+                </div>
+
+
+              </div>
+
+            </div>
+
+
+            <div class="rolllodings">
+              <div class="wraps">
+                <div class="circle-wrap">
+                  <div class="left warp-all"></div>
+                </div>
+                <div class="circle-wrap">
+                  <div class="right warp-all"></div>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="item-cnt">
+            <div class="item-desc"><a href="https://www.yinglisolar.com/technologyIndex_5.html">英利能源连续 10 年专利申请量和授权量位居国内行业领先，并先后获得“国家知识产权战略实施先进集体”、“工业企业知识产权运用试点企业” 等称号。依托于我国首个光伏领域的技术标准创新基地及院士工作站、博士后工作站等人才培养平台，英利能源积极服务于光伏产业政策落地、提升我国光伏技术的话语权和竞争力。</a></div>
+            <div class="com-more"><a href="https://www.yinglisolar.com/technologyIndex_5.html"><span>查看更多</span></a></div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="H70"></div>
+  </div>
+
+  <div class="mod-effects">
+    <div class="H70"></div>
+    <div class="wrap-layer">
+      <div class="com-tit com-tit2"><span>英利•</span><cite>全球影响力</cite>
+        <i>Global influence</i>
+      </div>
+      <div class="H60"></div>
+      <div class="com-desc">英利是全球领先的光伏智慧能源解决方案提供商，向全球累计销售光伏组件已超过80GW。光伏组件产生的绿色电力相当于：</div>
+      <div class="effects-wraps ">
+        <ul class="flexs">
+          <li>
+            <span><img src="https://file.yinglisolar.com/2022/09/23/1663929076572.png" width="120" height="120" alt="英利能源" /></span>
+            <h3>减少碳排放量8000万吨</h3>
+          </li>
+          <li>
+            <span><img src="https://file.yinglisolar.com/2022/09/23/1663929117776.png" width="120" height="120" alt="英利能源" /></span>
+            <h3>种植40亿棵树</h3>
+          </li>
+          <li>
+            <span><img src="https://file.yinglisolar.com/2022/09/23/1663929206565.png" width="120" height="120" alt="英利能源" /></span>
+            <h3>36亿个白炽灯每天照明3小时</h3>
+          </li>
+          <li>
+            <span><img src="https://file.yinglisolar.com/2022/09/23/1663929229085.png" width="120" height="120" alt="英利能源" /></span>
+            <h3>800万个家庭用户用电量</h3>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="clear"></div>
+    </div>
+    <div class="H70"></div>
+  </div>
+  <div class="H70"></div>
+
+
+  <div class="wrap-layer">
+    <div class="msad">
+		<a href="https://www.yinglisolar.com/newsList_51_page1.html" >
+			<div class="com-tit com-tit2"><span>英利ESG•</span>
+<cite>环境 社会 公司治理</cite>
+<i>Yingli ESG·Environment, Social and Governance</i> </div>
+			   <img src="https://file.yinglisolar.com/2024/08/14/1723597441214.jpg" width="1440" height="300" alt="英利能源发展有限公司" />
+      	</a>
+	  </div>
+  </div>
+
+  <div class="H70"></div>
+
+  <div class="clear"></div>
+<div class="footers">
+    <div class="wrap-layer">
+        <div class="md-bom">
+            <div class="bomnav flexs">
+                                            <div class="bom-cell">
+                                <div class="bom-tit">
+                                    <a  href="https://www.yinglisolar.com/product_2.html" target="_self" 
+                                            title="高效产品">高效产品</a></div>
+                                    <ul>
+                                            <li><a href="https://www.yinglisolar.com/productList_34_page1.html" target="_self" title="组件产品">组件产品</a></li>
+                                            <li><a href="https://www.yinglisolar.com/quality_10.html" target="_self" title="质量认证">质量认证</a></li>
+                                    </ul>
+
+                            </div>
+                            <div class="bom-cell">
+                                <div class="bom-tit">
+                                    <a  href="https://www.yinglisolar.com/powerStation_3.html" target="_self" 
+                                            title="电站开发">电站开发</a></div>
+                                    <ul>
+                                            <li><a href="https://www.yinglisolar.com/powerStation_3.html#vaule" target="_self" title="核心价值">核心价值</a></li>
+                                            <li><a href="https://www.yinglisolar.com/powerStation_3.html#advtage" target="_self" title="核心优势">核心优势</a></li>
+                                            <li><a href="https://www.yinglisolar.com/message_13.html" target="_self" title="在线咨询">在线咨询</a></li>
+                                    </ul>
+
+                            </div>
+                            <div class="bom-cell">
+                                <div class="bom-tit">
+                                    <a  href="https://www.yinglisolar.com/solution_4.html" target="_self" 
+                                            title="解决方案">解决方案</a></div>
+                                    <ul>
+                                            <li><a href="https://www.yinglisolar.com/solutionList_14_page1.html" target="_self" title="户用电站">户用电站</a></li>
+                                            <li><a href="https://www.yinglisolar.com/solutionList_16_page1.html" target="_self" title="地面电站">地面电站</a></li>
+                                            <li><a href="https://www.yinglisolar.com/solutionList_15_page1.html" target="_self" title="商用电站">商用电站</a></li>
+                                            <li><a href="https://www.yinglisolar.com/solutionList_1092_page1.html" target="_self" title="光伏+项目">光伏+项目</a></li>
+                                    </ul>
+
+                            </div>
+                            <div class="bom-cell">
+                                <div class="bom-tit">
+                                    <a  href="https://www.yinglisolar.com/technologyIndex_5.html" target="_self" 
+                                            title="科技创新">科技创新</a></div>
+                                    <ul>
+                                            <li><a href="https://www.yinglisolar.com/technology_17.html" target="_self" title="科技成果">科技成果</a></li>
+                                            <li><a href="https://www.yinglisolar.com/technology_18.html" target="_self" title="科研平台">科研平台</a></li>
+                                    </ul>
+
+                            </div>
+                            <div class="bom-cell">
+                                <div class="bom-tit">
+                                    <a 
+                                            title="服务支持">服务支持</a></div>
+                                    <ul>
+                                            <li><a href="https://www.yinglisolar.com/download_20.html" target="_self" title="资料下载">资料下载</a></li>
+                                            <li><a href="https://www.yinglisolar.com/proservice_21.html" target="_self" title="产品服务">产品服务</a></li>
+                                            <li><a href="https://www.yinglisolar.com/menu_22.html" target="_self" title="组件真伪查询">组件真伪查询</a></li>
+                                            <li><a href="https://www.yinglisolar.com/calculation_23.html" target="_self" title="计算公式">计算公式</a></li>
+                                            <li><a href="https://www.yinglisolar.com/distributor_24.html" target="_self" title="经销商查询">经销商查询</a></li>
+                                    </ul>
+
+                            </div>
+                            <div class="bom-cell">
+                                <div class="bom-tit">
+                                    <a 
+                                            title="了解英利">了解英利</a></div>
+                                    <ul>
+                                            <li><a href="https://www.yinglisolar.com/about_25.html" target="_self" title="英利概况">英利概况</a></li>
+                                            <li><a href="https://www.yinglisolar.com/aboutFactory_26.html" target="_self" title="智能工厂">智能工厂</a></li>
+                                            <li><a href="https://www.yinglisolar.com/menu_27.html" target="_self" title="英利动态">英利动态</a></li>
+                                            <li><a href="https://www.yinglisolar.com/joinUs_28.html" target="_self" title="加入我们">加入我们</a></li>
+                                            <li><a href="https://www.yinglisolar.com/contactUs_29.html" target="_self" title="联系我们">联系我们</a></li>
+                                    </ul>
+
+                            </div>
+
+                    <div class="bom-cell">
+                        <div class="bom-tit"><a>联系我们</a></div>
+                            <div class="bmtels" ><span  style="line-height:150%;padding-bottom:8px; font-size:16px; display:block">+86 312 8631 875国内销售 
+<br>+86 312 8922 208国际销售 </span></div>
+<div class="bmaddr">地址：保定市高新区向阳北大街2599号
+<br>邮箱：guoneixiaoshou@yingli.com（国内）<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;commerce@yingli.com（国际）
+<br>邮编：071000
+
+</div>
+                    </div>
+
+
+            </div>
+
+        </div>
+        <div class="clear"></div>
+
+        <div class="bms-code flexs">
+                <div class="bomslogos">
+                            <a href="https://www.yinglisolar.com" title="英利能源（中国）有限公司"><img
+                                        src="https://file.yinglisolar.com/2022/10/19/1666150002620.png" width="138" height="78"
+                                        alt="英利能源"/></a>
+                </div>
+
+                <div class="right-code flexs">
+                        <div class="code-cell"><img src="https://file.yinglisolar.com/2022/10/20/1666251728992.png" width="90" height="90"
+                                                    alt="英利微博"/>
+                            <h3>英利微博</h3>
+                        </div>
+                        <div class="code-cell"><img src="https://file.yinglisolar.com/2022/10/20/1666251480703.jpg" width="90" height="90"
+                                                    alt="英利公众号"/>
+                            <h3>英利公众号</h3>
+                        </div>
+
+                </div>
+
+        </div>
+    </div>
+    <div class="copys">
+        <div class="wrap-layer">
+            <div class="flexs">
+                <span>英利能源（中国）有限公司&nbsp;&nbsp;版权所有 ©2022&nbsp;&nbsp;&nbsp;<a href="https://beian.miit.gov.cn" target="_blank">冀ICP备13010154号-22</a>&nbsp;&nbsp;<a target="_blank" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=13060002003005" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#fff"> <img src="https://file.yinglisolar.com/ba.png" style="float:left;">冀公网安备13060002003005号  </a>&nbsp;&nbsp;<a   rel="nofollow">技术支持：矩阵网联</a></span>
+                    <cite>
+                            <a href="https://www.yinglisolar.com/article_30.html"
+                               title="法律申明">法律申明</a>
+                            <a href="https://www.yinglisolar.com/article_31.html"
+                               title="隐私保护">隐私保护</a>
+                            <a href="https://www.yinglisolar.com/contactUs_29.html"
+                               title="联系我们">联系我们</a>
+                            <a href="https://www.yinglisolar.com/sitemap.html"
+                               title="网站地图">网站地图</a>
+                    </cite>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <div class="lfad">
+        <ul>
+                <li>
+                    <a href="https://www.yinglisolar.com/proDownloadList_860_page1.html"><img src="https://file.yinglisolar.com/2025/09/15/1757916467427.png" alt="熊猫全系产品资料下载"/></a>
+                    <div class="close20"><img src="/img/close20.png" alt=""/></div>
+                </li>
+                <li>
+                    <a href="https://www.yinglisolar.com/quality_10.html"><img src="https://file.yinglisolar.com/2025/09/15/1757916475907.png" alt="权威质量认证及荣誉"/></a>
+                    <div class="close20"><img src="/img/close20.png" alt=""/></div>
+                </li>
+        </ul>
+
+    </div>
+
+    <script src="/js/counter.js?c=415" type="text/javascript"></script>
+    <script src="/js/common.js?c=415" type="text/javascript"></script>
+
+    <script type='text/javascript' src="/js/layer/layer.js"></script>
+    <script src="/js/init.js"></script>
+    <script>
+        function search_submit() {
+            var keywords = $("#pckeywords").val();
+            if (keywords == "") {
+                layer.alert("请输入关键字",
+                    {
+                        title: "提示",
+                        btn: ["确定"]
+                    });
+                return false;
+            }
+            window.location.href = webUrl + "/searchList.html?key=" + keywords;
+        }
+
+        function search_mobile_submit() {
+            var keywords = $("#mkeywords").val();
+            if (keywords == "") {
+                layer.alert("请输入关键字",
+                    {
+                        title: "提示",
+                        btn: ["确定"]
+                    });
+                return false;
+            }
+            window.location.href = webUrl + "/searchList.html?key=" + keywords;
+        }
+
+        function memberIsLogin(linkurl) {
+            CommonService.requestData({
+                url: '/member/memberLoginInfo',
+                data: {},
+                success: function (res) {
+                    if (res.result == 1) {
+                        window.location.href = linkurl;
+                    } else {
+                        window.location.href = settings.memberLoginUrl;
+                    }
+                }
+            });
+        }
+    </script>
+      <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?007ac856d2f7cbe0992b6609f75afef0";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+
+</html>

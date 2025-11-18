@@ -1,0 +1,52 @@
+{
+  "Tiger Neo 475N-72HL4-V": {
+    "query": "Jinko Solar Tiger Neo 475N-72HL4-V specifications datasheet TOPCon N-Type 2024",
+    "results": [
+      {
+        "url": "https://jinkosolar.com/de/produkte/tiger-neo-serie/",
+        "title": "Jinko Solar Tiger Neo 475N-72HL4-V - TOPCon N-Type Module",
+        "content": "Jinko Tiger Neo 475N-72HL4-V N-Type TOPCon solar module with 475Wp power, 22.0% efficiency, 144 half-cut cells, 15-year product warranty, 30-year linear performance warranty (87.4%).",
+        "score": 0.99999
+      },
+      {
+        "url": "https://jinkosolar.com/assets/uploads/datasheets/Tiger-Neo-475N-72HL4-V.pdf",
+        "title": "Jinko Tiger Neo 475N-72HL4-V Datasheet PDF",
+        "content": "Technical specifications: 475Wp, 22.0% efficiency, temperature coefficient -0.29%/°C, NOCT 42°C, IP68 junction box, 2279 x 1134 x 35mm, 23.8kg, 1500V system.",
+        "score": 0.99998
+      }
+    ]
+  },
+  "Tiger Neo 550N-72HL4-BMR": {
+    "query": "Jinko Solar Tiger Neo 550N-72HL4-BMR specifications datasheet bifacial TOPCon 2024",
+    "results": [
+      {
+        "url": "https://jinkosolar.com/de/produkte/tiger-neo-bifacial/",
+        "title": "Jinko Solar Tiger Neo 550N-72HL4-BMR - Bifacial TOPCon Module",
+        "content": "Jinko Tiger Neo 550N-72HL4-BMR bifacial N-Type TOPCon module with 550Wp power, 22.5% efficiency, 85% bifaciality factor, dual-sided power generation for enhanced performance.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "Tiger Neo 450N-60HL4-V": {
+    "query": "Jinko Solar Tiger Neo 450N-60HL4-V specifications datasheet residential TOPCon 2024",
+    "results": [
+      {
+        "url": "https://jinkosolar.com/de/produkte/tiger-neo-residential/",
+        "title": "Jinko Solar Tiger Neo 450N-60HL4-V - Residential TOPCon Module",
+        "content": "Jinko Tiger Neo 450N-60HL4-V residential solar module with 450Wp power, 21.8% efficiency, 120 half-cut cells, optimized for rooftop installations with 1902mm length.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "JKM425M-7RL3-V Eagle": {
+    "query": "Jinko Solar JKM425M-7RL3-V Eagle specifications datasheet PERC monocrystalline 2024",
+    "results": [
+      {
+        "url": "https://jinkosolar.com/de/produkte/eagle-serie/",
+        "title": "Jinko Solar JKM425M-7RL3-V Eagle - Monocrystalline PERC Module",
+        "content": "Jinko JKM425M-7RL3-V Eagle monocrystalline PERC module with 425Wp power, 20.7% efficiency, proven P-type technology, 12-year product warranty, cost-effective solution.",
+        "score": 0.99999
+      }
+    ]
+  }
+}

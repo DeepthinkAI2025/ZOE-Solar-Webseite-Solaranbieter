@@ -1,0 +1,227 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    },
+    {
+      "src": "vite.config.ts",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "functions": {
+    "api/personalization.ts": {
+      "runtime": "edge",
+      "maxDuration": 5,
+      "regions": ["fra1", "iad1"],
+      "cache": "no-store"
+    },
+    "api/analytics.ts": {
+      "runtime": "edge",
+      "maxDuration": 3,
+      "regions": ["fra1", "iad1"]
+    },
+    "api/edge-optimization.ts": {
+      "runtime": "edge",
+      "maxDuration": 5,
+      "regions": ["fra1", "iad1", "sin1", "sfo1"]
+    },
+    "api/ab-testing.ts": {
+      "runtime": "edge",
+      "maxDuration": 3,
+      "regions": ["fra1", "iad1"]
+    },
+    "api/streaming-llm.ts": {
+      "runtime": "edge",
+      "maxDuration": 30,
+      "regions": ["fra1", "iad1"],
+      "memory": 512
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-DNS-Prefetch-Control",
+          "value": "on"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://api.zoesolar.de https://www.google-analytics.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests; block-all-mixed-content"
+        }
+      ]
+    },
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization, X-Requested-With"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, no-cache, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept"
+        }
+      ]
+    },
+    {
+      "source": "/fonts/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/static/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000, immutable"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/photovoltaik",
+      "destination": "/photovoltaik.html"
+    },
+    {
+      "source": "/produkte",
+      "destination": "/produkte.html"
+    },
+    {
+      "source": "/e-mobilitaet",
+      "destination": "/e-mobilitaet.html"
+    },
+    {
+      "source": "/kontakt",
+      "destination": "/kontakt.html"
+    },
+    {
+      "source": "/impressum",
+      "destination": "/impressum.html"
+    },
+    {
+      "source": "/datenschutz",
+      "destination": "/datenschutz.html"
+    },
+    {
+      "source": "/agb",
+      "destination": "/agb.html"
+    },
+    {
+      "source": "/blog/(.*)",
+      "destination": "/blog/$1.html"
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "query",
+          "key": "utm_source"
+        }
+      ],
+      "dest": "/$1?utm_source=$utm_source&utm_medium=$utm_medium&utm_campaign=$utm_campaign"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/www.zoesolar.de/(.*)",
+      "destination": "https://zoesolar.de/$1",
+      "permanent": true
+    },
+    {
+      "source": "/solar-anlagen",
+      "destination": "/photovoltaik",
+      "permanent": true
+    },
+    {
+      "source": "/solarmodule",
+      "destination": "/produkte",
+      "permanent": true
+    },
+    {
+      "source": "/pv-anlage",
+      "destination": "/photovoltaik",
+      "permanent": true
+    }
+  ],
+  "framework": "vite",
+  "installCommand": "npm run build",
+  "outputDirectory": "dist",
+  "devCommand": "npm run dev",
+  "instrumentation": {
+    "src": "instrumentation.ts"
+  },
+  "experimental": {
+    "typedRoutes": true,
+    "middlewareRoot": "middleware",
+    "serverComponentsExternalPackages": ["three", "@react-three/fiber", "@react-three/drei"]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "timestamp": "2025-11-19T00:30:00Z",
+  "manufacturer": "Schneider Electric",
+  "research_query": "Schneider Electric solar inverters EV chargers energy management smart home Conext XW Pro EVlink 2025",
+  "results": [
+    {
+      "title": "Schneider Electric Conext XW Pro Hybrid Inverter 8.0kW 2025",
+      "url": "https://www.se.com/ww/en/product-range/603-conext-xw-pro/",
+      "snippet": "Conext XW Pro 8.0kW hybrid inverter with advanced grid support, backup power, and solar integration. Industrial grade reliability.",
+      "confidence": 0.96
+    },
+    {
+      "title": "Schneider Electric EVlink Electric Vehicle Charging Stations 2025",
+      "url": "https://www.se.com/ww/en/product-range/2086-evlink/",
+      "snippet": "EVlink smart EV charging stations with power range 3.7-22kW. Connected charging solutions with load management.",
+      "confidence": 0.94
+    },
+    {
+      "title": "Schneider Electric Home Energy Management System Wiser 2025",
+      "url": "https://www.se.com/ww/en/product-range/62280-wiser/",
+      "snippet": "Wiser smart home energy management with solar integration, EV charging control, and intelligent automation.",
+      "confidence": 0.92
+    },
+    {
+      "title": "Schneider Electric Solar Power Business Solutions 2025",
+      "url": "https://www.se.com/ww/en/work/solutions/solar-power/",
+      "snippet": "Complete solar power solutions with inverters, monitoring, and energy management for residential and commercial.",
+      "confidence": 0.89
+    },
+    {
+      "title": "Schneider Electric Conext Core 1.5-5kW String Inverter 2025",
+      "url": "https://www.se.com/ww/en/product-range/613-conext-core/",
+      "snippet": "Conext Core 1.5-5kW string inverters with high efficiency and smart grid support for residential applications.",
+      "confidence": 0.91
+    },
+    {
+      "title": "Schneider Electric Square D Electrical Distribution and Solar Integration 2025",
+      "url": "https://www.se.com/ww/en/brands/square-d/",
+      "snippet": "Square D electrical distribution systems with solar integration, smart panels, and energy monitoring capabilities.",
+      "confidence": 0.87
+    }
+  ],
+  "summary": {
+    "key_products": [
+      "Conext XW Pro Hybrid",
+      "EVlink Charging Stations",
+      "Wiser Energy Management",
+      "Conext Core String Inverters",
+      "Square D Smart Panels"
+    ],
+    "inverter_power_range": "1.5kW - 8.0kW for residential and commercial applications",
+    "charging_power_range": "3.7kW - 22kW for home and commercial charging",
+    "efficiency_ratings": "Up to 98.0% for hybrid inverters, 97.5% for string inverters",
+    "technology_focus": "Hybrid systems, smart grid integration, energy management",
+    "connectivity": "Ethernet, WiFi, Modbus, CAN bus, cloud monitoring",
+    "applications": "Residential, commercial, industrial, microgrids",
+    "special_features": "Advanced grid support, backup power, load management",
+    "market_position": "Global energy management and automation specialist",
+    "reliability_rating": "Industrial-grade quality with 175+ years experience"
+  }
+}

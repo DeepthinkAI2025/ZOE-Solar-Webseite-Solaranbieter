@@ -1,0 +1,1602 @@
+{
+  "timestamp": "2025-09-28T17:14:39.390Z",
+  "kpis": {
+    "avgVisibilityScore": 64.8148148148148,
+    "top3LocalPackCities": 1,
+    "totalLocalTraffic": 38255,
+    "totalGMBViews": 142961,
+    "totalGMBWebsiteClicks": 5675,
+    "totalGMBCalls": 1965,
+    "avgGMBRating": 4.453333333333333,
+    "marketCoverage": 86.66666666666667,
+    "highPotentialCities": 2,
+    "avgCompetitorRating": 4.515,
+    "timestamp": "2025-09-28T17:14:39.389Z"
+  },
+  "rankings": {
+    "Berlin": {
+      "city": "Berlin",
+      "region": "Berlin",
+      "population": 3769000,
+      "localPackRankings": {
+        "ZOE Solar Berlin": {
+          "keyword": "ZOE Solar Berlin",
+          "position": 2,
+          "searchVolume": 6119,
+          "competition": 15,
+          "ctr": 0.25,
+          "estimatedClicks": 1530
+        },
+        "Solaranlage Berlin": {
+          "keyword": "Solaranlage Berlin",
+          "position": 2,
+          "searchVolume": 2640,
+          "competition": 5,
+          "ctr": 0.25,
+          "estimatedClicks": 660
+        },
+        "Photovoltaik Berlin": {
+          "keyword": "Photovoltaik Berlin",
+          "position": 1,
+          "searchVolume": 6640,
+          "competition": 7,
+          "ctr": 0.45,
+          "estimatedClicks": 2988
+        },
+        "Solarteur Berlin": {
+          "keyword": "Solarteur Berlin",
+          "position": 2,
+          "searchVolume": 9408,
+          "competition": 17,
+          "ctr": 0.25,
+          "estimatedClicks": 2352
+        },
+        "PV Anlage Berlin": {
+          "keyword": "PV Anlage Berlin",
+          "position": 3,
+          "searchVolume": 8952,
+          "competition": 21,
+          "ctr": 0.15,
+          "estimatedClicks": 1343
+        },
+        "Solarinstallation Berlin": {
+          "keyword": "Solarinstallation Berlin",
+          "position": 3,
+          "searchVolume": 6230,
+          "competition": 22,
+          "ctr": 0.15,
+          "estimatedClicks": 935
+        }
+      },
+      "visibilityScore": 61.111111111111114,
+      "competitorAnalysis": [
+        {
+          "name": "SolarTec GmbH",
+          "localPackPosition": 3,
+          "reviewCount": 158,
+          "rating": "4.8",
+          "websiteTraffic": 3284
+        },
+        {
+          "name": "GreenEnergy Solutions",
+          "localPackPosition": 3,
+          "reviewCount": 130,
+          "rating": "4.6",
+          "websiteTraffic": 4817
+        },
+        {
+          "name": "PV Meister",
+          "localPackPosition": 1,
+          "reviewCount": 155,
+          "rating": "4.1",
+          "websiteTraffic": 3655
+        },
+        {
+          "name": "SunPower Installations",
+          "localPackPosition": 2,
+          "reviewCount": 193,
+          "rating": "4.6",
+          "websiteTraffic": 4686
+        }
+      ],
+      "localTraffic": 9808,
+      "gmbInsights": {
+        "totalViews": 12821,
+        "searchViews": 8324,
+        "mapViews": 2767,
+        "actions": {
+          "websiteClicks": 390,
+          "directions": 136,
+          "calls": 182,
+          "reviews": 41
+        },
+        "reviews": {
+          "total": 164,
+          "averageRating": "4.3",
+          "newReviews": 1
+        }
+      },
+      "timestamp": "2025-09-28T17:14:39.387Z"
+    },
+    "Hamburg": {
+      "city": "Hamburg",
+      "region": "Hamburg",
+      "population": 1841000,
+      "localPackRankings": {
+        "ZOE Solar Hamburg": {
+          "keyword": "ZOE Solar Hamburg",
+          "position": 3,
+          "searchVolume": 2664,
+          "competition": 20,
+          "ctr": 0.15,
+          "estimatedClicks": 400
+        },
+        "Solaranlage Hamburg": {
+          "keyword": "Solaranlage Hamburg",
+          "position": 2,
+          "searchVolume": 3362,
+          "competition": 24,
+          "ctr": 0.25,
+          "estimatedClicks": 841
+        },
+        "Photovoltaik Hamburg": {
+          "keyword": "Photovoltaik Hamburg",
+          "position": 1,
+          "searchVolume": 4101,
+          "competition": 12,
+          "ctr": 0.45,
+          "estimatedClicks": 1845
+        },
+        "Solarteur Hamburg": {
+          "keyword": "Solarteur Hamburg",
+          "position": 1,
+          "searchVolume": 3712,
+          "competition": 21,
+          "ctr": 0.45,
+          "estimatedClicks": 1670
+        },
+        "PV Anlage Hamburg": {
+          "keyword": "PV Anlage Hamburg",
+          "position": 2,
+          "searchVolume": 2610,
+          "competition": 24,
+          "ctr": 0.25,
+          "estimatedClicks": 653
+        },
+        "Solarinstallation Hamburg": {
+          "keyword": "Solarinstallation Hamburg",
+          "position": 1,
+          "searchVolume": 4580,
+          "competition": 17,
+          "ctr": 0.45,
+          "estimatedClicks": 2061
+        }
+      },
+      "visibilityScore": 77.77777777777777,
+      "competitorAnalysis": [
+        {
+          "name": "SolarTec GmbH",
+          "localPackPosition": 3,
+          "reviewCount": 136,
+          "rating": "4.3",
+          "websiteTraffic": 1625
+        },
+        {
+          "name": "GreenEnergy Solutions",
+          "localPackPosition": 1,
+          "reviewCount": 130,
+          "rating": "4.1",
+          "websiteTraffic": 5716
+        },
+        {
+          "name": "PV Meister",
+          "localPackPosition": 1,
+          "reviewCount": 151,
+          "rating": "4.7",
+          "websiteTraffic": 2303
+        },
+        {
+          "name": "SunPower Installations",
+          "localPackPosition": 3,
+          "reviewCount": 68,
+          "rating": "4.2",
+          "websiteTraffic": 3459
+        }
+      ],
+      "localTraffic": 7470,
+      "gmbInsights": {
+        "totalViews": 8528,
+        "searchViews": 11841,
+        "mapViews": 4040,
+        "actions": {
+          "websiteClicks": 320,
+          "directions": 298,
+          "calls": 46,
+          "reviews": 40
+        },
+        "reviews": {
+          "total": 155,
+          "averageRating": "4.9",
+          "newReviews": 7
+        }
+      },
+      "timestamp": "2025-09-28T17:14:39.387Z"
+    },
+    "München": {
+      "city": "München",
+      "region": "Bayern",
+      "population": 1484000,
+      "localPackRankings": {
+        "ZOE Solar München": {
+          "keyword": "ZOE Solar München",
+          "position": 1,
+          "searchVolume": 1566,
+          "competition": 18,
+          "ctr": 0.45,
+          "estimatedClicks": 705
+        },
+        "Solaranlage München": {
+          "keyword": "Solaranlage München",
+          "position": 3,
+          "searchVolume": 1385,
+          "competition": 23,
+          "ctr": 0.15,
+          "estimatedClicks": 208
+        },
+        "Photovoltaik München": {
+          "keyword": "Photovoltaik München",
+          "position": 2,
+          "searchVolume": 2943,
+          "competition": 9,
+          "ctr": 0.25,
+          "estimatedClicks": 736
+        },
+        "Solarteur München": {
+          "keyword": "Solarteur München",
+          "position": 3,
+          "searchVolume": 2321,
+          "competition": 10,
+          "ctr": 0.15,
+          "estimatedClicks": 348
+        },
+        "PV Anlage München": {
+          "keyword": "PV Anlage München",
+          "position": 2,
+          "searchVolume": 2009,
+          "competition": 17,
+          "ctr": 0.25,
+          "estimatedClicks": 502
+        },
+        "Solarinstallation München": {
+          "keyword": "Solarinstallation München",
+          "position": 1,
+          "searchVolume": 3199,
+          "competition": 17,
+          "ctr": 0.45,
+          "estimatedClicks": 1440
+        }
+      },
+      "visibilityScore": 66.66666666666666,
+      "competitorAnalysis": [
+        {
+          "name": "SolarTec GmbH",
+          "localPackPosition": 1,
+          "reviewCount": 239,
+          "rating": "4.4",
+          "websiteTraffic": 1188
+        },
+        {
+          "name": "GreenEnergy Solutions",
+          "localPackPosition": 3,
+          "reviewCount": 210,
+          "rating": "4.2",
+          "websiteTraffic": 4295
+        },
+        {
+          "name": "PV Meister",
+          "localPackPosition": 1,
+          "reviewCount": 58,
+          "rating": "4.4",
+          "websiteTraffic": 2665
+        },
+        {
+          "name": "SunPower Installations",
+          "localPackPosition": 2,
+          "reviewCount": 211,
+          "rating": "4.6",
+          "websiteTraffic": 2614
+        }
+      ],
+      "localTraffic": 3939,
+      "gmbInsights": {
+        "totalViews": 6271,
+        "searchViews": 10106,
+        "mapViews": 2071,
+        "actions": {
+          "websiteClicks": 308,
+          "directions": 103,
+          "calls": 177,
+          "reviews": 38
+        },
+        "reviews": {
+          "total": 151,
+          "averageRating": "4.8",
+          "newReviews": 5
+        }
+      },
+      "timestamp": "2025-09-28T17:14:39.387Z"
+    },
+    "Köln": {
+      "city": "Köln",
+      "region": "Nordrhein-Westfalen",
+      "population": 1086000,
+      "localPackRankings": {
+        "ZOE Solar Köln": {
+          "keyword": "ZOE Solar Köln",
+          "position": 3,
+          "searchVolume": 929,
+          "competition": 23,
+          "ctr": 0.15,
+          "estimatedClicks": 139
+        },
+        "Solaranlage Köln": {
+          "keyword": "Solaranlage Köln",
+          "position": 2,
+          "searchVolume": 899,
+          "competition": 11,
+          "ctr": 0.25,
+          "estimatedClicks": 225
+        },
+        "Photovoltaik Köln": {
+          "keyword": "Photovoltaik Köln",
+          "position": 2,
+          "searchVolume": 1040,
+          "competition": 8,
+          "ctr": 0.25,
+          "estimatedClicks": 260
+        },
+        "Solarteur Köln": {
+          "keyword": "Solarteur Köln",
+          "position": 1,
+          "searchVolume": 789,
+          "competition": 15,
+          "ctr": 0.45,
+          "estimatedClicks": 355
+        },
+        "PV Anlage Köln": {
+          "keyword": "PV Anlage Köln",
+          "position": 1,
+          "searchVolume": 2004,
+          "competition": 11,
+          "ctr": 0.45,
+          "estimatedClicks": 902
+        },
+        "Solarinstallation Köln": {
+          "keyword": "Solarinstallation Köln",
+          "position": 2,
+          "searchVolume": 1277,
+          "competition": 9,
+          "ctr": 0.25,
+          "estimatedClicks": 319
+        }
+      },
+      "visibilityScore": 72.22222222222223,
+      "competitorAnalysis": [
+        {
+          "name": "SolarTec GmbH",
+          "localPackPosition": 2,
+          "reviewCount": 173,
+          "rating": "4.4",
+          "websiteTraffic": 5255
+        },
+        {
+          "name": "GreenEnergy Solutions",
+          "localPackPosition": 1,
+          "reviewCount": 122,
+          "rating": "4.7",
+          "websiteTraffic": 1293
+        },
+        {
+          "name": "PV Meister",
+          "localPackPosition": 1,
+          "reviewCount": 106,
+          "rating": "4.2",
+          "websiteTraffic": 1820
+        },
+        {
+          "name": "SunPower Installations",
+          "localPackPosition": 3,
+          "reviewCount": 193,
+          "rating": "4.3",
+          "websiteTraffic": 4625
+        }
+      ],
+      "localTraffic": 2200,
+      "gmbInsights": {
+        "totalViews": 9678,
+        "searchViews": 4397,
+        "mapViews": 4590,
+        "actions": {
+          "websiteClicks": 377,
+          "directions": 130,
+          "calls": 130,
+          "reviews": 42
+        },
+        "reviews": {
+          "total": 142,
+          "averageRating": "4.1",
+          "newReviews": 4
+        }
+      },
+      "timestamp": "2025-09-28T17:14:39.388Z"
+    },
+    "Frankfurt am Main": {
+      "city": "Frankfurt am Main",
+      "region": "Hessen",
+      "population": 753000,
+      "localPackRankings": {
+        "ZOE Solar Frankfurt am Main": {
+          "keyword": "ZOE Solar Frankfurt am Main",
+          "position": 1,
+          "searchVolume": 1518,
+          "competition": 20,
+          "ctr": 0.45,
+          "estimatedClicks": 683
+        },
+        "Solaranlage Frankfurt am Main": {
+          "keyword": "Solaranlage Frankfurt am Main",
+          "position": 3,
+          "searchVolume": 1298,
+          "competition": 21,
+          "ctr": 0.15,
+          "estimatedClicks": 195
+        },
+        "Photovoltaik Frankfurt am Main": {
+          "keyword": "Photovoltaik Frankfurt am Main",
+          "position": 2,
+          "searchVolume": 1823,
+          "competition": 14,
+          "ctr": 0.25,
+          "estimatedClicks": 456
+        },
+        "Solarteur Frankfurt am Main": {
+          "keyword": "Solarteur Frankfurt am Main",
+          "position": 2,
+          "searchVolume": 1045,
+          "competition": 14,
+          "ctr": 0.25,
+          "estimatedClicks": 261
+        },
+        "PV Anlage Frankfurt am Main": {
+          "keyword": "PV Anlage Frankfurt am Main",
+          "position": 2,
+          "searchVolume": 1516,
+          "competition": 6,
+          "ctr": 0.25,
+          "estimatedClicks": 379
+        },
+        "Solarinstallation Frankfurt am Main": {
+          "keyword": "Solarinstallation Frankfurt am Main",
+          "position": 2,
+          "searchVolume": 847,
+          "competition": 19,
+          "ctr": 0.25,
+          "estimatedClicks": 212
+        }
+      },
+      "visibilityScore": 66.66666666666666,
+      "competitorAnalysis": [
+        {
+          "name": "SolarTec GmbH",
+          "localPackPosition": 3,
+          "reviewCount": 214,
+          "rating": "5.0",
+          "websiteTraffic": 1038
+        },
+        {
+          "name": "GreenEnergy Solutions",
+          "localPackPosition": 3,
+          "reviewCount": 128,
+          "rating": "4.3",
+          "websiteTraffic": 3511
+        },
+        {
+          "name": "PV Meister",
+          "localPackPosition": 3,
+          "reviewCount": 66,
+          "rating": "4.8",
+          "websiteTraffic": 2340
+        },
+        {
+          "name": "SunPower Installations",
+          "localPackPosition": 3,
+          "reviewCount": 165,
+          "rating": "4.6",
+          "websiteTraffic": 5076
+        }
+      ],
+      "localTraffic": 2186,
+      "gmbInsights": {
+        "totalViews": 13460,
+        "searchViews": 5887,
+        "mapViews": 6546,
+        "actions": {
+          "websiteClicks": 499,
+          "directions": 179,
+          "calls": 121,
+          "reviews": 55
+        },
+        "reviews": {
+          "total": 176,
+          "averageRating": "4.3",
+          "newReviews": 4
+        }
+      },
+      "timestamp": "2025-09-28T17:14:39.388Z"
+    },
+    "Stuttgart": {
+      "city": "Stuttgart",
+      "region": "Baden-Württemberg",
+      "population": 635000,
+      "localPackRankings": {
+        "ZOE Solar Stuttgart": {
+          "keyword": "ZOE Solar Stuttgart",
+          "position": 2,
+          "searchVolume": 378,
+          "competition": 18,
+          "ctr": 0.25,
+          "estimatedClicks": 95
+        },
+        "Solaranlage Stuttgart": {
+          "keyword": "Solaranlage Stuttgart",
+          "position": 3,
+          "searchVolume": 804,
+          "competition": 17,
+          "ctr": 0.15,
+          "estimatedClicks": 121
+        },
+        "Photovoltaik Stuttgart": {
+          "keyword": "Photovoltaik Stuttgart",
+          "position": 3,
+          "searchVolume": 1535,
+          "competition": 21,
+          "ctr": 0.15,
+          "estimatedClicks": 230
+        },
+        "Solarteur Stuttgart": {
+          "keyword": "Solarteur Stuttgart",
+          "position": 2,
+          "searchVolume": 796,
+          "competition": 6,
+          "ctr": 0.25,
+          "estimatedClicks": 199
+        },
+        "PV Anlage Stuttgart": {
+          "keyword": "PV Anlage Stuttgart",
+          "position": 3,
+          "searchVolume": 1084,
+          "competition": 18,
+          "ctr": 0.15,
+          "estimatedClicks": 163
+        },
+        "Solarinstallation Stuttgart": {
+          "keyword": "Solarinstallation Stuttgart",
+          "position": 3,
+          "searchVolume": 996,
+          "competition": 24,
+          "ctr": 0.15,
+          "estimatedClicks": 149
+        }
+      },
+      "visibilityScore": 44.44444444444445,
+      "competitorAnalysis": [
+        {
+          "name": "SolarTec GmbH",
+          "localPackPosition": 3,
+          "reviewCount": 170,
+          "rating": "5.0",
+          "websiteTraffic": 4622
+        },
+        {
+          "name": "GreenEnergy Solutions",
+          "localPackPosition": 2,
+          "reviewCount": 117,
+          "rating": "4.1",
+          "websiteTraffic": 3723
+        },
+        {
+          "name": "PV Meister",
+          "localPackPosition": 1,
+          "reviewCount": 93,
+          "rating": "4.1",
+          "websiteTraffic": 2062
+        },
+        {
+          "name": "SunPower Installations",
+          "localPackPosition": 1,
+          "reviewCount": 227,
+          "rating": "4.8",
+          "websiteTraffic": 5104
+        }
+      ],
+      "localTraffic": 957,
+      "gmbInsights": {
+        "totalViews": 13440,
+        "searchViews": 9356,
+        "mapViews": 6503,
+        "actions": {
+          "websiteClicks": 217,
+          "directions": 88,
+          "calls": 78,
+          "reviews": 55
+        },
+        "reviews": {
+          "total": 158,
+          "averageRating": "4.4",
+          "newReviews": 1
+        }
+      },
+      "timestamp": "2025-09-28T17:14:39.388Z"
+    },
+    "Düsseldorf": {
+      "city": "Düsseldorf",
+      "region": "Nordrhein-Westfalen",
+      "population": 619000,
+      "localPackRankings": {
+        "ZOE Solar Düsseldorf": {
+          "keyword": "ZOE Solar Düsseldorf",
+          "position": 3,
+          "searchVolume": 1424,
+          "competition": 17,
+          "ctr": 0.15,
+          "estimatedClicks": 214
+        },
+        "Solaranlage Düsseldorf": {
+          "keyword": "Solaranlage Düsseldorf",
+          "position": 3,
+          "searchVolume": 827,
+          "competition": 11,
+          "ctr": 0.15,
+          "estimatedClicks": 124
+        },
+        "Photovoltaik Düsseldorf": {
+          "keyword": "Photovoltaik Düsseldorf",
+          "position": 3,
+          "searchVolume": 883,
+          "competition": 15,
+          "ctr": 0.15,
+          "estimatedClicks": 132
+        },
+        "Solarteur Düsseldorf": {
+          "keyword": "Solarteur Düsseldorf",
+          "position": 3,
+          "searchVolume": 1033,
+          "competition": 17,
+          "ctr": 0.15,
+          "estimatedClicks": 155
+        },
+        "PV Anlage Düsseldorf": {
+          "keyword": "PV Anlage Düsseldorf",
+          "position": 2,
+          "searchVolume": 849,
+          "competition": 11,
+          "ctr": 0.25,
+          "estimatedClicks": 212
+        },
+        "Solarinstallation Düsseldorf": {
+          "keyword": "Solarinstallation Düsseldorf",
+          "position": 2,
+          "searchVolume": 581,
+          "competition": 15,
+          "ctr": 0.25,
+          "estimatedClicks": 145
+        }
+      },
+      "visibilityScore": 44.44444444444445,
+      "competitorAnalysis": [
+        {
+          "name": "SolarTec GmbH",
+          "localPackPosition": 1,
+          "reviewCount": 87,
+          "rating": "4.9",
+          "websiteTraffic": 3665
+        },
+        {
+          "name": "GreenEnergy Solutions",
+          "localPackPosition": 2,
+          "reviewCount": 178,
+          "rating": "4.7",
+          "websiteTraffic": 2641
+        },
+        {
+          "name": "PV Meister",
+          "localPackPosition": 2,
+          "reviewCount": 210,
+          "rating": "4.7",
+          "websiteTraffic": 4626
+        },
+        {
+          "name": "SunPower Installations",
+          "localPackPosition": 3,
+          "reviewCount": 90,
+          "rating": "4.0",
+          "websiteTraffic": 5291
+        }
+      ],
+      "localTraffic": 982,
+      "gmbInsights": {
+        "totalViews": 12042,
+        "searchViews": 7044,
+        "mapViews": 5489,
+        "actions": {
+          "websiteClicks": 167,
+          "directions": 314,
+          "calls": 81,
+          "reviews": 54
+        },
+        "reviews": {
+          "total": 69,
+          "averageRating": "4.7",
+          "newReviews": 9
+        }
+      },
+      "timestamp": "2025-09-28T17:14:39.388Z"
+    },
+    "Leipzig": {
+      "city": "Leipzig",
+      "region": "Sachsen",
+      "population": 587000,
+      "localPackRankings": {
+        "ZOE Solar Leipzig": {
+          "keyword": "ZOE Solar Leipzig",
+          "position": 1,
+          "searchVolume": 741,
+          "competition": 11,
+          "ctr": 0.45,
+          "estimatedClicks": 333
+        },
+        "Solaranlage Leipzig": {
+          "keyword": "Solaranlage Leipzig",
+          "position": 3,
+          "searchVolume": 1131,
+          "competition": 21,
+          "ctr": 0.15,
+          "estimatedClicks": 170
+        },
+        "Photovoltaik Leipzig": {
+          "keyword": "Photovoltaik Leipzig",
+          "position": 1,
+          "searchVolume": 678,
+          "competition": 15,
+          "ctr": 0.45,
+          "estimatedClicks": 305
+        },
+        "Solarteur Leipzig": {
+          "keyword": "Solarteur Leipzig",
+          "position": 2,
+          "searchVolume": 839,
+          "competition": 19,
+          "ctr": 0.25,
+          "estimatedClicks": 210
+        },
+        "PV Anlage Leipzig": {
+          "keyword": "PV Anlage Leipzig",
+          "position": 3,
+          "searchVolume": 691,
+          "competition": 8,
+          "ctr": 0.15,
+          "estimatedClicks": 104
+        },
+        "Solarinstallation Leipzig": {
+          "keyword": "Solarinstallation Leipzig",
+          "position": 3,
+          "searchVolume": 798,
+          "competition": 15,
+          "ctr": 0.15,
+          "estimatedClicks": 120
+        }
+      },
+      "visibilityScore": 61.111111111111114,
+      "competitorAnalysis": [
+        {
+          "name": "SolarTec GmbH",
+          "localPackPosition": 3,
+          "reviewCount": 143,
+          "rating": "4.5",
+          "websiteTraffic": 2483
+        },
+        {
+          "name": "GreenEnergy Solutions",
+          "localPackPosition": 3,
+          "reviewCount": 156,
+          "rating": "4.8",
+          "websiteTraffic": 3312
+        },
+        {
+          "name": "PV Meister",
+          "localPackPosition": 1,
+          "reviewCount": 167,
+          "rating": "4.3",
+          "websiteTraffic": 1812
+        },
+        {
+          "name": "SunPower Installations",
+          "localPackPosition": 1,
+          "reviewCount": 112,
+          "rating": "4.7",
+          "websiteTraffic": 1884
+        }
+      ],
+      "localTraffic": 1242,
+      "gmbInsights": {
+        "totalViews": 8508,
+        "searchViews": 9422,
+        "mapViews": 5311,
+        "actions": {
+          "websiteClicks": 403,
+          "directions": 136,
+          "calls": 155,
+          "reviews": 46
+        },
+        "reviews": {
+          "total": 139,
+          "averageRating": "4.5",
+          "newReviews": 9
+        }
+      },
+      "timestamp": "2025-09-28T17:14:39.388Z"
+    },
+    "Dortmund": {
+      "city": "Dortmund",
+      "region": "Nordrhein-Westfalen",
+      "population": 588000,
+      "localPackRankings": {
+        "ZOE Solar Dortmund": {
+          "keyword": "ZOE Solar Dortmund",
+          "position": 1,
+          "searchVolume": 838,
+          "competition": 7,
+          "ctr": 0.45,
+          "estimatedClicks": 377
+        },
+        "Solaranlage Dortmund": {
+          "keyword": "Solaranlage Dortmund",
+          "position": 1,
+          "searchVolume": 569,
+          "competition": 21,
+          "ctr": 0.45,
+          "estimatedClicks": 256
+        },
+        "Photovoltaik Dortmund": {
+          "keyword": "Photovoltaik Dortmund",
+          "position": 3,
+          "searchVolume": 1423,
+          "competition": 6,
+          "ctr": 0.15,
+          "estimatedClicks": 213
+        },
+        "Solarteur Dortmund": {
+          "keyword": "Solarteur Dortmund",
+          "position": 3,
+          "searchVolume": 803,
+          "competition": 18,
+          "ctr": 0.15,
+          "estimatedClicks": 120
+        },
+        "PV Anlage Dortmund": {
+          "keyword": "PV Anlage Dortmund",
+          "position": 2,
+          "searchVolume": 767,
+          "competition": 23,
+          "ctr": 0.25,
+          "estimatedClicks": 192
+        },
+        "Solarinstallation Dortmund": {
+          "keyword": "Solarinstallation Dortmund",
+          "position": 3,
+          "searchVolume": 913,
+          "competition": 17,
+          "ctr": 0.15,
+          "estimatedClicks": 137
+        }
+      },
+      "visibilityScore": 61.111111111111114,
+      "competitorAnalysis": [
+        {
+          "name": "SolarTec GmbH",
+          "localPackPosition": 2,
+          "reviewCount": 243,
+          "rating": "4.7",
+          "websiteTraffic": 5202
+        },
+        {
+          "name": "GreenEnergy Solutions",
+          "localPackPosition": 1,
+          "reviewCount": 106,
+          "rating": "4.7",
+          "websiteTraffic": 2349
+        },
+        {
+          "name": "PV Meister",
+          "localPackPosition": 1,
+          "reviewCount": 214,
+          "rating": "4.9",
+          "websiteTraffic": 2438
+        },
+        {
+          "name": "SunPower Installations",
+          "localPackPosition": 1,
+          "reviewCount": 192,
+          "rating": "4.7",
+          "websiteTraffic": 4754
+        }
+      ],
+      "localTraffic": 1295,
+      "gmbInsights": {
+        "totalViews": 7451,
+        "searchViews": 7030,
+        "mapViews": 6669,
+        "actions": {
+          "websiteClicks": 459,
+          "directions": 125,
+          "calls": 212,
+          "reviews": 19
+        },
+        "reviews": {
+          "total": 156,
+          "averageRating": "4.2",
+          "newReviews": 4
+        }
+      },
+      "timestamp": "2025-09-28T17:14:39.388Z"
+    },
+    "Essen": {
+      "city": "Essen",
+      "region": "Nordrhein-Westfalen",
+      "population": 583000,
+      "localPackRankings": {
+        "ZOE Solar Essen": {
+          "keyword": "ZOE Solar Essen",
+          "position": 1,
+          "searchVolume": 1164,
+          "competition": 16,
+          "ctr": 0.45,
+          "estimatedClicks": 524
+        },
+        "Solaranlage Essen": {
+          "keyword": "Solaranlage Essen",
+          "position": 1,
+          "searchVolume": 342,
+          "competition": 21,
+          "ctr": 0.45,
+          "estimatedClicks": 154
+        },
+        "Photovoltaik Essen": {
+          "keyword": "Photovoltaik Essen",
+          "position": 3,
+          "searchVolume": 473,
+          "competition": 9,
+          "ctr": 0.15,
+          "estimatedClicks": 71
+        },
+        "Solarteur Essen": {
+          "keyword": "Solarteur Essen",
+          "position": 1,
+          "searchVolume": 1193,
+          "competition": 23,
+          "ctr": 0.45,
+          "estimatedClicks": 537
+        },
+        "PV Anlage Essen": {
+          "keyword": "PV Anlage Essen",
+          "position": 3,
+          "searchVolume": 645,
+          "competition": 5,
+          "ctr": 0.15,
+          "estimatedClicks": 97
+        },
+        "Solarinstallation Essen": {
+          "keyword": "Solarinstallation Essen",
+          "position": 3,
+          "searchVolume": 369,
+          "competition": 7,
+          "ctr": 0.15,
+          "estimatedClicks": 55
+        }
+      },
+      "visibilityScore": 66.66666666666666,
+      "competitorAnalysis": [
+        {
+          "name": "SolarTec GmbH",
+          "localPackPosition": 2,
+          "reviewCount": 82,
+          "rating": "4.8",
+          "websiteTraffic": 2496
+        },
+        {
+          "name": "GreenEnergy Solutions",
+          "localPackPosition": 2,
+          "reviewCount": 117,
+          "rating": "4.0",
+          "websiteTraffic": 5346
+        },
+        {
+          "name": "PV Meister",
+          "localPackPosition": 1,
+          "reviewCount": 90,
+          "rating": "4.6",
+          "websiteTraffic": 4621
+        },
+        {
+          "name": "SunPower Installations",
+          "localPackPosition": 2,
+          "reviewCount": 232,
+          "rating": "4.2",
+          "websiteTraffic": 4118
+        }
+      ],
+      "localTraffic": 1438,
+      "gmbInsights": {
+        "totalViews": 6556,
+        "searchViews": 9474,
+        "mapViews": 2810,
+        "actions": {
+          "websiteClicks": 402,
+          "directions": 335,
+          "calls": 112,
+          "reviews": 11
+        },
+        "reviews": {
+          "total": 56,
+          "averageRating": "4.1",
+          "newReviews": 6
+        }
+      },
+      "timestamp": "2025-09-28T17:14:39.388Z"
+    },
+    "Bremen": {
+      "city": "Bremen",
+      "region": "Bremen",
+      "population": 569000,
+      "localPackRankings": {
+        "ZOE Solar Bremen": {
+          "keyword": "ZOE Solar Bremen",
+          "position": 3,
+          "searchVolume": 889,
+          "competition": 10,
+          "ctr": 0.15,
+          "estimatedClicks": 133
+        },
+        "Solaranlage Bremen": {
+          "keyword": "Solaranlage Bremen",
+          "position": 1,
+          "searchVolume": 954,
+          "competition": 16,
+          "ctr": 0.45,
+          "estimatedClicks": 429
+        },
+        "Photovoltaik Bremen": {
+          "keyword": "Photovoltaik Bremen",
+          "position": 3,
+          "searchVolume": 651,
+          "competition": 8,
+          "ctr": 0.15,
+          "estimatedClicks": 98
+        },
+        "Solarteur Bremen": {
+          "keyword": "Solarteur Bremen",
+          "position": 1,
+          "searchVolume": 632,
+          "competition": 13,
+          "ctr": 0.45,
+          "estimatedClicks": 284
+        },
+        "PV Anlage Bremen": {
+          "keyword": "PV Anlage Bremen",
+          "position": 1,
+          "searchVolume": 1010,
+          "competition": 23,
+          "ctr": 0.45,
+          "estimatedClicks": 455
+        },
+        "Solarinstallation Bremen": {
+          "keyword": "Solarinstallation Bremen",
+          "position": 2,
+          "searchVolume": 804,
+          "competition": 8,
+          "ctr": 0.25,
+          "estimatedClicks": 201
+        }
+      },
+      "visibilityScore": 72.22222222222223,
+      "competitorAnalysis": [
+        {
+          "name": "SolarTec GmbH",
+          "localPackPosition": 2,
+          "reviewCount": 184,
+          "rating": "4.5",
+          "websiteTraffic": 1307
+        },
+        {
+          "name": "GreenEnergy Solutions",
+          "localPackPosition": 3,
+          "reviewCount": 67,
+          "rating": "4.1",
+          "websiteTraffic": 4963
+        },
+        {
+          "name": "PV Meister",
+          "localPackPosition": 2,
+          "reviewCount": 137,
+          "rating": "4.8",
+          "websiteTraffic": 3789
+        },
+        {
+          "name": "SunPower Installations",
+          "localPackPosition": 3,
+          "reviewCount": 137,
+          "rating": "4.5",
+          "websiteTraffic": 3765
+        }
+      ],
+      "localTraffic": 1600,
+      "gmbInsights": {
+        "totalViews": 8126,
+        "searchViews": 5508,
+        "mapViews": 2829,
+        "actions": {
+          "websiteClicks": 107,
+          "directions": 225,
+          "calls": 195,
+          "reviews": 15
+        },
+        "reviews": {
+          "total": 154,
+          "averageRating": "4.3",
+          "newReviews": 7
+        }
+      },
+      "timestamp": "2025-09-28T17:14:39.388Z"
+    },
+    "Dresden": {
+      "city": "Dresden",
+      "region": "Sachsen",
+      "population": 556000,
+      "localPackRankings": {
+        "ZOE Solar Dresden": {
+          "keyword": "ZOE Solar Dresden",
+          "position": 1,
+          "searchVolume": 1056,
+          "competition": 21,
+          "ctr": 0.45,
+          "estimatedClicks": 475
+        },
+        "Solaranlage Dresden": {
+          "keyword": "Solaranlage Dresden",
+          "position": 3,
+          "searchVolume": 847,
+          "competition": 24,
+          "ctr": 0.15,
+          "estimatedClicks": 127
+        },
+        "Photovoltaik Dresden": {
+          "keyword": "Photovoltaik Dresden",
+          "position": 3,
+          "searchVolume": 678,
+          "competition": 17,
+          "ctr": 0.15,
+          "estimatedClicks": 102
+        },
+        "Solarteur Dresden": {
+          "keyword": "Solarteur Dresden",
+          "position": 1,
+          "searchVolume": 786,
+          "competition": 24,
+          "ctr": 0.45,
+          "estimatedClicks": 354
+        },
+        "PV Anlage Dresden": {
+          "keyword": "PV Anlage Dresden",
+          "position": 1,
+          "searchVolume": 400,
+          "competition": 18,
+          "ctr": 0.45,
+          "estimatedClicks": 180
+        },
+        "Solarinstallation Dresden": {
+          "keyword": "Solarinstallation Dresden",
+          "position": 2,
+          "searchVolume": 609,
+          "competition": 22,
+          "ctr": 0.25,
+          "estimatedClicks": 152
+        }
+      },
+      "visibilityScore": 72.22222222222223,
+      "competitorAnalysis": [
+        {
+          "name": "SolarTec GmbH",
+          "localPackPosition": 3,
+          "reviewCount": 144,
+          "rating": "4.4",
+          "websiteTraffic": 5018
+        },
+        {
+          "name": "GreenEnergy Solutions",
+          "localPackPosition": 3,
+          "reviewCount": 170,
+          "rating": "4.1",
+          "websiteTraffic": 2367
+        },
+        {
+          "name": "PV Meister",
+          "localPackPosition": 3,
+          "reviewCount": 248,
+          "rating": "4.7",
+          "websiteTraffic": 4831
+        },
+        {
+          "name": "SunPower Installations",
+          "localPackPosition": 1,
+          "reviewCount": 90,
+          "rating": "5.0",
+          "websiteTraffic": 4528
+        }
+      ],
+      "localTraffic": 1390,
+      "gmbInsights": {
+        "totalViews": 11469,
+        "searchViews": 11368,
+        "mapViews": 6384,
+        "actions": {
+          "websiteClicks": 547,
+          "directions": 185,
+          "calls": 50,
+          "reviews": 28
+        },
+        "reviews": {
+          "total": 193,
+          "averageRating": "4.6",
+          "newReviews": 2
+        }
+      },
+      "timestamp": "2025-09-28T17:14:39.389Z"
+    },
+    "Hannover": {
+      "city": "Hannover",
+      "region": "Niedersachsen",
+      "population": 538000,
+      "localPackRankings": {
+        "ZOE Solar Hannover": {
+          "keyword": "ZOE Solar Hannover",
+          "position": 1,
+          "searchVolume": 470,
+          "competition": 18,
+          "ctr": 0.45,
+          "estimatedClicks": 212
+        },
+        "Solaranlage Hannover": {
+          "keyword": "Solaranlage Hannover",
+          "position": 2,
+          "searchVolume": 459,
+          "competition": 5,
+          "ctr": 0.25,
+          "estimatedClicks": 115
+        },
+        "Photovoltaik Hannover": {
+          "keyword": "Photovoltaik Hannover",
+          "position": 3,
+          "searchVolume": 1137,
+          "competition": 11,
+          "ctr": 0.15,
+          "estimatedClicks": 171
+        },
+        "Solarteur Hannover": {
+          "keyword": "Solarteur Hannover",
+          "position": 1,
+          "searchVolume": 668,
+          "competition": 12,
+          "ctr": 0.45,
+          "estimatedClicks": 301
+        },
+        "PV Anlage Hannover": {
+          "keyword": "PV Anlage Hannover",
+          "position": 3,
+          "searchVolume": 726,
+          "competition": 20,
+          "ctr": 0.15,
+          "estimatedClicks": 109
+        },
+        "Solarinstallation Hannover": {
+          "keyword": "Solarinstallation Hannover",
+          "position": 2,
+          "searchVolume": 499,
+          "competition": 15,
+          "ctr": 0.25,
+          "estimatedClicks": 125
+        }
+      },
+      "visibilityScore": 66.66666666666666,
+      "competitorAnalysis": [
+        {
+          "name": "SolarTec GmbH",
+          "localPackPosition": 3,
+          "reviewCount": 232,
+          "rating": "4.5",
+          "websiteTraffic": 4844
+        },
+        {
+          "name": "GreenEnergy Solutions",
+          "localPackPosition": 3,
+          "reviewCount": 223,
+          "rating": "4.9",
+          "websiteTraffic": 2443
+        },
+        {
+          "name": "PV Meister",
+          "localPackPosition": 2,
+          "reviewCount": 172,
+          "rating": "4.1",
+          "websiteTraffic": 4567
+        },
+        {
+          "name": "SunPower Installations",
+          "localPackPosition": 3,
+          "reviewCount": 141,
+          "rating": "4.2",
+          "websiteTraffic": 5803
+        }
+      ],
+      "localTraffic": 1033,
+      "gmbInsights": {
+        "totalViews": 5501,
+        "searchViews": 5848,
+        "mapViews": 5570,
+        "actions": {
+          "websiteClicks": 520,
+          "directions": 205,
+          "calls": 173,
+          "reviews": 40
+        },
+        "reviews": {
+          "total": 197,
+          "averageRating": "4.3",
+          "newReviews": 6
+        }
+      },
+      "timestamp": "2025-09-28T17:14:39.389Z"
+    },
+    "Nürnberg": {
+      "city": "Nürnberg",
+      "region": "Bayern",
+      "population": 518000,
+      "localPackRankings": {
+        "ZOE Solar Nürnberg": {
+          "keyword": "ZOE Solar Nürnberg",
+          "position": 3,
+          "searchVolume": 730,
+          "competition": 21,
+          "ctr": 0.15,
+          "estimatedClicks": 110
+        },
+        "Solaranlage Nürnberg": {
+          "keyword": "Solaranlage Nürnberg",
+          "position": 3,
+          "searchVolume": 585,
+          "competition": 18,
+          "ctr": 0.15,
+          "estimatedClicks": 88
+        },
+        "Photovoltaik Nürnberg": {
+          "keyword": "Photovoltaik Nürnberg",
+          "position": 3,
+          "searchVolume": 614,
+          "competition": 20,
+          "ctr": 0.15,
+          "estimatedClicks": 92
+        },
+        "Solarteur Nürnberg": {
+          "keyword": "Solarteur Nürnberg",
+          "position": 1,
+          "searchVolume": 378,
+          "competition": 19,
+          "ctr": 0.45,
+          "estimatedClicks": 170
+        },
+        "PV Anlage Nürnberg": {
+          "keyword": "PV Anlage Nürnberg",
+          "position": 1,
+          "searchVolume": 632,
+          "competition": 24,
+          "ctr": 0.45,
+          "estimatedClicks": 284
+        },
+        "Solarinstallation Nürnberg": {
+          "keyword": "Solarinstallation Nürnberg",
+          "position": 1,
+          "searchVolume": 907,
+          "competition": 12,
+          "ctr": 0.45,
+          "estimatedClicks": 408
+        }
+      },
+      "visibilityScore": 66.66666666666666,
+      "competitorAnalysis": [
+        {
+          "name": "SolarTec GmbH",
+          "localPackPosition": 3,
+          "reviewCount": 240,
+          "rating": "5.0",
+          "websiteTraffic": 2552
+        },
+        {
+          "name": "GreenEnergy Solutions",
+          "localPackPosition": 2,
+          "reviewCount": 221,
+          "rating": "4.4",
+          "websiteTraffic": 5115
+        },
+        {
+          "name": "PV Meister",
+          "localPackPosition": 3,
+          "reviewCount": 170,
+          "rating": "4.6",
+          "websiteTraffic": 4486
+        },
+        {
+          "name": "SunPower Installations",
+          "localPackPosition": 1,
+          "reviewCount": 125,
+          "rating": "4.4",
+          "websiteTraffic": 1431
+        }
+      ],
+      "localTraffic": 1152,
+      "gmbInsights": {
+        "totalViews": 7024,
+        "searchViews": 4347,
+        "mapViews": 5069,
+        "actions": {
+          "websiteClicks": 377,
+          "directions": 77,
+          "calls": 189,
+          "reviews": 36
+        },
+        "reviews": {
+          "total": 145,
+          "averageRating": "4.8",
+          "newReviews": 4
+        }
+      },
+      "timestamp": "2025-09-28T17:14:39.389Z"
+    },
+    "Duisburg": {
+      "city": "Duisburg",
+      "region": "Nordrhein-Westfalen",
+      "population": 498000,
+      "localPackRankings": {
+        "ZOE Solar Duisburg": {
+          "keyword": "ZOE Solar Duisburg",
+          "position": 2,
+          "searchVolume": 548,
+          "competition": 13,
+          "ctr": 0.25,
+          "estimatedClicks": 137
+        },
+        "Solaranlage Duisburg": {
+          "keyword": "Solaranlage Duisburg",
+          "position": 2,
+          "searchVolume": 1082,
+          "competition": 17,
+          "ctr": 0.25,
+          "estimatedClicks": 271
+        },
+        "Photovoltaik Duisburg": {
+          "keyword": "Photovoltaik Duisburg",
+          "position": 1,
+          "searchVolume": 487,
+          "competition": 6,
+          "ctr": 0.45,
+          "estimatedClicks": 219
+        },
+        "Solarteur Duisburg": {
+          "keyword": "Solarteur Duisburg",
+          "position": 1,
+          "searchVolume": 1142,
+          "competition": 20,
+          "ctr": 0.45,
+          "estimatedClicks": 514
+        },
+        "PV Anlage Duisburg": {
+          "keyword": "PV Anlage Duisburg",
+          "position": 2,
+          "searchVolume": 1199,
+          "competition": 22,
+          "ctr": 0.25,
+          "estimatedClicks": 300
+        },
+        "Solarinstallation Duisburg": {
+          "keyword": "Solarinstallation Duisburg",
+          "position": 3,
+          "searchVolume": 812,
+          "competition": 17,
+          "ctr": 0.15,
+          "estimatedClicks": 122
+        }
+      },
+      "visibilityScore": 72.22222222222223,
+      "competitorAnalysis": [
+        {
+          "name": "SolarTec GmbH",
+          "localPackPosition": 1,
+          "reviewCount": 62,
+          "rating": "4.6",
+          "websiteTraffic": 2806
+        },
+        {
+          "name": "GreenEnergy Solutions",
+          "localPackPosition": 2,
+          "reviewCount": 177,
+          "rating": "4.6",
+          "websiteTraffic": 1530
+        },
+        {
+          "name": "PV Meister",
+          "localPackPosition": 1,
+          "reviewCount": 172,
+          "rating": "4.3",
+          "websiteTraffic": 1761
+        },
+        {
+          "name": "SunPower Installations",
+          "localPackPosition": 3,
+          "reviewCount": 162,
+          "rating": "4.7",
+          "websiteTraffic": 1866
+        }
+      ],
+      "localTraffic": 1563,
+      "gmbInsights": {
+        "totalViews": 12086,
+        "searchViews": 4451,
+        "mapViews": 4832,
+        "actions": {
+          "websiteClicks": 582,
+          "directions": 217,
+          "calls": 64,
+          "reviews": 37
+        },
+        "reviews": {
+          "total": 135,
+          "averageRating": "4.5",
+          "newReviews": 10
+        }
+      },
+      "timestamp": "2025-09-28T17:14:39.389Z"
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "high",
+      "category": "reputation",
+      "title": "GMB-Bewertungen verbessern",
+      "description": "Durchschnittliche Bewertung: 4.5. Fordern Sie mehr Bewertungen und verbessern Sie Service.",
+      "impact": "high",
+      "effort": "medium"
+    }
+  ],
+  "summary": {
+    "totalCities": 15,
+    "avgVisibilityScore": 64.8148148148148,
+    "totalLocalTraffic": 38255,
+    "marketCoverage": 86.66666666666667,
+    "gmbPerformance": {
+      "totalViews": 142961,
+      "websiteClicks": 5675,
+      "calls": 1965,
+      "avgRating": 4.453333333333333
+    },
+    "alerts": 1,
+    "opportunities": 2
+  }
+}

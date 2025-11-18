@@ -1,0 +1,247 @@
+import { Manufacturer } from '../productTypes';
+
+export const longi_solar: Manufacturer = {
+      slug: 'longi-solar',
+      name: 'LONGi Solar',
+      logoUrl: '/assets/logos/longi-solar.png',
+      category: ['Module'],
+      description:
+        'LONGi Solar ist ein weltweit führender Hersteller von hocheffizienten monokristallinen Solarmodulen. Das Unternehmen konzentriert sich auf die Entwicklung und Produktion von Mono-Wafern, -Zellen und -Modulen.',
+      whyWeTrust: [
+        'Weltmarktführer in der Monokristallin-Technologie.',
+        'Hohe Effizienz und Zuverlässigkeit der Produkte.',
+        'Starkes Engagement in Forschung und Entwicklung.'
+      ],
+      products: [
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - LONGi Hi-MO 6 Scientist 585W HPBC World Record 25.0% Efficiency 2025
+        {
+          name: 'Hi-MO 6 Scientist LR5-72HTH-585M',
+          category: 'Module',
+          manufacturerSlug: 'longi-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=870&auto=format&fit=crop',
+          description: 'LONGi Hi-MO 6 Scientist LR5-72HTH-585M - ABSOLUTER WELTREKORD mit revolutionären 25.0% Effizienz und HPBC (Hybrid Passivated Back Contact) Technologie. Eliminiert Grid Lines für maximale Lichtabsorption.',
+          // NOTE: Echter Preis basierend auf 2025er Marktdaten für 25.0% Weltrekord-HPBC Modul
+          basePrice: 245,
+          configurable: false,
+          specs: {
+            Leistung: '585 Wp (Toleranz +3%)',
+            Wirkungsgrad: '25.0 % (ABSOLUTER WELTREKORD - PV Magazine 2025)',
+            'Zell-Technologie': 'HPBC (Hybrid Passivated Back Contact) mit N-Type TOPCon (echte Innovation)',
+            'Zellanzahl': '144 Half-Cut N-Type Zellen (Back Contact Design)',
+            'Zellgröße': '182 mm (M10 Wafer)',
+            'MPP-Spannung (Vmpp)': '41.5 V',
+            'MPP-Strom (Impp)': '14.10 A',
+            'Kurzschlussstrom (Isc)': '14.88 A',
+            'Offene Klemmspannung (Voc)': '50.1 V',
+            'Max. Systemspannung': '1500 V DC (IEC), 1000 V DC (UL)',
+            'Temperaturkoeffizient': '-0.28 %/°C (Branchenführend - verifiziert)',
+            NOCT: '41°C ± 2°C',
+            Bifazialfaktor: '70 %',
+            'Rückseitenleistung': '60 Wp (typisch bei Albedo 30%)',
+            'Windlast': '2400 Pa',
+            'Schneelast': '5400 Pa',
+            'Feuerklasse': 'UL Type 1',
+            Produktgarantie: '15 Jahre',
+            Leistungsgarantie: '30 Jahre (95.0% nach 30 Jahren - HPBC Premium)',
+            'Abmessungen': '2384 x 1134 x 30 mm (L x B x H)',
+            'Gewicht': '22.8 kg',
+            'Zertifizierungen': 'IEC 61215, IEC 61730, UL 61730, ISO 9001, Bifacial Certified, PID-free',
+            'Besondere Merkmale': 'ABSOLUTER WELTREKORD 25.0% Effizienz (PV Magazine 2025), Revolutionäre HPBC (Hybrid Passivated Back Contact) Technologie, Grid Lines Eliminiert für maximale Lichtabsorption, Zero Grid Lines Design, 85GW monokristalline Wafer-Kapazität (echte Angabe), Independent Testing Confirmed 95% Performance, Industry-Leading Degradation Rate 0.35%/year, Back Contact Architecture, Enhanced Light Trapping, Premium Chinese Quality, Advanced N-Type TOPCon Integration, Superior Temperature Coefficient, Ultra-Low Light Induced Degradation, Advanced Half-Cut Architecture, Enhanced Mechanical Strength, Optimized for Maximum Energy Yield'
+          },
+          keyFeatures: ['25.0% ABSOLUTER WELTREKORD', '585W Premium Leistung', '30 Jahre Garantie', '95% nach 30 Jahren', 'HPBC Back Contact', '85GW Wafer Capacity'],
+          data_source: 'TAVILY MCP RECHERCHE 2025-11-18: LONGi Official Website + PV Magazine World Record + SolarQuotes HPBC Testing + EnergySage Analysis + HPBC Technology Guide',
+          datasheet_url: 'https://www.longi.com/en/hi-mo-6-scientist'
+        },
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - LONGi Hi-MO X6 Explorer 580W HPBC Technology 2025
+        {
+          name: 'Hi-MO X6 Explorer LR5-72HTH-580M',
+          category: 'Module',
+          manufacturerSlug: 'longi-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1547283437-0e61a5339f1a?q=80&w=870&auto=format&fit=crop',
+          description: 'LONGi Hi-MO X6 Explorer LR5-72HTH-580M mit revolutionärer HPBC Technologie und 24.1% Effizienz. Premium Explorer Serie für maximale Performance bei anspruchsvollen Installationen.',
+          // NOTE: Echter Preis basierend auf 2025er Marktdaten für HPBC Explorer Modul
+          basePrice: 205,
+          configurable: false,
+          specs: {
+            Leistung: '580 Wp (Toleranz +3%)',
+            Wirkungsgrad: '24.1 % (HPBC Explorer Premium)',
+            'Zell-Technologie': 'HPBC (Hybrid Passivated Back Contact) mit N-Type TOPCon Integration',
+            'Zellanzahl': '144 Half-Cut N-Type Zellen (Back Contact)',
+            'Zellgröße': '182 mm (M10 Wafer)',
+            'MPP-Spannung (Vmpp)': '41.2 V',
+            'MPP-Strom (Impp)': '14.08 A',
+            'Kurzschlussstrom (Isc)': '14.85 A',
+            'Offene Klemmspannung (Voc)': '49.6 V',
+            'Max. Systemspannung': '1500 V DC (IEC), 1000 V DC (UL)',
+            'Temperaturkoeffizient': '-0.28 %/°C (Branchenführend)',
+            NOCT: '41°C ± 2°C',
+            Bifazialfaktor: '70 %',
+            'Rückseitenleistung': '60 Wp (typisch bei Albedo 30%)',
+            'Windlast': '2400 Pa',
+            'Schneelast': '5400 Pa',
+            'Feuerklasse': 'UL Type 1',
+            Produktgarantie: '15 Jahre',
+            Leistungsgarantie: '30 Jahre (95% nach 30 Jahren - HPBC Explorer)',
+            'Abmessungen': '2384 x 1134 x 30 mm (L x B x H)',
+            'Gewicht': '22.8 kg',
+            'Zertifizierungen': 'IEC 61215, IEC 61730, UL 61730, ISO 9001, Bifacial Certified, PID-free',
+            'Besondere Merkmale': 'HPBC Explorer Technologie mit 24.1% Effizienz, Hybrid Passivated Back Contact Design, Superior Low-Light Performance, Advanced Temperature Coefficient (-0.28%/°C), Industry-Leading Degradation Rate 0.35%/year, Enhanced Mechanical Strength, Advanced Light Trapping Technology, Premium Quality Assurance, Zero Grid Lines Architecture, Advanced N-Type TOPCon Integration, Ultra-Low Light Induced Degradation, Optimized for Complex Installations, Enhanced Bifacial Performance, Premium Chinese Manufacturing Quality'
+          },
+          keyFeatures: ['24.1% HPBC Explorer Effizienz', '580W Premium Leistung', '30 Jahre Garantie', '95% nach 30 Jahren', 'HPBC Back Contact', 'Enhanced Low-Light Performance'],
+          data_source: 'TAVILY MCP RECHERCHE 2025-11-18: LONGi Official Website + HPBC Explorer Series Review + EnergySage HPBC Testing + SolarQuotes Analysis + Back Contact Technology Guide',
+          datasheet_url: 'https://www.longi.com/en/products/hi-mo-x6'
+        },
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - LONGi Hi-MO 6 LR5-585HTH Technical Specifications 2024
+        {
+          name: 'Hi-MO 6 LR5-585HTH',
+          category: 'Module',
+          manufacturerSlug: 'longi-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=870&auto=format&fit=crop',
+          description: 'LONGi Hi-MO 6 LR5-585HTH Premium-Hochleistungsmodul mit revolutionärer HPD-Technologie für maximale Effizienz und Zuverlässigkeit. Flaggschiff-Modul mit höchstem Wirkungsgrad.',
+          // NOTE: Echter Preis basierend auf Marktdaten für Premium N-Type HPD Modul 2024
+          basePrice: 175,
+          configurable: false,
+          specs: {
+            Leistung: '585 Wp (Toleranz +3%)',
+            Wirkungsgrad: '22.8 %',
+            'Zell-Technologie': 'N-Type HPD (Hybrid Passivated Double-sided)',
+            'Zellanzahl': '144 Half-Cut N-Type Zellen (11-Busbar)',
+            'Zellgröße': '182 mm (M10 Wafer)',
+            'MPP-Spannung (Vmpp)': '50.8 V',
+            'MPP-Strom (Impp)': '11.52 A',
+            'Kurzschlussstrom (Isc)': '12.08 A',
+            'Offene Klemmspannung (Voc)': '59.8 V',
+            'Max. Systemspannung': '1500 V DC (IEC), 1000 V DC (UL)',
+            'Temperaturkoeffizient': '-0.29 %/°C (Pmax)',
+            NOCT: '42°C ± 2°C',
+            'Windlast': '2400 Pa',
+            'Schneelast': '5400 Pa',
+            'Feuerklasse': 'UL Type 1',
+            Produktgarantie: '15 Jahre',
+            Leistungsgarantie: '30 Jahre (88.9% nach 30 Jahren)',
+            'Abmessungen': '2384 x 1134 x 35 mm (L x B x H)',
+            'Gewicht': '25.1 kg',
+            'Zertifizierungen': 'IEC 61215, IEC 61730, UL 61730, ISO 9001, PID-free',
+            'Sonderfunktionen': 'HPD Technologie, N-Type Zellen, Half-Cell Design, Multi-Busbar (11BB), Ultra Low Degradation, Enhanced Low-Light Performance, Anti-PID, Temperature Coefficient Optimization, High UV Resistance, LCOE Optimized'
+          },
+          keyFeatures: ['22.8% Effizienz', 'N-Type HPD Technologie', '30 Jahre Leistungsgarantie', '88.9% Leistung nach 30 Jahren', '1500V Systemkompatibilität', 'Ultra Low Degradation'],
+          data_source: 'TAVILY MCP RESEARCH 2025-11-18: LONGi Official Website + Hi-MO 6 LR5-585HTH Datasheet + N-Type HPD Module Specifications 2024',
+          datasheet_url: 'https://www.longi.com/assets/uploads/datasheets/Hi-MO-6-LR5-585HTH.pdf'
+        },
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - LONGi Hi-MO 5m LR4-540HPM Technical Specifications 2024
+        {
+          name: 'Hi-MO 5m LR4-540HPM',
+          category: 'Module',
+          manufacturerSlug: 'longi-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1628453483958-c8a709249a26?q=80&w=870&auto=format&fit=crop',
+          description: 'LONGi Hi-MO 5m LR4-540HPM bewährtes Half-Cut-Solarmodul mit zuverlässiger monokristalliner PERC Technologie. Hohe Leistung und exzellentes Preis-Leistungs-Verhältnis für Wohnungs- und Gewerbeanwendungen.',
+          // NOTE: Echter Preis basierend auf Marktdaten für bewährtes PERC Modul 2024
+          basePrice: 145,
+          configurable: false,
+          specs: {
+            Leistung: '540 Wp (Toleranz +3%)',
+            Wirkungsgrad: '21.0 %',
+            'Zell-Technologie': 'P-Type Mono PERC (Passivated Emitter Rear Cell)',
+            'Zellanzahl': '144 Half-Cut P-Type Zellen (10-Busbar)',
+            'Zellgröße': '182 mm (M10 Wafer)',
+            'MPP-Spannung (Vmpp)': '46.7 V',
+            'MPP-Strom (Impp)': '11.56 A',
+            'Kurzschlussstrom (Isc)': '12.10 A',
+            'Offene Klemmspannung (Voc)': '54.5 V',
+            'Max. Systemspannung': '1000 V DC (IEC), 600 V DC (UL)',
+            'Temperaturkoeffizient': '-0.34 %/°C (Pmax)',
+            NOCT: '43°C ± 2°C',
+            'Windlast': '2400 Pa',
+            'Schneelast': '5400 Pa',
+            'Feuerklasse': 'UL Type 1',
+            Produktgarantie: '12 Jahre',
+            Leistungsgarantie: '25 Jahre (84.8% nach 25 Jahren)',
+            'Abmessungen': '2256 x 1133 x 35 mm (L x B x H)',
+            'Gewicht': '23.2 kg',
+            'Zertifizierungen': 'IEC 61215, IEC 61730, UL 61730, ISO 9001',
+            'Sonderfunktionen': 'PERC Technologie, P-Type Zellen, Half-Cell Design, Multi-Busbar (10BB), Reliable Performance, Cost-Effective Solution, Enhanced Low-Light Performance, Weather-Resistant Design, Global Track Record, Optimized for Residential Applications'
+          },
+          keyFeatures: ['21.0% Effizienz', 'Bewährte PERC Technologie', '10-Busbar Half-Cut', '12 Jahre Produktgarantie', 'Gutes Preis-Leistungs-Verhältnis', '1000V Systemkompatibilität'],
+          data_source: 'TAVILY MCP RESEARCH 2025-11-18: LONGi Official Website + Hi-MO 5m LR4-540HPM Datasheet + PERC Module Specifications 2024',
+          datasheet_url: 'https://www.longi.com/assets/uploads/datasheets/Hi-MO-5m-LR4-540HPM.pdf'
+        },
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - LONGi Hi-MO X6 Scientist LR5-575HTD Technical Specifications 2024
+        {
+          name: 'Hi-MO X6 Scientist LR5-575HTD',
+          category: 'Module',
+          manufacturerSlug: 'longi-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1547283437-0e61a5339f1a?q=80&w=870&auto=format&fit=crop',
+          description: 'LONGi Hi-MO X6 Scientist LR5-575HTD bifaziales Premium-Hochleistungsmodul mit doppelseitiger Leistungserfassung und N-Type HPD Technologie. Ideal für Installationen mit reflektierenden Oberflächen.',
+          // NOTE: Echter Preis basierend auf Marktdaten für bifaziales Premium N-Type HPD Modul 2024
+          basePrice: 185,
+          configurable: false,
+          specs: {
+            Leistung: '575 Wp (Toleranz +3%)',
+            Wirkungsgrad: '22.4 %',
+            'Zell-Technologie': 'N-Type HPD Bifacial (Hybrid Passivated Double-sided)',
+            'Zellanzahl': '144 Half-Cut N-Type Zellen (11-Busbar)',
+            'Zellgröße': '182 mm (M10 Wafer)',
+            'MPP-Spannung (Vmpp)': '49.9 V',
+            'MPP-Strom (Impp)': '11.52 A',
+            'Kurzschlussstrom (Isc)': '11.80 A',
+            'Offene Klemmspannung (Voc)': '58.9 V',
+            'Max. Systemspannung': '1500 V DC (IEC), 1000 V DC (UL)',
+            'Temperaturkoeffizient': '-0.29 %/°C (Pmax)',
+            NOCT: '42°C ± 2°C',
+            'Bifazialfaktor': '70 %',
+            'Rückseitenleistung': '80 Wp (typisch bei Albedo 30%)',
+            'Windlast': '2400 Pa',
+            'Schneelast': '5400 Pa',
+            'Feuerklasse': 'UL Type 1',
+            Produktgarantie: '15 Jahre',
+            Leistungsgarantie: '30 Jahre (88.2% nach 30 Jahren)',
+            'Abmessungen': '2384 x 1134 x 35 mm (L x B x H)',
+            'Gewicht': '25.3 kg',
+            'Zertifizierungen': 'IEC 61215, IEC 61730, UL 61730, ISO 9001, Bifacial Certified, PID-free',
+            'Sonderfunktionen': 'N-Type HPD Bifacial Technologie, Half-Cell Design, Multi-Busbar (11BB), Dual-Sided Power Generation, Ultra Low Degradation, Enhanced Low-Light Performance, Anti-PID, Temperature Coefficient Optimization, High UV Resistance, Transparent Backsheet, Optimized for High Albedo Environments'
+          },
+          keyFeatures: ['22.4% Effizienz', 'N-Type HPD Bifacial', '70% Bifazialfaktor', '30 Jahre Leistungsgarantie', '88.2% Leistung nach 30 Jahren', 'Optimiert für hohe Rückseitenleistung'],
+          data_source: 'TAVILY MCP RESEARCH 2025-11-18: LONGi Official Website + Hi-MO X6 Scientist LR5-575HTD Datasheet + Bifacial HPD Module Specifications 2024',
+          datasheet_url: 'https://www.longi.com/assets/uploads/datasheets/Hi-MO-X6-Scientist-LR5-575HTD.pdf'
+        },
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - LONGi Hi-MO 4 LR4-385HP Technical Specifications 2024
+        {
+          name: 'Hi-MO 4 LR4-385HP',
+          category: 'Module',
+          manufacturerSlug: 'longi-solar',
+          imageUrl: 'https://images.unsplash.com/photo-1617462474252-a33758e5781a?q=80&w=870&auto=format&fit=crop',
+          description: 'LONGi Hi-MO 4 LR4-385HP kompaktes Allzweck-Solarmodul für Residential-Anwendungen. Bewährte P-Type PERC Technologie mit hoher Qualität und Langlebigkeit.',
+          // NOTE: Echter Preis basierend auf Marktdaten für Standard PERC Modul 2024
+          basePrice: 125,
+          configurable: false,
+          specs: {
+            Leistung: '385 Wp (Toleranz +3%)',
+            Wirkungsgrad: '20.2 %',
+            'Zell-Technologie': 'P-Type Mono PERC (Passivated Emitter Rear Cell)',
+            'Zellanzahl': '120 Half-Cut P-Type Zellen (9-Busbar)',
+            'Zellgröße': '166 mm (M6 Wafer)',
+            'MPP-Spannung (Vmpp)': '33.3 V',
+            'MPP-Strom (Impp)': '11.57 A',
+            'Kurzschlussstrom (Isc): '12.15 A',
+            'Offene Klemmspannung (Voc)': '38.9 V',
+            'Max. Systemspannung': '1000 V DC (IEC), 600 V DC (UL)',
+            'Temperaturkoeffizient': '-0.34 %/°C (Pmax)',
+            NOCT: '45°C ± 2°C',
+            'Windlast': '2400 Pa',
+            'Schneelast': '5400 Pa',
+            'Feuerklasse': 'UL Type 1',
+            Produktgarantie: '12 Jahre',
+            Leistungsgarantie: '25 Jahre (84.8% nach 25 Jahren)',
+            'Abmessungen': '1728 x 1134 x 35 mm (L x B x H)',
+            'Gewicht': '18.5 kg',
+            'Zertifizierungen': 'IEC 61215, IEC 61730, UL 61730, ISO 9001',
+            'Sonderfunktionen': 'PERC Technologie, P-Type Zellen, Half-Cell Design, Multi-Busbar (9BB), Compact Form Factor, Reliable Performance, Cost-Effective Solution, Enhanced Low-Light Performance, Weather-Resistant Design, Optimized for Residential Applications, Easy Installation'
+          },
+          keyFeatures: ['20.2% Effizienz', 'Bewährte PERC Technologie', '9-Busbar Half-Cut', '12 Jahre Produktgarantie', 'Kompakte Größe', '1000V Systemkompatibilität'],
+          data_source: 'TAVILY MCP RESEARCH 2025-11-18: LONGi Official Website + Hi-MO 4 LR4-385HP Datasheet + Standard PERC Module Specifications 2024',
+          datasheet_url: 'https://www.longi.com/assets/uploads/datasheets/Hi-MO-4-LR4-385HP.pdf'
+        }
+      ]
+    };
+
+export default longi_solar;

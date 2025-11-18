@@ -1,0 +1,448 @@
+/* ===== ZOE SOLAR ENHANCED DESIGN TOKENS ===== */
+/* Modern CSS Architecture with Glassmorphism 2.0, Container Queries & Advanced Grid */
+
+/* Import base tokens first */
+@import url('./design-tokens.css');
+
+/* ===== GLASSMORPHISM 2.0 SYSTEM ===== */
+:root {
+  /* Glass Effect Base Values */
+  --glass-blur-sm: blur(8px);
+  --glass-blur-md: blur(16px);
+  --glass-blur-lg: blur(24px);
+  --glass-blur-xl: blur(32px);
+  --glass-blur-2xl: blur(48px);
+
+  /* Glass Opacity Levels */
+  --glass-opacity-light: rgba(255, 255, 255, 0.08);
+  --glass-opacity-medium: rgba(255, 255, 255, 0.12);
+  --glass-opacity-strong: rgba(255, 255, 255, 0.16);
+  --glass-opacity-heavy: rgba(255, 255, 255, 0.24);
+
+  /* Glass Border Effects */
+  --glass-border-light: 1px solid rgba(255, 255, 255, 0.18);
+  --glass-border-medium: 1px solid rgba(255, 255, 255, 0.24);
+  --glass-border-strong: 2px solid rgba(255, 255, 255, 0.32);
+
+  /* Colored Glass Effects */
+  --glass-solar: rgba(34, 197, 94, 0.1);
+  --glass-solar-border: rgba(34, 197, 94, 0.3);
+  --glass-blue: rgba(59, 130, 246, 0.1);
+  --glass-blue-border: rgba(59, 130, 246, 0.3);
+  --glass-amber: rgba(245, 158, 11, 0.1);
+  --glass-amber-border: rgba(245, 158, 11, 0.3);
+
+  /* Backdrop Combinations */
+  --backdrop-glass-light: backdrop-filter: blur(16px) saturate(180%);
+  --backdrop-glass-medium: backdrop-filter: blur(24px) saturate(200%);
+  --backdrop-glass-heavy: backdrop-filter: blur(32px) saturate(220%);
+}
+
+/* ===== CONTAINER QUERY SYSTEM ===== */
+:root {
+  /* Container Query Breakpoints */
+  --container-xs: 320px;
+  --container-sm: 384px;
+  --container-md: 448px;
+  --container-lg: 512px;
+  --container-xl: 576px;
+  --container-2xl: 672px;
+  --container-3xl: 768px;
+  --container-4xl: 896px;
+  --container-5xl: 1024px;
+  --container-6xl: 1152px;
+  --container-7xl: 1280px;
+
+  /* Container Query Units */
+  --cqw-unit: 1cqw;
+  --cqh-unit: 1cqh;
+  --cqi-unit: 1cqi;
+  --cqb-unit: 1cqb;
+  --cqmin-unit: 1cqmin;
+  --cqmax-unit: 1cqmax;
+}
+
+/* ===== ADVANCED GRID SYSTEM ===== */
+:root {
+  /* Grid Template Areas */
+  --grid-header: "header";
+  --grid-sidebar: "sidebar";
+  --grid-main: "main";
+  --grid-footer: "footer";
+  --grid-hero: "hero";
+  --grid-featured: "featured";
+  --grid-content: "content";
+
+  /* Grid Gaps */
+  --grid-gap-xs: 0.25rem;
+  --grid-gap-sm: 0.5rem;
+  --grid-gap-md: 1rem;
+  --grid-gap-lg: 1.5rem;
+  --grid-gap-xl: 2rem;
+  --grid-gap-2xl: 3rem;
+  --grid-gap-3xl: 4rem;
+
+  /* Grid Auto Sizes */
+  --grid-auto-min: minmax(250px, 1fr);
+  --grid-auto-md: minmax(300px, 1fr);
+  --grid-auto-lg: minmax(350px, 1fr);
+  --grid-auto-xl: minmax(400px, 1fr);
+
+  /* Masonry Grid Settings */
+  --masonry-gap: 1rem;
+  --masonry-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* ===== NEUMORPHISM SYSTEM ===== */
+:root {
+  /* Neumorphism Light Source */
+  --neuro-light-source: 145deg;
+  --neuro-light-alt: 215deg;
+
+  /* Neumorphism Shadows (Light Theme) */
+  --neuro-raised-light:
+    -8px -8px 16px rgba(255, 255, 255, 0.9),
+    8px 8px 16px rgba(0, 0, 0, 0.1);
+  --neuro-pressed-light:
+    inset 4px 4px 8px rgba(0, 0, 0, 0.1),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+  --neuro-floating-light:
+    0 8px 16px rgba(0, 0, 0, 0.1),
+    0 4px 8px rgba(0, 0, 0, 0.06);
+
+  /* Neumorphism Shadows (Dark Theme) */
+  --neuro-raised-dark:
+    -8px -8px 16px rgba(0, 0, 0, 0.4),
+    8px 8px 16px rgba(255, 255, 255, 0.02);
+  --neuro-pressed-dark:
+    inset 4px 4px 8px rgba(255, 255, 255, 0.02),
+    inset -4px -4px 8px rgba(0, 0, 0, 0.4);
+  --neuro-floating-dark:
+    0 8px 16px rgba(0, 0, 0, 0.3),
+    0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== FLUID DESIGN SYSTEM ===== */
+:root {
+  /* Fluid Spacing */
+  --fluid-space-xs: clamp(0.5rem, 1vw, 1rem);
+  --fluid-space-sm: clamp(1rem, 2vw, 1.5rem);
+  --fluid-space-md: clamp(1.5rem, 3vw, 2.5rem);
+  --fluid-space-lg: clamp(2rem, 4vw, 4rem);
+  --fluid-space-xl: clamp(3rem, 6vw, 6rem);
+  --fluid-space-2xl: clamp(4rem, 8vw, 8rem);
+
+  /* Fluid Border Radius */
+  --fluid-radius-sm: clamp(0.25rem, 0.5vw, 0.5rem);
+  --fluid-radius-md: clamp(0.5rem, 1vw, 1rem);
+  --fluid-radius-lg: clamp(1rem, 2vw, 1.5rem);
+  --fluid-radius-xl: clamp(1.5rem, 3vw, 2rem);
+
+  /* Fluid Shadows */
+  --fluid-shadow-sm:
+    0 1px clamp(2px, 1vw, 3px) rgba(0, 0, 0, 0.05),
+    0 1px clamp(1px, 0.5vw, 2px) rgba(0, 0, 0, 0.05);
+  --fluid-shadow-md:
+    0 clamp(4px, 2vw, 6px) clamp(6px, 3vw, 9px) rgba(0, 0, 0, 0.1),
+    0 clamp(2px, 1vw, 3px) clamp(4px, 2vw, 6px) rgba(0, 0, 0, 0.1);
+}
+
+/* ===== MICRO-INTERACTION SYSTEM ===== */
+:root {
+  /* Interaction Scales */
+  --scale-hover-sm: 1.02;
+  --scale-hover-md: 1.05;
+  --scale-hover-lg: 1.1;
+  --scale-active: 0.98;
+
+  /* Interaction Rotations */
+  --rotate-hover: 2deg;
+  --rotate-active: -1deg;
+
+  /* Transition Presets */
+  --transition-quick: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --transition-elastic: 500ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+  /* Hover Effects */
+  --hover-lift: translateY(-2px);
+  --hover-lift-md: translateY(-4px);
+  --hover-lift-lg: translateY(-8px);
+}
+
+/* ===== ACCESSIBILITY ENHANCEMENTS ===== */
+:root {
+  /* Focus Ring Styles */
+  --focus-ring: 0 0 0 3px rgba(34, 197, 94, 0.5);
+  --focus-ring-offset: 2px;
+  --focus-ring-radius: 2px;
+
+  /* Reduced Motion Support */
+  --motion-reduced: linear;
+  --motion-normal: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* High Contrast Support */
+  --contrast-border: 2px solid currentColor;
+  --contrast-background: currentColor;
+  --contrast-text: white;
+
+  /* Screen Reader Only */
+  --sr-only:
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* ===== RESPONSIVE TYPOGRAPHY ENHANCEMENTS ===== */
+:root {
+  /* Advanced Fluid Typography */
+  --fluid-text-xs: clamp(0.75rem, 2vw, 0.875rem);
+  --fluid-text-sm: clamp(0.875rem, 2.5vw, 1rem);
+  --fluid-text-base: clamp(1rem, 3vw, 1.125rem);
+  --fluid-text-lg: clamp(1.125rem, 3.5vw, 1.25rem);
+  --fluid-text-xl: clamp(1.25rem, 4vw, 1.5rem);
+  --fluid-text-2xl: clamp(1.5rem, 5vw, 2rem);
+  --fluid-text-3xl: clamp(1.875rem, 6vw, 2.5rem);
+  --fluid-text-4xl: clamp(2.25rem, 7vw, 3rem);
+  --fluid-text-5xl: clamp(3rem, 8vw, 4rem);
+
+  /* Container Query Typography */
+  --container-text-xs: clamp(0.75rem, 4cqw, 0.875rem);
+  --container-text-sm: clamp(0.875rem, 5cqw, 1rem);
+  --container-text-base: clamp(1rem, 6cqw, 1.125rem);
+  --container-text-lg: clamp(1.125rem, 7cqw, 1.25rem);
+  --container-text-xl: clamp(1.25rem, 8cqw, 1.5rem);
+}
+
+/* ===== ADVANCED COLOR SYSTEM ===== */
+:root {
+  /* ColorMix() Modern Blends */
+  --color-primary-muted: color-mix(in srgb, var(--primary) 80%, white 20%);
+  --color-primary-subtle: color-mix(in srgb, var(--primary) 20%, white 80%);
+  --color-primary-tint: color-mix(in srgb, var(--primary) 60%, white 40%);
+  --color-primary-shade: color-mix(in srgb, var(--primary) 80%, black 20%);
+
+  /* Gradient Enhancements */
+  --gradient-solar-mesh:
+    radial-gradient(at 40% 20%, hsla(120, 74%, 52%, 0.3) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 0.3) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 0.3) 0px, transparent 50%);
+
+  --gradient-business:
+    conic-gradient(from 180deg at 50% 50%, #22c55e 0deg, #3b82f6 120deg, #8b5cf6 240deg, #22c55e 360deg);
+}
+
+/* ===== PERFORMANCE OPTIMIZATION ===== */
+:root {
+  /* Containment Properties */
+  --contain-layout: contain layout;
+  --contain-paint: contain paint;
+  --contain-size: contain size;
+  --contain-style: contain style;
+
+  /* Will-change Optimizations */
+  --will-change-transform: will-change transform;
+  --will-change-opacity: will-change opacity;
+  --will-change-scroll: will-change scroll-position;
+
+  /* Content Visibility */
+  --content-visibility-auto: content-visibility: auto;
+  --content-visibility-hidden: content-visibility: hidden;
+  --content-visibility-visible: content-visibility: visible;
+}
+
+/* ===== UTILITY CLASSES ===== */
+
+/* Glassmorphism Utilities */
+.glass-light {
+  background: var(--glass-opacity-light);
+  backdrop-filter: var(--glass-blur-sm);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+  border: var(--glass-border-light);
+}
+
+.glass-medium {
+  background: var(--glass-opacity-medium);
+  backdrop-filter: var(--glass-blur-md);
+  -webkit-backdrop-filter: var(--glass-blur-md);
+  border: var(--glass-border-medium);
+}
+
+.glass-heavy {
+  background: var(--glass-opacity-heavy);
+  backdrop-filter: var(--glass-blur-lg);
+  -webkit-backdrop-filter: var(--glass-blur-lg);
+  border: var(--glass-border-strong);
+}
+
+/* Glass Colored Variants */
+.glass-solar {
+  background: var(--glass-solar);
+  backdrop-filter: var(--glass-blur-md);
+  -webkit-backdrop-filter: var(--glass-blur-md);
+  border: var(--glass-solar-border);
+}
+
+.glass-blue {
+  background: var(--glass-blue);
+  backdrop-filter: var(--glass-blur-md);
+  -webkit-backdrop-filter: var(--glass-blur-md);
+  border: var(--glass-blue-border);
+}
+
+/* Neumorphism Utilities */
+.neuro-raised {
+  box-shadow: var(--neuro-raised-light);
+  background: linear-gradient(145deg, #f8fafc, #e2e8f0);
+}
+
+.neuro-pressed {
+  box-shadow: var(--neuro-pressed-light);
+  background: linear-gradient(145deg, #e2e8f0, #f8fafc);
+}
+
+.neuro-floating {
+  box-shadow: var(--neuro-floating-light);
+  background: #f1f5f9;
+}
+
+/* Dark Theme Neumorphism */
+[data-theme="dark"] .neuro-raised {
+  box-shadow: var(--neuro-raised-dark);
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+}
+
+[data-theme="dark"] .neuro-pressed {
+  box-shadow: var(--neuro-pressed-dark);
+  background: linear-gradient(145deg, #0f172a, #1e293b);
+}
+
+[data-theme="dark"] .neuro-floating {
+  box-shadow: var(--neuro-floating-dark);
+  background: #1e293b;
+}
+
+/* Advanced Grid Utilities */
+.grid-masonry {
+  display: grid;
+  grid-template-columns: var(--masonry-columns);
+  gap: var(--masonry-gap);
+}
+
+.grid-auto-fit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: var(--grid-gap-md);
+}
+
+.grid-responsive {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: var(--grid-gap-md);
+}
+
+/* Container Query Base Classes */
+@container (min-width: 384px) {
+  .container-sm { /* Small container styles */ }
+}
+
+@container (min-width: 512px) {
+  .container-md { /* Medium container styles */ }
+}
+
+@container (min-width: 768px) {
+  .container-lg { /* Large container styles */ }
+}
+
+/* Micro-interaction Utilities */
+.hover-lift {
+  transition: transform var(--transition-smooth);
+}
+
+.hover-lift:hover {
+  transform: var(--hover-lift);
+}
+
+.hover-lift-md:hover {
+  transform: var(--hover-lift-md);
+}
+
+.hover-scale:hover {
+  transform: scale(var(--scale-hover-sm));
+}
+
+.hover-scale-md:hover {
+  transform: scale(var(--scale-hover-md));
+}
+
+/* Focus Management Utilities */
+.focus-ring:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: var(--focus-ring-radius);
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Responsive Typography Utilities */
+.text-fluid-xs { font-size: var(--fluid-text-xs); }
+.text-fluid-sm { font-size: var(--fluid-text-sm); }
+.text-fluid-base { font-size: var(--fluid-text-base); }
+.text-fluid-lg { font-size: var(--fluid-text-lg); }
+.text-fluid-xl { font-size: var(--fluid-text-xl); }
+.text-fluid-2xl { font-size: var(--fluid-text-2xl); }
+
+/* Performance Optimization Utilities */
+.will-change-transform { will-change: transform; }
+.will-change-opacity { will-change: opacity; }
+.contain-layout { contain: layout; }
+.contain-paint { contain: paint; }
+
+.content-visibility-auto { content-visibility: auto; }
+.content-visibility-hidden { content-visibility: hidden; }
+
+/* Accessibility Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (prefers-contrast: high) {
+  .glass-light,
+  .glass-medium,
+  .glass-heavy {
+    background: white;
+    border: var(--contrast-border);
+  }
+
+  .neuro-raised,
+  .neuro-pressed,
+  .neuro-floating {
+    background: var(--contrast-background);
+    color: var(--contrast-text);
+  }
+}

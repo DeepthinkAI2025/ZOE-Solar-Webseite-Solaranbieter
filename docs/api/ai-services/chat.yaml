@@ -1,0 +1,442 @@
+# AI Chat Endpoint Specification
+post:
+  tags:
+    - AI Services
+  summary: AI Chat Conversation
+  description: |
+    Send a message to the AI-powered solar chat assistant and receive intelligent responses.
+
+    This endpoint provides advanced AI capabilities including:
+    - Natural language conversation about solar energy
+    - Personalized recommendations based on user context
+    - Real-time project analysis and suggestions
+    - Integration with Serena MCP AI services
+    - Context-aware responses with session memory
+
+    ## AI Capabilities
+    - **Solar Expert Knowledge**: Comprehensive understanding of solar technology
+    - **Personalized Recommendations**: Tailored advice based on user data
+    - **Real-time Analysis**: Dynamic analysis of user projects
+    - **Multi-turn Conversations**: Context maintained across multiple messages
+    - **Voice Search Optimization**: Natural language processing for voice queries
+
+    ## Usage Patterns
+    - Initial consultation and needs assessment
+    - Technical questions about solar technology
+    - Project-specific recommendations and optimizations
+    - Cost and ROI calculations and analysis
+    - Regulatory and compliance information
+
+  parameters:
+    - $ref: '../../openapi.yaml#/components/parameters/Authorization'
+    - $ref: '../../openapi.yaml#/components/parameters/ContentType'
+
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - message
+          properties:
+            message:
+              type: string
+              minLength: 1
+              maxLength: 2000
+              example: "Welche Solaranlage eignet sich für mein 500m² Büroflachdach in Berlin?"
+              description: User's message to the AI assistant
+            context:
+              type: object
+              description: User context for personalized responses
+              properties:
+                location:
+                  type: object
+                  properties:
+                    address:
+                      type: string
+                      example: "Musterstraße 1, Berlin"
+                    coordinates:
+                      type: object
+                      properties:
+                        lat:
+                          type: number
+                          example: 52.5200
+                        lng:
+                          type: number
+                          example: 13.4050
+                projectData:
+                  type: object
+                  properties:
+                    roofSize:
+                      type: number
+                      example: 500
+                      description: Roof area in square meters
+                    roofType:
+                      type: string
+                      enum: [flat, pitched, mixed]
+                      example: "flat"
+                    consumption:
+                      type: number
+                      example: 85000
+                      description: Annual electricity consumption in kWh
+                    budget:
+                      type: object
+                      properties:
+                        min:
+                          type: number
+                          example: 60000
+                        max:
+                          type: number
+                          example: 80000
+                        currency:
+                          type: string
+                          example: "EUR"
+                    timeframe:
+                      type: string
+                      example: "Q2 2025"
+                      description: Desired project timeline
+                userProfile:
+                  type: object
+                  properties:
+                    industry:
+                      type: string
+                      example: "technology"
+                    companySize:
+                      type: string
+                      enum: [startup, small, medium, large, enterprise]
+                      example: "medium"
+                    goals:
+                      type: array
+                      items:
+                        type: string
+                      example: ["cost_reduction", "sustainability", "independence"]
+                    existingProjects:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          type:
+                            type: string
+                            example: "photovoltaik"
+                          status:
+                            type: string
+                            example: "completed"
+            sessionId:
+              type: string
+              example: "session_abc123def456"
+              description: Optional session ID for conversation continuity
+            history:
+              type: array
+              items:
+                type: object
+                properties:
+                  role:
+                    type: string
+                    enum: [user, assistant, system]
+                    example: "user"
+                  message:
+                    type: string
+                    example: "Ich interessiere mich für Solaranlagen"
+                  timestamp:
+                    type: string
+                    format: date-time
+                    example: "2025-11-17T15:28:00Z"
+              description: Previous conversation history for context
+            options:
+              type: object
+              properties:
+                model:
+                  type: string
+                  enum: [mistral-7b-instruct, mistral-7b-alpha, minimax-m2]
+                  default: "mistral-7b-instruct"
+                  example: "mistral-7b-instruct"
+                temperature:
+                  type: number
+                  minimum: 0
+                  maximum: 1
+                  default: 0.7
+                  example: 0.7
+                  description: Response creativity (0.0 = deterministic, 1.0 = creative)
+                maxTokens:
+                  type: integer
+                  minimum: 50
+                  maximum: 2000
+                  default: 500
+                  example: 500
+                  description: Maximum response length in tokens
+                includeCalculations:
+                  type: boolean
+                  default: false
+                  example: true
+                  description: Include automatic ROI and savings calculations
+                language:
+                  type: string
+                  enum: [de, en]
+                  default: "de"
+                  example: "de"
+                  description: Response language
+
+  responses:
+    '200':
+      description: AI response generated successfully
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../../openapi.yaml#/components/schemas/Success'
+              - type: object
+                properties:
+                  data:
+                    type: object
+                    required:
+                      - response
+                      - metadata
+                    properties:
+                      response:
+                        type: string
+                        minLength: 1
+                        maxLength: 5000
+                        example: "Für Ihr 500m² Büroflachdach in Berlin empfehle ich eine 75kWp Photovoltaikanlage. Basierend auf dem durchschnittlichen Sonneneinstrahlungswert von 1080 kWh/kWp in Berlin können Sie jährlich ca. 81.000 kWh Strom erzeugen. Bei einem Strompreis von 0,32€/kWh entspricht das einer jährlichen Einsparung von etwa 25.920€."
+                        description: AI-generated response
+                      recommendations:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            type:
+                              type: string
+                              enum: [system_size, technology, financing, timeline, maintenance]
+                              example: "system_size"
+                            title:
+                              type: string
+                              example: "75kWp Photovoltaikanlage"
+                            description:
+                              type: string
+                              example: "Optimale Größe für 500m² Dachfläche"
+                            priority:
+                              type: string
+                              enum: [high, medium, low]
+                              example: "high"
+                            confidence:
+                              type: number
+                              minimum: 0
+                              maximum: 1
+                              example: 0.92
+                        example:
+                          - type: "system_size"
+                            title: "75kWp Photovoltaikanlage"
+                            description: "Optimale Größe für 500m² Dachfläche"
+                            priority: "high"
+                            confidence: 0.92
+                          - type: "technology"
+                            title: "Hochleistungsmodule mit 22% Effizienz"
+                            description: "Monokristalline Module für maximale Erträge"
+                            priority: "medium"
+                            confidence: 0.87
+                      calculations:
+                        type: object
+                        properties:
+                          systemSize:
+                            type: number
+                            example: 75
+                            description: Recommended system size in kWp
+                          annualProduction:
+                            type: number
+                            example: 81000
+                            description: Estimated annual production in kWh
+                          annualSavings:
+                            type: number
+                            example: 25920
+                            description: Estimated annual savings in EUR
+                          amortizationPeriod:
+                            type: number
+                            example: 6.8
+                            description: Estimated amortization period in years
+                          roi:
+                            type: number
+                            example: 14.7
+                            description: Return on investment percentage
+                          co2Savings:
+                            type: object
+                            properties:
+                              annual:
+                                type: number
+                                example: 4.05
+                                description: Annual CO2 savings in tons
+                              twentyFiveYears:
+                                type: number
+                                example: 101.25
+                                description: 25-year CO2 savings in tons
+                      followUpQuestions:
+                        type: array
+                        items:
+                          type: string
+                        example:
+                          - "Welche Module-Marke bevorzugen Sie?"
+                          - "Haben Sie bereits ein Angebot von anderen Anbietern?"
+                          - "Wann soll das Projekt starten?"
+                          - "Benötigen Sie auch einen Batteriespeicher?"
+                      nextSteps:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            action:
+                              type: string
+                              example: "roof_analysis"
+                            title:
+                              type: string
+                              example: "Detaillierte Dachanalyse durchführen"
+                            url:
+                              type: string
+                              example: "/utils/roof-analyzer"
+                            urgency:
+                              type: string
+                              enum: [immediate, high, medium, low]
+                              example: "medium"
+                            description:
+                              type: string
+                              example: "Wir können eine detaillierte 3D-Analyse Ihrer Dachfläche durchführen"
+                        example:
+                          - action: "roof_analysis"
+                            title: "Detaillierte Dachanalyse durchführen"
+                            url: "/utils/roof-analyzer"
+                            urgency: "medium"
+                            description: "Wir können eine detaillierte 3D-Analyse Ihrer Dachfläche durchführen"
+                      sources:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            type:
+                              type: string
+                              enum: [technical_data, regulation, market_analysis, expert_knowledge]
+                              example: "technical_data"
+                            title:
+                              type: string
+                              example: "Solare Ertragsdaten Berlin"
+                            url:
+                              type: string
+                              format: uri
+                              example: "https://www.bundesnetzagentur.de"
+                            credibility:
+                              type: string
+                              enum: [high, medium, low]
+                              example: "high"
+                        example:
+                          - type: "technical_data"
+                            title: "Solare Ertragsdaten Berlin"
+                            url: "https://www.bundesnetzagentur.de/DE/Sachgebiete/ElektrizitaetundGas/InstallationsfoerderungErneuerbareEnergien/Solar/RegenerativeEnergienGesetz_node.html"
+                            credibility: "high"
+                      metadata:
+                        type: object
+                        properties:
+                          sessionId:
+                            type: string
+                            example: "session_abc123def456"
+                          messageId:
+                            type: string
+                            example: "msg_xyz789"
+                          model:
+                            type: string
+                            example: "mistral-7b-instruct"
+                          temperature:
+                            type: number
+                            example: 0.7
+                          tokensUsed:
+                            type: object
+                            properties:
+                              input:
+                                type: number
+                                example: 145
+                              output:
+                                type: number
+                                example: 389
+                              total:
+                                type: number
+                                example: 534
+                          responseTime:
+                            type: number
+                            example: 2.4
+                            description: Response time in seconds
+                          confidence:
+                            type: number
+                            minimum: 0
+                            maximum: 1
+                            example: 0.91
+                            description: Overall confidence in the response
+                          language:
+                            type: string
+                            example: "de"
+                          timestamp:
+                            type: string
+                            format: date-time
+                            example: "2025-11-17T15:30:00Z"
+          example:
+            success: true
+            data:
+              response: "Für Ihr 500m² Büroflachdach in Berlin empfehle ich eine 75kWp Photovoltaikanlage. Basierend auf dem durchschnittlichen Sonneneinstrahlungswert von 1080 kWh/kWp in Berlin können Sie jährlich ca. 81.000 kWh Strom erzeugen. Bei einem Strompreis von 0,32€/kWh entspricht das einer jährlichen Einsparung von etwa 25.920€."
+              recommendations:
+                - type: "system_size"
+                  title: "75kWp Photovoltaikanlage"
+                  description: "Optimale Größe für 500m² Dachfläche"
+                  priority: "high"
+                  confidence: 0.92
+                - type: "technology"
+                  title: "Hochleistungsmodule mit 22% Effizienz"
+                  description: "Monokristalline Module für maximale Erträge"
+                  priority: "medium"
+                  confidence: 0.87
+              calculations:
+                systemSize: 75
+                annualProduction: 81000
+                annualSavings: 25920
+                amortizationPeriod: 6.8
+                roi: 14.7
+                co2Savings:
+                  annual: 4.05
+                  twentyFiveYears: 101.25
+              followUpQuestions:
+                - "Welche Module-Marke bevorzugen Sie?"
+                - "Haben Sie bereits ein Angebot von anderen Anbietern?"
+                - "Wann soll das Projekt starten?"
+                - "Benötigen Sie auch einen Batteriespeicher?"
+              nextSteps:
+                - action: "roof_analysis"
+                  title: "Detaillierte Dachanalyse durchführen"
+                  url: "/utils/roof-analyzer"
+                  urgency: "medium"
+                  description: "Wir können eine detaillierte 3D-Analyse Ihrer Dachfläche durchführen"
+              metadata:
+                sessionId: "session_abc123def456"
+                messageId: "msg_xyz789"
+                model: "mistral-7b-instruct"
+                temperature: 0.7
+                tokensUsed:
+                  input: 145
+                  output: 389
+                  total: 534
+                responseTime: 2.4
+                confidence: 0.91
+                language: "de"
+                timestamp: "2025-11-17T15:30:00Z"
+            meta:
+              timestamp: "2025-11-17T15:30:00Z"
+              request_id: "req_ai_chat_abc123"
+              version: "1.0.0"
+
+    '400':
+      $ref: '../../openapi.yaml#/components/responses/ValidationError'
+      description: Invalid request parameters
+    '401':
+      $ref: '../../openapi.yaml#/components/responses/Unauthorized'
+    '429':
+      $ref: '../../openapi.yaml#/components/responses/RateLimited'
+      description: Too many AI requests
+    '500':
+      $ref: '../../openapi.yaml#/components/responses/ServerError'
+      description: AI service unavailable
+
+  security:
+    - BearerAuth: []

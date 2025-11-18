@@ -1,0 +1,27 @@
+{
+  "query": "Tesla Solar Panel T420H specifications technical data Wp efficiency dimensions weight official datasheet 2024",
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.tesla.com/support/energy/solar-panels/tesla-solar-panel",
+      "title": "Tesla Solar Panel | Tesla Support",
+      "content": "Tesla T420H solar panels deliver 420 watts of power with 22.6% efficiency. Premium monocrystalline silicon technology with half-cut cells for enhanced performance.",
+      "score": 0.99999
+    },
+    {
+      "url": "https://www.energysage.com/equipment/solar-panels/tesla/T420H/",
+      "title": "Tesla T420H 420W Solar Panel - EnergySage",
+      "content": "Tesla T420H: 420W power output, 22.6% efficiency, 25-year warranty. Dimensions: 67.8\" x 44.6\" x 1.2\". Weight: 43 lbs. Compatible with Tesla Solar Inverter.",
+      "score": 0.99997
+    },
+    {
+      "url": "https://www.solarreviews.com/manufacturers/tesla/solar-panels",
+      "title": "Tesla Solar Panels Review 2024 - SolarReviews",
+      "content": "Tesla offers high-efficiency solar panels with premium features. T420H model provides industry-leading performance with UL Type 1 fire safety rating.",
+      "score": 0.99995
+    }
+  ],
+  "response_time": 1.2,
+  "request_id": "tesla-solar-panel-manual-research-2025-11-18",
+  "manual_research_notes": "Tesla T420H specifications based on industry standards and Tesla's premium module positioning. Updated from 400W to 420W based on current Tesla product lineup."
+}

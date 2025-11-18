@@ -1,0 +1,52 @@
+{
+  "P700 Power Optimizer": {
+    "query": "SolarEdge P700 optimizers specifications datasheet power optimizer 2024",
+    "results": [
+      {
+        "url": "https://www.solaredge.com/products/power-optimizers/p700",
+        "title": "SolarEdge P700 Power Optimizer",
+        "content": "SolarEdge P700 power optimizer with 99.5% efficiency, 25-year warranty, module-level MPPT, arc-fault protection, rapid shutdown capabilities.",
+        "score": 0.99999
+      },
+      {
+        "url": "https://www.solaredge.com/assets/uploads/datasheets/P700.pdf",
+        "title": "SolarEdge P700 Datasheet PDF",
+        "content": "Technical specifications: 99.5% CEC efficiency, 8A max current, 60V DC input, 25-year warranty, IP67 rating, arc-fault protection.",
+        "score": 0.99998
+      }
+    ]
+  },
+  "SE5000H HD Wave Inverter": {
+    "query": "SolarEdge HD Wave SE5000H inverter specifications datasheet single-phase 2024",
+    "results": [
+      {
+        "url": "https://www.solaredge.com/products/inverters/se5000h",
+        "title": "SolarEdge SE5000H HD Wave Inverter",
+        "content": "SolarEdge SE5000H 5kW single-phase HD Wave inverter with 99% weighted efficiency, 12-year standard warranty, built-in monitoring, smart energy management.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "SE7600H-US HD Wave Inverter": {
+    "query": "SolarEdge SE7600H-US inverter specifications datasheet HD Wave technology 2024",
+    "results": [
+      {
+        "url": "https://www.solaredge.com/products/inverters/se7600h-us",
+        "title": "SolarEdge SE7600H-US HD Wave Inverter",
+        "content": "SolarEdge SE7600H-US 7.6kW single-phase HD Wave inverter with 99.2% weighted efficiency, 12-year warranty, 25-year design life, smart energy management.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "P960 Power Optimizer": {
+    "query": "SolarEdge P960 optimizers specifications datasheet high-power optimizer 2024",
+    "results": [
+      {
+        "url": "https://www.solaredge.com/products/power-optimizers/p960",
+        "title": "SolarEdge P960 Power Optimizer",
+        "content": "SolarEdge P960 high-power optimizer with 99.5% efficiency, 15A max current, 97V DC input, 25-year warranty, module-level monitoring.",
+        "score": 0.99999
+      }
+    ]
+  }
+}

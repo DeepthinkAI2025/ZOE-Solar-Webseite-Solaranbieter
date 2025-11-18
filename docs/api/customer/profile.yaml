@@ -1,0 +1,412 @@
+# Customer Profile Endpoint Specification
+get:
+  tags:
+    - Customer Management
+  summary: Get Customer Profile
+  description: |
+    Retrieve the authenticated customer's complete profile information.
+
+    This endpoint returns comprehensive customer data including:
+    - Personal and company information
+    - Contact details and preferences
+    - Project statistics and analytics
+    - Communication preferences
+    - Security settings
+
+    ## Security
+    - Requires valid JWT token
+    - Only returns profile of authenticated user
+    - Sensitive data is masked appropriately
+
+  parameters:
+    - $ref: '../../openapi.yaml#/components/parameters/Authorization'
+
+  responses:
+    '200':
+      description: Profile retrieved successfully
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../../openapi.yaml#/components/schemas/Success'
+              - type: object
+                properties:
+                  data:
+                    type: object
+                    required:
+                      - profile
+                      - statistics
+                      - preferences
+                    properties:
+                      profile:
+                        type: object
+                        required:
+                          - id
+                          - email
+                          - firstName
+                          - lastName
+                          - role
+                          - createdAt
+                          - updatedAt
+                        properties:
+                          id:
+                            type: string
+                            example: "user_123456"
+                          email:
+                            type: string
+                            format: email
+                            example: "max.mustermann@unternehmen.de"
+                          firstName:
+                            type: string
+                            example: "Max"
+                          lastName:
+                            type: string
+                            example: "Mustermann"
+                          company:
+                            type: string
+                            example: "Mustermann GmbH"
+                          phone:
+                            type: string
+                            example: "+49 30 12345678"
+                          address:
+                            $ref: '../../openapi.yaml#/components/schemas/Address'
+                          role:
+                            type: string
+                            enum: [customer, admin, super_admin, content_editor]
+                            example: "customer"
+                          verified:
+                            type: boolean
+                            example: true
+                          avatar:
+                            type: string
+                            format: uri
+                            example: "https://cdn.zoe-solar.de/avatars/user_123456.jpg"
+                          bio:
+                            type: string
+                            example: "Leitender technischer Manager für nachhaltige Energie"
+                          website:
+                            type: string
+                            format: uri
+                            example: "https://mustermann-gmbh.de"
+                          linkedin:
+                            type: string
+                            format: uri
+                            example: "https://linkedin.com/in/maxmustermann"
+                          createdAt:
+                            type: string
+                            format: date-time
+                            example: "2025-01-15T09:00:00Z"
+                          updatedAt:
+                            type: string
+                            format: date-time
+                            example: "2025-11-17T14:30:00Z"
+                          lastLogin:
+                            type: string
+                            format: date-time
+                            example: "2025-11-17T15:30:00Z"
+                      statistics:
+                        type: object
+                        properties:
+                          totalProjects:
+                            type: integer
+                            example: 3
+                            description: Total number of projects
+                          activeProjects:
+                            type: integer
+                            example: 1
+                            description: Currently active projects
+                          completedProjects:
+                            type: integer
+                            example: 2
+                            description: Successfully completed projects
+                          totalInvestment:
+                            type: number
+                            example: 145000
+                            description: Total investment across all projects
+                          totalSavings:
+                            type: number
+                            example: 12500
+                            description: Estimated annual savings from projects
+                          co2Reduction:
+                            type: number
+                            example: 12.5
+                            description: Annual CO2 reduction in tons
+                          memberSince:
+                            type: string
+                            format: date-time
+                            example: "2025-01-15T09:00:00Z"
+                      preferences:
+                        type: object
+                        properties:
+                          language:
+                            type: string
+                            enum: [de, en]
+                            example: "de"
+                          currency:
+                            type: string
+                            example: "EUR"
+                          timezone:
+                            type: string
+                            example: "Europe/Berlin"
+                          notifications:
+                            type: object
+                            properties:
+                              email:
+                                type: boolean
+                                example: true
+                              sms:
+                                type: boolean
+                                example: false
+                              push:
+                                type: boolean
+                                example: true
+                              newsletter:
+                                type: boolean
+                                example: true
+                              projectUpdates:
+                                type: boolean
+                                example: true
+                              marketing:
+                                type: boolean
+                                example: false
+                          privacy:
+                            type: object
+                            properties:
+                              profileVisibility:
+                                type: string
+                                enum: [public, private, team]
+                                example: "private"
+                              dataSharing:
+                                type: boolean
+                                example: false
+                              analytics:
+                                type: boolean
+                                example: true
+          example:
+            success: true
+            data:
+              profile:
+                id: "user_123456"
+                email: "max.mustermann@unternehmen.de"
+                firstName: "Max"
+                lastName: "Mustermann"
+                company: "Mustermann GmbH"
+                phone: "+49 30 12345678"
+                address:
+                  street: "Musterstraße 1"
+                  city: "Berlin"
+                  zipCode: "10115"
+                  country: "Germany"
+                  coordinates:
+                    lat: 52.5200
+                    lng: 13.4050
+                role: "customer"
+                verified: true
+                avatar: "https://cdn.zoe-solar.de/avatars/user_123456.jpg"
+                bio: "Leitender technischer Manager für nachhaltige Energie"
+                website: "https://mustermann-gmbh.de"
+                linkedin: "https://linkedin.com/in/maxmustermann"
+                createdAt: "2025-01-15T09:00:00Z"
+                updatedAt: "2025-11-17T14:30:00Z"
+                lastLogin: "2025-11-17T15:30:00Z"
+              statistics:
+                totalProjects: 3
+                activeProjects: 1
+                completedProjects: 2
+                totalInvestment: 145000
+                totalSavings: 12500
+                co2Reduction: 12.5
+                memberSince: "2025-01-15T09:00:00Z"
+              preferences:
+                language: "de"
+                currency: "EUR"
+                timezone: "Europe/Berlin"
+                notifications:
+                  email: true
+                  sms: false
+                  push: true
+                  newsletter: true
+                  projectUpdates: true
+                  marketing: false
+                privacy:
+                  profileVisibility: "private"
+                  dataSharing: false
+                  analytics: true
+            meta:
+              timestamp: "2025-11-17T15:30:00Z"
+              request_id: "req_profile_abc123"
+              version: "1.0.0"
+
+    '401':
+      $ref: '../../openapi.yaml#/components/responses/Unauthorized'
+    '404':
+      $ref: '../../openapi.yaml#/components/responses/NotFound'
+      description: Profile not found
+    '500':
+      $ref: '../../openapi.yaml#/components/responses/ServerError'
+
+put:
+  tags:
+    - Customer Management
+  summary: Update Customer Profile
+  description: |
+    Update the authenticated customer's profile information.
+
+    This endpoint allows updating:
+    - Personal information (name, bio, contact details)
+    - Company information and address
+    - Communication preferences
+    - Privacy settings
+    - Avatar and profile customization
+
+    ## Validation Rules
+    - Email changes require verification
+    - Phone numbers must be in valid format
+    - Addresses are validated for proper structure
+    - Privacy changes are logged for audit trail
+
+  parameters:
+    - $ref: '../../openapi.yaml#/components/parameters/Authorization'
+    - $ref: '../../openapi.yaml#/components/parameters/ContentType'
+
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            firstName:
+              type: string
+              minLength: 2
+              maxLength: 50
+              example: "Maximilian"
+            lastName:
+              type: string
+              minLength: 2
+              maxLength: 50
+              example: "Mustermann"
+            company:
+              type: string
+              minLength: 2
+              maxLength: 100
+              example: "Mustermann AG"
+            phone:
+              type: string
+              pattern: '^\\+?[1-9]\\d{1,14}$'
+              example: "+49 30 12345678"
+            address:
+              $ref: '../../openapi.yaml#/components/schemas/Address'
+            bio:
+              type: string
+              maxLength: 500
+              example: "CTO bei Mustermann AG, spezialisiert auf nachhaltige Energietechnologien"
+            website:
+              type: string
+              format: uri
+              example: "https://mustermann-ag.de"
+            linkedin:
+              type: string
+              format: uri
+              example: "https://linkedin.com/in/maxmustermann"
+            preferences:
+              type: object
+              properties:
+                language:
+                  type: string
+                  enum: [de, en]
+                  example: "de"
+                timezone:
+                  type: string
+                  example: "Europe/Berlin"
+                notifications:
+                  type: object
+                  properties:
+                    email:
+                      type: boolean
+                      example: true
+                    sms:
+                      type: boolean
+                      example: false
+                    push:
+                      type: boolean
+                      example: true
+                    newsletter:
+                      type: boolean
+                      example: false
+                    projectUpdates:
+                      type: boolean
+                      example: true
+                    marketing:
+                      type: boolean
+                      example: false
+                privacy:
+                  type: object
+                  properties:
+                    profileVisibility:
+                      type: string
+                      enum: [public, private, team]
+                      example: "private"
+                    dataSharing:
+                      type: boolean
+                      example: false
+                    analytics:
+                      type: boolean
+                      example: true
+
+  responses:
+    '200':
+      description: Profile updated successfully
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../../openapi.yaml#/components/schemas/Success'
+              - type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      profile:
+                        $ref: '#/get/responses/200/content/application/json/schema/properties/data/properties/profile'
+                      updatedFields:
+                        type: array
+                        items:
+                          type: string
+                        example: ["firstName", "phone", "preferences.notifications.email"]
+                      requiresVerification:
+                        type: array
+                        items:
+                          type: string
+                        example: ["email"]
+                        description: Fields that require additional verification
+          example:
+            success: true
+            data:
+              profile:
+                id: "user_123456"
+                email: "max.mustermann@unternehmen.de"
+                firstName: "Maximilian"
+                lastName: "Mustermann"
+                company: "Mustermann AG"
+                phone: "+49 30 12345678"
+                role: "customer"
+                verified: true
+                updatedAt: "2025-11-17T16:00:00Z"
+              updatedFields: ["firstName", "phone"]
+              requiresVerification: []
+            meta:
+              timestamp: "2025-11-17T16:00:00Z"
+              request_id: "req_update_profile_abc123"
+              version: "1.0.0"
+
+    '400':
+      $ref: '../../openapi.yaml#/components/responses/ValidationError'
+      description: Invalid input data
+    '401':
+      $ref: '../../openapi.yaml#/components/responses/Unauthorized'
+    '500':
+      $ref: '../../openapi.yaml#/components/responses/ServerError'
+
+  security:
+    - BearerAuth: []

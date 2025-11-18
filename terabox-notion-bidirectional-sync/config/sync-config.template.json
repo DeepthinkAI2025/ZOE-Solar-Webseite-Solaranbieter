@@ -1,0 +1,157 @@
+{
+  "_comment": "TeraBox-Notion Bidirectional Sync Configuration Template",
+  "_version": "1.0.0",
+  "_description": "Template for configuring bidirectional synchronization between a specific TeraBox folder and Notion workspace",
+
+  "terabox": {
+    "_description": "TeraBox configuration - restricted to specific folder only",
+    "baseURL": "https://nephobox.com",
+    "targetFolder": "/Terabox Cloud Storage und Notion CMS",
+    "apiKey": null,
+    "username": null,
+    "password": null,
+    "folderId": null,
+    "watchSubfolders": true,
+    "pollingInterval": 30000,
+    "_notes": [
+      "targetFolder: The specific folder to sync - will be created if it doesn't exist",
+      "folderId: Will be populated automatically after initialization",
+      "watchSubfolders: Whether to sync subfolders within the target folder",
+      "pollingInterval: How often to check for changes (in milliseconds)"
+    ]
+  },
+
+  "notion": {
+    "_description": "Notion configuration - restricted to specific workspace only",
+    "token": null,
+    "workspaceId": null,
+    "workspaceName": null,
+    "databaseId": null,
+    "databaseName": "TeraBox File Sync",
+    "pollingInterval": 10000,
+    "restrictToWorkspace": true,
+    "_notes": [
+      "token: Notion integration token from notion.so/my-integrations",
+      "workspaceId: The specific workspace ID to restrict operations to",
+      "databaseId: Will be populated automatically after database creation",
+      "restrictToWorkspace: Ensure operations only affect the specified workspace",
+      "pollingInterval: How often to check for changes (in milliseconds)"
+    ]
+  },
+
+  "sync": {
+    "_description": "Synchronization configuration",
+    "mode": "bidirectional",
+    "conflictResolution": "latest_wins",
+    "autoRetry": true,
+    "maxRetries": 3,
+    "retryDelay": 5000,
+    "batchSize": 10,
+    "_notes": [
+      "mode: 'bidirectional', 'terabox_to_notion', or 'notion_to_terabox'",
+      "conflictResolution: Strategy for resolving conflicts",
+      "autoRetry: Whether to automatically retry failed operations",
+      "maxRetries: Maximum number of retry attempts",
+      "retryDelay: Delay between retries (in milliseconds)",
+      "batchSize: Number of operations to process in a batch"
+    ]
+  },
+
+  "ocr": {
+    "_description": "DeepSeek OCR configuration (optional)",
+    "enabled": false,
+    "baseURL": null,
+    "apiKey": null,
+    "languages": ["de", "en"],
+    "extractFinancialData": true,
+    "_notes": [
+      "enabled: Whether to perform OCR analysis on supported file types",
+      "baseURL: URL of your DeepSeek OCR instance",
+      "apiKey: API key for OCR service (if required)",
+      "languages: Languages to detect and analyze",
+      "extractFinancialData: Whether to extract financial information from documents"
+    ]
+  },
+
+  "logging": {
+    "_description": "Logging configuration",
+    "level": "info",
+    "file": "sync.log",
+    "maxFiles": 5,
+    "maxSize": "10MB",
+    "_notes": [
+      "level: 'debug', 'info', 'warn', or 'error'",
+      "file: Log file path (null for console only)",
+      "maxFiles: Maximum number of log files to keep",
+      "maxSize: Maximum size of each log file"
+    ]
+  },
+
+  "monitoring": {
+    "_description": "Monitoring and alerting configuration",
+    "enabled": true,
+    "healthCheckInterval": 60000,
+    "metricsRetention": 7,
+    "alerts": {
+      "enabled": true,
+      "email": null,
+      "webhook": null,
+      "conditions": {
+        "errorRate": 0.1,
+        "conflictCount": 10,
+        "syncDelay": 300000
+      }
+    },
+    "_notes": [
+      "healthCheckInterval: How often to perform health checks (in milliseconds)",
+      "metricsRetention: How many days to retain metrics data",
+      "alerts: Configuration for notifications and alerts"
+    ]
+  },
+
+  "performance": {
+    "_description": "Performance optimization settings",
+    "maxConcurrentOperations": 5,
+    "operationTimeout": 30000,
+    "connectionTimeout": 10000,
+    "cacheSize": 1000,
+    "compressionEnabled": true,
+    "_notes": [
+      "maxConcurrentOperations: Maximum number of sync operations to run concurrently",
+      "operationTimeout: Timeout for individual operations (in milliseconds)",
+      "connectionTimeout: Timeout for API connections (in milliseconds)",
+      "cacheSize: Maximum number of items to keep in memory cache",
+      "compressionEnabled: Whether to compress file transfers"
+    ]
+  },
+
+  "security": {
+    "_description": "Security and privacy settings",
+    "encryptStoredCredentials": true,
+    "validateSSLCertificates": true,
+    "rateLimitEnabled": true,
+    "maxRequestsPerMinute": 100,
+    "ipWhitelist": [],
+    "_notes": [
+      "encryptStoredCredentials: Encrypt credentials stored in configuration",
+      "validateSSLCertificates: Validate SSL certificates for HTTPS connections",
+      "rateLimitEnabled: Enable rate limiting for API requests",
+      "maxRequestsPerMinute: Maximum API requests per minute",
+      "ipWhitelist: List of allowed IP addresses (empty = allow all)"
+    ]
+  },
+
+  "experimental": {
+    "_description": "Experimental features (use with caution)",
+    "realTimeSync": false,
+    "smartConflictResolution": false,
+    "autoFileClassification": false,
+    "predictiveSync": false,
+    "_notes": [
+      "realTimeSync: Use webhooks for real-time synchronization",
+      "smartConflictResolution: AI-powered conflict resolution",
+      "autoFileClassification: Automatic file classification using ML",
+      "predictiveSync: Predictive synchronization based on usage patterns"
+    ]
+  }
+}

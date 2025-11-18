@@ -1,0 +1,61 @@
+{
+  "timestamp": "2025-09-28T17:14:39.418Z",
+  "summary": {
+    "totalActions": 8,
+    "seoActions": 0,
+    "geoActions": 0,
+    "aeoActions": 4,
+    "aiActions": 3
+  },
+  "actions": [
+    {
+      "type": "backlink-building",
+      "recommendation": "Durchschnittliche Position verbessern",
+      "action": "Backlink-Kampagne gestartet",
+      "timestamp": "2025-09-28T17:14:39.417Z"
+    },
+    {
+      "type": "aeo-optimization",
+      "recommendation": "AEO-Verbesserung",
+      "action": "Schema-Markup aktualisiert",
+      "timestamp": "2025-09-28T17:14:39.418Z"
+    },
+    {
+      "type": "aeo-optimization",
+      "recommendation": "AEO-Verbesserung",
+      "action": "Knowledge Panel optimiert",
+      "timestamp": "2025-09-28T17:14:39.418Z"
+    },
+    {
+      "type": "aeo-optimization",
+      "recommendation": "AEO-Verbesserung",
+      "action": "Social Proof erweitert",
+      "timestamp": "2025-09-28T17:14:39.418Z"
+    },
+    {
+      "type": "aeo-optimization",
+      "recommendation": "AEO-Verbesserung",
+      "action": "Citation-Konsistenz verbessert",
+      "timestamp": "2025-09-28T17:14:39.418Z"
+    },
+    {
+      "type": "ai-optimization",
+      "recommendation": "Erhöhe lokale Content-Produktion um 30%",
+      "action": "KI-Optimierung implementiert",
+      "timestamp": "2025-09-28T17:14:39.418Z"
+    },
+    {
+      "type": "ai-optimization",
+      "recommendation": "Implementiere strukturierte Daten für Knowledge Graph",
+      "action": "KI-Optimierung implementiert",
+      "timestamp": "2025-09-28T17:14:39.418Z"
+    },
+    {
+      "type": "ai-optimization",
+      "recommendation": "Automatisiere Cross-Platform Citation Management",
+      "action": "KI-Optimierung implementiert",
+      "timestamp": "2025-09-28T17:14:39.418Z"
+    }
+  ],
+  "nextScheduledRun": "2025-09-29T17:14:39.418Z"
+}

@@ -1,0 +1,459 @@
+{
+  "_comment": "File Classification Rules for TeraBox-Notion Sync",
+  "_version": "1.0.0",
+  "_description": "Rules for automatically categorizing and tagging files based on their names, paths, and content",
+
+  "rules": {
+    "invoice": {
+      "_description": "Rules for identifying invoices and financial documents",
+      "priority": 1,
+      "conditions": {
+        "filename": {
+          "patterns": [
+            "rechnung",
+            "invoice",
+            "rg-",
+            "re_",
+            "bill"
+          ],
+          "case_sensitive": false,
+          "regex": false
+        },
+        "content": {
+          "patterns": [
+            "rechnungsnr",
+            "rechnungsnummer",
+            "invoice #",
+            "invoice number",
+            "betrag",
+            "gesamt",
+            "steuer",
+            "mwst",
+            "ust-id"
+          ],
+          "case_sensitive": false,
+          "regex": false
+        },
+        "extracted_data": {
+          "has_amounts": true,
+          "has_dates": true,
+          "has_invoice_numbers": true
+        }
+      },
+      "actions": {
+        "category": "Document",
+        "tags": ["Invoice", "Finance"],
+        "folder_path": "/Dokumente/Rechnungen",
+        "priority": "high",
+        "auto_ocr": true
+      }
+    },
+
+    "contract": {
+      "_description": "Rules for identifying contracts and agreements",
+      "priority": 2,
+      "conditions": {
+        "filename": {
+          "patterns": [
+            "vertrag",
+            "contract",
+            "agreement",
+            "vereinbarung",
+            "vertrag_",
+            "contract_"
+          ],
+          "case_sensitive": false,
+          "regex": false
+        },
+        "content": {
+          "patterns": [
+            "§",
+            "artikel",
+            "klausel",
+            "vertragsbeginn",
+            "vertragsende",
+            "kündigungsfrist",
+            "haftung",
+            "gewährleistung"
+          ],
+          "case_sensitive": false,
+          "regex": false
+        }
+      },
+      "actions": {
+        "category": "Document",
+        "tags": ["Contract", "Legal"],
+        "folder_path": "/Dokumente/Verträge",
+        "priority": "high",
+        "auto_ocr": true
+      }
+    },
+
+    "bank_document": {
+      "_description": "Rules for identifying bank statements and financial documents",
+      "priority": 3,
+      "conditions": {
+        "filename": {
+          "patterns": [
+            "kontoauszug",
+            "bankauszug",
+            "bank_statement",
+            "umsatzübersicht",
+            "umsatz",
+            "statement_"
+          ],
+          "case_sensitive": false,
+          "regex": false
+        },
+        "content": {
+          "patterns": [
+            "iban",
+            "bic",
+            "kontostand",
+            "umsätze",
+            "soll",
+            "haben",
+            "bankleitzahl"
+          ],
+          "case_sensitive": false,
+          "regex": false
+        },
+        "extracted_data": {
+          "has_iban": true,
+          "has_amounts": true,
+          "has_dates": true
+        }
+      },
+      "actions": {
+        "category": "Document",
+        "tags": ["Bank", "Finance"],
+        "folder_path": "/Finanzen/Bank",
+        "priority": "medium",
+        "auto_ocr": true
+      }
+    },
+
+    "receipt": {
+      "_description": "Rules for identifying receipts and purchase documents",
+      "priority": 4,
+      "conditions": {
+        "filename": {
+          "patterns": [
+            "beleg",
+            "quittung",
+            "receipt",
+            "kaufbeleg",
+            "bon_",
+            "receipt_"
+          ],
+          "case_sensitive": false,
+          "regex": false
+        },
+        "content": {
+          "patterns": [
+            "gesamtbetrag",
+            "zwischensumme",
+            "mwst",
+            "steuer",
+            "artikel",
+            "menge",
+            "einzelpreis"
+          ],
+          "case_sensitive": false,
+          "regex": false
+        }
+      },
+      "actions": {
+        "category": "Document",
+        "tags": ["Receipt", "Purchase"],
+        "folder_path": "/Finanzen/Belege",
+        "priority": "medium",
+        "auto_ocr": true
+      }
+    },
+
+    "work_document": {
+      "_description": "Rules for identifying work-related documents",
+      "priority": 5,
+      "conditions": {
+        "filename": {
+          "patterns": [
+            "arbeit",
+            "work",
+            "beruf",
+            "job",
+            "office",
+            "meeting",
+            "protokoll",
+            "präsentation"
+          ],
+          "case_sensitive": false,
+          "regex": false
+        },
+        "path": {
+          "patterns": [
+            "/arbeit/",
+            "/work/",
+            "/beruf/",
+            "/office/",
+            "/business/"
+          ],
+          "case_sensitive": false,
+          "regex": false
+        }
+      },
+      "actions": {
+        "category": "Document",
+        "tags": ["Work"],
+        "folder_path": "/Arbeit",
+        "priority": "medium"
+      }
+    },
+
+    "personal_document": {
+      "_description": "Rules for identifying personal documents",
+      "priority": 6,
+      "conditions": {
+        "filename": {
+          "patterns": [
+            "persönlich",
+            "personal",
+            "privat",
+            "family",
+            "familie",
+            "ausweis",
+            "pass",
+            "id"
+          ],
+          "case_sensitive": false,
+          "regex": false
+        },
+        "path": {
+          "patterns": [
+            "/persönlich/",
+            "/personal/",
+            "/privat/",
+            "/family/",
+            "/familie/"
+          ],
+          "case_sensitive": false,
+          "regex": false
+        }
+      },
+      "actions": {
+        "category": "Document",
+        "tags": ["Personal"],
+        "folder_path": "/Privat",
+        "priority": "low"
+      }
+    },
+
+    "image": {
+      "_description": "Rules for image files",
+      "priority": 7,
+      "conditions": {
+        "mime_type": [
+          "image/jpeg",
+          "image/png",
+          "image/gif",
+          "image/bmp",
+          "image/tiff",
+          "image/webp"
+        ],
+        "file_extension": [
+          "jpg",
+          "jpeg",
+          "png",
+          "gif",
+          "bmp",
+          "tiff",
+          "tif",
+          "webp"
+        ]
+      },
+      "actions": {
+        "category": "Image",
+        "tags": ["Image"],
+        "folder_path": "/Bilder",
+        "priority": "low"
+      }
+    },
+
+    "video": {
+      "_description": "Rules for video files",
+      "priority": 8,
+      "conditions": {
+        "mime_type": [
+          "video/mp4",
+          "video/avi",
+          "video/mov",
+          "video/wmv",
+          "video/flv",
+          "video/webm"
+        ],
+        "file_extension": [
+          "mp4",
+          "avi",
+          "mov",
+          "wmv",
+          "flv",
+          "webm",
+          "mkv"
+        ]
+      },
+      "actions": {
+        "category": "Video",
+        "tags": ["Video"],
+        "folder_path": "/Videos",
+        "priority": "low"
+      }
+    },
+
+    "audio": {
+      "_description": "Rules for audio files",
+      "priority": 9,
+      "conditions": {
+        "mime_type": [
+          "audio/mp3",
+          "audio/wav",
+          "audio/ogg",
+          "audio/flac",
+          "audio/aac"
+        ],
+        "file_extension": [
+          "mp3",
+          "wav",
+          "ogg",
+          "flac",
+          "aac",
+          "m4a"
+        ]
+      },
+      "actions": {
+        "category": "Audio",
+        "tags": ["Audio"],
+        "folder_path": "/Audio",
+        "priority": "low"
+      }
+    },
+
+    "archive": {
+      "_description": "Rules for archive files",
+      "priority": 10,
+      "conditions": {
+        "file_extension": [
+          "zip",
+          "rar",
+          "7z",
+          "tar",
+          "gz",
+          "bz2",
+          "xz"
+        ]
+      },
+      "actions": {
+        "category": "Archive",
+        "tags": ["Archive"],
+        "folder_path": "/Archive",
+        "priority": "low"
+      }
+    }
+  },
+
+  "global_settings": {
+    "_description": "Global classification settings",
+    "default_category": "Other",
+    "default_tags": [],
+    "default_priority": "low",
+    "case_sensitive": false,
+    "use_regex": false,
+    "require_all_conditions": false,
+    "stop_after_first_match": true,
+    "log_classifications": true,
+    "auto_create_folders": true
+  },
+
+  "enhanced_rules": {
+    "_description": "Advanced classification rules using AI/ML",
+    "content_analysis": {
+      "enabled": true,
+      "confidence_threshold": 0.8,
+      "min_text_length": 50
+    },
+    "date_extraction": {
+      "enabled": true,
+      "formats": [
+        "DD.MM.YYYY",
+        "DD/MM/YYYY",
+        "YYYY-MM-DD",
+        "DD.MM.YY",
+        "MM/DD/YYYY"
+      ]
+    },
+    "amount_extraction": {
+      "enabled": true,
+      "currencies": ["€", "$", "£", "CHF"],
+      "decimal_separators": [",", "."],
+      "thousand_separators": [".", ",", " "]
+    },
+    "company_detection": {
+      "enabled": true,
+      "min_confidence": 0.7,
+      "common_endings": ["GmbH", "AG", "Inc", "Ltd", "LLC", "SAS", "SL"]
+    }
+  },
+
+  "exclusions": {
+    "_description": "Files and patterns to exclude from classification",
+    "filename_patterns": [
+      "*.tmp",
+      "*.temp",
+      "*.cache",
+      "*.log",
+      "desktop.ini",
+      ".DS_Store",
+      "Thumbs.db"
+    ],
+    "path_patterns": [
+      "/system/",
+      "/temp/",
+      "/cache/",
+      "/.git/",
+      "/node_modules/",
+      "/.vscode/",
+      "/.idea/"
+    ],
+    "max_file_size": 52428800,
+    "_notes": [
+      "Files larger than max_file_size (50MB) will be excluded from OCR analysis",
+      "System and temporary files are automatically excluded"
+    ]
+  },
+
+  "custom_tags": {
+    "_description": "Custom tag rules based on content analysis",
+    "german_language": {
+      "keywords": ["und", "der", "die", "das", "ist", "sind", "mit", "für", "auf", "von"],
+      "min_occurrences": 5,
+      "tag": "German"
+    },
+    "english_language": {
+      "keywords": ["the", "and", "is", "are", "with", "for", "on", "from", "of"],
+      "min_occurrences": 5,
+      "tag": "English"
+    },
+    "contains_table": {
+      "indicators": ["|", "┌", "┬", "┐", "├", "┼", "┤", "└", "┴", "┘"],
+      "min_occurrences": 3,
+      "tag": "Table"
+    },
+    "contains_contact_info": {
+      "patterns": [
+        "\\d{3,4}[-.\\s]?\\d{3,4}[-.\\s]?\\d{4}",  // Phone numbers
+        "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}",  // Email
+        "www\\.[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}"  // URLs
+      ],
+      "tag": "Contact"
+    }
+  }
+}

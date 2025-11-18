@@ -1,0 +1,38 @@
+{
+  "query": "Tesla Wall Connector Gen 3 technical specifications 11kW 32A 400V Type 2 J1772 CCS power output amperage voltage German specs",
+  "images": [],
+  "results": [
+    {
+      "url": "https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-86D9DE81-BB5F-4CAD-9E2D-23AAAC475A20.html",
+      "title": "TESLA Gen 3 Wall Connector - Energy Library",
+      "content": "**Parent topic:**[Product Overview](https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-BDDFDC93-12FC-4E29-9D54-D58BCC82B255.html \"This manual applies to Wall Connectors identified by part number 1457768-**-*.\") *   [Product Overview](https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-BDDFDC93-12FC-4E29-9D54-D58BCC82B255.html) *   [Circuit Breaker Rating / Maximum Output](https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-251A1719-ECFA-40C1-8AB8-C71112A66BEC.html) *   [Using Wall Connector](https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-AA273907-6681-441F-BA0E-B941248E9263.html) *   [Ground Fault Circuit Interruption](https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-88D174CD-A8C6-42FC-8BE6-3966DF2D7620.html) *   [Ground Assurance](https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-7114A390-2981-41CC-AEA7-BD3DE64C7C4B.html) *   [Wall Connector External Components](https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-FBA67E07-2E31-410C-8CBE-DC1CDC3D7C08.html) *   [Wall Connector Internal Components](https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-AE1A657C-F246-448F-B847-616B0945C1CB.html) *   [Step 1: Prepare Wirebox for Conduit Fittings and Bushings](https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-EDC87BAD-14EE-40B3-8120-1BD6F7384CAA.html) *   [Step 3: Prepare Wirebox and Mount to Wall](https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-8CCD7980-97D0-4F4F-BB2E-95F99B897854.html) *   [Step 4: Route Wiring Through Wirebox](https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-B5A7893B-C697-4F2A-A733-9655EF92FA6F.html) *   [Step 5: Strip and Land Wiring](https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-78ECEA56-16FD-400C-A52C-A216B9C92631.html) *   [Step 6: Attach Wall Connector to Wirebox](https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-580CA054-0B07-433A-A7FD-7F712A9E21B6.html) *   [Step 7: Energize Wall Connector](https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-A5D78182-5D22-4E00-8CD3-650EAD3F4E51.html) *   [Perform Device Setup](https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-C1124B8D-3C65-47DD-80F1-95DA5962998A.html) *   [Operating and Error States](https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-4578B4FD-3342-4767-BC29-B5DFEC03898C.html) *   [Breaker and Branch Circuit Setup](https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-502F4140-374E-45FA-B675-7E64CFB2E1B2.html) *   [Calculating Group Power Management Requirements for Existing Systems](https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-CBDA67DF-E2BD-460C-9AB8-1583313325C4.html) *   [Wall Connector LEDs](https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/1PNA/en-us/GUID-2BC74FB9-4071-4F71-831F-58AA124F5E9C.html)",
+      "score": 0.8319231
+    },
+    {
+      "url": "https://teslawallcharger.com/spec-sheet/",
+      "title": "Tesla Wall Charger Spec Sheet: Complete Technical Guide 2025",
+      "content": "The North American Gen 3 Wall Connector offers: Nominal voltage: 200-240V AC single-phase; Maximum current output: 48 amps (adjustable by",
+      "score": 0.7602419
+    },
+    {
+      "url": "https://evchargingstations.com/chargerreviews/tesla-gen-3-wall-connector/",
+      "title": "Tesla Gen 3 Wall Connector EV Charging Station Review",
+      "content": "So the Gen 3 Wall Connector lowered the maximum output from 80 to 48 amps, delivering 11.5 kW to the vehicle and about 44 miles of range per",
+      "score": 0.72184175
+    },
+    {
+      "url": "https://www.evchargesolutions.com/Tesla-Universal-Wall-Connector-GEN-3-p/tesla-uwc.htm?srsltid=AfmBOop8oEmLGU1MnlI_ZVHDiOOKUHU7p5b-7D_eXcDOlEhVpa67c6oO",
+      "title": "Tesla Universal Wall Connector - GEN 3 - EV Charge Solutions",
+      "content": "Charging speed. Up to 44 mi of range added per hour at 11.5 kW / 48 amp output ; Compatibility. Integrated J1772 adapter to conveniently charge any electric",
+      "score": 0.7077487
+    },
+    {
+      "url": "https://www.tesla.com/support/charging/wall-connector",
+      "title": "Wall Connector | Tesla Support",
+      "content": "Wall Connector can provide up to 11.5 kW / 48 amp output. For Tesla vehicles, Wall Connector provides up to 44 miles of range per hour of charge. For other",
+      "score": 0.694241
+    }
+  ],
+  "response_time": 2,
+  "request_id": "ba85498d-c064-4e04-8523-d06e4e2be167"
+}

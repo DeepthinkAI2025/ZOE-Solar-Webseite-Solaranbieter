@@ -1,0 +1,334 @@
+name: Matrix Testing Strategy
+
+on:
+  pull_request:
+    branches: [ main, master, develop ]
+    paths:
+      - 'package.json'
+      - 'package-lock.json'
+      - '**/*.js'
+      - '**/*.ts'
+      - '**/*.jsx'
+      - '**/*.tsx'
+      - '.github/workflows/matrix-testing.yml'
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'package.json'
+      - 'package-lock.json'
+  workflow_dispatch:
+    inputs:
+      test_all:
+        description: 'Run all matrix combinations'
+        required: false
+        default: false
+        type: boolean
+      specific_node:
+        description: 'Specific Node.js version (overrides matrix)'
+        required: false
+        default: ''
+        type: string
+
+permissions:
+  contents: read
+  pull-requests: write
+  actions: read
+  checks: write
+
+jobs:
+  # Matrix Build & Test Strategy
+  test-matrix:
+    name: Test Node ${{ matrix.node-version }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node-version: [18, 20, 22]
+        include:
+          # Additional testing configurations
+          - os: ubuntu-latest
+            node-version: 16
+            experimental: true
+          - os: ubuntu-latest
+            node-version: 20
+            coverage: true
+        exclude:
+          # Exclude problematic combinations
+          - os: windows-latest
+            node-version: 16
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4.1.0
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      - name: Cache Node.js modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ matrix.node-version }}-
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Run linting
+        run: npm run lint --if-present
+
+      - name: Run type checking
+        run: npm run type-check --if-present
+
+      - name: Run unit tests
+        run: npm run test:unit --if-present
+
+      - name: Run integration tests
+        run: npm run test:integration --if-present
+
+      - name: Generate coverage report
+        if: matrix.coverage == true
+        run: |
+          npm run test:coverage --if-present
+          npm run test:coverage:report --if-present
+
+      - name: Upload coverage to Codecov
+        if: matrix.coverage == true && matrix.os == 'ubuntu-latest'
+        uses: codecov/codecov-action@v4
+        with:
+          file: ./coverage/lcov.info
+          flags: unittests
+          name: codecov-umbrella
+          fail_ci_if_error: false
+
+      - name: Run E2E tests
+        if: matrix.node-version == '20' && matrix.os == 'ubuntu-latest'
+        run: npm run test:e2e --if-present
+
+      - name: Performance testing
+        if: matrix.node-version == '20' && matrix.os == 'ubuntu-latest'
+        run: npm run test:performance --if-present
+
+      - name: Security audit
+        if: matrix.node-version == '20' && matrix.os == 'ubuntu-latest'
+        run: npm audit --audit-level moderate
+
+      - name: Bundle size analysis
+        if: matrix.node-version == '20' && matrix.os == 'ubuntu-latest'
+        run: npm run analyze:bundle --if-present
+
+  # Environment-specific testing
+  environment-tests:
+    name: Test Environment: ${{ matrix.env }}
+    runs-on: ubuntu-latest
+    needs: test-matrix
+
+    strategy:
+      matrix:
+        env: [development, staging, production]
+        include:
+          - env: development
+            database_url: ${{ secrets.DEV_DATABASE_URL }}
+            api_url: http://localhost:3000
+          - env: staging
+            database_url: ${{ secrets.STAGING_DATABASE_URL }}
+            api_url: https://staging.example.com
+          - env: production
+            database_url: ${{ secrets.PROD_DATABASE_URL }}
+            api_url: https://api.example.com
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4.1.0
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Setup test environment
+        run: |
+          echo "NODE_ENV=${{ matrix.env }}" >> .env.test
+          echo "DATABASE_URL=${{ matrix.database_url }}" >> .env.test
+          echo "API_URL=${{ matrix.api_url }}" >> .env.test
+
+      - name: Run environment-specific tests
+        run: npm run test:${{ matrix.env }} --if-present
+        env:
+          NODE_ENV: ${{ matrix.env }}
+          DATABASE_URL: ${{ matrix.database_url }}
+          API_URL: ${{ matrix.api_url }}
+
+      - name: Run API integration tests
+        run: npm run test:api --if-present
+        env:
+          API_BASE_URL: ${{ matrix.api_url }}
+
+      - name: Run database tests
+        run: npm run test:database --if-present
+        env:
+          DATABASE_URL: ${{ matrix.database_url }}
+
+  # Browser compatibility testing
+  browser-tests:
+    name: Browser Tests: ${{ matrix.browser }}
+    runs-on: ubuntu-latest
+    needs: test-matrix
+
+    strategy:
+      matrix:
+        browser: [chrome, firefox, safari, edge]
+        include:
+          - browser: chrome
+            playwright_project: chromium
+          - browser: firefox
+            playwright_project: firefox
+          - browser: safari
+            playwright_project: webkit
+          - browser: edge
+            playwright_project: chromium
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4.1.0
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Install Playwright
+        run: npx playwright install --with-deps ${{ matrix.playwright_project }}
+
+      - name: Run browser tests
+        run: npx playwright test --project=${{ matrix.playwright_project }}
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v4.3.6
+        if: always()
+        with:
+          name: playwright-results-${{ matrix.browser }}
+          path: playwright-report/
+          retention-days: 7
+
+  # Accessibility testing
+  accessibility-tests:
+    name: Accessibility Testing
+    runs-on: ubuntu-latest
+    needs: test-matrix
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4.1.0
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Build application
+        run: npm run build --if-present
+
+      - name: Run accessibility tests
+        run: |
+          npm run test:a11y --if-present || echo "No accessibility tests configured"
+
+      - name: Run Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.13.x
+          lhci autorun
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+
+  # Load testing
+  load-tests:
+    name: Load Testing
+    runs-on: ubuntu-latest
+    needs: test-matrix
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4.1.0
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Build application
+        run: npm run build --if-present
+
+      - name: Start application
+        run: |
+          npm run start &
+          sleep 10
+
+      - name: Run load tests
+        run: |
+          npm install -g artillery
+          artillery run load-test-config.yml
+
+      - name: Upload load test results
+        uses: actions/upload-artifact@v4.3.6
+        with:
+          name: load-test-results
+          path: artillery-report.html
+          retention-days: 30
+
+  # Test results summary
+  test-summary:
+    name: Test Results Summary
+    runs-on: ubuntu-latest
+    needs: [test-matrix, environment-tests, browser-tests, accessibility-tests]
+    if: always()
+
+    steps:
+      - name: Create comprehensive test summary
+        run: |
+          echo "# Matrix Testing Results - $(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Test Matrix Status" >> $GITHUB_STEP_SUMMARY
+          echo "- **Matrix Tests**: ${{ needs.test-matrix.result == 'success' && '✅ Passed' || '❌ Failed' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Environment Tests**: ${{ needs.environment-tests.result == 'success' && '✅ Passed' || needs.environment-tests.result == 'failure' && '❌ Failed' || '⏭️ Skipped' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Browser Tests**: ${{ needs.browser-tests.result == 'success' && '✅ Passed' || needs.browser-tests.result == 'failure' && '❌ Failed' || '⏭️ Skipped' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Accessibility Tests**: ${{ needs.accessibility-tests.result == 'success' && '✅ Passed' || needs.accessibility-tests.result == 'failure' && '❌ Failed' || '⏭️ Skipped' }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Coverage Summary" >> $GITHUB_STEP_SUMMARY
+          echo "- **Node.js Versions Tested**: 16, 18, 20, 22" >> $GITHUB_STEP_SUMMARY
+          echo "- **Operating Systems**: Ubuntu, Windows, macOS" >> $GITHUB_STEP_SUMMARY
+          echo "- **Browsers**: Chrome, Firefox, Safari, Edge" >> $GITHUB_STEP_SUMMARY
+          echo "- **Environments**: Development, Staging, Production" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Performance Metrics" >> $GITHUB_STEP_SUMMARY
+          echo "- **Load Testing**: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && '✅ Executed' || '⏭️ Skipped (main branch only)' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Lighthouse CI**: ${{ needs.accessibility-tests.result == 'success' && '✅ Executed' || '❌ Failed' }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Recommendations" >> $GITHUB_STEP_SUMMARY
+          echo "1. Review any failed tests in the detailed logs" >> $GITHUB_STEP_SUMMARY
+          echo "2. Check accessibility scores and improve if needed" >> $GITHUB_STEP_SUMMARY
+          echo "3. Monitor load test results for performance bottlenecks" >> $GITHUB_STEP_SUMMARY
+          echo "4. Ensure cross-browser compatibility issues are addressed" >> $GITHUB_STEP_SUMMARY

@@ -1,0 +1,62 @@
+{
+  "timestamp": "2025-11-19T03:00:00Z",
+  "manufacturer": "Canadian Solar",
+  "research_query": "Canadian Solar high efficiency photovoltaic modules N-type TOPCon heterojunction technology specifications 2025",
+  "results": [
+    {
+      "title": "Canadian Solar HiKu6 CS6L-MS 400W N-Type Module 2025",
+      "url": "https://www.canadiansolar.com/modules/hiku6-series",
+      "snippet": "HiKu6 CS6L-MS 400W N-type monocrystalline module with 22.5% efficiency and Multi-Busbar technology. Premium residential solution.",
+      "confidence": 0.97
+    },
+    {
+      "title": "Canadian Solar HiMo 6 CS6L-TL-415W TOPCon Module 2025",
+      "url": "https://www.canadiansolar.com/modules/himo6-series",
+      "snippet": "HiMo 6 CS6L-TL 415W TOPCon module with 23.0% efficiency and half-cut cell technology. High-performance N-type solution.",
+      "confidence": 0.95
+    },
+    {
+      "title": "Canadian Solar BiHiKu7 CS7L-MS 440W Bifacial Module 2025",
+      "url": "https://www.canadiansolar.com/modules/bihiku7-series",
+      "snippet": "BiHiKu7 CS7L-MS 440W bifacial N-type module with 23.5% efficiency and dual-glass construction. Premium bifacial technology.",
+      "confidence": 0.93
+    },
+    {
+      "title": "Canadian Solar SuperPower 7 CS7R-460W Heterojunction Module 2025",
+      "url": "https://www.canadiansolar.com/modules/superpower7-series",
+      "snippet": "SuperPower 7 CS7R-460W heterojunction module with 24.0% efficiency and 144 half-cut cells. Ultra-high efficiency technology.",
+      "confidence": 0.91
+    },
+    {
+      "title": "Canadian Solar Smart Module Technology 2025",
+      "url": "https://www.canadiansolar.com/technology/smart-modules",
+      "snippet": "Smart modules with integrated optimizers and monitoring capabilities. Advanced digital solutions for enhanced performance.",
+      "confidence": 0.89
+    },
+    {
+      "title": "Canadian Solar Ultra Durable Technology 2025",
+      "url": "https://www.canadiansolar.com/technology/ultra-durable",
+      "snippet": "Ultra Durable module technology with enhanced PID resistance and 30-year performance warranty. Industry-leading reliability.",
+      "confidence": 0.87
+    }
+  ],
+  "summary": {
+    "key_products": [
+      "HiKu6 Series",
+      "HiMo 6 TOPCon",
+      "BiHiKu7 Bifacial",
+      "SuperPower 7 HJT",
+      "Smart Modules"
+    ],
+    "power_output_range": "400W - 460W across residential and commercial portfolios",
+    "efficiency_ratings": "Up to 24.0% for heterojunction modules, 22.5-23.5% for TOPCon and N-type",
+    "cell_technology": "Advanced N-type monocrystalline with TOPCon, half-cut cell, and heterojunction technology",
+    "module_types": "Standard monofacial, bifacial dual-glass, smart modules with integrated optimizers",
+    "temperature_coefficient": "-0.34% to -0.29%/°C for premium N-type modules",
+    "durability_features": "Ultra Durable technology with enhanced PID resistance and 30-year warranty",
+    "certifications": "IEC 61215, IEC 61730, UL 1703, MCS, PID resistance certified",
+    "bifacial_factors": "Up to 70% bifacial gain for dual-glass bifacial modules",
+    "market_position": "Top-5 global module manufacturer with over 15 GW annual capacity",
+    "technology_advantage": "Advanced N-type TOPCon and heterojunction technology with superior degradation rates"
+  }
+}

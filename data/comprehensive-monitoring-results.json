@@ -1,0 +1,4566 @@
+{
+  "timestamp": "2025-09-28T17:08:15.463Z",
+  "components": {
+    "seo": {
+      "timestamp": "2025-09-28T17:08:15.486Z",
+      "kpis": {
+        "avgPosition": 19.64566929133858,
+        "top3Keywords": 6,
+        "top10Keywords": 32,
+        "top20Keywords": 67,
+        "organicTraffic": 11037,
+        "organicTrafficGrowth": 3,
+        "conversionRate": 4.602700009060433,
+        "conversions": 508,
+        "revenue": 2269706,
+        "bounceRate": 35.127455858560815,
+        "avgSessionDuration": 286136,
+        "pagesPerSession": 4.136903143970282,
+        "visibilityScore": 106.18336000000002,
+        "opportunityScore": 16,
+        "timestamp": "2025-09-28T17:08:15.470Z"
+      },
+      "traffic": {
+        "totalOrganicTraffic": 11037,
+        "totalConversions": 508,
+        "conversionRate": 4.602700009060433,
+        "bounceRate": 35.127455858560815,
+        "avgSessionDuration": 286136,
+        "pageViews": 45659,
+        "uniqueVisitors": 7504,
+        "channels": {
+          "organic": {
+            "sessions": 11037,
+            "conversions": 508,
+            "revenue": 2269706.151179364
+          },
+          "direct": {
+            "sessions": 3311,
+            "conversions": 0,
+            "revenue": 0
+          },
+          "referral": {
+            "sessions": 1656,
+            "conversions": 0,
+            "revenue": 0
+          },
+          "social": {
+            "sessions": 1104,
+            "conversions": 0,
+            "revenue": 0
+          }
+        },
+        "devices": {
+          "desktop": {
+            "sessions": 4967,
+            "bounceRate": 30.127455858560815
+          },
+          "mobile": {
+            "sessions": 5298,
+            "bounceRate": 40.127455858560815
+          },
+          "tablet": {
+            "sessions": 773,
+            "bounceRate": 35.127455858560815
+          }
+        },
+        "topPages": [
+          {
+            "path": "/",
+            "pageViews": 1207,
+            "uniquePageViews": 711,
+            "avgTimeOnPage": 139,
+            "bounceRate": 26
+          },
+          {
+            "path": "/photovoltaik",
+            "pageViews": 782,
+            "uniquePageViews": 1015,
+            "avgTimeOnPage": 139,
+            "bounceRate": 23
+          },
+          {
+            "path": "/agri-pv",
+            "pageViews": 573,
+            "uniquePageViews": 1162,
+            "avgTimeOnPage": 111,
+            "bounceRate": 43
+          },
+          {
+            "path": "/speicher",
+            "pageViews": 809,
+            "uniquePageViews": 1160,
+            "avgTimeOnPage": 121,
+            "bounceRate": 33
+          },
+          {
+            "path": "/kontakt",
+            "pageViews": 701,
+            "uniquePageViews": 671,
+            "avgTimeOnPage": 138,
+            "bounceRate": 31
+          },
+          {
+            "path": "/preise",
+            "pageViews": 806,
+            "uniquePageViews": 673,
+            "avgTimeOnPage": 122,
+            "bounceRate": 41
+          }
+        ],
+        "conversionFunnel": {
+          "awareness": 11037,
+          "consideration": 4415,
+          "decision": 2649,
+          "purchase": 508
+        }
+      },
+      "rankings": {
+        "positions": {
+          "Solaranlage Einfamilienhaus": {
+            "keyword": "Solaranlage Einfamilienhaus",
+            "position": 8,
+            "previousPosition": 8,
+            "searchVolume": 4400,
+            "competition": 72,
+            "difficulty": 60,
+            "opportunityScore": 3333,
+            "category": "seed",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.466Z"
+          },
+          "Photovoltaik mit Speicher": {
+            "keyword": "Photovoltaik mit Speicher",
+            "position": 6,
+            "previousPosition": 4,
+            "searchVolume": 4100,
+            "competition": 65,
+            "difficulty": 58,
+            "opportunityScore": 3333,
+            "category": "seed",
+            "intent": "mixed",
+            "segment": "storage",
+            "lastUpdated": "2025-09-28T17:08:15.466Z"
+          },
+          "Solaranlage Eigenheim Kosten": {
+            "keyword": "Solaranlage Eigenheim Kosten",
+            "position": 6,
+            "previousPosition": 4,
+            "searchVolume": 4200,
+            "competition": 70,
+            "difficulty": 62,
+            "opportunityScore": 3182,
+            "category": "residential",
+            "intent": "commercial",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solaranlage Eigenheim": {
+            "keyword": "Solaranlage Eigenheim",
+            "position": 7,
+            "previousPosition": 4,
+            "searchVolume": 3600,
+            "competition": 68,
+            "difficulty": 55,
+            "opportunityScore": 2927,
+            "category": "seed",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Wärmepumpe und Photovoltaik": {
+            "keyword": "Wärmepumpe und Photovoltaik",
+            "position": 3,
+            "previousPosition": 1,
+            "searchVolume": 2800,
+            "competition": 58,
+            "difficulty": 49,
+            "opportunityScore": 2617,
+            "category": "seed",
+            "intent": "mixed",
+            "segment": "sector-coupling",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solaranlage Einfamilienhaus Kosten": {
+            "keyword": "Solaranlage Einfamilienhaus Kosten",
+            "position": 4,
+            "previousPosition": 1,
+            "searchVolume": 2900,
+            "competition": 68,
+            "difficulty": 55,
+            "opportunityScore": 2358,
+            "category": "residential",
+            "intent": "commercial",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "PV Anlage Hausdach": {
+            "keyword": "PV Anlage Hausdach",
+            "position": 7,
+            "previousPosition": 9,
+            "searchVolume": 2500,
+            "competition": 58,
+            "difficulty": 52,
+            "opportunityScore": 2273,
+            "category": "seed",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik Eigenverbrauch erhöhen": {
+            "keyword": "Photovoltaik Eigenverbrauch erhöhen",
+            "position": 3,
+            "previousPosition": 1,
+            "searchVolume": 2100,
+            "competition": 58,
+            "difficulty": 47,
+            "opportunityScore": 2000,
+            "category": "residential_installation",
+            "intent": "mixed",
+            "segment": "general",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solarstrom Eigenheim": {
+            "keyword": "Solarstrom Eigenheim",
+            "position": 1,
+            "previousPosition": 3,
+            "searchVolume": 2100,
+            "competition": 56,
+            "difficulty": 50,
+            "opportunityScore": 1981,
+            "category": "seed",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV": {
+            "keyword": "Agri-PV",
+            "position": 4,
+            "previousPosition": 3,
+            "searchVolume": 2900,
+            "competition": 75,
+            "difficulty": 78,
+            "opportunityScore": 1895,
+            "category": "seed",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Batteriespeicher Eigenheim": {
+            "keyword": "Batteriespeicher Eigenheim",
+            "position": 1,
+            "previousPosition": 2,
+            "searchVolume": 2200,
+            "competition": 64,
+            "difficulty": 56,
+            "opportunityScore": 1833,
+            "category": "residential_installation",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik Eigenheimbesitzer": {
+            "keyword": "Photovoltaik Eigenheimbesitzer",
+            "position": 4,
+            "previousPosition": 1,
+            "searchVolume": 1900,
+            "competition": 60,
+            "difficulty": 48,
+            "opportunityScore": 1759,
+            "category": "seed",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Batteriespeicher Förderung 2025": {
+            "keyword": "Batteriespeicher Förderung 2025",
+            "position": 8,
+            "previousPosition": 7,
+            "searchVolume": 2000,
+            "competition": 66,
+            "difficulty": 52,
+            "opportunityScore": 1695,
+            "category": "storage",
+            "intent": "informational",
+            "segment": "storage",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Zukunft der Landwirtschaft mit Solar": {
+            "keyword": "Zukunft der Landwirtschaft mit Solar",
+            "position": 9,
+            "previousPosition": 6,
+            "searchVolume": 708,
+            "competition": 20,
+            "difficulty": 23,
+            "opportunityScore": 1647,
+            "category": "longtail",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV BAFA": {
+            "keyword": "Agri-PV BAFA",
+            "position": 5,
+            "previousPosition": 6,
+            "searchVolume": 661,
+            "competition": 21,
+            "difficulty": 20,
+            "opportunityScore": 1612,
+            "category": "legal",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solaranlage Eigenheim Förderung": {
+            "keyword": "Solaranlage Eigenheim Förderung",
+            "position": 8,
+            "previousPosition": 10,
+            "searchVolume": 1800,
+            "competition": 62,
+            "difficulty": 50,
+            "opportunityScore": 1607,
+            "category": "residential",
+            "intent": "informational",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik Finanzierung Eigenheim": {
+            "keyword": "Photovoltaik Finanzierung Eigenheim",
+            "position": 3,
+            "previousPosition": 4,
+            "searchVolume": 1600,
+            "competition": 55,
+            "difficulty": 48,
+            "opportunityScore": 1553,
+            "category": "residential_financing",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Forstwirtschaft": {
+            "keyword": "Agri-PV Forstwirtschaft",
+            "position": 2,
+            "previousPosition": 2,
+            "searchVolume": 981,
+            "competition": 22,
+            "difficulty": 42,
+            "opportunityScore": 1533,
+            "category": "applications",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Wallbox Photovoltaik Eigenheim": {
+            "keyword": "Wallbox Photovoltaik Eigenheim",
+            "position": 9,
+            "previousPosition": 9,
+            "searchVolume": 1400,
+            "competition": 52,
+            "difficulty": 44,
+            "opportunityScore": 1458,
+            "category": "residential_installation",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solaranlage Eigenheim Planung": {
+            "keyword": "Solaranlage Eigenheim Planung",
+            "position": 24,
+            "previousPosition": 25,
+            "searchVolume": 1500,
+            "competition": 55,
+            "difficulty": 48,
+            "opportunityScore": 1456,
+            "category": "residential",
+            "intent": "transactional",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "KfW Förderung Photovoltaik Eigenheim": {
+            "keyword": "KfW Förderung Photovoltaik Eigenheim",
+            "position": 5,
+            "previousPosition": 3,
+            "searchVolume": 1500,
+            "competition": 58,
+            "difficulty": 50,
+            "opportunityScore": 1389,
+            "category": "residential_financing",
+            "intent": "informational",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik Einfamilienhaus Erfahrungen": {
+            "keyword": "Photovoltaik Einfamilienhaus Erfahrungen",
+            "position": 5,
+            "previousPosition": 4,
+            "searchVolume": 1300,
+            "competition": 54,
+            "difficulty": 44,
+            "opportunityScore": 1327,
+            "category": "residential",
+            "intent": "comparison",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Heimspeicher Vergleich": {
+            "keyword": "Heimspeicher Vergleich",
+            "position": 12,
+            "previousPosition": 9,
+            "searchVolume": 1500,
+            "competition": 63,
+            "difficulty": 50,
+            "opportunityScore": 1327,
+            "category": "storage",
+            "intent": "comparison",
+            "segment": "storage",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik Installation Dach": {
+            "keyword": "Photovoltaik Installation Dach",
+            "position": 5,
+            "previousPosition": 6,
+            "searchVolume": 1400,
+            "competition": 57,
+            "difficulty": 49,
+            "opportunityScore": 1321,
+            "category": "residential_installation",
+            "intent": "transactional",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri Photovoltaik": {
+            "keyword": "Agri Photovoltaik",
+            "position": 20,
+            "previousPosition": 21,
+            "searchVolume": 1800,
+            "competition": 65,
+            "difficulty": 72,
+            "opportunityScore": 1314,
+            "category": "seed",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik Eigenheim Rendite": {
+            "keyword": "Photovoltaik Eigenheim Rendite",
+            "position": 7,
+            "previousPosition": 4,
+            "searchVolume": 1300,
+            "competition": 53,
+            "difficulty": 46,
+            "opportunityScore": 1313,
+            "category": "residential_financing",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solaranlage Eigenheim Installation": {
+            "keyword": "Solaranlage Eigenheim Installation",
+            "position": 8,
+            "previousPosition": 7,
+            "searchVolume": 1200,
+            "competition": 52,
+            "difficulty": 46,
+            "opportunityScore": 1224,
+            "category": "residential",
+            "intent": "transactional",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solaranlage Landwirtschaft": {
+            "keyword": "Solaranlage Landwirtschaft",
+            "position": 21,
+            "previousPosition": 22,
+            "searchVolume": 1600,
+            "competition": 70,
+            "difficulty": 65,
+            "opportunityScore": 1185,
+            "category": "seed",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "PV Anlage Notstrom": {
+            "keyword": "PV Anlage Notstrom",
+            "position": 13,
+            "previousPosition": 13,
+            "searchVolume": 1250,
+            "competition": 59,
+            "difficulty": 50,
+            "opportunityScore": 1147,
+            "category": "residential_installation",
+            "intent": "mixed",
+            "segment": "general",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Wärmepumpe Photovoltaik Kombination": {
+            "keyword": "Wärmepumpe Photovoltaik Kombination",
+            "position": 16,
+            "previousPosition": 17,
+            "searchVolume": 1600,
+            "competition": 64,
+            "difficulty": 78,
+            "opportunityScore": 1127,
+            "category": "storage",
+            "intent": "mixed",
+            "segment": "sector-coupling",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Referenzen": {
+            "keyword": "Agri-PV Referenzen",
+            "position": 17,
+            "previousPosition": 18,
+            "searchVolume": 1091,
+            "competition": 69,
+            "difficulty": 29,
+            "opportunityScore": 1113,
+            "category": "competitive",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Batteriespeicher Kosten 10kWh": {
+            "keyword": "Batteriespeicher Kosten 10kWh",
+            "position": 16,
+            "previousPosition": 15,
+            "searchVolume": 1200,
+            "competition": 60,
+            "difficulty": 48,
+            "opportunityScore": 1111,
+            "category": "storage",
+            "intent": "commercial",
+            "segment": "storage",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Stromspeicher Förderung Eigenheim": {
+            "keyword": "Stromspeicher Förderung Eigenheim",
+            "position": 12,
+            "previousPosition": 11,
+            "searchVolume": 1050,
+            "competition": 52,
+            "difficulty": 44,
+            "opportunityScore": 1094,
+            "category": "residential_financing",
+            "intent": "informational",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "BAFA Zuschuss Photovoltaik Haus": {
+            "keyword": "BAFA Zuschuss Photovoltaik Haus",
+            "position": 6,
+            "previousPosition": 7,
+            "searchVolume": 1100,
+            "competition": 54,
+            "difficulty": 47,
+            "opportunityScore": 1089,
+            "category": "residential_financing",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Naturschutz": {
+            "keyword": "Agri-PV Naturschutz",
+            "position": 14,
+            "previousPosition": 15,
+            "searchVolume": 881,
+            "competition": 43,
+            "difficulty": 40,
+            "opportunityScore": 1061,
+            "category": "legal",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solaranlage Reihenhaus": {
+            "keyword": "Solaranlage Reihenhaus",
+            "position": 22,
+            "previousPosition": 21,
+            "searchVolume": 950,
+            "competition": 47,
+            "difficulty": 43,
+            "opportunityScore": 1056,
+            "category": "seed",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik Kredit Vergleich": {
+            "keyword": "Photovoltaik Kredit Vergleich",
+            "position": 18,
+            "previousPosition": 17,
+            "searchVolume": 1200,
+            "competition": 60,
+            "difficulty": 54,
+            "opportunityScore": 1053,
+            "category": "residential_financing",
+            "intent": "comparison",
+            "segment": "general",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Gemüseanbau": {
+            "keyword": "Agri-PV Gemüseanbau",
+            "position": 11,
+            "previousPosition": 12,
+            "searchVolume": 1020,
+            "competition": 52,
+            "difficulty": 45,
+            "opportunityScore": 1052,
+            "category": "applications",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Genehmigung": {
+            "keyword": "Agri-PV Genehmigung",
+            "position": 8,
+            "previousPosition": 9,
+            "searchVolume": 1087,
+            "competition": 28,
+            "difficulty": 77,
+            "opportunityScore": 1035,
+            "category": "legal",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Smart Home Photovoltaik": {
+            "keyword": "Smart Home Photovoltaik",
+            "position": 24,
+            "previousPosition": 21,
+            "searchVolume": 950,
+            "competition": 50,
+            "difficulty": 42,
+            "opportunityScore": 1033,
+            "category": "residential_installation",
+            "intent": "mixed",
+            "segment": "general",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solaranlage Dachneigung": {
+            "keyword": "Solaranlage Dachneigung",
+            "position": 13,
+            "previousPosition": 11,
+            "searchVolume": 980,
+            "competition": 50,
+            "difficulty": 45,
+            "opportunityScore": 1032,
+            "category": "residential_installation",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Wie funktioniert Agri-PV": {
+            "keyword": "Wie funktioniert Agri-PV",
+            "position": 10,
+            "previousPosition": 7,
+            "searchVolume": 1082,
+            "competition": 31,
+            "difficulty": 74,
+            "opportunityScore": 1030,
+            "category": "longtail",
+            "intent": "informational",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Qualität": {
+            "keyword": "Agri-PV Qualität",
+            "position": 16,
+            "previousPosition": 17,
+            "searchVolume": 988,
+            "competition": 55,
+            "difficulty": 43,
+            "opportunityScore": 1008,
+            "category": "competitive",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik steuerliche Vorteile Eigenheim": {
+            "keyword": "Photovoltaik steuerliche Vorteile Eigenheim",
+            "position": 29,
+            "previousPosition": 31,
+            "searchVolume": 980,
+            "competition": 52,
+            "difficulty": 46,
+            "opportunityScore": 1000,
+            "category": "residential_financing",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik Dachsanierung": {
+            "keyword": "Photovoltaik Dachsanierung",
+            "position": 13,
+            "previousPosition": 14,
+            "searchVolume": 900,
+            "competition": 49,
+            "difficulty": 42,
+            "opportunityScore": 989,
+            "category": "residential",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Förderung": {
+            "keyword": "Agri-PV Förderung",
+            "position": 38,
+            "previousPosition": 38,
+            "searchVolume": 1600,
+            "competition": 80,
+            "difficulty": 82,
+            "opportunityScore": 988,
+            "category": "technical",
+            "intent": "informational",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solaranlage Dachlast": {
+            "keyword": "Solaranlage Dachlast",
+            "position": 11,
+            "previousPosition": 12,
+            "searchVolume": 860,
+            "competition": 48,
+            "difficulty": 43,
+            "opportunityScore": 945,
+            "category": "residential_installation",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Batteriespeicher Nachrüstung": {
+            "keyword": "Batteriespeicher Nachrüstung",
+            "position": 30,
+            "previousPosition": 31,
+            "searchVolume": 980,
+            "competition": 58,
+            "difficulty": 46,
+            "opportunityScore": 942,
+            "category": "storage",
+            "intent": "mixed",
+            "segment": "storage",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Gesetz": {
+            "keyword": "Agri-PV Gesetz",
+            "position": 26,
+            "previousPosition": 25,
+            "searchVolume": 780,
+            "competition": 55,
+            "difficulty": 28,
+            "opportunityScore": 940,
+            "category": "legal",
+            "intent": "informational",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Baden-Württemberg": {
+            "keyword": "Agri-PV Baden-Württemberg",
+            "position": 15,
+            "previousPosition": 17,
+            "searchVolume": 999,
+            "competition": 75,
+            "difficulty": 32,
+            "opportunityScore": 934,
+            "category": "regional",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Niedersachsen": {
+            "keyword": "Agri-PV Niedersachsen",
+            "position": 22,
+            "previousPosition": 23,
+            "searchVolume": 987,
+            "competition": 36,
+            "difficulty": 72,
+            "opportunityScore": 914,
+            "category": "regional",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik Ziegeldach": {
+            "keyword": "Photovoltaik Ziegeldach",
+            "position": 38,
+            "previousPosition": 38,
+            "searchVolume": 780,
+            "competition": 46,
+            "difficulty": 40,
+            "opportunityScore": 907,
+            "category": "residential",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "PV Speicher Dimensionierung": {
+            "keyword": "PV Speicher Dimensionierung",
+            "position": 20,
+            "previousPosition": 21,
+            "searchVolume": 860,
+            "competition": 52,
+            "difficulty": 45,
+            "opportunityScore": 887,
+            "category": "storage",
+            "intent": "mixed",
+            "segment": "storage",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "PV Anlage Bauernhof": {
+            "keyword": "PV Anlage Bauernhof",
+            "position": 21,
+            "previousPosition": 19,
+            "searchVolume": 880,
+            "competition": 55,
+            "difficulty": 45,
+            "opportunityScore": 880,
+            "category": "seed",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Umsetzung": {
+            "keyword": "Agri-PV Umsetzung",
+            "position": 36,
+            "previousPosition": 33,
+            "searchVolume": 974,
+            "competition": 71,
+            "difficulty": 40,
+            "opportunityScore": 877,
+            "category": "competitive",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solaranlage Wartung Eigenheim": {
+            "keyword": "Solaranlage Wartung Eigenheim",
+            "position": 19,
+            "previousPosition": 18,
+            "searchVolume": 690,
+            "competition": 42,
+            "difficulty": 38,
+            "opportunityScore": 863,
+            "category": "residential_installation",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solaranlage Berlin Eigenheim": {
+            "keyword": "Solaranlage Berlin Eigenheim",
+            "position": 13,
+            "previousPosition": 11,
+            "searchVolume": 880,
+            "competition": 57,
+            "difficulty": 45,
+            "opportunityScore": 863,
+            "category": "regional_residential",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik Zählerschrank Umbau": {
+            "keyword": "Photovoltaik Zählerschrank Umbau",
+            "position": 18,
+            "previousPosition": 19,
+            "searchVolume": 740,
+            "competition": 46,
+            "difficulty": 42,
+            "opportunityScore": 841,
+            "category": "residential_installation",
+            "intent": "mixed",
+            "segment": "general",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV KfW": {
+            "keyword": "Agri-PV KfW",
+            "position": 10,
+            "previousPosition": 7,
+            "searchVolume": 769,
+            "competition": 64,
+            "difficulty": 32,
+            "opportunityScore": 801,
+            "category": "legal",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Kosten": {
+            "keyword": "Agri-PV Kosten",
+            "position": 26,
+            "previousPosition": 24,
+            "searchVolume": 1200,
+            "competition": 75,
+            "difficulty": 75,
+            "opportunityScore": 800,
+            "category": "technical",
+            "intent": "commercial",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Nachhaltige Landwirtschaft Solarenergie": {
+            "keyword": "Nachhaltige Landwirtschaft Solarenergie",
+            "position": 19,
+            "previousPosition": 18,
+            "searchVolume": 942,
+            "competition": 36,
+            "difficulty": 83,
+            "opportunityScore": 792,
+            "category": "longtail",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Anlagenplanung Schritt für Schritt": {
+            "keyword": "Agri-PV Anlagenplanung Schritt für Schritt",
+            "position": 34,
+            "previousPosition": 33,
+            "searchVolume": 630,
+            "competition": 20,
+            "difficulty": 60,
+            "opportunityScore": 788,
+            "category": "longtail",
+            "intent": "transactional",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solaranlage Leasing Eigenheim": {
+            "keyword": "Solaranlage Leasing Eigenheim",
+            "position": 22,
+            "previousPosition": 22,
+            "searchVolume": 720,
+            "competition": 48,
+            "difficulty": 45,
+            "opportunityScore": 774,
+            "category": "residential_financing",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Notstromfähig Batteriespeicher": {
+            "keyword": "Notstromfähig Batteriespeicher",
+            "position": 21,
+            "previousPosition": 22,
+            "searchVolume": 720,
+            "competition": 50,
+            "difficulty": 44,
+            "opportunityScore": 766,
+            "category": "storage",
+            "intent": "mixed",
+            "segment": "storage",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solarstrom Mietkauf": {
+            "keyword": "Solarstrom Mietkauf",
+            "position": 11,
+            "previousPosition": 8,
+            "searchVolume": 680,
+            "competition": 46,
+            "difficulty": 44,
+            "opportunityScore": 756,
+            "category": "residential_financing",
+            "intent": "mixed",
+            "segment": "general",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Vergleich": {
+            "keyword": "Agri-PV Vergleich",
+            "position": 27,
+            "previousPosition": 24,
+            "searchVolume": 582,
+            "competition": 44,
+            "difficulty": 33,
+            "opportunityScore": 756,
+            "category": "competitive",
+            "intent": "comparison",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik München Haus": {
+            "keyword": "Photovoltaik München Haus",
+            "position": 31,
+            "previousPosition": 29,
+            "searchVolume": 760,
+            "competition": 55,
+            "difficulty": 46,
+            "opportunityScore": 752,
+            "category": "regional_residential",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solaranlage Hamburg Dach": {
+            "keyword": "Solaranlage Hamburg Dach",
+            "position": 27,
+            "previousPosition": 24,
+            "searchVolume": 720,
+            "competition": 53,
+            "difficulty": 44,
+            "opportunityScore": 742,
+            "category": "regional_residential",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik Flachdach Eigenheim": {
+            "keyword": "Photovoltaik Flachdach Eigenheim",
+            "position": 11,
+            "previousPosition": 8,
+            "searchVolume": 620,
+            "competition": 45,
+            "difficulty": 39,
+            "opportunityScore": 738,
+            "category": "residential",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Biogas": {
+            "keyword": "Agri-PV Biogas",
+            "position": 31,
+            "previousPosition": 33,
+            "searchVolume": 849,
+            "competition": 64,
+            "difficulty": 52,
+            "opportunityScore": 732,
+            "category": "applications",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Fördermittel": {
+            "keyword": "Agri-PV Fördermittel",
+            "position": 22,
+            "previousPosition": 22,
+            "searchVolume": 1091,
+            "competition": 63,
+            "difficulty": 86,
+            "opportunityScore": 732,
+            "category": "legal",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Erfahrungen": {
+            "keyword": "Agri-PV Erfahrungen",
+            "position": 19,
+            "previousPosition": 18,
+            "searchVolume": 692,
+            "competition": 62,
+            "difficulty": 33,
+            "opportunityScore": 728,
+            "category": "competitive",
+            "intent": "comparison",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik Köln Einfamilienhaus": {
+            "keyword": "Photovoltaik Köln Einfamilienhaus",
+            "position": 10,
+            "previousPosition": 12,
+            "searchVolume": 680,
+            "competition": 51,
+            "difficulty": 43,
+            "opportunityScore": 723,
+            "category": "regional_residential",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Planung": {
+            "keyword": "Agri-PV Planung",
+            "position": 27,
+            "previousPosition": 25,
+            "searchVolume": 950,
+            "competition": 62,
+            "difficulty": 70,
+            "opportunityScore": 720,
+            "category": "technical",
+            "intent": "transactional",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Service": {
+            "keyword": "Agri-PV Service",
+            "position": 23,
+            "previousPosition": 21,
+            "searchVolume": 649,
+            "competition": 20,
+            "difficulty": 72,
+            "opportunityScore": 705,
+            "category": "competitive",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solaranlage Leipzig Eigenheim": {
+            "keyword": "Solaranlage Leipzig Eigenheim",
+            "position": 19,
+            "previousPosition": 19,
+            "searchVolume": 610,
+            "competition": 48,
+            "difficulty": 42,
+            "opportunityScore": 678,
+            "category": "regional_residential",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solaranlage Frankfurt Eigenheim": {
+            "keyword": "Solaranlage Frankfurt Eigenheim",
+            "position": 18,
+            "previousPosition": 15,
+            "searchVolume": 650,
+            "competition": 52,
+            "difficulty": 44,
+            "opportunityScore": 677,
+            "category": "regional_residential",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik Stuttgart Haus": {
+            "keyword": "Photovoltaik Stuttgart Haus",
+            "position": 35,
+            "previousPosition": 32,
+            "searchVolume": 630,
+            "competition": 50,
+            "difficulty": 43,
+            "opportunityScore": 677,
+            "category": "regional_residential",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Bayern": {
+            "keyword": "Agri-PV Bayern",
+            "position": 25,
+            "previousPosition": 25,
+            "searchVolume": 650,
+            "competition": 55,
+            "difficulty": 42,
+            "opportunityScore": 670,
+            "category": "regional",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik Hannover Dach": {
+            "keyword": "Photovoltaik Hannover Dach",
+            "position": 28,
+            "previousPosition": 27,
+            "searchVolume": 590,
+            "competition": 47,
+            "difficulty": 41,
+            "opportunityScore": 670,
+            "category": "regional_residential",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Rheinland-Pfalz": {
+            "keyword": "Agri-PV Rheinland-Pfalz",
+            "position": 31,
+            "previousPosition": 33,
+            "searchVolume": 648,
+            "competition": 21,
+            "difficulty": 77,
+            "opportunityScore": 661,
+            "category": "regional",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solaranlage Doppelhaus": {
+            "keyword": "Solaranlage Doppelhaus",
+            "position": 34,
+            "previousPosition": 34,
+            "searchVolume": 540,
+            "competition": 44,
+            "difficulty": 38,
+            "opportunityScore": 659,
+            "category": "residential",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik Abschreibung Privat": {
+            "keyword": "Photovoltaik Abschreibung Privat",
+            "position": 38,
+            "previousPosition": 36,
+            "searchVolume": 560,
+            "competition": 45,
+            "difficulty": 40,
+            "opportunityScore": 659,
+            "category": "residential_financing",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Wirtschaftlichkeit": {
+            "keyword": "Agri-PV Wirtschaftlichkeit",
+            "position": 31,
+            "previousPosition": 31,
+            "searchVolume": 980,
+            "competition": 69,
+            "difficulty": 81,
+            "opportunityScore": 653,
+            "category": "technical",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solaranlage Nürnberg Hausdach": {
+            "keyword": "Solaranlage Nürnberg Hausdach",
+            "position": 34,
+            "previousPosition": 36,
+            "searchVolume": 560,
+            "competition": 46,
+            "difficulty": 40,
+            "opportunityScore": 651,
+            "category": "regional_residential",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solarpark Landwirtschaft": {
+            "keyword": "Solarpark Landwirtschaft",
+            "position": 38,
+            "previousPosition": 36,
+            "searchVolume": 590,
+            "competition": 47,
+            "difficulty": 44,
+            "opportunityScore": 648,
+            "category": "seed",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Obstplantage": {
+            "keyword": "Agri-PV Obstplantage",
+            "position": 14,
+            "previousPosition": 16,
+            "searchVolume": 914,
+            "competition": 77,
+            "difficulty": 65,
+            "opportunityScore": 644,
+            "category": "applications",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik Dresden Eigenheim": {
+            "keyword": "Photovoltaik Dresden Eigenheim",
+            "position": 23,
+            "previousPosition": 21,
+            "searchVolume": 540,
+            "competition": 45,
+            "difficulty": 39,
+            "opportunityScore": 643,
+            "category": "regional_residential",
+            "intent": "mixed",
+            "segment": "residential",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Lithium vs Salzbatterie": {
+            "keyword": "Lithium vs Salzbatterie",
+            "position": 39,
+            "previousPosition": 36,
+            "searchVolume": 550,
+            "competition": 46,
+            "difficulty": 40,
+            "opportunityScore": 640,
+            "category": "storage",
+            "intent": "mixed",
+            "segment": "storage",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik Agrar": {
+            "keyword": "Photovoltaik Agrar",
+            "position": 34,
+            "previousPosition": 34,
+            "searchVolume": 720,
+            "competition": 60,
+            "difficulty": 58,
+            "opportunityScore": 610,
+            "category": "seed",
+            "intent": "mixed",
+            "segment": "general",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Second Life Speicher": {
+            "keyword": "Second Life Speicher",
+            "position": 34,
+            "previousPosition": 31,
+            "searchVolume": 500,
+            "competition": 44,
+            "difficulty": 38,
+            "opportunityScore": 610,
+            "category": "storage",
+            "intent": "mixed",
+            "segment": "storage",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Brandenburg": {
+            "keyword": "Agri-PV Brandenburg",
+            "position": 27,
+            "previousPosition": 26,
+            "searchVolume": 480,
+            "competition": 45,
+            "difficulty": 35,
+            "opportunityScore": 600,
+            "category": "regional",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Nordrhein-Westfalen": {
+            "keyword": "Agri-PV Nordrhein-Westfalen",
+            "position": 16,
+            "previousPosition": 16,
+            "searchVolume": 520,
+            "competition": 50,
+            "difficulty": 38,
+            "opportunityScore": 591,
+            "category": "regional",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "E3DC vs Sonnen": {
+            "keyword": "E3DC vs Sonnen",
+            "position": 10,
+            "previousPosition": 9,
+            "searchVolume": 450,
+            "competition": 45,
+            "difficulty": 39,
+            "opportunityScore": 536,
+            "category": "storage",
+            "intent": "mixed",
+            "segment": "general",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Kosten Nutzen Rechnung Agri-PV": {
+            "keyword": "Kosten Nutzen Rechnung Agri-PV",
+            "position": 14,
+            "previousPosition": 14,
+            "searchVolume": 567,
+            "competition": 69,
+            "difficulty": 37,
+            "opportunityScore": 535,
+            "category": "longtail",
+            "intent": "commercial",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Doppelnutzung Solaranlage Vorteile": {
+            "keyword": "Doppelnutzung Solaranlage Vorteile",
+            "position": 16,
+            "previousPosition": 17,
+            "searchVolume": 682,
+            "competition": 69,
+            "difficulty": 62,
+            "opportunityScore": 521,
+            "category": "longtail",
+            "intent": "mixed",
+            "segment": "general",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Förderungen 2025": {
+            "keyword": "Agri-PV Förderungen 2025",
+            "position": 22,
+            "previousPosition": 21,
+            "searchVolume": 422,
+            "competition": 20,
+            "difficulty": 63,
+            "opportunityScore": 508,
+            "category": "longtail",
+            "intent": "informational",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Steuervorteile": {
+            "keyword": "Agri-PV Steuervorteile",
+            "position": 39,
+            "previousPosition": 37,
+            "searchVolume": 460,
+            "competition": 69,
+            "difficulty": 23,
+            "opportunityScore": 500,
+            "category": "legal",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Hopfenanbau": {
+            "keyword": "Agri-PV Hopfenanbau",
+            "position": 31,
+            "previousPosition": 30,
+            "searchVolume": 475,
+            "competition": 32,
+            "difficulty": 66,
+            "opportunityScore": 485,
+            "category": "applications",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Doppelnutzung Solar": {
+            "keyword": "Doppelnutzung Solar",
+            "position": 36,
+            "previousPosition": 35,
+            "searchVolume": 450,
+            "competition": 74,
+            "difficulty": 21,
+            "opportunityScore": 474,
+            "category": "seed",
+            "intent": "mixed",
+            "segment": "general",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Wartung": {
+            "keyword": "Agri-PV Wartung",
+            "position": 34,
+            "previousPosition": 32,
+            "searchVolume": 619,
+            "competition": 56,
+            "difficulty": 83,
+            "opportunityScore": 445,
+            "category": "technical",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Eigenverbrauch": {
+            "keyword": "Agri-PV Eigenverbrauch",
+            "position": 10,
+            "previousPosition": 12,
+            "searchVolume": 675,
+            "competition": 67,
+            "difficulty": 85,
+            "opportunityScore": 444,
+            "category": "technical",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Mecklenburg-Vorpommern": {
+            "keyword": "Agri-PV Mecklenburg-Vorpommern",
+            "position": 35,
+            "previousPosition": 37,
+            "searchVolume": 471,
+            "competition": 31,
+            "difficulty": 83,
+            "opportunityScore": 413,
+            "category": "regional",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Beratung": {
+            "keyword": "Agri-PV Beratung",
+            "position": 30,
+            "previousPosition": 30,
+            "searchVolume": 359,
+            "competition": 45,
+            "difficulty": 44,
+            "opportunityScore": 403,
+            "category": "competitive",
+            "intent": "transactional",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Rendite": {
+            "keyword": "Agri-PV Rendite",
+            "position": 37,
+            "previousPosition": 38,
+            "searchVolume": 198,
+            "competition": 25,
+            "difficulty": 27,
+            "opportunityScore": 381,
+            "category": "technical",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Schleswig-Holstein": {
+            "keyword": "Agri-PV Schleswig-Holstein",
+            "position": 15,
+            "previousPosition": 17,
+            "searchVolume": 208,
+            "competition": 23,
+            "difficulty": 32,
+            "opportunityScore": 378,
+            "category": "regional",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV EEG": {
+            "keyword": "Agri-PV EEG",
+            "position": 26,
+            "previousPosition": 28,
+            "searchVolume": 540,
+            "competition": 58,
+            "difficulty": 85,
+            "opportunityScore": 378,
+            "category": "legal",
+            "intent": "informational",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Sachsen-Anhalt": {
+            "keyword": "Agri-PV Sachsen-Anhalt",
+            "position": 31,
+            "previousPosition": 33,
+            "searchVolume": 429,
+            "competition": 65,
+            "difficulty": 64,
+            "opportunityScore": 333,
+            "category": "regional",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Photovoltaik und Ackerbau gleichzeitig": {
+            "keyword": "Photovoltaik und Ackerbau gleichzeitig",
+            "position": 10,
+            "previousPosition": 11,
+            "searchVolume": 317,
+            "competition": 60,
+            "difficulty": 36,
+            "opportunityScore": 330,
+            "category": "longtail",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solaranlage Feld": {
+            "keyword": "Solaranlage Feld",
+            "position": 38,
+            "previousPosition": 36,
+            "searchVolume": 280,
+            "competition": 40,
+            "difficulty": 46,
+            "opportunityScore": 326,
+            "category": "seed",
+            "intent": "mixed",
+            "segment": "general",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Garantie": {
+            "keyword": "Agri-PV Garantie",
+            "position": 24,
+            "previousPosition": 23,
+            "searchVolume": 267,
+            "competition": 26,
+            "difficulty": 58,
+            "opportunityScore": 318,
+            "category": "competitive",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Tierhaltung": {
+            "keyword": "Agri-PV Tierhaltung",
+            "position": 11,
+            "previousPosition": 9,
+            "searchVolume": 370,
+            "competition": 57,
+            "difficulty": 65,
+            "opportunityScore": 303,
+            "category": "applications",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Weidewirtschaft": {
+            "keyword": "Agri-PV Weidewirtschaft",
+            "position": 21,
+            "previousPosition": 21,
+            "searchVolume": 290,
+            "competition": 60,
+            "difficulty": 40,
+            "opportunityScore": 290,
+            "category": "applications",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Gewächshaus": {
+            "keyword": "Agri-PV Gewächshaus",
+            "position": 32,
+            "previousPosition": 31,
+            "searchVolume": 282,
+            "competition": 45,
+            "difficulty": 56,
+            "opportunityScore": 279,
+            "category": "applications",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Netzanschluss": {
+            "keyword": "Agri-PV Netzanschluss",
+            "position": 25,
+            "previousPosition": 22,
+            "searchVolume": 211,
+            "competition": 54,
+            "difficulty": 22,
+            "opportunityScore": 278,
+            "category": "technical",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Hessen": {
+            "keyword": "Agri-PV Hessen",
+            "position": 17,
+            "previousPosition": 17,
+            "searchVolume": 382,
+            "competition": 54,
+            "difficulty": 84,
+            "opportunityScore": 277,
+            "category": "regional",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "PV Freifläche Landwirt": {
+            "keyword": "PV Freifläche Landwirt",
+            "position": 19,
+            "previousPosition": 18,
+            "searchVolume": 210,
+            "competition": 42,
+            "difficulty": 34,
+            "opportunityScore": 276,
+            "category": "seed",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Beste Agri-PV Anbieter": {
+            "keyword": "Beste Agri-PV Anbieter",
+            "position": 25,
+            "previousPosition": 27,
+            "searchVolume": 420,
+            "competition": 66,
+            "difficulty": 86,
+            "opportunityScore": 276,
+            "category": "competitive",
+            "intent": "comparison",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Ackerbau": {
+            "keyword": "Agri-PV Ackerbau",
+            "position": 31,
+            "previousPosition": 33,
+            "searchVolume": 380,
+            "competition": 49,
+            "difficulty": 89,
+            "opportunityScore": 275,
+            "category": "applications",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agrivoltaik": {
+            "keyword": "Agrivoltaik",
+            "position": 25,
+            "previousPosition": 22,
+            "searchVolume": 320,
+            "competition": 39,
+            "difficulty": 83,
+            "opportunityScore": 262,
+            "category": "seed",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Baurecht": {
+            "keyword": "Agri-PV Baurecht",
+            "position": 31,
+            "previousPosition": 29,
+            "searchVolume": 411,
+            "competition": 78,
+            "difficulty": 79,
+            "opportunityScore": 262,
+            "category": "legal",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Solaranlage mit Landwirtschaft kombinieren": {
+            "keyword": "Solaranlage mit Landwirtschaft kombinieren",
+            "position": 12,
+            "previousPosition": 11,
+            "searchVolume": 340,
+            "competition": 51,
+            "difficulty": 80,
+            "opportunityScore": 260,
+            "category": "longtail",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Einspeisung": {
+            "keyword": "Agri-PV Einspeisung",
+            "position": 24,
+            "previousPosition": 25,
+            "searchVolume": 187,
+            "competition": 57,
+            "difficulty": 53,
+            "opportunityScore": 170,
+            "category": "technical",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Installation": {
+            "keyword": "Agri-PV Installation",
+            "position": 23,
+            "previousPosition": 25,
+            "searchVolume": 157,
+            "competition": 65,
+            "difficulty": 41,
+            "opportunityScore": 148,
+            "category": "technical",
+            "intent": "transactional",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV für Landwirte": {
+            "keyword": "Agri-PV für Landwirte",
+            "position": 35,
+            "previousPosition": 34,
+            "searchVolume": 142,
+            "competition": 43,
+            "difficulty": 89,
+            "opportunityScore": 108,
+            "category": "longtail",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Weinbau": {
+            "keyword": "Agri-PV Weinbau",
+            "position": 16,
+            "previousPosition": 16,
+            "searchVolume": 134,
+            "competition": 74,
+            "difficulty": 87,
+            "opportunityScore": 83,
+            "category": "applications",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          },
+          "Agri-PV Versicherung": {
+            "keyword": "Agri-PV Versicherung",
+            "position": 31,
+            "previousPosition": 33,
+            "searchVolume": 105,
+            "competition": 58,
+            "difficulty": 80,
+            "opportunityScore": 76,
+            "category": "legal",
+            "intent": "mixed",
+            "segment": "agri-pv",
+            "lastUpdated": "2025-09-28T17:08:15.467Z"
+          }
+        },
+        "metrics": {
+          "totalKeywords": 127,
+          "avgPosition": 19.65,
+          "top10Count": 32,
+          "top10Percentage": 25.2,
+          "top3Count": 6,
+          "top3Percentage": 4.72,
+          "positionChanges": {
+            "improved": 44,
+            "declined": 64,
+            "stable": 19
+          },
+          "estimatedTraffic": 13786,
+          "categoryStats": {
+            "seed": {
+              "count": 18,
+              "avgPosition": 17.44,
+              "top10Count": 8
+            },
+            "residential": {
+              "count": 10,
+              "avgPosition": 15.1,
+              "top10Count": 5
+            },
+            "residential_installation": {
+              "count": 10,
+              "avgPosition": 11.6,
+              "top10Count": 4
+            },
+            "storage": {
+              "count": 10,
+              "avgPosition": 20.6,
+              "top10Count": 2
+            },
+            "longtail": {
+              "count": 10,
+              "avgPosition": 18.1,
+              "top10Count": 3
+            },
+            "legal": {
+              "count": 10,
+              "avgPosition": 21.2,
+              "top10Count": 3
+            },
+            "residential_financing": {
+              "count": 10,
+              "avgPosition": 15.1,
+              "top10Count": 4
+            },
+            "applications": {
+              "count": 10,
+              "avgPosition": 20,
+              "top10Count": 1
+            },
+            "competitive": {
+              "count": 9,
+              "avgPosition": 24.11,
+              "top10Count": 0
+            },
+            "technical": {
+              "count": 10,
+              "avgPosition": 27.5,
+              "top10Count": 1
+            },
+            "regional": {
+              "count": 10,
+              "avgPosition": 23.4,
+              "top10Count": 0
+            },
+            "regional_residential": {
+              "count": 10,
+              "avgPosition": 23.8,
+              "top10Count": 1
+            }
+          },
+          "segmentStats": {
+            "residential": {
+              "count": 40,
+              "avgPosition": 15.45,
+              "top10Count": 18,
+              "estimatedTraffic": 7301,
+              "top10Percentage": 45
+            },
+            "storage": {
+              "count": 9,
+              "avgPosition": 20.67,
+              "top10Count": 2,
+              "estimatedTraffic": 1231,
+              "top10Percentage": 22.22
+            },
+            "sector-coupling": {
+              "count": 2,
+              "avgPosition": 9.5,
+              "top10Count": 1,
+              "estimatedTraffic": 920,
+              "top10Percentage": 50
+            },
+            "general": {
+              "count": 11,
+              "avgPosition": 20.09,
+              "top10Count": 2,
+              "estimatedTraffic": 1045,
+              "top10Percentage": 18.18
+            },
+            "agri-pv": {
+              "count": 65,
+              "avgPosition": 22.32,
+              "top10Count": 9,
+              "estimatedTraffic": 3290,
+              "top10Percentage": 13.85
+            }
+          },
+          "timestamp": "2025-09-28T17:08:15.472Z"
+        },
+        "alerts": [
+          {
+            "type": "loss",
+            "severity": "error",
+            "keyword": "Heimspeicher Vergleich",
+            "segment": "storage",
+            "message": "\"Heimspeicher Vergleich\" fällt aus Top 10 heraus (Position 12)",
+            "position": 12,
+            "change": -3,
+            "timestamp": "2025-09-28T17:08:15.476Z"
+          },
+          {
+            "type": "loss",
+            "severity": "error",
+            "keyword": "Solarstrom Mietkauf",
+            "segment": "general",
+            "message": "\"Solarstrom Mietkauf\" fällt aus Top 10 heraus (Position 11)",
+            "position": 11,
+            "change": -3,
+            "timestamp": "2025-09-28T17:08:15.477Z"
+          },
+          {
+            "type": "loss",
+            "severity": "error",
+            "keyword": "Photovoltaik Flachdach Eigenheim",
+            "segment": "residential",
+            "message": "\"Photovoltaik Flachdach Eigenheim\" fällt aus Top 10 heraus (Position 11)",
+            "position": 11,
+            "change": -3,
+            "timestamp": "2025-09-28T17:08:15.477Z"
+          },
+          {
+            "type": "loss",
+            "severity": "error",
+            "keyword": "Agri-PV Tierhaltung",
+            "segment": "agri-pv",
+            "message": "\"Agri-PV Tierhaltung\" fällt aus Top 10 heraus (Position 11)",
+            "position": 11,
+            "change": -2,
+            "timestamp": "2025-09-28T17:08:15.477Z"
+          },
+          {
+            "type": "milestone",
+            "severity": "success",
+            "keyword": "Photovoltaik Köln Einfamilienhaus",
+            "segment": "residential",
+            "message": "\"Photovoltaik Köln Einfamilienhaus\" erreicht Top 10 (Position 10)",
+            "position": 10,
+            "change": 2,
+            "timestamp": "2025-09-28T17:08:15.477Z"
+          },
+          {
+            "type": "milestone",
+            "severity": "success",
+            "keyword": "Agri-PV Eigenverbrauch",
+            "segment": "agri-pv",
+            "message": "\"Agri-PV Eigenverbrauch\" erreicht Top 10 (Position 10)",
+            "position": 10,
+            "change": 2,
+            "timestamp": "2025-09-28T17:08:15.477Z"
+          },
+          {
+            "type": "milestone",
+            "severity": "success",
+            "keyword": "Photovoltaik und Ackerbau gleichzeitig",
+            "segment": "agri-pv",
+            "message": "\"Photovoltaik und Ackerbau gleichzeitig\" erreicht Top 10 (Position 10)",
+            "position": 10,
+            "change": 1,
+            "timestamp": "2025-09-28T17:08:15.477Z"
+          }
+        ]
+      },
+      "recommendations": [
+        {
+          "priority": "high",
+          "category": "ranking",
+          "title": "Durchschnittliche Position verbessern",
+          "description": "Aktuelle Position: 19.6. Fokussieren Sie sich auf Content-Optimierung und Backlink-Aufbau.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "priority": "medium",
+          "category": "content",
+          "title": "Long-Tail Keywords optimieren",
+          "description": "60 Keywords ranken außerhalb der Top 20. Erstellen Sie spezifischen Content.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ],
+      "summary": {
+        "totalKeywords": 127,
+        "avgPosition": 19.65,
+        "organicTraffic": 11037,
+        "conversions": 508,
+        "revenue": 2269706,
+        "visibilityScore": 106,
+        "alertCount": 7,
+        "recommendationCount": 2
+      }
+    },
+    "geo": {
+      "timestamp": "2025-09-28T17:08:15.521Z",
+      "kpis": {
+        "avgVisibilityScore": 67.03703703703704,
+        "top3LocalPackCities": 3,
+        "totalLocalTraffic": 36075,
+        "totalGMBViews": 155476,
+        "totalGMBWebsiteClicks": 4861,
+        "totalGMBCalls": 2055,
+        "avgGMBRating": 4.46,
+        "marketCoverage": 86.66666666666667,
+        "highPotentialCities": 2,
+        "avgCompetitorRating": 4.513333333333334,
+        "timestamp": "2025-09-28T17:08:15.520Z"
+      },
+      "rankings": {
+        "Berlin": {
+          "city": "Berlin",
+          "region": "Berlin",
+          "population": 3769000,
+          "localPackRankings": {
+            "ZOE Solar Berlin": {
+              "keyword": "ZOE Solar Berlin",
+              "position": 3,
+              "searchVolume": 8678,
+              "competition": 23,
+              "ctr": 0.15,
+              "estimatedClicks": 1302
+            },
+            "Solaranlage Berlin": {
+              "keyword": "Solaranlage Berlin",
+              "position": 1,
+              "searchVolume": 2134,
+              "competition": 7,
+              "ctr": 0.45,
+              "estimatedClicks": 960
+            },
+            "Photovoltaik Berlin": {
+              "keyword": "Photovoltaik Berlin",
+              "position": 1,
+              "searchVolume": 7737,
+              "competition": 22,
+              "ctr": 0.45,
+              "estimatedClicks": 3482
+            },
+            "Solarteur Berlin": {
+              "keyword": "Solarteur Berlin",
+              "position": 1,
+              "searchVolume": 4190,
+              "competition": 8,
+              "ctr": 0.45,
+              "estimatedClicks": 1886
+            },
+            "PV Anlage Berlin": {
+              "keyword": "PV Anlage Berlin",
+              "position": 2,
+              "searchVolume": 2285,
+              "competition": 15,
+              "ctr": 0.25,
+              "estimatedClicks": 571
+            },
+            "Solarinstallation Berlin": {
+              "keyword": "Solarinstallation Berlin",
+              "position": 3,
+              "searchVolume": 4457,
+              "competition": 11,
+              "ctr": 0.15,
+              "estimatedClicks": 669
+            }
+          },
+          "visibilityScore": 72.22222222222223,
+          "competitorAnalysis": [
+            {
+              "name": "SolarTec GmbH",
+              "localPackPosition": 1,
+              "reviewCount": 236,
+              "rating": "4.6",
+              "websiteTraffic": 3887
+            },
+            {
+              "name": "GreenEnergy Solutions",
+              "localPackPosition": 3,
+              "reviewCount": 246,
+              "rating": "4.5",
+              "websiteTraffic": 4164
+            },
+            {
+              "name": "PV Meister",
+              "localPackPosition": 3,
+              "reviewCount": 92,
+              "rating": "4.6",
+              "websiteTraffic": 1099
+            },
+            {
+              "name": "SunPower Installations",
+              "localPackPosition": 1,
+              "reviewCount": 162,
+              "rating": "4.2",
+              "websiteTraffic": 2988
+            }
+          ],
+          "localTraffic": 8870,
+          "gmbInsights": {
+            "totalViews": 7294,
+            "searchViews": 6201,
+            "mapViews": 2698,
+            "actions": {
+              "websiteClicks": 138,
+              "directions": 93,
+              "calls": 115,
+              "reviews": 18
+            },
+            "reviews": {
+              "total": 174,
+              "averageRating": "4.1",
+              "newReviews": 9
+            }
+          },
+          "timestamp": "2025-09-28T17:08:15.519Z"
+        },
+        "Hamburg": {
+          "city": "Hamburg",
+          "region": "Hamburg",
+          "population": 1841000,
+          "localPackRankings": {
+            "ZOE Solar Hamburg": {
+              "keyword": "ZOE Solar Hamburg",
+              "position": 1,
+              "searchVolume": 2950,
+              "competition": 17,
+              "ctr": 0.45,
+              "estimatedClicks": 1328
+            },
+            "Solaranlage Hamburg": {
+              "keyword": "Solaranlage Hamburg",
+              "position": 1,
+              "searchVolume": 1621,
+              "competition": 12,
+              "ctr": 0.45,
+              "estimatedClicks": 729
+            },
+            "Photovoltaik Hamburg": {
+              "keyword": "Photovoltaik Hamburg",
+              "position": 3,
+              "searchVolume": 3996,
+              "competition": 16,
+              "ctr": 0.15,
+              "estimatedClicks": 599
+            },
+            "Solarteur Hamburg": {
+              "keyword": "Solarteur Hamburg",
+              "position": 2,
+              "searchVolume": 4585,
+              "competition": 5,
+              "ctr": 0.25,
+              "estimatedClicks": 1146
+            },
+            "PV Anlage Hamburg": {
+              "keyword": "PV Anlage Hamburg",
+              "position": 3,
+              "searchVolume": 2814,
+              "competition": 20,
+              "ctr": 0.15,
+              "estimatedClicks": 422
+            },
+            "Solarinstallation Hamburg": {
+              "keyword": "Solarinstallation Hamburg",
+              "position": 3,
+              "searchVolume": 4207,
+              "competition": 8,
+              "ctr": 0.15,
+              "estimatedClicks": 631
+            }
+          },
+          "visibilityScore": 61.111111111111114,
+          "competitorAnalysis": [
+            {
+              "name": "SolarTec GmbH",
+              "localPackPosition": 2,
+              "reviewCount": 188,
+              "rating": "4.6",
+              "websiteTraffic": 3396
+            },
+            {
+              "name": "GreenEnergy Solutions",
+              "localPackPosition": 2,
+              "reviewCount": 62,
+              "rating": "4.1",
+              "websiteTraffic": 4422
+            },
+            {
+              "name": "PV Meister",
+              "localPackPosition": 1,
+              "reviewCount": 191,
+              "rating": "4.6",
+              "websiteTraffic": 1605
+            },
+            {
+              "name": "SunPower Installations",
+              "localPackPosition": 2,
+              "reviewCount": 73,
+              "rating": "4.2",
+              "websiteTraffic": 4644
+            }
+          ],
+          "localTraffic": 4855,
+          "gmbInsights": {
+            "totalViews": 10011,
+            "searchViews": 11520,
+            "mapViews": 2442,
+            "actions": {
+              "websiteClicks": 123,
+              "directions": 123,
+              "calls": 151,
+              "reviews": 16
+            },
+            "reviews": {
+              "total": 187,
+              "averageRating": "4.5",
+              "newReviews": 10
+            }
+          },
+          "timestamp": "2025-09-28T17:08:15.519Z"
+        },
+        "München": {
+          "city": "München",
+          "region": "Bayern",
+          "population": 1484000,
+          "localPackRankings": {
+            "ZOE Solar München": {
+              "keyword": "ZOE Solar München",
+              "position": 1,
+              "searchVolume": 1548,
+              "competition": 11,
+              "ctr": 0.45,
+              "estimatedClicks": 697
+            },
+            "Solaranlage München": {
+              "keyword": "Solaranlage München",
+              "position": 1,
+              "searchVolume": 2868,
+              "competition": 17,
+              "ctr": 0.45,
+              "estimatedClicks": 1291
+            },
+            "Photovoltaik München": {
+              "keyword": "Photovoltaik München",
+              "position": 2,
+              "searchVolume": 1041,
+              "competition": 19,
+              "ctr": 0.25,
+              "estimatedClicks": 260
+            },
+            "Solarteur München": {
+              "keyword": "Solarteur München",
+              "position": 1,
+              "searchVolume": 2706,
+              "competition": 10,
+              "ctr": 0.45,
+              "estimatedClicks": 1218
+            },
+            "PV Anlage München": {
+              "keyword": "PV Anlage München",
+              "position": 3,
+              "searchVolume": 2339,
+              "competition": 8,
+              "ctr": 0.15,
+              "estimatedClicks": 351
+            },
+            "Solarinstallation München": {
+              "keyword": "Solarinstallation München",
+              "position": 2,
+              "searchVolume": 3041,
+              "competition": 8,
+              "ctr": 0.25,
+              "estimatedClicks": 760
+            }
+          },
+          "visibilityScore": 77.77777777777777,
+          "competitorAnalysis": [
+            {
+              "name": "SolarTec GmbH",
+              "localPackPosition": 3,
+              "reviewCount": 200,
+              "rating": "4.3",
+              "websiteTraffic": 1585
+            },
+            {
+              "name": "GreenEnergy Solutions",
+              "localPackPosition": 3,
+              "reviewCount": 97,
+              "rating": "4.4",
+              "websiteTraffic": 3690
+            },
+            {
+              "name": "PV Meister",
+              "localPackPosition": 2,
+              "reviewCount": 214,
+              "rating": "4.0",
+              "websiteTraffic": 3538
+            },
+            {
+              "name": "SunPower Installations",
+              "localPackPosition": 2,
+              "reviewCount": 237,
+              "rating": "4.7",
+              "websiteTraffic": 5579
+            }
+          ],
+          "localTraffic": 4577,
+          "gmbInsights": {
+            "totalViews": 7580,
+            "searchViews": 11806,
+            "mapViews": 5907,
+            "actions": {
+              "websiteClicks": 461,
+              "directions": 281,
+              "calls": 99,
+              "reviews": 50
+            },
+            "reviews": {
+              "total": 53,
+              "averageRating": "4.1",
+              "newReviews": 4
+            }
+          },
+          "timestamp": "2025-09-28T17:08:15.519Z"
+        },
+        "Köln": {
+          "city": "Köln",
+          "region": "Nordrhein-Westfalen",
+          "population": 1086000,
+          "localPackRankings": {
+            "ZOE Solar Köln": {
+              "keyword": "ZOE Solar Köln",
+              "position": 1,
+              "searchVolume": 838,
+              "competition": 12,
+              "ctr": 0.45,
+              "estimatedClicks": 377
+            },
+            "Solaranlage Köln": {
+              "keyword": "Solaranlage Köln",
+              "position": 2,
+              "searchVolume": 2070,
+              "competition": 18,
+              "ctr": 0.25,
+              "estimatedClicks": 518
+            },
+            "Photovoltaik Köln": {
+              "keyword": "Photovoltaik Köln",
+              "position": 3,
+              "searchVolume": 1042,
+              "competition": 16,
+              "ctr": 0.15,
+              "estimatedClicks": 156
+            },
+            "Solarteur Köln": {
+              "keyword": "Solarteur Köln",
+              "position": 1,
+              "searchVolume": 1255,
+              "competition": 16,
+              "ctr": 0.45,
+              "estimatedClicks": 565
+            },
+            "PV Anlage Köln": {
+              "keyword": "PV Anlage Köln",
+              "position": 2,
+              "searchVolume": 2690,
+              "competition": 10,
+              "ctr": 0.25,
+              "estimatedClicks": 673
+            },
+            "Solarinstallation Köln": {
+              "keyword": "Solarinstallation Köln",
+              "position": 3,
+              "searchVolume": 589,
+              "competition": 21,
+              "ctr": 0.15,
+              "estimatedClicks": 88
+            }
+          },
+          "visibilityScore": 66.66666666666666,
+          "competitorAnalysis": [
+            {
+              "name": "SolarTec GmbH",
+              "localPackPosition": 3,
+              "reviewCount": 122,
+              "rating": "4.9",
+              "websiteTraffic": 4566
+            },
+            {
+              "name": "GreenEnergy Solutions",
+              "localPackPosition": 3,
+              "reviewCount": 123,
+              "rating": "4.5",
+              "websiteTraffic": 3974
+            },
+            {
+              "name": "PV Meister",
+              "localPackPosition": 1,
+              "reviewCount": 111,
+              "rating": "4.4",
+              "websiteTraffic": 1955
+            },
+            {
+              "name": "SunPower Installations",
+              "localPackPosition": 3,
+              "reviewCount": 109,
+              "rating": "4.6",
+              "websiteTraffic": 1875
+            }
+          ],
+          "localTraffic": 2377,
+          "gmbInsights": {
+            "totalViews": 10519,
+            "searchViews": 9783,
+            "mapViews": 6739,
+            "actions": {
+              "websiteClicks": 537,
+              "directions": 50,
+              "calls": 193,
+              "reviews": 35
+            },
+            "reviews": {
+              "total": 56,
+              "averageRating": "4.7",
+              "newReviews": 7
+            }
+          },
+          "timestamp": "2025-09-28T17:08:15.519Z"
+        },
+        "Frankfurt am Main": {
+          "city": "Frankfurt am Main",
+          "region": "Hessen",
+          "population": 753000,
+          "localPackRankings": {
+            "ZOE Solar Frankfurt am Main": {
+              "keyword": "ZOE Solar Frankfurt am Main",
+              "position": 3,
+              "searchVolume": 1130,
+              "competition": 13,
+              "ctr": 0.15,
+              "estimatedClicks": 170
+            },
+            "Solaranlage Frankfurt am Main": {
+              "keyword": "Solaranlage Frankfurt am Main",
+              "position": 2,
+              "searchVolume": 1005,
+              "competition": 9,
+              "ctr": 0.25,
+              "estimatedClicks": 251
+            },
+            "Photovoltaik Frankfurt am Main": {
+              "keyword": "Photovoltaik Frankfurt am Main",
+              "position": 2,
+              "searchVolume": 719,
+              "competition": 12,
+              "ctr": 0.25,
+              "estimatedClicks": 180
+            },
+            "Solarteur Frankfurt am Main": {
+              "keyword": "Solarteur Frankfurt am Main",
+              "position": 1,
+              "searchVolume": 1466,
+              "competition": 13,
+              "ctr": 0.45,
+              "estimatedClicks": 660
+            },
+            "PV Anlage Frankfurt am Main": {
+              "keyword": "PV Anlage Frankfurt am Main",
+              "position": 3,
+              "searchVolume": 724,
+              "competition": 16,
+              "ctr": 0.15,
+              "estimatedClicks": 109
+            },
+            "Solarinstallation Frankfurt am Main": {
+              "keyword": "Solarinstallation Frankfurt am Main",
+              "position": 2,
+              "searchVolume": 1328,
+              "competition": 10,
+              "ctr": 0.25,
+              "estimatedClicks": 332
+            }
+          },
+          "visibilityScore": 61.111111111111114,
+          "competitorAnalysis": [
+            {
+              "name": "SolarTec GmbH",
+              "localPackPosition": 3,
+              "reviewCount": 92,
+              "rating": "4.4",
+              "websiteTraffic": 2225
+            },
+            {
+              "name": "GreenEnergy Solutions",
+              "localPackPosition": 2,
+              "reviewCount": 98,
+              "rating": "5.0",
+              "websiteTraffic": 4234
+            },
+            {
+              "name": "PV Meister",
+              "localPackPosition": 1,
+              "reviewCount": 229,
+              "rating": "4.0",
+              "websiteTraffic": 3094
+            },
+            {
+              "name": "SunPower Installations",
+              "localPackPosition": 1,
+              "reviewCount": 117,
+              "rating": "4.5",
+              "websiteTraffic": 5318
+            }
+          ],
+          "localTraffic": 1702,
+          "gmbInsights": {
+            "totalViews": 14936,
+            "searchViews": 5411,
+            "mapViews": 4544,
+            "actions": {
+              "websiteClicks": 348,
+              "directions": 160,
+              "calls": 169,
+              "reviews": 34
+            },
+            "reviews": {
+              "total": 177,
+              "averageRating": "4.1",
+              "newReviews": 4
+            }
+          },
+          "timestamp": "2025-09-28T17:08:15.519Z"
+        },
+        "Stuttgart": {
+          "city": "Stuttgart",
+          "region": "Baden-Württemberg",
+          "population": 635000,
+          "localPackRankings": {
+            "ZOE Solar Stuttgart": {
+              "keyword": "ZOE Solar Stuttgart",
+              "position": 2,
+              "searchVolume": 489,
+              "competition": 8,
+              "ctr": 0.25,
+              "estimatedClicks": 122
+            },
+            "Solaranlage Stuttgart": {
+              "keyword": "Solaranlage Stuttgart",
+              "position": 3,
+              "searchVolume": 1343,
+              "competition": 15,
+              "ctr": 0.15,
+              "estimatedClicks": 201
+            },
+            "Photovoltaik Stuttgart": {
+              "keyword": "Photovoltaik Stuttgart",
+              "position": 2,
+              "searchVolume": 550,
+              "competition": 13,
+              "ctr": 0.25,
+              "estimatedClicks": 138
+            },
+            "Solarteur Stuttgart": {
+              "keyword": "Solarteur Stuttgart",
+              "position": 3,
+              "searchVolume": 615,
+              "competition": 11,
+              "ctr": 0.15,
+              "estimatedClicks": 92
+            },
+            "PV Anlage Stuttgart": {
+              "keyword": "PV Anlage Stuttgart",
+              "position": 2,
+              "searchVolume": 631,
+              "competition": 18,
+              "ctr": 0.25,
+              "estimatedClicks": 158
+            },
+            "Solarinstallation Stuttgart": {
+              "keyword": "Solarinstallation Stuttgart",
+              "position": 3,
+              "searchVolume": 1288,
+              "competition": 6,
+              "ctr": 0.15,
+              "estimatedClicks": 193
+            }
+          },
+          "visibilityScore": 50,
+          "competitorAnalysis": [
+            {
+              "name": "SolarTec GmbH",
+              "localPackPosition": 2,
+              "reviewCount": 173,
+              "rating": "4.8",
+              "websiteTraffic": 1999
+            },
+            {
+              "name": "GreenEnergy Solutions",
+              "localPackPosition": 3,
+              "reviewCount": 115,
+              "rating": "4.4",
+              "websiteTraffic": 2693
+            },
+            {
+              "name": "PV Meister",
+              "localPackPosition": 3,
+              "reviewCount": 98,
+              "rating": "5.0",
+              "websiteTraffic": 1252
+            },
+            {
+              "name": "SunPower Installations",
+              "localPackPosition": 3,
+              "reviewCount": 169,
+              "rating": "4.9",
+              "websiteTraffic": 4381
+            }
+          ],
+          "localTraffic": 904,
+          "gmbInsights": {
+            "totalViews": 10870,
+            "searchViews": 9608,
+            "mapViews": 4500,
+            "actions": {
+              "websiteClicks": 533,
+              "directions": 344,
+              "calls": 140,
+              "reviews": 17
+            },
+            "reviews": {
+              "total": 191,
+              "averageRating": "4.1",
+              "newReviews": 1
+            }
+          },
+          "timestamp": "2025-09-28T17:08:15.519Z"
+        },
+        "Düsseldorf": {
+          "city": "Düsseldorf",
+          "region": "Nordrhein-Westfalen",
+          "population": 619000,
+          "localPackRankings": {
+            "ZOE Solar Düsseldorf": {
+              "keyword": "ZOE Solar Düsseldorf",
+              "position": 3,
+              "searchVolume": 1184,
+              "competition": 12,
+              "ctr": 0.15,
+              "estimatedClicks": 178
+            },
+            "Solaranlage Düsseldorf": {
+              "keyword": "Solaranlage Düsseldorf",
+              "position": 3,
+              "searchVolume": 1262,
+              "competition": 15,
+              "ctr": 0.15,
+              "estimatedClicks": 189
+            },
+            "Photovoltaik Düsseldorf": {
+              "keyword": "Photovoltaik Düsseldorf",
+              "position": 2,
+              "searchVolume": 713,
+              "competition": 6,
+              "ctr": 0.25,
+              "estimatedClicks": 178
+            },
+            "Solarteur Düsseldorf": {
+              "keyword": "Solarteur Düsseldorf",
+              "position": 1,
+              "searchVolume": 1515,
+              "competition": 23,
+              "ctr": 0.45,
+              "estimatedClicks": 682
+            },
+            "PV Anlage Düsseldorf": {
+              "keyword": "PV Anlage Düsseldorf",
+              "position": 1,
+              "searchVolume": 473,
+              "competition": 12,
+              "ctr": 0.45,
+              "estimatedClicks": 213
+            },
+            "Solarinstallation Düsseldorf": {
+              "keyword": "Solarinstallation Düsseldorf",
+              "position": 2,
+              "searchVolume": 391,
+              "competition": 12,
+              "ctr": 0.25,
+              "estimatedClicks": 98
+            }
+          },
+          "visibilityScore": 66.66666666666666,
+          "competitorAnalysis": [
+            {
+              "name": "SolarTec GmbH",
+              "localPackPosition": 1,
+              "reviewCount": 147,
+              "rating": "4.4",
+              "websiteTraffic": 3007
+            },
+            {
+              "name": "GreenEnergy Solutions",
+              "localPackPosition": 1,
+              "reviewCount": 145,
+              "rating": "4.8",
+              "websiteTraffic": 5398
+            },
+            {
+              "name": "PV Meister",
+              "localPackPosition": 2,
+              "reviewCount": 132,
+              "rating": "4.1",
+              "websiteTraffic": 2800
+            },
+            {
+              "name": "SunPower Installations",
+              "localPackPosition": 2,
+              "reviewCount": 110,
+              "rating": "5.0",
+              "websiteTraffic": 4140
+            }
+          ],
+          "localTraffic": 1538,
+          "gmbInsights": {
+            "totalViews": 10821,
+            "searchViews": 7562,
+            "mapViews": 2411,
+            "actions": {
+              "websiteClicks": 335,
+              "directions": 52,
+              "calls": 72,
+              "reviews": 23
+            },
+            "reviews": {
+              "total": 164,
+              "averageRating": "4.4",
+              "newReviews": 7
+            }
+          },
+          "timestamp": "2025-09-28T17:08:15.519Z"
+        },
+        "Leipzig": {
+          "city": "Leipzig",
+          "region": "Sachsen",
+          "population": 587000,
+          "localPackRankings": {
+            "ZOE Solar Leipzig": {
+              "keyword": "ZOE Solar Leipzig",
+              "position": 2,
+              "searchVolume": 1245,
+              "competition": 7,
+              "ctr": 0.25,
+              "estimatedClicks": 311
+            },
+            "Solaranlage Leipzig": {
+              "keyword": "Solaranlage Leipzig",
+              "position": 2,
+              "searchVolume": 303,
+              "competition": 18,
+              "ctr": 0.25,
+              "estimatedClicks": 76
+            },
+            "Photovoltaik Leipzig": {
+              "keyword": "Photovoltaik Leipzig",
+              "position": 3,
+              "searchVolume": 530,
+              "competition": 17,
+              "ctr": 0.15,
+              "estimatedClicks": 80
+            },
+            "Solarteur Leipzig": {
+              "keyword": "Solarteur Leipzig",
+              "position": 3,
+              "searchVolume": 1028,
+              "competition": 12,
+              "ctr": 0.15,
+              "estimatedClicks": 154
+            },
+            "PV Anlage Leipzig": {
+              "keyword": "PV Anlage Leipzig",
+              "position": 1,
+              "searchVolume": 465,
+              "competition": 8,
+              "ctr": 0.45,
+              "estimatedClicks": 209
+            },
+            "Solarinstallation Leipzig": {
+              "keyword": "Solarinstallation Leipzig",
+              "position": 2,
+              "searchVolume": 1181,
+              "competition": 16,
+              "ctr": 0.25,
+              "estimatedClicks": 295
+            }
+          },
+          "visibilityScore": 61.111111111111114,
+          "competitorAnalysis": [
+            {
+              "name": "SolarTec GmbH",
+              "localPackPosition": 2,
+              "reviewCount": 201,
+              "rating": "4.6",
+              "websiteTraffic": 5759
+            },
+            {
+              "name": "GreenEnergy Solutions",
+              "localPackPosition": 1,
+              "reviewCount": 151,
+              "rating": "4.1",
+              "websiteTraffic": 4122
+            },
+            {
+              "name": "PV Meister",
+              "localPackPosition": 1,
+              "reviewCount": 228,
+              "rating": "4.4",
+              "websiteTraffic": 4807
+            },
+            {
+              "name": "SunPower Installations",
+              "localPackPosition": 3,
+              "reviewCount": 112,
+              "rating": "4.5",
+              "websiteTraffic": 4455
+            }
+          ],
+          "localTraffic": 1125,
+          "gmbInsights": {
+            "totalViews": 11850,
+            "searchViews": 6298,
+            "mapViews": 4819,
+            "actions": {
+              "websiteClicks": 569,
+              "directions": 299,
+              "calls": 150,
+              "reviews": 58
+            },
+            "reviews": {
+              "total": 149,
+              "averageRating": "4.1",
+              "newReviews": 3
+            }
+          },
+          "timestamp": "2025-09-28T17:08:15.519Z"
+        },
+        "Dortmund": {
+          "city": "Dortmund",
+          "region": "Nordrhein-Westfalen",
+          "population": 588000,
+          "localPackRankings": {
+            "ZOE Solar Dortmund": {
+              "keyword": "ZOE Solar Dortmund",
+              "position": 3,
+              "searchVolume": 666,
+              "competition": 19,
+              "ctr": 0.15,
+              "estimatedClicks": 100
+            },
+            "Solaranlage Dortmund": {
+              "keyword": "Solaranlage Dortmund",
+              "position": 3,
+              "searchVolume": 670,
+              "competition": 13,
+              "ctr": 0.15,
+              "estimatedClicks": 101
+            },
+            "Photovoltaik Dortmund": {
+              "keyword": "Photovoltaik Dortmund",
+              "position": 1,
+              "searchVolume": 677,
+              "competition": 24,
+              "ctr": 0.45,
+              "estimatedClicks": 305
+            },
+            "Solarteur Dortmund": {
+              "keyword": "Solarteur Dortmund",
+              "position": 2,
+              "searchVolume": 382,
+              "competition": 11,
+              "ctr": 0.25,
+              "estimatedClicks": 96
+            },
+            "PV Anlage Dortmund": {
+              "keyword": "PV Anlage Dortmund",
+              "position": 3,
+              "searchVolume": 1053,
+              "competition": 22,
+              "ctr": 0.15,
+              "estimatedClicks": 158
+            },
+            "Solarinstallation Dortmund": {
+              "keyword": "Solarinstallation Dortmund",
+              "position": 3,
+              "searchVolume": 852,
+              "competition": 17,
+              "ctr": 0.15,
+              "estimatedClicks": 128
+            }
+          },
+          "visibilityScore": 50,
+          "competitorAnalysis": [
+            {
+              "name": "SolarTec GmbH",
+              "localPackPosition": 2,
+              "reviewCount": 168,
+              "rating": "4.3",
+              "websiteTraffic": 1442
+            },
+            {
+              "name": "GreenEnergy Solutions",
+              "localPackPosition": 3,
+              "reviewCount": 89,
+              "rating": "4.7",
+              "websiteTraffic": 3861
+            },
+            {
+              "name": "PV Meister",
+              "localPackPosition": 3,
+              "reviewCount": 174,
+              "rating": "4.7",
+              "websiteTraffic": 5539
+            },
+            {
+              "name": "SunPower Installations",
+              "localPackPosition": 3,
+              "reviewCount": 141,
+              "rating": "4.1",
+              "websiteTraffic": 4849
+            }
+          ],
+          "localTraffic": 888,
+          "gmbInsights": {
+            "totalViews": 7623,
+            "searchViews": 10417,
+            "mapViews": 4593,
+            "actions": {
+              "websiteClicks": 171,
+              "directions": 201,
+              "calls": 130,
+              "reviews": 30
+            },
+            "reviews": {
+              "total": 71,
+              "averageRating": "5.0",
+              "newReviews": 8
+            }
+          },
+          "timestamp": "2025-09-28T17:08:15.519Z"
+        },
+        "Essen": {
+          "city": "Essen",
+          "region": "Nordrhein-Westfalen",
+          "population": 583000,
+          "localPackRankings": {
+            "ZOE Solar Essen": {
+              "keyword": "ZOE Solar Essen",
+              "position": 2,
+              "searchVolume": 1141,
+              "competition": 24,
+              "ctr": 0.25,
+              "estimatedClicks": 285
+            },
+            "Solaranlage Essen": {
+              "keyword": "Solaranlage Essen",
+              "position": 2,
+              "searchVolume": 815,
+              "competition": 5,
+              "ctr": 0.25,
+              "estimatedClicks": 204
+            },
+            "Photovoltaik Essen": {
+              "keyword": "Photovoltaik Essen",
+              "position": 1,
+              "searchVolume": 845,
+              "competition": 8,
+              "ctr": 0.45,
+              "estimatedClicks": 380
+            },
+            "Solarteur Essen": {
+              "keyword": "Solarteur Essen",
+              "position": 1,
+              "searchVolume": 571,
+              "competition": 16,
+              "ctr": 0.45,
+              "estimatedClicks": 257
+            },
+            "PV Anlage Essen": {
+              "keyword": "PV Anlage Essen",
+              "position": 1,
+              "searchVolume": 733,
+              "competition": 5,
+              "ctr": 0.45,
+              "estimatedClicks": 330
+            },
+            "Solarinstallation Essen": {
+              "keyword": "Solarinstallation Essen",
+              "position": 1,
+              "searchVolume": 360,
+              "competition": 15,
+              "ctr": 0.45,
+              "estimatedClicks": 162
+            }
+          },
+          "visibilityScore": 88.8888888888889,
+          "competitorAnalysis": [
+            {
+              "name": "SolarTec GmbH",
+              "localPackPosition": 1,
+              "reviewCount": 146,
+              "rating": "4.1",
+              "websiteTraffic": 3857
+            },
+            {
+              "name": "GreenEnergy Solutions",
+              "localPackPosition": 1,
+              "reviewCount": 101,
+              "rating": "4.5",
+              "websiteTraffic": 2810
+            },
+            {
+              "name": "PV Meister",
+              "localPackPosition": 3,
+              "reviewCount": 181,
+              "rating": "4.9",
+              "websiteTraffic": 4865
+            },
+            {
+              "name": "SunPower Installations",
+              "localPackPosition": 1,
+              "reviewCount": 62,
+              "rating": "4.7",
+              "websiteTraffic": 2233
+            }
+          ],
+          "localTraffic": 1618,
+          "gmbInsights": {
+            "totalViews": 11357,
+            "searchViews": 10683,
+            "mapViews": 6984,
+            "actions": {
+              "websiteClicks": 570,
+              "directions": 331,
+              "calls": 143,
+              "reviews": 19
+            },
+            "reviews": {
+              "total": 198,
+              "averageRating": "4.6",
+              "newReviews": 3
+            }
+          },
+          "timestamp": "2025-09-28T17:08:15.520Z"
+        },
+        "Bremen": {
+          "city": "Bremen",
+          "region": "Bremen",
+          "population": 569000,
+          "localPackRankings": {
+            "ZOE Solar Bremen": {
+              "keyword": "ZOE Solar Bremen",
+              "position": 1,
+              "searchVolume": 403,
+              "competition": 21,
+              "ctr": 0.45,
+              "estimatedClicks": 181
+            },
+            "Solaranlage Bremen": {
+              "keyword": "Solaranlage Bremen",
+              "position": 2,
+              "searchVolume": 760,
+              "competition": 19,
+              "ctr": 0.25,
+              "estimatedClicks": 190
+            },
+            "Photovoltaik Bremen": {
+              "keyword": "Photovoltaik Bremen",
+              "position": 1,
+              "searchVolume": 1300,
+              "competition": 23,
+              "ctr": 0.45,
+              "estimatedClicks": 585
+            },
+            "Solarteur Bremen": {
+              "keyword": "Solarteur Bremen",
+              "position": 2,
+              "searchVolume": 372,
+              "competition": 19,
+              "ctr": 0.25,
+              "estimatedClicks": 93
+            },
+            "PV Anlage Bremen": {
+              "keyword": "PV Anlage Bremen",
+              "position": 1,
+              "searchVolume": 909,
+              "competition": 16,
+              "ctr": 0.45,
+              "estimatedClicks": 409
+            },
+            "Solarinstallation Bremen": {
+              "keyword": "Solarinstallation Bremen",
+              "position": 1,
+              "searchVolume": 607,
+              "competition": 6,
+              "ctr": 0.45,
+              "estimatedClicks": 273
+            }
+          },
+          "visibilityScore": 88.8888888888889,
+          "competitorAnalysis": [
+            {
+              "name": "SolarTec GmbH",
+              "localPackPosition": 1,
+              "reviewCount": 50,
+              "rating": "5.0",
+              "websiteTraffic": 4639
+            },
+            {
+              "name": "GreenEnergy Solutions",
+              "localPackPosition": 3,
+              "reviewCount": 241,
+              "rating": "4.3",
+              "websiteTraffic": 1904
+            },
+            {
+              "name": "PV Meister",
+              "localPackPosition": 3,
+              "reviewCount": 218,
+              "rating": "4.3",
+              "websiteTraffic": 3886
+            },
+            {
+              "name": "SunPower Installations",
+              "localPackPosition": 1,
+              "reviewCount": 177,
+              "rating": "4.4",
+              "websiteTraffic": 4607
+            }
+          ],
+          "localTraffic": 1731,
+          "gmbInsights": {
+            "totalViews": 10659,
+            "searchViews": 11171,
+            "mapViews": 3690,
+            "actions": {
+              "websiteClicks": 178,
+              "directions": 153,
+              "calls": 197,
+              "reviews": 29
+            },
+            "reviews": {
+              "total": 143,
+              "averageRating": "4.4",
+              "newReviews": 6
+            }
+          },
+          "timestamp": "2025-09-28T17:08:15.520Z"
+        },
+        "Dresden": {
+          "city": "Dresden",
+          "region": "Sachsen",
+          "population": 556000,
+          "localPackRankings": {
+            "ZOE Solar Dresden": {
+              "keyword": "ZOE Solar Dresden",
+              "position": 1,
+              "searchVolume": 1365,
+              "competition": 13,
+              "ctr": 0.45,
+              "estimatedClicks": 614
+            },
+            "Solaranlage Dresden": {
+              "keyword": "Solaranlage Dresden",
+              "position": 2,
+              "searchVolume": 1091,
+              "competition": 12,
+              "ctr": 0.25,
+              "estimatedClicks": 273
+            },
+            "Photovoltaik Dresden": {
+              "keyword": "Photovoltaik Dresden",
+              "position": 1,
+              "searchVolume": 831,
+              "competition": 5,
+              "ctr": 0.45,
+              "estimatedClicks": 374
+            },
+            "Solarteur Dresden": {
+              "keyword": "Solarteur Dresden",
+              "position": 2,
+              "searchVolume": 1367,
+              "competition": 20,
+              "ctr": 0.25,
+              "estimatedClicks": 342
+            },
+            "PV Anlage Dresden": {
+              "keyword": "PV Anlage Dresden",
+              "position": 2,
+              "searchVolume": 724,
+              "competition": 18,
+              "ctr": 0.25,
+              "estimatedClicks": 181
+            },
+            "Solarinstallation Dresden": {
+              "keyword": "Solarinstallation Dresden",
+              "position": 3,
+              "searchVolume": 1387,
+              "competition": 7,
+              "ctr": 0.15,
+              "estimatedClicks": 208
+            }
+          },
+          "visibilityScore": 72.22222222222223,
+          "competitorAnalysis": [
+            {
+              "name": "SolarTec GmbH",
+              "localPackPosition": 3,
+              "reviewCount": 136,
+              "rating": "4.9",
+              "websiteTraffic": 3477
+            },
+            {
+              "name": "GreenEnergy Solutions",
+              "localPackPosition": 1,
+              "reviewCount": 60,
+              "rating": "4.0",
+              "websiteTraffic": 5921
+            },
+            {
+              "name": "PV Meister",
+              "localPackPosition": 2,
+              "reviewCount": 206,
+              "rating": "4.8",
+              "websiteTraffic": 4268
+            },
+            {
+              "name": "SunPower Installations",
+              "localPackPosition": 2,
+              "reviewCount": 171,
+              "rating": "4.1",
+              "websiteTraffic": 2596
+            }
+          ],
+          "localTraffic": 1992,
+          "gmbInsights": {
+            "totalViews": 12658,
+            "searchViews": 9171,
+            "mapViews": 3367,
+            "actions": {
+              "websiteClicks": 379,
+              "directions": 145,
+              "calls": 95,
+              "reviews": 37
+            },
+            "reviews": {
+              "total": 126,
+              "averageRating": "4.8",
+              "newReviews": 2
+            }
+          },
+          "timestamp": "2025-09-28T17:08:15.520Z"
+        },
+        "Hannover": {
+          "city": "Hannover",
+          "region": "Niedersachsen",
+          "population": 538000,
+          "localPackRankings": {
+            "ZOE Solar Hannover": {
+              "keyword": "ZOE Solar Hannover",
+              "position": 3,
+              "searchVolume": 894,
+              "competition": 13,
+              "ctr": 0.15,
+              "estimatedClicks": 134
+            },
+            "Solaranlage Hannover": {
+              "keyword": "Solaranlage Hannover",
+              "position": 3,
+              "searchVolume": 844,
+              "competition": 18,
+              "ctr": 0.15,
+              "estimatedClicks": 127
+            },
+            "Photovoltaik Hannover": {
+              "keyword": "Photovoltaik Hannover",
+              "position": 2,
+              "searchVolume": 660,
+              "competition": 18,
+              "ctr": 0.25,
+              "estimatedClicks": 165
+            },
+            "Solarteur Hannover": {
+              "keyword": "Solarteur Hannover",
+              "position": 2,
+              "searchVolume": 1185,
+              "competition": 18,
+              "ctr": 0.25,
+              "estimatedClicks": 296
+            },
+            "PV Anlage Hannover": {
+              "keyword": "PV Anlage Hannover",
+              "position": 2,
+              "searchVolume": 1222,
+              "competition": 17,
+              "ctr": 0.25,
+              "estimatedClicks": 306
+            },
+            "Solarinstallation Hannover": {
+              "keyword": "Solarinstallation Hannover",
+              "position": 1,
+              "searchVolume": 899,
+              "competition": 20,
+              "ctr": 0.45,
+              "estimatedClicks": 405
+            }
+          },
+          "visibilityScore": 61.111111111111114,
+          "competitorAnalysis": [
+            {
+              "name": "SolarTec GmbH",
+              "localPackPosition": 3,
+              "reviewCount": 59,
+              "rating": "4.8",
+              "websiteTraffic": 5894
+            },
+            {
+              "name": "GreenEnergy Solutions",
+              "localPackPosition": 2,
+              "reviewCount": 146,
+              "rating": "5.0",
+              "websiteTraffic": 4704
+            },
+            {
+              "name": "PV Meister",
+              "localPackPosition": 3,
+              "reviewCount": 232,
+              "rating": "4.9",
+              "websiteTraffic": 2030
+            },
+            {
+              "name": "SunPower Installations",
+              "localPackPosition": 3,
+              "reviewCount": 128,
+              "rating": "4.6",
+              "websiteTraffic": 1699
+            }
+          ],
+          "localTraffic": 1433,
+          "gmbInsights": {
+            "totalViews": 8965,
+            "searchViews": 6028,
+            "mapViews": 2248,
+            "actions": {
+              "websiteClicks": 104,
+              "directions": 274,
+              "calls": 174,
+              "reviews": 42
+            },
+            "reviews": {
+              "total": 194,
+              "averageRating": "4.2",
+              "newReviews": 2
+            }
+          },
+          "timestamp": "2025-09-28T17:08:15.520Z"
+        },
+        "Nürnberg": {
+          "city": "Nürnberg",
+          "region": "Bayern",
+          "population": 518000,
+          "localPackRankings": {
+            "ZOE Solar Nürnberg": {
+              "keyword": "ZOE Solar Nürnberg",
+              "position": 3,
+              "searchVolume": 377,
+              "competition": 21,
+              "ctr": 0.15,
+              "estimatedClicks": 57
+            },
+            "Solaranlage Nürnberg": {
+              "keyword": "Solaranlage Nürnberg",
+              "position": 3,
+              "searchVolume": 913,
+              "competition": 23,
+              "ctr": 0.15,
+              "estimatedClicks": 137
+            },
+            "Photovoltaik Nürnberg": {
+              "keyword": "Photovoltaik Nürnberg",
+              "position": 1,
+              "searchVolume": 979,
+              "competition": 23,
+              "ctr": 0.45,
+              "estimatedClicks": 441
+            },
+            "Solarteur Nürnberg": {
+              "keyword": "Solarteur Nürnberg",
+              "position": 2,
+              "searchVolume": 787,
+              "competition": 10,
+              "ctr": 0.25,
+              "estimatedClicks": 197
+            },
+            "PV Anlage Nürnberg": {
+              "keyword": "PV Anlage Nürnberg",
+              "position": 1,
+              "searchVolume": 562,
+              "competition": 7,
+              "ctr": 0.45,
+              "estimatedClicks": 253
+            },
+            "Solarinstallation Nürnberg": {
+              "keyword": "Solarinstallation Nürnberg",
+              "position": 3,
+              "searchVolume": 873,
+              "competition": 23,
+              "ctr": 0.15,
+              "estimatedClicks": 131
+            }
+          },
+          "visibilityScore": 61.111111111111114,
+          "competitorAnalysis": [
+            {
+              "name": "SolarTec GmbH",
+              "localPackPosition": 2,
+              "reviewCount": 112,
+              "rating": "4.1",
+              "websiteTraffic": 1047
+            },
+            {
+              "name": "GreenEnergy Solutions",
+              "localPackPosition": 1,
+              "reviewCount": 115,
+              "rating": "4.4",
+              "websiteTraffic": 1157
+            },
+            {
+              "name": "PV Meister",
+              "localPackPosition": 2,
+              "reviewCount": 137,
+              "rating": "4.6",
+              "websiteTraffic": 4053
+            },
+            {
+              "name": "SunPower Installations",
+              "localPackPosition": 2,
+              "reviewCount": 214,
+              "rating": "4.2",
+              "websiteTraffic": 1550
+            }
+          ],
+          "localTraffic": 1216,
+          "gmbInsights": {
+            "totalViews": 12383,
+            "searchViews": 9929,
+            "mapViews": 5340,
+            "actions": {
+              "websiteClicks": 119,
+              "directions": 249,
+              "calls": 60,
+              "reviews": 26
+            },
+            "reviews": {
+              "total": 80,
+              "averageRating": "4.9",
+              "newReviews": 4
+            }
+          },
+          "timestamp": "2025-09-28T17:08:15.520Z"
+        },
+        "Duisburg": {
+          "city": "Duisburg",
+          "region": "Nordrhein-Westfalen",
+          "population": 498000,
+          "localPackRankings": {
+            "ZOE Solar Duisburg": {
+              "keyword": "ZOE Solar Duisburg",
+              "position": 2,
+              "searchVolume": 1106,
+              "competition": 23,
+              "ctr": 0.25,
+              "estimatedClicks": 277
+            },
+            "Solaranlage Duisburg": {
+              "keyword": "Solaranlage Duisburg",
+              "position": 3,
+              "searchVolume": 970,
+              "competition": 14,
+              "ctr": 0.15,
+              "estimatedClicks": 146
+            },
+            "Photovoltaik Duisburg": {
+              "keyword": "Photovoltaik Duisburg",
+              "position": 1,
+              "searchVolume": 997,
+              "competition": 12,
+              "ctr": 0.45,
+              "estimatedClicks": 449
+            },
+            "Solarteur Duisburg": {
+              "keyword": "Solarteur Duisburg",
+              "position": 2,
+              "searchVolume": 523,
+              "competition": 23,
+              "ctr": 0.25,
+              "estimatedClicks": 131
+            },
+            "PV Anlage Duisburg": {
+              "keyword": "PV Anlage Duisburg",
+              "position": 2,
+              "searchVolume": 628,
+              "competition": 24,
+              "ctr": 0.25,
+              "estimatedClicks": 157
+            },
+            "Solarinstallation Duisburg": {
+              "keyword": "Solarinstallation Duisburg",
+              "position": 2,
+              "searchVolume": 355,
+              "competition": 21,
+              "ctr": 0.25,
+              "estimatedClicks": 89
+            }
+          },
+          "visibilityScore": 66.66666666666666,
+          "competitorAnalysis": [
+            {
+              "name": "SolarTec GmbH",
+              "localPackPosition": 2,
+              "reviewCount": 150,
+              "rating": "4.4",
+              "websiteTraffic": 3936
+            },
+            {
+              "name": "GreenEnergy Solutions",
+              "localPackPosition": 2,
+              "reviewCount": 146,
+              "rating": "4.8",
+              "websiteTraffic": 5858
+            },
+            {
+              "name": "PV Meister",
+              "localPackPosition": 3,
+              "reviewCount": 77,
+              "rating": "4.7",
+              "websiteTraffic": 2441
+            },
+            {
+              "name": "SunPower Installations",
+              "localPackPosition": 1,
+              "reviewCount": 51,
+              "rating": "4.4",
+              "websiteTraffic": 2506
+            }
+          ],
+          "localTraffic": 1249,
+          "gmbInsights": {
+            "totalViews": 7950,
+            "searchViews": 9773,
+            "mapViews": 2547,
+            "actions": {
+              "websiteClicks": 296,
+              "directions": 68,
+              "calls": 167,
+              "reviews": 14
+            },
+            "reviews": {
+              "total": 138,
+              "averageRating": "4.9",
+              "newReviews": 8
+            }
+          },
+          "timestamp": "2025-09-28T17:08:15.520Z"
+        }
+      },
+      "recommendations": [
+        {
+          "priority": "high",
+          "category": "reputation",
+          "title": "GMB-Bewertungen verbessern",
+          "description": "Durchschnittliche Bewertung: 4.5. Fordern Sie mehr Bewertungen und verbessern Sie Service.",
+          "impact": "high",
+          "effort": "medium"
+        }
+      ],
+      "summary": {
+        "totalCities": 15,
+        "avgVisibilityScore": 67.03703703703704,
+        "totalLocalTraffic": 36075,
+        "marketCoverage": 86.66666666666667,
+        "gmbPerformance": {
+          "totalViews": 155476,
+          "websiteClicks": 4861,
+          "calls": 2055,
+          "avgRating": 4.46
+        },
+        "alerts": 1,
+        "opportunities": 2
+      }
+    },
+    "aeo": {
+      "timestamp": "2025-09-28T17:08:15.524Z",
+      "kpis": {
+        "avgEntityAuthority": 75.75,
+        "avgEntityStrengthScore": 77.75,
+        "knowledgePanelsPresent": 3,
+        "knowledgePanelCompleteness": 88.33333333333333,
+        "featuredSnippetsOwned": 0,
+        "knowledgePanelsInSERP": 3,
+        "avgCompetitiveAdvantage": 10.625,
+        "totalEntityRelationships": 10,
+        "avgRelationshipStrength": 84.9375,
+        "timestamp": "2025-09-28T17:08:15.524Z"
+      },
+      "entities": {
+        "ZOE Solar": {
+          "name": "ZOE Solar",
+          "type": "SolarEnergyCompany",
+          "authority": 85,
+          "mentions": 1250,
+          "knowledgePanel": {
+            "present": true,
+            "completeness": 92,
+            "lastUpdated": "2025-09-09T02:27:45.419Z",
+            "features": [
+              "Logo",
+              "Description",
+              "Contact Info",
+              "Website",
+              "Social Media",
+              "Reviews"
+            ]
+          },
+          "searchFeatures": {
+            "featuredSnippet": {
+              "present": true,
+              "position": 1,
+              "topic": "Solar Installation"
+            },
+            "localPack": {
+              "present": true,
+              "position": 2
+            },
+            "knowledgePanel": {
+              "present": true,
+              "expanded": true
+            },
+            "instantAnswer": {
+              "present": false
+            }
+          },
+          "entityRelationships": [
+            {
+              "entity": "Solar Energy",
+              "strength": 95,
+              "type": "industry"
+            },
+            {
+              "entity": "Renewable Energy",
+              "strength": 88,
+              "type": "industry"
+            },
+            {
+              "entity": "Photovoltaics",
+              "strength": 92,
+              "type": "product"
+            },
+            {
+              "entity": "Germany",
+              "strength": 78,
+              "type": "location"
+            }
+          ],
+          "entityStrengthScore": 100
+        },
+        "Photovoltaik": {
+          "name": "Photovoltaik",
+          "type": "Technology",
+          "authority": 78,
+          "mentions": 2100,
+          "knowledgePanel": {
+            "present": true,
+            "completeness": 88,
+            "features": [
+              "Description",
+              "History",
+              "Applications",
+              "Benefits"
+            ]
+          },
+          "searchFeatures": {
+            "featuredSnippet": {
+              "present": true,
+              "position": 1,
+              "topic": "What is Photovoltaics"
+            },
+            "knowledgePanel": {
+              "present": true,
+              "expanded": false
+            },
+            "localPack": {
+              "present": false
+            },
+            "instantAnswer": {
+              "present": false
+            }
+          },
+          "entityRelationships": [
+            {
+              "entity": "ZOE Solar",
+              "strength": 65,
+              "type": "provider"
+            },
+            {
+              "entity": "Solar Energy",
+              "strength": 98,
+              "type": "category"
+            }
+          ],
+          "entityStrengthScore": 97
+        },
+        "Solaranlage": {
+          "name": "Solaranlage",
+          "type": "Product",
+          "authority": 72,
+          "mentions": 1800,
+          "knowledgePanel": {
+            "present": true,
+            "completeness": 85,
+            "features": [
+              "Description",
+              "Types",
+              "Components",
+              "Installation"
+            ]
+          },
+          "searchFeatures": {
+            "featuredSnippet": {
+              "present": false
+            },
+            "knowledgePanel": {
+              "present": true,
+              "expanded": false
+            },
+            "localPack": {
+              "present": false
+            },
+            "instantAnswer": {
+              "present": false
+            }
+          },
+          "entityRelationships": [
+            {
+              "entity": "ZOE Solar",
+              "strength": 82,
+              "type": "provider"
+            },
+            {
+              "entity": "Photovoltaik",
+              "strength": 95,
+              "type": "technology"
+            }
+          ],
+          "entityStrengthScore": 78
+        },
+        "Elektroauto Ladestation": {
+          "name": "Elektroauto Ladestation",
+          "type": "Product",
+          "authority": 68,
+          "mentions": 950,
+          "knowledgePanel": {
+            "present": false,
+            "completeness": 0
+          },
+          "searchFeatures": {
+            "featuredSnippet": {
+              "present": false
+            },
+            "knowledgePanel": {
+              "present": false
+            },
+            "localPack": {
+              "present": false
+            },
+            "instantAnswer": {
+              "present": false
+            }
+          },
+          "entityRelationships": [
+            {
+              "entity": "ZOE Solar",
+              "strength": 75,
+              "type": "provider"
+            },
+            {
+              "entity": "Electric Vehicle",
+              "strength": 88,
+              "type": "category"
+            }
+          ],
+          "entityStrengthScore": 36
+        }
+      },
+      "aeoQueries": {
+        "Was ist Photovoltaik": {
+          "query": "Was ist Photovoltaik",
+          "searchVolume": 4934,
+          "features": {
+            "featuredSnippet": {
+              "present": false,
+              "position": 1,
+              "source": "Wikipedia/Other"
+            },
+            "knowledgePanel": {
+              "present": false,
+              "entity": "ZOE Solar",
+              "expanded": false
+            },
+            "localPack": {
+              "present": false,
+              "position": 3
+            },
+            "peopleAlsoAsk": {
+              "present": false,
+              "questions": 5
+            },
+            "relatedSearches": {
+              "present": true,
+              "count": 9
+            }
+          },
+          "competitiveAdvantage": 0,
+          "timestamp": "2025-09-28T17:08:15.523Z"
+        },
+        "Wie funktioniert eine Solaranlage": {
+          "query": "Wie funktioniert eine Solaranlage",
+          "searchVolume": 5413,
+          "features": {
+            "featuredSnippet": {
+              "present": false,
+              "position": 2,
+              "source": "Wikipedia/Other"
+            },
+            "knowledgePanel": {
+              "present": false,
+              "entity": "ZOE Solar",
+              "expanded": false
+            },
+            "localPack": {
+              "present": false,
+              "position": 3
+            },
+            "peopleAlsoAsk": {
+              "present": false,
+              "questions": 4
+            },
+            "relatedSearches": {
+              "present": true,
+              "count": 8
+            }
+          },
+          "competitiveAdvantage": 0,
+          "timestamp": "2025-09-28T17:08:15.523Z"
+        },
+        "Solaranlage Kosten": {
+          "query": "Solaranlage Kosten",
+          "searchVolume": 3993,
+          "features": {
+            "featuredSnippet": {
+              "present": true,
+              "position": 3,
+              "source": "Wikipedia/Other"
+            },
+            "knowledgePanel": {
+              "present": true,
+              "entity": "Photovoltaik",
+              "expanded": false
+            },
+            "localPack": {
+              "present": true,
+              "position": 1
+            },
+            "peopleAlsoAsk": {
+              "present": false,
+              "questions": 6
+            },
+            "relatedSearches": {
+              "present": true,
+              "count": 5
+            }
+          },
+          "competitiveAdvantage": 10,
+          "timestamp": "2025-09-28T17:08:15.523Z"
+        },
+        "ZOE Solar Erfahrungen": {
+          "query": "ZOE Solar Erfahrungen",
+          "searchVolume": 1301,
+          "features": {
+            "featuredSnippet": {
+              "present": true,
+              "position": 2,
+              "source": "Wikipedia/Other"
+            },
+            "knowledgePanel": {
+              "present": true,
+              "entity": "Photovoltaik",
+              "expanded": false
+            },
+            "localPack": {
+              "present": true,
+              "position": 2
+            },
+            "peopleAlsoAsk": {
+              "present": false,
+              "questions": 5
+            },
+            "relatedSearches": {
+              "present": true,
+              "count": 5
+            }
+          },
+          "competitiveAdvantage": 10,
+          "timestamp": "2025-09-28T17:08:15.523Z"
+        },
+        "Beste Solaranlagen 2024": {
+          "query": "Beste Solaranlagen 2024",
+          "searchVolume": 5711,
+          "features": {
+            "featuredSnippet": {
+              "present": true,
+              "position": 1,
+              "source": "Wikipedia/Other"
+            },
+            "knowledgePanel": {
+              "present": false,
+              "entity": "Photovoltaik",
+              "expanded": true
+            },
+            "localPack": {
+              "present": false,
+              "position": 2
+            },
+            "peopleAlsoAsk": {
+              "present": true,
+              "questions": 6
+            },
+            "relatedSearches": {
+              "present": true,
+              "count": 9
+            }
+          },
+          "competitiveAdvantage": 20,
+          "timestamp": "2025-09-28T17:08:15.523Z"
+        },
+        "Photovoltaik Förderungen": {
+          "query": "Photovoltaik Förderungen",
+          "searchVolume": 5936,
+          "features": {
+            "featuredSnippet": {
+              "present": true,
+              "position": 2,
+              "source": "Wikipedia/Other"
+            },
+            "knowledgePanel": {
+              "present": false,
+              "entity": "ZOE Solar",
+              "expanded": false
+            },
+            "localPack": {
+              "present": true,
+              "position": 2
+            },
+            "peopleAlsoAsk": {
+              "present": false,
+              "questions": 6
+            },
+            "relatedSearches": {
+              "present": true,
+              "count": 5
+            }
+          },
+          "competitiveAdvantage": 10,
+          "timestamp": "2025-09-28T17:08:15.523Z"
+        },
+        "Solar Installation Berlin": {
+          "query": "Solar Installation Berlin",
+          "searchVolume": 5031,
+          "features": {
+            "featuredSnippet": {
+              "present": false,
+              "position": 1,
+              "source": "Wikipedia/Other"
+            },
+            "knowledgePanel": {
+              "present": true,
+              "entity": "ZOE Solar",
+              "expanded": false
+            },
+            "localPack": {
+              "present": true,
+              "position": 2
+            },
+            "peopleAlsoAsk": {
+              "present": false,
+              "questions": 5
+            },
+            "relatedSearches": {
+              "present": true,
+              "count": 9
+            }
+          },
+          "competitiveAdvantage": 30,
+          "timestamp": "2025-09-28T17:08:15.523Z"
+        },
+        "Elektroauto laden zu Hause": {
+          "query": "Elektroauto laden zu Hause",
+          "searchVolume": 1778,
+          "features": {
+            "featuredSnippet": {
+              "present": false,
+              "position": 3,
+              "source": "Wikipedia/Other"
+            },
+            "knowledgePanel": {
+              "present": false,
+              "entity": "ZOE Solar",
+              "expanded": false
+            },
+            "localPack": {
+              "present": false,
+              "position": 1
+            },
+            "peopleAlsoAsk": {
+              "present": true,
+              "questions": 3
+            },
+            "relatedSearches": {
+              "present": true,
+              "count": 10
+            }
+          },
+          "competitiveAdvantage": 5,
+          "timestamp": "2025-09-28T17:08:15.523Z"
+        }
+      },
+      "recommendations": [
+        {
+          "priority": "high",
+          "category": "knowledge-graph",
+          "title": "Knowledge Panel Präsenz erhöhen",
+          "description": "3/4 Entities haben Knowledge Panels. Optimieren Sie Entity-Daten.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "priority": "medium",
+          "category": "content-optimization",
+          "title": "Featured Snippets gewinnen",
+          "description": "Nur 0 Featured Snippets in Besitz. Optimieren Sie Content für häufige Fragen.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "priority": "medium",
+          "category": "entity-optimization",
+          "title": "Entity \"Elektroauto Ladestation\" stärken",
+          "description": "Entity Strength Score: 36. Mehr strukturierte Daten und Backlinks benötigt.",
+          "impact": "medium",
+          "effort": "medium",
+          "entity": "Elektroauto Ladestation"
+        }
+      ],
+      "summary": {
+        "totalEntities": 4,
+        "avgEntityAuthority": 75.75,
+        "avgEntityStrengthScore": 77.75,
+        "knowledgePanelsPresent": 3,
+        "featuredSnippetsOwned": 0,
+        "avgCompetitiveAdvantage": 10.625,
+        "alerts": 1,
+        "opportunities": 2
+      }
+    },
+    "analytics": {
+      "timestamp": "2025-09-28T17:08:15.527Z",
+      "dateRange": {
+        "start": "2025-08-29",
+        "end": "2025-09-28"
+      },
+      "summary": {
+        "totalUsers": 46062,
+        "totalSessions": 59520,
+        "totalPageViews": 139736,
+        "organicTraffic": 51803,
+        "searchConsoleClicks": 15192,
+        "searchConsoleImpressions": 738633,
+        "gmbTotalViews": 34146,
+        "gmbActions": {
+          "websiteClicks": 386,
+          "directions": 772,
+          "calls": 306,
+          "reviews": 83
+        },
+        "conversions": 1691,
+        "revenue": 522780.61,
+        "insightsCount": 1
+      },
+      "kpis": {
+        "organicTrafficGrowth": -4,
+        "conversionRate": 2.8,
+        "bounceRate": 62.81,
+        "avgPosition": 22.94,
+        "ctr": 4.7,
+        "impressionsGrowth": -3,
+        "gmbViewsGrowth": -2,
+        "gmbRating": 4.2,
+        "gmbActionsGrowth": 14
+      },
+      "crossPlatformInsights": {
+        "organicVsGMB": {
+          "correlation": 0.95,
+          "insight": "Starke Korrelation zwischen organischen Suchen und GMB-Sichtbarkeit"
+        },
+        "searchVsConversion": {
+          "correlation": 0.62,
+          "insight": "Such-Performance korreliert mit Conversion-Rate"
+        },
+        "localVsOrganic": {
+          "correlation": 0.44,
+          "insight": "Lokale Sichtbarkeit beeinflusst organische Rankings"
+        }
+      },
+      "dataSources": {
+        "googleAnalytics": {
+          "overview": {
+            "users": 46062,
+            "sessions": 59520,
+            "pageViews": 139736,
+            "avgSessionDuration": 204177,
+            "bounceRate": 62.81,
+            "newUsers": 29875
+          },
+          "trafficSources": {
+            "organic": {
+              "sessions": 51803,
+              "percentage": 87.03,
+              "users": 36035,
+              "newUsers": 29439
+            },
+            "direct": {
+              "sessions": 8655,
+              "percentage": 14.54,
+              "users": 7252,
+              "newUsers": 5021
+            },
+            "referral": {
+              "sessions": 8813,
+              "percentage": 14.81,
+              "users": 5633,
+              "newUsers": 4585
+            },
+            "social": {
+              "sessions": 5484,
+              "percentage": 9.21,
+              "users": 4299,
+              "newUsers": 3549
+            }
+          },
+          "goals": {
+            "totalConversions": 1691,
+            "conversionRate": 2.8,
+            "goalValue": 522780.61
+          },
+          "devices": {
+            "desktop": {
+              "sessions": 33647,
+              "percentage": 56.53
+            },
+            "mobile": {
+              "sessions": 41286,
+              "percentage": 69.36
+            },
+            "tablet": {
+              "sessions": 11141,
+              "percentage": 18.72
+            }
+          },
+          "topPages": [
+            {
+              "path": "/",
+              "pageViews": 5195,
+              "uniquePageViews": 3661,
+              "avgTimeOnPage": 66,
+              "bounceRate": 39,
+              "exitRate": 55
+            },
+            {
+              "path": "/photovoltaik",
+              "pageViews": 4356,
+              "uniquePageViews": 4276,
+              "avgTimeOnPage": 178,
+              "bounceRate": 23,
+              "exitRate": 59
+            },
+            {
+              "path": "/agri-pv",
+              "pageViews": 4277,
+              "uniquePageViews": 3744,
+              "avgTimeOnPage": 78,
+              "bounceRate": 23,
+              "exitRate": 73
+            },
+            {
+              "path": "/speicher",
+              "pageViews": 4903,
+              "uniquePageViews": 5985,
+              "avgTimeOnPage": 138,
+              "bounceRate": 29,
+              "exitRate": 47
+            },
+            {
+              "path": "/kontakt",
+              "pageViews": 7664,
+              "uniquePageViews": 5127,
+              "avgTimeOnPage": 171,
+              "bounceRate": 48,
+              "exitRate": 40
+            },
+            {
+              "path": "/preise",
+              "pageViews": 5309,
+              "uniquePageViews": 4533,
+              "avgTimeOnPage": 115,
+              "bounceRate": 53,
+              "exitRate": 51
+            },
+            {
+              "path": "/elektroauto-ladestation",
+              "pageViews": 8737,
+              "uniquePageViews": 4722,
+              "avgTimeOnPage": 151,
+              "bounceRate": 36,
+              "exitRate": 34
+            }
+          ],
+          "dateRange": {
+            "start": "2025-08-29",
+            "end": "2025-09-28"
+          }
+        },
+        "googleSearchConsole": {
+          "overview": {
+            "totalClicks": 15192,
+            "totalImpressions": 738633,
+            "avgCTR": 4.7,
+            "avgPosition": 22.94
+          },
+          "queries": [
+            {
+              "query": "photovoltaik",
+              "clicks": 772,
+              "impressions": 6147,
+              "ctr": 1.83,
+              "position": 6.86
+            },
+            {
+              "query": "solaranlage",
+              "clicks": 544,
+              "impressions": 9267,
+              "ctr": 3.13,
+              "position": 13.77
+            },
+            {
+              "query": "pv anlage",
+              "clicks": 883,
+              "impressions": 6066,
+              "ctr": 2.1,
+              "position": 10.23
+            },
+            {
+              "query": "solar installation",
+              "clicks": 513,
+              "impressions": 11821,
+              "ctr": 3.55,
+              "position": 6.6
+            },
+            {
+              "query": "zoe solar",
+              "clicks": 635,
+              "impressions": 11627,
+              "ctr": 3.15,
+              "position": 13.69
+            },
+            {
+              "query": "photovoltaik kosten",
+              "clicks": 546,
+              "impressions": 16673,
+              "ctr": 3.15,
+              "position": 19.36
+            },
+            {
+              "query": "solaranlage berlin",
+              "clicks": 739,
+              "impressions": 10512,
+              "ctr": 4.73,
+              "position": 19.9
+            },
+            {
+              "query": "pv speicher",
+              "clicks": 917,
+              "impressions": 16585,
+              "ctr": 2.81,
+              "position": 12.85
+            },
+            {
+              "query": "elektroauto laden",
+              "clicks": 982,
+              "impressions": 10976,
+              "ctr": 4.02,
+              "position": 8.1
+            },
+            {
+              "query": "agri pv",
+              "clicks": 523,
+              "impressions": 12279,
+              "ctr": 3.52,
+              "position": 6.5
+            },
+            {
+              "query": "solarteur",
+              "clicks": 879,
+              "impressions": 12549,
+              "ctr": 5.76,
+              "position": 12.32
+            },
+            {
+              "query": "photovoltaik förderung",
+              "clicks": 233,
+              "impressions": 16926,
+              "ctr": 4.6,
+              "position": 10.73
+            }
+          ],
+          "pages": [
+            {
+              "page": "/",
+              "clicks": 206,
+              "impressions": 4675,
+              "ctr": 1.83,
+              "position": 10.33
+            },
+            {
+              "page": "/photovoltaik",
+              "clicks": 410,
+              "impressions": 12814,
+              "ctr": 4.06,
+              "position": 16.06
+            },
+            {
+              "page": "/agri-pv",
+              "clicks": 330,
+              "impressions": 3048,
+              "ctr": 3.16,
+              "position": 14.18
+            },
+            {
+              "page": "/speicher",
+              "clicks": 340,
+              "impressions": 10232,
+              "ctr": 2.69,
+              "position": 10.71
+            },
+            {
+              "page": "/kontakt",
+              "clicks": 150,
+              "impressions": 6090,
+              "ctr": 1.76,
+              "position": 11.21
+            },
+            {
+              "page": "/preise",
+              "clicks": 412,
+              "impressions": 6460,
+              "ctr": 3.39,
+              "position": 8.68
+            }
+          ],
+          "countries": [
+            {
+              "country": "Germany",
+              "clicks": 140,
+              "impressions": 2508,
+              "ctr": 3.11,
+              "position": 14.26
+            },
+            {
+              "country": "Austria",
+              "clicks": 391,
+              "impressions": 3674,
+              "ctr": 3.88,
+              "position": 18.25
+            },
+            {
+              "country": "Switzerland",
+              "clicks": 470,
+              "impressions": 11727,
+              "ctr": 2.59,
+              "position": 15.08
+            },
+            {
+              "country": "Netherlands",
+              "clicks": 121,
+              "impressions": 5563,
+              "ctr": 4.67,
+              "position": 12.08
+            },
+            {
+              "country": "Belgium",
+              "clicks": 211,
+              "impressions": 8773,
+              "ctr": 4.82,
+              "position": 19.53
+            }
+          ],
+          "devices": {
+            "desktop": {
+              "clicks": 6315,
+              "impressions": 347270,
+              "ctr": 1.82,
+              "position": 19.13
+            },
+            "mobile": {
+              "clicks": 7598,
+              "impressions": 699395,
+              "ctr": 1.09,
+              "position": 23.2
+            },
+            "tablet": {
+              "clicks": 2088,
+              "impressions": 76730,
+              "ctr": 2.72,
+              "position": 23.79
+            }
+          },
+          "dateRange": {
+            "start": "2025-08-29",
+            "end": "2025-09-28"
+          }
+        },
+        "googleMyBusiness": {
+          "overview": {
+            "totalViews": 34146,
+            "searchViews": 24618,
+            "mapViews": 14187,
+            "actions": {
+              "websiteClicks": 386,
+              "directions": 772,
+              "calls": 306,
+              "reviews": 83
+            }
+          },
+          "reviews": {
+            "total": 212,
+            "averageRating": "4.2",
+            "newReviews": 5,
+            "ratingDistribution": {
+              "1": 5,
+              "2": 5,
+              "3": 17,
+              "4": 41,
+              "5": 48
+            }
+          },
+          "photos": {
+            "total": 20,
+            "views": 5737
+          },
+          "dateRange": {
+            "start": "2025-08-29",
+            "end": "2025-09-28"
+          }
+        }
+      },
+      "insights": [
+        {
+          "type": "insight",
+          "category": "correlation",
+          "title": "Starke organisch-lokale Korrelation",
+          "description": "Organische und lokale Sichtbarkeit korrelieren stark. Synergien nutzen.",
+          "impact": "medium",
+          "recommendation": "Integrierte SEO- und Local-SEO-Strategie entwickeln."
+        }
+      ]
+    }
+  },
+  "summary": {
+    "totalComponents": 4,
+    "successfulComponents": 4,
+    "failedComponents": 0,
+    "reportsGenerated": 0,
+    "keyMetrics": {
+      "seo": {
+        "avgPosition": 19.64566929133858,
+        "organicTraffic": 11037,
+        "conversions": 508
+      },
+      "geo": {
+        "visibilityScore": 67.03703703703704,
+        "localTraffic": 36075,
+        "gmbViews": 155476
+      },
+      "aeo": {
+        "entityStrength": 77.75,
+        "featuredSnippets": 0,
+        "knowledgePanels": 3
+      },
+      "analytics": {
+        "totalUsers": 46062,
+        "conversions": 1691,
+        "revenue": 522780.61
+      }
+    },
+    "alerts": [],
+    "recommendations": [
+      {
+        "priority": "high",
+        "category": "ranking",
+        "title": "Durchschnittliche Position verbessern",
+        "description": "Aktuelle Position: 19.6. Fokussieren Sie sich auf Content-Optimierung und Backlink-Aufbau.",
+        "impact": "high",
+        "effort": "medium"
+      },
+      {
+        "priority": "medium",
+        "category": "content",
+        "title": "Long-Tail Keywords optimieren",
+        "description": "60 Keywords ranken außerhalb der Top 20. Erstellen Sie spezifischen Content.",
+        "impact": "medium",
+        "effort": "medium"
+      },
+      {
+        "priority": "high",
+        "category": "reputation",
+        "title": "GMB-Bewertungen verbessern",
+        "description": "Durchschnittliche Bewertung: 4.5. Fordern Sie mehr Bewertungen und verbessern Sie Service.",
+        "impact": "high",
+        "effort": "medium"
+      },
+      {
+        "priority": "high",
+        "category": "knowledge-graph",
+        "title": "Knowledge Panel Präsenz erhöhen",
+        "description": "3/4 Entities haben Knowledge Panels. Optimieren Sie Entity-Daten.",
+        "impact": "high",
+        "effort": "medium"
+      },
+      {
+        "priority": "medium",
+        "category": "content-optimization",
+        "title": "Featured Snippets gewinnen",
+        "description": "Nur 0 Featured Snippets in Besitz. Optimieren Sie Content für häufige Fragen.",
+        "impact": "medium",
+        "effort": "medium"
+      },
+      {
+        "priority": "medium",
+        "category": "entity-optimization",
+        "title": "Entity \"Elektroauto Ladestation\" stärken",
+        "description": "Entity Strength Score: 36. Mehr strukturierte Daten und Backlinks benötigt.",
+        "impact": "medium",
+        "effort": "medium",
+        "entity": "Elektroauto Ladestation"
+      }
+    ]
+  },
+  "errors": []
+}

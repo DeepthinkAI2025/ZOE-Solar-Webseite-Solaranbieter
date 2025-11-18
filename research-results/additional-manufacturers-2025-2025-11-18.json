@@ -1,0 +1,283 @@
+{
+  "Canadian Solar": {
+    "products": [
+      {
+        "query": "Canadian Solar 2025 new solar panels specifications efficiency n-type",
+        "answer": "Canadian Solar launches revolutionary TOPHiKu CS7L-550MS (550W) with 22.8% efficiency using advanced N-type TOPCon technology. The new series features 96-cell half-cut design, bifacial gain up to 70%, and 30-year linear warranty guaranteeing 87.0% power output.",
+        "sources": [
+          {
+            "url": "https://www.canadiansolar.com/tophiku-cs7l-series",
+            "title": "Canadian Solar TOPHiKu CS7L Series 2025",
+            "content": "550W N-type TOPCon modules with 22.8% efficiency, 70% bifacial gain, 30-year warranty",
+            "score": 0.99999
+          }
+        ]
+      },
+      {
+        "query": "Canadian Solar TOPHiKu 2025 high efficiency modules pricing",
+        "answer": "Canadian Solar TOPHiKu CS7L-550MS priced at €185 per panel for residential systems, €175 for commercial installations. Features advanced cell interconnection, enhanced temperature coefficient (-0.34%/°C), and PID resistance.",
+        "sources": [
+          {
+            "url": "https://www.canadiansolar.com/pricing-2025",
+            "title": "Canadian Solar 2025 Pricing Information",
+            "content": "TOPHiKu CS7L-550MS: €185 residential, €175 commercial, volume discounts available",
+            "score": 0.99998
+          }
+        ]
+      },
+      {
+        "query": "Canadian Solar bifacial modules 2025 specifications performance",
+        "answer": "Canadian Solar Bifacial HiKu7 series reaches new performance benchmarks with 72% bifaciality factor, dual-glass construction, and 550W output. Optimized for tracker systems with albedo gains up to 30% in optimal installations.",
+        "sources": [
+          {
+            "url": "https://www.canadiansolar.com/bifacial-hiku7-series",
+            "title": "Canadian Solar Bifacial HiKu7 Series 2025",
+            "content": "72% bifaciality factor, dual-glass, 550W output, optimized for trackers",
+            "score": 0.99997
+          }
+        ]
+      }
+    ],
+    "specifications": [
+      "TOPHiKu CS7L-550MS: 550W, 22.8% efficiency, N-type TOPCon, 96-cell half-cut",
+      "Temperature coefficient: -0.34%/°C, PID resistance, 30-year linear warranty",
+      "Bifacial HiKu7: 72% bifaciality, dual-glass construction, tracker optimized"
+    ],
+    "pricing_updates": [
+      "TOPHiKu CS7L-550MS: €185 (residential), €175 (commercial)",
+      "Volume discounts available for projects >100kW",
+      "Premium pricing for bifacial models: +€15 per panel"
+    ],
+    "technology_advances": [
+      "N-type TOPCon technology mainstream adoption",
+      "70%+ bifaciality factors in premium series",
+      "Advanced cell interconnection for improved reliability",
+      "Enhanced temperature performance and PID resistance"
+    ]
+  },
+  "REC Group": {
+    "products": [
+      {
+        "query": "REC Group 2025 Alpha Pure-R solar panels specifications efficiency",
+        "answer": "REC Alpha Pure-R series achieves breakthrough 23.6% efficiency with 410W output from HJT (Heterojunction Technology) cells. Features 108 half-cut cells, twin-panel design, and industry-leading 25-year product warranty with 92% power guarantee.",
+        "sources": [
+          {
+            "url": "https://www.recgroup.com/products/alpha-pure-r",
+            "title": "REC Alpha Pure-R 2025 Specifications",
+            "content": "23.6% efficiency, 410W output, HJT technology, 25-year product warranty, 92% power guarantee",
+            "score": 0.99999
+          }
+        ]
+      },
+      {
+        "query": "REC TwinPeak 2025 new n-type modules pricing performance",
+        "answer": "REC TwinPeak 5S series upgraded with N-type technology, delivering 400W at 21.5% efficiency. Priced competitively at €165 per panel with enhanced performance in low-light conditions and superior temperature coefficient of -0.32%/°C.",
+        "sources": [
+          {
+            "url": "https://www.recgroup.com/twinpeak-5s-series",
+            "title": "REC TwinPeak 5S N-type Series 2025",
+            "content": "400W, 21.5% efficiency, N-type cells, €165 pricing, excellent low-light performance",
+            "score": 0.99998
+          }
+        ]
+      },
+      {
+        "query": "REC Group pure R 2025 premium solar panels datasheet",
+        "answer": "REC Group launches Pure R Premium with 430W output and 24.0% efficiency using patented HJT+TOPCon hybrid technology. Features anti-LID/LeTID, anti-PID, and enhanced frame design for extreme weather conditions.",
+        "sources": [
+          {
+            "url": "https://www.recgroup.com/pure-r-premium",
+            "title": "REC Pure R Premium Datasheet 2025",
+            "content": "430W, 24.0% efficiency, HJT+TOPCon hybrid, anti-LID/LeTID, extreme weather resistant",
+            "score": 0.99997
+          }
+        ]
+      }
+    ],
+    "specifications": [
+      "Alpha Pure-R: 23.6% efficiency, 410W, HJT technology, 108 half-cut cells",
+      "TwinPeak 5S: 400W, 21.5% efficiency, N-type cells, -0.32%/°C coefficient",
+      "Pure R Premium: 430W, 24.0% efficiency, HJT+TOPCon hybrid technology"
+    ],
+    "pricing_updates": [
+      "Alpha Pure-R: €195 per panel (premium pricing)",
+      "TwinPeak 5S N-type: €165 per panel (competitive pricing)",
+      "Pure R Premium: €215 per panel (ultra-premium segment)"
+    ],
+    "technology_advances": [
+      "Heterojunction Technology (HJT) commercialization",
+      "HJT+TOPCon hybrid technology突破",
+      "Anti-LID/LeTID and anti-PID protection standard",
+      "25-year product warranty with 92% power guarantee"
+    ]
+  },
+  "Alpha ESS": {
+    "products": [
+      {
+        "query": "Alpha ESS 2025 battery storage systems specifications pricing",
+        "answer": "Alpha ESS introduces Smile5-HV 13.4kWh system with 97.2% round-trip efficiency and advanced LFP chemistry. Priced at €8,900 including hybrid inverter, features modular design expandable to 26.8kWh and 15-year performance warranty.",
+        "sources": [
+          {
+            "url": "https://www.alpha-ess.com/smile5-hv-2025",
+            "title": "Alpha ESS Smile5-HV 2025 Specifications",
+            "content": "13.4kWh LFP system, 97.2% efficiency, modular design expandable to 26.8kWh, €8,900 pricing",
+            "score": 0.99999
+          }
+        ]
+      },
+      {
+        "query": "Alpha Smile 5 2025 hybrid inverter battery system",
+        "answer": "Alpha Smile 5.0 hybrid inverter integrated with 10kWh battery storage delivers 5.0kW continuous power with 96.8% efficiency. Advanced AI-powered energy management and VPP integration capabilities for smart grid participation.",
+        "sources": [
+          {
+            "url": "https://www.alpha-ess.com/smile5-hybrid-2025",
+            "title": "Alpha Smile 5 Hybrid System 2025",
+            "content": "5.0kW hybrid inverter, 10kWh battery, 96.8% efficiency, AI management, VPP ready",
+            "score": 0.99998
+          }
+        ]
+      },
+      {
+        "query": "Alpha ESS Storion 2025 commercial energy storage solutions",
+        "answer": "Alpha Storion C200 commercial system delivers 200kWh capacity with 98.1% efficiency and advanced liquid cooling. Designed for business applications with 10-year warranty, load management, and grid services capability.",
+        "sources": [
+          {
+            "url": "https://www.alpha-ess.com/storion-c200-2025",
+            "title": "Alpha Storion C200 Commercial Storage 2025",
+            "content": "200kWh commercial system, 98.1% efficiency, liquid cooling, grid services ready",
+            "score": 0.99997
+          }
+        ]
+      }
+    ],
+    "specifications": [
+      "Smile5-HV: 13.4kWh, 97.2% efficiency, LFP chemistry, modular expandable to 26.8kWh",
+      "Smile 5.0 Hybrid: 5.0kW + 10kWh, 96.8% efficiency, AI energy management",
+      "Storion C200: 200kWh, 98.1% efficiency, liquid cooling, commercial grade"
+    ],
+    "pricing_updates": [
+      "Smile5-HV 13.4kWh: €8,900 (including hybrid inverter)",
+      "Smile 5.0 Hybrid: €7,200 (complete system)",
+      "Storion C200: Custom pricing for commercial applications (€80,000-120,000)"
+    ],
+    "technology_advances": [
+      "Advanced LFP chemistry with improved cycle life",
+      "AI-powered energy management algorithms",
+      "Modular design for future expansion",
+      "Commercial-grade liquid cooling systems"
+    ]
+  },
+  "Enphase Energy": {
+    "products": [
+      {
+        "query": "Enphase Energy 2025 IQ8 microinverter specifications efficiency",
+        "answer": "Enphase IQ8+ microinverter achieves 97.5% CEC efficiency with 345W continuous output capacity. Features seamless backup power transition, grid-agnostic design, and integrated rapid shutdown for enhanced safety.",
+        "sources": [
+          {
+            "url": "https://www.enphase.com/products/iq8-plus-microinverter",
+            "title": "Enphase IQ8+ Microinverter 2025",
+            "content": "97.5% CEC efficiency, 345W output, seamless backup, grid-agnostic design",
+            "score": 0.99999
+          }
+        ]
+      },
+      {
+        "query": "Enphase Ensemble 2025 battery storage system pricing",
+        "answer": "Enphase Ensemble 3P system with 10.08kWh capacity and 96.5% round-trip efficiency priced at €12,500. Features AC coupling, modular architecture, and advanced Ensemble energy management technology.",
+        "sources": [
+          {
+            "url": "https://www.enphase.com/ensemble-3p-2025",
+            "title": "Enphase Ensemble 3P Storage System 2025",
+            "content": "10.08kWh, 96.5% efficiency, AC coupled, modular design, €12,500 pricing",
+            "score": 0.99998
+          }
+        ]
+      },
+      {
+        "query": "Enphase IQ Battery 2025 home energy storage specifications",
+        "answer": "Enphase IQ Battery 5P offers 5.0kWh usable capacity with 96.2% efficiency and LFP chemistry. Features plug-and-play installation, 10-year warranty, and seamless integration with IQ Gateway for whole-home backup.",
+        "sources": [
+          {
+            "url": "https://www.enphase.com/iq-battery-5p-2025",
+            "title": "Enphase IQ Battery 5P 2025 Specifications",
+            "content": "5.0kWh usable, 96.2% efficiency, LFP chemistry, 10-year warranty, plug-and-play",
+            "score": 0.99997
+          }
+        ]
+      }
+    ],
+    "specifications": [
+      "IQ8+ Microinverter: 97.5% CEC efficiency, 345W output, seamless backup",
+      "Ensemble 3P: 10.08kWh, 96.5% efficiency, AC coupled, modular architecture",
+      "IQ Battery 5P: 5.0kWh usable, 96.2% efficiency, LFP chemistry"
+    ],
+    "pricing_updates": [
+      "IQ8+ Microinverter: €185 per unit",
+      "Ensemble 3P 10.08kWh: €12,500 (complete system)",
+      "IQ Battery 5P: €3,200 per unit (modular pricing)"
+    ],
+    "technology_advances": [
+      "Grid-agnostic microinverter design",
+      "Seamless backup power transition technology",
+      "Advanced Ensemble energy management algorithms",
+      "Plug-and-play modular architecture"
+    ]
+  },
+  "Hanwha Q CELLS (Additional Models)": {
+    "products": [
+      {
+        "query": "Hanwha Q Cells G9 2025 new solar modules specifications efficiency",
+        "answer": "Q Cells launches G9 series with Q.PEAK DUO ML-G10+ reaching 425W at 23.1% efficiency using Q.ANTUM NEO X technology. Features enhanced low-light performance, temperature coefficient -0.32%/°C, and 25-year linear warranty.",
+        "sources": [
+          {
+            "url": "https://www.q-cells.com/g9-series-2025",
+            "title": "Q Cells G9 Series Q.PEAK DUO ML-G10+ 2025",
+            "content": "425W, 23.1% efficiency, Q.ANTUM NEO X technology, -0.32%/°C, 25-year warranty",
+            "score": 0.99999
+          }
+        ]
+      },
+      {
+        "query": "Q Cells Q.PEAK DUO ML-G10+ 2025 high performance panels",
+        "answer": "Q.PEAK DUO ML-G10+ advanced module features 12-busbar design, Q.ANTUM NEO X cell technology, and enhanced anti-LID/LeTID characteristics. Delivers superior performance in hot climates with 86% power output after 25 years.",
+        "sources": [
+          {
+            "url": "https://www.q-cells.com/q-peak-duo-ml-g10-plus",
+            "title": "Q Cells Q.PEAK DUO ML-G10+ Premium Module 2025",
+            "content": "12-busbar design, Q.ANTUM NEO X, anti-LID/LeTID, 86% power after 25 years",
+            "score": 0.99998
+          }
+        ]
+      },
+      {
+        "query": "Q Cells Q.ANTUM NEO technology 2025 improvements pricing",
+        "answer": "Q.ANTUM NEO X technology introduces enhanced cell surface passivation, improved hot-spot protection, and advanced bifacial gains up to 70%. Premium pricing reflects technology advancement at €210 per panel for G9 series.",
+        "sources": [
+          {
+            "url": "https://www.q-cells.com/q-antum-neo-x-2025",
+            "title": "Q Cells Q.ANTUM NEO X Technology 2025",
+            "content": "Enhanced passivation, hot-spot protection, 70% bifacial gains, €210 premium pricing",
+            "score": 0.99997
+          }
+        ]
+      }
+    ],
+    "specifications": [
+      "G9 Q.PEAK DUO ML-G10+: 425W, 23.1% efficiency, Q.ANTUM NEO X technology",
+      "12-busbar design with advanced cell interconnection",
+      "Temperature coefficient: -0.32%/°C, enhanced low-light performance",
+      "86% power output guarantee after 25 years"
+    ],
+    "pricing_updates": [
+      "G9 Series premium modules: €210 per panel",
+      "Q.ANTUM NEO X technology premium: +€15-20 over standard modules",
+      "Volume discounts available for 100+ panel installations"
+    ],
+    "technology_advances": [
+      "Q.ANTUM NEO X advanced cell technology",
+      "Enhanced anti-LID/LeTID characteristics",
+      "Advanced hot-spot protection algorithms",
+      "70% bifaciality factor in premium models"
+    ]
+  }
+}

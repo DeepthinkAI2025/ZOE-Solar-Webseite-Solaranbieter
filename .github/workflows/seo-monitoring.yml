@@ -1,0 +1,137 @@
+name: SEO Monitoring
+
+on:
+  schedule:
+    # Täglich um 6:00 UTC (8:00 MEZ) ausführen
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Ermöglicht manuelles Ausführen
+
+permissions:
+  contents: write
+  actions: read
+  pull-requests: write
+
+jobs:
+  seo-monitoring:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4.1.7
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4.1.0
+      with:
+        node-version: '20'
+        cache: 'npm'
+
+    - name: Cache Node.js modules
+      uses: actions/cache@v4
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: Install dependencies
+      run: npm ci --ignore-scripts
+
+    - name: Run SEO Monitoring
+      run: npm run seo-monitor
+
+    - name: Run Enhanced SEO Monitoring
+      run: npm run enhanced-seo-monitor
+
+    - name: Run Keyword Research
+      run: npm run keyword-research
+
+    - name: Run Content Optimization
+      run: npm run content-optimization
+
+    - name: Check for SEO Alerts
+      run: npm run seo-alerts
+
+    - name: Commit and push results
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add data/seo-monitoring/ || true
+        git add data/keyword-analysis.json || true
+        git add data/high-priority-keywords.json || true
+        git add data/seo-report.json || true
+        git add data/seo-history.json || true
+        git add data/content-plan.json || true
+
+        # Prüfen ob Änderungen vorhanden sind
+        if ! git diff --quiet && ! git diff --staged --quiet; then
+          git commit -m "🔍 Update SEO monitoring data [$(date +'%Y-%m-%d')]"
+          git push
+        else
+          echo "No changes to commit"
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Create SEO Report Summary
+      run: |
+        echo "## SEO Monitoring Report - $(date +'%Y-%m-%d')" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+
+        # Lese die neueste Zusammenfassung
+        if [ -f "data/seo-report.json" ]; then
+          echo "### Enhanced SEO Metrics" >> $GITHUB_STEP_SUMMARY
+          echo "- **Durchschnittliche Position**: $(jq -r '.metrics.avgPosition' data/seo-report.json)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Top 10 Keywords**: $(jq -r '.metrics.top10Count' data/seo-report.json) ($(jq -r '.metrics.top10Percentage' data/seo-report.json)%))" >> $GITHUB_STEP_SUMMARY
+          echo "- **Top 3 Keywords**: $(jq -r '.metrics.top3Count' data/seo-report.json) ($(jq -r '.metrics.top3Percentage' data/seo-report.json)%))" >> $GITHUB_STEP_SUMMARY
+          echo "- **Geschätzter Traffic**: $(jq -r '.metrics.estimatedTraffic | tonumber | . / 1000 | floor' data/seo-report.json)k Besuche/Monat" >> $GITHUB_STEP_SUMMARY
+          echo "- **Positionsänderungen**: +$(jq -r '.metrics.positionChanges.improved' data/seo-report.json) ↑, $(jq -r '.metrics.positionChanges.declined' data/seo-report.json) ↓, $(jq -r '.metrics.positionChanges.stable' data/seo-report.json) →" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          echo "### Keyword Research" >> $GITHUB_STEP_SUMMARY
+          echo "- **Analysierte Keywords**: $(jq -r '.totalKeywords' data/keyword-analysis.json)" >> $GITHUB_STEP_SUMMARY
+          echo "- **High-Priority Keywords**: $(jq -r '.keywords | map(select(.priority == "high")) | length' data/keyword-analysis.json)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          echo "### Content Optimization" >> $GITHUB_STEP_SUMMARY
+          if [ -f "data/content-plan.json" ]; then
+            echo "- **Content-Ideen**: $(jq -r '.stats.totalIdeas' data/content-plan.json)" >> $GITHUB_STEP_SUMMARY
+            echo "- **Geschätzter Traffic**: $(jq -r '.stats.totalEstimatedTraffic' data/content-plan.json)/Monat" >> $GITHUB_STEP_SUMMARY
+            echo "- **Ø Opportunity Score**: $(jq -r '.stats.avgOpportunityScore' data/content-plan.json)" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          echo "### SEO Alerts" >> $GITHUB_STEP_SUMMARY
+          ALERT_COUNT=$(jq -r '.alerts | length' data/seo-report.json)
+          if [ "$ALERT_COUNT" -gt 0 ]; then
+            echo "🚨 **$ALERT_COUNT Alerts gefunden**" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            jq -r '.alerts[] | "- **\(.severity | ascii_upcase)**: \(.message)"' data/seo-report.json >> $GITHUB_STEP_SUMMARY
+          else
+            echo "✅ Keine kritischen Alerts" >> $GITHUB_STEP_SUMMARY
+          fi
+        elif [ -f "data/seo-monitoring/latest-summary.json" ]; then
+          echo "### Rankings" >> $GITHUB_STEP_SUMMARY
+          jq -r '.rankings[] | "- **\(.keyword)**: Position \(.position) (\(.trend | if . == "up" then "📈" elif . == "down" then "📉" else "➡️" end))"' data/seo-monitoring/latest-summary.json >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          echo "### Core Web Vitals" >> $GITHUB_STEP_SUMMARY
+          echo "- **LCP**: $(jq -r '.coreWebVitals.lcp' data/seo-monitoring/latest-summary.json)s" >> $GITHUB_STEP_SUMMARY
+          echo "- **FID**: $(jq -r '.coreWebVitals.fid' data/seo-monitoring/latest-summary.json)ms" >> $GITHUB_STEP_SUMMARY
+          echo "- **CLS**: $(jq -r '.coreWebVitals.cls' data/seo-monitoring/latest-summary.json)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Overall**: $(jq -r '.coreWebVitals.overall' data/seo-monitoring/latest-summary.json)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          echo "### Backlinks" >> $GITHUB_STEP_SUMMARY
+          echo "- **Total**: $(jq -r '.backlinks.total' data/seo-monitoring/latest-summary.json)" >> $GITHUB_STEP_SUMMARY
+          echo "- **New**: +$(jq -r '.backlinks.new' data/seo-monitoring/latest-summary.json)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Lost**: -$(jq -r '.backlinks.lost' data/seo-monitoring/latest-summary.json)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          echo "### AI Search Visibility" >> $GITHUB_STEP_SUMMARY
+          echo "- **Google Bard**: $(jq -r '.aiSearch.googleBard' data/seo-monitoring/latest-summary.json)" >> $GITHUB_STEP_SUMMARY
+          echo "- **ChatGPT**: $(jq -r '.aiSearch.chatGPT' data/seo-monitoring/latest-summary.json)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Perplexity**: $(jq -r '.aiSearch.perplexity' data/seo-monitoring/latest-summary.json)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Bing AI**: $(jq -r '.aiSearch.bingAI' data/seo-monitoring/latest-summary.json)" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "❌ Keine Monitoring-Daten gefunden" >> $GITHUB_STEP_SUMMARY
+        fi

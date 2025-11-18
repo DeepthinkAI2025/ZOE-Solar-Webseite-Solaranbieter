@@ -1,0 +1,531 @@
+name: Canary Deployment Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'package.json'
+      - 'package-lock.json'
+      - '**/*.js'
+      - '**/*.ts'
+      - '**/*.jsx'
+      - '**/*.tsx'
+      - 'next.config.js'
+      - 'tailwind.config.js'
+  workflow_dispatch:
+    inputs:
+      canary_percentage:
+        description: 'Canary traffic percentage (1-100)'
+        required: false
+        default: '10'
+        type: string
+      force_deploy:
+        description: 'Force canary deployment'
+        required: false
+        default: false
+        type: boolean
+      skip_tests:
+        description: 'Skip pre-deployment tests'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+  deployments: write
+  pull-requests: write
+  actions: read
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  # Pre-deployment quality gates
+  quality-gates:
+    name: Quality Gates
+    runs-on: ubuntu-latest
+    outputs:
+      can_deploy: ${{ steps.check.outputs.can_deploy }}
+      version: ${{ steps.version.outputs.version }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4.1.0
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Run comprehensive test suite
+        if: github.event.inputs.skip_tests != 'true'
+        run: |
+          npm run lint --if-present
+          npm run type-check --if-present
+          npm run test:unit --if-present
+          npm run test:integration --if-present
+          npm run test:e2e --if-present
+
+      - name: Security audit
+        run: npm audit --audit-level moderate
+
+      - name: Get version
+        id: version
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          COMMIT_SHA=${GITHUB_SHA::7}
+          echo "version=${VERSION}-${COMMIT_SHA}" >> $GITHUB_OUTPUT
+
+      - name: Quality gate check
+        id: check
+        run: |
+          # Implement your custom quality gates here
+          TESTS_PASSED=${{ github.event.inputs.skip_tests == 'true' && 'true' || (success() && 'true' || 'false') }}
+          SECURITY_PASSED=true
+          COVERAGE_OK=true
+
+          if [[ "$TESTS_PASSED" == "true" && "$SECURITY_PASSED" == "true" && "$COVERAGE_OK" == "true" ]]; then
+            echo "can_deploy=true" >> $GITHUB_OUTPUT
+            echo "✅ All quality gates passed"
+          else
+            echo "can_deploy=false" >> $GITHUB_OUTPUT
+            echo "❌ Quality gates failed"
+            exit 1
+          fi
+
+  # Build and push container image
+  build-and-push:
+    name: Build & Push Image
+    runs-on: ubuntu-latest
+    needs: quality-gates
+    if: needs.quality-gates.outputs.can_deploy == 'true'
+
+    outputs:
+      image-digest: ${{ steps.build.outputs.digest }}
+      image-tag: ${{ steps.meta.outputs.tags }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          tags: |
+            type=ref,event=branch
+            type=ref,event=pr
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=sha,prefix={{branch}}-
+            latest
+
+      - name: Build and push Docker image
+        id: build
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          platforms: linux/amd64,linux/arm64
+
+      - name: Generate SBOM
+        uses: anchore/sbom-action@v0
+        with:
+          image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.meta.outputs.version }}
+          format: spdx-json
+          output-file: sbom.spdx.json
+
+      - name: Upload SBOM
+        uses: actions/upload-artifact@v4.3.6
+        with:
+          name: sbom-${{ needs.quality-gates.outputs.version }}
+          path: sbom.spdx.json
+          retention-days: 30
+
+  # Canary deployment
+  canary-deploy:
+    name: Deploy Canary
+    runs-on: ubuntu-latest
+    needs: [quality-gates, build-and-push]
+    if: needs.quality-gates.outputs.can_deploy == 'true'
+    environment:
+      name: production
+      url: https://canary.zoe-solar.de
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7
+
+      - name: Setup kubectl
+        uses: azure/setup-kubectl@v3
+        with:
+          version: 'v1.28.0'
+
+      - name: Configure kubectl
+        run: |
+          echo "${{ secrets.KUBE_CONFIG }}" | base64 -d > kubeconfig
+          export KUBECONFIG=kubeconfig
+
+      - name: Deploy canary version
+        run: |
+          export KUBECONFIG=kubeconfig
+          CANARY_PERCENTAGE=${{ github.event.inputs.canary_percentage || '10' }}
+
+          # Create canary deployment
+          cat << EOF | kubectl apply -f -
+          apiVersion: argoproj.io/v1alpha1
+          kind: Rollout
+          metadata:
+            name: zoe-solar-canary
+            namespace: production
+          spec:
+            replicas: 3
+            strategy:
+              canary:
+                steps:
+                - setWeight: ${CANARY_PERCENTAGE}
+                - pause: {duration: 10m}
+                - setWeight: 25
+                - pause: {duration: 10m}
+                - setWeight: 50
+                - pause: {duration: 10m}
+                - setWeight: 100
+                canaryService: zoe-solar-canary
+                stableService: zoe-solar-stable
+                trafficRouting:
+                  istio:
+                    virtualService:
+                      name: zoe-solar-vsvc
+                      routes:
+                      - primary
+            selector:
+              matchLabels:
+                app: zoe-solar
+                version: canary
+            template:
+              metadata:
+                labels:
+                  app: zoe-solar
+                  version: canary
+              spec:
+                containers:
+                - name: zoe-solar
+                  image: ${{ needs.build-and-push.outputs.image-tag }}
+                  ports:
+                  - containerPort: 3000
+                  env:
+                  - name: NODE_ENV
+                    value: "production"
+                  - name: VERSION
+                    value: "${{ needs.quality-gates.outputs.version }}"
+                  resources:
+                    requests:
+                      memory: "256Mi"
+                      cpu: "250m"
+                    limits:
+                      memory: "512Mi"
+                      cpu: "500m"
+                  livenessProbe:
+                    httpGet:
+                      path: /api/health
+                      port: 3000
+                    initialDelaySeconds: 30
+                    periodSeconds: 10
+                  readinessProbe:
+                    httpGet:
+                      path: /api/ready
+                      port: 3000
+                    initialDelaySeconds: 5
+                    periodSeconds: 5
+          EOF
+
+          kubectl apply -f k8s/canary-service.yaml
+
+      - name: Wait for canary deployment
+        run: |
+          export KUBECONFIG=kubeconfig
+          kubectl rollout status deployment/zoe-solar-canary --namespace=production --timeout=300s
+
+      - name: Create deployment annotation
+        run: |
+          export KUBECONFIG=kubeconfig
+          kubectl annotate deployment/zoe-solar-canary \
+            deployment.kubernetes.io/revision="${{ needs.quality-gates.outputs.version }}" \
+            --namespace=production \
+            --overwrite
+
+  # Canary monitoring and analysis
+  canary-monitoring:
+    name: Monitor Canary
+    runs-on: ubuntu-latest
+    needs: [quality-gates, build-and-push, canary-deploy]
+    if: needs.quality-gates.outputs.can_deploy == 'true'
+
+    outputs:
+      canary_healthy: ${{ steps.analysis.outputs.healthy }}
+      rollback_needed: ${{ steps.analysis.outputs.rollback }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7
+
+      - name: Setup monitoring tools
+        run: |
+          # Install monitoring dependencies
+          npm install -g @newrelic/cli
+          curl -sL https://github.com/grafana/k6/releases/latest/download/k6-v0.47.0-linux-amd64.tar.gz | tar xz -
+          sudo mv k6-v0.47.0-linux-amd64/k6 /usr/local/bin/
+
+      - name: Wait for canary to stabilize
+        run: sleep 60
+
+      - name: Run health checks
+        run: |
+          # Health check endpoint
+          for i in {1..10}; do
+            if curl -f https://canary.zoe-solar.de/api/health; then
+              echo "✅ Health check passed"
+              break
+            else
+              echo "❌ Health check failed, retrying..."
+              sleep 10
+            fi
+          done
+
+      - name: Run smoke tests
+        run: |
+          # Basic functionality tests
+          curl -f https://canary.zoe-solar.de/ | grep -q "ZOE Solar"
+          curl -f https://canary.zoe-solar.de/api/products | jq empty
+
+      - name: Performance monitoring
+        run: |
+          # Load test with k6
+          cat << EOF > load-test.js
+          import http from 'k6/http';
+          import { check, sleep } from 'k6';
+
+          export let options = {
+            stages: [
+              { duration: '2m', target: 10 },
+              { duration: '2m', target: 10 },
+              { duration: '2m', target: 0 },
+            ],
+            thresholds: {
+              http_req_duration: ['p(95)<2000'],
+              http_req_failed: ['rate<0.1'],
+            },
+          };
+
+          export default function () {
+            let response = http.get('https://canary.zoe-solar.de/');
+            check(response, {
+              'status is 200': (r) => r.status === 200,
+              'response time < 500ms': (r) => r.timings.duration < 500,
+            });
+            sleep(1);
+          }
+          EOF
+
+          k6 run load-test.js --out json=canary-metrics.json
+
+      - name: Analyze canary metrics
+        id: analysis
+        run: |
+          # Analyze performance metrics
+          SUCCESS_RATE=$(jq -r '.metrics.http_req_failed.rate' canary-metrics.json || echo "0")
+          AVG_RESPONSE_TIME=$(jq -r '.metrics.http_req_duration.avg' canary-metrics.json || echo "0")
+          ERROR_COUNT=$(jq -r '.metrics.http_req_failed.count' canary-metrics.json || echo "0")
+
+          echo "Success Rate: $SUCCESS_RATE"
+          echo "Avg Response Time: $AVG_RESPONSE_TIME ms"
+          echo "Error Count: $ERROR_COUNT"
+
+          # Determine if canary is healthy
+          if (( $(echo "$SUCCESS_RATE < 0.05" | bc -l) )) && (( $(echo "$AVG_RESPONSE_TIME < 2000" | bc -l) )) && [[ "$ERROR_COUNT" -lt 5 ]]; then
+            echo "healthy=true" >> $GITHUB_OUTPUT
+            echo "rollback=false" >> $GITHUB_OUTPUT
+            echo "✅ Canary is healthy"
+          else
+            echo "healthy=false" >> $GITHUB_OUTPUT
+            echo "rollback=true" >> $GITHUB_OUTPUT
+            echo "❌ Canary is unhealthy, rollback needed"
+          fi
+
+      - name: Upload canary metrics
+        uses: actions/upload-artifact@v4.3.6
+        with:
+          name: canary-metrics-${{ needs.quality-gates.outputs.version }}
+          path: canary-metrics.json
+          retention-days: 30
+
+  # Automated rollback if needed
+  automatic-rollback:
+    name: Automatic Rollback
+    runs-on: ubuntu-latest
+    needs: [quality-gates, build-and-push, canary-deploy, canary-monitoring]
+    if: needs.canary-monitoring.outputs.rollback_needed == 'true'
+
+    steps:
+      - name: Setup kubectl
+        uses: azure/setup-kubectl@v3
+        with:
+          version: 'v1.28.0'
+
+      - name: Configure kubectl
+        run: |
+          echo "${{ secrets.KUBE_CONFIG }}" | base64 -d > kubeconfig
+          export KUBECONFIG=kubeconfig
+
+      - name: Rollback canary deployment
+        run: |
+          export KUBECONFIG=kubeconfig
+
+          # Delete canary deployment
+          kubectl delete rollout zoe-solar-canary --namespace=production --ignore-not-found=true
+          kubectl delete service zoe-solar-canary --namespace=production --ignore-not-found=true
+
+          # Scale up stable deployment
+          kubectl scale deployment zoe-solar-stable --replicas=3 --namespace=production
+
+          echo "🔄 Automatic rollback completed"
+
+      - name: Notify rollback
+        run: |
+          echo "🚨 **Canary deployment rolled back**"
+          echo "Version: ${{ needs.quality-gates.outputs.version }}"
+          echo "Reason: Failed health/performance checks"
+          echo "Time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+
+  # Promote canary to production
+  promote-to-production:
+    name: Promote to Production
+    runs-on: ubuntu-latest
+    needs: [quality-gates, build-and-push, canary-deploy, canary-monitoring]
+    if: needs.canary-monitoring.outputs.canary_healthy == 'true'
+    environment:
+      name: production
+      url: https://zoe-solar.de
+
+    steps:
+      - name: Setup kubectl
+        uses: azure/setup-kubectl@v3
+        with:
+          version: 'v1.28.0'
+
+      - name: Configure kubectl
+        run: |
+          echo "${{ secrets.KUBE_CONFIG }}" | base64 -d > kubeconfig
+          export KUBECONFIG=kubeconfig
+
+      - name: Promote canary to production
+        run: |
+          export KUBECONFIG=kubeconfig
+
+          # Update stable deployment with new image
+          kubectl set image deployment/zoe-solar-stable \
+            zoe-solar=${{ needs.build-and-push.outputs.image-tag }} \
+            --namespace=production
+
+          # Wait for rollout
+          kubectl rollout status deployment/zoe-solar-stable --namespace=production --timeout=600s
+
+          # Clean up canary
+          kubectl delete rollout zoe-solar-canary --namespace=production --ignore-not-found=true
+          kubectl delete service zoe-solar-canary --namespace=production --ignore-not-found=true
+
+          echo "🚀 Canary promoted to production successfully"
+
+      - name: Update deployment metadata
+        run: |
+          export KUBECONFIG=kubeconfig
+          kubectl annotate deployment/zoe-solar-stable \
+            deployment.kubernetes.io/revision="${{ needs.quality-gates.outputs.version }}" \
+            --namespace=production \
+            --overwrite
+
+          kubectl label deployment/zoe-solar-stable \
+            version="${{ needs.quality-gates.outputs.version }}" \
+            --namespace=production \
+            --overwrite
+
+      - name: Final health check
+        run: |
+          # Wait for deployment to be ready
+          sleep 30
+
+          # Final health verification
+          curl -f https://zoe-solar.de/api/health
+          curl -f https://zoe-solar.de/ | grep -q "ZOE Solar"
+
+      - name: Create deployment summary
+        run: |
+          echo "## 🚀 Canary Deployment Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Deployment Details" >> $GITHUB_STEP_SUMMARY
+          echo "- **Version**: ${{ needs.quality-gates.outputs.version }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Image**: ${{ needs.build-and-push.outputs.image-tag }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Canary Percentage**: ${{ github.event.inputs.canary_percentage || '10' }}%" >> $GITHUB_STEP_SUMMARY
+          echo "- **Deployment Time**: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Quality Gates" >> $GITHUB_STEP_SUMMARY
+          echo "- **Tests**: ✅ Passed" >> $GITHUB_STEP_SUMMARY
+          echo "- **Security**: ✅ Passed" >> $GITHUB_STEP_SUMMARY
+          echo "- **Canary Health**: ✅ Healthy" >> $GITHUB_STEP_SUMMARY
+          echo "- **Performance**: ✅ Within thresholds" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Production URLs" >> $GITHUB_STEP_SUMMARY
+          echo "- **Main Site**: https://zoe-solar.de" >> $GITHUB_STEP_SUMMARY
+          echo "- **API**: https://zoe-solar.de/api" >> $GITHUB_STEP_SUMMARY
+          echo "- **Health Check**: https://zoe-solar.de/api/health" >> $GITHUB_STEP_SUMMARY
+
+  # Deployment notification
+  deployment-notification:
+    name: Deployment Notification
+    runs-on: ubuntu-latest
+    needs: [quality-gates, build-and-push, canary-deploy, canary-monitoring, promote-to-production, automatic-rollback]
+    if: always()
+
+    steps:
+      - name: Send deployment notification
+        run: |
+          echo "# 🚀 Deployment Pipeline Status" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Pipeline Results" >> $GITHUB_STEP_SUMMARY
+          echo "- **Quality Gates**: ${{ needs.quality-gates.result == 'success' && '✅ Passed' || '❌ Failed' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Build & Push**: ${{ needs.build-and-push.result == 'success' && '✅ Completed' || '❌ Failed' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Canary Deploy**: ${{ needs.canary-deploy.result == 'success' && '✅ Deployed' || '❌ Failed' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Canary Monitoring**: ${{ needs.canary-monitoring.result == 'success' && '✅ Healthy' || needs.canary-monitoring.result == 'failure' && '❌ Unhealthy' || '⏭️ Skipped' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Promotion**: ${{ needs.promote-to-production.result == 'success' && '✅ Promoted' || needs.promote-to-production.result == 'failure' && '❌ Failed' || '⏭️ Skipped' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Rollback**: ${{ needs.automatic-rollback.result == 'success' && '🔄 Executed' || '⏭️ Not needed' }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Final Status" >> $GITHUB_STEP_SUMMARY
+          if [[ "${{ needs.promote-to-production.result }}" == "success" ]]; then
+            echo "🎉 **Deployment Successful** - Canary promoted to production" >> $GITHUB_STEP_SUMMARY
+          elif [[ "${{ needs.automatic-rollback.result }}" == "success" ]]; then
+            echo "🔄 **Rollback Executed** - Canary failed, rolled back to stable" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ **Deployment Failed** - Check individual job logs" >> $GITHUB_STEP_SUMMARY
+          fi

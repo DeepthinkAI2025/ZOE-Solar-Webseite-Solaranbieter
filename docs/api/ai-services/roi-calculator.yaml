@@ -1,0 +1,690 @@
+# ROI Calculator Endpoint Specification
+post:
+  tags:
+    - AI Services
+  summary: AI-Powered ROI Calculator
+  description: |
+    Calculate comprehensive Return on Investment for solar projects using AI-enhanced analysis.
+
+    This endpoint provides advanced ROI calculations including:
+    - Detailed cost-benefit analysis
+    - Multiple financing scenarios
+    - Inflation and degradation considerations
+    - Risk assessment and sensitivity analysis
+    - Comparison with alternative energy sources
+    - Environmental impact quantification
+
+    ## Advanced Features
+    - **Dynamic Pricing**: Current market prices for components and electricity
+    - **Regional Factors**: Location-specific insolation and pricing
+    - **Inflation Modeling**: 25-year projections with realistic assumptions
+    - **Risk Analysis**: Probability-based outcome modeling
+    - **Scenario Comparison**: Multiple financing and usage scenarios
+    - **Environmental Impact**: CO2 reduction and sustainability metrics
+
+    ## Calculation Models
+    - **Financial Model**: NPV, IRR, Payback Period calculations
+    - **Energy Model**: Production forecasting with degradation
+    - **Economic Model**: Electricity price inflation, maintenance costs
+    - **Environmental Model**: CO2 equivalent calculations
+    - **Risk Model**: Sensitivity analysis and Monte Carlo simulation
+
+  parameters:
+    - $ref: '../../openapi.yaml#/components/parameters/Authorization'
+    - $ref: '../../openapi.yaml#/components/parameters/ContentType'
+
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - systemSpec
+            - financialParameters
+            - location
+          properties:
+            systemSpec:
+              type: object
+              required:
+                - power
+                - moduleType
+              properties:
+                power:
+                  type: number
+                  minimum: 1
+                  maximum: 1000
+                  example: 75
+                  description: System power in kWp
+                moduleType:
+                  type: string
+                  enum: [mono_perc, poly_perc, bifacial, thin_film]
+                  example: "mono_perc"
+                  description: Type of solar modules
+                moduleEfficiency:
+                  type: number
+                  minimum: 15
+                  maximum: 25
+                  example: 22.5
+                  description: Module efficiency percentage
+                inverterType:
+                  type: string
+                  enum: [string, micro, power_optimizer, hybrid]
+                  example: "string"
+                  description: Type of inverter technology
+                tracking:
+                  type: object
+                  properties:
+                    enabled:
+                      type: boolean
+                      example: false
+                      description: Whether tracking system is included
+                    type:
+                      type: string
+                      enum: [single_axis, dual_axis]
+                      example: "single_axis"
+                    efficiencyGain:
+                      type: number
+                      minimum: 0
+                      maximum: 50
+                      example: 25
+                      description: Additional efficiency from tracking in percent
+                storage:
+                  type: object
+                  properties:
+                    enabled:
+                      type: boolean
+                      example: true
+                      description: Whether battery storage is included
+                    capacity:
+                      type: number
+                      minimum: 1
+                      maximum: 1000
+                      example: 50
+                      description: Storage capacity in kWh
+                    efficiency:
+                      type: number
+                      minimum: 85
+                      maximum: 98
+                      example: 95
+                      description: Round-trip efficiency percentage
+                mountingType:
+                  type: string
+                  enum: [flat_roof, pitched_roof, ground_mount, carport]
+                  example: "flat_roof"
+                  description: Type of mounting system
+                installation:
+                  type: object
+                  properties:
+                    complexity:
+                      type: string
+                      enum: [simple, moderate, complex]
+                      example: "moderate"
+                    accessibility:
+                      type: string
+                      enum: [easy, moderate, difficult]
+                      example: "moderate"
+                    roofCondition:
+                      type: string
+                      enum: [excellent, good, fair, poor]
+                      example: "good"
+
+            financialParameters:
+              type: object
+              required:
+                - upfrontCost
+              properties:
+                upfrontCost:
+                  type: number
+                  minimum: 1000
+                  maximum: 10000000
+                  example: 65000
+                  description: Total upfront investment cost in EUR
+                financing:
+                  type: object
+                  properties:
+                    method:
+                      type: string
+                      enum: [cash, loan, leasing, power_purchase_agreement]
+                      example: "cash"
+                    loanDetails:
+                      type: object
+                      properties:
+                        downPayment:
+                          type: number
+                          example: 13000
+                          description: Down payment in EUR
+                        loanAmount:
+                          type: number
+                          example: 52000
+                          description: Loan amount in EUR
+                        interestRate:
+                          type: number
+                          minimum: 0
+                          maximum: 20
+                          example: 4.5
+                          description: Annual interest rate percentage
+                        loanTerm:
+                          type: integer
+                          minimum: 1
+                          maximum: 30
+                          example: 10
+                          description: Loan term in years
+                    leasingDetails:
+                      type: object
+                      properties:
+                        monthlyPayment:
+                          type: number
+                          example: 550
+                          description: Monthly leasing payment in EUR
+                        leaseTerm:
+                          type: integer
+                          minimum: 1
+                          maximum: 25
+                          example: 15
+                          description: Lease term in years
+                        buyoutOption:
+                          type: number
+                          example: 5000
+                          description: End-of-lease buyout option in EUR
+                incentives:
+                  type: object
+                  properties:
+                    governmentSubsidy:
+                      type: number
+                      example: 7500
+                      description: Government subsidy in EUR
+                    taxCredits:
+                      type: number
+                      example: 8450
+                      description: Tax credits in EUR
+                    localPrograms:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          name:
+                            type: string
+                            example: "KfW Solar Programm"
+                          amount:
+                            type: number
+                            example: 2500
+                          description:
+                            type: string
+                            example: "Zinszuschuss für Solaranlagen"
+                      example:
+                        - name: "KfW Solar Programm"
+                          amount: 2500
+                          description: "Zinszuschuss für Solaranlagen"
+                operatingCosts:
+                  type: object
+                  properties:
+                    annual:
+                      type: number
+                      example: 250
+                      description: Annual operating costs in EUR
+                    maintenance:
+                      type: number
+                      example: 0.005
+                      description: Annual maintenance cost as percentage of upfront cost
+                    insurance:
+                      type: number
+                      example: 200
+                      description: Annual insurance cost in EUR
+                    monitoring:
+                      type: number
+                      example: 100
+                      description: Annual monitoring cost in EUR
+
+            location:
+              type: object
+              required:
+                - address
+              properties:
+                address:
+                  type: string
+                  example: "Musterstraße 1, 10115 Berlin, Germany"
+                  description: Full project address
+                coordinates:
+                  type: object
+                  properties:
+                    lat:
+                      type: number
+                      example: 52.5200
+                    lng:
+                      type: number
+                      example: 13.4050
+                irradiation:
+                  type: object
+                  properties:
+                    annual:
+                      type: number
+                      example: 1080
+                      description: Annual solar irradiation in kWh/kWp
+                    seasonal:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          month:
+                            type: string
+                            example: "Januar"
+                          irradiation:
+                            type: number
+                            example: 30
+                      description: Monthly irradiation data
+                electricityPrice:
+                  type: object
+                  properties:
+                    current:
+                      type: number
+                      example: 0.32
+                      description: Current electricity price in EUR/kWh
+                    forecast:
+                      type: object
+                      properties:
+                        year1:
+                          type: number
+                          example: 0.33
+                        year5:
+                          type: number
+                          example: 0.36
+                        year10:
+                          type: number
+                          example: 0.42
+                        year25:
+                          type: number
+                          example: 0.58
+                      description: Forecasted electricity prices
+                gridConnection:
+                  type: object
+                  properties:
+                    feedInTariff:
+                      type: number
+                      example: 0.08
+                      description: Feed-in tariff in EUR/kWh
+                    selfConsumption:
+                      type: number
+                      minimum: 0
+                      maximum: 100
+                      example: 75
+                      description: Self-consumption percentage
+                    networkCharges:
+                      type: number
+                      example: 0.05
+                      description: Network charges in EUR/kWh
+
+            analysisOptions:
+              type: object
+              properties:
+                analysisPeriod:
+                  type: integer
+                  minimum: 10
+                  maximum: 30
+                  default: 25
+                  example: 25
+                  description: Analysis period in years
+                inflation:
+                  type: object
+                  properties:
+                    electricityPrice:
+                      type: number
+                      minimum: 0
+                      maximum: 10
+                      default: 3.0
+                      example: 3.0
+                      description: Electricity price inflation rate percentage
+                    operatingCosts:
+                      type: number
+                      minimum: 0
+                      maximum: 10
+                      default: 2.0
+                      example: 2.0
+                      description: Operating costs inflation rate percentage
+                degradation:
+                  type: object
+                  properties:
+                    module:
+                      type: number
+                      minimum: 0.1
+                      maximum: 1.0
+                      default: 0.5
+                      example: 0.5
+                      description: Module degradation rate percentage per year
+                    inverter:
+                      type: number
+                      minimum: 0.1
+                      maximum: 2.0
+                      default: 1.0
+                      example: 1.0
+                      description: Inverter degradation rate percentage per year
+                scenarios:
+                  type: array
+                  items:
+                    type: string
+                    enum: [conservative, realistic, optimistic]
+                    default: ["realistic"]
+                    example: ["conservative", "realistic", "optimistic"]
+                  description: Analysis scenarios to include
+                sensitivity:
+                  type: object
+                  properties:
+                    variables:
+                      type: array
+                      items:
+                        type: string
+                        enum: [electricity_price, feed_in_tariff, maintenance_cost, inflation]
+                      example: ["electricity_price", "feed_in_tariff"]
+                    range:
+                      type: string
+                      enum: [-20, -10, 0, 10, 20]
+                      default: "10"
+                      description: Sensitivity analysis range in percentage
+
+  responses:
+    '200':
+      description: ROI calculation completed successfully
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../../openapi.yaml#/components/schemas/Success'
+              - type: object
+                properties:
+                  data:
+                    type: object
+                    required:
+                      - summary
+                      - financialResults
+                      - environmentalImpact
+                      - riskAnalysis
+                    properties:
+                      summary:
+                        type: object
+                        properties:
+                          systemSize:
+                            type: number
+                            example: 75
+                            description: System size in kWp
+                          totalInvestment:
+                            type: number
+                            example: 65000
+                            description: Total investment in EUR
+                          netInvestment:
+                            type: number
+                            example: 49050
+                            description: Net investment after incentives in EUR
+                          amortizationPeriod:
+                            type: number
+                            example: 6.8
+                            description: Payback period in years
+                          npv:
+                            type: number
+                            example: 87450
+                            description: Net Present Value in EUR
+                          irr:
+                            type: number
+                            example: 14.7
+                            description: Internal Rate of Return percentage
+                          roi:
+                            type: number
+                            example: 178
+                            description: Return on Investment percentage over analysis period
+                      financialResults:
+                        type: object
+                        properties:
+                          annualProduction:
+                            type: number
+                            example: 81000
+                            description: Annual energy production in kWh
+                          annualRevenue:
+                            type: number
+                            example: 25920
+                            description: Annual revenue in EUR
+                          annualSavings:
+                            type: number
+                            example: 25920
+                            description: Annual savings in EUR
+                          cashFlow:
+                            type: array
+                            items:
+                              type: object
+                              properties:
+                                year:
+                                  type: integer
+                                  example: 1
+                                cashFlow:
+                                  type: number
+                                  example: 25920
+                                cumulativeCashFlow:
+                                  type: number
+                                  example: 25920
+                          description: Annual cash flow projections over analysis period
+                          breakEvenPoint:
+                            type: object
+                            properties:
+                              year:
+                                type: number
+                                example: 7
+                                description: Break-even year
+                              date:
+                                type: string
+                                format: date
+                                example: "2032-11-17"
+                                description: Break-even date
+                      environmentalImpact:
+                        type: object
+                        properties:
+                          annualCO2Savings:
+                            type: number
+                            example: 4.05
+                            description: Annual CO2 savings in tons
+                          totalCO2Savings:
+                            type: number
+                            example: 101.25
+                            description: Total CO2 savings over analysis period in tons
+                          equivalentTrees:
+                            type: number
+                            example: 2531
+                            description: Number of equivalent trees planted
+                          solarCapacity:
+                            type: object
+                            properties:
+                              households:
+                                type: number
+                                example: 20
+                                description: Number of households powered annually
+                              cars:
+                                type: number
+                                example: 45
+                                description: Number of cars equivalent removed from road
+                      riskAnalysis:
+                        type: object
+                        properties:
+                          sensitivity:
+                            type: object
+                            properties:
+                              electricityPrice:
+                                type: object
+                                properties:
+                                  conservative:
+                                  type: object
+                                  properties:
+                                    npv:
+                                      type: number
+                                      example: 65000
+                                    irr:
+                                      type: number
+                                      example: 12.1
+                                    amortizationPeriod:
+                                      type: number
+                                      example: 8.2
+                                  realistic:
+                                    type: object
+                                    properties:
+                                      npv:
+                                        type: number
+                                        example: 87450
+                                      irr:
+                                        type: number
+                                        example: 14.7
+                                      amortizationPeriod:
+                                        type: number
+                                        example: 6.8
+                                  optimistic:
+                                    type: object
+                                    properties:
+                                      npv:
+                                        type: number
+                                        example: 112000
+                                      irr:
+                                        type: number
+                                        example: 17.3
+                                      amortizationPeriod:
+                                        type: number
+                                        example: 5.5
+                        confidence:
+                          type: object
+                          properties:
+                            financial:
+                              type: string
+                              enum: [high, medium, low]
+                              example: "high"
+                              description: Confidence level in financial projections
+                            technical:
+                              type: string
+                              enum: [high, medium, low]
+                              example: "high"
+                              description: Confidence level in technical assumptions
+                            market:
+                              type: string
+                              enum: [high, medium, low]
+                              example: "medium"
+                              description: Confidence level in market assumptions
+                      recommendations:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            category:
+                              type: string
+                              enum: [optimization, financing, timing, risk_mitigation]
+                              example: "optimization"
+                            title:
+                              type: string
+                              example: "Erhöhung der Speicherkapazität"
+                            description:
+                              type: string
+                              example: "Durch Hinzufügen eines 20kW Batteriespeichers kann die Eigenverbrauchsrate auf 90% gesteigert werden"
+                            impact:
+                              type: object
+                              properties:
+                                roi:
+                                  type: number
+                                  example: 3.5
+                                  description: ROI improvement in percentage points
+                                payback:
+                                  type: number
+                                  example: -1.2
+                                  description: Payback period change in years
+                                npv:
+                                  type: number
+                                  example: 12000
+                                  description: NPV improvement in EUR
+                            priority:
+                              type: string
+                              enum: [high, medium, low]
+                              example: "medium"
+                              description: Recommendation priority
+                      metadata:
+                        type: object
+                        properties:
+                          calculationId:
+                            type: string
+                            example: "roi_calc_xyz123"
+                          modelVersion:
+                            type: string
+                            example: "2.1.0"
+                          dataSources:
+                            type: array
+                            items:
+                              type: object
+                              properties:
+                                source:
+                                  type: string
+                                  example: "Bundesnetzagentur"
+                                type:
+                                  type: string
+                                  enum: [irradiation, prices, regulations, technical]
+                                  example: "irradiation"
+                                reliability:
+                                  type: string
+                                  enum: [high, medium, low]
+                                  example: "high"
+                                lastUpdated:
+                                  type: string
+                                  format: date-time
+                                  example: "2025-11-17T15:30:00Z"
+                          timestamp:
+                            type: string
+                            format: date-time
+                            example: "2025-11-17T15:30:00Z"
+                          processingTime:
+                            type: number
+                            example: 3.2
+                            description: Processing time in seconds
+          example:
+            success: true
+            data:
+              summary:
+                systemSize: 75
+                totalInvestment: 65000
+                netInvestment: 49050
+                amortizationPeriod: 6.8
+                npv: 87450
+                irr: 14.7
+                roi: 178
+              financialResults:
+                annualProduction: 81000
+                annualRevenue: 25920
+                annualSavings: 25920
+                breakEvenPoint:
+                  year: 7
+                  date: "2032-11-17"
+              environmentalImpact:
+                annualCO2Savings: 4.05
+                totalCO2Savings: 101.25
+                equivalentTrees: 2531
+                solarCapacity:
+                  households: 20
+                  cars: 45
+              recommendations:
+                - category: "optimization"
+                  title: "Erhöhung der Speicherkapazität"
+                  description: "Durch Hinzufügen eines 20kW Batteriespeichers kann die Eigenverbrauchsrate auf 90% gesteigert werden"
+                  impact:
+                    roi: 3.5
+                    payback: -1.2
+                    npv: 12000
+                  priority: "medium"
+              metadata:
+                calculationId: "roi_calc_xyz123"
+                modelVersion: "2.1.0"
+                processingTime: 3.2
+                timestamp: "2025-11-17T15:30:00Z"
+            meta:
+              timestamp: "2025-11-17T15:30:00Z"
+              request_id: "req_roi_calculator_abc123"
+              version: "1.0.0"
+
+    '400':
+      $ref: '../../openapi.yaml#/components/responses/ValidationError'
+      description: Invalid input parameters
+    '401':
+      $ref: '../../openapi.yaml#/components/responses/Unauthorized'
+    '500':
+      $ref: '../../openapi.yaml#/components/responses/ServerError'
+      description: Calculation service unavailable
+
+  security:
+    - BearerAuth: []

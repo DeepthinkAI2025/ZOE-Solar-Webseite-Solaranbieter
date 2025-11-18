@@ -1,0 +1,720 @@
+name: Performance Monitoring & Alerting
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # Alle 5 Minuten
+    - cron: '0 */6 * * *'  # Alle 6 Stunden für detaillierte Analysen
+  workflow_dispatch:
+    inputs:
+      monitor_type:
+        description: 'Type of monitoring'
+        required: false
+        default: 'comprehensive'
+        type: choice
+        options:
+          - quick
+          - comprehensive
+          - deep-analysis
+      alert_on_failure:
+        description: 'Send alerts on failure'
+        required: false
+        default: true
+        type: boolean
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'package.json'
+      - 'next.config.js'
+      - 'tailwind.config.js'
+
+permissions:
+  contents: read
+  actions: read
+  pull-requests: write
+  issues: write
+  discussions: write
+
+env:
+  NEW_RELIC_API_KEY: ${{ secrets.NEW_RELIC_API_KEY }}
+  DATADOG_API_KEY: ${{ secrets.DATADOG_API_KEY }}
+  SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+  GRAFANA_API_KEY: ${{ secrets.GRAFANA_API_KEY }}
+
+jobs:
+  # Quick health checks (every 5 minutes)
+  quick-health-check:
+    name: Quick Health Check
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '*/5 * * * *' || github.event_name == 'workflow_dispatch'
+
+    outputs:
+      overall_health: ${{ steps.health-check.outputs.status }}
+      response_time: ${{ steps.health-check.outputs.response_time }}
+      error_rate: ${{ steps.health-check.outputs.error_rate }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7
+
+      - name: Setup monitoring tools
+        run: |
+          # Install monitoring dependencies
+          npm install -g @newrelic/cli
+          curl -s https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+          echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+          sudo apt update && sudo apt install gh -y
+
+      - name: Perform health checks
+        id: health-check
+        run: |
+          # Define endpoints to monitor
+          ENDPOINTS=(
+            "https://zoe-solar.de"
+            "https://zoe-solar.de/api/health"
+            "https://zoe-solar.de/api/products"
+            "https://zoe-solar.de/sitemap.xml"
+          )
+
+          TOTAL_RESPONSE_TIME=0
+          ERROR_COUNT=0
+          TOTAL_REQUESTS=0
+
+          for endpoint in "${ENDPOINTS[@]}"; do
+            echo "Checking: $endpoint"
+
+            # Measure response time
+            START_TIME=$(date +%s%N)
+            HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" "$endpoint")
+            END_TIME=$(date +%s%N)
+
+            RESPONSE_TIME=$(( (END_TIME - START_TIME) / 1000000 )) # Convert to milliseconds
+            TOTAL_RESPONSE_TIME=$((TOTAL_RESPONSE_TIME + RESPONSE_TIME))
+            TOTAL_REQUESTS=$((TOTAL_REQUESTS + 1))
+
+            echo "Response time: ${RESPONSE_TIME}ms, HTTP Code: $HTTP_CODE"
+
+            # Check if request failed
+            if [[ "$HTTP_CODE" -ne "200" ]]; then
+              ERROR_COUNT=$((ERROR_COUNT + 1))
+              echo "❌ Failed: $endpoint (HTTP $HTTP_CODE)"
+            else
+              echo "✅ OK: $endpoint (${RESPONSE_TIME}ms)"
+            fi
+          done
+
+          # Calculate metrics
+          AVG_RESPONSE_TIME=$((TOTAL_RESPONSE_TIME / TOTAL_REQUESTS))
+          ERROR_RATE=$((ERROR_COUNT * 100 / TOTAL_REQUESTS))
+
+          echo "Average Response Time: ${AVG_RESPONSE_TIME}ms"
+          echo "Error Rate: ${ERROR_RATE}%"
+
+          # Set outputs
+          echo "response_time=${AVG_RESPONSE_TIME}" >> $GITHUB_OUTPUT
+          echo "error_rate=${ERROR_RATE}" >> $GITHUB_OUTPUT
+
+          # Determine overall health status
+          if [[ "$ERROR_RATE" -eq 0 && "$AVG_RESPONSE_TIME" -lt 2000 ]]; then
+            echo "status=healthy" >> $GITHUB_OUTPUT
+            echo "Overall Status: ✅ Healthy"
+          elif [[ "$ERROR_RATE" -lt 10 && "$AVG_RESPONSE_TIME" -lt 5000 ]]; then
+            echo "status=degraded" >> $GITHUB_OUTPUT
+            echo "Overall Status: ⚠️ Degraded"
+          else
+            echo "status=unhealthy" >> $GITHUB_OUTPUT
+            echo "Overall Status: ❌ Unhealthy"
+          fi
+
+      - name: Log to New Relic
+        if: env.NEW_RELIC_API_KEY != ''
+        run: |
+          # Log health check results to New Relic
+          curl -X POST "https://insights-collector.newrelic.com/v1/accounts/${{ secrets.NEW_RELIC_ACCOUNT_ID }}/events" \
+            -H "X-Insert-Key: $NEW_RELIC_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d '[
+              {
+                "eventType": "HealthCheck",
+                "appName": "ZOE Solar Website",
+                "responseTime": '${{ steps.health-check.outputs.response_time }}',
+                "errorRate": '${{ steps.health-check.outputs.error_rate }}',
+                "status": "${{ steps.health-check.outputs.status }}",
+                "timestamp": '$(date +%s)'
+              }
+            ]'
+
+      - name: Send critical alerts
+        if: steps.health-check.outputs.status == 'unhealthy' && github.event.inputs.alert_on_failure != 'false'
+        run: |
+          # Send Slack alert
+          if [[ -n "$SLACK_WEBHOOK" ]]; then
+            curl -X POST -H 'Content-type: application/json' \
+              --data '{
+                "text": "🚨 **CRITICAL: ZOE Solar Website Unhealthy**",
+                "attachments": [
+                  {
+                    "color": "danger",
+                    "fields": [
+                      {
+                        "title": "Response Time",
+                        "value": "'${{ steps.health-check.outputs.response_time }}'ms",
+                        "short": true
+                      },
+                      {
+                        "title": "Error Rate",
+                        "value": "'${{ steps.health-check.outputs.error_rate }}'%",
+                        "short": true
+                      },
+                      {
+                        "title": "Time",
+                        "value": "'$(date -u '+%Y-%m-%d %H:%M:%S UTC')'",
+                        "short": true
+                      },
+                      {
+                        "title": "Action Required",
+                        "value": "Immediate investigation needed",
+                        "short": true
+                      }
+                    ]
+                  }
+                ]
+              }' \
+              "$SLACK_WEBHOOK"
+          fi
+
+          # Create GitHub issue for critical failures
+          if [[ "${{ steps.health-check.outputs.status }}" == "unhealthy" ]]; then
+            gh issue create \
+              --title "🚨 Critical: Website Health Check Failed" \
+              --label "critical,health-check,urgent" \
+              --body "## Health Check Failure Alert
+
+            **Time:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+            **Response Time:** ${{ steps.health-check.outputs.response_time }}ms
+            **Error Rate:** ${{ steps.health-check.outputs.error_rate }}%
+
+            ### Immediate Action Required
+            The website health check has detected critical issues that require immediate attention.
+
+            ### Investigation Steps
+            1. Check server status and logs
+            2. Verify database connectivity
+            3. Monitor network performance
+            4. Review recent deployments
+
+            ### Next Steps
+            - [ ] Investigate root cause
+            - [ ] Implement fix
+            - [ ] Monitor recovery
+            - [ ] Update incident post-mortem
+
+            ---
+            *This issue was automatically created by the performance monitoring system.*"
+          fi
+
+  # Comprehensive performance analysis (every 6 hours)
+  comprehensive-analysis:
+    name: Comprehensive Performance Analysis
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 */6 * * *' || (github.event_name == 'workflow_dispatch' && github.event.inputs.monitor_type == 'comprehensive')
+
+    outputs:
+      performance_score: ${{ steps.analysis.outputs.performance_score }}
+          critical_issues: ${{ steps.analysis.outputs.critical_issues }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7
+
+      - name: Setup analysis tools
+        run: |
+          # Install performance testing tools
+          npm install -g lighthouse-cli
+          npm install -g @lhci/cli@0.13.x
+          curl -sL https://github.com/grafana/k6/releases/latest/download/k6-v0.47.0-linux-amd64.tar.gz | tar xz -
+          sudo mv k6-v0.47.0-linux-amd64/k6 /usr/local/bin/
+
+      - name: Run Lighthouse audit
+        run: |
+          mkdir -p lighthouse-reports
+
+          # Run Lighthouse on multiple pages
+          PAGES=(
+            "https://zoe-solar.de"
+            "https://zoe-solar.de/solaranbieter"
+            "https://zoe-solar.de/photovoltaik-kosten"
+            "https://zoe-solar.de/speicher"
+          )
+
+          for page in "${PAGES[@]}"; do
+            PAGE_NAME=$(echo "$page" | sed 's/https:\/\///g' | sed 's/\//_/g')
+            echo "Auditing: $page"
+
+            lighthouse "$page" \
+              --output=json \
+              --output-path="lighthouse-reports/${PAGE_NAME}.json" \
+              --chrome-flags="--headless --no-sandbox" \
+              --quiet \
+              || echo "Lighthouse audit failed for $page"
+          done
+
+      - name: Run load testing
+        run: |
+          mkdir -p load-test-results
+
+          cat << EOF > comprehensive-load-test.js
+          import http from 'k6/http';
+          import { check, sleep } from 'k6';
+          import { Rate } from 'k6/metrics';
+
+          let errorRate = new Rate('errors');
+
+          export let options = {
+            stages: [
+              { duration: '2m', target: 10 },  // Ramp up to 10 users
+              { duration: '5m', target: 10 },  // Stay at 10 users
+              { duration: '2m', target: 25 },  // Ramp up to 25 users
+              { duration: '5m', target: 25 },  // Stay at 25 users
+              { duration: '2m', target: 50 },  // Ramp up to 50 users
+              { duration: '5m', target: 50 },  // Stay at 50 users
+              { duration: '2m', target: 0 },   // Ramp down
+            ],
+            thresholds: {
+              http_req_duration: ['p(95)<3000', 'p(99)<5000'],
+              http_req_failed: ['rate<0.05'],
+              errors: ['rate<0.05'],
+            },
+          };
+
+          export default function () {
+            let responses = http.batch([
+              ['GET', 'https://zoe-solar.de/'],
+              ['GET', 'https://zoe-solar.de/api/products'],
+              ['GET', 'https://zoe-solar.de/solaranbieter'],
+            ]);
+
+            responses.forEach(function(response) {
+              errorRate.add(response.status >= 400);
+              check(response, {
+                'status was 200': (r) => r.status == 200,
+                'response time < 2000ms': (r) => r.timings.duration < 2000,
+              });
+            });
+
+            sleep(1);
+          }
+          EOF
+
+          k6 run comprehensive-load-test.js \
+            --out json=load-test-results/comprehensive-metrics.json \
+            --out influxdb=http://localhost:8086/k6 || echo "Load test failed"
+
+      - name: Core Web Vitals monitoring
+        run: |
+          # Monitor Core Web Vitals
+          cat << EOF > core-web-vitals-monitor.js
+          const { chromium } = require('playwright');
+
+          async function monitorCoreWebVitals() {
+            const browser = await chromium.launch();
+            const page = await browser.newPage();
+
+            // Enable performance monitoring
+            await page.addInitScript(() => {
+              window.performanceMetrics = [];
+
+              // Observe Performance Observer for Web Vitals
+              if ('PerformanceObserver' in window) {
+                const observer = new PerformanceObserver((list) => {
+                  list.getEntries().forEach((entry) => {
+                    window.performanceMetrics.push({
+                      name: entry.name,
+                      value: entry.value,
+                      rating: entry.rating
+                    });
+                  });
+                });
+
+                observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'cumulative-layout-shift'] });
+              }
+            });
+
+            await page.goto('https://zoe-solar.de');
+            await page.waitForLoadState('networkidle');
+
+            // Wait a bit more for LCP
+            await page.waitForTimeout(3000);
+
+            const metrics = await page.evaluate(() => window.performanceMetrics);
+            console.log('Core Web Vitals:', JSON.stringify(metrics, null, 2));
+
+            await browser.close();
+            return metrics;
+          }
+
+          monitorCoreWebVitals().catch(console.error);
+          EOF
+
+          # Install Playwright and run monitoring
+          npm install playwright
+          node core-web-vitals-monitor.js > core-web-vitals-results.json
+
+      - name: Analyze performance results
+        id: analysis
+        run: |
+          # Analyze Lighthouse results
+          PERFORMANCE_SCORE=0
+          CRITICAL_ISSUES=0
+
+          for report in lighthouse-reports/*.json; do
+            if [[ -f "$report" ]]; then
+              # Extract performance score
+              SCORE=$(jq -r '.categories.performance.score * 100' "$report" || echo "0")
+              PERFORMANCE_SCORE=$(( (PERFORMANCE_SCORE + SCORE) / 2 ))
+
+              # Count critical issues
+              CRITICAL=$(jq '[.audits[] | select(.score == 0)] | length' "$report" || echo "0")
+              CRITICAL_ISSUES=$((CRITICAL_ISSUES + CRITICAL))
+            fi
+          done
+
+          # Analyze load test results
+          if [[ -f "load-test-results/comprehensive-metrics.json" ]]; then
+            ERROR_RATE=$(jq -r '.metrics.http_req_failed.rate' load-test-results/comprehensive-metrics.json || echo "0")
+            P95_RESPONSE_TIME=$(jq -r '.metrics.http_req_duration["p(95)"]' load-test-results/comprehensive-metrics.json || echo "0")
+
+            # Adjust performance score based on load test results
+            if (( $(echo "$ERROR_RATE > 0.05" | bc -l) )); then
+              PERFORMANCE_SCORE=$((PERFORMANCE_SCORE - 20))
+            fi
+
+            if (( $(echo "$P95_RESPONSE_TIME > 3000" | bc -l) )); then
+              PERFORMANCE_SCORE=$((PERFORMANCE_SCORE - 15))
+            fi
+          fi
+
+          echo "Performance Score: $PERFORMANCE_SCORE"
+          echo "Critical Issues: $CRITICAL_ISSUES"
+
+          echo "performance_score=${PERFORMANCE_SCORE}" >> $GITHUB_OUTPUT
+          echo "critical_issues=${CRITICAL_ISSUES}" >> $GITHUB_OUTPUT
+
+      - name: Generate performance report
+        run: |
+          cat << EOF > performance-report.md
+          # Performance Monitoring Report
+
+          **Generated:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          **Performance Score:** ${{ steps.analysis.outputs.performance_score }}/100
+          **Critical Issues:** ${{ steps.analysis.outputs.critical_issues }}
+
+          ## Key Metrics
+
+          ### Lighthouse Performance
+          - Overall Performance Score: ${{ steps.analysis.outputs.performance_score }}/100
+          - Critical Audits Failed: ${{ steps.analysis.outputs.critical_issues }}
+
+          ### Load Testing Results
+          - Error Rate: $(jq -r '.metrics.http_req_failed.rate' load-test-results/comprehensive-metrics.json 2>/dev/null || echo "N/A")%
+          - 95th Percentile Response Time: $(jq -r '.metrics.http_req_duration["p(95)"]' load-test-results/comprehensive-metrics.json 2>/dev/null || echo "N/A")ms
+
+          ### Core Web Vitals
+          $(cat core-web-vitals-results.json 2>/dev/null | jq -r '.[] | "- \(.name): \(.value) (\(.rating))"' || echo "No Core Web Vitals data available")
+
+          ## Recommendations
+
+          EOF
+
+          if [[ ${{ steps.analysis.outputs.performance_score }} -lt 70 ]]; then
+            cat << EOF >> performance-report.md
+          ### 🚨 High Priority Actions
+          1. **Immediate Performance Optimization Required**
+             - Review and optimize large assets
+             - Implement better caching strategies
+             - Minimize JavaScript execution time
+             - Optimize server response times
+
+          EOF
+          elif [[ ${{ steps.analysis.outputs.performance_score }} -lt 85 ]]; then
+            cat << EOF >> performance-report.md
+          ### ⚠️ Medium Priority Actions
+          1. **Performance Improvements Recommended**
+             - Further optimize image compression
+             - Reduce unused CSS/JavaScript
+             - Improve Core Web Vitals scores
+
+          EOF
+          else
+            cat << EOF >> performance-report.md
+          ### ✅ Performance Status
+          1. **Excellent Performance Maintained**
+             - Continue monitoring
+             - Focus on optimization opportunities
+             - Maintain current performance standards
+
+          EOF
+          fi
+
+      - name: Upload performance reports
+        uses: actions/upload-artifact@v4.3.6
+        with:
+          name: performance-reports-$(date +%Y%m%d-%H%M%S)
+          path: |
+            lighthouse-reports/
+            load-test-results/
+            core-web-vitals-results.json
+            performance-report.md
+          retention-days: 30
+
+      - name: Send performance alerts
+        if: steps.analysis.outputs.performance_score < 70 || steps.analysis.outputs.critical_issues > 5
+        run: |
+          # Send performance alert to Slack
+          if [[ -n "$SLACK_WEBHOOK" ]]; then
+            COLOR="danger"
+            if [[ ${{ steps.analysis.outputs.performance_score }} -ge 70 ]]; then
+              COLOR="warning"
+            fi
+
+            curl -X POST -H 'Content-type: application/json' \
+              --data '{
+                "text": "⚠️ **Performance Alert: ZOE Solar Website Performance Issues Detected**",
+                "attachments": [
+                  {
+                    "color": "'"$COLOR"'",
+                    "fields": [
+                      {
+                        "title": "Performance Score",
+                        "value": "'${{ steps.analysis.outputs.performance_score }}'/100",
+                        "short": true
+                      },
+                      {
+                        "title": "Critical Issues",
+                        "value": "'${{ steps.analysis.outputs.critical_issues }}'",
+                        "short": true
+                      },
+                      {
+                        "title": "Time",
+                        "value": "'$(date -u '+%Y-%m-%d %H:%M:%S UTC')'",
+                        "short": true
+                      },
+                      {
+                        "title": "Action Required",
+                        "value": "Review and optimize performance",
+                        "short": true
+                      }
+                    ]
+                  }
+                ]
+              }' \
+              "$SLACK_WEBHOOK"
+          fi
+
+  # Deep performance analysis (manual or weekly)
+  deep-analysis:
+    name: Deep Performance Analysis
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.monitor_type == 'deep-analysis'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7
+
+      - name: Setup advanced analysis tools
+        run: |
+          # Install advanced monitoring and analysis tools
+          npm install -g web-bundle-analyzer
+          npm install -g webpack-bundle-analyzer
+          npm install -g lighthouse-ci
+          pip install selenium-wire
+
+      - name: Bundle size analysis
+        run: |
+          mkdir -p bundle-analysis
+
+          # Analyze bundle sizes
+          if [[ -f "package.json" ]]; then
+            npm run build 2>/dev/null || echo "Build failed, continuing with analysis..."
+
+            # Analyze built bundles if they exist
+            if [[ -d ".next" ]]; then
+              find .next -name "*.js" -exec du -h {} \; | sort -hr > bundle-analysis/next-bundle-sizes.txt
+            fi
+
+            if [[ -d "build" ]]; then
+              find build -name "*.js" -exec du -h {} \; | sort -hr > bundle-analysis/build-bundle-sizes.txt
+            fi
+          fi
+
+      - name: Network performance analysis
+        run: |
+          mkdir -p network-analysis
+
+          cat << EOF > network-analysis.py
+          from seleniumwire import webdriver
+          from selenium.webdriver.chrome.options import Options
+          import json
+          import time
+
+          chrome_options = Options()
+          chrome_options.add_argument('--headless')
+          chrome_options.add_argument('--no-sandbox')
+
+          driver = webdriver.Chrome(options=chrome_options)
+
+          # Capture network traffic
+          driver.get('https://zoe-solar.de')
+          time.sleep(10)  # Wait for full page load
+
+          # Analyze network requests
+          requests = []
+          for request in driver.requests:
+              if request.response:
+                  requests.append({
+                      'url': request.url,
+                      'status': request.response.status_code,
+                      'size': len(request.response.body) if request.response.body else 0,
+                      'duration': request.duration,
+                      'type': request.response.headers.get('content-type', '')
+                  })
+
+          # Sort by size
+          requests.sort(key=lambda x: x['size'], reverse=True)
+
+          with open('network-analysis/network-requests.json', 'w') as f:
+              json.dump(requests[:20], f, indent=2)  # Top 20 largest requests
+
+          driver.quit()
+          print("Network analysis completed")
+          EOF
+
+          python3 network-analysis.py
+
+      - name: Create deep analysis report
+        run: |
+          cat << EOF > deep-analysis-report.md
+          # Deep Performance Analysis Report
+
+          **Generated:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          **Analysis Type:** Deep Performance Analysis
+
+          ## Bundle Analysis
+
+          ### Largest Bundles
+          \`\`\`
+          $(cat bundle-analysis/*.txt 2>/dev/null | head -20 || echo "No bundle data available")
+          \`\`\`
+
+          ## Network Performance Analysis
+
+          ### Largest Network Requests
+          \`\`\`json
+          $(cat network-analysis/network-requests.json 2>/dev/null || echo "No network data available")
+          \`\`\`
+
+          ## Detailed Recommendations
+
+          Based on the deep analysis, here are specific optimization recommendations:
+
+          1. **Bundle Optimization**
+             - [ ] Review and remove unused dependencies
+             - [ ] Implement code splitting for better performance
+             - [ ] Optimize bundle sizes and loading strategies
+
+          2. **Network Optimization**
+             - [ ] Implement better caching strategies
+             - [ ] Optimize image compression and formats
+             - [ ] Use CDN for static assets
+
+          3. **Runtime Performance**
+             - [ ] Monitor and optimize JavaScript execution time
+             - [ ] Implement lazy loading for better perceived performance
+             - [ ] Optimize Core Web Vitals metrics
+
+          EOF
+
+      - name: Upload deep analysis results
+        uses: actions/upload-artifact@v4.3.6
+        with:
+          name: deep-analysis-$(date +%Y%m%d-%H%M%S)
+          path: |
+            bundle-analysis/
+            network-analysis/
+            deep-analysis-report.md
+          retention-days: 90
+
+  # Performance dashboard update
+  update-dashboard:
+    name: Update Performance Dashboard
+    runs-on: ubuntu-latest
+    needs: [quick-health-check, comprehensive-analysis]
+    if: always() && (needs.quick-health-check.result == 'success' || needs.comprehensive-analysis.result == 'success')
+
+    steps:
+      - name: Create performance dashboard update
+        run: |
+          cat << EOF > dashboard-update.md
+          # Performance Dashboard Update
+
+          **Last Updated:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+
+          ## Current Status
+
+          | Metric | Value | Status |
+          |--------|-------|--------|
+          | Overall Health | ${{ needs.quick-health-check.outputs.overall_health || 'N/A' }} | ${{ needs.quick-health-check.outputs.overall_health == 'healthy' && '✅' || needs.quick-health-check.outputs.overall_health == 'degraded' && '⚠️' || '❌' }} |
+          | Response Time | ${{ needs.quick-health-check.outputs.response_time || 'N/A' }}ms | ${{ needs.quick-health-check.outputs.response_time < 2000 && '✅' || needs.quick-health-check.outputs.response_time < 5000 && '⚠️' || '❌' }} |
+          | Error Rate | ${{ needs.quick-health-check.outputs.error_rate || 'N/A' }}% | ${{ needs.quick-health-check.outputs.error_rate < 5 && '✅' || needs.quick-health-check.outputs.error_rate < 10 && '⚠️' || '❌' }} |
+          | Performance Score | ${{ needs.comprehensive-analysis.outputs.performance_score || 'N/A' }}/100 | ${{ needs.comprehensive-analysis.outputs.performance_score > 85 && '✅' || needs.comprehensive-analysis.outputs.performance_score > 70 && '⚠️' || '❌' }} |
+
+          ## Recent Trends
+
+          *This dashboard is automatically updated every 5 minutes with health checks and every 6 hours with comprehensive analysis.*
+
+          ## Alert History
+
+          Alerts are automatically sent when:
+          - Response time exceeds 5 seconds
+          - Error rate exceeds 10%
+          - Performance score drops below 70
+          - Critical health check failures
+
+          EOF
+
+      - name: Update dashboard data file
+        run: |
+          # Create/update dashboard data
+          cat << EOF > data/performance-dashboard.json
+          {
+            "lastUpdate": "$(date -u +%Y-%m-%dT%H:%M:%S.000Z)",
+            "healthStatus": "${{ needs.quick-health-check.outputs.overall_health || 'unknown' }}",
+            "responseTime": ${{ needs.quick-health-check.outputs.response_time || 0 }},
+            "errorRate": ${{ needs.quick-health-check.outputs.error_rate || 0 }},
+            "performanceScore": ${{ needs.comprehensive-analysis.outputs.performance_score || 0 }},
+            "criticalIssues": ${{ needs.comprehensive-analysis.outputs.critical_issues || 0 }}
+          }
+          EOF
+
+      - name: Commit dashboard updates
+        run: |
+          git config --local user.email "performance-bot@github.com"
+          git config --local user.name "Performance Bot"
+
+          git add dashboard-update.md data/performance-dashboard.json || true
+
+          if ! git diff --quiet && ! git diff --staged --quiet; then
+            git commit -m "📊 Update performance dashboard data [$(date +'%Y-%m-%d %H:%M')]"
+
+            for i in {1..3}; do
+              if git push; then
+                break
+              else
+                echo "Push attempt $i failed, retrying..."
+                sleep 5
+              fi
+            done
+          else
+            echo "No dashboard changes to commit"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

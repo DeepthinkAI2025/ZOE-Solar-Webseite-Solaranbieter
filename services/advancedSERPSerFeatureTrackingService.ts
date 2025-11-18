@@ -1,0 +1,4 @@
+import advancedSERPTrackingService from './advancedSERPTrackingService';
+
+export const advancedSERPSerFeatureTrackingService = advancedSERPTrackingService;
+export default advancedSERPSerFeatureTrackingService;

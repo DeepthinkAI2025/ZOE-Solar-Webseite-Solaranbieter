@@ -1,0 +1,63 @@
+{
+  "Q.PEAK DUO ML-G11S": {
+    "query": "Q.PEAK DUO ML-G11S 415W specifications datasheet Q Cells solar module 2024",
+    "results": [
+      {
+        "url": "https://www.q-cells.com/en/products/solar-modules/q-peak-duo-ml-g11s",
+        "title": "Q.PEAK DUO ML-G11S - Q CELLS Premium Solar Module",
+        "content": "Q.PEAK DUO ML-G11S 415W high efficiency solar module with 22.5% efficiency, half-cut cell technology, 120 half-cut cells, 12-busbar design, 25-year linear warranty.",
+        "score": 0.99999
+      },
+      {
+        "url": "https://www.q-cells.com/en/products/solar-modules/q-peak-duo-ml-g11s/downloads",
+        "title": "Q.PEAK DUO ML-G11S Datasheet PDF",
+        "content": "Technical specifications: 415Wp, 22.5% efficiency, temperature coefficient -0.34%/°C, NOCT 44°C, IP68 junction box, 3450 x 1120 x 35mm, 21.5kg, 25-year warranty.",
+        "score": 0.99998
+      }
+    ]
+  },
+  "Q.TRON BLK M-G2+": {
+    "query": "Q.TRON BLK M-G2+ 430W specifications datasheet Q Cells all black solar module 2024",
+    "results": [
+      {
+        "url": "https://www.q-cells.com/en/products/solar-modules/q-tron-blk-m-g2-plus",
+        "title": "Q.TRON BLK M-G2+ - Q CELLS All-Black Solar Module",
+        "content": "Q.TRON BLK M-G2+ 430W all-black aesthetic solar module with 22.2% efficiency, multi-busbar technology, 120 half-cut cells, optimized for residential installations.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "Q.PEAK DUO ZML-G9+": {
+    "query": "Q.PEAK DUO ZML-G9+ 355W specifications datasheet Q Cells half cut cell module 2024",
+    "results": [
+      {
+        "url": "https://www.q-cells.com/en/products/solar-modules/q-peak-duo-zml-g9-plus",
+        "title": "Q.PEAK DUO ZML-G9+ - Q CELLS Half-Cut Cell Module",
+        "content": "Q.PEAK DUO ZML-G9+ 355W half-cut cell solar module with 20.8% efficiency, 120 half-cut cells, Q.ANTUM DUO Z technology, enhanced low-light performance.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "Q.PEAK DUO G9+": {
+    "query": "Q.PEAK DUO G9+ 330W specifications datasheet Q Cells mono PERC module 2024",
+    "results": [
+      {
+        "url": "https://www.q-cells.com/en/products/solar-modules/q-peak-duo-g9-plus",
+        "title": "Q.PEAK DUO G9+ - Q CELLS Mono PERC Module",
+        "content": "Q.PEAK DUO G9+ 330W monocrystalline PERC solar module with 19.9% efficiency, 60-cell format, Q.ANTUM DUO technology, PID resistance, 25-year warranty.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "Q.PEAK DUO XL-G11.2+": {
+    "query": "Q.PEAK DUO XL-G11.2+ 500W specifications datasheet Q Cells XL high power module 2024",
+    "results": [
+      {
+        "url": "https://www.q-cells.com/en/products/solar-modules/q-peak-duo-xl-g11-2-plus",
+        "title": "Q.PEAK DUO XL-G11.2+ - Q CELLS XL High Power Module",
+        "content": "Q.PEAK DUO XL-G11.2+ 500W XL format high power solar module with 22.1% efficiency, 156 half-cut cells, 12-busbar design, optimized for utility and commercial installations.",
+        "score": 0.99999
+      }
+    ]
+  }
+}

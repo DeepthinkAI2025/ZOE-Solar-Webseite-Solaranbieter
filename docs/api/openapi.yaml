@@ -1,0 +1,676 @@
+openapi: 3.0.3
+info:
+  title: ZOE Solar Enterprise API
+  description: |
+    ## ZOE Solar Enterprise Platform API Documentation
+
+    This API provides comprehensive access to the ZOE Solar Enterprise Platform, including:
+
+    - **Authentication & Authorization** - JWT-based authentication with role-based access control
+    - **Customer Management** - Complete customer lifecycle management
+    - **AI-Powered Services** - Advanced AI services for solar recommendations and optimization
+    - **Admin & Analytics** - Comprehensive admin dashboard and analytics endpoints
+    - **Notion CMS Integration** - Headless CMS content management
+    - **SEO & Marketing Automation** - Advanced SEO automation and analytics
+    - **Public Utilities** - Public calculators and utility functions
+
+    ### Key Features
+    - 🚀 **Enterprise Security** - JWT authentication, rate limiting, API key management
+    - 🤖 **AI-Powered** - 8 Serena MCP AI services for intelligent recommendations
+    - 📊 **Real-time Analytics** - Comprehensive analytics and monitoring
+    - 🔒 **GDPR Compliant** - Full data protection and privacy compliance
+    - ⚡ **High Performance** - Sub-200ms response times with edge caching
+    - 📱 **Mobile-First** - Optimized for mobile and desktop applications
+
+    ### Authentication
+    The API uses JWT (JSON Web Tokens) for authentication. Include the token in the `Authorization` header:
+
+    ```http
+    Authorization: Bearer your_jwt_token_here
+    ```
+
+    ### Rate Limiting
+    - **Standard Users**: 100 requests/minute
+    - **Premium Users**: 500 requests/minute
+    - **Admin Users**: 1000 requests/minute
+
+    ### Error Handling
+    All errors return consistent error responses with detailed error codes and human-readable messages.
+
+    ### Base URLs
+    - **Production**: `https://zoe-solar.de/api`
+    - **Staging**: `https://staging.zoe-solar.de/api`
+    - **Development**: `http://localhost:5001/api`
+
+  version: 1.0.0
+  contact:
+    name: ZOE Solar API Team
+    email: api-support@zoe-solar.de
+    url: https://zoe-solar.de/contact
+  license:
+    name: Proprietary
+    url: https://zoe-solar.de/terms-of-service
+
+servers:
+  - url: https://zoe-solar.de/api
+    description: Production Server
+  - url: https://staging.zoe-solar.de/api
+    description: Staging Server
+  - url: http://localhost:5001/api
+    description: Development Server
+
+tags:
+  - name: Authentication
+    description: User authentication and authorization endpoints
+  - name: Customer Management
+    description: Customer profile and project management
+  - name: AI Services
+    description: AI-powered solar services and recommendations
+  - name: Admin & Analytics
+    description: Administrative dashboard and analytics endpoints
+  - name: Notion CMS
+    description: Headless CMS content management
+  - name: SEO & Marketing
+    description: SEO automation and marketing analytics
+  - name: Public Utilities
+    description: Public utility functions and calculators
+
+paths:
+  # Authentication endpoints
+  /auth/login:
+    $ref: './authentication/login.yaml'
+  /auth/register:
+    $ref: './authentication/register.yaml'
+  /auth/refresh:
+    $ref: './authentication/refresh.yaml'
+  /auth/logout:
+    $ref: './authentication/logout.yaml'
+  /auth/reset-password:
+    $ref: './authentication/password-reset.yaml'
+  /auth/verify-email:
+    $ref: './authentication/verify-email.yaml'
+
+  # Customer management endpoints
+  /customer/profile:
+    $ref: './customer/profile.yaml'
+  /customer/projects:
+    $ref: './customer/projects.yaml'
+  /customer/projects/{projectId}:
+    $ref: './customer/project-detail.yaml'
+  /customer/analytics:
+    $ref: './customer/analytics.yaml'
+  /customer/preferences:
+    $ref: './customer/preferences.yaml'
+  /customer/history:
+    $ref: './customer/history.yaml'
+
+  # AI Services endpoints
+  /ai/chat:
+    $ref: './ai-services/chat.yaml'
+  /ai/recommendations:
+    $ref: './ai-services/recommendations.yaml'
+  /ai/roi-calculator:
+    $ref: './ai-services/roi-calculator.yaml'
+  /ai/content-optimization:
+    $ref: './ai-services/content-optimization.yaml'
+  /ai/voice-search:
+    $ref: './ai-services/voice-search.yaml'
+  /ai/solar-potential:
+    $ref: './ai-services/solar-potential.yaml'
+  /ai/market-analysis:
+    $ref: './ai-services/market-analysis.yaml'
+  /ai/predictive-analytics:
+    $ref: './ai-services/predictive-analytics.yaml'
+
+  # Admin & Analytics endpoints
+  /admin/dashboard/kpi:
+    $ref: './admin/dashboard.yaml'
+  /admin/users:
+    $ref: './admin/users.yaml'
+  /admin/users/{userId}:
+    $ref: './admin/user-detail.yaml'
+  /admin/analytics/seo:
+    $ref: './admin/analytics.yaml'
+  /admin/settings:
+    $ref: './admin/settings.yaml'
+  /admin/monitoring:
+    $ref: './admin/monitoring.yaml'
+  /admin/reports:
+    $ref: './admin/reports.yaml'
+
+  # Notion CMS endpoints
+  /notion/content/{type}:
+    $ref: './notion-cms/content.yaml'
+  /notion/webhook:
+    $ref: './notion-cms/webhooks.yaml'
+  /notion/media:
+    $ref: './notion-cms/media.yaml'
+  /notion/cache:
+    $ref: './notion-cms/cache.yaml'
+  /notion/sync:
+    $ref: './notion-cms/sync.yaml'
+  /notion/search:
+    $ref: './notion-cms/search.yaml'
+
+  # SEO & Marketing endpoints
+  /seo/monitoring:
+    $ref: './seo/monitoring.yaml'
+  /seo/optimization:
+    $ref: './seo/optimization.yaml'
+  /seo/analytics:
+    $ref: './seo/analytics.yaml'
+  /seo/keywords:
+    $ref: './seo/keywords.yaml'
+  /seo/automation:
+    $ref: './seo/automation.yaml'
+  /seo/competitor-analysis:
+    $ref: './seo/competitor-analysis.yaml'
+
+  # Public utility endpoints
+  /utils/calculator/roi:
+    $ref: './public/calculator.yaml'
+  /utils/location-check:
+    $ref: './public/location-check.yaml'
+  /utils/solar-potential:
+    $ref: './public/solar-potential.yaml'
+  /sitemap.xml:
+    $ref: './public/sitemap.yaml'
+  /robots.txt:
+    $ref: './public/robots.yaml'
+
+components:
+  schemas:
+    # Common schemas
+    Error:
+      type: object
+      required:
+        - success
+        - error
+      properties:
+        success:
+          type: boolean
+          example: false
+        error:
+          type: object
+          required:
+            - code
+            - message
+          properties:
+            code:
+              type: string
+              example: "VALIDATION_ERROR"
+              description: Machine-readable error code
+            message:
+              type: string
+              example: "The request data is invalid"
+              description: Human-readable error message
+            details:
+              type: object
+              description: Additional error details
+              properties:
+                field:
+                  type: string
+                  example: "email"
+                  description: Field that caused the error
+                value:
+                  type: string
+                  example: "invalid-email"
+                  description: Invalid value that was provided
+            request_id:
+              type: string
+              example: "req_abc123"
+              description: Unique request identifier for debugging
+            timestamp:
+              type: string
+              format: date-time
+              example: "2025-11-17T15:30:00Z"
+              description: Timestamp when error occurred
+        meta:
+          type: object
+          properties:
+            retry_possible:
+              type: boolean
+              example: true
+              description: Whether the request can be retried
+            retry_after:
+              type: integer
+              example: 60
+              description: Seconds to wait before retrying
+
+    Success:
+      type: object
+      required:
+        - success
+        - data
+      properties:
+        success:
+          type: boolean
+          example: true
+        data:
+          type: object
+          description: Response data (varies by endpoint)
+        meta:
+          type: object
+          properties:
+            timestamp:
+              type: string
+              format: date-time
+              example: "2025-11-17T15:30:00Z"
+            request_id:
+              type: string
+              example: "req_abc123"
+            version:
+              type: string
+              example: "1.0.0"
+
+    Pagination:
+      type: object
+      required:
+        - page
+        - limit
+        - total
+        - totalPages
+      properties:
+        page:
+          type: integer
+          example: 1
+          description: Current page number
+        limit:
+          type: integer
+          example: 20
+          description: Number of items per page
+        total:
+          type: integer
+          example: 147
+          description: Total number of items
+        totalPages:
+          type: integer
+          example: 8
+          description: Total number of pages
+        hasNext:
+          type: boolean
+          example: true
+          description: Whether there is a next page
+        hasPrev:
+          type: boolean
+          example: false
+          description: Whether there is a previous page
+
+    # User and Authentication schemas
+    User:
+      type: object
+      required:
+        - id
+        - email
+        - firstName
+        - lastName
+        - role
+        - createdAt
+      properties:
+        id:
+          type: string
+          example: "user_123456"
+          description: Unique user identifier
+        email:
+          type: string
+          format: email
+          example: "max.mustermann@unternehmen.de"
+        firstName:
+          type: string
+          example: "Max"
+        lastName:
+          type: string
+          example: "Mustermann"
+        company:
+          type: string
+          example: "Mustermann GmbH"
+        phone:
+          type: string
+          example: "+49 30 12345678"
+        role:
+          type: string
+          enum: [customer, admin, super_admin, content_editor]
+          example: "customer"
+        verified:
+          type: boolean
+          example: true
+        lastLogin:
+          type: string
+          format: date-time
+          example: "2025-11-17T14:30:00Z"
+        createdAt:
+          type: string
+          format: date-time
+          example: "2025-01-15T09:00:00Z"
+        updatedAt:
+          type: string
+          format: date-time
+          example: "2025-11-17T14:30:00Z"
+
+    AuthToken:
+      type: object
+      required:
+        - token
+        - refreshToken
+        - expiresIn
+        - tokenType
+      properties:
+        token:
+          type: string
+          example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+          description: JWT access token
+        refreshToken:
+          type: string
+          example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+          description: JWT refresh token
+        expiresIn:
+          type: integer
+          example: 86400
+          description: Token expiration time in seconds
+        tokenType:
+          type: string
+          example: "Bearer"
+        permissions:
+          type: array
+          items:
+            type: string
+          example: ["read:profile", "write:projects", "read:analytics"]
+
+    # Project and Solar schemas
+    SolarProject:
+      type: object
+      required:
+        - id
+        - title
+        - type
+        - power
+        - status
+        - createdAt
+      properties:
+        id:
+          type: string
+          example: "proj_789012"
+        title:
+          type: string
+          example: "Photovoltaikanlage Bürodach"
+        type:
+          type: string
+          enum: [photovoltaik, emobilitaet, energiespeicher, waermepumpe, carport]
+          example: "photovoltaik"
+        power:
+          type: number
+          example: 250
+          description: System power in kWp
+        status:
+          type: string
+          enum: [pending, active, completed, cancelled]
+          example: "active"
+        location:
+          $ref: '#/components/schemas/Address'
+        estimatedBudget:
+          type: number
+          example: 75000
+        progress:
+          type: number
+          example: 65
+          description: Project completion percentage
+        estimatedCompletion:
+          type: string
+          format: date-time
+          example: "2025-04-15T00:00:00Z"
+        createdAt:
+          type: string
+          format: date-time
+          example: "2025-02-01T10:00:00Z"
+        updatedAt:
+          type: string
+          format: date-time
+          example: "2025-11-17T14:30:00Z"
+
+    Address:
+      type: object
+      required:
+        - street
+        - city
+        - zipCode
+        - country
+      properties:
+        street:
+          type: string
+          example: "Musterstraße 1"
+        city:
+          type: string
+          example: "Berlin"
+        zipCode:
+          type: string
+          example: "10115"
+        country:
+          type: string
+          example: "Germany"
+        coordinates:
+          type: object
+          properties:
+            lat:
+              type: number
+              example: 52.5200
+            lng:
+              type: number
+              example: 13.4050
+
+    # AI Service schemas
+    AIChatMessage:
+      type: object
+      required:
+        - role
+        - message
+        - timestamp
+      properties:
+        role:
+          type: string
+          enum: [user, assistant, system]
+          example: "user"
+        message:
+          type: string
+          example: "Welche Solaranlage eignet sich für mein 500m² Dach?"
+        timestamp:
+          type: string
+          format: date-time
+          example: "2025-11-17T15:30:00Z"
+        metadata:
+          type: object
+          properties:
+            confidence:
+              type: number
+              example: 0.92
+            tokens:
+              type: object
+              properties:
+                input:
+                  type: number
+                  example: 145
+                output:
+                  type: number
+                  example: 289
+
+    ROIResult:
+      type: object
+      required:
+        - investment
+        - annualSavings
+        - amortizationPeriod
+        - roi
+      properties:
+        investment:
+          type: number
+          example: 65000
+        annualSavings:
+          type: number
+          example: 9500
+        amortizationPeriod:
+          type: number
+          example: 6.8
+          description: Years to break even
+        roi:
+          type: number
+          example: 14.6
+          description: Return on investment percentage
+        co2Savings:
+          type: object
+          properties:
+            annual:
+              type: number
+              example: 4.8
+              description: Annual CO2 savings in tons
+            twentyFiveYears:
+              type: number
+              example: 120
+              description: 25-year CO2 savings in tons
+
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: JWT authentication token
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: API key for service authentication
+
+  parameters:
+    ProjectId:
+      in: path
+      name: projectId
+      required: true
+      schema:
+        type: string
+      description: Unique project identifier
+      example: "proj_789012"
+    ContentType:
+      in: header
+      name: Content-Type
+      required: true
+      schema:
+        type: string
+        enum: [application/json]
+      description: Content type of the request
+    Authorization:
+      in: header
+      name: Authorization
+      required: true
+      schema:
+        type: string
+      description: Bearer authentication token
+    Page:
+      in: query
+      name: page
+      schema:
+        type: integer
+        default: 1
+        minimum: 1
+      description: Page number for pagination
+    Limit:
+      in: query
+      name: limit
+      schema:
+        type: integer
+        default: 20
+        minimum: 1
+        maximum: 100
+      description: Number of items per page
+
+  responses:
+    Unauthorized:
+      description: Authentication failed or missing
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            success: false
+            error:
+              code: "UNAUTHORIZED"
+              message: "Authentication required or invalid token"
+            request_id: "req_abc123"
+            timestamp: "2025-11-17T15:30:00Z"
+
+    Forbidden:
+      description: User does not have required permissions
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            success: false
+            error:
+              code: "FORBIDDEN"
+              message: "You don't have permission to access this resource"
+            request_id: "req_abc123"
+            timestamp: "2025-11-17T15:30:00Z"
+
+    NotFound:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            success: false
+            error:
+              code: "NOT_FOUND"
+              message: "The requested resource was not found"
+            request_id: "req_abc123"
+            timestamp: "2025-11-17T15:30:00Z"
+
+    ValidationError:
+      description: Request validation failed
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            success: false
+            error:
+              code: "VALIDATION_ERROR"
+              message: "The request data is invalid"
+              details:
+                field: "email"
+                value: "invalid-email"
+            request_id: "req_abc123"
+            timestamp: "2025-11-17T15:30:00Z"
+
+    RateLimited:
+      description: Too many requests
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            success: false
+            error:
+              code: "RATE_LIMIT_EXCEEDED"
+              message: "Too many requests. Please try again later."
+            request_id: "req_abc123"
+            timestamp: "2025-11-17T15:30:00Z"
+            meta:
+              retry_possible: true
+              retry_after: 60
+
+    ServerError:
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            success: false
+            error:
+              code: "INTERNAL_ERROR"
+              message: "An internal server error occurred"
+            request_id: "req_abc123"
+            timestamp: "2025-11-17T15:30:00Z"
+
+security:
+  - BearerAuth: []
+  - ApiKeyAuth: []

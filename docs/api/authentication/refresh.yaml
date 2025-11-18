@@ -1,0 +1,105 @@
+# Refresh Token Endpoint Specification
+post:
+  tags:
+    - Authentication
+  summary: Refresh JWT Token
+  description: |
+    Refresh an expired JWT access token using a valid refresh token.
+
+    This endpoint allows clients to obtain a new access token without requiring
+    the user to log in again. Refresh tokens are valid for 30 days.
+
+    ## Token Refresh Flow
+    1. Client provides valid refresh token
+    2. Server validates refresh token
+    3. Issues new access token (24 hours validity)
+    4. Optionally issues new refresh token
+    5. Returns updated tokens
+
+    ## Security Notes
+    - Refresh tokens are rotated for enhanced security
+    - Old refresh tokens are immediately invalidated
+    - Failed refresh attempts are logged
+    - Maximum refresh attempts are tracked
+
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - refreshToken
+          properties:
+            refreshToken:
+              type: string
+              example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+              description: Valid refresh token from previous login
+            deviceInfo:
+              type: object
+              properties:
+                userAgent:
+                  type: string
+                  example: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+                ipAddress:
+                  type: string
+                  example: "192.168.1.100"
+              description: Optional device information for security tracking
+
+  responses:
+    '200':
+      description: Token refreshed successfully
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../../openapi.yaml#/components/schemas/Success'
+              - type: object
+                properties:
+                  data:
+                    type: object
+                    required:
+                      - tokens
+                    properties:
+                      tokens:
+                        $ref: '../../openapi.yaml#/components/schemas/AuthToken'
+                      user:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                            example: "user_123456"
+                          role:
+                            type: string
+                            example: "customer"
+                          lastActivity:
+                            type: string
+                            format: date-time
+                            example: "2025-11-17T15:30:00Z"
+          example:
+            success: true
+            data:
+              tokens:
+                token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+                refreshToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+                expiresIn: 86400
+                tokenType: "Bearer"
+                permissions: ["read:profile", "write:projects", "read:analytics"]
+              user:
+                id: "user_123456"
+                role: "customer"
+                lastActivity: "2025-11-17T15:30:00Z"
+            meta:
+              timestamp: "2025-11-17T15:30:00Z"
+              request_id: "req_refresh_abc123"
+              version: "1.0.0"
+
+    '401':
+      $ref: '../../openapi.yaml#/components/responses/Unauthorized'
+      description: Invalid or expired refresh token
+    '429':
+      $ref: '../../openapi.yaml#/components/responses/RateLimited'
+      description: Too many refresh attempts
+    '500':
+      $ref: '../../openapi.yaml#/components/responses/ServerError'
+      description: Internal server error

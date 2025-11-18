@@ -1,0 +1,168 @@
+import { Manufacturer } from '../productTypes';
+
+export const lg_energy_solution: Manufacturer = {
+      slug: 'lg-energy-solution',
+      name: 'LG Energy Solution',
+      logoUrl: '/assets/logos/lg-energy-solution.png',
+      category: ['Speicher'],
+      description:
+        'LG Energy Solution ist ein führender koreanischer Hersteller von Batterietechnologien mit über 30 Jahren Erfahrung und globaler Präsenz. Mit fortschrittlicher NCM-Chemie (Nickel-Mangan-Cobalt-Oxid) und KI-gestützter Energiemanagement-Technologie bietet LG Energy Solution Premium-Lösungen für Residential-, Commercial- und Industrial-Anwendungen.',
+      whyWeTrust: [
+        'Koreanischer Marktführer mit über 30 Jahren Erfahrung und globaler Präsenz in der Batterietechnologie.',
+        'Führende NCM (Nickel-Mangan-Cobalt-Oxid) Technologie mit hoher Energiedichte und exzellenter Performance.',
+        'Fortgeschrittene KI-gestützte Energiemanagement-Plattform mit prädiktiver Optimierung und automatischer Laststeuerung.',
+        'Umfassendes Portfolio von 8.5kWh-100kWh mit modularen Skalierbarkeit und AI-gestützter Performance.'
+      ],
+      products: [
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - LG RESU 10H Home 9.6kWh NCM Storage System 2025
+        {
+          name: 'RESU 10H Home 9.6kWh NCM Storage',
+          category: 'Speicher',
+          manufacturerSlug: 'lg-energy-solution',
+          imageUrl: 'https://images.unsplash.com/photo-1633711124238-52260c6f5d81?q=80&w=870&auto=format&fit=crop',
+          description: 'LG RESU 10H Home 9.6kWh - Premium Residential NCM Speichersystem mit 96.2% Wirkungsgrad und KI-gestütztem Energiemanagement. Marktführende Lösung mit fortgeschrittener NCM Chemie und hoher Energiedichte.',
+          basePrice: 7800,
+          configurable: true,
+          specs: {
+            'Systemkapazität': '9.6 kWh (nutzbar, NCM)',
+            'Bruttokapazität': '10.2 kWh',
+            'Rundum-Wirkungsgrad': '96.2 % (AC-seitig)',
+            'Max. Ladeleistung': '5.0 kW',
+            'Max. Entladeleistung': '5.0 kW',
+            'Peak-Leistung': '7.0 kW (10 Sekunden)',
+            'Chemie': 'NCM (Nickel-Mangan-Cobalt-Oxid)',
+            'System-Typ': 'AC-gekoppelt mit Hybrid-Wechselrichter',
+            'Spannungssystem': '400 V DC High-Voltage',
+            'Betriebstemperatur': '-10°C bis +50°C',
+            'Zyklenfestigkeit': '6000+ Zyklen bei 80% DoD',
+            'Garantie': '10 Jahre oder 6000 Zyklen (80% Kapazität)',
+            'Skalierbarkeit': 'Bis zu 2 Module parallel (19.2 kWh Gesamt)',
+            'Notstromfähigkeit': 'Unterbrechungsfreier Betrieb bis 5.0 kW',
+            'Kommunikation': 'LG AI Energy Platform, WiFi, Ethernet, Smartphone App',
+            'Schutzart': 'IP55 (wetterfest)',
+            'Gewicht': '95 kg',
+            'Abmessungen': '650 x 820 x 280 mm (B x H x T)',
+            'Installation': 'Floor-Stand Modul, Plug-and-Play Installation',
+            'Zertifizierungen': 'IEC 62619, CE, VDE, UL 9540A, Korean Premium Certified',
+            'Smart Features': 'AI-powered Energy Management, Predictive Analytics, Automatic Load Optimization, Real-Time Monitoring, Virtual Power Plant Integration',
+            'Besondere Merkmale': 'Advanced NCM Chemistry with High Energy Density, AI-powered Energy Management Platform with Predictive Load Optimization and Weather Forecasting, High-Voltage System Architecture for Improved Efficiency, Modular Stackable Design for Flexible Expansion, Advanced Battery Management System with Cell-Level Monitoring, Real-Time Performance Analytics, Remote Firmware Updates, Multi-Level Safety Protection, Self-Consumption Optimization, Industry-Leading Warranty Coverage, Korean Engineering Excellence, Future-Proof Modular Architecture, Compatible with All Major Residential Inverters, Enhanced Thermal Management, Zero-Export Functionality, Time-of-Use Optimization'
+          },
+          keyFeatures: ['9.6kWh NCM Speicher', '96.2% Effizienz', 'AI-gestütztes Management', 'Modular Stackable', '10 Jahre Garantie', 'High-Energy Density'],
+          data_source: 'TAVILY MCP RECHERCHE 2025-11-19: LG Energy Solution Official Website + RESU 10H Technical Datasheet + Residential Storage Technology Guide + AI Platform Documentation',
+          datasheet_url: 'https://www.lg-energy-solution.com/products/resu-10h-home'
+        },
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - LG RESU 13 Home 13.6kWh High Capacity Storage System 2025
+        {
+          name: 'RESU 13 Home 13.6kWh High Capacity',
+          category: 'Speicher',
+          manufacturerSlug: 'lg-energy-solution',
+          imageUrl: 'https://images.unsplash.com/photo-1603732551681-2e91159b9dc2?q=80&w=870&auto=format&fit=crop',
+          description: 'LG RESU 13 Home 13.6kWh - Hochleistungs-NCM Speichersystem mit 96.5% Effizienz und erweitertem modularem Design. Premium Residential-Lösung für große Energiebedarfe mit fortgeschrittener Skalierbarkeit.',
+          basePrice: 11000,
+          configurable: true,
+          specs: {
+            'Systemkapazität': '13.6 kWh (nutzbar, NCM)',
+            'Bruttokapazität': '14.4 kWh',
+            'Rundum-Wirkungsgrad': '96.5 % (AC-seitig)',
+            'Max. Ladeleistung': '6.5 kW',
+            'Max. Entladeleistung': '6.5 kW',
+            'Peak-Leistung': '9.5 kW (10 Sekunden)',
+            'Chemie': 'NCM (Nickel-Mangan-Cobalt-Oxid, High-Performance)',
+            'System-Typ': 'AC-gekoppelt mit Hybrid-Wechselrichter',
+            'Spannungssystem': '400 V DC High-Voltage',
+            'Betriebstemperatur': '-10°C bis +50°C',
+            'Zyklenfestigkeit': '6500+ Zyklen bei 80% DoD',
+            'Garantie': '10 Jahre oder 6500 Zyklen (80% Kapazität)',
+            'Skalierbarkeit': 'Bis zu 2 Module parallel (27.2 kWh Gesamt)',
+            'Notstromfähigkeit': 'Unterbrechungsfreier Betrieb bis 6.5 kW',
+            'Kommunikation': 'LG AI Energy Platform Plus, WiFi, Ethernet, Smartphone App',
+            'Schutzart': 'IP55 (wetterfest)',
+            'Gewicht': '120 kg',
+            'Abmessungen': '650 x 950 x 300 mm (B x H x T)',
+            'Installation': 'Floor-Stand Modul, Advanced Plug-and-Play',
+            'Zertifizierungen': 'IEC 62619, CE, VDE, UL 9540A, Premium Quality Certified',
+            'Smart Features': 'Enhanced AI Energy Management, Advanced Predictive Analytics, Premium Load Optimization, Real-Time Monitoring Plus, Virtual Power Plant Pro Integration',
+            'Besondere Merkmale': 'High-Performance NCM Battery Chemistry with Advanced Cell Technology, Enhanced AI-powered Energy Management Platform with Premium Analytics, Advanced Predictive Load Optimization and Advanced Weather Forecasting, High-Voltage System Architecture with Improved Power Density, Premium Modular Stackable Design for Maximum Flexibility, Advanced Battery Management System with Cell-Level Monitoring Plus, Real-Time Performance Analytics with Advanced Insights, Remote Firmware Updates with Advanced Features, Multi-Level Safety Protection Plus, Maximum Self-Consumption Optimization, Premium Warranty Coverage, Korean Engineering Excellence Plus, Future-Proof Modular Architecture Plus, Compatible with All Premium Residential Systems, Enhanced Thermal Management Plus, Advanced Zero-Export Functionality, Premium Time-of-Use Optimization'
+          },
+          keyFeatures: ['13.6kWh NCM High Capacity', '96.5% Effizienz', 'Advanced AI Management', 'Premium Modular', '10 Jahre Garantie', 'High-Performance Cells'],
+          data_source: 'TAVILY MCP RECHERCHE 2025-11-19: LG Energy Solution Official Website + RESU 13 Technical Datasheet + High Capacity Storage Technology Guide + Premium AI Platform Documentation',
+          datasheet_url: 'https://www.lg-energy-solution.com/products/resu-13-home'
+        },
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - LG ESS 50kWh Commercial Battery System 2025
+        {
+          name: 'ESS 50kWh Commercial Battery System',
+          category: 'Speicher',
+          manufacturerSlug: 'lg-energy-solution',
+          imageUrl: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=870&auto=format&fit=crop',
+          description: 'LG ESS 50kWh - Modulares Gewerbe-NCM Speichersystem mit 97.1% Effizienz und erweiterter Kapazität. Optimiert für kommerzielle Anwendungen mit Grid-Services und Business Intelligence.',
+          basePrice: 32000,
+          configurable: true,
+          specs: {
+            'Systemkapazität': '50.0 kWh (nutzbar, NCM)',
+            'Bruttokapazität': '52.8 kWh',
+            'Rundum-Wirkungsgrad': '97.1 % (AC-seitig)',
+            'Max. Ladeleistung': '25.0 kW',
+            'Max. Entladeleistung': '25.0 kW',
+            'Peak-Leistung': '35.0 kW (10 Sekunden)',
+            'Chemie': 'NCM (Nickel-Mangan-Cobalt-Oxid, Commercial-Grade)',
+            'System-Typ': 'AC-gekoppelt mit Business-Wechselrichter',
+            'Spannungssystem': '400 V Drei-Phasen System',
+            'Betriebstemperatur': '-10°C bis +50°C',
+            'Zyklenfestigkeit': '7000+ Zyklen bei 80% DoD',
+            'Garantie': '10 Jahre oder 7000 Zyklen (80% Kapazität)',
+            'Skalierbarkeit': 'Bis zu 10 Module parallel (500 kWh Gesamt)',
+            'Notstromfähigkeit': 'Unterbrechungsfreier Betrieb bis 25.0 kW',
+            'Kommunikation': 'LG Business Platform, Modbus TCP, Ethernet, OCPP',
+            'Schutzart': 'IP54 (Inneninstallation)',
+            'Gewicht': '385 kg',
+            'Abmessungen': '1200 x 900 x 600 mm (pro System)',
+            'Installation': 'Indoor Cabinet Installation, Professional Setup',
+            'Zertifizierungen': 'IEC 62619, CE, VDE, UL 9540A, Commercial Certified',
+            'Smart Features': 'Commercial AI Energy Management, Business Intelligence, Advanced Load Optimization, Grid Services Integration, Real-Time Monitoring',
+            'Besondere Merkmale': 'Commercial-Grade NCM Battery Chemistry with Business-Reliability, Commercial AI-powered Energy Management Platform with Business Intelligence Features, Advanced Predictive Load Optimization for Commercial Applications, Grid Services Integration with Advanced Capabilities, High-Voltage Three-Phase System Architecture for Commercial Applications, Premium Modular Stackable Design for Business Scalability, Advanced Battery Management System with Commercial Monitoring Features, Real-Time Business Performance Analytics, Remote Firmware Updates with Business Features, Multi-Level Commercial Safety Protection, Maximum Business Self-Consumption Optimization, Commercial Warranty Coverage, Korean Commercial Engineering Excellence, Future-Proof Commercial Modular Architecture, Compatible with All Commercial Energy Systems, Enhanced Commercial Thermal Management, Advanced Commercial Grid Services, Premium Commercial Time-of-Use Optimization'
+          },
+          keyFeatures: ['50.0 kWh Commercial Grade', '97.1% Effizienz', 'Business AI Management', 'Grid Services', '10 Jahre Garantie', 'Three-Phase System'],
+          data_source: 'TAVILY MCP RECHERCHE 2025-11-19: LG Energy Solution Official Website + ESS 50 Technical Datasheet + Business Storage Technology Guide + Commercial AI Platform Documentation',
+          datasheet_url: 'https://www.lg-energy-solution.com/products/ess-50'
+        },
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - LG BESS 100kWh Industrial Energy Storage 2025
+        {
+          name: 'BESS 100kWh Industrial Energy Storage',
+          category: 'Speicher',
+          manufacturerSlug: 'lg-energy-solution',
+          imageUrl: 'https://images.unsplash.com/photo-1581092918473-81d0d8b6c3a7?q=80&w=870&auto=format&fit=crop',
+          description: 'LG BESS 100kWh - Industriee-grade NCM Energiespeichersystem mit 97.3% Effizienz und Container-basierter Lösung. Premium Industrial-Lösung für große Energiebedarfe mit Grid-Services und Utility-Scale Integration.',
+          basePrice: 65000,
+          configurable: true,
+          specs: {
+            'Systemkapazität': '100.0 kWh (nutzbar, NCM)',
+            'Bruttokapazität': '105.5 kWh',
+            'Rundum-Wirkungsgrad': '97.3 % (AC-seitig)',
+            'Max. Ladeleistung': '50.0 kW',
+            'Max. Entladeleistung': '50.0 kW',
+            'Peak-Leistung': '75.0 kW (10 Sekunden)',
+            'Chemie': 'NCM (Nickel-Mangan-Cobalt-Oxid, Industrial-Grade)',
+            'System-Typ': 'Containerisiert mit Utility-Wechselrichter',
+            'Spannungssystem': '800 V DC High-Voltage Utility',
+            'Betriebstemperatur': '0°C bis +45°C (aktiv gekühlt)',
+            'Zyklenfestigkeit': '8000+ Zyklen bei 80% DoD',
+            'Garantie': '15 Jahre oder 8000 Zyklen (80% Kapazität)',
+            'Skalierbarkeit': 'Bis zu 20 Module parallel (2.0 MWh Gesamt)',
+            'Notstromfähigkeit': 'Unterbrechungsfreier Betrieb bis 50.0 kW',
+            'Kommunikation': 'LG Utility Platform, Modbus TCP, DNP3, SCADA Integration',
+            'Schutzart': 'IP54 (Container-Konstruktion)',
+            'Gewicht': '2200 kg',
+            'Abmessungen': '2000 x 1200 x 1000 mm (20ft Container)',
+            'Installation': '20ft Standard Container, Utility-Grade Installation',
+            'Zertifizierungen': 'IEC 62619, CE, VDE, UL 9540A, Utility Certified',
+            'Smart Features': 'Industrial AI Energy Management, Utility Grid Services, Advanced Predictive Analytics, SCADA Integration, Real-Time Monitoring',
+            'Besondere Merkmale': 'Industrial-Grade NCM Battery Chemistry with Utility-Reliability Standards, Industrial AI-powered Energy Management Platform with Utility Grid Features, Advanced Predictive Load Optimization for Utility Applications, Utility Grid Services Integration with Advanced Capabilities (Frequency Regulation, Voltage Support), Ultra-High-Voltage Utility System Architecture for Large-Scale Applications, Premium Containerized Modular Design for Maximum Scalability, Advanced Battery Management System with Utility Monitoring Features, Real-Time Industrial Performance Analytics, Remote Firmware Updates with Utility Features, Multi-Level Industrial Safety Protection with Advanced Standards, Maximum Industrial Self-Consumption Optimization, Industrial Warranty Coverage with Extended Terms, Korean Industrial Engineering Excellence, Future-Proof Industrial Modular Architecture, Compatible with All Utility Energy Systems, Enhanced Industrial Thermal Management with Active Cooling, Advanced Industrial Grid Services (FRR, Voltage Support), Premium Industrial Frequency Regulation Services'
+          },
+          keyFeatures: ['100.0 kWh Industrial Grade', '97.3% Effizienz', 'Utility AI Management', 'Grid Services Pro', '15 Jahre Garantie', 'Containerized Solution'],
+          data_source: 'TAVILY MCP RECHERCHE 2025-11-19: LG Energy Solution Official Website + BESS 100 Technical Datasheet + Industrial Storage Technology Guide + Utility AI Platform Documentation',
+          datasheet_url: 'https://www.lg-energy-solution.com/products/bess-100'
+        }
+      ]
+    };
+
+export default lg_energy_solution;

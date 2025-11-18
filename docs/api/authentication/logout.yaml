@@ -1,0 +1,98 @@
+# Logout Endpoint Specification
+post:
+  tags:
+    - Authentication
+  summary: User Logout
+  description: |
+    Log out a user and invalidate authentication tokens.
+
+    This endpoint:
+    - Invalidates the current JWT access token
+    - Invalidates the associated refresh token
+    - Ends the user session
+    - Clears any active session data
+    - Returns confirmation of successful logout
+
+    ## Logout Process
+    1. Client provides authentication token
+    2. Server validates and invalidates tokens
+    3. Clears session data
+    4. Returns success confirmation
+
+    ## Security Notes
+    - Tokens are added to blocklist for immediate invalidation
+    - Session data is securely deleted
+    - Audit trail is maintained for logout events
+    - Supports logout from all devices
+
+  requestBody:
+    required: false
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            allDevices:
+              type: boolean
+              default: false
+              example: true
+              description: Logout from all devices (all active sessions)
+            deviceInfo:
+              type: object
+              properties:
+                deviceId:
+                  type: string
+                  example: "device_xyz789"
+                deviceName:
+                  type: string
+                  example: "Chrome on Windows"
+              description: Optional device identification for targeted logout
+
+  responses:
+    '200':
+      description: Logout successful
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../../openapi.yaml#/components/schemas/Success'
+              - type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: "Successfully logged out"
+                      devicesLoggedOut:
+                        type: integer
+                        example: 1
+                        description: Number of devices logged out
+                      sessionEnded:
+                        type: string
+                        format: date-time
+                        example: "2025-11-17T15:30:00Z"
+                      requiresReauth:
+                        type: boolean
+                        example: false
+          example:
+            success: true
+            data:
+              message: "Successfully logged out"
+              devicesLoggedOut: 1
+              sessionEnded: "2025-11-17T15:30:00Z"
+              requiresReauth: false
+            meta:
+              timestamp: "2025-11-17T15:30:00Z"
+              request_id: "req_logout_abc123"
+              version: "1.0.0"
+
+    '401':
+      $ref: '../../openapi.yaml#/components/responses/Unauthorized'
+      description: No active session or invalid token
+    '500':
+      $ref: '../../openapi.yaml#/components/responses/ServerError'
+      description: Internal server error
+
+  security:
+    - BearerAuth: []

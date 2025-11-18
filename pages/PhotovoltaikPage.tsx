@@ -1,0 +1,214 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import { Page } from '../types';
+import AnimatedSection from '../components/AnimatedSection';
+import ServiceWizard from '../components/ServiceWizard';
+import Breadcrumb from '../components/Breadcrumb';
+import { pageToPath } from '../data/pageRoutes';
+
+// Import new content components
+import TargetGroupSection from '../components/TargetGroupSection';
+import SocialProofSection from '../components/SocialProofSection';
+import TechnicalSpecsSection from '../components/TechnicalSpecsSection';
+import FAQSection from '../components/FAQSection';
+import HowItWorksSection from '../components/HowItWorksSection';
+import PricingOverviewSection from '../components/PricingOverviewSection';
+import TargetGroupBenefitsSection from '../components/TargetGroupBenefitsSection';
+import CaseStudiesSection from '../components/CaseStudiesSection';
+import ExtendedFAQSection from '../components/ExtendedFAQSection';
+
+// Import PHASE 4: Performance & SEO components
+import SEOEnhancedDataSection from '../components/SEOEnhancedDataSection';
+import LazyLoadedSection from '../components/LazyLoadedSection';
+import PerformanceMonitor from '../components/PerformanceMonitor';
+
+interface PhotovoltaikPageProps {
+  setPage: (page: Page, options?: { anchor?: string }) => void;
+}
+
+// --- START: Hero Component ---
+const ServiceIcon: React.FC<{ name: string }> = ({ name }) => {
+    const icons: { [key: string]: React.ReactNode } = {
+        'dachanlagen': <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h6.75M9 11.25h6.75M9 15.75h6.75M9 20.25h6.75" /></svg>,
+        'agri-pv': <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" /></svg>,
+        'speicher': <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M21 10.5h.375c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125H21M4.5 10.5H18V15H4.5v-4.5zM3.75 18h15A2.25 2.25 0 0021 15.75v-6.375A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25v6.375A2.25 2.25 0 005.25 18h-1.5z" /></svg>,
+    };
+    return icons[name] || null;
+};
+const serviceCards = [
+    { id: 'dachanlagen', title: 'Dachanlagen', icon: 'dachanlagen', page: 'service-photovoltaik' as Page },
+    { id: 'agri-pv', title: 'Agri-PV', icon: 'agri-pv', page: 'agri-pv' as Page },
+    { id: 'speicher', title: 'Speicher', icon: 'speicher', page: 'service-speicher' as Page },
+];
+const PhotovoltaikHero: React.FC<{ setPage: (page: Page) => void, onCtaClick: () => void }> = ({ setPage, onCtaClick }) => {
+    return (
+        <section className="leistungen-hero-v2 bg-slate-50 overflow-hidden">
+            <div className="container mx-auto px-6 py-20 lg:py-24">
+                <div className="mb-8">
+                    <Breadcrumb variant="hero" />
+                </div>
+                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                    {/* Left Column: Text Content */}
+                    <div className="text-center lg:text-left">
+                         <p className="font-bold text-green-600 uppercase tracking-wider page-hero-animate-item page-hero-breadcrumb">Photovoltaik</p>
+                         <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tighter mt-4 page-hero-animate-item page-hero-title pillar-intro">
+                             Ganzheitliche Solarlösungen.
+                         </h1>
+                         <p className="mt-6 text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 page-hero-animate-item page-hero-subtitle pillar-keyfacts">
+                            Wir sind Ihr strategischer Partner für die solare Energiewende und begleiten Sie von der ersten Analyse bis zur langfristigen Betriebsführung Ihrer Anlage. Erfahren Sie mehr über unsere <Link to="/preise" className="text-green-600 hover:text-green-700 font-semibold">Preise</Link> und <Link to="/foerdermittel-check" className="text-green-600 hover:text-green-700 font-semibold">Fördermöglichkeiten</Link>.
+                         </p>
+                         <div className="mt-8 page-hero-animate-item page-hero-cta">
+                             <Link
+                                 to={pageToPath.kontakt}
+                                 onClick={(event) => {
+                                     event.preventDefault();
+                                     onCtaClick();
+                                 }}
+                                 className="inline-flex justify-center bg-green-600 text-white font-bold py-4 px-10 rounded-lg text-lg hover:bg-green-700 transition-all duration-300 shadow-xl cta-button-glow transform hover:-translate-y-1"
+                             >
+                                 Jetzt Beratung starten
+                             </Link>
+                         </div>
+                    </div>
+                    {/* Right Column: Service Grid */}
+                    <div className="flex flex-col items-center justify-center">
+                        <h3 className="text-xl font-bold text-slate-800 mb-6 page-hero-animate-item" style={{ animationDelay: '0.4s' }}>Wählen Sie Ihren Leistungsbereich</h3>
+                         <div className="service-grid">
+                            {serviceCards.map((card, index) => (
+                                <Link
+                                    key={card.id}
+                                    to={pageToPath[card.page]}
+                                    onClick={(event) => {
+                                        event.preventDefault();
+                                        setPage(card.page);
+                                    }}
+                                    className={`service-card card-${index + 1}`}
+                                >
+                                    <div className="service-card-arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                                    </div>
+                                    <div className="service-card-icon-wrapper">
+                                        <ServiceIcon name={card.icon} />
+                                    </div>
+                                    <h4>{card.title}</h4>
+                                </Link>
+                            ))}
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+// --- END: Hero Component ---
+
+const PhotovoltaikPage: React.FC<PhotovoltaikPageProps> = ({ setPage }) => {
+    const openChat = () => {
+        document.dispatchEvent(new CustomEvent('open-chat'));
+    };
+
+    const pageTitle = "Photovoltaik Anlagen für Landwirtschaft, Einfamilienhaus & Gewerbe | ZOE Solar 2025";
+    const pageDescription = "Photovoltaik Anlagen für alle Zielgruppen: Agrarphotovoltaik für Landwirte ✓ PV für Einfamilienhäuser ✓ Gewerbe Photovoltaik ✓ 30% Förderung ✓ 2.500+ erfolgreiche Installationen. Jetzt kostenlose Beratung!";
+    const pageKeywords = "Photovoltaik Landwirtschaft, Agri PV, Photovoltaik Einfamilienhaus, Solaranlage Eigenheim, Gewerbe Photovoltaik, PV Anlage Privat, Solar Bauernhof, Freiflächen Photovoltaik, Photovoltaik Unternehmen, Gewerbehallen Solar, Solaranlagen Kosten, Photovoltaik Installation";
+
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Photovoltaik mit Speicher",
+        "description": "Professionelle Installation von Photovoltaik-Anlagen mit modernen Batteriespeichern für maximale Energieautarkie",
+        "provider": {
+            "@type": "Organization",
+            "name": "ZOE Solar GmbH",
+            "url": "https://www.zoe-solar.de"
+        },
+        "areaServed": "DE",
+        "serviceType": "Photovoltaik Installation mit Speicher"
+    };
+
+    // SEO Data for Enhanced Structured Data
+    const seoData = {
+        targetGroups: ["Landwirtschaft & Großflächen", "Privatkunden & Einfamilienhaus", "Gewerbe & Unternehmen"],
+        services: ["Photovoltaik Installation", "Agrar-Photovoltaik", "Gewerbe-PV", "Batteriespeicher"],
+        locations: ["Berlin", "Hamburg", "München", "Köln", "Frankfurt", "Stuttgart", "Düsseldorf", "Dortmund"],
+        priceRange: { min: 1000, max: 100000 }
+    };
+
+    return (
+        <>
+            {/* Enhanced SEO Data for all target groups */}
+            <SEOEnhancedDataSection
+                targetGroups={seoData.targetGroups}
+                services={seoData.services}
+                locations={seoData.locations}
+                priceRange={seoData.priceRange}
+            />
+
+            <Helmet>
+                <title>{pageTitle}</title>
+                <meta name="description" content={pageDescription} />
+                <meta name="keywords" content={pageKeywords} />
+                <link rel="canonical" href="https://www.zoe-solar.de/photovoltaik" />
+                
+                {/* Open Graph for Social Sharing */}
+                <meta property="og:title" content="Photovoltaik für alle Zielgruppen | ZOE Solar 2025" />
+                <meta property="og:description" content="Professionelle PV-Anlagen für Landwirtschaft, Privathaushalte & Gewerbe. 30% Förderung, 2.500+ Installationen." />
+                <meta property="og:image" content="https://www.zoe-solar.de/images/photovoltaik-og.jpg" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://www.zoe-solar.de/photovoltaik" />
+                
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Photovoltaik für alle Zielgruppen | ZOE Solar" />
+                <meta name="twitter:description" content="Agrar-PV, Einfamilienhaus & Gewerbe-PV Lösungen" />
+                <meta name="twitter:image" content="https://www.zoe-solar.de/images/photovoltaik-twitter.jpg" />
+                
+                {/* Additional SEO Meta Tags */}
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="ZOE Solar GmbH" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                
+                <script type="application/ld+json">
+                    {JSON.stringify(schema)}
+                </script>
+            </Helmet>
+
+            {/* Performance Monitor (Development only) */}
+            <PerformanceMonitor />
+
+            <div className="bg-white">
+                <PhotovoltaikHero setPage={setPage} onCtaClick={openChat} />
+            
+                <AnimatedSection>
+                    <section id="service-finder" className="py-20 bg-slate-50 border-t border-slate-200">
+                        <div className="max-w-7xl mx-auto px-6">
+                            <div className="text-center mb-16 max-w-4xl mx-auto">
+                                <p className="font-bold text-green-600 uppercase tracking-wider">Lösungsfinder</p>
+                                <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mt-2 pillar-benefits">Finden Sie den richtigen Service.</h2>
+                                <p className="text-lg text-slate-600 mt-4">
+                                    Unsicher, welche Dienstleistung Sie benötigen? Beschreiben Sie Ihr Anliegen in einfachen Worten oder wählen Sie direkt einen Bereich, um Ihre Anfrage zu präzisieren.
+                                </p>
+                            </div>
+                            <ServiceWizard />
+                        </div>
+                    </section>
+                </AnimatedSection>
+
+                {/* Above-the-fold content - Load immediately */}
+                <TargetGroupSection />
+                <SocialProofSection />
+                <TechnicalSpecsSection />
+
+                {/* Below-the-fold content - Lazy loaded for performance */}
+                <LazyLoadedSection component={FAQSection} threshold={0.1} />
+                <LazyLoadedSection component={HowItWorksSection} threshold={0.1} />
+                <LazyLoadedSection component={PricingOverviewSection} threshold={0.1} />
+                <LazyLoadedSection component={TargetGroupBenefitsSection} threshold={0.1} />
+                <LazyLoadedSection component={CaseStudiesSection} threshold={0.2} />
+                <LazyLoadedSection component={ExtendedFAQSection} threshold={0.3} />
+            </div>
+        </>
+    );
+};
+
+export default PhotovoltaikPage;

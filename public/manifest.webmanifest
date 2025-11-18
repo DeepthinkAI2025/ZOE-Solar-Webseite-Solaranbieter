@@ -1,0 +1,126 @@
+{
+  "id": "de.zoesolar.app",
+  "name": "ZOE Solar – Ihr Solaranbieter Testsieger 2025",
+  "short_name": "ZOE Solar",
+  "description": "ZOE Solar – Ihr Experte für Photovoltaik, Batteriespeicher und Ladeinfrastruktur in Deutschland. Testsieger 2025.",
+  "lang": "de",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "minimal-ui"],
+  "orientation": "portrait",
+  "background_color": "#f5fbf7",
+  "theme_color": "#16a34a",
+  "categories": ["business", "utilities", "productivity", "energy"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/screenshot-mobile-1.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "ZOE Solar Startseite auf dem Smartphone"
+    },
+    {
+      "src": "/images/screenshot-desktop-1.png",
+      "sizes": "1440x900",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "ZOE Solar Startseite auf dem Desktop"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Solarrechner",
+      "short_name": "Rechner",
+      "description": "Kostenlose Solaranalyse für Ihr Unternehmen",
+      "url": "/solar-rechner",
+      "icons": [
+        {
+          "src": "/images/shortcut-calculator.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Kontaktanfrage",
+      "short_name": "Kontakt",
+      "description": "Persönliche Beratung anfordern",
+      "url": "/kontakt",
+      "icons": [
+        {
+          "src": "/images/shortcut-contact.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Referenzen",
+      "short_name": "Projekte",
+      "description": "Erfolgreiche Solarprojekte ansehen",
+      "url": "/referenzen",
+      "icons": [
+        {
+          "src": "/images/shortcut-projects.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "web+solar",
+      "url": "/solar-rechner?type=%s"
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "/upload",
+      "accept": {
+        "application/pdf": [".pdf"],
+        "image/jpeg": [".jpg", ".jpeg"],
+        "image/png": [".png"]
+      }
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url",
+      "files": [
+        {
+          "name": "documents",
+          "accept": ["application/pdf", "image/jpeg", "image/png"]
+        }
+      ]
+    }
+  },
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "query": "Tesla Powerwall 3 specifications capacity warranty dimensions price 2024 official",
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.notateslaapp.com/news/1606/tesla-unveils-powerwall-3-what-s-new-and-how-it-compares-to-powerwall-2",
+      "title": "Tesla Unveils Powerwall 3: Specs, What's New and How It ...",
+      "content": "With dimensions of 43.25 in x 24 in x 7.6 in and a weight of 287 lbs, it seeks to blend power with aesthetics. Installation includes the promise",
+      "score": 0.9997305
+    },
+    {
+      "url": "https://valleysolar.solar/resource-center/guides/tesla-powerwall-3-cost-and-installation-in-massachusetts/",
+      "title": "Tesla Powerwall 3 Cost and Installation in Massachusetts",
+      "content": "Quick Specs ; Inverter Type, Integrated hybrid ; Weight, 287 lb ; Dimensions, 43.25” × 24” × 7.6” ; Warranty, 10 years",
+      "score": 0.9996947
+    },
+    {
+      "url": "https://www.solartopps.com/blog/tesla-powerwall-3-specs-energy-storage/",
+      "title": "Tesla Powerwall 3 Specs: The Future of Energy Storage - Solar Topps",
+      "content": "Energy Capacity, 13.5 kWh, 13.5 kWh ; Continuous Power, 5.8 kW, 11.5 kW ; Backup Power, 10 kW peak, 11.5 kW ; Weight, 251.3 lbs, 287 lbs.",
+      "score": 0.9986646
+    },
+    {
+      "url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf",
+      "title": "[PDF] Powerwall 3 Datasheet | Energy Library",
+      "content": "Performance Specifications Model Number 1841000-x1-y Nominal Grid Voltage 120/240 V AC Grid Configuration Split phase Grid Frequency 60 Hz Continuous Current Rating 200 A Maximum Supply Short Circuit Current 22 kA with Square D or Eaton main breaker 25 kA with Eaton main breaker 15 IEC Protective Class Class I Overvoltage Category Category IV Mechanical Specifications Dimensions 660 x 411 x 149 mm (26 x 16 x 6 in) Weight 16.3 kg (36 lb) Mounting options Wall mount Environmental Specifications Operating Temperature –20°C to 50°C (–4°F to 122°F) Operating Humidity (RH) Up to 100%, condensing Maximum Elevation 3000 m (9843 ft) Environment Indoor and outdoor rated Enclosure Type NEMA 3R Compliance Information Certifications UL 67, UL 869A, UL 916, UL 1741 PCS, CSA 22.2 107.1, CSA 22.2 29 Emissions FCC Part 15, Class B, ICES 003 ­— Tesla Gateway 3 controls connection to the grid in a Powerwall system, automatically detecting outages and providing seamless transition to backup power.",
+      "score": 0.9982039
+    },
+    {
+      "url": "https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-uk/Powerwall-3-Datasheet-EN.pdf",
+      "title": "[PDF] Powerwall 3 Datasheet - Energy Library",
+      "content": "Powerwall 3 has the ability to store up to 13.5 kWh of energy and start heavy loads rated up to 185 A LRA, meaning a single. Powerwall 3 can support the power",
+      "score": 0.98926485
+    }
+  ],
+  "response_time": 0.77,
+  "request_id": "6f2755df-1e6b-44ae-82f8-33ef04ce8f78"
+}

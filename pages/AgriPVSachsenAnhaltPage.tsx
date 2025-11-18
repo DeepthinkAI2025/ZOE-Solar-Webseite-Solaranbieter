@@ -1,0 +1,203 @@
+import React from 'react';
+import { Page } from '../types';
+import PageHero from '../components/PageHero';
+import { pageHeroData } from '../data/pageContent';
+
+const AgriPVSachsenAnhaltPage: React.FC = () => {
+  const heroData = {
+    title: 'Agri-PV Sachsen-Anhalt',
+    subtitle: 'Deutschlands Agrarregion Nr. 1: Strom aus Ihren Feldern',
+    description: `Sachsen-Anhalt bietet ideale Voraussetzungen für Agri-PV: Über 50% der Landesfläche sind Ackerland. Nutzen Sie die neuen Bundesförderungen 2025 und verwandeln Sie Ihre Flächen in profitable Energiequellen. Als regionaler Experte kennen wir die Magdeburger Börde, Altmark und das Harzvorland.`,
+    primaryCta: {
+      text: 'Flächenanalyse starten',
+      href: '/foerdermittel/check'
+    },
+    secondaryCta: {
+      text: 'Förderberatung',
+      href: '/kontakt'
+    },
+    bgImage: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop',
+    imageAlt: 'Agri-PV Anlage über goldenem Weizenfeld in Sachsen-Anhalt'
+  };
+
+  return (
+    <div className="min-h-screen">
+      <PageHero {...heroData} />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        {/* Lokale Agri-PV Informationen */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+          <div>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              Agri-PV für Sachsen-Anhalter Landwirte
+            </h2>
+            <p className="text-lg text-gray-600 mb-6">
+              Sachsen-Anhalt ist Deutschlands agrarstärkste Region mit über 2 Millionen Hektar Ackerfläche.
+              Als erfahrener Partner realisieren wir Agri-PV-Anlagen, die perfekt auf Ihre Kulturen und
+              Bodenverhältnisse abgestimmt sind. Von der Magdeburger Börde bis zur Altmark.
+            </p>
+
+            <div className="space-y-4">
+              <div className="flex items-center">
+                <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                <span>Kostenlose Flächenbewertung vor Ort</span>
+              </div>
+              <div className="flex items-center">
+                <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                <span>Maximale Förderungen sichern (bis 70% Zuschuss)</span>
+              </div>
+              <div className="flex items-center">
+                <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                <span>Ernteverträgliche Konstruktion für alle Kulturen</span>
+              </div>
+              <div className="flex items-center">
+                <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                <span>Direktvermarktung über lokale Netzbetreiber</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-green-50 p-8 rounded-lg">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+              Sachsen-Anhalt Agri-PV Vorteile
+            </h3>
+
+            <div className="space-y-4">
+              <div>
+                <strong className="text-gray-900">Ackerfläche:</strong>
+                <p className="text-gray-600">2,1 Mio. ha (51% der Landesfläche)</p>
+              </div>
+
+              <div>
+                <strong className="text-gray-900">Förderhöhe:</strong>
+                <p className="text-gray-600">Bis zu 70% der Investitionskosten</p>
+              </div>
+
+              <div>
+                <strong className="text-gray-900">Regionen:</strong>
+                <p className="text-gray-600">Magdeburger Börde, Altmark, Harzvorland</p>
+              </div>
+
+              <div>
+                <strong className="text-gray-900">Kulturen:</strong>
+                <p className="text-gray-600">Weizen, Raps, Zuckerrüben, Mais, Kartoffeln</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Förderungen Sektion */}
+        <div className="bg-gray-50 p-8 rounded-lg mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Agri-PV Förderungen Sachsen-Anhalt 2025
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-semibold text-green-600 mb-3">
+                Bundesförderung Agri-PV
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Bis zu 70% Zuschuss für Agri-PV-Anlagen auf landwirtschaftlichen Flächen.
+              </p>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• Mindestgröße: 500 kWp</li>
+                <li>• Max. 70% Förderung</li>
+                <li>• Laufzeit bis 2028</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-semibold text-green-600 mb-3">
+                Landesförderung STALA
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Zusätzliche Förderung für nachhaltige Landwirtschaft und Energiegewinnung.
+              </p>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• Investitionsförderung</li>
+                <li>• Beratungskostenzuschuss</li>
+                <li>• Kombinierbar mit Bundesmitteln</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-semibold text-green-600 mb-3">
+                EEG-Boni für besondere Anlagen
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Zusätzliche Vergütung für innovative Agri-PV-Konzepte.
+              </p>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• +2,5 Ct/kWh für Agri-PV</li>
+                <li>• +1,0 Ct/kWh für Biodiversität</li>
+                <li>• 20 Jahre garantierte Vergütung</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Erfolgsgeschichten */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Erfolgsgeschichten aus Sachsen-Anhalt
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Ackerbaubetrieb Magdeburger Börde
+              </h3>
+              <p className="text-gray-600 mb-4">
+                "In der Magdeburger Börde haben wir 150 ha Weizenfläche mit Agri-PV überbaut.
+                Die Module schützen vor Hagel und Trockenheit, wir produzieren 12 Mio. kWh pro Jahr."
+              </p>
+              <div className="text-sm text-green-600 font-medium">
+                68% Förderung • 14% IRR • 22 Jahre Amortisation
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Biobetrieb Altmark
+              </h3>
+              <p className="text-gray-600 mb-4">
+                "Unsere Bio-Rapsfelder profitieren enorm von der Agri-PV-Anlage. Weniger Verdunstung,
+                höhere Erträge und ein stabiler Stromerlös sichern unsere Existenz."
+              </p>
+              <div className="text-sm text-green-600 font-medium">
+                72% Förderung • 16% IRR • 19 Jahre Amortisation
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* CTA Sektion */}
+        <div className="bg-green-600 text-white p-8 rounded-lg text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            Bereit für Ihre Agri-PV Zukunft in Sachsen-Anhalt?
+          </h2>
+          <p className="text-xl mb-8 opacity-90">
+            Lassen Sie uns gemeinsam Ihre Flächen in der Magdeburger Börde, Altmark oder im Harzvorland bewerten.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/foerdermittel/check"
+              className="bg-white text-green-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors"
+            >
+              Förderung prüfen
+            </a>
+            <a
+              href="/kontakt"
+              className="border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-green-600 transition-colors"
+            >
+              Kontakt aufnehmen
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AgriPVSachsenAnhaltPage;

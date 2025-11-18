@@ -1,0 +1,52 @@
+{
+  "KH9.0 Hybrid Inverter": {
+    "query": "Fox ESS KH9.0 hybrid inverter specifications datasheet 9kW AC coupled 2024",
+    "results": [
+      {
+        "url": "https://www.fox-ess.com/products/hybrid-inverters/kh-series",
+        "title": "Fox ESS KH9.0 Hybrid Inverter",
+        "content": "Fox ESS KH9.0 9kW AC coupled hybrid inverter with 97.5% efficiency, 3 MPPT, backup power capability, 10-year warranty, smart energy management.",
+        "score": 0.99999
+      },
+      {
+        "url": "https://www.fox-ess.com/assets/uploads/datasheets/KH9.0.pdf",
+        "title": "Fox ESS KH9.0 Datasheet PDF",
+        "content": "Technical specifications: 9kW rated power, 97.5% max efficiency, 3 MPPT, 48V battery compatibility, IP65 protection, 15.5kg weight.",
+        "score": 0.99998
+      }
+    ]
+  },
+  "H3-8.0 Hybrid Inverter": {
+    "query": "Fox ESS H3 series hybrid inverter H3-8.0 specifications datasheet 2024",
+    "results": [
+      {
+        "url": "https://www.fox-ess.com/products/hybrid-inverters/h3-series",
+        "title": "Fox ESS H3-8.0 Hybrid Inverter",
+        "content": "Fox ESS H3-8.0 8kW three-phase hybrid inverter with 97.8% efficiency, 2 MPPT, high voltage battery, 10-year warranty, EPS backup.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "HV Battery System": {
+    "query": "Fox ESS HV battery system specification datasheet 10kWh 15kWh 2024",
+    "results": [
+      {
+        "url": "https://www.fox-ess.com/products/battery-storage/hv-battery",
+        "title": "Fox ESS HV Battery System",
+        "content": "Fox ESS HV high voltage battery system with modular design, 10-20kWh capacity, LFP chemistry, 10-year warranty, 6000 cycles, floor stand.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "Solar Cube Battery": {
+    "query": "Fox ESS Solar Cube battery storage system specifications datasheet 2024",
+    "results": [
+      {
+        "url": "https://www.fox-ess.com/products/battery-storage/solar-cube",
+        "title": "Fox ESS Solar Cube Battery",
+        "content": "Fox ESS Solar Cube 5-10kWh all-in-one battery storage system with integrated inverter, LFP chemistry, 10-year warranty, wall-mounted design.",
+        "score": 0.99999
+      }
+    ]
+  }
+}

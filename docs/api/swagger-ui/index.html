@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZOE Solar API Documentation</title>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui.css" />
+  <style>
+    html {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin: 0;
+      background: #fafafa;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .swagger-ui .topbar {
+      background-color: #1a73e8;
+      border-bottom: 1px solid #1a73e8;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .swagger-ui .topbar .download-url-wrapper .download-url-button {
+      background-color: #1a73e8;
+      border-color: #1a73e8;
+      color: #ffffff;
+    }
+
+    .swagger-ui .topbar .download-url-wrapper .download-url-button:hover {
+      background-color: #1558b9;
+      border-color: #1558b9;
+    }
+
+    .swagger-ui .info {
+      margin: 50px 0;
+      border-radius: 8px;
+      background: #ffffff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+
+    .swagger-ui .info .title {
+      color: #202124;
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    .swagger-ui .info .description {
+      color: #5f6368;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin-bottom: 20px;
+    }
+
+    .swagger-ui .scheme-container {
+      background: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin: 0 0 20px 0;
+      padding: 15px 20px;
+    }
+
+    .swagger-ui .opblock.opblock-tag {
+      background: #1a73e8;
+      color: #ffffff;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .swagger-ui .opblock.opblock-tag:hover {
+      background: #1558b9;
+    }
+
+    .swagger-ui .opblock.opblock-summary-description {
+      color: #5f6368;
+    }
+
+    .swagger-ui .opblock.opblock-section-header {
+      background: #f8f9fa;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .swagger-ui .opblock.opblock-body {
+      background: #ffffff;
+    }
+
+    .swagger-ui .scheme-container {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+    }
+
+    .swagger-ui .tab li.active {
+      background-color: #1a73e8;
+      color: #ffffff;
+      border-color: #1a73e8;
+    }
+
+    .swagger-ui .btn.authorize {
+      background-color: #1a73e8;
+      color: #ffffff;
+      border-color: #1a73e8;
+    }
+
+    .swagger-ui .btn.authorize:hover {
+      background-color: #1558b9;
+      border-color: #1558b9;
+    }
+
+    .swagger-ui .btn.execute {
+      background-color: #1a73e8;
+      color: #ffffff;
+      border-color: #1a73e8;
+    }
+
+    .swagger-ui .btn.execute:hover {
+      background-color: #1558b9;
+      border-color: #1558b9;
+    }
+
+    .swagger-ui .highlight-code {
+      background: #1e1e1e;
+      border-radius: 4px;
+      padding: 12px;
+      color: #d4d4d4;
+      font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    }
+
+    .swagger-ui .parameter__name {
+      font-weight: 600;
+      color: #202124;
+    }
+
+    .swagger-ui .parameter__type {
+      color: #5f6368;
+    }
+
+    .swagger-ui .model-box {
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+
+    .swagger-ui .model-box .model-title {
+      font-weight: 600;
+      color: #202124;
+      margin-bottom: 10px;
+    }
+
+    .swagger-ui .model .property {
+      display: flex;
+      align-items: center;
+      padding: 5px 0;
+    }
+
+    .swagger-ui .model .property .prop-name {
+      font-weight: 600;
+      color: #202124;
+      min-width: 150px;
+    }
+
+    .swagger-ui .model .property .prop-type {
+      color: #5f6368;
+      min-width: 80px;
+    }
+
+    .swagger-ui .model .property .prop-description {
+      color: #5f6368;
+      flex: 1;
+    }
+
+    .custom-header {
+      background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%);
+      color: #ffffff;
+      padding: 2rem 0;
+      text-align: center;
+      border-bottom: 3px solid #1a73e8;
+      box-shadow: 0 2px 10px rgba(26, 115, 232, 0.1);
+    }
+
+    .custom-header h1 {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+    }
+
+    .custom-header p {
+      margin: 1rem 0 0 0;
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .custom-header .stats {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .custom-header .stat {
+      text-align: center;
+    }
+
+    .custom-header .stat-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .custom-header .stat-label {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    .quick-links {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .quick-links h2 {
+      margin: 0 0 15px 0;
+      color: #202124;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .quick-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .quick-links li {
+      margin-bottom: 8px;
+    }
+
+    .quick-links a {
+      color: #1a73e8;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: background-color 0.2s ease;
+    }
+
+    .quick-links a:hover {
+      background-color: #f1f3f4;
+    }
+
+    .quick-links .icon {
+      font-size: 1.2em;
+    }
+
+    @media (max-width: 768px) {
+      .custom-header {
+        padding: 1.5rem 0;
+      }
+
+      .custom-header h1 {
+        font-size: 2rem;
+      }
+
+      .custom-header .stats {
+        gap: 1.5rem;
+      }
+
+      .quick-links {
+        margin: 10px;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="custom-header">
+    <h1>☀️ ZOE Solar API</h1>
+    <p>Enterprise Solar Platform API Documentation</p>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-value">50+</div>
+        <div class="stat-label">API Endpoints</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">8</div>
+        <div class="stat-label">AI Services</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">99.9%</div>
+        <div class="stat-label">Uptime</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="quick-links">
+    <h2>📚 Quick Links</h2>
+    <ul>
+      <li>
+        <a href="#/auth/login" class="icon">🔐</a>
+        <span>Authentication</span>
+      </li>
+      <li>
+        <a href="#/customer/profile" class="icon">👤</a>
+        <span>Customer Management</span>
+      </li>
+      <li>
+        <a href="#/ai/chat" class="icon">🤖</a>
+        <span>AI Services</span>
+      </li>
+      <li>
+        <a href="#/ai/roi-calculator" class="icon">💰</a>
+        <span>ROI Calculator</span>
+      </li>
+      <li>
+        <a href="#/admin/dashboard/kpi" class="icon">📊</a>
+        <span>Admin Dashboard</span>
+      </li>
+      <li>
+        <a href="./examples/javascript/" class="icon">💻</a>
+        <span>Code Examples</span>
+      </li>
+      <li>
+        <a href="./README.md" class="icon">📖</a>
+        <span>Documentation</span>
+      </li>
+    </ul>
+  </div>
+
+  <div id="swagger-ui"></div>
+
+  <script src="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui-bundle.js"></script>
+  <script src="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui-standalone-preset.js"></script>
+  <script>
+    window.onload = function() {
+      const ui = SwaggerUIBundle({
+        url: '../openapi.yaml',
+        dom_id: '#swagger-ui',
+        deepLinking: true,
+        presets: [
+          SwaggerUIStandalonePreset
+        ],
+        plugins: [
+          SwaggerUIBundle.plugins.DownloadUrl
+        ],
+        layout: "StandaloneLayout",
+        defaultModelsExpandDepth: 2,
+        defaultModelExpandDepth: 2,
+        displayRequestDuration: true,
+        docExpansion: "list",
+        filter: true,
+        showExtensions: true,
+        showCommonExtensions: true,
+        tryItOutEnabled: true,
+        requestInterceptor: (request) => {
+          // Add default headers
+          request.headers['X-API-Version'] = '1.0.0';
+          request.headers['X-Client-Name'] = 'ZOE Solar API Docs';
+
+          // Add authentication token if available
+          const token = localStorage.getItem('zoe_token');
+          if (token) {
+            request.headers.Authorization = `Bearer ${token}`;
+          }
+
+          return request;
+        },
+        responseInterceptor: (response) => {
+          // Log responses for debugging
+          if (process.env.NODE_ENV === 'development') {
+            console.log('API Response:', response);
+          }
+          return response;
+        },
+        onComplete: () => {
+          console.log("Swagger UI loaded successfully");
+
+          // Add custom styling
+          const style = document.createElement('style');
+          style.innerHTML = `
+            .swagger-ui .info .description {
+              max-width: 1000px;
+              line-height: 1.7;
+            }
+
+            .swagger-ui .scheme-container {
+              background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            }
+
+            .swagger-ui .opblock.opblock-tag {
+              background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%);
+            }
+
+            .swagger-ui .btn.authorize {
+              background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%);
+              border: none;
+              padding: 12px 24px;
+              font-weight: 600;
+            }
+
+            .swagger-ui .btn.execute {
+              background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%);
+              border: none;
+              padding: 12px 24px;
+              font-weight: 600;
+            }
+          `;
+          document.head.appendChild(style);
+        }
+      });
+    };
+  </script>
+</body>
+</html>

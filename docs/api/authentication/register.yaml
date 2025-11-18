@@ -1,0 +1,254 @@
+# Register Endpoint Specification
+post:
+  tags:
+    - Authentication
+  summary: User Registration
+  description: |
+    Register a new user account in the ZOE Solar platform.
+
+    This endpoint creates a new user account with:
+    - Email verification required
+    - Automatic role assignment
+    - Welcome email notification
+    - GDPR compliance data processing
+
+    ## Registration Process
+    1. User provides registration details
+    2. Server validates input and checks for duplicates
+    3. Creates user account with 'customer' role
+    4. Sends verification email
+    5. Returns temporary session for email verification
+
+    ## Security Features
+    - Email uniqueness verification
+    - Password strength requirements
+    - GDPR consent tracking
+    - Rate limiting for registration attempts
+    - Temporary account lock on failed verification
+
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - email
+            - password
+            - firstName
+            - lastName
+            - company
+            - gdprConsent
+          properties:
+            email:
+              type: string
+              format: email
+              example: "max.mustermann@unternehmen.de"
+              description: User's email address (must be unique)
+            password:
+              type: string
+              minLength: 8
+              example: "SecurePassword123!"
+              description: Password (min 8 characters, requires uppercase, lowercase, number, special char)
+            firstName:
+              type: string
+              minLength: 2
+              maxLength: 50
+              example: "Max"
+              description: User's first name
+            lastName:
+              type: string
+              minLength: 2
+              maxLength: 50
+              example: "Mustermann"
+              description: User's last name
+            company:
+              type: string
+              minLength: 2
+              maxLength: 100
+              example: "Mustermann GmbH"
+              description: Company name (required for B2B platform)
+            phone:
+              type: string
+              pattern: '^\\+?[1-9]\\d{1,14}$'
+              example: "+49 30 12345678"
+              description: Phone number (optional but recommended)
+            industry:
+              type: string
+              enum: [manufacturing, services, agriculture, retail, construction, logistics, other]
+              example: "manufacturing"
+              description: Industry sector for better service personalization
+            companySize:
+              type: string
+              enum: [startup, small, medium, large, enterprise]
+              example: "medium"
+              description: Company size for tailored communication
+            gdprConsent:
+              type: boolean
+              example: true
+              description: GDPR consent for data processing (required)
+            marketingConsent:
+              type: boolean
+              default: false
+              example: false
+              description: Consent for marketing communications
+            source:
+              type: string
+              enum: [direct, referral, website, social, partner, other]
+              example: "website"
+              description: How the user found out about ZOE Solar
+            referralCode:
+              type: string
+              example: "REFER123"
+              description: Optional referral code for partner programs
+
+  responses:
+    '201':
+      description: Registration successful
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../../openapi.yaml#/components/schemas/Success'
+              - type: object
+                properties:
+                  data:
+                    type: object
+                    required:
+                      - user
+                      - verification
+                      - nextSteps
+                    properties:
+                      user:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                            example: "user_789012"
+                          email:
+                            type: string
+                            example: "max.mustermann@unternehmen.de"
+                          firstName:
+                            type: string
+                            example: "Max"
+                          lastName:
+                            type: string
+                            example: "Mustermann"
+                          company:
+                            type: string
+                            example: "Mustermann GmbH"
+                          role:
+                            type: string
+                            example: "customer"
+                          verified:
+                            type: boolean
+                            example: false
+                          createdAt:
+                            type: string
+                            format: date-time
+                            example: "2025-11-17T15:30:00Z"
+                      verification:
+                        type: object
+                        properties:
+                          verificationId:
+                            type: string
+                            example: "ver_xyz789"
+                          method:
+                            type: string
+                            example: "email"
+                          expiresAt:
+                            type: string
+                            format: date-time
+                            example: "2025-11-18T15:30:00Z"
+                          resendAvailable:
+                            type: boolean
+                            example: true
+                      nextSteps:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            step:
+                              type: string
+                              example: "verify_email"
+                            description:
+                              type: string
+                              example: "Check your email for verification link"
+                            required:
+                              type: boolean
+                              example: true
+                            url:
+                              type: string
+                              example: "/auth/verify-email"
+          example:
+            success: true
+            data:
+              user:
+                id: "user_789012"
+                email: "max.mustermann@unternehmen.de"
+                firstName: "Max"
+                lastName: "Mustermann"
+                company: "Mustermann GmbH"
+                role: "customer"
+                verified: false
+                createdAt: "2025-11-17T15:30:00Z"
+              verification:
+                verificationId: "ver_xyz789"
+                method: "email"
+                expiresAt: "2025-11-18T15:30:00Z"
+                resendAvailable: true
+              nextSteps:
+                - step: "verify_email"
+                  description: "Check your email for verification link"
+                  required: true
+                  url: "/auth/verify-email"
+                - step: "complete_profile"
+                  description: "Complete your company profile for better service"
+                  required: false
+                  url: "/customer/profile"
+            meta:
+              timestamp: "2025-11-17T15:30:00Z"
+              request_id: "req_register_abc123"
+              version: "1.0.0"
+
+    '400':
+      description: Validation error
+      content:
+        application/json:
+          schema:
+            $ref: '../../openapi.yaml#/components/schemas/Error'
+          example:
+            success: false
+            error:
+              code: "VALIDATION_ERROR"
+              message: "Email already exists"
+              details:
+                field: "email"
+                value: "max.mustermann@unternehmen.de"
+            request_id: "req_register_abc123"
+            timestamp: "2025-11-17T15:30:00Z"
+
+    '422':
+      description: Unprocessable entity (business rules)
+      content:
+        application/json:
+          schema:
+            $ref: '../../openapi.yaml#/components/schemas/Error'
+          example:
+            success: false
+            error:
+              code: "BUSINESS_RULE_VIOLATION"
+              message: "GDPR consent is required for registration"
+            request_id: "req_register_abc123"
+            timestamp: "2025-11-17T15:30:00Z"
+
+    '429':
+      $ref: '../../openapi.yaml#/components/responses/RateLimited'
+      description: Too many registration attempts
+
+    '500':
+      $ref: '../../openapi.yaml#/components/responses/ServerError'
+      description: Internal server error
+
+  security:
+    - {}

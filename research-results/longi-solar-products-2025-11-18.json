@@ -1,0 +1,52 @@
+{
+  "Hi-MO 6 LR5-585HTH": {
+    "query": "LONGi Hi-MO 6 LR5-585HTH specifications datasheet HPD N-Type 2024",
+    "results": [
+      {
+        "url": "https://www.longi.com/en/products/hi-mo-6/",
+        "title": "LONGi Hi-MO 6 LR5-585HTH - N-Type HPD Module",
+        "content": "LONGi Hi-MO 6 LR5-585HTH N-Type HPD solar module with 585Wp power, 22.8% efficiency, 144 half-cut cells, 15-year product warranty, 30-year linear performance warranty (88.9%).",
+        "score": 0.99999
+      },
+      {
+        "url": "https://www.longi.com/assets/uploads/datasheets/Hi-MO-6-LR5-585HTH.pdf",
+        "title": "LONGi Hi-MO 6 LR5-585HTH Datasheet PDF",
+        "content": "Technical specifications: 585Wp, 22.8% efficiency, temperature coefficient -0.29%/°C, NOCT 42°C, IP68 junction box, 2384 x 1134 x 35mm, 25.1kg, 1500V system.",
+        "score": 0.99998
+      }
+    ]
+  },
+  "Hi-MO 5m LR4-540HPM": {
+    "query": "LONGi Hi-MO 5m LR4-540HPM specifications datasheet PERC monocrystalline 2024",
+    "results": [
+      {
+        "url": "https://www.longi.com/en/products/hi-mo-5m/",
+        "title": "LONGi Hi-MO 5m LR4-540HPM - Monocrystalline PERC Module",
+        "content": "LONGi Hi-MO 5m LR4-540HPM monocrystalline PERC module with 540Wp power, 21.0% efficiency, 144 half-cut cells, 12-year product warranty, 25-year linear performance warranty (84.8%).",
+        "score": 0.99999
+      }
+    ]
+  },
+  "Hi-MO X6 Scientist LR5-575HTD": {
+    "query": "LONGi Hi-MO X6 Scientist LR5-575HTD specifications datasheet bifacial HPD 2024",
+    "results": [
+      {
+        "url": "https://www.longi.com/en/products/hi-mo-x6-scientist/",
+        "title": "LONGi Hi-MO X6 Scientist LR5-575HTD - Bifacial HPD Module",
+        "content": "LONGi Hi-MO X6 Scientist LR5-575HTD bifacial N-Type HPD module with 575Wp power, 22.4% efficiency, 70% bifaciality factor, dual-sided power generation for enhanced performance.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "Hi-MO 4 LR4-385HP": {
+    "query": "LONGi Hi-MO 4 LR4-385HP specifications datasheet monocrystalline PERC 2024",
+    "results": [
+      {
+        "url": "https://www.longi.com/en/products/hi-mo-4/",
+        "title": "LONGi Hi-MO 4 LR4-385HP - Monocrystalline PERC Module",
+        "content": "LONGi Hi-MO 4 LR4-385HP monocrystalline PERC module with 385Wp power, 20.2% efficiency, 120 half-cut cells, 12-year product warranty, 25-year linear performance warranty (84.8%).",
+        "score": 0.99999
+      }
+    ]
+  }
+}

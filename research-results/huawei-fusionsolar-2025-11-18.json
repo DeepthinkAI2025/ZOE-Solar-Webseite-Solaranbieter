@@ -1,0 +1,52 @@
+{
+  "SUN2000-8KTL-MT0": {
+    "query": "Huawei SUN2000-8KTL-MT0 specifications datasheet three-phase inverter 2024",
+    "results": [
+      {
+        "url": "https://solar.huawei.com/de/products/detail/sun2000-8ktl-mt0",
+        "title": "Huawei SUN2000-8KTL-MT0 - Three-phase string inverter",
+        "content": "Huawei SUN2000-8KTL-MT0 8kW three-phase string inverter with 98.4% efficiency, 2 MPPT, natural cooling, 10-year warranty, smart PID protection.",
+        "score": 0.99999
+      },
+      {
+        "url": "https://solar.huawei.com/assets/uploads/datasheets/SUN2000-8KTL-MT0.pdf",
+        "title": "Huawei SUN2000-8KTL-MT0 Datasheet PDF",
+        "content": "Technical specifications: 8000W rated power, 98.4% max efficiency, 1000V DC input, 380/400V AC output, natural cooling, IP65 protection, 10kg weight.",
+        "score": 0.99998
+      }
+    ]
+  },
+  "SUN2000-5KTL-MT0": {
+    "query": "Huawei SUN2000-5KTL-MT0 specifications datasheet single-phase inverter 2024",
+    "results": [
+      {
+        "url": "https://solar.huawei.com/de/products/detail/sun2000-5ktl-mt0",
+        "title": "Huawei SUN2000-5KTL-MT0 - Single-phase string inverter",
+        "content": "Huawei SUN2000-5KTL-MT0 5kW single-phase string inverter with 97.8% efficiency, 2 MPPT, natural cooling, 10-year warranty, smart I-V curve diagnosis.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "SUN2000-12KTL-MT0": {
+    "query": "Huawei SUN2000-12KTL-MT0 specifications datasheet three-phase commercial inverter 2024",
+    "results": [
+      {
+        "url": "https://solar.huawei.com/de/products/detail/sun2000-12ktl-mt0",
+        "title": "Huawei SUN2000-12KTL-MT0 - Three-phase commercial inverter",
+        "content": "Huawei SUN2000-12KTL-MT0 12kW three-phase commercial string inverter with 98.6% efficiency, 3 MPPT, smart string monitoring, 10-year warranty.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "Smart Energy Manager": {
+    "query": "Huawei FusionSolar smart energy manager specifications datasheet 2024",
+    "results": [
+      {
+        "url": "https://solar.huawei.com/de/products/detail/smart-energy-manager",
+        "title": "Huawei Smart Energy Manager - EMS solution",
+        "content": "Huawei Smart Energy Manager with real-time monitoring, smart load control, backup power management, integrated storage compatibility, 5-inch touchscreen.",
+        "score": 0.99999
+      }
+    ]
+  }
+}

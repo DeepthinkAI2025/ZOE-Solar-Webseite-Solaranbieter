@@ -1,0 +1,28 @@
+[
+  {
+    "timestamp": "2025-09-28T16:09:34.751Z",
+    "summary": {
+      "totalPlatforms": 5,
+      "onlinePlatforms": 0,
+      "platformsWithContent": 5,
+      "errors": 0
+    }
+  },
+  {
+    "timestamp": "2025-09-28T19:45:59.716Z",
+    "summary": {
+      "totalPlatforms": 5,
+      "onlinePlatforms": 0,
+      "platformsWithContent": 5,
+      "platformsWithErrors": 0,
+      "averageResponseTime": 1118.8,
+      "totalErrors": 0,
+      "errors": 0,
+      "performance": {
+        "averageResponseTime": 1118.8,
+        "totalResponseTime": 5594,
+        "errorRate": 0
+      }
+    }
+  }
+]

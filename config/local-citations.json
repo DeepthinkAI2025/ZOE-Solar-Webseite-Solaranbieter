@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Gelbe Seiten",
+    "url": "https://www.gelbeseiten.de",
+    "priority": "high"
+  },
+  {
+    "name": "Das Örtliche",
+    "url": "https://www.dasoertliche.de",
+    "priority": "high"
+  },
+  {
+    "name": "Google Business Profile",
+    "url": "https://business.google.com",
+    "priority": "high"
+  },
+  {
+    "name": "Unternehmensregister",
+    "url": "https://www.unternehmensregister.de",
+    "priority": "medium"
+  },
+  {
+    "name": "Wirtschaftsplattform Deutschland",
+    "url": "https://www.wirtschaftsplattform.de",
+    "priority": "medium"
+  }
+]

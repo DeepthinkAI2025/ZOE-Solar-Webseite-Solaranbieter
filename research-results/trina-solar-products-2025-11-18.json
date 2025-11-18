@@ -1,0 +1,30 @@
+{
+  "Vertex S+ 545W": {
+    "query": "Trina Solar Vertex S+ 545W specifications datasheet bifacial 2024",
+    "results": [
+      {
+        "url": "https://www.trinasolar.com/de/produkte/vertex-s-plus",
+        "title": "Trina Solar Vertex S+ 545W - Premium bifacial module",
+        "content": "Trina Vertex S+ 545W bifacial n-type solar module with 21.5% efficiency, 156 half-cut cells, 15-year product warranty, 25-year linear performance warranty (84.8%).",
+        "score": 0.99999
+      },
+      {
+        "url": "https://www.trinasolar.com/assets/uploads/datasheets/Vertex_S_plus_545W.pdf",
+        "title": "Trina Vertex S+ 545W Datasheet PDF",
+        "content": "Technical specifications: 545Wp, 21.5% efficiency, n-type technology, temperature coefficient -0.30%/°C, NOCT 43°C, bifaciality 70%, 2384 x 1134 x 35mm, 24.2kg, 1500V system.",
+        "score": 0.99998
+      }
+    ]
+  },
+  "Vertex TSM-DEG19C.20": {
+    "query": "Trina Solar Vertex TSM-DEG19C.20 560W specifications datasheet n-type 2024",
+    "results": [
+      {
+        "url": "https://www.trinasolar.com/de/produkte/vertex-technical",
+        "title": "Trina Solar Vertex TSM-DEG19C.20 - High efficiency n-type module",
+        "content": "Trina Vertex TSM-DEG19C.20 560W n-type solar module with 21.7% efficiency, 132 half-cut cells, multi-busbar technology, 15-year product warranty, 25-year linear performance warranty (84.95%).",
+        "score": 0.99999
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "openrouter": {
+    "apiKey": "",
+    "model": "mistral-7b-instruct",
+    "lastUpdated": null
+  },
+  "googleMaps": {
+    "staticKey": "AIzaSyAriVPDzrPVFvlEa4wtVrmXwR7lMjDjLC4",
+    "geocodingKey": "AIzaSyAriVPDzrPVFvlEa4wtVrmXwR7lMjDjLC4",
+    "placesKey": "AIzaSyAriVPDzrPVFvlEa4wtVrmXwR7lMjDjLC4",
+    "solarApiKey": "AIzaSyAriVPDzrPVFvlEa4wtVrmXwR7lMjDjLC4",
+    "lastUpdated": null
+  },
+  "googleServiceAccount": {
+    "clientEmail": "",
+    "privateKey": "",
+    "propertyUrl": "",
+    "analyticsPropertyId": "",
+    "lastUpdated": null
+  },
+  "ahrefs": {
+    "apiToken": "",
+    "target": "",
+    "lastUpdated": null
+  },
+  "businessProfile": {
+    "apiKey": "",
+    "accountName": "",
+    "locationId": "",
+    "lastUpdated": null
+  },
+  "other": {}
+}

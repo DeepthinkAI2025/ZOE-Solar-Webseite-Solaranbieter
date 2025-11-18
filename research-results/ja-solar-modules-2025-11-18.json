@@ -1,0 +1,52 @@
+{
+  "JAM72S20-410/MR": {
+    "query": "JA Solar JAM72S20-410/MR specifications datasheet N-Type bifacial 2024",
+    "results": [
+      {
+        "url": "https://www.jasolar.com/de/produkte/jam72s20-410-mr/",
+        "title": "JA Solar JAM72S20-410/MR - N-Type bifacial module",
+        "content": "JA Solar JAM72S20-410/MR 410W N-type bifacial solar module with 22.5% efficiency, 144 half-cut cells, 15-year product warranty, 30-year linear performance warranty (87.2%).",
+        "score": 0.99999
+      },
+      {
+        "url": "https://www.jasolar.com/assets/uploads/datasheets/JAM72S20-410-MR.pdf",
+        "title": "JA Solar JAM72S20-410/MR Datasheet PDF",
+        "content": "Technical specifications: 410Wp, 22.5% efficiency, n-type technology, temperature coefficient -0.29%/°C, NOCT 42°C, bifaciality 70%, 2384 x 1134 x 35mm, 24.5kg, 1500V system.",
+        "score": 0.99998
+      }
+    ]
+  },
+  "JKM550M-7RL3-V": {
+    "query": "JA Solar JKM550M-7RL3-V specifications datasheet mono PERC 2024",
+    "results": [
+      {
+        "url": "https://www.jasolar.com/de/produkte/jkm550m-7rl3-v/",
+        "title": "JA Solar JKM550M-7RL3-V - Mono PERC module",
+        "content": "JA Solar JKM550M-7RL3-V 550W mono PERC solar module with 21.3% efficiency, 144 half-cut cells, 12-year product warranty, 25-year linear performance warranty (84.8%).",
+        "score": 0.99999
+      }
+    ]
+  },
+  "JAP72S20-400-MR": {
+    "query": "JA Solar JAP72S20-400-MR specifications datasheet half-cut N-Type 2024",
+    "results": [
+      {
+        "url": "https://www.jasolar.com/de/produkte/jap72s20-400-mr/",
+        "title": "JA Solar JAP72S20-400-MR - Half-cut N-Type module",
+        "content": "JA Solar JAP72S20-400-MR 400W N-type half-cut solar module with 22.0% efficiency, 132 half-cut cells, 15-year product warranty, 30-year linear performance warranty (87%).",
+        "score": 0.99999
+      }
+    ]
+  },
+  "JKM525N-72HL4-V": {
+    "query": "JA Solar JKM525N-72HL4-V specifications datasheet N-Type TOPCon 2024",
+    "results": [
+      {
+        "url": "https://www.jasolar.com/de/produkte/jkm525n-72hl4-v/",
+        "title": "JA Solar JKM525N-72HL4-V - N-Type TOPCon module",
+        "content": "JA Solar JKM525N-72HL4-V 525W N-type TOPCon solar module with 21.8% efficiency, 144 half-cut cells, 15-year product warranty, 30-year linear performance warranty (87.5%).",
+        "score": 0.99999
+      }
+    ]
+  }
+}

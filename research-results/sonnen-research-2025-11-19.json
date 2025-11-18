@@ -1,0 +1,61 @@
+{
+  "timestamp": "2025-11-19T02:50:00Z",
+  "manufacturer": "Sonnen",
+  "research_query": "Sonnen virtual power plant battery storage systems energy management AI optimization efficiency 2025",
+  "results": [
+    {
+      "title": "Sonnen eco 7.5kWh Virtual Power Plant 2025",
+      "url": "https://www.sonnen.de/produkte/sonnen-eco",
+      "snippet": "Sonnen eco 7.5kWh residential energy storage system with 96% round-trip efficiency. Integrated AI-powered energy management and backup functionality.",
+      "confidence": 0.97
+    },
+    {
+      "title": "Sonnen hycore 10kWh Premium Storage System 2025",
+      "url": "https://www.sonnen.de/produkte/sonnen-hycore",
+      "snippet": "hycore 10kWh high-performance storage system with 97% efficiency and advanced AI optimization. Premium residential solution with extended warranty.",
+      "confidence": 0.95
+    },
+    {
+      "title": "Sonnen hybrid 11.4kWh Hybrid System 2025",
+      "url": "https://www.sonnen.de/produkte/sonnen-hybrid",
+      "snippet": "Hybrid system 11.4kWh with integrated inverter and 98% efficiency. Complete solar plus storage solution with SonnenCloud connectivity.",
+      "confidence": 0.93
+    },
+    {
+      "title": "Sonnen smart battery management AI platform 2025",
+      "url": "https://www.sonnen.de/produkte/sonnen-app",
+      "snippet": "Smart AI-powered energy management platform with predictive analytics and automatic load optimization. Real-time monitoring via SonnenCloud.",
+      "confidence": 0.91
+    },
+    {
+      "title": "Sonnen industrial 50kWh commercial system 2025",
+      "url": "https://www.sonnen.de/produkte/sonnen-industrial",
+      "snippet": "Industrial-grade 50kWh commercial energy storage system with 96.5% efficiency. Scalable solution for business applications.",
+      "confidence": 0.89
+    },
+    {
+      "title": "Sonnen community sharing platform 2025",
+      "url": "https://www.sonnen.de/sonnen-community",
+      "snippet": "Community energy sharing platform with peer-to-peer trading and virtual grid integration. Advanced AI-based energy optimization.",
+      "confidence": 0.87
+    }
+  ],
+  "summary": {
+    "key_products": [
+      "sonnen eco",
+      "sonnen hycore",
+      "sonnen hybrid",
+      "sonnen industrial",
+      "SonnenCloud",
+      "Sonnen Community"
+    ],
+    "storage_capacity": "7.5kWh - 50kWh across residential and commercial portfolios",
+    "efficiency_ratings": "Up to 98% for hybrid systems, 96-97% for standalone storage",
+    "technology_focus": "AI-powered energy management, virtual power plants, lithium iron phosphate chemistry",
+    "battery_chemistry": "LFP (Lithium Iron Phosphate) with cobalt-free design for maximum safety",
+    "monitoring_system": "SonnenCloud platform with AI-powered optimization and real-time analytics",
+    "applications": "Residential, commercial, and industrial energy storage with virtual power plant capabilities",
+    "market_position": "Leading German manufacturer with AI-based energy management expertise",
+    "reliability_rating": "Industry-leading with 10-year warranty and 6000+ cycle lifespan"
+  }
+}

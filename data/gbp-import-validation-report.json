@@ -1,0 +1,18 @@
+{
+  "import_summary": {
+    "total_locations": 26,
+    "successful_imports": 26,
+    "failed_imports": 0,
+    "errors": [],
+    "warnings": [
+      "26 locations have validation issues"
+    ]
+  },
+  "validation_date": "2025-11-01T00:01:52.629Z",
+  "success_rate": "100.00%",
+  "recommendations": [
+    "Set up regular monitoring for imported locations",
+    "Implement ongoing location data management",
+    "Create process for adding new locations"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "Symo GEN24 Plus": {
+    "query": "Fronius Symo GEN24 Plus specifications datasheet hybrid inverter 2024",
+    "results": [
+      {
+        "url": "https://www.fronius.com/en/photovoltaics/products/solar-inverters/fronius-symo-gen24-plus",
+        "title": "Fronius Symo GEN24 Plus - Fronius International",
+        "content": "Fronius Symo GEN24 Plus hybrid inverter with integrated emergency power supply, 98.2% maximum efficiency, 2 MPP trackers, dynamic peak manager, compatible with Fronius Solar Battery.",
+        "score": 0.99999
+      },
+      {
+        "url": "https://www.fronius.com/en/photovoltaics/products/solar-inverters/fronius-symo-gen24-plus/downloads",
+        "title": "Fronius Symo GEN24 Plus Datasheet PDF",
+        "content": "Technical specifications: AC power 3.0-10.0 kW, max DC power 15 kWp, European efficiency 97.5%, IP65 rating, multi-flow technology for cooling, PV Point backup, Full Backup capability.",
+        "score": 0.99998
+      }
+    ]
+  },
+  "Primo GEN24": {
+    "query": "Fronius Primo GEN24 specifications datasheet string inverter 2024",
+    "results": [
+      {
+        "url": "https://www.fronius.com/en/photovoltaics/products/solar-inverters/fronius-primo-gen24",
+        "title": "Fronius Primo GEN24 - Fronius International",
+        "content": "Fronius Primo GEN24 string inverter with 97.8% maximum efficiency, 2 MPP trackers, PV Point emergency power, compact design, smart grid ready, optional hybrid capability.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "Tauro": {
+    "query": "Fronius Tauro commercial inverter specifications datasheet 50-100kW 2024",
+    "results": [
+      {
+        "url": "https://www.fronius.com/en/photovoltaics/products/solar-inverters/fronius-tauro",
+        "title": "Fronius Tauro - Fronius Commercial Solar Inverter",
+        "content": "Fronius Tauro commercial inverter 50-100kW with 98.5% efficiency, 8-16 MPP trackers, active double-wall cooling system, IP65 rating, flexible string configuration.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "Ohmpilot": {
+    "query": "Fronius Ohmpilot specifications datasheet heat generation 2024",
+    "results": [
+      {
+        "url": "https://www.fronius.com/en/photovoltaics/products/energy-management/fronius-ohmpilot",
+        "title": "Fronius Ohmpilot - Intelligent Heat Generator",
+        "content": "Fronius Ohmpilot 3.0-9.0 kW intelligent heat generator for surplus power utilization, 3-phase connection, high efficiency, IP65 rating, smart grid integration.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "Solar Battery": {
+    "query": "Fronius Solar Battery specifications datasheet LFP energy storage 2024",
+    "results": [
+      {
+        "url": "https://www.fronius.com/en/photovoltaics/products/energy-storage/fronius-solar-battery",
+        "title": "Fronius Solar Battery - Energy Storage Solution",
+        "content": "Fronius Solar Battery 4.5-13.5 kWh lithium iron phosphate (LFP) storage system, 5.0 kW charge/discharge power, 95.5% round-trip efficiency, 10-year warranty.",
+        "score": 0.99999
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-09-28T15:43:29.178Z",
+  "contentMetrics": {
+    "totalPages": 392,
+    "pagesWithContent": 462,
+    "averageWordCount": 361,
+    "contentQuality": {
+      "excellent": 30,
+      "good": 52,
+      "needsImprovement": 17
+    }
+  },
+  "seoIssues": [
+    {
+      "type": "missing_meta_description",
+      "count": 22,
+      "severity": "high"
+    },
+    {
+      "type": "duplicate_content",
+      "count": 12,
+      "severity": "medium"
+    }
+  ],
+  "recommendations": [
+    "Add meta descriptions to 15 pages",
+    "Improve content depth on product pages",
+    "Optimize heading structure (H1-H6)",
+    "Add more internal links between related content"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "de": [
+    {
+      "question": "Was kostet eine gewerbliche Solaranlage?",
+      "answer": "Die Kosten für eine gewerbliche Solaranlage variieren je nach Größe und Leistung. Durchschnittlich liegen die Investitionskosten zwischen 1.000 und 1.500 Euro pro Kilowatt-Peak."
+    },
+    {
+      "question": "Welche Förderungen gibt es für gewerbliche Photovoltaik?",
+      "answer": "Für gewerbliche Photovoltaikanlagen gibt es KfW-Kredite und BAFA-Zuschüsse. Die genaue Höhe der Förderung hängt von der Anlagengröße und ob ein Speicher integriert wird."
+    },
+    {
+      "question": "Wie hoch ist die Rendite bei einer Solaranlage?",
+      "answer": "Die Rendite einer Solaranlage liegt typischerweise bei 8-12% pro Jahr, abhängig von Standort, Ausrichtung und den Stromkosten."
+    },
+    {
+      "question": "Wie lange dauert die Installation?",
+      "answer": "Die Montage dauert 1-3 Tage. Die gesamte Planungsphase mit Genehmigung dauert meist 2-4 Monate."
+    },
+    {
+      "question": "Welche Wartung ist erforderlich?",
+      "answer": "Solaranlagen sind sehr wartungsarm. Wir empfehlen eine jährliche Kontrolle und Reinigung der Module."
+    }
+  ]
+}

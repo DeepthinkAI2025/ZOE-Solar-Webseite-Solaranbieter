@@ -1,0 +1,210 @@
+{
+  "metadata": {
+    "reportType": "weekly",
+    "generatedAt": "2025-09-28T17:07:40.448Z",
+    "period": "Letzte 7 Tage",
+    "version": "1.0"
+  },
+  "summary": {
+    "reportType": "weekly",
+    "generatedAt": "2025-09-28T17:07:40.448Z",
+    "period": "Letzte 7 Tage",
+    "keyHighlights": [
+      "⭐ Hoher organischer Traffic über 10.000 Sessions",
+      "📍 Starke lokale Sichtbarkeit über 60%",
+      "🎯 Featured Snippets in Suchergebnissen",
+      "💰 Hohe Conversion-Rate über 4%"
+    ],
+    "kpiOverview": {
+      "seo": {
+        "avgPosition": 21.03937007874016,
+        "organicTraffic": 10999,
+        "conversions": 486,
+        "revenue": 1944303,
+        "visibilityScore": 105
+      },
+      "geo": {
+        "visibilityScore": 69.62962962962963,
+        "localTraffic": 36487,
+        "gmbViews": 144576,
+        "gmbRating": 4.513333333333333
+      },
+      "aeo": {
+        "entityAuthority": 75.75,
+        "entityStrength": 77.75,
+        "featuredSnippets": 1,
+        "competitiveAdvantage": 13.75
+      },
+      "analytics": {
+        "totalUsers": 66852,
+        "totalSessions": 107532,
+        "conversions": 2450,
+        "revenue": 301995.91,
+        "conversionRate": 4.78
+      }
+    },
+    "alerts": [
+      {
+        "type": "warning",
+        "message": "Page speed dropped below 85",
+        "severity": "medium"
+      }
+    ],
+    "recommendations": [
+      {
+        "priority": "high",
+        "category": "ranking",
+        "title": "Durchschnittliche Position verbessern",
+        "description": "Aktuelle Position: 21.0. Fokussieren Sie sich auf Content-Optimierung und Backlink-Aufbau.",
+        "impact": "high",
+        "effort": "medium"
+      },
+      {
+        "priority": "medium",
+        "category": "content",
+        "title": "Long-Tail Keywords optimieren",
+        "description": "61 Keywords ranken außerhalb der Top 20. Erstellen Sie spezifischen Content.",
+        "impact": "medium",
+        "effort": "medium"
+      },
+      {
+        "priority": "high",
+        "category": "knowledge-graph",
+        "title": "Knowledge Panel Präsenz erhöhen",
+        "description": "3/4 Entities haben Knowledge Panels. Optimieren Sie Entity-Daten.",
+        "impact": "high",
+        "effort": "medium"
+      },
+      {
+        "priority": "medium",
+        "category": "content-optimization",
+        "title": "Featured Snippets gewinnen",
+        "description": "Nur 1 Featured Snippets in Besitz. Optimieren Sie Content für häufige Fragen.",
+        "impact": "medium",
+        "effort": "medium"
+      },
+      {
+        "priority": "medium",
+        "category": "entity-optimization",
+        "title": "Entity \"Elektroauto Ladestation\" stärken",
+        "description": "Entity Strength Score: 36. Mehr strukturierte Daten und Backlinks benötigt.",
+        "impact": "medium",
+        "effort": "medium",
+        "entity": "Elektroauto Ladestation"
+      }
+    ]
+  },
+  "details": {
+    "seo": {
+      "rankingPerformance": {
+        "avgPosition": 21.03937007874016,
+        "top3Keywords": 5,
+        "top10Keywords": 29,
+        "visibilityScore": 105
+      },
+      "trafficPerformance": {
+        "organicTraffic": 10999,
+        "trafficGrowth": 5,
+        "conversions": 486,
+        "conversionRate": 4.4185835075916,
+        "revenue": 1944303
+      },
+      "qualityMetrics": {
+        "bounceRate": 44.619036028295426,
+        "avgSessionDuration": 216663,
+        "pagesPerSession": 3.426766069642695
+      }
+    },
+    "geo": {
+      "localVisibility": {
+        "avgVisibilityScore": 69.62962962962963,
+        "marketCoverage": 93.33333333333333,
+        "highPotentialCities": 2
+      },
+      "gmbPerformance": {
+        "totalViews": 144576,
+        "websiteClicks": 5007,
+        "calls": 1443,
+        "avgRating": 4.513333333333333
+      },
+      "localTraffic": {
+        "totalLocalTraffic": 36487,
+        "competitorAnalysis": [
+          {
+            "city": "Berlin",
+            "visibilityScore": 61.111111111111114,
+            "localTraffic": 7886
+          },
+          {
+            "city": "Hamburg",
+            "visibilityScore": 77.77777777777777,
+            "localTraffic": 5846
+          },
+          {
+            "city": "München",
+            "visibilityScore": 61.111111111111114,
+            "localTraffic": 3500
+          }
+        ]
+      }
+    },
+    "aeo": {
+      "entityAuthority": {
+        "avgEntityAuthority": 75.75,
+        "avgEntityStrengthScore": 77.75,
+        "knowledgePanelsPresent": 3
+      },
+      "searchFeatures": {
+        "featuredSnippetsOwned": 1,
+        "knowledgePanelsInSERP": 4,
+        "avgCompetitiveAdvantage": 13.75
+      },
+      "entityRelationships": {
+        "totalRelationships": 10,
+        "avgRelationshipStrength": 84.9375
+      }
+    },
+    "analytics": {
+      "trafficOverview": {
+        "totalUsers": 66852,
+        "totalSessions": 107532,
+        "totalPageViews": 106753,
+        "organicTraffic": 59631
+      },
+      "searchPerformance": {
+        "searchClicks": 14186,
+        "searchImpressions": 502477,
+        "avgCTR": 4.75,
+        "avgPosition": 19.02
+      },
+      "conversionPerformance": {
+        "conversions": 2450,
+        "conversionRate": 4.78,
+        "revenue": 301995.91,
+        "goalCompletions": 0
+      },
+      "localPerformance": {
+        "gmbViews": 30656,
+        "gmbActions": {
+          "websiteClicks": 1097,
+          "directions": 449,
+          "calls": 465,
+          "reviews": 37
+        },
+        "gmbRating": 5
+      }
+    },
+    "trends": {
+      "trafficTrend": -3,
+      "rankingTrend": -2,
+      "conversionTrend": 6,
+      "revenueTrend": 10,
+      "period": "vs. Vorwoche"
+    }
+  },
+  "exportFormats": [
+    "markdown",
+    "json",
+    "csv"
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "Tesla Energy": {
+    "2025_updates": {
+      "new_products": [
+        {
+          "name": "Powerwall 3",
+          "specifications": "19kWh capacity, 11.5kW continuous power, 97.5% round-trip efficiency, integrated inverter, Storm Watch 2.0",
+          "price": "$9,500 (including installation)",
+          "release_date": "Q2 2025",
+          "key_improvements": "30% more capacity, 25% higher power output, improved thermal management"
+        },
+        {
+          "name": "Solar Roof V4",
+          "specifications": "23% efficiency, 45-year warranty, integrated powerwall 3 compatibility, improved weather resistance",
+          "price": "$22-25/sq ft (including installation)",
+          "release_date": "Q3 2025",
+          "key_improvements": "Higher efficiency, faster installation, improved aesthetics"
+        }
+      ],
+      "price_updates": {
+        "Powerwall 2": "Price increased to $8,900 due to supply chain improvements",
+        "Solar Panels": "New 400W panels at $2.80/watt including installation"
+      },
+      "technology_advances": [
+        "Integrated solar + storage solutions",
+        "Improved AI-powered energy management",
+        "Enhanced grid services capabilities",
+        "Better extreme weather performance"
+      ]
+    }
+  },
+  "SMA Solar Technology": {
+    "2025_updates": {
+      "new_products": [
+        {
+          "name": "Sunny Tripower CORE1 High Power",
+          "specifications": "15kW output, 98.6% efficiency, 4 MPPT, AFCI included, Shaded Panel Optimization",
+          "price": "€1,450",
+          "release_date": "Q1 2025",
+          "key_improvements": "20% more power, improved efficiency, built-in arc fault protection"
+        },
+        {
+          "name": "SMA Home Energy Storage HYB 10.0",
+          "specifications": "10kWh capacity, integrated hybrid inverter, 96.8% efficiency, VPP ready",
+          "price": "€7,200",
+          "release_date": "Q2 2025",
+          "key_improvements": "All-in-one design, improved battery chemistry, longer cycle life"
+        }
+      ],
+      "technology_advances": [
+        "Enhanced monitoring with SMA 360 app",
+        "Improved cybersecurity features",
+        "Better integration with smart home systems",
+        "Advanced grid support functions"
+      ]
+    }
+  },
+  "BYD": {
+    "2025_updates": {
+      "new_products": [
+        {
+          "name": "Battery-Box Premium HVS 15.0",
+          "specifications": "15.36kWh capacity, 98% efficiency, Blade Battery technology, 8000 cycles",
+          "price": "€9,800",
+          "release_date": "Q1 2025",
+          "key_improvements": "Higher capacity, improved Blade Battery chemistry, better thermal management"
+        },
+        {
+          "name": "BYD Module XL+",
+          "specifications": "580W output, 23.8% efficiency, TOPCon technology, 15-year warranty",
+          "price": "€220 per panel",
+          "release_date": "Q3 2025",
+          "key_improvements": "Higher power output, improved efficiency, better temperature coefficient"
+        }
+      ],
+      "technology_advances": [
+        "Blade Battery technology in home storage",
+        "Improved TOPCon cell efficiency",
+        "Enhanced safety features",
+        "Better integration capabilities"
+      ]
+    }
+  },
+  "Fronius": {
+    "2025_updates": {
+      "new_products": [
+        {
+          "name": "Gen24 Plus 10.0",
+          "specifications": "10kW hybrid inverter, 97.8% efficiency, multi-flow technology, built-in cooling",
+          "price": "€3,800",
+          "release_date": "Q2 2025",
+          "key_improvements": "Higher power output, improved efficiency, better thermal management"
+        },
+        {
+          "name": "Ohmpilot 22",
+          "specifications": "22kW EV charging, integrated load management, solar-optimized charging",
+          "price": "€1,250",
+          "release_date": "Q1 2025",
+          "key_improvements": "Higher charging power, smarter load management, better solar integration"
+        }
+      ],
+      "technology_advances": [
+        "Improved multi-flow technology",
+        "Enhanced monitoring with Fronius Solar.web",
+        "Better integration with smart home systems",
+        "Advanced grid services"
+      ]
+    }
+  },
+  "Q Cells": {
+    "2025_updates": {
+      "new_products": [
+        {
+          "name": "Q.PEAK DUO G11+",
+          "specifications": "420W output, 23.5% efficiency, Q.ANTUM NEO technology, 25-year warranty",
+          "price": "€195 per panel",
+          "release_date": "Q2 2025",
+          "key_improvements": "Higher efficiency, improved temperature performance, better low-light response"
+        },
+        {
+          "name": "Q.HOME+ ESS HYB-G3 8.0",
+          "specifications": "8kWh capacity, integrated hybrid inverter, 96.5% efficiency, AI optimization",
+          "price": "€6,500",
+          "release_date": "Q3 2025",
+          "key_improvements": "AI-powered optimization, improved efficiency, longer cycle life"
+        }
+      ],
+      "technology_advances": [
+        "Q.ANTUM NEO cell technology",
+        "AI-powered energy management",
+        "Improved manufacturing processes",
+        "Better bifacial performance"
+      ]
+    }
+  },
+  "Jinko Solar": {
+    "2025_updates": {
+      "new_products": [
+        {
+          "name": "Tiger Neo Plus 550W",
+          "specifications": "550W output, 24.0% efficiency, N-type TOPCon, 15-year warranty",
+          "price": "€210 per panel",
+          "release_date": "Q1 2025",
+          "key_improvements": "Record efficiency, improved degradation rates, better temperature coefficient"
+        },
+        {
+          "name": "Tiger Neo Bifacial 580W",
+          "specifications": "580W output, 23.8% efficiency, 75% bifaciality factor, enhanced rear-side performance",
+          "price": "€235 per panel",
+          "release_date": "Q3 2025",
+          "key_improvements": "Higher bifacial gains, improved rear-side cell efficiency"
+        }
+      ],
+      "technology_advances": [
+        "24% efficiency milestone achieved",
+        "Improved TOPCon cell design",
+        "Better bifacial technology",
+        "Enhanced reliability and durability"
+      ]
+    }
+  },
+  "LONGi Solar": {
+    "2025_updates": {
+      "new_products": [
+        {
+          "name": "Hi-MO 6 Scientist 580W",
+          "specifications": "580W output, 24.1% efficiency, HPD technology, 25-year warranty",
+          "price": "€225 per panel",
+          "release_date": "Q2 2025",
+          "key_improvements": "Industry-leading efficiency, improved degradation rates, better low-light performance"
+        },
+        {
+          "name": "Hi-MO X6 Explorer 450W",
+          "specifications": "450W output, 23.3% efficiency, shingled cell technology, enhanced reliability",
+          "price": "€190 per panel",
+          "release_date": "Q1 2025",
+          "key_improvements": "Improved shingled cell design, better mechanical strength, enhanced durability"
+        }
+      ],
+      "technology_advances": [
+        "24%+ efficiency achievement",
+        "Improved HPD cell technology",
+        "Better bifacial performance",
+        "Enhanced manufacturing quality"
+      ]
+    }
+  },
+  "Trina Solar": {
+    "2025_updates": {
+      "new_products": [
+        {
+          "name": "Vertex S+ 550W",
+          "specifications": "550W output, 23.8% efficiency, i-TOPCon technology, enhanced reliability",
+          "price": "€205 per panel",
+          "release_date": "Q2 2025",
+          "key_improvements": "Higher power output, improved efficiency, better temperature performance"
+        },
+        {
+          "name": "Vertex DE22 670W",
+          "specifications": "670W output, 23.5% efficiency, dual-glass design, 30-year linear warranty",
+          "price": "€250 per panel",
+          "release_date": "Q3 2025",
+          "key_improvements": "Higher power for utility scale, extended warranty, improved durability"
+        }
+      ],
+      "technology_advances": [
+        "Improved i-TOPCon technology",
+        "Enhanced dual-glass construction",
+        "Better manufacturing processes",
+        "Extended warranty offerings"
+      ]
+    }
+  },
+  "Huawei FusionSolar": {
+    "2025_updates": {
+      "new_products": [
+        {
+          "name": "SUN2000-20KTL-M3 Premium",
+          "specifications": "20kW output, 98.8% efficiency, 5 MPPT, AI-powered diagnostics",
+          "price": "€2,100",
+          "release_date": "Q1 2025",
+          "key_improvements": "Industry-leading efficiency, AI-powered monitoring, enhanced reliability"
+        },
+        {
+          "name": "FusionSmart 15.0",
+          "specifications": "15kWh capacity, integrated inverter, 97.2% efficiency, smart energy management",
+          "price": "€8,900",
+          "release_date": "Q3 2025",
+          "key_improvements": "All-in-one design, AI-powered optimization, better integration capabilities"
+        }
+      ],
+      "technology_advances": [
+        "AI-powered diagnostics and optimization",
+        "Enhanced cybersecurity features",
+        "Improved grid support functions",
+        "Better integration with smart home systems"
+      ]
+    }
+  },
+  "JA Solar": {
+    "2025_updates": {
+      "new_products": [
+        {
+          "name": "DeepBlue 4.0 Pro 580W",
+          "specifications": "580W output, 24.0% efficiency, N-type BYCUM technology, 25-year warranty",
+          "price": "€220 per panel",
+          "release_date": "Q2 2025",
+          "key_improvements": "Record efficiency, improved BYCUM cell technology, better degradation rates"
+        },
+        {
+          "name": "JAM72D40 550W Bifacial",
+          "specifications": "550W output, 23.7% efficiency, 70% bifaciality, enhanced rear-side performance",
+          "price": "€215 per panel",
+          "release_date": "Q1 2025",
+          "key_improvements": "Improved bifacial technology, better rear-side cell efficiency"
+        }
+      ],
+      "technology_advances": [
+        "BYCUM cell technology improvements",
+        "Better bifacial performance",
+        "Enhanced manufacturing quality",
+        "Improved reliability and durability"
+      ]
+    }
+  },
+  "SolarEdge": {
+    "2025_updates": {
+      "new_products": [
+        {
+          "name": "Power Bank 10kWh",
+          "specifications": "10kWh capacity, 94.5% round-trip efficiency, DC coupling, 12-year warranty",
+          "price": "€7,800",
+          "release_date": "Q2 2025",
+          "key_improvements": "Higher capacity, improved efficiency, better thermal management"
+        },
+        {
+          "name": "Energy Hub 11.4kW",
+          "specifications": "11.4kW hybrid inverter, 98.2% efficiency, integrated storage management",
+          "price": "€4,200",
+          "release_date": "Q3 2025",
+          "key_improvements": "Higher power output, improved efficiency, better integration capabilities"
+        }
+      ],
+      "technology_advances": [
+        "Improved power optimizer technology",
+        "Enhanced monitoring capabilities",
+        "Better grid support functions",
+        "Improved battery management algorithms"
+      ]
+    }
+  },
+  "GoodWe": {
+    "2025_updates": {
+      "new_products": [
+        {
+          "name": "Lynx Home U 12.0",
+          "specifications": "12kWh capacity, 95.8% efficiency, modular design, enhanced safety features",
+          "price": "€6,800",
+          "release_date": "Q1 2025",
+          "key_improvements": "Higher capacity, improved efficiency, better safety features"
+        },
+        {
+          "name": "GW 15K-MT Three-Phase",
+          "specifications": "15kW output, 98.7% efficiency, 6 MPPT, smart string monitoring",
+          "price": "€1,850",
+          "release_date": "Q2 2025",
+          "key_improvements": "Higher power output, improved efficiency, better monitoring capabilities"
+        }
+      ],
+      "technology_advances": [
+        "Improved battery technology",
+        "Enhanced monitoring capabilities",
+        "Better grid support functions",
+        "Improved manufacturing quality"
+      ]
+    }
+  },
+  "Fox ESS": {
+    "2025_updates": {
+      "new_products": [
+        {
+          "name": "H3 Pro 12.0",
+          "specifications": "12kW hybrid inverter, 97.9% efficiency, high-voltage battery support, VPP ready",
+          "price": "€4,500",
+          "release_date": "Q2 2025",
+          "key_improvements": "Higher power output, improved efficiency, better VPP integration"
+        },
+        {
+          "name": "SK-H 20.0 Storage",
+          "specifications": "20kWh capacity, 96.2% efficiency, modular design, advanced BMS",
+          "price": "€12,500",
+          "release_date": "Q3 2025",
+          "key_improvements": "Higher capacity, improved efficiency, better battery management"
+        }
+      ],
+      "technology_advances": [
+        "Enhanced VPP capabilities",
+        "Improved battery management",
+        "Better grid support functions",
+        "Enhanced monitoring capabilities"
+      ]
+    }
+  },
+  "Sonnen": {
+    "2025_updates": {
+      "new_products": [
+        {
+          "name": "eco 9.0",
+          "specifications": "9kW hybrid inverter, 12kWh capacity, 97.0% efficiency, AI-powered optimization",
+          "price": "€16,800",
+          "release_date": "Q2 2025",
+          "key_improvements": "Higher power output, improved efficiency, AI-powered features"
+        },
+        {
+          "name": "sonnenCharge Pro",
+          "specifications": "22kW EV charger, solar-optimized charging, load management, V2G ready",
+          "price": "€2,200",
+          "release_date": "Q3 2025",
+          "key_improvements": "Higher charging power, V2G capabilities, better solar integration"
+        }
+      ],
+      "technology_advances": [
+        "Enhanced AI-powered optimization",
+        "Improved VPP capabilities",
+        "Better V2G integration",
+        "Enhanced cybersecurity features"
+      ]
+    }
+  },
+  "LG Energy Solution": {
+    "2025_updates": {
+      "new_products": [
+        {
+          "name": "RESU16H Prime",
+          "specifications": "16kWh capacity, 96.5% efficiency, NMC chemistry, 15-year warranty",
+          "price": "€11,500",
+          "release_date": "Q2 2025",
+          "key_improvements": "Higher capacity, improved efficiency, longer warranty"
+        },
+        {
+          "name": "enblock E 12.0",
+          "specifications": "12kWh capacity, 96.8% efficiency, LFP chemistry, modular design",
+          "price": "€7,200",
+          "release_date": "Q1 2025",
+          "key_improvements": "Higher efficiency, improved modularity, better thermal management"
+        }
+      ],
+      "technology_advances": [
+        "Improved NMC battery chemistry",
+        "Enhanced LFP technology",
+        "Better thermal management",
+        "Improved battery management algorithms"
+      ]
+    }
+  }
+}

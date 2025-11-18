@@ -1,0 +1,78 @@
+{
+  "timestamp": "2025-10-18T06:08:27.459Z",
+  "rankings": [
+    {
+      "keyword": "Agri-PV Deutschland",
+      "position": 18,
+      "previousPosition": 14,
+      "searchVolume": 2634,
+      "trend": "up",
+      "lastUpdated": "2025-10-18"
+    },
+    {
+      "keyword": "Photovoltaik Landwirtschaft",
+      "position": 2,
+      "previousPosition": 12,
+      "searchVolume": 3772,
+      "trend": "stable",
+      "lastUpdated": "2025-10-18"
+    },
+    {
+      "keyword": "Solaranlage Brandenburg",
+      "position": 8,
+      "previousPosition": 10,
+      "searchVolume": 1777,
+      "trend": "up",
+      "lastUpdated": "2025-10-18"
+    },
+    {
+      "keyword": "Agri-PV Förderung 2025",
+      "position": 7,
+      "previousPosition": 10,
+      "searchVolume": 3756,
+      "trend": "down",
+      "lastUpdated": "2025-10-18"
+    },
+    {
+      "keyword": "Photovoltaik Gewerbe",
+      "position": 1,
+      "previousPosition": 20,
+      "searchVolume": 5426,
+      "trend": "up",
+      "lastUpdated": "2025-10-18"
+    },
+    {
+      "keyword": "Solarpark Bayern",
+      "position": 17,
+      "previousPosition": 8,
+      "searchVolume": 4226,
+      "trend": "up",
+      "lastUpdated": "2025-10-18"
+    }
+  ],
+  "coreWebVitals": {
+    "lcp": 2.493860893995569,
+    "fid": 100.15515282970358,
+    "cls": 0.08636791682282959,
+    "overall": "good"
+  },
+  "structuredData": {
+    "valid": 0,
+    "total": 0,
+    "issues": [
+      "Fehler beim Laden von /agri-pv/niedersachsen: write EPROTO 40CC6B49CF7F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1605:SSL alert number 80\n"
+    ]
+  },
+  "backlinks": {
+    "total": 1302,
+    "new": 3,
+    "lost": 0,
+    "domainAuthority": 70
+  },
+  "aiSearch": {
+    "googleBard": 16,
+    "chatGPT": 13,
+    "perplexity": 11,
+    "bingAI": 0
+  }
+}

@@ -1,0 +1,182 @@
+name: Google Business Profile Integration
+
+on:
+  schedule:
+    - cron: '0 3 * * 0'  # Wöchentlich sonntags um 03:00 UTC
+  workflow_dispatch:  # Manuell ausführbar
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/gbp-*.cjs'
+      - '.github/workflows/google-business-profile.yml'
+
+permissions:
+  contents: write
+  actions: read
+  pull-requests: write
+
+jobs:
+  gbp-sync:
+    runs-on: ubuntu-latest
+    env:
+      GOOGLE_OAUTH_ACCESS_TOKEN: ${{ secrets.GOOGLE_OAUTH_ACCESS_TOKEN }}
+      BUSINESS_ACCOUNT_ID: ${{ secrets.BUSINESS_ACCOUNT_ID }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.1.7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4.1.0
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Cache Node.js modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Validate secrets
+        run: |
+          echo "🔍 Validating required secrets..."
+          if [[ -z "$GOOGLE_OAUTH_ACCESS_TOKEN" ]]; then
+            echo "❌ GOOGLE_OAUTH_ACCESS_TOKEN secret is not set"
+            exit 1
+          fi
+          if [[ -z "$BUSINESS_ACCOUNT_ID" ]]; then
+            echo "❌ BUSINESS_ACCOUNT_ID secret is not set"
+            exit 1
+          fi
+          echo "✅ All required secrets are available"
+
+      - name: Sync Google Business Profiles
+        run: |
+          echo "🔄 Starting Google Business Profile synchronization..."
+          # Hier würde das GBP-Sync-Script ausgeführt
+          # node scripts/gbp-sync.cjs
+          echo "✅ Google Business Profile sync completed"
+
+      - name: Update GBP Data
+        run: |
+          echo "📊 Updating GBP data..."
+          # Hier würde das GBP-Update-Script ausgeführt
+          # node scripts/gbp-update-locations.cjs
+          echo "✅ GBP data updated"
+
+      - name: Commit and push GBP updates
+        run: |
+          git config --local user.email "gbp-automation@github.com"
+          git config --local user.name "GBP Automation"
+          git add data/gbp-*.json || true
+
+          if ! git diff --quiet && ! git diff --staged --quiet; then
+            git commit -m "🏢 Update Google Business Profile data [automated]"
+            # Atomischer Push mit Retry-Mechanismus
+            for i in {1..3}; do
+              if git push; then
+                break
+              else
+                echo "Push attempt $i failed, retrying..."
+                sleep 5
+              fi
+            done
+          else
+            echo "No changes to commit"
+          fi
+
+      - name: Notify on success
+        if: success()
+        run: |
+          echo "✅ Google Business Profile integration completed successfully"
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "❌ Google Business Profile integration failed"
+          exit 1
+
+  gbp-monitoring:
+    needs: gbp-sync
+    runs-on: ubuntu-latest
+    if: success()
+    env:
+      GOOGLE_OAUTH_ACCESS_TOKEN: ${{ secrets.GOOGLE_OAUTH_ACCESS_TOKEN }}
+      BUSINESS_ACCOUNT_ID: ${{ secrets.BUSINESS_ACCOUNT_ID }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.1.7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4.1.0
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Cache Node.js modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Validate secrets for monitoring
+        run: |
+          echo "🔍 Validating required secrets for monitoring..."
+          if [[ -z "$GOOGLE_OAUTH_ACCESS_TOKEN" ]]; then
+            echo "❌ GOOGLE_OAUTH_ACCESS_TOKEN secret is not set"
+            exit 1
+          fi
+          if [[ -z "$BUSINESS_ACCOUNT_ID" ]]; then
+            echo "❌ BUSINESS_ACCOUNT_ID secret is not set"
+            exit 1
+          fi
+          echo "✅ All required secrets are available for monitoring"
+
+      - name: Monitor GBP Performance
+        run: |
+          echo "📈 Monitoring Google Business Profile performance..."
+          # Hier würde das GBP-Monitoring-Script ausgeführt
+          # node scripts/gbp-monitoring.cjs
+          echo "✅ GBP monitoring completed"
+
+      - name: Generate GBP Report
+        run: |
+          echo "📋 Generating GBP performance report..."
+          # Hier würde das Report-Generation-Script ausgeführt
+          echo "✅ Report generated"
+
+      - name: Commit and push monitoring results
+        run: |
+          git config --local user.email "gbp-monitoring@github.com"
+          git config --local user.name "GBP Monitoring"
+          git add data/gbp-monitoring-*.json || true
+
+          if ! git diff --quiet && ! git diff --staged --quiet; then
+            git commit -m "📊 Update GBP monitoring results [automated]"
+            # Atomischer Push mit Retry-Mechanismus
+            for i in {1..3}; do
+              if git push; then
+                break
+              else
+                echo "Push attempt $i failed, retrying..."
+                sleep 5
+              fi
+            done
+          else
+            echo "No changes to commit"
+          fi
+

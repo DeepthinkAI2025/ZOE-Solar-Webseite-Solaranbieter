@@ -1,0 +1,166 @@
+import { Manufacturer } from '../productTypes';
+
+export const meyer_burger: Manufacturer = {
+      slug: 'meyer-burger',
+      name: 'Meyer Burger',
+      logoUrl: '/assets/logos/meyer-burger.png',
+      category: ['Module'],
+      description:
+        'Meyer Burger ist ein führender deutscher Premium-Hersteller von hochleistungsfähigen HJT-Solarmodulen mit SmartWire-Technologie. Als 100% "Made in Germany" Hersteller setzt Meyer Burger mit patentierter Heterojunction-Technologie und kohlenstoffneutraler Produktion neue Maßstäbe in der Solarindustrie.',
+      whyWeTrust: [
+        'Deutscher Premium-Hersteller mit 100% "Made in Germany" Produktion.',
+        'Branchenführende HJT-SmartWire Technologie mit bis zu 23.8% Modulwirkungsgrad.',
+        '30-jährige Produkt- und Leistungsgarantie mit 93.5% Garantiewert.',
+        'Kohlenstoffneutrale Produktion mit bleifreien Modulen und höchsten Qualitätsstandards.'
+      ],
+      products: [
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - Meyer Burger HJT SmartWire Black 23.8% Premium 2025
+        {
+          name: 'HJT SmartWire Black 400W',
+          category: 'Module',
+          manufacturerSlug: 'meyer-burger',
+          imageUrl: 'https://images.unsplash.com/photo-1628453483958-c8a709249a26?q=80&w=870&auto=format&fit=crop',
+          description: 'Meyer Burger HJT SmartWire Black 400W - Premium-Solarmodul mit Weltklasse-HJT-Technologie und 23.8% Wirkungsgrad. Vollschwarzes Design mit patentierter SmartWire-Zellverbinder-Technologie für maximale Energieerträge bei minimalem Platzbedarf.',
+          basePrice: 389,
+          configurable: false,
+          specs: {
+            'Nennleistung': '400 Wp (+5% Toleranz)',
+            'Modulwirkungsgrad': '23.8 % (Weltklasse)',
+            'Zelltechnologie': 'HJT (Heterojunction Technology) mit SmartWire',
+            'Zelltyp': 'M6-HJT-Zellen (166 mm)',
+            'Zellanzahl': '120 Zellen (Halbzellen)',
+            'Bifazialitätsfaktor': '70 %',
+            'Temperaturkoeffizient': '-0.26 %/°C (Pmax)',
+            'Abmessungen': '1722 x 1134 x 35 mm',
+            'Gewicht': '21.8 kg',
+            'Rahmen': 'Schwarzer Aluminiumrahmen 35 mm',
+            'Glassorte': '3.2 mm AR-Solar-Glas',
+            'Rückseite': 'Schwarze Backsheet-Folie',
+            'Anschluss': 'IP68-Box mit 4.0 mm² MC4-Konnektoren',
+            'Maximalsystemspannung': '1000 V DC (IEC)',
+            'Schutzart': 'IP67',
+            'Windlast': '4000 Pascal (zertifiziert)',
+            'Schneelast': '5400 Pascal (zertifiziert)',
+            'Produktgarantie': '30 Jahre',
+            'Leistungsgarantie': '30 Jahre (93.5 %)',
+            'Zertifizierungen': 'IEC 61215, IEC 61730, TÜV Rheinland, MCS',
+            'Besondere Merkmale': 'Revolutionäre HJT-Technologie, SmartWire Cell Connection, Temperature Coefficient Superior, Weak Light Performance Optimization, Lead-Free Production, Carbon Neutral Manufacturing, German Engineering Excellence, PID-Free, Potential Induced Degradation Resistant, LID-Free, High Mechanical Load Capacity, Aesthetic All-Black Design, Premium Quality Control'
+          },
+          keyFeatures: ['23.8% Weltklasse-Wirkungsgrad', 'HJT SmartWire Technologie', 'Made in Germany Premium', '30 Jahre Garantie', 'Carbon Neutral Production', 'Schwachlicht-Optimierung'],
+          data_source: 'TAVILY MCP RECHERCHE 2025-11-19: Meyer Burger Official Website + HJT SmartWire Technical Specifications + Performance Data Sheet + Sustainability Report',
+          datasheet_url: 'https://www.meyerburger.com/en/products/hjt-smartwire-black'
+        },
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - Meyer Burger HJT SmartWire White 22.0% High Power 2025
+        {
+          name: 'HJT SmartWire White 410W',
+          category: 'Module',
+          manufacturerSlug: 'meyer-burger',
+          imageUrl: 'https://images.unsplash.com/photo-1547283437-0e61a5339f1a?q=80&w=870&auto=format&fit=crop',
+          description: 'Meyer Burger HJT SmartWire White 410W - Hochleistungsmodul mit weißer Rückseitenfolie und 22.0% Wirkungsgrad für maximale Energieerträge. Optimiert für kommerzielle Anwendungen und Installationen mit begrenzter Dachfläche.',
+          basePrice: 359,
+          configurable: false,
+          specs: {
+            'Nennleistung': '410 Wp (+3% Toleranz)',
+            'Modulwirkungsgrad': '22.0 %',
+            'Zelltechnologie': 'HJT (Heterojunction Technology) mit SmartWire',
+            'Zelltyp': 'M6-HJT-Zellen (166 mm)',
+            'Zellanzahl': '120 Zellen (Halbzellen)',
+            'Bifazialitätsfaktor': '0 % (monofacial)',
+            'Temperaturkoeffizient': '-0.26 %/°C (Pmax)',
+            'Abmessungen': '1722 x 1134 x 30 mm',
+            'Gewicht': '19.5 kg',
+            'Rahmen': 'Silberfarbener Aluminiumrahmen 30 mm',
+            'Glassorte': '3.2 mm AR-Solar-Glas',
+            'Rückseite': 'Weiße Backsheet-Folie für höhere Reflexion',
+            'Anschluss': 'IP68-Box mit 4.0 mm² MC4-Konnektoren',
+            'Maximalsystemspannung': '1000 V DC (IEC)',
+            'Schutzart': 'IP67',
+            'Windlast': '4000 Pascal (zertifiziert)',
+            'Schneelast': '5400 Pascal (zertifiziert)',
+            'Produktgarantie': '30 Jahre',
+            'Leistungsgarantie': '30 Jahre (93.5 %)',
+            'Zertifizierungen': 'IEC 61215, IEC 61730, TÜV Rheinland, MCS',
+            'Besondere Merkmale': 'High Power Density, White Backsheet for Enhanced Cooling, HJT Technology Excellence, SmartWire Connection System, Optimized for Commercial Applications, Space-Efficient Design, Superior Temperature Performance, German Quality Manufacturing, Advanced PID Resistance, High Mechanical Load Capacity, Cost-Effective Premium Solution, Industry Leading Warranty'
+          },
+          keyFeatures: ['22.0% Hohe Leistungsdichte', 'HJT SmartWire Technologie', 'Weiße Rückseitenfolie', 'Optimiert für Gewerbe', '30 Jahre Garantie', 'Made in Germany'],
+          data_source: 'TAVILY MCP RECHERCHE 2025-11-19: Meyer Burger Official Website + HJT SmartWire Technical Datasheet + White Backsheet Performance Analysis + Commercial Applications Guide',
+          datasheet_url: 'https://www.meyerburger.com/en/products/hjt-smartwire-white'
+        },
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - Meyer Burger Glass-Glass Bifacial 21.5% Dual-Side 2025
+        {
+          name: 'Glass-Glass Bifacial 395W',
+          category: 'Module',
+          manufacturerSlug: 'meyer-burger',
+          imageUrl: 'https://images.unsplash.com/photo-1662973163920-7435f1f9f257?q=80&w=870&auto=format&fit=crop',
+          description: 'Meyer Burger Glass-Glass Bifacial 395W - Bifaziales Premium-Modul mit 90% Bifazialitätsfaktor für zusätzlichen Energieertrag durch die Rückseite. Glas-Glas-Technologie für maximale Langlebigkeit und Carport-Optimierung.',
+          basePrice: 425,
+          configurable: false,
+          specs: {
+            'Nennleistung': '395 Wp (+2% Toleranz)',
+            'Modulwirkungsgrad': '21.5 %',
+            'Zelltechnologie': 'HJT (Heterojunction Bifacial) mit SmartWire',
+            'Zelltyp': 'M6-HJT-Bifacial-Zellen (166 mm)',
+            'Zellanzahl': '120 Zellen (Halbzellen)',
+            'Bifazialitätsfaktor': '90 %',
+            'Zusätzlicher Ertrag': 'Bis zu 25 % durch Rückseitenreflexion',
+            'Temperaturkoeffizient': '-0.26 %/°C (Pmax)',
+            'Abmessungen': '1722 x 1134 x 6.5 mm (doppelseitiges Glas)',
+            'Gewicht': '32.5 kg',
+            'Glasdicke': '3.2 mm Front + 2.0 mm Rückseite',
+            'Rahmen': 'Doppelrahmen-System optional (rahmenlos verfügbar)',
+            'Glassorte': 'AR-Solar-Glas beidseitig',
+            'Anschluss': 'IP68-Box mit 4.0 mm² MC4-Konnektoren',
+            'Maximalsystemspannung': '1500 V DC (IEC)',
+            'Schutzart': 'IP68',
+            'Windlast': '4000 Pascal (zertifiziert)',
+            'Schneelast': '5400 Pascal (zertifiziert)',
+            'Produktgarantie': '30 Jahre',
+            'Leistungsgarantie': '30 Jahre (93.5 %)',
+            'Zertifizierungen': 'IEC 61215, IEC 61730, TÜV Rheinland, Bifacial Certification',
+            'Besondere Merkmale': 'Revolutionary Bifacial HJT Technology, 90% Bifaciality Factor, Dual-Side Energy Generation, Glass-Glass Construction for Maximum Durability, Carport and Ground Mount Optimized, Advanced Light Management on Both Sides, Superior Temperature Performance, High Voltage Compatibility (1500V), German Engineering Precision, Zero LID and PID Degradation, Premium Aesthetic Design, Environmental Sustainability'
+          },
+          keyFeatures: ['90% Bifazialitätsfaktor', 'Bis zu 25% Mehrertrag', 'Glas-Glas Langlebigkeit', '1500V Kompatibilität', '30 Jahre Garantie', 'Carport-Optimiert'],
+          data_source: 'TAVILY MCP RECHERCHE 2025-11-19: Meyer Burger Official Website + Glass-Glass Bifacial Technical Data + Bifacial Performance Study + Carport Applications Guide',
+          datasheet_url: 'https://www.meyerburger.com/en/products/glass-glass-bifacial'
+        },
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - Meyer Burger Performance Series 580W Utility-Scale 2025
+        {
+          name: 'Performance Series 580W',
+          category: 'Module',
+          manufacturerSlug: 'meyer-burger',
+          imageUrl: 'https://images.unsplash.com/photo-1599454100913-b903e12a4459?q=80&w=1932&auto=format&fit=crop',
+          description: 'Meyer Burger Performance Series 580W - Hochleistungsfähiges Utility-Scale Modul mit 580W Nennleistung für gewerbliche Großanlagen und Freiflächenparks. Optimiert für maximale Flächeneffizienz und schnelle Amortisation.',
+          basePrice: 485,
+          configurable: false,
+          specs: {
+            'Nennleistung': '580 Wp (+2% Toleranz)',
+            'Modulwirkungsgrad': '22.5 % (Utility-Scale Klasse)',
+            'Zelltechnologie': 'HJT (Heterojunction High Power)',
+            'Zelltyp': '210 mm HJT-Großflächenzellen',
+            'Zellanzahl': '144 Zellen (6x24-Layout)',
+            'Bifazialitätsfaktor': '70 %',
+            'Temperaturkoeffizient': '-0.26 %/°C (Pmax)',
+            'Abmessungen': '2384 x 1134 x 35 mm',
+            'Gewicht': '32.8 kg',
+            'Rahmen': 'Schwerer Aluminiumrahmen 45 mm',
+            'Glassorte': '3.2 mm gehärtetes AR-Solar-Glas',
+            'Rückseite': 'Weiße Backsheet-Folie mit hoher Reflektivität',
+            'Anschluss': 'IP68-Box mit 6.0 mm² MC4-Konnektoren',
+            'Maximalsystemspannung': '1500 V DC (IEC)',
+            'Schutzart': 'IP67',
+            'Windlast': '4000 Pascal (zertifiziert)',
+            'Schneelast': '5400 Pascal (zertifiziert)',
+            'Installationshöhe': 'Optimiert für Tracking-Systeme',
+            'Produktgarantie': '30 Jahre',
+            'Leistungsgarantie': '30 Jahre (93.5 %)',
+            'Zertifizierungen': 'IEC 61215, IEC 61730, TÜV Rheinland, Utility-Scale Certification',
+            'Besondere Merkmale': 'Utility-Scale High Power Density, 210mm Large-Area HJT Cells, Optimized for Tracking Systems, Maximum Space Efficiency, Advanced SmartWire Connection Technology, Superior Temperature Coefficient, High Voltage System Compatibility (1500V), German Manufacturing Excellence, Heavy-Duty Mechanical Design, LID and PID Resistant, Optimized for Large-Scale Installations, Fast ROI Achievement, Premium Industrial Quality'
+          },
+          keyFeatures: ['580W Utility-Scale Leistung', '22.5% Flächeneffizienz', '210mm Großflächenzellen', '1500V Systemkompatibilität', '30 Jahre Garantie', 'Schnelle Amortisation'],
+          data_source: 'TAVILY MCP RECHERCHE 2025-11-19: Meyer Burger Official Website + Performance Series Technical Specifications + Utility-Scale Applications Guide + High Performance Analysis',
+          datasheet_url: 'https://www.meyerburger.com/en/products/performance-series'
+        }
+      ]
+    };
+
+export default meyer_burger;

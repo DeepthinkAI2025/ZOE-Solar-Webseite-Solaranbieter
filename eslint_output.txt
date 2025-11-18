@@ -1,0 +1,233 @@
+
+/Users/jeremyschulze/_Development/ZOE-Solar-Webseite-Solaranbieter-main/src/compatibility/analytics/CrossPlatformAnalyzer.ts
+   182:36  warning  Unexpected any. Specify a different type                                                   @typescript-eslint/no-explicit-any
+   183:39  warning  Unexpected any. Specify a different type                                                   @typescript-eslint/no-explicit-any
+   184:35  warning  Unexpected any. Specify a different type                                                   @typescript-eslint/no-explicit-any
+   423:29  warning  'sourcePath' is defined but never used. Allowed unused args must match /^_/u               @typescript-eslint/no-unused-vars
+   423:58  warning  Unexpected any. Specify a different type                                                   @typescript-eslint/no-explicit-any
+   487:16  warning  'mobilePlatform' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+   695:33  warning  'platformName' is defined but never used. Allowed unused args must match /^_/u             @typescript-eslint/no-unused-vars
+   722:59  warning  Unexpected any. Specify a different type                                                   @typescript-eslint/no-explicit-any
+  1121:11  warning  'allPlatforms' is assigned a value but never used. Allowed unused vars must match /^_/u    @typescript-eslint/no-unused-vars
+  1416:50  warning  Unexpected any. Specify a different type                                                   @typescript-eslint/no-explicit-any
+  1431:43  warning  Unexpected any. Specify a different type                                                   @typescript-eslint/no-explicit-any
+
+/Users/jeremyschulze/_Development/ZOE-Solar-Webseite-Solaranbieter-main/src/migration/intelligent/CodeMigrationEngine.ts
+  115:54   warning  Unexpected any. Specify a different type                                   @typescript-eslint/no-explicit-any
+  128:38   warning  Unexpected any. Specify a different type                                   @typescript-eslint/no-explicit-any
+  142:31   warning  'context' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  162:31   warning  'context' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  183:24   warning  'match' is defined but never used. Allowed unused args must match /^_/u    @typescript-eslint/no-unused-vars
+  183:31   warning  'context' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  204:31   warning  'context' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  225:31   warning  'context' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  246:24   warning  'match' is defined but never used. Allowed unused args must match /^_/u    @typescript-eslint/no-unused-vars
+  246:31   warning  'context' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  348:56   warning  'config' is defined but never used. Allowed unused args must match /^_/u   @typescript-eslint/no-unused-vars
+  377:105  warning  Unexpected any. Specify a different type                                   @typescript-eslint/no-explicit-any
+  386:41   warning  'config' is defined but never used. Allowed unused args must match /^_/u   @typescript-eslint/no-unused-vars
+  442:35   warning  'config' is defined but never used. Allowed unused args must match /^_/u   @typescript-eslint/no-unused-vars
+  531:40   warning  'steps' is defined but never used. Allowed unused args must match /^_/u    @typescript-eslint/no-unused-vars
+  713:36   warning  'step' is defined but never used. Allowed unused args must match /^_/u     @typescript-eslint/no-unused-vars
+  718:37   warning  'step' is defined but never used. Allowed unused args must match /^_/u     @typescript-eslint/no-unused-vars
+  723:38   warning  'step' is defined but never used. Allowed unused args must match /^_/u     @typescript-eslint/no-unused-vars
+  728:29   warning  'step' is defined but never used. Allowed unused args must match /^_/u     @typescript-eslint/no-unused-vars
+  756:32   warning  'step' is defined but never used. Allowed unused args must match /^_/u     @typescript-eslint/no-unused-vars
+  761:35   warning  'step' is defined but never used. Allowed unused args must match /^_/u     @typescript-eslint/no-unused-vars
+  766:37   warning  'step' is defined but never used. Allowed unused args must match /^_/u     @typescript-eslint/no-unused-vars
+
+/Users/jeremyschulze/_Development/ZOE-Solar-Webseite-Solaranbieter-main/src/performance/advanced/RealTimeMonitor.ts
+    7:10  warning  'performanceTracker' is defined but never used. Allowed unused vars must match /^_/u      @typescript-eslint/no-unused-vars
+    7:30  warning  'PerformanceMetrics' is defined but never used. Allowed unused vars must match /^_/u      @typescript-eslint/no-unused-vars
+  363:40  warning  Unexpected any. Specify a different type                                                  @typescript-eslint/no-explicit-any
+  392:38  warning  Unexpected any. Specify a different type                                                  @typescript-eslint/no-explicit-any
+  417:22  warning  Unexpected any. Specify a different type                                                  @typescript-eslint/no-explicit-any
+  418:31  warning  Unexpected any. Specify a different type                                                  @typescript-eslint/no-explicit-any
+  632:11  warning  'resourceTrend' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  728:33  warning  Unexpected any. Specify a different type                                                  @typescript-eslint/no-explicit-any
+  895:26  warning  Unexpected any. Specify a different type                                                  @typescript-eslint/no-explicit-any
+  896:35  warning  Unexpected any. Specify a different type                                                  @typescript-eslint/no-explicit-any
+  945:23  warning  'metrics' is defined but never used. Allowed unused args must match /^_/u                 @typescript-eslint/no-unused-vars
+
+/Users/jeremyschulze/_Development/ZOE-Solar-Webseite-Solaranbieter-main/src/security/compliance/GDPRComplianceChecker.ts
+  486:47  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  492:36  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  498:39  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  506:40  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  514:35  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  519:40  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  527:47  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  532:37  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  537:40  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  544:36  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  551:43  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  555:37  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  562:48  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  566:45  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  573:36  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  577:52  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  581:39  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  588:38  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  592:40  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  599:37  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  603:35  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  607:33  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  614:39  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  618:37  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  625:43  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  629:40  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  633:38  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  640:45  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  645:40  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  649:33  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  656:44  warning  'websiteUrl' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/jeremyschulze/_Development/ZOE-Solar-Webseite-Solaranbieter-main/src/seo/analytics/ContentAnalyzer.ts
+  218:54  warning  Unexpected any. Specify a different type                                              @typescript-eslint/no-explicit-any
+  414:37  warning  Unexpected any. Specify a different type                                              @typescript-eslint/no-explicit-any
+  447:54  warning  Unexpected any. Specify a different type                                              @typescript-eslint/no-explicit-any
+  511:17  warning  'topic' is assigned a value but never used. Allowed unused vars must match /^_/u      @typescript-eslint/no-unused-vars
+  523:59  warning  Unexpected any. Specify a different type                                              @typescript-eslint/no-explicit-any
+  554:37  warning  Unexpected any. Specify a different type                                              @typescript-eslint/no-explicit-any
+  604:42  warning  Unexpected any. Specify a different type                                              @typescript-eslint/no-explicit-any
+  604:57  warning  Unexpected any. Specify a different type                                              @typescript-eslint/no-explicit-any
+  668:43  warning  'url' is defined but never used. Allowed unused args must match /^_/u                 @typescript-eslint/no-unused-vars
+  668:56  warning  'metrics' is defined but never used. Allowed unused args must match /^_/u             @typescript-eslint/no-unused-vars
+  668:90  warning  Unexpected any. Specify a different type                                              @typescript-eslint/no-explicit-any
+  698:60  warning  'competitorAnalysis' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  698:80  warning  Unexpected any. Specify a different type                                              @typescript-eslint/no-explicit-any
+  749:39  warning  'metrics' is defined but never used. Allowed unused args must match /^_/u             @typescript-eslint/no-unused-vars
+  749:64  warning  'competitorAnalysis' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  749:84  warning  Unexpected any. Specify a different type                                              @typescript-eslint/no-explicit-any
+  824:51  warning  Unexpected any. Specify a different type                                              @typescript-eslint/no-explicit-any
+
+/Users/jeremyschulze/_Development/ZOE-Solar-Webseite-Solaranbieter-main/src/seo/optimization/AIOptimizer.ts
+    6:46  warning  'ContentStrategy' is defined but never used. Allowed unused vars must match /^_/u       @typescript-eslint/no-unused-vars
+    7:37  warning  'ContentOptimization' is defined but never used. Allowed unused vars must match /^_/u   @typescript-eslint/no-unused-vars
+   96:37  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+  263:38  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+  279:11  warning  'templates' is assigned a value but never used. Allowed unused vars must match /^_/u    @typescript-eslint/no-unused-vars
+  368:47  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+  443:70  warning  'targetKeyword' is defined but never used. Allowed unused args must match /^_/u         @typescript-eslint/no-unused-vars
+  463:15  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+  514:21  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+  568:56  warning  'currentInternalLinks' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  644:5   warning  'analysis' is defined but never used. Allowed unused args must match /^_/u              @typescript-eslint/no-unused-vars
+  645:5   warning  'keywordData' is defined but never used. Allowed unused args must match /^_/u           @typescript-eslint/no-unused-vars
+
+/Users/jeremyschulze/_Development/ZOE-Solar-Webseite-Solaranbieter-main/src/services/marketingAssetsService.ts
+  353:36  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  633:47  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  634:71  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  635:69  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  636:62  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  637:52  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  638:47  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  639:43  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  640:40  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  641:44  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  642:42  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  643:54  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  644:45  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  645:55  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  646:58  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  647:49  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  648:50  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  649:40  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  650:61  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  651:44  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  652:34  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  653:54  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  654:43  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  655:49  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  656:42  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  657:52  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  658:44  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  659:44  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  660:41  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  661:51  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  662:40  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/jeremyschulze/_Development/ZOE-Solar-Webseite-Solaranbieter-main/src/services/serenaMCPOptimizationService.ts
+  297:37  warning  'response' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  297:56  warning  Unexpected any. Specify a different type                                    @typescript-eslint/no-explicit-any
+  307:37  warning  'response' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  307:56  warning  Unexpected any. Specify a different type                                    @typescript-eslint/no-explicit-any
+  317:47  warning  Unexpected any. Specify a different type                                    @typescript-eslint/no-explicit-any
+  327:65  warning  Unexpected any. Specify a different type                                    @typescript-eslint/no-explicit-any
+  339:47  warning  Unexpected any. Specify a different type                                    @typescript-eslint/no-explicit-any
+
+/Users/jeremyschulze/_Development/ZOE-Solar-Webseite-Solaranbieter-main/src/state/consistency/StateManager.ts
+    22:24  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+    39:19  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+    40:20  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+    42:14  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+    43:18  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+    47:20  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+    82:32  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+    83:26  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+    84:38  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+    85:40  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+    85:48  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+    86:29  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+    86:42  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+    98:10  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   103:28  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   103:43  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   113:37  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   113:50  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   114:48  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   115:38  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   163:35  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   172:40  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   216:52  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   216:67  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   268:57  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   307:48  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   307:53  warning  'source' is defined but never used. Allowed unused args must match /^_/u                @typescript-eslint/no-unused-vars
+   323:48  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   323:53  warning  'source' is defined but never used. Allowed unused args must match /^_/u                @typescript-eslint/no-unused-vars
+   343:38  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   348:19  warning  'key' is assigned a value but never used. Allowed unused vars must match /^_/u          @typescript-eslint/no-unused-vars
+   371:36  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   383:37  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   384:40  warning  'timestamp' is assigned a value but never used. Allowed unused vars must match /^_/u    @typescript-eslint/no-unused-vars
+   384:89  warning  'optimistic' is assigned a value but never used. Allowed unused vars must match /^_/u   @typescript-eslint/no-unused-vars
+   402:13  warning  'updatedNode' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+   421:41  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   423:35  warning  'reject' is defined but never used. Allowed unused args must match /^_/u                @typescript-eslint/no-unused-vars
+   429:52  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   443:40  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   443:53  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   454:53  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   454:73  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   590:48  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   591:33  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   600:46  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   600:73  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   618:19  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   619:12  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   737:62  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   780:39  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   780:57  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   780:88  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   802:48  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   802:66  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+   802:71  warning  'conflict' is defined but never used. Allowed unused args must match /^_/u              @typescript-eslint/no-unused-vars
+   802:97  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+  1022:56  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+  1026:60  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+  1026:68  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+  1030:44  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+  1030:57  warning  Unexpected any. Specify a different type                                                @typescript-eslint/no-explicit-any
+
+/Users/jeremyschulze/_Development/ZOE-Solar-Webseite-Solaranbieter-main/src/utils/logger.ts
+  31:35  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  37:34  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  43:34  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  49:42  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  49:56  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+✖ 209 problems (0 errors, 209 warnings)
+
+ESLint found too many warnings (maximum: 0).

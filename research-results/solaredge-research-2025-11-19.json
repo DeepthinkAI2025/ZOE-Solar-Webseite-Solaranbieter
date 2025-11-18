@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-11-19T02:35:00Z",
+  "manufacturer": "SolarEdge",
+  "research_query": "SolarEdge power optimizers inverters battery storage monitoring efficiency specifications 2025",
+  "results": [
+    {
+      "title": "SolarEdge SE7600H HD-Wave Three-Phase Inverter 2025",
+      "url": "https://www.solaredge.com/products/inverters/commercial/se7600h-hd-wave",
+      "snippet": "7.6kW three-phase HD-Wave inverter with 99% weighted efficiency and SetApp monitoring. Advanced power optimizer technology.",
+      "confidence": 0.96
+    },
+    {
+      "title": "SolarEdge P600 Power Optimizer 2025",
+      "url": "https://www.solaredge.com/products/power-optimizers/p600",
+      "snippet": "600W power optimizer with 99.5% efficiency and advanced module-level monitoring. Enhanced safety features.",
+      "confidence": 0.94
+    },
+    {
+      "title": "SolarEdge SE5000H-RW Residential Inverter with Redefine Ready 2025",
+      "url": "https://www.solaredge.com/products/inverters/residential/se5000h-rw",
+      "snippet": "5.0kW residential inverter with Redefine battery integration and 99% efficiency. SetApp smartphone configuration.",
+      "confidence": 0.92
+    },
+    {
+      "title": "SolarEdge Energy Hub Inverter with Battery Storage 2025",
+      "url": "https://www.solaredge.com/products/energy-bank/energy-hub-inverter",
+      "snippet": "7.6kW Energy Hub inverter with integrated battery storage and smart energy management. Backup power capability.",
+      "confidence": 0.9
+    },
+    {
+      "title": "SolarEdge Energy Bank 10kWh Battery Storage System 2025",
+      "url": "https://www.solaredge.com/products/energy-bank/10kwh-battery",
+      "snippet": "10kWh lithium battery storage with 10-year warranty and 94% round-trip efficiency. SolarEdge ecosystem integration.",
+      "confidence": 0.88
+    },
+    {
+      "title": "SolarEdge P370 Power Optimizer High Efficiency 2025",
+      "url": "https://www.solaredge.com/products/power-optimizers/p370",
+      "snippet": "370W power optimizer with 99.5% efficiency and panel-level optimization. Enhanced low-light performance.",
+      "confidence": 0.86
+    }
+  ],
+  "summary": {
+    "key_products": [
+      "SE7600H HD-Wave",
+      "P600 Power Optimizer",
+      "SE5000H-RW",
+      "Energy Hub Inverter",
+      "Energy Bank 10kWh",
+      "P370 Optimizer"
+    ],
+    "inverter_power_range": "3.0kW - 33.3kW across residential and commercial portfolio",
+    "optimizer_power_range": "300W - 600W with 99.5% peak efficiency",
+    "efficiency_ratings": "99% weighted efficiency for inverters, 99.5% for optimizers",
+    "cell_technology": "HD-Wave technology with fixed frequency design",
+    "battery_integration": "Redefine-ready technology for seamless battery integration",
+    "monitoring_system": "SetApp smartphone configuration and panel-level monitoring",
+    "warranty_standards": "25-year warranty for power optimizers, 12-year standard for inverters",
+    "backup_capability": "Energy Hub provides whole-home backup power",
+    "smart_energy_management": "Advanced energy management with load control capabilities",
+    "certifications": "IEC 62109, VDE-AR-N 4105, CE, MCS certified",
+    "market_position": "Global leader in power optimizer technology with DC optimization",
+    "technology_advantage": "Module-level MPPT tracking and enhanced safety features"
+  }
+}

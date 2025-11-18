@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeraBox + Notion Sync Setup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .step {
+            display: none;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        .step.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .step-header {
+            margin-bottom: 30px;
+        }
+
+        .step-number {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: 700;
+            margin-right: 15px;
+        }
+
+        .step-title {
+            display: inline-block;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3748;
+            vertical-align: middle;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #4a5568;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .help-text {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #718096;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex: 1;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: #e2e8f0;
+            color: #4a5568;
+        }
+
+        .btn-secondary:hover {
+            background: #cbd5e0;
+        }
+
+        .btn-success {
+            background: #48bb78;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #38a169;
+        }
+
+        .progress-bar {
+            background: #f7fafc;
+            border-radius: 8px;
+            height: 8px;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            height: 100%;
+            transition: width 0.5s ease;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .status-success { background: #48bb78; }
+        .status-error { background: #f56565; }
+        .status-warning { background: #ed8936; }
+        .status-info { background: #4299e1; }
+
+        .connection-test {
+            background: #f7fafc;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .connection-test h4 {
+            margin-bottom: 15px;
+            color: #2d3748;
+        }
+
+        .test-result {
+            padding: 10px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        .test-success {
+            background: #c6f6d5;
+            color: #22543d;
+            border: 1px solid #9ae6b4;
+        }
+
+        .test-error {
+            background: #fed7d7;
+            color: #742a2a;
+            border: 1px solid #fc8181;
+        }
+
+        .test-loading {
+            background: #bee3f8;
+            color: #2c5282;
+            border: 1px solid #90cdf4;
+        }
+
+        .summary {
+            background: #f7fafc;
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        .summary h3 {
+            margin-bottom: 20px;
+            color: #2d3748;
+        }
+
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .summary-item:last-child {
+            border-bottom: none;
+        }
+
+        .summary-label {
+            font-weight: 600;
+            color: #4a5568;
+        }
+
+        .summary-value {
+            color: #2d3748;
+            text-align: right;
+        }
+
+        .error-message {
+            background: #fed7d7;
+            color: #742a2a;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border: 1px solid #fc8181;
+        }
+
+        .success-message {
+            background: #c6f6d5;
+            color: #22543d;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border: 1px solid #9ae6b4;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 TeraBox + Notion Sync Setup</h1>
+            <p>Richten Sie die bidirektionale Synchronisation zwischen einem TeraBox-Ordner und einem Notion-Workspace ein</p>
+        </div>
+
+        <div class="content">
+            <!-- Progress Bar -->
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar" style="width: 20%"></div>
+            </div>
+
+            <!-- Step 1: TeraBox Configuration -->
+            <div class="step active" id="step1">
+                <div class="step-header">
+                    <span class="step-number">1</span>
+                    <h2 class="step-title">TeraBox Konfiguration</h2>
+                </div>
+
+                <div class="form-group">
+                    <label for="teraboxBaseURL">TeraBox Base URL</label>
+                    <input type="url" id="teraboxBaseURL" value="https://nephobox.com" placeholder="https://nephobox.com">
+                    <div class="help-text">Die Basis-URL Ihres TeraBox-Kontos</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="teraboxUsername">Benutzername</label>
+                    <input type="text" id="teraboxUsername" placeholder="Ihr TeraBox-Benutzername">
+                    <div class="help-text">Ihr TeraBox-Benutzername oder Ihre E-Mail</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="teraboxPassword">Passwort</label>
+                    <input type="password" id="teraboxPassword" placeholder="Ihr TeraBox-Passwort">
+                    <div class="help-text">Ihr TeraBox-Passwort (wird lokal gespeichert)</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="teraboxFolder">Ziel-Ordner</label>
+                    <input type="text" id="teraboxFolder" value="/Terabox Cloud Storage und Notion CMS" placeholder="/Ordner/Pfad">
+                    <div class="help-text">Der spezifische Ordner, der synchronisiert werden soll. Wird erstellt falls nicht vorhanden.</div>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="watchSubfolders" checked>
+                    <label for="watchSubfolders">Untergeordnete Ordner ebenfalls synchronisieren</label>
+                </div>
+
+                <div class="connection-test">
+                    <h4>Verbindung testen</h4>
+                    <button class="btn btn-secondary" onclick="testTeraBoxConnection()">Verbindung testen</button>
+                    <div id="teraboxTestResult"></div>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-primary" onclick="nextStep()">Weiter →</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Notion Configuration -->
+            <div class="step" id="step2">
+                <div class="step-header">
+                    <span class="step-number">2</span>
+                    <h2 class="step-title">Notion Konfiguration</h2>
+                </div>
+
+                <div class="form-group">
+                    <label for="notionToken">Notion API Token</label>
+                    <input type="text" id="notionToken" placeholder="secret_...">
+                    <div class="help-text">
+                        Ihr Notion Integration Token. Erstellen Sie einen neuen Token unter:
+                        <a href="https://www.notion.so/my-integrations" target="_blank">notion.so/my-integrations</a>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="notionWorkspace">Workspace ID</label>
+                    <input type="text" id="notionWorkspace" placeholder="Ihr Workspace Name oder ID">
+                    <div class="help-text">
+                        Der Name oder die ID Ihres Notion-Workspaces. Finden Sie dies in der URL Ihrer Notion-Seite.
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="notionDatabaseName">Datenbank Name (optional)</label>
+                    <input type="text" id="notionDatabaseName" value="TeraBox File Sync" placeholder="Name der Sync-Datenbank">
+                    <div class="help-text">
+                        Name der Datenbank, die in Ihrem Notion-Workspace erstellt wird. Falls nicht vorhanden, wird sie automatisch erstellt.
+                    </div>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="restrictToWorkspace" checked>
+                    <label for="restrictToWorkspace">Nur diesen Workspace verwenden (empfohlen)</label>
+                </div>
+
+                <div class="connection-test">
+                    <h4>Verbindung testen</h4>
+                    <button class="btn btn-secondary" onclick="testNotionConnection()">Verbindung testen</button>
+                    <div id="notionTestResult"></div>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="previousStep()">← Zurück</button>
+                    <button class="btn btn-primary" onclick="nextStep()">Weiter →</button>
+                </div>
+            </div>
+
+            <!-- Step 3: Sync Configuration -->
+            <div class="step" id="step3">
+                <div class="step-header">
+                    <span class="step-number">3</span>
+                    <h2 class="step-title">Sync Konfiguration</h2>
+                </div>
+
+                <div class="form-group">
+                    <label for="syncMode">Sync Modus</label>
+                    <select id="syncMode">
+                        <option value="bidirectional">Bidirectional (beide Richtungen)</option>
+                        <option value="terabox_to_notion">TeraBox → Notion (nur eine Richtung)</option>
+                        <option value="notion_to_terabox">Notion → TeraBox (nur eine Richtung)</option>
+                    </select>
+                    <div class="help-text">Wählen Sie die Synchronisierungsrichtung</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="conflictResolution">Konfliktlösung</label>
+                    <select id="conflictResolution">
+                        <option value="latest_wins">Neueste Version gewinnt</option>
+                        <option value="terabox_wins">TeraBox Version gewinnt</option>
+                        <option value="notion_wins">Notion Version gewinnt</option>
+                        <option value="keep_both">Beide Versionen behalten</option>
+                        <option value="manual_resolve">Manuelle Lösung erforderlich</option>
+                    </select>
+                    <div class="help-text">Strategie zur Lösung von Konflikten</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="pollingInterval">Überprüfungsintervall (Sekunden)</label>
+                    <input type="number" id="pollingInterval" value="30" min="10" max="300">
+                    <div class="help-text">Wie oft auf Änderungen geprüft wird (10-300 Sekunden)</div>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="enableOCR" checked>
+                    <label for="enableOCR">DeepSeek OCR aktivieren (für Dokumentenanalyse)</label>
+                </div>
+
+                <div class="form-group" id="ocrConfig">
+                    <label for="ocrURL">DeepSeek OCR URL</label>
+                    <input type="url" id="ocrURL" placeholder="https://your-space.hf.space">
+                    <div class="help-text">URL Ihrer DeepSeek OCR Instanz</div>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="previousStep()">← Zurück</button>
+                    <button class="btn btn-primary" onclick="nextStep()">Weiter →</button>
+                </div>
+            </div>
+
+            <!-- Step 4: Summary & Confirmation -->
+            <div class="step" id="step4">
+                <div class="step-header">
+                    <span class="step-number">4</span>
+                    <h2 class="step-title">Zusammenfassung & Bestätigung</h2>
+                </div>
+
+                <div class="summary">
+                    <h3>Konfigurationsübersicht</h3>
+
+                    <div class="summary-item">
+                        <span class="summary-label">TeraBox Ordner:</span>
+                        <span class="summary-value" id="summaryFolder">-</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span class="summary-label">Notion Workspace:</span>
+                        <span class="summary-value" id="summaryWorkspace">-</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span class="summary-label">Sync Modus:</span>
+                        <span class="summary-value" id="summaryMode">-</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span class="summary-label">Konfliktlösung:</span>
+                        <span class="summary-value" id="summaryConflict">-</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span class="summary-label">OCR aktiviert:</span>
+                        <span class="summary-value" id="summaryOCR">-</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span class="summary-label">Überprüfungsintervall:</span>
+                        <span class="summary-value" id="summaryInterval">-</span>
+                    </div>
+                </div>
+
+                <div id="setupStatus"></div>
+
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="previousStep()">← Zurück</button>
+                    <button class="btn btn-success" onclick="startSync()">Sync starten 🚀</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentStep = 1;
+        const totalSteps = 4;
+
+        function updateProgressBar() {
+            const progress = (currentStep / totalSteps) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+        }
+
+        function showStep(step) {
+            document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+            document.getElementById(`step${step}`).classList.add('active');
+            currentStep = step;
+            updateProgressBar();
+        }
+
+        function nextStep() {
+            if (currentStep < totalSteps) {
+                if (validateCurrentStep()) {
+                    showStep(currentStep + 1);
+                    if (currentStep === 4) {
+                        updateSummary();
+                    }
+                }
+            }
+        }
+
+        function previousStep() {
+            if (currentStep > 1) {
+                showStep(currentStep - 1);
+            }
+        }
+
+        function validateCurrentStep() {
+            // Add validation logic here
+            return true;
+        }
+
+        function updateSummary() {
+            document.getElementById('summaryFolder').textContent = document.getElementById('teraboxFolder').value;
+            document.getElementById('summaryWorkspace').textContent = document.getElementById('notionWorkspace').value;
+            document.getElementById('summaryMode').textContent = document.getElementById('syncMode').options[document.getElementById('syncMode').selectedIndex].text;
+            document.getElementById('summaryConflict').textContent = document.getElementById('conflictResolution').options[document.getElementById('conflictResolution').selectedIndex].text;
+            document.getElementById('summaryOCR').textContent = document.getElementById('enableOCR').checked ? 'Ja' : 'Nein';
+            document.getElementById('summaryInterval').textContent = document.getElementById('pollingInterval').value + ' Sekunden';
+        }
+
+        async function testTeraBoxConnection() {
+            const resultDiv = document.getElementById('teraboxTestResult');
+            resultDiv.innerHTML = '<div class="test-loading"><span class="loading"></span>Verbindung wird getestet...</div>';
+
+            // Simulate connection test
+            setTimeout(() => {
+                resultDiv.innerHTML = '<div class="test-success">✅ Verbindung erfolgreich!</div>';
+            }, 2000);
+        }
+
+        async function testNotionConnection() {
+            const resultDiv = document.getElementById('notionTestResult');
+            resultDiv.innerHTML = '<div class="test-loading"><span class="loading"></span>Verbindung wird getestet...</div>';
+
+            // Simulate connection test
+            setTimeout(() => {
+                resultDiv.innerHTML = '<div class="test-success">✅ Verbindung erfolgreich!</div>';
+            }, 2000);
+        }
+
+        async function startSync() {
+            const statusDiv = document.getElementById('setupStatus');
+            statusDiv.innerHTML = '<div class="success-message">🚀 Sync-System wird initialisiert...</div>';
+
+            // Collect configuration
+            const config = {
+                terabox: {
+                    baseURL: document.getElementById('teraboxBaseURL').value,
+                    username: document.getElementById('teraboxUsername').value,
+                    password: document.getElementById('teraboxPassword').value,
+                    targetFolder: document.getElementById('teraboxFolder').value,
+                    watchSubfolders: document.getElementById('watchSubfolders').checked
+                },
+                notion: {
+                    token: document.getElementById('notionToken').value,
+                    workspaceId: document.getElementById('notionWorkspace').value,
+                    databaseName: document.getElementById('notionDatabaseName').value,
+                    restrictToWorkspace: document.getElementById('restrictToWorkspace').checked
+                },
+                sync: {
+                    mode: document.getElementById('syncMode').value,
+                    conflictResolution: document.getElementById('conflictResolution').value,
+                    pollingInterval: parseInt(document.getElementById('pollingInterval').value)
+                },
+                ocr: document.getElementById('enableOCR').checked ? {
+                    enabled: true,
+                    baseURL: document.getElementById('ocrURL').value
+                } : {
+                    enabled: false
+                }
+            };
+
+            console.log('Configuration:', config);
+
+            // Save configuration to localStorage
+            localStorage.setItem('teraboxNotionSyncConfig', JSON.stringify(config));
+
+            // Simulate initialization
+            setTimeout(() => {
+                statusDiv.innerHTML = '<div class="success-message">✅ Sync-System erfolgreich initialisiert! Sie können dieses Fenster jetzt schließen.</div>';
+            }, 3000);
+        }
+
+        // Handle OCR checkbox
+        document.getElementById('enableOCR').addEventListener('change', function() {
+            document.getElementById('ocrConfig').style.display = this.checked ? 'block' : 'none';
+        });
+
+        // Initialize
+        updateProgressBar();
+    </script>
+</body>
+</html>

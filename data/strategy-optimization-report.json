@@ -1,0 +1,74 @@
+{
+  "timestamp": "2025-09-28T17:14:39.413Z",
+  "aiEngine": "StrategyOptimizationAI v2.0",
+  "dataSources": {
+    "seo": true,
+    "geo": true,
+    "aeo": true,
+    "correlations": true,
+    "alerts": false
+  },
+  "recommendations": [
+    {
+      "id": "aeo-lowAuthority-1759079679413",
+      "strategy": "AEO",
+      "type": "authority-building",
+      "priority": "high",
+      "confidence": 95,
+      "title": "AEO: Authority Building",
+      "description": "Bauen Sie Entity Authority durch strukturierte Daten und Social Proof",
+      "expectedImpact": "high",
+      "implementationEffort": "high",
+      "timeline": "1-2 Wochen",
+      "kpis": [
+        "Performance +15%",
+        "ROI +20%"
+      ],
+      "timestamp": "2025-09-28T17:14:39.413Z"
+    },
+    {
+      "id": "aeo-inconsistentCitations-1759079679413",
+      "strategy": "AEO",
+      "type": "citation-audit",
+      "priority": "medium",
+      "confidence": 90,
+      "title": "AEO: Citation Audit",
+      "description": "Führen Sie Citation Audit durch und standardisieren Sie NAP-Daten",
+      "expectedImpact": "medium",
+      "implementationEffort": "low",
+      "timeline": "2-4 Wochen",
+      "kpis": [
+        "Performance +15%",
+        "ROI +20%"
+      ],
+      "timestamp": "2025-09-28T17:14:39.413Z"
+    },
+    {
+      "id": "cross-strengthen-aeo-1759079679413",
+      "strategy": "CROSS",
+      "type": "strategy-balancing",
+      "priority": "medium",
+      "confidence": 75,
+      "title": "AEO Strategie stärken",
+      "description": "Die AEO-Strategie ist unterentwickelt. Integrieren Sie Cross-Strategy Elemente zur Verbesserung.",
+      "expectedImpact": "medium",
+      "implementationEffort": "high",
+      "timeline": "8-12 Wochen",
+      "kpis": [
+        "AEO Score +25%",
+        "Overall Performance +15%"
+      ],
+      "timestamp": "2025-09-28T17:14:39.413Z"
+    }
+  ],
+  "summary": {
+    "totalRecommendations": 3,
+    "critical": 0,
+    "high": 1,
+    "medium": 2,
+    "low": 0,
+    "avgConfidence": 86.66666666666667,
+    "expectedTimeline": "1-2 Wochen"
+  },
+  "nextOptimizationRun": "2025-10-05T17:14:39.413Z"
+}

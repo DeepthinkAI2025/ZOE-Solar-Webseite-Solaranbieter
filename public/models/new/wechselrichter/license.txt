@@ -1,0 +1,11 @@
+Model Information:
+* title:	PV 18304 (solar Inverter)
+* source:	https://sketchfab.com/3d-models/pv-18304-solar-inverter-7296ecc94ca34c0eaced9b308a62701d
+* author:	htut_hutt (https://sketchfab.com/htut_hutt)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "PV 18304 (solar Inverter)" (https://sketchfab.com/3d-models/pv-18304-solar-inverter-7296ecc94ca34c0eaced9b308a62701d) by htut_hutt (https://sketchfab.com/htut_hutt) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

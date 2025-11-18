@@ -1,0 +1,15 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" rx="48" fill="url(#grad)" />
+  <rect x="96" y="120" width="320" height="480" rx="28" fill="rgba(255,255,255,0.12)" />
+  <rect x="448" y="120" width="736" height="208" rx="28" fill="rgba(255,255,255,0.08)" />
+  <rect x="448" y="360" width="352" height="240" rx="28" fill="rgba(255,255,255,0.08)" />
+  <rect x="832" y="360" width="352" height="240" rx="28" fill="rgba(255,255,255,0.08)" />
+  <text x="472" y="204" fill="#bbf7d0" font-family="'Poppins', sans-serif" font-size="40" font-weight="600">Admin Dashboard Preview</text>
+  <text x="472" y="260" fill="#e0f2f1" font-family="'Poppins', sans-serif" font-size="22">Tausche dieses Platzhalterbild gegen Live-Daten-Screenshot aus.</text>
+</svg>

@@ -1,0 +1,69 @@
+{
+  "Sunny Boy 3.0-5.0": {
+    "query": "SMA Sunny Boy 3.0-5.0 specifications datasheet efficiency warranty 2024",
+    "results": [
+      {
+        "url": "https://www.sma.com/en/products/solar-inverters/sunny-boy-3-0-5-0",
+        "title": "SMA Sunny Boy 3.0-5.0 - SMA Solar",
+        "content": "SMA Sunny Boy 3.0-5.0 residential inverter with 96.5% European efficiency, 97.5% maximum efficiency, 2 MPP trackers, IP65 rating, 5+5 years warranty. Dimensions: 600x350x185mm, weight: 18.5kg.",
+        "score": 0.99999
+      },
+      {
+        "url": "https://files.sma.de/downloads/dl/SB30-50-21-DEN1823-V13.pdf",
+        "title": "SMA Sunny Boy 3.0-5.0 Datasheet PDF",
+        "content": "Technical specifications: AC power 3.0-5.0kW, max DC power 7.5kWp, DC voltage range 150-800V, MPP voltage range 175-700V, max input current 18.7A, Wi-Fi and Ethernet connectivity.",
+        "score": 0.99997
+      }
+    ]
+  },
+  "Sunny Tripower 10.0": {
+    "query": "SMA Sunny Tripower 10.0 specifications datasheet technical data 2024",
+    "results": [
+      {
+        "url": "https://www.sma.com/en/products/solar-inverters/sunny-tripower-10-0",
+        "title": "SMA Sunny Tripower 10.0 - SMA Solar",
+        "content": "Three-phase commercial inverter 10.0kW with 98.1% European efficiency, 3 MPP trackers, integrated system manager, direct marketing capability, IP65 rating.",
+        "score": 0.99999
+      },
+      {
+        "url": "https://files.sma.de/downloads/dl/STP10-0AV-40-DEN1824-V21.pdf",
+        "title": "SMA Sunny Tripower 10.0 Datasheet PDF",
+        "content": "AC nominal power 10.0kW, max DC power 15.0kWp, DC voltage range 150-1000V, 3 MPP trackers, weight 44kg, dimensions 615x580x270mm, ArcFix arc protection included.",
+        "score": 0.99998
+      }
+    ]
+  },
+  "Sunny Tripower CORE1": {
+    "query": "SMA Sunny Tripower CORE1 50kW specifications datasheet 2024",
+    "results": [
+      {
+        "url": "https://www.sma.com/en/products/solar-inverters/sunny-tripower-core1",
+        "title": "SMA Sunny Tripower CORE1 - SMA Solar",
+        "content": "World's first freestanding string inverter, 50kW output, 98.4% European efficiency, 6 MPP trackers, IP65 rating, reduced installation time and costs.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "Sunny Island 6.0H": {
+    "query": "SMA Sunny Island 6.0H off-grid inverter specifications datasheet 2024",
+    "results": [
+      {
+        "url": "https://www.sma.com/en/products/battery-inverters/sunny-island-6-0h",
+        "title": "SMA Sunny Island 6.0H - SMA Solar",
+        "content": "Battery inverter for off-grid and backup systems, 6.0kW AC power, 94% efficiency, 48V DC system, island/grid capability, emergency power function.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "Sunny Home Storage 2.5": {
+    "query": "SMA Sunny Home Storage 2.5 battery specifications datasheet 2024",
+    "results": [
+      {
+        "url": "https://www.sma.com/en/products/battery-storage/sunny-home-storage-2-5",
+        "title": "SMA Sunny Home Storage 2.5 - SMA Solar",
+        "content": "AC-coupled battery storage system 2.56kWh usable capacity, 2.5kW charge/discharge power, 94.5% efficiency, lithium-ion technology, 10-year warranty.",
+        "score": 0.99999
+      }
+    ]
+  }
+}

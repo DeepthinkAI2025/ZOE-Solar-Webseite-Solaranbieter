@@ -1,0 +1,44 @@
+# ZOE Solar robots.txt
+# Optimiert für deutsche SEO
+
+User-agent: *
+Allow: /
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Admin-Bereiche blockieren
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /api/private/
+Disallow: /.well-known/
+
+# Temporäre Dateien blockieren
+Disallow: /tmp/
+Disallow: /cache/
+Disallow: /*.tmp$
+Disallow: /*.cache$
+
+# Suchparameter blockieren
+Disallow: /*?utm_*
+Disallow: /*?fbclid*
+Disallow: /*?gclid*
+Disallow: /*?*_ga*
+
+# Spezielle Crawler
+User-agent: Googlebot
+Allow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+# Sitemaps
+Sitemap: https://zoe-solar.de/sitemap.xml
+Sitemap: https://zoe-solar.de/sitemap-images.xml
+Sitemap: https://zoe-solar.de/sitemap-news.xml
+
+# Crawl-Delay für freundliche Crawler
+Crawl-delay: 1

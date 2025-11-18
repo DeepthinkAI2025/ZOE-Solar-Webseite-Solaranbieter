@@ -1,0 +1,260 @@
+[
+  {
+    "keyword": "Solaranlagen Berlin",
+    "location": "Berlin",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Photovoltaik Berlin",
+    "location": "Berlin",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solarteur Berlin",
+    "location": "Berlin",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "PV Anlage Berlin Brandenburg",
+    "location": "Berlin",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solarstrom Berlin",
+    "location": "Berlin",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solaranlagen München",
+    "location": "München",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Photovoltaik München",
+    "location": "München",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solarteur München",
+    "location": "München",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "PV Anlage Bayern",
+    "location": "München",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solarstrom München",
+    "location": "München",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solaranlagen Zürich",
+    "location": "Zürich",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Photovoltaik Zürich",
+    "location": "Zürich",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solarteur Zürich",
+    "location": "Zürich",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "PV Anlage Schweiz",
+    "location": "Zürich",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solarstrom Zürich",
+    "location": "Zürich",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solaranlage Eigenheim Hamburg",
+    "location": "Hamburg",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Photovoltaik mit Speicher Hamburg",
+    "location": "Hamburg",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solaranlage Einfamilienhaus Hamburg",
+    "location": "Hamburg",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "PV Anlage Hamburg",
+    "location": "Hamburg",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solaranlage Kosten Hamburg",
+    "location": "Hamburg",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solarteur Hamburg",
+    "location": "Hamburg",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solarstrom Hamburg",
+    "location": "Hamburg",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solaranlage Eigenheim Köln",
+    "location": "Köln",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Photovoltaik mit Speicher Köln",
+    "location": "Köln",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solaranlage Einfamilienhaus Köln",
+    "location": "Köln",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "PV Anlage Köln",
+    "location": "Köln",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solaranlage Kosten Köln",
+    "location": "Köln",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solarteur Köln",
+    "location": "Köln",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solarstrom Köln",
+    "location": "Köln",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solaranlage Eigenheim Frankfurt",
+    "location": "Frankfurt am Main",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Photovoltaik mit Speicher Frankfurt",
+    "location": "Frankfurt am Main",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solaranlage Einfamilienhaus Frankfurt",
+    "location": "Frankfurt am Main",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "PV Anlage Frankfurt",
+    "location": "Frankfurt am Main",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solaranlage Kosten Frankfurt",
+    "location": "Frankfurt am Main",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solarteur Frankfurt",
+    "location": "Frankfurt am Main",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solarstrom Frankfurt",
+    "location": "Frankfurt am Main",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solaranlage Eigenheim Stuttgart",
+    "location": "Stuttgart",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Photovoltaik mit Speicher Stuttgart",
+    "location": "Stuttgart",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solaranlage Einfamilienhaus Stuttgart",
+    "location": "Stuttgart",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "PV Anlage Stuttgart",
+    "location": "Stuttgart",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solaranlage Kosten Stuttgart",
+    "location": "Stuttgart",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solarteur Stuttgart",
+    "location": "Stuttgart",
+    "intent": "local",
+    "priority": "high"
+  },
+  {
+    "keyword": "Solarstrom Stuttgart",
+    "location": "Stuttgart",
+    "intent": "local",
+    "priority": "high"
+  }
+]

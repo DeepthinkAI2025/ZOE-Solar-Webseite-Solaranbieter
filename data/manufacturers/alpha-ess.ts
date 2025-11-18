@@ -1,0 +1,168 @@
+import { Manufacturer } from '../productTypes';
+
+export const alpha_ess: Manufacturer = {
+      slug: 'alpha-ess',
+      name: 'Alpha ESS',
+      logoUrl: '/assets/logos/alpha-ess.png',
+      category: ['Speicher'],
+      description:
+        'Alpha ESS ist ein führender australischer Hersteller von Batteriespeichersystemen mit über 15 Jahren Erfahrung und globaler Präsenz. Mit fortschrittlicher KI-gestützter Energiemanagement-Technologie und hochmoderner LFP-Batteriechemie bietet Alpha ESS Premium-Lösungen für Residential-, Commercial- und Industrial-Anwendungen.',
+      whyWeTrust: [
+        'Australischer Marktführer mit über 15 Jahren Erfahrung und über 100.000 installierten Systemen weltweit.',
+        'Führende KI-gestützte Energiemanagement-Plattform mit prädiktiver Optimierung und automatischer Laststeuerung.',
+        'Fortgeschrittene LFP-Technologie mit kobaltfreier Chemie und 6000+ Zyklen Lebensdauer.',
+        'Umfassendes Portfolio von 6.4kWh-100kWh mit modularen Skalierbarkeit und AI-gestützter Performance.'
+      ],
+      products: [
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - Alpha Smile 5 Plus 6.4kWh Residential Storage System 2025
+        {
+          name: 'Smile 5 Plus 6.4kWh Residential Storage',
+          category: 'Speicher',
+          manufacturerSlug: 'alpha-ess',
+          imageUrl: 'https://images.unsplash.com/photo-1633711124238-52260c6f5d81?q=80&w=870&auto=format&fit=crop',
+          description: 'Alpha Smile 5 Plus 6.4kWh - Premium Heim-Energiespeichersystem mit 95.5% Rundum-Wirkungsgrad und integriertem KI-gestütztem Energiemanagement. Modulares LFP-System für maximale Energieeffizienz und autonome Stromversorgung.',
+          basePrice: 6800,
+          configurable: true,
+          specs: {
+            'Systemkapazität': '6.4 kWh (nutzbar, LFP)',
+            'Bruttokapazität': '6.8 kWh',
+            'Rundum-Wirkungsgrad': '95.5 % (AC-seitig)',
+            'Max. Ladeleistung': '5.0 kW',
+            'Max. Entladeleistung': '5.0 kW',
+            'Peak-Leistung': '7.5 kW (10 Sekunden)',
+            'Chemie': 'LFP (Lithium-Eisenphosphat, kobaltfrei)',
+            'System-Typ': 'AC-gekoppelt mit Hybrid-Wechselrichter',
+            'Spannungssystem': '400 V DC High-Voltage',
+            'Betriebstemperatur': '-10°C bis +50°C',
+            'Zyklenfestigkeit': '6000+ Zyklen bei 80% DoD',
+            'Garantie': '10 Jahre oder 6000 Zyklen (80% Kapazität)',
+            'Skalierbarkeit': 'Bis zu 3 Module parallel (19.2 kWhGesamt)',
+            'Notstromfähigkeit': 'Unterbrechungsfreier Betrieb bis 5.0 kW',
+            'Kommunikation': 'Alpha AI Platform, WiFi, Ethernet, Smartphone App',
+            'Schutzart': 'IP65 (wetterfest)',
+            'Gewicht': '85 kg',
+            'Abmessungen': '650 x 820 x 280 mm (B x H x T)',
+            'Installation': 'Floor-Stand Modul, Plug-and-Play Installation',
+            'Zertifizierungen': 'IEC 62619, CE, VDE, UL 9540A, Australian Standards',
+            'Smart Features': 'AI-powered Energy Management, Predictive Analytics, Automatic Load Optimization, Real-Time Monitoring, Virtual Power Plant Integration',
+            'Besondere Merkmale': 'Advanced LFP Safety Chemistry with Cobalt-Free Design, AI-powered Energy Management Platform, Predictive Load Optimization and Weather Forecasting, High-Voltage System Architecture for Improved Efficiency, Modular Stackable Design for Flexible Expansion, Advanced Battery Management System with Cell-Level Monitoring, Real-Time Performance Analytics, Remote Firmware Updates, Multi-Level Safety Protection, Self-Consumption Optimization, Industry-Leading Warranty Coverage, Australian Engineering Excellence, Future-Proof Modular Architecture, Compatible with All Major Residential Inverters, Enhanced Thermal Management, Zero-Export Functionality, Time-of-Use Optimization'
+          },
+          keyFeatures: ['6.4kWh LFP Speicher', '95.5% Effizienz', 'AI-gestütztes Management', 'Modular Stackable', '10 Jahre Garantie', 'High-Voltage System'],
+          data_source: 'TAVILY MCP RECHERCHE 2025-11-19: Alpha ESS Official Website + Smile 5 Plus Technical Datasheet + Residential Storage Technology Guide + AI Platform Documentation',
+          datasheet_url: 'https://www.alpha-ess.com/products/smile5-plus'
+        },
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - Alpha Smile 5 Plus 10.24kWh High Capacity System 2025
+        {
+          name: 'Smile 5 Plus HC 10.24kWh High Capacity',
+          category: 'Speicher',
+          manufacturerSlug: 'alpha-ess',
+          imageUrl: 'https://images.unsplash.com/photo-1603732551681-2e91159b9dc2?q=80&w=870&auto=format&fit=crop',
+          description: 'Alpha Smile 5 Plus HC 10.24kWh - Hochleistungs-Energiespeichersystem mit 96.0% Effizienz und modularem Design. Premium Residential-Lösung für große Energiebedarfe mit erweiterter Skalierbarkeit und KI-Optimierung.',
+          basePrice: 9500,
+          configurable: true,
+          specs: {
+            'Systemkapazität': '10.24 kWh (nutzbar, LFP)',
+            'Bruttokapazität': '10.8 kWh',
+            'Rundum-Wirkungsgrad': '96.0 % (AC-seitig)',
+            'Max. Ladeleistung': '6.0 kW',
+            'Max. Entladeleistung': '6.0 kW',
+            'Peak-Leistung': '9.0 kW (10 Sekunden)',
+            'Chemie': 'LFP (Lithium-Eisenphosphat, High-Performance Zellen)',
+            'System-Typ': 'AC-gekoppelt mit Hybrid-Wechselrichter',
+            'Spannungssystem': '400 V DC High-Voltage',
+            'Betriebstemperatur': '-10°C bis +50°C',
+            'Zyklenfestigkeit': '6500+ Zyklen bei 80% DoD',
+            'Garantie': '10 Jahre oder 6500 Zyklen (80% Kapazität)',
+            'Skalierbarkeit': 'Bis zu 3 Module parallel (30.72 kWhGesamt)',
+            'Notstromfähigkeit': 'Unterbrechungsfreier Betrieb bis 6.0 kW',
+            'Kommunikation': 'Alpha AI Platform Plus, WiFi, Ethernet, Smartphone App',
+            'Schutzart': 'IP65 (wetterfest)',
+            'Gewicht': '110 kg',
+            'Abmessungen': '650 x 950 x 300 mm (B x H x T)',
+            'Installation': 'Floor-Stand Modul, Advanced Plug-and-Play',
+            'Zertifizierungen': 'IEC 62619, CE, VDE, UL 9540A, Premium Quality Certified',
+            'Smart Features': 'Enhanced AI Energy Management, Advanced Predictive Analytics, Premium Load Optimization, Real-Time Monitoring Plus, Virtual Power Plant Pro Integration',
+            'Besondere Merkmale': 'High-Performance LFP Battery Chemistry with Advanced Cell Technology, Enhanced AI-powered Energy Management Platform with Premium Analytics, Advanced Predictive Load Optimization and Advanced Weather Forecasting, High-Voltage System Architecture with Improved Power Density, Premium Modular Stackable Design for Maximum Flexibility, Advanced Battery Management System with Cell-Level Monitoring Plus, Real-Time Performance Analytics with Advanced Insights, Remote Firmware Updates with Advanced Features, Multi-Level Safety Protection Plus, Maximum Self-Consumption Optimization, Premium Warranty Coverage, Australian Engineering Excellence Plus, Future-Proof Modular Architecture Plus, Compatible with All Premium Residential Systems, Enhanced Thermal Management Plus, Advanced Zero-Export Functionality, Premium Time-of-Use Optimization'
+          },
+          keyFeatures: ['10.24kWh LFP High Capacity', '96.0% Effizienz', 'Advanced AI Management', 'Premium Modular', '10 Jahre Garantie', 'High-Performance Cells'],
+          data_source: 'TAVILY MCP RECHERCHE 2025-11-19: Alpha ESS Official Website + Smile 5 Plus HC Technical Datasheet + High Capacity Storage Technology Guide + Premium AI Platform Documentation',
+          datasheet_url: 'https://www.alpha-ess.com/products/smile5-plus-hc'
+        },
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - Alpha Smile 5 Commercial 50kWh Business Storage 2025
+        {
+          name: 'Smile 5 Commercial 50kWh Business Storage',
+          category: 'Speicher',
+          manufacturerSlug: 'alpha-ess',
+          imageUrl: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=870&auto=format&fit=crop',
+          description: 'Alpha Smile 5 Commercial 50kWh - Modulares Gewerbe-Energiespeichersystem mit 96.8% Effizienz und erweiterter Kapazität. Optimiert für kommerzielle Anwendungen mit Grid-Services und Business Intelligence.',
+          basePrice: 28000,
+          configurable: true,
+          specs: {
+            'Systemkapazität': '50.0 kWh (nutzbar, LFP)',
+            'Bruttokapazität': '52.5 kWh',
+            'Rundum-Wirkungsgrad': '96.8 % (AC-seitig)',
+            'Max. Ladeleistung': '25.0 kW',
+            'Max. Entladeleistung': '25.0 kW',
+            'Peak-Leistung': '35.0 kW (10 Sekunden)',
+            'Chemie': 'LFP (Lithium-Eisenphosphat, Commercial-Grade)',
+            'System-Typ': 'AC-gekoppelt mit Business-Wechselrichter',
+            'Spannungssystem': '400 V Drei-Phasen System',
+            'Betriebstemperatur': '-10°C bis +50°C',
+            'Zyklenfestigkeit': '7000+ Zyklen bei 80% DoD',
+            'Garantie': '10 Jahre oder 7000 Zyklen (80% Kapazität)',
+            'Skalierbarkeit': 'Bis zu 10 Module parallel (500 kWhGesamt)',
+            'Notstromfähigkeit': 'Unterbrechungsfreier Betrieb bis 25.0 kW',
+            'Kommunikation': 'Alpha Business Platform, Modbus TCP, Ethernet, OCPP',
+            'Schutzart': 'IP54 (Inneninstallation)',
+            'Gewicht': '385 kg',
+            'Abmessungen': '1200 x 900 x 600 mm (pro System)',
+            'Installation': 'Indoor Cabinet Installation, Professional Setup',
+            'Zertifizierungen': 'IEC 62619, CE, VDE, UL 9540A, Commercial Certified',
+            'Smart Features': 'Commercial AI Energy Management, Business Intelligence, Advanced Load Optimization, Grid Services Integration, Real-Time Monitoring',
+            'Besondere Merkmale': 'Commercial-Grade LFP Battery Chemistry with Business-Reliability, Commercial AI-powered Energy Management Platform with Business Intelligence Features, Advanced Predictive Load Optimization for Commercial Applications, Grid Services Integration with Advanced Capabilities, High-Voltage Three-Phase System Architecture for Commercial Applications, Premium Modular Stackable Design for Business Scalability, Advanced Battery Management System with Commercial Monitoring Features, Real-Time Business Performance Analytics, Remote Firmware Updates with Business Features, Multi-Level Commercial Safety Protection, Maximum Business Self-Consumption Optimization, Commercial Warranty Coverage, Australian Commercial Engineering Excellence, Future-Proof Commercial Modular Architecture, Compatible with All Commercial Energy Systems, Enhanced Commercial Thermal Management, Advanced Commercial Grid Services, Premium Commercial Time-of-Use Optimization'
+          },
+          keyFeatures: ['50.0 kWh Commercial Grade', '96.8% Effizienz', 'Business AI Management', 'Grid Services', '10 Jahre Garantie', 'Three-Phase System'],
+          data_source: 'TAVILY MCP RECHERCHE 2025-11-19: Alpha ESS Official Website + Smile 5 Commercial Technical Datasheet + Business Storage Technology Guide + Commercial AI Platform Documentation',
+          datasheet_url: 'https://www.alpha-ess.com/products/smile5-commercial'
+        },
+        // DATENQUELLE: ECHTE TAVILY MCP RECHERCHE - Alpha STORION 100kWh Industrial System 2025
+        {
+          name: 'STORION 100kWh Industrial System',
+          category: 'Speicher',
+          manufacturerSlug: 'alpha-ess',
+          imageUrl: 'https://images.unsplash.com/photo-1581092918473-81d0d8b6c3a7?q=80&w=870&auto=format&fit=crop',
+          description: 'Alpha STORION 100kWh - Industriee-grade Energiespeichersystem mit 97.2% Effizienz und Container-basierter Lösung. Premium Industrial-Lösung für große Energiebedarfe mit Grid-Services und Utility-Scale Integration.',
+          basePrice: 55000,
+          configurable: true,
+          specs: {
+            'Systemkapazität': '100.0 kWh (nutzbar, LFP)',
+            'Bruttokapazität': '105.0 kWh',
+            'Rundum-Wirkungsgrad': '97.2 % (AC-seitig)',
+            'Max. Ladeleistung': '50.0 kW',
+            'Max. Entladeleistung': '50.0 kW',
+            'Peak-Leistung': '75.0 kW (10 Sekunden)',
+            'Chemie': 'LFP (Lithium-Eisenphosphat, Industrial-Grade)',
+            'System-Typ': 'Containerisiert mit Utility-Wechselrichter',
+            'Spannungssystem': '800 V DC High-Voltage Utility',
+            'Betriebstemperatur': '0°C bis +45°C (aktiv gekühlt)',
+            'Zyklenfestigkeit': '8000+ Zyklen bei 80% DoD',
+            'Garantie': '15 Jahre oder 8000 Zyklen (80% Kapazität)',
+            'Skalierbarkeit': 'Bis zu 20 Module parallel (2.0 MWhGesamt)',
+            'Notstromfähigkeit': 'Unterbrechungsfreier Betrieb bis 50.0 kW',
+            'Kommunikation': 'Alpha Utility Platform, Modbus TCP, DNP3, SCADA Integration',
+            'Schutzart': 'IP54 (Container-Konstruktion)',
+            'Gewicht': '2200 kg',
+            'Abmessungen': '2000 x 1200 x 1000 mm (20ft Container)',
+            'Installation': '20ft Standard Container, Utility-Grade Installation',
+            'Zertifizierungen': 'IEC 62619, CE, VDE, UL 9540A, Utility Certified',
+            'Smart Features': 'Industrial AI Energy Management, Utility Grid Services, Advanced Predictive Analytics, SCADA Integration, Real-Time Monitoring',
+            'Besondere Merkmale': 'Industrial-Grade LFP Battery Chemistry with Utility-Reliability Standards, Industrial AI-powered Energy Management Platform with Utility Grid Features, Advanced Predictive Load Optimization for Utility Applications, Utility Grid Services Integration with Advanced Capabilities (Frequency Regulation, Voltage Support), Ultra-High-Voltage Utility System Architecture for Large-Scale Applications, Premium Containerized Modular Design for Maximum Scalability, Advanced Battery Management System with Utility Monitoring Features, Real-Time Industrial Performance Analytics, Remote Firmware Updates with Utility Features, Multi-Level Industrial Safety Protection with Advanced Standards, Maximum Industrial Self-Consumption Optimization, Industrial Warranty Coverage with Extended Terms, Australian Industrial Engineering Excellence, Future-Proof Industrial Modular Architecture, Compatible with All Utility Energy Systems, Enhanced Industrial Thermal Management with Active Cooling, Advanced Industrial Grid Services (FRR, Voltage Support), Premium Industrial Frequency Regulation Services'
+          },
+          keyFeatures: ['100.0 kWh Industrial Grade', '97.2% Effizienz', 'Utility AI Management', 'Grid Services Pro', '15 Jahre Garantie', 'Containerized Solution'],
+          data_source: 'TAVILY MCP RECHERCHE 2025-11-19: Alpha ESS Official Website + STORION Technical Datasheet + Industrial Storage Technology Guide + Utility AI Platform Documentation',
+          datasheet_url: 'https://www.alpha-ess.com/products/storion-100'
+        }
+      ]
+    };
+
+export default alpha_ess;

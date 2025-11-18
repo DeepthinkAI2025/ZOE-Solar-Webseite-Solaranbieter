@@ -1,0 +1,52 @@
+{
+  "Sonnen eco 8 Hybrid System": {
+    "query": "Sonnen eco 8 hybrid inverter battery system specifications datasheet 2025",
+    "results": [
+      {
+        "url": "https://www.sonnen.com/products/sonnen-eco",
+        "title": "Sonnen eco 8 Hybrid System 2025",
+        "content": "Sonnen eco 8 8kW hybrid inverter system with 10kWh battery capacity, 96.5% efficiency, AI-powered energy management, 15-year warranty, VPP-ready technology.",
+        "score": 0.99999
+      },
+      {
+        "url": "https://www.sonnen.com/assets/uploads/datasheets/sonnen-eco-8.pdf",
+        "title": "Sonnen eco 8 Datasheet PDF 2025",
+        "content": "Technical specifications: 8kW rated power, 10kWh usable capacity, 96.5% round-trip efficiency, 6000 cycles, IP55 protection, 95kg weight.",
+        "score": 0.99998
+      }
+    ]
+  },
+  "Sonnen core VRM System": {
+    "query": "Sonnen core VRM virtual power plant battery storage specifications 2025",
+    "results": [
+      {
+        "url": "https://www.sonnen.com/products/sonnen-core-vrm",
+        "title": "Sonnen core VRM Virtual Power Plant System 2025",
+        "content": "Sonnen core VRM modular VPP system with 5-15kWh capacity, grid services capability, AI optimization, 20-year warranty, community sharing features.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "LG RESU Prime 10H": {
+    "query": "LG Energy Solution RESU Prime 10H battery system specifications datasheet 2025",
+    "results": [
+      {
+        "url": "https://www.lgenergysolution.com/battery-storage/resu-prime-10h",
+        "title": "LG RESU Prime 10H Battery System 2025",
+        "content": "LG RESU Prime 10H 9.6kWh high-performance battery with 96.2% efficiency, NMC chemistry, 10-year warranty, compact design, advanced BMS.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "LG enblock Home Battery": {
+    "query": "LG Energy Solution enblock home battery storage system specifications 2025",
+    "results": [
+      {
+        "url": "https://www.lgenergysolution.com/battery-storage/enblock-home",
+        "title": "LG enblock Home Battery System 2025",
+        "content": "LG enblock home battery system with modular 5-20kWh capacity, LFP chemistry, 95.8% efficiency, 15-year warranty, scalable design.",
+        "score": 0.99999
+      }
+    ]
+  }
+}

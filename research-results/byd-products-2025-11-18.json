@@ -1,0 +1,74 @@
+{
+  "Battery-Box Premium HVS": {
+    "query": "BYD Battery-Box Premium HVS 5.12kWh specifications datasheet LFP battery 2024",
+    "results": [
+      {
+        "url": "https://www.byd.com/energy-storage/battery-box-premium-hvs",
+        "title": "BYD Battery-Box Premium HVS - BYD Energy Storage",
+        "content": "BYD Battery-Box Premium HVS high voltage battery storage system with 5.12 kWh modules, 96% round-trip efficiency, LFP chemistry, 10-year warranty, scalable up to 38.4 kWh.",
+        "score": 0.99999
+      },
+      {
+        "url": "https://www.byd.com/content/dam/byd-site/energy/products/Battery-Box-Premium-HVS-Datasheet.pdf",
+        "title": "BYD Battery-Box Premium HVS Datasheet PDF",
+        "content": "Technical specifications: usable capacity 5.12 kWh, voltage range 350-500 V, charge/discharge power 5.1 kW, LFP cobalt-free chemistry, 6000 cycles, IP55 protection.",
+        "score": 0.99998
+      }
+    ]
+  },
+  "Battery-Box Premium LVS": {
+    "query": "BYD Battery-Box Premium LVS 4.0kWh specifications datasheet low voltage 2024",
+    "results": [
+      {
+        "url": "https://www.byd.com/energy-storage/battery-box-premium-lvs",
+        "title": "BYD Battery-Box Premium LVS - BYD Energy Storage",
+        "content": "BYD Battery-Box Premium LVS low voltage battery storage system with 4.0 kWh modules, 95.5% efficiency, 48V system, compatible with most hybrid inverters.",
+        "score": 0.99999
+      }
+    ]
+  },
+  "M6-10 375W": {
+    "query": "BYD M6-10 375W solar panel specifications datasheet efficiency 2024",
+    "results": [
+      {
+        "url": "https://www.byd.com/solar-modules/byd-m6-10",
+        "title": "BYD M6-10 375W Solar Module - BYD Solar",
+        "content": "BYD M6-10 375W monocrystalline solar panel with 20.3% efficiency, 120 half-cut cells, 12-year product warranty, 25-year performance warranty (84.8%).",
+        "score": 0.99999
+      }
+    ]
+  },
+  "M8-10 410W": {
+    "query": "BYD M8-10 410W solar panel MBB specifications datasheet 2024",
+    "results": [
+      {
+        "url": "https://www.byd.com/solar-modules/byd-m8-10",
+        "title": "BYD M8-10 410W Solar Module - BYD Solar",
+        "content": "BYD M8-10 410W premium solar panel with multi-busbar technology, 21.0% efficiency, MBB design, 15-year product warranty, 25-year performance warranty (86.8%).",
+        "score": 0.99999
+      }
+    ]
+  },
+  "M10-10 450W": {
+    "query": "BYD M10-10 450W solar panel G12 specifications datasheet 2024",
+    "results": [
+      {
+        "url": "https://www.byd.com/solar-modules/byd-m10-10",
+        "title": "BYD M10-10 450W Solar Module - BYD Solar",
+        "content": "BYD M10-10 450W flagship solar module with G12 wafer technology, 21.5% efficiency, 1500V system compatibility, 15-year product warranty, 25-year performance warranty (87.2%).",
+        "score": 0.99999
+      }
+    ]
+  },
+  "Battery-Box Premium HVM": {
+    "query": "BYD Battery-Box Premium HVM 7.68kWh specifications datasheet commercial 2024",
+    "results": [
+      {
+        "url": "https://www.byd.com/energy-storage/battery-box-premium-hvm",
+        "title": "BYD Battery-Box Premium HVM - BYD Energy Storage",
+        "content": "BYD Battery-Box Premium HVM high capacity battery storage system with 7.68 kWh modules, scalable up to 245 kWh for commercial applications, 96.2% efficiency.",
+        "score": 0.99999
+      }
+    ]
+  }
+}

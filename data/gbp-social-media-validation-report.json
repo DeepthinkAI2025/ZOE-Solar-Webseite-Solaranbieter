@@ -1,0 +1,76 @@
+{
+  "summary": {
+    "total_locations": 26,
+    "social_media_integrated": 26,
+    "validation_date": "2025-11-01T00:00:59.884Z",
+    "platforms_configured": 8
+  },
+  "platform_coverage": {
+    "facebook": {
+      "configured_locations": 26,
+      "url": "https://www.facebook.com/profile.php?id=100088899755919",
+      "status": "active"
+    },
+    "instagram": {
+      "configured_locations": 26,
+      "url": "https://www.instagram.com/_zoe_solar/",
+      "status": "active"
+    },
+    "linkedin": {
+      "configured_locations": 26,
+      "url": "https://www.linkedin.com/company/91625256",
+      "status": "active"
+    },
+    "whatsapp": {
+      "configured_locations": 26,
+      "url": "https://wa.me/15678876200",
+      "status": "active"
+    },
+    "youtube": {
+      "configured_locations": 26,
+      "url": "https://youtube.com/@zoesolar",
+      "status": "active"
+    },
+    "twitter": {
+      "configured_locations": 26,
+      "url": "https://twitter.com/zoesolar",
+      "status": "active"
+    },
+    "website": {
+      "configured_locations": 26,
+      "url": "https://zoe-solar.de",
+      "status": "active"
+    },
+    "email": {
+      "configured_locations": 26,
+      "url": "mailto:info@zoe-solar.de",
+      "status": "active"
+    }
+  },
+  "location_analysis": {
+    "Berlin-Brandenburg": {
+      "count": 9,
+      "with_social_media": 9,
+      "with_local_hashtags": 9,
+      "with_contact_methods": 9
+    },
+    "International": {
+      "count": 2,
+      "with_social_media": 2,
+      "with_local_hashtags": 2,
+      "with_contact_methods": 2
+    },
+    "Bundesländer": {
+      "count": 15,
+      "with_social_media": 15,
+      "with_local_hashtags": 15,
+      "with_contact_methods": 15
+    }
+  },
+  "issues": [],
+  "recommendations": [
+    "Regularly validate social media links",
+    "Monitor social media engagement metrics",
+    "Update location-specific content regularly"
+  ]
+}

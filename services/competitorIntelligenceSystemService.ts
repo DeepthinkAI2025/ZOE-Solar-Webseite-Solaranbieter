@@ -1,0 +1,4 @@
+import competitorIntelligenceService from './competitorIntelligenceService';
+
+export const competitorIntelligenceSystemService = competitorIntelligenceService;
+export default competitorIntelligenceSystemService;
